@@ -1,0 +1,50 @@
+{
+  "说明": "实验代码生成计划：从创新点和假设出发，明确可测量输出、分析步骤、风险控制，并在执行后用于反向更新创新点。",
+  "paradigm_id": "dynamic_functional_connectivity",
+  "paradigm_name": "Dynamic functional connectivity",
+  "linked_innovations": [
+    {
+      "id": "innovation_01",
+      "paradigm_id": "dynamic_functional_connectivity+graph_theory_connectomics+behavioral_computational_modeling",
+      "hypothesis": "在认知负荷从低到高增加的过程中，大脑网络会发生从低整合、高模块化的状态（如清醒休息态）向高整合、低模块化、且DMN-TPN连接增强的过渡。这种状态转换的速率和最大程度与个体报告的认知负荷水平呈正相关，且该状态转换过程能被行为任务的实时表现指标（如反应时或准确率）显著预测。",
+      "innovation_point": "构建一个**结合状态空间模型（HMM）与时序行为协变量（Temporal Behavioral Covariate）**的动态图谱分析框架。创新点在于，不仅识别网络连接的离散状态，更重要的是，量化不同网络状态（如'局部化态' $\rightarrow$ '全局整合态'）之间的**状态转移概率（Transition Probability）**，并利用行为任务的实时表现指标（如实时准确率）作为预测因子来解释状态转换的发生机制。",
+      "experimental_plan": [],
+      "testable_outputs": [
+        "behavior_summary",
+        "candidate_predictors",
+        "connectome_summary",
+        "graph_metrics",
+        "model_fit_table",
+        "state_features",
+        "windowed_fc"
+      ],
+      "risk_factors": []
+    }
+  ],
+  "analysis_goal_zh": "用 Dynamic functional connectivity 的可执行输出检验关联创新点中的神经科学假设。",
+  "measurable_outputs": [
+    "windowed_fc",
+    "state_features"
+  ],
+  "required_data": [
+    "clean_bold"
+  ],
+  "missing_data": [],
+  "analysis_steps_zh": [
+    "检查输入目录中的被试、session 和可用数据类型。",
+    "运行该 paradigm 对应的分析函数，生成结构化 result.json。",
+    "提取关键指标、输出图表或中间表格。",
+    "记录失败原因、缺失数据和解释边界，供创新点反向更新使用。"
+  ],
+  "risk_controls_zh": [
+    "如果缺失必要数据，则将结果标记为 not_executable，而不是强行得出结论。",
+    "如果分析脚本失败或超时，后续创新点更新只解释可执行性风险，不把失败当作科学反证。",
+    "所有 result.json 中的指标都作为后续 LLM 反向更新的证据来源。"
+  ],
+  "runtime": {
+    "input_root": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free",
+    "output_dir": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_01",
+    "subject": "sub-ISM035",
+    "session": ""
+  }
+}

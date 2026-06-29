@@ -1,0 +1,53 @@
+{
+  "说明": "实验代码生成计划：从创新点/假设出发，明确可测量输出、分析步骤、风险控制，并在执行后用于反向更新创新点。",
+  "paradigm_id": "structural_morphometry",
+  "paradigm_name": "Structural MRI morphometry",
+  "linked_innovations": [
+    {
+      "id": "innovation_08",
+      "paradigm_id": "structural_morphometry",
+      "hypothesis": "Structural MRI morphometry 可以从当前数据中提取一个可量化的神经表型，但必须明确该表型对应的机制解释和失败条件。",
+      "innovation_point": "提出基于 Structural MRI morphometry 输出的单被试机制检验：把主要指标、预期方向和替代解释同时纳入创新假设，而不是只报告范式结果。",
+      "experimental_plan": [
+        "读取已处理 fMRI derivatives、QC 结果和可用 session。",
+        "执行 structural_morphometry 的类式 py 实验代码，提取可量化指标。",
+        "检查指标是否符合预期结果模式，并记录关键图形或矩阵证据。",
+        "如果执行失败或指标不支持假设，依据失败原因、替代解释和数据缺失情况反向修正创新点。"
+      ],
+      "testable_outputs": [
+        "morphometry_plan",
+        "structural_file_inventory"
+      ],
+      "risk_factors": [
+        "单被试结果不能直接推广到群体结论",
+        "功能连接结果依赖 ROI 提取、配准质量和时间序列长度"
+      ]
+    }
+  ],
+  "analysis_goal_zh": "用 Structural MRI morphometry 的可执行输出检验关联创新点中的神经科学假设。",
+  "measurable_outputs": [
+    "structural_file_inventory",
+    "morphometry_plan"
+  ],
+  "required_data": [
+    "structural_mri"
+  ],
+  "missing_data": [],
+  "analysis_steps_zh": [
+    "检查输入目录中的被试、session 和可用数据类型。",
+    "运行该 paradigm 对应的分析函数，生成结构化 result.json。",
+    "提取关键指标、输出图表或中间表格。",
+    "记录失败原因、缺失数据和解释边界，供创新点反向更新使用。"
+  ],
+  "risk_controls_zh": [
+    "如果缺失必要数据，则将结果标记为 not_executable，而不是强行得出结论。",
+    "如果分析脚本失败或超时，后续创新点更新只解释可执行性风险，不把失败当作科学反证。",
+    "所有 result.json 中的指标都作为后续 LLM 反向更新的证据来源。"
+  ],
+  "runtime": {
+    "input_root": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free",
+    "output_dir": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_102601/experiments/innovation_08",
+    "subject": "sub-ISM035",
+    "session": ""
+  }
+}

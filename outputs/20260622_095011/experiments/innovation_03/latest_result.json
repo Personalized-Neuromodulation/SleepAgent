@@ -1,0 +1,74 @@
+{
+  "paradigm": "alff_falff_frequency",
+  "name": "ALFF/fALFF frequency-domain analysis",
+  "status": "completed",
+  "input_root": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free",
+  "subject": "sub-ISM035",
+  "session": "",
+  "required_data": [
+    "clean_bold"
+  ],
+  "expected_outputs": [
+    "alff_map",
+    "falff_map",
+    "summary_csv"
+  ],
+  "shape": [
+    50,
+    52,
+    40,
+    1200
+  ],
+  "tr": 2.0,
+  "voxel_count": 5428,
+  "parcel_count": 20,
+  "frame_count": 1200,
+  "bold_file": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free/derivatives/sub-ISM035/ses-mri0/clean_data/volume/sub-ISM035_ses-mri0_task-sleep0_space-T1w_desc-preproc_bold_12rp_50pca_csf_wm.nii.gz",
+  "roi_source": "fmriprep_aparcaseg",
+  "atlas_file": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free/derivatives/sub-ISM035/fmriprep/output/sub-ISM035/anat/sub-ISM035_desc-aparcaseg_dseg.nii.gz",
+  "region_labels": [
+    "L-middletemporal",
+    "L-superiortemporal",
+    "L-supramarginal",
+    "L-inferiortemporal",
+    "L-precentral",
+    "L-inferiorparietal",
+    "L-rostralmiddlefrontal",
+    "L-lateraloccipital",
+    "L-superiorparietal",
+    "L-superiorfrontal",
+    "R-superiorfrontal",
+    "R-superiorparietal",
+    "R-rostralmiddlefrontal",
+    "R-lateraloccipital",
+    "R-precentral",
+    "R-inferiorparietal",
+    "R-inferiortemporal",
+    "R-superiortemporal",
+    "R-supramarginal",
+    "R-middletemporal"
+  ],
+  "used_file": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free/derivatives/sub-ISM035/ses-mri0/clean_data/volume/sub-ISM035_ses-mri0_task-sleep0_space-T1w_desc-preproc_bold_12rp_50pca_csf_wm.nii.gz",
+  "frequency_band_hz": [
+    0.01,
+    0.08
+  ],
+  "metric_summary": {
+    "mean_alff": 40.70333668944782,
+    "std_alff": 2.8420589491565673,
+    "mean_falff": 1.6953036581881964,
+    "std_falff": 0.1018447257935267
+  },
+  "outputs": {
+    "alff_falff_summary": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_095011/experiments/innovation_03/alff_falff_summary.csv"
+  },
+  "pipeline_messages": [
+    "输入目录: /media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free",
+    "输出目录: /home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_095011/experiments/innovation_03",
+    "被试: sub-ISM035",
+    "已写出实验计划: /home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_095011/experiments/innovation_03/alff_falff_frequency_class_pipeline_plan_zh.json",
+    "已执行范式 runner: alff_falff_frequency，状态=completed",
+    "当前范式不需要 3D connectome 强制校验。"
+  ],
+  "experiment_plan": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_095011/experiments/innovation_03/alff_falff_frequency_class_pipeline_plan_zh.json"
+}

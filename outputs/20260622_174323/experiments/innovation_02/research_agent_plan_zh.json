@@ -1,0 +1,39 @@
+{
+  "agent_reference": "AI-Researcher/research_agent",
+  "说明": "参考 AI-Researcher 的 research_agent：围绕一个创新点组织研究假设、实验代码、执行结果和反向修正。",
+  "innovation_id": "innovation_02",
+  "hypothesis_zh": "目标被试的功能连接不是静态稳定的，而是在扫描过程中出现若干高连接和低连接窗口；窗口间连接矩阵变化幅度可以反映状态切换特征。",
+  "innovation_point_zh": "提出“单被试动态连接不稳定性曲线”：用滑窗 FC 的均值强度、矩阵距离和 top-edge 重排率刻画状态转移，而不是只给一个全程平均连接矩阵。",
+  "expected_result_pattern_zh": "如果假设成立，相邻窗口距离会呈现峰值，且高变异窗口的 top edges 与低变异窗口不同。",
+  "alternative_explanation_zh": "动态变化可能由生理噪声、残余运动、睡眠深度变化或窗口长度选择造成。",
+  "bound_paradigm_ids": [
+    "dynamic_functional_connectivity"
+  ],
+  "experimental_plan": [
+    "读取已处理 fMRI derivatives、QC 结果和可用 session。",
+    "执行 dynamic_functional_connectivity 的类式 py 实验代码，提取可量化指标。",
+    "检查指标是否符合预期结果模式，并记录关键图形或矩阵证据。",
+    "如果执行失败或指标不支持假设，依据失败原因、替代解释和数据缺失情况反向修正创新点。"
+  ],
+  "risk_factors": [
+    "单被试结果不能直接推广到群体结论",
+    "功能连接结果依赖 ROI 提取、配准质量和时间序列长度"
+  ],
+  "generated_scripts": [
+    {
+      "experiment_id": "innovation_02",
+      "innovation_id": "innovation_02",
+      "experiment_dir": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_02",
+      "innovation_point": "提出“单被试动态连接不稳定性曲线”：用滑窗 FC 的均值强度、矩阵距离和 top-edge 重排率刻画状态转移，而不是只给一个全程平均连接矩阵。",
+      "hypothesis": "目标被试的功能连接不是静态稳定的，而是在扫描过程中出现若干高连接和低连接窗口；窗口间连接矩阵变化幅度可以反映状态切换特征。",
+      "paradigm": "dynamic_functional_connectivity",
+      "path": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_02/dynamic_functional_connectivity.py",
+      "script": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_02/dynamic_functional_connectivity.py",
+      "execution_dir": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_02",
+      "class_pipeline_plan_zh": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_02/dynamic_functional_connectivity_class_pipeline_plan_zh.json",
+      "linked_innovation_ids": [
+        "innovation_02"
+      ]
+    }
+  ]
+}
