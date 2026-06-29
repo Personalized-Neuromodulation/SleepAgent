@@ -1,0 +1,39 @@
+{
+  "agent_reference": "AI-Researcher/research_agent",
+  "说明": "参考 AI-Researcher 的 research_agent：围绕一个创新点组织研究假设、实验代码、执行结果和反向修正。",
+  "innovation_id": "innovation_07",
+  "hypothesis_zh": "如果后续补充行为指标，单被试功能连接偏置可以作为计算模型中的潜变量，解释反应速度、准确率或状态评分的个体内波动。",
+  "innovation_point_zh": "提出“连接表型驱动的行为潜变量模型”：把 FC 偏置、动态不稳定性和图指标作为潜变量候选，而不是直接把行为分数与全脑平均连接做相关。",
+  "expected_result_pattern_zh": "如果假设成立，连接偏置特征会解释超出 session 或运动协变量之外的行为变异。",
+  "alternative_explanation_zh": "行为关联可能由疲劳、任务难度、药物状态或未建模的生理噪声驱动。",
+  "bound_paradigm_ids": [
+    "behavioral_computational_modeling"
+  ],
+  "experimental_plan": [
+    "读取已处理 fMRI derivatives、QC 结果和可用 session。",
+    "执行 behavioral_computational_modeling 的类式 py 实验代码，提取可量化指标。",
+    "检查指标是否符合预期结果模式，并记录关键图形或矩阵证据。",
+    "如果执行失败或指标不支持假设，依据失败原因、替代解释和数据缺失情况反向修正创新点。"
+  ],
+  "risk_factors": [
+    "单被试结果不能直接推广到群体结论",
+    "功能连接结果依赖 ROI 提取、配准质量和时间序列长度"
+  ],
+  "generated_scripts": [
+    {
+      "experiment_id": "innovation_07",
+      "innovation_id": "innovation_07",
+      "experiment_dir": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_095011/experiments/innovation_07",
+      "innovation_point": "提出“连接表型驱动的行为潜变量模型”：把 FC 偏置、动态不稳定性和图指标作为潜变量候选，而不是直接把行为分数与全脑平均连接做相关。",
+      "hypothesis": "如果后续补充行为指标，单被试功能连接偏置可以作为计算模型中的潜变量，解释反应速度、准确率或状态评分的个体内波动。",
+      "paradigm": "behavioral_computational_modeling",
+      "path": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_095011/experiments/innovation_07/behavioral_computational_modeling.py",
+      "script": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_095011/experiments/innovation_07/behavioral_computational_modeling.py",
+      "execution_dir": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_095011/experiments/innovation_07",
+      "class_pipeline_plan_zh": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_095011/experiments/innovation_07/behavioral_computational_modeling_class_pipeline_plan_zh.json",
+      "linked_innovation_ids": [
+        "innovation_07"
+      ]
+    }
+  ]
+}

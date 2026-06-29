@@ -1,0 +1,39 @@
+{
+  "agent_reference": "AI-Researcher/research_agent",
+  "说明": "参考 AI-Researcher 的 research_agent：围绕一个创新点组织研究假设、实验代码、执行结果和反向修正。",
+  "innovation_id": "innovation_01",
+  "hypothesis_zh": "目标被试的静息态功能连接中，默认网络、感觉运动网络和小脑相关 ROI 之间的连接强度会呈现可量化的不均衡模式；这种不均衡可作为单被试功能网络表型，而不是只报告平均相关矩阵。",
+  "innovation_point_zh": "提出“跨网络-小脑连接偏置指数”：同时比较网络内连接、跨网络连接和小脑相关连接的 Fisher-Z 强度，用一个方向性指标刻画单被试功能连接偏离模式。",
+  "expected_result_pattern_zh": "如果假设成立，top edges 不会均匀分布，而会集中在特定跨网络或小脑相关边；偏置指数相对全矩阵平均绝对连接明显升高。",
+  "alternative_explanation_zh": "该模式也可能来自头动残留、配准误差、ROI 划分粗糙或单个 session 时间序列长度不足。",
+  "bound_paradigm_ids": [
+    "resting_state_functional_connectivity"
+  ],
+  "experimental_plan": [
+    "读取已处理 fMRI derivatives、QC 结果和可用 session。",
+    "执行 resting_state_functional_connectivity 的类式 py 实验代码，提取可量化指标。",
+    "检查指标是否符合预期结果模式，并记录关键图形或矩阵证据。",
+    "如果执行失败或指标不支持假设，依据失败原因、替代解释和数据缺失情况反向修正创新点。"
+  ],
+  "risk_factors": [
+    "单被试结果不能直接推广到群体结论",
+    "功能连接结果依赖 ROI 提取、配准质量和时间序列长度"
+  ],
+  "generated_scripts": [
+    {
+      "experiment_id": "innovation_01",
+      "innovation_id": "innovation_01",
+      "experiment_dir": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_01",
+      "innovation_point": "提出“跨网络-小脑连接偏置指数”：同时比较网络内连接、跨网络连接和小脑相关连接的 Fisher-Z 强度，用一个方向性指标刻画单被试功能连接偏离模式。",
+      "hypothesis": "目标被试的静息态功能连接中，默认网络、感觉运动网络和小脑相关 ROI 之间的连接强度会呈现可量化的不均衡模式；这种不均衡可作为单被试功能网络表型，而不是只报告平均相关矩阵。",
+      "paradigm": "resting_state_functional_connectivity",
+      "path": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_01/resting_state_functional_connectivity.py",
+      "script": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_01/resting_state_functional_connectivity.py",
+      "execution_dir": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_01",
+      "class_pipeline_plan_zh": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_174323/experiments/innovation_01/resting_state_functional_connectivity_class_pipeline_plan_zh.json",
+      "linked_innovation_ids": [
+        "innovation_01"
+      ]
+    }
+  ]
+}

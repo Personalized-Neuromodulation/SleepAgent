@@ -1,0 +1,116 @@
+{
+  "paradigm": "graph_theory_connectomics",
+  "name": "Graph-theory connectomics",
+  "status": "completed",
+  "input_root": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free",
+  "subject": "sub-ISM035",
+  "session": "",
+  "required_data": [
+    "clean_bold"
+  ],
+  "expected_outputs": [
+    "graph_metrics",
+    "connectome_summary"
+  ],
+  "shape": [
+    50,
+    52,
+    40,
+    1200
+  ],
+  "tr": 2.0,
+  "voxel_count": 3756,
+  "parcel_count": 12,
+  "frame_count": 1200,
+  "bold_file": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free/derivatives/sub-ISM035/ses-mri0/clean_data/volume/sub-ISM035_ses-mri0_task-sleep0_space-T1w_desc-preproc_bold_12rp_50pca_csf_wm.nii.gz",
+  "roi_source": "fmriprep_aparcaseg",
+  "atlas_file": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free/derivatives/sub-ISM035/fmriprep/output/sub-ISM035/anat/sub-ISM035_desc-aparcaseg_dseg.nii.gz",
+  "region_labels": [
+    "L-superiortemporal",
+    "L-supramarginal",
+    "L-inferiorparietal",
+    "L-rostralmiddlefrontal",
+    "L-superiorparietal",
+    "L-superiorfrontal",
+    "R-superiorfrontal",
+    "R-superiorparietal",
+    "R-rostralmiddlefrontal",
+    "R-inferiorparietal",
+    "R-superiortemporal",
+    "R-middletemporal"
+  ],
+  "used_file": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free/derivatives/sub-ISM035/ses-mri0/clean_data/volume/sub-ISM035_ses-mri0_task-sleep0_space-T1w_desc-preproc_bold_12rp_50pca_csf_wm.nii.gz",
+  "metric_summary": {
+    "node_count": 12,
+    "edge_density": 0.21212121212121213,
+    "mean_degree": 2.3333333333333335,
+    "max_degree": 5,
+    "triangle_count": 2.0,
+    "threshold_abs_r": 0.32849583
+  },
+  "outputs": {
+    "correlation_matrix": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07/correlation_matrix.csv",
+    "fisher_z_matrix": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07/fisher_z_matrix.csv",
+    "roi_coords": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07/roi_coords.csv",
+    "sleep_wake_connectomes": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07/sleep_wake_connectomes.json",
+    "sleep_wake_connectome_count": 0,
+    "sleep_wake_connectome_html": [],
+    "sleep_wake_topview_svg": [],
+    "connectome_topview_svg": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07/resting_state_connectome_topview.svg",
+    "connectome_3d_html": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07/resting_state_connectome_3d.html",
+    "connectome_edge_summary": {
+      "positive_edge_count": 53,
+      "negative_edge_count": 13,
+      "zero_edge_count": 0,
+      "mean_r": 0.18354290173309565,
+      "mean_positive_r": 0.25192241292510437,
+      "mean_negative_r": -0.09523510543432442,
+      "max_positive_r": 0.8439119940455003,
+      "min_negative_r": -0.21375324509706403
+    },
+    "connectome_coordinate_space": "MNI152NLin2009cAsym",
+    "connectome_coordinate_transform": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free/derivatives/sub-ISM035/fmriprep/output/sub-ISM035/anat/sub-ISM035_from-T1w_to-MNI152NLin2009cAsym_mode-image_xfm.h5",
+    "connectome_coordinate_qc": {
+      "coordinate_space": "MNI152NLin2009cAsym",
+      "transform_file": "/media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free/derivatives/sub-ISM035/fmriprep/output/sub-ISM035/anat/sub-ISM035_from-T1w_to-MNI152NLin2009cAsym_mode-image_xfm.h5",
+      "native_min": [
+        -54.903724670410156,
+        -51.06571960449219,
+        0.8949356079101562
+      ],
+      "native_max": [
+        64.09627532958984,
+        57.43428039550781,
+        68.09493255615234
+      ],
+      "plot_min": [
+        -52.2903,
+        -32.0001,
+        22.0
+      ],
+      "plot_max": [
+        60.0,
+        38.0,
+        68.0
+      ],
+      "coordinate_convention": "Nilearn/nibabel RAS+; ANTs transforms are applied after RAS-to-LPS conversion and converted back to RAS+.",
+      "snap_applied": true,
+      "snapped_node_count": 8,
+      "max_snap_distance_mm": 37.85452898161592,
+      "reason": "Coordinates farther than threshold from MNI152 grey-matter mask were moved to nearest in-mask voxel.",
+      "mean_snap_distance_mm": 13.57524124954901,
+      "snap_threshold_mm": 2.5,
+      "snap_mask_source": "MNI152 grey-matter mask"
+    },
+    "graph_metrics": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07/graph_metrics.json"
+  },
+  "pipeline_messages": [
+    "输入目录: /media/qlp/68ACC1E8ACC1B13C/fmri_agent/fmri_result/JingZongOLT/fmri_free",
+    "输出目录: /home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07",
+    "被试: sub-ISM035",
+    "已写出实验计划: /home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07/graph_theory_connectomics_class_pipeline_plan_zh.json",
+    "已执行范式 runner: graph_theory_connectomics，状态=completed",
+    "当前范式不需要 3D connectome 强制校验。"
+  ],
+  "experiment_plan": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_140927/experiments/innovation_07/graph_theory_connectomics_class_pipeline_plan_zh.json"
+}

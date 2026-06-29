@@ -1,0 +1,743 @@
+{
+  "index": 5,
+  "name": "paradigm_classification",
+  "elapsed_seconds": 0,
+  "candidate_count": 21,
+  "output": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_180947/paradigms/candidate_paradigms.json",
+  "top_candidates": [
+    {
+      "id": "resting_state_functional_connectivity",
+      "name": "Resting-state functional connectivity",
+      "keywords": [
+        "resting",
+        "functional connectivity",
+        "rs-fmri",
+        "network",
+        "connectivity",
+        "静息态",
+        "功能连接",
+        "网络"
+      ],
+      "required_data": [
+        "clean_bold"
+      ],
+      "outputs": [
+        "roi_correlation_matrix",
+        "fisher_z_matrix",
+        "network_summary"
+      ],
+      "template": "resting_state_fc.py",
+      "prompt_match_score": 3,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 23
+    },
+    {
+      "id": "dynamic_functional_connectivity",
+      "name": "Dynamic functional connectivity",
+      "keywords": [
+        "dynamic",
+        "sliding window",
+        "state",
+        "dfc",
+        "动态",
+        "状态"
+      ],
+      "required_data": [
+        "clean_bold"
+      ],
+      "outputs": [
+        "windowed_fc",
+        "state_features"
+      ],
+      "template": "dynamic_fc.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "alff_falff_frequency",
+      "name": "ALFF/fALFF frequency-domain analysis",
+      "keywords": [
+        "alff",
+        "falff",
+        "frequency",
+        "低频",
+        "频域",
+        "时频"
+      ],
+      "required_data": [
+        "clean_bold"
+      ],
+      "outputs": [
+        "alff_map",
+        "falff_map",
+        "summary_csv"
+      ],
+      "template": "alff_falff.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "surface_based_analysis",
+      "name": "Surface-based cortical analysis",
+      "keywords": [
+        "surface",
+        "fsaverage",
+        "fsnative",
+        "cortex",
+        "皮层",
+        "表面"
+      ],
+      "required_data": [
+        "surface_bold"
+      ],
+      "outputs": [
+        "surface_metrics",
+        "surface_figures"
+      ],
+      "template": "surface_analysis.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "sleep_stage_analysis",
+      "name": "Sleep-stage segmented analysis",
+      "keywords": [
+        "sleep",
+        "stage",
+        "nrem",
+        "rem",
+        "wake",
+        "睡眠",
+        "分期",
+        "清醒"
+      ],
+      "required_data": [
+        "clean_bold",
+        "sleep_label"
+      ],
+      "outputs": [
+        "stagewise_metrics",
+        "stage_comparison"
+      ],
+      "template": "sleep_stage_analysis.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    }
+  ],
+  "all_candidates": [
+    {
+      "id": "resting_state_functional_connectivity",
+      "name": "Resting-state functional connectivity",
+      "keywords": [
+        "resting",
+        "functional connectivity",
+        "rs-fmri",
+        "network",
+        "connectivity",
+        "静息态",
+        "功能连接",
+        "网络"
+      ],
+      "required_data": [
+        "clean_bold"
+      ],
+      "outputs": [
+        "roi_correlation_matrix",
+        "fisher_z_matrix",
+        "network_summary"
+      ],
+      "template": "resting_state_fc.py",
+      "prompt_match_score": 3,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 23
+    },
+    {
+      "id": "dynamic_functional_connectivity",
+      "name": "Dynamic functional connectivity",
+      "keywords": [
+        "dynamic",
+        "sliding window",
+        "state",
+        "dfc",
+        "动态",
+        "状态"
+      ],
+      "required_data": [
+        "clean_bold"
+      ],
+      "outputs": [
+        "windowed_fc",
+        "state_features"
+      ],
+      "template": "dynamic_fc.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "alff_falff_frequency",
+      "name": "ALFF/fALFF frequency-domain analysis",
+      "keywords": [
+        "alff",
+        "falff",
+        "frequency",
+        "低频",
+        "频域",
+        "时频"
+      ],
+      "required_data": [
+        "clean_bold"
+      ],
+      "outputs": [
+        "alff_map",
+        "falff_map",
+        "summary_csv"
+      ],
+      "template": "alff_falff.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "surface_based_analysis",
+      "name": "Surface-based cortical analysis",
+      "keywords": [
+        "surface",
+        "fsaverage",
+        "fsnative",
+        "cortex",
+        "皮层",
+        "表面"
+      ],
+      "required_data": [
+        "surface_bold"
+      ],
+      "outputs": [
+        "surface_metrics",
+        "surface_figures"
+      ],
+      "template": "surface_analysis.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "sleep_stage_analysis",
+      "name": "Sleep-stage segmented analysis",
+      "keywords": [
+        "sleep",
+        "stage",
+        "nrem",
+        "rem",
+        "wake",
+        "睡眠",
+        "分期",
+        "清醒"
+      ],
+      "required_data": [
+        "clean_bold",
+        "sleep_label"
+      ],
+      "outputs": [
+        "stagewise_metrics",
+        "stage_comparison"
+      ],
+      "template": "sleep_stage_analysis.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "graph_theory_connectomics",
+      "name": "Graph-theory connectomics",
+      "keywords": [
+        "graph",
+        "modularity",
+        "efficiency",
+        "degree",
+        "connectome",
+        "图论",
+        "连接组"
+      ],
+      "required_data": [
+        "clean_bold"
+      ],
+      "outputs": [
+        "graph_metrics",
+        "connectome_summary"
+      ],
+      "template": "graph_connectomics.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "behavioral_computational_modeling",
+      "name": "Behavioral computational modeling",
+      "keywords": [
+        "behavior",
+        "reaction time",
+        "accuracy",
+        "reinforcement learning",
+        "drift diffusion",
+        "行为",
+        "反应时",
+        "正确率",
+        "计算模型"
+      ],
+      "required_data": [
+        "behavior"
+      ],
+      "outputs": [
+        "behavior_summary",
+        "model_fit_table",
+        "candidate_predictors"
+      ],
+      "template": "behavioral_computational_modeling.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "structural_morphometry",
+      "name": "Structural MRI morphometry",
+      "keywords": [
+        "structural",
+        "t1",
+        "morphometry",
+        "cortical thickness",
+        "volume",
+        "结构像",
+        "皮层厚度",
+        "体积"
+      ],
+      "required_data": [
+        "structural_mri"
+      ],
+      "outputs": [
+        "structural_file_inventory",
+        "morphometry_plan"
+      ],
+      "template": "structural_morphometry.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 20,
+      "missing_data": [],
+      "executable": true,
+      "selection_score": 20
+    },
+    {
+      "id": "task_glm",
+      "name": "Task-fMRI GLM",
+      "keywords": [
+        "task",
+        "glm",
+        "event",
+        "block",
+        "activation",
+        "任务态",
+        "激活"
+      ],
+      "required_data": [
+        "clean_bold",
+        "events"
+      ],
+      "outputs": [
+        "contrast_maps",
+        "activation_table"
+      ],
+      "template": "task_glm.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "events"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "mvpa_decoding",
+      "name": "MVPA / decoding",
+      "keywords": [
+        "mvpa",
+        "decoding",
+        "classification",
+        "classifier",
+        "解码",
+        "分类"
+      ],
+      "required_data": [
+        "clean_bold",
+        "labels"
+      ],
+      "outputs": [
+        "cross_validated_accuracy",
+        "confusion_matrix"
+      ],
+      "template": "mvpa_decoding.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "labels"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "eeg_meg_time_frequency",
+      "name": "EEG/MEG time-frequency analysis",
+      "keywords": [
+        "eeg",
+        "meg",
+        "time-frequency",
+        "spectral",
+        "oscillation",
+        "alpha",
+        "theta",
+        "gamma",
+        "脑电",
+        "脑磁",
+        "时频",
+        "振荡"
+      ],
+      "required_data": [
+        "eeg"
+      ],
+      "outputs": [
+        "band_power_summary",
+        "spectral_features",
+        "time_frequency_table"
+      ],
+      "template": "eeg_meg_time_frequency.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "eeg"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "source_connectivity",
+      "name": "Source-space neural connectivity",
+      "keywords": [
+        "source",
+        "connectivity",
+        "coherence",
+        "plv",
+        "source localization",
+        "源定位",
+        "相干",
+        "同步"
+      ],
+      "required_data": [
+        "eeg"
+      ],
+      "outputs": [
+        "connectivity_matrix",
+        "source_summary"
+      ],
+      "template": "source_connectivity.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "eeg"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "spike_train_statistics",
+      "name": "Spike-train statistics",
+      "keywords": [
+        "spike",
+        "unit",
+        "firing rate",
+        "isi",
+        "neuron",
+        "电生理",
+        "放电",
+        "神经元"
+      ],
+      "required_data": [
+        "ephys_spikes"
+      ],
+      "outputs": [
+        "firing_rate_summary",
+        "isi_statistics",
+        "population_activity"
+      ],
+      "template": "spike_train_statistics.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "ephys_spikes"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "lfp_spectral_coupling",
+      "name": "LFP spectral coupling",
+      "keywords": [
+        "lfp",
+        "phase",
+        "coupling",
+        "pac",
+        "coherence",
+        "局部场电位",
+        "相位耦合"
+      ],
+      "required_data": [
+        "lfp"
+      ],
+      "outputs": [
+        "lfp_band_power",
+        "coupling_summary"
+      ],
+      "template": "lfp_spectral_coupling.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "lfp"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "eye_tracking_pupil_gaze",
+      "name": "Eye-tracking pupil and gaze analysis",
+      "keywords": [
+        "eye",
+        "gaze",
+        "pupil",
+        "saccade",
+        "fixation",
+        "眼动",
+        "瞳孔",
+        "注视",
+        "扫视"
+      ],
+      "required_data": [
+        "eye_tracking"
+      ],
+      "outputs": [
+        "pupil_summary",
+        "gaze_quality",
+        "fixation_features"
+      ],
+      "template": "eye_tracking_pupil_gaze.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "eye_tracking"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "diffusion_connectomics",
+      "name": "Diffusion MRI connectomics",
+      "keywords": [
+        "dwi",
+        "diffusion",
+        "tractography",
+        "fa",
+        "md",
+        "弥散",
+        "纤维束",
+        "白质"
+      ],
+      "required_data": [
+        "dwi"
+      ],
+      "outputs": [
+        "dwi_inventory",
+        "tractography_plan"
+      ],
+      "template": "diffusion_connectomics.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "dwi"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "pet_neurochemistry",
+      "name": "PET neurochemistry analysis",
+      "keywords": [
+        "pet",
+        "receptor",
+        "metabolism",
+        "dopamine",
+        "amyloid",
+        "tau",
+        "正电子",
+        "受体",
+        "代谢"
+      ],
+      "required_data": [
+        "pet"
+      ],
+      "outputs": [
+        "pet_inventory",
+        "regional_uptake_plan"
+      ],
+      "template": "pet_neurochemistry.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "pet"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "calcium_population_dynamics",
+      "name": "Calcium-imaging population dynamics",
+      "keywords": [
+        "calcium",
+        "suite2p",
+        "caiman",
+        "population",
+        "neural dynamics",
+        "钙成像",
+        "群体活动"
+      ],
+      "required_data": [
+        "calcium_imaging"
+      ],
+      "outputs": [
+        "calcium_trace_summary",
+        "population_dynamics"
+      ],
+      "template": "calcium_population_dynamics.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "calcium_imaging"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "neurogenomics_association",
+      "name": "Neurogenomics association analysis",
+      "keywords": [
+        "omics",
+        "transcriptomics",
+        "single-cell",
+        "gene",
+        "cell type",
+        "基因",
+        "转录组",
+        "单细胞"
+      ],
+      "required_data": [
+        "omics"
+      ],
+      "outputs": [
+        "omics_inventory",
+        "gene_feature_summary"
+      ],
+      "template": "neurogenomics_association.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "omics"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "multimodal_neuroscience_fusion",
+      "name": "Multimodal neuroscience fusion",
+      "keywords": [
+        "multimodal",
+        "fusion",
+        "cross-modal",
+        "brain-behavior",
+        "imaging genetics",
+        "多模态",
+        "融合",
+        "脑行为"
+      ],
+      "required_data": [
+        "labels"
+      ],
+      "outputs": [
+        "modality_matrix",
+        "fusion_hypothesis_table",
+        "innovation_score"
+      ],
+      "template": "multimodal_neuroscience_fusion.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 13,
+      "missing_data": [
+        "labels"
+      ],
+      "executable": false,
+      "selection_score": 13
+    },
+    {
+      "id": "erp_evoked_response",
+      "name": "ERP / evoked-response analysis",
+      "keywords": [
+        "erp",
+        "evoked",
+        "n170",
+        "p300",
+        "mmn",
+        "event-related",
+        "诱发",
+        "事件相关电位"
+      ],
+      "required_data": [
+        "eeg",
+        "events"
+      ],
+      "outputs": [
+        "evoked_component_summary",
+        "condition_difference_table"
+      ],
+      "template": "erp_evoked_response.py",
+      "prompt_match_score": 0,
+      "data_compatibility_score": 6,
+      "missing_data": [
+        "eeg",
+        "events"
+      ],
+      "executable": false,
+      "selection_score": 6
+    }
+  ]
+}

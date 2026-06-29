@@ -1,0 +1,81 @@
+{
+  "agent_reference": "AI-Researcher/paper_agent",
+  "说明": "参考 AI-Researcher 的 paper_agent：为该创新点保留直接相关文献、贡献、限制和可写作依据。",
+  "innovation_id": "innovation_07",
+  "innovation_point_zh": "构建一个基于隐马尔可夫模型（HMM）的动态网络拓扑重组分析框架，将实时行为指标（如N-back任务的准确率或反应时）作为外部时变协变量，量化网络从不同拓扑状态（如模块化系数$Q$和全局效率$E$）向高整合状态转移的**状态转移概率**和**临界重组速率**。创新点在于用行为指标驱动网络状态转换的动力学模型，而非仅报告静态状态。",
+  "hypothesis_zh": "当认知负荷（Cognitive Load, CL）从低到高增加时，大脑网络会经历一个从低整合、高模块化的初始状态（S1）向高整合、低模块化、且默认模式网络（DMN）与任务相关网络（TPN）连接增强的全局整合状态（S2）的显著状态转移。这种状态转移的速率（$\text{Rate}(S1 \to S2)$）与任务难度增加带来的认知负荷增加呈正相关，且该转移速率的瓶颈区域是DMN与TPN连接的增强。",
+  "supporting_papers": [
+    {
+      "title": "Dynamic functional connectivity in resting-state fMRI",
+      "year": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22484408/",
+      "venue": "",
+      "key_contribution_zh": "提出了使用滑动窗口和状态空间方法来分析和表征时间变化的连接模式，为进行更精细、更动态的功能连接分析提供了理论和方法基础。",
+      "limitations_zh": "虽然提供了方法论，但没有具体指出在哪些类型的认知任务或疾病状态下进行创新性实验的指导，需要结合其他论文进行任务设计。",
+      "finding": "Sliding-window and state-based methods can characterize time-varying connectivity patterns."
+    },
+    {
+      "title": "Complex brain networks: graph theoretical analysis of structural and functional systems",
+      "year": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19895843/",
+      "venue": "",
+      "key_contribution_zh": "将图论理论引入功能连接分析，允许研究人员从传统的连接强度转向分析网络拓扑结构，从而获得更丰富的网络组织信息。",
+      "limitations_zh": "主要侧重于理论和指标的介绍，缺乏具体的实验范式或如何将这些指标与行为学任务进行结合的指导。",
+      "finding": "Graph theory provides metrics such as modularity and efficiency for whole-brain network organization."
+    },
+    {
+      "title": "Mapping human brain networks with MEG and EEG",
+      "year": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24174914/",
+      "venue": "",
+      "key_contribution_zh": "强调了电生理信号（MEG/EEG）在功能连接分析中的应用，能够捕捉到快速的神经活动和连接，弥补了fMRI时间分辨率的不足，是功能连接分析的重大技术创新。",
+      "limitations_zh": "主要侧重于技术和信号处理，缺乏关于如何设计认知任务来最大化地利用这些快速连接信息的具体指导。",
+      "finding": "Electrophysiological source and connectivity analyses can characterize fast neural communication."
+    },
+    {
+      "title": "A default mode of brain function",
+      "year": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11209064/",
+      "venue": "",
+      "key_contribution_zh": "确立了DMN作为功能连接分析的经典和核心研究目标，为后续的异常连接或功能重组研究提供了基础框架。",
+      "limitations_zh": "内容过于基础和经典，本身不构成“创新性实验”的方法论指导，更多是研究的背景和目标设定。",
+      "finding": "The default mode network provides a foundational target for rest/task and clinical neuroscience paradigms."
+    },
+    {
+      "title": "Multimodal integration in neuroimaging and neuroscience",
+      "year": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23298758/",
+      "venue": "",
+      "key_contribution_zh": "提出了多模态数据整合的框架，指导研究人员不能仅停留在功能连接的统计发现，而必须结合分子、细胞或行为数据进行机制解释，这是提升实验创新性的关键。",
+      "limitations_zh": "这是一个宏观的理论框架，没有提供具体的实验流程或技术指导，需要研究者自行设计如何将不同模态数据结合起来。",
+      "finding": "Combining modalities can improve mechanistic interpretation when each modality contributes complementary constraints."
+    },
+    {
+      "title": "Functional connectivity in the motor cortex of resting human brain using echo-planar MRI",
+      "year": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8524021/",
+      "venue": "",
+      "key_contribution_zh": "为当前研究任务提供相关背景或方法依据。",
+      "limitations_zh": "未经过 LLM 深度筛选；需要人工阅读原文确认。",
+      "finding": "Resting-state fMRI can reveal coherent low-frequency BOLD correlations between functionally related brain regions."
+    },
+    {
+      "title": "Amplitude of low-frequency fluctuation and fractional ALFF in resting-state fMRI",
+      "year": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17434757/",
+      "venue": "",
+      "key_contribution_zh": "为当前研究任务提供相关背景或方法依据。",
+      "limitations_zh": "未经过 LLM 深度筛选；需要人工阅读原文确认。",
+      "finding": "ALFF/fALFF summarize regional low-frequency spontaneous activity and are common complements to connectivity analyses."
+    },
+    {
+      "title": "Statistical parametric maps in functional imaging",
+      "year": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8290352/",
+      "venue": "",
+      "key_contribution_zh": "为当前研究任务提供相关背景或方法依据。",
+      "limitations_zh": "未经过 LLM 深度筛选；需要人工阅读原文确认。",
+      "finding": "GLM-based contrast estimation is a standard task-fMRI paradigm for testing activation hypotheses."
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+[
+  {
+    "id": "resting_state_functional_connectivity",
+    "name": "Resting-state functional connectivity",
+    "executable": true,
+    "execution_status": "completed",
+    "execution_result": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_180947/experiments/innovation_01/resting_state_functional_connectivity_result.json",
+    "missing_data": [],
+    "template": "resting_state_fc.py",
+    "literature_score": 20,
+    "data_score": 20,
+    "code_score": 8,
+    "feasibility_score": 20,
+    "novelty_score": 14,
+    "score_total": 82
+  },
+  {
+    "id": "dynamic_functional_connectivity",
+    "name": "Dynamic functional connectivity",
+    "executable": true,
+    "execution_status": "completed",
+    "execution_result": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_180947/experiments/innovation_02/dynamic_functional_connectivity_result.json",
+    "missing_data": [],
+    "template": "dynamic_fc.py",
+    "literature_score": 20,
+    "data_score": 20,
+    "code_score": 8,
+    "feasibility_score": 20,
+    "novelty_score": 11,
+    "score_total": 79
+  },
+  {
+    "id": "graph_theory_connectomics",
+    "name": "Graph-theory connectomics",
+    "executable": true,
+    "execution_status": "completed",
+    "execution_result": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_180947/experiments/innovation_06/graph_theory_connectomics_result.json",
+    "missing_data": [],
+    "template": "graph_connectomics.py",
+    "literature_score": 20,
+    "data_score": 20,
+    "code_score": 8,
+    "feasibility_score": 20,
+    "novelty_score": 11,
+    "score_total": 79
+  },
+  {
+    "id": "surface_based_analysis",
+    "name": "Surface-based cortical analysis",
+    "executable": true,
+    "execution_status": "not_executable",
+    "execution_result": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_180947/experiments/innovation_04/surface_based_analysis_result.json",
+    "missing_data": [],
+    "template": "surface_analysis.py",
+    "literature_score": 20,
+    "data_score": 20,
+    "code_score": 8,
+    "feasibility_score": 16,
+    "novelty_score": 11,
+    "score_total": 75
+  },
+  {
+    "id": "alff_falff_frequency",
+    "name": "ALFF/fALFF frequency-domain analysis",
+    "executable": true,
+    "execution_status": "completed",
+    "execution_result": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_180947/experiments/innovation_03/alff_falff_frequency_result.json",
+    "missing_data": [],
+    "template": "alff_falff.py",
+    "literature_score": 15,
+    "data_score": 20,
+    "code_score": 8,
+    "feasibility_score": 20,
+    "novelty_score": 11,
+    "score_total": 74
+  },
+  {
+    "id": "sleep_stage_analysis",
+    "name": "Sleep-stage segmented analysis",
+    "executable": true,
+    "execution_status": "completed",
+    "execution_result": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_180947/experiments/innovation_05/sleep_stage_analysis_result.json",
+    "missing_data": [],
+    "template": "sleep_stage_analysis.py",
+    "literature_score": 12,
+    "data_score": 20,
+    "code_score": 8,
+    "feasibility_score": 20,
+    "novelty_score": 11,
+    "score_total": 71
+  },
+  {
+    "id": "behavioral_computational_modeling",
+    "name": "Behavioral computational modeling",
+    "executable": true,
+    "execution_status": "completed",
+    "execution_result": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_180947/experiments/innovation_07/behavioral_computational_modeling_result.json",
+    "missing_data": [],
+    "template": "behavioral_computational_modeling.py",
+    "literature_score": 9,
+    "data_score": 20,
+    "code_score": 8,
+    "feasibility_score": 20,
+    "novelty_score": 11,
+    "score_total": 68
+  },
+  {
+    "id": "structural_morphometry",
+    "name": "Structural MRI morphometry",
+    "executable": true,
+    "execution_status": "completed",
+    "execution_result": "/home/qlp/Agent_skills/neuroscience_research_agent/outputs/20260622_180947/experiments/innovation_08/structural_morphometry_result.json",
+    "missing_data": [],
+    "template": "structural_morphometry.py",
+    "literature_score": 6,
+    "data_score": 20,
+    "code_score": 8,
+    "feasibility_score": 20,
+    "novelty_score": 11,
+    "score_total": 65
+  },
+  {
+    "id": "eeg_meg_time_frequency",
+    "name": "EEG/MEG time-frequency analysis",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "eeg"
+    ],
+    "template": "eeg_meg_time_frequency.py",
+    "literature_score": 20,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 61
+  },
+  {
+    "id": "multimodal_neuroscience_fusion",
+    "name": "Multimodal neuroscience fusion",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "labels"
+    ],
+    "template": "multimodal_neuroscience_fusion.py",
+    "literature_score": 20,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 61
+  },
+  {
+    "id": "source_connectivity",
+    "name": "Source-space neural connectivity",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "eeg"
+    ],
+    "template": "source_connectivity.py",
+    "literature_score": 15,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 56
+  },
+  {
+    "id": "spike_train_statistics",
+    "name": "Spike-train statistics",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "ephys_spikes"
+    ],
+    "template": "spike_train_statistics.py",
+    "literature_score": 15,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 56
+  },
+  {
+    "id": "calcium_population_dynamics",
+    "name": "Calcium-imaging population dynamics",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "calcium_imaging"
+    ],
+    "template": "calcium_population_dynamics.py",
+    "literature_score": 15,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 56
+  },
+  {
+    "id": "task_glm",
+    "name": "Task-fMRI GLM",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "events"
+    ],
+    "template": "task_glm.py",
+    "literature_score": 12,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 53
+  },
+  {
+    "id": "eye_tracking_pupil_gaze",
+    "name": "Eye-tracking pupil and gaze analysis",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "eye_tracking"
+    ],
+    "template": "eye_tracking_pupil_gaze.py",
+    "literature_score": 12,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 53
+  },
+  {
+    "id": "diffusion_connectomics",
+    "name": "Diffusion MRI connectomics",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "dwi"
+    ],
+    "template": "diffusion_connectomics.py",
+    "literature_score": 12,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 53
+  },
+  {
+    "id": "mvpa_decoding",
+    "name": "MVPA / decoding",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "labels"
+    ],
+    "template": "mvpa_decoding.py",
+    "literature_score": 6,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 47
+  },
+  {
+    "id": "pet_neurochemistry",
+    "name": "PET neurochemistry analysis",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "pet"
+    ],
+    "template": "pet_neurochemistry.py",
+    "literature_score": 6,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 47
+  },
+  {
+    "id": "neurogenomics_association",
+    "name": "Neurogenomics association analysis",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "omics"
+    ],
+    "template": "neurogenomics_association.py",
+    "literature_score": 6,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 47
+  },
+  {
+    "id": "lfp_spectral_coupling",
+    "name": "LFP spectral coupling",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "lfp"
+    ],
+    "template": "lfp_spectral_coupling.py",
+    "literature_score": 5,
+    "data_score": 13,
+    "code_score": 5,
+    "feasibility_score": 15,
+    "novelty_score": 8,
+    "score_total": 46
+  },
+  {
+    "id": "erp_evoked_response",
+    "name": "ERP / evoked-response analysis",
+    "executable": false,
+    "execution_status": "not_run",
+    "execution_result": "",
+    "missing_data": [
+      "eeg",
+      "events"
+    ],
+    "template": "erp_evoked_response.py",
+    "literature_score": 12,
+    "data_score": 6,
+    "code_score": 5,
+    "feasibility_score": 10,
+    "novelty_score": 8,
+    "score_total": 41
+  }
+]
