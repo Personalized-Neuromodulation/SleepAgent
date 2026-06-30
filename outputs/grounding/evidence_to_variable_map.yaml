@@ -1,0 +1,74 @@
+mappings:
+- concept: thalamocortical coupling
+  candidate_variables:
+  - thalamus_DMN_FC
+  - thalamic_radiation_FA
+  approved_data_features:
+  - thalamus_DMN_FC
+  - thalamic_radiation_FA
+  modality: EEG-fMRI
+  mapping_confidence: 0.65
+  mapping_status: ambiguous
+- concept: structural morphology
+  candidate_variables: []
+  approved_data_features: []
+  modality: ''
+  mapping_confidence: 0.0
+  mapping_status: unavailable
+- concept: hyperarousal
+  candidate_variables:
+  - beta_power
+  - anxiety_score
+  approved_data_features:
+  - beta_power
+  - anxiety_score
+  modality: EEG
+  mapping_confidence: 0.65
+  mapping_status: ambiguous
+- concept: slow-wave generation
+  candidate_variables:
+  - slow_wave_density
+  - delta_power
+  approved_data_features:
+  - slow_wave_density
+  - delta_power
+  modality: EEG
+  mapping_confidence: 0.65
+  mapping_status: ambiguous
+- concept: spindle generation
+  candidate_variables:
+  - spindle_density
+  - sigma_power
+  approved_data_features:
+  - spindle_density
+  modality: EEG
+  mapping_confidence: 0.9
+  mapping_status: mapped
+- concept: insomnia severity
+  candidate_variables:
+  - ISI
+  - PSQI
+  approved_data_features:
+  - ISI
+  - PSQI
+  modality: Scale
+  mapping_confidence: 0.65
+  mapping_status: ambiguous
+- concept: white matter integrity
+  candidate_variables:
+  - FA
+  - thalamic_radiation_FA
+  - cingulum_FA
+  approved_data_features:
+  - FA
+  - thalamic_radiation_FA
+  - cingulum_FA
+  modality: DTI
+  mapping_confidence: 0.65
+  mapping_status: ambiguous
+- concept: thalamic morphology
+  candidate_variables: []
+  approved_data_features: []
+  modality: ''
+  mapping_confidence: 0.0
+  mapping_status: unavailable

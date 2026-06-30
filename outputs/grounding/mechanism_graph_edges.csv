@@ -1,0 +1,108 @@
+source,target,edge_type,weight,metadata
+paper:toy001,finding:evidence_f7ca755a2467,paper_reports_finding,1.0,{}
+finding:evidence_f7ca755a2467,mechanism:thalamocortical coupling,finding_supports_mechanism,0.98,{}
+mechanism:thalamocortical coupling,variable:thalamus_DMN_FC,mechanism_measured_by_variable,1.0,{}
+variable:thalamus_DMN_FC,modality:EEG-fMRI,variable_belongs_to_modality,1.0,{}
+paper:toy001,finding:evidence_f7ca755a2467,paper_reports_finding,1.0,{}
+finding:evidence_f7ca755a2467,mechanism:thalamocortical coupling,finding_supports_mechanism,0.98,{}
+mechanism:thalamocortical coupling,variable:thalamus_DMN_FC,mechanism_measured_by_variable,1.0,{}
+variable:thalamus_DMN_FC,modality:fMRI,variable_belongs_to_modality,1.0,{}
+paper:toy001,finding:evidence_f7ca755a2467,paper_reports_finding,1.0,{}
+finding:evidence_f7ca755a2467,mechanism:thalamocortical coupling,finding_supports_mechanism,0.98,{}
+mechanism:thalamocortical coupling,variable:thalamus_DMN_FC,mechanism_measured_by_variable,1.0,{}
+variable:thalamus_DMN_FC,modality:fMRI,variable_belongs_to_modality,1.0,{}
+paper:toy001,finding:evidence_77397cee0b26,paper_reports_finding,1.0,{}
+finding:evidence_77397cee0b26,mechanism:structural morphology,finding_supports_mechanism,0.98,{}
+mechanism:structural morphology,variable:MRI,mechanism_measured_by_variable,1.0,{}
+variable:MRI,modality:MRI,variable_belongs_to_modality,1.0,{}
+paper:toy001,finding:evidence_cffb5cadb0ba,paper_reports_finding,1.0,{}
+finding:evidence_cffb5cadb0ba,mechanism:hyperarousal,finding_supports_mechanism,0.98,{}
+mechanism:hyperarousal,variable:beta_power,mechanism_measured_by_variable,1.0,{}
+variable:beta_power,modality:EEG,variable_belongs_to_modality,1.0,{}
+paper:toy001,finding:evidence_cffb5cadb0ba,paper_reports_finding,1.0,{}
+finding:evidence_cffb5cadb0ba,mechanism:hyperarousal,finding_supports_mechanism,0.98,{}
+mechanism:hyperarousal,variable:beta_power,mechanism_measured_by_variable,1.0,{}
+variable:beta_power,modality:EEG,variable_belongs_to_modality,1.0,{}
+paper:toy002,finding:evidence_50822d9ef5b4,paper_reports_finding,1.0,{}
+finding:evidence_50822d9ef5b4,mechanism:slow-wave generation,finding_supports_mechanism,0.9,{}
+mechanism:slow-wave generation,variable:slow_wave_density,mechanism_measured_by_variable,1.0,{}
+variable:slow_wave_density,modality:EEG,variable_belongs_to_modality,1.0,{}
+paper:toy002,finding:evidence_4210a46f24f3,paper_reports_finding,1.0,{}
+finding:evidence_4210a46f24f3,mechanism:spindle generation,finding_supports_mechanism,0.9,{}
+mechanism:spindle generation,variable:spindle_density,mechanism_measured_by_variable,1.0,{}
+variable:spindle_density,modality:EEG,variable_belongs_to_modality,1.0,{}
+paper:toy002,finding:evidence_9f085eb58dfa,paper_reports_finding,1.0,{}
+finding:evidence_9f085eb58dfa,mechanism:insomnia severity,finding_supports_mechanism,0.9,{}
+mechanism:insomnia severity,variable:PSQI,mechanism_measured_by_variable,1.0,{}
+variable:PSQI,modality:Scale,variable_belongs_to_modality,1.0,{}
+paper:toy003,finding:evidence_362515daef8d,paper_reports_finding,1.0,{}
+finding:evidence_362515daef8d,mechanism:white matter integrity,finding_supports_mechanism,0.98,{}
+mechanism:white matter integrity,variable:FA,mechanism_measured_by_variable,1.0,{}
+variable:FA,modality:DTI,variable_belongs_to_modality,1.0,{}
+paper:toy003,finding:evidence_362515daef8d,paper_reports_finding,1.0,{}
+finding:evidence_362515daef8d,mechanism:white matter integrity,finding_supports_mechanism,0.98,{}
+mechanism:white matter integrity,variable:FA,mechanism_measured_by_variable,1.0,{}
+variable:FA,modality:DTI,variable_belongs_to_modality,1.0,{}
+paper:toy003,finding:evidence_49a70d2fbfb0,paper_reports_finding,1.0,{}
+finding:evidence_49a70d2fbfb0,mechanism:structural morphology,finding_supports_mechanism,0.98,{}
+mechanism:structural morphology,variable:MRI,mechanism_measured_by_variable,1.0,{}
+variable:MRI,modality:MRI,variable_belongs_to_modality,1.0,{}
+paper:toy003,finding:evidence_0b69cd09fdfd,paper_reports_finding,1.0,{}
+finding:evidence_0b69cd09fdfd,mechanism:thalamic morphology,finding_supports_mechanism,0.98,{}
+mechanism:thalamic morphology,variable:thalamus_volume,mechanism_measured_by_variable,1.0,{}
+variable:thalamus_volume,modality:MRI,variable_belongs_to_modality,1.0,{}
+paper:toy003,finding:evidence_57c2052a300b,paper_reports_finding,1.0,{}
+finding:evidence_57c2052a300b,mechanism:insomnia severity,finding_supports_mechanism,0.98,{}
+mechanism:insomnia severity,variable:ISI,mechanism_measured_by_variable,1.0,{}
+variable:ISI,modality:Scale,variable_belongs_to_modality,1.0,{}
+variable:thalamus_DMN_FC,data_feature:thalamus_DMN_FC,variable_mapped_to_data_feature,0.65,{}
+variable:thalamic_radiation_FA,data_feature:thalamic_radiation_FA,variable_mapped_to_data_feature,0.65,{}
+variable:beta_power,data_feature:beta_power,variable_mapped_to_data_feature,0.65,{}
+variable:anxiety_score,data_feature:anxiety_score,variable_mapped_to_data_feature,0.65,{}
+variable:slow_wave_density,data_feature:slow_wave_density,variable_mapped_to_data_feature,0.65,{}
+variable:delta_power,data_feature:delta_power,variable_mapped_to_data_feature,0.65,{}
+variable:spindle_density,data_feature:spindle_density,variable_mapped_to_data_feature,0.9,{}
+variable:ISI,data_feature:ISI,variable_mapped_to_data_feature,0.65,{}
+variable:PSQI,data_feature:PSQI,variable_mapped_to_data_feature,0.65,{}
+variable:FA,data_feature:FA,variable_mapped_to_data_feature,0.65,{}
+variable:thalamic_radiation_FA,data_feature:thalamic_radiation_FA,variable_mapped_to_data_feature,0.65,{}
+variable:cingulum_FA,data_feature:cingulum_FA,variable_mapped_to_data_feature,0.65,{}
+confound:age,variable:thalamus_DMN_FC,confound_affects_variable,0.2,{}
+confound:age,variable:MRI,confound_affects_variable,0.2,{}
+confound:age,variable:beta_power,confound_affects_variable,0.2,{}
+confound:age,variable:slow_wave_density,confound_affects_variable,0.2,{}
+confound:age,variable:spindle_density,confound_affects_variable,0.2,{}
+confound:age,variable:PSQI,confound_affects_variable,0.2,{}
+confound:age,variable:FA,confound_affects_variable,0.2,{}
+confound:age,variable:thalamus_volume,confound_affects_variable,0.2,{}
+confound:age,variable:ISI,confound_affects_variable,0.2,{}
+confound:age,variable:thalamic_radiation_FA,confound_affects_variable,0.2,{}
+confound:age,variable:anxiety_score,confound_affects_variable,0.2,{}
+confound:age,variable:delta_power,confound_affects_variable,0.2,{}
+confound:age,variable:cingulum_FA,confound_affects_variable,0.2,{}
+confound:sex,variable:thalamus_DMN_FC,confound_affects_variable,0.2,{}
+confound:sex,variable:MRI,confound_affects_variable,0.2,{}
+confound:sex,variable:beta_power,confound_affects_variable,0.2,{}
+confound:sex,variable:slow_wave_density,confound_affects_variable,0.2,{}
+confound:sex,variable:spindle_density,confound_affects_variable,0.2,{}
+confound:sex,variable:PSQI,confound_affects_variable,0.2,{}
+confound:sex,variable:FA,confound_affects_variable,0.2,{}
+confound:sex,variable:thalamus_volume,confound_affects_variable,0.2,{}
+confound:sex,variable:ISI,confound_affects_variable,0.2,{}
+confound:sex,variable:thalamic_radiation_FA,confound_affects_variable,0.2,{}
+confound:sex,variable:anxiety_score,confound_affects_variable,0.2,{}
+confound:sex,variable:delta_power,confound_affects_variable,0.2,{}
+confound:sex,variable:cingulum_FA,confound_affects_variable,0.2,{}
+confound:medication,variable:thalamus_DMN_FC,confound_affects_variable,0.2,{}
+confound:medication,variable:MRI,confound_affects_variable,0.2,{}
+confound:medication,variable:beta_power,confound_affects_variable,0.2,{}
+confound:medication,variable:slow_wave_density,confound_affects_variable,0.2,{}
+confound:medication,variable:spindle_density,confound_affects_variable,0.2,{}
+confound:medication,variable:PSQI,confound_affects_variable,0.2,{}
+confound:medication,variable:FA,confound_affects_variable,0.2,{}
+confound:medication,variable:thalamus_volume,confound_affects_variable,0.2,{}
+confound:medication,variable:ISI,confound_affects_variable,0.2,{}
+confound:medication,variable:thalamic_radiation_FA,confound_affects_variable,0.2,{}
+confound:medication,variable:anxiety_score,confound_affects_variable,0.2,{}
+confound:medication,variable:delta_power,confound_affects_variable,0.2,{}
+confound:medication,variable:cingulum_FA,confound_affects_variable,0.2,{}

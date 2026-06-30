@@ -1,0 +1,55 @@
+node_id,label,node_type,metadata
+paper:toy001,Insomnia and thalamocortical hyperarousal,Paper,{'paper_id': 'toy001'}
+finding:evidence_f7ca755a2467,Insomnia and thalamocortical hyperarousal: thalamocortical coupling related to thalamus_DMN_FC,Finding,{'evidence_id': 'evidence_f7ca755a2467'}
+mechanism:thalamocortical coupling,thalamocortical coupling,Mechanism,{}
+variable:thalamus_DMN_FC,thalamus_DMN_FC,Variable,{}
+modality:EEG-fMRI,EEG-fMRI,Modality,{}
+modality:fMRI,fMRI,Modality,{}
+finding:evidence_77397cee0b26,Insomnia and thalamocortical hyperarousal: structural morphology related to MRI,Finding,{'evidence_id': 'evidence_77397cee0b26'}
+mechanism:structural morphology,structural morphology,Mechanism,{}
+variable:MRI,MRI,Variable,{}
+modality:MRI,MRI,Modality,{}
+finding:evidence_cffb5cadb0ba,Insomnia and thalamocortical hyperarousal: hyperarousal related to beta_power,Finding,{'evidence_id': 'evidence_cffb5cadb0ba'}
+mechanism:hyperarousal,hyperarousal,Mechanism,{}
+variable:beta_power,beta_power,Variable,{}
+modality:EEG,EEG,Modality,{}
+paper:toy002,Slow wave and spindle abnormalities in sleep,Paper,{'paper_id': 'toy002'}
+finding:evidence_50822d9ef5b4,Slow wave and spindle abnormalities in sleep: slow-wave generation related to slow_wave_density,Finding,{'evidence_id': 'evidence_50822d9ef5b4'}
+mechanism:slow-wave generation,slow-wave generation,Mechanism,{}
+variable:slow_wave_density,slow_wave_density,Variable,{}
+finding:evidence_4210a46f24f3,Slow wave and spindle abnormalities in sleep: spindle generation related to spindle_density,Finding,{'evidence_id': 'evidence_4210a46f24f3'}
+mechanism:spindle generation,spindle generation,Mechanism,{}
+variable:spindle_density,spindle_density,Variable,{}
+finding:evidence_9f085eb58dfa,Slow wave and spindle abnormalities in sleep: insomnia severity related to PSQI,Finding,{'evidence_id': 'evidence_9f085eb58dfa'}
+mechanism:insomnia severity,insomnia severity,Mechanism,{}
+variable:PSQI,PSQI,Variable,{}
+modality:Scale,Scale,Modality,{}
+paper:toy003,White matter integrity and sleep quality,Paper,{'paper_id': 'toy003'}
+finding:evidence_362515daef8d,White matter integrity and sleep quality: white matter integrity related to FA,Finding,{'evidence_id': 'evidence_362515daef8d'}
+mechanism:white matter integrity,white matter integrity,Mechanism,{}
+variable:FA,FA,Variable,{}
+modality:DTI,DTI,Modality,{}
+finding:evidence_49a70d2fbfb0,White matter integrity and sleep quality: structural morphology related to MRI,Finding,{'evidence_id': 'evidence_49a70d2fbfb0'}
+finding:evidence_0b69cd09fdfd,White matter integrity and sleep quality: thalamic morphology related to thalamus_volume,Finding,{'evidence_id': 'evidence_0b69cd09fdfd'}
+mechanism:thalamic morphology,thalamic morphology,Mechanism,{}
+variable:thalamus_volume,thalamus_volume,Variable,{}
+finding:evidence_57c2052a300b,White matter integrity and sleep quality: insomnia severity related to ISI,Finding,{'evidence_id': 'evidence_57c2052a300b'}
+variable:ISI,ISI,Variable,{}
+data_feature:thalamus_DMN_FC,thalamus_DMN_FC,DataFeature,{}
+data_feature:thalamic_radiation_FA,thalamic_radiation_FA,DataFeature,{}
+variable:thalamic_radiation_FA,thalamic_radiation_FA,Variable,{}
+data_feature:beta_power,beta_power,DataFeature,{}
+data_feature:anxiety_score,anxiety_score,DataFeature,{}
+variable:anxiety_score,anxiety_score,Variable,{}
+data_feature:slow_wave_density,slow_wave_density,DataFeature,{}
+data_feature:delta_power,delta_power,DataFeature,{}
+variable:delta_power,delta_power,Variable,{}
+data_feature:spindle_density,spindle_density,DataFeature,{}
+data_feature:ISI,ISI,DataFeature,{}
+data_feature:PSQI,PSQI,DataFeature,{}
+data_feature:FA,FA,DataFeature,{}
+data_feature:cingulum_FA,cingulum_FA,DataFeature,{}
+variable:cingulum_FA,cingulum_FA,Variable,{}
+confound:age,age,Confound,{}
+confound:sex,sex,Confound,{}
+confound:medication,medication,Confound,{}

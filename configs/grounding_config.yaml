@@ -1,0 +1,37 @@
+project:
+  name: SleepAgent
+  phase: phase1_grounding
+
+paths:
+  seed_papers: data/literature/seed_papers.csv
+  fixture_seed_papers: data/fixtures/toy_seed_papers.csv
+  foundation_dir: data/foundation
+  fixtures_dir: data/fixtures
+  feature_registry: data/foundation/feature_registry.csv
+  approved_variables: data/foundation/approved_variables.yaml
+  data_dictionary: data/foundation/data_dictionary.yaml
+  qc_summary: data/foundation/qc_summary.csv
+  multimodal_master_table: data/foundation/multimodal_master_table.csv
+  fixture_feature_registry: data/fixtures/toy_feature_registry.csv
+  fixture_approved_variables: data/fixtures/toy_approved_variables.yaml
+  fixture_multimodal_master_table: data/fixtures/toy_multimodal_master_table.csv
+  mechanism_templates: configs/mechanism_templates.yaml
+  variable_mapping_rules: configs/variable_mapping_rules.yaml
+  output_grounding_dir: outputs/grounding
+  output_profiles_dir: outputs/profiles
+  report_path: reports/phase1_grounding_report.md
+
+retrieval:
+  enabled: false
+  query: sleep insomnia thalamocortical slow wave spindle
+  top_k: 20
+
+data_profile:
+  max_missing_rate: 0.4
+  min_n_available: 2
+  accepted_qc_status:
+    - pass
+    - usable
+
+evidence:
+  default_population: sleep cohort
