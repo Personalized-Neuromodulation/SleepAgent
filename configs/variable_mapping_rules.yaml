@@ -1,0 +1,32 @@
+mappings:
+  slow-wave generation:
+    modality: EEG
+    candidates:
+      - slow_wave_density
+      - delta_power
+  spindle generation:
+    modality: EEG
+    candidates:
+      - spindle_density
+      - sigma_power
+  thalamocortical coupling:
+    modality: EEG-fMRI
+    candidates:
+      - thalamus_DMN_FC
+      - thalamic_radiation_FA
+  insomnia severity:
+    modality: Scale
+    candidates:
+      - ISI
+      - PSQI
+  hyperarousal:
+    modality: EEG
+    candidates:
+      - beta_power
+      - anxiety_score
+  white matter integrity:
+    modality: DTI
+    candidates:
+      - FA
+      - thalamic_radiation_FA
+      - cingulum_FA

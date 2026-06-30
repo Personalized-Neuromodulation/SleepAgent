@@ -1,0 +1,10 @@
+feature_name,modality,source_file,source_column,role,approved,description
+slow_wave_density,EEG,toy_multimodal_master_table.csv,slow_wave_density,feature,true,NREM slow wave density
+delta_power,EEG,toy_multimodal_master_table.csv,delta_power,feature,true,Delta band power
+spindle_density,EEG,toy_multimodal_master_table.csv,spindle_density,feature,true,Sleep spindle density
+thalamus_DMN_FC,EEG-fMRI,toy_multimodal_master_table.csv,thalamus_DMN_FC,feature,true,Thalamus to default mode network functional connectivity
+thalamic_radiation_FA,DTI,toy_multimodal_master_table.csv,thalamic_radiation_FA,feature,true,Thalamic radiation fractional anisotropy
+ISI,Scale,toy_multimodal_master_table.csv,ISI,outcome,true,Insomnia Severity Index
+PSQI,Scale,toy_multimodal_master_table.csv,PSQI,outcome,true,Pittsburgh Sleep Quality Index
+age,Demographic,toy_multimodal_master_table.csv,age,covariate,true,Age
+sex,Demographic,toy_multimodal_master_table.csv,sex,covariate,true,Sex

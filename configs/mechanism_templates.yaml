@@ -1,0 +1,43 @@
+mechanisms:
+  - concept: slow-wave generation
+    mechanism: impaired slow-wave generation
+    variables:
+      - slow_wave_density
+      - delta_power
+    modality: EEG
+  - concept: spindle generation
+    mechanism: altered spindle generation
+    variables:
+      - spindle_density
+      - sigma_power
+    modality: EEG
+  - concept: thalamocortical coupling
+    mechanism: disrupted thalamocortical coupling
+    variables:
+      - thalamus_DMN_FC
+      - thalamic_radiation_FA
+    modality: EEG-fMRI
+  - concept: insomnia severity
+    mechanism: insomnia symptom burden
+    variables:
+      - ISI
+      - PSQI
+    modality: Scale
+  - concept: hyperarousal
+    mechanism: hyperarousal
+    variables:
+      - beta_power
+      - anxiety_score
+    modality: EEG
+  - concept: white matter integrity
+    mechanism: white matter integrity
+    variables:
+      - FA
+      - thalamic_radiation_FA
+      - cingulum_FA
+    modality: DTI
+
+confounds:
+  - age
+  - sex
+  - medication
