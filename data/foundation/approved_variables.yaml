@@ -1,0 +1,27 @@
+EEG:
+- beta_power
+- delta_power
+- slow_wave_density
+- spindle_density
+fMRI:
+- DMN_FC
+- salience_FC
+- thalamus_DMN_FC
+DTI:
+- FA
+- cingulum_FA
+- thalamic_radiation_FA
+MRI:
+- hippocampus_volume
+- thalamus_volume
+scales:
+- ISI
+- PSQI
+- anxiety_score
+- depression_score
+covariates:
+- in_scanner_sleep_time
+- mean_FD
+- medication
+group: []
+qc: []

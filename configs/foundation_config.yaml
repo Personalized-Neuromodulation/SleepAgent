@@ -1,0 +1,70 @@
+project:
+  name: SleepAgent
+  module: data_foundation
+
+paths:
+  raw_data_dir: data/raw
+  foundation_dir: data/foundation
+  fixture_dir: data/fixtures
+  reports_dir: reports
+
+inputs:
+  subject_table: data/fixtures/toy_subject_index.csv
+  eeg_features: data/fixtures/toy_eeg_features.csv
+  fmri_features: data/fixtures/toy_fmri_features.csv
+  dti_features: data/fixtures/toy_dti_features.csv
+  mri_features: data/fixtures/toy_mri_features.csv
+  scale_features: data/fixtures/toy_scale_features.csv
+  qc_summary: data/fixtures/toy_qc_summary.csv
+
+outputs:
+  subject_index: data/foundation/subject_index.csv
+  feature_registry: data/foundation/feature_registry.csv
+  approved_variables: data/foundation/approved_variables.yaml
+  data_dictionary: data/foundation/data_dictionary.yaml
+  qc_summary: data/foundation/qc_summary.csv
+  multimodal_master_table: data/foundation/multimodal_master_table.csv
+  report: reports/data_foundation_report.md
+
+subject_id:
+  column: subject_id
+  aliases:
+    - participant_id
+    - sub_id
+    - sub
+    - subject
+
+group:
+  column: group
+  allowed_values:
+    - HC
+    - INS
+
+modalities:
+  - EEG
+  - fMRI
+  - DTI
+  - MRI
+  - scales
+
+qc:
+  pass_values:
+    - pass
+    - PASS
+    - ok
+    - true
+    - "1"
+  caution_values:
+    - caution
+    - partial
+  fail_values:
+    - fail
+    - FAIL
+    - false
+    - "0"
+
+thresholds:
+  max_missing_rate_primary: 0.20
+  max_missing_rate_secondary: 0.35
+  min_n_total: 2
+  min_n_per_group: 1
