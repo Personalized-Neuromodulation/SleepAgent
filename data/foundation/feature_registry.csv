@@ -1,0 +1,20 @@
+feature_name,modality,source_file,source_column,role,dtype,unit,description,missing_rate,n_available,qc_dependency,approved,approval_reason
+slow_wave_density,EEG,/home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv,slow_wave_density,feature,numeric,,EEG variable slow_wave_density,0.2,4,['EEG'],True,passes missingness and sample-size thresholds
+spindle_density,EEG,/home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv,spindle_density,feature,numeric,,EEG variable spindle_density,0.0,5,['EEG'],True,passes missingness and sample-size thresholds
+delta_power,EEG,/home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv,delta_power,feature,numeric,,EEG variable delta_power,0.0,5,['EEG'],True,passes missingness and sample-size thresholds
+beta_power,EEG,/home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv,beta_power,feature,numeric,,EEG variable beta_power,0.2,4,['EEG'],True,passes missingness and sample-size thresholds
+in_scanner_sleep_time,EEG,/home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv,in_scanner_sleep_time,covariate,numeric,,EEG variable in_scanner_sleep_time,0.0,5,['EEG'],True,passes missingness and sample-size thresholds
+thalamus_DMN_FC,fMRI,/home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv,thalamus_DMN_FC,feature,numeric,,fMRI variable thalamus_DMN_FC,0.0,5,['fMRI'],True,passes missingness and sample-size thresholds
+DMN_FC,fMRI,/home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv,DMN_FC,feature,numeric,,fMRI variable DMN_FC,0.0,5,['fMRI'],True,passes missingness and sample-size thresholds
+salience_FC,fMRI,/home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv,salience_FC,feature,numeric,,fMRI variable salience_FC,0.2,4,['fMRI'],True,passes missingness and sample-size thresholds
+mean_FD,fMRI,/home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv,mean_FD,covariate,numeric,,fMRI variable mean_FD,0.0,5,['fMRI'],True,passes missingness and sample-size thresholds
+thalamic_radiation_FA,DTI,/home/jwj/code/SleepAgent/data/fixtures/toy_dti_features.csv,thalamic_radiation_FA,feature,numeric,,DTI variable thalamic_radiation_FA,0.0,5,['DTI'],True,passes missingness and sample-size thresholds
+cingulum_FA,DTI,/home/jwj/code/SleepAgent/data/fixtures/toy_dti_features.csv,cingulum_FA,feature,numeric,,DTI variable cingulum_FA,0.2,4,['DTI'],True,passes missingness and sample-size thresholds
+FA,DTI,/home/jwj/code/SleepAgent/data/fixtures/toy_dti_features.csv,FA,feature,numeric,,DTI variable FA,0.0,5,['DTI'],True,passes missingness and sample-size thresholds
+thalamus_volume,MRI,/home/jwj/code/SleepAgent/data/fixtures/toy_mri_features.csv,thalamus_volume,feature,numeric,,MRI variable thalamus_volume,0.0,5,['MRI'],True,passes missingness and sample-size thresholds
+hippocampus_volume,MRI,/home/jwj/code/SleepAgent/data/fixtures/toy_mri_features.csv,hippocampus_volume,feature,numeric,,MRI variable hippocampus_volume,0.0,5,['MRI'],True,passes missingness and sample-size thresholds
+ISI,scales,/home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv,ISI,outcome,numeric,,scales variable ISI,0.0,5,['scales'],True,passes missingness and sample-size thresholds
+PSQI,scales,/home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv,PSQI,outcome,numeric,,scales variable PSQI,0.0,5,['scales'],True,passes missingness and sample-size thresholds
+anxiety_score,scales,/home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv,anxiety_score,scale,numeric,,scales variable anxiety_score,0.0,5,['scales'],True,passes missingness and sample-size thresholds
+depression_score,scales,/home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv,depression_score,scale,numeric,,scales variable depression_score,0.0,5,['scales'],True,passes missingness and sample-size thresholds
+medication,scales,/home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv,medication,covariate,categorical,,scales variable medication,0.0,5,['scales'],True,passes missingness and sample-size thresholds
