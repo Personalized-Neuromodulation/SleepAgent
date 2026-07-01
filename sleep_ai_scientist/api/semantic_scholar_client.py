@@ -23,5 +23,5 @@ class SemanticScholarClient:
         records = []
         for item in payload.get("data", []) if payload else []:
             external = item.get("externalIds") or {}
-            records.append(make_api_record(self.provider, item.get("paperId"), item.get("title", ""), abstract=item.get("abstract"), year=item.get("year"), doi=external.get("DOI"), pmid=external.get("PubMed"), pmcid=external.get("PubMedCentral"), url=item.get("url"), source="api:semantic_scholar", journal=item.get("venue"), authors=[a.get("name") for a in item.get("authors", []) if a.get("name")], keywords=[], citation_count=item.get("citationCount"), is_open_access=item.get("isOpenAccess"), raw=item))
+            records.append(make_api_record(self.provider, item.get("paperId"), item.get("title", ""), abstract=item.get("abstract"), year=item.get("year"), doi=external.get("DOI"), pmid=external.get("PubMed"), pmcid=external.get("PubMedCentral"), url=item.get("url"), source="api:semantic_scholar", journal=item.get("venue"), authors=[a.get("name") for a in item.get("authors", []) if a.get("name")], keywords=[], citation_count=item.get("citationCount"), citation_source="semantic_scholar", is_open_access=item.get("isOpenAccess"), raw=item))
         return APISearchResult(provider=self.provider, query=query, count=len(records), records=records, warnings=[])

@@ -1,12 +1,12 @@
 # Benchmark + Expert Review Report
 
 - Project: SleepAgent
-- Run time: 2026-06-30T23:02:25
+- Run time: 2026-07-01T04:57:04
 
 ## Hypothesis Benchmark
 - Total hypotheses: 12
 - Valid hypothesis rate: 1.0
-- Mean quality score: 0.8137
+- Mean quality score: 0.836
 
 ## Grounding Benchmark
 - Data grounding rate: 1.0
@@ -15,7 +15,7 @@
 - Executable plan rate: 1.0
 
 ## Critic Benchmark
-- Critic reviews: 5
+- Critic reviews: 6
 - Critic-expert agreement: None
 
 ## Co-Scientist Benchmark

@@ -36,8 +36,27 @@ mechanisms:
       - thalamic_radiation_FA
       - cingulum_FA
     modality: DTI
+  - concept: default mode network dysregulation
+    mechanism: default mode network dysregulation
+    variables:
+      - DMN_FC
+      - thalamus_DMN_FC
+    modality: fMRI
+  - concept: salience network dysregulation
+    mechanism: salience network dysregulation
+    variables:
+      - salience_FC
+    modality: fMRI
+  - concept: limbic structural vulnerability
+    mechanism: limbic structural vulnerability
+    variables:
+      - hippocampus_volume
+      - thalamus_volume
+    modality: MRI
 
 confounds:
+  - mean_FD
+  - in_scanner_sleep_time
   - age
   - sex
   - medication

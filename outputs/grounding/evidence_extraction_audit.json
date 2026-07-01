@@ -1,0 +1,84 @@
+{
+  "total_papers": 3,
+  "papers_with_evidence": 3,
+  "papers_without_evidence": 0,
+  "evidence_count": 15,
+  "evidence_per_paper_mean": 5.0,
+  "evidence_per_paper_median": 5.0,
+  "mechanism_counts": {
+    "hyperarousal": 1,
+    "thalamocortical coupling": 2,
+    "default mode network dysregulation": 1,
+    "white matter integrity": 2,
+    "insomnia severity": 2,
+    "confound / methodological limitation": 2,
+    "slow-wave generation": 1,
+    "spindle generation": 1,
+    "sleep quality": 1,
+    "thalamic_reticular_spindle": 1,
+    "structural morphology": 1
+  },
+  "modality_counts": {
+    "EEG": 3,
+    "EEG-fMRI": 2,
+    "fMRI": 1,
+    "DTI": 2,
+    "Scale": 3,
+    "Method": 2,
+    "electrophysiology": 1,
+    "MRI": 1
+  },
+  "direction_counts": {
+    "support": 13,
+    "unclear": 2
+  },
+  "evidence_type_counts": {
+    "empirical": 5,
+    "unknown": 6,
+    "review": 4
+  },
+  "species_counts": {
+    "human": 9,
+    "unknown": 2,
+    "rat": 4
+  },
+  "evidence_context_counts": {
+    "human_neuroimaging": 11,
+    "animal_mechanistic": 4
+  },
+  "downstream_role_counts": {
+    "direct_human_evidence": 8,
+    "critique_only": 2,
+    "translational_mechanistic_support": 4,
+    "background_mechanism": 1
+  },
+  "human_evidence_count": 9,
+  "animal_evidence_count": 4,
+  "translational_evidence_count": 4,
+  "citation_availability_rate": 0.0,
+  "journal_availability_rate": 0.0,
+  "median_citation_count": 0.0,
+  "mean_extraction_confidence_score": 0.947,
+  "mean_evidence_quality_score": 0.577,
+  "mean_mechanistic_strength_score": 0.47,
+  "mean_clinical_applicability_score": 0.807,
+  "mean_evidence_feasibility_score": 0.775,
+  "mean_final_evidence_score": 0.663,
+  "missing_population_rate": 0.0,
+  "missing_modality_rate": 0.0,
+  "missing_variable_rate": 0.0,
+  "unclear_direction_rate": 0.133,
+  "possible_positive_evidence_bias": true,
+  "mechanisms_with_zero_evidence": [
+    "salience network dysregulation",
+    "limbic structural vulnerability"
+  ],
+  "top_unmatched_relevant_papers": [],
+  "llm_enabled": false,
+  "llm_calls_attempted": 0,
+  "llm_calls_succeeded": 0,
+  "llm_calls_failed": 0,
+  "llm_revised_evidence_count": 0,
+  "llm_split_claim_count": 0,
+  "llm_excluded_claim_count": 0
+}

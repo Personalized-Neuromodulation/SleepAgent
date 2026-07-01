@@ -1,4 +1,5 @@
 experiment_id,hypothesis_id,has_locked_plan,plan_file_exists,result_file_exists,robustness_file_exists,critic_review_exists,n_used,model_formula,execution_success,execution_score,warnings
+EXP_H001,H001,True,True,True,True,True,4,slow_wave_density ~ group + medication,True,1.0,n_used_below_gate
 EXP_H002,H002,True,True,True,True,True,4,beta_power ~ group + medication,True,1.0,n_used_below_gate
 EXP_H003,H003,True,True,True,True,True,4,ISI ~ slow_wave_density + medication,True,1.0,n_used_below_gate
 EXP_H004,H004,True,True,True,True,True,5,thalamus_DMN_FC ~ spindle_density + mean_FD + in_scanner_sleep_time + medication,True,1.0,n_used_below_gate

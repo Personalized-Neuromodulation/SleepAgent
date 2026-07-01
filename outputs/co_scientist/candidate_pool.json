@@ -38,9 +38,9 @@
     "status": "screened",
     "source": "rule_based_scientific_loop",
     "parent_id": null,
-    "pre_analysis_score": 0.879,
+    "pre_analysis_score": 0.8115,
     "score_components": {
-      "evidence_strength": 1.0,
+      "evidence_strength": 0.625,
       "data_testability": 1.0,
       "statistical_feasibility": 0.95,
       "mechanistic_plausibility": 0.65,
@@ -50,13 +50,126 @@
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_f7ca755a2467"
+      "E_61c4635cc96b",
+      "E_e8a5251dcba7"
     ],
     "used_data_features": [
       "thalamus_DMN_FC",
       "ISI",
       "mean_FD",
       "in_scanner_sleep_time",
+      "medication"
+    ]
+  },
+  {
+    "hypothesis_id": "H003",
+    "title": "Slow-wave density association with insomnia severity",
+    "mechanism": "slow-wave generation",
+    "primary_prediction": "Lower slow_wave_density is associated with higher ISI.",
+    "secondary_predictions": [],
+    "variables": {
+      "independent": [
+        "slow_wave_density"
+      ],
+      "dependent": [
+        "ISI"
+      ],
+      "covariates": [
+        "medication"
+      ]
+    },
+    "required_modalities": [
+      "EEG",
+      "scales"
+    ],
+    "analysis_models": [
+      "symptom_association"
+    ],
+    "expected_direction": {
+      "slow_wave_density": "negative"
+    },
+    "falsification_criteria": [
+      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
+      "Corrected p-value and effect-size direction do not support the primary prediction."
+    ],
+    "risk_flags": [],
+    "evidence_level": "exploratory",
+    "status": "screened",
+    "source": "rule_based_scientific_loop",
+    "parent_id": null,
+    "pre_analysis_score": 0.807,
+    "score_components": {
+      "evidence_strength": 0.8,
+      "data_testability": 0.9333,
+      "statistical_feasibility": 0.8,
+      "mechanistic_plausibility": 0.65,
+      "novelty_proxy": 0.75,
+      "clinical_value": 0.9,
+      "falsifiability": 1.0,
+      "confound_controllability": 0.6
+    },
+    "supporting_evidence_ids": [
+      "E_aa361c0953e4"
+    ],
+    "used_data_features": [
+      "slow_wave_density",
+      "ISI",
+      "medication"
+    ]
+  },
+  {
+    "hypothesis_id": "H002",
+    "title": "INS vs HC beta power difference",
+    "mechanism": "hyperarousal",
+    "primary_prediction": "beta_power differs between insomnia and healthy control groups.",
+    "secondary_predictions": [],
+    "variables": {
+      "independent": [
+        "group"
+      ],
+      "dependent": [
+        "beta_power"
+      ],
+      "covariates": [
+        "medication"
+      ]
+    },
+    "required_modalities": [
+      "EEG",
+      "scales"
+    ],
+    "analysis_models": [
+      "group_difference"
+    ],
+    "expected_direction": {
+      "group": "INS higher than HC"
+    },
+    "falsification_criteria": [
+      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
+      "Corrected p-value and effect-size direction do not support the primary prediction."
+    ],
+    "risk_flags": [],
+    "evidence_level": "exploratory",
+    "status": "screened",
+    "source": "rule_based_scientific_loop",
+    "parent_id": null,
+    "pre_analysis_score": 0.7868,
+    "score_components": {
+      "evidence_strength": 0.86,
+      "data_testability": 0.9,
+      "statistical_feasibility": 0.8,
+      "mechanistic_plausibility": 0.65,
+      "novelty_proxy": 0.75,
+      "clinical_value": 0.65,
+      "falsifiability": 1.0,
+      "confound_controllability": 0.6
+    },
+    "supporting_evidence_ids": [
+      "E_dae5816a9794"
+    ],
+    "used_data_features": [
+      "group",
+      "beta_power",
       "medication"
     ]
   },
@@ -99,9 +212,9 @@
     "status": "screened",
     "source": "rule_based_scientific_loop",
     "parent_id": null,
-    "pre_analysis_score": 0.854,
+    "pre_analysis_score": 0.7865,
     "score_components": {
-      "evidence_strength": 1.0,
+      "evidence_strength": 0.625,
       "data_testability": 1.0,
       "statistical_feasibility": 0.95,
       "mechanistic_plausibility": 0.65,
@@ -111,7 +224,8 @@
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_f7ca755a2467"
+      "E_61c4635cc96b",
+      "E_e8a5251dcba7"
     ],
     "used_data_features": [
       "spindle_density",
@@ -122,17 +236,17 @@
     ]
   },
   {
-    "hypothesis_id": "H003",
-    "title": "Slow-wave density association with insomnia severity",
+    "hypothesis_id": "H001",
+    "title": "INS vs HC slow-wave density difference",
     "mechanism": "slow-wave generation",
-    "primary_prediction": "Lower slow_wave_density is associated with higher ISI.",
+    "primary_prediction": "slow_wave_density differs between insomnia and healthy control groups.",
     "secondary_predictions": [],
     "variables": {
       "independent": [
-        "slow_wave_density"
+        "group"
       ],
       "dependent": [
-        "ISI"
+        "slow_wave_density"
       ],
       "covariates": [
         "medication"
@@ -143,10 +257,10 @@
       "scales"
     ],
     "analysis_models": [
-      "symptom_association"
+      "group_difference"
     ],
     "expected_direction": {
-      "slow_wave_density": "negative"
+      "group": "INS lower than HC"
     },
     "falsification_criteria": [
       "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
@@ -157,23 +271,23 @@
     "status": "screened",
     "source": "rule_based_scientific_loop",
     "parent_id": null,
-    "pre_analysis_score": 0.8304,
+    "pre_analysis_score": 0.776,
     "score_components": {
-      "evidence_strength": 0.93,
-      "data_testability": 0.9333,
+      "evidence_strength": 0.8,
+      "data_testability": 0.9,
       "statistical_feasibility": 0.8,
       "mechanistic_plausibility": 0.65,
       "novelty_proxy": 0.75,
-      "clinical_value": 0.9,
+      "clinical_value": 0.65,
       "falsifiability": 1.0,
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_50822d9ef5b4"
+      "E_aa361c0953e4"
     ],
     "used_data_features": [
+      "group",
       "slow_wave_density",
-      "ISI",
       "medication"
     ]
   },
@@ -214,9 +328,9 @@
     "status": "screened",
     "source": "rule_based_scientific_loop",
     "parent_id": null,
-    "pre_analysis_score": 0.818,
+    "pre_analysis_score": 0.7505,
     "score_components": {
-      "evidence_strength": 1.0,
+      "evidence_strength": 0.625,
       "data_testability": 0.9333,
       "statistical_feasibility": 0.8,
       "mechanistic_plausibility": 0.65,
@@ -226,122 +340,11 @@
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_362515daef8d"
+      "E_63cf413b437d",
+      "E_b75f4db10f2f"
     ],
     "used_data_features": [
       "thalamic_radiation_FA",
-      "slow_wave_density",
-      "medication"
-    ]
-  },
-  {
-    "hypothesis_id": "H002",
-    "title": "INS vs HC beta power difference",
-    "mechanism": "hyperarousal",
-    "primary_prediction": "beta_power differs between insomnia and healthy control groups.",
-    "secondary_predictions": [],
-    "variables": {
-      "independent": [
-        "group"
-      ],
-      "dependent": [
-        "beta_power"
-      ],
-      "covariates": [
-        "medication"
-      ]
-    },
-    "required_modalities": [
-      "EEG",
-      "scales"
-    ],
-    "analysis_models": [
-      "group_difference"
-    ],
-    "expected_direction": {
-      "group": "INS higher than HC"
-    },
-    "falsification_criteria": [
-      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
-      "Corrected p-value and effect-size direction do not support the primary prediction."
-    ],
-    "risk_flags": [],
-    "evidence_level": "exploratory",
-    "status": "screened",
-    "source": "rule_based_scientific_loop",
-    "parent_id": null,
-    "pre_analysis_score": 0.812,
-    "score_components": {
-      "evidence_strength": 1.0,
-      "data_testability": 0.9,
-      "statistical_feasibility": 0.8,
-      "mechanistic_plausibility": 0.65,
-      "novelty_proxy": 0.75,
-      "clinical_value": 0.65,
-      "falsifiability": 1.0,
-      "confound_controllability": 0.6
-    },
-    "supporting_evidence_ids": [
-      "evidence_cffb5cadb0ba"
-    ],
-    "used_data_features": [
-      "group",
-      "beta_power",
-      "medication"
-    ]
-  },
-  {
-    "hypothesis_id": "H001",
-    "title": "INS vs HC slow-wave density difference",
-    "mechanism": "slow-wave generation",
-    "primary_prediction": "slow_wave_density differs between insomnia and healthy control groups.",
-    "secondary_predictions": [],
-    "variables": {
-      "independent": [
-        "group"
-      ],
-      "dependent": [
-        "slow_wave_density"
-      ],
-      "covariates": [
-        "medication"
-      ]
-    },
-    "required_modalities": [
-      "EEG",
-      "scales"
-    ],
-    "analysis_models": [
-      "group_difference"
-    ],
-    "expected_direction": {
-      "group": "INS lower than HC"
-    },
-    "falsification_criteria": [
-      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
-      "Corrected p-value and effect-size direction do not support the primary prediction."
-    ],
-    "risk_flags": [],
-    "evidence_level": "exploratory",
-    "status": "screened",
-    "source": "rule_based_scientific_loop",
-    "parent_id": null,
-    "pre_analysis_score": 0.7994,
-    "score_components": {
-      "evidence_strength": 0.93,
-      "data_testability": 0.9,
-      "statistical_feasibility": 0.8,
-      "mechanistic_plausibility": 0.65,
-      "novelty_proxy": 0.75,
-      "clinical_value": 0.65,
-      "falsifiability": 1.0,
-      "confound_controllability": 0.6
-    },
-    "supporting_evidence_ids": [
-      "evidence_50822d9ef5b4"
-    ],
-    "used_data_features": [
-      "group",
       "slow_wave_density",
       "medication"
     ]

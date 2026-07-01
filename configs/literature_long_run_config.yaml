@@ -1,0 +1,56 @@
+project:
+  name: SleepAgent
+  module: sleep_literature_long_run
+  run_name: sleep_library_long_run_v1
+  target_library_version: sleep_literature_library_v1_iterative
+
+database_config: configs/database_config.yaml
+
+runtime:
+  mode: supervised_long_run
+  max_runtime_hours: 10
+  checkpoint_interval_minutes: 60
+  status_interval_minutes: 60
+  max_iterations: 20
+  stop_when_coverage_saturated: true
+  graceful_shutdown: true
+
+inputs:
+  base_config: configs/literature_library_config.yaml
+  initial_query_config: configs/sleep_literature_queries.yaml
+  seed_papers: data/literature/seed_papers.csv
+
+api:
+  cache_enabled: true
+  max_results_per_query: 50
+  max_queries_per_iteration: 30
+  max_new_queries_per_iteration: 20
+  max_retries_per_query: 3
+  fail_open: true
+
+coverage_targets:
+  min_records_total: 10000
+  min_general_sleep_records: 1500
+  min_animal_records: 1500
+  min_circuit_records: 1200
+  min_molecular_records: 1000
+  min_human_eeg_psg_records: 1200
+  min_human_neuroimaging_records: 1000
+  min_insomnia_records: 1200
+  min_methods_confounds_records: 500
+
+saturation:
+  min_new_record_rate: 0.10
+  min_new_mechanism_rate: 0.05
+  min_new_query_yield: 3
+  max_duplicate_rate: 0.75
+  patience_iterations: 3
+
+error_recovery:
+  retry_recoverable_errors: true
+  max_stage_retries: 3
+  skip_failed_query_after_retries: true
+  continue_on_provider_failure: true
+  write_error_bundle: true
+  stop_on_schema_error: true
+  stop_on_registry_corruption: true

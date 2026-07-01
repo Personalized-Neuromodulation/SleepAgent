@@ -72,28 +72,26 @@
     "status": "generated"
   },
   {
-    "hypothesis_id": "H005_refine1",
+    "hypothesis_id": "H002_refine1",
     "parent_ids": [
-      "H005"
+      "H002"
     ],
     "evolution_strategy": "refine",
-    "title": "Refined: Thalamic radiation FA association with slow-wave density",
-    "mechanism": "white matter integrity",
-    "primary_prediction": "Higher thalamic_radiation_FA is associated with higher slow_wave_density. This evolved version explicitly treats confounds as exploratory covariates.",
+    "title": "Refined: INS vs HC beta power difference",
+    "mechanism": "hyperarousal",
+    "primary_prediction": "beta_power differs between insomnia and healthy control groups. This evolved version explicitly treats confounds as exploratory covariates.",
     "variables": {
       "independent": [
-        "thalamic_radiation_FA"
+        "group"
       ],
       "dependent": [
-        "slow_wave_density"
+        "beta_power"
       ],
       "covariates": [
-        "medication",
-        "in_scanner_sleep_time"
+        "medication"
       ]
     },
     "required_modalities": [
-      "DTI",
       "EEG",
       "scales"
     ],

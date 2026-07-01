@@ -1,0 +1,35 @@
+tools:
+  MNE:
+    category: EEG/MEG analysis
+    role: [preprocessing, spectral_analysis, event_detection]
+  YASA:
+    category: sleep EEG analysis
+    role: [sleep_staging, spindle_detection, slow_wave_detection]
+  fMRIPrep:
+    category: fMRI preprocessing
+    role: [preprocessing, confound_regression]
+  QSIPrep:
+    category: diffusion MRI preprocessing
+    role: [DTI preprocessing]
+  FreeSurfer:
+    category: structural MRI
+    role: [cortical_thickness, subcortical_volume]
+  BIDS:
+    category: data standard
+    role: [data_organization, reproducibility]
+  PyBIDS:
+    category: BIDS tooling
+    role: [metadata_query, dataset_indexing]
+methods:
+  slow_wave_detection:
+    modality: EEG
+    role: [feature_extraction]
+  spindle_detection:
+    modality: EEG
+    role: [feature_extraction]
+  head_motion_qc:
+    modality: fMRI
+    role: [confound_control]
+  multiple_comparison_correction:
+    modality: neuroimaging
+    role: [statistical_validity]

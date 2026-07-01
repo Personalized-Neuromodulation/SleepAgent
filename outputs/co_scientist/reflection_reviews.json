@@ -21,9 +21,64 @@
     ],
     "falsifiability_score": 1.0,
     "data_grounding_score": 1.0,
-    "evidence_grounding_score": 0.55,
+    "evidence_grounding_score": 0.7,
     "novelty_score": 0.81,
-    "overall_reflection_score": 0.811,
+    "overall_reflection_score": 0.8485,
+    "recommendation": "revise"
+  },
+  {
+    "hypothesis_id": "H003",
+    "review_id": "REF_H003",
+    "strengths": [
+      "Uses analysis-ready variables."
+    ],
+    "weaknesses": [
+      "Confound control requires review."
+    ],
+    "missing_evidence": [],
+    "unsupported_variables": [],
+    "confound_risks": [
+      "age",
+      "in_scanner_sleep_time",
+      "sex"
+    ],
+    "causal_language_risk": false,
+    "alternative_explanations": [
+      "Observed associations may reflect medication, motion, age, sex, or sleep-state differences.",
+      "Cross-sectional data cannot establish directionality."
+    ],
+    "falsifiability_score": 1.0,
+    "data_grounding_score": 1.0,
+    "evidence_grounding_score": 0.55,
+    "novelty_score": 0.73,
+    "overall_reflection_score": 0.775,
+    "recommendation": "revise"
+  },
+  {
+    "hypothesis_id": "H002",
+    "review_id": "REF_H002",
+    "strengths": [
+      "Uses analysis-ready variables."
+    ],
+    "weaknesses": [
+      "Confound control requires review."
+    ],
+    "missing_evidence": [],
+    "unsupported_variables": [],
+    "confound_risks": [
+      "age",
+      "sex"
+    ],
+    "causal_language_risk": false,
+    "alternative_explanations": [
+      "Observed associations may reflect medication, motion, age, sex, or sleep-state differences.",
+      "Cross-sectional data cannot establish directionality."
+    ],
+    "falsifiability_score": 1.0,
+    "data_grounding_score": 1.0,
+    "evidence_grounding_score": 0.55,
+    "novelty_score": 0.73,
+    "overall_reflection_score": 0.799,
     "recommendation": "revise"
   },
   {
@@ -48,14 +103,14 @@
     ],
     "falsifiability_score": 1.0,
     "data_grounding_score": 1.0,
-    "evidence_grounding_score": 0.55,
+    "evidence_grounding_score": 0.7,
     "novelty_score": 0.81,
-    "overall_reflection_score": 0.811,
+    "overall_reflection_score": 0.8485,
     "recommendation": "revise"
   },
   {
-    "hypothesis_id": "H003",
-    "review_id": "REF_H003",
+    "hypothesis_id": "H001",
+    "review_id": "REF_H001",
     "strengths": [
       "Uses analysis-ready variables."
     ],
@@ -104,64 +159,9 @@
     ],
     "falsifiability_score": 1.0,
     "data_grounding_score": 1.0,
-    "evidence_grounding_score": 0.55,
+    "evidence_grounding_score": 0.7,
     "novelty_score": 0.81,
-    "overall_reflection_score": 0.787,
-    "recommendation": "revise"
-  },
-  {
-    "hypothesis_id": "H002",
-    "review_id": "REF_H002",
-    "strengths": [
-      "Uses analysis-ready variables."
-    ],
-    "weaknesses": [
-      "Confound control requires review."
-    ],
-    "missing_evidence": [],
-    "unsupported_variables": [],
-    "confound_risks": [
-      "age",
-      "sex"
-    ],
-    "causal_language_risk": false,
-    "alternative_explanations": [
-      "Observed associations may reflect medication, motion, age, sex, or sleep-state differences.",
-      "Cross-sectional data cannot establish directionality."
-    ],
-    "falsifiability_score": 1.0,
-    "data_grounding_score": 1.0,
-    "evidence_grounding_score": 0.55,
-    "novelty_score": 0.73,
-    "overall_reflection_score": 0.799,
-    "recommendation": "revise"
-  },
-  {
-    "hypothesis_id": "H001",
-    "review_id": "REF_H001",
-    "strengths": [
-      "Uses analysis-ready variables."
-    ],
-    "weaknesses": [
-      "Confound control requires review."
-    ],
-    "missing_evidence": [],
-    "unsupported_variables": [],
-    "confound_risks": [
-      "age",
-      "in_scanner_sleep_time",
-      "sex"
-    ],
-    "causal_language_risk": false,
-    "alternative_explanations": [
-      "Observed associations may reflect medication, motion, age, sex, or sleep-state differences.",
-      "Cross-sectional data cannot establish directionality."
-    ],
-    "falsifiability_score": 1.0,
-    "data_grounding_score": 1.0,
-    "evidence_grounding_score": 0.55,
-    "novelty_score": 0.73,
-    "overall_reflection_score": 0.775,
+    "overall_reflection_score": 0.8245,
     "recommendation": "revise"
   },
   {
@@ -216,9 +216,9 @@
     ],
     "falsifiability_score": 1.0,
     "data_grounding_score": 1.0,
-    "evidence_grounding_score": 0.55,
+    "evidence_grounding_score": 0.7,
     "novelty_score": 0.81,
-    "overall_reflection_score": 0.811,
+    "overall_reflection_score": 0.8485,
     "recommendation": "revise"
   },
   {
@@ -243,14 +243,14 @@
     ],
     "falsifiability_score": 1.0,
     "data_grounding_score": 1.0,
-    "evidence_grounding_score": 0.55,
+    "evidence_grounding_score": 0.7,
     "novelty_score": 0.81,
-    "overall_reflection_score": 0.811,
+    "overall_reflection_score": 0.8485,
     "recommendation": "revise"
   },
   {
-    "hypothesis_id": "H005_refine1",
-    "review_id": "REF_H005_refine1",
+    "hypothesis_id": "H002_refine1",
+    "review_id": "REF_H002_refine1",
     "strengths": [
       "Uses analysis-ready variables."
     ],
@@ -271,8 +271,8 @@
     "falsifiability_score": 1.0,
     "data_grounding_score": 1.0,
     "evidence_grounding_score": 0.55,
-    "novelty_score": 0.81,
-    "overall_reflection_score": 0.811,
+    "novelty_score": 0.73,
+    "overall_reflection_score": 0.799,
     "recommendation": "revise"
   },
   {
@@ -297,9 +297,9 @@
     ],
     "falsifiability_score": 1.0,
     "data_grounding_score": 1.0,
-    "evidence_grounding_score": 0.55,
+    "evidence_grounding_score": 0.7,
     "novelty_score": 0.81,
-    "overall_reflection_score": 0.811,
+    "overall_reflection_score": 0.8485,
     "recommendation": "revise"
   },
   {
@@ -324,9 +324,9 @@
     ],
     "falsifiability_score": 1.0,
     "data_grounding_score": 1.0,
-    "evidence_grounding_score": 0.55,
+    "evidence_grounding_score": 0.7,
     "novelty_score": 0.81,
-    "overall_reflection_score": 0.811,
+    "overall_reflection_score": 0.8485,
     "recommendation": "revise"
   }
 ]

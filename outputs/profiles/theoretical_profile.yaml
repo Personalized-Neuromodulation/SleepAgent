@@ -1,5 +1,14 @@
 profile_type: theoretical_profile
 features:
+- feature_name: beta_power
+  modality: EEG
+  source_file: literature_grounding
+  source_column: beta_power
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
 - feature_name: thalamus_DMN_FC
   modality: EEG-fMRI
   source_file: literature_grounding
@@ -9,19 +18,37 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: MRI
-  modality: MRI
+- feature_name: DMN_FC
+  modality: fMRI
   source_file: literature_grounding
-  source_column: MRI
+  source_column: DMN_FC
   missing_rate: null
   n_available: null
   qc_status: ''
   approved: false
   role: feature
-- feature_name: beta_power
-  modality: EEG
+- feature_name: FA
+  modality: DTI
   source_file: literature_grounding
-  source_column: beta_power
+  source_column: FA
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: ISI
+  modality: Scale
+  source_file: literature_grounding
+  source_column: ISI
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: mean_FD
+  modality: Method
+  source_file: literature_grounding
+  source_column: mean_FD
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -54,28 +81,28 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: FA
-  modality: DTI
+- feature_name: spindle
+  modality: electrophysiology
   source_file: literature_grounding
-  source_column: FA
+  source_column: spindle
   missing_rate: null
   n_available: null
   qc_status: ''
   approved: false
   role: feature
-- feature_name: thalamus_volume
+- feature_name: thalamic radiation
+  modality: EEG-fMRI
+  source_file: literature_grounding
+  source_column: thalamic radiation
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: cortical thickness
   modality: MRI
   source_file: literature_grounding
-  source_column: thalamus_volume
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: ISI
-  modality: Scale
-  source_file: literature_grounding
-  source_column: ISI
+  source_column: cortical thickness
   missing_rate: null
   n_available: null
   qc_status: ''

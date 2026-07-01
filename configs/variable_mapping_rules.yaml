@@ -30,3 +30,17 @@ mappings:
       - FA
       - thalamic_radiation_FA
       - cingulum_FA
+  default mode network dysregulation:
+    modality: fMRI
+    candidates:
+      - DMN_FC
+      - thalamus_DMN_FC
+  salience network dysregulation:
+    modality: fMRI
+    candidates:
+      - salience_FC
+  limbic structural vulnerability:
+    modality: MRI
+    candidates:
+      - hippocampus_volume
+      - thalamus_volume

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -15,6 +16,7 @@ from sleep_ai_scientist.api.rate_limiter import RateLimiter
 from sleep_ai_scientist.api.semantic_scholar_client import SemanticScholarClient
 from sleep_ai_scientist.common.config import resolve_path
 from sleep_ai_scientist.common.io import ensure_parent, write_csv
+from sleep_ai_scientist.common.io import read_yaml
 from sleep_ai_scientist.schemas.api import APILiteratureRecord, APISearchResult
 from sleep_ai_scientist.schemas.literature import LiteratureRecord
 
@@ -24,6 +26,55 @@ CLIENTS = {
     "openalex": OpenAlexClient,
     "semantic_scholar": SemanticScholarClient,
 }
+
+
+def load_env_file(path: Path, *, override: bool = False) -> list[str]:
+    """Load simple KEY=VALUE pairs so CLI API builds can use a local .env."""
+    if not path.exists():
+        return []
+    loaded = []
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and (override or key not in os.environ):
+            os.environ[key] = value
+            loaded.append(key)
+    return loaded
+
+
+def apply_query_config(config: dict[str, Any], query_config_path: str | Path | None) -> dict[str, Any]:
+    """Overlay a versioned literature query set onto the grounding API config."""
+    if not query_config_path:
+        return config
+    root = Path(config["_project_root"])
+    payload = read_yaml(resolve_path(query_config_path, root))
+    query_groups = payload.get("queries", {})
+    queries: list[str] = []
+    for values in query_groups.values():
+        for query in values or []:
+            if str(query) not in queries:
+                queries.append(str(query))
+    settings = payload.get("settings", {})
+    api_cfg = config.setdefault("api", {})
+    api_cfg["search_queries"] = queries
+    if "max_results_per_query" in settings:
+        api_cfg["max_results_per_query"] = int(settings["max_results_per_query"])
+    provider_allowlist = {str(item) for item in settings.get("providers", [])}
+    if provider_allowlist:
+        for provider, provider_cfg in api_cfg.get("providers", {}).items():
+            provider_cfg["enabled"] = provider in provider_allowlist
+    config["query_set"] = {
+        "version": payload.get("query_set", {}).get("version", ""),
+        "description": payload.get("query_set", {}).get("description", ""),
+        "query_config_path": str(resolve_path(query_config_path, root)),
+        "query_groups": {key: list(value or []) for key, value in query_groups.items()},
+        "settings": settings,
+    }
+    return config
 
 
 def _rps(provider: str, provider_cfg: dict[str, Any]) -> float:
@@ -57,6 +108,7 @@ def search_literature_apis(config: dict[str, Any], session: Any | None = None, r
     api_cfg = config.get("api", {})
     if not api_cfg.get("enabled", False):
         return [], {"enabled": False, "results": [], "deduplicated_count": 0, "warnings": []}
+    load_env_file(Path(config["_project_root"]) / ".env")
     max_results = int(api_cfg.get("max_results_per_query", 20))
     queries = api_cfg.get("search_queries", [])
     all_records: list[APILiteratureRecord] = []
@@ -70,6 +122,8 @@ def search_literature_apis(config: dict[str, Any], session: Any | None = None, r
         for query in queries:
             try:
                 result = client.search(query, max_results=max_results)
+                for record in result.records:
+                    record.query = query
                 results.append(result)
                 all_records.extend(result.records)
                 warnings.extend(result.warnings)
@@ -91,14 +145,27 @@ def search_literature_apis(config: dict[str, Any], session: Any | None = None, r
             f.write(json.dumps(item.model_dump(mode="json"), ensure_ascii=False) + "\n")
     append_api_logs(log_path, logs)
     literature = [api_to_literature_record(item) for item in deduped]
+    errors = [f"{log.provider}:{log.query}:{log.error}" for log in logs if not log.success and log.error]
+    cache_hit_count = sum(1 for log in logs if log.cached)
     summary = {
         "enabled": True,
         "provider_counts": _provider_counts(results),
+        "query_results": [
+            {
+                "provider": result.provider,
+                "query": result.query,
+                "retrieved_at": max((record.retrieved_at for record in result.records), default=""),
+                "result_count": result.count,
+            }
+            for result in results
+        ],
         "query_count": len(queries),
         "raw_count": len(all_records),
         "deduplicated_count": len(deduped),
-        "warnings": warnings,
+        "errors": errors,
+        "warnings": warnings + errors,
         "cache_enabled": bool(api_cfg.get("cache_enabled", True)),
+        "cache_hit_count": cache_hit_count,
         "cache_dir": api_cfg.get("cache_dir"),
         "csv_path": str(csv_path),
         "jsonl_path": str(jsonl_path),

@@ -14,6 +14,20 @@ class LiteratureRecord(BaseModel):
     keywords: list[str] = Field(default_factory=list)
     url: str = ""
     notes: str = ""
+    journal: str | None = None
+    publication_year: int | None = None
+    publication_type: str | None = None
+    authors: list[str] = Field(default_factory=list)
+    citation_count: int | None = None
+    citation_source: str | None = None
+    citation_count_age_normalized: float | None = None
+    journal_impact_factor: float | None = None
+    journal_impact_factor_year: int | None = None
+    journal_quartile: str | None = None
+    journal_metric_source: str | None = None
+    is_open_access: bool | None = None
+    provider: str | None = None
+    provider_id: str | None = None
 
 
 class LiteratureCollection(BaseModel):

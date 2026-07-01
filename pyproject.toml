@@ -11,6 +11,9 @@ dependencies = [
   "pydantic>=2",
   "pyyaml>=6",
   "requests>=2",
+  "sqlalchemy>=2.0",
+  "psycopg[binary]>=3.1",
+  "python-dotenv>=1.0",
 ]
 
 [project.optional-dependencies]
@@ -22,7 +25,9 @@ include = ["sleep_ai_scientist*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
-addopts = "-m 'not api_live'"
+addopts = "-m 'not postgres_live and not api_live and not llm_live'"
 markers = [
+  "postgres_live: tests that require PostgreSQL",
   "api_live: tests that call external literature APIs",
+  "llm_live: tests that call external LLM APIs",
 ]

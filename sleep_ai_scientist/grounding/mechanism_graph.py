@@ -40,7 +40,12 @@ def build_mechanism_graph(
         _add_node(nodes, variable_node, item.variable_or_feature, NodeType.Variable)
         _add_node(nodes, modality_node, item.modality, NodeType.Modality)
         edges.append(GraphEdge(source=paper_node, target=finding_node, edge_type=EdgeType.paper_reports_finding))
-        edge_type = EdgeType.finding_refutes_mechanism if item.direction == EvidenceDirection.refute else EdgeType.finding_supports_mechanism
+        if item.direction == EvidenceDirection.refute:
+            edge_type = EdgeType.finding_refutes_mechanism
+        elif item.direction == EvidenceDirection.null:
+            edge_type = EdgeType.finding_null_for_mechanism
+        else:
+            edge_type = EdgeType.finding_supports_mechanism
         edges.append(GraphEdge(source=finding_node, target=mechanism_node, edge_type=edge_type, weight=item.evidence_quality_score or 1.0))
         edges.append(GraphEdge(source=mechanism_node, target=variable_node, edge_type=EdgeType.mechanism_measured_by_variable))
         edges.append(GraphEdge(source=variable_node, target=modality_node, edge_type=EdgeType.variable_belongs_to_modality))
@@ -76,3 +81,20 @@ def write_graph_outputs(nodes: list[GraphNode], edges: list[GraphEdge], out_dir:
     write_csv(out_dir / "mechanism_graph_nodes.csv", node_rows)
     write_csv(out_dir / "mechanism_graph_edges.csv", edge_rows)
     write_json(out_dir / "mechanism_graph.json", {"nodes": node_rows, "edges": edge_rows})
+    write_json(out_dir / "mechanism_graph_summary.json", mechanism_graph_summary(nodes, edges))
+
+
+def mechanism_graph_summary(nodes: list[GraphNode], edges: list[GraphEdge]) -> dict:
+    """Count graph entities and evidence direction edges."""
+    return {
+        "node_count": len(nodes),
+        "edge_count": len(edges),
+        "paper_count": sum(1 for node in nodes if node.node_type == NodeType.Paper),
+        "finding_count": sum(1 for node in nodes if node.node_type == NodeType.Finding),
+        "mechanism_count": sum(1 for node in nodes if node.node_type == NodeType.Mechanism),
+        "variable_count": sum(1 for node in nodes if node.node_type == NodeType.Variable),
+        "data_feature_count": sum(1 for node in nodes if node.node_type == NodeType.DataFeature),
+        "support_edge_count": sum(1 for edge in edges if edge.edge_type == EdgeType.finding_supports_mechanism),
+        "refute_edge_count": sum(1 for edge in edges if edge.edge_type == EdgeType.finding_refutes_mechanism),
+        "null_edge_count": sum(1 for edge in edges if edge.edge_type == EdgeType.finding_null_for_mechanism),
+    }

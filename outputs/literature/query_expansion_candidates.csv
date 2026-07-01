@@ -1,0 +1,12 @@
+candidate_query,source_paper_id,source_terms,query_group,expected_mechanism,expected_evidence_context,priority_score,status,rejection_reason
+insomnia thalamocortical sleep,toy001,insomnia;thalamocortical;hyperarousal;empirical;associated;disrupted,insomnia_clinical_application,insomnia,human_general_sleep,1.0,candidate,
+thalamocortical hyperarousal sleep,toy001,insomnia;thalamocortical;hyperarousal;empirical;associated;disrupted,general_sleep_physiology,thalamocortical,human_general_sleep,0.5,candidate,
+hyperarousal empirical sleep,toy001,insomnia;thalamocortical;hyperarousal;empirical;associated;disrupted,general_sleep_physiology,hyperarousal,human_general_sleep,0.333,candidate,
+empirical associated sleep,toy001,insomnia;thalamocortical;hyperarousal;empirical;associated;disrupted,general_sleep_physiology,empirical,human_general_sleep,0.25,candidate,
+associated disrupted sleep,toy001,insomnia;thalamocortical;hyperarousal;empirical;associated;disrupted,general_sleep_physiology,associated,human_general_sleep,0.2,candidate,
+disrupted increased sleep,toy001,insomnia;thalamocortical;hyperarousal;empirical;associated;disrupted,general_sleep_physiology,disrupted,human_general_sleep,0.167,candidate,
+spindle insomnia sleep,toy002,spindle;insomnia;abnormalities,insomnia_clinical_application,spindle,human_general_sleep,1.0,candidate,
+insomnia abnormalities sleep,toy002,spindle;insomnia;abnormalities,insomnia_clinical_application,insomnia,human_general_sleep,0.5,candidate,
+integrity dti sleep,toy003,integrity;dti;empirical;radiation,human_sleep_neuroimaging,integrity,human_neuroimaging,1.0,candidate,
+dti empirical sleep,toy003,integrity;dti;empirical;radiation,human_sleep_neuroimaging,dti,human_neuroimaging,0.5,candidate,
+empirical radiation sleep,toy003,integrity;dti;empirical;radiation,general_sleep_physiology,empirical,human_general_sleep,0.333,candidate,

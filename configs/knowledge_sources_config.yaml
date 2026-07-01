@@ -1,0 +1,73 @@
+project:
+  name: SleepAgent
+  module: knowledge_sources
+  registry_version: sleepagent_knowledge_sources_v1
+
+database_config: configs/database_config.yaml
+
+paths:
+  outputs_dir: outputs/knowledge_sources
+  registries_dir: data/knowledge_sources
+  clinical_trials_csv: data/knowledge_sources/clinical_trials_registry.csv
+  clinical_trials_jsonl: data/knowledge_sources/clinical_trials_registry.jsonl
+  guidelines_csv: data/knowledge_sources/guidelines_registry.csv
+  guidelines_jsonl: data/knowledge_sources/guidelines_registry.jsonl
+  standards_csv: data/knowledge_sources/standards_rules_registry.csv
+  standards_jsonl: data/knowledge_sources/standards_rules_registry.jsonl
+  diagnostic_taxonomy_yaml: data/knowledge_sources/diagnostic_taxonomy.yaml
+  diagnostic_taxonomy_json: data/knowledge_sources/diagnostic_taxonomy.json
+  datasets_csv: data/knowledge_sources/datasets_registry.csv
+  datasets_jsonl: data/knowledge_sources/datasets_registry.jsonl
+  instruments_yaml: data/knowledge_sources/instruments_registry.yaml
+  instruments_json: data/knowledge_sources/instruments_registry.json
+  tools_methods_yaml: data/knowledge_sources/tools_methods_registry.yaml
+  tools_methods_json: data/knowledge_sources/tools_methods_registry.json
+  manifest: outputs/knowledge_sources/knowledge_sources_manifest.json
+  report: outputs/knowledge_sources/knowledge_sources_report.md
+
+clinical_trials:
+  enabled: true
+  provider: clinicaltrials_gov
+  base_url: https://clinicaltrials.gov/api/v2/studies
+  max_results_per_query: 100
+  timeout_seconds: 20
+  max_retries: 3
+  fail_open: true
+  live_api_env: SLEEPAGENT_ENABLE_CLINICALTRIALS_LIVE
+
+guidelines:
+  enabled: true
+  source_driven: true
+  include_aasm: true
+  include_pubmed_guidelines: true
+
+standards:
+  enabled: true
+  include_aasm_scoring_manual_metadata: true
+  include_aasm_scoring_rules_summary: true
+  download_restricted_content: false
+
+diagnostic_taxonomy:
+  enabled: true
+  include_icsd_metadata: true
+  include_sleep_disorder_categories: true
+  include_mesh_terms: true
+
+datasets:
+  enabled: true
+  curated_sources: true
+
+instruments:
+  enabled: true
+  curated_sources: true
+
+tools_methods:
+  enabled: true
+  curated_sources: true
+
+exports:
+  write_csv: true
+  write_jsonl: true
+  write_yaml: true
+  write_json: true
+  write_markdown_report: true

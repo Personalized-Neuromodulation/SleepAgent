@@ -1,16 +1,16 @@
 [
   {
-    "hypothesis_id": "H004_mutate1",
-    "title": "Mutated symptom-association variant of Spindle density association with thalamocortical coupling",
+    "hypothesis_id": "H004_refine1",
+    "title": "Refined: Spindle density association with thalamocortical coupling",
     "mechanism": "thalamocortical coupling",
-    "primary_prediction": "thalamus_DMN_FC is explored as a predictor of ISI rather than as the original outcome.",
+    "primary_prediction": "spindle_density is associated with thalamus_DMN_FC. This evolved version explicitly treats confounds as exploratory covariates.",
     "secondary_predictions": [],
     "variables": {
       "independent": [
-        "thalamus_DMN_FC"
+        "spindle_density"
       ],
       "dependent": [
-        "ISI"
+        "thalamus_DMN_FC"
       ],
       "covariates": [
         "mean_FD",
@@ -30,7 +30,8 @@
       "spindle_density": "positive"
     },
     "falsification_criteria": [
-      "The mutated association is absent after prespecified adjustment."
+      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
+      "Corrected p-value and effect-size direction do not support the primary prediction."
     ],
     "risk_flags": [
       "co_scientist_evolved"
@@ -39,23 +40,24 @@
     "status": "screened",
     "source": "co_scientist_evolution",
     "parent_id": "H004",
-    "pre_analysis_score": 0.879,
+    "pre_analysis_score": 0.7865,
     "score_components": {
-      "evidence_strength": 1.0,
+      "evidence_strength": 0.625,
       "data_testability": 1.0,
       "statistical_feasibility": 0.95,
       "mechanistic_plausibility": 0.65,
       "novelty_proxy": 0.75,
-      "clinical_value": 0.9,
+      "clinical_value": 0.65,
       "falsifiability": 1.0,
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_f7ca755a2467"
+      "E_61c4635cc96b",
+      "E_e8a5251dcba7"
     ],
     "used_data_features": [
+      "spindle_density",
       "thalamus_DMN_FC",
-      "ISI",
       "mean_FD",
       "in_scanner_sleep_time",
       "medication"
@@ -102,9 +104,9 @@
     "status": "screened",
     "source": "co_scientist_evolution",
     "parent_id": "H006",
-    "pre_analysis_score": 0.879,
+    "pre_analysis_score": 0.8115,
     "score_components": {
-      "evidence_strength": 1.0,
+      "evidence_strength": 0.625,
       "data_testability": 1.0,
       "statistical_feasibility": 0.95,
       "mechanistic_plausibility": 0.65,
@@ -114,68 +116,8 @@
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_f7ca755a2467"
-    ],
-    "used_data_features": [
-      "thalamus_DMN_FC",
-      "ISI",
-      "mean_FD",
-      "in_scanner_sleep_time",
-      "medication"
-    ]
-  },
-  {
-    "hypothesis_id": "H006",
-    "title": "Thalamus-DMN connectivity association with insomnia severity",
-    "mechanism": "thalamocortical coupling",
-    "primary_prediction": "thalamus_DMN_FC is associated with ISI after motion and sleep covariate adjustment.",
-    "secondary_predictions": [],
-    "variables": {
-      "independent": [
-        "thalamus_DMN_FC"
-      ],
-      "dependent": [
-        "ISI"
-      ],
-      "covariates": [
-        "mean_FD",
-        "in_scanner_sleep_time",
-        "medication"
-      ]
-    },
-    "required_modalities": [
-      "fMRI",
-      "scales",
-      "EEG"
-    ],
-    "analysis_models": [
-      "symptom_association"
-    ],
-    "expected_direction": {
-      "thalamus_DMN_FC": "positive"
-    },
-    "falsification_criteria": [
-      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
-      "Corrected p-value and effect-size direction do not support the primary prediction."
-    ],
-    "risk_flags": [],
-    "evidence_level": "exploratory",
-    "status": "screened",
-    "source": "rule_based_scientific_loop",
-    "parent_id": null,
-    "pre_analysis_score": 0.879,
-    "score_components": {
-      "evidence_strength": 1.0,
-      "data_testability": 1.0,
-      "statistical_feasibility": 0.95,
-      "mechanistic_plausibility": 0.65,
-      "novelty_proxy": 0.75,
-      "clinical_value": 0.9,
-      "falsifiability": 1.0,
-      "confound_controllability": 0.6
-    },
-    "supporting_evidence_ids": [
-      "evidence_f7ca755a2467"
+      "E_61c4635cc96b",
+      "E_e8a5251dcba7"
     ],
     "used_data_features": [
       "thalamus_DMN_FC",
@@ -224,9 +166,9 @@
     "status": "screened",
     "source": "rule_based_scientific_loop",
     "parent_id": null,
-    "pre_analysis_score": 0.854,
+    "pre_analysis_score": 0.7865,
     "score_components": {
-      "evidence_strength": 1.0,
+      "evidence_strength": 0.625,
       "data_testability": 1.0,
       "statistical_feasibility": 0.95,
       "mechanistic_plausibility": 0.65,
@@ -236,11 +178,74 @@
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_f7ca755a2467"
+      "E_61c4635cc96b",
+      "E_e8a5251dcba7"
     ],
     "used_data_features": [
       "spindle_density",
       "thalamus_DMN_FC",
+      "mean_FD",
+      "in_scanner_sleep_time",
+      "medication"
+    ]
+  },
+  {
+    "hypothesis_id": "H006",
+    "title": "Thalamus-DMN connectivity association with insomnia severity",
+    "mechanism": "thalamocortical coupling",
+    "primary_prediction": "thalamus_DMN_FC is associated with ISI after motion and sleep covariate adjustment.",
+    "secondary_predictions": [],
+    "variables": {
+      "independent": [
+        "thalamus_DMN_FC"
+      ],
+      "dependent": [
+        "ISI"
+      ],
+      "covariates": [
+        "mean_FD",
+        "in_scanner_sleep_time",
+        "medication"
+      ]
+    },
+    "required_modalities": [
+      "fMRI",
+      "scales",
+      "EEG"
+    ],
+    "analysis_models": [
+      "symptom_association"
+    ],
+    "expected_direction": {
+      "thalamus_DMN_FC": "positive"
+    },
+    "falsification_criteria": [
+      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
+      "Corrected p-value and effect-size direction do not support the primary prediction."
+    ],
+    "risk_flags": [],
+    "evidence_level": "exploratory",
+    "status": "screened",
+    "source": "rule_based_scientific_loop",
+    "parent_id": null,
+    "pre_analysis_score": 0.8115,
+    "score_components": {
+      "evidence_strength": 0.625,
+      "data_testability": 1.0,
+      "statistical_feasibility": 0.95,
+      "mechanistic_plausibility": 0.65,
+      "novelty_proxy": 0.75,
+      "clinical_value": 0.9,
+      "falsifiability": 1.0,
+      "confound_controllability": 0.6
+    },
+    "supporting_evidence_ids": [
+      "E_61c4635cc96b",
+      "E_e8a5251dcba7"
+    ],
+    "used_data_features": [
+      "thalamus_DMN_FC",
+      "ISI",
       "mean_FD",
       "in_scanner_sleep_time",
       "medication"
@@ -287,9 +292,9 @@
     "status": "screened",
     "source": "co_scientist_evolution",
     "parent_id": "H004",
-    "pre_analysis_score": 0.846,
+    "pre_analysis_score": 0.7785,
     "score_components": {
-      "evidence_strength": 1.0,
+      "evidence_strength": 0.625,
       "data_testability": 1.0,
       "statistical_feasibility": 0.9,
       "mechanistic_plausibility": 0.65,
@@ -299,7 +304,8 @@
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_f7ca755a2467"
+      "E_61c4635cc96b",
+      "E_e8a5251dcba7"
     ],
     "used_data_features": [
       "spindle_density",
@@ -311,17 +317,17 @@
     ]
   },
   {
-    "hypothesis_id": "H004_refine1",
-    "title": "Refined: Spindle density association with thalamocortical coupling",
+    "hypothesis_id": "H004_mutate1",
+    "title": "Mutated symptom-association variant of Spindle density association with thalamocortical coupling",
     "mechanism": "thalamocortical coupling",
-    "primary_prediction": "spindle_density is associated with thalamus_DMN_FC. This evolved version explicitly treats confounds as exploratory covariates.",
+    "primary_prediction": "thalamus_DMN_FC is explored as a predictor of ISI rather than as the original outcome.",
     "secondary_predictions": [],
     "variables": {
       "independent": [
-        "spindle_density"
+        "thalamus_DMN_FC"
       ],
       "dependent": [
-        "thalamus_DMN_FC"
+        "ISI"
       ],
       "covariates": [
         "mean_FD",
@@ -341,8 +347,7 @@
       "spindle_density": "positive"
     },
     "falsification_criteria": [
-      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
-      "Corrected p-value and effect-size direction do not support the primary prediction."
+      "The mutated association is absent after prespecified adjustment."
     ],
     "risk_flags": [
       "co_scientist_evolved"
@@ -351,56 +356,55 @@
     "status": "screened",
     "source": "co_scientist_evolution",
     "parent_id": "H004",
-    "pre_analysis_score": 0.854,
+    "pre_analysis_score": 0.8115,
     "score_components": {
-      "evidence_strength": 1.0,
+      "evidence_strength": 0.625,
       "data_testability": 1.0,
       "statistical_feasibility": 0.95,
       "mechanistic_plausibility": 0.65,
       "novelty_proxy": 0.75,
-      "clinical_value": 0.65,
+      "clinical_value": 0.9,
       "falsifiability": 1.0,
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_f7ca755a2467"
+      "E_61c4635cc96b",
+      "E_e8a5251dcba7"
     ],
     "used_data_features": [
-      "spindle_density",
       "thalamus_DMN_FC",
+      "ISI",
       "mean_FD",
       "in_scanner_sleep_time",
       "medication"
     ]
   },
   {
-    "hypothesis_id": "H005_refine1",
-    "title": "Refined: Thalamic radiation FA association with slow-wave density",
-    "mechanism": "white matter integrity",
-    "primary_prediction": "Higher thalamic_radiation_FA is associated with higher slow_wave_density. This evolved version explicitly treats confounds as exploratory covariates.",
+    "hypothesis_id": "H002_refine1",
+    "title": "Refined: INS vs HC beta power difference",
+    "mechanism": "hyperarousal",
+    "primary_prediction": "beta_power differs between insomnia and healthy control groups. This evolved version explicitly treats confounds as exploratory covariates.",
     "secondary_predictions": [],
     "variables": {
       "independent": [
-        "thalamic_radiation_FA"
+        "group"
       ],
       "dependent": [
-        "slow_wave_density"
+        "beta_power"
       ],
       "covariates": [
-        "medication",
-        "in_scanner_sleep_time"
+        "medication"
       ]
     },
     "required_modalities": [
-      "DTI",
       "EEG",
       "scales"
     ],
     "analysis_models": [
-      "cross_modal_bridge"
+      "group_difference"
     ],
     "expected_direction": {
-      "thalamic_radiation_FA": "positive"
+      "group": "INS higher than HC"
     },
     "falsification_criteria": [
       "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
@@ -412,11 +416,11 @@
     "evidence_level": "posthoc_exploratory",
     "status": "screened",
     "source": "co_scientist_evolution",
-    "parent_id": "H005",
-    "pre_analysis_score": 0.821,
+    "parent_id": "H002",
+    "pre_analysis_score": 0.7868,
     "score_components": {
-      "evidence_strength": 1.0,
-      "data_testability": 0.95,
+      "evidence_strength": 0.86,
+      "data_testability": 0.9,
       "statistical_feasibility": 0.8,
       "mechanistic_plausibility": 0.65,
       "novelty_proxy": 0.75,
@@ -425,69 +429,11 @@
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_362515daef8d"
+      "E_dae5816a9794"
     ],
     "used_data_features": [
-      "thalamic_radiation_FA",
-      "slow_wave_density",
-      "medication",
-      "in_scanner_sleep_time"
-    ]
-  },
-  {
-    "hypothesis_id": "H005",
-    "title": "Thalamic radiation FA association with slow-wave density",
-    "mechanism": "white matter integrity",
-    "primary_prediction": "Higher thalamic_radiation_FA is associated with higher slow_wave_density.",
-    "secondary_predictions": [],
-    "variables": {
-      "independent": [
-        "thalamic_radiation_FA"
-      ],
-      "dependent": [
-        "slow_wave_density"
-      ],
-      "covariates": [
-        "medication"
-      ]
-    },
-    "required_modalities": [
-      "DTI",
-      "EEG",
-      "scales"
-    ],
-    "analysis_models": [
-      "cross_modal_bridge"
-    ],
-    "expected_direction": {
-      "thalamic_radiation_FA": "positive"
-    },
-    "falsification_criteria": [
-      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
-      "Corrected p-value and effect-size direction do not support the primary prediction."
-    ],
-    "risk_flags": [],
-    "evidence_level": "exploratory",
-    "status": "screened",
-    "source": "rule_based_scientific_loop",
-    "parent_id": null,
-    "pre_analysis_score": 0.818,
-    "score_components": {
-      "evidence_strength": 1.0,
-      "data_testability": 0.9333,
-      "statistical_feasibility": 0.8,
-      "mechanistic_plausibility": 0.65,
-      "novelty_proxy": 0.75,
-      "clinical_value": 0.65,
-      "falsifiability": 1.0,
-      "confound_controllability": 0.6
-    },
-    "supporting_evidence_ids": [
-      "evidence_362515daef8d"
-    ],
-    "used_data_features": [
-      "thalamic_radiation_FA",
-      "slow_wave_density",
+      "group",
+      "beta_power",
       "medication"
     ]
   },
@@ -527,9 +473,9 @@
     "status": "screened",
     "source": "rule_based_scientific_loop",
     "parent_id": null,
-    "pre_analysis_score": 0.812,
+    "pre_analysis_score": 0.7868,
     "score_components": {
-      "evidence_strength": 1.0,
+      "evidence_strength": 0.86,
       "data_testability": 0.9,
       "statistical_feasibility": 0.8,
       "mechanistic_plausibility": 0.65,
@@ -539,7 +485,7 @@
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_cffb5cadb0ba"
+      "E_dae5816a9794"
     ],
     "used_data_features": [
       "group",
@@ -583,9 +529,9 @@
     "status": "screened",
     "source": "rule_based_scientific_loop",
     "parent_id": null,
-    "pre_analysis_score": 0.8304,
+    "pre_analysis_score": 0.807,
     "score_components": {
-      "evidence_strength": 0.93,
+      "evidence_strength": 0.8,
       "data_testability": 0.9333,
       "statistical_feasibility": 0.8,
       "mechanistic_plausibility": 0.65,
@@ -595,11 +541,67 @@
       "confound_controllability": 0.6
     },
     "supporting_evidence_ids": [
-      "evidence_50822d9ef5b4"
+      "E_aa361c0953e4"
     ],
     "used_data_features": [
       "slow_wave_density",
       "ISI",
+      "medication"
+    ]
+  },
+  {
+    "hypothesis_id": "H001",
+    "title": "INS vs HC slow-wave density difference",
+    "mechanism": "slow-wave generation",
+    "primary_prediction": "slow_wave_density differs between insomnia and healthy control groups.",
+    "secondary_predictions": [],
+    "variables": {
+      "independent": [
+        "group"
+      ],
+      "dependent": [
+        "slow_wave_density"
+      ],
+      "covariates": [
+        "medication"
+      ]
+    },
+    "required_modalities": [
+      "EEG",
+      "scales"
+    ],
+    "analysis_models": [
+      "group_difference"
+    ],
+    "expected_direction": {
+      "group": "INS lower than HC"
+    },
+    "falsification_criteria": [
+      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
+      "Corrected p-value and effect-size direction do not support the primary prediction."
+    ],
+    "risk_flags": [],
+    "evidence_level": "exploratory",
+    "status": "screened",
+    "source": "rule_based_scientific_loop",
+    "parent_id": null,
+    "pre_analysis_score": 0.776,
+    "score_components": {
+      "evidence_strength": 0.8,
+      "data_testability": 0.9,
+      "statistical_feasibility": 0.8,
+      "mechanistic_plausibility": 0.65,
+      "novelty_proxy": 0.75,
+      "clinical_value": 0.65,
+      "falsifiability": 1.0,
+      "confound_controllability": 0.6
+    },
+    "supporting_evidence_ids": [
+      "E_aa361c0953e4"
+    ],
+    "used_data_features": [
+      "group",
+      "slow_wave_density",
       "medication"
     ]
   }

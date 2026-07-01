@@ -1,0 +1,152 @@
+mechanisms:
+  slow-wave generation:
+    mechanism_keywords: [slow wave, slow-wave, slow oscillation, delta]
+    variable_keywords: [slow_wave_density, delta power, delta_power, slow-wave activity]
+    modalities: [EEG, PSG]
+    evidence_context_default: human_general_sleep
+    downstream_role_default: direct_human_evidence
+  spindle generation:
+    mechanism_keywords: [spindle, sigma]
+    variable_keywords: [spindle_density, sigma power, spindle activity]
+    modalities: [EEG, PSG]
+    evidence_context_default: human_general_sleep
+    downstream_role_default: direct_human_evidence
+  hyperarousal:
+    mechanism_keywords: [hyperarousal, beta power, cortical arousal]
+    variable_keywords: [beta_power, beta activity, high-frequency EEG]
+    modalities: [EEG]
+    evidence_context_default: human_clinical
+    downstream_role_default: direct_human_evidence
+  thalamocortical coupling:
+    mechanism_keywords: [thalamocortical, thalamus, thalamic]
+    variable_keywords: [thalamus_DMN_FC, thalamic connectivity, thalamic radiation]
+    modalities: [EEG-fMRI, fMRI, DTI]
+    evidence_context_default: human_neuroimaging
+    downstream_role_default: direct_human_evidence
+  default mode network dysregulation:
+    mechanism_keywords: [default mode network, DMN]
+    variable_keywords: [DMN_FC, thalamus_DMN_FC, functional connectivity]
+    modalities: [fMRI]
+    evidence_context_default: human_neuroimaging
+    downstream_role_default: direct_human_evidence
+  salience network dysregulation:
+    mechanism_keywords: [salience network, salience]
+    variable_keywords: [salience_FC, salience connectivity]
+    modalities: [fMRI]
+    evidence_context_default: human_neuroimaging
+    downstream_role_default: direct_human_evidence
+  white matter integrity:
+    mechanism_keywords: [white matter, fractional anisotropy, DTI, diffusion]
+    variable_keywords: [FA, fractional anisotropy, thalamic_radiation_FA, cingulum_FA]
+    modalities: [DTI]
+    evidence_context_default: human_neuroimaging
+    downstream_role_default: direct_human_evidence
+  limbic structural vulnerability:
+    mechanism_keywords: [hippocampus, limbic, amygdala, thalamus volume]
+    variable_keywords: [hippocampus_volume, thalamus_volume, volume, structural MRI]
+    modalities: [MRI]
+    evidence_context_default: human_neuroimaging
+    downstream_role_default: direct_human_evidence
+  structural morphology:
+    mechanism_keywords: [structural MRI, MRI findings, morphology, morphometry, volume]
+    variable_keywords: [cortical thickness, gray matter volume, structural feature]
+    modalities: [MRI]
+    evidence_context_default: human_neuroimaging
+    downstream_role_default: background_mechanism
+  insomnia severity:
+    mechanism_keywords: [insomnia severity, insomnia symptoms, ISI]
+    variable_keywords: [ISI, insomnia severity index]
+    modalities: [Scale]
+    evidence_context_default: human_clinical
+    downstream_role_default: direct_human_evidence
+  sleep quality:
+    mechanism_keywords: [sleep quality, PSQI]
+    variable_keywords: [PSQI, sleep quality]
+    modalities: [Scale]
+    evidence_context_default: human_clinical
+    downstream_role_default: direct_human_evidence
+  confound / methodological limitation:
+    mechanism_keywords: [confound, head motion, medication, covariate, limitation]
+    variable_keywords: [mean_FD, medication, age, sex, in_scanner_sleep_time]
+    modalities: [Method]
+    evidence_context_default: human_neuroimaging
+    downstream_role_default: critique_only
+  orexin_hypocretin_arousal:
+    mechanism_keywords: [orexin, hypocretin]
+    variable_keywords: [orexin neuron, hypocretin neuron]
+    modalities: [electrophysiology, calcium_imaging]
+    evidence_context_default: animal_mechanistic
+    downstream_role_default: translational_mechanistic_support
+  gabaergic_sleep_promotion:
+    mechanism_keywords: [GABA, gabaergic, VLPO]
+    variable_keywords: [GABA neuron, inhibitory neuron]
+    modalities: [electrophysiology, optogenetic]
+    evidence_context_default: animal_mechanistic
+    downstream_role_default: translational_mechanistic_support
+  adenosine_sleep_pressure:
+    mechanism_keywords: [adenosine, sleep pressure]
+    variable_keywords: [adenosine receptor, extracellular adenosine]
+    modalities: [pharmacological, molecular]
+    evidence_context_default: cellular_molecular
+    downstream_role_default: background_mechanism
+  thalamic_reticular_spindle:
+    mechanism_keywords: [thalamic reticular, TRN, reticular nucleus]
+    variable_keywords: [spindle, thalamic reticular neuron]
+    modalities: [electrophysiology, optogenetic]
+    evidence_context_default: animal_mechanistic
+    downstream_role_default: translational_mechanistic_support
+  cortical_slow_oscillation:
+    mechanism_keywords: [cortical slow oscillation, cortical slow wave]
+    variable_keywords: [slow oscillation, cortical neuron]
+    modalities: [electrophysiology]
+    evidence_context_default: animal_mechanistic
+    downstream_role_default: translational_mechanistic_support
+  glymphatic_clearance:
+    mechanism_keywords: [glymphatic, clearance]
+    variable_keywords: [glymphatic flow, CSF]
+    modalities: [MRI, imaging]
+    evidence_context_default: animal_mechanistic
+    downstream_role_default: background_mechanism
+  circadian_regulation:
+    mechanism_keywords: [circadian, suprachiasmatic, SCN]
+    variable_keywords: [circadian rhythm, melatonin]
+    modalities: [behavior, molecular]
+    evidence_context_default: human_general_sleep
+    downstream_role_default: background_mechanism
+  REM_NREM_switching:
+    mechanism_keywords: [REM, NREM, sleep switching, state transition]
+    variable_keywords: [REM latency, NREM duration]
+    modalities: [PSG, electrophysiology]
+    evidence_context_default: animal_mechanistic
+    downstream_role_default: translational_mechanistic_support
+  inflammatory_sleep_regulation:
+    mechanism_keywords: [inflammation, cytokine, interleukin, TNF]
+    variable_keywords: [IL-6, TNF, cytokine]
+    modalities: [molecular]
+    evidence_context_default: cellular_molecular
+    downstream_role_default: background_mechanism
+
+animal_terms:
+  species:
+    mouse: [mouse, mice, murine]
+    rat: [rat, rats, rodent]
+    cat: [cat, feline]
+    nonhuman_primate: [monkey, macaque, non-human primate, nonhuman primate]
+  models:
+    sleep_deprivation: [sleep deprivation, sleep-deprived, chronic sleep restriction]
+    stress_model: [stress-induced insomnia, chronic stress, restraint stress]
+    optogenetic: [optogenetic, optogenetics, light stimulation]
+    chemogenetic: [chemogenetic, DREADD]
+    pharmacological: [pharmacological, receptor antagonist, receptor agonist, drug-induced]
+    lesion: [lesion, ablation, knockout, knock-out]
+    electrophysiology: [electrophysiology, single-unit, local field potential, LFP]
+    calcium_imaging: [calcium imaging, fiber photometry]
+
+direction_terms:
+  refute: [opposite, lower than expected, inconsistent with, refute, contradict]
+  "null": [no significant, non-significant, no association, not associated, no group difference, no difference, null finding]
+  support: [associated, association, support, suggest, show, reports, reduced, increased, altered, disrupted, predicts]
+  speculative: [may, might, could, hypothesized, proposed, suggest that]
+
+confound_terms: [head motion, medication, age, sex, covariate, comorbid, apnea, depression, anxiety]
+limitation_terms: [small sample, cross-sectional, retrospective, limitation, underpowered, self-report]
