@@ -63,13 +63,13 @@
 
 ## Phase 2 Input Files
 
-- `/home/jwj/code/SleepAgent/outputs/grounding/evidence_table.csv`
-- `/home/jwj/code/SleepAgent/outputs/grounding/evidence_table.json`
-- `/home/jwj/code/SleepAgent/outputs/grounding/mechanism_graph_nodes.csv`
-- `/home/jwj/code/SleepAgent/outputs/grounding/mechanism_graph_edges.csv`
-- `/home/jwj/code/SleepAgent/outputs/grounding/mechanism_graph.json`
-- `/home/jwj/code/SleepAgent/outputs/grounding/evidence_to_variable_map.yaml`
-- `/home/jwj/code/SleepAgent/outputs/grounding/approved_variables_from_grounding.yaml`
-- `/home/jwj/code/SleepAgent/outputs/profiles/theoretical_profile.yaml`
-- `/home/jwj/code/SleepAgent/outputs/profiles/observed_profile.yaml`
-- `/home/jwj/code/SleepAgent/outputs/profiles/analysis_ready_profile.yaml`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/grounding/evidence_table.csv`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/grounding/evidence_table.json`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/grounding/mechanism_graph_nodes.csv`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/grounding/mechanism_graph_edges.csv`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/grounding/mechanism_graph.json`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/grounding/evidence_to_variable_map.yaml`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/grounding/approved_variables_from_grounding.yaml`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/profiles/theoretical_profile.yaml`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/profiles/observed_profile.yaml`
+- `/home/zyb/Agent_skills/jwj/SleepAgent/outputs/profiles/analysis_ready_profile.yaml`

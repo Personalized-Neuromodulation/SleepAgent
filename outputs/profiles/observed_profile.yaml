@@ -2,7 +2,7 @@ profile_type: observed_profile
 features:
 - feature_name: slow_wave_density
   modality: EEG
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: slow_wave_density
   missing_rate: 0.2
   n_available: 4
@@ -11,7 +11,7 @@ features:
   role: feature
 - feature_name: spindle_density
   modality: EEG
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: spindle_density
   missing_rate: 0.0
   n_available: 5
@@ -20,7 +20,7 @@ features:
   role: feature
 - feature_name: delta_power
   modality: EEG
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: delta_power
   missing_rate: 0.0
   n_available: 5
@@ -29,7 +29,7 @@ features:
   role: feature
 - feature_name: beta_power
   modality: EEG
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: beta_power
   missing_rate: 0.2
   n_available: 4
@@ -38,7 +38,7 @@ features:
   role: feature
 - feature_name: in_scanner_sleep_time
   modality: EEG
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: in_scanner_sleep_time
   missing_rate: 0.0
   n_available: 5
@@ -47,7 +47,7 @@ features:
   role: covariate
 - feature_name: thalamus_DMN_FC
   modality: fMRI
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_fmri_features.csv
   source_column: thalamus_DMN_FC
   missing_rate: 0.0
   n_available: 5
@@ -56,7 +56,7 @@ features:
   role: feature
 - feature_name: DMN_FC
   modality: fMRI
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_fmri_features.csv
   source_column: DMN_FC
   missing_rate: 0.0
   n_available: 5
@@ -65,7 +65,7 @@ features:
   role: feature
 - feature_name: salience_FC
   modality: fMRI
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_fmri_features.csv
   source_column: salience_FC
   missing_rate: 0.2
   n_available: 4
@@ -74,7 +74,7 @@ features:
   role: feature
 - feature_name: mean_FD
   modality: fMRI
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_fmri_features.csv
   source_column: mean_FD
   missing_rate: 0.0
   n_available: 5
@@ -83,7 +83,7 @@ features:
   role: covariate
 - feature_name: thalamic_radiation_FA
   modality: DTI
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_dti_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_dti_features.csv
   source_column: thalamic_radiation_FA
   missing_rate: 0.0
   n_available: 5
@@ -92,7 +92,7 @@ features:
   role: feature
 - feature_name: cingulum_FA
   modality: DTI
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_dti_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_dti_features.csv
   source_column: cingulum_FA
   missing_rate: 0.2
   n_available: 4
@@ -101,7 +101,7 @@ features:
   role: feature
 - feature_name: FA
   modality: DTI
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_dti_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_dti_features.csv
   source_column: FA
   missing_rate: 0.0
   n_available: 5
@@ -110,7 +110,7 @@ features:
   role: feature
 - feature_name: thalamus_volume
   modality: MRI
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_mri_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_mri_features.csv
   source_column: thalamus_volume
   missing_rate: 0.0
   n_available: 5
@@ -119,7 +119,7 @@ features:
   role: feature
 - feature_name: hippocampus_volume
   modality: MRI
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_mri_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_mri_features.csv
   source_column: hippocampus_volume
   missing_rate: 0.0
   n_available: 5
@@ -128,7 +128,7 @@ features:
   role: feature
 - feature_name: ISI
   modality: scales
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: ISI
   missing_rate: 0.0
   n_available: 5
@@ -137,7 +137,7 @@ features:
   role: outcome
 - feature_name: PSQI
   modality: scales
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: PSQI
   missing_rate: 0.0
   n_available: 5
@@ -146,7 +146,7 @@ features:
   role: outcome
 - feature_name: anxiety_score
   modality: scales
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: anxiety_score
   missing_rate: 0.0
   n_available: 5
@@ -155,7 +155,7 @@ features:
   role: scale
 - feature_name: depression_score
   modality: scales
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: depression_score
   missing_rate: 0.0
   n_available: 5
@@ -164,7 +164,7 @@ features:
   role: scale
 - feature_name: medication
   modality: scales
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/jwj/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: medication
   missing_rate: 0.0
   n_available: 5
