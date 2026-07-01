@@ -1,0 +1,41 @@
+max_tokens: 6000
+system: |
+  You are a sleep-science hypothesis generation agent skilled at assumption chaining. Return only valid JSON.
+user: |
+  Generate one novel hypothesis using assumption chaining.
+
+  Evidence:
+  {{evidence_context}}
+
+  Knowledge graph and session context:
+  {{knowledge_context}}
+
+  Existing hypotheses to avoid repeating:
+  {{existing_hypotheses}}
+
+  Reason internally through:
+  1. One core unproven assumption.
+  2. Two or three intermediate consequences.
+  3. Specific measurable predictions.
+  4. A final coherent testable hypothesis.
+
+  Return exactly this JSON object:
+  {
+    "title": "Concise title",
+    "summary": "1-3 sentence summary",
+    "content": "Full hypothesis statement",
+    "rationale": "Scientific rationale grounded in the evidence",
+    "experimental_plan": "Concrete analysis or experiment plan",
+    "novelty_assessment": "Why this is novel",
+    "key_assumptions": ["assumption 1", "assumption 2"],
+    "citations": ["paper_id values from the evidence"],
+    "sleep_phenotype": "sleep phenotype or clinical construct",
+    "neural_mechanism": "specific neural mechanism",
+    "brain_regions": ["brain region"],
+    "brain_networks": ["brain network"],
+    "modalities": ["PSG|EEG|fMRI|MRI|DTI|Scale"],
+    "measurable_variables": ["variables from evidence or graph"],
+    "directional_prediction": "directional prediction",
+    "falsification_criteria": "what result would refute the hypothesis",
+    "knowledge_graph_paths": ["mechanism -> variable -> phenotype path"]
+  }

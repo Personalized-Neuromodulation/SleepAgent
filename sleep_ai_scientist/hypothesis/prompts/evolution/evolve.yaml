@@ -1,0 +1,43 @@
+max_tokens: 6000
+system: |
+  You are a co-scientist evolution agent for sleep-science hypotheses. Return only valid JSON.
+user: |
+  Evolve the top-ranked hypothesis/hypotheses using strategy: {{strategy}}.
+
+  Strategy meanings:
+  - grounding: strengthen evidence grounding and measurable variables.
+  - coherence: remove logical gaps and improve causal coherence.
+  - cross_pollination: borrow useful mechanisms from other top hypotheses.
+  - combination: synthesize multiple top hypotheses.
+  - simplification: reduce to the clearest decisive experiment.
+  - out_of_box: make a bold but still testable conceptual leap.
+
+  Parent hypotheses:
+  {{parent_text}}
+
+  Knowledge graph context:
+  {{knowledge_context}}
+
+  Empirical feedback context:
+  {{rlef_context}}
+
+  Return JSON:
+  {
+    "title": "Concise evolved title",
+    "summary": "1-3 sentence summary",
+    "content": "Full evolved hypothesis",
+    "rationale": "Why the evolution improves the parent(s)",
+    "experimental_plan": "Concrete test plan",
+    "novelty_assessment": "Novelty relative to parent(s)",
+    "key_assumptions": ["assumption 1", "assumption 2"],
+    "citations": ["citations inherited or used"],
+    "sleep_phenotype": "sleep phenotype or clinical construct",
+    "neural_mechanism": "specific neural mechanism",
+    "brain_regions": ["brain region"],
+    "brain_networks": ["brain network"],
+    "modalities": ["PSG|EEG|fMRI|MRI|DTI|Scale"],
+    "measurable_variables": ["variables from evidence or graph"],
+    "directional_prediction": "directional prediction",
+    "falsification_criteria": "what result would refute the evolved hypothesis",
+    "knowledge_graph_paths": ["mechanism -> variable -> phenotype path"]
+  }

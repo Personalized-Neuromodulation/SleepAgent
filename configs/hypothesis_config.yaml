@@ -1,0 +1,65 @@
+paths:
+  evidence_table_json: outputs/grounding/evidence_table.json
+  knowledge_graph_json: outputs/grounding/mechanism_graph.json
+  prior_hypotheses_json: outputs/hypotheses/top_k_hypotheses.json
+  experimental_feedback: outputs/hypotheses/experimental_feedback.json
+  reward_memory: outputs/memory/reward_memory.json
+  context_blocks_json: outputs/hypotheses/context_blocks.json
+  output_hypotheses_dir: outputs/hypotheses
+  report_path: reports/phase2_hypothesis_report.md
+
+hypothesis:
+  session_id: sleep_hypothesis_session
+  research_question: sleep neuroimaging mechanisms and measurable multimodal biomarkers
+  max_hypotheses: 4
+  top_k: 5
+  duplicate_threshold: 0.92
+  enable_evolution: true
+
+agents:
+  enabled:
+    - ContextAgent
+    - GenerationAgent
+    - ReviewAgent
+    - RankAgent
+    - EvolutionMemoryAgent
+
+rlef:
+  prior_top_k: 5
+
+logging:
+  progress: true
+
+# Select "ollama" for local models or "online" for DeepSeek/OpenAI-compatible chat.
+llm_provider: ollama
+
+# Online LLM option. This is OpenAI SDK compatible and works with DeepSeek.
+online_llm:
+  enabled: true
+  provider: online
+  base_url: https://api.deepseek.com
+  api_key: ${DEEPSEEK_API_KEY}
+  model: deepseek-chat
+  timeout: 120
+  temperature: 0.2
+  max_retries: 3
+  disable_thinking: true
+  debate_rating_threshold: 1400
+  fallback_to_rules: false
+
+# Local Ollama model option.
+ollama:
+  enabled: true
+  provider: ollama
+  base_url: http://localhost:11434
+  model: richardyoung/qwen3-14b-abliterated:latest
+  timeout: 300
+  temperature: 0.2
+  debate_rating_threshold: 1400
+  fallback_to_rules: false
+  log_calls: true
+
+embedding:
+  provider: local_minilm
+  model: sentence-transformers/all-MiniLM-L6-v2
+  enabled: false

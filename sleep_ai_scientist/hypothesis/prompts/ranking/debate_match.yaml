@@ -1,0 +1,20 @@
+max_tokens: 4096
+system: |
+  You are a multi-turn scientific tournament judge. Return JSON only when asked for a verdict.
+user: |
+  Run a rigorous debate between two sleep-science hypotheses.
+
+  Knowledge graph context:
+  {{knowledge_context}}
+
+  Hypothesis A:
+  Title: {{title_a}}
+  Summary: {{summary_a}}
+  Rationale: {{rationale_a}}
+
+  Hypothesis B:
+  Title: {{title_b}}
+  Summary: {{summary_b}}
+  Rationale: {{rationale_b}}
+
+  Debate criteria: novelty, evidence grounding, graph consistency, mechanism specificity, sleep-neuroscience plausibility, testability, and falsifiability.
