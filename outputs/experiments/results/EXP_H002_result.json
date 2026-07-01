@@ -1,0 +1,47 @@
+{
+  "experiment_id": "EXP_H002",
+  "hypothesis_id": "H002",
+  "model_formula": "beta_power ~ group + medication",
+  "n_total": 5,
+  "n_used": 4,
+  "coefficients": {
+    "Intercept": 0.205,
+    "group": 0.08,
+    "medication": -0.015
+  },
+  "p_values": {
+    "Intercept": 0.00627,
+    "group": 0.257899,
+    "medication": 0.729034
+  },
+  "corrected_p_values": {
+    "medication": 0.729034,
+    "group": 0.515798
+  },
+  "effect_sizes": {
+    "group": 0.730297,
+    "medication": -0.223607
+  },
+  "confidence_intervals": {
+    "Intercept": [
+      0.058,
+      0.352
+    ],
+    "group": [
+      -0.058593,
+      0.218593
+    ],
+    "medication": [
+      -0.09987,
+      0.06987
+    ]
+  },
+  "model_fit": {
+    "r_squared": 0.583333
+  },
+  "warnings": [
+    "encoded_categorical:group",
+    "encoded_categorical:medication"
+  ],
+  "status": "ok"
+}

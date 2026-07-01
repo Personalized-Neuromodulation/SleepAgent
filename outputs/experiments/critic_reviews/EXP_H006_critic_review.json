@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_H006",
+  "hypothesis_id": "H006",
+  "decision": "revised",
+  "evidence_strength": "moderate",
+  "claim_strength": "exploratory_association",
+  "main_concerns": [
+    "sample_size_below_gate",
+    "n_used_below_configured_minimum",
+    "model_degrees_of_freedom_low",
+    "key_confound_review_required"
+  ],
+  "required_followups": [
+    "replicate in larger sample",
+    "confirm confound control"
+  ],
+  "causal_language_allowed": false,
+  "summary": "Decision=revised; claim_strength=exploratory_association; causal language is not allowed in the scientific loop."
+}

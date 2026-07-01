@@ -1,0 +1,79 @@
+project:
+  name: SleepAgent
+  module: benchmark_and_expert_review
+
+inputs:
+  feature_registry: data/foundation/feature_registry.csv
+  approved_variables: data/foundation/approved_variables.yaml
+  master_table: data/foundation/multimodal_master_table.csv
+  evidence_table: outputs/grounding/evidence_table.csv
+  evidence_json: outputs/grounding/evidence_table.json
+  evidence_to_variable_map: outputs/grounding/evidence_to_variable_map.yaml
+  analysis_ready_profile: outputs/profiles/analysis_ready_profile.yaml
+  hypothesis_pool: outputs/hypotheses/hypothesis_pool.json
+  hypothesis_registry: outputs/hypotheses/hypothesis_registry.csv
+  hypothesis_lineage: outputs/hypotheses/hypothesis_lineage.json
+  top_k_hypotheses: outputs/hypotheses/top_k_hypotheses.json
+  locked_plans_dir: outputs/experiments/locked_plans
+  results_dir: outputs/experiments/results
+  robustness_dir: outputs/experiments/robustness
+  critic_reviews_dir: outputs/experiments/critic_reviews
+  null_registry: outputs/memory/null_findings_registry.csv
+  co_scientist_candidate_pool: outputs/co_scientist/candidate_pool.json
+  co_scientist_reflection_reviews: outputs/co_scientist/reflection_reviews.json
+  co_scientist_ranking_results: outputs/co_scientist/ranking_results.csv
+  co_scientist_top_k: outputs/co_scientist/co_scientist_top_k.json
+  co_scientist_evolved_hypotheses: outputs/co_scientist/evolved_hypotheses.json
+  expert_ratings: outputs/benchmark/expert_ratings.csv
+  pairwise_preferences: outputs/benchmark/pairwise_preferences.jsonl
+
+outputs:
+  benchmark_dir: outputs/benchmark
+  hypothesis_quality_scores: outputs/benchmark/hypothesis_quality_scores.csv
+  grounding_benchmark_scores: outputs/benchmark/grounding_benchmark_scores.csv
+  execution_benchmark_scores: outputs/benchmark/execution_benchmark_scores.csv
+  critic_benchmark_scores: outputs/benchmark/critic_benchmark_scores.csv
+  co_scientist_benchmark_scores: outputs/benchmark/co_scientist_benchmark_scores.csv
+  reproducibility_scores: outputs/benchmark/reproducibility_scores.csv
+  expert_review_template: outputs/benchmark/expert_review_template.csv
+  expert_ratings: outputs/benchmark/expert_ratings.csv
+  pairwise_preferences: outputs/benchmark/pairwise_preferences.jsonl
+  benchmark_summary: outputs/benchmark/benchmark_summary.json
+  benchmark_scores: outputs/benchmark/benchmark_scores.csv
+  benchmark_report: outputs/benchmark/benchmark_report.md
+  system_benchmark_report: reports/benchmark_report.md
+
+benchmark:
+  minimum_valid_hypothesis_rate: 0.80
+  minimum_data_grounding_rate: 0.90
+  minimum_executable_plan_rate: 0.70
+  minimum_critic_expert_agreement: 0.70
+  minimum_reproducibility_score: 0.80
+  include_exploratory_hypotheses: true
+  include_posthoc_hypotheses: true
+  penalize_missing_variables: true
+  penalize_missing_evidence: true
+  penalize_unlocked_plan: true
+
+expert_review:
+  require_expert_id: true
+  rating_scale_min: 1
+  rating_scale_max: 5
+  required_dimensions:
+    - mechanism_plausibility
+    - data_testability
+    - evidence_grounding
+    - novelty
+    - clinical_value
+    - statistical_feasibility
+    - confound_risk
+    - overclaim_risk
+    - priority_for_analysis
+
+pairwise_preference:
+  enabled: true
+  max_pairs: 200
+  pair_sampling_strategy: mixed
+  include_close_pairs: true
+  include_random_pairs: true
+  include_top_vs_low_pairs: true

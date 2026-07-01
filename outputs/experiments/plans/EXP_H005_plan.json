@@ -1,0 +1,36 @@
+{
+  "experiment_id": "EXP_H005",
+  "hypothesis_id": "H005",
+  "analysis_type": "linear_model",
+  "outcome": "slow_wave_density",
+  "predictors": [
+    "thalamic_radiation_FA"
+  ],
+  "covariates": [
+    "medication"
+  ],
+  "group_variable": null,
+  "model_formula": "slow_wave_density ~ thalamic_radiation_FA + medication",
+  "quality_gates": {
+    "min_n_total": 20,
+    "min_n_per_group": 10,
+    "max_missing_rate": 0.35,
+    "required_variables": [
+      "slow_wave_density",
+      "thalamic_radiation_FA"
+    ],
+    "required_covariates": [
+      "medication"
+    ]
+  },
+  "correction_method": "fdr_bh",
+  "robustness": [
+    "bootstrap",
+    "permutation",
+    "covariate_sensitivity"
+  ],
+  "lock_status": "draft",
+  "created_at": "2026-06-30T06:22:19.377253+00:00",
+  "locked_at": null,
+  "plan_hash": null
+}

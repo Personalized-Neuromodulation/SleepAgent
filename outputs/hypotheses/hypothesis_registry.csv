@@ -1,0 +1,8 @@
+hypothesis_id,title,mechanism,status,evidence_level,pre_analysis_score,parent_id,used_data_features
+H001,INS vs HC slow-wave density difference,slow-wave generation,screened,exploratory,0.8274,,group;slow_wave_density;medication
+H002,INS vs HC beta power difference,hyperarousal,prioritized,exploratory,0.84,,group;beta_power;medication
+H003,Slow-wave density association with insomnia severity,slow-wave generation,prioritized,exploratory,0.8584,,slow_wave_density;ISI;medication
+H004,Spindle density association with thalamocortical coupling,thalamocortical coupling,prioritized,exploratory,0.882,,spindle_density;thalamus_DMN_FC;mean_FD;in_scanner_sleep_time;medication
+H005,Thalamic radiation FA association with slow-wave density,white matter integrity,prioritized,exploratory,0.846,,thalamic_radiation_FA;slow_wave_density;medication
+H006,Thalamus-DMN connectivity association with insomnia severity,thalamocortical coupling,prioritized,exploratory,0.907,,thalamus_DMN_FC;ISI;mean_FD;in_scanner_sleep_time;medication
+H007,Multimodal neural model predicting insomnia severity,multimodal sleep disruption,screened,exploratory,0.7269,,slow_wave_density;thalamus_DMN_FC;thalamic_radiation_FA;ISI;mean_FD;in_scanner_sleep_time;medication

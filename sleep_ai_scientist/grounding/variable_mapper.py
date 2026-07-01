@@ -31,7 +31,7 @@ def map_variables(
 ) -> list[VariableMappingRecord]:
     """Map literature concepts to real analysis-ready data features.
 
-    This is the main data-constraint gate in Phase 1: candidate variables are
+    This is the main data-constraint gate in grounding: candidate variables are
     only accepted when they are present in analysis_ready_profile.
     """
     rules = load_mapping_rules(rules_path)
@@ -42,7 +42,7 @@ def map_variables(
         candidates = [str(item) for item in rule.get("candidates", [])]
         approved = [name for name in candidates if name in ready_names]
         # Multiple approved features are useful but not uniquely resolved yet,
-        # so they are marked ambiguous for downstream Phase 2 handling.
+        # so they are marked ambiguous for downstream scientific-loop handling.
         if len(approved) == 1:
             status = MappingStatus.mapped
             confidence = 0.9

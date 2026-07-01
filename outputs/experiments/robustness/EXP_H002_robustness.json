@@ -1,0 +1,27 @@
+{
+  "experiment_id": "EXP_H002",
+  "bootstrap_summary": {
+    "requested": true,
+    "stable_terms": [
+      "group",
+      "medication"
+    ]
+  },
+  "permutation_summary": {
+    "requested": true,
+    "terms_tested": [
+      "medication",
+      "group"
+    ]
+  },
+  "sensitivity_summary": {
+    "with_covariates": [
+      "medication"
+    ],
+    "optional_covariates_reviewed": true
+  },
+  "passed": false,
+  "warnings": [
+    "n_used_below_configured_minimum"
+  ]
+}

@@ -57,7 +57,7 @@ def build_mechanism_graph(
 
     if mechanism_templates_path and mechanism_templates_path.exists():
         # Confounds are configured globally and connected weakly to variables so
-        # Phase 2 can see what should be controlled or reviewed.
+        # The scientific loop can see what should be controlled or reviewed.
         payload = read_yaml(mechanism_templates_path)
         for confound in payload.get("confounds", []):
             confound_node = f"confound:{confound}"

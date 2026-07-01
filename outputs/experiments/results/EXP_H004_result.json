@@ -1,0 +1,63 @@
+{
+  "experiment_id": "EXP_H004",
+  "hypothesis_id": "H004",
+  "model_formula": "thalamus_DMN_FC ~ spindle_density + mean_FD + in_scanner_sleep_time + medication",
+  "n_total": 5,
+  "n_used": 5,
+  "coefficients": {
+    "Intercept": 2.446667,
+    "spindle_density": 0.188889,
+    "mean_FD": -7.0,
+    "in_scanner_sleep_time": -0.063889,
+    "medication": -0.050556
+  },
+  "p_values": {
+    "Intercept": 0.0,
+    "spindle_density": 0.0,
+    "mean_FD": 0.0,
+    "in_scanner_sleep_time": 0.0,
+    "medication": 0.0
+  },
+  "corrected_p_values": {
+    "medication": 0.0,
+    "in_scanner_sleep_time": 0.0,
+    "mean_FD": 0.0,
+    "spindle_density": 0.0
+  },
+  "effect_sizes": {
+    "spindle_density": 1.26956,
+    "mean_FD": -6.328126,
+    "in_scanner_sleep_time": -6.45415,
+    "medication": -0.512259
+  },
+  "confidence_intervals": {
+    "Intercept": [
+      2.446667,
+      2.446667
+    ],
+    "spindle_density": [
+      0.188889,
+      0.188889
+    ],
+    "mean_FD": [
+      -7.0,
+      -7.0
+    ],
+    "in_scanner_sleep_time": [
+      -0.063889,
+      -0.063889
+    ],
+    "medication": [
+      -0.050556,
+      -0.050556
+    ]
+  },
+  "model_fit": {
+    "r_squared": 1.0
+  },
+  "warnings": [
+    "encoded_categorical:medication",
+    "nonpositive_degrees_of_freedom"
+  ],
+  "status": "ok"
+}

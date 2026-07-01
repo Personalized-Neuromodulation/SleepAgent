@@ -8,7 +8,7 @@ from sleep_ai_scientist.schemas.evidence import EvidenceDirection, EvidenceRecor
 from sleep_ai_scientist.schemas.literature import LiteratureRecord
 
 
-# Phase 1 uses transparent keyword rules rather than an LLM extractor. Each
+# Knowledge grounding uses transparent keyword rules rather than an LLM extractor. Each
 # tuple maps a literature term to modality, measurable variable, and mechanism.
 RULES = [
     ("slow wave", "EEG", "slow_wave_density", "slow-wave generation"),
@@ -111,7 +111,7 @@ def extract_evidence(records: list[LiteratureRecord], default_population: str = 
 
 
 def write_evidence_outputs(evidence: list[EvidenceRecord], out_dir: Path) -> None:
-    """Write the Phase 1 evidence table in both tabular and JSON formats."""
+    """Write the grounding evidence table in both tabular and JSON formats."""
     rows = [item.model_dump(mode="json") for item in evidence]
     write_csv(out_dir / "evidence_table.csv", rows)
     write_json(out_dir / "evidence_table.json", rows)

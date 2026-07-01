@@ -1,0 +1,42 @@
+project:
+  name: SleepAgent
+  module: hypothesis_engine
+
+inputs:
+  evidence_table: outputs/grounding/evidence_table.csv
+  evidence_json: outputs/grounding/evidence_table.json
+  evidence_to_variable_map: outputs/grounding/evidence_to_variable_map.yaml
+  analysis_ready_profile: outputs/profiles/analysis_ready_profile.yaml
+  approved_variables: data/foundation/approved_variables.yaml
+  master_table: data/foundation/multimodal_master_table.csv
+  mechanism_templates: configs/mechanism_templates.yaml
+  scoring_rules: configs/scoring_rules.yaml
+
+outputs:
+  hypothesis_pool: outputs/hypotheses/hypothesis_pool.json
+  hypothesis_registry: outputs/hypotheses/hypothesis_registry.csv
+  hypothesis_lineage: outputs/hypotheses/hypothesis_lineage.json
+  top_k_hypotheses: outputs/hypotheses/top_k_hypotheses.json
+  report: reports/scientific_loop_report.md
+
+generation:
+  max_hypotheses: 30
+  top_k: 5
+  allow_exploratory: true
+  require_falsification_criteria: true
+  require_existing_variables: true
+
+hypothesis_priorities:
+  preferred_mechanisms:
+    - slow-wave generation
+    - spindle generation
+    - thalamocortical coupling
+    - hyperarousal
+    - white matter integrity
+    - insomnia severity
+  preferred_modalities:
+    - EEG
+    - fMRI
+    - DTI
+    - MRI
+    - scales

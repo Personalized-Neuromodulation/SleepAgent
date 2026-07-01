@@ -1,0 +1,46 @@
+{
+  "experiment_id": "EXP_H005",
+  "hypothesis_id": "H005",
+  "model_formula": "slow_wave_density ~ thalamic_radiation_FA + medication",
+  "n_total": 5,
+  "n_used": 4,
+  "coefficients": {
+    "Intercept": -10.7,
+    "thalamic_radiation_FA": 45.0,
+    "medication": -0.2
+  },
+  "p_values": {
+    "Intercept": 0.035741,
+    "thalamic_radiation_FA": 0.0,
+    "medication": 0.715001
+  },
+  "corrected_p_values": {
+    "medication": 0.715001,
+    "thalamic_radiation_FA": 0.0
+  },
+  "effect_sizes": {
+    "thalamic_radiation_FA": 0.938996,
+    "medication": -0.065986
+  },
+  "confidence_intervals": {
+    "Intercept": [
+      -20.687349,
+      -0.712651
+    ],
+    "thalamic_radiation_FA": [
+      28.025902,
+      61.974098
+    ],
+    "medication": [
+      -1.273536,
+      0.873536
+    ]
+  },
+  "model_fit": {
+    "r_squared": 0.990566
+  },
+  "warnings": [
+    "encoded_categorical:medication"
+  ],
+  "status": "ok"
+}

@@ -1,0 +1,181 @@
+[
+  {
+    "hypothesis_id": "H004_refine1",
+    "parent_ids": [
+      "H004"
+    ],
+    "evolution_strategy": "refine",
+    "title": "Refined: Spindle density association with thalamocortical coupling",
+    "mechanism": "thalamocortical coupling",
+    "primary_prediction": "spindle_density is associated with thalamus_DMN_FC. This evolved version explicitly treats confounds as exploratory covariates.",
+    "variables": {
+      "independent": [
+        "spindle_density"
+      ],
+      "dependent": [
+        "thalamus_DMN_FC"
+      ],
+      "covariates": [
+        "mean_FD",
+        "in_scanner_sleep_time",
+        "medication"
+      ]
+    },
+    "required_modalities": [
+      "EEG",
+      "fMRI",
+      "scales"
+    ],
+    "falsification_criteria": [
+      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
+      "Corrected p-value and effect-size direction do not support the primary prediction."
+    ],
+    "evidence_level": "posthoc_exploratory",
+    "source": "co_scientist_evolution",
+    "evolution_rationale": "Refined after reflection to improve confound handling and falsifiability.",
+    "status": "generated"
+  },
+  {
+    "hypothesis_id": "H006_refine1",
+    "parent_ids": [
+      "H006"
+    ],
+    "evolution_strategy": "refine",
+    "title": "Refined: Thalamus-DMN connectivity association with insomnia severity",
+    "mechanism": "thalamocortical coupling",
+    "primary_prediction": "thalamus_DMN_FC is associated with ISI after motion and sleep covariate adjustment. This evolved version explicitly treats confounds as exploratory covariates.",
+    "variables": {
+      "independent": [
+        "thalamus_DMN_FC"
+      ],
+      "dependent": [
+        "ISI"
+      ],
+      "covariates": [
+        "mean_FD",
+        "in_scanner_sleep_time",
+        "medication"
+      ]
+    },
+    "required_modalities": [
+      "fMRI",
+      "scales",
+      "EEG"
+    ],
+    "falsification_criteria": [
+      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
+      "Corrected p-value and effect-size direction do not support the primary prediction."
+    ],
+    "evidence_level": "posthoc_exploratory",
+    "source": "co_scientist_evolution",
+    "evolution_rationale": "Refined after reflection to improve confound handling and falsifiability.",
+    "status": "generated"
+  },
+  {
+    "hypothesis_id": "H005_refine1",
+    "parent_ids": [
+      "H005"
+    ],
+    "evolution_strategy": "refine",
+    "title": "Refined: Thalamic radiation FA association with slow-wave density",
+    "mechanism": "white matter integrity",
+    "primary_prediction": "Higher thalamic_radiation_FA is associated with higher slow_wave_density. This evolved version explicitly treats confounds as exploratory covariates.",
+    "variables": {
+      "independent": [
+        "thalamic_radiation_FA"
+      ],
+      "dependent": [
+        "slow_wave_density"
+      ],
+      "covariates": [
+        "medication",
+        "in_scanner_sleep_time"
+      ]
+    },
+    "required_modalities": [
+      "DTI",
+      "EEG",
+      "scales"
+    ],
+    "falsification_criteria": [
+      "Primary predictor has no association with the outcome after prespecified covariate adjustment.",
+      "Corrected p-value and effect-size direction do not support the primary prediction."
+    ],
+    "evidence_level": "posthoc_exploratory",
+    "source": "co_scientist_evolution",
+    "evolution_rationale": "Refined after reflection to improve confound handling and falsifiability.",
+    "status": "generated"
+  },
+  {
+    "hypothesis_id": "H004_H006_merge1",
+    "parent_ids": [
+      "H004",
+      "H006"
+    ],
+    "evolution_strategy": "merge",
+    "title": "Merged multimodal proposal: thalamocortical coupling and thalamocortical coupling",
+    "mechanism": "multimodal sleep disruption",
+    "primary_prediction": "Combined features from thalamocortical coupling and thalamocortical coupling are associated with thalamus_DMN_FC.",
+    "variables": {
+      "independent": [
+        "spindle_density",
+        "thalamus_DMN_FC"
+      ],
+      "dependent": [
+        "thalamus_DMN_FC"
+      ],
+      "covariates": [
+        "mean_FD",
+        "in_scanner_sleep_time",
+        "medication"
+      ]
+    },
+    "required_modalities": [
+      "EEG",
+      "fMRI",
+      "scales"
+    ],
+    "falsification_criteria": [
+      "The merged predictor set does not improve the prespecified association with the outcome."
+    ],
+    "evidence_level": "posthoc_exploratory",
+    "source": "co_scientist_evolution",
+    "evolution_rationale": "Merged complementary high-ranking hypotheses to preserve multimodal diversity.",
+    "status": "generated"
+  },
+  {
+    "hypothesis_id": "H004_mutate1",
+    "parent_ids": [
+      "H004"
+    ],
+    "evolution_strategy": "mutate",
+    "title": "Mutated symptom-association variant of Spindle density association with thalamocortical coupling",
+    "mechanism": "thalamocortical coupling",
+    "primary_prediction": "thalamus_DMN_FC is explored as a predictor of ISI rather than as the original outcome.",
+    "variables": {
+      "independent": [
+        "thalamus_DMN_FC"
+      ],
+      "dependent": [
+        "ISI"
+      ],
+      "covariates": [
+        "mean_FD",
+        "in_scanner_sleep_time",
+        "medication"
+      ]
+    },
+    "required_modalities": [
+      "EEG",
+      "fMRI",
+      "scales"
+    ],
+    "falsification_criteria": [
+      "The mutated association is absent after prespecified adjustment."
+    ],
+    "evidence_level": "posthoc_exploratory",
+    "source": "co_scientist_evolution",
+    "evolution_rationale": "Mutated analysis direction to explore a testable symptom-association variant.",
+    "status": "generated"
+  }
+]

@@ -23,7 +23,7 @@ def _rows_from_path(path: Path) -> list[dict[str, Any]]:
 
 
 def normalize_literature_row(row: dict[str, Any]) -> LiteratureRecord:
-    """Normalize loose metadata into the Phase 1 LiteratureRecord schema."""
+    """Normalize loose metadata into the grounding LiteratureRecord schema."""
     title = str(row.get("title") or "").strip()
     abstract = str(row.get("abstract") or "").strip()
     year_raw = row.get("year") or None

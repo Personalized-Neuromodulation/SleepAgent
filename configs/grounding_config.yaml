@@ -1,6 +1,6 @@
 project:
   name: SleepAgent
-  phase: phase1_grounding
+  workflow: knowledge_grounding
 
 paths:
   seed_papers: data/literature/seed_papers.csv
@@ -19,7 +19,7 @@ paths:
   variable_mapping_rules: configs/variable_mapping_rules.yaml
   output_grounding_dir: outputs/grounding
   output_profiles_dir: outputs/profiles
-  report_path: reports/phase1_grounding_report.md
+  report_path: reports/grounding_report.md
 
 retrieval:
   enabled: false
@@ -35,3 +35,51 @@ data_profile:
 
 evidence:
   default_population: sleep cohort
+
+api:
+  enabled: false
+  fail_open: true
+  cache_enabled: true
+  cache_dir: .cache/sleepagent_api
+  timeout_seconds: 20
+  max_retries: 3
+  backoff_seconds: 1.5
+  max_results_per_query: 20
+  providers:
+    pubmed:
+      enabled: true
+      email_env: NCBI_EMAIL
+      tool_env: NCBI_TOOL
+      api_key_env: NCBI_API_KEY
+      base_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils
+      requests_per_second_without_key: 3
+      requests_per_second_with_key: 10
+    europe_pmc:
+      enabled: true
+      base_url: https://www.ebi.ac.uk/europepmc/webservices/rest
+      email_env: EUROPE_PMC_EMAIL
+      requests_per_second: 3
+    openalex:
+      enabled: true
+      base_url: https://api.openalex.org
+      api_key_env: OPENALEX_API_KEY
+      requests_per_second: 5
+    semantic_scholar:
+      enabled: true
+      base_url: https://api.semanticscholar.org/graph/v1
+      api_key_env: SEMANTIC_SCHOLAR_API_KEY
+      requests_per_second: 1
+  search_queries:
+    - insomnia slow wave EEG
+    - insomnia thalamocortical fMRI
+    - insomnia spindle EEG fMRI
+    - insomnia DTI white matter
+    - sleep slow wave thalamus functional connectivity
+    - sleep spindle thalamocortical connectivity
+    - insomnia default mode network fMRI
+    - insomnia hippocampus thalamus MRI
+    - insomnia PSQI ISI EEG
+  output:
+    api_literature_csv: data/literature/api_retrieved_papers.csv
+    api_literature_jsonl: data/literature/api_retrieved_papers.jsonl
+    api_search_log: outputs/grounding/api_search_log.jsonl

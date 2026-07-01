@@ -5,11 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sleep-ai-scientist"
 version = "0.1.0"
-description = "SleepAgent Phase 1 knowledge and data grounding system."
+description = "SleepAgent knowledge grounding and scientific loop system."
 requires-python = ">=3.10"
 dependencies = [
   "pydantic>=2",
   "pyyaml>=6",
+  "requests>=2",
 ]
 
 [project.optional-dependencies]
@@ -21,3 +22,7 @@ include = ["sleep_ai_scientist*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+addopts = "-m 'not api_live'"
+markers = [
+  "api_live: tests that call external literature APIs",
+]

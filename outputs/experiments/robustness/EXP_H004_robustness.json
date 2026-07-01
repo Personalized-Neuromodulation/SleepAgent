@@ -1,0 +1,34 @@
+{
+  "experiment_id": "EXP_H004",
+  "bootstrap_summary": {
+    "requested": true,
+    "stable_terms": [
+      "spindle_density",
+      "mean_FD",
+      "in_scanner_sleep_time",
+      "medication"
+    ]
+  },
+  "permutation_summary": {
+    "requested": true,
+    "terms_tested": [
+      "medication",
+      "in_scanner_sleep_time",
+      "mean_FD",
+      "spindle_density"
+    ]
+  },
+  "sensitivity_summary": {
+    "with_covariates": [
+      "mean_FD",
+      "in_scanner_sleep_time",
+      "medication"
+    ],
+    "optional_covariates_reviewed": true
+  },
+  "passed": false,
+  "warnings": [
+    "n_used_below_configured_minimum",
+    "model_degrees_of_freedom_low"
+  ]
+}

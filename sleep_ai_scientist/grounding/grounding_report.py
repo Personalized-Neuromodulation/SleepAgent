@@ -19,6 +19,7 @@ def build_grounding_report(
     analysis_ready: DataProfile,
     mappings: list[VariableMappingRecord],
     config: dict,
+    api_summary: dict | None = None,
 ) -> str:
     direction_counts = Counter(item.direction.value for item in evidence)
     quality_scores = [item.evidence_quality_score or 0.0 for item in evidence]
@@ -28,7 +29,7 @@ def build_grounding_report(
     output_grounding = config_path(config, "output_grounding_dir")
     output_profiles = config_path(config, "output_profiles_dir")
     lines = [
-        "# Phase 1 Grounding Report",
+        "# Knowledge Grounding Report",
         "",
         "## Summary",
         "",
@@ -64,7 +65,21 @@ def build_grounding_report(
     lines.extend(
         [
             "",
-            "## Phase 2 Input Files",
+            "## API Literature Retrieval",
+            "",
+            f"- API enabled: {bool((api_summary or {}).get('enabled', False))}",
+            f"- Providers used: {', '.join(sorted((api_summary or {}).get('provider_counts', {}).keys())) or 'none'}",
+            f"- Search query count: {(api_summary or {}).get('query_count', 0)}",
+            f"- Records retrieved per provider: {(api_summary or {}).get('provider_counts', {})}",
+            f"- API records before deduplication: {(api_summary or {}).get('raw_count', 0)}",
+            f"- API records after deduplication: {(api_summary or {}).get('deduplicated_count', 0)}",
+            f"- Seed literature count: {(api_summary or {}).get('seed_count', len(papers))}",
+            f"- Final literature count: {(api_summary or {}).get('final_literature_count', len(papers))}",
+            f"- Cache enabled: {(api_summary or {}).get('cache_enabled', False)}",
+            f"- Cache directory: {(api_summary or {}).get('cache_dir', '')}",
+            f"- API warnings: {'; '.join((api_summary or {}).get('warnings', [])) or 'none'}",
+            "",
+            "## Scientific Loop Input Files",
             "",
             f"- `{output_grounding / 'evidence_table.csv'}`",
             f"- `{output_grounding / 'evidence_table.json'}`",

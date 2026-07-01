@@ -1,0 +1,46 @@
+{
+  "experiment_id": "EXP_H003",
+  "hypothesis_id": "H003",
+  "model_formula": "ISI ~ slow_wave_density + medication",
+  "n_total": 5,
+  "n_used": 4,
+  "coefficients": {
+    "Intercept": 94.518315,
+    "slow_wave_density": -5.659341,
+    "medication": -10.047619
+  },
+  "p_values": {
+    "Intercept": 0.169607,
+    "slow_wave_density": 0.192848,
+    "medication": 0.445598
+  },
+  "corrected_p_values": {
+    "medication": 0.445598,
+    "slow_wave_density": 0.385696
+  },
+  "effect_sizes": {
+    "slow_wave_density": -1.42286,
+    "medication": -0.833452
+  },
+  "confidence_intervals": {
+    "Intercept": [
+      -40.363545,
+      229.400175
+    ],
+    "slow_wave_density": [
+      -14.177478,
+      2.858796
+    ],
+    "medication": [
+      -35.865679,
+      15.770441
+    ]
+  },
+  "model_fit": {
+    "r_squared": 0.684629
+  },
+  "warnings": [
+    "encoded_categorical:medication"
+  ],
+  "status": "ok"
+}

@@ -1,0 +1,84 @@
+project:
+  name: SleepAgent
+  module: co_scientist_core
+
+inputs:
+  evidence_table: outputs/grounding/evidence_table.csv
+  evidence_json: outputs/grounding/evidence_table.json
+  evidence_to_variable_map: outputs/grounding/evidence_to_variable_map.yaml
+  analysis_ready_profile: outputs/profiles/analysis_ready_profile.yaml
+  approved_variables: data/foundation/approved_variables.yaml
+  master_table: data/foundation/multimodal_master_table.csv
+  hypothesis_pool: outputs/hypotheses/hypothesis_pool.json
+  hypothesis_registry: outputs/hypotheses/hypothesis_registry.csv
+  hypothesis_lineage: outputs/hypotheses/hypothesis_lineage.json
+  null_registry: outputs/memory/null_findings_registry.csv
+  prior_critic_reviews_dir: outputs/experiments/critic_reviews
+
+outputs:
+  co_scientist_dir: outputs/co_scientist
+  candidate_pool: outputs/co_scientist/candidate_pool.json
+  hypothesis_embeddings: outputs/co_scientist/hypothesis_embeddings.csv
+  proximity_clusters: outputs/co_scientist/proximity_clusters.json
+  reflection_reviews: outputs/co_scientist/reflection_reviews.json
+  ranking_pairs: outputs/co_scientist/ranking_pairs.json
+  ranking_results: outputs/co_scientist/ranking_results.csv
+  evolved_hypotheses: outputs/co_scientist/evolved_hypotheses.json
+  meta_review_report: outputs/co_scientist/meta_review_report.md
+  co_scientist_top_k: outputs/co_scientist/co_scientist_top_k.json
+  co_scientist_report: reports/co_scientist_report.md
+
+generation:
+  target_candidate_count: 50
+  max_candidates: 80
+  include_scientific_loop_pool: true
+  include_evolved_hypotheses: true
+  allow_exploratory: true
+  require_existing_variables: true
+  require_falsification_criteria: true
+
+proximity:
+  method: tfidf
+  distance_threshold: 0.35
+  max_cluster_size: 8
+  min_clusters: 5
+  diversity_penalty: 0.10
+
+reflection:
+  enabled: true
+  max_reviews_per_hypothesis: 1
+  strict_variable_check: true
+  strict_causal_language_check: true
+  require_alternative_explanations: true
+  require_confound_review: true
+
+ranking:
+  method: pairwise_tournament
+  max_pairs: 300
+  use_elo: true
+  initial_elo: 1500
+  k_factor: 32
+  ranking_features:
+    - pre_analysis_score
+    - evidence_strength
+    - data_testability
+    - reflection_score
+    - novelty_proxy
+    - multimodal_value
+    - confound_controllability
+
+evolution:
+  enabled: true
+  max_evolved_hypotheses: 20
+  strategies:
+    - refine
+    - merge
+    - mutate
+  mark_evolved_as_exploratory: true
+  require_parent_ids: true
+
+meta_review:
+  top_k: 10
+  include_rejected_summary: true
+  include_null_findings_summary: true
+  include_recommended_experiments: true

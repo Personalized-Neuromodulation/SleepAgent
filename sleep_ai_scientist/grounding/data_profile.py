@@ -98,7 +98,7 @@ def build_analysis_ready_profile(config: dict[str, Any], observed: DataProfile) 
 
 
 def write_profiles(config: dict[str, Any], theoretical: DataProfile, observed: DataProfile, analysis_ready: DataProfile) -> None:
-    """Persist the three Phase 1 profiles for Phase 2 consumption."""
+    """Persist the three grounding profiles for scientific-loop consumption."""
     out_dir = config_path(config, "output_profiles_dir")
     write_yaml(out_dir / "theoretical_profile.yaml", theoretical.model_dump(mode="json"))
     write_yaml(out_dir / "observed_profile.yaml", observed.model_dump(mode="json"))

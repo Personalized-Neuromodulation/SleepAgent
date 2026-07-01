@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP_H003",
+  "hypothesis_id": "H003",
+  "decision": "hold",
+  "evidence_strength": "weak",
+  "claim_strength": "not_supported",
+  "main_concerns": [
+    "sample_size_below_gate",
+    "n_used_below_configured_minimum",
+    "key_confound_review_required"
+  ],
+  "required_followups": [
+    "increase usable sample size",
+    "review variable availability"
+  ],
+  "causal_language_allowed": false,
+  "summary": "Decision=hold; claim_strength=not_supported; causal language is not allowed in the scientific loop."
+}

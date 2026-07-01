@@ -1,0 +1,36 @@
+{
+  "experiment_id": "EXP_H002",
+  "hypothesis_id": "H002",
+  "analysis_type": "linear_model",
+  "outcome": "beta_power",
+  "predictors": [
+    "group"
+  ],
+  "covariates": [
+    "medication"
+  ],
+  "group_variable": "group",
+  "model_formula": "beta_power ~ group + medication",
+  "quality_gates": {
+    "min_n_total": 20,
+    "min_n_per_group": 10,
+    "max_missing_rate": 0.35,
+    "required_variables": [
+      "beta_power",
+      "group"
+    ],
+    "required_covariates": [
+      "medication"
+    ]
+  },
+  "correction_method": "fdr_bh",
+  "robustness": [
+    "bootstrap",
+    "permutation",
+    "covariate_sensitivity"
+  ],
+  "lock_status": "locked",
+  "created_at": "2026-06-30T06:22:19.377315+00:00",
+  "locked_at": "2026-06-30T06:22:19.377486+00:00",
+  "plan_hash": "af1789561094f4982ed60416e14282017f39405f8b89bdac4519e74c2b784d3f"
+}

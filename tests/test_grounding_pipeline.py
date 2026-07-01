@@ -3,7 +3,7 @@ from pathlib import Path
 from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
 
 
-def test_grounding_pipeline_generates_phase1_outputs():
+def test_grounding_pipeline_generates_outputs():
     result = run_grounding_pipeline("configs/grounding_config.yaml")
     assert result["evidence"] > 0
     required = [
@@ -17,7 +17,7 @@ def test_grounding_pipeline_generates_phase1_outputs():
         "outputs/profiles/theoretical_profile.yaml",
         "outputs/profiles/observed_profile.yaml",
         "outputs/profiles/analysis_ready_profile.yaml",
-        "reports/phase1_grounding_report.md",
+        "reports/grounding_report.md",
     ]
     for path in required:
         assert Path(path).exists()

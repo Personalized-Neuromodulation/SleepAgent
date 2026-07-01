@@ -4,6 +4,8 @@ from pathlib import Path
 from typing import Any
 
 from sleep_ai_scientist.common.config import config_path, existing_or_fixture, load_config
+from sleep_ai_scientist.api.literature_client import search_literature_apis
+from sleep_ai_scientist.api.normalizer import deduplicate_literature
 from sleep_ai_scientist.grounding.data_profile import (
     build_analysis_ready_profile,
     build_observed_profile,
@@ -20,15 +22,19 @@ from sleep_ai_scientist.grounding.variable_mapper import map_variables, write_ma
 
 
 def run_grounding_pipeline(config_path_value: str | Path) -> dict[str, Any]:
-    """Run Phase 1 end to end and write all grounding artifacts.
+    """Run knowledge grounding end to end and write all grounding artifacts.
 
-    Phase 1 is intentionally local and deterministic: it reads seed papers and
+    Knowledge grounding is intentionally local and deterministic: it reads seed papers and
     Data Foundation tables, falls back to fixtures when real files are absent,
     and never modifies raw data or foundation inputs.
     """
     config = load_config(config_path_value)
     literature_path = existing_or_fixture(config, "seed_papers", "fixture_seed_papers")
-    papers = load_literature(literature_path)
+    seed_papers = load_literature(literature_path)
+    api_papers, api_summary = search_literature_apis(config)
+    papers = deduplicate_literature(seed_papers + api_papers)
+    api_summary["seed_count"] = len(seed_papers)
+    api_summary["final_literature_count"] = len(papers)
 
     retrieval_cfg = config.get("retrieval", {})
     if retrieval_cfg.get("enabled", False):
@@ -40,7 +46,7 @@ def run_grounding_pipeline(config_path_value: str | Path) -> dict[str, Any]:
         selected_papers = papers
 
     # Convert literature text into structured evidence before any data mapping.
-    # The extractor is rule-based for Phase 1 so tests do not depend on LLM/API access.
+    # The extractor is rule-based so tests do not depend on LLM/API access.
     evidence = extract_evidence(selected_papers, default_population=config.get("evidence", {}).get("default_population", ""))
     evidence = grade_evidence_records(evidence)
 
@@ -59,7 +65,7 @@ def run_grounding_pipeline(config_path_value: str | Path) -> dict[str, Any]:
     mappings = map_variables(evidence, analysis_ready, config_path(config, "variable_mapping_rules"))
     write_mapping_outputs(config, mappings)
 
-    # The graph is a lightweight edge-list/JSON artifact for Phase 2 input, not
+    # The graph is a lightweight edge-list/JSON artifact for scientific-loop input, not
     # a persistent GraphRAG or Neo4j implementation.
     nodes, edges = build_mechanism_graph(
         selected_papers,
@@ -69,12 +75,14 @@ def run_grounding_pipeline(config_path_value: str | Path) -> dict[str, Any]:
     )
     write_graph_outputs(nodes, edges, output_grounding_dir)
 
-    report = build_grounding_report(selected_papers, evidence, nodes, edges, analysis_ready, mappings, config)
+    report = build_grounding_report(selected_papers, evidence, nodes, edges, analysis_ready, mappings, config, api_summary)
     report_path = config_path(config, "report_path")
     write_grounding_report(report_path, report)
 
     return {
         "papers": len(selected_papers),
+        "seed_papers": len(seed_papers),
+        "api_papers": len(api_papers),
         "retrieval_hits": len(hits),
         "evidence": len(evidence),
         "analysis_ready_variables": len(analysis_ready.features),
@@ -83,6 +91,7 @@ def run_grounding_pipeline(config_path_value: str | Path) -> dict[str, Any]:
         "report_path": str(report_path),
         "output_grounding_dir": str(output_grounding_dir),
         "output_profiles_dir": str(config_path(config, "output_profiles_dir")),
+        "api_summary": api_summary,
     }
 
 

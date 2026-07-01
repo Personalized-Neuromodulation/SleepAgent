@@ -7,7 +7,7 @@ try:  # pragma: no cover - exercised when pydantic is installed.
     from pydantic import BaseModel, Field
 except ModuleNotFoundError:  # pragma: no cover - exercised in minimal runtime images.
     # The project declares pydantic as a dependency. This fallback only keeps the
-    # Phase 1 CLI usable in restricted environments where dependencies have not
+    # CLI usable in restricted environments where dependencies have not
     # been installed yet; it implements the small subset used by our schemas.
 
     class _FieldInfo:

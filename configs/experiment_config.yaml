@@ -1,0 +1,45 @@
+project:
+  name: SleepAgent
+  module: computational_experiment
+
+inputs:
+  top_k_hypotheses: outputs/hypotheses/top_k_hypotheses.json
+  hypothesis_registry: outputs/hypotheses/hypothesis_registry.csv
+  hypothesis_lineage: outputs/hypotheses/hypothesis_lineage.json
+  master_table: data/foundation/multimodal_master_table.csv
+  feature_registry: data/foundation/feature_registry.csv
+  analysis_ready_profile: outputs/profiles/analysis_ready_profile.yaml
+
+outputs:
+  plans_dir: outputs/experiments/plans
+  locked_plans_dir: outputs/experiments/locked_plans
+  results_dir: outputs/experiments/results
+  robustness_dir: outputs/experiments/robustness
+  critic_reviews_dir: outputs/experiments/critic_reviews
+  figures_dir: outputs/experiments/figures
+  report: reports/scientific_loop_report.md
+
+analysis:
+  default_model: linear_model
+  correction_method: fdr_bh
+  min_n_total: 20
+  min_n_per_group: 10
+  max_predictors_ratio: 0.10
+  allow_group_comparison: true
+  allow_association_model: true
+  allow_multimodal_model: true
+
+robustness:
+  run_bootstrap: true
+  bootstrap_n: 200
+  run_permutation: true
+  permutation_n: 200
+  run_leave_one_out: false
+  run_covariate_sensitivity: true
+
+critic:
+  causal_language_guardrail: true
+  require_effect_size: true
+  require_corrected_p_value: true
+  require_confound_review: true
+  mark_posthoc_as_exploratory: true
