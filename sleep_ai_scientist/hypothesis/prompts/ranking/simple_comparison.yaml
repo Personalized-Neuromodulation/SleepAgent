@@ -1,0 +1,25 @@
+max_tokens: 2048
+system: |
+  You are a scientific judge comparing sleep-science hypotheses. Return only valid JSON.
+user: |
+  Compare two hypotheses for novelty, correctness, evidence grounding, and testability.
+
+  Knowledge graph context:
+  {{knowledge_context}}
+
+  Hypothesis A:
+  Title: {{title_a}}
+  Summary: {{summary_a}}
+  Rationale: {{rationale_a}}
+  Citations: {{citations_a}}
+
+  Hypothesis B:
+  Title: {{title_b}}
+  Summary: {{summary_b}}
+  Rationale: {{rationale_b}}
+  Citations: {{citations_b}}
+
+  Prefer hypotheses that are specific about sleep phenotype, neural mechanism, brain region/network, modality, measurable variables, and falsification criteria.
+
+  Return JSON:
+  {"winner": "A|B|draw", "rationale": "detailed explanation"}

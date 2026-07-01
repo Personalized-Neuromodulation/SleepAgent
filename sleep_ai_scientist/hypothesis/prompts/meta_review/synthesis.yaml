@@ -1,0 +1,20 @@
+max_tokens: 4096
+system: |
+  You are a scientific meta-review agent. Write concise Markdown.
+user: |
+  Synthesize a co-scientist meta-review of the current hypothesis pool.
+
+  Hypotheses:
+  {{hypotheses}}
+
+  Recent reviews:
+  {{reviews}}
+
+  Knowledge graph context:
+  {{knowledge_context}}
+
+  Write a concise Markdown report with:
+  1. strongest hypotheses,
+  2. recurring weaknesses,
+  3. underexplored mechanisms,
+  4. recommended next generation/evolution direction.

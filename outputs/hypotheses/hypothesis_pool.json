@@ -1,0 +1,312 @@
+[
+  {
+    "hypothesis_id": "hypothesis_a541a436b719",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamic Morphology Modulates Thalamocortical Coupling in Insomnia",
+    "summary": "This hypothesis proposes that thalamic morphology influences thalamocortical coupling in insomnia, linking structural and functional brain changes.",
+    "content": "Thalamic morphology modulates thalamocortical coupling in insomnia patients, such that variations in thalamic structure (e.g., volume) alter the strength of thalamocortical connectivity, as measured by thalamus_DMN_FC in fMRI.",
+    "rationale": "Evidence shows that thalamic morphology (thalamus_volume) is linked to structural MRI findings, while thalamocortical coupling is associated with thalamus_DMN_FC in fMRI. The integration of these findings suggests a structural-functional pathway in insomnia.",
+    "experimental_plan": "Compare thalamus_volume (from MRI) with thalamus_DMN_FC (from fMRI) in insomnia patients. Use regression analysis to determine if thalamus_volume predicts thalamus_DMN_FC.",
+    "novelty_assessment": "This hypothesis bridges structural (thalamus_volume) and functional (thalamus_DMN_FC) markers in insomnia, integrating previously separate findings.",
+    "key_assumptions": [
+      "Thalamic morphology influences thalamocortical connectivity.",
+      "Thalamus_volume is a measurable structural marker affecting thalamus_DMN_FC."
+    ],
+    "citations": [
+      "toy001",
+      "toy003"
+    ],
+    "generation_strategy": "literature_exploration",
+    "generation_round": 1,
+    "elo_rating": 1446.0,
+    "rating_deviation": 126.0,
+    "volatility": 0.059996,
+    "matches_played": 7,
+    "wins": 5,
+    "losses": 2,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "evidence_f7ca755a2467",
+        "evidence_f7ca755a2467",
+        "evidence_f7ca755a2467",
+        "evidence_77397cee0b26"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "insomnia",
+      "neural_mechanism": "thalamocortical coupling",
+      "brain_regions": [
+        "thalamus"
+      ],
+      "brain_networks": [
+        "DMN"
+      ],
+      "modalities": [
+        "MRI",
+        "fMRI"
+      ],
+      "measurable_variables": [
+        "thalamus_volume",
+        "thalamus_DMN_FC"
+      ],
+      "directional_prediction": "Increased thalamus_volume correlates with altered thalamus_DMN_FC in insomnia patients.",
+      "falsification_criteria": "No significant correlation between thalamus_volume and thalamus_DMN_FC in insomnia patients.",
+      "knowledge_graph_paths": [
+        "thalamic morphology -> thalamus_volume -> thalamus_DMN_FC -> insomnia",
+        "structural morphology -> MRI -> thalamus_DMN_FC -> insomnia"
+      ]
+    },
+    "created_at": "2026-07-01T11:46:20.284353+00:00",
+    "updated_at": "2026-07-01T12:04:43.637050+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_6d2cb6ed13cc",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Bidirectional Thalamocortical Coupling and Structural Morphology in Insomnia",
+    "summary": "This hypothesis proposes a bidirectional interaction between thalamic structural morphology and thalamocortical coupling in insomnia, integrating multimodal neuroimaging data.",
+    "content": "Thalamic structural morphology and thalamocortical coupling dynamically interact in insomnia, with structural changes modulating functional connectivity and vice versa, creating a feedback loop measurable via MRI and fMRI.",
+    "rationale": "Evidence links thalamic structural morphology (MRI) and thalamocortical coupling (fMRI) to insomnia. The bidirectional interaction integrates structural and functional data, refining prior unidirectional models. Structural changes (e.g., thalamus_volume) alter thalamocortical pathways, while hyperarousal (beta_power) and functional connectivity (thalamus_DMN_FC) may reciprocally reshape thalamic structure.",
+    "experimental_plan": "Multimodal MRI-fMRI longitudinal study tracking thalamus_volume and thalamus_DMN_FC in insomnia patients during sleep interventions. Compare baseline and post-intervention structural and functional changes.",
+    "novelty_assessment": "Introduces bidirectional interaction between structural and functional mechanisms, avoiding prior unidirectional assumptions and integrating multimodal data.",
+    "key_assumptions": [
+      "Structural thalamic changes modulate thalamocortical coupling.",
+      "Functional connectivity reciprocally influences thalamic morphology."
+    ],
+    "citations": [
+      "toy001",
+      "toy002",
+      "toy003"
+    ],
+    "generation_strategy": "scientific_debate",
+    "generation_round": 2,
+    "elo_rating": 1594.0,
+    "rating_deviation": 132.0,
+    "volatility": 0.059994,
+    "matches_played": 7,
+    "wins": 7,
+    "losses": 0,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "evidence_f7ca755a2467",
+        "evidence_f7ca755a2467",
+        "evidence_f7ca755a2467",
+        "evidence_77397cee0b26"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "multi_turn_debate",
+      "sleep_phenotype": "Insomnia",
+      "neural_mechanism": "Bidirectional thalamocortical coupling and structural morphology",
+      "brain_regions": [
+        "Thalamus",
+        "Default Mode Network (DMN)"
+      ],
+      "brain_networks": [
+        "Thalamocortical Network",
+        "Default Mode Network"
+      ],
+      "modalities": [
+        "MRI",
+        "fMRI"
+      ],
+      "measurable_variables": [
+        "thalamus_volume",
+        "thalamus_DMN_FC",
+        "FA"
+      ],
+      "directional_prediction": "Structural thalamic changes (thalamus_volume) predict functional connectivity (thalamus_DMN_FC), and vice versa.",
+      "falsification_criteria": "No significant correlation between thalamus_volume and thalamus_DMN_FC after multimodal intervention.",
+      "knowledge_graph_paths": [
+        "structural morphology -> MRI -> insomnia",
+        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia"
+      ]
+    },
+    "created_at": "2026-07-01T11:48:06.242450+00:00",
+    "updated_at": "2026-07-01T12:04:09.443930+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_e84c1a6dacb7",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology",
+    "summary": "This hypothesis proposes that thalamocortical coupling influences insomnia severity through structural morphology changes, integrating functional and structural neuroimaging data.",
+    "content": "Thalamocortical coupling modulates insomnia severity by altering structural morphology, linking functional connectivity patterns with structural brain changes in insomnia populations.",
+    "rationale": "Evidence shows thalamocortical coupling is related to thalamus_DMN_FC (E1-E3) and structural morphology is linked to MRI (E4, E12). Insomnia severity is associated with both PSQI (E9) and structural morphology (E12). Combining these pathways suggests a mechanism where thalamocortical coupling affects structural morphology, which in turn influences insomnia severity.",
+    "experimental_plan": "Use multimodal MRI and EEG-fMRI to measure thalamocortical coupling (thalamus_DMN_FC) and structural morphology (MRI). Correlate these with insomnia severity scores (PSQI) in insomnia patients.",
+    "novelty_assessment": "Novel integration of thalamocortical coupling and structural morphology pathways to explain insomnia severity, combining functional and structural neuroimaging data.",
+    "key_assumptions": [
+      "Thalamocortical coupling affects structural morphology",
+      "Structural morphology mediates the relationship between thalamocortical coupling and insomnia severity"
+    ],
+    "citations": [
+      "toy001",
+      "toy002",
+      "toy003"
+    ],
+    "generation_strategy": "assumption_chaining",
+    "generation_round": 3,
+    "elo_rating": 1211.0,
+    "rating_deviation": 124.0,
+    "volatility": 0.059996,
+    "matches_played": 7,
+    "wins": 2,
+    "losses": 5,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "evidence_cffb5cadb0ba",
+        "evidence_cffb5cadb0ba",
+        "evidence_57c2052a300b",
+        "evidence_9f085eb58dfa"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "insomnia severity",
+      "neural_mechanism": "thalamocortical coupling",
+      "brain_regions": [
+        "thalamus",
+        "DMN"
+      ],
+      "brain_networks": [
+        "thalamocortical network",
+        "default mode network"
+      ],
+      "modalities": [
+        "EEG",
+        "fMRI",
+        "MRI",
+        "Scale"
+      ],
+      "measurable_variables": [
+        "thalamus_DMN_FC",
+        "MRI",
+        "PSQI"
+      ],
+      "directional_prediction": "Higher thalamocortical coupling is associated with greater structural morphology changes, which in turn predicts higher insomnia severity.",
+      "falsification_criteria": "No significant correlation between thalamocortical coupling and structural morphology, or between structural morphology and insomnia severity.",
+      "knowledge_graph_paths": [
+        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia severity",
+        "structural morphology -> MRI -> insomnia severity"
+      ]
+    },
+    "created_at": "2026-07-01T11:48:48.717301+00:00",
+    "updated_at": "2026-07-01T12:05:26.363787+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_5213e370154e",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamic Morphology Modulates Thalamocortical Coupling in Insomnia",
+    "summary": "This hypothesis proposes that thalamic morphology influences thalamocortical coupling in insomnia, linking structural and functional brain changes.",
+    "content": "Thalamic morphology modulates thalamocortical coupling in insomnia, suggesting that structural changes in the thalamus influence functional connectivity patterns observed in insomnia patients.",
+    "rationale": "Evidence from the knowledge graph indicates a link between thalamic morphology (measured by thalamus_volume) and thalamocortical coupling (measured by thalamus_DMN_FC). This suggests a potential structural-functional relationship that could be modulated in insomnia.",
+    "experimental_plan": "Compare thalamus_volume and thalamus_DMN_FC in insomnia patients versus controls using MRI and fMRI. Use regression analysis to assess the relationship between thalamus_volume and thalamus_DMN_FC.",
+    "novelty_assessment": "This hypothesis integrates both structural and functional measures of the thalamus in insomnia, which has not been previously explored in the context of thalamocortical coupling.",
+    "key_assumptions": [
+      "Thalamic morphology is a measurable structural feature in insomnia patients.",
+      "Thalamocortical coupling can be quantified using fMRI features."
+    ],
+    "citations": [
+      "toy001"
+    ],
+    "generation_strategy": "research_expansion",
+    "generation_round": 4,
+    "elo_rating": 1070.0,
+    "rating_deviation": 129.0,
+    "volatility": 0.059995,
+    "matches_played": 7,
+    "wins": 0,
+    "losses": 7,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "evidence_362515daef8d",
+        "evidence_362515daef8d",
+        "evidence_cffb5cadb0ba",
+        "evidence_cffb5cadb0ba"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "insomnia",
+      "neural_mechanism": "thalamocortical coupling",
+      "brain_regions": [
+        "thalamus"
+      ],
+      "brain_networks": [
+        "DMN"
+      ],
+      "modalities": [
+        "fMRI",
+        "MRI"
+      ],
+      "measurable_variables": [
+        "thalamus_volume",
+        "thalamus_DMN_FC"
+      ],
+      "directional_prediction": "Increased thalamus_volume is associated with altered thalamus_DMN_FC in insomnia patients.",
+      "falsification_criteria": "No significant correlation between thalamus_volume and thalamus_DMN_FC in insomnia patients compared to controls.",
+      "knowledge_graph_paths": [
+        "thalamic morphology -> thalamus_volume -> insomnia",
+        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia"
+      ]
+    },
+    "created_at": "2026-07-01T11:49:28.729154+00:00",
+    "updated_at": "2026-07-01T12:05:26.363800+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_69c0f9ed163f",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Bidirectional Thalamocortical Coupling and Structural Morphology with Cross-Pollinated Mechanisms in Insomnia",
+    "summary": "This hypothesis integrates bidirectional thalamocortical coupling and structural morphology with cross-pollinated mechanisms from other top hypotheses, enhancing coherence and evidence grounding.",
+    "content": "The hypothesis proposes that bidirectional thalamocortical coupling and structural morphology in insomnia are modulated by cross-pollinated mechanisms from thalamic morphology, hyperarousal, and white matter integrity, integrating multimodal neuroimaging data and sleep phenotypes.",
+    "rationale": "The evolution strengthens evidence grounding by incorporating hyperarousal (beta_power) and white matter integrity (FA) from other hypotheses, improving causal coherence and integrating structural and functional pathways.",
+    "experimental_plan": "Multimodal MRI-fMRI-EEG longitudinal study tracking thalamus_volume, thalamus_DMN_FC, beta_power, and FA in insomnia patients during sleep interventions. Compare baseline and post-intervention changes in structural, functional, and white matter variables.",
+    "novelty_assessment": "Enhanced by integrating hyperarousal and white matter integrity, expanding the original bidirectional model with cross-pollinated mechanisms.",
+    "key_assumptions": [
+      "Bidirectional interaction between thalamocortical coupling and structural morphology is modulated by hyperarousal and white matter integrity.",
+      "Structural and functional changes are interdependent through thalamic morphology and white matter pathways."
+    ],
+    "citations": [
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "generation_strategy": "evolution:cross_pollination",
+    "generation_round": 2,
+    "elo_rating": 1330.0,
+    "rating_deviation": 143.0,
+    "volatility": 0.059996,
+    "matches_played": 4,
+    "wins": 2,
+    "losses": 2,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [
+      "hypothesis_6d2cb6ed13cc",
+      "hypothesis_a541a436b719",
+      "hypothesis_e84c1a6dacb7"
+    ],
+    "metadata": {
+      "evolved_from": [
+        "hypothesis_6d2cb6ed13cc",
+        "hypothesis_a541a436b719",
+        "hypothesis_e84c1a6dacb7"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest"
+    },
+    "created_at": "2026-07-01T11:57:44.418351+00:00",
+    "updated_at": "2026-07-01T12:05:15.223402+00:00"
+  }
+]

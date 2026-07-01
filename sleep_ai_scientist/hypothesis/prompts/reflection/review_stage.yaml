@@ -1,0 +1,40 @@
+max_tokens: 4096
+system: |
+  You are a rigorous sleep-science hypothesis reviewer. Return only valid JSON.
+user: |
+  Review the hypothesis below using the {{review_type}} review stage from a co-scientist workflow.
+
+  Hypothesis title: {{title}}
+  Summary: {{summary}}
+  Content: {{content}}
+  Rationale: {{rationale}}
+  Experimental plan: {{experimental_plan}}
+  Key assumptions: {{key_assumptions}}
+  Citations: {{citations}}
+  Metadata: {{metadata}}
+
+  Knowledge graph context:
+  {{knowledge_context}}
+
+  Empirical feedback context:
+  {{rlef_context}}
+
+  Stage guidance:
+  - initial: fast plausibility, novelty, testability, and safety screen.
+  - full: detailed scientific critique using only the provided citations/evidence identifiers.
+  - deep_verification: decompose assumptions and judge whether each can independently hold.
+  - simulation: mentally simulate the causal mechanism and identify where it may break.
+  - observation: judge whether the hypothesis explains expected or anomalous observations.
+  Also judge sleep-neuroscience specificity: mechanism, brain region/network, modality, measurable variables, evidence conflicts, and falsifiability.
+
+  Return only JSON:
+  {
+    "verdict": "pass|fail|uncertain",
+    "novelty_score": 0-10,
+    "correctness_score": 0-10,
+    "testability_score": 0-10,
+    "safety_flag": false,
+    "summary": "concise review summary",
+    "critique": "detailed critique",
+    "supporting_evidence": ["citation or evidence id"]
+  }

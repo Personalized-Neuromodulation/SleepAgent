@@ -4,7 +4,7 @@ variables:
   role: feature
   description: EEG variable slow_wave_density
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: slow_wave_density
   allowed_values: null
   valid_range: null
@@ -13,7 +13,7 @@ variables:
   role: feature
   description: EEG variable spindle_density
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: spindle_density
   allowed_values: null
   valid_range: null
@@ -22,7 +22,7 @@ variables:
   role: feature
   description: EEG variable delta_power
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: delta_power
   allowed_values: null
   valid_range: null
@@ -31,7 +31,7 @@ variables:
   role: feature
   description: EEG variable beta_power
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: beta_power
   allowed_values: null
   valid_range: null
@@ -40,7 +40,7 @@ variables:
   role: covariate
   description: EEG variable in_scanner_sleep_time
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_eeg_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
   source_column: in_scanner_sleep_time
   allowed_values: null
   valid_range: null
@@ -49,7 +49,7 @@ variables:
   role: feature
   description: fMRI variable thalamus_DMN_FC
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv
   source_column: thalamus_DMN_FC
   allowed_values: null
   valid_range: null
@@ -58,7 +58,7 @@ variables:
   role: feature
   description: fMRI variable DMN_FC
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv
   source_column: DMN_FC
   allowed_values: null
   valid_range: null
@@ -67,7 +67,7 @@ variables:
   role: feature
   description: fMRI variable salience_FC
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv
   source_column: salience_FC
   allowed_values: null
   valid_range: null
@@ -76,7 +76,7 @@ variables:
   role: covariate
   description: fMRI variable mean_FD
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv
   source_column: mean_FD
   allowed_values: null
   valid_range: null
@@ -85,7 +85,7 @@ variables:
   role: feature
   description: DTI variable thalamic_radiation_FA
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_dti_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv
   source_column: thalamic_radiation_FA
   allowed_values: null
   valid_range: null
@@ -94,7 +94,7 @@ variables:
   role: feature
   description: DTI variable cingulum_FA
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_dti_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv
   source_column: cingulum_FA
   allowed_values: null
   valid_range: null
@@ -103,7 +103,7 @@ variables:
   role: feature
   description: DTI variable FA
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_dti_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv
   source_column: FA
   allowed_values: null
   valid_range: null
@@ -112,7 +112,7 @@ variables:
   role: feature
   description: MRI variable thalamus_volume
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_mri_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_mri_features.csv
   source_column: thalamus_volume
   allowed_values: null
   valid_range: null
@@ -121,7 +121,7 @@ variables:
   role: feature
   description: MRI variable hippocampus_volume
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_mri_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_mri_features.csv
   source_column: hippocampus_volume
   allowed_values: null
   valid_range: null
@@ -130,7 +130,7 @@ variables:
   role: outcome
   description: scales variable ISI
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: ISI
   allowed_values: null
   valid_range: null
@@ -139,7 +139,7 @@ variables:
   role: outcome
   description: scales variable PSQI
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: PSQI
   allowed_values: null
   valid_range: null
@@ -148,7 +148,7 @@ variables:
   role: scale
   description: scales variable anxiety_score
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: anxiety_score
   allowed_values: null
   valid_range: null
@@ -157,7 +157,7 @@ variables:
   role: scale
   description: scales variable depression_score
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: depression_score
   allowed_values: null
   valid_range: null
@@ -166,7 +166,7 @@ variables:
   role: covariate
   description: scales variable medication
   unit: null
-  source_file: /home/jwj/code/SleepAgent/data/fixtures/toy_scale_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
   source_column: medication
   allowed_values: null
   valid_range: null
