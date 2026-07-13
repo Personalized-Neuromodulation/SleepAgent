@@ -1,73 +1,503 @@
 [
   {
-    "review_id": "review_84529c5df64f",
-    "hypothesis_id": "hypothesis_8a9647319c71",
+    "review_id": "review_151f9c47f597",
+    "hypothesis_id": "hypothesis_a541a436b719",
     "session_id": "sleep_hypothesis_session",
     "review_type": "initial",
     "verdict": "pass",
-    "novelty_score": 7.4,
-    "correctness_score": 8.9,
-    "testability_score": 8.0,
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "Rule review score 8.10/10 based on evidence, citations, and testability.",
-    "critique": "Hypothesis is accepted for local tournament ranking if grounded and testable.",
+    "summary": "The hypothesis is plausible and testable, linking thalamic morphology to thalamocortical coupling in insomnia. The experimental plan is well-defined.",
+    "critique": "The hypothesis is novel in linking thalamic morphology with thalamocortical coupling in insomnia. The use of MRI and fMRI is standard and safe. The correctness is moderate as some assumptions may need further validation. The testability is high with clear measures and comparisons.",
     "supporting_evidence": [
-      "toy001"
+      "toy001",
+      "toy003",
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
     ],
-    "created_at": "2026-07-01T01:44:16.307299+00:00"
+    "created_at": "2026-07-13T06:54:59.733268+00:00"
   },
   {
-    "review_id": "review_57ee1c67ac1a",
-    "hypothesis_id": "hypothesis_cda7955b0d36",
+    "review_id": "review_595a4122087a",
+    "hypothesis_id": "hypothesis_a541a436b719",
     "session_id": "sleep_hypothesis_session",
-    "review_type": "initial",
+    "review_type": "full",
     "verdict": "pass",
-    "novelty_score": 7.4,
-    "correctness_score": 8.9,
-    "testability_score": 8.0,
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "Rule review score 8.10/10 based on evidence, citations, and testability.",
-    "critique": "Hypothesis is accepted for local tournament ranking if grounded and testable.",
+    "summary": "The hypothesis is plausible and testable, linking thalamic morphology with thalamocortical coupling in insomnia. The experimental plan is well-structured.",
+    "critique": "The hypothesis is well-structured but could benefit from more detailed analysis of how specific structural changes in the thalamus affect functional connectivity. The evidence provided is somewhat repetitive, and more diverse citations could strengthen the argument.",
     "supporting_evidence": [
-      "toy001"
+      "toy001",
+      "toy003",
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
     ],
-    "created_at": "2026-07-01T01:44:16.307323+00:00"
+    "created_at": "2026-07-13T06:55:14.526982+00:00"
   },
   {
-    "review_id": "review_7ab5dfc2cdaf",
-    "hypothesis_id": "hypothesis_d608fd298812",
+    "review_id": "review_4ff0e9a6b11d",
+    "hypothesis_id": "hypothesis_a541a436b719",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured and testable, linking thalamic morphology with thalamocortical coupling in insomnia through measurable variables. The assumptions are reasonable and supported by existing evidence.",
+    "critique": "The hypothesis effectively connects structural and functional changes in the thalamus with insomnia. The use of MRI and fMRI is standard and safe. The assumptions about thalamic volume and DMN connectivity are supported by the knowledge graph. However, the novelty could be slightly higher if it incorporated other networks beyond the DMN.",
+    "supporting_evidence": [
+      "toy001",
+      "toy003",
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-13T06:55:31.387947+00:00"
+  },
+  {
+    "review_id": "review_3e5bcc66ce12",
+    "hypothesis_id": "hypothesis_a541a436b719",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, linking thalamic morphology to thalamocortical coupling in insomnia. The experimental plan is well-defined, though some assumptions may need further validation.",
+    "critique": "The hypothesis is novel in linking thalamic structure to functional connectivity in insomnia. The use of MRI and fMRI is standard and safe. However, the assumption that thalamic volume directly modulates DMN connectivity may require more detailed mediation analysis. The evidence from the knowledge graph supports the links between thalamic morphology and volume, and between thalamocortical coupling and DMN connectivity, but the direct causal pathway is not fully established. The directional prediction assumes a specific correlation, which may be influenced by confounding variables not accounted for in the metadata.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-13T06:55:50.919461+00:00"
+  },
+  {
+    "review_id": "review_d93f5fc70dbe",
+    "hypothesis_id": "hypothesis_a541a436b719",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, linking thalamic morphology with thalamocortical coupling in insomnia. The experimental plan is well-structured, though some assumptions may need further validation.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence from the knowledge graph. The link between thalamic volume and thalamus-DMN FC is supported by prior findings. However, the correctness score is moderate due to potential confounding factors not explicitly addressed, such as variations in sleep stages or other network interactions. The novelty is high as it connects structural and functional changes in a novel way. Testability is strong with MRI and fMRI measures. The assumptions are reasonable but could be strengthened with additional controls.",
+    "supporting_evidence": [
+      "toy001",
+      "toy003",
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-13T06:56:10.749173+00:00"
+  },
+  {
+    "review_id": "review_09f3b758f5df",
+    "hypothesis_id": "hypothesis_3a80bdc0e29e",
     "session_id": "sleep_hypothesis_session",
     "review_type": "initial",
     "verdict": "pass",
-    "novelty_score": 7.4,
-    "correctness_score": 9.7,
-    "testability_score": 8.0,
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "Rule review score 8.37/10 based on evidence, citations, and testability.",
-    "critique": "Hypothesis is accepted for local tournament ranking if grounded and testable.",
+    "summary": "The hypothesis is plausible and testable, integrating multimodal neuroimaging data. Novelty is high, though some evidence links are moderate.",
+    "critique": "The hypothesis is well-structured and integrates both structural and functional neuroimaging data. The use of thalamocortical coupling as a mediator is novel. However, the evidence links between thalamocortical coupling and structural morphology are somewhat indirect. The mediation model assumes a linear relationship, which may not capture complex interactions. The use of PSQI as a measure of insomnia severity is standard but could be complemented with more detailed sleep metrics.",
     "supporting_evidence": [
+      "toy001",
+      "toy002",
+      "toy003",
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-13T06:56:29.579223+00:00"
+  },
+  {
+    "review_id": "review_e2f90ecec381",
+    "hypothesis_id": "hypothesis_3a80bdc0e29e",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates multimodal neuroimaging data to link thalamocortical coupling with insomnia severity through structural and white matter pathways. It is novel and testable, though some evidence links may need refinement.",
+    "critique": "The hypothesis is well-structured and novel, integrating thalamocortical coupling with structural and white matter pathways. However, the evidence links (e.g., thalamus_DMN_FC, MRI, FA) are somewhat repetitive, and the mediation model assumes a linear pathway that may oversimplify interactions. The use of PSQI as a measurable variable is appropriate, but the directional prediction (higher coupling with higher insomnia) requires more nuanced validation. Supporting evidence includes toy001, toy002, toy003, and evidence_f7ca755a2467, evidence_77397cee0b26.",
+    "supporting_evidence": [
+      "toy001",
+      "toy002",
+      "toy003",
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-13T06:56:52.708975+00:00"
+  },
+  {
+    "review_id": "review_f1102a980d1e",
+    "hypothesis_id": "hypothesis_3a80bdc0e29e",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured and integrates multimodal neuroimaging data, showing strong links between thalamocortical coupling, structural morphology, and white matter integrity in modulating insomnia severity. The experimental plan is robust and testable.",
+    "critique": "The hypothesis is novel in integrating both structural and functional pathways. The use of multimodal data (EEG-fMRI, MRI, DTI) is comprehensive. The assumptions are logically connected, though the mediation pathways could be further clarified. The evidence provided (toy001, toy002, toy003) supports the key mechanisms. The falsification criteria are well-defined, enhancing testability.",
+    "supporting_evidence": [
+      "toy001",
+      "toy002",
+      "toy003",
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-13T06:57:12.436336+00:00"
+  },
+  {
+    "review_id": "review_036b4370524e",
+    "hypothesis_id": "hypothesis_3a80bdc0e29e",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates multimodal neuroimaging data to link thalamocortical coupling with insomnia severity through structural and white matter pathways. It is novel and testable, though some evidence links may be weaker.",
+    "critique": "The hypothesis is well-structured and novel, integrating thalamocortical coupling with structural and white matter pathways. The use of multimodal data (EEG-fMRI, MRI, DTI) is strong. However, the evidence links between thalamocortical coupling and structural morphology (MRI) are somewhat indirect, relying on prior findings (E1, E2, E3, E4, E10, E11, E12). The mediation model assumes a linear pathway, which may oversimplify potential interactions. The directional prediction (higher coupling with higher insomnia severity) is plausible but needs more direct evidence. The falsification criteria are clear, enhancing testability.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26",
       "toy001",
       "toy002",
       "toy003"
     ],
-    "created_at": "2026-07-01T01:44:16.307343+00:00"
+    "created_at": "2026-07-13T06:57:35.783816+00:00"
   },
   {
-    "review_id": "review_d2d44faefb8f",
-    "hypothesis_id": "hypothesis_3322c67efaad",
+    "review_id": "review_69779ba617d9",
+    "hypothesis_id": "hypothesis_3a80bdc0e29e",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates multimodal neuroimaging data to explain insomnia severity through thalamocortical coupling, structural morphology, and white matter integrity. It is plausible and testable with the proposed experimental plan.",
+    "critique": "The hypothesis is well-structured and integrates multiple neuroimaging modalities. However, the correctness could be improved by clarifying the direction of the mediation (whether structural morphology and white matter integrity are mediators or moderators). The evidence provided supports the links between thalamocortical coupling and structural morphology, but the mediation pathway needs further validation. The use of regression models with mediation analysis would strengthen the hypothesis.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-13T06:57:53.585412+00:00"
+  },
+  {
+    "review_id": "review_f3996a91aee7",
+    "hypothesis_id": "hypothesis_d6155445c0b1",
     "session_id": "sleep_hypothesis_session",
     "review_type": "initial",
     "verdict": "pass",
-    "novelty_score": 7.4,
-    "correctness_score": 9.3,
-    "testability_score": 8.0,
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "Rule review score 8.23/10 based on evidence, citations, and testability.",
-    "critique": "Hypothesis is accepted for local tournament ranking if grounded and testable.",
+    "summary": "The hypothesis is plausible and integrates structural and functional neuroimaging data, linking thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia. The experimental plan is well-defined.",
+    "critique": "The hypothesis is novel in integrating thalamic morphology with white matter integrity and thalamocortical coupling. However, the mediation through white matter integrity is somewhat indirect and may require more detailed pathway analysis. The correctness is moderate as the evidence links thalamic volume to FA and thalamocortical coupling, but the mediation pathway needs further validation. The testability is high with DTI and fMRI measures.",
     "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-13T06:58:12.060468+00:00"
+  },
+  {
+    "review_id": "review_e9f3e459406f",
+    "hypothesis_id": "hypothesis_d6155445c0b1",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and integrates structural and functional neuroimaging data, with a clear experimental plan. The key assumptions are supported by existing evidence, though some links require further validation.",
+    "critique": "The hypothesis is well-structured and novel in linking thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia. The use of DTI and fMRI is appropriate. However, the mediation through white matter integrity assumes a direct pathway that may involve other confounding factors (e.g., sleep fragmentation, arousal levels). The evidence for thalamic morphology affecting white matter integrity is indirect and requires more direct measures. The directional prediction is reasonable, but the falsification criteria are somewhat simplistic and may not capture complex interactions.",
+    "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-13T06:58:31.988362+00:00"
+  },
+  {
+    "review_id": "review_9a0b6068b8c6",
+    "hypothesis_id": "hypothesis_d6155445c0b1",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured and integrates structural and functional neuroimaging data, showing a plausible mechanism involving thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia.",
+    "critique": "The hypothesis is novel in linking thalamic morphology with thalamocortical coupling through white matter integrity. The assumptions are logically connected and supported by existing evidence (e.g., thalamus volume, FA, thalamus_DMN_FC). The experimental plan is feasible with DTI and fMRI. However, potential confounding factors (e.g., age, sleep duration) could affect the results and should be controlled.",
+    "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-13T06:58:50.506279+00:00"
+  },
+  {
+    "review_id": "review_a64983964d3f",
+    "hypothesis_id": "hypothesis_d6155445c0b1",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and integrates structural and functional neuroimaging data, linking thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia. The experimental plan is well-defined.",
+    "critique": "The hypothesis is well-structured but could benefit from more detailed mediation analysis to confirm the role of white matter integrity. The integration of thalamic volume with FA and thalamocortical coupling is supported by existing evidence, but the specific pathways may require further validation. The use of DTI and fMRI is appropriate, but the sample size and control for confounding variables (e.g., age, sleep duration) should be considered.",
+    "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-13T06:59:09.319009+00:00"
+  },
+  {
+    "review_id": "review_11bcae8f888b",
+    "hypothesis_id": "hypothesis_d6155445c0b1",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, integrating structural and functional neuroimaging data. The mediation through white matter integrity is supported by existing evidence but requires further validation.",
+    "critique": "The hypothesis is well-structured but assumes a direct mediation pathway from thalamic morphology to white matter integrity without considering potential confounding factors. The integration of thalamocortical coupling with DMN is supported by prior findings, but the specific mediation through FA needs more detailed exploration. The directional prediction is clear, but the falsification criteria are straightforward and may not capture complex interactions.",
+    "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-13T06:59:26.743139+00:00"
+  },
+  {
+    "review_id": "review_0b1ef1956b14",
+    "hypothesis_id": "hypothesis_428f06b0d5c6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, integrating structural and functional neuroimaging data. The mediation analysis plan is sound.",
+    "critique": "The hypothesis is novel in linking thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia. Correctness is moderate as some assumptions (e.g., thalamic morphology affecting white matter integrity) require further validation. Testability is high with the proposed multimodal neuroimaging study. Supporting evidence includes 'toy001', 'toy003', and evidence_362515daef8d, evidence_cffb5cadb0ba.",
+    "supporting_evidence": [
+      "toy001",
+      "toy003",
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba"
+    ],
+    "created_at": "2026-07-13T06:59:45.041969+00:00"
+  },
+  {
+    "review_id": "review_c724c0d7320b",
+    "hypothesis_id": "hypothesis_428f06b0d5c6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia. The experimental plan is feasible with existing neuroimaging methods.",
+    "critique": "The hypothesis effectively links structural and functional changes via white matter integrity, supported by existing evidence (evidence_362515daef8d, evidence_cffb5cadb0ba). The mediation analysis is a strong test of the proposed pathway. Potential improvements could include longitudinal studies to establish causality and control for confounding variables like age and sleep duration.",
+    "supporting_evidence": [
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba",
       "toy001",
       "toy003"
     ],
-    "created_at": "2026-07-01T01:44:16.307361+00:00"
+    "created_at": "2026-07-13T07:00:02.506083+00:00"
+  },
+  {
+    "review_id": "review_dd0b6b6e10b6",
+    "hypothesis_id": "hypothesis_428f06b0d5c6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating structural and functional neuroimaging data with a clear mediation pathway. The experimental plan is robust and testable.",
+    "critique": "The hypothesis effectively links thalamic morphology, white matter integrity, and thalamocortical coupling. The mediation analysis is a strong methodological choice. However, potential confounding variables such as age, sleep duration, and comorbid conditions could influence the results and should be controlled for. The citations provided are minimal, which might limit the depth of evidence support.",
+    "supporting_evidence": [
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba"
+    ],
+    "created_at": "2026-07-13T07:00:18.469094+00:00"
+  },
+  {
+    "review_id": "review_839f0a876c4b",
+    "hypothesis_id": "hypothesis_428f06b0d5c6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured and testable, integrating structural and functional neuroimaging data with mediation analysis.",
+    "critique": "The hypothesis effectively links thalamic morphology, white matter integrity, and thalamocortical coupling. The mediation analysis plan is robust. Novelty is high given the integration of structural and functional pathways. Potential for confirmation through multimodal imaging.",
+    "supporting_evidence": [
+      "toy001",
+      "toy003",
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba"
+    ],
+    "created_at": "2026-07-13T07:00:32.907926+00:00"
+  },
+  {
+    "review_id": "review_e84c6592f545",
+    "hypothesis_id": "hypothesis_428f06b0d5c6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates structural and functional neuroimaging data to propose a mediated relationship between thalamic morphology and thalamocortical coupling via white matter integrity in insomnia. The experimental plan is well-structured with clear mediation analysis.",
+    "critique": "The hypothesis is well-structured and novel, integrating thalamic morphology with white matter integrity and thalamocortical coupling. The use of mediation analysis is appropriate. However, the assumption that thalamic morphology affects white matter integrity needs further validation. The evidence from the knowledge graph supports the relationships between thalamus_volume and FA, and FA with thalamus_DMN_FC, but the direct link between thalamic morphology and white matter integrity is less clear. The experimental plan should include controls for confounding variables such as age, sleep duration, and other sleep metrics.",
+    "supporting_evidence": [
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba"
+    ],
+    "created_at": "2026-07-13T07:00:53.111407+00:00"
+  },
+  {
+    "review_id": "review_a81e9728f778",
+    "hypothesis_id": "hypothesis_4f8b7ecc1658",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a plausible and testable model linking thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia. The integration of structural and functional pathways is novel but requires further empirical validation.",
+    "critique": "The hypothesis is well-structured and integrates multiple modalities (MRI, DTI, fMRI) with a clear mediation pathway. However, the key assumptions (e.g., thalamic volume affects FA) may require more direct evidence. The mediation chain (thalamic volume -> FA -> thalamus-DMN FC -> insomnia severity) is logical but needs validation with existing evidence. The citations provided (E1-E12) should be checked for supporting the specific mediation steps.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "created_at": "2026-07-13T07:02:36.036586+00:00"
+  },
+  {
+    "review_id": "review_f5107a424cd7",
+    "hypothesis_id": "hypothesis_4f8b7ecc1658",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a well-structured, novel pathway integrating thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia. It is supported by existing evidence and is highly testable with current neuroimaging methods.",
+    "critique": "The hypothesis is well-constructed, with a clear mediation pathway. The integration of thalamic volume, FA, and thalamus-DMN FC is plausible and supported by prior findings (E1-E3, E10-E12). The key assumptions are logically ordered and align with the knowledge graph. However, potential confounding factors (e.g., age, sleep duration, comorbid conditions) should be controlled for in the mediation analysis. Additionally, the role of other thalamic networks beyond the DMN could be explored for completeness.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "created_at": "2026-07-13T07:02:55.829164+00:00"
+  },
+  {
+    "review_id": "review_e9b413b5d8b3",
+    "hypothesis_id": "hypothesis_4f8b7ecc1658",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a well-structured and novel pathway linking thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia, supported by existing evidence and multimodal neuroimaging techniques.",
+    "critique": "The hypothesis is logically sound and integrates multiple neuroimaging modalities (MRI, DTI, fMRI) with mediation analysis, which is a robust approach. The key assumptions are plausible and supported by prior findings in the knowledge graph. However, the mediation pathway assumes a linear sequence (thalamic volume -> FA -> thalamus-DMN FC -> insomnia severity), which may oversimplify potential bidirectional or interactive effects. Additionally, the role of confounding variables (e.g., age, sleep duration, comorbidities) should be explicitly controlled in the analysis.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "created_at": "2026-07-13T07:03:15.259167+00:00"
+  },
+  {
+    "review_id": "review_1f5ba3c99a5d",
+    "hypothesis_id": "hypothesis_4f8b7ecc1658",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a novel and testable pathway linking thalamic morphology, white matter integrity, and thalamocortical coupling in insomnia, supported by existing evidence.",
+    "critique": "The hypothesis is well-structured and integrates multiple modalities (MRI, DTI, fMRI) with a clear mediation pathway. The assumptions are plausible and supported by existing evidence (E1-E3, E10-E12). Potential areas for further validation include ensuring the mediation sequence (thalamic volume -> FA -> thalamus-DMN FC -> insomnia severity) is robust and not confounded by other variables. The use of mediation analysis is appropriate, though the inclusion of control variables (e.g., age, sleep duration) may enhance testability.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "created_at": "2026-07-13T07:03:34.129754+00:00"
+  },
+  {
+    "review_id": "review_ef7b99344bc0",
+    "hypothesis_id": "hypothesis_4f8b7ecc1658",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamic morphology, white matter integrity, and thalamocortical coupling to explain insomnia, showing a plausible mediated pathway. The experimental plan is well-structured and testable.",
+    "critique": "The hypothesis is novel in integrating multiple modalities (MRI, DTI, fMRI) and showing a mediated pathway. However, the correctness could be improved by addressing potential confounding variables, such as age and medication use in insomnia patients. The testability is strong with the proposed mediation analysis. The correctness score is slightly lower due to the need for more detailed control of confounders.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "created_at": "2026-07-13T07:03:50.737864+00:00"
   }
 ]
