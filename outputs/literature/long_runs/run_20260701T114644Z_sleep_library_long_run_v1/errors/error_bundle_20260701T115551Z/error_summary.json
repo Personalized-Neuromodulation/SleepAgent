@@ -1,0 +1,6 @@
+{
+  "stage": "iteration",
+  "error_type": "IntegrityError",
+  "message": "(psycopg.errors.ForeignKeyViolation) insert or update on table \"paper_sources\" violates foreign key constraint \"paper_sources_paper_id_fkey\"\nDETAIL:  Key (paper_id)=(api_paper_f0b48ffd50fd) is not present in table \"papers\".\n[SQL: INSERT INTO paper_sources (paper_id, provider, provider_id, query_text, query_group, query_set_version, retrieved_at, raw_json) VALUES (%(paper_id)s::VARCHAR, %(provider)s::VARCHAR, %(provider_id)s::VARCHAR, %(query_text)s::VARCHAR, %(query_group)s::VARCHAR, %(query_set_version)s::VARCHAR, %(retrieved_at)s::TIMESTAMP WITH TIME ZONE, %(raw_json)s::JSON) RETURNING paper_sources.id]\n[parameters: {'paper_id': 'api_paper_f0b48ffd50fd', 'provider': 'europe_pmc', 'provider_id': 'PPR1227265', 'query_text': None, 'query_group': None, 'query_set_version': 'sleep_literature_queries_v2_broad_sleep_science', 'retrieved_at': None, 'raw_json': Json({'paper_id': 'api_paper_f0b48ffd50f ... (2792 chars))}]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)",
+  "timestamp": "2026-07-01T11:55:51.428564+00:00"
+}

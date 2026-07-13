@@ -481,3 +481,57 @@
 {"created_at": "2026-07-01T08:57:05.366628+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H004", "hypothesis_id": "H004", "n_used": 5, "status": "ok", "decision": "revised"}}
 {"created_at": "2026-07-01T08:57:05.366667+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H005", "hypothesis_id": "H005", "n_used": 4, "status": "ok", "decision": "revised"}}
 {"created_at": "2026-07-01T08:57:05.366710+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H006", "hypothesis_id": "H006", "n_used": 5, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-01T11:27:37.240374+00:00", "event_type": "benchmark_started", "payload": {"config": "configs/benchmark_config.yaml"}}
+{"created_at": "2026-07-01T11:27:37.244914+00:00", "event_type": "hypothesis_quality_benchmark_completed", "payload": {"rows": 12}}
+{"created_at": "2026-07-01T11:27:37.296293+00:00", "event_type": "grounding_benchmark_completed", "payload": {"rows": 12}}
+{"created_at": "2026-07-01T11:27:37.296880+00:00", "event_type": "execution_benchmark_completed", "payload": {"rows": 6}}
+{"created_at": "2026-07-01T11:27:37.297144+00:00", "event_type": "critic_benchmark_completed", "payload": {"rows": 6}}
+{"created_at": "2026-07-01T11:27:37.297624+00:00", "event_type": "co_scientist_benchmark_completed", "payload": {"rows": 10}}
+{"created_at": "2026-07-01T11:27:37.298380+00:00", "event_type": "expert_review_template_generated", "payload": {"path": "/home/jwj/code/SleepAgent/outputs/benchmark/expert_review_template.csv", "ratings": 0}}
+{"created_at": "2026-07-01T11:27:37.298551+00:00", "event_type": "pairwise_preferences_generated", "payload": {"rows": 11}}
+{"created_at": "2026-07-01T11:27:37.298787+00:00", "event_type": "benchmark_completed", "payload": {"passed": true, "failed_checks": []}}
+{"created_at": "2026-07-01T11:27:37.351054+00:00", "event_type": "co_scientist_candidate_generated", "payload": {"candidate_count": 7}}
+{"created_at": "2026-07-01T11:27:37.351826+00:00", "event_type": "proximity_clustered", "payload": {"cluster_count": 7}}
+{"created_at": "2026-07-01T11:27:37.379405+00:00", "event_type": "reflection_reviewed", "payload": {"review_count": 7}}
+{"created_at": "2026-07-01T11:27:37.379752+00:00", "event_type": "ranking_completed", "payload": {"pair_count": 21, "ranked_count": 7}}
+{"created_at": "2026-07-01T11:27:37.384189+00:00", "event_type": "hypothesis_evolved", "payload": {"evolved_count": 5}}
+{"created_at": "2026-07-01T11:27:37.455090+00:00", "event_type": "meta_review_completed", "payload": {"top_k": 10}}
+{"created_at": "2026-07-01T11:27:38.372650+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H001", "hypothesis_id": "H001", "n_used": 4, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-01T11:27:38.372706+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H002", "hypothesis_id": "H002", "n_used": 4, "status": "ok", "decision": "hold"}}
+{"created_at": "2026-07-01T11:27:38.372830+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H003", "hypothesis_id": "H003", "n_used": 4, "status": "ok", "decision": "hold"}}
+{"created_at": "2026-07-01T11:27:38.372939+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H004", "hypothesis_id": "H004", "n_used": 5, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-01T11:27:38.372978+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H005", "hypothesis_id": "H005", "n_used": 4, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-01T11:27:38.373012+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H006", "hypothesis_id": "H006", "n_used": 5, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-01T11:27:38.417807+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H001", "hypothesis_id": "H001", "n_used": 4, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-01T11:27:38.417853+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H002", "hypothesis_id": "H002", "n_used": 4, "status": "ok", "decision": "hold"}}
+{"created_at": "2026-07-01T11:27:38.417976+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H003", "hypothesis_id": "H003", "n_used": 4, "status": "ok", "decision": "hold"}}
+{"created_at": "2026-07-01T11:27:38.418090+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H004", "hypothesis_id": "H004", "n_used": 5, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-01T11:27:38.418127+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H005", "hypothesis_id": "H005", "n_used": 4, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-01T11:27:38.418163+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H006", "hypothesis_id": "H006", "n_used": 5, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-02T01:14:18.493356+00:00", "event_type": "benchmark_started", "payload": {"config": "configs/benchmark_config.yaml"}}
+{"created_at": "2026-07-02T01:14:18.497773+00:00", "event_type": "hypothesis_quality_benchmark_completed", "payload": {"rows": 12}}
+{"created_at": "2026-07-02T01:14:18.546819+00:00", "event_type": "grounding_benchmark_completed", "payload": {"rows": 12}}
+{"created_at": "2026-07-02T01:14:18.547388+00:00", "event_type": "execution_benchmark_completed", "payload": {"rows": 6}}
+{"created_at": "2026-07-02T01:14:18.547648+00:00", "event_type": "critic_benchmark_completed", "payload": {"rows": 6}}
+{"created_at": "2026-07-02T01:14:18.548130+00:00", "event_type": "co_scientist_benchmark_completed", "payload": {"rows": 10}}
+{"created_at": "2026-07-02T01:14:18.548909+00:00", "event_type": "expert_review_template_generated", "payload": {"path": "/home/jwj/code/SleepAgent/outputs/benchmark/expert_review_template.csv", "ratings": 0}}
+{"created_at": "2026-07-02T01:14:18.549076+00:00", "event_type": "pairwise_preferences_generated", "payload": {"rows": 11}}
+{"created_at": "2026-07-02T01:14:18.549318+00:00", "event_type": "benchmark_completed", "payload": {"passed": true, "failed_checks": []}}
+{"created_at": "2026-07-02T01:14:18.599218+00:00", "event_type": "co_scientist_candidate_generated", "payload": {"candidate_count": 7}}
+{"created_at": "2026-07-02T01:14:18.600008+00:00", "event_type": "proximity_clustered", "payload": {"cluster_count": 7}}
+{"created_at": "2026-07-02T01:14:18.626514+00:00", "event_type": "reflection_reviewed", "payload": {"review_count": 7}}
+{"created_at": "2026-07-02T01:14:18.626901+00:00", "event_type": "ranking_completed", "payload": {"pair_count": 21, "ranked_count": 7}}
+{"created_at": "2026-07-02T01:14:18.631169+00:00", "event_type": "hypothesis_evolved", "payload": {"evolved_count": 5}}
+{"created_at": "2026-07-02T01:14:18.697170+00:00", "event_type": "meta_review_completed", "payload": {"top_k": 10}}
+{"created_at": "2026-07-02T01:14:19.751148+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H001", "hypothesis_id": "H001", "n_used": 4, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-02T01:14:19.751220+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H002", "hypothesis_id": "H002", "n_used": 4, "status": "ok", "decision": "hold"}}
+{"created_at": "2026-07-02T01:14:19.751381+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H003", "hypothesis_id": "H003", "n_used": 4, "status": "ok", "decision": "hold"}}
+{"created_at": "2026-07-02T01:14:19.751537+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H004", "hypothesis_id": "H004", "n_used": 5, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-02T01:14:19.751594+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H005", "hypothesis_id": "H005", "n_used": 4, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-02T01:14:19.751645+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H006", "hypothesis_id": "H006", "n_used": 5, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-02T01:14:19.808011+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H001", "hypothesis_id": "H001", "n_used": 4, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-02T01:14:19.808069+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H002", "hypothesis_id": "H002", "n_used": 4, "status": "ok", "decision": "hold"}}
+{"created_at": "2026-07-02T01:14:19.808202+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H003", "hypothesis_id": "H003", "n_used": 4, "status": "ok", "decision": "hold"}}
+{"created_at": "2026-07-02T01:14:19.808324+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H004", "hypothesis_id": "H004", "n_used": 5, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-02T01:14:19.808366+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H005", "hypothesis_id": "H005", "n_used": 4, "status": "ok", "decision": "revised"}}
+{"created_at": "2026-07-02T01:14:19.808403+00:00", "event_type": "result.summary", "payload": {"experiment_id": "EXP_H006", "hypothesis_id": "H006", "n_used": 5, "status": "ok", "decision": "revised"}}

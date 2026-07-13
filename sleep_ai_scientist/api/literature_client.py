@@ -78,6 +78,9 @@ def apply_query_config(config: dict[str, Any], query_config_path: str | Path | N
 
 
 def _rps(provider: str, provider_cfg: dict[str, Any]) -> float:
+    if provider_cfg.get("min_interval_seconds") is not None:
+        interval = max(float(provider_cfg["min_interval_seconds"]), 0.001)
+        return 1.0 / interval
     if provider == "pubmed":
         import os
 

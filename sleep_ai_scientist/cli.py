@@ -79,6 +79,8 @@ def build_parser() -> argparse.ArgumentParser:
     item.add_argument("--backend", default=None)
     item.add_argument("--enable-api", action="store_true")
     item.add_argument("--disable-api", action="store_true")
+    item.add_argument("--enable-journal-targeted", action="store_true")
+    item.add_argument("--enable-rag-index", action="store_true")
     item = literature_sub.add_parser("long-run")
     item.add_argument("--config", default="configs/literature_long_run_config.yaml")
     item.add_argument("--max-runtime-hours", type=float, default=None)
@@ -153,7 +155,15 @@ def main(argv: list[str] | None = None) -> int:
         engine.dispose()
     elif args.domain == "literature" and args.command == "build":
         api_enabled = True if args.enable_api else False if args.disable_api else None
-        result = run_literature_build(args.config, query_config_path=args.query_config, library_version=args.library_version, backend=args.backend, api_enabled=api_enabled)
+        result = run_literature_build(
+            args.config,
+            query_config_path=args.query_config,
+            library_version=args.library_version,
+            backend=args.backend,
+            api_enabled=api_enabled,
+            enable_journal_targeted=args.enable_journal_targeted,
+            enable_rag_index=args.enable_rag_index,
+        )
     elif args.domain == "literature" and args.command == "long-run":
         result = run_long_run(args.config, max_runtime_hours=args.max_runtime_hours, resume=args.resume, dry_run=args.dry_run, backend=args.backend)
     elif args.domain == "knowledge" and args.command == "build":

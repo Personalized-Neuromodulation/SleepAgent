@@ -30,33 +30,53 @@ class Paper(Base):
     __tablename__ = "papers"
 
     paper_id: Mapped[str] = mapped_column(String(128), primary_key=True)
+    canonical_paper_id: Mapped[str | None] = mapped_column(String(128), unique=True, index=True)
     title: Mapped[str] = mapped_column(Text, nullable=False)
+    title_normalized: Mapped[str | None] = mapped_column(Text, index=True)
+    title_hash: Mapped[str | None] = mapped_column(String(64), index=True)
     abstract: Mapped[str | None] = mapped_column(Text)
     year: Mapped[int | None] = mapped_column(Integer)
     doi: Mapped[str | None] = mapped_column(String(512), unique=True, index=True)
     pmid: Mapped[str | None] = mapped_column(String(64), unique=True, index=True)
     pmcid: Mapped[str | None] = mapped_column(String(64), unique=True, index=True)
+    semantic_scholar_id: Mapped[str | None] = mapped_column(String(256), index=True)
+    openalex_id: Mapped[str | None] = mapped_column(String(512), index=True)
+    crossref_id: Mapped[str | None] = mapped_column(String(512), index=True)
     journal: Mapped[str | None] = mapped_column(Text)
+    journal_normalized: Mapped[str | None] = mapped_column(Text, index=True)
+    first_author: Mapped[str | None] = mapped_column(Text, index=True)
     publication_type: Mapped[str | None] = mapped_column(String(128))
     authors_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
     keywords_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
     mesh_terms_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
     citation_count: Mapped[int | None] = mapped_column(Integer)
     citation_source: Mapped[str | None] = mapped_column(String(128))
+    citation_sources_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
     citation_count_age_normalized: Mapped[float | None] = mapped_column(Float)
     is_open_access: Mapped[bool | None] = mapped_column(Boolean)
     open_access_url: Mapped[str | None] = mapped_column(Text)
+    journal_priority_score: Mapped[float | None] = mapped_column(Float)
+    journal_domain_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
+    jcr_categories_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
+    retrieval_channels_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
+    source_providers_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
+    duplicate_group_id: Mapped[str | None] = mapped_column(String(128), index=True)
+    merged_from_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
     url: Mapped[str | None] = mapped_column(Text)
     source: Mapped[str | None] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utc_now)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utc_now, onupdate=utc_now)
 
     sources: Mapped[list["PaperSource"]] = relationship(back_populates="paper")
+    aliases: Mapped[list["PaperAlias"]] = relationship(back_populates="paper")
 
 
 class PaperSource(Base):
     __tablename__ = "paper_sources"
-    __table_args__ = (Index("ix_paper_sources_provider_query", "provider", "query_group"),)
+    __table_args__ = (
+        Index("ix_paper_sources_provider_query", "provider", "query_group"),
+        Index("ix_paper_sources_channel_provider", "retrieval_channel", "provider"),
+    )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     paper_id: Mapped[str] = mapped_column(ForeignKey("papers.paper_id"), index=True)
@@ -65,10 +85,58 @@ class PaperSource(Base):
     query_text: Mapped[str | None] = mapped_column(Text)
     query_group: Mapped[str | None] = mapped_column(String(256), index=True)
     query_set_version: Mapped[str | None] = mapped_column(String(256), index=True)
+    retrieval_channel: Mapped[str | None] = mapped_column(String(64), index=True)
     retrieved_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     raw_json: Mapped[dict[str, Any] | None] = mapped_column(JSONAuto)
 
     paper: Mapped[Paper] = relationship(back_populates="sources")
+
+
+class PaperAlias(Base):
+    __tablename__ = "paper_aliases"
+    __table_args__ = (
+        UniqueConstraint("alias_type", "alias_value", name="uq_paper_alias_type_value"),
+        Index("ix_paper_aliases_paper_type", "paper_id", "alias_type"),
+    )
+
+    alias_id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    paper_id: Mapped[str] = mapped_column(ForeignKey("papers.paper_id"), index=True)
+    alias_type: Mapped[str] = mapped_column(String(64), index=True)
+    alias_value: Mapped[str] = mapped_column(String(512), index=True)
+    provider: Mapped[str | None] = mapped_column(String(128), index=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utc_now)
+
+    paper: Mapped[Paper] = relationship(back_populates="aliases")
+
+
+class DeduplicationEvent(Base):
+    __tablename__ = "deduplication_events"
+    __table_args__ = (
+        Index("ix_dedup_events_canonical", "canonical_paper_id"),
+        Index("ix_dedup_events_matched_by", "matched_by"),
+        Index("ix_dedup_events_action", "action"),
+    )
+
+    event_id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    canonical_paper_id: Mapped[str | None] = mapped_column(String(128), index=True)
+    incoming_paper_id: Mapped[str | None] = mapped_column(String(128))
+    matched_by: Mapped[str | None] = mapped_column(String(128), index=True)
+    match_score: Mapped[float | None] = mapped_column(Float)
+    action: Mapped[str] = mapped_column(String(64), index=True)
+    existing_title: Mapped[str | None] = mapped_column(Text)
+    incoming_title: Mapped[str | None] = mapped_column(Text)
+    existing_doi: Mapped[str | None] = mapped_column(String(512))
+    incoming_doi: Mapped[str | None] = mapped_column(String(512))
+    existing_pmid: Mapped[str | None] = mapped_column(String(64))
+    incoming_pmid: Mapped[str | None] = mapped_column(String(64))
+    existing_journal: Mapped[str | None] = mapped_column(Text)
+    incoming_journal: Mapped[str | None] = mapped_column(Text)
+    existing_year: Mapped[int | None] = mapped_column(Integer)
+    incoming_year: Mapped[int | None] = mapped_column(Integer)
+    retrieval_channel: Mapped[str | None] = mapped_column(String(64), index=True)
+    provider: Mapped[str | None] = mapped_column(String(128), index=True)
+    notes: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utc_now)
 
 
 class Query(Base):

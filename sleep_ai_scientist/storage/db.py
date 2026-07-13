@@ -5,7 +5,7 @@ from contextlib import contextmanager
 from pathlib import Path
 from typing import Any, Iterator
 
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, inspect, text
 from sqlalchemy.engine import Engine
 from sqlalchemy.orm import Session, sessionmaker
 
@@ -69,6 +69,48 @@ def create_engine_from_config(config_path: str | Path = "configs/database_config
 
 def init_database(engine: Engine) -> None:
     Base.metadata.create_all(engine)
+    _ensure_literature_columns(engine)
+
+
+def _ensure_literature_columns(engine: Engine) -> None:
+    inspector = inspect(engine)
+    if "papers" not in inspector.get_table_names():
+        return
+    dialect = engine.dialect.name
+    existing_paper_columns = {column["name"] for column in inspector.get_columns("papers")}
+    existing_source_columns = {column["name"] for column in inspector.get_columns("paper_sources")} if "paper_sources" in inspector.get_table_names() else set()
+    paper_columns = {
+        "canonical_paper_id": "VARCHAR(128)",
+        "title_normalized": "TEXT",
+        "title_hash": "VARCHAR(64)",
+        "semantic_scholar_id": "VARCHAR(256)",
+        "openalex_id": "VARCHAR(512)",
+        "crossref_id": "VARCHAR(512)",
+        "journal_normalized": "TEXT",
+        "first_author": "TEXT",
+        "citation_sources_json": "JSON",
+        "journal_priority_score": "FLOAT",
+        "journal_domain_json": "JSON",
+        "jcr_categories_json": "JSON",
+        "retrieval_channels_json": "JSON",
+        "source_providers_json": "JSON",
+        "duplicate_group_id": "VARCHAR(128)",
+        "merged_from_json": "JSON",
+    }
+    source_columns = {"retrieval_channel": "VARCHAR(64)"}
+    with engine.begin() as conn:
+        for name, sql_type in paper_columns.items():
+            if name not in existing_paper_columns:
+                if dialect == "postgresql":
+                    conn.execute(text(f"ALTER TABLE papers ADD COLUMN IF NOT EXISTS {name} {sql_type}"))
+                else:
+                    conn.execute(text(f"ALTER TABLE papers ADD COLUMN {name} {sql_type}"))
+        for name, sql_type in source_columns.items():
+            if name not in existing_source_columns:
+                if dialect == "postgresql":
+                    conn.execute(text(f"ALTER TABLE paper_sources ADD COLUMN IF NOT EXISTS {name} {sql_type}"))
+                else:
+                    conn.execute(text(f"ALTER TABLE paper_sources ADD COLUMN {name} {sql_type}"))
 
 
 def make_session_factory(engine: Engine) -> sessionmaker[Session]:
@@ -87,4 +129,3 @@ def session_scope(engine: Engine) -> Iterator[Session]:
         raise
     finally:
         session.close()
-

@@ -28,6 +28,19 @@ class LiteratureRecord(BaseModel):
     is_open_access: bool | None = None
     provider: str | None = None
     provider_id: str | None = None
+    pmcid: str | None = None
+    semantic_scholar_id: str | None = None
+    openalex_id: str | None = None
+    crossref_id: str | None = None
+    first_author: str | None = None
+    retrieval_channel: str | None = None
+    query: str | None = None
+    query_group: str | None = None
+    query_set_version: str | None = None
+    journal_priority_score: float | None = None
+    journal_domain: str | None = None
+    jcr_category: str | None = None
+    open_access_url: str | None = None
 
 
 class LiteratureCollection(BaseModel):

@@ -2,18 +2,18 @@ from __future__ import annotations
 
 from typing import Any
 
-from sleep_ai_scientist.api.normalizer import doi_key, normalize_title
+from sleep_ai_scientist.literature.identity_resolution import normalize_doi, normalize_pmcid, normalize_pmid, normalize_title
 from sleep_ai_scientist.schemas.literature import LiteratureRecord
 
 
 def literature_key(record: LiteratureRecord) -> tuple[str, str]:
-    doi = doi_key(record.doi)
+    doi = normalize_doi(record.doi)
     if doi:
         return "doi", doi
-    pmid = str(record.pmid or "").strip()
+    pmid = normalize_pmid(record.pmid)
     if pmid:
         return "pmid", pmid
-    pmcid = str(getattr(record, "pmcid", "") or "").strip()
+    pmcid = normalize_pmcid(getattr(record, "pmcid", "") or "")
     if pmcid:
         return "pmcid", pmcid
     title = normalize_title(record.title)
@@ -56,4 +56,3 @@ def deduplicate_records(records: list[LiteratureRecord], seed_ids: set[str] | No
             }
         )
     return list(merged.values()), report
-

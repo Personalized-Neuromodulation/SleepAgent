@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-07-02T07:14:21.002756+00:00",
+  "iteration": 3,
+  "run_id": "run_20260702T070723Z_sleep_library_long_run_v1",
+  "run_dir": "/home/jwj/code/SleepAgent/outputs/literature/long_runs/run_20260702T070723Z_sleep_library_long_run_v1",
+  "status": "running",
+  "last_successful_stage": "iteration",
+  "summary": {
+    "library_version": "sleep_literature_library_v1_iterative",
+    "query_set_version": "sleep_literature_queries_v2_broad_sleep_science",
+    "seed_papers": 3,
+    "api_papers": 3334,
+    "registry_records": 3337,
+    "duplicate_groups": 0,
+    "provider_summary": {
+      "query_result_counts": {},
+      "paper_source_counts": {
+        "semantic_scholar": 1324,
+        "europe_pmc": 1962,
+        "openalex": 2877,
+        "fixture": 9,
+        "pubmed": 3675
+      }
+    },
+    "query_summary": {
+      "query_count": 30,
+      "path": "/home/jwj/code/SleepAgent/outputs/literature/query_summary.csv"
+    },
+    "coverage_audit": "/home/jwj/code/SleepAgent/outputs/literature/coverage_audit.json",
+    "anchor_papers": "/home/jwj/code/SleepAgent/outputs/literature/anchor_papers.csv",
+    "query_expansion_candidates": "/home/jwj/code/SleepAgent/outputs/literature/query_expansion_candidates.csv",
+    "manifest": "/home/jwj/code/SleepAgent/outputs/literature/sleep_library_manifest.json",
+    "warnings": [
+      "semantic_scholar:sleep homeostasis slow wave activity:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=sleep+homeostasis+slow+wave+activity&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:slow wave sleep delta power:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=slow+wave+sleep+delta+power&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:thalamocortical spindle circuit:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=thalamocortical+spindle+circuit&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:VLPO sleep GABA:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=VLPO+sleep+GABA&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:orexin hypocretin arousal sleep wake:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=orexin+hypocretin+arousal+sleep+wake&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:SCN circadian sleep regulation:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=SCN+circadian+sleep+regulation&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:adenosine sleep pressure:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=adenosine+sleep+pressure&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:GABA sleep regulation:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=GABA+sleep+regulation&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:orexin receptor sleep arousal:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=orexin+receptor+sleep+arousal&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:melatonin circadian sleep:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=melatonin+circadian+sleep&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:TNF alpha sleep:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=TNF+alpha+sleep&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:optogenetic sleep wake regulation:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=optogenetic+sleep+wake+regulation&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess",
+      "semantic_scholar:DREADD sleep wake:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=DREADD+sleep+wake&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess"
+    ],
+    "run_id": "run_46c26e77204c"
+  }
+}

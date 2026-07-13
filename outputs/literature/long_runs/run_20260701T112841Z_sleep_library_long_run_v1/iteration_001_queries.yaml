@@ -1,0 +1,60 @@
+query_set:
+  version: sleep_literature_queries_v2_broad_sleep_science
+  description: Broad sleep science query set for SleepAgent Sleep AI Scientist.
+settings:
+  max_results_per_query: 50
+  providers:
+  - pubmed
+  - europe_pmc
+  - openalex
+  - semantic_scholar
+  include_human: true
+  include_animal: true
+  include_cellular_molecular: true
+  include_circuit_mechanisms: true
+  include_reviews: true
+  include_meta_analysis: true
+  include_methods: true
+queries:
+  general_sleep_physiology:
+  - sleep physiology NREM REM
+  - sleep architecture EEG
+  - sleep homeostasis slow wave activity
+  - slow wave sleep delta power
+  - sleep spindle generation
+  - sleep wake transition neural mechanisms
+  - microarousal sleep EEG
+  - sleep fragmentation EEG
+  sleep_circuits:
+  - thalamocortical spindle circuit
+  - thalamic reticular nucleus sleep spindle
+  - cortical slow oscillation sleep
+  - VLPO sleep GABA
+  - orexin hypocretin arousal sleep wake
+  - locus coeruleus sleep wake norepinephrine
+  - basal forebrain acetylcholine sleep
+  - SCN circadian sleep regulation
+  - REM sleep brainstem circuit
+  molecular_cellular_sleep:
+  - adenosine sleep pressure
+  - GABA sleep regulation
+  - orexin receptor sleep arousal
+  - melatonin circadian sleep
+  - cytokines sleep regulation
+  - interleukin sleep regulation
+  - TNF alpha sleep
+  - glutamate sleep wake regulation
+  - acetylcholine REM sleep
+  - histamine sleep wake regulation
+  animal_causal_sleep:
+  - optogenetic sleep wake regulation
+  - chemogenetic sleep regulation
+  - DREADD sleep wake
+  animal_sleep_models: []
+  human_sleep_eeg_psg: []
+  human_sleep_neuroimaging: []
+  insomnia_clinical_application: []
+  insomnia_neuroimaging: []
+  symptoms_scales: []
+  methods_confounds: []
+  translational_bridge: []

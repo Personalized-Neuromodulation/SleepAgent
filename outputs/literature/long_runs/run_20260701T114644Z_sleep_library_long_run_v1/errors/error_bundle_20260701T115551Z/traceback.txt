@@ -1,0 +1,72 @@
+Traceback (most recent call last):
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/psycopg/cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.ForeignKeyViolation: insert or update on table "paper_sources" violates foreign key constraint "paper_sources_paper_id_fkey"
+DETAIL:  Key (paper_id)=(api_paper_f0b48ffd50fd) is not present in table "papers".
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jwj/code/SleepAgent/sleep_ai_scientist/literature/long_run_supervisor.py", line 52, in run_long_run
+    summary = run_iteration(config, iteration, run_dir, dry_run=dry_run, backend=backend)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jwj/code/SleepAgent/sleep_ai_scientist/literature/iterative_builder.py", line 49, in run_iteration
+    return run_literature_build(temp_base, query_config_path=limited_query, library_version=config.get("project", {}).get("target_library_version"), backend=backend)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jwj/code/SleepAgent/sleep_ai_scientist/literature/library_builder.py", line 190, in run_literature_build
+    result = _run(session_obj)
+             ^^^^^^^^^^^^^^^^^
+  File "/home/jwj/code/SleepAgent/sleep_ai_scientist/literature/library_builder.py", line 131, in _run
+    _persist_records(session_obj, registry, queries, query_set_version)
+  File "/home/jwj/code/SleepAgent/sleep_ai_scientist/literature/library_builder.py", line 63, in _persist_records
+    source_repo.add_source(
+  File "/home/jwj/code/SleepAgent/sleep_ai_scientist/storage/repositories.py", line 105, in add_source
+    session.flush()
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4331, in flush
+    self._flush(objects)
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4466, in _flush
+    with util.safe_reraise():
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4427, in _flush
+    flush_context.execute()
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/jwj/.conda/envs/sleepagent/lib/python3.11/site-packages/psycopg/cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+sqlalchemy.exc.IntegrityError: (psycopg.errors.ForeignKeyViolation) insert or update on table "paper_sources" violates foreign key constraint "paper_sources_paper_id_fkey"
+DETAIL:  Key (paper_id)=(api_paper_f0b48ffd50fd) is not present in table "papers".
+[SQL: INSERT INTO paper_sources (paper_id, provider, provider_id, query_text, query_group, query_set_version, retrieved_at, raw_json) VALUES (%(paper_id)s::VARCHAR, %(provider)s::VARCHAR, %(provider_id)s::VARCHAR, %(query_text)s::VARCHAR, %(query_group)s::VARCHAR, %(query_set_version)s::VARCHAR, %(retrieved_at)s::TIMESTAMP WITH TIME ZONE, %(raw_json)s::JSON) RETURNING paper_sources.id]
+[parameters: {'paper_id': 'api_paper_f0b48ffd50fd', 'provider': 'europe_pmc', 'provider_id': 'PPR1227265', 'query_text': None, 'query_group': None, 'query_set_version': 'sleep_literature_queries_v2_broad_sleep_science', 'retrieved_at': None, 'raw_json': Json({'paper_id': 'api_paper_f0b48ffd50f ... (2792 chars))}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)

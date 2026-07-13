@@ -14,11 +14,13 @@ from sleep_ai_scientist.storage.models import (
     Checkpoint,
     CorpusVersion,
     ClinicalTrial,
+    DeduplicationEvent,
     DiagnosticTerm,
     Guideline,
     Instrument,
     ErrorLog,
     Paper,
+    PaperAlias,
     PaperSource,
     PublicDataset,
     Query,
@@ -34,24 +36,47 @@ def _empty_to_none(value: Any) -> Any:
 
 
 def _paper_payload(record: LiteratureRecord) -> dict[str, Any]:
+    from sleep_ai_scientist.literature.identity_resolution import compute_title_hash, normalize_doi, normalize_journal, normalize_pmcid, normalize_pmid, normalize_title
+
+    doi = normalize_doi(record.doi)
+    pmid = normalize_pmid(record.pmid)
+    pmcid = normalize_pmcid(getattr(record, "pmcid", None))
+    title_normalized = normalize_title(record.title)
+    journal_normalized = normalize_journal(record.journal)
     return {
         "paper_id": record.paper_id,
+        "canonical_paper_id": record.paper_id,
         "title": record.title,
+        "title_normalized": title_normalized,
+        "title_hash": compute_title_hash(record.title),
         "abstract": _empty_to_none(record.abstract),
         "year": record.publication_year or record.year,
-        "doi": _empty_to_none(record.doi),
-        "pmid": _empty_to_none(record.pmid),
-        "pmcid": _empty_to_none(getattr(record, "pmcid", None)),
+        "doi": _empty_to_none(doi),
+        "pmid": _empty_to_none(pmid),
+        "pmcid": _empty_to_none(pmcid),
+        "semantic_scholar_id": _empty_to_none(getattr(record, "semantic_scholar_id", None)),
+        "openalex_id": _empty_to_none(getattr(record, "openalex_id", None)),
+        "crossref_id": _empty_to_none(getattr(record, "crossref_id", None)),
         "journal": _empty_to_none(record.journal),
+        "journal_normalized": _empty_to_none(journal_normalized),
+        "first_author": _empty_to_none(getattr(record, "first_author", None) or (record.authors[0] if record.authors else None)),
         "publication_type": _empty_to_none(record.publication_type),
         "authors_json": record.authors or [],
         "keywords_json": record.keywords or [],
         "mesh_terms_json": [],
         "citation_count": record.citation_count,
         "citation_source": record.citation_source,
+        "citation_sources_json": [record.citation_source] if record.citation_source else [],
         "citation_count_age_normalized": record.citation_count_age_normalized,
         "is_open_access": record.is_open_access,
-        "open_access_url": None,
+        "open_access_url": _empty_to_none(getattr(record, "open_access_url", None)),
+        "journal_priority_score": getattr(record, "journal_priority_score", None) or getattr(record, "journal_impact_factor", None),
+        "journal_domain_json": [getattr(record, "journal_domain", None)] if getattr(record, "journal_domain", None) else [],
+        "jcr_categories_json": [getattr(record, "jcr_category", None) or record.journal_quartile] if (getattr(record, "jcr_category", None) or record.journal_quartile) else [],
+        "retrieval_channels_json": [record.retrieval_channel] if getattr(record, "retrieval_channel", None) else [],
+        "source_providers_json": [record.provider or record.source] if (record.provider or record.source) else [],
+        "duplicate_group_id": None,
+        "merged_from_json": [],
         "url": _empty_to_none(record.url),
         "source": _empty_to_none(record.source),
     }
@@ -91,6 +116,75 @@ class PaperRepository:
     def get_by_pmcid(self, session: Session, pmcid: str) -> Paper | None:
         return session.scalar(select(Paper).where(Paper.pmcid == pmcid))
 
+    def find_by_alias(self, session: Session, alias_type: str, alias_value: str) -> Paper | None:
+        alias = session.scalar(select(PaperAlias).where(PaperAlias.alias_type == alias_type, PaperAlias.alias_value == alias_value))
+        return session.get(Paper, alias.paper_id) if alias else None
+
+    def find_existing_by_identifiers(self, session: Session, record: LiteratureRecord) -> Paper | None:
+        from sleep_ai_scientist.literature.identity_resolution import normalize_doi, normalize_pmcid, normalize_pmid
+
+        identifiers = [
+            ("doi", normalize_doi(record.doi)),
+            ("pmid", normalize_pmid(record.pmid)),
+            ("pmcid", normalize_pmcid(getattr(record, "pmcid", None))),
+            ("semantic_scholar_id", getattr(record, "semantic_scholar_id", None)),
+            ("openalex_id", getattr(record, "openalex_id", None)),
+            ("crossref_id", getattr(record, "crossref_id", None)),
+        ]
+        for alias_type, value in identifiers:
+            if not value:
+                continue
+            column = getattr(Paper, alias_type)
+            paper = session.scalar(select(Paper).where(column == value))
+            if paper:
+                return paper
+            paper = self.find_by_alias(session, alias_type, str(value))
+            if paper:
+                return paper
+        return None
+
+    def upsert_alias(self, session: Session, paper_id: str, alias_type: str, alias_value: str | None, provider: str | None = None) -> PaperAlias | None:
+        if not alias_value:
+            return None
+        alias = session.scalar(select(PaperAlias).where(PaperAlias.alias_type == alias_type, PaperAlias.alias_value == str(alias_value)))
+        if alias is None:
+            alias = PaperAlias(paper_id=paper_id, alias_type=alias_type, alias_value=str(alias_value), provider=provider)
+            session.add(alias)
+        else:
+            alias.paper_id = paper_id
+            alias.provider = alias.provider or provider
+        session.flush()
+        return alias
+
+    def update_retrieval_channels(self, session: Session, paper_id: str, channel: str | None) -> None:
+        if not channel:
+            return
+        paper = session.get(Paper, paper_id)
+        if paper is None:
+            return
+        channels = sorted(set((paper.retrieval_channels_json or []) + [channel]))
+        paper.retrieval_channels_json = channels
+        paper.updated_at = utc_now()
+        session.flush()
+
+    def update_source_providers(self, session: Session, paper_id: str, provider: str | None) -> None:
+        if not provider:
+            return
+        paper = session.get(Paper, paper_id)
+        if paper is None:
+            return
+        providers = sorted(set((paper.source_providers_json or []) + [provider]))
+        paper.source_providers_json = providers
+        paper.updated_at = utc_now()
+        session.flush()
+
+    def merge_into_existing(self, session: Session, existing_paper: Paper, incoming_record: LiteratureRecord) -> dict[str, Any]:
+        from sleep_ai_scientist.literature.identity_resolution import merge_literature_records
+
+        result = merge_literature_records(existing_paper, incoming_record)
+        session.flush()
+        return result
+
     def list_all(self, session: Session) -> list[Paper]:
         return list(session.scalars(select(Paper).order_by(Paper.paper_id)))
 
@@ -107,6 +201,23 @@ class PaperSourceRepository:
 
     def list_sources_for_paper(self, session: Session, paper_id: str) -> list[PaperSource]:
         return list(session.scalars(select(PaperSource).where(PaperSource.paper_id == paper_id).order_by(PaperSource.id)))
+
+
+class DeduplicationRepository:
+    def add_event(self, session: Session, **kwargs: Any) -> DeduplicationEvent:
+        event = DeduplicationEvent(**kwargs)
+        session.add(event)
+        session.flush()
+        return event
+
+    def list_events(self, session: Session) -> list[DeduplicationEvent]:
+        return list(session.scalars(select(DeduplicationEvent).order_by(DeduplicationEvent.event_id)))
+
+    def export_report(self, session: Session) -> list[dict[str, Any]]:
+        rows = []
+        for event in self.list_events(session):
+            rows.append({column.name: getattr(event, column.name) for column in DeduplicationEvent.__table__.columns})
+        return rows
 
 
 class QueryRepository:

@@ -1,6 +1,6 @@
 # Sleep Literature Library Build Report
 
-- Library version: test_library
+- Library version: sleep_literature_library_dedup_check
 - Query set version: sleep_literature_queries_v2_broad_sleep_science
 - Seed papers: 3
 - API papers: 0
