@@ -1,0 +1,55 @@
+experiment:
+  top_k_hypotheses: 1
+  max_predictors: 4
+  max_outcomes: 2
+  enable_ml: false
+  bootstrap_iterations: 100
+  verbose: true
+  llm:
+    enabled: true
+    provider: ollama
+    base_url: http://localhost:11434
+    model: richardyoung/qwen3-14b-abliterated:latest
+    timeout: 300
+    temperature: 0.1
+    log_calls: true
+
+feature_extraction:
+  enabled: false
+  output_root: outputs/features
+  modalities:
+    - fmri
+    - eeg
+    - scales
+  fmri:
+    input_root: ""
+    derivatives_root: ""
+    output_root: ""
+    features_csv: ""
+  eeg:
+    features_csv: ""
+  scales:
+    features_csv: ""
+
+data_processing:
+  enabled: false
+  backend: fmri_local_split
+  input_root: ""
+  output_root: outputs/data_processing/fmri_local_split
+  derivatives_root: ""
+  subjects: []
+  surface_mode: "0"
+  mni_template: both
+  fs_license: ""
+  subject_jobs:
+  env: {}
+
+paths:
+  hypothesis_pool: outputs/hypotheses/hypothesis_pool.json
+  data_profile: outputs/profiles/analysis_ready_profile.yaml
+  approved_variables: outputs/grounding/approved_variables_from_grounding.yaml
+  variable_mapping: outputs/grounding/evidence_to_variable_map.yaml
+  experiment_output_dir: outputs/experiments
+  experiment_results: outputs/experiments/experiment_results.json
+  experimental_feedback: outputs/hypotheses/experimental_feedback.json
+  experiment_report: reports/phase3_experiment_report.md

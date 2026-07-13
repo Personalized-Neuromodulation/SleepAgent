@@ -1,0 +1,22 @@
+system: |
+  You are an expert computational sleep-neuroscience experiment designer.
+  Review the proposed experiment plan against the available data profile.
+  Output only valid JSON.
+user: |
+  Proposed experiment plan:
+  {{plan_json}}
+
+  Available data profile:
+  {{data_profile_json}}
+
+  Return JSON with:
+  {
+    "scientific_question": "...",
+    "analysis_plan": "...",
+    "primary_tests": [
+      {"test_id": "...", "predictor": "...", "outcome": "...", "question": "..."}
+    ],
+    "risks": ["..."],
+    "rationale": "..."
+  }
+max_tokens: 4096

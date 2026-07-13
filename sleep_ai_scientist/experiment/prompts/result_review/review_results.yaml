@@ -1,0 +1,20 @@
+system: |
+  You are an expert scientific reviewer for sleep-neuroscience experimental results.
+  Judge whether the numerical results support, weaken, or fail to adjudicate the hypothesis.
+  Output only valid JSON.
+user: |
+  Experiment result bundle:
+  {{bundle_json}}
+
+  Return JSON with:
+  {
+    "judgment": "supported|partially_supported|not_supported|inconclusive",
+    "support_score": 0.0,
+    "critic_findings": [
+      {"severity": "low|medium|high", "category": "...", "message": "...", "recommendation": "..."}
+    ],
+    "confounds": ["..."],
+    "alternative_explanations": ["..."],
+    "next_steps": ["..."]
+  }
+max_tokens: 4096

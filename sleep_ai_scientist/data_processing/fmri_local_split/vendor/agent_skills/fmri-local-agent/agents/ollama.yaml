@@ -1,0 +1,4 @@
+interface:
+  display_name: "本地fMRI分析Agent"
+  short_description: "检查Ollama与本地模型，并编排fMRI数据分析pipeline"
+  default_prompt: "Use $fmri-local-agent to inspect Ollama, plan, and run local fMRI analysis."
