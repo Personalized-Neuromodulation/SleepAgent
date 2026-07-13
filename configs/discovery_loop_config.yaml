@@ -1,0 +1,23 @@
+discovery_loop:
+  run_id: sleep_discovery_loop
+  max_iterations: 3
+  verbose: true
+  snapshot_features: true
+  stop_conditions:
+    no_active_hypotheses: true
+    no_experimental_feedback: false
+    reward_convergence:
+      enabled: true
+      min_iterations: 2
+      delta: 0.03
+
+hypothesis:
+  config_path: configs/hypothesis_config.yaml
+
+experiment:
+  config_path: configs/experiment_config.yaml
+
+paths:
+  loop_output_dir: outputs/discovery_loop
+  iteration_state: outputs/discovery_loop/loop_state.json
+  iteration_report: reports/discovery_loop_report.md
