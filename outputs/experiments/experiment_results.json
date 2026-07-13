@@ -1,12 +1,12 @@
 [
   {
     "plan": {
-      "plan_id": "experiment_plan_3dddc1cd6df6",
-      "hypothesis_id": "hypothesis_6d2cb6ed13cc",
-      "hypothesis_title": "Bidirectional Thalamocortical Coupling and Structural Morphology in Insomnia",
-      "scientific_question": "How do structural and functional brain changes, specifically thalamus volume and DMN connectivity, correlate with sleep quality and insomnia severity in patients undergoing sleep interventions?",
-      "hypothesis_summary": "This hypothesis proposes a bidirectional interaction between thalamic structural morphology and thalamocortical coupling in insomnia, integrating multimodal neuroimaging data.",
-      "hypothesis_content": "Thalamic structural morphology and thalamocortical coupling dynamically interact in insomnia, with structural changes modulating functional connectivity and vice versa, creating a feedback loop measurable via MRI and fMRI.",
+      "plan_id": "experiment_plan_d35af395acee",
+      "hypothesis_id": "hypothesis_3a80bdc0e29e",
+      "hypothesis_title": "Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity",
+      "scientific_question": "Test whether Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity is supported by available analysis-ready variables.",
+      "hypothesis_summary": "This hypothesis proposes that thalamocortical coupling modulates insomnia severity through a dual pathway involving structural morphology and white matter integrity, integrating multimodal neuroimaging data.",
+      "hypothesis_content": "Thalamocortical coupling modulates insomnia severity through a dual pathway involving structural morphology of the thalamus and white matter integrity, as measured by MRI and DTI, respectively. This pathway integrates both functional and structural neuroimaging data to explain the neurobiological basis of insomnia severity.",
       "predictors": [
         "thalamus_DMN_FC",
         "thalamus_salience_FC",
@@ -30,7 +30,7 @@
           "role": "predictor",
           "scientific_concept": "thalamus DMN FC",
           "modality": "fMRI",
-          "source_file": "outputs/features/fmri/experiment_plan_3dddc1cd6df6/fmri_features.csv",
+          "source_file": "outputs/features/fmri/experiment_plan_d35af395acee/fmri_features.csv",
           "source_column": "thalamus_DMN_FC",
           "approved": true,
           "missing_rate": 0.24731182795698925,
@@ -52,38 +52,25 @@
           "notes": "Variable requested by plan but unavailable in current data profile."
         },
         {
-          "name": "thalamus_volume",
+          "name": "DMN_FC",
           "role": "predictor",
-          "scientific_concept": "thalamus volume",
-          "modality": "MRI",
-          "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_mri_features.csv",
-          "source_column": "thalamus_volume",
+          "scientific_concept": "DMN FC",
+          "modality": "fMRI",
+          "source_file": "outputs/features/fmri/experiment_plan_d35af395acee/fmri_features.csv",
+          "source_column": "DMN_FC",
           "approved": true,
-          "missing_rate": 0.0,
-          "n_available": 5,
-          "mapping_confidence": 0.2,
-          "notes": "Variable requested by plan but unavailable in current data profile."
+          "missing_rate": 0.24731182795698925,
+          "n_available": 70,
+          "mapping_confidence": 0.65,
+          "notes": "Mapped from analysis-ready data profile."
         },
         {
-          "name": "beta_power",
+          "name": "thalamic_radiation_FA",
           "role": "predictor",
-          "scientific_concept": "beta power",
-          "modality": "EEG",
-          "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv",
-          "source_column": "beta_power",
-          "approved": true,
-          "missing_rate": 0.2,
-          "n_available": 4,
-          "mapping_confidence": 0.2,
-          "notes": "Variable requested by plan but unavailable in current data profile."
-        },
-        {
-          "name": "ISI",
-          "role": "outcome",
-          "scientific_concept": "ISI",
-          "modality": "scales",
-          "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv",
-          "source_column": "ISI",
+          "scientific_concept": "thalamic radiation FA",
+          "modality": "DTI",
+          "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv",
+          "source_column": "thalamic_radiation_FA",
           "approved": true,
           "missing_rate": 0.0,
           "n_available": 5,
@@ -121,7 +108,7 @@
           "role": "covariate",
           "scientific_concept": "mean FD",
           "modality": "fMRI",
-          "source_file": "outputs/features/fmri/experiment_plan_3dddc1cd6df6/fmri_features.csv",
+          "source_file": "outputs/features/fmri/experiment_plan_d35af395acee/fmri_features.csv",
           "source_column": "mean_FD",
           "approved": true,
           "missing_rate": 0.0,
@@ -171,102 +158,94 @@
       ],
       "primary_tests": [
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_global_signal_psd_power_mean",
           "predictor": "thalamus_DMN_FC",
           "outcome": "global_signal_psd_power_mean",
           "question": "fMRI-only submechanism: does thalamus_DMN_FC relate to global_signal_psd_power_mean?"
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
           "predictor": "thalamus_DMN_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "question": "fMRI-only submechanism: does thalamus_DMN_FC relate to qc_signal_post_DVARS_mean?"
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_global_signal_psd_power_mean",
           "predictor": "thalamus_salience_FC",
           "outcome": "global_signal_psd_power_mean",
           "question": "fMRI-only submechanism: does thalamus_salience_FC relate to global_signal_psd_power_mean?"
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_qc_signal_post_DVARS_mean",
           "predictor": "thalamus_salience_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "question": "fMRI-only submechanism: does thalamus_salience_FC relate to qc_signal_post_DVARS_mean?"
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
           "predictor": "thalamus_frontoparietal_FC",
           "outcome": "global_signal_psd_power_mean",
           "question": "fMRI-only submechanism: does thalamus_frontoparietal_FC relate to global_signal_psd_power_mean?"
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
           "predictor": "thalamus_frontoparietal_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "question": "fMRI-only submechanism: does thalamus_frontoparietal_FC relate to qc_signal_post_DVARS_mean?"
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_DMN_FC_global_signal_psd_power_mean",
           "predictor": "DMN_FC",
           "outcome": "global_signal_psd_power_mean",
           "question": "fMRI-only submechanism: does DMN_FC relate to global_signal_psd_power_mean?"
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_DMN_FC_qc_signal_post_DVARS_mean",
           "predictor": "DMN_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "question": "fMRI-only submechanism: does DMN_FC relate to qc_signal_post_DVARS_mean?"
         }
       ],
-      "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) at baseline and post-intervention in insomnia patients. Use EEG metrics (slow wave density, spindle density, delta power) as sleep quality biomarkers, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
+      "analysis_plan": "Conduct a multimodal neuroimaging study combining EEG-fMRI, MRI, and DTI in a cohort of insomnia patients. Measure thalamocortical coupling (thalamus_DMN_FC), structural morphology (thalamus_volume), and white matter integrity (FA). Use regression models to assess the relationship between thalamocortical coupling and insomnia severity, mediated by structural morphology and white matter integrity.",
       "metadata": {
         "source": "ExperimentDesignAgent",
         "generation_strategy": "scientific_debate",
-        "hypothesis_rating": 1594.0,
+        "hypothesis_rating": 1499.0,
         "requested_modalities": [
           "DTI",
           "EEG",
-          "MRI",
           "fMRI",
           "scales"
         ],
         "llm_experiment_design": {
-          "scientific_question": "How do structural and functional brain changes, specifically thalamus volume and DMN connectivity, correlate with sleep quality and insomnia severity in patients undergoing sleep interventions?",
-          "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) at baseline and post-intervention in insomnia patients. Use EEG metrics (slow wave density, spindle density, delta power) as sleep quality biomarkers, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
+          "scientific_question": "Test whether Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity is supported by available analysis-ready variables.",
+          "analysis_plan": "Conduct a multimodal neuroimaging study combining EEG-fMRI, MRI, and DTI in a cohort of insomnia patients. Measure thalamocortical coupling (thalamus_DMN_FC), structural morphology (thalamus_volume), and white matter integrity (FA). Use regression models to assess the relationship between thalamocortical coupling and insomnia severity, mediated by structural morphology and white matter integrity.",
           "primary_tests": [
             {
-              "test_id": "test_001",
-              "predictor": "thalamus_volume",
-              "outcome": "ISI",
-              "question": "Is there a significant correlation between thalamus volume and insomnia severity (ISI) after sleep intervention?"
-            },
-            {
-              "test_id": "test_002",
+              "test_id": "primary_test_6b95",
               "predictor": "thalamus_DMN_FC",
               "outcome": "PSQI",
-              "question": "Does change in thalamus-DMN functional connectivity correlate with improvements in sleep quality (PSQI) following intervention?"
+              "question": "Does thalamocortical coupling (thalamus_DMN_FC) modulate insomnia severity (PSQI)?"
             },
             {
-              "test_id": "test_003",
-              "predictor": "delta_power",
-              "outcome": "thalamus_volume",
-              "question": "Is delta power during sleep correlated with thalamus volume changes post-intervention?"
+              "test_id": "primary_test_6b96",
+              "predictor": "thalamus_volume",
+              "outcome": "PSQI",
+              "question": "Does structural morphology (thalamus_volume) modulate insomnia severity (PSQI)?"
             },
             {
-              "test_id": "test_004",
-              "predictor": "spindle_density",
-              "outcome": "thalamus_DMN_FC",
-              "question": "Does spindle density correlate with changes in thalamus-DMN functional connectivity after intervention?"
+              "test_id": "primary_test_6b97",
+              "predictor": "FA",
+              "outcome": "PSQI",
+              "question": "Does white matter integrity (FA) modulate insomnia severity (PSQI)?"
             }
           ],
           "risks": [
-            "Missing data in EEG features (slow wave density, beta power) may reduce statistical power.",
-            "Potential confounding from medication status if not properly controlled.",
-            "Variability in sleep interventions may affect consistency of results.",
-            "Limited generalizability due to small sample size in toy dataset."
+            "Limited sample size (n=5 for most variables) may reduce statistical power.",
+            "Missing data in some EEG features (e.g., slow_wave_density, beta_power) may affect covariate control.",
+            "Potential confounding from scale variables (e.g., anxiety_score, depression_score) not fully accounted for in regression models."
           ],
-          "rationale": "The hypothesis integrates structural (thalamus volume) and functional (DMN connectivity) markers with sleep physiology (EEG metrics) to comprehensively assess insomnia mechanisms. Using multimodal data (MRI, fMRI, DTI, EEG) strengthens the analysis, while controlling for covariates improves internal validity. The risks highlight practical considerations in translating the hypothesis to empirical study."
+          "rationale": "The analysis plan leverages available variables (thalamus_DMN_FC, thalamus_volume, FA) directly linked to the hypothesis. Structural morphology (thalamus_volume) and white matter integrity (FA) are selected as mediators based on their presence in the data. Risks include small sample size, missing EEG data, and potential confounding from scale variables."
         },
         "testability_precheck": {
           "available_modalities": [
@@ -275,7 +254,6 @@
           "missing_modalities": [
             "dti",
             "eeg",
-            "mri",
             "scales"
           ],
           "full_hypothesis_testable": false,
@@ -289,7 +267,6 @@
           "unresolved_components": [
             "dti",
             "eeg",
-            "mri",
             "scales"
           ],
           "reason": "Only fMRI features are available; multimodal hypothesis was converted to fMRI-only submechanism tests."
@@ -392,19 +369,19 @@
             "frontoparietal_FC"
           ],
           "recommendations": [
-            "Check for missing variables in the dataset, particularly those related to ROI voxels and FC measures.",
-            "Consider using imputation techniques for missing data in the ROI and FC variables.",
-            "Verify if the missing variables are due to data processing errors or incomplete ROI definitions."
+            "Check for typos in the variable names or source columns.",
+            "Ensure that the variables listed in 'missing_variables' are correctly defined in the dataset.",
+            "Consider using a mapping tool or script to automate the matching process for better accuracy."
           ]
         }
       }
     },
     "stats_result": {
-      "plan_id": "experiment_plan_3dddc1cd6df6",
-      "hypothesis_id": "hypothesis_6d2cb6ed13cc",
+      "plan_id": "experiment_plan_d35af395acee",
+      "hypothesis_id": "hypothesis_3a80bdc0e29e",
       "tests": [
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_global_signal_psd_power_mean",
           "predictor": "thalamus_DMN_FC",
           "outcome": "global_signal_psd_power_mean",
           "method": "spearman_correlation",
@@ -418,7 +395,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
           "predictor": "thalamus_DMN_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "method": "spearman_correlation",
@@ -432,7 +409,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_global_signal_psd_power_mean",
           "predictor": "thalamus_salience_FC",
           "outcome": "global_signal_psd_power_mean",
           "method": "spearman_correlation",
@@ -446,7 +423,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_qc_signal_post_DVARS_mean",
           "predictor": "thalamus_salience_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "method": "spearman_correlation",
@@ -460,7 +437,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
           "predictor": "thalamus_frontoparietal_FC",
           "outcome": "global_signal_psd_power_mean",
           "method": "spearman_correlation",
@@ -474,7 +451,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
           "predictor": "thalamus_frontoparietal_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "method": "spearman_correlation",
@@ -488,7 +465,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_DMN_FC_global_signal_psd_power_mean",
           "predictor": "DMN_FC",
           "outcome": "global_signal_psd_power_mean",
           "method": "spearman_correlation",
@@ -502,7 +479,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_DMN_FC_qc_signal_post_DVARS_mean",
           "predictor": "DMN_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "method": "spearman_correlation",
@@ -521,8 +498,8 @@
     "ml_result": null,
     "robustness_results": [
       {
-        "check_id": "robustness_876cba622c4e",
-        "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_global_signal_psd_power_mean",
+        "check_id": "robustness_8261583ca7bd",
+        "target_test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_global_signal_psd_power_mean",
         "method": "bootstrap_spearman_ci",
         "n_iterations": 0,
         "original_effect": null,
@@ -534,8 +511,8 @@
         "notes": "Bootstrap resampling of the primary Spearman effect."
       },
       {
-        "check_id": "robustness_e676dba7d3e4",
-        "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+        "check_id": "robustness_a21bae50403f",
+        "target_test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
         "method": "bootstrap_spearman_ci",
         "n_iterations": 0,
         "original_effect": null,
@@ -547,8 +524,8 @@
         "notes": "Bootstrap resampling of the primary Spearman effect."
       },
       {
-        "check_id": "robustness_5e52998bc150",
-        "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_global_signal_psd_power_mean",
+        "check_id": "robustness_d16e83fd2e2f",
+        "target_test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_global_signal_psd_power_mean",
         "method": "bootstrap_spearman_ci",
         "n_iterations": 0,
         "original_effect": null,
@@ -560,8 +537,8 @@
         "notes": "Bootstrap resampling of the primary Spearman effect."
       },
       {
-        "check_id": "robustness_b4144cda6bff",
-        "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_qc_signal_post_DVARS_mean",
+        "check_id": "robustness_34a15cf289ba",
+        "target_test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_qc_signal_post_DVARS_mean",
         "method": "bootstrap_spearman_ci",
         "n_iterations": 0,
         "original_effect": null,
@@ -573,8 +550,8 @@
         "notes": "Bootstrap resampling of the primary Spearman effect."
       },
       {
-        "check_id": "robustness_6c06e92dd935",
-        "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
+        "check_id": "robustness_bc176ce16919",
+        "target_test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
         "method": "bootstrap_spearman_ci",
         "n_iterations": 0,
         "original_effect": null,
@@ -586,8 +563,8 @@
         "notes": "Bootstrap resampling of the primary Spearman effect."
       },
       {
-        "check_id": "robustness_eef537bbb915",
-        "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
+        "check_id": "robustness_39129f25406a",
+        "target_test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
         "method": "bootstrap_spearman_ci",
         "n_iterations": 0,
         "original_effect": null,
@@ -599,8 +576,8 @@
         "notes": "Bootstrap resampling of the primary Spearman effect."
       },
       {
-        "check_id": "robustness_6d772810393f",
-        "target_test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_global_signal_psd_power_mean",
+        "check_id": "robustness_02e08814774c",
+        "target_test_id": "experiment_plan_d35af395acee_DMN_FC_global_signal_psd_power_mean",
         "method": "bootstrap_spearman_ci",
         "n_iterations": 0,
         "original_effect": null,
@@ -612,8 +589,8 @@
         "notes": "Bootstrap resampling of the primary Spearman effect."
       },
       {
-        "check_id": "robustness_f94d073d85c7",
-        "target_test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_qc_signal_post_DVARS_mean",
+        "check_id": "robustness_84a31366f39f",
+        "target_test_id": "experiment_plan_d35af395acee_DMN_FC_qc_signal_post_DVARS_mean",
         "method": "bootstrap_spearman_ci",
         "n_iterations": 0,
         "original_effect": null,
@@ -629,20 +606,20 @@
     "critic_findings": [
       {
         "severity": "high",
-        "category": "data_quality",
-        "message": "All statistical tests failed due to insufficient data (n=0) across all modalities, likely due to missing data in DTI, EEG, MRI, and scales.",
-        "recommendation": "Improve data collection to ensure presence of DTI, EEG, MRI, and scales data for all subjects."
+        "category": "data_completeness",
+        "message": "Missing critical modalities (DTI, EEG, scales) which are essential for assessing white matter integrity, EEG features, and scale variables.",
+        "recommendation": "Revise the analysis plan to include data from DTI, EEG, and scales to fully evaluate the hypothesis."
       },
       {
         "severity": "medium",
-        "category": "model_selection",
-        "message": "Spearman correlation was used as primary analysis, but linear regression might be more appropriate for modeling relationships between FC and sleep metrics.",
-        "recommendation": "Revise analysis to use linear regression as primary model."
+        "category": "statistical_power",
+        "message": "Insufficient sample size or missing data leading to 0/8 primary tests passed.",
+        "recommendation": "Increase sample size or impute missing data to improve statistical power."
       }
     ],
     "evidence_update": {
-      "hypothesis_id": "hypothesis_6d2cb6ed13cc",
-      "plan_id": "experiment_plan_3dddc1cd6df6",
+      "hypothesis_id": "hypothesis_3a80bdc0e29e",
+      "plan_id": "experiment_plan_d35af395acee",
       "review_status": "inconclusive",
       "support_score": 0.5,
       "result_review": {
@@ -651,35 +628,34 @@
         "critic_findings": [
           {
             "severity": "high",
-            "category": "data_quality",
-            "message": "All statistical tests failed due to insufficient data (n=0) across all modalities, likely due to missing data in DTI, EEG, MRI, and scales.",
-            "recommendation": "Improve data collection to ensure presence of DTI, EEG, MRI, and scales data for all subjects."
+            "category": "data_completeness",
+            "message": "Missing critical modalities (DTI, EEG, scales) which are essential for assessing white matter integrity, EEG features, and scale variables.",
+            "recommendation": "Revise the analysis plan to include data from DTI, EEG, and scales to fully evaluate the hypothesis."
           },
           {
             "severity": "medium",
-            "category": "model_selection",
-            "message": "Spearman correlation was used as primary analysis, but linear regression might be more appropriate for modeling relationships between FC and sleep metrics.",
-            "recommendation": "Revise analysis to use linear regression as primary model."
+            "category": "statistical_power",
+            "message": "Insufficient sample size or missing data leading to 0/8 primary tests passed.",
+            "recommendation": "Increase sample size or impute missing data to improve statistical power."
           }
         ],
         "confounds": [
-          "Missing data in DTI, EEG, MRI, and scales modalities",
-          "Small sample size from toy dataset"
+          "Missing scale variables (anxiety, depression) which could confound the relationship between thalamocortical coupling and insomnia severity.",
+          "Limited data on white matter integrity (FA) due to missing DTI data."
         ],
         "alternative_explanations": [
-          "The absence of data in key modalities may have prevented detection of true relationships",
-          "Toy dataset may not represent general population patterns"
+          "Alternative pathways involving other neuroimaging modalities or genetic factors might explain the relationship between thalamocortical coupling and insomnia.",
+          "Environmental factors not accounted for in the current analysis could influence insomnia severity."
         ],
         "next_steps": [
-          "Implement linear regression analysis with robustness checks",
-          "Ensure complete data collection across all modalities",
-          "Increase sample size beyond toy dataset",
-          "Consider using imputation techniques for missing data"
+          "Revise the analysis plan to include DTI, EEG, and scale variables.",
+          "Conduct a power analysis to determine the required sample size for robust statistical tests.",
+          "Explore alternative neuroimaging markers or genetic factors that might mediate the relationship."
         ]
       },
       "primary_tests": [
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_global_signal_psd_power_mean",
           "predictor": "thalamus_DMN_FC",
           "outcome": "global_signal_psd_power_mean",
           "method": "spearman_correlation",
@@ -693,7 +669,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
           "predictor": "thalamus_DMN_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "method": "spearman_correlation",
@@ -707,7 +683,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_global_signal_psd_power_mean",
           "predictor": "thalamus_salience_FC",
           "outcome": "global_signal_psd_power_mean",
           "method": "spearman_correlation",
@@ -721,7 +697,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_qc_signal_post_DVARS_mean",
           "predictor": "thalamus_salience_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "method": "spearman_correlation",
@@ -735,7 +711,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
           "predictor": "thalamus_frontoparietal_FC",
           "outcome": "global_signal_psd_power_mean",
           "method": "spearman_correlation",
@@ -749,7 +725,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
           "predictor": "thalamus_frontoparietal_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "method": "spearman_correlation",
@@ -763,7 +739,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_global_signal_psd_power_mean",
+          "test_id": "experiment_plan_d35af395acee_DMN_FC_global_signal_psd_power_mean",
           "predictor": "DMN_FC",
           "outcome": "global_signal_psd_power_mean",
           "method": "spearman_correlation",
@@ -777,7 +753,7 @@
           "notes": "Insufficient non-missing paired observations."
         },
         {
-          "test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_qc_signal_post_DVARS_mean",
+          "test_id": "experiment_plan_d35af395acee_DMN_FC_qc_signal_post_DVARS_mean",
           "predictor": "DMN_FC",
           "outcome": "qc_signal_post_DVARS_mean",
           "method": "spearman_correlation",
@@ -793,8 +769,8 @@
       ],
       "robustness_results": [
         {
-          "check_id": "robustness_876cba622c4e",
-          "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_global_signal_psd_power_mean",
+          "check_id": "robustness_8261583ca7bd",
+          "target_test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_global_signal_psd_power_mean",
           "method": "bootstrap_spearman_ci",
           "n_iterations": 0,
           "original_effect": null,
@@ -806,8 +782,8 @@
           "notes": "Bootstrap resampling of the primary Spearman effect."
         },
         {
-          "check_id": "robustness_e676dba7d3e4",
-          "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+          "check_id": "robustness_a21bae50403f",
+          "target_test_id": "experiment_plan_d35af395acee_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
           "method": "bootstrap_spearman_ci",
           "n_iterations": 0,
           "original_effect": null,
@@ -819,8 +795,8 @@
           "notes": "Bootstrap resampling of the primary Spearman effect."
         },
         {
-          "check_id": "robustness_5e52998bc150",
-          "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_global_signal_psd_power_mean",
+          "check_id": "robustness_d16e83fd2e2f",
+          "target_test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_global_signal_psd_power_mean",
           "method": "bootstrap_spearman_ci",
           "n_iterations": 0,
           "original_effect": null,
@@ -832,8 +808,8 @@
           "notes": "Bootstrap resampling of the primary Spearman effect."
         },
         {
-          "check_id": "robustness_b4144cda6bff",
-          "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_qc_signal_post_DVARS_mean",
+          "check_id": "robustness_34a15cf289ba",
+          "target_test_id": "experiment_plan_d35af395acee_thalamus_salience_FC_qc_signal_post_DVARS_mean",
           "method": "bootstrap_spearman_ci",
           "n_iterations": 0,
           "original_effect": null,
@@ -845,8 +821,8 @@
           "notes": "Bootstrap resampling of the primary Spearman effect."
         },
         {
-          "check_id": "robustness_6c06e92dd935",
-          "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
+          "check_id": "robustness_bc176ce16919",
+          "target_test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
           "method": "bootstrap_spearman_ci",
           "n_iterations": 0,
           "original_effect": null,
@@ -858,8 +834,8 @@
           "notes": "Bootstrap resampling of the primary Spearman effect."
         },
         {
-          "check_id": "robustness_eef537bbb915",
-          "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
+          "check_id": "robustness_39129f25406a",
+          "target_test_id": "experiment_plan_d35af395acee_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
           "method": "bootstrap_spearman_ci",
           "n_iterations": 0,
           "original_effect": null,
@@ -871,8 +847,8 @@
           "notes": "Bootstrap resampling of the primary Spearman effect."
         },
         {
-          "check_id": "robustness_6d772810393f",
-          "target_test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_global_signal_psd_power_mean",
+          "check_id": "robustness_02e08814774c",
+          "target_test_id": "experiment_plan_d35af395acee_DMN_FC_global_signal_psd_power_mean",
           "method": "bootstrap_spearman_ci",
           "n_iterations": 0,
           "original_effect": null,
@@ -884,8 +860,8 @@
           "notes": "Bootstrap resampling of the primary Spearman effect."
         },
         {
-          "check_id": "robustness_f94d073d85c7",
-          "target_test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_qc_signal_post_DVARS_mean",
+          "check_id": "robustness_84a31366f39f",
+          "target_test_id": "experiment_plan_d35af395acee_DMN_FC_qc_signal_post_DVARS_mean",
           "method": "bootstrap_spearman_ci",
           "n_iterations": 0,
           "original_effect": null,
@@ -910,10 +886,11 @@
           "recommended_negative_controls": [
             "negative_control_outcome"
           ],
-          "rationale": "The analysis requires linear regression to model the relationship between thalamus-DMN FC and sleep quality metrics, while bootstrap confidence intervals enhance robustness. Negative controls are needed to account for potential confounding variables.",
+          "rationale": "The analysis plan needs revision due to missing modalities (DTI, EEG, scales) which are crucial for the full hypothesis. The recommended primary template is linear regression to assess the relationship between thalamocortical coupling and insomnia severity, mediated by structural morphology and white matter integrity. Bootstrap Spearman CI is suggested for robustness. Negative control outcomes are recommended to account for potential confounding variables.",
           "warnings": [
-            "Missing data in DTI, EEG, MRI, and scales modalities may affect model accuracy.",
-            "Limited sample size in the toy dataset may reduce statistical power."
+            "Missing DTI data will limit assessment of white matter integrity (FA).",
+            "EEG data not available to measure slow wave density and beta power.",
+            "Scale variables (e.g., anxiety, depression) not included, risking confounding."
           ]
         },
         "controlled_templates": {

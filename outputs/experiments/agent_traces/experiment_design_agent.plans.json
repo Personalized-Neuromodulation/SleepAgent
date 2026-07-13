@@ -1,19 +1,18 @@
 [
   {
-    "plan_id": "experiment_plan_3dddc1cd6df6",
-    "hypothesis_id": "hypothesis_6d2cb6ed13cc",
-    "hypothesis_title": "Bidirectional Thalamocortical Coupling and Structural Morphology in Insomnia",
-    "scientific_question": "How do structural and functional brain changes, specifically thalamus volume and DMN connectivity, correlate with sleep quality and insomnia severity in patients undergoing sleep interventions?",
-    "hypothesis_summary": "This hypothesis proposes a bidirectional interaction between thalamic structural morphology and thalamocortical coupling in insomnia, integrating multimodal neuroimaging data.",
-    "hypothesis_content": "Thalamic structural morphology and thalamocortical coupling dynamically interact in insomnia, with structural changes modulating functional connectivity and vice versa, creating a feedback loop measurable via MRI and fMRI.",
+    "plan_id": "experiment_plan_d35af395acee",
+    "hypothesis_id": "hypothesis_3a80bdc0e29e",
+    "hypothesis_title": "Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity",
+    "scientific_question": "Test whether Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity is supported by available analysis-ready variables.",
+    "hypothesis_summary": "This hypothesis proposes that thalamocortical coupling modulates insomnia severity through a dual pathway involving structural morphology and white matter integrity, integrating multimodal neuroimaging data.",
+    "hypothesis_content": "Thalamocortical coupling modulates insomnia severity through a dual pathway involving structural morphology of the thalamus and white matter integrity, as measured by MRI and DTI, respectively. This pathway integrates both functional and structural neuroimaging data to explain the neurobiological basis of insomnia severity.",
     "predictors": [
       "thalamus_DMN_FC",
       "FA",
-      "thalamus_volume",
-      "beta_power"
+      "DMN_FC",
+      "thalamic_radiation_FA"
     ],
     "outcomes": [
-      "ISI",
       "PSQI"
     ],
     "covariates": [
@@ -53,38 +52,25 @@
         "notes": "Mapped from analysis-ready data profile."
       },
       {
-        "name": "thalamus_volume",
+        "name": "DMN_FC",
         "role": "predictor",
-        "scientific_concept": "thalamus volume",
-        "modality": "MRI",
-        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_mri_features.csv",
-        "source_column": "thalamus_volume",
+        "scientific_concept": "DMN FC",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv",
+        "source_column": "DMN_FC",
         "approved": true,
         "missing_rate": 0.0,
         "n_available": 5,
-        "mapping_confidence": 0.9,
-        "notes": "Mapped from analysis-ready data profile."
-      },
-      {
-        "name": "beta_power",
-        "role": "predictor",
-        "scientific_concept": "beta power",
-        "modality": "EEG",
-        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv",
-        "source_column": "beta_power",
-        "approved": true,
-        "missing_rate": 0.2,
-        "n_available": 4,
         "mapping_confidence": 0.65,
         "notes": "Mapped from analysis-ready data profile."
       },
       {
-        "name": "ISI",
-        "role": "outcome",
-        "scientific_concept": "ISI",
-        "modality": "scales",
-        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv",
-        "source_column": "ISI",
+        "name": "thalamic_radiation_FA",
+        "role": "predictor",
+        "scientific_concept": "thalamic radiation FA",
+        "modality": "DTI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv",
+        "source_column": "thalamic_radiation_FA",
         "approved": true,
         "missing_rate": 0.0,
         "n_available": 5,
@@ -101,7 +87,7 @@
         "approved": true,
         "missing_rate": 0.0,
         "n_available": 5,
-        "mapping_confidence": 0.65,
+        "mapping_confidence": 0.9,
         "notes": "Mapped from analysis-ready data profile."
       },
       {
@@ -172,78 +158,64 @@
     ],
     "primary_tests": [
       {
-        "test_id": "test_001",
-        "predictor": "thalamus_volume",
-        "outcome": "ISI",
-        "question": "Is there a significant correlation between thalamus volume and insomnia severity (ISI) after sleep intervention?"
-      },
-      {
-        "test_id": "test_002",
+        "test_id": "primary_test_6b95",
         "predictor": "thalamus_DMN_FC",
         "outcome": "PSQI",
-        "question": "Does change in thalamus-DMN functional connectivity correlate with improvements in sleep quality (PSQI) following intervention?"
+        "question": "Does thalamocortical coupling (thalamus_DMN_FC) modulate insomnia severity (PSQI)?"
       },
       {
-        "test_id": "test_003",
-        "predictor": "delta_power",
-        "outcome": "thalamus_volume",
-        "question": "Is delta power during sleep correlated with thalamus volume changes post-intervention?"
+        "test_id": "primary_test_6b96",
+        "predictor": "thalamus_volume",
+        "outcome": "PSQI",
+        "question": "Does structural morphology (thalamus_volume) modulate insomnia severity (PSQI)?"
       },
       {
-        "test_id": "test_004",
-        "predictor": "spindle_density",
-        "outcome": "thalamus_DMN_FC",
-        "question": "Does spindle density correlate with changes in thalamus-DMN functional connectivity after intervention?"
+        "test_id": "primary_test_6b97",
+        "predictor": "FA",
+        "outcome": "PSQI",
+        "question": "Does white matter integrity (FA) modulate insomnia severity (PSQI)?"
       }
     ],
-    "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) at baseline and post-intervention in insomnia patients. Use EEG metrics (slow wave density, spindle density, delta power) as sleep quality biomarkers, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
+    "analysis_plan": "Conduct a multimodal neuroimaging study combining EEG-fMRI, MRI, and DTI in a cohort of insomnia patients. Measure thalamocortical coupling (thalamus_DMN_FC), structural morphology (thalamus_volume), and white matter integrity (FA). Use regression models to assess the relationship between thalamocortical coupling and insomnia severity, mediated by structural morphology and white matter integrity.",
     "metadata": {
       "source": "ExperimentDesignAgent",
       "generation_strategy": "scientific_debate",
-      "hypothesis_rating": 1594.0,
+      "hypothesis_rating": 1499.0,
       "requested_modalities": [
         "DTI",
         "EEG",
-        "MRI",
         "fMRI",
         "scales"
       ],
       "llm_experiment_design": {
-        "scientific_question": "How do structural and functional brain changes, specifically thalamus volume and DMN connectivity, correlate with sleep quality and insomnia severity in patients undergoing sleep interventions?",
-        "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) at baseline and post-intervention in insomnia patients. Use EEG metrics (slow wave density, spindle density, delta power) as sleep quality biomarkers, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
+        "scientific_question": "Test whether Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity is supported by available analysis-ready variables.",
+        "analysis_plan": "Conduct a multimodal neuroimaging study combining EEG-fMRI, MRI, and DTI in a cohort of insomnia patients. Measure thalamocortical coupling (thalamus_DMN_FC), structural morphology (thalamus_volume), and white matter integrity (FA). Use regression models to assess the relationship between thalamocortical coupling and insomnia severity, mediated by structural morphology and white matter integrity.",
         "primary_tests": [
           {
-            "test_id": "test_001",
-            "predictor": "thalamus_volume",
-            "outcome": "ISI",
-            "question": "Is there a significant correlation between thalamus volume and insomnia severity (ISI) after sleep intervention?"
-          },
-          {
-            "test_id": "test_002",
+            "test_id": "primary_test_6b95",
             "predictor": "thalamus_DMN_FC",
             "outcome": "PSQI",
-            "question": "Does change in thalamus-DMN functional connectivity correlate with improvements in sleep quality (PSQI) following intervention?"
+            "question": "Does thalamocortical coupling (thalamus_DMN_FC) modulate insomnia severity (PSQI)?"
           },
           {
-            "test_id": "test_003",
-            "predictor": "delta_power",
-            "outcome": "thalamus_volume",
-            "question": "Is delta power during sleep correlated with thalamus volume changes post-intervention?"
+            "test_id": "primary_test_6b96",
+            "predictor": "thalamus_volume",
+            "outcome": "PSQI",
+            "question": "Does structural morphology (thalamus_volume) modulate insomnia severity (PSQI)?"
           },
           {
-            "test_id": "test_004",
-            "predictor": "spindle_density",
-            "outcome": "thalamus_DMN_FC",
-            "question": "Does spindle density correlate with changes in thalamus-DMN functional connectivity after intervention?"
+            "test_id": "primary_test_6b97",
+            "predictor": "FA",
+            "outcome": "PSQI",
+            "question": "Does white matter integrity (FA) modulate insomnia severity (PSQI)?"
           }
         ],
         "risks": [
-          "Missing data in EEG features (slow wave density, beta power) may reduce statistical power.",
-          "Potential confounding from medication status if not properly controlled.",
-          "Variability in sleep interventions may affect consistency of results.",
-          "Limited generalizability due to small sample size in toy dataset."
+          "Limited sample size (n=5 for most variables) may reduce statistical power.",
+          "Missing data in some EEG features (e.g., slow_wave_density, beta_power) may affect covariate control.",
+          "Potential confounding from scale variables (e.g., anxiety_score, depression_score) not fully accounted for in regression models."
         ],
-        "rationale": "The hypothesis integrates structural (thalamus volume) and functional (DMN connectivity) markers with sleep physiology (EEG metrics) to comprehensively assess insomnia mechanisms. Using multimodal data (MRI, fMRI, DTI, EEG) strengthens the analysis, while controlling for covariates improves internal validity. The risks highlight practical considerations in translating the hypothesis to empirical study."
+        "rationale": "The analysis plan leverages available variables (thalamus_DMN_FC, thalamus_volume, FA) directly linked to the hypothesis. Structural morphology (thalamus_volume) and white matter integrity (FA) are selected as mediators based on their presence in the data. Risks include small sample size, missing EEG data, and potential confounding from scale variables."
       }
     }
   }

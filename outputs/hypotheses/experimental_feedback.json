@@ -1,7 +1,7 @@
 [
   {
-    "hypothesis_id": "hypothesis_6d2cb6ed13cc",
-    "plan_id": "experiment_plan_3dddc1cd6df6",
+    "hypothesis_id": "hypothesis_3a80bdc0e29e",
+    "plan_id": "experiment_plan_d35af395acee",
     "support": "inconclusive",
     "support_score": 0.5,
     "computed_reward": 0.325,
@@ -11,7 +11,7 @@
     "primary_tests_total": 8,
     "metadata": {
       "review_status": "inconclusive",
-      "hypothesis_title": "Bidirectional Thalamocortical Coupling and Structural Morphology in Insomnia",
+      "hypothesis_title": "Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity",
       "predictors": [
         "thalamus_DMN_FC",
         "thalamus_salience_FC",
@@ -25,15 +25,15 @@
       "critic_findings": [
         {
           "severity": "high",
-          "category": "data_quality",
-          "message": "All statistical tests failed due to insufficient data (n=0) across all modalities, likely due to missing data in DTI, EEG, MRI, and scales.",
-          "recommendation": "Improve data collection to ensure presence of DTI, EEG, MRI, and scales data for all subjects."
+          "category": "data_completeness",
+          "message": "Missing critical modalities (DTI, EEG, scales) which are essential for assessing white matter integrity, EEG features, and scale variables.",
+          "recommendation": "Revise the analysis plan to include data from DTI, EEG, and scales to fully evaluate the hypothesis."
         },
         {
           "severity": "medium",
-          "category": "model_selection",
-          "message": "Spearman correlation was used as primary analysis, but linear regression might be more appropriate for modeling relationships between FC and sleep metrics.",
-          "recommendation": "Revise analysis to use linear regression as primary model."
+          "category": "statistical_power",
+          "message": "Insufficient sample size or missing data leading to 0/8 primary tests passed.",
+          "recommendation": "Increase sample size or impute missing data to improve statistical power."
         }
       ]
     }
