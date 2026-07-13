@@ -54,7 +54,11 @@ class FMRIFeatureAgent:
             source = str(source_path)
         if "subject_id" not in frame.columns:
             frame.insert(0, "subject_id", [f"row_{idx}" for idx in range(len(frame))])
-        feature_columns = [column for column in frame.columns if column != "subject_id"]
+        feature_columns = [
+            column
+            for column in frame.columns
+            if column not in {"subject_id", "subject", "session", "task", "run"} and pd.api.types.is_numeric_dtype(frame[column])
+        ]
         target = output_dir / "fmri_features.csv"
         target.parent.mkdir(parents=True, exist_ok=True)
         frame.to_csv(target, index=False)

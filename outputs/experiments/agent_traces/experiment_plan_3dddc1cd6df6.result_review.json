@@ -1,0 +1,259 @@
+{
+  "hypothesis_id": "hypothesis_6d2cb6ed13cc",
+  "plan_id": "experiment_plan_3dddc1cd6df6",
+  "review_status": "inconclusive",
+  "support_score": 0.5,
+  "result_review": {
+    "judgment": "inconclusive",
+    "support_score": 0.5,
+    "critic_findings": [
+      {
+        "severity": "high",
+        "category": "data_quality",
+        "message": "All statistical tests have 0/8 passed, indicating potential data quality issues or missing data.",
+        "recommendation": "Investigate missing data in EEG and DTI metrics, and ensure proper data preprocessing."
+      },
+      {
+        "severity": "medium",
+        "category": "model_selection",
+        "message": "The current model uses Spearman correlation, but linear regression might be more appropriate for the given data structure.",
+        "recommendation": "Revise the model to use linear regression with covariates and check for model assumptions."
+      }
+    ],
+    "confounds": [
+      "Missing data in EEG and DTI metrics",
+      "Limited sample size in toy datasets"
+    ],
+    "alternative_explanations": [
+      "The relationship between thalamus-DMN FC and sleep quality might be non-linear or mediated by other factors not accounted for in the current model.",
+      "The use of Spearman correlation might not capture the complexity of the data as effectively as linear regression."
+    ],
+    "next_steps": [
+      "Implement linear regression with covariates and check model assumptions.",
+      "Investigate missing data in EEG and DTI metrics and perform data imputation if necessary.",
+      "Increase sample size or use cross-validation to improve generalizability.",
+      "Consider incorporating longitudinal data handling techniques in regression models."
+    ]
+  },
+  "primary_tests": [
+    {
+      "test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_global_signal_psd_power_mean",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "method": "spearman_correlation",
+      "n": 0,
+      "effect": null,
+      "p_value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "direction": "",
+      "passed": false,
+      "notes": "Insufficient non-missing paired observations."
+    },
+    {
+      "test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "qc_signal_post_DVARS_mean",
+      "method": "spearman_correlation",
+      "n": 0,
+      "effect": null,
+      "p_value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "direction": "",
+      "passed": false,
+      "notes": "Insufficient non-missing paired observations."
+    },
+    {
+      "test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_global_signal_psd_power_mean",
+      "predictor": "thalamus_salience_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "method": "spearman_correlation",
+      "n": 0,
+      "effect": null,
+      "p_value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "direction": "",
+      "passed": false,
+      "notes": "Insufficient non-missing paired observations."
+    },
+    {
+      "test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_qc_signal_post_DVARS_mean",
+      "predictor": "thalamus_salience_FC",
+      "outcome": "qc_signal_post_DVARS_mean",
+      "method": "spearman_correlation",
+      "n": 0,
+      "effect": null,
+      "p_value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "direction": "",
+      "passed": false,
+      "notes": "Insufficient non-missing paired observations."
+    },
+    {
+      "test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
+      "predictor": "thalamus_frontoparietal_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "method": "spearman_correlation",
+      "n": 0,
+      "effect": null,
+      "p_value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "direction": "",
+      "passed": false,
+      "notes": "Insufficient non-missing paired observations."
+    },
+    {
+      "test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
+      "predictor": "thalamus_frontoparietal_FC",
+      "outcome": "qc_signal_post_DVARS_mean",
+      "method": "spearman_correlation",
+      "n": 0,
+      "effect": null,
+      "p_value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "direction": "",
+      "passed": false,
+      "notes": "Insufficient non-missing paired observations."
+    },
+    {
+      "test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_global_signal_psd_power_mean",
+      "predictor": "DMN_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "method": "spearman_correlation",
+      "n": 0,
+      "effect": null,
+      "p_value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "direction": "",
+      "passed": false,
+      "notes": "Insufficient non-missing paired observations."
+    },
+    {
+      "test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_qc_signal_post_DVARS_mean",
+      "predictor": "DMN_FC",
+      "outcome": "qc_signal_post_DVARS_mean",
+      "method": "spearman_correlation",
+      "n": 0,
+      "effect": null,
+      "p_value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "direction": "",
+      "passed": false,
+      "notes": "Insufficient non-missing paired observations."
+    }
+  ],
+  "robustness_results": [
+    {
+      "check_id": "robustness_876cba622c4e",
+      "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_global_signal_psd_power_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 0,
+      "original_effect": null,
+      "median_effect": null,
+      "ci_low": null,
+      "ci_high": null,
+      "sign_stability": null,
+      "passed": false,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_e676dba7d3e4",
+      "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 0,
+      "original_effect": null,
+      "median_effect": null,
+      "ci_low": null,
+      "ci_high": null,
+      "sign_stability": null,
+      "passed": false,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_5e52998bc150",
+      "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_global_signal_psd_power_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 0,
+      "original_effect": null,
+      "median_effect": null,
+      "ci_low": null,
+      "ci_high": null,
+      "sign_stability": null,
+      "passed": false,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_b4144cda6bff",
+      "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_salience_FC_qc_signal_post_DVARS_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 0,
+      "original_effect": null,
+      "median_effect": null,
+      "ci_low": null,
+      "ci_high": null,
+      "sign_stability": null,
+      "passed": false,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_6c06e92dd935",
+      "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_global_signal_psd_power_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 0,
+      "original_effect": null,
+      "median_effect": null,
+      "ci_low": null,
+      "ci_high": null,
+      "sign_stability": null,
+      "passed": false,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_eef537bbb915",
+      "target_test_id": "experiment_plan_3dddc1cd6df6_thalamus_frontoparietal_FC_qc_signal_post_DVARS_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 0,
+      "original_effect": null,
+      "median_effect": null,
+      "ci_low": null,
+      "ci_high": null,
+      "sign_stability": null,
+      "passed": false,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_6d772810393f",
+      "target_test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_global_signal_psd_power_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 0,
+      "original_effect": null,
+      "median_effect": null,
+      "ci_low": null,
+      "ci_high": null,
+      "sign_stability": null,
+      "passed": false,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_f94d073d85c7",
+      "target_test_id": "experiment_plan_3dddc1cd6df6_DMN_FC_qc_signal_post_DVARS_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 0,
+      "original_effect": null,
+      "median_effect": null,
+      "ci_low": null,
+      "ci_high": null,
+      "sign_stability": null,
+      "passed": false,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    }
+  ],
+  "negative_control_results": []
+}

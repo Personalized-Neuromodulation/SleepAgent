@@ -1,0 +1,41 @@
+[
+  {
+    "hypothesis_id": "hypothesis_6d2cb6ed13cc",
+    "plan_id": "experiment_plan_3dddc1cd6df6",
+    "support": "inconclusive",
+    "support_score": 0.5,
+    "computed_reward": 0.325,
+    "validated": false,
+    "refuted": false,
+    "primary_tests_passed": 0,
+    "primary_tests_total": 8,
+    "metadata": {
+      "review_status": "inconclusive",
+      "hypothesis_title": "Bidirectional Thalamocortical Coupling and Structural Morphology in Insomnia",
+      "predictors": [
+        "thalamus_DMN_FC",
+        "thalamus_salience_FC",
+        "thalamus_frontoparietal_FC",
+        "DMN_FC"
+      ],
+      "outcomes": [
+        "global_signal_psd_power_mean",
+        "qc_signal_post_DVARS_mean"
+      ],
+      "critic_findings": [
+        {
+          "severity": "high",
+          "category": "data_quality",
+          "message": "All statistical tests have 0/8 passed, indicating potential data quality issues or missing data.",
+          "recommendation": "Investigate missing data in EEG and DTI metrics, and ensure proper data preprocessing."
+        },
+        {
+          "severity": "medium",
+          "category": "model_selection",
+          "message": "The current model uses Spearman correlation, but linear regression might be more appropriate for the given data structure.",
+          "recommendation": "Revise the model to use linear regression with covariates and check for model assumptions."
+        }
+      ]
+    }
+  }
+]

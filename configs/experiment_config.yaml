@@ -15,28 +15,42 @@ experiment:
     log_calls: true
 
 feature_extraction:
-  enabled: false
-  output_root: outputs/features
-  modalities:
-    - fmri
-    - eeg
-    - scales
+  enabled: true
+  output_root: outputs/features_all_fmri
+  modalities: auto
   fmri:
     input_root: ""
-    derivatives_root: ""
+    derivatives_root: /data/fmri_agent/multimodal_sleep_data/bids/derivatives/FMRIPREP
     output_root: ""
+    subjects: []
     features_csv: ""
   eeg:
+    input_root: ""
+    raw_root: ""
+    raw_table: ""
     features_csv: ""
   scales:
+    input_root: ""
+    raw_root: ""
+    raw_table: ""
+    features_csv: ""
+  dti:
+    input_root: ""
+    raw_root: ""
+    raw_table: ""
+    features_csv: ""
+  mri:
+    input_root: ""
+    raw_root: ""
+    raw_table: ""
     features_csv: ""
 
 data_processing:
   enabled: false
   backend: fmri_local_split
-  input_root: ""
-  output_root: outputs/data_processing/fmri_local_split
-  derivatives_root: ""
+  input_root: /data/fmri_agent/multimodal_sleep_data/bids/sourcedata
+  output_root: /data/fmri_agent/multimodal_sleep_data
+  derivatives_root: /data/fmri_agent/multimodal_sleep_data/bids/derivatives/FMRIPREP
   subjects: []
   surface_mode: "0"
   mni_template: both

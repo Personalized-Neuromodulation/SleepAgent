@@ -3,6 +3,7 @@ from sleep_ai_scientist.feature_extraction.agents.fmri_feature_agent import FMRI
 from sleep_ai_scientist.feature_extraction.agents.multimodal_merge_agent import MultimodalMergeAgent
 from sleep_ai_scientist.feature_extraction.agents.qc_agent import QCFeatureAgent
 from sleep_ai_scientist.feature_extraction.agents.scale_feature_agent import ScaleFeatureAgent
+from sleep_ai_scientist.feature_extraction.agents.tabular_feature_agent import TabularFeatureAgent
 
 __all__ = [
     "EEGFeatureAgent",
@@ -10,4 +11,5 @@ __all__ = [
     "MultimodalMergeAgent",
     "QCFeatureAgent",
     "ScaleFeatureAgent",
+    "TabularFeatureAgent",
 ]

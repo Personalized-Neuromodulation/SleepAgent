@@ -9,6 +9,7 @@ from sleep_ai_scientist.feature_extraction.agents import (
     MultimodalMergeAgent,
     QCFeatureAgent,
     ScaleFeatureAgent,
+    TabularFeatureAgent,
 )
 from sleep_ai_scientist.feature_extraction.profile_builder import ProfileBuilder
 from sleep_ai_scientist.feature_extraction.schemas import FeatureExtractionResult, FeatureTable
@@ -21,7 +22,7 @@ def run_feature_extraction(config: dict[str, Any], plan: ExperimentPlan) -> Feat
     output_dir.mkdir(parents=True, exist_ok=True)
 
     tables: list[FeatureTable] = []
-    modalities = {str(item).lower() for item in config.get("modalities", ["fmri", "eeg", "scales"])}
+    modalities = _selected_modalities(config)
     if "fmri" in modalities:
         table = FMRIFeatureAgent(config.get("fmri", {})).run(plan_id=plan.plan_id, output_dir=output_dir)
         if table:
@@ -32,6 +33,11 @@ def run_feature_extraction(config: dict[str, Any], plan: ExperimentPlan) -> Feat
             tables.append(table)
     if "scales" in modalities or "scale" in modalities:
         table = ScaleFeatureAgent(config.get("scales", {})).run(plan_id=plan.plan_id, output_dir=output_dir)
+        if table:
+            tables.append(table)
+    for modality in sorted(modalities - {"fmri", "eeg", "scale", "scales"}):
+        modality_config = config.get(modality, {})
+        table = TabularFeatureAgent(modality, modality_config).run(plan_id=plan.plan_id, output_dir=output_dir)
         if table:
             tables.append(table)
 
@@ -47,3 +53,37 @@ def run_feature_extraction(config: dict[str, Any], plan: ExperimentPlan) -> Feat
         merged_features_path=merged_path,
         metadata={"modalities": sorted({table.modality for table in tables})},
     )
+
+
+def _selected_modalities(config: dict[str, Any]) -> set[str]:
+    raw = config.get("modalities", "auto")
+    if isinstance(raw, str):
+        explicit = {raw.lower()}
+    else:
+        explicit = {str(item).lower() for item in raw}
+    if explicit and explicit != {"auto"}:
+        return explicit
+
+    selected: set[str] = set()
+    path_keys = ("features_csv", "raw_table", "input_root", "raw_root")
+    fmri = config.get("fmri", {})
+    if _has_any_path(fmri, ("features_csv", "derivatives_root", "output_root", "input_root", "raw_root", "raw_table")):
+        selected.add("fmri")
+    if _has_any_path(config.get("eeg", {}), path_keys):
+        selected.add("eeg")
+    if _has_any_path(config.get("scales", {}), path_keys):
+        selected.add("scales")
+    for key, value in config.items():
+        if key in {"enabled", "output_root", "modalities", "fmri", "eeg", "scales"}:
+            continue
+        if isinstance(value, dict) and _has_any_path(value, path_keys):
+            selected.add(str(key).lower())
+    return selected
+
+
+def _has_any_path(config: dict[str, Any], keys: tuple[str, ...]) -> bool:
+    for key in keys:
+        value = str(config.get(key, "") or "").strip()
+        if value:
+            return True
+    return False

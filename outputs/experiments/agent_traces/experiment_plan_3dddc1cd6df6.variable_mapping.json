@@ -1,0 +1,104 @@
+{
+  "judgment": "partially_valid",
+  "candidate_mappings": [
+    {
+      "variable": "thalamus_roi_voxels",
+      "source_column": "thalamus_roi_voxels",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "DMN_roi_voxels",
+      "source_column": "DMN_roi_voxels",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "salience_roi_voxels",
+      "source_column": "salience_roi_voxels",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "frontoparietal_roi_voxels",
+      "source_column": "frontoparietal_roi_voxels",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "thalamus_DMN_FC",
+      "source_column": "thalamus_DMN_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "thalamus_salience_FC",
+      "source_column": "thalamus_salience_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "thalamus_frontoparietal_FC",
+      "source_column": "thalamus_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source_column name"
+    },
+    {
+      "variable": "DMN_salience_FC",
+      "source_column": "DMN_salience_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "DMN_frontoparietal_FC",
+      "source_column": "DMN_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "salience_frontoparietal_FC",
+      "source_column": "salience_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "DMN_FC",
+      "source_column": "DMN_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "salience_FC",
+      "source_column": "salience_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    },
+    {
+      "variable": "frontoparietal_FC",
+      "source_column": "frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name"
+    }
+  ],
+  "missing_variables": [
+    "thalamus_volume",
+    "DMN_volume",
+    "salience_volume",
+    "frontoparietal_volume",
+    "thalamus_DMN_correlation",
+    "thalamus_salience_correlation",
+    "thalamus_frontoparietal_correlation",
+    "DMN_salience_correlation",
+    "DMN_frontoparietal_correlation",
+    "salience_frontoparietal_correlation",
+    "DMN_global_correlation",
+    "salience_global_correlation",
+    "frontoparietal_global_correlation"
+  ],
+  "recommendations": [
+    "Check if variables like 'thalamus_volume' are present in the source data with different naming conventions",
+    "Consider using imputation techniques for missing data in variables with missing entries",
+    "Verify if 'FC' (Functional Connectivity) metrics are correctly mapped to the intended variables",
+    "Explore alternative mappings for variables with similar naming patterns but different abbreviations"
+  ]
+}
