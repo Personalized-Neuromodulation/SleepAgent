@@ -8,11 +8,10 @@
     "recommended_negative_controls": [
       "negative_control_outcome"
     ],
-    "rationale": "The analysis should use linear regression to model the relationship between thalamus-DMN FC and sleep quality metrics, while incorporating covariates. Bootstrap confidence intervals enhance robustness. Negative controls like 'negative_control_outcome' help assess non-specific effects. The current setup needs revision for better integration of covariates and improved statistical power.",
+    "rationale": "The analysis requires linear regression to model the relationship between thalamus-DMN FC and sleep quality metrics, while bootstrap confidence intervals enhance robustness. Negative controls are needed to account for potential confounding variables.",
     "warnings": [
-      "Missing data in EEG and DTI metrics may reduce model accuracy.",
-      "Limited sample size in toy datasets may affect generalizability.",
-      "Need to ensure proper handling of longitudinal data in regression models."
+      "Missing data in DTI, EEG, MRI, and scales modalities may affect model accuracy.",
+      "Limited sample size in the toy dataset may reduce statistical power."
     ]
   },
   "controlled_templates": {

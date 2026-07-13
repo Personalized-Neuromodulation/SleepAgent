@@ -18,7 +18,7 @@ except Exception:  # pragma: no cover
     resample_to_img = None
 
 
-class FMRIFeatureAgent:
+class FMRIFeatureExtractor:
     """Collects fMRI features and preserves ROI/network FC columns when present."""
 
     DEFAULT_FEATURES = [

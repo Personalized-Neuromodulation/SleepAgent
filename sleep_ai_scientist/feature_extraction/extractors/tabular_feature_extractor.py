@@ -3,11 +3,11 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from sleep_ai_scientist.feature_extraction.agents.tabular_utils import extract_tabular_features
+from sleep_ai_scientist.feature_extraction.extractors.tabular_utils import extract_tabular_features
 from sleep_ai_scientist.feature_extraction.schemas import FeatureTable
 
 
-class TabularFeatureAgent:
+class TabularFeatureExtractor:
     """Extracts a feature table for modalities represented by tabular files."""
 
     def __init__(self, modality: str, config: dict[str, Any] | None = None) -> None:

@@ -10,29 +10,29 @@
       {
         "severity": "high",
         "category": "data_quality",
-        "message": "All statistical tests have 0/8 passed, indicating potential data quality issues or missing data.",
-        "recommendation": "Investigate missing data in EEG and DTI metrics, and ensure proper data preprocessing."
+        "message": "All statistical tests failed due to insufficient data (n=0) across all modalities, likely due to missing data in DTI, EEG, MRI, and scales.",
+        "recommendation": "Improve data collection to ensure presence of DTI, EEG, MRI, and scales data for all subjects."
       },
       {
         "severity": "medium",
         "category": "model_selection",
-        "message": "The current model uses Spearman correlation, but linear regression might be more appropriate for the given data structure.",
-        "recommendation": "Revise the model to use linear regression with covariates and check for model assumptions."
+        "message": "Spearman correlation was used as primary analysis, but linear regression might be more appropriate for modeling relationships between FC and sleep metrics.",
+        "recommendation": "Revise analysis to use linear regression as primary model."
       }
     ],
     "confounds": [
-      "Missing data in EEG and DTI metrics",
-      "Limited sample size in toy datasets"
+      "Missing data in DTI, EEG, MRI, and scales modalities",
+      "Small sample size from toy dataset"
     ],
     "alternative_explanations": [
-      "The relationship between thalamus-DMN FC and sleep quality might be non-linear or mediated by other factors not accounted for in the current model.",
-      "The use of Spearman correlation might not capture the complexity of the data as effectively as linear regression."
+      "The absence of data in key modalities may have prevented detection of true relationships",
+      "Toy dataset may not represent general population patterns"
     ],
     "next_steps": [
-      "Implement linear regression with covariates and check model assumptions.",
-      "Investigate missing data in EEG and DTI metrics and perform data imputation if necessary.",
-      "Increase sample size or use cross-validation to improve generalizability.",
-      "Consider incorporating longitudinal data handling techniques in regression models."
+      "Implement linear regression analysis with robustness checks",
+      "Ensure complete data collection across all modalities",
+      "Increase sample size beyond toy dataset",
+      "Consider using imputation techniques for missing data"
     ]
   },
   "primary_tests": [

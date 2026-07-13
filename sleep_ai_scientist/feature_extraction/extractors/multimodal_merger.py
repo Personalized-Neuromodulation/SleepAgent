@@ -8,7 +8,7 @@ import pandas as pd
 from sleep_ai_scientist.feature_extraction.schemas import FeatureTable
 
 
-class MultimodalMergeAgent:
+class MultimodalMerger:
     """Inner-joins extracted modality tables on the normalized subject key."""
 
     def run(self, tables: list[FeatureTable], output_path: str | Path) -> str:

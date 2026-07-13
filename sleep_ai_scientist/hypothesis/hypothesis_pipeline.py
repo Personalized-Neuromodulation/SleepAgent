@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any
 
 from sleep_ai_scientist.common.io import read_json
-from sleep_ai_scientist.hypothesis.agents.supervisor_agent import HypothesisSupervisor
+from sleep_ai_scientist.hypothesis.supervisor import HypothesisSupervisor
 from sleep_ai_scientist.schemas.evidence import EvidenceRecord
 
 

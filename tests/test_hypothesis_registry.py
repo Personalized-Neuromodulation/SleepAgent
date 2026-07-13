@@ -6,7 +6,7 @@ from sleep_ai_scientist.common.io import read_json, write_yaml
 from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
 from sleep_ai_scientist.hypothesis.agents.generation_agent import generate_initial_hypotheses
 from sleep_ai_scientist.hypothesis.agents.llm import LLMError
-from sleep_ai_scientist.hypothesis.agents.supervisor_agent import select_llm_config
+from sleep_ai_scientist.hypothesis.supervisor import select_llm_config
 from sleep_ai_scientist.hypothesis.hypothesis_pipeline import run_hypothesis_pipeline
 from sleep_ai_scientist.hypothesis.agents.review_agent import reject_near_duplicates, run_reflection
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry

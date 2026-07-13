@@ -26,14 +26,14 @@
         {
           "severity": "high",
           "category": "data_quality",
-          "message": "All statistical tests have 0/8 passed, indicating potential data quality issues or missing data.",
-          "recommendation": "Investigate missing data in EEG and DTI metrics, and ensure proper data preprocessing."
+          "message": "All statistical tests failed due to insufficient data (n=0) across all modalities, likely due to missing data in DTI, EEG, MRI, and scales.",
+          "recommendation": "Improve data collection to ensure presence of DTI, EEG, MRI, and scales data for all subjects."
         },
         {
           "severity": "medium",
           "category": "model_selection",
-          "message": "The current model uses Spearman correlation, but linear regression might be more appropriate for the given data structure.",
-          "recommendation": "Revise the model to use linear regression with covariates and check for model assumptions."
+          "message": "Spearman correlation was used as primary analysis, but linear regression might be more appropriate for modeling relationships between FC and sleep metrics.",
+          "recommendation": "Revise analysis to use linear regression as primary model."
         }
       ]
     }

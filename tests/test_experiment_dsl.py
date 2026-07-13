@@ -106,8 +106,11 @@ def test_experiment_pipeline_runs_feature_extraction_layer(tmp_path):
 
     summary = run_experiment_pipeline(config_path)
     assert summary["plans"] == 1
-    assert list(feature_root.glob("*/analysis_ready_profile.yaml"))
-    assert list(feature_root.glob("*/multimodal_features.csv"))
+    assert list((feature_root / "fmri").glob("*/fmri_features.csv"))
+    assert list((feature_root / "eeg").glob("*/eeg_features.csv"))
+    assert list((feature_root / "scales").glob("*/scale_features.csv"))
+    assert list((feature_root / "profile").glob("*/analysis_ready_profile.yaml"))
+    assert list((feature_root / "multimodal").glob("*/multimodal_features.csv"))
     assert read_json(results_path)[0]["stats_result"]["tests"]
 
 
@@ -128,6 +131,16 @@ def test_feature_extraction_auto_uses_only_configured_fmri(tmp_path):
     )
 
     assert [table.modality for table in result.tables] == ["fMRI"]
+    assert Path(result.tables[0].path) == tmp_path / "features" / "fmri" / plan.plan_id / "fmri_features.csv"
+    assert (tmp_path / "features" / "eeg").is_dir()
+    assert (tmp_path / "features" / "scales").is_dir()
+    assert (tmp_path / "features" / "dti").is_dir()
+    assert (tmp_path / "features" / "mri").is_dir()
+    assert not (tmp_path / "features" / "eeg" / plan.plan_id).exists()
+    assert not (tmp_path / "features" / "scales" / plan.plan_id).exists()
+    assert not (tmp_path / "features" / "dti" / plan.plan_id).exists()
+    assert not (tmp_path / "features" / "mri" / plan.plan_id).exists()
+    assert not (tmp_path / "features" / "eeg" / plan.plan_id / "eeg_features.csv").exists()
 
 
 def test_feature_extraction_auto_adds_extra_modalities_when_configured(tmp_path):
@@ -148,6 +161,10 @@ def test_feature_extraction_auto_adds_extra_modalities_when_configured(tmp_path)
     )
 
     assert sorted(table.modality for table in result.tables) == ["DTI", "EEG", "fMRI", "scales"]
+    assert (tmp_path / "features" / "fmri" / plan.plan_id / "fmri_features.csv").exists()
+    assert (tmp_path / "features" / "eeg" / plan.plan_id / "eeg_features.csv").exists()
+    assert (tmp_path / "features" / "scales" / plan.plan_id / "scale_features.csv").exists()
+    assert (tmp_path / "features" / "dti" / plan.plan_id / "dti_features.csv").exists()
 
 
 def test_feature_extraction_extracts_non_fmri_raw_modalities(tmp_path):
@@ -181,6 +198,9 @@ def test_feature_extraction_extracts_non_fmri_raw_modalities(tmp_path):
         "eeg_features.csv",
         "scale_features.csv",
     }
+    assert (tmp_path / "features" / "eeg" / plan.plan_id / "eeg_features.csv").exists()
+    assert (tmp_path / "features" / "scales" / plan.plan_id / "scale_features.csv").exists()
+    assert (tmp_path / "features" / "dti" / plan.plan_id / "dti_features.csv").exists()
     merged = pd.read_csv(result.merged_features_path)
     assert merged["subject_id"].tolist() == ["sub-001"]
     assert {"eeg_delta_power", "scales_ISI", "dti_thalamo_cortical_FA"}.issubset(set(merged.columns))

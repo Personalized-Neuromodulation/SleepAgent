@@ -181,28 +181,22 @@
         "test_id": "test_002",
         "predictor": "thalamus_DMN_FC",
         "outcome": "PSQI",
-        "question": "Does thalamus-DMN functional connectivity correlate with sleep quality (PSQI) following sleep intervention?"
+        "question": "Does change in thalamus-DMN functional connectivity correlate with improvements in sleep quality (PSQI) following intervention?"
       },
       {
         "test_id": "test_003",
         "predictor": "delta_power",
-        "outcome": "ISI",
-        "question": "Is delta power during sleep correlated with insomnia severity (ISI) after intervention?"
+        "outcome": "thalamus_volume",
+        "question": "Is delta power during sleep correlated with thalamus volume changes post-intervention?"
       },
       {
         "test_id": "test_004",
         "predictor": "spindle_density",
-        "outcome": "PSQI",
-        "question": "Does spindle density correlate with sleep quality (PSQI) following intervention?"
-      },
-      {
-        "test_id": "test_005",
-        "predictor": "thalamic_radiation_FA",
-        "outcome": "slow_wave_density",
-        "question": "Is fractional anisotropy in thalamic radiation correlated with slow wave density during sleep?"
+        "outcome": "thalamus_DMN_FC",
+        "question": "Does spindle density correlate with changes in thalamus-DMN functional connectivity after intervention?"
       }
     ],
-    "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) in insomnia patients before and after sleep interventions. Use EEG metrics (slow wave density, spindle density, delta power) as biomarkers of sleep quality, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
+    "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) at baseline and post-intervention in insomnia patients. Use EEG metrics (slow wave density, spindle density, delta power) as sleep quality biomarkers, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
     "metadata": {
       "source": "ExperimentDesignAgent",
       "generation_strategy": "scientific_debate",
@@ -216,7 +210,7 @@
       ],
       "llm_experiment_design": {
         "scientific_question": "How do structural and functional brain changes, specifically thalamus volume and DMN connectivity, correlate with sleep quality and insomnia severity in patients undergoing sleep interventions?",
-        "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) in insomnia patients before and after sleep interventions. Use EEG metrics (slow wave density, spindle density, delta power) as biomarkers of sleep quality, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
+        "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) at baseline and post-intervention in insomnia patients. Use EEG metrics (slow wave density, spindle density, delta power) as sleep quality biomarkers, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
         "primary_tests": [
           {
             "test_id": "test_001",
@@ -228,34 +222,28 @@
             "test_id": "test_002",
             "predictor": "thalamus_DMN_FC",
             "outcome": "PSQI",
-            "question": "Does thalamus-DMN functional connectivity correlate with sleep quality (PSQI) following sleep intervention?"
+            "question": "Does change in thalamus-DMN functional connectivity correlate with improvements in sleep quality (PSQI) following intervention?"
           },
           {
             "test_id": "test_003",
             "predictor": "delta_power",
-            "outcome": "ISI",
-            "question": "Is delta power during sleep correlated with insomnia severity (ISI) after intervention?"
+            "outcome": "thalamus_volume",
+            "question": "Is delta power during sleep correlated with thalamus volume changes post-intervention?"
           },
           {
             "test_id": "test_004",
             "predictor": "spindle_density",
-            "outcome": "PSQI",
-            "question": "Does spindle density correlate with sleep quality (PSQI) following intervention?"
-          },
-          {
-            "test_id": "test_005",
-            "predictor": "thalamic_radiation_FA",
-            "outcome": "slow_wave_density",
-            "question": "Is fractional anisotropy in thalamic radiation correlated with slow wave density during sleep?"
+            "outcome": "thalamus_DMN_FC",
+            "question": "Does spindle density correlate with changes in thalamus-DMN functional connectivity after intervention?"
           }
         ],
         "risks": [
-          "Missing data in EEG features (e.g., slow wave density, beta power) may reduce statistical power.",
-          "Variability in sleep interventions may affect consistency of results.",
+          "Missing data in EEG features (slow wave density, beta power) may reduce statistical power.",
           "Potential confounding from medication status if not properly controlled.",
-          "Limited generalizability due to small sample size in toy datasets."
+          "Variability in sleep interventions may affect consistency of results.",
+          "Limited generalizability due to small sample size in toy dataset."
         ],
-        "rationale": "The hypothesis integrates structural (thalamus volume) and functional (DMN connectivity) metrics with sleep EEG biomarkers to comprehensively assess sleep intervention efficacy. Controlling for DTI FA values and medication ensures clearer associations between brain changes and sleep outcomes. The use of both ISI and PSQI provides dual measures of insomnia severity and sleep quality."
+        "rationale": "The hypothesis integrates structural (thalamus volume) and functional (DMN connectivity) markers with sleep physiology (EEG metrics) to comprehensively assess insomnia mechanisms. Using multimodal data (MRI, fMRI, DTI, EEG) strengthens the analysis, while controlling for covariates improves internal validity. The risks highlight practical considerations in translating the hypothesis to empirical study."
       }
     }
   }

@@ -30,7 +30,7 @@
           "role": "predictor",
           "scientific_concept": "thalamus DMN FC",
           "modality": "fMRI",
-          "source_file": "outputs/features_all_fmri/experiment_plan_3dddc1cd6df6/fmri_features.csv",
+          "source_file": "outputs/features/fmri/experiment_plan_3dddc1cd6df6/fmri_features.csv",
           "source_column": "thalamus_DMN_FC",
           "approved": true,
           "missing_rate": 0.24731182795698925,
@@ -121,7 +121,7 @@
           "role": "covariate",
           "scientific_concept": "mean FD",
           "modality": "fMRI",
-          "source_file": "outputs/features_all_fmri/experiment_plan_3dddc1cd6df6/fmri_features.csv",
+          "source_file": "outputs/features/fmri/experiment_plan_3dddc1cd6df6/fmri_features.csv",
           "source_column": "mean_FD",
           "approved": true,
           "missing_rate": 0.0,
@@ -219,7 +219,7 @@
           "question": "fMRI-only submechanism: does DMN_FC relate to qc_signal_post_DVARS_mean?"
         }
       ],
-      "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) in insomnia patients before and after sleep interventions. Use EEG metrics (slow wave density, spindle density, delta power) as biomarkers of sleep quality, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
+      "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) at baseline and post-intervention in insomnia patients. Use EEG metrics (slow wave density, spindle density, delta power) as sleep quality biomarkers, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
       "metadata": {
         "source": "ExperimentDesignAgent",
         "generation_strategy": "scientific_debate",
@@ -233,7 +233,7 @@
         ],
         "llm_experiment_design": {
           "scientific_question": "How do structural and functional brain changes, specifically thalamus volume and DMN connectivity, correlate with sleep quality and insomnia severity in patients undergoing sleep interventions?",
-          "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) in insomnia patients before and after sleep interventions. Use EEG metrics (slow wave density, spindle density, delta power) as biomarkers of sleep quality, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
+          "analysis_plan": "Conduct a longitudinal study comparing thalamus volume (MRI) and thalamus-DMN functional connectivity (fMRI) at baseline and post-intervention in insomnia patients. Use EEG metrics (slow wave density, spindle density, delta power) as sleep quality biomarkers, and correlate these with structural and functional changes. Control for covariates like in-scanner sleep time (EEG), mean FD (fMRI), FA values (DTI), and medication status (scales).",
           "primary_tests": [
             {
               "test_id": "test_001",
@@ -245,34 +245,28 @@
               "test_id": "test_002",
               "predictor": "thalamus_DMN_FC",
               "outcome": "PSQI",
-              "question": "Does thalamus-DMN functional connectivity correlate with sleep quality (PSQI) following sleep intervention?"
+              "question": "Does change in thalamus-DMN functional connectivity correlate with improvements in sleep quality (PSQI) following intervention?"
             },
             {
               "test_id": "test_003",
               "predictor": "delta_power",
-              "outcome": "ISI",
-              "question": "Is delta power during sleep correlated with insomnia severity (ISI) after intervention?"
+              "outcome": "thalamus_volume",
+              "question": "Is delta power during sleep correlated with thalamus volume changes post-intervention?"
             },
             {
               "test_id": "test_004",
               "predictor": "spindle_density",
-              "outcome": "PSQI",
-              "question": "Does spindle density correlate with sleep quality (PSQI) following intervention?"
-            },
-            {
-              "test_id": "test_005",
-              "predictor": "thalamic_radiation_FA",
-              "outcome": "slow_wave_density",
-              "question": "Is fractional anisotropy in thalamic radiation correlated with slow wave density during sleep?"
+              "outcome": "thalamus_DMN_FC",
+              "question": "Does spindle density correlate with changes in thalamus-DMN functional connectivity after intervention?"
             }
           ],
           "risks": [
-            "Missing data in EEG features (e.g., slow wave density, beta power) may reduce statistical power.",
-            "Variability in sleep interventions may affect consistency of results.",
+            "Missing data in EEG features (slow wave density, beta power) may reduce statistical power.",
             "Potential confounding from medication status if not properly controlled.",
-            "Limited generalizability due to small sample size in toy datasets."
+            "Variability in sleep interventions may affect consistency of results.",
+            "Limited generalizability due to small sample size in toy dataset."
           ],
-          "rationale": "The hypothesis integrates structural (thalamus volume) and functional (DMN connectivity) metrics with sleep EEG biomarkers to comprehensively assess sleep intervention efficacy. Controlling for DTI FA values and medication ensures clearer associations between brain changes and sleep outcomes. The use of both ISI and PSQI provides dual measures of insomnia severity and sleep quality."
+          "rationale": "The hypothesis integrates structural (thalamus volume) and functional (DMN connectivity) markers with sleep physiology (EEG metrics) to comprehensively assess insomnia mechanisms. Using multimodal data (MRI, fMRI, DTI, EEG) strengthens the analysis, while controlling for covariates improves internal validity. The risks highlight practical considerations in translating the hypothesis to empirical study."
         },
         "testability_precheck": {
           "available_modalities": [
@@ -307,101 +301,100 @@
               "variable": "thalamus_roi_voxels",
               "source_column": "thalamus_roi_voxels",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "DMN_roi_voxels",
               "source_column": "DMN_roi_voxels",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "salience_roi_voxels",
               "source_column": "salience_roi_voxels",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "frontoparietal_roi_voxels",
               "source_column": "frontoparietal_roi_voxels",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "thalamus_DMN_FC",
               "source_column": "thalamus_DMN_FC",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "thalamus_salience_FC",
               "source_column": "thalamus_salience_FC",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "thalamus_frontoparietal_FC",
               "source_column": "thalamus_frontoparietal_FC",
               "confidence": 0.9,
-              "reason": "Direct match in source_column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "DMN_salience_FC",
               "source_column": "DMN_salience_FC",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "DMN_frontoparietal_FC",
               "source_column": "DMN_frontoparietal_FC",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "salience_frontoparietal_FC",
               "source_column": "salience_frontoparietal_FC",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "DMN_FC",
               "source_column": "DMN_FC",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "salience_FC",
               "source_column": "salience_FC",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             },
             {
               "variable": "frontoparietal_FC",
               "source_column": "frontoparietal_FC",
               "confidence": 0.9,
-              "reason": "Direct match in source column name"
+              "reason": "Direct match in column name."
             }
           ],
           "missing_variables": [
-            "thalamus_volume",
-            "DMN_volume",
-            "salience_volume",
-            "frontoparietal_volume",
-            "thalamus_DMN_correlation",
-            "thalamus_salience_correlation",
-            "thalamus_frontoparietal_correlation",
-            "DMN_salience_correlation",
-            "DMN_frontoparietal_correlation",
-            "salience_frontoparietal_correlation",
-            "DMN_global_correlation",
-            "salience_global_correlation",
-            "frontoparietal_global_correlation"
+            "thalamus_roi_voxels",
+            "DMN_roi_voxels",
+            "salience_roi_voxels",
+            "frontoparietal_roi_voxels",
+            "thalamus_DMN_FC",
+            "thalamus_salience_FC",
+            "thalamus_frontoparietal_FC",
+            "DMN_salience_FC",
+            "DMN_frontoparietal_FC",
+            "salience_frontoparietal_FC",
+            "DMN_FC",
+            "salience_FC",
+            "frontoparietal_FC"
           ],
           "recommendations": [
-            "Check if variables like 'thalamus_volume' are present in the source data with different naming conventions",
-            "Consider using imputation techniques for missing data in variables with missing entries",
-            "Verify if 'FC' (Functional Connectivity) metrics are correctly mapped to the intended variables",
-            "Explore alternative mappings for variables with similar naming patterns but different abbreviations"
+            "Check for missing variables in the dataset, particularly those related to ROI voxels and FC measures.",
+            "Consider using imputation techniques for missing data in the ROI and FC variables.",
+            "Verify if the missing variables are due to data processing errors or incomplete ROI definitions."
           ]
         }
       }
@@ -637,14 +630,14 @@
       {
         "severity": "high",
         "category": "data_quality",
-        "message": "All statistical tests have 0/8 passed, indicating potential data quality issues or missing data.",
-        "recommendation": "Investigate missing data in EEG and DTI metrics, and ensure proper data preprocessing."
+        "message": "All statistical tests failed due to insufficient data (n=0) across all modalities, likely due to missing data in DTI, EEG, MRI, and scales.",
+        "recommendation": "Improve data collection to ensure presence of DTI, EEG, MRI, and scales data for all subjects."
       },
       {
         "severity": "medium",
         "category": "model_selection",
-        "message": "The current model uses Spearman correlation, but linear regression might be more appropriate for the given data structure.",
-        "recommendation": "Revise the model to use linear regression with covariates and check for model assumptions."
+        "message": "Spearman correlation was used as primary analysis, but linear regression might be more appropriate for modeling relationships between FC and sleep metrics.",
+        "recommendation": "Revise analysis to use linear regression as primary model."
       }
     ],
     "evidence_update": {
@@ -659,29 +652,29 @@
           {
             "severity": "high",
             "category": "data_quality",
-            "message": "All statistical tests have 0/8 passed, indicating potential data quality issues or missing data.",
-            "recommendation": "Investigate missing data in EEG and DTI metrics, and ensure proper data preprocessing."
+            "message": "All statistical tests failed due to insufficient data (n=0) across all modalities, likely due to missing data in DTI, EEG, MRI, and scales.",
+            "recommendation": "Improve data collection to ensure presence of DTI, EEG, MRI, and scales data for all subjects."
           },
           {
             "severity": "medium",
             "category": "model_selection",
-            "message": "The current model uses Spearman correlation, but linear regression might be more appropriate for the given data structure.",
-            "recommendation": "Revise the model to use linear regression with covariates and check for model assumptions."
+            "message": "Spearman correlation was used as primary analysis, but linear regression might be more appropriate for modeling relationships between FC and sleep metrics.",
+            "recommendation": "Revise analysis to use linear regression as primary model."
           }
         ],
         "confounds": [
-          "Missing data in EEG and DTI metrics",
-          "Limited sample size in toy datasets"
+          "Missing data in DTI, EEG, MRI, and scales modalities",
+          "Small sample size from toy dataset"
         ],
         "alternative_explanations": [
-          "The relationship between thalamus-DMN FC and sleep quality might be non-linear or mediated by other factors not accounted for in the current model.",
-          "The use of Spearman correlation might not capture the complexity of the data as effectively as linear regression."
+          "The absence of data in key modalities may have prevented detection of true relationships",
+          "Toy dataset may not represent general population patterns"
         ],
         "next_steps": [
-          "Implement linear regression with covariates and check model assumptions.",
-          "Investigate missing data in EEG and DTI metrics and perform data imputation if necessary.",
-          "Increase sample size or use cross-validation to improve generalizability.",
-          "Consider incorporating longitudinal data handling techniques in regression models."
+          "Implement linear regression analysis with robustness checks",
+          "Ensure complete data collection across all modalities",
+          "Increase sample size beyond toy dataset",
+          "Consider using imputation techniques for missing data"
         ]
       },
       "primary_tests": [
@@ -917,11 +910,10 @@
           "recommended_negative_controls": [
             "negative_control_outcome"
           ],
-          "rationale": "The analysis should use linear regression to model the relationship between thalamus-DMN FC and sleep quality metrics, while incorporating covariates. Bootstrap confidence intervals enhance robustness. Negative controls like 'negative_control_outcome' help assess non-specific effects. The current setup needs revision for better integration of covariates and improved statistical power.",
+          "rationale": "The analysis requires linear regression to model the relationship between thalamus-DMN FC and sleep quality metrics, while bootstrap confidence intervals enhance robustness. Negative controls are needed to account for potential confounding variables.",
           "warnings": [
-            "Missing data in EEG and DTI metrics may reduce model accuracy.",
-            "Limited sample size in toy datasets may affect generalizability.",
-            "Need to ensure proper handling of longitudinal data in regression models."
+            "Missing data in DTI, EEG, MRI, and scales modalities may affect model accuracy.",
+            "Limited sample size in the toy dataset may reduce statistical power."
           ]
         },
         "controlled_templates": {
