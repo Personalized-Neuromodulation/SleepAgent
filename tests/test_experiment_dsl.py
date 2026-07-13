@@ -1,5 +1,7 @@
 from pathlib import Path
 
+import pandas as pd
+
 from sleep_ai_scientist.common.io import read_json, write_yaml
 from sleep_ai_scientist.experiment.agents.llm import build_experiment_llm, experiment_llm_enabled
 from sleep_ai_scientist.experiment.agents.planning import build_experiment_plan_from_hypothesis, load_data_profile, load_hypotheses
@@ -179,6 +181,9 @@ def test_feature_extraction_extracts_non_fmri_raw_modalities(tmp_path):
         "eeg_features.csv",
         "scale_features.csv",
     }
+    merged = pd.read_csv(result.merged_features_path)
+    assert merged["subject_id"].tolist() == ["sub-001"]
+    assert {"eeg_delta_power", "scales_ISI", "dti_thalamo_cortical_FA"}.issubset(set(merged.columns))
 
 
 def test_experiment_llm_enabled_accepts_inner_and_outer_config():
