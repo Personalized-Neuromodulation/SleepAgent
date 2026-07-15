@@ -16,22 +16,28 @@ from sleep_ai_scientist.schemas.experiment import (
 )
 
 
-def load_analysis_table(plan: ExperimentPlan) -> pd.DataFrame:
+def load_analysis_table(plan: ExperimentPlan, required_variables: set[str] | None = None) -> pd.DataFrame:
     frames: list[pd.DataFrame] = []
-    variables_by_file: dict[Path, dict[str, str]] = {}
+    variables_by_file: dict[Path, list[Any]] = {}
     for variable in plan.variables:
+        if required_variables is not None and variable.name not in required_variables:
+            continue
         if not variable.source_file:
             continue
         path = Path(variable.source_file)
-        variables_by_file.setdefault(path, {})[variable.source_column or variable.name] = variable.name
+        variables_by_file.setdefault(path, []).append(variable)
 
-    for path, column_map in variables_by_file.items():
+    for path, variables in variables_by_file.items():
         if not path.exists():
             continue
         frame = pd.read_csv(path)
         if "subject_id" not in frame.columns:
             frame.insert(0, "subject_id", [f"row_{idx}" for idx in range(len(frame))])
-        selected = {source: target for source, target in column_map.items() if source in frame.columns}
+        selected = {}
+        for variable in variables:
+            source = _resolve_source_column(frame, variable)
+            if source:
+                selected[source] = variable.name
         if not selected:
             continue
         subset = frame[["subject_id", *selected.keys()]].rename(columns=selected)
@@ -48,20 +54,20 @@ def load_analysis_table(plan: ExperimentPlan) -> pd.DataFrame:
 
 
 def run_primary_tests(plan: ExperimentPlan) -> list[StatisticalTestResult]:
-    table = load_analysis_table(plan)
     results: list[StatisticalTestResult] = []
     for test in plan.primary_tests:
         predictor = str(test.get("predictor", ""))
         outcome = str(test.get("outcome", ""))
         test_id = str(test.get("test_id") or stable_id("primary_test", plan.plan_id, predictor, outcome))
+        table = load_analysis_table(plan, {predictor, outcome})
         results.append(_spearman_result(table, test_id, predictor, outcome))
     return results
 
 
 def run_robustness_checks(plan: ExperimentPlan, tests: list[StatisticalTestResult], *, iterations: int = 100) -> list[RobustnessCheckResult]:
-    table = load_analysis_table(plan)
     checks: list[RobustnessCheckResult] = []
     for test in tests:
+        table = load_analysis_table(plan, {test.predictor, test.outcome})
         clean = _clean_pair(table, test.predictor, test.outcome)
         effects: list[float] = []
         if len(clean) >= 4:
@@ -92,10 +98,10 @@ def run_robustness_checks(plan: ExperimentPlan, tests: list[StatisticalTestResul
 
 
 def run_negative_controls(plan: ExperimentPlan) -> list[NegativeControlResult]:
-    table = load_analysis_table(plan)
     controls: list[NegativeControlResult] = []
     for control in plan.negative_controls:
         for predictor in plan.predictors:
+            table = load_analysis_table(plan, {predictor, control})
             result = _spearman_result(table, stable_id("negative_control", plan.plan_id, predictor, control), predictor, control)
             controls.append(
                 NegativeControlResult(
@@ -110,6 +116,25 @@ def run_negative_controls(plan: ExperimentPlan) -> list[NegativeControlResult]:
                 )
             )
     return controls
+
+
+def _resolve_source_column(frame: pd.DataFrame, variable: Any) -> str:
+    modality = str(getattr(variable, "modality", "") or "").strip().lower()
+    source_column = str(getattr(variable, "source_column", "") or "").strip()
+    name = str(getattr(variable, "name", "") or "").strip()
+    candidates = [source_column, name]
+    if modality:
+        normalized_modality = "fmri" if modality == "fmri" else modality
+        candidates.extend(
+            [
+                f"{normalized_modality}_{source_column}" if source_column else "",
+                f"{normalized_modality}_{name}" if name else "",
+            ]
+        )
+    for candidate in candidates:
+        if candidate and candidate in frame.columns:
+            return candidate
+    return ""
 
 
 def _spearman_result(table: pd.DataFrame, test_id: str, predictor: str, outcome: str) -> StatisticalTestResult:

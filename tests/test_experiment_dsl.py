@@ -4,9 +4,13 @@ import pandas as pd
 
 from sleep_ai_scientist.common.io import read_json, write_yaml
 from sleep_ai_scientist.experiment.agents.llm import build_experiment_llm, experiment_llm_enabled
+from sleep_ai_scientist.experiment.agents.analysis_templates import run_primary_tests
 from sleep_ai_scientist.experiment.agents.planning import build_experiment_plan_from_hypothesis, load_data_profile, load_hypotheses
 from sleep_ai_scientist.experiment.experiment_pipeline import run_experiment_pipeline
 from sleep_ai_scientist.feature_extraction.feature_pipeline import run_feature_extraction
+from sleep_ai_scientist.feature_extraction.profile_builder import TestabilityPrecheck
+from sleep_ai_scientist.schemas.data_profile import DataProfile, FeatureProfile
+from sleep_ai_scientist.schemas.experiment import ExperimentPlan, ExperimentVariable, ExperimentVariableRole
 
 
 def test_experiment_agent_plan_is_not_empty_shell():
@@ -216,3 +220,139 @@ def test_experiment_llm_enabled_accepts_inner_and_outer_config():
     assert experiment_llm_enabled(inner)
     assert experiment_llm_enabled({"llm": inner})
     assert build_experiment_llm(inner, task_name="test") is not None
+
+
+def test_analysis_templates_do_not_inner_join_unrelated_modalities(tmp_path):
+    fmri = tmp_path / "fmri_features.csv"
+    fmri.write_text("subject_id,x,y\nsub-001,1,3\nsub-002,2,2\nsub-003,3,1\n", encoding="utf-8")
+    eeg = tmp_path / "eeg_features.csv"
+    eeg.write_text("subject_id,slow_wave_density\nother-001,0.1\nother-002,0.2\n", encoding="utf-8")
+    plan = ExperimentPlan(
+        plan_id="plan_join",
+        hypothesis_id="hyp",
+        hypothesis_title="H",
+        scientific_question="Q",
+        predictors=["x"],
+        outcomes=["y"],
+        variables=[
+            ExperimentVariable(name="x", role=ExperimentVariableRole.predictor, modality="fMRI", source_file=str(fmri), source_column="x"),
+            ExperimentVariable(name="y", role=ExperimentVariableRole.outcome, modality="fMRI", source_file=str(fmri), source_column="y"),
+            ExperimentVariable(
+                name="slow_wave_density",
+                role=ExperimentVariableRole.covariate,
+                modality="EEG",
+                source_file=str(eeg),
+                source_column="slow_wave_density",
+            ),
+        ],
+        primary_tests=[{"test_id": "t1", "predictor": "x", "outcome": "y"}],
+    )
+
+    tests = run_primary_tests(plan)
+
+    assert tests[0].n == 3
+    assert tests[0].effect is not None
+
+
+def test_analysis_templates_resolve_modality_prefixed_columns(tmp_path):
+    multimodal = tmp_path / "multimodal_features.csv"
+    multimodal.write_text(
+        "subject_id,fmri_thalamus_DMN_FC,fmri_global_signal_psd_power_mean\nsub-001,1,1\nsub-002,2,3\nsub-003,3,5\n",
+        encoding="utf-8",
+    )
+    plan = ExperimentPlan(
+        plan_id="plan_prefixed",
+        hypothesis_id="hyp",
+        hypothesis_title="H",
+        scientific_question="Q",
+        predictors=["thalamus_DMN_FC"],
+        outcomes=["global_signal_psd_power_mean"],
+        variables=[
+            ExperimentVariable(
+                name="thalamus_DMN_FC",
+                role=ExperimentVariableRole.predictor,
+                modality="fMRI",
+                source_file=str(multimodal),
+                source_column="thalamus_DMN_FC",
+            ),
+            ExperimentVariable(
+                name="global_signal_psd_power_mean",
+                role=ExperimentVariableRole.outcome,
+                modality="fMRI",
+                source_file=str(multimodal),
+                source_column="global_signal_psd_power_mean",
+            ),
+        ],
+        primary_tests=[{"test_id": "t1", "predictor": "thalamus_DMN_FC", "outcome": "global_signal_psd_power_mean"}],
+    )
+
+    tests = run_primary_tests(plan)
+
+    assert tests[0].n == 3
+    assert tests[0].effect is not None
+
+
+def test_testability_precheck_rebuilds_variables_for_available_fmri_only(tmp_path):
+    fmri_file = tmp_path / "fmri_features.csv"
+    fmri_file.write_text("subject_id,thalamus_DMN_FC,global_signal_psd_power_mean,mean_FD\nsub-001,1,2,0.1\n", encoding="utf-8")
+    profile = DataProfile(
+        profile_type="analysis_ready_profile",
+        features=[
+            FeatureProfile(
+                feature_name="thalamus_DMN_FC",
+                modality="fMRI",
+                source_file=str(fmri_file),
+                source_column="thalamus_DMN_FC",
+                approved=True,
+                role="feature",
+                n_available=1,
+            ),
+            FeatureProfile(
+                feature_name="global_signal_psd_power_mean",
+                modality="fMRI",
+                source_file=str(fmri_file),
+                source_column="global_signal_psd_power_mean",
+                approved=True,
+                role="feature",
+                n_available=1,
+            ),
+            FeatureProfile(
+                feature_name="mean_FD",
+                modality="fMRI",
+                source_file=str(fmri_file),
+                source_column="mean_FD",
+                approved=True,
+                role="covariate",
+                n_available=1,
+            ),
+        ],
+    )
+    plan = ExperimentPlan(
+        plan_id="plan_available",
+        hypothesis_id="hyp",
+        hypothesis_title="H",
+        scientific_question="Q",
+        predictors=["FA", "thalamus_DMN_FC"],
+        outcomes=["PSQI"],
+        covariates=["medication"],
+        variables=[
+            ExperimentVariable(name="FA", role=ExperimentVariableRole.predictor, modality="DTI"),
+            ExperimentVariable(name="thalamus_DMN_FC", role=ExperimentVariableRole.predictor, modality="fMRI"),
+            ExperimentVariable(name="PSQI", role=ExperimentVariableRole.outcome, modality="scales"),
+        ],
+        metadata={"requested_modalities": ["DTI", "fMRI", "scales"]},
+    )
+
+    updated = TestabilityPrecheck().run(plan, profile)
+
+    assert updated.predictors == ["thalamus_DMN_FC"]
+    assert updated.outcomes == ["global_signal_psd_power_mean"]
+    assert updated.covariates == ["mean_FD"]
+    assert {variable.name for variable in updated.variables} == {
+        "thalamus_DMN_FC",
+        "global_signal_psd_power_mean",
+        "mean_FD",
+    }
+    assert {variable.modality.lower() for variable in updated.variables} == {"fmri"}
+    assert "submechanism" not in updated.primary_tests[0]["question"].lower()
+    assert updated.metadata["testability_precheck"]["mode"] == "available_modalities_only"

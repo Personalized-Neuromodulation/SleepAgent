@@ -4,80 +4,80 @@
     {
       "variable": "thalamus_roi_voxels",
       "source_column": "thalamus_roi_voxels",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "DMN_roi_voxels",
       "source_column": "DMN_roi_voxels",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "salience_roi_voxels",
       "source_column": "salience_roi_voxels",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "frontoparietal_roi_voxels",
       "source_column": "frontoparietal_roi_voxels",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "thalamus_DMN_FC",
       "source_column": "thalamus_DMN_FC",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "thalamus_salience_FC",
       "source_column": "thalamus_salience_FC",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "thalamus_frontoparietal_FC",
       "source_column": "thalamus_frontoparietal_FC",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "DMN_salience_FC",
       "source_column": "DMN_salience_FC",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "DMN_frontoparietal_FC",
       "source_column": "DMN_frontoparietal_FC",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "salience_frontoparietal_FC",
       "source_column": "salience_frontoparietal_FC",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "DMN_FC",
       "source_column": "DMN_FC",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "salience_FC",
       "source_column": "salience_FC",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     },
     {
       "variable": "frontoparietal_FC",
       "source_column": "frontoparietal_FC",
-      "confidence": 0.9,
-      "reason": "Direct match in column name."
+      "confidence": 1.0,
+      "reason": "Direct match in source column."
     }
   ],
   "missing_variables": [
@@ -96,8 +96,8 @@
     "frontoparietal_FC"
   ],
   "recommendations": [
-    "Check for missing variables in the dataset, particularly those related to ROI voxels and FC measures.",
-    "Consider using imputation techniques for missing data in the ROI and FC variables.",
-    "Verify if the missing variables are due to data processing errors or incomplete ROI definitions."
+    "Check if the variables listed in 'missing_variables' are correctly mapped in the source columns.",
+    "Consider using imputation techniques for missing data in the variables with missing rates of 24.73%.",
+    "Verify if the missing data for the variables with 24.73% missing rate is due to a specific pattern or random occurrence."
   ]
 }

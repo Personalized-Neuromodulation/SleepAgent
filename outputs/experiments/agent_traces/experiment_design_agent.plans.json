@@ -1,14 +1,14 @@
 [
   {
-    "plan_id": "experiment_plan_d35af395acee",
-    "hypothesis_id": "hypothesis_3a80bdc0e29e",
-    "hypothesis_title": "Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity",
-    "scientific_question": "Test whether Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity is supported by available analysis-ready variables.",
-    "hypothesis_summary": "This hypothesis proposes that thalamocortical coupling modulates insomnia severity through a dual pathway involving structural morphology and white matter integrity, integrating multimodal neuroimaging data.",
-    "hypothesis_content": "Thalamocortical coupling modulates insomnia severity through a dual pathway involving structural morphology of the thalamus and white matter integrity, as measured by MRI and DTI, respectively. This pathway integrates both functional and structural neuroimaging data to explain the neurobiological basis of insomnia severity.",
+    "plan_id": "experiment_plan_b6b568b972fc",
+    "hypothesis_id": "hypothesis_5f0b736e065c",
+    "hypothesis_title": "Thalamocortical Coupling Modulates Thalamic Morphology in Insomnia",
+    "scientific_question": "Test whether Thalamocortical Coupling Modulates Thalamic Morphology in Insomnia is supported by available analysis-ready variables.",
+    "hypothesis_summary": "This hypothesis proposes that thalamocortical coupling influences thalamic morphology in individuals with insomnia, linking hyperarousal to structural changes in the thalamus.",
+    "hypothesis_content": "Thalamocortical coupling modulates thalamic morphology in insomnia, such that increased thalamocortical hyperarousal leads to structural changes in the thalamus, exacerbating insomnia severity.",
     "predictors": [
       "thalamus_DMN_FC",
-      "FA",
+      "thalamus_volume",
       "DMN_FC",
       "thalamic_radiation_FA"
     ],
@@ -39,12 +39,12 @@
         "notes": "Mapped from analysis-ready data profile."
       },
       {
-        "name": "FA",
+        "name": "thalamus_volume",
         "role": "predictor",
-        "scientific_concept": "FA",
-        "modality": "DTI",
-        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv",
-        "source_column": "FA",
+        "scientific_concept": "thalamus volume",
+        "modality": "MRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_mri_features.csv",
+        "source_column": "thalamus_volume",
         "approved": true,
         "missing_rate": 0.0,
         "n_available": 5,
@@ -158,64 +158,65 @@
     ],
     "primary_tests": [
       {
-        "test_id": "primary_test_6b95",
+        "test_id": "primary_test_7ec70dc1dfcf",
         "predictor": "thalamus_DMN_FC",
         "outcome": "PSQI",
-        "question": "Does thalamocortical coupling (thalamus_DMN_FC) modulate insomnia severity (PSQI)?"
+        "question": "Does thalamus_DMN_FC explain variation in PSQI?"
       },
       {
-        "test_id": "primary_test_6b96",
+        "test_id": "primary_test_022c40dc1dfcf",
         "predictor": "thalamus_volume",
         "outcome": "PSQI",
-        "question": "Does structural morphology (thalamus_volume) modulate insomnia severity (PSQI)?"
+        "question": "Does thalamus_volume explain variation in PSQI?"
       },
       {
-        "test_id": "primary_test_6b97",
-        "predictor": "FA",
+        "test_id": "primary_test_022c40dc1dfcf",
+        "predictor": "thalamic_radiation_FA",
         "outcome": "PSQI",
-        "question": "Does white matter integrity (FA) modulate insomnia severity (PSQI)?"
+        "question": "Does thalamic_radiation_FA explain variation in PSQI?"
       }
     ],
-    "analysis_plan": "Conduct a multimodal neuroimaging study combining EEG-fMRI, MRI, and DTI in a cohort of insomnia patients. Measure thalamocortical coupling (thalamus_DMN_FC), structural morphology (thalamus_volume), and white matter integrity (FA). Use regression models to assess the relationship between thalamocortical coupling and insomnia severity, mediated by structural morphology and white matter integrity.",
+    "analysis_plan": "Use MRI to measure thalamic morphology (thalamus_volume) and fMRI/EEG-fMRI to assess thalamus_DMN_FC in insomnia patients. Compare these measures with controls and correlate with insomnia severity (PSQI).",
     "metadata": {
       "source": "ExperimentDesignAgent",
-      "generation_strategy": "scientific_debate",
-      "hypothesis_rating": 1499.0,
+      "generation_strategy": "literature_exploration",
+      "hypothesis_rating": 1519.0,
       "requested_modalities": [
         "DTI",
         "EEG",
+        "MRI",
         "fMRI",
         "scales"
       ],
       "llm_experiment_design": {
-        "scientific_question": "Test whether Thalamocortical Coupling Modulates Insomnia Severity via Structural Morphology and White Matter Integrity is supported by available analysis-ready variables.",
-        "analysis_plan": "Conduct a multimodal neuroimaging study combining EEG-fMRI, MRI, and DTI in a cohort of insomnia patients. Measure thalamocortical coupling (thalamus_DMN_FC), structural morphology (thalamus_volume), and white matter integrity (FA). Use regression models to assess the relationship between thalamocortical coupling and insomnia severity, mediated by structural morphology and white matter integrity.",
+        "scientific_question": "Test whether Thalamocortical Coupling Modulates Thalamic Morphology in Insomnia is supported by available analysis-ready variables.",
+        "analysis_plan": "Use MRI to measure thalamic morphology (thalamus_volume) and fMRI/EEG-fMRI to assess thalamus_DMN_FC in insomnia patients. Compare these measures with controls and correlate with insomnia severity (PSQI).",
         "primary_tests": [
           {
-            "test_id": "primary_test_6b95",
+            "test_id": "primary_test_7ec70dc1dfcf",
             "predictor": "thalamus_DMN_FC",
             "outcome": "PSQI",
-            "question": "Does thalamocortical coupling (thalamus_DMN_FC) modulate insomnia severity (PSQI)?"
+            "question": "Does thalamus_DMN_FC explain variation in PSQI?"
           },
           {
-            "test_id": "primary_test_6b96",
+            "test_id": "primary_test_022c40dc1dfcf",
             "predictor": "thalamus_volume",
             "outcome": "PSQI",
-            "question": "Does structural morphology (thalamus_volume) modulate insomnia severity (PSQI)?"
+            "question": "Does thalamus_volume explain variation in PSQI?"
           },
           {
-            "test_id": "primary_test_6b97",
-            "predictor": "FA",
+            "test_id": "primary_test_022c40dc1dfcf",
+            "predictor": "thalamic_radiation_FA",
             "outcome": "PSQI",
-            "question": "Does white matter integrity (FA) modulate insomnia severity (PSQI)?"
+            "question": "Does thalamic_radiation_FA explain variation in PSQI?"
           }
         ],
         "risks": [
-          "Limited sample size (n=5 for most variables) may reduce statistical power.",
-          "Missing data in some EEG features (e.g., slow_wave_density, beta_power) may affect covariate control.",
-          "Potential confounding from scale variables (e.g., anxiety_score, depression_score) not fully accounted for in regression models."
+          "Limited sample size (n=5 for some features) may reduce statistical power.",
+          "Missing data in some features (e.g., spindle_density has 0 missing, but others like slow_wave_power have 0.2 missing rate) could affect analysis.",
+          "Potential confounding variables not controlled for (e.g., age, gender, sleep disorders)."
         ],
-        "rationale": "The analysis plan leverages available variables (thalamus_DMN_FC, thalamus_volume, FA) directly linked to the hypothesis. Structural morphology (thalamus_volume) and white matter integrity (FA) are selected as mediators based on their presence in the data. Risks include small sample size, missing EEG data, and potential confounding from scale variables."
+        "rationale": "The analysis plan leverages available features from MRI, fMRI, DTI, and scales to test the hypothesis. The primary tests include key predictors (thalamus_DMN_FC, thalamus_volume, thalamic_radiation_FA) and the outcome (PSQI). Risks include sample size limitations, missing data, and potential confounding variables."
       }
     }
   }

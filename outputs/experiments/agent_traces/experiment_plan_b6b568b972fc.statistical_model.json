@@ -1,0 +1,141 @@
+{
+  "model_review": {
+    "judgment": "needs_revision",
+    "recommended_primary_template": "linear_regression",
+    "recommended_robustness": [
+      "bootstrap_spearman_ci"
+    ],
+    "recommended_negative_controls": [
+      "negative_control_outcome"
+    ],
+    "rationale": "The analysis should use linear regression to model the relationship between thalamocortical coupling (predictors) and thalamic morphology (outcomes), while controlling for covariates like mean_FD. Bootstrap confidence intervals can enhance robustness. Negative controls should be added to test for spurious effects.",
+    "warnings": [
+      "Missing data in predictors (24.73%) may affect regression accuracy. Consider imputation or using models that handle missing data.",
+      "The current outcomes (global_signal_psd_power_mean, qc_signal_post_DVARS_mean) may not directly reflect thalamic morphology. Consider including thalamus_volume as an outcome if available."
+    ]
+  },
+  "controlled_templates": {
+    "primary": "spearman_correlation",
+    "robustness": "bootstrap_spearman_ci",
+    "negative_control": "spearman_negative_control"
+  },
+  "stats_result": {
+    "plan_id": "experiment_plan_b6b568b972fc",
+    "hypothesis_id": "hypothesis_5f0b736e065c",
+    "tests": [
+      {
+        "test_id": "experiment_plan_b6b568b972fc_thalamus_DMN_FC_global_signal_psd_power_mean",
+        "predictor": "thalamus_DMN_FC",
+        "outcome": "global_signal_psd_power_mean",
+        "method": "spearman_correlation",
+        "n": 70,
+        "effect": -0.13830810952672554,
+        "p_value": 0.25352436919092336,
+        "ci_low": -0.36153657106023473,
+        "ci_high": 0.099917320938502,
+        "direction": "negative",
+        "passed": false,
+        "notes": "Primary controlled template: Spearman correlation."
+      },
+      {
+        "test_id": "experiment_plan_b6b568b972fc_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+        "predictor": "thalamus_DMN_FC",
+        "outcome": "qc_signal_post_DVARS_mean",
+        "method": "spearman_correlation",
+        "n": 70,
+        "effect": -0.1851631528300236,
+        "p_value": 0.12488325942044998,
+        "ci_low": -0.4026234662003069,
+        "ci_high": 0.05208103529703426,
+        "direction": "negative",
+        "passed": false,
+        "notes": "Primary controlled template: Spearman correlation."
+      },
+      {
+        "test_id": "experiment_plan_b6b568b972fc_DMN_FC_global_signal_psd_power_mean",
+        "predictor": "DMN_FC",
+        "outcome": "global_signal_psd_power_mean",
+        "method": "spearman_correlation",
+        "n": 70,
+        "effect": 0.8918729769923891,
+        "p_value": 3.98378468592088e-25,
+        "ci_low": 0.8310607768721342,
+        "ci_high": 0.9316124862259229,
+        "direction": "positive",
+        "passed": true,
+        "notes": "Primary controlled template: Spearman correlation."
+      },
+      {
+        "test_id": "experiment_plan_b6b568b972fc_DMN_FC_qc_signal_post_DVARS_mean",
+        "predictor": "DMN_FC",
+        "outcome": "qc_signal_post_DVARS_mean",
+        "method": "spearman_correlation",
+        "n": 70,
+        "effect": 0.9113288426209429,
+        "p_value": 6.503714977287312e-28,
+        "ci_low": 0.8606529436361011,
+        "ci_high": 0.9441289829101204,
+        "direction": "positive",
+        "passed": true,
+        "notes": "Primary controlled template: Spearman correlation."
+      }
+    ],
+    "summary": "2/4 primary statistical tests passed p<0.05."
+  },
+  "ml_result": null,
+  "robustness_results": [
+    {
+      "check_id": "robustness_0e32a999ab3c",
+      "target_test_id": "experiment_plan_b6b568b972fc_thalamus_DMN_FC_global_signal_psd_power_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.13830810952672554,
+      "median_effect": -0.14060051963089237,
+      "ci_low": -0.4046032932673462,
+      "ci_high": 0.15007392242274897,
+      "sign_stability": 0.85,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_0cda9068b42c",
+      "target_test_id": "experiment_plan_b6b568b972fc_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.1851631528300236,
+      "median_effect": -0.17056344887479227,
+      "ci_low": -0.436507400417676,
+      "ci_high": 0.10628692357507658,
+      "sign_stability": 0.92,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_2a74afa0b7f4",
+      "target_test_id": "experiment_plan_b6b568b972fc_DMN_FC_global_signal_psd_power_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 0.8918729769923891,
+      "median_effect": 0.8873819057844313,
+      "ci_low": 0.8124071660390243,
+      "ci_high": 0.9337757669433119,
+      "sign_stability": 1.0,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_c4b6533171d4",
+      "target_test_id": "experiment_plan_b6b568b972fc_DMN_FC_qc_signal_post_DVARS_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 0.9113288426209429,
+      "median_effect": 0.9050245589983261,
+      "ci_low": 0.8331724909972239,
+      "ci_high": 0.9468686394702129,
+      "sign_stability": 1.0,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    }
+  ],
+  "negative_control_results": []
+}

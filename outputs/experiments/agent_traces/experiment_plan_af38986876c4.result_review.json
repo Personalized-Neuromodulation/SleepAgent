@@ -1,0 +1,150 @@
+{
+  "hypothesis_id": "hypothesis_765b5eb64324",
+  "plan_id": "experiment_plan_af38986876c4",
+  "review_status": "partially_supported",
+  "support_score": 0.5,
+  "result_review": {
+    "judgment": "partially_supported",
+    "support_score": 0.5,
+    "critic_findings": [
+      {
+        "severity": "medium",
+        "category": "analysis_method",
+        "message": "The use of Spearman correlation may not be the most appropriate method for analyzing the relationship between thalamus-DMN FC and FA in thalamic radiation, given the potential for linear relationships.",
+        "recommendation": "Consider using linear regression as a primary analysis method to better capture the relationship between thalamus-DMN FC and FA, while controlling for covariates."
+      },
+      {
+        "severity": "high",
+        "category": "data_completeness",
+        "message": "Missing DTI and EEG data may have limited the scope of the analysis and the ability to fully explore the relationship between thalamus-DMN FC and FA.",
+        "recommendation": "Acquire DTI and EEG data to enhance the analysis and provide more comprehensive insights."
+      }
+    ],
+    "confounds": [
+      "Covariates such as mean_FD were not fully accounted for in the analysis.",
+      "Potential non-linear relationships between thalamus-DMN FC and FA were not explored."
+    ],
+    "alternative_explanations": [
+      "The observed effects could be influenced by other unmeasured covariates not included in the analysis.",
+      "The relationship between thalamus-DMN FC and FA may be mediated by other factors not considered in the current model."
+    ],
+    "next_steps": [
+      "Implement linear regression analysis with thalamus-DMN FC as the predictor and FA as the outcome, including covariates like mean_FD.",
+      "Acquire DTI and EEG data to validate findings and explore additional relationships.",
+      "Conduct mediation analysis to explore potential mediators of the relationship between thalamus-DMN FC and FA."
+    ]
+  },
+  "primary_tests": [
+    {
+      "test_id": "experiment_plan_af38986876c4_thalamus_DMN_FC_global_signal_psd_power_mean",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": -0.13830810952672554,
+      "p_value": 0.25352436919092336,
+      "ci_low": -0.36153657106023473,
+      "ci_high": 0.099917320938502,
+      "direction": "negative",
+      "passed": false,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_af38986876c4_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "qc_signal_post_DVARS_mean",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": -0.1851631528300236,
+      "p_value": 0.12488325942044998,
+      "ci_low": -0.4026234662003069,
+      "ci_high": 0.05208103529703426,
+      "direction": "negative",
+      "passed": false,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_af38986876c4_DMN_FC_global_signal_psd_power_mean",
+      "predictor": "DMN_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": 0.8918729769923891,
+      "p_value": 3.98378468592088e-25,
+      "ci_low": 0.8310607768721342,
+      "ci_high": 0.9316124862259229,
+      "direction": "positive",
+      "passed": true,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_af38986876c4_DMN_FC_qc_signal_post_DVARS_mean",
+      "predictor": "DMN_FC",
+      "outcome": "qc_signal_post_DVARS_mean",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": 0.9113288426209429,
+      "p_value": 6.503714977287312e-28,
+      "ci_low": 0.8606529436361011,
+      "ci_high": 0.9441289829101204,
+      "direction": "positive",
+      "passed": true,
+      "notes": "Primary controlled template: Spearman correlation."
+    }
+  ],
+  "robustness_results": [
+    {
+      "check_id": "robustness_42f3f3361068",
+      "target_test_id": "experiment_plan_af38986876c4_thalamus_DMN_FC_global_signal_psd_power_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.13830810952672554,
+      "median_effect": -0.14060051963089237,
+      "ci_low": -0.4046032932673462,
+      "ci_high": 0.15007392242274897,
+      "sign_stability": 0.85,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_fb7d3dd4a303",
+      "target_test_id": "experiment_plan_af38986876c4_thalamus_DMN_FC_qc_signal_post_DVARS_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.1851631528300236,
+      "median_effect": -0.17056344887479227,
+      "ci_low": -0.436507400417676,
+      "ci_high": 0.10628692357507658,
+      "sign_stability": 0.92,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_dabee2de2759",
+      "target_test_id": "experiment_plan_af38986876c4_DMN_FC_global_signal_psd_power_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 0.8918729769923891,
+      "median_effect": 0.8873819057844313,
+      "ci_low": 0.8124071660390243,
+      "ci_high": 0.9337757669433119,
+      "sign_stability": 1.0,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_1b84f00424a4",
+      "target_test_id": "experiment_plan_af38986876c4_DMN_FC_qc_signal_post_DVARS_mean",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 0.9113288426209429,
+      "median_effect": 0.9050245589983261,
+      "ci_low": 0.8331724909972239,
+      "ci_high": 0.9468686394702129,
+      "sign_stability": 1.0,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    }
+  ],
+  "negative_control_results": []
+}

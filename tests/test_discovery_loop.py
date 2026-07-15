@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from sleep_ai_scientist.common.io import read_json, write_json, write_yaml
-from sleep_ai_scientist.discovery_loop.discovery_runner import run_discovery_loop
+from sleep_ai_scientist.discovery_loop.discovery_runner import _collect_iteration_metrics, run_discovery_loop
 
 
 def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
@@ -119,3 +119,47 @@ def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
     state = read_json(tmp_path / "loop" / "loop_state.json")
     assert len(state["iterations"]) == 2
     assert (reports_dir / "discovery_loop_report.md").exists()
+
+
+def test_discovery_loop_feedback_metrics_use_validated_flags(tmp_path):
+    hypothesis_dir = tmp_path / "hypotheses"
+    experiment_dir = tmp_path / "experiments"
+    feedback_path = tmp_path / "feedback.json"
+    hypothesis_config = tmp_path / "hypothesis_config.yaml"
+    experiment_config = tmp_path / "experiment_config.yaml"
+    write_json(hypothesis_dir / "hypothesis_pool.json", [{"hypothesis_id": "h1", "status": "active"}])
+    write_json(hypothesis_dir / "top_k_hypotheses.json", [{"hypothesis_id": "h1", "status": "active"}])
+    write_json(experiment_dir / "experiment_results.json", [{"plan_id": "p1"}])
+    write_json(
+        feedback_path,
+        [
+            {
+                "hypothesis_id": "h1",
+                "support": "inconclusive",
+                "computed_reward": 0.325,
+                "validated": False,
+                "refuted": False,
+            }
+        ],
+    )
+    write_yaml(hypothesis_config, {"paths": {"output_hypotheses_dir": str(hypothesis_dir)}})
+    write_yaml(
+        experiment_config,
+        {
+            "paths": {
+                "experiment_results": str(experiment_dir / "experiment_results.json"),
+                "experimental_feedback": str(feedback_path),
+            }
+        },
+    )
+
+    metrics = _collect_iteration_metrics(
+        iteration=1,
+        hypothesis_config_path=hypothesis_config,
+        experiment_config_path=experiment_config,
+        previous_hypothesis_ids=set(),
+    )
+
+    assert metrics["reward_mean"] == 0.325
+    assert metrics["validated_feedback"] == 0
+    assert metrics["refuted_feedback"] == 0

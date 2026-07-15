@@ -135,6 +135,18 @@ def _missing_required_fields(payload: dict[str, Any]) -> list[str]:
     ]
 
 
+def _schema_repair_source(payload: dict[str, Any]) -> str:
+    response = payload.get("response")
+    if isinstance(response, str) and normalize_text(response):
+        return (
+            "The model returned a JSON wrapper with a natural-language `response` field instead of the required schema. "
+            "Use the response text below as source material and convert it into the required hypothesis JSON. "
+            "Do not include a `response` key.\n\n"
+            f"Response text:\n{response[:6000]}"
+        )
+    return "Original JSON:\n" + json.dumps(payload, ensure_ascii=False)[:6000]
+
+
 def _repair_hypothesis_schema(
     client: Any,
     payload: dict[str, Any],
@@ -151,8 +163,10 @@ def _repair_hypothesis_schema(
             {
                 "role": "user",
                 "content": (
-                    "Rewrite the following hypothesis JSON into exactly this schema while preserving the scientific meaning. "
-                    "If a field is implicit, infer it from the available content.\n\n"
+                    "Rewrite the following hypothesis output into exactly this schema while preserving the scientific meaning. "
+                    "If the input is a natural-language critique/refinement, infer the final refined hypothesis from it. "
+                    "If a field is implicit, infer it from the available content. "
+                    "Return only the JSON object. Do not include markdown, analysis text, or a `response` wrapper.\n\n"
                     "Required schema:\n"
                     '{\n'
                     '  "title": "Concise title",\n'
@@ -164,14 +178,31 @@ def _repair_hypothesis_schema(
                     '  "key_assumptions": ["assumption 1"],\n'
                     '  "citations": ["paper_id or evidence id"]\n'
                     '}\n\n'
-                    "Original JSON:\n"
-                    f"{json.dumps(payload, ensure_ascii=False)[:6000]}"
+                    f"{_schema_repair_source(payload)}"
                 ),
             },
         ],
         max_tokens=max_tokens,
         temperature=min(temperature, 0.1),
     )
+
+
+def _repair_missing_hypothesis_fields(
+    client: Any,
+    payload: dict[str, Any],
+    *,
+    max_tokens: int,
+    temperature: float,
+    attempts: int = 2,
+) -> dict[str, Any]:
+    repaired = payload
+    for _ in range(max(1, attempts)):
+        if not _missing_required_fields(repaired):
+            return repaired
+        repaired = _coerce_hypothesis_payload(
+            _repair_hypothesis_schema(client, repaired, max_tokens=max_tokens, temperature=temperature)
+        )
+    return repaired
 
 
 def _generate_with_llm(
@@ -230,9 +261,7 @@ def _generate_with_llm(
     payload = _coerce_hypothesis_payload(payload)
     missing = _missing_required_fields(payload)
     if missing:
-        payload = _coerce_hypothesis_payload(
-            _repair_hypothesis_schema(client, payload, max_tokens=max_tokens, temperature=temperature)
-        )
+        payload = _repair_missing_hypothesis_fields(client, payload, max_tokens=max_tokens, temperature=temperature)
         missing = _missing_required_fields(payload)
     title = normalize_text(payload.get("title", ""))
     summary = normalize_text(payload.get("summary", ""))

@@ -4,7 +4,10 @@ import pytest
 
 from sleep_ai_scientist.common.io import read_json, write_yaml
 from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
-from sleep_ai_scientist.hypothesis.agents.generation_agent import generate_initial_hypotheses
+from sleep_ai_scientist.hypothesis.agents.generation_agent import (
+    _repair_missing_hypothesis_fields,
+    generate_initial_hypotheses,
+)
 from sleep_ai_scientist.hypothesis.agents.llm import LLMError
 from sleep_ai_scientist.hypothesis.supervisor import select_llm_config
 from sleep_ai_scientist.hypothesis.hypothesis_pipeline import run_hypothesis_pipeline
@@ -239,3 +242,41 @@ def test_reward_memory_promotes_strong_feedback_only():
     assert len(memory) == 1
     assert memory[0].computed_reward == 0.8
     assert "validated" in memory[0].mechanistic_keywords
+
+
+def test_hypothesis_schema_repair_unwraps_ollama_response_payload():
+    class FakeClient:
+        def __init__(self):
+            self.prompt = ""
+
+        def call_json(self, messages, *, max_tokens, temperature):
+            self.prompt = messages[-1]["content"]
+            return {
+                "title": "Refined thalamocortical insomnia hypothesis",
+                "summary": "Thalamocortical coupling may explain measurable sleep disruption in insomnia.",
+                "content": "Altered thalamocortical connectivity modulates slow-wave related fMRI markers in insomnia.",
+                "rationale": "The response critique identified thalamic connectivity and measurable fMRI endpoints as the strongest testable core.",
+                "experimental_plan": "Test thalamus-network FC against fMRI power features.",
+                "key_assumptions": ["fMRI connectivity captures a relevant thalamocortical mechanism"],
+                "citations": [],
+            }
+
+    client = FakeClient()
+    repaired = _repair_missing_hypothesis_fields(
+        client,
+        {
+            "response": (
+                "Scientist B critique: the original hypothesis is too broad. "
+                "Scientist A refinement: focus on thalamocortical connectivity and fMRI measurable endpoints."
+            )
+        },
+        max_tokens=1000,
+        temperature=0.2,
+    )
+
+    assert repaired["title"]
+    assert repaired["summary"]
+    assert repaired["content"]
+    assert repaired["rationale"]
+    assert "response text" in client.prompt.lower()
+    assert "do not include a `response` key" in client.prompt.lower()

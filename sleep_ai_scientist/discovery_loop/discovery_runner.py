@@ -122,6 +122,8 @@ def _collect_iteration_metrics(
     feedback = _read_json_list(feedback_path)
     rewards = [_as_float(item.get("computed_reward")) for item in feedback if isinstance(item, dict)]
     rewards = [item for item in rewards if item is not None]
+    validated = sum(1 for item in feedback if isinstance(item, dict) and bool(item.get("validated", False)))
+    refuted = sum(1 for item in feedback if isinstance(item, dict) and bool(item.get("refuted", False)))
     experiment_results = _read_json_list(experiment_results_path)
     return {
         "iteration": iteration,
@@ -136,8 +138,8 @@ def _collect_iteration_metrics(
         "top_k_count": len(top_k),
         "experiment_result_count": len(experiment_results),
         "feedback_records": len(feedback),
-        "validated_feedback": sum(1 for item in rewards if item > 0.3),
-        "refuted_feedback": sum(1 for item in rewards if item < -0.3),
+        "validated_feedback": validated,
+        "refuted_feedback": refuted,
         "reward_mean": round(mean(rewards), 6) if rewards else None,
     }
 
