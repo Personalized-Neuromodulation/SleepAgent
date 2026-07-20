@@ -294,7 +294,10 @@ def test_analysis_templates_resolve_modality_prefixed_columns(tmp_path):
 
 def test_testability_precheck_rebuilds_variables_for_available_fmri_only(tmp_path):
     fmri_file = tmp_path / "fmri_features.csv"
-    fmri_file.write_text("subject_id,thalamus_DMN_FC,global_signal_psd_power_mean,mean_FD\nsub-001,1,2,0.1\n", encoding="utf-8")
+    fmri_file.write_text(
+        "subject_id,thalamus_DMN_FC,salience_FC,global_signal_psd_power_mean,mean_FD\nsub-001,1,2,3,0.1\n",
+        encoding="utf-8",
+    )
     profile = DataProfile(
         profile_type="analysis_ready_profile",
         features=[
@@ -308,12 +311,21 @@ def test_testability_precheck_rebuilds_variables_for_available_fmri_only(tmp_pat
                 n_available=1,
             ),
             FeatureProfile(
+                feature_name="salience_FC",
+                modality="fMRI",
+                source_file=str(fmri_file),
+                source_column="salience_FC",
+                approved=True,
+                role="feature",
+                n_available=1,
+            ),
+            FeatureProfile(
                 feature_name="global_signal_psd_power_mean",
                 modality="fMRI",
                 source_file=str(fmri_file),
                 source_column="global_signal_psd_power_mean",
                 approved=True,
-                role="feature",
+                role="negative_control",
                 n_available=1,
             ),
             FeatureProfile(
@@ -346,13 +358,73 @@ def test_testability_precheck_rebuilds_variables_for_available_fmri_only(tmp_pat
     updated = TestabilityPrecheck().run(plan, profile)
 
     assert updated.predictors == ["thalamus_DMN_FC"]
-    assert updated.outcomes == ["global_signal_psd_power_mean"]
+    assert updated.outcomes == ["salience_FC"]
     assert updated.covariates == ["mean_FD"]
+    assert updated.negative_controls == ["global_signal_psd_power_mean"]
     assert {variable.name for variable in updated.variables} == {
         "thalamus_DMN_FC",
+        "salience_FC",
         "global_signal_psd_power_mean",
         "mean_FD",
     }
     assert {variable.modality.lower() for variable in updated.variables} == {"fmri"}
     assert "submechanism" not in updated.primary_tests[0]["question"].lower()
-    assert updated.metadata["testability_precheck"]["mode"] == "available_modalities_only"
+    assert updated.metadata["testability_precheck"]["mode"] == "single_fmri_proxy_analysis"
+
+
+def test_testability_precheck_does_not_use_fmri_artifacts_as_primary_outcomes(tmp_path):
+    fmri_file = tmp_path / "fmri_features.csv"
+    fmri_file.write_text("subject_id,thalamus_DMN_FC,global_signal_psd_power_mean,mean_FD\nsub-001,1,2,0.1\n", encoding="utf-8")
+    profile = DataProfile(
+        profile_type="analysis_ready_profile",
+        features=[
+            FeatureProfile(
+                feature_name="thalamus_DMN_FC",
+                modality="fMRI",
+                source_file=str(fmri_file),
+                source_column="thalamus_DMN_FC",
+                approved=True,
+                role="feature",
+                n_available=1,
+            ),
+            FeatureProfile(
+                feature_name="global_signal_psd_power_mean",
+                modality="fMRI",
+                source_file=str(fmri_file),
+                source_column="global_signal_psd_power_mean",
+                approved=True,
+                role="negative_control",
+                n_available=1,
+            ),
+            FeatureProfile(
+                feature_name="mean_FD",
+                modality="fMRI",
+                source_file=str(fmri_file),
+                source_column="mean_FD",
+                approved=True,
+                role="covariate",
+                n_available=1,
+            ),
+        ],
+    )
+    plan = ExperimentPlan(
+        plan_id="plan_artifact_only",
+        hypothesis_id="hyp",
+        hypothesis_title="H",
+        scientific_question="Q",
+        predictors=["thalamus_DMN_FC"],
+        outcomes=["PSQI"],
+        variables=[
+            ExperimentVariable(name="thalamus_DMN_FC", role=ExperimentVariableRole.predictor, modality="fMRI"),
+            ExperimentVariable(name="PSQI", role=ExperimentVariableRole.outcome, modality="scales"),
+        ],
+        metadata={"requested_modalities": ["fMRI", "scales"]},
+    )
+
+    updated = TestabilityPrecheck().run(plan, profile)
+
+    assert updated.predictors == ["thalamus_DMN_FC"]
+    assert updated.outcomes == []
+    assert updated.primary_tests == []
+    assert updated.negative_controls == ["global_signal_psd_power_mean"]
+    assert updated.metadata["testability_precheck"]["mode"] == "single_fmri_not_testable"

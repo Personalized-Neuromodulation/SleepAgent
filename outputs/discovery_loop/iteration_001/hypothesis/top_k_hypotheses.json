@@ -1,93 +1,78 @@
 [
   {
-    "hypothesis_id": "hypothesis_765b5eb64324",
+    "hypothesis_id": "hypothesis_93917166a1c1",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamocortical Coupling Modulates White Matter Integrity in Insomnia",
-    "summary": "This hypothesis suggests that thalamocortical coupling influences white matter integrity in individuals with insomnia, linking thalamocortical hyperarousal to structural brain changes.",
-    "content": "Thalamocortical coupling, as measured by thalamus_DMN_FC in EEG-fMRI, modulates white matter integrity (FA) in insomnia patients, with stronger coupling associated with reduced fractional anisotropy in white matter tracts.",
-    "rationale": "Evidence shows thalamocortical coupling is linked to thalamus_DMN_FC (E1-E3) and structural morphology (E4). White matter integrity (FA) is associated with insomnia (E10, E11). A connection between thalamocortical coupling and white matter integrity could explain how hyperarousal leads to structural changes in insomnia.",
-    "experimental_plan": "Compare FA values in white matter tracts between insomnia patients with high vs. low thalamus_DMN_FC (from EEG-fMRI) using DTI and tractography. Control for age, sleep duration, and comorbidities.",
-    "novelty_assessment": "Novel integration of thalamocortical coupling (a dynamic mechanism) with white matter integrity (a structural measure) in insomnia, bridging functional and structural neuroimaging evidence.",
+    "title": "Thalamocortical Hyperarousal and Morphology Modulate White Matter Integrity and Slow-Wave Generation in Insomnia",
+    "summary": "This hypothesis integrates thalamocortical hyperarousal and thalamic morphology to explain their dual effects on white matter integrity and slow-wave generation in insomnia through structural connectivity.",
+    "content": "The hypothesis proposes that thalamocortical hyperarousal and thalamic morphology jointly modulate white matter integrity and slow-wave generation in insomnia via structural connectivity, linking multimodal neuroimaging features.",
+    "rationale": "Cross-pollination integrates mechanisms from P1 (thalamocortical coupling to white matter) and P3 (thalamic morphology to slow-wave generation), unifying them under hyperarousal and structural connectivity. Grounding in FA, thalamus_volume, and slow_wave_density strengthens coherence.",
+    "experimental_plan": "Use multimodal EEG-fMRI, MRI, and DTI to compare thalamocortical coupling (thalamus_DMN_FC), thalamic morphology (thalamus_volume), FA (white matter integrity), and slow-wave density in insomnia patients vs controls. Apply mediation analysis to test structural connectivity as a mediator between thalamic morphology and slow-wave generation, and between thalamocortical hyperarousal and FA.",
+    "novelty_assessment": "Novel integration of hyperarousal, thalamic morphology, and dual outcomes (white matter and slow-waves) compared to parent hypotheses.",
     "key_assumptions": [
-      "Thalamocortical coupling influences white matter microstructure",
-      "Thalamus_DMN_FC is a reliable biomarker of thalamocortical coupling"
+      "Structural connectivity mediates both white matter integrity and slow-wave generation.",
+      "Thalamocortical hyperarousal and thalamic morphology interact synergistically."
+    ],
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E10",
+      "E11"
+    ],
+    "generation_strategy": "evolution:cross_pollination",
+    "generation_round": 2,
+    "elo_rating": 1503.0,
+    "rating_deviation": 145.0,
+    "volatility": 0.059996,
+    "matches_played": 4,
+    "wins": 3,
+    "losses": 0,
+    "draws": 1,
+    "status": "active",
+    "parent_ids": [
+      "hypothesis_b6b0c04a98d3",
+      "hypothesis_78e2045e748c",
+      "hypothesis_e551f4797f3c"
+    ],
+    "metadata": {
+      "evolved_from": [
+        "hypothesis_b6b0c04a98d3",
+        "hypothesis_78e2045e748c",
+        "hypothesis_e551f4797f3c"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest"
+    },
+    "created_at": "2026-07-15T06:05:48.875302+00:00",
+    "updated_at": "2026-07-15T06:13:43.086082+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_78e2045e748c",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamocortical Hyperarousal Modulates Thalamic Morphology via Structural Connectivity in Insomnia",
+    "summary": "This hypothesis proposes that thalamocortical hyperarousal, as observed in insomnia, modulates thalamic morphology through structural connectivity, linking multimodal neuroimaging features.",
+    "content": "Thalamocortical hyperarousal in insomnia modulates thalamic morphology through structural connectivity, thereby influencing sleep quality and insomnia severity.",
+    "rationale": "Evidence from [E1], [E2], [E3], and [E4] supports the role of thalamocortical coupling and structural morphology in insomnia. The integration of thalamic morphology and structural connectivity provides a novel pathway to explain the neuroimaging features observed in insomnia.",
+    "experimental_plan": "Use multimodal neuroimaging (EEG-fMRI, MRI, DTI) to assess thalamocortical coupling, thalamic morphology, and structural connectivity in insomnia patients. Compare these features with controls and correlate with insomnia severity measures (PSQI, ISI).",
+    "novelty_assessment": "This hypothesis integrates thalamocortical hyperarousal and thalamic morphology, which were previously considered separate mechanisms, into a unified pathway involving structural connectivity.",
+    "key_assumptions": [
+      "Thalamocortical hyperarousal modulates thalamic morphology",
+      "Structural connectivity mediates the relationship between thalamocortical hyperarousal and thalamic morphology"
     ],
     "citations": [
       "toy001",
+      "toy002",
       "toy003"
-    ],
-    "generation_strategy": "literature_exploration",
-    "generation_round": 1,
-    "elo_rating": 1522.0,
-    "rating_deviation": 129.0,
-    "volatility": 0.059992,
-    "matches_played": 7,
-    "wins": 5,
-    "losses": 0,
-    "draws": 2,
-    "status": "active",
-    "parent_ids": [],
-    "metadata": {
-      "evidence_ids": [
-        "evidence_f7ca755a2467",
-        "evidence_f7ca755a2467",
-        "evidence_f7ca755a2467",
-        "evidence_77397cee0b26"
-      ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "Insomnia",
-      "neural_mechanism": "Thalamocortical coupling",
-      "brain_regions": [
-        "Thalamus",
-        "Default Mode Network (DMN)"
-      ],
-      "brain_networks": [
-        "Default Mode Network"
-      ],
-      "modalities": [
-        "EEG-fMRI",
-        "DTI"
-      ],
-      "measurable_variables": [
-        "thalamus_DMN_FC",
-        "FA"
-      ],
-      "directional_prediction": "Higher thalamus_DMN_FC correlates with lower FA in insomnia patients.",
-      "falsification_criteria": "No significant correlation between thalamus_DMN_FC and FA in insomnia patients, or a positive correlation (contrary to prediction).",
-      "knowledge_graph_paths": [
-        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia",
-        "white matter integrity -> FA -> insomnia"
-      ]
-    },
-    "created_at": "2026-07-14T10:15:51.101809+00:00",
-    "updated_at": "2026-07-14T10:34:24.690776+00:00"
-  },
-  {
-    "hypothesis_id": "hypothesis_1664f961ceec",
-    "session_id": "sleep_hypothesis_session",
-    "title": "Thalamocortical Hyperarousal Disrupts DMN Connectivity in Insomnia",
-    "summary": "Thalamocortical hyperarousal disrupts thalamus-default mode network (DMN) functional connectivity, exacerbating insomnia severity through heightened beta oscillations.",
-    "content": "Thalamocortical hyperarousal, characterized by elevated beta power, disrupts thalamus-DMN functional connectivity (thalamus_DMN_FC), creating a neuroimaging biomarker cascade that intensifies insomnia severity as measured by PSQI.",
-    "rationale": "Evidence [E1-E3] links thalamocortical coupling to thalamus_DMN_FC in insomnia, while [E5-E6] ties hyperarousal to beta_power. The DMN's role in self-referential thought and sleep regulation suggests its disruption by thalamocortical hyperarousal could mediate insomnia severity.",
-    "experimental_plan": "Compare thalamus_DMN_FC (fMRI/EEG-fMRI) and beta_power (EEG) in insomnia patients vs. controls, correlating with PSQI scores. Use network analysis to quantify DMN disruption during sleep onset.",
-    "novelty_assessment": "Avoids prior white matter focus by linking thalamocortical hyperarousal (beta_power) directly to DMN connectivity (thalamus_DMN_FC) as a multimodal biomarker for insomnia.",
-    "key_assumptions": [
-      "Thalamocortical hyperarousal (beta_power) dynamically modulates thalamus-DMN FC",
-      "Disrupted thalamus-DMN FC is a downstream mediator of insomnia severity"
-    ],
-    "citations": [
-      "toy001"
     ],
     "generation_strategy": "scientific_debate",
     "generation_round": 2,
-    "elo_rating": 1485.0,
-    "rating_deviation": 126.0,
-    "volatility": 0.059995,
+    "elo_rating": 1422.0,
+    "rating_deviation": 121.0,
+    "volatility": 0.059996,
     "matches_played": 7,
-    "wins": 5,
-    "losses": 1,
+    "wins": 4,
+    "losses": 2,
     "draws": 1,
     "status": "active",
     "parent_ids": [],
@@ -101,93 +86,116 @@
       "llm_provider": "ollama",
       "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
       "llm_strategy_detail": "multi_turn_debate",
-      "sleep_phenotype": "Insomnia severity",
+      "sleep_phenotype": "Insomnia",
       "neural_mechanism": "Thalamocortical hyperarousal",
       "brain_regions": [
-        "Thalamus",
-        "Default Mode Network"
+        "Thalamus"
       ],
       "brain_networks": [
-        "Default Mode Network"
+        "Thalamocortical network",
+        "Default Mode Network (DMN)"
       ],
       "modalities": [
-        "EEG-fMRI",
         "EEG",
-        "fMRI"
+        "fMRI",
+        "MRI",
+        "DTI",
+        "Scale"
       ],
       "measurable_variables": [
         "thalamus_DMN_FC",
-        "beta_power",
-        "PSQI"
+        "MRI",
+        "FA",
+        "PSQI",
+        "ISI"
       ],
-      "directional_prediction": "Higher beta_power correlates with lower thalamus_DMN_FC and higher PSQI scores in insomnia patients.",
-      "falsification_criteria": "No significant correlation between beta_power, thalamus_DMN_FC, and PSQI in insomnia patients.",
+      "directional_prediction": "Increased thalamocortical hyperarousal in insomnia leads to altered thalamic morphology and structural connectivity.",
+      "falsification_criteria": "If thalamocortical hyperarousal does not correlate with thalamic morphology or structural connectivity in insomnia patients, the hypothesis is refuted.",
       "knowledge_graph_paths": [
-        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia severity",
-        "hyperarousal -> beta_power -> insomnia severity"
+        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia",
+        "structural morphology -> MRI -> insomnia",
+        "white matter integrity -> FA -> insomnia"
       ]
     },
-    "created_at": "2026-07-14T10:18:04.900703+00:00",
-    "updated_at": "2026-07-14T10:35:01.858193+00:00"
+    "created_at": "2026-07-15T05:54:26.422757+00:00",
+    "updated_at": "2026-07-15T06:13:17.057980+00:00"
   },
   {
-    "hypothesis_id": "hypothesis_a4ef10f2a827",
+    "hypothesis_id": "hypothesis_b6b0c04a98d3",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamocortical Hyperarousal and Thalamic Morphology Synergistically Mediate Insomnia Severity via White Matter Integrity",
-    "summary": "This hypothesis integrates thalamocortical hyperarousal, thalamic morphology, and white matter integrity to explain insomnia severity, combining mechanisms from P1, P2, and P3.",
-    "content": "Thalamocortical hyperarousal and thalamic morphology synergistically mediate insomnia severity through their combined effects on white matter integrity, linking hyperarousal and structural changes in the thalamus to disruptions in white matter tracts that are critical for sleep regulation.",
-    "rationale": "Cross-pollination integrates P1's thalamocortical coupling and white matter integrity, P2's hyperarousal and DMN connectivity, and P3's thalamic morphology as mediator. Combines structural and functional pathways for a more comprehensive model.",
-    "experimental_plan": "Compare FA values in white matter tracts between insomnia patients with high vs. low thalamus_DMN_FC (from EEG-fMRI) using DTI and tractography. Correlate FA with thalamus_volume and beta_power. Control for age, sleep duration, and comorbidities.",
-    "novelty_assessment": "Novel integration of thalamic morphology, hyperarousal, and white matter integrity as synergistic mediators.",
+    "title": "Thalamocortical Coupling Modulates White Matter Integrity in Insomnia",
+    "summary": "This hypothesis proposes that thalamocortical coupling influences white matter integrity, linking insomnia through multimodal neuroimaging features.",
+    "content": "Thalamocortical coupling, as measured by thalamus_DMN_FC in EEG-fMRI, modulates white matter integrity (FA) in individuals with insomnia, thereby affecting sleep quality.",
+    "rationale": "Evidence shows thalamocortical coupling is associated with thalamus_DMN_FC (E1-E3) and structural morphology (E4) is linked to MRI. White matter integrity (FA) is also connected to insomnia (E10-E11). A pathway connecting thalamocortical coupling to white matter integrity could explain insomnia's neuroimaging profile.",
+    "experimental_plan": "Compare FA values in insomnia patients with varying thalamus_DMN_FC levels using multimodal EEG-fMRI and DTI. Use regression analysis to test the relationship between thalamus_DMN_FC and FA.",
+    "novelty_assessment": "This connects thalamocortical coupling (a dynamic mechanism) with white matter integrity (a structural measure), bridging functional and structural neuroimaging in insomnia.",
     "key_assumptions": [
-      "Thalamocortical hyperarousal affects white matter integrity through thalamic morphology",
-      "Thalamic morphology modulates the relationship between hyperarousal and white matter integrity"
+      "Thalamocortical coupling affects white matter microstructure",
+      "Thalamus_DMN_FC is a reliable measure of thalamocortical coupling"
     ],
     "citations": [
-      "E1-E6",
-      "E10-E12",
-      "E3",
-      "E9"
+      "toy001",
+      "toy003"
     ],
-    "generation_strategy": "evolution:cross_pollination",
-    "generation_round": 2,
-    "elo_rating": 1392.0,
-    "rating_deviation": 144.0,
-    "volatility": 0.059995,
-    "matches_played": 4,
-    "wins": 2,
+    "generation_strategy": "literature_exploration",
+    "generation_round": 1,
+    "elo_rating": 1404.0,
+    "rating_deviation": 126.0,
+    "volatility": 0.059996,
+    "matches_played": 7,
+    "wins": 3,
     "losses": 1,
-    "draws": 1,
+    "draws": 3,
     "status": "active",
-    "parent_ids": [
-      "hypothesis_765b5eb64324",
-      "hypothesis_1664f961ceec",
-      "hypothesis_f3387b531f63"
-    ],
+    "parent_ids": [],
     "metadata": {
-      "evolved_from": [
-        "hypothesis_765b5eb64324",
-        "hypothesis_1664f961ceec",
-        "hypothesis_f3387b531f63"
+      "evidence_ids": [
+        "evidence_f7ca755a2467",
+        "evidence_f7ca755a2467",
+        "evidence_f7ca755a2467",
+        "evidence_77397cee0b26"
       ],
       "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest"
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "insomnia",
+      "neural_mechanism": "thalamocortical coupling",
+      "brain_regions": [
+        "thalamus"
+      ],
+      "brain_networks": [
+        "DMN"
+      ],
+      "modalities": [
+        "EEG-fMRI",
+        "DTI"
+      ],
+      "measurable_variables": [
+        "thalamus_DMN_FC",
+        "FA"
+      ],
+      "directional_prediction": "Higher thalamus_DMN_FC correlates with higher FA in insomnia patients.",
+      "falsification_criteria": "No significant correlation between thalamus_DMN_FC and FA in insomnia patients.",
+      "knowledge_graph_paths": [
+        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia",
+        "white matter integrity -> FA -> insomnia"
+      ]
     },
-    "created_at": "2026-07-14T10:29:18.561588+00:00",
-    "updated_at": "2026-07-14T10:35:26.902126+00:00"
+    "created_at": "2026-07-15T05:52:57.421166+00:00",
+    "updated_at": "2026-07-15T06:12:42.923632+00:00"
   },
   {
-    "hypothesis_id": "hypothesis_f3387b531f63",
+    "hypothesis_id": "hypothesis_e551f4797f3c",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Morphology Mediates Hyperarousal-Induced Insomnia Severity",
-    "summary": "This hypothesis proposes that thalamic morphology acts as a mediator between hyperarousal and insomnia severity, linking structural brain changes to sleep disturbances.",
-    "content": "Thalamic morphology mediates the relationship between hyperarousal (manifested as increased beta power in EEG) and insomnia severity, as measured by the Insomnia Severity Index (ISI) and the Pittsburgh Sleep Quality Index (PSQI).",
-    "rationale": "Evidence shows that hyperarousal is associated with increased beta power in insomnia patients (E1, E2, E5, E6) and that thalamic morphology is linked to structural MRI findings (E4, E12). Additionally, insomnia severity is correlated with both ISI and PSQI (E3, E9). The thalamus is a key node in thalamocortical circuits, suggesting a structural basis for hyperarousal's impact on sleep.",
-    "experimental_plan": "Conduct a structural MRI analysis of thalamic volume in insomnia patients, correlating thalamic morphology with EEG beta power and insomnia severity scores (ISI/PSQI). Use mediation analysis to test the role of thalamic morphology in the hyperarousal-insomnia severity pathway.",
-    "novelty_assessment": "This hypothesis introduces thalamic morphology as a mediator between hyperarousal and insomnia severity, bridging structural and functional brain changes in insomnia, which has not been explicitly tested in prior hypotheses.",
+    "title": "Thalamic Morphology Modulates Slow-Wave Generation via Structural Connectivity in Insomnia",
+    "summary": "This hypothesis proposes that thalamic morphology influences slow-wave generation through structural connectivity, linking insomnia through multimodal neuroimaging features.",
+    "content": "Thalamic morphology modulates slow-wave generation via structural connectivity in insomnia, with implications for thalamocortical pathways and white matter integrity.",
+    "rationale": "Evidence from E1-E4 shows thalamocortical coupling and structural morphology (MRI/DTI) are linked to insomnia. Slow-wave generation (EEG) is also associated with insomnia severity (PSQI). Structural connectivity (MRI/DTI) may bridge thalamic morphology and slow-wave generation, suggesting a pathway through white matter integrity.",
+    "experimental_plan": "Compare thalamic morphology (MRI) and slow-wave density (EEG) in insomnia patients with varying white matter integrity (DTI). Use regression models to test structural connectivity as a mediator.",
+    "novelty_assessment": "Novel integration of thalamic morphology, slow-wave generation, and structural connectivity in insomnia, avoiding prior hypotheses on thalamocortical coupling and white matter.",
     "key_assumptions": [
-      "Thalamic morphology is structurally altered in insomnia patients with hyperarousal.",
-      "Altered thalamic morphology directly influences the degree of hyperarousal (beta power) and insomnia severity."
+      "Thalamic morphology affects structural connectivity",
+      "Structural connectivity mediates slow-wave generation in insomnia"
     ],
     "citations": [
       "toy001",
@@ -196,9 +204,9 @@
     ],
     "generation_strategy": "assumption_chaining",
     "generation_round": 3,
-    "elo_rating": 1222.0,
-    "rating_deviation": 124.0,
-    "volatility": 0.059995,
+    "elo_rating": 1242.0,
+    "rating_deviation": 123.0,
+    "volatility": 0.059998,
     "matches_played": 7,
     "wins": 2,
     "losses": 5,
@@ -215,8 +223,8 @@
       "llm_provider": "ollama",
       "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
       "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "insomnia severity",
-      "neural_mechanism": "thalamic morphology",
+      "sleep_phenotype": "insomnia",
+      "neural_mechanism": "structural connectivity",
       "brain_regions": [
         "thalamus"
       ],
@@ -224,38 +232,38 @@
         "thalamocortical network"
       ],
       "modalities": [
-        "EEG",
         "MRI",
-        "Scale"
+        "EEG",
+        "DTI"
       ],
       "measurable_variables": [
-        "beta_power",
         "thalamus_volume",
-        "ISI",
-        "PSQI"
+        "slow_wave_density",
+        "FA"
       ],
-      "directional_prediction": "Increased thalamic morphology alterations (reduced thalamus volume) will mediate the relationship between higher beta power (hyperarousal) and higher insomnia severity scores.",
-      "falsification_criteria": "If thalamic volume is not significantly correlated with beta power or insomnia severity, or if mediation analysis fails to show a significant indirect effect, the hypothesis is refuted.",
+      "directional_prediction": "Higher thalamic volume and FA correlate with increased slow-wave density in insomnia patients.",
+      "falsification_criteria": "No correlation between thalamic volume, FA, and slow-wave density in insomnia patients.",
       "knowledge_graph_paths": [
-        "hyperarousal -> beta_power -> insomnia severity",
-        "thalamic morphology -> thalamus_volume -> insomnia severity"
+        "thalamic morphology -> thalamus_volume -> insomnia",
+        "structural morphology -> MRI -> insomnia",
+        "slow-wave generation -> slow_wave_density -> insomnia"
       ]
     },
-    "created_at": "2026-07-14T10:18:53.778373+00:00",
-    "updated_at": "2026-07-14T10:35:37.759704+00:00"
+    "created_at": "2026-07-15T05:55:04.547951+00:00",
+    "updated_at": "2026-07-15T06:13:58.634842+00:00"
   },
   {
-    "hypothesis_id": "hypothesis_b1d5cdfee514",
+    "hypothesis_id": "hypothesis_e7e3d1e5c3c8",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Morphology Mediates Hyperarousal-Induced Insomnia Severity",
-    "summary": "This hypothesis proposes that thalamic morphology acts as a mediator between hyperarousal and insomnia severity, linking structural brain changes to sleep disturbances.",
-    "content": "Thalamic morphology mediates the relationship between hyperarousal and insomnia severity, with structural changes in the thalamus contributing to heightened beta power and disrupted sleep patterns in individuals with insomnia.",
-    "rationale": "Evidence from [E4] and [E12] shows that thalamic morphology is associated with MRI data, while hyperarousal is linked to beta power in EEG. The integration of thalamic structural changes with hyperarousal mechanisms provides a pathway for insomnia severity.",
-    "experimental_plan": "Conduct a multimodal analysis combining MRI and EEG data to assess thalamic morphology and beta power in insomnia patients, using mediation analysis to evaluate the role of thalamic structure in the hyperarousal-insomnia severity relationship.",
-    "novelty_assessment": "This hypothesis introduces a new mediation pathway involving thalamic morphology, which was not previously linked to hyperarousal and insomnia severity in the existing evidence.",
+    "title": "Thalamic Morphology Modulates Beta Power via Thalamocortical Hyperarousal in Insomnia",
+    "summary": "This hypothesis proposes that thalamic morphology influences beta power through thalamocortical hyperarousal in insomnia, linking structural and electrophysiological features.",
+    "content": "Thalamic morphology modulates beta power via thalamocortical hyperarousal in insomnia, connecting structural changes in the thalamus with electrophysiological markers of hyperarousal through multimodal neuroimaging features.",
+    "rationale": "Evidence shows thalamic morphology is linked to structural MRI and thalamocortical hyperarousal is associated with increased beta power in insomnia. The integration of thalamic structure with electrophysiological markers provides a pathway for multimodal analysis.",
+    "experimental_plan": "Use structural MRI to measure thalamic morphology and EEG to measure beta power in insomnia patients. Analyze the relationship between thalamic volume and beta power, mediated by thalamocortical hyperarousal indices.",
+    "novelty_assessment": "This hypothesis integrates thalamic morphology with beta power through thalamocortical hyperarousal, a pathway not previously explored in the context of insomnia.",
     "key_assumptions": [
-      "Thalamic morphology is structurally altered in insomnia patients.",
-      "Beta power in EEG is modulated by thalamic morphology."
+      "Thalamic morphology affects thalamocortical hyperarousal",
+      "Thalamocortical hyperarousal modulates beta power"
     ],
     "citations": [
       "toy001",
@@ -263,13 +271,13 @@
     ],
     "generation_strategy": "research_expansion",
     "generation_round": 4,
-    "elo_rating": 1080.0,
-    "rating_deviation": 128.0,
-    "volatility": 0.059994,
+    "elo_rating": 1206.0,
+    "rating_deviation": 123.0,
+    "volatility": 0.060002,
     "matches_played": 7,
-    "wins": 0,
-    "losses": 7,
-    "draws": 0,
+    "wins": 1,
+    "losses": 5,
+    "draws": 1,
     "status": "active",
     "parent_ids": [],
     "metadata": {
@@ -282,8 +290,8 @@
       "llm_provider": "ollama",
       "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
       "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "insomnia severity",
-      "neural_mechanism": "thalamic morphology",
+      "sleep_phenotype": "insomnia",
+      "neural_mechanism": "thalamocortical hyperarousal",
       "brain_regions": [
         "thalamus"
       ],
@@ -298,14 +306,14 @@
         "thalamus_volume",
         "beta_power"
       ],
-      "directional_prediction": "Increased thalamus volume is associated with higher beta power and greater insomnia severity.",
-      "falsification_criteria": "If thalamic morphology does not mediate the relationship between beta power and insomnia severity, the hypothesis is refuted.",
+      "directional_prediction": "Increased thalamic volume is associated with higher beta power in insomnia patients.",
+      "falsification_criteria": "No significant correlation between thalamic volume and beta power in insomnia patients.",
       "knowledge_graph_paths": [
-        "thalamic morphology -> thalamus_volume -> insomnia severity",
-        "hyperarousal -> beta_power -> insomnia severity"
+        "thalamic morphology -> thalamus_volume -> insomnia",
+        "hyperarousal -> beta_power -> insomnia"
       ]
     },
-    "created_at": "2026-07-14T10:19:32.025069+00:00",
-    "updated_at": "2026-07-14T10:35:37.759716+00:00"
+    "created_at": "2026-07-15T05:55:43.491181+00:00",
+    "updated_at": "2026-07-15T06:13:58.634861+00:00"
   }
 ]

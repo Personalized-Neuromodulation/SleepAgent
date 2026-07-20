@@ -1,18 +1,19 @@
 [
   {
-    "plan_id": "experiment_plan_b6b568b972fc",
-    "hypothesis_id": "hypothesis_5f0b736e065c",
-    "hypothesis_title": "Thalamocortical Coupling Modulates Thalamic Morphology in Insomnia",
-    "scientific_question": "Test whether Thalamocortical Coupling Modulates Thalamic Morphology in Insomnia is supported by available analysis-ready variables.",
-    "hypothesis_summary": "This hypothesis proposes that thalamocortical coupling influences thalamic morphology in individuals with insomnia, linking hyperarousal to structural changes in the thalamus.",
-    "hypothesis_content": "Thalamocortical coupling modulates thalamic morphology in insomnia, such that increased thalamocortical hyperarousal leads to structural changes in the thalamus, exacerbating insomnia severity.",
+    "plan_id": "experiment_plan_93b6f9bd32c2",
+    "hypothesis_id": "hypothesis_95b004575b69",
+    "hypothesis_title": "Thalamic Morphology Modulates Thalamocortical Coupling via Structural Connectivity in Insomnia",
+    "scientific_question": "How do variations in thalamic radiation FA and thalamus volume correlate with functional connectivity (DMN and salience FC) and sleep metrics in insomnia patients?",
+    "hypothesis_summary": "This hypothesis proposes that thalamic morphology influences thalamocortical coupling through structural connectivity in insomnia, linking structural and functional neuroimaging features.",
+    "hypothesis_content": "Thalamic morphology modulates thalamocortical coupling via structural connectivity in insomnia, with effects measurable through thalamus_DMN_FC and thalamus_volume.",
     "predictors": [
       "thalamus_DMN_FC",
+      "FA",
       "thalamus_volume",
-      "DMN_FC",
-      "thalamic_radiation_FA"
+      "DMN_FC"
     ],
     "outcomes": [
+      "ISI",
       "PSQI"
     ],
     "covariates": [
@@ -32,6 +33,19 @@
         "modality": "fMRI",
         "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv",
         "source_column": "thalamus_DMN_FC",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 5,
+        "mapping_confidence": 0.9,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "FA",
+        "role": "predictor",
+        "scientific_concept": "FA",
+        "modality": "DTI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv",
+        "source_column": "FA",
         "approved": true,
         "missing_rate": 0.0,
         "n_available": 5,
@@ -65,12 +79,12 @@
         "notes": "Mapped from analysis-ready data profile."
       },
       {
-        "name": "thalamic_radiation_FA",
-        "role": "predictor",
-        "scientific_concept": "thalamic radiation FA",
-        "modality": "DTI",
-        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv",
-        "source_column": "thalamic_radiation_FA",
+        "name": "ISI",
+        "role": "outcome",
+        "scientific_concept": "ISI",
+        "modality": "scales",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv",
+        "source_column": "ISI",
         "approved": true,
         "missing_rate": 0.0,
         "n_available": 5,
@@ -87,7 +101,7 @@
         "approved": true,
         "missing_rate": 0.0,
         "n_available": 5,
-        "mapping_confidence": 0.9,
+        "mapping_confidence": 0.65,
         "notes": "Mapped from analysis-ready data profile."
       },
       {
@@ -158,29 +172,35 @@
     ],
     "primary_tests": [
       {
-        "test_id": "primary_test_7ec70dc1dfcf",
-        "predictor": "thalamus_DMN_FC",
-        "outcome": "PSQI",
-        "question": "Does thalamus_DMN_FC explain variation in PSQI?"
-      },
-      {
-        "test_id": "primary_test_022c40dc1dfcf",
-        "predictor": "thalamus_volume",
-        "outcome": "PSQI",
-        "question": "Does thalamus_volume explain variation in PSQI?"
-      },
-      {
-        "test_id": "primary_test_022c40dc1dfcf",
+        "test_id": "test_1",
         "predictor": "thalamic_radiation_FA",
-        "outcome": "PSQI",
-        "question": "Does thalamic_radiation_FA explain variation in PSQI?"
+        "outcome": "thalamus_volume",
+        "question": "Is there a significant correlation between thalamic radiation FA and thalamus volume in insomnia patients?"
+      },
+      {
+        "test_id": "test_2",
+        "predictor": "thalamic_radiation_FA",
+        "outcome": "DMN_FC",
+        "question": "How does thalamic radiation FA correlate with default mode network functional connectivity?"
+      },
+      {
+        "test_id": "test_3",
+        "predictor": "thalamus_volume",
+        "outcome": "salience_FC",
+        "question": "Is thalamus volume associated with salience network functional connectivity in insomnia patients?"
+      },
+      {
+        "test_id": "test_4",
+        "predictor": "delta_power",
+        "outcome": "thalamus_volume",
+        "question": "Does delta power during sleep correlate with thalamus volume in insomnia patients?"
       }
     ],
-    "analysis_plan": "Use MRI to measure thalamic morphology (thalamus_volume) and fMRI/EEG-fMRI to assess thalamus_DMN_FC in insomnia patients. Compare these measures with controls and correlate with insomnia severity (PSQI).",
+    "analysis_plan": "Analyze the relationship between thalamic radiation FA (from DTI) and thalamus volume (from MRI) with DMN and salience FC (from fMRI), alongside EEG-derived sleep metrics (slow wave density, spindle density, delta power) in insomnia patients. Use regression models to assess interactions between structural (thalamus volume) and diffusion (FA) measures on functional connectivity and sleep parameters.",
     "metadata": {
       "source": "ExperimentDesignAgent",
       "generation_strategy": "literature_exploration",
-      "hypothesis_rating": 1519.0,
+      "hypothesis_rating": 1572.0,
       "requested_modalities": [
         "DTI",
         "EEG",
@@ -189,34 +209,40 @@
         "scales"
       ],
       "llm_experiment_design": {
-        "scientific_question": "Test whether Thalamocortical Coupling Modulates Thalamic Morphology in Insomnia is supported by available analysis-ready variables.",
-        "analysis_plan": "Use MRI to measure thalamic morphology (thalamus_volume) and fMRI/EEG-fMRI to assess thalamus_DMN_FC in insomnia patients. Compare these measures with controls and correlate with insomnia severity (PSQI).",
+        "scientific_question": "How do variations in thalamic radiation FA and thalamus volume correlate with functional connectivity (DMN and salience FC) and sleep metrics in insomnia patients?",
+        "analysis_plan": "Analyze the relationship between thalamic radiation FA (from DTI) and thalamus volume (from MRI) with DMN and salience FC (from fMRI), alongside EEG-derived sleep metrics (slow wave density, spindle density, delta power) in insomnia patients. Use regression models to assess interactions between structural (thalamus volume) and diffusion (FA) measures on functional connectivity and sleep parameters.",
         "primary_tests": [
           {
-            "test_id": "primary_test_7ec70dc1dfcf",
-            "predictor": "thalamus_DMN_FC",
-            "outcome": "PSQI",
-            "question": "Does thalamus_DMN_FC explain variation in PSQI?"
-          },
-          {
-            "test_id": "primary_test_022c40dc1dfcf",
-            "predictor": "thalamus_volume",
-            "outcome": "PSQI",
-            "question": "Does thalamus_volume explain variation in PSQI?"
-          },
-          {
-            "test_id": "primary_test_022c40dc1dfcf",
+            "test_id": "test_1",
             "predictor": "thalamic_radiation_FA",
-            "outcome": "PSQI",
-            "question": "Does thalamic_radiation_FA explain variation in PSQI?"
+            "outcome": "thalamus_volume",
+            "question": "Is there a significant correlation between thalamic radiation FA and thalamus volume in insomnia patients?"
+          },
+          {
+            "test_id": "test_2",
+            "predictor": "thalamic_radiation_FA",
+            "outcome": "DMN_FC",
+            "question": "How does thalamic radiation FA correlate with default mode network functional connectivity?"
+          },
+          {
+            "test_id": "test_3",
+            "predictor": "thalamus_volume",
+            "outcome": "salience_FC",
+            "question": "Is thalamus volume associated with salience network functional connectivity in insomnia patients?"
+          },
+          {
+            "test_id": "test_4",
+            "predictor": "delta_power",
+            "outcome": "thalamus_volume",
+            "question": "Does delta power during sleep correlate with thalamus volume in insomnia patients?"
           }
         ],
         "risks": [
-          "Limited sample size (n=5 for some features) may reduce statistical power.",
-          "Missing data in some features (e.g., spindle_density has 0 missing, but others like slow_wave_power have 0.2 missing rate) could affect analysis.",
-          "Potential confounding variables not controlled for (e.g., age, gender, sleep disorders)."
+          "Potential multicollinearity between FA and thalamus volume measures.",
+          "Missing data in salience_FC (20% missing) may reduce statistical power.",
+          "EEG metrics (slow wave density, beta power) have 20% missing data, which could affect model convergence."
         ],
-        "rationale": "The analysis plan leverages available features from MRI, fMRI, DTI, and scales to test the hypothesis. The primary tests include key predictors (thalamus_DMN_FC, thalamus_volume, thalamic_radiation_FA) and the outcome (PSQI). Risks include sample size limitations, missing data, and potential confounding variables."
+        "rationale": "This plan integrates structural (thalamus volume), diffusion (FA), and functional (DMN/salience FC) measures with sleep EEG metrics to comprehensively assess thalamocortical circuit integrity in insomnia. Testing correlations between FA and volume, and their relationships with functional connectivity and sleep parameters, provides a multimodal approach to understanding insomnia pathophysiology."
       }
     }
   }

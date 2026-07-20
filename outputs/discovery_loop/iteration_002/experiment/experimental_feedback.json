@@ -1,37 +1,37 @@
 [
   {
-    "hypothesis_id": "hypothesis_5f0b736e065c",
-    "plan_id": "experiment_plan_b6b568b972fc",
+    "hypothesis_id": "hypothesis_80c2da4d2174",
+    "plan_id": "experiment_plan_0cbadd782ca4",
     "support": "partially_supported",
-    "support_score": 0.5,
-    "computed_reward": 0.55,
+    "support_score": 0.6,
+    "computed_reward": 0.6675,
     "validated": false,
     "refuted": false,
-    "primary_tests_passed": 2,
+    "primary_tests_passed": 3,
     "primary_tests_total": 4,
     "metadata": {
       "review_status": "partially_supported",
-      "hypothesis_title": "Thalamocortical Coupling Modulates Thalamic Morphology in Insomnia",
+      "hypothesis_title": "Thalamocortical Coupling Mediates White Matter Integrity and Thalamic Morphology via DMN Connectivity in Insomnia",
       "predictors": [
         "thalamus_DMN_FC",
         "DMN_FC"
       ],
       "outcomes": [
-        "global_signal_psd_power_mean",
-        "qc_signal_post_DVARS_mean"
+        "salience_FC",
+        "frontoparietal_FC"
       ],
       "critic_findings": [
         {
           "severity": "medium",
-          "category": "statistical_power",
-          "message": "The effect sizes for thalamus-related correlations were small and not statistically significant, suggesting limited support for the hypothesis.",
-          "recommendation": "Consider increasing sample size or using more sensitive measures for thalamocortical coupling."
+          "category": "data_completeness",
+          "message": "Missing key variables FA and thalamus_volume from DTI and MRI, which were central to the original mediation pathway.",
+          "recommendation": "Use available fMRI proxies (salience_FC, frontoparietal_FC) as outcomes and revise the mediation model to focus on fMRI data."
         },
         {
           "severity": "high",
-          "category": "model_choice",
-          "message": "The use of Spearman correlation may not capture the full relationship between thalamocortical coupling and thalamic morphology, especially with potential non-linear interactions.",
-          "recommendation": "Use linear regression with interaction terms or machine learning models to explore complex relationships."
+          "category": "statistical_power",
+          "message": "Only 70 subjects with available data may limit the statistical power of the analysis.",
+          "recommendation": "Consider increasing sample size or using more robust statistical methods to mitigate power issues."
         }
       ]
     }

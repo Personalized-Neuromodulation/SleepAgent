@@ -1,7 +1,7 @@
 [
   {
-    "review_id": "review_0ebfd44303c7",
-    "hypothesis_id": "hypothesis_765b5eb64324",
+    "review_id": "review_1dbbffc5df94",
+    "hypothesis_id": "hypothesis_b6b0c04a98d3",
     "session_id": "sleep_hypothesis_session",
     "review_type": "initial",
     "verdict": "pass",
@@ -9,95 +9,372 @@
     "correctness_score": 7.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is plausible and testable, linking thalamocortical coupling to white matter integrity in insomnia. Novelty is moderate, as some connections are established but the specific link is new.",
-    "critique": "The hypothesis is well-structured but assumes a direct link between thalamocortical coupling and white matter integrity without considering potential mediators. The use of thalamus_DMN_FC as a biomarker is supported by prior evidence, but the study should control for other variables like sleep quality measures (PSQI, ISI) and thalamic volume. The experimental plan is clear but could benefit from a larger sample size to enhance statistical power.",
+    "summary": "The hypothesis is plausible and testable, linking thalamocortical coupling with white matter integrity in insomnia through multimodal neuroimaging. Novelty is moderate, correctness is reasonable, and testability is strong.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence on thalamocortical coupling and white matter integrity. However, the novelty could be higher if it connects previously unexplored pathways. The correctness is reasonable, supported by existing evidence (e.g., thalamocortical coupling with thalamus_DMN_FC and FA with insomnia). Testability is strong with the proposed regression analysis and multimodal data. The key assumptions are plausible but could benefit from further validation.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:56:01.735753+00:00"
+  },
+  {
+    "review_id": "review_c77e86be992b",
+    "hypothesis_id": "hypothesis_b6b0c04a98d3",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, linking thalamocortical coupling to white matter integrity in insomnia through multimodal neuroimaging. Some evidence gaps exist but are manageable.",
+    "critique": "The hypothesis is well-structured and novel, integrating thalamocortical coupling with white matter integrity in insomnia. The use of thalamus_DMN_FC as a measure is supported by prior evidence (E1-E3). However, the direct link between thalamocortical coupling and FA (white matter integrity) is less established, requiring more empirical validation. The experimental plan is robust, using regression analysis and multimodal data. The key assumptions are reasonable but could benefit from additional evidence, particularly in linking thalamocortical coupling to FA. The citations provided are relevant but limited, suggesting a need for more comprehensive literature review.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:56:21.989008+00:00"
+  },
+  {
+    "review_id": "review_8cf408472e9a",
+    "hypothesis_id": "hypothesis_b6b0c04a98d3",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, novel, and testable with existing multimodal neuroimaging techniques. The assumptions are plausible and supported by prior evidence.",
+    "critique": "The hypothesis effectively links thalamocortical coupling with white matter integrity in insomnia, leveraging established measures like thalamus_DMN_FC and FA. The experimental plan is sound, using regression analysis to test the proposed relationship. The key assumptions are supported by existing evidence (e.g., thalamocortical coupling linked to thalamus_DMN_FC and structural MRI). However, potential confounding factors (e.g., age, sleep duration, comorbid conditions) could influence the results and should be controlled for in the analysis.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:56:40.354259+00:00"
+  },
+  {
+    "review_id": "review_af9ef79f71b5",
+    "hypothesis_id": "hypothesis_b6b0c04a98d3",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, linking thalamocortical coupling to white matter integrity in insomnia through multimodal neuroimaging. Some assumptions may require further validation.",
+    "critique": "The hypothesis introduces a novel link between thalamocortical coupling and white matter integrity in insomnia, supported by existing evidence on thalamocortical coupling (E1-E3) and white matter integrity (E10-E11). The experimental plan is well-defined, using regression analysis to test the relationship between thalamus_DMN_FC and FA. However, the assumption that thalamocortical coupling directly affects white matter microstructure may need more empirical support. The pathway from thalamocortical coupling to white matter integrity could involve other mediators not yet considered. The use of multimodal EEG-fMRI and DTI is appropriate, but potential confounds (e.g., sleep stage variability, medication effects) should be controlled for.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:57:02.283237+00:00"
+  },
+  {
+    "review_id": "review_1531df9df94f",
+    "hypothesis_id": "hypothesis_b6b0c04a98d3",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, linking thalamocortical coupling to white matter integrity in insomnia through multimodal neuroimaging. Some evidence supports the connections, though more specific evidence could strengthen the hypothesis.",
+    "critique": "The hypothesis is well-structured and novel, integrating thalamocortical coupling with white matter integrity in insomnia. The use of thalamus_DMN_FC as a measure is supported by existing evidence (evidence_f7ca755a2467). However, the connection between thalamocortical coupling and FA is somewhat indirect, relying on multiple steps in the knowledge graph. The experimental plan is clear, but the assumption that thalamus_DMN_FC is a reliable measure of thalamocortical coupling could be further validated. The evidence for the pathway from thalamocortical coupling to FA is somewhat indirect, which may affect the strength of the hypothesis.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:57:23.856836+00:00"
+  },
+  {
+    "review_id": "review_9dac8813462e",
+    "hypothesis_id": "hypothesis_78e2045e748c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and integrates multimodal neuroimaging features, showing a novel pathway linking thalamocortical hyperarousal, thalamic morphology, and structural connectivity in insomnia. The experimental plan is well-defined and testable.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence, but the novelty could be higher if it introduces a new mechanism not previously considered. The correctness is moderate as some assumptions are based on prior evidence but could be further validated. The testability is strong with a clear experimental plan. The integration of thalamic morphology and structural connectivity is a good point, but the specific pathways could be more detailed.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:57:41.582701+00:00"
+  },
+  {
+    "review_id": "review_1b2f8cebe18f",
+    "hypothesis_id": "hypothesis_78e2045e748c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamocortical hyperarousal with thalamic morphology and structural connectivity in insomnia. The experimental plan is robust, and the assumptions are supported by existing evidence.",
+    "critique": "The hypothesis is plausible and integrates existing evidence effectively. The use of multimodal neuroimaging (EEG-fMRI, MRI, DTI) is comprehensive. The key assumptions are supported by the cited evidence, though more specific evidence linking thalamocortical hyperarousal to thalamic morphology via structural connectivity would strengthen the hypothesis. The falsification criteria are clear, enhancing testability.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:57:58.945704+00:00"
+  },
+  {
+    "review_id": "review_59014d0afd0b",
+    "hypothesis_id": "hypothesis_78e2045e748c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamocortical hyperarousal with thalamic morphology and structural connectivity in insomnia. The experimental plan is robust, and the assumptions are logically decomposed.",
+    "critique": "The hypothesis effectively links thalamocortical hyperarousal with thalamic morphology through structural connectivity, supported by existing evidence. The integration of multimodal neuroimaging (EEG-fMRI, MRI, DTI) is comprehensive. However, the role of the Default Mode Network (DMN) in mediating thalamocortical hyperarousal could be further explored. The assumptions are well-decomposed, but the mediation pathway from structural connectivity to thalamic morphology requires more detailed validation.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:58:17.902672+00:00"
+  },
+  {
+    "review_id": "review_6bd53f3e4c6a",
+    "hypothesis_id": "hypothesis_78e2045e748c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and integrates multimodal neuroimaging features to link thalamocortical hyperarousal with thalamic morphology via structural connectivity in insomnia. The experimental plan is well-defined and testable.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence with novel pathways. The key assumptions are supported by the provided evidence, though further validation of the mediation effect of structural connectivity is needed. The use of multimodal neuroimaging (EEG-fMRI, MRI, DTI) is comprehensive and should yield robust results.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:58:34.151667+00:00"
+  },
+  {
+    "review_id": "review_393aa0111185",
+    "hypothesis_id": "hypothesis_78e2045e748c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamocortical hyperarousal with thalamic morphology and structural connectivity in insomnia. The experimental plan is robust, and the assumptions are supported by existing evidence.",
+    "critique": "The hypothesis is plausible and integrates multimodal neuroimaging features effectively. The key assumptions are supported by the cited evidence, and the experimental plan is comprehensive. The novelty lies in linking thalamic morphology with structural connectivity through thalamocortical hyperarousal. However, the integration of the Default Mode Network (DMN) could be further elaborated in the context of thalamocortical interactions. The use of FA as a measure of white matter integrity is appropriate, but the relationship between FA and thalamic morphology needs more detailed exploration.",
+    "supporting_evidence": [
+      "evidence_f7ca755a2467",
+      "evidence_77397cee0b26"
+    ],
+    "created_at": "2026-07-15T05:58:53.657621+00:00"
+  },
+  {
+    "review_id": "review_a329e7e2cda5",
+    "hypothesis_id": "hypothesis_e551f4797f3c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and novel, integrating thalamic morphology, structural connectivity, and slow-wave generation in insomnia. It is well-supported by existing evidence and testable with the proposed methods.",
+    "critique": "The hypothesis is well-structured and integrates multiple modalities (MRI, EEG, DTI) with clear measurable variables. The key assumptions are reasonable and supported by prior evidence. The experimental plan is feasible. Novelty is high as it links thalamic morphology with slow-wave generation through structural connectivity in insomnia. Potential areas for further exploration include the specific pathways of thalamocortical pathways and the role of white matter integrity in mediating these effects.",
+    "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-15T05:59:12.109416+00:00"
+  },
+  {
+    "review_id": "review_ba89831805c2",
+    "hypothesis_id": "hypothesis_e551f4797f3c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamic morphology, structural connectivity, and slow-wave generation in insomnia. It is supported by existing evidence and has strong testability.",
+    "critique": "The hypothesis is plausible and integrates multimodal data effectively. The key assumptions are supported by prior evidence (e.g., thalamocortical coupling and white matter integrity in insomnia). The experimental plan is clear, though additional control for confounding variables (e.g., age, sleep duration) could strengthen the model. The directional prediction is consistent with the evidence, and the falsification criteria are well-defined.",
+    "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-15T05:59:29.707540+00:00"
+  },
+  {
+    "review_id": "review_be4c0050ee57",
+    "hypothesis_id": "hypothesis_e551f4797f3c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamic morphology, structural connectivity, and slow-wave generation in insomnia. It is supported by existing evidence and has clear testability.",
+    "critique": "The hypothesis is plausible and integrates multiple modalities (MRI, EEG, DTI) with clear mediation pathways. The assumptions are logically connected, though further empirical validation of the mediation effect would strengthen the hypothesis. The use of regression models to test mediation is appropriate.",
+    "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-15T05:59:45.133992+00:00"
+  },
+  {
+    "review_id": "review_0b7930e57017",
+    "hypothesis_id": "hypothesis_e551f4797f3c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and integrates multimodal neuroimaging data to link thalamic morphology, structural connectivity, and slow-wave generation in insomnia. The experimental plan is well-defined and testable.",
+    "critique": "The hypothesis is well-structured and leverages existing evidence (e.g., thalamocortical coupling, white matter integrity). The mediation model is logical, though further clarification on how thalamic morphology directly affects structural connectivity (e.g., via specific white matter tracts) could strengthen the mechanism. The use of regression models with mediation analysis is appropriate, but potential confounds (e.g., age, sleep duration) should be controlled for.",
+    "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-15T06:00:03.604517+00:00"
+  },
+  {
+    "review_id": "review_26f157598a10",
+    "hypothesis_id": "hypothesis_e551f4797f3c",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamic morphology, structural connectivity, and slow-wave generation in insomnia. It is supported by existing evidence and is testable with the proposed regression models.",
+    "critique": "The hypothesis is plausible and integrates multiple modalities (MRI, EEG, DTI) with clear measurable variables. The key assumptions are reasonable and supported by the evidence provided. The mediation model is well-defined, though further validation with larger cohorts could strengthen the findings. The directional prediction is clear, and the falsification criteria are well-articulated.",
+    "supporting_evidence": [
+      "evidence_cffb5cadb0ba",
+      "evidence_57c2052a300b",
+      "evidence_9f085eb58dfa"
+    ],
+    "created_at": "2026-07-15T06:00:20.510295+00:00"
+  },
+  {
+    "review_id": "review_40f10707f8d5",
+    "hypothesis_id": "hypothesis_e7e3d1e5c3c8",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, linking thalamic morphology with beta power through thalamocortical hyperarousal in insomnia. Novelty is moderate, with some existing evidence supporting the connections.",
+    "critique": "The hypothesis integrates existing evidence but could benefit from more detailed mediation analysis to confirm the pathway. The assumptions are reasonable but require validation through multimodal data. The use of structural MRI and EEG is well-justified, and the directional prediction is clear. Some evidence overlaps in citations, which may indicate redundancy.",
+    "supporting_evidence": [
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba",
+      "toy001",
+      "toy003"
+    ],
+    "created_at": "2026-07-15T06:00:36.908925+00:00"
+  },
+  {
+    "review_id": "review_aac27ee55f3d",
+    "hypothesis_id": "hypothesis_e7e3d1e5c3c8",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, linking thalamic morphology with beta power through thalamocortical hyperarousal in insomnia. Novelty is moderate, correctness is reasonable, and testability is high.",
+    "critique": "The hypothesis integrates structural and electrophysiological features, which is a strength. However, the evidence from citations 'toy001' and 'toy003' is limited in specificity. The mediation through thalamocortical hyperarousal is plausible but requires more detailed pathway analysis. The directional prediction assumes a direct link between thalamic volume and beta power, which may be influenced by other confounding variables not accounted for in the current model.",
+    "supporting_evidence": [
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba"
+    ],
+    "created_at": "2026-07-15T06:00:54.968032+00:00"
+  },
+  {
+    "review_id": "review_1afb9fe9abd3",
+    "hypothesis_id": "hypothesis_e7e3d1e5c3c8",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, linking thalamic morphology with beta power through thalamocortical hyperarousal in insomnia. It is supported by existing evidence and has clear testability.",
+    "critique": "The hypothesis is plausible and integrates multimodal data effectively. The key assumptions are logically connected, though further empirical validation is needed to confirm the mediation by thalamocortical hyperarousal. The use of structural MRI and EEG is standard and safe.",
     "supporting_evidence": [
       "toy001",
       "toy003",
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba"
     ],
-    "created_at": "2026-07-14T10:19:50.729485+00:00"
+    "created_at": "2026-07-15T06:01:10.466865+00:00"
   },
   {
-    "review_id": "review_0f39a7c14128",
-    "hypothesis_id": "hypothesis_765b5eb64324",
+    "review_id": "review_6e25ec7828cf",
+    "hypothesis_id": "hypothesis_e7e3d1e5c3c8",
     "session_id": "sleep_hypothesis_session",
-    "review_type": "full",
+    "review_type": "simulation",
     "verdict": "pass",
     "novelty_score": 8.0,
-    "correctness_score": 7.0,
+    "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis links thalamocortical coupling to white matter integrity in insomnia, showing plausible connections with existing evidence. The experimental plan is clear, though some assumptions may need further validation.",
-    "critique": "The hypothesis is well-structured and novel, connecting thalamocortical coupling with white matter integrity. The use of thalamus_DMN_FC as a biomarker is supported by prior evidence (E1-E3). However, the assumption that thalamocortical coupling directly influences white matter microstructure may require more direct evidence. The experimental plan is robust, using DTI and tractography, but potential confounds like age and comorbidities are well-controlled. The directional prediction is clear, and the falsification criteria are well-defined. Some evidence (E10, E11) links insomnia to FA, but the connection between thalamocortical coupling and FA is less direct and may need more supporting evidence.",
+    "summary": "The hypothesis is plausible and integrates structural and electrophysiological features in insomnia, with a clear experimental plan and testable assumptions.",
+    "critique": "The hypothesis effectively links thalamic morphology with beta power through thalamocortical hyperarousal, supported by existing evidence. The experimental plan is well-defined, though additional control for confounding variables (e.g., age, sleep quality measures) could enhance robustness. The integration of MRI and EEG data provides a strong multimodal approach.",
+    "supporting_evidence": [
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba",
+      "toy001",
+      "toy003"
+    ],
+    "created_at": "2026-07-15T06:01:26.342519+00:00"
+  },
+  {
+    "review_id": "review_c56e96645bee",
+    "hypothesis_id": "hypothesis_e7e3d1e5c3c8",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, linking thalamic morphology with beta power through thalamocortical hyperarousal in insomnia. It is supported by existing evidence and has clear testability.",
+    "critique": "The hypothesis is plausible and integrates structural and electrophysiological features. The use of multimodal neuroimaging (MRI and EEG) is a strength. However, the mediation by thalamocortical hyperarousal indices needs more detailed justification. The evidence provided (toy001, toy003) and evidence IDs (evidence_362515daef8d, evidence_cffb5cadb0ba) support the links between thalamic structure and hyperarousal, but further validation with larger cohorts could enhance robustness.",
     "supporting_evidence": [
       "toy001",
       "toy003",
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
+      "evidence_362515daef8d",
+      "evidence_cffb5cadb0ba"
     ],
-    "created_at": "2026-07-14T10:20:13.555830+00:00"
+    "created_at": "2026-07-15T06:01:46.590362+00:00"
   },
   {
-    "review_id": "review_c1d15417a64d",
-    "hypothesis_id": "hypothesis_765b5eb64324",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "deep_verification",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured, novel, and testable with existing evidence. It links thalamocortical coupling to white matter integrity in insomnia, supported by prior findings on thalamocortical coupling and FA in insomnia.",
-    "critique": "The hypothesis is logically sound, with a clear connection between thalamocortical coupling (thalamus_DMN_FC) and white matter integrity (FA). The assumptions are plausible, and the experimental plan is feasible. The citations and evidence IDs align with the knowledge graph, supporting the mechanism. Potential improvements could include more detailed control for confounding variables like age and comorbidities, but these are standard in sleep studies.",
-    "supporting_evidence": [
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
-    ],
-    "created_at": "2026-07-14T10:20:31.671710+00:00"
-  },
-  {
-    "review_id": "review_763fe7830f62",
-    "hypothesis_id": "hypothesis_765b5eb64324",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "simulation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 7.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is plausible and testable, linking thalamocortical coupling to white matter integrity in insomnia. The experimental plan is well-defined, though some assumptions may require further validation.",
-    "critique": "The hypothesis introduces a novel link between thalamocortical coupling and white matter integrity in insomnia, supported by existing evidence on thalamocortical coupling (E1-E3) and white matter integrity (E10, E11). The experimental plan is clear, using DTI and tractography to compare FA values based on thalamus_DMN_FC. However, the assumption that thalamus_DMN_FC is a reliable biomarker of thalamocortical coupling may need further validation, as other factors (e.g., sleep stage, comorbidities) could influence FA. The directional prediction is reasonable, but the study should ensure that the control variables (age, sleep duration, comorbidities) are well-managed to avoid confounding effects.",
-    "supporting_evidence": [
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
-    ],
-    "created_at": "2026-07-14T10:20:54.219804+00:00"
-  },
-  {
-    "review_id": "review_bdf644ac52d3",
-    "hypothesis_id": "hypothesis_765b5eb64324",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "observation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured and plausible, linking thalamocortical coupling to white matter integrity in insomnia. The experimental plan is clear and testable.",
-    "critique": "The hypothesis is novel in connecting thalamocortical coupling with white matter integrity in insomnia. The use of thalamus_DMN_FC as a biomarker is supported by existing evidence. The experimental plan is robust, using DTI and tractography to compare FA values. The key assumptions are reasonable and supported by prior findings. Potential areas for further exploration include the specific white matter tracts involved and the role of other confounding variables.",
-    "supporting_evidence": [
-      "toy001",
-      "toy003",
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
-    ],
-    "created_at": "2026-07-14T10:21:12.242401+00:00"
-  },
-  {
-    "review_id": "review_2f2328700ba7",
-    "hypothesis_id": "hypothesis_1664f961ceec",
+    "review_id": "review_308345098f37",
+    "hypothesis_id": "hypothesis_93917166a1c1",
     "session_id": "sleep_hypothesis_session",
     "review_type": "initial",
     "verdict": "pass",
@@ -105,340 +382,65 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is plausible and novel, linking thalamocortical hyperarousal with DMN connectivity disruption in insomnia. The experimental plan is well-defined and testable.",
-    "critique": "The hypothesis integrates existing evidence on thalamocortical coupling and beta oscillations, showing a clear pathway from hyperarousal to DMN disruption and insomnia severity. The use of multimodal neuroimaging (EEG-fMRI) enhances testability. However, the evidence for the specific link between thalamus-DMN FC and insomnia severity could be further strengthened with more direct studies. The assumptions are reasonable but could benefit from considering potential confounding factors such as circadian rhythm and other sleep stages.",
-    "supporting_evidence": [
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
-    ],
-    "created_at": "2026-07-14T10:21:30.772050+00:00"
-  },
-  {
-    "review_id": "review_ffccd31081d0",
-    "hypothesis_id": "hypothesis_1664f961ceec",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "full",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 7.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical hyperarousal with DMN connectivity in insomnia, leveraging existing evidence and multimodal biomarkers. It is plausible and testable with current neuroimaging methods.",
-    "critique": "The hypothesis is well-structured but assumes a direct causal link between beta_power and thalamus_DMN_FC without considering potential confounds (e.g., circadian rhythm, medication effects). The evidence [E1-E3] and [E5-E6] are repeated, suggesting possible redundancy. The use of PSQI as a measure of insomnia severity is standard but could be complemented with more specific metrics like ISI. The experimental plan is robust but could benefit from a control for sleep stage variability.",
-    "supporting_evidence": [
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
-    ],
-    "created_at": "2026-07-14T10:21:49.643741+00:00"
-  },
-  {
-    "review_id": "review_27e88e823333",
-    "hypothesis_id": "hypothesis_1664f961ceec",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "deep_verification",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical hyperarousal with DMN connectivity in insomnia, supported by existing evidence and a testable plan.",
-    "critique": "The hypothesis is well-structured and novel, linking thalamocortical hyperarousal (beta oscillations) with DMN connectivity disruption. The assumptions are logically derived from evidence [E1-E3] and [E5-E6], and the experimental plan is feasible with multimodal data. The directional prediction is clear, and the falsification criteria are defined. However, potential confounds (e.g., circadian rhythm, medication) could influence results and should be controlled.",
-    "supporting_evidence": [
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
-    ],
-    "created_at": "2026-07-14T10:22:07.352672+00:00"
-  },
-  {
-    "review_id": "review_df350494be9d",
-    "hypothesis_id": "hypothesis_1664f961ceec",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "simulation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical hyperarousal with DMN connectivity in insomnia, supported by existing evidence and testable through multimodal neuroimaging.",
-    "critique": "The hypothesis is well-structured and plausible, linking thalamocortical hyperarousal (beta oscillations) with DMN connectivity disruption. The use of PSQI as a measure of insomnia severity is appropriate. The experimental plan is feasible with current fMRI/EEG techniques. Potential assumptions (e.g., dynamic modulation of thalamus-DMN FC by beta_power) are supported by prior evidence (e.g., E1-E3, E5-E6). However, the mediation pathway assumes a direct causal link between thalamus-DMN FC and insomnia severity, which may require further validation.",
-    "supporting_evidence": [
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
-    ],
-    "created_at": "2026-07-14T10:22:27.471959+00:00"
-  },
-  {
-    "review_id": "review_4ff6ce83115c",
-    "hypothesis_id": "hypothesis_1664f961ceec",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "observation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical hyperarousal with DMN connectivity in insomnia, supported by existing evidence and multimodal biomarkers. The experimental plan is feasible with current neuroimaging techniques.",
-    "critique": "The hypothesis is well-structured and novel, linking thalamocortical hyperarousal (beta oscillations) to DMN disruption in insomnia. The use of EEG-fMRI and fMRI is justified. However, the evidence for thalamus-DMN FC disruption in insomnia is somewhat indirect, relying on prior findings. The assumption that beta_power dynamically modulates thalamus-DMN FC requires further validation. The falsification criteria are clear, but the integration of sleep onset network analysis could be more detailed.",
-    "supporting_evidence": [
-      "evidence_f7ca755a2467",
-      "evidence_77397cee0b26"
-    ],
-    "created_at": "2026-07-14T10:22:46.744572+00:00"
-  },
-  {
-    "review_id": "review_b2a241972cdd",
-    "hypothesis_id": "hypothesis_f3387b531f63",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "initial",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is plausible and novel, linking thalamic morphology as a mediator between hyperarousal and insomnia severity. The experimental plan is well-defined and testable with existing modalities.",
-    "critique": "The hypothesis is well-structured and integrates existing evidence (e.g., thalamic morphology and hyperarousal). Novelty is strong, as it introduces a mediation pathway not previously emphasized. Testability is high with MRI, EEG, and scales like ISI/PSQI. Potential refinement: clarify if thalamic volume reduction is specific to insomnia or common in other hyperarousal states (e.g., anxiety).",
-    "supporting_evidence": [
-      "evidence_cffb5cadb0ba",
-      "evidence_57c2052a300b",
-      "evidence_9f085eb58dfa"
-    ],
-    "created_at": "2026-07-14T10:23:05.248904+00:00"
-  },
-  {
-    "review_id": "review_d6059e6a9f72",
-    "hypothesis_id": "hypothesis_f3387b531f63",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "full",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured, integrating thalamic morphology as a mediator between hyperarousal and insomnia severity, supported by existing evidence and a clear experimental plan.",
-    "critique": "The hypothesis is plausible and integrates existing evidence (e.g., thalamic morphology linked to MRI, hyperarousal linked to beta power). The mediation analysis is a strong test. Novelty is high given the integration of thalamic structure with hyperarousal mechanisms. Potential refinement: clarify if thalamic volume reduction is specific to insomnia or also seen in other hyperarousal states (e.g., PTSD).",
-    "supporting_evidence": [
-      "evidence_cffb5cadb0ba",
-      "evidence_57c2052a300b",
-      "evidence_9f085eb58dfa"
-    ],
-    "created_at": "2026-07-14T10:23:23.488814+00:00"
-  },
-  {
-    "review_id": "review_f8d630e90b14",
-    "hypothesis_id": "hypothesis_f3387b531f63",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "deep_verification",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured and integrates existing evidence with a novel mediation model. It is testable with available modalities and has clear falsification criteria.",
-    "critique": "The hypothesis effectively links thalamic morphology with hyperarousal and insomnia severity, leveraging established evidence on thalamic structure and EEG beta power. The mediation analysis plan is sound. Novelty is high given the integration of structural and functional data. Potential areas for further exploration include the directionality of the thalamocortical pathways and the role of other brain regions in modulating the thalamus.",
-    "supporting_evidence": [
-      "evidence_cffb5cadb0ba",
-      "evidence_57c2052a300b",
-      "evidence_9f085eb58dfa"
-    ],
-    "created_at": "2026-07-14T10:23:41.157980+00:00"
-  },
-  {
-    "review_id": "review_5e79912ce252",
-    "hypothesis_id": "hypothesis_f3387b531f63",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "simulation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is plausible and well-structured, linking thalamic morphology as a mediator between hyperarousal and insomnia severity. The experimental plan is clear and testable with available modalities.",
-    "critique": "The hypothesis is well-supported by existing evidence, particularly the links between thalamic morphology and MRI, and hyperarousal with beta power. The mediation analysis is a strong test of the proposed pathway. Potential areas for further exploration include the directionality of the thalamocortical circuits and the specific subregions of the thalamus involved.",
-    "supporting_evidence": [
-      "evidence_cffb5cadb0ba",
-      "evidence_57c2052a300b",
-      "evidence_9f085eb58dfa"
-    ],
-    "created_at": "2026-07-14T10:23:58.470765+00:00"
-  },
-  {
-    "review_id": "review_6fdd035d2c11",
-    "hypothesis_id": "hypothesis_f3387b531f63",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "observation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured, linking thalamic morphology as a mediator between hyperarousal and insomnia severity. It is supported by existing evidence and is testable with the proposed experimental plan.",
-    "critique": "The hypothesis is plausible and integrates existing evidence on thalamic structure, hyperarousal (beta power), and insomnia severity measures. The mediation model is logically sound. Novelty is moderate, as thalamic involvement in insomnia is established, but the specific mediation pathway is somewhat new. Testability is strong with MRI, EEG, and scales. Potential confounds (e.g., age, medication) could be addressed with covariates.",
-    "supporting_evidence": [
-      "evidence_cffb5cadb0ba",
-      "evidence_57c2052a300b",
-      "evidence_9f085eb58dfa"
-    ],
-    "created_at": "2026-07-14T10:24:17.244038+00:00"
-  },
-  {
-    "review_id": "review_3174296f7777",
-    "hypothesis_id": "hypothesis_b1d5cdfee514",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "initial",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 7.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is plausible and testable, linking thalamic morphology to hyperarousal and insomnia severity through multimodal analysis. Novelty is moderate, with some existing evidence supporting the mechanisms.",
-    "critique": "The hypothesis integrates existing evidence on thalamic morphology and hyperarousal, but the mediation pathway assumes a direct structural link between thalamus volume and beta power without considering potential confounds (e.g., genetic factors, other brain regions). The correctness is moderate as some assumptions may require further validation. The testability is high due to the multimodal approach and mediation analysis.",
-    "supporting_evidence": [
-      "evidence_362515daef8d",
-      "evidence_cffb5cadb0ba"
-    ],
-    "created_at": "2026-07-14T10:24:33.684937+00:00"
-  },
-  {
-    "review_id": "review_35123bbb5918",
-    "hypothesis_id": "hypothesis_b1d5cdfee514",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "full",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured, integrating thalamic morphology with hyperarousal and insomnia severity, supported by existing evidence and a feasible experimental plan.",
-    "critique": "The hypothesis is plausible and integrates existing evidence effectively. The use of multimodal MRI and EEG data is a strong point. However, the assumption that increased thalamus volume directly correlates with higher beta power and insomnia severity may require further validation. The mediation analysis should account for potential confounding variables such as age, sleep duration, and comorbid conditions.",
-    "supporting_evidence": [
-      "evidence_362515daef8d",
-      "evidence_cffb5cadb0ba"
-    ],
-    "created_at": "2026-07-14T10:24:49.156919+00:00"
-  },
-  {
-    "review_id": "review_e8be9650447d",
-    "hypothesis_id": "hypothesis_b1d5cdfee514",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "deep_verification",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured, integrating thalamic morphology with hyperarousal and insomnia severity. The experimental plan is robust, and the assumptions are supported by existing evidence.",
-    "critique": "The hypothesis is plausible and integrates existing evidence effectively. The key assumptions are supported by the cited evidence, and the mediation analysis plan is feasible. The novelty lies in linking thalamic structure with both MRI and EEG measures of hyperarousal. Potential areas for further exploration include the specific mechanisms of how thalamic volume changes affect beta power and insomnia severity.",
-    "supporting_evidence": [
-      "evidence_362515daef8d",
-      "evidence_cffb5cadb0ba"
-    ],
-    "created_at": "2026-07-14T10:25:05.083323+00:00"
-  },
-  {
-    "review_id": "review_f06ad7cd2282",
-    "hypothesis_id": "hypothesis_b1d5cdfee514",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "simulation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is plausible and integrates existing evidence on thalamic morphology and hyperarousal in insomnia. The experimental plan is well-structured for simulation.",
-    "critique": "The hypothesis effectively links thalamic morphology with hyperarousal and insomnia severity, supported by evidence from MRI and EEG. The mediation analysis is a strong testable component. However, the assumption that increased thalamus volume directly correlates with higher beta power and insomnia severity may require further validation with diverse insomnia subtypes.",
-    "supporting_evidence": [
-      "evidence_362515daef8d",
-      "evidence_cffb5cadb0ba"
-    ],
-    "created_at": "2026-07-14T10:25:20.091736+00:00"
-  },
-  {
-    "review_id": "review_3a85f73c66f7",
-    "hypothesis_id": "hypothesis_b1d5cdfee514",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "observation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured, integrating thalamic morphology with hyperarousal and insomnia severity, supported by existing evidence and multimodal analysis. Novelty is strong, with clear testability.",
-    "critique": "The hypothesis effectively links thalamic morphology as a mediator between hyperarousal and insomnia severity, leveraging MRI and EEG data. The assumptions are plausible, and the mediation analysis plan is robust. Novelty is high, though some evidence overlaps in citations. The falsification criteria are clear, enhancing credibility.",
-    "supporting_evidence": [
-      "evidence_362515daef8d",
-      "evidence_cffb5cadb0ba"
-    ],
-    "created_at": "2026-07-14T10:25:35.549430+00:00"
-  },
-  {
-    "review_id": "review_1e7e59cb2a3e",
-    "hypothesis_id": "hypothesis_a4ef10f2a827",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "initial",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates multiple mechanisms and variables with strong empirical support, showing good novelty and testability.",
-    "critique": "The hypothesis is well-structured and combines established mechanisms with new synergistic interactions. The experimental plan is feasible with existing DTI and tractography methods. The key assumptions are plausible given the evidence links between thalamic morphology, hyperarousal, and white matter integrity. Further studies could explore other modality interactions.",
-    "supporting_evidence": [
-      "E1-E6",
-      "E10-E12",
-      "E3",
-      "E9"
-    ],
-    "created_at": "2026-07-14T10:29:32.248784+00:00"
-  },
-  {
-    "review_id": "review_5df512e8045c",
-    "hypothesis_id": "hypothesis_a4ef10f2a827",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "full",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates multiple mechanisms and variables with strong empirical support, showing good novelty and testability.",
-    "critique": "The hypothesis effectively combines thalamocortical hyperarousal, thalamic morphology, and white matter integrity, with well-supported variables and mechanisms. The experimental plan is robust, though more detailed control for confounding variables could enhance testability. The citations provided (E1-E6, E10-E12, E3, E9) support the key mechanisms and variables.",
+    "summary": "The hypothesis integrates thalamocortical hyperarousal and thalamic morphology to explain their effects on white matter integrity and slow-wave generation in insomnia, showing strong plausibility and testability.",
+    "critique": "The hypothesis is well-structured and integrates existing mechanisms with new multimodal approaches. The use of mediation analysis and multimodal data (EEG-fMRI, MRI, DTI) is robust. Novelty is high, though some aspects of thalamocortical interactions are established. Supporting evidence includes E1-E4 and E10-E11, which link thalamocortical coupling, thalamic morphology, and white matter integrity.",
     "supporting_evidence": [
       "E1",
       "E2",
       "E3",
       "E4",
-      "E5",
-      "E6",
-      "E9",
       "E10",
-      "E11",
-      "E12"
+      "E11"
     ],
-    "created_at": "2026-07-14T10:29:48.599072+00:00"
+    "created_at": "2026-07-15T06:06:06.320055+00:00"
   },
   {
-    "review_id": "review_c4dfdcf3cd64",
-    "hypothesis_id": "hypothesis_a4ef10f2a827",
+    "review_id": "review_da7c247e3550",
+    "hypothesis_id": "hypothesis_93917166a1c1",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical hyperarousal and thalamic morphology to explain their effects on white matter integrity and slow-wave generation in insomnia, with a well-structured experimental plan and supported by existing evidence.",
+    "critique": "The hypothesis is well-structured and integrates existing findings from thalamocortical coupling and thalamic morphology. The use of multimodal neuroimaging (EEG-fMRI, MRI, DTI) and mediation analysis is robust. The key assumptions are plausible and supported by the evidence provided. However, the synergy between thalamocortical hyperarousal and thalamic morphology could be further explored with more detailed interaction terms in the mediation analysis.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E10",
+      "E11"
+    ],
+    "created_at": "2026-07-15T06:06:24.233888+00:00"
+  },
+  {
+    "review_id": "review_01324ee609d1",
+    "hypothesis_id": "hypothesis_93917166a1c1",
     "session_id": "sleep_hypothesis_session",
     "review_type": "deep_verification",
     "verdict": "pass",
-    "novelty_score": 9.0,
-    "correctness_score": 8.0,
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis integrates multiple mechanisms and variables with strong support from existing evidence, showing high novelty and testability.",
-    "critique": "The hypothesis is well-structured and combines several established mechanisms. However, the assumption that thalamic morphology modulates the relationship between hyperarousal and white matter integrity could be further supported by additional evidence. The experimental plan is robust but could include more detailed controls for confounding variables.",
+    "summary": "The hypothesis integrates thalamocortical hyperarousal and thalamic morphology with white matter integrity and slow-wave generation in insomnia, showing strong coherence with existing evidence and a clear experimental plan.",
+    "critique": "The hypothesis is well-structured and integrates existing findings effectively. The key assumptions are plausible and supported by prior evidence (e.g., thalamocortical coupling and thalamic volume). The mediation analysis plan is robust. However, the synergy between hyperarousal and morphology could be further clarified in terms of interaction mechanisms.",
     "supporting_evidence": [
-      "E1-E6",
-      "E10-E12",
+      "E1",
+      "E2",
       "E3",
-      "E9"
+      "E4",
+      "E10",
+      "E11"
     ],
-    "created_at": "2026-07-14T10:30:02.035586+00:00"
+    "created_at": "2026-07-15T06:06:39.851818+00:00"
   },
   {
-    "review_id": "review_b42622d2bba0",
-    "hypothesis_id": "hypothesis_a4ef10f2a827",
+    "review_id": "review_c220225f6579",
+    "hypothesis_id": "hypothesis_93917166a1c1",
     "session_id": "sleep_hypothesis_session",
     "review_type": "simulation",
     "verdict": "pass",
@@ -446,25 +448,21 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis integrates multiple mechanisms and variables with strong empirical support, showing good novelty and testability.",
-    "critique": "The hypothesis effectively combines thalamocortical hyperarousal, thalamic morphology, and white matter integrity, with well-supported variables and mechanisms. The experimental plan is feasible, though more detailed control for confounding variables could enhance robustness. The citations provided (E1-E6, E10-E12, E3, E9) support key mechanisms and variables.",
+    "summary": "The hypothesis integrates thalamocortical hyperarousal and thalamic morphology to explain their effects on white matter integrity and slow-wave generation in insomnia, with a clear experimental plan and mediation analysis. The integration of multimodal neuroimaging features and structural connectivity is novel and testable.",
+    "critique": "The hypothesis is well-structured and integrates multiple mechanisms with clear mediation pathways. The use of multimodal neuroimaging (EEG-fMRI, MRI, DTI) and mediation analysis enhances testability. However, the assumption that structural connectivity mediates both white matter integrity and slow-wave generation may require further empirical validation. The synergy between thalamocortical hyperarousal and thalamic morphology is plausible but could be influenced by confounding variables not explicitly mentioned.",
     "supporting_evidence": [
       "E1",
       "E2",
       "E3",
       "E4",
-      "E5",
-      "E6",
-      "E9",
       "E10",
-      "E11",
-      "E12"
+      "E11"
     ],
-    "created_at": "2026-07-14T10:30:18.263137+00:00"
+    "created_at": "2026-07-15T06:06:58.945497+00:00"
   },
   {
-    "review_id": "review_312d0773f29d",
-    "hypothesis_id": "hypothesis_a4ef10f2a827",
+    "review_id": "review_636305b3269b",
+    "hypothesis_id": "hypothesis_93917166a1c1",
     "session_id": "sleep_hypothesis_session",
     "review_type": "observation",
     "verdict": "pass",
@@ -472,14 +470,16 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis integrates multiple mechanisms and variables with strong support from existing evidence, showing good novelty and testability.",
-    "critique": "The hypothesis effectively combines thalamocortical hyperarousal, thalamic morphology, and white matter integrity, supported by existing findings. The experimental plan is well-structured, though more detailed controls for confounding variables could enhance robustness. The assumptions are plausible given the evidence, though further empirical validation is needed.",
+    "summary": "The hypothesis integrates thalamocortical hyperarousal and thalamic morphology to explain their effects on white matter integrity and slow-wave generation in insomnia, with a well-defined experimental plan and supported by existing evidence.",
+    "critique": "The hypothesis is well-structured and integrates existing findings from thalamocortical coupling and thalamic morphology. The use of multimodal neuroimaging (EEG-fMRI, MRI, DTI) and mediation analysis is robust. However, the synergy between thalamocortical hyperarousal and thalamic morphology could be further explored with more detailed interaction terms in the analysis. The citations (E1-E4, E10-E11) provide a solid foundation, though more recent studies could enhance novelty.",
     "supporting_evidence": [
-      "E1-E6",
-      "E10-E12",
+      "E1",
+      "E2",
       "E3",
-      "E9"
+      "E4",
+      "E10",
+      "E11"
     ],
-    "created_at": "2026-07-14T10:30:32.202938+00:00"
+    "created_at": "2026-07-15T06:07:17.916888+00:00"
   }
 ]

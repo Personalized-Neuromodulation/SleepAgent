@@ -1,0 +1,46 @@
+{
+  "judgment": "partially_valid",
+  "candidate_mappings": [
+    {
+      "variable": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "source_column": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "confidence": 1.0,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "timefreq_ALFF_0.01_0.08",
+      "source_column": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "confidence": 0.7,
+      "reason": "Possible match for ALFF variant, though fALFF is a normalized version."
+    },
+    {
+      "variable": "thalamus_DMN_FC",
+      "source_column": "thalamus_DMN_FC",
+      "confidence": 1.0,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "DMN_FC",
+      "source_column": "DMN_FC",
+      "confidence": 1.0,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "global_signal_psd_power",
+      "source_column": "global_signal_psd_power_mean",
+      "confidence": 0.8,
+      "reason": "Possible match for mean power, though variable might refer to total power."
+    }
+  ],
+  "missing_variables": [
+    "timefreq_ALFF_0.01_0.25",
+    "thalamus_salience_FC",
+    "salience_frontoparietal_FC",
+    "frontoparietal_FC"
+  ],
+  "recommendations": [
+    "Verify if 'timefreq_fALFF_0.01_0.08_over_0.01_0.25' is the intended variable for ALFF or fALFF, considering normalization.",
+    "Check if 'thalamus_salience_FC' and 'salience_frontoparietal_FC' are present in the source data, as they are listed as features but have missing values.",
+    "Ensure that 'frontoparietal_FC' is correctly mapped, as it is a feature but has missing values."
+  ]
+}

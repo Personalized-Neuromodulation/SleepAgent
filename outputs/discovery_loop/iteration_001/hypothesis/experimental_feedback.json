@@ -1,37 +1,30 @@
 [
   {
-    "hypothesis_id": "hypothesis_765b5eb64324",
-    "plan_id": "experiment_plan_af38986876c4",
+    "hypothesis_id": "hypothesis_93917166a1c1",
+    "plan_id": "experiment_plan_fcbd3ddb02df",
     "support": "partially_supported",
     "support_score": 0.5,
-    "computed_reward": 0.55,
+    "computed_reward": 0.6,
     "validated": false,
     "refuted": false,
-    "primary_tests_passed": 2,
-    "primary_tests_total": 4,
+    "primary_tests_passed": 1,
+    "primary_tests_total": 2,
     "metadata": {
       "review_status": "partially_supported",
-      "hypothesis_title": "Thalamocortical Coupling Modulates White Matter Integrity in Insomnia",
+      "hypothesis_title": "Thalamocortical Hyperarousal and Morphology Modulate White Matter Integrity and Slow-Wave Generation in Insomnia",
       "predictors": [
-        "thalamus_DMN_FC",
-        "DMN_FC"
+        "thalamus_DMN_FC"
       ],
       "outcomes": [
-        "global_signal_psd_power_mean",
-        "qc_signal_post_DVARS_mean"
+        "salience_FC",
+        "frontoparietal_FC"
       ],
       "critic_findings": [
         {
           "severity": "medium",
-          "category": "analysis_method",
-          "message": "The use of Spearman correlation may not be the most appropriate method for analyzing the relationship between thalamus-DMN FC and FA in thalamic radiation, given the potential for linear relationships.",
-          "recommendation": "Consider using linear regression as a primary analysis method to better capture the relationship between thalamus-DMN FC and FA, while controlling for covariates."
-        },
-        {
-          "severity": "high",
-          "category": "data_completeness",
-          "message": "Missing DTI and EEG data may have limited the scope of the analysis and the ability to fully explore the relationship between thalamus-DMN FC and FA.",
-          "recommendation": "Acquire DTI and EEG data to enhance the analysis and provide more comprehensive insights."
+          "category": "statistical_analysis",
+          "message": "The primary test for thalamus_DMN_FC and salience_FC did not reach statistical significance (p=0.246), while the test for thalamus_DMN_FC and frontoparietal_FC was significant (p=0.010). This mixed result suggests partial support for the hypothesis.",
+          "recommendation": "Consider using linear regression with additional covariates to improve model accuracy and address potential confounding factors."
         }
       ]
     }
