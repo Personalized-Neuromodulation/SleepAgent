@@ -1,0 +1,53 @@
+{
+  "warnings": [
+    "final literature count below 100",
+    "evidence count below 50",
+    "preferred mechanism coverage gaps detected",
+    "possible positive evidence bias"
+  ],
+  "errors": [],
+  "recommended_next_steps": [
+    "Review query coverage or API availability before using this corpus for benchmark work.",
+    "Inspect extraction rules and online literature coverage.",
+    "Add targeted online queries for mechanisms listed in check_mechanism_coverage.gaps.",
+    "Review query set and extraction rules for null/refuting findings."
+  ],
+  "checks": {
+    "check_min_literature_count": {
+      "passed": false,
+      "count": 1,
+      "warning": "final literature count below 100"
+    },
+    "check_evidence_count": {
+      "passed": false,
+      "count": 4,
+      "warning": "evidence count below 50"
+    },
+    "check_mechanism_coverage": {
+      "passed": false,
+      "gaps": [
+        "spindle generation",
+        "hyperarousal",
+        "white matter integrity",
+        "salience network dysregulation",
+        "limbic structural vulnerability"
+      ]
+    },
+    "check_variable_mapping": {
+      "passed": true,
+      "mapped_concepts": 0,
+      "unavailable_concepts": [
+        "default mode network dysregulation"
+      ]
+    },
+    "check_no_hallucinated_variables": {
+      "passed": true,
+      "hallucinated_variables": []
+    },
+    "check_refute_and_null_present": {
+      "passed": false,
+      "warning": "possible positive evidence bias"
+    }
+  },
+  "passed": false
+}

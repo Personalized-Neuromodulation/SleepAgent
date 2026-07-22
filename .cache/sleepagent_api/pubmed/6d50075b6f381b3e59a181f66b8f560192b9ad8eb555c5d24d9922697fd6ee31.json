@@ -1,0 +1,78 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2886",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42451333",
+      "42447420",
+      "42446317",
+      "42427597",
+      "42418402",
+      "42400703",
+      "42356693",
+      "42331979",
+      "42297091",
+      "42286890",
+      "42284966",
+      "42268279",
+      "42252510",
+      "42251969",
+      "42234173",
+      "42233470",
+      "42217608",
+      "42201248",
+      "42185574",
+      "42156449",
+      "42156372",
+      "42143955",
+      "42113604",
+      "42102044",
+      "42101348",
+      "42093825",
+      "42090911",
+      "42052562",
+      "42034628",
+      "42031868",
+      "42024668",
+      "42014204",
+      "42007581",
+      "41987131",
+      "41977406",
+      "41962180",
+      "41956430",
+      "41935776",
+      "41932239",
+      "41922918",
+      "41894917",
+      "41894824",
+      "41881295",
+      "41871799",
+      "41856238",
+      "41829979",
+      "41819221",
+      "41819097",
+      "41803210",
+      "41786927"
+    ],
+    "translationset": [
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "physiology",
+        "to": "\"physiologies\"[All Fields] OR \"physiology\"[Subheading] OR \"physiology\"[All Fields] OR \"physiology\"[MeSH Terms]"
+      },
+      {
+        "from": "REM",
+        "to": "\"Rangel Ecol Manag\"[Journal:__jid101737744] OR \"rem\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"physiologies\"[All Fields] OR \"physiology\"[MeSH Subheading] OR \"physiology\"[All Fields] OR \"physiology\"[MeSH Terms]) AND \"NREM\"[All Fields] AND (\"rangel ecol manag\"[Journal] OR \"rem\"[All Fields])"
+  }
+}

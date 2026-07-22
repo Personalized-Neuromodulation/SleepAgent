@@ -1,0 +1,28 @@
+llm:
+  enabled: false
+  provider: openai
+  model: gpt-4.1-mini
+  api_key_env: OPENAI_API_KEY
+  temperature: 0.0
+  max_tokens: 1500
+  timeout_seconds: 30
+  max_retries: 2
+  fail_open: true
+  cache_enabled: true
+  cache_dir: .cache/sleepagent_llm
+  log_file: outputs/grounding/llm_extraction_log.jsonl
+
+evidence_extraction:
+  llm_assist_enabled: false
+  only_for_ambiguous: true
+  confidence_low: 0.35
+  confidence_high: 0.70
+  max_sentences_per_paper: 8
+  max_llm_calls_per_build: 200
+  require_json_output: true
+  require_source_text_match: true
+  allow_claim_split: true
+  allow_field_completion: true
+  allow_direction_revision: true
+  allow_new_evidence_from_same_source_text: true
+  disallow_new_evidence_without_rule_trigger: true

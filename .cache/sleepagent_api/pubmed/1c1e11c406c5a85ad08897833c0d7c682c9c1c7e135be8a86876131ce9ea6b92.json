@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6",
+    "retmax": "6",
+    "retstart": "0",
+    "idlist": [
+      "34101939",
+      "33776886",
+      "27761491",
+      "26505301",
+      "24140936",
+      "19349230"
+    ],
+    "translationset": [
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "artifact",
+        "to": "\"artifacted\"[All Fields] OR \"artifacts\"[MeSH Terms] OR \"artifacts\"[All Fields] OR \"artifact\"[All Fields]"
+      },
+      {
+        "from": "correction",
+        "to": "\"correct\"[All Fields] OR \"correctability\"[All Fields] OR \"correctable\"[All Fields] OR \"corrected\"[All Fields] OR \"correctible\"[All Fields] OR \"correcting\"[All Fields] OR \"correction\"[All Fields] OR \"corrections\"[All Fields] OR \"corrective\"[All Fields] OR \"correctives\"[All Fields] OR \"correctness\"[All Fields] OR \"corrects\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"artifacted\"[All Fields] OR \"artifacts\"[MeSH Terms] OR \"artifacts\"[All Fields] OR \"artifact\"[All Fields]) AND (\"correct\"[All Fields] OR \"correctability\"[All Fields] OR \"correctable\"[All Fields] OR \"corrected\"[All Fields] OR \"correctible\"[All Fields] OR \"correcting\"[All Fields] OR \"correction\"[All Fields] OR \"corrections\"[All Fields] OR \"corrective\"[All Fields] OR \"correctives\"[All Fields] OR \"correctness\"[All Fields] OR \"corrects\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])"
+  }
+}

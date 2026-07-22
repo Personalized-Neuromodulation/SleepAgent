@@ -1,0 +1,86 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "515",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42365403",
+      "42252510",
+      "42189682",
+      "42185574",
+      "42155843",
+      "42041820",
+      "41977406",
+      "41922415",
+      "41905254",
+      "41881164",
+      "41865457",
+      "41856238",
+      "41765432",
+      "41763189",
+      "41650802",
+      "41611532",
+      "41577998",
+      "41574685",
+      "41531204",
+      "41483455",
+      "41325105",
+      "41289240",
+      "41276885",
+      "41133663",
+      "41131557",
+      "40976962",
+      "40771934",
+      "40722246",
+      "40684866",
+      "40638578",
+      "40583776",
+      "40553719",
+      "40539934",
+      "40332419",
+      "40153464",
+      "39896659",
+      "39864931",
+      "39830563",
+      "39804468",
+      "39755290",
+      "39720895",
+      "39522843",
+      "39518904",
+      "39380353",
+      "39369838",
+      "32809548",
+      "39151658",
+      "39111792",
+      "38767238",
+      "38604438"
+    ],
+    "translationset": [
+      {
+        "from": "animal",
+        "to": "\"animals\"[MeSH Terms:noexp] OR animal[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "mechanism",
+        "to": "\"mechanism\"[All Fields] OR \"mechanisms\"[All Fields]"
+      },
+      {
+        "from": "human",
+        "to": "\"human's\"[All Fields] OR \"humans\"[MeSH Terms] OR \"humans\"[All Fields] OR \"human\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"animals\"[MeSH Terms:noexp] OR \"animal\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"mechanism\"[All Fields] OR \"mechanisms\"[All Fields]) AND (\"human s\"[All Fields] OR \"humans\"[MeSH Terms] OR \"humans\"[All Fields] OR \"human\"[All Fields]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields])"
+  }
+}

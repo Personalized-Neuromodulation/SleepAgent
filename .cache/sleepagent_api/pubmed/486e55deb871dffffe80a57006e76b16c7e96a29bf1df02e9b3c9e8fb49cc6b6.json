@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "18",
+    "retmax": "18",
+    "retstart": "0",
+    "idlist": [
+      "42391109",
+      "42309189",
+      "42165944",
+      "41376842",
+      "39864924",
+      "38551867",
+      "40656057",
+      "38449475",
+      "37086045",
+      "36786121",
+      "35618150",
+      "35550156",
+      "35342199",
+      "34052813",
+      "30644312",
+      "27860547",
+      "25295652",
+      "17466285"
+    ],
+    "translationset": [
+      {
+        "from": "orexin",
+        "to": "\"orexin's\"[All Fields] OR \"orexins\"[Supplementary Concept] OR \"orexins\"[All Fields] OR \"orexin\"[All Fields] OR \"hcrt protein, human\"[Supplementary Concept] OR \"hcrt protein, human\"[All Fields] OR \"orexins\"[MeSH Terms]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"orexin s\"[All Fields] OR \"orexins\"[Supplementary Concept] OR \"orexins\"[All Fields] OR \"orexin\"[All Fields] OR \"hcrt protein human\"[Supplementary Concept] OR \"hcrt protein human\"[All Fields] OR \"orexins\"[MeSH Terms]) AND \"hyperarousal\"[All Fields] AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields])"
+  }
+}

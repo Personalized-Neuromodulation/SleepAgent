@@ -33,6 +33,8 @@ def build_observed_profile(config: dict[str, Any]) -> DataProfile:
     registry_path = existing_or_fixture(config, "feature_registry", "fixture_feature_registry")
     approved_path = existing_or_fixture(config, "approved_variables", "fixture_approved_variables")
     master_path = existing_or_fixture(config, "multimodal_master_table", "fixture_multimodal_master_table")
+    if not registry_path.exists():
+        return DataProfile(profile_type="observed_profile", features=[])
     registry = read_csv(registry_path)
     master_rows = read_csv(master_path) if master_path.exists() else []
     approved = _approved_set(approved_path)
@@ -98,7 +100,7 @@ def build_analysis_ready_profile(config: dict[str, Any], observed: DataProfile) 
 
 
 def write_profiles(config: dict[str, Any], theoretical: DataProfile, observed: DataProfile, analysis_ready: DataProfile) -> None:
-    """Persist the three Phase 1 profiles for Phase 2 consumption."""
+    """Persist the three grounding profiles for scientific-loop consumption."""
     out_dir = config_path(config, "output_profiles_dir")
     write_yaml(out_dir / "theoretical_profile.yaml", theoretical.model_dump(mode="json"))
     write_yaml(out_dir / "observed_profile.yaml", observed.model_dump(mode="json"))

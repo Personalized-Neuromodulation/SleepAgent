@@ -1,0 +1,46 @@
+{
+  "corpus_version": "sleepagent_grounding_corpus_v1",
+  "created_at": "2026-07-22T05:18:34.744926+00:00",
+  "query_set_version": "",
+  "api_enabled": true,
+  "providers": [
+    "pubmed",
+    "europe_pmc",
+    "openalex",
+    "semantic_scholar"
+  ],
+  "api_literature_csv": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/api_retrieved_papers.csv",
+  "final_literature_registry": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/grounding_literature_registry.csv",
+  "evidence_table": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_table.csv",
+  "mechanism_graph": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/mechanism_graph.json",
+  "evidence_to_variable_map": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_to_variable_map.yaml",
+  "analysis_ready_profile": "/home/zyb/Agent_skills/SleepAgent/outputs/profiles/analysis_ready_profile.yaml",
+  "grounding_qc_report": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/grounding_qc_report.json",
+  "api_search_log": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/api_search_log.jsonl",
+  "query_results": [
+    {
+      "provider": "mock_provider",
+      "query": "insomnia slow wave EEG",
+      "result_count": 1
+    }
+  ],
+  "api_summary": {
+    "enabled": true,
+    "provider_counts": {
+      "mock_provider": 1
+    },
+    "query_results": [
+      {
+        "provider": "mock_provider",
+        "query": "insomnia slow wave EEG",
+        "result_count": 1
+      }
+    ],
+    "query_count": 1,
+    "raw_count": 1,
+    "deduplicated_count": 1,
+    "warnings": [],
+    "final_literature_count": 1
+  },
+  "notes": "Phase 1 Grounding Corpus v1"
+}

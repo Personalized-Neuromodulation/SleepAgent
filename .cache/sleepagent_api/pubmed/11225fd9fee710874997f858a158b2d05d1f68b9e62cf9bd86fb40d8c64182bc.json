@@ -1,0 +1,31 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "7",
+    "retmax": "7",
+    "retstart": "0",
+    "idlist": [
+      "40384680",
+      "40074534",
+      "38181582",
+      "37138521",
+      "34427878",
+      "31327125",
+      "25050429"
+    ],
+    "translationset": [
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "anisotropy",
+        "to": "\"anisotropy\"[MeSH Terms] OR \"anisotropy\"[All Fields] OR \"anisotropies\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND \"DTI\"[All Fields] AND \"fractional\"[All Fields] AND (\"anisotropy\"[MeSH Terms] OR \"anisotropy\"[All Fields] OR \"anisotropies\"[All Fields])"
+  }
+}

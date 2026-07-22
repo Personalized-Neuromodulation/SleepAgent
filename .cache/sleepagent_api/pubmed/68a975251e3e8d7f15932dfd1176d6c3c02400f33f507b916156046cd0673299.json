@@ -1,0 +1,48 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "40",
+    "retmax": "20",
+    "retstart": "0",
+    "idlist": [
+      "41951845",
+      "41912789",
+      "41472688",
+      "40568102",
+      "39907630",
+      "38844342",
+      "38113618",
+      "37745863",
+      "37234683",
+      "36336346",
+      "35862450",
+      "33940148",
+      "31883456",
+      "31555827",
+      "30446718",
+      "29101338",
+      "28053819",
+      "26697846",
+      "25067818",
+      "25012367"
+    ],
+    "translationset": [
+      {
+        "from": "sleep slow wave",
+        "to": "\"sleep, slow-wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow-wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"sleep\"[All Fields] AND \"slow\"[All Fields] AND \"wave\"[All Fields]) OR \"sleep slow wave\"[All Fields]"
+      },
+      {
+        "from": "thalamus",
+        "to": "\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep, slow wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"sleep\"[All Fields] AND \"slow\"[All Fields] AND \"wave\"[All Fields]) OR \"sleep slow wave\"[All Fields]) AND (\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])"
+  }
+}

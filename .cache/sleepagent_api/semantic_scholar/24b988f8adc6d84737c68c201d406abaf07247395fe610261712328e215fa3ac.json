@@ -1,0 +1,976 @@
+{
+  "total": 30,
+  "offset": 0,
+  "next": 20,
+  "data": [
+    {
+      "paperId": "a3e58b712de67887203fa657b898cfa924109647",
+      "externalIds": {
+        "MAG": "2791125790",
+        "DOI": "10.1093/sleep/zsy056",
+        "CorpusId": 4402926,
+        "PubMed": "29590443"
+      },
+      "url": "https://www.semanticscholar.org/paper/a3e58b712de67887203fa657b898cfa924109647",
+      "title": "The neurophysiological basis of the discrepancy between objective and subjective sleep during the sleep onset period: an EEG-fMRI study",
+      "venue": "Sleep",
+      "year": 2018,
+      "citationCount": 61,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/41/6/zsy056/25027170/zsy056.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsy056?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsy056, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "123413641",
+          "name": "F. Hsiao"
+        },
+        {
+          "authorId": "2057250642",
+          "name": "Pei-Jung Tsai"
+        },
+        {
+          "authorId": "2952545",
+          "name": "Changwei W. Wu"
+        },
+        {
+          "authorId": "2454384",
+          "name": "Chien-Ming Yang"
+        },
+        {
+          "authorId": "40210025",
+          "name": "T. Lane"
+        },
+        {
+          "authorId": "2857044",
+          "name": "Hsin-Chien Lee"
+        },
+        {
+          "authorId": "2119323445",
+          "name": "Lingling Chen"
+        },
+        {
+          "authorId": "5245954",
+          "name": "We-Kang Lee"
+        },
+        {
+          "authorId": "2264173945",
+          "name": "Lu Lu"
+        },
+        {
+          "authorId": "48608231",
+          "name": "Yu-Zu Wu"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "7bce8704b3cbfaf2c898b458d2024f6daf067085",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0434",
+        "CorpusId": 278760268
+      },
+      "url": "https://www.semanticscholar.org/paper/7bce8704b3cbfaf2c898b458d2024f6daf067085",
+      "title": "0434 Comparison of Machine Learning Models for fMRI-Based Sleep Staging",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0434?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0434, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297692234",
+          "name": "Gawon Cho"
+        },
+        {
+          "authorId": "2259985414",
+          "name": "Dong Woo Hahm"
+        },
+        {
+          "authorId": "47013243",
+          "name": "A. Mecca"
+        },
+        {
+          "authorId": "36125494",
+          "name": "B. Miner"
+        }
+      ],
+      "abstract": "\n \n \n Changes in arousal result in fMRI signal fluctuations. Identifying sleep stage inside the MRI scanner can facilitate the study of sleep-associated changes in blood oxygen-level dependent signals. As simultaneous electroencephalography [EEG] is often not feasible, developing machine-learning-based algorithms for fMRI-based sleep scoring is needed.\n \n \n \n Participants included 11 university students, who provided multiple 15-minute-long simultaneous EEG-fMRI scans (TR=2.1 seconds). This study used the first two scans from each participant. During fMRI sessions, participants completed visual-motor tasks and were asked to sleep. Sleep stage was scored based on the AASM criteria using simultaneous EEG. Preprocessed fMRI timeseries data was extracted from each region of the Automated Anatomic Labeling [AAL] atlas. We used Fisher’s z-transformed correlations between all possible pairs of 166 AAL regions (13,695 in total) as features in training five different machine learning models to predict EEG-based sleep stage for each epoch: regularized multinomial logit classification (RMLC), random forest, linear support vector model (lSVM), radial SVM (rSVM), and extreme gradient boosting (XGBoost). The first 15 minutes of fMRI data was used for model training, and model performance was tested on the latter 15 minutes.\n \n \n \n Proportions of N1, N2, and Wake were: 35, 13, and 52%. lSVM had the highest receiver operating characteristics-area under the curve [ROC-AUC] for correctly predicted sleep stages in the validation dataset (68.6%). In general, lSVM had high sensitivity to wakefulness and high specificity to N1 and N2 sleep (sensitivity, N1=0.40, N2=0.56, Wake=0.88; specificity, N1=0.84, N2=0.95, Wake=0.62). On the other hand, XGB had the lowest validation ROC-AUC (60.2%). XGB also showed high sensitivity to wakefulness and high specificity to N1 and N2 sleep (sensitivity, N1=0.22, N2=0, Wake=0.88; specificity, N1=0.90, N2=0.99, Wake=0.18).\n \n \n \n Despite a modest sample size, we found that lSVM showed acceptable performance in sleep stage prediction. While more work in larger samples is needed, our findings suggest that machine learning models may be used to develop algorithms for fMRI-based sleep staging and guide examination of sleep-dependent processes using MRI, potentially without simultaneous EEG.\n \n \n \n Gawon Cho was supported by the Alzheimer’s Association’s Research Fellowship to improve Diversity (AARF-24-1306796).\n"
+    },
+    {
+      "paperId": "7d74928c47d00a98c3d9ece3d5afb75c5d30d9ce",
+      "externalIds": {
+        "PubMedCentral": "12459787",
+        "DBLP": "journals/ploscb/JacobBWSL25",
+        "DOI": "10.1371/journal.pcbi.1013497",
+        "CorpusId": 282012417,
+        "PubMed": "38352426"
+      },
+      "url": "https://www.semanticscholar.org/paper/7d74928c47d00a98c3d9ece3d5afb75c5d30d9ce",
+      "title": "Brainwide hemodynamics predict EEG neural rhythms across sleep and wakefulness in humans",
+      "venue": "bioRxiv",
+      "year": 2024,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12459787, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2282143610",
+          "name": "Leandro P. L. Jacob"
+        },
+        {
+          "authorId": "2118719392",
+          "name": "Sydney M. Bailes"
+        },
+        {
+          "authorId": "2347197916",
+          "name": "Stephanie D. Williams"
+        },
+        {
+          "authorId": "23980213",
+          "name": "C. Stringer"
+        },
+        {
+          "authorId": "2282144115",
+          "name": "Laura D. Lewis"
+        }
+      ],
+      "abstract": "The brain exhibits rich oscillatory dynamics that play critical roles in vigilance and cognition, such as the neural rhythms that define sleep. These rhythms continuously fluctuate, signaling major changes in vigilance, but the widespread brain dynamics underlying these oscillations are difficult to investigate. Using simultaneous EEG and fast fMRI in humans who fell asleep inside the scanner, we developed a machine learning approach to investigate which fMRI regions and networks predict fluctuations in neural rhythms. We demonstrated that the rise and fall of alpha (8-12 Hz) and delta (1-4 Hz) power— two canonical EEG bands critically involved with cognition and vigilance—can be predicted from fMRI data in subjects that were not present in the training set. This approach also identified predictive information in individual brain regions across the cortex and subcortex. Finally, we developed an approach to identify shared and unique predictive information, and found that information about alpha rhythms was highly separable in two networks linked to arousal and visual systems. Conversely, delta rhythms were diffusely represented on a large spatial scale primarily across the cortex. These results demonstrate that EEG rhythms can be predicted from fMRI data, identify large-scale network patterns that underlie alpha and delta rhythms, and establish a novel framework for investigating multimodal brain dynamics. Author summary Neurons often fire in synchrony, generating rhythms that play major roles in brain functioning. These rhythms are hallmarks of different brain states of vigilance, such as sleep and wakefulness. Sleep disorders are extremely prevalent among adults, and studying neural rhythms associated with vigilance states is a key step towards understanding sleep disorders and how healthy sleep can be restored. Measuring how neural rhythms affect the brain, however, is difficult: the primary method used in humans, electroencephalography (EEG), can only measure neural activity close to the scalp. EEG can be combined with functional magnetic resonance imaging (fMRI), which is capable of measuring activity in deep brain regions, but fMRI data can be difficult to analyze, as it estimates neural activity indirectly by measuring changes in blood oxygenation. We developed an approach to analyze combined EEG-fMRI data using machine learning, and used it to investigate how fluctuations in neural rhythms across sleep and wakefulness are tied to changes in neural activity throughout the whole brain. Our results describe how different brain networks are coupled to alpha and delta rhythms, and provide a new approach for analyzing EEG-fMRI data that can be employed to investigate other neural rhythms necessary for healthy brain functioning."
+    },
+    {
+      "paperId": "bb69938b3fc2a3e7ee8421be6d1930d7deb64b26",
+      "externalIds": {
+        "MAG": "2890257417",
+        "CorpusId": 54700252
+      },
+      "url": "https://www.semanticscholar.org/paper/bb69938b3fc2a3e7ee8421be6d1930d7deb64b26",
+      "title": "Electroencephalogram spindle detection from simultaneous Electroencephalogram (EEG) / functional Magnetic Resonance Imaging (fMRI) data for a sleep deprivation study",
+      "venue": "",
+      "year": 2018,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://spectrum.library.concordia.ca/983635/1/Jegou_MSc_S2018.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "74393015",
+          "name": "A. Jegou"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "bc0cc5dc746fb2ad38f3998546bdcceddf1a7226",
+      "externalIds": {
+        "MAG": "3032118901",
+        "DOI": "10.1093/sleep/zsaa056.142",
+        "CorpusId": 219744456
+      },
+      "url": "https://www.semanticscholar.org/paper/bc0cc5dc746fb2ad38f3998546bdcceddf1a7226",
+      "title": "0144 Relationship Between Sleep EEG K-Complex Slow Wave Coupling and Next-Day Thalamic Activity During Psychomotor Vigilance Test in Obstructive Sleep Apnea",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/43/Supplement_1/A57/33309359/zsaa056.142.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaa056.142?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaa056.142, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3097554",
+          "name": "A. Parekh"
+        },
+        {
+          "authorId": "49283546",
+          "name": "K. Kam"
+        },
+        {
+          "authorId": "20421985",
+          "name": "A. Mullins"
+        },
+        {
+          "authorId": "31952570",
+          "name": "A. Fakhoury"
+        },
+        {
+          "authorId": "115022441",
+          "name": "B. Castillo"
+        },
+        {
+          "authorId": "2116922",
+          "name": "Z. Roberts"
+        },
+        {
+          "authorId": "1792947",
+          "name": "T. Hedden"
+        },
+        {
+          "authorId": "144565107",
+          "name": "A. Varga"
+        },
+        {
+          "authorId": "4571124",
+          "name": "D. Rapoport"
+        },
+        {
+          "authorId": "46469015",
+          "name": "I. Ayappa"
+        }
+      ],
+      "abstract": "\n \n \n There is large inter-individual variability in the relationship between obstructive sleep apnea (OSA) severity and lapses in vigilance as measured using psychomotor vigilance test (PVT). We have previously shown that overnight sleep EEG K-complex slow wave coupling (∆SWAK) exhibits a dose-responsive relationship with next-day lapses in vigilance in OSA on and off treatment. We hypothesized that a variable thalamic dysfunction in OSA explains difference in lapses in vigilance and alterations in ∆SWAK across individuals.\n \n \n \n Five newly diagnosed severe OSA subjects (mean apnea-hypopnea index [AHI4%=57.1±22.8/hr.]) with excessive daytime sleepiness (Epworth Sleepiness Scale=11±3.4) underwent nocturnal polysomnography followed by PVT testing within a 3T SKYRA MRI scanner. The PVT task inside the scanner (PVT-fMRI) was adapted to match the gold standard PVT-192 device. Each fMRI scanning session consisted of 2 10-min PVT runs interleaved with 2 control conditions wherein the subject pressed the response button at random intervals absent of a visual stimulus. fMRI data was analyzed in 2-step procedure (individual time-series followed by group analysis) using Analysis of Functional Neuroimages (AFNI) software package. To estimate thalamic activity during PVT-fMRI, parameter estimates of the %change in blood-oxygen-level-dependent (BOLD) signal using the contrast PVT-Control were used as the primary metric. The region of interest was limited to the bilateral thalamus using the Eickhoff-Zilles macro labels from the MNI N27 template.\n \n \n \n In a preliminary test, PVT performance for the subjects inside the scanner was not significantly different from that outside the scanner (PVTLapsesfMRI=7.3±2.1 vs. PVTLapsesPVT192=6.4±3.6 mean±std; PVTLapses=reaction time > 500 ms.). Within subjects, a trend toward lower thalamic recruitment was observed during PVT-fMRI (-0.17±0.2%; p=0.1). Further, lower thalamic activity during PVT-fMRI also showed a trend to lower overnight ∆SWAK (mean -1.2±1.4) values (r = 0.61, p = 0.17).\n \n \n \n In severe OSA subjects with excessive daytime sleepiness, we observed a trend to reduced thalamic activity during daytime PVT. Overnight EEG K-complex slow wave coupling showed a similar trend with next-day thalamic activity during PVT, however the small sample size may have limited our ability to detect this association with statistical significance.\n \n \n \n AASM Foundation 199-FP-18; NIH K24HL109156\n"
+    },
+    {
+      "paperId": "c605d04c3031205f9aaa7241f1d6a54714dd83fd",
+      "externalIds": {
+        "CorpusId": 288742497
+      },
+      "url": "https://www.semanticscholar.org/paper/c605d04c3031205f9aaa7241f1d6a54714dd83fd",
+      "title": "Rejection of pulse related artefact (PRA) from continuous electroencephalographic 2 (EEG) time series recorded during functional magnetic resonance imaging (fMRI)",
+      "venue": "",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://orbi.uliege.be/bitstream/2268/104707/1/leclercq_neuroimage_2008.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "116237815",
+          "name": "Y. Leclercq"
+        },
+        {
+          "authorId": "2450043",
+          "name": "E. Balteau"
+        },
+        {
+          "authorId": "1400823731",
+          "name": "T. Dang-Vu"
+        },
+        {
+          "authorId": "2284115777",
+          "name": "M. Schabus"
+        },
+        {
+          "authorId": "2380336",
+          "name": "A. Luxen"
+        },
+        {
+          "authorId": "2361948181",
+          "name": "P. Maquet"
+        },
+        {
+          "authorId": "2238138043",
+          "name": "C. Phillips"
+        },
+        {
+          "authorId": null,
+          "name": "the to project the EEG artefact sources are no signal  U NC O RR E C T E P R . Each s i is supposed to to"
+        },
+        {
+          "authorId": "2439164650",
+          "name": "Fondation Médicale"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "756484537ff38229d104467af6b19bccba7ffc48",
+      "externalIds": {
+        "MAG": "1996187129",
+        "DBLP": "journals/neuroimage/TagliazucchiWMBJL12",
+        "DOI": "10.1016/j.neuroimage.2012.06.036",
+        "CorpusId": 29882219,
+        "PubMed": "22743197"
+      },
+      "url": "https://www.semanticscholar.org/paper/756484537ff38229d104467af6b19bccba7ffc48",
+      "title": "Automatic sleep staging using fMRI functional connectivity data",
+      "venue": "NeuroImage",
+      "year": 2012,
+      "citationCount": 156,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2012.06.036?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2012.06.036, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2256632455",
+          "name": "E. Tagliazucchi"
+        },
+        {
+          "authorId": "8064272",
+          "name": "F. Wegner"
+        },
+        {
+          "authorId": "2418035",
+          "name": "Astrid Morzelewski"
+        },
+        {
+          "authorId": "2070005474",
+          "name": "S. Borisov"
+        },
+        {
+          "authorId": "46384689",
+          "name": "K. Jahnke"
+        },
+        {
+          "authorId": "2947530",
+          "name": "H. Laufs"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "739a4455347c8c685872bf6c46dffe1f6c867ad6",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/LeclercqBDSLMP09",
+        "MAG": "2153755339",
+        "DOI": "10.1016/j.neuroimage.2008.10.017",
+        "CorpusId": 35619614,
+        "PubMed": "19015033"
+      },
+      "url": "https://www.semanticscholar.org/paper/739a4455347c8c685872bf6c46dffe1f6c867ad6",
+      "title": "Rejection of pulse related artefact (PRA) from continuous electroencephalographic (EEG) time series recorded during functional magnetic resonance imaging (fMRI) using constraint independent component analysis (cICA)",
+      "venue": "NeuroImage",
+      "year": 2009,
+      "citationCount": 39,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2008.10.017?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2008.10.017, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "116237815",
+          "name": "Y. Leclercq"
+        },
+        {
+          "authorId": "2450043",
+          "name": "E. Balteau"
+        },
+        {
+          "authorId": "1400823731",
+          "name": "T. Dang-Vu"
+        },
+        {
+          "authorId": "2726954",
+          "name": "Manuel Schabus"
+        },
+        {
+          "authorId": "2380336",
+          "name": "A. Luxen"
+        },
+        {
+          "authorId": "30707559",
+          "name": "P. Maquet"
+        },
+        {
+          "authorId": "143652704",
+          "name": "C. Phillips"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "030d78c7ad170b894fad179310c3bbb03112e6f2",
+      "externalIds": {
+        "MAG": "3029871344",
+        "DOI": "10.1093/sleep/zsaa056.145",
+        "CorpusId": 219745167
+      },
+      "url": "https://www.semanticscholar.org/paper/030d78c7ad170b894fad179310c3bbb03112e6f2",
+      "title": "0147 Dynamic Alterations in Functional Connectivity Between Sleep- and Wake-Promoting Regions of the Human Brain at the Sleep Onset Period",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/43/Supplement_1/A58/33309634/zsaa056.145.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaa056.145?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaa056.145, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144521235",
+          "name": "T. Ishii"
+        },
+        {
+          "authorId": "2816538",
+          "name": "T. Koike"
+        },
+        {
+          "authorId": "38381724",
+          "name": "E. Nakagawa"
+        },
+        {
+          "authorId": "38719428",
+          "name": "M. Sumiya"
+        },
+        {
+          "authorId": "51889737",
+          "name": "N. Sadato"
+        }
+      ],
+      "abstract": "\n \n \n The sleep onset period, involving so-called stage N1 sleep largely, is characterized by a reduction in the amount of alpha activity compared to wakefulness. Various kinds of physiological and psychological changes are also apparent, such as slow eye movements, changes in muscle tonus, and the hypnagogic dream-like mentation. These phenomena are thought to be the reflection of dynamic alterations in the brain during the transition period, however, details of these changes have still been uncovered.\n \n \n \n We aimed to investigate a dynamic shift in the brain connectivity at sleep onset using the method of EEG-fMRI simultaneous recording. Twenty-three healthy subjects participated. EEG/fMRI were recorded simultaneously during an hour’s nap in a 3T-MRI scanner and real-time monitoring of EEG was performed. To record the transition period between multiple times, an experimenter inside a scanner room touched a subject’s foot for inducing arousal when a shift to NREM sleep stage 1 was observed. EEG data were scored according to the AASM criteria. Based on sleep stages defined by polysomnographic findings, we investigated alterations in functional connectivity of sleep- and wake- promoting regions within the hypothalamus and other areas including the thalamus.\n \n \n \n Posterior alpha power showed significant positive correlation with BOLD signals in the anterior and medial dorsal thalamus. Connectivity between the thalamus and cortical regions reduced sharply in the descent to sleep stage. Meanwhile, BOLD signals of the sleep- and wake- promoting regions within the hypothalamus fluctuated with certain temporal lags from fluctuations of alpha rhythm at sleep onset.\n \n \n \n Present findings provide preliminary evidence of dynamics of wake- and sleep- promoting regions in the human brain in vivo. Our data also support the hypothesis that reduced thalamocortical connectivity which limits the capacity to integrate information is associated with the transition of consciousness at sleep onset.\n \n \n \n None\n"
+    },
+    {
+      "paperId": "195618ab00916e848cacf7dfabf33e9c79d0bc02",
+      "externalIds": {
+        "PubMedCentral": "3319907",
+        "MAG": "2160512736",
+        "DOI": "10.3389/fneur.2012.00040",
+        "CorpusId": 804267,
+        "PubMed": "22493589"
+      },
+      "url": "https://www.semanticscholar.org/paper/195618ab00916e848cacf7dfabf33e9c79d0bc02",
+      "title": "The Fate of Incoming Stimuli during NREM Sleep is Determined by Spindles and the Phase of the Slow Oscillation",
+      "venue": "Front. Neur.",
+      "year": 2011,
+      "citationCount": 153,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fneur.2012.00040/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3319907, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2726954",
+          "name": "Manuel Schabus"
+        },
+        {
+          "authorId": "1400823726",
+          "name": "T. Dang-Vu"
+        },
+        {
+          "authorId": "3064084",
+          "name": "D. Heib"
+        },
+        {
+          "authorId": "2186036",
+          "name": "M. Boly"
+        },
+        {
+          "authorId": "145288787",
+          "name": "M. Desseilles"
+        },
+        {
+          "authorId": "3249357",
+          "name": "G. Vandewalle"
+        },
+        {
+          "authorId": "34584158",
+          "name": "C. Schmidt"
+        },
+        {
+          "authorId": "2276128018",
+          "name": "G. Albouy"
+        },
+        {
+          "authorId": "2779262",
+          "name": "A. Darsaud"
+        },
+        {
+          "authorId": "3279682",
+          "name": "S. Gais"
+        },
+        {
+          "authorId": "1862570",
+          "name": "C. Degueldre"
+        },
+        {
+          "authorId": "2450043",
+          "name": "E. Balteau"
+        },
+        {
+          "authorId": "143652704",
+          "name": "C. Phillips"
+        },
+        {
+          "authorId": "2380336",
+          "name": "A. Luxen"
+        },
+        {
+          "authorId": "30707559",
+          "name": "P. Maquet"
+        }
+      ],
+      "abstract": "The present study aimed at identifying the neurophysiological responses associated with auditory stimulation during non-rapid eye movement (NREM) sleep using simultaneous electroencephalography (EEG)/functional magnetic resonance imaging (fMRI) recordings. It was reported earlier that auditory stimuli produce bilateral activation in auditory cortex, thalamus, and caudate during both wakefulness and NREM sleep. However, due to the spontaneous membrane potential fluctuations cortical responses may be highly variable during NREM. Here we now examine the modulation of cerebral responses to tones depending on the presence or absence of sleep spindles and the phase of the slow oscillation. Thirteen healthy young subjects were scanned successfully during stage 2–4 NREM sleep in the first half of the night in a 3 T scanner. Subjects were not sleep-deprived and sounds were post hoc classified according to (i) the presence of sleep spindles or (ii) the phase of the slow oscillation during (±300 ms) tone delivery. These detected sounds were then entered as regressors of interest in fMRI analyses. Interestingly wake-like responses – although somewhat altered in size and location – persisted during NREM sleep, except during present spindles (as previously published in Dang-Vu et al., 2011) and the negative going phase of the slow oscillation during which responses became less consistent or even absent. While the phase of the slow oscillation did not alter brain responses in primary sensory cortex, it did modulate responses at higher cortical levels. In addition EEG analyses show a distinct N550 response to tones during the presence of light sleep spindles and suggest that in deep NREM sleep the brain is more responsive during the positive going slope of the slow oscillation. The presence of short temporal windows during which the brain is open to external stimuli is consistent with the fact that even during deep sleep meaningful events can be detected. Altogether, our results emphasize the notion that spontaneous fluctuations of brain activity profoundly modify brain responses to external information across all behavioral states, including deep NREM sleep."
+    },
+    {
+      "paperId": "01d502fe84f960f66eb33fb7af9960b890a57951",
+      "externalIds": {
+        "DBLP": "conf/icbra/SvatkovaCKBP22",
+        "DOI": "10.1145/3569192.3569214",
+        "CorpusId": 256305074
+      },
+      "url": "https://www.semanticscholar.org/paper/01d502fe84f960f66eb33fb7af9960b890a57951",
+      "title": "hdEEG Inverse Source Localisation as A Tool For Studying Nrem Parasomnia",
+      "venue": "International Conference on Bioinformatics Research and Applications",
+      "year": 2022,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://dl.acm.org/doi/pdf/10.1145/3569192.3569214",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3569192.3569214?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3569192.3569214, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2202945511",
+          "name": "Natalie Svatkova"
+        },
+        {
+          "authorId": "48192683",
+          "name": "F. Černý"
+        },
+        {
+          "authorId": "5126569",
+          "name": "J. Kopřivová"
+        },
+        {
+          "authorId": "5022747",
+          "name": "J. Bušková"
+        },
+        {
+          "authorId": "51901648",
+          "name": "M. Piorecký"
+        }
+      ],
+      "abstract": "The mechanism of brain behaviour outside the parasomnia episode of NREM parasomnia (a sleep disorder) is not fully known. In this study, we examined a group of parasomnia individuals and healthy controls after sleep deprivation. We acquired a dataset containing a simultaneous recording of EEG and fMRI, as well as EEG-only data outside the MR scanner. We used inverse source modelling on the EEG-only data and compared the capability of the method to expose differences between patients and controls with EEG-fMRI data and literature. The results show that the highest difference is in the slow-wave activity of the delta waves, mainly in the occipital region. Even outside the parasomnia episode, differences in fluctuating sleep between patients and controls can be observed."
+    },
+    {
+      "paperId": "1f943613b93b7de62715b8a79f79cc03a3514dc4",
+      "externalIds": {
+        "DOI": "10.23880/nnoaj-16000168",
+        "CorpusId": 257214658
+      },
+      "url": "https://www.semanticscholar.org/paper/1f943613b93b7de62715b8a79f79cc03a3514dc4",
+      "title": "Note on Neurofeedback of Patients of Insomnia",
+      "venue": "Neurology &amp; Neurotherapy Open Access Journal",
+      "year": 2022,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.23880/nnoaj-16000168",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.23880/nnoaj-16000168?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.23880/nnoaj-16000168, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2149744753",
+          "name": "Yegnanarayanan Venkataraman"
+        }
+      ],
+      "abstract": "FMRI (functional magnetic resonance imaging) is meant for measuring the blood oxygenation level based signal in the brain. It is a quantity that comes from various physiological and biophysical sources and denotes to neural activity a vascular coupling. FMRI has particular preference over other neuroimaging non-invasive methods like electroencephalographic recordings (EEG). rtfMRI, (real time fmri) is a process that adopts functional counsel from a MRI scanner where the fMRI keep runs to data acquisition. Currently, rtfMRI is applied to intraoperative surgical guidance, brain–computer interfaces , and neurofeedback. Insomnia is a disorder in sleep that constantly affects several crores of people worldwide. People with insomnia finds it hard to go to asleep or remain asleep. Using rest-state functional connectivity depending on variations in certain regions of interest in brain one can examine connectivity alterations on patients of insomnia.. In this paper, we have reported on the findings of Huan Zhang et al’s approach concerning rt-fMRI (real-time functional magnetic resonance neurofeedback) therapy for training for patients of insomnia."
+    },
+    {
+      "paperId": "c075b6d9f6a9d3c657f8d63a88b0475a832057da",
+      "externalIds": {
+        "MAG": "2499329823",
+        "DOI": "10.4414/sanp.2003.01410",
+        "CorpusId": 151846227
+      },
+      "url": "https://www.semanticscholar.org/paper/c075b6d9f6a9d3c657f8d63a88b0475a832057da",
+      "title": "Functional imaging of sleep",
+      "venue": "",
+      "year": 2003,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://sanp.ch/journalfile/view/article/ezm_sanp/en/sanp.2003.01410/b380cc7a9d19a8f9ea6e5f59e6f40a52e1b3e325/sanp_2003_01410.pdf/rsrc/jf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.4414/sanp.2003.01410?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.4414/sanp.2003.01410, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144310379",
+          "name": "K. Lövblad"
+        },
+        {
+          "authorId": "145813530",
+          "name": "Kaspar Anton Schindler"
+        },
+        {
+          "authorId": "2238288",
+          "name": "P. Jakob"
+        },
+        {
+          "authorId": "4368233",
+          "name": "B. Weder"
+        }
+      ],
+      "abstract": "Sleep has traditionally been monitored by electrophysiological means such as electroencephalography. Nuclear medicine tracer methods such as SPECT and PET have previously been used to successfully assess changes in cerebral blood flow and metabolism occurring during sleep and provide little spatial resolution. These have only been able to document a short period of time. Functional Magnetic Resonance Imaging (fMRI) has established itself as the method of choice for non-invasive imaging of brain functions and can now also be performed with continuous EEG recording. Technical problems had to be resolved before fMRI could be applied to sleep successfully: indeed patient motion and scanner noise were major parts of these concerns. However, with optimisation of fMRI technology a few reports concerning the use of fMRI in sleep have surfaced recently. One approach has been to use a silent MR sequence (BURST) which provides robust fMRI data with a BOLD signal. We found occipital activation and frontal deactivation during REM sleep. Thus fMRI now seems to be applicable to sleep also which should provide sleep researchers with a new method for investigation in vivo of sleep physiology and pathology. The question of data evaluation still needs to be elucidated, however."
+    },
+    {
+      "paperId": "ec7f4f503b8387ae32d5ec566d283bde1100f919",
+      "externalIds": {
+        "MAG": "1977788949",
+        "DOI": "10.1002/mrm.10441",
+        "CorpusId": 21520353,
+        "PubMed": "12704780"
+      },
+      "url": "https://www.semanticscholar.org/paper/ec7f4f503b8387ae32d5ec566d283bde1100f919",
+      "title": "Stereotaxic assembly and procedures for simultaneous electrophysiological and MRI study of conscious rat",
+      "venue": "Magnetic Resonance in Medicine",
+      "year": 2003,
+      "citationCount": 36,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/mrm.10441",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/mrm.10441?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/mrm.10441, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2104258764",
+          "name": "M. Khubchandani"
+        },
+        {
+          "authorId": "6986562",
+          "name": "H. Mallick"
+        },
+        {
+          "authorId": "2007417489",
+          "name": "N. Jagannathan"
+        },
+        {
+          "authorId": "148305874",
+          "name": "V. Mohan Kumar"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "0e7ba8c5aca85eebcff93a0dbb221ce58a75883b",
+      "externalIds": {
+        "MAG": "2316516928",
+        "DOI": "10.1055/S-0032-1301533",
+        "CorpusId": 147220910
+      },
+      "url": "https://www.semanticscholar.org/paper/0e7ba8c5aca85eebcff93a0dbb221ce58a75883b",
+      "title": "Influence of vigilance on resting state brain activity",
+      "venue": "",
+      "year": 2012,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1055/S-0032-1301533?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1055/S-0032-1301533, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2947530",
+          "name": "H. Laufs"
+        },
+        {
+          "authorId": "2256632455",
+          "name": "E. Tagliazucchi"
+        },
+        {
+          "authorId": "8064272",
+          "name": "F. Wegner"
+        },
+        {
+          "authorId": "46384689",
+          "name": "K. Jahnke"
+        },
+        {
+          "authorId": "2418035",
+          "name": "Astrid Morzelewski"
+        },
+        {
+          "authorId": "2070005474",
+          "name": "S. Borisov"
+        },
+        {
+          "authorId": "31459787",
+          "name": "H. Steinmetz"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "7ab63dabd68590230636bb3d4d588575cfaaac24",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/MeerPSRWGLHHMW16",
+        "MAG": "1868769070",
+        "DOI": "10.1016/j.neuroimage.2015.10.064",
+        "CorpusId": 11047291,
+        "PubMed": "26505301"
+      },
+      "url": "https://www.semanticscholar.org/paper/7ab63dabd68590230636bb3d4d588575cfaaac24",
+      "title": "Carbon-wire loop based artifact correction outperforms post-processing EEG/fMRI corrections - A validation of a real-time simultaneous EEG/fMRI correction method",
+      "venue": "NeuroImage",
+      "year": 2016,
+      "citationCount": 79,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2015.10.064",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2015.10.064?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2015.10.064, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4324005",
+          "name": "J. Meer"
+        },
+        {
+          "authorId": "2271229",
+          "name": "A. Pampel"
+        },
+        {
+          "authorId": "2368838",
+          "name": "E. Someren"
+        },
+        {
+          "authorId": "2361430",
+          "name": "J. Ramautar"
+        },
+        {
+          "authorId": "6171363",
+          "name": "Y. D. Werf"
+        },
+        {
+          "authorId": "1397998860",
+          "name": "Germán Gómez-Herrero"
+        },
+        {
+          "authorId": "2078489",
+          "name": "J. Lepsien"
+        },
+        {
+          "authorId": "2697324",
+          "name": "L. Hellrung"
+        },
+        {
+          "authorId": "145663940",
+          "name": "H. Hinrichs"
+        },
+        {
+          "authorId": "3261270",
+          "name": "H. Möller"
+        },
+        {
+          "authorId": "50194916",
+          "name": "M. Walter"
+        }
+      ],
+      "abstract": "Simultaneous EEG-fMRI combines two powerful neuroimaging techniques, but the EEG signal suffers from severe artifacts in the MRI environment that are difficult to remove. These are the MR scanning artifact and the blood-pulsation artifact--strategies to remove them are a topic of ongoing research. Additionally large, unsystematic artifacts are produced across the full frequency spectrum by the magnet's helium pump (and ventilator) systems which are notoriously hard to remove. As a consequence, experimenters routinely deactivate the helium pump during simultaneous EEG-fMRI acquisitions which potentially risks damaging the MRI system and necessitates more frequent and expensive helium refills. We present a novel correction method addressing both helium pump and ballisto-cardiac (BCG) artifacts, consisting of carbon-wire loops (CWL) as additional sensors to accurately track unpredictable artifacts related to subtle movements in the scanner, and an EEGLAB plugin to perform artifact correction. We compare signal-to-noise metrics of EEG data, corrected with CWL and three conventional correction methods, for helium pump off and on measurements. Because the CWL setup records signals in real-time, it fits requirements of applications where immediate correction is necessary, such as neuro-feedback applications or stimulation time-locked to specific sleep oscillations. The comparison metrics in this paper relate to: (1) the EEG signal itself, (2) the \"eyes open vs. eyes closed\" effect, and (3) an assessment of how the artifact corrections impacts the ability to perform meaningful correlations between EEG alpha power and the BOLD signal. Results show that the CWL correction corrects for He pump artifact and also produces EEG data more comparable to EEG obtained outside the magnet than conventional post-processing methods."
+    },
+    {
+      "paperId": "c407df42f3d07ac15d86dd10af65d2b46e0bc05c",
+      "externalIds": {
+        "MAG": "3106979035",
+        "DOI": "10.1101/2020.11.27.401851",
+        "CorpusId": 227232007
+      },
+      "url": "https://www.semanticscholar.org/paper/c407df42f3d07ac15d86dd10af65d2b46e0bc05c",
+      "title": "Data-driven beamforming techniques to attenuate ballistocardiogram (BCG) artefacts in EEG-fMRI without detecting cardiac pulses in electrocardiography (ECG) recordings",
+      "venue": "bioRxiv",
+      "year": 2020,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.25535",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2020.11.27.401851?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2020.11.27.401851, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32116327",
+          "name": "M. Uji"
+        },
+        {
+          "authorId": "6938799",
+          "name": "N. Cross"
+        },
+        {
+          "authorId": "34821805",
+          "name": "F. Pomares"
+        },
+        {
+          "authorId": "67130797",
+          "name": "A. Perrault"
+        },
+        {
+          "authorId": "74393015",
+          "name": "A. Jegou"
+        },
+        {
+          "authorId": "2029655257",
+          "name": "A. Nguyen"
+        },
+        {
+          "authorId": "2029673557",
+          "name": "U. Aydin"
+        },
+        {
+          "authorId": "145669666",
+          "name": "J. Lina"
+        },
+        {
+          "authorId": "1400823726",
+          "name": "T. Dang-Vu"
+        },
+        {
+          "authorId": "2513442",
+          "name": "C. Grova"
+        }
+      ],
+      "abstract": "Simultaneous recording of EEG and fMRI is a very promising non-invasive neuroimaging technique, providing a wide range of complementary information to characterize underlying mechanisms associated with brain functions. However, EEG data obtained from the simultaneous EEG-fMRI recordings are strongly influenced by MRI related artefacts, namely gradient artefacts (GA) and ballistocardiogram (BCG) artefacts. The GA is induced by temporally varying magnetic field gradients used for MR imaging, whereas the BCG artefacts are produced by cardiac pulse driven head motion in the strong magnetic field of the MRI scanner, so that this BCG artefact will be present when the subject is lying in the scanner, even when no fMRI data are acquired. When compared to corrections of the GA, the BCG artefact corrections are more challenging to remove due to its inherent variabilities and dynamic changes over time. Typically, the BCG artefacts obscure the EEG signals below 20Hz, and this remains problematic especially when the frequency of interest of EEG signals is below 20Hz, such as Alpha (8-13Hz) and Beta (13-30Hz) band EEG activity, or sleep spindle (11-16Hz) and slow-wave oscillations (<1 Hz) during sleep. The standard BCG artefact corrections, as for instance Average Artefact Subtraction method (AAS), require detecting cardiac pulse (R-peak) events from simultaneous electrocardiography (ECG) recordings. However, ECG signals in the MRI scanner are sometimes distorted and will become problematic for detecting reliable R-peaks. In this study, we focused on a beamforming technique, which is a spatial filtering technique to reject sources of signal variance that do not appear dipolar in the source space. This technique attenuates all unwanted source activities outside of a presumed region of interest without having to specify the location or the configuration of these underlying source signals. Specifically, in this study, we revisited the advantages of the beamforming technique to attenuate the BCG artefact in EEG-fMRI, and also to recover meaningful task-based induced neural signals during an attentional network task (ANT) which required participants to identify visual cues and respond as accurately and quickly as possible. We analysed EEG-fMRI data in 20 healthy participants when they were performing the ANT, and compared four different BCG correction approaches (non-BCG corrected, AAS BCG corrected, beamforming+AAS BCG corrected, beamforming BCG corrected). We demonstrated that beamforming BCG corrected data did not only significantly reduce the BCG artefacts, but also significantly recovered the expected task-based induced brain activity when compared to the standard AAS BCG corrections. Without detecting R-peak events from the ECG, this data-driven beamforming technique appears promising especially for longer data acquisition of sleep and resting EEG-fMRI. Our findings extend previous work regarding the recovery of meaningful EEG signals by an optimized suppression of MRI related artefacts. Highlights Beamforming spatial filtering technique attenuates ballistocardiogram (BCG) artefacts in EEG-fMRI without detecting cardiac pulses in electrocardiography (ECG) recordings. Beamforming BCG denoising technique recovers expected task-based induced visual alpha and motor beta event-related desynchronization (ERD). Beamforming technique improves signal-noise ratios (SNR) of neural activities as compared to sensor level signals. Data-driven beamforming technique appears promising for longer data acquisition of sleep and resting EEG-fMRI without relying on ECG signals."
+    },
+    {
+      "paperId": "c7dbda56703ffba18cc9c5b8dcb69e7d4934be00",
+      "externalIds": {
+        "MAG": "2888497758",
+        "DOI": "10.1007/978-3-319-99316-4_11",
+        "CorpusId": 70163701
+      },
+      "url": "https://www.semanticscholar.org/paper/c7dbda56703ffba18cc9c5b8dcb69e7d4934be00",
+      "title": "Experimental Model of Study of Consciousness at the Awakening: FMRI, EEG and Behavioral Methods",
+      "venue": "Biologically Inspired Cognitive Architectures",
+      "year": 2018,
+      "citationCount": 11,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-319-99316-4_11?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-319-99316-4_11, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3627507",
+          "name": "V. Dorokhov"
+        },
+        {
+          "authorId": "13567807",
+          "name": "D. Malakhov"
+        },
+        {
+          "authorId": "50827702",
+          "name": "V. Orlov"
+        },
+        {
+          "authorId": "145000916",
+          "name": "V. Ushakov"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "51fb608bd4aba299ee514a2995f3f4e3c3a30d33",
+      "externalIds": {
+        "DOI": "10.1101/2025.08.18.670780",
+        "CorpusId": 282307251
+      },
+      "url": "https://www.semanticscholar.org/paper/51fb608bd4aba299ee514a2995f3f4e3c3a30d33",
+      "title": "Sleep Renormalizes Negative Emotional Generalization",
+      "venue": "bioRxiv",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2025.08.18.670780?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2025.08.18.670780, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2290172812",
+          "name": "E. Bar"
+        },
+        {
+          "authorId": "2139791419",
+          "name": "Max Bringmann"
+        },
+        {
+          "authorId": "2290172801",
+          "name": "G. Belonosov"
+        },
+        {
+          "authorId": "2288007075",
+          "name": "Kristoffer C. Aberg"
+        },
+        {
+          "authorId": "1489495631",
+          "name": "R. Weissgross"
+        },
+        {
+          "authorId": "2290172816",
+          "name": "Y. Nir"
+        },
+        {
+          "authorId": "2288015661",
+          "name": "R. Paz"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c56157f5798f928f1207ee8b110d6b0800814847",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsac079.735",
+        "CorpusId": 249266472
+      },
+      "url": "https://www.semanticscholar.org/paper/c56157f5798f928f1207ee8b110d6b0800814847",
+      "title": "0739 Cerebrovascular Response to Intermittent Hypoxia During Sleep in OSA Patients",
+      "venue": "Sleep",
+      "year": 2022,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1093/sleep/zsac079.735",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsac079.735?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsac079.735, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108526199",
+          "name": "Junjie V. Liu"
+        }
+      ],
+      "abstract": "\n \n \n Obstructive sleep apnea (OSA) is associated with increased risks of cerebrovascular accidents, but it remains unclear how OSA impacts the cerebral vasculature. Intermittent hypoxia is a hallmark feature of OSA and recurs throughout sleep. In awake humans, the cerebrovascular response to intermittent hypoxia has been well characterized, as an increase of blood perfusion that begins at least a few seconds after the start of hypoxia. Functional magnetic resonance imaging (fMRI) that measures the blood oxygen level dependent (BOLD) signal has revealed significant differences between the cerebrovascular responses in awake humans with and without OSA. However, intermittent hypoxia occurs primarily during sleep in OSA, yet the cerebrovascular response to intermittent hypoxia has not been studied during sleep.\n \n \n \n Eight adult patients with severe OSA were recruited to this study. Each subject first underwent an acclimatization session in which they tried to sleep in the MRI scanner while listening to sound recordings of the fMRI. Each acclimatized subject then underwent an overnight study in which T2*-weighed BOLD fMRI of the whole brain was conducted for 1.5-3 hours in total (TE: 35 ms, TR: 2.0 s, 35 sagittal slices, 3.5 mm isotropic). Oxygen saturation (SaO2), chest movement, end-tidal carbon dioxide and scalp encephalography (EEG) were simultaneously recorded with the fMRI. After rigid-body motion correction and removal of artifacts, the temporal correlation between BOLD signal and the SaO2 signal was analyzed on a voxel-by-voxel basis.\n \n \n \n Four subjects (50%) were acclimatized to sleep in the MRI scanner and completed this study. In all subjects, the BOLD fMRI signal showed an initial decrease corresponding to the decrease of SaO2, followed by a delayed increase corresponding to the hyperperfusion, throughout the gray matter of cerebral cortex. The time course of BOLD fMRI signal was significantly advanced in time, by 2-4 seconds, in the visual cortex compared to the rest of cerebral cortex in all subjects. This phenomenon was also observed in some other brain regions, but not consistently across subjects.\n \n \n \n This study is, to our knowledge, the first study of the cerebrovascular response to intermittent hypoxia during sleep in humans. In patients with OSA, we observed spatiotemporal heterogeneity of the cerebrovascular response, such that the response in the visual cortex was significantly advanced in time than other brain regions. This phenomenon has not been reported before, and future studies are needed to understand how this heterogeneity is associated with OSA.\n \n \n \n AASM Foundation\n"
+    }
+  ]
+}

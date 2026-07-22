@@ -1,0 +1,31 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "42367628",
+      "41138315",
+      "40384680"
+    ],
+    "translationset": [
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "radiation",
+        "to": "\"radiate\"[All Fields] OR \"radiated\"[All Fields] OR \"radiates\"[All Fields] OR \"radiating\"[All Fields] OR \"radiation\"[MeSH Terms] OR \"radiation\"[All Fields] OR \"electromagnetic radiation\"[MeSH Terms] OR (\"electromagnetic\"[All Fields] AND \"radiation\"[All Fields]) OR \"electromagnetic radiation\"[All Fields] OR \"radiations\"[All Fields] OR \"radiation's\"[All Fields] OR \"radiator\"[All Fields] OR \"radiators\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"radiate\"[All Fields] OR \"radiated\"[All Fields] OR \"radiates\"[All Fields] OR \"radiating\"[All Fields] OR \"radiation\"[MeSH Terms] OR \"radiation\"[All Fields] OR \"electromagnetic radiation\"[MeSH Terms] OR (\"electromagnetic\"[All Fields] AND \"radiation\"[All Fields]) OR \"electromagnetic radiation\"[All Fields] OR \"radiations\"[All Fields] OR \"radiation s\"[All Fields] OR \"radiator\"[All Fields] OR \"radiators\"[All Fields]) AND \"FA\"[All Fields]"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "153",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42476764",
+      "42464462",
+      "42347984",
+      "42298123",
+      "42235760",
+      "42230913",
+      "42083020",
+      "42055498",
+      "42037510",
+      "41989743",
+      "41877252",
+      "41834684",
+      "41812897",
+      "41781414",
+      "41744618",
+      "41731626",
+      "41686366",
+      "41607406",
+      "41512574",
+      "41344537",
+      "41339343",
+      "41307007",
+      "41242345",
+      "41032947",
+      "40885121",
+      "40705166",
+      "40667250",
+      "40639423",
+      "40464004",
+      "40461958",
+      "40222623",
+      "40160628",
+      "40160609",
+      "40074534",
+      "40053277",
+      "40032053",
+      "40010169",
+      "39970700",
+      "39804457",
+      "39786324",
+      "39612020",
+      "39611356",
+      "39605859",
+      "39566393",
+      "39561671",
+      "39537644",
+      "39170078",
+      "39168169",
+      "39053129",
+      "38964949"
+    ],
+    "translationset": [
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "white matter",
+        "to": "\"white matter\"[MeSH Terms] OR (\"white\"[All Fields] AND \"matter\"[All Fields]) OR \"white matter\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND \"DTI\"[All Fields] AND (\"white matter\"[MeSH Terms] OR (\"white\"[All Fields] AND \"matter\"[All Fields]) OR \"white matter\"[All Fields])"
+  }
+}

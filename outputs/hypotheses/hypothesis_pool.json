@@ -1,315 +1,244 @@
 [
   {
-    "hypothesis_id": "hypothesis_95b004575b69",
+    "hypothesis_id": "hypothesis_fe98a37de1de",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Morphology Modulates Thalamocortical Coupling via Structural Connectivity in Insomnia",
-    "summary": "This hypothesis proposes that thalamic morphology influences thalamocortical coupling through structural connectivity in insomnia, linking structural and functional neuroimaging features.",
-    "content": "Thalamic morphology modulates thalamocortical coupling via structural connectivity in insomnia, with effects measurable through thalamus_DMN_FC and thalamus_volume.",
-    "rationale": "Evidence shows thalamic morphology (thalamus_volume) and thalamocortical coupling (thalamus_DMN_FC) are both associated with insomnia. Structural connectivity (FA) links thalamic morphology to thalamocortical coupling, suggesting a pathway through white matter integrity.",
-    "experimental_plan": "Compare thalamus_volume and thalamus_DMN_FC in insomnia patients with varying FA values using MRI and fMRI data.",
-    "novelty_assessment": "Novel integration of thalamic morphology, structural connectivity, and thalamocortical coupling in insomnia, not previously hypothesized.",
+    "title": "Slow-Wave Generation explains slow_wave_density alteration",
+    "summary": "slow-wave generation may drive measurable change in slow_wave_density among sleep-disorder populations, detectable with EEG features.",
+    "content": "This hypothesis proposes that slow-wave generation is not merely correlated with sleep disturbance but acts as an organizing mechanism that changes slow_wave_density. The proposal is grounded in 4 evidence records spanning EEG, EEG-fMRI, fMRI. It should be tested by modeling slow_wave_density against mechanism-linked features while controlling for known sleep severity and data-quality covariates.",
+    "rationale": "The selected evidence contains 4 supportive and 0 uncertain/refuting records. The generation strategy used synthesizing the strongest available evidence into one mechanistic proposal. This keeps the hypothesis anchored to observed variables rather than inventing unavailable measurements.",
+    "experimental_plan": "Use the analysis-ready profile to identify approved features for slow_wave_density, thalamus_DMN_FC, DMN_FC. Fit a prespecified model with negative controls, then test whether slow-wave generation improves prediction or mediation of sleep outcomes beyond baseline covariates.",
+    "novelty_assessment": "The novelty comes from connecting slow-wave generation to slow_wave_density through an explicit, testable multimodal bridge rather than treating them as isolated findings.",
     "key_assumptions": [
-      "Thalamic morphology affects structural connectivity",
-      "Structural connectivity mediates thalamocortical coupling"
+      "slow-wave generation is measurable through available sleep-science features",
+      "slow_wave_density captures a downstream expression of the mechanism",
+      "The association remains after quality-control and confound checks"
     ],
     "citations": [
-      "toy001",
-      "toy003"
+      "api_online_001"
     ],
     "generation_strategy": "literature_exploration",
     "generation_round": 1,
-    "elo_rating": 1572.0,
-    "rating_deviation": 129.0,
-    "volatility": 0.059993,
-    "matches_played": 7,
-    "wins": 6,
+    "elo_rating": 1324.0,
+    "rating_deviation": 164.0,
+    "volatility": 0.059996,
+    "matches_played": 2,
+    "wins": 0,
     "losses": 0,
-    "draws": 1,
+    "draws": 2,
     "status": "active",
     "parent_ids": [],
     "metadata": {
       "evidence_ids": [
-        "evidence_f7ca755a2467",
-        "evidence_f7ca755a2467",
-        "evidence_f7ca755a2467",
-        "evidence_77397cee0b26"
+        "E_7db0fc5db553",
+        "E_6d463dfffbfa",
+        "E_ab510873209a",
+        "E_bdcb2ae5f479"
       ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "insomnia",
-      "neural_mechanism": "structural connectivity",
-      "brain_regions": [
-        "thalamus"
-      ],
-      "brain_networks": [
-        "default mode network (DMN)"
-      ],
+      "neural_mechanism": "slow-wave generation",
       "modalities": [
-        "MRI",
+        "EEG",
+        "EEG-fMRI",
         "fMRI"
       ],
       "measurable_variables": [
-        "thalamus_volume",
+        "slow_wave_density",
         "thalamus_DMN_FC",
-        "FA"
+        "DMN_FC"
       ],
-      "directional_prediction": "Higher thalamus_volume correlates with higher thalamus_DMN_FC and higher FA in insomnia patients.",
-      "falsification_criteria": "No correlation between thalamus_volume, thalamus_DMN_FC, and FA in insomnia patients.",
-      "knowledge_graph_paths": [
-        "thalamic morphology -> thalamus_volume -> thalamus_DMN_FC -> insomnia",
-        "structural connectivity -> FA -> thalamus_DMN_FC -> insomnia"
-      ]
+      "directional_prediction": "slow-wave generation changes slow_wave_density"
     },
-    "created_at": "2026-07-15T06:50:47.736635+00:00",
-    "updated_at": "2026-07-15T07:13:08.435798+00:00"
+    "created_at": "2026-07-22T05:18:34.749383+00:00",
+    "updated_at": "2026-07-22T05:18:34.750028+00:00"
   },
   {
-    "hypothesis_id": "hypothesis_80c2da4d2174",
+    "hypothesis_id": "hypothesis_78523b6622b9",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamocortical Coupling Mediates White Matter Integrity and Thalamic Morphology via DMN Connectivity in Insomnia",
-    "summary": "This hypothesis proposes that thalamocortical coupling, as measured by thalamus_DMN_FC, modulates white matter integrity (FA) and thalamic morphology (thalamus_volume) in insomnia through interactions with the default mode network (DMN).",
-    "content": "Thalamocortical coupling mediates the relationship between white matter integrity (FA) and thalamic morphology (thalamus_volume) in insomnia via connectivity with the default mode network (DMN).",
-    "rationale": "Evidence from toy001 supports thalamocortical coupling as a mechanism related to thalamus_DMN_FC, while toy003 links structural morphology (MRI) and white matter integrity (FA) to insomnia. The integration of DMN connectivity as a mediator strengthens the link between functional and structural neuroimaging features.",
-    "experimental_plan": "Analyze thalamus_DMN_FC in insomnia patients using EEG-fMRI, and correlate it with FA (DTI) and thalamus_volume (MRI). Test mediation via DMN connectivity using network-based analysis.",
-    "novelty_assessment": "Novel integration of DMN connectivity as a mediator between thalamocortical coupling and structural measures (FA and thalamus_volume), building on prior evidence but refining the pathway.",
+    "title": "Debated slow-wave generation hypothesis for slow_wave_density",
+    "summary": "slow-wave generation may drive measurable change in slow_wave_density among sleep-disorder populations, detectable with EEG features.",
+    "content": "This hypothesis proposes that slow-wave generation is not merely correlated with sleep disturbance but acts as an organizing mechanism that changes slow_wave_density. The proposal is grounded in 4 evidence records spanning EEG, EEG-fMRI, fMRI. It should be tested by modeling slow_wave_density against mechanism-linked features while controlling for known sleep severity and data-quality covariates.",
+    "rationale": "The selected evidence contains 4 supportive and 0 uncertain/refuting records. The generation strategy used contrasting supportive and uncertain evidence before converging on a testable mechanism. This keeps the hypothesis anchored to observed variables rather than inventing unavailable measurements.",
+    "experimental_plan": "Use the analysis-ready profile to identify approved features for slow_wave_density, thalamus_DMN_FC, DMN_FC. Fit a prespecified model with negative controls, then test whether slow-wave generation improves prediction or mediation of sleep outcomes beyond baseline covariates.",
+    "novelty_assessment": "The novelty comes from connecting slow-wave generation to slow_wave_density through an explicit, testable multimodal bridge rather than treating them as isolated findings.",
     "key_assumptions": [
-      "Thalamocortical coupling modulates DMN connectivity in insomnia.",
-      "DMN connectivity modulates white matter integrity and thalamic morphology."
+      "slow-wave generation is measurable through available sleep-science features",
+      "slow_wave_density captures a downstream expression of the mechanism",
+      "The association remains after quality-control and confound checks"
     ],
     "citations": [
-      "toy001",
-      "toy003"
+      "api_online_001"
     ],
     "generation_strategy": "scientific_debate",
     "generation_round": 2,
-    "elo_rating": 1459.0,
-    "rating_deviation": 120.0,
-    "volatility": 0.059994,
-    "matches_played": 8,
-    "wins": 6,
-    "losses": 2,
+    "elo_rating": 1324.0,
+    "rating_deviation": 200.0,
+    "volatility": 0.06,
+    "matches_played": 0,
+    "wins": 0,
+    "losses": 0,
     "draws": 0,
-    "status": "active",
+    "status": "rejected",
     "parent_ids": [],
     "metadata": {
       "evidence_ids": [
-        "evidence_f7ca755a2467",
-        "evidence_f7ca755a2467",
-        "evidence_f7ca755a2467",
-        "evidence_77397cee0b26"
+        "E_7db0fc5db553",
+        "E_6d463dfffbfa",
+        "E_ab510873209a",
+        "E_bdcb2ae5f479"
       ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "llm_strategy_detail": "multi_turn_debate",
-      "sleep_phenotype": "insomnia",
-      "neural_mechanism": "thalamocortical coupling",
-      "brain_regions": [
-        "thalamus",
-        "default mode network"
-      ],
-      "brain_networks": [
-        "default mode network"
-      ],
+      "neural_mechanism": "slow-wave generation",
       "modalities": [
-        "fMRI",
-        "MRI",
-        "DTI"
+        "EEG",
+        "EEG-fMRI",
+        "fMRI"
       ],
       "measurable_variables": [
+        "slow_wave_density",
         "thalamus_DMN_FC",
-        "FA",
-        "thalamus_volume"
+        "DMN_FC"
       ],
-      "directional_prediction": "Higher thalamocortical coupling (thalamus_DMN_FC) is associated with higher FA and larger thalamus_volume in insomnia patients.",
-      "falsification_criteria": "No significant correlation between thalamus_DMN_FC and FA or thalamus_volume in insomnia patients.",
-      "knowledge_graph_paths": [
-        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia",
-        "structural morphology -> MRI -> insomnia"
-      ]
+      "directional_prediction": "slow-wave generation changes slow_wave_density"
     },
-    "created_at": "2026-07-15T06:52:43.599204+00:00",
-    "updated_at": "2026-07-15T07:13:43.917480+00:00"
+    "created_at": "2026-07-22T05:18:34.749430+00:00",
+    "updated_at": "2026-07-22T05:18:34.749678+00:00"
   },
   {
-    "hypothesis_id": "hypothesis_e7f30c34a340",
+    "hypothesis_id": "hypothesis_723016ec2445",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Morphology Modulates Beta Power via Structural Connectivity in Insomnia",
-    "summary": "This hypothesis proposes that thalamic morphology influences beta power through structural connectivity in insomnia, linking structural and electrophysiological features.",
-    "content": "Thalamic morphology modulates beta power via structural connectivity in insomnia, mediated by white matter integrity and thalamocortical coupling.",
-    "rationale": "Evidence links thalamic morphology to structural connectivity (MRI) and beta power (EEG) in insomnia. White matter integrity (FA) and thalamocortical coupling (thalamus_DMN_FC) are intermediate variables that could mediate this relationship.",
-    "experimental_plan": "Use DTI and EEG to measure white matter integrity (FA) and beta power in insomnia patients. Analyze structural connectivity between thalamus and DMN regions. Test mediation by FA and thalamus_DMN_FC.",
-    "novelty_assessment": "Novel integration of thalamic morphology, structural connectivity, and beta power in insomnia, with mediation by white matter integrity and thalamocortical coupling.",
+    "title": "Default Mode Network Dysregulation chain predicts DMN_FC",
+    "summary": "default mode network dysregulation may drive measurable change in DMN_FC among sleep-disorder populations, detectable with fMRI features.",
+    "content": "This hypothesis proposes that default mode network dysregulation is not merely correlated with sleep disturbance but acts as an organizing mechanism that changes DMN_FC. The proposal is grounded in 4 evidence records spanning fMRI, Scale, EEG. It should be tested by modeling DMN_FC against mechanism-linked features while controlling for known sleep severity and data-quality covariates.",
+    "rationale": "The selected evidence contains 4 supportive and 0 uncertain/refuting records. The generation strategy used linking an upstream sleep mechanism to intermediate measurable assumptions. This keeps the hypothesis anchored to observed variables rather than inventing unavailable measurements.",
+    "experimental_plan": "Use the analysis-ready profile to identify approved features for DMN_FC, ISI, slow_wave_density. Fit a prespecified model with negative controls, then test whether default mode network dysregulation improves prediction or mediation of sleep outcomes beyond baseline covariates.",
+    "novelty_assessment": "The novelty comes from connecting default mode network dysregulation to DMN_FC through an explicit, testable multimodal bridge rather than treating them as isolated findings.",
     "key_assumptions": [
-      "Thalamic morphology affects white matter integrity",
-      "White matter integrity mediates thalamocortical coupling",
-      "Thalamocortical coupling modulates beta power"
+      "default mode network dysregulation is measurable through available sleep-science features",
+      "DMN_FC captures a downstream expression of the mechanism",
+      "The association remains after quality-control and confound checks"
     ],
     "citations": [
-      "toy001",
-      "toy002",
-      "toy003"
+      "api_online_001"
     ],
     "generation_strategy": "assumption_chaining",
     "generation_round": 3,
-    "elo_rating": 1226.0,
-    "rating_deviation": 123.0,
-    "volatility": 0.059997,
-    "matches_played": 7,
-    "wins": 2,
-    "losses": 5,
-    "draws": 0,
-    "status": "active",
-    "parent_ids": [],
-    "metadata": {
-      "evidence_ids": [
-        "evidence_cffb5cadb0ba",
-        "evidence_cffb5cadb0ba",
-        "evidence_57c2052a300b",
-        "evidence_9f085eb58dfa"
-      ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "insomnia",
-      "neural_mechanism": "structural connectivity",
-      "brain_regions": [
-        "thalamus",
-        "default mode network"
-      ],
-      "brain_networks": [
-        "default mode network"
-      ],
-      "modalities": [
-        "MRI",
-        "EEG",
-        "DTI"
-      ],
-      "measurable_variables": [
-        "thalamus_volume",
-        "FA",
-        "beta_power",
-        "thalamus_DMN_FC"
-      ],
-      "directional_prediction": "Increased thalamic volume correlates with higher beta power in insomnia, mediated by FA and thalamus_DMN_FC.",
-      "falsification_criteria": "No significant mediation by FA or thalamus_DMN_FC, or no correlation between thalamic volume and beta power.",
-      "knowledge_graph_paths": [
-        "thalamic morphology -> thalamus_volume -> structural morphology -> MRI",
-        "thalamic morphology -> thalamus_volume -> thalamocortical coupling -> thalamus_DMN_FC",
-        "thalamic morphology -> thalamus_volume -> white matter integrity -> FA",
-        "white matter integrity -> FA -> hyperarousal -> beta_power"
-      ]
-    },
-    "created_at": "2026-07-15T06:53:27.160989+00:00",
-    "updated_at": "2026-07-15T07:14:26.875207+00:00"
-  },
-  {
-    "hypothesis_id": "hypothesis_f5a83836e43f",
-    "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Morphology Modulates Slow-Wave Generation via Structural Connectivity in Insomnia",
-    "summary": "This hypothesis proposes that thalamic morphology influences slow-wave generation through structural connectivity in insomnia, linking structural and electrophysiological features.",
-    "content": "Thalamic morphology modulates slow-wave generation via structural connectivity in insomnia, linking structural and electrophysiological features through the integration of thalamocortical pathways.",
-    "rationale": "Evidence from the knowledge graph shows that thalamic morphology (thalamus_volume) is associated with structural MRI, while slow-wave generation is linked to slow_wave_density in EEG. Structural connectivity between thalamus and cortical regions may mediate this relationship, as supported by prior findings on thalamocortical coupling and structural morphology.",
-    "experimental_plan": "Use structural MRI to measure thalamus_volume and EEG to measure slow_wave_density in insomnia patients. Apply tractography to assess structural connectivity between thalamus and cortical regions, and test mediation models.",
-    "novelty_assessment": "This hypothesis introduces a new pathway linking thalamic morphology to slow-wave generation through structural connectivity, which has not been explicitly explored in prior hypotheses.",
-    "key_assumptions": [
-      "Structural connectivity between thalamus and cortex mediates the relationship between thalamic morphology and slow-wave generation.",
-      "Thalamic morphology is a measurable structural feature that influences slow-wave generation."
-    ],
-    "citations": [
-      "toy002",
-      "toy003"
-    ],
-    "generation_strategy": "research_expansion",
-    "generation_round": 4,
-    "elo_rating": 1117.0,
-    "rating_deviation": 125.0,
-    "volatility": 0.059995,
-    "matches_played": 7,
+    "elo_rating": 1324.0,
+    "rating_deviation": 164.0,
+    "volatility": 0.059996,
+    "matches_played": 2,
     "wins": 0,
-    "losses": 6,
-    "draws": 1,
+    "losses": 0,
+    "draws": 2,
     "status": "active",
     "parent_ids": [],
     "metadata": {
       "evidence_ids": [
-        "evidence_362515daef8d",
-        "evidence_362515daef8d",
-        "evidence_cffb5cadb0ba",
-        "evidence_cffb5cadb0ba"
+        "E_ab510873209a",
+        "E_bdcb2ae5f479",
+        "E_7db0fc5db553",
+        "E_6d463dfffbfa"
       ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "insomnia",
-      "neural_mechanism": "structural connectivity",
-      "brain_regions": [
-        "thalamus",
-        "cortex"
-      ],
-      "brain_networks": [
-        "thalamocortical pathways"
-      ],
+      "neural_mechanism": "default mode network dysregulation",
       "modalities": [
-        "MRI",
+        "fMRI",
+        "Scale",
         "EEG"
       ],
       "measurable_variables": [
-        "thalamus_volume",
+        "DMN_FC",
+        "ISI",
         "slow_wave_density"
       ],
-      "directional_prediction": "Increased thalamic volume is associated with higher slow-wave density in insomnia patients.",
-      "falsification_criteria": "No significant correlation between thalamus_volume and slow_wave_density after controlling for structural connectivity.",
-      "knowledge_graph_paths": [
-        "thalamic morphology -> thalamus_volume -> slow-wave generation",
-        "structural connectivity -> thalamus_volume -> slow_wave_density"
-      ]
+      "directional_prediction": "default mode network dysregulation changes DMN_FC"
     },
-    "created_at": "2026-07-15T06:54:07.064156+00:00",
-    "updated_at": "2026-07-15T07:14:26.875222+00:00"
+    "created_at": "2026-07-22T05:18:34.749462+00:00",
+    "updated_at": "2026-07-22T05:18:34.750030+00:00"
   },
   {
-    "hypothesis_id": "hypothesis_c6ef0e6d474f",
+    "hypothesis_id": "hypothesis_a50d50072605",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Morphology and Structural Connectivity Mediate Thalamocortical Coupling and Beta Power via DMN in Insomnia",
-    "summary": "This hypothesis integrates thalamic morphology and structural connectivity as mediators of thalamocortical coupling and beta power through the default mode network (DMN) in insomnia, combining structural, functional, and electrophysiological features.",
-    "content": "The hypothesis proposes that thalamic morphology (thalamus_volume) and structural connectivity (FA) mediate the relationship between thalamocortical coupling (thalamus_DMN_FC) and beta power (beta_power) in insomnia through interactions with the DMN. This integration combines structural, functional, and electrophysiological mechanisms, linking thalamic morphology and white matter integrity to both thalamocortical coupling and beta power via DMN connectivity.",
-    "rationale": "The evolution improves the parent hypotheses by integrating mechanisms from P1 and P2 (structural connectivity and thalamocortical coupling via DMN) with P3's electrophysiological features (beta power). This cross-pollination strengthens coherence by linking thalamic morphology, structural connectivity, and beta power through the DMN, providing a more comprehensive pathway for insomnia.",
-    "experimental_plan": "Use MRI and DTI to measure thalamus_volume and FA, and EEG-fMRI to measure thalamus_DMN_FC and beta_power in insomnia patients. Analyze mediation via DMN connectivity using network-based analysis, correlating thalamus_volume and FA with thalamus_DMN_FC and beta_power.",
-    "novelty_assessment": "Novel integration of beta power and DMN connectivity as mediators of thalamocortical coupling and structural connectivity in insomnia.",
+    "title": "Unexplored EEG marker of slow-wave generation",
+    "summary": "slow-wave generation may drive measurable change in slow_wave_density among sleep-disorder populations, detectable with EEG features.",
+    "content": "This hypothesis proposes that slow-wave generation is not merely correlated with sleep disturbance but acts as an organizing mechanism that changes slow_wave_density. The proposal is grounded in 4 evidence records spanning EEG, EEG-fMRI, Scale. It should be tested by modeling slow_wave_density against mechanism-linked features while controlling for known sleep severity and data-quality covariates.",
+    "rationale": "The selected evidence contains 4 supportive and 0 uncertain/refuting records. The generation strategy used expanding toward a modality or variable cluster not yet overrepresented. This keeps the hypothesis anchored to observed variables rather than inventing unavailable measurements.",
+    "experimental_plan": "Use the analysis-ready profile to identify approved features for slow_wave_density, thalamus_DMN_FC, ISI. Fit a prespecified model with negative controls, then test whether slow-wave generation improves prediction or mediation of sleep outcomes beyond baseline covariates.",
+    "novelty_assessment": "The novelty comes from connecting slow-wave generation to slow_wave_density through an explicit, testable multimodal bridge rather than treating them as isolated findings.",
     "key_assumptions": [
-      "Thalamic morphology and FA mediate thalamocortical coupling and beta power via DMN",
-      "DMN connectivity modulates the relationship between structural and electrophysiological features in insomnia"
+      "slow-wave generation is measurable through available sleep-science features",
+      "slow_wave_density captures a downstream expression of the mechanism",
+      "The association remains after quality-control and confound checks"
     ],
     "citations": [
-      "toy001",
-      "toy003"
+      "api_online_001"
+    ],
+    "generation_strategy": "research_expansion",
+    "generation_round": 4,
+    "elo_rating": 1324.0,
+    "rating_deviation": 200.0,
+    "volatility": 0.06,
+    "matches_played": 0,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "status": "rejected",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_7db0fc5db553",
+        "E_6d463dfffbfa",
+        "E_bdcb2ae5f479",
+        "E_ab510873209a"
+      ],
+      "neural_mechanism": "slow-wave generation",
+      "modalities": [
+        "EEG",
+        "EEG-fMRI",
+        "Scale"
+      ],
+      "measurable_variables": [
+        "slow_wave_density",
+        "thalamus_DMN_FC",
+        "ISI"
+      ],
+      "directional_prediction": "slow-wave generation changes slow_wave_density"
+    },
+    "created_at": "2026-07-22T05:18:34.749490+00:00",
+    "updated_at": "2026-07-22T05:18:34.749701+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_c9b84447c442",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Evolved cross_pollination variant of Slow-Wave Generation explains slow_wave_density alteration",
+    "summary": "Refines slow-wave generation may drive measurable change in slow_wave_density among sleep-disorder populations, detectable with EEG features.",
+    "content": "This hypothesis proposes that slow-wave generation is not merely correlated with sleep disturbance but acts as an organizing mechanism that changes slow_wave_density. The proposal is grounded in 4 evidence records spanning EEG, EEG-fMRI, fMRI. It should be tested by modeling slow_wave_density against mechanism-linked features while controlling for known sleep severity and data-quality covariates. Evolution strategy 'cross_pollination' emphasizes stronger grounding and clearer tests.",
+    "rationale": "Derived from parent hypothesis hypothesis_fe98a37de1de to improve cross_pollination.",
+    "experimental_plan": "Use the analysis-ready profile to identify approved features for slow_wave_density, thalamus_DMN_FC, DMN_FC. Fit a prespecified model with negative controls, then test whether slow-wave generation improves prediction or mediation of sleep outcomes beyond baseline covariates.",
+    "novelty_assessment": "Evolved through cross_pollination from a high-ranked parent.",
+    "key_assumptions": [
+      "slow-wave generation is measurable through available sleep-science features",
+      "slow_wave_density captures a downstream expression of the mechanism",
+      "The association remains after quality-control and confound checks"
+    ],
+    "citations": [
+      "api_online_001"
     ],
     "generation_strategy": "evolution:cross_pollination",
     "generation_round": 2,
-    "elo_rating": 1337.0,
-    "rating_deviation": 141.0,
-    "volatility": 0.059997,
-    "matches_played": 4,
-    "wins": 2,
-    "losses": 2,
+    "elo_rating": 1271.0,
+    "rating_deviation": 200.0,
+    "volatility": 0.06,
+    "matches_played": 0,
+    "wins": 0,
+    "losses": 0,
     "draws": 0,
-    "status": "active",
+    "status": "rejected",
     "parent_ids": [
-      "hypothesis_95b004575b69",
-      "hypothesis_80c2da4d2174",
-      "hypothesis_e7f30c34a340"
+      "hypothesis_fe98a37de1de"
     ],
     "metadata": {
       "evolved_from": [
-        "hypothesis_95b004575b69",
-        "hypothesis_80c2da4d2174",
-        "hypothesis_e7f30c34a340"
-      ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest"
+        "hypothesis_fe98a37de1de"
+      ]
     },
-    "created_at": "2026-07-15T07:04:53.035977+00:00",
-    "updated_at": "2026-07-15T07:14:06.733331+00:00"
+    "created_at": "2026-07-22T05:18:34.749867+00:00",
+    "updated_at": "2026-07-22T05:18:34.749951+00:00"
   }
 ]

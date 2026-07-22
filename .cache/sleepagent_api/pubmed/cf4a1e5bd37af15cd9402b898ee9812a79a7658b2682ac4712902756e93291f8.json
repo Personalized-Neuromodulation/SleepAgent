@@ -1,0 +1,78 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "100",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42248225",
+      "42061026",
+      "42013853",
+      "41905254",
+      "41406966",
+      "41370374",
+      "41167443",
+      "41150727",
+      "41055995",
+      "40964331",
+      "40748959",
+      "40227216",
+      "39823324",
+      "39809276",
+      "39592915",
+      "39587312",
+      "39419462",
+      "39333887",
+      "39005471",
+      "38547869",
+      "38538284",
+      "38496507",
+      "38132088",
+      "37586427",
+      "37395722",
+      "36979445",
+      "36331996",
+      "30020642",
+      "35734219",
+      "35563419",
+      "35199866",
+      "35124476",
+      "34648731",
+      "34093121",
+      "33942174",
+      "33608699",
+      "33537940",
+      "33451754",
+      "33190318",
+      "32285002",
+      "32186966",
+      "30523254",
+      "30503715",
+      "30371556",
+      "30269865",
+      "29274876",
+      "29272343",
+      "29225025",
+      "29169951",
+      "27912885"
+    ],
+    "translationset": [
+      {
+        "from": "locus coeruleus",
+        "to": "\"locus coeruleus\"[MeSH Terms] OR (\"locus\"[All Fields] AND \"coeruleus\"[All Fields]) OR \"locus coeruleus\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "norepinephrine",
+        "to": "\"noradrenaline's\"[All Fields] OR \"norepinephrin\"[All Fields] OR \"norepinephrine\"[Supplementary Concept] OR \"norepinephrine\"[All Fields] OR \"noradrenalin\"[All Fields] OR \"norepinephrine\"[MeSH Terms] OR \"noradrenaline\"[All Fields] OR \"norepinephrines\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"locus coeruleus\"[MeSH Terms] OR (\"locus\"[All Fields] AND \"coeruleus\"[All Fields]) OR \"locus coeruleus\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND \"wake\"[All Fields] AND (\"noradrenaline s\"[All Fields] OR \"norepinephrin\"[All Fields] OR \"norepinephrine\"[Supplementary Concept] OR \"norepinephrine\"[All Fields] OR \"noradrenalin\"[All Fields] OR \"norepinephrine\"[MeSH Terms] OR \"noradrenaline\"[All Fields] OR \"norepinephrines\"[All Fields])"
+  }
+}

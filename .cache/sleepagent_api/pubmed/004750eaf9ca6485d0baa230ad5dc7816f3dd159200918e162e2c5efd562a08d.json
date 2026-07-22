@@ -1,0 +1,48 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "48",
+    "retmax": "20",
+    "retstart": "0",
+    "idlist": [
+      "42476764",
+      "42310658",
+      "41812897",
+      "41694716",
+      "41691824",
+      "41465566",
+      "41362845",
+      "41013363",
+      "40964196",
+      "40835806",
+      "40630648",
+      "40629377",
+      "40564013",
+      "40482291",
+      "40398068",
+      "40376565",
+      "40121525",
+      "39822388",
+      "39610629",
+      "39287881"
+    ],
+    "translationset": [
+      {
+        "from": "ISI",
+        "to": "\"ISI\"[Journal:__jid101647733] OR \"isi\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"isi\"[Journal] OR \"isi\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields])"
+  }
+}

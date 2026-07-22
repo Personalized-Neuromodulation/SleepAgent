@@ -25,7 +25,7 @@ def tokenize(text: str) -> list[str]:
 
 
 def rewrite_query(query: str) -> str:
-    """Placeholder for future query rewrite; Phase 1 keeps the query unchanged."""
+    """Placeholder for future query rewrite; grounding keeps the query unchanged."""
     return query.strip()
 
 
@@ -81,5 +81,5 @@ def retrieve(query: str, records: list[LiteratureRecord], top_k: int = 10) -> li
 
 
 def graph_rag_retrieve(*_args, **_kwargs) -> list[RetrievalResult]:
-    """Reserved GraphRAG hook; intentionally not implemented in Phase 1."""
+    """Reserved GraphRAG hook; intentionally not implemented in the grounding MVP."""
     return []

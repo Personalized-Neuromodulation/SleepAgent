@@ -1,0 +1,15 @@
+{
+  "foundation_mode": "no_real_data",
+  "real_subject_data_available": false,
+  "feature_values_available": false,
+  "description": "Pre-experiment foundation: no subject-level raw or derived feature values are registered.",
+  "expected_next_step": "grounding builds literature evidence and a theoretical mechanism graph; experiment later selects real modalities and extracts features.",
+  "outputs": {
+    "subject_index": "/home/zyb/Agent_skills/SleepAgent/data/foundation/subject_index.csv",
+    "feature_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/feature_registry.csv",
+    "approved_variables": "/home/zyb/Agent_skills/SleepAgent/data/foundation/approved_variables.yaml",
+    "data_dictionary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_dictionary.yaml",
+    "qc_summary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/qc_summary.csv",
+    "multimodal_master_table": "/home/zyb/Agent_skills/SleepAgent/data/foundation/multimodal_master_table.csv"
+  }
+}

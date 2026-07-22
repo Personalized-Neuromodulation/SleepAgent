@@ -1,0 +1,74 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "54",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42182062",
+      "40988903",
+      "39844851",
+      "39767811",
+      "39203748",
+      "37876454",
+      "37531785",
+      "37176016",
+      "37117013",
+      "36385301",
+      "35108682",
+      "34915415",
+      "34090866",
+      "33381012",
+      "31761703",
+      "31493023",
+      "30297727",
+      "30014576",
+      "29915137",
+      "29476336",
+      "27912882",
+      "27426511",
+      "26306695",
+      "25294312",
+      "25057841",
+      "24760861",
+      "24640571",
+      "22837808",
+      "22537192",
+      "21689675",
+      "20969999",
+      "20724362",
+      "20509826",
+      "19934872",
+      "19889861",
+      "18591488",
+      "18514412",
+      "18383504",
+      "18085319",
+      "17567801",
+      "17557503",
+      "15527748",
+      "15493551",
+      "14715938",
+      "14698752",
+      "12831851",
+      "12626630",
+      "12552203",
+      "12530996",
+      "12040064"
+    ],
+    "translationset": [
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "GABA",
+        "to": "\"gamma-aminobutyric acid\"[Supplementary Concept] OR \"gamma-aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma-aminobutyric acid\"[MeSH Terms] OR (\"gamma-aminobutyric\"[All Fields] AND \"acid\"[All Fields])"
+      }
+    ],
+    "querytranslation": "\"VLPO\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"gamma aminobutyric acid\"[Supplementary Concept] OR \"gamma aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma aminobutyric acid\"[MeSH Terms] OR (\"gamma aminobutyric\"[All Fields] AND \"acid\"[All Fields]))"
+  }
+}

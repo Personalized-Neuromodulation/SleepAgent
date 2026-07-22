@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "33362692",
+      "26386442"
+    ],
+    "translationset": [
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "head",
+        "to": "\"head\"[MeSH Terms] OR \"head\"[All Fields]"
+      },
+      {
+        "from": "motion",
+        "to": "\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion's\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]"
+      },
+      {
+        "from": "confound",
+        "to": "\"confound\"[All Fields] OR \"confounded\"[All Fields] OR \"confounder\"[All Fields] OR \"confounders\"[All Fields] OR \"confounding\"[All Fields] OR \"confounds\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"head\"[MeSH Terms] OR \"head\"[All Fields]) AND (\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion s\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]) AND (\"confound\"[All Fields] OR \"confounded\"[All Fields] OR \"confounder\"[All Fields] OR \"confounders\"[All Fields] OR \"confounding\"[All Fields] OR \"confounds\"[All Fields])"
+  }
+}

@@ -20,6 +20,7 @@ class EdgeType(str, Enum):
     paper_reports_finding = "paper_reports_finding"
     finding_supports_mechanism = "finding_supports_mechanism"
     finding_refutes_mechanism = "finding_refutes_mechanism"
+    finding_null_for_mechanism = "finding_null_for_mechanism"
     mechanism_measured_by_variable = "mechanism_measured_by_variable"
     variable_belongs_to_modality = "variable_belongs_to_modality"
     variable_mapped_to_data_feature = "variable_mapped_to_data_feature"

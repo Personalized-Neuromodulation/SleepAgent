@@ -1,0 +1,40 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "8",
+    "retmax": "8",
+    "retstart": "0",
+    "idlist": [
+      "41961213",
+      "41150672",
+      "41068341",
+      "39096646",
+      "37462968",
+      "31855654",
+      "31514113",
+      "23707147"
+    ],
+    "translationset": [
+      {
+        "from": "sleep stage",
+        "to": "\"sleep stages\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"stages\"[All Fields]) OR \"sleep stages\"[All Fields] OR (\"sleep\"[All Fields] AND \"stage\"[All Fields]) OR \"sleep stage\"[All Fields]"
+      },
+      {
+        "from": "composition",
+        "to": "\"composite\"[All Fields] OR \"composite's\"[All Fields] OR \"composited\"[All Fields] OR \"composites\"[All Fields] OR \"compositing\"[All Fields] OR \"composition\"[All Fields] OR \"compositional\"[All Fields] OR \"compositions\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "analysis",
+        "to": "\"analysis\"[Subheading] OR \"analysis\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep stages\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"stages\"[All Fields]) OR \"sleep stages\"[All Fields] OR (\"sleep\"[All Fields] AND \"stage\"[All Fields]) OR \"sleep stage\"[All Fields]) AND (\"composite\"[All Fields] OR \"composite s\"[All Fields] OR \"composited\"[All Fields] OR \"composites\"[All Fields] OR \"compositing\"[All Fields] OR \"composition\"[All Fields] OR \"compositional\"[All Fields] OR \"compositions\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"analysis\"[MeSH Subheading] OR \"analysis\"[All Fields])"
+  }
+}

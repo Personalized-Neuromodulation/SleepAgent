@@ -1,8 +1,8 @@
 # SleepAgent
 
-SleepAgent is a vertical AI Scientist project for sleep science. Phase 1 implements a Knowledge & Data Grounding System that turns seed literature and Data Foundation products into structured evidence, mechanism graphs, variable mappings, and analysis-ready data profiles.
+SleepAgent is a vertical AI Scientist project for sleep science. Phase 1 implements an online Knowledge & Data Grounding System that turns retrieved literature and Data Foundation products into structured evidence, mechanism graphs, variable mappings, and analysis-ready data profiles.
 
-Phase 1 deliberately does not implement hypothesis generation, experiment execution, online API calls, Co-Scientist tournaments, or RL. It reads Data Foundation outputs and falls back to toy fixtures when foundation files are unavailable.
+Phase 1 reads Data Foundation outputs, retrieves literature through online API/RAG paths, and writes grounding artifacts under `outputs/grounding`.
 
 ## Run Phase 1
 
@@ -10,10 +10,10 @@ Phase 1 deliberately does not implement hypothesis generation, experiment execut
 python -m sleep_ai_scientist.cli grounding build --config configs/grounding_config.yaml
 ```
 
-or:
+For the no-real-data online RAG smoke test:
 
 ```bash
-python scripts/run_phase1_grounding.py --config configs/grounding_config.yaml
+bash scripts/run_foundation_grounding_no_real_data_online.sh
 ```
 
 Main outputs:

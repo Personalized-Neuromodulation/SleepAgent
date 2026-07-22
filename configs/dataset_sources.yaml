@@ -1,0 +1,26 @@
+datasets:
+  Sleep-EDF:
+    source: PhysioNet
+    modality: [EEG, PSG]
+    species: human
+    population: healthy / sleep cassette / sleep telemetry
+    access_status: open
+    url: https://physionet.org/
+  CAP Sleep Database:
+    source: PhysioNet
+    modality: [EEG, PSG]
+    species: human
+    access_status: open
+    url: https://physionet.org/
+  NSRR:
+    source: National Sleep Research Resource
+    modality: [PSG, questionnaires, clinical]
+    species: human
+    access_status: controlled/open depending dataset
+    url: https://sleepdata.org/
+  OpenNeuro sleep:
+    source: OpenNeuro
+    modality: [EEG, fMRI, MRI]
+    species: human
+    access_status: open
+    url: https://openneuro.org/

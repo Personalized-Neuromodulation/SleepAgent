@@ -1,0 +1,71 @@
+project:
+  name: SleepAgent
+  module: sleep_literature_library
+  library_version: sleep_literature_library_v1
+
+database_config: configs/database_config.yaml
+
+paths:
+  literature_dir: data/literature
+  outputs_dir: outputs/literature
+  api_retrieved_csv: outputs/literature/sleep_library_api_retrieved_papers.csv
+  api_retrieved_jsonl: outputs/literature/sleep_library_api_retrieved_papers.jsonl
+  registry_csv: data/literature/sleep_literature_registry.csv
+  registry_jsonl: data/literature/sleep_literature_registry.jsonl
+  deduplication_report: outputs/literature/literature_deduplication_report.csv
+  manifest: outputs/literature/sleep_library_manifest.json
+  build_report: outputs/literature/sleep_library_build_report.md
+  api_search_log: outputs/literature/api_search_log.jsonl
+  provider_summary: outputs/literature/provider_summary.json
+  query_summary: outputs/literature/query_summary.csv
+
+api:
+  enabled: true
+  cache_enabled: true
+  cache_dir: .cache/sleepagent_api
+  timeout_seconds: 20
+  max_retries: 3
+  backoff_seconds: 1.5
+  max_results_per_query: 50
+  fail_open: true
+  providers:
+    pubmed:
+      enabled: true
+      email_env: NCBI_EMAIL
+      tool_env: NCBI_TOOL
+      api_key_env: NCBI_API_KEY
+      base_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils
+      requests_per_second_without_key: 3
+      requests_per_second_with_key: 10
+    europe_pmc:
+      enabled: true
+      base_url: https://www.ebi.ac.uk/europepmc/webservices/rest
+      email_env: EUROPE_PMC_EMAIL
+      requests_per_second: 3
+    openalex:
+      enabled: true
+      base_url: https://api.openalex.org
+      api_key_env: OPENALEX_API_KEY
+      requests_per_second: 5
+    semantic_scholar:
+      enabled: true
+      base_url: https://api.semanticscholar.org/graph/v1
+      api_key_env: SEMANTIC_SCHOLAR_API_KEY
+      requests_per_second: 1
+      min_interval_seconds: 1.1
+  output:
+    api_literature_csv: outputs/literature/sleep_library_api_retrieved_papers.csv
+    api_literature_jsonl: outputs/literature/sleep_library_api_retrieved_papers.jsonl
+    api_search_log: outputs/literature/api_search_log.jsonl
+
+deduplication:
+  by_doi: true
+  by_pmid: true
+  by_pmcid: true
+  by_normalized_title: true
+
+outputs:
+  write_csv: true
+  write_jsonl: true
+  write_manifest: true
+  write_report: true

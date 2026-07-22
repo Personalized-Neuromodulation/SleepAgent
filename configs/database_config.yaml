@@ -1,0 +1,22 @@
+database:
+  enabled: true
+  backend_env: SLEEPAGENT_DATABASE_BACKEND
+  default_backend: postgresql
+  url_env: SLEEPAGENT_DATABASE_URL
+  sqlite_path_env: SLEEPAGENT_SQLITE_PATH
+  default_sqlite_path: data/literature/sleep_literature.db
+  echo_env: SLEEPAGENT_DB_ECHO
+  create_tables_env: SLEEPAGENT_DB_CREATE_TABLES
+  fail_open_env: SLEEPAGENT_DB_FAIL_OPEN
+  pool_pre_ping: true
+  pool_recycle_seconds: 1800
+
+exports:
+  write_csv: true
+  write_jsonl: true
+  write_yaml: true
+  write_markdown_report: true
+
+sqlite_fallback:
+  enabled_for_tests: true
+  enabled_for_local_dev: true

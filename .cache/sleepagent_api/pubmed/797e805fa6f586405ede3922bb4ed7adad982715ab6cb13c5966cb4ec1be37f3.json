@@ -1,0 +1,52 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "66",
+    "retmax": "20",
+    "retstart": "0",
+    "idlist": [
+      "42369869",
+      "42127149",
+      "42061026",
+      "41783872",
+      "41316910",
+      "41133663",
+      "40909627",
+      "40443801",
+      "39056406",
+      "37745863",
+      "37536211",
+      "36535322",
+      "35934208",
+      "35863180",
+      "35615855",
+      "35095451",
+      "34099771",
+      "33960583",
+      "33940148",
+      "33505350"
+    ],
+    "translationset": [
+      {
+        "from": "NREM sleep",
+        "to": "\"sleep, slow-wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow-wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"nrem\"[All Fields] AND \"sleep\"[All Fields]) OR \"nrem sleep\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep, slow wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"nrem\"[All Fields] AND \"sleep\"[All Fields]) OR \"nrem sleep\"[All Fields]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields])"
+  }
+}

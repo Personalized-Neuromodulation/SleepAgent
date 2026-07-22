@@ -24,6 +24,7 @@ from sleep_ai_scientist.hypothesis.agents.memory import (
 from sleep_ai_scientist.hypothesis.agents.tournament import Glicko2State, compute_glicko2_update
 from sleep_ai_scientist.schemas.evidence import EvidenceRecord
 from sleep_ai_scientist.schemas.hypothesis import HypothesisStatus
+from tests.api_test_utils import fake_online_literature_search
 
 
 OUTPUT_EVIDENCE_PATH = Path("outputs/grounding/evidence_table.json")
@@ -31,7 +32,14 @@ OUTPUT_EVIDENCE_PATH = Path("outputs/grounding/evidence_table.json")
 
 def _load_output_evidence() -> list[EvidenceRecord]:
     if not OUTPUT_EVIDENCE_PATH.exists() or OUTPUT_EVIDENCE_PATH.stat().st_size == 0:
-        run_grounding_pipeline("configs/grounding_config.yaml")
+        import sleep_ai_scientist.grounding.grounding_pipeline as grounding_pipeline
+
+        original_search = grounding_pipeline.search_literature_apis
+        grounding_pipeline.search_literature_apis = fake_online_literature_search
+        try:
+            run_grounding_pipeline("configs/grounding_config.yaml")
+        finally:
+            grounding_pipeline.search_literature_apis = original_search
     return [EvidenceRecord(**row) for row in read_json(OUTPUT_EVIDENCE_PATH)]
 
 

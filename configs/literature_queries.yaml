@@ -1,0 +1,52 @@
+query_set:
+  version: sleepagent_literature_queries_v1
+  description: Query set for SleepAgent Phase 1 Grounding Corpus v1.
+
+queries:
+  core_insomnia_eeg:
+    - insomnia slow wave EEG
+    - insomnia slow-wave activity
+    - insomnia delta power sleep EEG
+    - insomnia beta power hyperarousal EEG
+    - insomnia sleep spindle EEG
+  insomnia_fmri:
+    - insomnia default mode network fMRI
+    - insomnia thalamus functional connectivity
+    - insomnia thalamocortical fMRI
+    - insomnia salience network fMRI
+    - insomnia resting state fMRI sleep
+  insomnia_dti_mri:
+    - insomnia DTI fractional anisotropy
+    - insomnia white matter integrity DTI
+    - insomnia thalamic radiation FA
+    - insomnia structural MRI thalamus
+    - insomnia hippocampus volume MRI
+  eeg_fmri_sleep:
+    - simultaneous EEG fMRI sleep slow wave
+    - sleep spindle thalamocortical fMRI
+    - NREM sleep EEG fMRI connectivity
+    - sleep slow wave thalamus fMRI
+    - sleep EEG fMRI default mode network
+  symptoms_scales:
+    - insomnia severity index EEG
+    - PSQI sleep quality EEG
+    - ISI fMRI insomnia
+    - insomnia questionnaire neuroimaging
+    - sleep quality DTI MRI
+  confounds_methods:
+    - sleep fMRI head motion confound
+    - insomnia fMRI medication confound
+    - in-scanner sleep EEG fMRI
+    - sleep neuroimaging covariates age sex motion
+    - sleep stage composition fMRI analysis
+
+settings:
+  max_results_per_query: 20
+  providers:
+    - pubmed
+    - europe_pmc
+    - openalex
+    - semantic_scholar
+  deduplicate: true
+  write_candidate_pool: true
+  auto_approve_evidence: false

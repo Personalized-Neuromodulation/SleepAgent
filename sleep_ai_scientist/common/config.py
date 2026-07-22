@@ -37,4 +37,6 @@ def existing_or_fixture(config: dict[str, Any], primary_key: str, fixture_key: s
     primary = config_path(config, primary_key)
     if primary.exists() and primary.stat().st_size > 0:
         return primary
+    if not config.get("runtime", {}).get("allow_fixtures", True):
+        return primary
     return config_path(config, fixture_key)

@@ -1,0 +1,25 @@
+taxonomy:
+  version: sleepagent_diagnostic_taxonomy_v1
+sources:
+  - ICSD-3-TR metadata
+  - MeSH sleep disorder terms
+  - SleepAgent curated categories
+sleep_disorder_categories:
+  insomnia_disorders:
+    synonyms: [insomnia, chronic insomnia, insomnia disorder, sleep initiation and maintenance disorders]
+    downstream_relevance: [clinical_application, symptom_scales]
+  sleep_related_breathing_disorders:
+    synonyms: [sleep apnea, obstructive sleep apnea, OSA]
+    downstream_relevance: [confound, exclusion_criterion]
+  central_disorders_of_hypersomnolence:
+    synonyms: [hypersomnia, narcolepsy]
+    downstream_relevance: [differential_diagnosis]
+  circadian_rhythm_sleep_wake_disorders:
+    synonyms: [circadian rhythm disorder, delayed sleep phase, advanced sleep phase]
+    downstream_relevance: [confound, mechanism]
+  parasomnias:
+    synonyms: [parasomnia, REM sleep behavior disorder, NREM parasomnia]
+    downstream_relevance: [differential_diagnosis]
+  sleep_related_movement_disorders:
+    synonyms: [restless legs syndrome, periodic limb movement disorder]
+    downstream_relevance: [confound, exclusion_criterion]

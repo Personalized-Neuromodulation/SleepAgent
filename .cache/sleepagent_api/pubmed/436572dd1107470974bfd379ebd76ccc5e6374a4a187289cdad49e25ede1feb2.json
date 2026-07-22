@@ -1,0 +1,50 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "18",
+    "retmax": "18",
+    "retstart": "0",
+    "idlist": [
+      "42047579",
+      "41951845",
+      "41912789",
+      "41472688",
+      "40568102",
+      "40216547",
+      "39955469",
+      "39278086",
+      "32276056",
+      "31659927",
+      "31262708",
+      "30615913",
+      "30300700",
+      "29277652",
+      "26951423",
+      "21676536",
+      "20837102",
+      "19645968"
+    ],
+    "translationset": [
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "spindle",
+        "to": "\"spindle\"[All Fields] OR \"spindle's\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]"
+      },
+      {
+        "from": "thalamocortical",
+        "to": "\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"spindle\"[All Fields] OR \"spindle s\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]) AND (\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])"
+  }
+}

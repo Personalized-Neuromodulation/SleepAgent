@@ -1,0 +1,69 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "37",
+    "retmax": "37",
+    "retstart": "0",
+    "idlist": [
+      "42078421",
+      "41951845",
+      "41912789",
+      "41472688",
+      "41338167",
+      "40568102",
+      "40216547",
+      "39955469",
+      "38113618",
+      "36336346",
+      "35862450",
+      "34432229",
+      "33393838",
+      "32276056",
+      "31883456",
+      "31262708",
+      "30615913",
+      "30300700",
+      "29860401",
+      "29277652",
+      "26951423",
+      "23283336",
+      "22609023",
+      "22493589",
+      "22037418",
+      "21676536",
+      "21120121",
+      "20837102",
+      "20509827",
+      "19213035",
+      "17670944",
+      "16682677",
+      "15946329",
+      "14729416",
+      "12888022",
+      "8619525",
+      "8446839"
+    ],
+    "translationset": [
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "spindle",
+        "to": "\"spindle\"[All Fields] OR \"spindle's\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "thalamus",
+        "to": "\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"spindle\"[All Fields] OR \"spindle s\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields])"
+  }
+}

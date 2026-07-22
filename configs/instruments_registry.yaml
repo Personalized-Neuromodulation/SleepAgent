@@ -1,0 +1,24 @@
+instruments:
+  ISI:
+    name: Insomnia Severity Index
+    domain: insomnia severity
+    score_range: 0-28
+    direction: higher=worse
+    common_cutoffs: [0-7 no clinically significant insomnia, 8-14 subthreshold insomnia, 15-21 moderate insomnia, 22-28 severe insomnia]
+    role: [outcome, phenotype, clinical_relevance]
+  PSQI:
+    name: Pittsburgh Sleep Quality Index
+    domain: sleep quality
+    score_range: 0-21
+    direction: higher=worse
+    common_cutoffs: [">5 poor sleep quality"]
+    role: [outcome, phenotype]
+  ESS:
+    name: Epworth Sleepiness Scale
+    domain: daytime sleepiness
+    direction: higher=worse
+    role: [covariate, phenotype]
+  sleep_diary:
+    name: Sleep Diary
+    domain: subjective sleep timing and quality
+    role: [outcome, clinical_context]

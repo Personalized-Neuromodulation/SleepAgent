@@ -1,0 +1,39 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "11",
+    "retmax": "11",
+    "retstart": "0",
+    "idlist": [
+      "42476764",
+      "41242345",
+      "41032947",
+      "40384680",
+      "40074534",
+      "38181582",
+      "37138521",
+      "34427878",
+      "33049323",
+      "31327125",
+      "25050429"
+    ],
+    "translationset": [
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "white matter",
+        "to": "\"white matter\"[MeSH Terms] OR (\"white\"[All Fields] AND \"matter\"[All Fields]) OR \"white matter\"[All Fields]"
+      },
+      {
+        "from": "integrity",
+        "to": "\"integrities\"[All Fields] OR \"integrity\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"white matter\"[MeSH Terms] OR (\"white\"[All Fields] AND \"matter\"[All Fields]) OR \"white matter\"[All Fields]) AND (\"integrities\"[All Fields] OR \"integrity\"[All Fields]) AND \"DTI\"[All Fields]"
+  }
+}
