@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from sleep_ai_scientist.common.io import read_json, write_json, write_yaml
+from sleep_ai_scientist.common.io import read_json, read_yaml, write_json, write_yaml
 from sleep_ai_scientist.discovery_loop.discovery_runner import _collect_iteration_metrics, run_discovery_loop
 
 
@@ -238,16 +238,11 @@ def test_discovery_loop_updates_foundation_and_refreshes_grounding_after_experim
     state = read_json(tmp_path / "loop" / "loop_state.json")
 
     assert summary["grounding_refreshes"] == 1
-    assert literature_calls == [
-        {
-            "config_path": str(Path("configs/literature_library_config.yaml").resolve()),
-            "query_config_path": str(Path("configs/literature_queries.yaml").resolve()),
-            "library_version": "test_library",
-        }
-    ]
+    assert literature_calls == []
     assert grounding_calls == [{"config_path": str(grounding_config), "corpus_version": "test_data_constrained"}]
-    assert state["iterations"][0]["literature_refresh"]["refreshed"] is True
-    assert state["iterations"][0]["literature_refresh"]["literature_summary"]["registry_records"] == 3
+    assert state["iterations"][0]["literature_expansion"]["accepted_query_count"] == 0
+    assert state["iterations"][0]["literature_refresh"]["refreshed"] is False
+    assert state["iterations"][0]["literature_refresh"]["reason"] == "no_new_experiment_queries"
     assert state["iterations"][0]["foundation_update"]["foundation_changed"] is True
     assert "thalamus_DMN_FC" in (foundation_dir / "feature_registry.csv").read_text(encoding="utf-8")
     assert state["iterations"][0]["foundation_update"]["data_asset_registry"] == str(foundation_dir / "data_asset_registry.jsonl")
@@ -275,6 +270,143 @@ def test_discovery_loop_updates_foundation_and_refreshes_grounding_after_experim
     assert manifest["data_assets"]["registry"] == str(foundation_dir / "data_asset_registry.jsonl")
     assert manifest["data_assets"]["update_history"] == str(foundation_dir / "foundation_update_history.jsonl")
     assert state["result"]["last_experiment_feedback"] == str(feedback_path)
+
+
+def test_discovery_loop_refreshes_literature_only_when_experiment_intent_accepts_queries(monkeypatch, tmp_path):
+    hypothesis_dir = tmp_path / "hypotheses"
+    experiment_dir = tmp_path / "experiments"
+    foundation_dir = tmp_path / "foundation"
+    grounding_dir = tmp_path / "grounding"
+    feedback_path = hypothesis_dir / "experimental_feedback.json"
+    feature_table = tmp_path / "features" / "fmri" / "plan-1" / "fmri_features.csv"
+    feature_table.parent.mkdir(parents=True, exist_ok=True)
+    feature_table.write_text("subject_id,thalamus_DMN_FC\nS001,0.2\nS002,0.1\n", encoding="utf-8")
+    query_config = tmp_path / "literature_queries.yaml"
+    write_yaml(
+        query_config,
+        {
+            "query_sets": {
+                "library": {
+                    "settings": {"providers": ["pubmed"]},
+                    "queries": {"human_sleep_neuroimaging": ["sleep thalamus connectivity fMRI"]},
+                }
+            }
+        },
+    )
+
+    hypothesis_config = tmp_path / "hypothesis_config.yaml"
+    experiment_config = tmp_path / "experiment_config.yaml"
+    foundation_config = tmp_path / "foundation_config.yaml"
+    grounding_config = tmp_path / "grounding_config.yaml"
+    loop_config = tmp_path / "discovery_loop_config.yaml"
+
+    write_yaml(hypothesis_config, {"paths": {"output_hypotheses_dir": str(hypothesis_dir), "experimental_feedback": str(feedback_path)}})
+    write_yaml(
+        experiment_config,
+        {"paths": {"experiment_results": str(experiment_dir / "experiment_results.json"), "experimental_feedback": str(feedback_path)}},
+    )
+    write_yaml(
+        foundation_config,
+        {
+            "runtime": {"allow_fixtures": False},
+            "paths": {"foundation_dir": str(foundation_dir)},
+            "inputs": {},
+            "outputs": {
+                "subject_index": str(foundation_dir / "subject_index.csv"),
+                "feature_registry": str(foundation_dir / "feature_registry.csv"),
+                "approved_variables": str(foundation_dir / "approved_variables.yaml"),
+                "data_dictionary": str(foundation_dir / "data_dictionary.yaml"),
+                "qc_summary": str(foundation_dir / "qc_summary.csv"),
+                "multimodal_master_table": str(foundation_dir / "multimodal_master_table.csv"),
+                "manifest": str(foundation_dir / "foundation_manifest.json"),
+                "data_asset_registry": str(foundation_dir / "data_asset_registry.jsonl"),
+                "update_history": str(foundation_dir / "foundation_update_history.jsonl"),
+                "report": str(tmp_path / "reports" / "phase0_foundation_report.md"),
+            },
+            "subject_id": {"column": "subject_id", "aliases": []},
+            "modalities": ["fMRI"],
+            "qc": {"pass_values": ["pass"], "caution_values": [], "fail_values": ["fail"]},
+            "thresholds": {"max_missing_rate_primary": 1.0, "max_missing_rate_secondary": 1.0, "min_n_total": 1, "min_n_per_group": 0},
+        },
+    )
+    write_yaml(grounding_config, {"paths": {"output_grounding_dir": str(grounding_dir)}})
+    write_yaml(
+        loop_config,
+        {
+            "discovery_loop": {"max_iterations": 1, "verbose": False, "snapshot_features": False, "enable_foundation_grounding_refresh": True, "stop_conditions": {"reward_convergence": {"enabled": False}, "no_active_hypotheses": False}},
+            "foundation": {"config_path": str(foundation_config)},
+            "literature": {"enabled": True, "config_path": "configs/literature_library_config.yaml", "query_config_path": str(query_config), "library_version": "test_library"},
+            "grounding": {"config_path": str(grounding_config), "corpus_version": "test_data_constrained"},
+            "hypothesis": {"config_path": str(hypothesis_config)},
+            "experiment": {"config_path": str(experiment_config)},
+            "paths": {"loop_output_dir": str(tmp_path / "loop"), "iteration_state": str(tmp_path / "loop" / "loop_state.json"), "iteration_report": str(tmp_path / "reports" / "loop.md")},
+        },
+    )
+
+    def fake_hypothesis_pipeline(config_path):
+        write_json(hypothesis_dir / "hypothesis_pool.json", [{"hypothesis_id": "h1", "status": "active"}])
+        write_json(hypothesis_dir / "top_k_hypotheses.json", [{"hypothesis_id": "h1"}])
+        return {"hypotheses": 1}
+
+    def fake_experiment_pipeline(config_path):
+        write_json(experiment_dir / "experiment_results.json", [{"plan_id": "plan-1"}])
+        write_json(feedback_path, [{"hypothesis_id": "h1", "computed_reward": 0.8}])
+        return {"plans": 1, "feature_tables": [{"modality": "fMRI", "path": str(feature_table)}], "experimental_feedback": str(feedback_path)}
+
+    literature_calls = []
+    append_calls = []
+
+    def fake_build_intent(experiment_summary, iteration_id, query_config_path, **kwargs):
+        return {
+            "iteration_id": iteration_id,
+            "accepted_query_count": 1,
+            "accepted_queries": [
+                {
+                    "query": "thalamus default mode network salience network functional connectivity sleep fMRI",
+                    "intent_type": "resolve_failed_test",
+                    "source_iteration": iteration_id,
+                }
+            ],
+            "candidate_count": 1,
+            "rejected_duplicate_count": 0,
+            "rejected_invalid_count": 0,
+            "signals": {"failed_tests": 1, "negative_control_failures": 0, "missing_variables": 0, "modality_gaps": 0},
+        }
+
+    def fake_append(query_config_path, accepted_queries):
+        append_calls.append({"query_config_path": str(query_config_path), "queries": accepted_queries})
+        return {"appended": len(accepted_queries), "group": "experiment_feedback_expansion", "query_config": str(query_config_path)}
+
+    def fake_literature_build(config_path, query_config_path="configs/literature_queries.yaml", library_version=None, **kwargs):
+        literature_calls.append({"query_config_path": str(query_config_path), "library_version": library_version, "kwargs": kwargs})
+        return {"registry_records": 5, "rag_index": {"chunk_count": 4, "embedding": {"vector_count": 4}}}
+
+    def fake_grounding_pipeline(config_path, query_config_path=None, corpus_version=""):
+        return {"evidence": 1, "graph_nodes": 1}
+
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_hypothesis_pipeline", fake_hypothesis_pipeline)
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_experiment_pipeline", fake_experiment_pipeline)
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.build_literature_expansion_plan", fake_build_intent)
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.append_queries_to_config", fake_append)
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_literature_build", fake_literature_build)
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_grounding_pipeline", fake_grounding_pipeline)
+
+    run_discovery_loop(loop_config)
+    state = read_json(tmp_path / "loop" / "loop_state.json")
+
+    assert append_calls[0]["query_config_path"] == str(query_config.resolve())
+    assert len(literature_calls) == 1
+    incremental_config = Path(literature_calls[0]["query_config_path"])
+    assert incremental_config.name == "literature_incremental_queries.yaml"
+    incremental_payload = read_yaml(incremental_config)
+    assert incremental_payload["query_sets"]["library"]["queries"] == {
+        "experiment_feedback_expansion": [
+            "thalamus default mode network salience network functional connectivity sleep fMRI"
+        ]
+    }
+    assert state["iterations"][0]["literature_expansion"]["accepted_query_count"] == 1
+    assert state["iterations"][0]["literature_expansion"]["incremental_query_config"] == str(incremental_config)
+    assert state["iterations"][0]["literature_refresh"]["refreshed"] is True
 
 
 def test_discovery_loop_next_hypothesis_reads_previous_experiment_feedback(monkeypatch, tmp_path):

@@ -154,3 +154,37 @@ def test_append_queries_to_config_writes_experiment_feedback_group(tmp_path):
         "query_config": str(query_config),
     }
     assert queries == ["thalamus default mode network salience network functional connectivity sleep fMRI"]
+
+
+def test_build_literature_expansion_plan_accepts_llm_json_candidates_after_validation(tmp_path):
+    query_config = tmp_path / "literature_queries.yaml"
+    _write_query_config(query_config)
+
+    class FakeLLM:
+        def call_json(self, messages, max_tokens=8192, temperature=None):
+            return {
+                "intents": [
+                    {
+                        "intent_type": "probe_confound_or_alternative_explanation",
+                        "reason": "negative control suggests global signal confounding",
+                        "priority": 0.9,
+                        "candidate_queries": [
+                            "physiological noise fALFF resting state fMRI sleep",
+                            "sleep thalamus connectivity fMRI",
+                        ],
+                    }
+                ]
+            }
+
+    plan = build_literature_expansion_plan(
+        {"results_payload": []},
+        "iteration_003",
+        query_config,
+        llm_client=FakeLLM(),
+        llm_config={"enabled": True},
+    )
+
+    accepted_queries = [item["query"] for item in plan["accepted_queries"]]
+    assert "physiological noise fALFF resting state fMRI sleep" in accepted_queries
+    assert "sleep thalamus connectivity fMRI" not in accepted_queries
+    assert plan["rejected_duplicate_count"] == 1

@@ -11,6 +11,11 @@ from sleep_ai_scientist.experiment.experiment_pipeline import run_experiment_pip
 from sleep_ai_scientist.foundation.foundation_pipeline import run_foundation_pipeline
 from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
 from sleep_ai_scientist.hypothesis.hypothesis_pipeline import run_hypothesis_pipeline
+from sleep_ai_scientist.literature.experiment_intent import (
+    append_queries_to_config,
+    build_literature_expansion_plan,
+    write_intent_records,
+)
 from sleep_ai_scientist.literature.library_builder import run_literature_build
 
 
@@ -64,9 +69,18 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
                 iteration_id=iteration_id,
                 verbose=verbose,
             )
-            literature_refresh = _refresh_literature_if_needed(
-                foundation_update,
+            literature_expansion = _build_literature_expansion_if_needed(
+                experiment_summary,
+                foundation_update=foundation_update,
                 literature_cfg=config.get("literature", {}),
+                iteration_dir=iteration_dir,
+                iteration_id=iteration_id,
+                verbose=verbose,
+            )
+            literature_refresh = _refresh_literature_if_needed(
+                literature_expansion,
+                literature_cfg=config.get("literature", {}),
+                iteration_dir=iteration_dir,
                 verbose=verbose,
             )
             grounding_refresh = _refresh_grounding_if_needed(
@@ -77,6 +91,7 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
             )
         else:
             foundation_update = {"foundation_changed": False, "reason": "foundation_grounding_refresh_disabled"}
+            literature_expansion = {"accepted_query_count": 0, "reason": "foundation_grounding_refresh_disabled"}
             literature_refresh = {"refreshed": False, "reason": "foundation_grounding_refresh_disabled"}
             grounding_refresh = {"refreshed": False, "reason": "foundation_grounding_refresh_disabled"}
 
@@ -104,6 +119,7 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
             "hypothesis_summary": hypothesis_summary,
             "experiment_summary": experiment_summary,
             "foundation_update": foundation_update,
+            "literature_expansion": literature_expansion,
             "literature_refresh": literature_refresh,
             "grounding_refresh": grounding_refresh,
             "metrics": metrics,
@@ -258,19 +274,72 @@ def _refresh_grounding_if_needed(
     }
 
 
-def _refresh_literature_if_needed(
+def _build_literature_expansion_if_needed(
+    experiment_summary: dict[str, Any],
     foundation_update: dict[str, Any],
     *,
     literature_cfg: dict[str, Any],
+    iteration_dir: Path,
+    iteration_id: str,
     verbose: bool,
 ) -> dict[str, Any]:
     if not foundation_update.get("foundation_changed"):
-        return {"refreshed": False, "reason": "foundation_unchanged"}
+        return {"accepted_query_count": 0, "reason": "foundation_unchanged"}
     if not bool(literature_cfg.get("enabled", False)):
-        return {"refreshed": False, "reason": "literature_refresh_disabled"}
-    config_path = resolve_path(literature_cfg.get("config_path", "configs/literature_library_config.yaml"))
+        return {"accepted_query_count": 0, "reason": "literature_refresh_disabled"}
     query_config_path = resolve_path(literature_cfg.get("query_config_path", "configs/literature_queries.yaml"))
+    enriched = _experiment_summary_for_literature_intent(experiment_summary)
+    _log(verbose, f"[literature_intent] start iteration={iteration_id}")
+    plan = build_literature_expansion_plan(enriched, iteration_id, query_config_path)
+    signals = plan.get("signals", {})
+    _log(
+        verbose,
+        "[literature_intent] extracted signals "
+        f"failed_tests={signals.get('failed_tests', 0)} negative_control_failures={signals.get('negative_control_failures', 0)} "
+        f"missing_variables={signals.get('missing_variables', 0)} modality_gaps={signals.get('modality_gaps', 0)}",
+    )
+    _log(verbose, f"[literature_intent] candidates generated={plan.get('candidate_count', 0)}")
+    _log(
+        verbose,
+        f"[literature_intent] accepted={plan.get('accepted_query_count', 0)} "
+        f"rejected_duplicate={plan.get('rejected_duplicate_count', 0)} rejected_invalid={plan.get('rejected_invalid_count', 0)}",
+    )
+    append_summary = {"appended": 0, "group": "experiment_feedback_expansion", "query_config": str(query_config_path)}
+    accepted = plan.get("accepted_queries", [])
+    if accepted:
+        append_summary = append_queries_to_config(query_config_path, accepted)
+        write_intent_records(resolve_path(literature_cfg.get("intent_log_path", "outputs/literature/query_expansion_intents.jsonl")), accepted)
+    _log(
+        verbose,
+        f"[literature_intent] appended query_config={append_summary.get('query_config')} "
+        f"group={append_summary.get('group')} count={append_summary.get('appended')}",
+    )
+    incremental_query_config = ""
+    if accepted:
+        incremental_query_config = str(_write_incremental_query_config(query_config_path, accepted, iteration_dir))
+    plan_path = iteration_dir / "literature_expansion_plan.json"
+    payload = {**plan, "append_summary": append_summary, "incremental_query_config": incremental_query_config}
+    write_json(plan_path, payload)
+    return payload
+
+
+def _refresh_literature_if_needed(
+    literature_expansion: dict[str, Any],
+    *,
+    literature_cfg: dict[str, Any],
+    iteration_dir: Path,
+    verbose: bool,
+) -> dict[str, Any]:
+    accepted_count = int(literature_expansion.get("accepted_query_count", 0) or 0)
+    if accepted_count <= 0:
+        _log(verbose, "[literature_refresh] skipped reason=no_new_experiment_queries")
+        return {"refreshed": False, "reason": "no_new_experiment_queries", "accepted_query_count": 0}
+    if not bool(literature_cfg.get("enabled", False)):
+        return {"refreshed": False, "reason": "literature_refresh_disabled", "accepted_query_count": accepted_count}
+    config_path = resolve_path(literature_cfg.get("config_path", "configs/literature_library_config.yaml"))
+    query_config_path = resolve_path(literature_expansion.get("incremental_query_config") or literature_cfg.get("query_config_path", "configs/literature_queries.yaml"))
     library_version = literature_cfg.get("library_version")
+    _log(verbose, f"[literature_refresh] incremental start new_queries={accepted_count} query_config={query_config_path}")
     summary = run_literature_build(
         config_path,
         query_config_path=query_config_path,
@@ -287,12 +356,54 @@ def _refresh_literature_if_needed(
     )
     return {
         "refreshed": True,
-        "reason": "foundation_changed",
+        "reason": "new_experiment_queries",
+        "accepted_query_count": accepted_count,
         "literature_config": str(config_path),
         "query_config": str(query_config_path),
         "library_version": str(library_version or summary.get("library_version", "")),
         "literature_summary": summary,
     }
+
+
+def _experiment_summary_for_literature_intent(experiment_summary: dict[str, Any]) -> dict[str, Any]:
+    enriched = dict(experiment_summary)
+    results_path = experiment_summary.get("results") or experiment_summary.get("experiment_results")
+    feedback_path = experiment_summary.get("experimental_feedback")
+    if isinstance(results_path, str):
+        path = resolve_path(results_path)
+        if path.exists() and path.is_file() and path.stat().st_size > 0:
+            enriched["results_payload"] = _read_json_list(path)
+    if isinstance(feedback_path, str):
+        path = resolve_path(feedback_path)
+        if path.exists() and path.is_file() and path.stat().st_size > 0:
+            enriched["feedback_payload"] = _read_json_list(path)
+    return enriched
+
+
+def _write_incremental_query_config(query_config_path: Path, accepted_queries: list[dict[str, Any]], iteration_dir: Path) -> Path:
+    base = read_yaml(query_config_path) if query_config_path.exists() else {}
+    library = base.get("query_sets", {}).get("library", {}) if isinstance(base, dict) else {}
+    settings = dict(library.get("settings", {})) if isinstance(library, dict) else {}
+    query_set = dict(library.get("query_set", {})) if isinstance(library, dict) else {}
+    query_set["version"] = f"{query_set.get('version', 'experiment_feedback')}_incremental"
+    payload = {
+        "query_file": {
+            "version": "sleepagent_experiment_feedback_incremental",
+            "description": "Incremental query set generated from experiment feedback for one discovery iteration.",
+        },
+        "query_sets": {
+            "library": {
+                "query_set": query_set,
+                "settings": settings,
+                "queries": {
+                    "experiment_feedback_expansion": [str(item.get("query", "")).strip() for item in accepted_queries if str(item.get("query", "")).strip()]
+                },
+            }
+        },
+    }
+    path = iteration_dir / "literature_incremental_queries.yaml"
+    write_yaml(path, payload)
+    return path
 
 
 def _last_experiment_feedback(iterations: list[dict[str, Any]]) -> str:
