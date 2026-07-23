@@ -6,7 +6,7 @@ from typing import Any
 
 from sleep_ai_scientist.common.utils import normalize_text
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
-from sleep_ai_scientist.hypothesis.agents.llm import LLMError, build_llm_client, llm_enabled, load_prompt, normalize_llm_config
+from sleep_ai_scientist.llm.client import LLMError, build_llm_client, llm_enabled, load_prompt, normalize_llm_config
 from sleep_ai_scientist.hypothesis.agents.state import HypothesisSessionState
 from sleep_ai_scientist.schemas.evidence import EvidenceDirection, EvidenceRecord
 from sleep_ai_scientist.schemas.hypothesis import GenerationStrategy, Hypothesis
@@ -77,6 +77,8 @@ DOMAIN_METADATA_FIELDS = [
     "supporting_evidence",
     "contradictory_evidence",
     "knowledge_graph_paths",
+    "debate_critique",
+    "debate_refinement",
 ]
 
 
@@ -97,7 +99,7 @@ def _payload_value(payload: dict[str, Any], *keys: str) -> Any:
 
 
 def _flatten_hypothesis_payload(payload: dict[str, Any]) -> dict[str, Any]:
-    for key in ["hypothesis", "candidate_hypothesis", "candidate", "result"]:
+    for key in ["hypothesis", "candidate_hypothesis", "candidate", "result", "response"]:
         nested = payload.get(key)
         if isinstance(nested, dict):
             merged = dict(nested)
@@ -230,27 +232,16 @@ def _generate_with_llm(
         },
     )
     if strategy == GenerationStrategy.scientific_debate.value:
-        turn1 = client.call(
-            [{"role": "system", "content": system}, {"role": "user", "content": prompt + "\n\nScientist A: propose a bold candidate hypothesis with rationale."}],
-            max_tokens=max_tokens,
-            temperature=temperature,
-        ).content
         payload = client.call_json(
             [
                 {"role": "system", "content": system},
-                {"role": "user", "content": prompt + "\n\nScientist A: propose a bold candidate hypothesis with rationale."},
-                {"role": "assistant", "content": turn1},
                 {
                     "role": "user",
-                    "content": (
-                        "Scientist B: critique weaknesses, missing evidence, and alternative interpretations. "
-                        "Then Scientist A: refine the hypothesis in response. "
-                        "Finally output only the JSON object."
-                    ),
+                    "content": prompt + "\n\n" + _strict_debate_json_instruction(),
                 },
             ],
             max_tokens=max_tokens,
-            temperature=temperature,
+            temperature=min(temperature, 0.1),
         )
     else:
         payload = client.call_json(
@@ -274,7 +265,7 @@ def _generate_with_llm(
         "evidence_ids": [item.evidence_id for item in selected],
         "llm_provider": client.provider,
         "llm_model": client.model,
-        "llm_strategy_detail": "multi_turn_debate" if strategy == GenerationStrategy.scientific_debate.value else "single_turn_json",
+        "llm_strategy_detail": "single_turn_strict_debate_json" if strategy == GenerationStrategy.scientific_debate.value else "single_turn_json",
     }
     for field in DOMAIN_METADATA_FIELDS:
         if field in payload:
@@ -292,6 +283,29 @@ def _generate_with_llm(
         generation_strategy=strategy,
         generation_round=round_number,
         metadata=metadata,
+    )
+
+
+def _strict_debate_json_instruction() -> str:
+    return (
+        "Use an internal debate before answering: Scientist A proposes a candidate, Scientist B critiques weaknesses, "
+        "missing evidence, confounds, and alternative interpretations, then Scientist A refines the hypothesis. "
+        "Do not write the debate transcript. Return only one valid JSON object matching this exact schema. "
+        "Do not include markdown, explanations, chain-of-thought, or a `response` wrapper.\n\n"
+        "Required JSON schema:\n"
+        "{\n"
+        '  "title": "Concise sleep-science hypothesis title",\n'
+        '  "summary": "1-3 sentence summary",\n'
+        '  "content": "Full refined hypothesis statement",\n'
+        '  "rationale": "Scientific rationale grounded in the provided evidence",\n'
+        '  "debate_critique": "Scientist B critique: weaknesses, missing evidence, confounds, and alternatives",\n'
+        '  "debate_refinement": "Scientist A refinement: how the final hypothesis was narrowed or strengthened",\n'
+        '  "experimental_plan": "Concrete test using available or analysis-ready variables",\n'
+        '  "novelty_assessment": "Why this is not a trivial restatement",\n'
+        '  "key_assumptions": ["assumption 1"],\n'
+        '  "citations": ["evidence_id or paper_id"]\n'
+        "}\n\n"
+        "The object must contain non-empty string values for \"title\", \"summary\", \"content\", and \"rationale\"."
     )
 
 

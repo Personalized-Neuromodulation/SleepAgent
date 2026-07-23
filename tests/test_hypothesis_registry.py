@@ -1,14 +1,17 @@
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
 import pytest
+import yaml
 
+from sleep_ai_scientist.common.config import load_config
 from sleep_ai_scientist.common.io import read_json, write_yaml
 from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
 from sleep_ai_scientist.hypothesis.agents.generation_agent import (
     _repair_missing_hypothesis_fields,
     generate_initial_hypotheses,
 )
-from sleep_ai_scientist.hypothesis.agents.llm import LLMError
+from sleep_ai_scientist.llm.client import LLMError
 from sleep_ai_scientist.hypothesis.supervisor import select_llm_config
 from sleep_ai_scientist.hypothesis.hypothesis_pipeline import run_hypothesis_pipeline
 from sleep_ai_scientist.hypothesis.agents.review_agent import reject_near_duplicates, run_reflection
@@ -30,17 +33,34 @@ from tests.api_test_utils import fake_online_literature_search
 OUTPUT_EVIDENCE_PATH = Path("outputs/grounding/evidence_table.json")
 
 
+def _rebuild_output_evidence() -> None:
+    import sleep_ai_scientist.grounding.grounding_pipeline as grounding_pipeline
+
+    config = load_config("configs/grounding_config.yaml")
+    config.pop("_config_path", None)
+    config.pop("_project_root", None)
+    config.setdefault("api", {})["enabled"] = True
+    config.setdefault("paths", {})["literature_library_config"] = "configs/literature_library_config.yaml"
+
+    original_search = grounding_pipeline.search_literature_apis
+    grounding_pipeline.search_literature_apis = fake_online_literature_search
+    try:
+        with TemporaryDirectory(prefix="sleepagent_test_grounding_") as tmp_dir:
+            config_path = Path(tmp_dir) / "grounding_config.yaml"
+            config_path.write_text(yaml.safe_dump(config, sort_keys=False), encoding="utf-8")
+            run_grounding_pipeline(config_path)
+    finally:
+        grounding_pipeline.search_literature_apis = original_search
+
+
 def _load_output_evidence() -> list[EvidenceRecord]:
     if not OUTPUT_EVIDENCE_PATH.exists() or OUTPUT_EVIDENCE_PATH.stat().st_size == 0:
-        import sleep_ai_scientist.grounding.grounding_pipeline as grounding_pipeline
-
-        original_search = grounding_pipeline.search_literature_apis
-        grounding_pipeline.search_literature_apis = fake_online_literature_search
-        try:
-            run_grounding_pipeline("configs/grounding_config.yaml")
-        finally:
-            grounding_pipeline.search_literature_apis = original_search
-    return [EvidenceRecord(**row) for row in read_json(OUTPUT_EVIDENCE_PATH)]
+        _rebuild_output_evidence()
+    rows = read_json(OUTPUT_EVIDENCE_PATH)
+    if not rows:
+        _rebuild_output_evidence()
+        rows = read_json(OUTPUT_EVIDENCE_PATH)
+    return [EvidenceRecord(**row) for row in rows]
 
 
 def test_hypothesis_registry_generates_reviews_and_outputs(tmp_path):
@@ -135,6 +155,29 @@ def test_llm_config_defaults_to_online_and_keeps_ollama_option():
     local = select_llm_config({"llm_provider": "ollama", "ollama": {"enabled": False, "model": "llama3.1"}})
     assert local["provider"] == "ollama"
     assert local["base_url"] == "http://localhost:11434"
+
+
+def test_hypothesis_selects_llm_from_shared_config_path(tmp_path):
+    llm_config = tmp_path / "llm_config.yaml"
+    write_yaml(
+        llm_config,
+        {
+            "llm_provider": "ollama",
+            "ollama": {
+                "enabled": True,
+                "provider": "ollama",
+                "base_url": "http://localhost:11434",
+                "model": "shared-ollama",
+                "timeout": 321,
+            },
+        },
+    )
+
+    selected = select_llm_config({"paths": {"llm_config": str(llm_config)}})
+
+    assert selected["provider"] == "ollama"
+    assert selected["model"] == "shared-ollama"
+    assert selected["timeout"] == 321
 
 
 def test_ollama_generation_raises_when_fallback_disabled():

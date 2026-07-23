@@ -1,9 +1,9 @@
-from sleep_ai_scientist.common.config import load_config
 from sleep_ai_scientist.grounding.data_profile import build_analysis_ready_profile, build_observed_profile
+from tests.config_helpers import toy_grounding_config
 
 
 def test_build_profiles_from_fixtures():
-    config = load_config("configs/grounding_config.yaml")
+    config = toy_grounding_config()
     observed = build_observed_profile(config)
     ready = build_analysis_ready_profile(config, observed)
     names = {item.feature_name for item in ready.features}

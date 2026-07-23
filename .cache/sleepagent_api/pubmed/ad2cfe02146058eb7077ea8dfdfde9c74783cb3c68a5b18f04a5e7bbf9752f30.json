@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "127",
+    "retmax": "20",
+    "retstart": "0",
+    "idlist": [
+      "42476764",
+      "42401109",
+      "42387134",
+      "42386532",
+      "42317112",
+      "42257868",
+      "42235760",
+      "42147880",
+      "42064983",
+      "41873111",
+      "41834684",
+      "41812897",
+      "41791582",
+      "41694657",
+      "41639999",
+      "41639148",
+      "41607406",
+      "41549029",
+      "41459546",
+      "41344537"
+    ],
+    "translationset": [
+      {
+        "from": "sleep quality",
+        "to": "\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]"
+      },
+      {
+        "from": "DTI MRI",
+        "to": "\"diffusion tensor imaging\"[MeSH Terms] OR (\"diffusion\"[All Fields] AND \"tensor\"[All Fields] AND \"imaging\"[All Fields]) OR \"diffusion tensor imaging\"[All Fields] OR (\"dti\"[All Fields] AND \"mri\"[All Fields]) OR \"dti mri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]) AND (\"diffusion tensor imaging\"[MeSH Terms] OR (\"diffusion\"[All Fields] AND \"tensor\"[All Fields] AND \"imaging\"[All Fields]) OR \"diffusion tensor imaging\"[All Fields] OR (\"dti\"[All Fields] AND \"mri\"[All Fields]) OR \"dti mri\"[All Fields])"
+  }
+}

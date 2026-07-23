@@ -1,0 +1,82 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "192",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42431562",
+      "42369869",
+      "42270639",
+      "42127149",
+      "42034279",
+      "41951845",
+      "41832350",
+      "41684934",
+      "41472688",
+      "41316910",
+      "41279423",
+      "41278584",
+      "41238552",
+      "41162627",
+      "41136354",
+      "41082128",
+      "41067666",
+      "41055981",
+      "40972104",
+      "40909627",
+      "40769034",
+      "40759512",
+      "40568102",
+      "40370321",
+      "40128186",
+      "40060413",
+      "39868228",
+      "39681244",
+      "39605725",
+      "39533111",
+      "39239399",
+      "39055535",
+      "38848666",
+      "38415989",
+      "38352426",
+      "38233587",
+      "38196349",
+      "38148172",
+      "38113618",
+      "38085696",
+      "37745863",
+      "37334601",
+      "37215667",
+      "37192708",
+      "37149048",
+      "37006395",
+      "36964161",
+      "36927172",
+      "36741053",
+      "36572251"
+    ],
+    "translationset": [
+      {
+        "from": "simultaneous",
+        "to": "\"simultaneous\"[All Fields] OR \"simultaneously\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"simultaneous\"[All Fields] OR \"simultaneously\"[All Fields]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])"
+  }
+}

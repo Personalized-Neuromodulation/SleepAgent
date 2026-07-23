@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from sleep_ai_scientist.common.io import write_json
-from sleep_ai_scientist.experiment.agents.llm import build_experiment_llm, load_prompt
+from sleep_ai_scientist.experiment.agents.llm_adapter import build_experiment_llm, load_prompt
 from sleep_ai_scientist.schemas.data_profile import DataProfile
 from sleep_ai_scientist.schemas.experiment import ExperimentPlan
 

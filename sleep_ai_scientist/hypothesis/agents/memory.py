@@ -252,7 +252,12 @@ def retrieve_relevant_priors(
     if not strong or not query:
         return []
     if embedding_config and bool(embedding_config.get("enabled", False)):
-        client = LocalMiniLMEmbeddingClient(str(embedding_config.get("model", "sentence-transformers/all-MiniLM-L6-v2")))
+        client = LocalMiniLMEmbeddingClient(
+            str(embedding_config.get("model", "sentence-transformers/all-MiniLM-L6-v2")),
+            local_files_only=bool(embedding_config.get("local_files_only", True)),
+            device=str(embedding_config.get("device", "cpu")) if embedding_config.get("device", "cpu") else None,
+            cache_folder=str(embedding_config.get("cache_folder")) if embedding_config.get("cache_folder") else None,
+        )
         query_vec = client.embed([query])[0]
         texts = [f"{record.hypothesis_title}. {record.hypothesis_summary}. {record.feedback_summary}" for record in strong]
         vectors = client.embed(texts)

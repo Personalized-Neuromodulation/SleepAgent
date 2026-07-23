@@ -20,16 +20,18 @@ from sleep_ai_scientist.grounding.evidence_grader import evidence_quality_summar
 from sleep_ai_scientist.grounding.grounding_qc import run_grounding_qc, write_grounding_qc_report
 from sleep_ai_scientist.grounding.grounding_report import build_grounding_report, write_grounding_report
 from sleep_ai_scientist.grounding.literature_registry import merge_literature_registry, write_literature_registry
+from sleep_ai_scientist.grounding.llm_context_compression import build_llm_grounding_context, write_llm_grounding_context
 from sleep_ai_scientist.grounding.mechanism_graph import build_mechanism_graph, write_graph_outputs
-from sleep_ai_scientist.grounding.retrieval import retrieve
 from sleep_ai_scientist.grounding.variable_mapper import map_variables, write_mapping_outputs
+from sleep_ai_scientist.literature.rag_retriever import retrieve_literature_records_from_db
 from sleep_ai_scientist.llm.evidence_verifier import EvidenceVerifier
+from sleep_ai_scientist.storage.db import create_engine_from_config, init_database, session_scope
 
 
 def run_grounding_pipeline(
     config_path_value: str | Path,
     *,
-    query_config_path: str | Path | None = None,
+    query_config_path: str | Path | None = "configs/literature_queries.yaml",
     corpus_version: str = "sleepagent_grounding_corpus_v1",
 ) -> dict[str, Any]:
     """Run knowledge grounding end to end and write all grounding artifacts.
@@ -42,8 +44,15 @@ def run_grounding_pipeline(
     evidence_rules_path = config_path(config, "evidence_extraction_rules", "configs/evidence_extraction_rules.yaml")
     llm_config_path = config_path(config, "llm_config", "configs/llm_config.yaml")
     llm_config = read_yaml(llm_config_path) if llm_config_path.exists() else {}
-    api_papers, api_summary = search_literature_apis(config)
-    papers, duplicate_reports = merge_literature_registry(api_papers)
+    embedding_cfg = _load_embedding_config(config)
+    retrieval_cfg = config.get("retrieval", {})
+    api_papers: list[Any] = []
+    papers, api_summary = _load_grounding_papers(config, retrieval_cfg, embedding_cfg)
+    duplicate_reports = []
+    if not papers and config.get("api", {}).get("enabled", False):
+        api_papers, api_summary = search_literature_apis(config)
+        api_summary.setdefault("source", "online_api")
+        papers, duplicate_reports = merge_literature_registry(api_papers)
     api_summary["final_literature_count"] = len(papers)
     write_literature_registry(
         papers,
@@ -53,14 +62,8 @@ def run_grounding_pipeline(
         duplicate_reports,
     )
 
-    retrieval_cfg = config.get("retrieval", {})
-    if retrieval_cfg.get("enabled", False):
-        hits = retrieve(str(retrieval_cfg.get("query", "")), papers, int(retrieval_cfg.get("top_k", 20)))
-        selected_ids = {hit.paper_id for hit in hits}
-        selected_papers = [paper for paper in papers if paper.paper_id in selected_ids]
-    else:
-        hits = []
-        selected_papers = papers
+    hits = []
+    selected_papers = papers
 
     # Convert literature text into structured evidence before any data mapping.
     # The extractor is rule-based so tests do not depend on LLM/API access.
@@ -128,6 +131,16 @@ def run_grounding_pipeline(
         mechanism_templates_path=config_path(config, "mechanism_templates"),
     )
     write_graph_outputs(nodes, edges, output_grounding_dir)
+    graph_payload = {
+        "nodes": [node.model_dump(mode="json") for node in nodes],
+        "edges": [edge.model_dump(mode="json") for edge in edges],
+    }
+    llm_context_cfg = config.get("llm_context_compression", {})
+    if bool(llm_context_cfg.get("enabled", True)):
+        llm_context = build_llm_grounding_context(evidence, graph_payload, llm_context_cfg)
+        llm_context_paths = write_llm_grounding_context(llm_context, output_grounding_dir)
+    else:
+        llm_context_paths = {"enabled": False}
 
     qc_report = run_grounding_qc(
         selected_papers,
@@ -160,9 +173,6 @@ def run_grounding_pipeline(
     )
     report_path = config_path(config, "report_path")
     write_grounding_report(report_path, report)
-    phase1_report_path = config_path(config, "phase1_report_path", "reports/phase1_grounding_report.md")
-    if phase1_report_path != report_path:
-        write_grounding_report(phase1_report_path, report)
 
     return {
         "papers": len(selected_papers),
@@ -179,11 +189,52 @@ def run_grounding_pipeline(
         "grounding_qc_report": str(output_grounding_dir / "grounding_qc_report.json"),
         "evidence_audit": str(output_grounding_dir / "evidence_extraction_audit.json"),
         "evidence_benchmark": str(output_grounding_dir / "evidence_extraction_benchmark.json") if benchmark else "",
+        "llm_context_compression": llm_context_paths,
         "report_path": str(report_path),
         "output_grounding_dir": str(output_grounding_dir),
         "output_profiles_dir": str(config_path(config, "output_profiles_dir")),
         "api_summary": api_summary,
     }
+
+
+def _load_embedding_config(config: dict[str, Any]) -> dict[str, Any]:
+    literature_config_path = config_path(config, "literature_library_config", "configs/literature_library_config.yaml")
+    if not literature_config_path.exists():
+        return {}
+    literature_config = load_config(literature_config_path)
+    embedding_cfg = literature_config.get("embedding", {})
+    return dict(embedding_cfg) if isinstance(embedding_cfg, dict) else {}
+
+
+def _load_grounding_papers(config: dict[str, Any], retrieval_cfg: dict[str, Any], embedding_cfg: dict[str, Any]) -> tuple[list[Any], dict[str, Any]]:
+    if not bool(embedding_cfg.get("enabled", False)):
+        return [], {"enabled": False, "source": "online_api", "warnings": []}
+    db_config_path = config_path(config, "database_config", "configs/database_config.yaml")
+    engine = create_engine_from_config(db_config_path)
+    try:
+        init_database(engine)
+        with session_scope(engine) as session:
+            papers, summary = retrieve_literature_records_from_db(
+                session,
+                str(retrieval_cfg.get("query", "")),
+                top_k=int(retrieval_cfg.get("top_k", 20)),
+                embedding_config=embedding_cfg,
+            )
+        if papers:
+            summary.update(
+                {
+                    "enabled": True,
+                    "provider_counts": {"literature_db_rag": len(papers)},
+                    "query_count": 1,
+                    "raw_count": summary.get("available_chunks", 0),
+                    "deduplicated_count": len(papers),
+                    "warnings": [],
+                }
+            )
+            return papers, summary
+        return [], {"enabled": False, "source": "online_api", "warnings": ["literature DB RAG has no embedded chunks"]}
+    finally:
+        engine.dispose()
 
 
 def generate_grounding_report(config_path_value: str | Path) -> dict[str, Any]:

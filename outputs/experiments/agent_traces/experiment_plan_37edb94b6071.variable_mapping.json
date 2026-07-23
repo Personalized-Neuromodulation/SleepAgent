@@ -1,0 +1,70 @@
+{
+  "judgment": "partially_valid",
+  "candidate_mappings": [
+    {
+      "variable": "thalamus_DMN_FC",
+      "source_column": "thalamus_DMN_FC",
+      "confidence": 0.9,
+      "reason": "The variable 'thalamus_DMN_FC' is present in the source columns with a missing rate of 24.73%."
+    },
+    {
+      "variable": "thalamus_salience_FC",
+      "source_column": "thalamus_salience_FC",
+      "confidence": 0.9,
+      "reason": "The variable 'thalamus_salience_FC' is present in the source columns with a missing rate of 24.73%."
+    },
+    {
+      "variable": "thalamus_frontoparietal_FC",
+      "source_column": "thalamus_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "The variable 'thalamus_frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
+    },
+    {
+      "variable": "DMN_salience_FC",
+      "source_column": "DMN_salience_FC",
+      "confidence": 0.9,
+      "reason": "The variable 'DMN_salience_FC' is present in the source columns with a missing rate of 24.73%."
+    },
+    {
+      "variable": "DMN_frontoparietal_FC",
+      "source_column": "DMN_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "The variable 'DMN_frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
+    },
+    {
+      "variable": "salience_frontoparietal_FC",
+      "source_column": "salience_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "The variable 'salience_frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
+    },
+    {
+      "variable": "DMN_FC",
+      "source_column": "DMN_FC",
+      "confidence": 0.9,
+      "reason": "The variable 'DMN_FC' is present in the source columns with a missing rate of 24.73%."
+    },
+    {
+      "variable": "salience_FC",
+      "source_column": "salience_FC",
+      "confidence": 0.9,
+      "reason": "The variable 'salience_FC' is present in the source columns with a missing rate of 24.73%."
+    },
+    {
+      "variable": "frontoparietal_FC",
+      "source_column": "frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "The variable 'frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
+    }
+  ],
+  "missing_variables": [
+    "thalamus_roi_voxels",
+    "DMN_roi_voxels",
+    "salience_roi_voxels",
+    "frontoparietal_roi_voxels"
+  ],
+  "recommendations": [
+    "Check the missing variables for possible data issues or consider imputation methods for the 24.73% missing data in the FC variables.",
+    "Verify if the FC variables with missing data are correctly mapped and if the missing rate is acceptable for analysis.",
+    "Consider using the available FC variables with higher confidence mappings for initial analysis, and address missing data in subsequent steps."
+  ]
+}

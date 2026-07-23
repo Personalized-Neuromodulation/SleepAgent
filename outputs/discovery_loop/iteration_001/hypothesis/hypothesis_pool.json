@@ -1,0 +1,308 @@
+[
+  {
+    "hypothesis_id": "hypothesis_a90cce5d491f",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamic Spindle Refractory Period Modulation via Thalamocortical Coupling",
+    "summary": "Epileptic thalamic spikes increase the thalamic spindle refractory period, modulating thalamocortical coupling and spindle density during sleep.",
+    "content": "Epileptic spikes in the thalamus increase the thalamic spindle refractory period, thereby modulating thalamocortical coupling and reducing spindle density during sleep.",
+    "rationale": "Evidence from [E1] and [E4] shows that thalamic spikes increase the refractory period (P ≈ 0), while [E2] and [E3] demonstrate that thalamic spikes downregulate spindle density (P < 0.01). These findings suggest a direct link between thalamic activity and spindle modulation through thalamocortical pathways.",
+    "experimental_plan": "Measure thalamic spindle refractory period and spindle density using EEG-fMRI in patients with EE-SWAS during sleep, comparing pre- and post-epileptic spike occurrences.",
+    "novelty_assessment": "Novel integration of refractory period modulation with thalamocortical coupling and spindle density, linking thalamic spikes to sleep spindle dynamics.",
+    "key_assumptions": [
+      "Thalamic spikes directly influence refractory period via thalamocortical pathways",
+      "Reduced spindle density is a downstream effect of refractory period modulation"
+    ],
+    "citations": [
+      "paper_id from E1",
+      "paper_id from E2",
+      "paper_id from E3",
+      "paper_id from E4"
+    ],
+    "generation_strategy": "literature_exploration",
+    "generation_round": 1,
+    "elo_rating": 1422.0,
+    "rating_deviation": 138.0,
+    "volatility": 0.059997,
+    "matches_played": 5,
+    "wins": 3,
+    "losses": 1,
+    "draws": 1,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_0ac918c335eb",
+        "E_3a19c07ee427",
+        "E_b6befad4d320",
+        "E_69829639c773"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "EE-SWAS",
+      "neural_mechanism": "Thalamocortical coupling",
+      "brain_regions": [
+        "thalamus"
+      ],
+      "brain_networks": [
+        "thalamocortical network"
+      ],
+      "modalities": [
+        "EEG",
+        "fMRI"
+      ],
+      "measurable_variables": [
+        "thalamic spindle refractory period",
+        "spindle density"
+      ],
+      "directional_prediction": "Increased thalamic spikes lead to increased refractory period and decreased spindle density.",
+      "falsification_criteria": "No change in refractory period or spindle density following thalamic spike modulation.",
+      "knowledge_graph_paths": [
+        "thalamocortical coupling -> thalamus_DMN_FC -> EE-SWAS",
+        "spindle generation -> spindle density -> EE-SWAS"
+      ]
+    },
+    "created_at": "2026-07-23T06:04:36.767888+00:00",
+    "updated_at": "2026-07-23T06:20:28.695292+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_7cb3d9619bd3",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamic Spindle Modulation via Thalamocortical Coupling in Sleep Phenotypes",
+    "summary": "This hypothesis explores how thalamic spindle modulation through thalamocortical coupling influences sleep phenotypes, integrating evidence from spindle activity and thalamocortical functional connectivity.",
+    "content": "Thalamic spindle modulation via thalamocortical coupling is a critical mechanism in shaping sleep phenotypes, particularly in the context of spindle density and functional connectivity within the default mode network.",
+    "rationale": "The evidence highlights the role of thalamocortical coupling in modulating spindle activity and its impact on sleep phenotypes. The integration of spindle density and default mode network connectivity provides a pathway to understand how these factors interact during sleep.",
+    "experimental_plan": "Analyze the relationship between thalamocortical functional connectivity (thalamus_DMN_FC) and spindle density across different age groups, using PSG and fMRI data.",
+    "novelty_assessment": "This hypothesis introduces a more comprehensive model by integrating the default mode network and age as a confound, offering a novel perspective on thalamocortical coupling's role in sleep.",
+    "key_assumptions": [
+      "Thalamocortical coupling modulates spindle density.",
+      "Age influences thalamocortical coupling and spindle activity."
+    ],
+    "citations": [
+      "evidence_id_1",
+      "evidence_id_2"
+    ],
+    "generation_strategy": "scientific_debate",
+    "generation_round": 2,
+    "elo_rating": 1124.0,
+    "rating_deviation": 141.0,
+    "volatility": 0.059997,
+    "matches_played": 5,
+    "wins": 0,
+    "losses": 5,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_eb78b2a99f74",
+        "E_cfa9ffbfaf06",
+        "E_940ea2cf4786",
+        "E_97b3ac438fa8"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_strict_debate_json",
+      "sleep_phenotype": "spindle density",
+      "neural_mechanism": "thalamocortical coupling",
+      "brain_regions": [
+        "thalamus",
+        "default mode network"
+      ],
+      "brain_networks": [
+        "default mode network"
+      ],
+      "modalities": [
+        "PSG",
+        "fMRI"
+      ],
+      "measurable_variables": [
+        "thalamus_DMN_FC",
+        "spindle density"
+      ],
+      "directional_prediction": "Increased thalamocortical coupling is associated with higher spindle density in younger subjects.",
+      "falsification_criteria": "No significant correlation between thalamocortical coupling and spindle density in younger subjects.",
+      "knowledge_graph_paths": [
+        "thalamocortical coupling -> thalamus_DMN_FC -> spindle density"
+      ],
+      "debate_critique": "The initial assumption may overlook the role of other brain networks and the influence of age as a confounding variable. Additionally, the evidence for thalamocortical coupling may not fully account for variations in spindle activity across different sleep stages.",
+      "debate_refinement": "The refined hypothesis incorporates the default mode network and considers age as a potential confound, strengthening the link between thalamocortical coupling and spindle modulation."
+    },
+    "created_at": "2026-07-23T06:05:25.077054+00:00",
+    "updated_at": "2026-07-23T06:23:25.037512+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_c1e94dc7b3b2",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamic Spindle Modulation via Thalamocortical Coupling in Sleep Phenotypes",
+    "summary": "This hypothesis explores how thalamic spindle modulation through thalamocortical coupling influences sleep phenotypes, integrating evidence from spindle activity and thalamocortical functional connectivity.",
+    "content": "The hypothesis posits that enhanced thalamocortical coupling during NREM sleep leads to increased spindle density and stability, which in turn modulates REM latency and enhances sleep consolidation.",
+    "rationale": "Evidence from [E1], [E2], and [E3] shows that thalamocortical coupling is crucial for spindle generation and NREM stability. The optogenetic modulation of spindles in [E2] and [E3] supports a causal link between spindle activity and NREM stability, which could influence REM latency.",
+    "experimental_plan": "Use PSG and EEG to measure spindle density and thalamocortical functional connectivity during NREM sleep. Compare REM latency in subjects with enhanced thalamocortical coupling versus controls.",
+    "novelty_assessment": "Novel in linking thalamocortical coupling directly to REM latency through spindle modulation, integrating both NREM and REM phases.",
+    "key_assumptions": [
+      "Thalamocortical coupling enhances spindle density during NREM sleep",
+      "Increased spindle density reduces REM latency"
+    ],
+    "citations": [
+      "paper_id1",
+      "paper_id2",
+      "paper_id3"
+    ],
+    "generation_strategy": "assumption_chaining",
+    "generation_round": 3,
+    "elo_rating": 1347.0,
+    "rating_deviation": 200.0,
+    "volatility": 0.06,
+    "matches_played": 0,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "status": "rejected",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_12490d7dbea3",
+        "E_1afce0d445bb",
+        "E_b054b4dad0e3",
+        "E_4368a8fa6357"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "REM latency",
+      "neural_mechanism": "Thalamocortical coupling",
+      "brain_regions": [
+        "Thalamus",
+        "Cortex"
+      ],
+      "brain_networks": [
+        "Thalamocortical network"
+      ],
+      "modalities": [
+        "PSG",
+        "EEG"
+      ],
+      "measurable_variables": [
+        "spindle density",
+        "thalamus_DMN_FC",
+        "REM latency"
+      ],
+      "directional_prediction": "Enhanced thalamocortical coupling during NREM sleep will lead to decreased REM latency.",
+      "falsification_criteria": "No significant change in REM latency with enhanced thalamocortical coupling.",
+      "knowledge_graph_paths": [
+        "thalamocortical coupling -> thalamus_DMN_FC -> REM latency"
+      ]
+    },
+    "created_at": "2026-07-23T06:06:07.809099+00:00",
+    "updated_at": "2026-07-23T06:13:59.558433+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_3e770bf1084f",
+    "session_id": "sleep_hypothesis_session",
+    "title": "White Matter Integrity Modulates Thalamocortical Spindle Overlap via Fractional Anisotropy",
+    "summary": "This hypothesis proposes that fractional anisotropy (FA) in white matter tracts modulates the topographical patterns of thalamocortical spindle overlap, influencing the differentiation between slow and fast spindle subtypes during sleep.",
+    "content": "The hypothesis suggests that variations in white matter integrity, as measured by fractional anisotropy (FA) from diffusion tensor imaging (DTI), modulate the topographical patterns of thalamocortical spindle overlap, thereby influencing the differentiation between slow and fast spindle subtypes during slow wave sleep. This modulation is expected to be most pronounced in regions with high thalamocortical connectivity, such as the default mode network.",
+    "rationale": "Evidence from the knowledge graph indicates that white matter integrity is linked to spindle subtypes through FA measurements. The topographical patterns of thalamocortical spindle overlap, as observed in evidence, suggest a structural basis in white matter tracts. The integration of FA with spindle overlap patterns provides a novel pathway to explore how white matter integrity influences spindle differentiation.",
+    "experimental_plan": "Conduct a DTI analysis to measure FA in white matter tracts associated with thalamocortical pathways. Concurrently record EEG during slow wave sleep to measure spindle overlap patterns. Use statistical models to correlate FA values with the topographical distribution of slow and fast spindle subtypes.",
+    "novelty_assessment": "This hypothesis introduces a new pathway linking white matter integrity (FA) with thalamocortical spindle overlap, distinct from prior hypotheses that focused on thalamic refractory periods and spindle modulation through thalamocortical coupling.",
+    "key_assumptions": [
+      "FA in thalamocortical white matter tracts directly influences the topographical distribution of spindle overlap.",
+      "The default mode network is a key region for thalamocortical spindle overlap modulation."
+    ],
+    "citations": [
+      "paper_id values from the evidence"
+    ],
+    "generation_strategy": "research_expansion",
+    "generation_round": 4,
+    "elo_rating": 1402.0,
+    "rating_deviation": 137.0,
+    "volatility": 0.059994,
+    "matches_played": 5,
+    "wins": 2,
+    "losses": 1,
+    "draws": 2,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_8a7f67369d5e",
+        "E_0f81122479f4",
+        "E_0d6557b90c05",
+        "E_c8e1994a37e5"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "slow wave sleep",
+      "neural_mechanism": "thalamocortical spindle overlap",
+      "brain_regions": [
+        "default mode network"
+      ],
+      "brain_networks": [
+        "default mode network"
+      ],
+      "modalities": [
+        "DTI",
+        "EEG"
+      ],
+      "measurable_variables": [
+        "fractional anisotropy",
+        "spindle overlap patterns"
+      ],
+      "directional_prediction": "Higher FA in thalamocortical white matter tracts correlates with distinct topographical patterns of thalamocortical spindle overlap, differentiating slow and fast spindle subtypes.",
+      "falsification_criteria": "If FA values do not correlate with the topographical distribution of slow and fast spindle subtypes, or if the default mode network is not a significant region for spindle overlap modulation.",
+      "knowledge_graph_paths": [
+        "white matter integrity -> FA -> slow wave sleep"
+      ]
+    },
+    "created_at": "2026-07-23T06:07:01.383883+00:00",
+    "updated_at": "2026-07-23T06:23:11.620473+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_1502c9c78b6b",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamic Spindle Modulation via Thalamocortical Coupling and White Matter Integrity in Sleep Phenotypes",
+    "summary": "This hypothesis integrates thalamocortical coupling and white matter integrity to explain spindle modulation and sleep phenotypes, leveraging mechanisms from both P1 and P2.",
+    "content": "The hypothesis proposes that thalamocortical coupling, modulated by both the refractory period of thalamic spindles and white matter fractional anisotropy (FA), influences spindle density and topographical patterns, thereby shaping sleep phenotypes. Epileptic thalamic spikes increase the refractory period, while FA in white matter tracts modulates the topographical distribution of spindle subtypes. Together, these factors interact to influence spindle density and sleep architecture.",
+    "rationale": "By cross-pollinating P1's refractory period mechanism with P2's FA modulation, the hypothesis strengthens causal coherence and grounding in measurable variables (spindle density, FA, refractory period). It integrates both thalamocortical pathways and white matter integrity as dual modulators of spindle topography and density.",
+    "experimental_plan": "Combine EEG-fMRI and DTI in patients with EE-SWAS during sleep. Measure thalamic spindle refractory period and spindle density via EEG-fMRI pre- and post-epileptic spikes. Concurrently assess FA in thalamocortical white matter tracts using DTI. Correlate FA values with topographical spindle patterns and refractory period changes across slow and fast spindle subtypes.",
+    "novelty_assessment": "Novel integration of refractory period and FA as dual modulators of spindle topography and density, extending beyond individual mechanisms in P1 and P2.",
+    "key_assumptions": [
+      "Epileptic spikes modulate refractory period and spindle density via thalamocortical pathways",
+      "FA in white matter tracts modulates topographical spindle patterns"
+    ],
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "generation_strategy": "evolution:cross_pollination",
+    "generation_round": 2,
+    "elo_rating": 1461.0,
+    "rating_deviation": 155.0,
+    "volatility": 0.059998,
+    "matches_played": 3,
+    "wins": 2,
+    "losses": 0,
+    "draws": 1,
+    "status": "active",
+    "parent_ids": [
+      "hypothesis_a90cce5d491f",
+      "hypothesis_3e770bf1084f",
+      "hypothesis_7cb3d9619bd3"
+    ],
+    "metadata": {
+      "evolved_from": [
+        "hypothesis_a90cce5d491f",
+        "hypothesis_3e770bf1084f",
+        "hypothesis_7cb3d9619bd3"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest"
+    },
+    "created_at": "2026-07-23T06:15:25.832880+00:00",
+    "updated_at": "2026-07-23T06:23:25.037492+00:00"
+  }
+]

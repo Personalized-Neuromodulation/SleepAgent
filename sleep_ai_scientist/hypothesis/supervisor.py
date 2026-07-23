@@ -12,7 +12,7 @@ from sleep_ai_scientist.hypothesis.agents.rank_agent import RankAgent
 from sleep_ai_scientist.hypothesis.agents.review_agent import ReviewAgent
 from sleep_ai_scientist.hypothesis.agents.state import HypothesisSessionState
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
-from sleep_ai_scientist.hypothesis.agents.llm import normalize_llm_config
+from sleep_ai_scientist.llm.client import normalize_llm_config
 from sleep_ai_scientist.hypothesis.agents.memory import load_experimental_feedback, load_reward_memory
 from sleep_ai_scientist.schemas.evidence import EvidenceRecord
 from sleep_ai_scientist.schemas.hypothesis import Hypothesis
@@ -60,8 +60,10 @@ class HypothesisSupervisor:
     def create_state(self, config_path_value: str | Path) -> HypothesisSessionState:
         config = load_config(config_path_value)
         hypothesis_cfg = config.get("hypothesis", {})
-        evidence_path = config_path(config, "evidence_table_json", "outputs/grounding/evidence_table.json")
-        knowledge_graph_path = config_path(config, "knowledge_graph_json", "outputs/grounding/mechanism_graph.json")
+        full_evidence_path = config_path(config, "evidence_table_json", "outputs/grounding/evidence_table.json")
+        full_knowledge_graph_path = config_path(config, "knowledge_graph_json", "outputs/grounding/mechanism_graph.json")
+        evidence_path = _preferred_existing_path(config, "llm_evidence_context_json", full_evidence_path)
+        knowledge_graph_path = _preferred_existing_path(config, "llm_mechanism_context_json", full_knowledge_graph_path)
         prior_hypotheses_path = config_path(config, "prior_hypotheses_json", "outputs/hypotheses/top_k_hypotheses.json")
         output_dir = config_path(config, "output_hypotheses_dir", "outputs/hypotheses")
         report_path = config_path(config, "report_path", "reports/phase2_hypothesis_report.md")
@@ -89,11 +91,15 @@ class HypothesisSupervisor:
             report_path=report_path,
         )
         state.artifacts["reward_memory_path"] = reward_memory_path
+        state.artifacts["full_evidence_table_path"] = full_evidence_path
+        state.artifacts["full_knowledge_graph_path"] = full_knowledge_graph_path
+        state.artifacts["evidence_table_path"] = evidence_path
         state.artifacts["knowledge_graph_path"] = knowledge_graph_path
         return state
 
 
 def select_llm_config(config: dict[str, Any]) -> dict[str, Any]:
+    config = _with_shared_llm_config(config)
     provider_name = str(config.get("llm_provider", "")).strip().lower()
     if provider_name:
         if provider_name == "online":
@@ -116,19 +122,49 @@ def select_llm_config(config: dict[str, Any]) -> dict[str, Any]:
         online_defaults = dict(config.get("online_llm", {}))
         online_defaults.update(selected)
         online_defaults["provider"] = "online"
+        online_defaults.setdefault("log_prefix", "hypothesis")
         return normalize_llm_config(online_defaults)
     if provider == "ollama":
         ollama_defaults = dict(config.get("ollama", {}))
         ollama_defaults.update(selected)
         ollama_defaults["provider"] = "ollama"
+        ollama_defaults.setdefault("log_prefix", "hypothesis")
         return normalize_llm_config(ollama_defaults)
+    selected.setdefault("log_prefix", "hypothesis")
     return normalize_llm_config(selected)
+
+
+def _with_shared_llm_config(config: dict[str, Any]) -> dict[str, Any]:
+    try:
+        llm_config_path = config_path(config, "llm_config")
+    except KeyError:
+        return config
+    if not llm_config_path.exists():
+        return config
+    shared = load_config(llm_config_path)
+    shared.pop("_config_path", None)
+    shared.pop("_project_root", None)
+    merged = dict(config)
+    for key in ("llm_provider", "online_llm", "ollama"):
+        if key in shared:
+            merged[key] = shared[key]
+    return merged
 
 
 def _load_evidence_records(path: Path) -> list[EvidenceRecord]:
     if not path.exists() or path.stat().st_size == 0:
         return []
     return [EvidenceRecord(**row) for row in read_json(path)]
+
+
+def _preferred_existing_path(config: dict[str, Any], preferred_key: str, fallback: Path) -> Path:
+    try:
+        preferred = config_path(config, preferred_key)
+    except KeyError:
+        return fallback
+    if preferred.exists() and preferred.stat().st_size > 0:
+        return preferred
+    return fallback
 
 
 def _load_optional_json(path: Path, default: Any) -> Any:

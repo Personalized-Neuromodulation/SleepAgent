@@ -6,10 +6,11 @@ from typing import Any
 from sleep_ai_scientist.common.config import load_config, resolve_path
 from sleep_ai_scientist.common.io import read_yaml, write_yaml
 from sleep_ai_scientist.literature.library_builder import run_literature_build
+from sleep_ai_scientist.literature.query_loader import select_query_payload
 
 
 def _limited_query_config(base_query_config: str | Path, output_path: str | Path, max_queries: int) -> Path:
-    payload = read_yaml(Path(base_query_config))
+    payload = select_query_payload(read_yaml(Path(base_query_config)), scope="library")
     remaining = max_queries
     limited: dict[str, list[str]] = {}
     for group, queries in payload.get("queries", {}).items():
@@ -28,7 +29,7 @@ def _limited_query_config(base_query_config: str | Path, output_path: str | Path
 def run_iteration(config: dict[str, Any], iteration: int, run_dir: str | Path, *, dry_run: bool = False, backend: str | None = "sqlite") -> dict[str, Any]:
     root = Path(config.get("_project_root", Path.cwd()))
     base_config = resolve_path(config.get("inputs", {}).get("base_config", "configs/literature_library_config.yaml"), root)
-    query_config = resolve_path(config.get("inputs", {}).get("initial_query_config", "configs/sleep_literature_queries.yaml"), root)
+    query_config = resolve_path(config.get("inputs", {}).get("initial_query_config", "configs/literature_queries.yaml"), root)
     max_queries = int(config.get("api", {}).get("max_queries_per_iteration", 30))
     limited_query = _limited_query_config(query_config, Path(run_dir) / f"iteration_{iteration:03d}_queries.yaml", max_queries)
     if dry_run:
@@ -47,4 +48,3 @@ def run_iteration(config: dict[str, Any], iteration: int, run_dir: str | Path, *
     temp_base = Path(run_dir) / f"iteration_{iteration:03d}_library_config.yaml"
     write_yaml(temp_base, {k: v for k, v in base_payload.items() if not k.startswith("_")})
     return run_literature_build(temp_base, query_config_path=limited_query, library_version=config.get("project", {}).get("target_library_version"), backend=backend)
-

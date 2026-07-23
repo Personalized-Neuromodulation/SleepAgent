@@ -1,0 +1,45 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "13",
+    "retmax": "13",
+    "retstart": "0",
+    "idlist": [
+      "42349608",
+      "40830097",
+      "33067436",
+      "30837664",
+      "30583750",
+      "29106983",
+      "28689981",
+      "27510855",
+      "26880556",
+      "26778969",
+      "25126786",
+      "23169668",
+      "21785436"
+    ],
+    "translationset": [
+      {
+        "from": "thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "nucleus",
+        "to": "\"cell nucleus\"[MeSH Terms] OR (\"cell\"[All Fields] AND \"nucleus\"[All Fields]) OR \"cell nucleus\"[All Fields] OR \"nucleus\"[All Fields] OR \"nucleu\"[All Fields]"
+      },
+      {
+        "from": "optogenetic",
+        "to": "\"optogenetically\"[All Fields] OR \"optogenetics\"[MeSH Terms] OR \"optogenetics\"[All Fields] OR \"optogenetic\"[All Fields]"
+      },
+      {
+        "from": "spindle",
+        "to": "\"spindle\"[All Fields] OR \"spindle's\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND \"reticular\"[All Fields] AND (\"cell nucleus\"[MeSH Terms] OR (\"cell\"[All Fields] AND \"nucleus\"[All Fields]) OR \"cell nucleus\"[All Fields] OR \"nucleus\"[All Fields] OR \"nucleu\"[All Fields]) AND (\"optogenetically\"[All Fields] OR \"optogenetics\"[MeSH Terms] OR \"optogenetics\"[All Fields] OR \"optogenetic\"[All Fields]) AND (\"spindle\"[All Fields] OR \"spindle s\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields])"
+  }
+}

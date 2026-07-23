@@ -1,0 +1,339 @@
+{
+  "hypothesis_id": "hypothesis_1502c9c78b6b",
+  "plan_id": "experiment_plan_37edb94b6071",
+  "review_status": "partially_supported",
+  "support_score": 0.6,
+  "result_review": {
+    "judgment": "partially_supported",
+    "support_score": 0.6,
+    "critic_findings": [
+      {
+        "severity": "medium",
+        "category": "data_quality",
+        "message": "High missing data rate (24.73%) in fMRI features may affect reliability of FC measures.",
+        "recommendation": "Consider imputation methods or sensitivity analysis to assess impact of missing data."
+      },
+      {
+        "severity": "medium",
+        "category": "control_analysis",
+        "message": "Negative controls for DMN_FC showed strong associations with global signal (r=0.89 and r=0.80), suggesting potential confounding by motion artifacts.",
+        "recommendation": "Include global signal regression as covariate in primary analysis."
+      }
+    ],
+    "confounds": [
+      "Global signal regression artifacts",
+      "Missing data in FC measures"
+    ],
+    "alternative_explanations": [
+      "Motion-related confounds influencing DMN_FC associations",
+      "Limited generalizability due to missing data in FC variables"
+    ],
+    "next_steps": [
+      "Implement multiple imputation for missing FC data",
+      "Add global signal regression as covariate in primary analysis",
+      "Validate findings with independent cohort with lower missing data rate"
+    ]
+  },
+  "primary_tests": [
+    {
+      "test_id": "experiment_plan_37edb94b6071_thalamus_DMN_FC_salience_FC",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "salience_FC",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": -0.14047764849969382,
+      "p_value": 0.24608124456303881,
+      "ci_low": -0.3634583639333564,
+      "ci_high": 0.09772639869685944,
+      "direction": "negative",
+      "passed": false,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_37edb94b6071_thalamus_DMN_FC_frontoparietal_FC",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "frontoparietal_FC",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": -0.3051526550607996,
+      "p_value": 0.010207974901201339,
+      "ci_low": -0.5039924506766033,
+      "ci_high": -0.07559495312514382,
+      "direction": "negative",
+      "passed": true,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_37edb94b6071_thalamus_salience_FC_salience_FC",
+      "predictor": "thalamus_salience_FC",
+      "outcome": "salience_FC",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": -0.13001487183973406,
+      "p_value": 0.2833799629876053,
+      "ci_low": -0.3541728374017039,
+      "ci_high": 0.10827105894709214,
+      "direction": "negative",
+      "passed": false,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_37edb94b6071_thalamus_salience_FC_frontoparietal_FC",
+      "predictor": "thalamus_salience_FC",
+      "outcome": "frontoparietal_FC",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": -0.20216953897296824,
+      "p_value": 0.09326990784780027,
+      "ci_low": -0.4173226268280959,
+      "ci_high": 0.03444496250027205,
+      "direction": "negative",
+      "passed": false,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_37edb94b6071_thalamus_frontoparietal_FC_salience_FC",
+      "predictor": "thalamus_frontoparietal_FC",
+      "outcome": "salience_FC",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": -0.21350712973493133,
+      "p_value": 0.07594908764850505,
+      "ci_low": -0.42705991881293137,
+      "ci_high": 0.02260513781570014,
+      "direction": "negative",
+      "passed": false,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_37edb94b6071_thalamus_frontoparietal_FC_frontoparietal_FC",
+      "predictor": "thalamus_frontoparietal_FC",
+      "outcome": "frontoparietal_FC",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": -0.2603271804741492,
+      "p_value": 0.02951684776160678,
+      "ci_low": -0.4667534852485278,
+      "ci_high": -0.027000665019875792,
+      "direction": "negative",
+      "passed": true,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_37edb94b6071_DMN_FC_salience_FC",
+      "predictor": "DMN_FC",
+      "outcome": "salience_FC",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": 0.8719972005948735,
+      "p_value": 8.820193614655427e-23,
+      "ci_low": 0.8011813274842965,
+      "ci_high": 0.9187277705971657,
+      "direction": "positive",
+      "passed": true,
+      "notes": "Primary controlled template: Spearman correlation."
+    },
+    {
+      "test_id": "experiment_plan_37edb94b6071_DMN_FC_frontoparietal_FC",
+      "predictor": "DMN_FC",
+      "outcome": "frontoparietal_FC",
+      "method": "spearman_correlation",
+      "n": 70,
+      "effect": 0.9413174700376169,
+      "p_value": 8.59294531918377e-34,
+      "ci_low": 0.9069457801747571,
+      "ci_high": 0.9632379479583135,
+      "direction": "positive",
+      "passed": true,
+      "notes": "Primary controlled template: Spearman correlation."
+    }
+  ],
+  "robustness_results": [
+    {
+      "check_id": "robustness_d0c15a89d449",
+      "target_test_id": "experiment_plan_37edb94b6071_thalamus_DMN_FC_salience_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.14047764849969382,
+      "median_effect": -0.13348158421484588,
+      "ci_low": -0.42748123455239223,
+      "ci_high": 0.13049297563481657,
+      "sign_stability": 0.83,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_e73f8bf891b4",
+      "target_test_id": "experiment_plan_37edb94b6071_thalamus_DMN_FC_frontoparietal_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.3051526550607996,
+      "median_effect": -0.2820226736070014,
+      "ci_low": -0.5356401938494088,
+      "ci_high": -0.0649309682267889,
+      "sign_stability": 1.0,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_24275368576c",
+      "target_test_id": "experiment_plan_37edb94b6071_thalamus_salience_FC_salience_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.13001487183973406,
+      "median_effect": -0.12863280482337172,
+      "ci_low": -0.38011753334189513,
+      "ci_high": 0.15995865040804175,
+      "sign_stability": 0.8,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_bb1b1fa3cf7b",
+      "target_test_id": "experiment_plan_37edb94b6071_thalamus_salience_FC_frontoparietal_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.20216953897296824,
+      "median_effect": -0.19913130550981112,
+      "ci_low": -0.43398119215962266,
+      "ci_high": 0.0351897798686372,
+      "sign_stability": 0.93,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_b6799de58401",
+      "target_test_id": "experiment_plan_37edb94b6071_thalamus_frontoparietal_FC_salience_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.21350712973493133,
+      "median_effect": -0.21278762047574123,
+      "ci_low": -0.4776291261766554,
+      "ci_high": 0.013212149152596029,
+      "sign_stability": 0.97,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_f55f87b83f63",
+      "target_test_id": "experiment_plan_37edb94b6071_thalamus_frontoparietal_FC_frontoparietal_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.2603271804741492,
+      "median_effect": -0.25777851909830063,
+      "ci_low": -0.5080700177983674,
+      "ci_high": 0.00103110537895888,
+      "sign_stability": 0.97,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_5f4e4e73cb5b",
+      "target_test_id": "experiment_plan_37edb94b6071_DMN_FC_salience_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 0.8719972005948735,
+      "median_effect": 0.8822562066183786,
+      "ci_low": 0.7765208716248788,
+      "ci_high": 0.9277536394496876,
+      "sign_stability": 1.0,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_7d755fe1de2c",
+      "target_test_id": "experiment_plan_37edb94b6071_DMN_FC_frontoparietal_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 0.9413174700376169,
+      "median_effect": 0.9408931716451527,
+      "ci_low": 0.9021130708739195,
+      "ci_high": 0.9642941032287521,
+      "sign_stability": 1.0,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    }
+  ],
+  "negative_control_results": [
+    {
+      "control_id": "negative_control_f998e22df2d8",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 70,
+      "effect": -0.13830810952672554,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_40f44acf6f11",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_salience_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 70,
+      "effect": -0.11461814364447555,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_bd1944d3587b",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_frontoparietal_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 70,
+      "effect": -0.15062549208293238,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_34e1bc5baca1",
+      "control_type": "negative_control_outcome",
+      "predictor": "DMN_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 70,
+      "effect": 0.8918729769923891,
+      "passed": false,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_052fcb766384",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "global_signal_psd_power_max",
+      "n": 70,
+      "effect": -0.03113133305169123,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_bd6846a3a52b",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_salience_FC",
+      "outcome": "global_signal_psd_power_max",
+      "n": 70,
+      "effect": -0.013701986385314351,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_0f1ad14ef4cc",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_frontoparietal_FC",
+      "outcome": "global_signal_psd_power_max",
+      "n": 70,
+      "effect": -0.06161519037380821,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_8fefa734182d",
+      "control_type": "negative_control_outcome",
+      "predictor": "DMN_FC",
+      "outcome": "global_signal_psd_power_max",
+      "n": 70,
+      "effect": 0.7980925837484439,
+      "passed": false,
+      "notes": "A negative control should not show a stronger nominal association."
+    }
+  ]
+}

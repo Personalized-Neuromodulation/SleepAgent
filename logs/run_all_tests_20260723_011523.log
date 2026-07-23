@@ -1,0 +1,331 @@
+[run_all_tests] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_all_tests] iterations=2
+[run_all_tests] base_loop_config=configs/discovery_loop_config.yaml
+[run_all_tests] log_file=logs/run_all_tests_20260723_011523.log
+[run_all_tests] [1/2] foundation -> online grounding/RAG
+API environment preflight
+  NCBI_EMAIL: SET
+  NCBI_TOOL: SleepAgent
+  SEMANTIC_SCHOLAR_API_KEY: SET
+[1/6] Build foundation
+{
+  "mode": "empty_foundation",
+  "subject_count": 0,
+  "feature_count": 0,
+  "qc_record_count": 0,
+  "master_rows": 0,
+  "master_columns": 1,
+  "manifest": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_manifest.json",
+  "outputs": {
+    "subject_index": "/home/zyb/Agent_skills/SleepAgent/data/foundation/subject_index.csv",
+    "feature_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/feature_registry.csv",
+    "approved_variables": "/home/zyb/Agent_skills/SleepAgent/data/foundation/approved_variables.yaml",
+    "data_dictionary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_dictionary.yaml",
+    "qc_summary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/qc_summary.csv",
+    "multimodal_master_table": "/home/zyb/Agent_skills/SleepAgent/data/foundation/multimodal_master_table.csv",
+    "report": "/home/zyb/Agent_skills/SleepAgent/reports/phase0_foundation_report.md"
+  },
+  "data_assets": {
+    "registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+    "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+    "asset_count": 0,
+    "update_event_count": 0,
+    "last_update": {}
+  }
+}
+[2/6] Build knowledge source registry
+{
+  "registry_version": "sleepagent_knowledge_sources_v1",
+  "created_at": "2026-07-23T05:15:24.283389+00:00",
+  "enabled_sources": [
+    "clinical_trials",
+    "guidelines",
+    "standards",
+    "diagnostic_taxonomy",
+    "datasets",
+    "instruments",
+    "tools_methods"
+  ],
+  "clinical_trials_count": 0,
+  "guidelines_count": 9,
+  "standards_count": 7,
+  "diagnostic_terms_count": 6,
+  "datasets_count": 4,
+  "instruments_count": 4,
+  "tools_methods_count": 11,
+  "output_files": {
+    "clinical_trials_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.csv",
+    "clinical_trials_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.jsonl",
+    "guidelines_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.csv",
+    "guidelines_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.jsonl",
+    "standards_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.csv",
+    "standards_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.jsonl",
+    "diagnostic_taxonomy_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.yaml",
+    "diagnostic_taxonomy_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.json",
+    "datasets_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.csv",
+    "datasets_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.jsonl",
+    "instruments_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.yaml",
+    "instruments_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.json",
+    "tools_methods_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.yaml",
+    "tools_methods_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.json",
+    "manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_manifest.json",
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_report.md"
+  },
+  "database_backend": "sqlite",
+  "notes": "Metadata-only for restricted AASM/ICSD sources; no paywalled content downloaded.",
+  "warnings": [
+    "ClinicalTrials.gov live API skipped; set SLEEPAGENT_ENABLE_CLINICALTRIALS_LIVE=true to enable."
+  ],
+  "clinical_trial_conditions": {},
+  "clinical_trial_intervention_types": {},
+  "clinical_trial_status_counts": {},
+  "guideline_organizations": {
+    "American Academy of Sleep Medicine": 9
+  },
+  "guideline_topics": {
+    "insomnia": 1,
+    "sleep apnea": 1,
+    "circadian rhythm sleep wake disorders": 1,
+    "hypersomnia": 1,
+    "narcolepsy": 1,
+    "parasomnias": 1,
+    "pediatric sleep": 1,
+    "behavioral treatment": 1,
+    "pharmacologic treatment": 1
+  },
+  "standard_categories": {
+    "sleep_staging": 1,
+    "arousal": 1,
+    "respiratory_events": 1,
+    "movement_events": 1,
+    "cardiac_events": 1,
+    "montage": 1,
+    "technical_specifications": 1
+  },
+  "diagnostic_categories": {
+    "insomnia_disorders": 1,
+    "sleep_related_breathing_disorders": 1,
+    "central_disorders_of_hypersomnolence": 1,
+    "circadian_rhythm_sleep_wake_disorders": 1,
+    "parasomnias": 1,
+    "sleep_related_movement_disorders": 1
+  },
+  "dataset_modalities": {
+    "EEG": 3,
+    "PSG": 3,
+    "questionnaires": 1,
+    "clinical": 1,
+    "fMRI": 1,
+    "MRI": 1
+  },
+  "dataset_access_status": {
+    "open": 3,
+    "controlled/open depending dataset": 1
+  },
+  "instrument_domains": {
+    "insomnia severity": 1,
+    "sleep quality": 1,
+    "daytime sleepiness": 1,
+    "subjective sleep timing and quality": 1
+  },
+  "tool_method_modalities": {
+    "EEG": 2,
+    "fMRI": 1,
+    "neuroimaging": 1
+  },
+  "tool_method_roles": {
+    "preprocessing": 2,
+    "spectral_analysis": 1,
+    "event_detection": 1,
+    "sleep_staging": 1,
+    "spindle_detection": 1,
+    "slow_wave_detection": 1,
+    "confound_regression": 1,
+    "DTI preprocessing": 1,
+    "cortical_thickness": 1,
+    "subcortical_volume": 1,
+    "data_organization": 1,
+    "reproducibility": 1,
+    "metadata_query": 1,
+    "dataset_indexing": 1,
+    "feature_extraction": 2,
+    "confound_control": 1,
+    "statistical_validity": 1
+  },
+  "run_id": "run_f6f2c9584ab0",
+  "exports": {
+    "clinical_trials": {
+      "count": 0,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.jsonl"
+    },
+    "guidelines": {
+      "count": 9,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.jsonl"
+    },
+    "standards": {
+      "count": 7,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.jsonl"
+    },
+    "diagnostic_taxonomy": {
+      "count": 6,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.json"
+    },
+    "datasets": {
+      "count": 4,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.jsonl"
+    },
+    "instruments": {
+      "count": 4,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.json"
+    },
+    "tools_methods": {
+      "count": 11,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.json"
+    },
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_report.md"
+  }
+}
+[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] timestamp=2026-07-23T01:15:24-04:00
+[literature_db_build_start] step=[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] database=data/literature/sleep_literature.db
+[literature_db_build_start] config=configs/literature_library_config.yaml
+[literature_db_build_start] query_config=configs/literature_queries.yaml
+[literature_db_build_start] library_version=sleep_literature_library_v1_online
+[api] enabled providers: pubmed, europe_pmc, openalex, semantic_scholar
+[api] query count: 104; max_results_per_query: 50
+[api:pubmed] [########################] 104/104 records=4601 warnings=0 done accumulated_raw=4601
+[api:europe_pmc] [########################] 104/104 records=5200 warnings=0 done accumulated_raw=9801
+[api:openalex] [########################] 104/104 records=5200 warnings=0 done accumulated_raw=15001
+[api:semantic_scholar] [########################] 104/104 records=5180 warnings=0 done accumulated_raw=20181
+[api] deduplicated records: 10427
+[literature_build] write_api_outputs_start count=10427
+[literature_build] write_api_outputs_done count=10427
+[literature_build] write_queries_start count=105
+[literature_build] write_queries_done count=105
+[literature_build] persist_api_records_start count=10427
+[literature_build] persist_api_records_done count=10427
+[literature_build] persist_journal_targeted_records_start count=0
+[literature_build] persist_journal_targeted_records_done count=0
+[literature_build] export_deduplication_start
+[literature_build] export_deduplication_done duplicate_groups=112
+[literature_build] export_registry_start
+[literature_build] export_registry_done
+[literature_build] load_registry_start
+[literature_build] load_registry_done count=10290
+[literature_build] export_summaries_start
+[literature_build] export_summaries_done
+[literature_build] coverage_audit_start registry_records=10290
+[literature_build] coverage_audit_done
+[literature_build] anchor_papers_start registry_records=10290
+[literature_build] anchor_papers_done count=60
+[literature_build] query_expansion_start
+[literature_build] query_expansion_done count=200
+[literature_build] rag_index_start embedding_enabled=True
+[embedding] rag index start provider=local_minilm model=sentence-transformers/all-MiniLM-L6-v2 chunks=6895
+/home/zyb/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:182: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 12020). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:119.)
+  return torch._C._cuda_getDeviceCount() > 0
+'[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/cli.py", line 131, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/cli.py", line 76, in main
+    result = run_literature_build(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/literature/library_builder.py", line 267, in run_literature_build
+    result = _run(session_obj)
+             ^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/literature/library_builder.py", line 200, in _run
+    rag_result = build_rag_index(
+                 ^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/literature/rag_indexer.py", line 44, in build_rag_index
+    embedding_result = _embed_chunks(chunks, embedding_config or {})
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/literature/rag_indexer.py", line 91, in _embed_chunks
+    vectors = client.embed(texts) if texts else []
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/agents/embedding.py", line 28, in embed
+    model = self._load()
+            ^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/agents/embedding.py", line 24, in _load
+    self._model = SentenceTransformer(self.model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sentence_transformers/util/decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sentence_transformers/sentence_transformer/model.py", line 188, in __init__
+    super().__init__(
+  File "/opt/fsl/lib/python3.12/site-packages/sentence_transformers/base/model.py", line 216, in __init__
+    modules, self.module_kwargs = self._load_modules(
+                                  ^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sentence_transformers/base/model.py", line 1002, in _load_modules
+    return self._load_config_modules(model_name_or_path, **load_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sentence_transformers/base/model.py", line 1208, in _load_config_modules
+    module = module_class.load(
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sentence_transformers/base/modules/transformer.py", line 2030, in load
+    return cls(model_name_or_path=model_name_or_path, **init_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sentence_transformers/util/decorators.py", line 87, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sentence_transformers/base/modules/transformer.py", line 639, in __init__
+    config, is_peft_model = self._load_config(model_name_or_path, backend, config_kwargs)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sentence_transformers/base/modules/transformer.py", line 1647, in _load_config
+    adapter_config_file = find_adapter_config_file(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/transformers/utils/peft_utils.py", line 84, in find_adapter_config_file
+    adapter_cached_filename = cached_file(
+                              ^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/transformers/utils/hub.py", line 293, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/transformers/utils/hub.py", line 527, in cached_files
+    raise e
+  File "/opt/fsl/lib/python3.12/site-packages/transformers/utils/hub.py", line 437, in cached_files
+    hf_hub_download(
+  File "/opt/fsl/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1013, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1147, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+  File "/opt/fsl/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1707, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1615, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 719, in _httpx_follow_relative_redirects_with_backoff
+    response = http_backoff(
+               ^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 596, in http_backoff
+    return next(
+           ^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 504, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/httpx/_client.py", line 901, in send
+    raise RuntimeError("Cannot send a request, as the client has been closed.")
+RuntimeError: Cannot send a request, as the client has been closed.

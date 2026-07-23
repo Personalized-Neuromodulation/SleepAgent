@@ -10,7 +10,7 @@ from sleep_ai_scientist.experiment.agents.analysis_templates import (
     run_primary_tests,
     run_robustness_checks,
 )
-from sleep_ai_scientist.experiment.agents.llm import build_experiment_llm, load_prompt
+from sleep_ai_scientist.experiment.agents.llm_adapter import build_experiment_llm, load_prompt
 from sleep_ai_scientist.schemas.experiment import (
     ExperimentPlan,
     MLAgentResult,

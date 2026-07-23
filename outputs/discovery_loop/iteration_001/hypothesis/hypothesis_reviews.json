@@ -1,0 +1,500 @@
+[
+  {
+    "review_id": "review_c94d9f136a09",
+    "hypothesis_id": "hypothesis_a90cce5d491f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, with a clear link between thalamic spikes and spindle modulation. Novelty is moderate, with some prior evidence supporting the mechanism.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence, but the novelty could be higher if more distinct from prior models. The correctness is reasonable, supported by the cited evidence, though some assumptions may need further validation. The testability is strong with EEG-fMRI measures. Safety is not a concern.",
+    "supporting_evidence": [
+      "E_0ac918c335eb",
+      "E_3a19c07ee427",
+      "E_b6befad4d320",
+      "E_69829639c773"
+    ],
+    "created_at": "2026-07-23T06:07:21.027420+00:00"
+  },
+  {
+    "review_id": "review_c5c539f084f4",
+    "hypothesis_id": "hypothesis_a90cce5d491f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, with moderate novelty. The experimental plan is well-defined, but some assumptions may require further validation.",
+    "critique": "The hypothesis links thalamic spikes to refractory period modulation and spindle density changes, supported by evidence from E1-E4. The mechanism is plausible given thalamocortical coupling's role in spindle generation. However, the assumption that refractory period modulation directly causes reduced spindle density may need more detailed pathway analysis. The use of EEG-fMRI in EE-SWAS patients is appropriate, but potential confounds like age or white matter integrity (from knowledge graph) should be controlled. The directional prediction is clear, and falsification criteria are well-defined.",
+    "supporting_evidence": [
+      "E_0ac918c335eb",
+      "E_3a19c07ee427",
+      "E_b6befad4d320",
+      "E_69829639c773"
+    ],
+    "created_at": "2026-07-23T06:07:44.346079+00:00"
+  },
+  {
+    "review_id": "review_9f8ce8555ce5",
+    "hypothesis_id": "hypothesis_a90cce5d491f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured with clear assumptions and experimental plan, supported by existing evidence. Novelty is present in linking epileptic thalamic spikes to refractory period modulation in thalamocortical pathways.",
+    "critique": "The hypothesis integrates existing evidence effectively, though further clarification on the specific pathways of thalamocortical modulation could enhance the model. The experimental plan is robust, using EEG-fMRI in EE-SWAS patients, which is a strong modality for measuring spindle density and refractory periods. The assumptions are logically derived from the evidence, though the direct influence of thalamic spikes on refractory period could be influenced by other confounding factors not explicitly mentioned.",
+    "supporting_evidence": [
+      "E_0ac918c335eb",
+      "E_3a19c07ee427",
+      "E_b6befad4d320",
+      "E_69829639c773"
+    ],
+    "created_at": "2026-07-23T06:08:07.293644+00:00"
+  },
+  {
+    "review_id": "review_1e8dbb91579b",
+    "hypothesis_id": "hypothesis_a90cce5d491f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and novel, with strong support from existing evidence. The experimental plan is well-defined and testable.",
+    "critique": "The hypothesis integrates existing evidence effectively, linking thalamic spikes to refractory period and spindle density through thalamocortical pathways. The assumptions are well-justified, and the experimental plan using EEG-fMRI is feasible. Potential areas for further exploration include the specific mechanisms of refractory period modulation and the role of other brain networks.",
+    "supporting_evidence": [
+      "E_0ac918c335eb",
+      "E_3a19c07ee427",
+      "E_b6befad4d320",
+      "E_69829639c773"
+    ],
+    "created_at": "2026-07-23T06:08:26.783684+00:00"
+  },
+  {
+    "review_id": "review_68010624261c",
+    "hypothesis_id": "hypothesis_a90cce5d491f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 8.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and well-supported by existing evidence, with a clear experimental plan and measurable variables. The novelty lies in linking thalamic spikes to refractory period modulation via thalamocortical pathways.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence effectively. The key assumptions are logically derived from the cited evidence. The experimental plan is feasible with EEG-fMRI in EE-SWAS patients. Potential areas for further exploration include the specific mechanisms of refractory period modulation and the role of other brain networks beyond thalamocortical pathways.",
+    "supporting_evidence": [
+      "E_0ac918c335eb",
+      "E_3a19c07ee427",
+      "E_b6befad4d320",
+      "E_69829639c773"
+    ],
+    "created_at": "2026-07-23T06:08:47.676628+00:00"
+  },
+  {
+    "review_id": "review_4fad5e4d01eb",
+    "hypothesis_id": "hypothesis_7cb3d9619bd3",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 8.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and integrates existing evidence on thalamocortical coupling and spindle density. It is testable with PSG and fMRI data, though some assumptions may need refinement.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence on thalamocortical coupling and spindle density. The integration of default mode network connectivity adds a novel aspect. However, the critique mentions potential oversight of other brain networks and age as a confounding variable. The experimental plan is clear but could benefit from controlling for other variables. The directional prediction is reasonable, but the falsification criteria are straightforward.",
+    "supporting_evidence": [
+      "evidence_id_1",
+      "evidence_id_2"
+    ],
+    "created_at": "2026-07-23T06:09:05.835993+00:00"
+  },
+  {
+    "review_id": "review_6fb89857d9bd",
+    "hypothesis_id": "hypothesis_7cb3d9619bd3",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamocortical coupling with spindle density and default mode network connectivity. It is supported by existing evidence and offers a testable framework.",
+    "critique": "The hypothesis is plausible and integrates existing evidence effectively. The inclusion of the default mode network adds a novel aspect. The experimental plan is clear, though potential confounds like other brain networks and age should be controlled. The directional prediction is well-defined, and the falsification criteria are clear.",
+    "supporting_evidence": [
+      "evidence_id_1",
+      "evidence_id_2"
+    ],
+    "created_at": "2026-07-23T06:09:22.063880+00:00"
+  },
+  {
+    "review_id": "review_f1ce803f4eb3",
+    "hypothesis_id": "hypothesis_7cb3d9619bd3",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured with a clear mechanism and testable predictions, integrating thalamocortical coupling with spindle density and default mode network connectivity. The experimental plan is feasible with PSG and fMRI data.",
+    "critique": "The hypothesis effectively links thalamocortical coupling with spindle density and DMN connectivity, supported by existing evidence. However, the critique mentions potential oversight of other brain networks and age as a confound. The refinement addresses these points, enhancing the hypothesis. The directional prediction is clear, and the falsification criteria are well-defined.",
+    "supporting_evidence": [
+      "evidence_id_1",
+      "evidence_id_2"
+    ],
+    "created_at": "2026-07-23T06:09:39.633497+00:00"
+  },
+  {
+    "review_id": "review_20bae887f366",
+    "hypothesis_id": "hypothesis_7cb3d9619bd3",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured with a clear integration of thalamocortical coupling and spindle density, supported by existing evidence. The experimental plan is feasible and testable.",
+    "critique": "The hypothesis could benefit from considering other brain networks beyond the default mode network and addressing potential confounding variables like age more explicitly. However, the integration of thalamocortical coupling with spindle density is well-supported by existing evidence.",
+    "supporting_evidence": [
+      "evidence_id_1",
+      "evidence_id_2"
+    ],
+    "created_at": "2026-07-23T06:09:54.928422+00:00"
+  },
+  {
+    "review_id": "review_aac07a327e82",
+    "hypothesis_id": "hypothesis_7cb3d9619bd3",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical coupling with spindle density and default mode network connectivity, showing strong coherence with existing evidence and testability through PSG and fMRI data.",
+    "critique": "The hypothesis is well-structured and aligns with existing knowledge graph paths. The integration of default mode network and thalamocortical coupling is novel. The directional prediction and falsification criteria are clear. Potential confounds like age are acknowledged, though further refinement could consider other brain networks.",
+    "supporting_evidence": [
+      "evidence_id_1",
+      "evidence_id_2"
+    ],
+    "created_at": "2026-07-23T06:10:11.000546+00:00"
+  },
+  {
+    "review_id": "review_2f2aa9291e80",
+    "hypothesis_id": "hypothesis_c1e94dc7b3b2",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and integrates existing evidence on thalamocortical coupling and spindle modulation. It is novel in linking enhanced coupling to REM latency and sleep consolidation, with a clear experimental plan.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence from thalamocortical coupling and spindle modulation. The key assumptions are supported by prior studies (E1, E2, E3). The experimental plan is feasible with PSG and EEG. Novelty is present in linking thalamocortical coupling to REM latency. Testability is strong with measurable variables. No major safety concerns.",
+    "supporting_evidence": [
+      "E_12490d7dbea3",
+      "E_1afce0d445bb",
+      "E_b054b4dad0e3",
+      "E_4368a8fa6357",
+      "paper_id1",
+      "paper_id2",
+      "paper_id3"
+    ],
+    "created_at": "2026-07-23T06:10:33.438493+00:00"
+  },
+  {
+    "review_id": "review_77d1a9c1e36c",
+    "hypothesis_id": "hypothesis_c1e94dc7b3b2",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamocortical coupling with spindle modulation and REM latency, supported by existing evidence. Novelty is moderate, with strong testability.",
+    "critique": "The hypothesis is coherent and builds on established evidence (E1, E2, E3) linking thalamocortical coupling to spindle activity and NREM stability. The key assumptions are plausible, though the direct link between spindle density and REM latency requires further empirical validation. The experimental plan is clear and feasible with PSG/EEG. The knowledge graph supports the proposed mechanism, though the pathway from thalamocortical coupling to REM latency is indirect and may depend on other factors (e.g., thalamus_DMN_FC).",
+    "supporting_evidence": [
+      "E_12490d7dbea3",
+      "E_1afce0d445bb",
+      "E_b054b4dad0e3",
+      "E_4368a8fa6357"
+    ],
+    "created_at": "2026-07-23T06:10:56.887049+00:00"
+  },
+  {
+    "review_id": "review_f3c9f8c58803",
+    "hypothesis_id": "hypothesis_c1e94dc7b3b2",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 8.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured and integrates existing evidence on thalamocortical coupling and spindle modulation. The assumptions are logically connected and testable with PSG and EEG measures.",
+    "critique": "The hypothesis assumes a direct causal link between thalamocortical coupling and spindle density, which is supported by [E2] and [E3]. However, the role of other modulators like white matter integrity (from knowledge graph) could be a confound. The prediction of REM latency reduction with enhanced coupling is plausible but needs to account for potential interactions with other brain networks.",
+    "supporting_evidence": [
+      "E_12490d7dbea3",
+      "E_1afce0d445bb",
+      "E_b054b4dad0e3",
+      "E_4368a8fa6357"
+    ],
+    "created_at": "2026-07-23T06:11:17.841822+00:00"
+  },
+  {
+    "review_id": "review_a5d499cc15cd",
+    "hypothesis_id": "hypothesis_c1e94dc7b3b2",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured and plausible, with strong integration of existing evidence on thalamocortical coupling and spindle modulation. The experimental plan is feasible and testable.",
+    "critique": "The hypothesis effectively links thalamocortical coupling with spindle modulation and REM latency, supported by existing evidence. The key assumptions are logically derived from the cited studies. The simulation stage suggests that the causal pathway is coherent, though potential confounds such as age and white matter integrity should be controlled for in the experimental design. The integration of PSG and EEG measures is appropriate for capturing spindle density and thalamocortical connectivity.",
+    "supporting_evidence": [
+      "E_12490d7dbea3",
+      "E_1afce0d445bb",
+      "E_b054b4dad0e3",
+      "E_4368a8fa6357",
+      "paper_id1",
+      "paper_id2",
+      "paper_id3"
+    ],
+    "created_at": "2026-07-23T06:11:40.607149+00:00"
+  },
+  {
+    "review_id": "review_c4bfcbef4472",
+    "hypothesis_id": "hypothesis_c1e94dc7b3b2",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, integrating thalamocortical coupling with spindle modulation and REM latency. It aligns with existing evidence and is testable with PSG and EEG.",
+    "critique": "The hypothesis is plausible and integrates existing evidence well. The key assumptions are supported by prior studies, though further validation with more diverse populations could enhance generalizability. The experimental plan is clear and feasible.",
+    "supporting_evidence": [
+      "E_12490d7dbea3",
+      "E_1afce0d445bb",
+      "E_b054b4dad0e3",
+      "E_4368a8fa6357",
+      "paper_id1",
+      "paper_id2",
+      "paper_id3"
+    ],
+    "created_at": "2026-07-23T06:12:00.043811+00:00"
+  },
+  {
+    "review_id": "review_618031cae148",
+    "hypothesis_id": "hypothesis_3e770bf1084f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and novel, linking FA in white matter to thalamocortical spindle overlap. It is testable with DTI and EEG, though some assumptions may need further validation.",
+    "critique": "The hypothesis is well-structured and integrates existing knowledge about white matter integrity and spindle subtypes. The use of FA as a measure of white matter integrity is standard and well-justified. The focus on the default mode network is supported by evidence. However, the assumption that FA directly influences topographical patterns of spindle overlap may require more detailed mechanistic evidence. The experimental plan is robust, but potential confounds such as age and other covariates should be controlled for. The integration of DTI and EEG data is feasible and has been used in prior studies, though the specific relationship between FA and spindle subtypes may need more detailed exploration.",
+    "supporting_evidence": [
+      "E_8a7f67369d5e",
+      "E_0f81122479f4",
+      "E_0d6557b90c05",
+      "E_c8e1994a37e5"
+    ],
+    "created_at": "2026-07-23T06:12:26.134929+00:00"
+  },
+  {
+    "review_id": "review_bd42fc744402",
+    "hypothesis_id": "hypothesis_3e770bf1084f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, novel, and testable with existing evidence. It links white matter integrity (FA) to thalamocortical spindle overlap, particularly in the default mode network, during slow wave sleep.",
+    "critique": "The hypothesis is plausible and integrates existing evidence on white matter integrity and spindle subtypes. The use of DTI and EEG is well-justified. The assumption that the default mode network is central to spindle modulation is supported by evidence (E_8a7f67369d5e, E_0f81122479f4). However, the causal pathway from FA to spindle topography could be further clarified. The integration of FA with spindle overlap patterns is a novel approach, though potential confounds (e.g., age) should be controlled for, as age is linked to both FA and spindle subtypes (evidence E_0d6557b90c05).",
+    "supporting_evidence": [
+      "E_8a7f67369d5e",
+      "E_0f81122479f4",
+      "E_0d6557b90c05"
+    ],
+    "created_at": "2026-07-23T06:12:53.973668+00:00"
+  },
+  {
+    "review_id": "review_377784f37603",
+    "hypothesis_id": "hypothesis_3e770bf1084f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, novel, and testable with existing DTI and EEG methods. The integration of FA with spindle overlap patterns is a logical extension of known pathways.",
+    "critique": "The hypothesis is grounded in established connections between white matter integrity and spindle subtypes. The key assumptions are plausible, particularly the role of the default mode network. The experimental plan is robust, though further validation with larger cohorts could strengthen the findings. The directional prediction is clear and aligns with the knowledge graph paths.",
+    "supporting_evidence": [
+      "E_8a7f67369d5e",
+      "E_0f81122479f4",
+      "E_0d6557b90c05",
+      "E_c8e1994a37e5"
+    ],
+    "created_at": "2026-07-23T06:13:14.671812+00:00"
+  },
+  {
+    "review_id": "review_45c89a3b4370",
+    "hypothesis_id": "hypothesis_3e770bf1084f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, novel, and testable, with strong support from existing evidence linking FA to spindle subtypes and thalamocortical connectivity.",
+    "critique": "The hypothesis effectively integrates FA with thalamocortical spindle overlap, leveraging existing evidence. The focus on the default mode network is supported by prior findings. Potential challenges include ensuring accurate DTI-EEG synchronization and controlling for confounding variables like age. However, these are standard in multimodal studies.",
+    "supporting_evidence": [
+      "E_8a7f67369d5e",
+      "E_0f81122479f4",
+      "E_0d6557b90c05",
+      "E_c8e1994a37e5"
+    ],
+    "created_at": "2026-07-23T06:13:35.637448+00:00"
+  },
+  {
+    "review_id": "review_45699ebad271",
+    "hypothesis_id": "hypothesis_3e770bf1084f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, novel, and testable, with strong support from existing evidence linking FA to spindle subtypes and thalamocortical connectivity.",
+    "critique": "The hypothesis effectively integrates FA with thalamocortical spindle overlap, leveraging existing evidence (e.g., E_8a7f67369d5e, E_0f81122479f4). The focus on the default mode network aligns with prior findings on thalamocortical coupling. The experimental plan is robust, though further clarification on statistical models and control variables (e.g., age) could enhance testability.",
+    "supporting_evidence": [
+      "E_8a7f67369d5e",
+      "E_0f81122479f4",
+      "E_0d6557b90c05",
+      "E_c8e1994a37e5"
+    ],
+    "created_at": "2026-07-23T06:13:59.558204+00:00"
+  },
+  {
+    "review_id": "review_4b92301a3640",
+    "hypothesis_id": "hypothesis_1502c9c78b6b",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical coupling and white matter integrity to explain spindle modulation and sleep phenotypes, showing strong plausibility and testability with existing multimodal neuroimaging techniques.",
+    "critique": "The hypothesis is well-structured and leverages existing knowledge of thalamocortical pathways and white matter integrity. The integration of refractory period and FA as dual modulators is novel. The experimental plan is feasible with EEG-fMRI and DTI. Potential areas for further exploration include the specific mechanisms linking epileptic spikes to refractory period modulation and the role of different white matter tracts in spindle topography.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "created_at": "2026-07-23T06:15:44.264972+00:00"
+  },
+  {
+    "review_id": "review_cde4e3017008",
+    "hypothesis_id": "hypothesis_1502c9c78b6b",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical coupling and white matter integrity to explain spindle modulation and sleep phenotypes, showing strong coherence with existing evidence and novel integration of P1 and P2 mechanisms.",
+    "critique": "The hypothesis effectively combines refractory period and FA modulation, supported by existing evidence (E1-E4). The experimental plan is robust, leveraging EEG-fMRI and DTI. Novelty is evident in the dual modulation framework. Potential refinement could involve more detailed FA sub-regions and longitudinal tracking of refractory periods.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "created_at": "2026-07-23T06:16:01.168864+00:00"
+  },
+  {
+    "review_id": "review_744cf6616281",
+    "hypothesis_id": "hypothesis_1502c9c78b6b",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis effectively integrates thalamocortical coupling and white matter integrity to explain spindle modulation and sleep phenotypes. It is well-supported by existing evidence and offers a testable experimental plan.",
+    "critique": "The hypothesis is well-structured and integrates multiple mechanisms with measurable variables. The assumptions are logically connected and supported by existing evidence. The experimental plan is comprehensive and feasible. However, the role of epileptic spikes in modulating the refractory period could be further explored with additional controls for confounding variables such as age and insomnia severity.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "created_at": "2026-07-23T06:16:18.266969+00:00"
+  },
+  {
+    "review_id": "review_34f37657e2be",
+    "hypothesis_id": "hypothesis_1502c9c78b6b",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical coupling and white matter integrity to explain spindle modulation and sleep phenotypes, showing strong coherence with existing evidence and a clear experimental plan.",
+    "critique": "The hypothesis effectively combines mechanisms from P1 and P2, showing a clear causal pathway involving thalamic spindles, refractory periods, and white matter FA. The experimental plan is well-structured with multimodal imaging. Potential areas for further clarification include the exact mechanism by which epileptic spikes modulate the refractory period and how FA specifically influences topographical patterns. However, these are minor points and do not significantly affect the overall validity.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "created_at": "2026-07-23T06:16:36.920131+00:00"
+  },
+  {
+    "review_id": "review_1ab6d037f50b",
+    "hypothesis_id": "hypothesis_1502c9c78b6b",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis effectively integrates thalamocortical coupling and white matter integrity to explain spindle modulation and sleep phenotypes, with strong empirical support from existing evidence.",
+    "critique": "The hypothesis is well-structured and novel in combining refractory period and FA. It is supported by existing evidence linking thalamocortical pathways and FA with spindle density and topography. The experimental plan is robust and testable. Potential areas for further exploration include the specific mechanisms of how epileptic spikes modulate the refractory period and the interaction between FA and spindle subtypes.",
+    "supporting_evidence": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "created_at": "2026-07-23T06:16:54.398007+00:00"
+  }
+]

@@ -69,6 +69,29 @@ class Paper(Base):
 
     sources: Mapped[list["PaperSource"]] = relationship(back_populates="paper")
     aliases: Mapped[list["PaperAlias"]] = relationship(back_populates="paper")
+    rag_chunks: Mapped[list["RagChunk"]] = relationship(back_populates="paper")
+
+
+class RagChunk(Base):
+    __tablename__ = "rag_chunks"
+    __table_args__ = (
+        Index("ix_rag_chunks_paper_type", "paper_id", "chunk_type"),
+        Index("ix_rag_chunks_embedding_model", "embedding_provider", "embedding_model"),
+    )
+
+    chunk_id: Mapped[str] = mapped_column(String(256), primary_key=True)
+    paper_id: Mapped[str] = mapped_column(ForeignKey("papers.paper_id"), index=True)
+    chunk_type: Mapped[str] = mapped_column(String(64), default="abstract", index=True)
+    text: Mapped[str] = mapped_column(Text, nullable=False)
+    embedding_provider: Mapped[str | None] = mapped_column(String(128), index=True)
+    embedding_model: Mapped[str | None] = mapped_column(Text)
+    embedding_dim: Mapped[int | None] = mapped_column(Integer)
+    embedding_json: Mapped[list[Any] | None] = mapped_column(JSONAuto)
+    metadata_json: Mapped[dict[str, Any] | None] = mapped_column(JSONAuto)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utc_now)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utc_now, onupdate=utc_now)
+
+    paper: Mapped[Paper] = relationship(back_populates="rag_chunks")
 
 
 class PaperSource(Base):

@@ -1,0 +1,41 @@
+[
+  {
+    "hypothesis_id": "hypothesis_1502c9c78b6b",
+    "plan_id": "experiment_plan_37edb94b6071",
+    "support": "partially_supported",
+    "support_score": 0.6,
+    "computed_reward": 0.63,
+    "validated": false,
+    "refuted": false,
+    "primary_tests_passed": 4,
+    "primary_tests_total": 8,
+    "metadata": {
+      "review_status": "partially_supported",
+      "hypothesis_title": "Thalamic Spindle Modulation via Thalamocortical Coupling and White Matter Integrity in Sleep Phenotypes",
+      "predictors": [
+        "thalamus_DMN_FC",
+        "thalamus_salience_FC",
+        "thalamus_frontoparietal_FC",
+        "DMN_FC"
+      ],
+      "outcomes": [
+        "salience_FC",
+        "frontoparietal_FC"
+      ],
+      "critic_findings": [
+        {
+          "severity": "medium",
+          "category": "data_quality",
+          "message": "High missing data rate (24.73%) in fMRI features may affect reliability of FC measures.",
+          "recommendation": "Consider imputation methods or sensitivity analysis to assess impact of missing data."
+        },
+        {
+          "severity": "medium",
+          "category": "control_analysis",
+          "message": "Negative controls for DMN_FC showed strong associations with global signal (r=0.89 and r=0.80), suggesting potential confounding by motion artifacts.",
+          "recommendation": "Include global signal regression as covariate in primary analysis."
+        }
+      ]
+    }
+  }
+]

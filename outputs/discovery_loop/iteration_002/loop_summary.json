@@ -1,0 +1,443 @@
+{
+  "iteration": 2,
+  "iteration_id": "iteration_002",
+  "hypothesis_feedback_input": {
+    "path": "/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/experimental_feedback.json",
+    "available": true,
+    "size": 1453
+  },
+  "hypothesis_summary": {
+    "evidence": 220,
+    "hypotheses": 5,
+    "active": 5,
+    "reviews": 25,
+    "matches": 16,
+    "duplicates_rejected": 0,
+    "feedback": 1,
+    "feedback_updates": 0,
+    "reward_memory": 0,
+    "priors": 0,
+    "agents": [
+      "ContextAgent",
+      "GenerationAgent",
+      "ReviewAgent",
+      "RankAgent",
+      "EvolutionMemoryAgent"
+    ],
+    "output_hypotheses_dir": "/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses",
+    "report_path": "/home/zyb/Agent_skills/SleepAgent/reports/phase2_hypothesis_report.md"
+  },
+  "experiment_summary": {
+    "plans": 1,
+    "results": "outputs/experiments/experiment_results.json",
+    "experimental_feedback": "outputs/hypotheses/experimental_feedback.json",
+    "report": "reports/phase3_experiment_report.md",
+    "feature_tables": [
+      {
+        "modality": "fMRI",
+        "path": "outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv",
+        "subject_id_column": "subject_id",
+        "feature_columns": [
+          "qc_signal_GS_pre_mean",
+          "qc_signal_GS_post_mean",
+          "qc_signal_GS_mean_delta",
+          "qc_signal_GS_pre_sigma",
+          "qc_signal_GS_post_sigma",
+          "qc_signal_GS_sigma_delta",
+          "qc_signal_GS_sigma_reduction_percent",
+          "qc_signal_GS_pre_max",
+          "qc_signal_GS_post_max",
+          "qc_signal_CSF_pre_mean",
+          "qc_signal_CSF_post_mean",
+          "qc_signal_CSF_mean_delta",
+          "qc_signal_CSF_pre_sigma",
+          "qc_signal_CSF_post_sigma",
+          "qc_signal_CSF_sigma_delta",
+          "qc_signal_CSF_sigma_reduction_percent",
+          "qc_signal_CSF_pre_max",
+          "qc_signal_CSF_post_max",
+          "qc_signal_WM_pre_mean",
+          "qc_signal_WM_post_mean",
+          "qc_signal_WM_mean_delta",
+          "qc_signal_WM_pre_sigma",
+          "qc_signal_WM_post_sigma",
+          "qc_signal_WM_sigma_delta",
+          "qc_signal_WM_sigma_reduction_percent",
+          "qc_signal_WM_pre_max",
+          "qc_signal_WM_post_max",
+          "qc_signal_DVARS_pre_mean",
+          "qc_signal_DVARS_post_mean",
+          "qc_signal_DVARS_mean_delta",
+          "qc_signal_DVARS_pre_sigma",
+          "qc_signal_DVARS_post_sigma",
+          "qc_signal_DVARS_sigma_delta",
+          "qc_signal_DVARS_sigma_reduction_percent",
+          "qc_signal_DVARS_pre_max",
+          "qc_signal_DVARS_post_max",
+          "qc_signal_FD_pre_mean",
+          "qc_signal_FD_post_mean",
+          "qc_signal_FD_mean_delta",
+          "qc_signal_FD_pre_sigma",
+          "qc_signal_FD_post_sigma",
+          "qc_signal_FD_sigma_delta",
+          "qc_signal_FD_sigma_reduction_percent",
+          "qc_signal_FD_pre_max",
+          "qc_signal_FD_post_max",
+          "mean_FD",
+          "max_FD",
+          "mean_DVARS",
+          "qc_signal_post_DVARS_mean",
+          "qc_signal_post_GS_mean",
+          "percent_high_motion",
+          "post_DVARS_std",
+          "timefreq_TR",
+          "timefreq_sampling_rate_hz",
+          "timefreq_ALFF_0.01_0.08",
+          "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "global_signal_psd_power_mean",
+          "global_signal_psd_power_max",
+          "thalamus_roi_voxels",
+          "DMN_roi_voxels",
+          "salience_roi_voxels",
+          "frontoparietal_roi_voxels",
+          "thalamus_DMN_FC",
+          "thalamus_salience_FC",
+          "thalamus_frontoparietal_FC",
+          "DMN_salience_FC",
+          "DMN_frontoparietal_FC",
+          "salience_frontoparietal_FC",
+          "DMN_FC",
+          "salience_FC",
+          "frontoparietal_FC"
+        ],
+        "metadata": {
+          "source": "derivatives",
+          "plan_id": "experiment_plan_cdea5110b79a",
+          "roi_fc_status": "computed_when_atlas_available",
+          "qc_status": "pass"
+        }
+      }
+    ],
+    "feature_profiles": [
+      "outputs/features/profile/experiment_plan_cdea5110b79a/analysis_ready_profile.yaml"
+    ],
+    "merged_feature_tables": [
+      "outputs/features/multimodal/experiment_plan_cdea5110b79a/multimodal_features.csv"
+    ]
+  },
+  "foundation_update": {
+    "foundation_changed": true,
+    "reason": "experiment_feature_tables",
+    "feature_tables": [
+      {
+        "modality": "fMRI",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv"
+      }
+    ],
+    "foundation_config": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/foundation_update_config.yaml",
+    "foundation_summary": {
+      "subject_count": 93,
+      "feature_count": 74,
+      "qc_record_count": 93,
+      "master_rows": 93,
+      "master_columns": 87,
+      "manifest": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_manifest.json",
+      "outputs": {
+        "subject_index": "/home/zyb/Agent_skills/SleepAgent/data/foundation/subject_index.csv",
+        "feature_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/feature_registry.csv",
+        "approved_variables": "/home/zyb/Agent_skills/SleepAgent/data/foundation/approved_variables.yaml",
+        "data_dictionary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_dictionary.yaml",
+        "qc_summary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/qc_summary.csv",
+        "multimodal_master_table": "/home/zyb/Agent_skills/SleepAgent/data/foundation/multimodal_master_table.csv",
+        "report": "/home/zyb/Agent_skills/SleepAgent/reports/phase0_foundation_report.md"
+      },
+      "data_assets": {
+        "registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+        "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+        "asset_count": 1,
+        "update_event_count": 2,
+        "last_update": {
+          "asset_count": 1,
+          "new_asset_count": 0,
+          "data_asset_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+          "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+          "asset_ids": [
+            "63b4dc1cdfa5b11b"
+          ],
+          "update_event_id": "4bae0449268cee4c"
+        }
+      }
+    },
+    "data_asset_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+    "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+    "data_asset_count": 1
+  },
+  "literature_refresh": {
+    "refreshed": true,
+    "reason": "foundation_changed",
+    "literature_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_library_config.yaml",
+    "query_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml",
+    "library_version": "sleep_literature_library_v1",
+    "literature_summary": {
+      "library_version": "sleep_literature_library_v1",
+      "query_set_version": "sleep_literature_queries_v2_broad_sleep_science",
+      "api_papers": 10427,
+      "journal_targeted_records": 0,
+      "registry_records": 10290,
+      "duplicate_groups": 20786,
+      "deduplication": {
+        "report_rows": 31281,
+        "manual_review_rows": 205,
+        "summary": {
+          "total_incoming_records": 31281,
+          "inserted_new_count": 10290,
+          "merged_duplicate_count": 20786,
+          "skipped_duplicate_count": 0,
+          "manual_review_count": 205,
+          "doi_match_count": 198,
+          "pmid_match_count": 45,
+          "pmcid_match_count": 0,
+          "title_exact_match_count": 133,
+          "fuzzy_match_count": 35,
+          "conflict_count": 270,
+          "records_with_multiple_sources": 10290,
+          "records_from_api_broad": 10290,
+          "records_from_journal_targeted": 0,
+          "overlap_api_broad_and_journal_targeted": 0,
+          "duplicate_rate": 0.671046
+        }
+      },
+      "rag_index": {
+        "chunk_count": 6895,
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/rag_abstract_chunks.jsonl",
+        "embedding": {
+          "enabled": true,
+          "provider": "local_minilm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "local_files_only": true,
+          "device": "cpu",
+          "vector_count": 6895,
+          "vector_dim": 384,
+          "log_file": "/home/zyb/Agent_skills/SleepAgent/logs/embedding_retrieval.log"
+        }
+      },
+      "provider_summary": {
+        "query_result_counts": {
+          "europe_pmc": 3396,
+          "openalex": 5133,
+          "pubmed": 6027,
+          "semantic_scholar": 7884
+        },
+        "paper_source_counts": {
+          "europe_pmc": 5142,
+          "openalex": 7590,
+          "pubmed": 9882,
+          "semantic_scholar": 8667
+        }
+      },
+      "query_summary": {
+        "query_count": 105,
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/query_summary.csv"
+      },
+      "coverage_audit": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/coverage_audit.json",
+      "anchor_papers": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/anchor_papers.csv",
+      "query_expansion_candidates": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/query_expansion_candidates.csv",
+      "manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_manifest.json",
+      "warnings": [],
+      "run_id": "run_607554114d95"
+    }
+  },
+  "grounding_refresh": {
+    "refreshed": true,
+    "reason": "foundation_changed",
+    "grounding_config": "/home/zyb/Agent_skills/SleepAgent/configs/grounding_config.yaml",
+    "corpus_version": "sleepagent_grounding_data_constrained_v1",
+    "grounding_summary": {
+      "papers": 20,
+      "api_papers": 0,
+      "retrieval_hits": 0,
+      "evidence": 412,
+      "analysis_ready_variables": 74,
+      "graph_nodes": 471,
+      "graph_edges": 1694,
+      "corpus_version": "sleepagent_grounding_data_constrained_v1",
+      "corpus_manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/corpus_manifest.json",
+      "literature_registry": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/grounding_literature_registry.csv",
+      "evidence_quality_summary": {
+        "evidence_count": 412,
+        "support_count": 95,
+        "refute_count": 0,
+        "null_count": 0,
+        "unclear_count": 317,
+        "mean_evidence_quality_score": 0.408,
+        "mean_final_evidence_score": 0.516,
+        "high_quality_evidence_count": 51,
+        "low_quality_evidence_count": 262,
+        "high_feasibility_evidence_count": 75
+      },
+      "grounding_qc_report": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/grounding_qc_report.json",
+      "evidence_audit": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_extraction_audit.json",
+      "evidence_benchmark": "",
+      "llm_context_compression": {
+        "llm_evidence_context_json": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_evidence_context.json",
+        "llm_mechanism_context_json": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_mechanism_context.json",
+        "llm_context_compression_manifest_json": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_context_compression_manifest.json"
+      },
+      "report_path": "/home/zyb/Agent_skills/SleepAgent/reports/phase1_grounding_report.md",
+      "output_grounding_dir": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding",
+      "output_profiles_dir": "/home/zyb/Agent_skills/SleepAgent/outputs/profiles",
+      "api_summary": {
+        "source": "literature_db_rag",
+        "enabled": true,
+        "retrieval_hits": 20,
+        "available_chunks": 6895,
+        "top_k": 20,
+        "embedding_provider": "local_minilm",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+        "top_hits": [
+          {
+            "paper_id": "doi:10.1371/journal.pone.0277772",
+            "chunk_id": "abstract:doi:10.1371/journal.pone.0277772",
+            "score": 0.720074
+          },
+          {
+            "paper_id": "doi:10.1016/j.schres.2019.11.002",
+            "chunk_id": "abstract:doi:10.1016/j.schres.2019.11.002",
+            "score": 0.718755
+          },
+          {
+            "paper_id": "doi:10.64898/2026.02.20.26346398",
+            "chunk_id": "abstract:doi:10.64898/2026.02.20.26346398",
+            "score": 0.710818
+          },
+          {
+            "paper_id": "doi:10.1111/ejn.16240",
+            "chunk_id": "abstract:doi:10.1111/ejn.16240",
+            "score": 0.70487
+          },
+          {
+            "paper_id": "doi:10.1073/pnas.0702495104",
+            "chunk_id": "abstract:doi:10.1073/pnas.0702495104",
+            "score": 0.702521
+          },
+          {
+            "paper_id": "doi:10.1177/1073858413500854",
+            "chunk_id": "abstract:doi:10.1177/1073858413500854",
+            "score": 0.69949
+          },
+          {
+            "paper_id": "doi:10.1254/jpssuppl.93.0_2-p-184",
+            "chunk_id": "abstract:doi:10.1254/jpssuppl.93.0_2-p-184",
+            "score": 0.699112
+          },
+          {
+            "paper_id": "doi:10.1016/j.neuroimage.2022.119625",
+            "chunk_id": "abstract:doi:10.1016/j.neuroimage.2022.119625",
+            "score": 0.69645
+          },
+          {
+            "paper_id": "doi:10.1152/physrev.00042.2018",
+            "chunk_id": "abstract:doi:10.1152/physrev.00042.2018",
+            "score": 0.693506
+          },
+          {
+            "paper_id": "doi:10.5665/sleep.4330",
+            "chunk_id": "abstract:doi:10.5665/sleep.4330",
+            "score": 0.691632
+          },
+          {
+            "paper_id": "doi:10.1016/j.neuron.2014.04.046",
+            "chunk_id": "abstract:doi:10.1016/j.neuron.2014.04.046",
+            "score": 0.691155
+          },
+          {
+            "paper_id": "doi:10.1101/2024.07.22.604668",
+            "chunk_id": "abstract:doi:10.1101/2024.07.22.604668",
+            "score": 0.688557
+          },
+          {
+            "paper_id": "doi:10.1073/pnas.1217897109",
+            "chunk_id": "abstract:doi:10.1073/pnas.1217897109",
+            "score": 0.68821
+          },
+          {
+            "paper_id": "doi:10.5665/sleep.1290",
+            "chunk_id": "abstract:doi:10.5665/sleep.1290",
+            "score": 0.687255
+          },
+          {
+            "paper_id": "doi:10.1007/s40675-024-00284-x",
+            "chunk_id": "abstract:doi:10.1007/s40675-024-00284-x",
+            "score": 0.685855
+          },
+          {
+            "paper_id": "doi:10.1155/2016/8103439",
+            "chunk_id": "abstract:doi:10.1155/2016/8103439",
+            "score": 0.683957
+          },
+          {
+            "paper_id": "doi:10.1523/jneurosci.0077-11.2011",
+            "chunk_id": "abstract:doi:10.1523/jneurosci.0077-11.2011",
+            "score": 0.681289
+          },
+          {
+            "paper_id": "doi:10.1016/j.xcrm.2021.100432",
+            "chunk_id": "abstract:doi:10.1016/j.xcrm.2021.100432",
+            "score": 0.680753
+          },
+          {
+            "paper_id": "doi:10.1111/jsr.70253",
+            "chunk_id": "abstract:doi:10.1111/jsr.70253",
+            "score": 0.679596
+          },
+          {
+            "paper_id": "doi:10.1093/brain/awae119",
+            "chunk_id": "abstract:doi:10.1093/brain/awae119",
+            "score": 0.676782
+          }
+        ],
+        "provider_counts": {
+          "literature_db_rag": 20
+        },
+        "query_count": 1,
+        "raw_count": 6895,
+        "deduplicated_count": 20,
+        "warnings": [],
+        "final_literature_count": 20
+      }
+    }
+  },
+  "metrics": {
+    "iteration": 2,
+    "hypothesis_pool_path": "/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json",
+    "experiment_results_path": "/home/zyb/Agent_skills/SleepAgent/outputs/experiments/experiment_results.json",
+    "experimental_feedback_path": "/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/experimental_feedback.json",
+    "hypothesis_count": 5,
+    "hypothesis_ids": [
+      "hypothesis_30273a30edd5",
+      "hypothesis_c77e71bc2381",
+      "hypothesis_57eece8d1eec",
+      "hypothesis_44a46d3974ec",
+      "hypothesis_8d7ffd5b7dc0"
+    ],
+    "new_hypotheses": 5,
+    "status_counts": {
+      "active": 5
+    },
+    "active_hypotheses": 5,
+    "top_k_count": 5,
+    "experiment_result_count": 1,
+    "feedback_records": 1,
+    "validated_feedback": 1,
+    "refuted_feedback": 0,
+    "reward_mean": 0.75
+  },
+  "snapshot": {
+    "hypothesis": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/hypothesis",
+    "hypothesis_report": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/hypothesis_report.md",
+    "experiment_results": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/experiment_results.json",
+    "experimental_feedback": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/experimental_feedback.json",
+    "experiment_report": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/phase3_experiment_report.md",
+    "features": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/features"
+  }
+}

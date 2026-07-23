@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 from sleep_ai_scientist.common.io import read_json, write_yaml
-from sleep_ai_scientist.experiment.agents.llm import build_experiment_llm, experiment_llm_enabled
+from sleep_ai_scientist.experiment.agents.llm_adapter import build_experiment_llm, experiment_llm_enabled
 from sleep_ai_scientist.experiment.agents.analysis_templates import run_primary_tests
 from sleep_ai_scientist.experiment.agents.planning import build_experiment_plan_from_hypothesis, load_data_profile, load_hypotheses
 from sleep_ai_scientist.experiment.experiment_pipeline import run_experiment_pipeline
@@ -110,6 +110,10 @@ def test_experiment_pipeline_runs_feature_extraction_layer(tmp_path):
 
     summary = run_experiment_pipeline(config_path)
     assert summary["plans"] == 1
+    assert {item["modality"] for item in summary["feature_tables"]} == {"fMRI", "EEG", "scales"}
+    assert all(Path(item["path"]).exists() for item in summary["feature_tables"])
+    assert summary["feature_profiles"]
+    assert summary["merged_feature_tables"]
     assert list((feature_root / "fmri").glob("*/fmri_features.csv"))
     assert list((feature_root / "eeg").glob("*/eeg_features.csv"))
     assert list((feature_root / "scales").glob("*/scale_features.csv"))

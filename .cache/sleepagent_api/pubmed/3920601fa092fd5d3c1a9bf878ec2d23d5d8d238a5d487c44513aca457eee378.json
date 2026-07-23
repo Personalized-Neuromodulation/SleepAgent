@@ -1,0 +1,82 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "120",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42349608",
+      "42155843",
+      "42109831",
+      "41819251",
+      "41040281",
+      "40998695",
+      "40995120",
+      "40894799",
+      "40830097",
+      "40825030",
+      "40578731",
+      "39811395",
+      "39256042",
+      "37880241",
+      "37397882",
+      "37193405",
+      "37072918",
+      "36867532",
+      "35850189",
+      "35780977",
+      "35079122",
+      "35022792",
+      "34445628",
+      "34220477",
+      "34126184",
+      "33870177",
+      "33067436",
+      "32507548",
+      "32414784",
+      "32066662",
+      "31262708",
+      "31231186",
+      "30837664",
+      "30786245",
+      "30583750",
+      "30366019",
+      "29575912",
+      "29180672",
+      "29106983",
+      "28939929",
+      "28764392",
+      "28689981",
+      "28350371",
+      "27883901",
+      "27510855",
+      "27269670",
+      "27144033",
+      "26880556",
+      "26778969",
+      "26289472"
+    ],
+    "translationset": [
+      {
+        "from": "thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "nucleus",
+        "to": "\"cell nucleus\"[MeSH Terms] OR (\"cell\"[All Fields] AND \"nucleus\"[All Fields]) OR \"cell nucleus\"[All Fields] OR \"nucleus\"[All Fields] OR \"nucleu\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "spindle",
+        "to": "\"spindle\"[All Fields] OR \"spindle's\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND \"reticular\"[All Fields] AND (\"cell nucleus\"[MeSH Terms] OR (\"cell\"[All Fields] AND \"nucleus\"[All Fields]) OR \"cell nucleus\"[All Fields] OR \"nucleus\"[All Fields] OR \"nucleu\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"spindle\"[All Fields] OR \"spindle s\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields])"
+  }
+}

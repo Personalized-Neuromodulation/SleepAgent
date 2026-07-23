@@ -18,8 +18,21 @@ class LiteratureQuery:
     priority: float = 1.0
 
 
-def load_query_set(path: str | Path) -> tuple[dict[str, Any], list[LiteratureQuery]]:
-    payload = read_yaml(Path(path))
+def select_query_payload(payload: dict[str, Any], scope: str | None = None) -> dict[str, Any]:
+    query_sets = payload.get("query_sets")
+    if not query_sets:
+        return payload
+    selected_scope = scope or "library"
+    if selected_scope not in query_sets:
+        available = ", ".join(sorted(str(key) for key in query_sets))
+        raise KeyError(f"Query scope '{selected_scope}' not found. Available scopes: {available}")
+    selected = dict(query_sets[selected_scope] or {})
+    selected.setdefault("scope", selected_scope)
+    return selected
+
+
+def load_query_set(path: str | Path, scope: str | None = None) -> tuple[dict[str, Any], list[LiteratureQuery]]:
+    payload = select_query_payload(read_yaml(Path(path)), scope=scope)
     version = payload.get("query_set", {}).get("version", "")
     queries: list[LiteratureQuery] = []
     seen: set[tuple[str, str]] = set()
@@ -46,4 +59,3 @@ def write_queries_to_db(session, queries: list[LiteratureQuery]) -> list[Literat
     for item in queries:
         repo.upsert_query(session, item.query_text, item.query_group, item.query_set_version, priority=item.priority)
     return queries
-

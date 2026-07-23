@@ -1,0 +1,2295 @@
+{
+  "total": 133,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "a31e278722813aa600c34a0c2b0fdbc803540b5e",
+      "externalIds": {
+        "DOI": "10.1109/ICBME68496.2025.11392189",
+        "CorpusId": 286242876
+      },
+      "url": "https://www.semanticscholar.org/paper/a31e278722813aa600c34a0c2b0fdbc803540b5e",
+      "title": "An Automatic Pipeline for Simultaneous EEG-FMRI Artifact-removal (SEFA)",
+      "venue": "Iranian Conference on Biomedical Engineering",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICBME68496.2025.11392189?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICBME68496.2025.11392189, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2421851161",
+          "name": "Farid Hosseinzadeh"
+        },
+        {
+          "authorId": "2396033437",
+          "name": "A. M. Mohammadi"
+        },
+        {
+          "authorId": "2347749554",
+          "name": "Mehrdad Anvarifard"
+        },
+        {
+          "authorId": "2352089763",
+          "name": "Sasan Keshavarz"
+        },
+        {
+          "authorId": "40590031",
+          "name": "E. Ebrahimzadeh"
+        },
+        {
+          "authorId": "2261929684",
+          "name": "H. Soltanian-Zadeh"
+        }
+      ],
+      "abstract": "Simultaneous EEG-fMRI provides complementary temporal and spatial information about brain function, but its utility is hindered by severe scanner-induced artifacts such as gradient and ballistocardiographic (BCG) noise. Manual artifact correction is effective but laborintensive, inconsistent, and difficult to scale. We introduce SEFA, a fully automated two-stage preprocessing pipeline for simultaneous EEG-fMRI that integrates MRI-specific artifact correction (average artifact subtraction, optimal basis set, and PCA/OBS modeling) with state-of-the-art EEG cleaning techniques adapted from a previous popular standard EEG preprocessing pipeline, HAPPE, including automated independent component classification (MARA and ICLabel), bad-channel detection, multitaper regression for line noise, and segment-level quality control. Validation against manually corrected datasets from a reward-based decision-making task demonstrated that SEFA achieves near-perfect equivalence with expert preprocessing. Event-related potentials (ERPs) from both approaches exhibited indistinguishable morphology, latency, and amplitude, with mean channel-wise correlations of $\\mathrm{r}=0.91 \\pm 0.14$, and 72 % of electrodes exceeding $\\mathrm{r}>0.90$. Signal-to-noise ratio (SNR) improved from $\\sim 0.8 \\text{dB}$ in raw data to 6.7 dB with SEFA, matching manual performance (6.9 dB). Statistical testing confirmed no significant differences in ERP amplitude or latency between automated and manual methods (all $\\mathrm{p} > \\text{0.1}$). By reducing operator bias and cutting processing time from hours to minutes, SEFA enables reproducible, scalable, and clinically feasible preprocessing of simultaneous EEG-fMRI data."
+    },
+    {
+      "paperId": "f54bc2bfefa20e691605a5ba34b24e376a37acda",
+      "externalIds": {
+        "DOI": "10.1101/2024.08.13.607843",
+        "CorpusId": 271898602
+      },
+      "url": "https://www.semanticscholar.org/paper/f54bc2bfefa20e691605a5ba34b24e376a37acda",
+      "title": "EEG source imaging technique to investigate sleep oscillations for simultaneous EEG-fMRI",
+      "venue": "bioRxiv",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2024/08/16/2024.08.13.607843.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2024.08.13.607843?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2024.08.13.607843, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32116327",
+          "name": "M. Uji"
+        },
+        {
+          "authorId": "74393015",
+          "name": "A. Jegou"
+        },
+        {
+          "authorId": "2251317174",
+          "name": "N. Cross"
+        },
+        {
+          "authorId": "34821805",
+          "name": "F. Pomares"
+        },
+        {
+          "authorId": "2297093266",
+          "name": "A. Perrault"
+        },
+        {
+          "authorId": "2029655257",
+          "name": "A. Nguyen"
+        },
+        {
+          "authorId": "2029673557",
+          "name": "U. Aydin"
+        },
+        {
+          "authorId": "39915555",
+          "name": "Kangjoo Lee"
+        },
+        {
+          "authorId": "9689225",
+          "name": "C. Abdallah"
+        },
+        {
+          "authorId": "2579809",
+          "name": "B. Frauscher"
+        },
+        {
+          "authorId": "2250353178",
+          "name": "Jean-Marc Lina"
+        },
+        {
+          "authorId": "1400823726",
+          "name": "T. Dang-Vu"
+        },
+        {
+          "authorId": "2513442",
+          "name": "C. Grova"
+        }
+      ],
+      "abstract": "Simultaneous recording of electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) is a widely used non-invasive neuroimaging technique in sleep studies. However, EEG data are strongly influenced by two types of MRI-related artefacts: gradient artefacts (GA) and ballistocardiogram artefacts (BCG). If artefacts correction is suboptimal, the BCG obscures the EEG signals below 20Hz and could make it difficult to investigate sleep oscillations, especially sleep spindles, sleep specific oscillations occurring within 11-16Hz frequency band. We previously demonstrated the utility of beamforming spatial filtering in correcting MRI-related artefacts on EEG. Here, we investigated the use of beamforming spatial filtering for improving the detection of EEG oscillations during sleep, in particular, 1) to accurately estimate single-event spindle EEG power changes, and 2) to demonstrate the potential improvement of fMRI general linear model (GLM) analysis when involving such additional EEG information. We analysed EEG-fMRI data acquired during a recovery nap after sleep deprivation in 20 young healthy participants (12 females, 8 males, age = 21.3 ± 2.5 years). Based on spindle events (onset and duration) detected by trained sleep scorers on BCG corrected EEG signals through a conventional average artefact subtraction (AAS) method, we compared four different EEG processing steps: non-BCG corrected; AAS BCG corrected; beamforming BCG corrected; beamforming+AAS BCG corrected. These processing steps consist of non-BCG corrected and AAS BCG corrected considered either at the sensor level or at the source-level (after beamformer localization) to evaluate the impact of the BCG artefact on the detection of spindle activity. Then we further investigated four different fMRI GLM approaches using 1) the spindle onset and duration (GLM1), 2) spindle onset, duration, and parametric modulation of single-spindle power change from the Cz electrode of the AAS BCG corrected data (GLM2), 3) spindle onset, duration, and parametric modulation of single-spindle power change from the beamforming+AAS BCG corrected (GLM3) and 4) spindle onset, duration, and parametric modulation of single-spindle power change from the beamforming BCG corrected data (GLM4). We found that the beamforming approach did not only attenuate the BCG artefacts, but also recovered sleep spindle activity occurring during NREM sleep. Furthermore, this beamforming approach allowed us to accurately estimate single-event power change of each spindle in the source space when compared to the channel level analysis, and therefore to further improve the specificity of fMRI GLM analysis, better localizing the recruited brain regions during spindles. Our findings show the benefit of applying beamforming source imaging technique to EEG-fMRI acquired during sleep. We demonstrate that this approach would be beneficial especially for long EEG-fMRI data acquisitions (i.e., sleep, resting-state), when the BCG correction becomes problematic due to inherent dynamic changes of heart rates. Our findings extend previous work regarding the application of the source imaging to the sleep EEG-fMRI. Combining with this advanced methodology and analysis, sleep EEG-fMRI will help us better understand the functional roles of human sleep."
+    },
+    {
+      "paperId": "7ab63dabd68590230636bb3d4d588575cfaaac24",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/MeerPSRWGLHHMW16",
+        "MAG": "1868769070",
+        "DOI": "10.1016/j.neuroimage.2015.10.064",
+        "CorpusId": 11047291,
+        "PubMed": "26505301"
+      },
+      "url": "https://www.semanticscholar.org/paper/7ab63dabd68590230636bb3d4d588575cfaaac24",
+      "title": "Carbon-wire loop based artifact correction outperforms post-processing EEG/fMRI corrections - A validation of a real-time simultaneous EEG/fMRI correction method",
+      "venue": "NeuroImage",
+      "year": 2016,
+      "citationCount": 79,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2015.10.064",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2015.10.064?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2015.10.064, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4324005",
+          "name": "J. Meer"
+        },
+        {
+          "authorId": "2271229",
+          "name": "A. Pampel"
+        },
+        {
+          "authorId": "2368838",
+          "name": "E. Someren"
+        },
+        {
+          "authorId": "2361430",
+          "name": "J. Ramautar"
+        },
+        {
+          "authorId": "6171363",
+          "name": "Y. D. Werf"
+        },
+        {
+          "authorId": "1397998860",
+          "name": "Germán Gómez-Herrero"
+        },
+        {
+          "authorId": "2078489",
+          "name": "J. Lepsien"
+        },
+        {
+          "authorId": "2697324",
+          "name": "L. Hellrung"
+        },
+        {
+          "authorId": "145663940",
+          "name": "H. Hinrichs"
+        },
+        {
+          "authorId": "3261270",
+          "name": "H. Möller"
+        },
+        {
+          "authorId": "50194916",
+          "name": "M. Walter"
+        }
+      ],
+      "abstract": "Simultaneous EEG-fMRI combines two powerful neuroimaging techniques, but the EEG signal suffers from severe artifacts in the MRI environment that are difficult to remove. These are the MR scanning artifact and the blood-pulsation artifact--strategies to remove them are a topic of ongoing research. Additionally large, unsystematic artifacts are produced across the full frequency spectrum by the magnet's helium pump (and ventilator) systems which are notoriously hard to remove. As a consequence, experimenters routinely deactivate the helium pump during simultaneous EEG-fMRI acquisitions which potentially risks damaging the MRI system and necessitates more frequent and expensive helium refills. We present a novel correction method addressing both helium pump and ballisto-cardiac (BCG) artifacts, consisting of carbon-wire loops (CWL) as additional sensors to accurately track unpredictable artifacts related to subtle movements in the scanner, and an EEGLAB plugin to perform artifact correction. We compare signal-to-noise metrics of EEG data, corrected with CWL and three conventional correction methods, for helium pump off and on measurements. Because the CWL setup records signals in real-time, it fits requirements of applications where immediate correction is necessary, such as neuro-feedback applications or stimulation time-locked to specific sleep oscillations. The comparison metrics in this paper relate to: (1) the EEG signal itself, (2) the \"eyes open vs. eyes closed\" effect, and (3) an assessment of how the artifact corrections impacts the ability to perform meaningful correlations between EEG alpha power and the BOLD signal. Results show that the CWL correction corrects for He pump artifact and also produces EEG data more comparable to EEG obtained outside the magnet than conventional post-processing methods."
+    },
+    {
+      "paperId": "255b6d152eb9c91814655b14d6ef9a9fa14ee804",
+      "externalIds": {
+        "MAG": "3026057248",
+        "DBLP": "conf/isbi/DuffyTK20",
+        "DOI": "10.1109/ISBI45749.2020.9098447",
+        "CorpusId": 218894570
+      },
+      "url": "https://www.semanticscholar.org/paper/255b6d152eb9c91814655b14d6ef9a9fa14ee804",
+      "title": "Gradient Artifact Correction for Simultaneous EEG- fMRI using Denoising Autoencoders",
+      "venue": "IEEE International Symposium on Biomedical Imaging",
+      "year": 2020,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISBI45749.2020.9098447?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISBI45749.2020.9098447, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3070747",
+          "name": "B. Duffy"
+        },
+        {
+          "authorId": "1699926",
+          "name": "A. Toga"
+        },
+        {
+          "authorId": "2108902577",
+          "name": "Hosung Kim"
+        }
+      ],
+      "abstract": "EEG recorded during MRI acquisition suffers from severe artifacts due to the imaging gradients. Here, we explore the possibility of using denoising autoencoders for correcting for these artifacts. After hyperparameter optimization, the performance of the algorithm was compared against PCA on two different synthesized datasets. The first dataset was created by adding a template artifact to clean EEG data and randomly shifting it in time to simulate aliasing. While the second dataset was formed by filtering out the EEG frequencies and adding a known ground-truth clean EEG signal. The performance of each method was assessed by the RMSE relative to the clean EEG signal. In addition, the correlation coefficient compared to the artifact signal was used to measure the residual artifact level. On the second synthesized dataset, denoising autoencoders outperformed PCA by 4.3% in terms of RMSE, meaning they were able to better preserve the original signal while at the same time the correlation with the underlying artifact was reduced by 40%. These preliminary results merit further investigation on a larger dataset."
+    },
+    {
+      "paperId": "a1bd55c9538dc5320979bf1d0f81053d2ae1c95d",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/AbreuLJGZLF16",
+        "MAG": "2311232813",
+        "DOI": "10.1016/j.neuroimage.2016.03.034",
+        "CorpusId": 4134053,
+        "PubMed": "27012501"
+      },
+      "url": "https://www.semanticscholar.org/paper/a1bd55c9538dc5320979bf1d0f81053d2ae1c95d",
+      "title": "Ballistocardiogram artifact correction taking into account physiological signal preservation in simultaneous EEG-fMRI",
+      "venue": "NeuroImage",
+      "year": 2016,
+      "citationCount": 46,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2016.03.034?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2016.03.034, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145080116",
+          "name": "Rodolfo Abreu"
+        },
+        {
+          "authorId": "2143961429",
+          "name": "M. Leite"
+        },
+        {
+          "authorId": "143858664",
+          "name": "J. Jorge"
+        },
+        {
+          "authorId": "3141156",
+          "name": "F. Grouiller"
+        },
+        {
+          "authorId": "30599945",
+          "name": "W. Zwaag"
+        },
+        {
+          "authorId": "144599137",
+          "name": "A. Leal"
+        },
+        {
+          "authorId": "144846300",
+          "name": "P. Figueiredo"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "5dcff08595a848a35777dd833c6efce58635ab74",
+      "externalIds": {
+        "PubMedCentral": "10164016",
+        "DOI": "10.1007/s10548-023-00945-0",
+        "CorpusId": 257629995,
+        "PubMed": "36939987"
+      },
+      "url": "https://www.semanticscholar.org/paper/5dcff08595a848a35777dd833c6efce58635ab74",
+      "title": "Camera-based Prospective Motion Correction in Paediatric Epilepsy Patients Enables EEG-fMRI Localization Even in High-motion States",
+      "venue": "Brain Topography",
+      "year": 2023,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10548-023-00945-0.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10164016, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5377907",
+          "name": "M. Steinbrenner"
+        },
+        {
+          "authorId": "153809306",
+          "name": "A. McDowell"
+        },
+        {
+          "authorId": "145271565",
+          "name": "M. Centeno"
+        },
+        {
+          "authorId": "39854156",
+          "name": "F. Moeller"
+        },
+        {
+          "authorId": "1965259",
+          "name": "Suejen Perani"
+        },
+        {
+          "authorId": "3265939",
+          "name": "S. Lorio"
+        },
+        {
+          "authorId": "7962135",
+          "name": "D. Maziero"
+        },
+        {
+          "authorId": "83650098",
+          "name": "D. Carmichael"
+        }
+      ],
+      "abstract": "Background: EEG-fMRI is a useful additional test to localize the epileptogenic zone (EZ) particularly in MRI negative cases. However subject motion presents a particular challenge owing to its large effects on both MRI and EEG signal. Traditionally it is assumed that prospective motion correction (PMC) of fMRI precludes EEG artifact correction. Methods: Children undergoing presurgical assessment at Great Ormond Street Hospital were included into the study. PMC of fMRI was done using a commercial system with a Moiré Phase Tracking marker and MR-compatible camera. For retrospective EEG correction both a standard and a motion educated EEG artefact correction (REEGMAS) were compared to each other. Results: Ten children underwent simultaneous EEG-fMRI. Overall head movement was high (mean RMS velocity < 1.5 mm/s) and showed high inter- and intra-individual variability. Comparing motion measured by the PMC camera and the (uncorrected residual) motion detected by realignment of fMRI images, there was a five-fold reduction in motion from its prospective correction. Retrospective EEG correction using both standard approaches and REEGMAS allowed the visualization and identification of physiological noise and epileptiform discharges. Seven of 10 children had significant maps, which were concordant with the clinical EZ hypothesis in 6 of these 7. Conclusion: To our knowledge this is the first application of camera-based PMC for MRI in a pediatric clinical setting. Despite large amount of movement PMC in combination with retrospective EEG correction recovered data and obtained clinically meaningful results during high levels of subject motion. Practical limitations may currently limit the widespread use of this technology."
+    },
+    {
+      "paperId": "74bee2ac2579bc1bdbe8682a1f6f4fc59e5f83f9",
+      "externalIds": {
+        "DBLP": "journals/tbe/LeVanZKZH16",
+        "MAG": "2477668143",
+        "DOI": "10.1109/TBME.2016.2593726",
+        "CorpusId": 24442884,
+        "PubMed": "27455518"
+      },
+      "url": "https://www.semanticscholar.org/paper/74bee2ac2579bc1bdbe8682a1f6f4fc59e5f83f9",
+      "title": "EEG-fMRI Gradient Artifact Correction by Multiple Motion-Related Templates",
+      "venue": "IEEE Transactions on Biomedical Engineering",
+      "year": 2016,
+      "citationCount": 17,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TBME.2016.2593726?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TBME.2016.2593726, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144416377",
+          "name": "P. LeVan"
+        },
+        {
+          "authorId": "2144325054",
+          "name": "Shuoyue Zhang"
+        },
+        {
+          "authorId": "1926804",
+          "name": "B. Knowles"
+        },
+        {
+          "authorId": "144783562",
+          "name": "M. Zaitsev"
+        },
+        {
+          "authorId": "145085347",
+          "name": "J. Hennig"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "a2665ebeb81a3476a220f98bb4d4cf884bb09be8",
+      "externalIds": {
+        "MAG": "2410415378",
+        "DOI": "10.1016/j.clinph.2016.05.361",
+        "CorpusId": 3747929,
+        "PubMed": "27417056"
+      },
+      "url": "https://www.semanticscholar.org/paper/a2665ebeb81a3476a220f98bb4d4cf884bb09be8",
+      "title": "Marker-based ballistocardiographic artifact correction improves spike identification in EEG-fMRI of focal epilepsy patients.",
+      "venue": "Clinical Neurophysiology",
+      "year": 2016,
+      "citationCount": 7,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.clinph.2016.05.361?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.clinph.2016.05.361, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6385889",
+          "name": "Katharina Körbl"
+        },
+        {
+          "authorId": "38467612",
+          "name": "J. Jacobs"
+        },
+        {
+          "authorId": "29780448",
+          "name": "M. Herbst"
+        },
+        {
+          "authorId": "144783562",
+          "name": "M. Zaitsev"
+        },
+        {
+          "authorId": "1388800182",
+          "name": "A. Schulze-Bonhage"
+        },
+        {
+          "authorId": "145085347",
+          "name": "J. Hennig"
+        },
+        {
+          "authorId": "144416377",
+          "name": "P. LeVan"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "344cb875796a9840df9c8eb9991a302beb49b9c1",
+      "externalIds": {
+        "PubMedCentral": "12587055",
+        "DOI": "10.1162/IMAG.a.983",
+        "CorpusId": 271970521,
+        "PubMed": "41200234"
+      },
+      "url": "https://www.semanticscholar.org/paper/344cb875796a9840df9c8eb9991a302beb49b9c1",
+      "title": "An optimized framework for simultaneous EEG-fMRI at 7T enabling safe, high-quality human brain imaging with millisecond temporal resolution and sub-millimeter spatial resolution",
+      "venue": "bioRxiv",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12587055, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2317079961",
+          "name": "Cristina Sainz Martinez"
+        },
+        {
+          "authorId": "3150195",
+          "name": "Jonathan Wirsich"
+        },
+        {
+          "authorId": "2241850464",
+          "name": "Cilia Jäger"
+        },
+        {
+          "authorId": "2213255421",
+          "name": "Tracy Warbrick"
+        },
+        {
+          "authorId": "2275091316",
+          "name": "Serge Vulliémoz"
+        },
+        {
+          "authorId": "2317080157",
+          "name": "Mathieu Lemay"
+        },
+        {
+          "authorId": "11561594",
+          "name": "J. Bastiaansen"
+        },
+        {
+          "authorId": "2248457375",
+          "name": "R. Wiest"
+        },
+        {
+          "authorId": "2303260191",
+          "name": "J. Jorge"
+        }
+      ],
+      "abstract": "The combination of electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) at ultra-high field (7 Tesla) offers appealing new possibilities to probe human brain function non-invasively with high coverage, millisecond temporal precision and sub-millimeter spatial precision, unraveling cortical layers and small subcortical structures. Unfortunately, this technique has remained largely inaccessible at 7T, due to prohibitive cross-modal interference effects and physical constraints. Here, we developed a first-of-its-kind EEG-fMRI acquisition framework on a clinical 7T system combining key improvements from previous research: compact EEG transmission to reduce artifact incidence, reference sensors for artifact correction, and adapted leads for compatibility with a dense radiofrequency receive-array allowing state-of-the-art fMRI sensitivity and acceleration. Two implementations were tested: one using an EEG cap adapted in-house, and another using a recently-designed prototype from an industrial manufacturer, intended to be further developed into a commercial device accessible to the broader community. A comprehensive evaluation in humans showed that simultaneous acquisitions, including sub-millimeter fMRI resolution, could be conducted without detectable safety issues or major practical constraints. The EEG exerted relatively mild perturbations on fMRI quality (6–11% loss in temporal SNR), without measurably affecting the detection of resting-state networks and visual responses. The artifacts induced on EEG could be corrected to a degree where the spatial, spectral and temporal characteristics were comparable to outside recordings, and hallmark features such as resting-state alpha and eyes-closing alpha modulation could be clearly detected. Altogether, these findings indicate excellent prospects for neuroimaging applications, that can leverage the unique possibilities achievable at 7T."
+    },
+    {
+      "paperId": "a40b3929dc747a3ef268fd948602a85b3e2fd4d1",
+      "externalIds": {
+        "PubMedCentral": "7991907",
+        "DOI": "10.3389/fneur.2021.622719",
+        "CorpusId": 232172105,
+        "PubMed": "33776886"
+      },
+      "url": "https://www.semanticscholar.org/paper/a40b3929dc747a3ef268fd948602a85b3e2fd4d1",
+      "title": "Artifact Reduction in Simultaneous EEG-fMRI: A Systematic Review of Methods and Contemporary Usage",
+      "venue": "Frontiers in Neurology",
+      "year": 2021,
+      "citationCount": 59,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fneur.2021.622719/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7991907, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2257913510",
+          "name": "M. Ross Bullock"
+        },
+        {
+          "authorId": "144531937",
+          "name": "G. Jackson"
+        },
+        {
+          "authorId": "2790701",
+          "name": "D. Abbott"
+        }
+      ],
+      "abstract": "Simultaneous electroencephalography-functional MRI (EEG-fMRI) is a technique that combines temporal (largely from EEG) and spatial (largely from fMRI) indicators of brain dynamics. It is useful for understanding neuronal activity during many different event types, including spontaneous epileptic discharges, the activity of sleep stages, and activity evoked by external stimuli and decision-making tasks. However, EEG recorded during fMRI is subject to imaging, pulse, environment and motion artifact, causing noise many times greater than the neuronal signals of interest. Therefore, artifact removal methods are essential to ensure that artifacts are accurately removed, and EEG of interest is retained. This paper presents a systematic review of methods for artifact reduction in simultaneous EEG-fMRI from literature published since 1998, and an additional systematic review of EEG-fMRI studies published since 2016. The aim of the first review is to distill the literature into clear guidelines for use of simultaneous EEG-fMRI artifact reduction methods, and the aim of the second review is to determine the prevalence of artifact reduction method use in contemporary studies. We find that there are many published artifact reduction techniques available, including hardware, model based, and data-driven methods, but there are few studies published that adequately compare these methods. In contrast, recent EEG-fMRI studies show overwhelming use of just one or two artifact reduction methods based on literature published 15–20 years ago, with newer methods rarely gaining use outside the group that developed them. Surprisingly, almost 15% of EEG-fMRI studies published since 2016 fail to adequately describe the methods of artifact reduction utilized. We recommend minimum standards for reporting artifact reduction techniques in simultaneous EEG-fMRI studies and suggest that more needs to be done to make new artifact reduction techniques more accessible for the researchers and clinicians using simultaneous EEG-fMRI."
+    },
+    {
+      "paperId": "9cdfe8f73546dfafb73465a0a1aed3c82a72dd61",
+      "externalIds": {
+        "CorpusId": 261439248
+      },
+      "url": "https://www.semanticscholar.org/paper/9cdfe8f73546dfafb73465a0a1aed3c82a72dd61",
+      "title": "Comparison of Alpha Power obtained with Online vs Offline artifact correction for Real-time EEG/fMRI Neurofeedback",
+      "venue": "",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "51434342",
+          "name": "Mathis Fleury"
+        },
+        {
+          "authorId": "2084068137",
+          "name": "Gustavo Caetano"
+        },
+        {
+          "authorId": "1695530",
+          "name": "A. Vourvopoulos"
+        },
+        {
+          "authorId": "2085656040",
+          "name": "I. Esteves"
+        },
+        {
+          "authorId": "2086900286",
+          "name": "P. Figueiredo"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "8f8036954ebad18382930bda21a015ab6a113461",
+      "externalIds": {
+        "MAG": "2085332269",
+        "PubMedCentral": "3840732",
+        "DOI": "10.1186/1471-2202-14-138",
+        "CorpusId": 9415520,
+        "PubMed": "24206927"
+      },
+      "url": "https://www.semanticscholar.org/paper/8f8036954ebad18382930bda21a015ab6a113461",
+      "title": "FACET – a “Flexible Artifact Correction and Evaluation Toolbox” for concurrently recorded EEG/fMRI data",
+      "venue": "BMC Neuroscience",
+      "year": 2013,
+      "citationCount": 11,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://bmcneurosci.biomedcentral.com/counter/pdf/10.1186/1471-2202-14-138",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3840732, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49496251",
+          "name": "Johann Glaser"
+        },
+        {
+          "authorId": "3188390",
+          "name": "R. Beisteiner"
+        },
+        {
+          "authorId": "93837682",
+          "name": "H. Bauer"
+        },
+        {
+          "authorId": "2033819",
+          "name": "F. Fischmeister"
+        }
+      ],
+      "abstract": "In concurrent EEG/fMRI recordings, EEG data are impaired by the fMRI gradient artifacts which exceed the EEG signal by several orders of magnitude. While several algorithms exist to correct the EEG data, these algorithms lack the flexibility to either leave out or add new steps. The here presented open-source MATLAB toolbox FACET is a modular toolbox for the fast and flexible correction and evaluation of imaging artifacts from concurrently recorded EEG datasets. It consists of an Analysis, a Correction and an Evaluation framework allowing the user to choose from different artifact correction methods with various pre- and post-processing steps to form flexible combinations. The quality of the chosen correction approach can then be evaluated and compared to different settings. FACET was evaluated on a dataset provided with the FMRIB plugin for EEGLAB using two different correction approaches: Averaged Artifact Subtraction (AAS, Allen et al., NeuroImage 12(2):230–239, 2000) and the FMRI Artifact Slice Template Removal (FASTR, Niazy et al., NeuroImage 28(3):720–737, 2005). Evaluation of the obtained results were compared to the FASTR algorithm implemented in the EEGLAB plugin FMRIB. No differences were found between the FACET implementation of FASTR and the original algorithm across all gradient artifact relevant performance indices. The FACET toolbox not only provides facilities for all three modalities: data analysis, artifact correction as well as evaluation and documentation of the results but it also offers an easily extendable framework for development and evaluation of new approaches."
+    },
+    {
+      "paperId": "6e7aa1bc38812bda8efa594d03edf4e59d49d90d",
+      "externalIds": {
+        "MAG": "2528777398",
+        "DOI": "10.1016/j.jneumeth.2016.09.012",
+        "CorpusId": 14184971,
+        "PubMed": "27697458"
+      },
+      "url": "https://www.semanticscholar.org/paper/6e7aa1bc38812bda8efa594d03edf4e59d49d90d",
+      "title": "Real-time EEG artifact correction during fMRI using ICA.",
+      "venue": "Journal of Neuroscience Methods",
+      "year": 2016,
+      "citationCount": 55,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.jneumeth.2016.09.012",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jneumeth.2016.09.012?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jneumeth.2016.09.012, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2903724",
+          "name": "Ahmad Mayeli"
+        },
+        {
+          "authorId": "1724999",
+          "name": "V. Zotev"
+        },
+        {
+          "authorId": "1774428",
+          "name": "H. Refai"
+        },
+        {
+          "authorId": "1747797",
+          "name": "J. Bodurka"
+        }
+      ],
+      "abstract": "BACKGROUND\nSimultaneous acquisition of EEG and fMRI data results in EEG signal contamination by imaging (MR) and ballistocardiogram (BCG) artifacts. Artifact correction of EEG data for real-time applications, such as neurofeedback studies, is the subject of ongoing research. To date, average artifact subtraction (AAS) is the most widespread real-time method used to partially remove BCG and imaging artifacts without requiring extra hardware equipment; no alternative software-only real time methods for removing EEG artifacts are available.\n\n\nNEW METHODS\nWe introduce a novel, improved approach for real-time EEG artifact correction during fMRI (rtICA). The rtICA is based on real time independent component analysis (ICA) and it is employed following the AAS method. The rtICA was implemented and validated during EEG and fMRI experiments on healthy subjects.\n\n\nRESULTS\nOur results demonstrate that the rtICA employed after the rtAAS can obtain 98.4% success in detection of eye blinks, 4.4 times larger INPS reductions compared to RecView-corrected data, and effectively reduce motion artifacts, as well as imaging and muscle artifacts, in real time on six healthy subjects.\n\n\nCOMPARISON WITH EXISTING METHODS\nWe compared our real-time artifact reduction results with the rtAAS and various offline methods using multiple evaluation metrics, including power analysis. Importantly, the rtICA does not affect brain neuronal signals as reflected in EEG bands of interest, including the alpha band.\n\n\nCONCLUSIONS\nA novel real-time ICA method was proposed for improving the EEG quality signal recorded during fMRI acquisition. The results show substantial reduction of different types of artifacts using real-time ICA method."
+    },
+    {
+      "paperId": "aab748a2675a3f693ddd2f1f750e592be717d3dd",
+      "externalIds": {
+        "DBLP": "conf/embc/WaserGJS18",
+        "MAG": "2898871759",
+        "DOI": "10.1109/EMBC.2018.8513619",
+        "CorpusId": 53099114,
+        "PubMed": "30441706"
+      },
+      "url": "https://www.semanticscholar.org/paper/aab748a2675a3f693ddd2f1f750e592be717d3dd",
+      "title": "A Blind Source-Based Method for Automated Artifact-Correction in Standard Sleep EEG",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2018,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EMBC.2018.8513619?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EMBC.2018.8513619, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "39695479",
+          "name": "M. Waser"
+        },
+        {
+          "authorId": "34594643",
+          "name": "H. Garn"
+        },
+        {
+          "authorId": "145217204",
+          "name": "P. Jennum"
+        },
+        {
+          "authorId": "38661335",
+          "name": "H. Sørensen"
+        }
+      ],
+      "abstract": "Electroencephalogram (EEG) is a common tool in sleep medicine, but it is often compromised by non-neural artifacts. Excluding visually identified artifacts is time-consuming and removes relevant EEG information. Blind source separation (BSS) techniques, on the other hand, are capable of separating \"brain\" from \"artifact source components\". Existing algorithms for automated component labeling require either a priori morphological information or adaptation to individual recordings. We present a method for the automated identification of artifact components based on their autocorrelation and spectral properties. It requires no tuning for individual recordings. The method was tested on 100 one-minute EEG segments during rapid eye movement sleep. EEG source components were estimated by second order blind source identification and, as reference, manually labeled as \"brain\" or \"artifact component\". The algorithm identified electro-cardiogram components by autocorrelation peaks between 0.5–1.5 seconds and -oculogram components by linear discriminant analysis of spectral band-power. Using 5-fold cross-validation, we observed 97% accuracy (95% sensitivity, 98% specificity), as well as minimized correlation of artifacts and the EEG. The approach has demonstrated its potential as promising tool for a broad range of sleep medical applications."
+    },
+    {
+      "paperId": "601d5b9029e57a7764bd5782d97a37985bec481c",
+      "externalIds": {
+        "MAG": "200276171",
+        "CorpusId": 60088236
+      },
+      "url": "https://www.semanticscholar.org/paper/601d5b9029e57a7764bd5782d97a37985bec481c",
+      "title": "Fmri Artifact Correction in Eeg and Emg Data",
+      "venue": "",
+      "year": 2013,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://othes.univie.ac.at/21952/1/2012-08-21_9825761.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49496251",
+          "name": "Johann Glaser"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "a4cf8e3f725075b2e3b0c7836400e3de82e2f65f",
+      "externalIds": {
+        "MAG": "2334439268",
+        "DBLP": "phd/basesearch/Assecondi09",
+        "CorpusId": 62034634
+      },
+      "url": "https://www.semanticscholar.org/paper/a4cf8e3f725075b2e3b0c7836400e3de82e2f65f",
+      "title": "Automated Subject-Specific Peak Identification andBallistocardiographic Artifact Correction in EEG-fMRI",
+      "venue": "",
+      "year": 2009,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://www.base-search.net/Record/a0a6590f3836aa2f7030748a8ce3ce89a4213691f6af2d0f85ab26afc5d81544, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47195368",
+          "name": "Sara Assecondi"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "ea98b33164a650b58abc61857744fa36e40e92b3",
+      "externalIds": {
+        "DOI": "10.62110/sciencein.jist.2025.v13.1135",
+        "CorpusId": 279225596
+      },
+      "url": "https://www.semanticscholar.org/paper/ea98b33164a650b58abc61857744fa36e40e92b3",
+      "title": "Sleep stages detection from EEG signal utilizing Backpropagation Neural Network and Deep Neural Network",
+      "venue": "Journal of integrated science and technology",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://pubs.thesciencein.org/journal/index.php/jist/article/download/a1135/766",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.62110/sciencein.jist.2025.v13.1135?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.62110/sciencein.jist.2025.v13.1135, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "70122650",
+          "name": "S. Sahu"
+        },
+        {
+          "authorId": "2369594003",
+          "name": "S. Mohapatra"
+        },
+        {
+          "authorId": "19167552",
+          "name": "S. Satapathy"
+        }
+      ],
+      "abstract": "Prompt and accurate identification of sleep-related disorders is essential for mitigating the progression to more serious neurodegenerative conditions. However, current diagnostic solutions, such as biomarkers and cognitive screening tests, are expensive, time-consuming, or not user-friendly. This research evaluated a Neural Network (NN) against a Deep Neural Network (DNN) in categorizing five sleep stages based on EEG data. To ensure high-quality input data for the model, we employ artifact correction, signal decomposition, and overlapping sliding window processing, then extracting time-domain, frequency-domain, and non-linear domain features.  The evaluation process centered on assessing their performance using precision, recall, and F1-score metrics. Overall, the DNN outperformed the NN, especially in distinguishing the wake (W) and rapid eye movement (R) stages, highlighting its ability to capture subtle EEG patterns. Although the NN succeeded, particularly in classifying certain stages, it struggled with more complex distinctions, such as between stages N1, N2, and R. This comparison emphasizes the advantage of deeper network architectures like DNN for analyzing intricate EEG signals. However, the higher computational complexity of DNNs also presents challenges, suggesting the need for optimization in future studies to balance performance with efficiency."
+    },
+    {
+      "paperId": "67ba9ab192bde38ffce1e069b89ca9a376bdc50e",
+      "externalIds": {
+        "PubMedCentral": "6635558",
+        "MAG": "2951897986",
+        "DOI": "10.3389/fnins.2019.00690",
+        "CorpusId": 195837565,
+        "PubMed": "31354408"
+      },
+      "url": "https://www.semanticscholar.org/paper/67ba9ab192bde38ffce1e069b89ca9a376bdc50e",
+      "title": "Simultaneous EEG-fMRI: Evaluating the Effect of the EEG Cap-Cabling Configuration on the Gradient Artifact",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2019,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2019.00690/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6635558, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3446957",
+          "name": "M. Chowdhury"
+        },
+        {
+          "authorId": "2319383",
+          "name": "A. Khandakar"
+        },
+        {
+          "authorId": "2442536",
+          "name": "K. Mullinger"
+        },
+        {
+          "authorId": "1404996141",
+          "name": "N. Al-Emadi"
+        },
+        {
+          "authorId": "2220021",
+          "name": "R. Bowtell"
+        }
+      ],
+      "abstract": "Electroencephalography (EEG) data recorded during simultaneous EEG-fMRI experiments are contaminated by large gradient artifacts (GA). The amplitude of the GA depends on the area of the wire loops formed by the EEG leads, as well as on the rate of switching of the magnetic field gradients, which are essential for MR imaging. Average artifact subtraction (AAS), the most commonly used method for GA correction, relies on the EEG amplifier having a large enough dynamic range to characterize the artifact voltages. Low-pass filtering (250 Hz cut-off) is generally used to attenuate the high-frequency voltage fluctuations of the GA, but even with this precaution channel saturation can occur, particularly during acquisition of high spatial resolution MRI data. Previous work has shown that the ribbon cable, used to connect the EEG cap and amplifier, makes a significant contribution to the GA, since the cable geometry produces large effective wire-loop areas. However, by appropriately connecting the wires of the ribbon cable to the EEG cap it should be possible to minimize the overall range and root mean square (RMS) amplitude of the GA by producing partial cancelation of the cap and cable contributions. Here by modifying the connections of the EEG cap to a 1 m ribbon cable we were able to reduce the range of the GA for a high-resolution coronal echo planar Imaging (EPI) acquisition by a factor of ∼ 1.6 and by a factor of ∼ 1.15 for a standard axial EPI acquisition. These changes could potentially be translated into a reduction in the required dynamic range, an increase in the EEG bandwidth or an increase in the achievable image resolution without saturation, all of which could be beneficially exploited in EEG-fMRI studies. The re-wiring could also prevent the system from saturating when small subject movements occur using the standard recording bandwidth."
+    },
+    {
+      "paperId": "df97f82ea6697d84ec3f649a26c48b8d8c724b12",
+      "externalIds": {
+        "DBLP": "journals/fdgth/Saba-SadiyaCALG20",
+        "PubMedCentral": "8521924",
+        "DOI": "10.3389/fdgth.2020.608920",
+        "CorpusId": 231667383,
+        "PubMed": "34713069"
+      },
+      "url": "https://www.semanticscholar.org/paper/df97f82ea6697d84ec3f649a26c48b8d8c724b12",
+      "title": "Unsupervised EEG Artifact Detection and Correction",
+      "venue": "Frontiers in Digital Health",
+      "year": 2021,
+      "citationCount": 48,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fdgth.2020.608920/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8521924, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1411038811",
+          "name": "S. Saba-Sadiya"
+        },
+        {
+          "authorId": "113162204",
+          "name": "Eric Chantland"
+        },
+        {
+          "authorId": "27618394",
+          "name": "Tuka Alhanai"
+        },
+        {
+          "authorId": "34734927",
+          "name": "Taosheng Liu"
+        },
+        {
+          "authorId": "147474490",
+          "name": "M. Ghassemi"
+        }
+      ],
+      "abstract": "Electroencephalography (EEG) is used in the diagnosis, monitoring, and prognostication of many neurological ailments including seizure, coma, sleep disorders, brain injury, and behavioral abnormalities. One of the primary challenges of EEG data is its sensitivity to a breadth of non-stationary noises caused by physiological-, movement-, and equipment-related artifacts. Existing solutions to artifact detection are deficient because they require experts to manually explore and annotate data for artifact segments. Existing solutions to artifact correction or removal are deficient because they assume that the incidence and specific characteristics of artifacts are similar across both subjects and tasks (i.e., “one-size-fits-all”). In this paper, we describe a novel EEG noise-reduction method that uses representation learning to perform patient- and task-specific artifact detection and correction. More specifically, our method extracts 58 clinically relevant features and applies an ensemble of unsupervised outlier detection algorithms to identify EEG artifacts that are unique to a given task and subject. The artifact segments are then passed to a deep encoder-decoder network for unsupervised artifact correction. We compared the performance of classification models trained with and without our method and observed a 10% relative improvement in performance when using our approach. Our method provides a flexible end-to-end unsupervised framework that can be applied to novel EEG data without the need for expert supervision and can be used for a variety of clinical decision tasks, including coma prognostication and degenerative illness detection. By making our method, code, and data publicly available, our work provides a tool that is of both immediate practical utility and may also serve as an important foundation for future efforts in this domain."
+    },
+    {
+      "paperId": "c5ceff2666f784dbccfbe65776a58e49bbfc894d",
+      "externalIds": {
+        "MAG": "2002549095",
+        "DOI": "10.1615/CRITREVBIOMEDENG.2014011220",
+        "CorpusId": 45159338,
+        "PubMed": "25403874"
+      },
+      "url": "https://www.semanticscholar.org/paper/c5ceff2666f784dbccfbe65776a58e49bbfc894d",
+      "title": "Ballistocardiogram correction in simultaneous EEG/ fMRI recordings: a comparison of average artifact subtraction and optimal basis set methods using two popular software tools.",
+      "venue": "Critical reviews in biomedical engineering",
+      "year": 2014,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1615/CRITREVBIOMEDENG.2014011220?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1615/CRITREVBIOMEDENG.2014011220, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "33272917",
+          "name": "Amabilis H. Harrison"
+        },
+        {
+          "authorId": "2358616",
+          "name": "M. Noseworthy"
+        },
+        {
+          "authorId": "47942447",
+          "name": "J. Reilly"
+        },
+        {
+          "authorId": "11686150",
+          "name": "J. Connolly"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "47ae356fcfb2950c1a9d205fb10d797c98fed805",
+      "externalIds": {
+        "CorpusId": 220524713
+      },
+      "url": "https://www.semanticscholar.org/paper/47ae356fcfb2950c1a9d205fb10d797c98fed805",
+      "title": "Real-time artifact correction enables EEG- based feedback inside the fMRI scanner",
+      "venue": "",
+      "year": 2014,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openlib.tugraz.at/download.php?id=5e68e72500d2b&location=browse, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2113901",
+          "name": "C. Zich"
+        },
+        {
+          "authorId": "2318642",
+          "name": "S. Debener"
+        },
+        {
+          "authorId": "48259863",
+          "name": "M. Vos"
+        },
+        {
+          "authorId": "2461092",
+          "name": "C. Kranczioch"
+        },
+        {
+          "authorId": "2893084",
+          "name": "I. Gutberlet"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "bb84b2e061e7893adca4b73275597378af0159d5",
+      "externalIds": {
+        "PubMedCentral": "9816433",
+        "DOI": "10.3389/fnins.2022.951321",
+        "CorpusId": 254976365,
+        "PubMed": "36620439"
+      },
+      "url": "https://www.semanticscholar.org/paper/bb84b2e061e7893adca4b73275597378af0159d5",
+      "title": "Preservation of EEG spectral power features during simultaneous EEG-fMRI",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2022,
+      "citationCount": 5,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2022.951321/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9816433, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2321706544",
+          "name": "Jonathan Gallego-Rudolf"
+        },
+        {
+          "authorId": "1387467063",
+          "name": "M. Corsi-Cabrera"
+        },
+        {
+          "authorId": "144962062",
+          "name": "L. Concha"
+        },
+        {
+          "authorId": "52188442",
+          "name": "J. Ricardo-Garcell"
+        },
+        {
+          "authorId": "1402467997",
+          "name": "E. Pasaye-Alcaraz"
+        }
+      ],
+      "abstract": "Introduction Electroencephalographic (EEG) data quality is severely compromised when recorded inside the magnetic resonance (MR) environment. Here we characterized the impact of the ballistocardiographic (BCG) artifact on resting-state EEG spectral properties and compared the effectiveness of seven common BCG correction methods to preserve EEG spectral features. We also assessed if these methods retained posterior alpha power reactivity to an eyes closure-opening (EC-EO) task and compared the results from EEG-informed fMRI analysis using different BCG correction approaches. Method Electroencephalographic data from 20 healthy young adults were recorded outside the MR environment and during simultaneous fMRI acquisition. The gradient artifact was effectively removed from EEG-fMRI acquisitions using Average Artifact Subtraction (AAS). The BCG artifact was corrected with seven methods: AAS, Optimal Basis Set (OBS), Independent Component Analysis (ICA), OBS followed by ICA, AAS followed by ICA, PROJIC-AAS and PROJIC-OBS. EEG signal preservation was assessed by comparing the spectral power of traditional frequency bands from the corrected rs-EEG-fMRI data with the data recorded outside the scanner. We then assessed the preservation of posterior alpha functional reactivity by computing the ratio between the EC and EO conditions during the EC-EO task. EEG-informed fMRI analysis of the EC-EO task was performed using alpha power-derived BOLD signal predictors obtained from the EEG signals corrected with different methods. Results The BCG artifact caused significant distortions (increased absolute power, altered relative power) across all frequency bands. Artifact residuals/signal losses were present after applying all correction methods. The EEG reactivity to the EC-EO task was better preserved with ICA-based correction approaches, particularly when using ICA feature extraction to isolate alpha power fluctuations, which allowed to accurately predict hemodynamic signal fluctuations during the EEG-informed fMRI analysis. Discussion Current software solutions for the BCG artifact problem offer limited efficiency to preserve the EEG spectral power properties using this particular EEG setup. The state-of-the-art approaches tested here can be further refined and should be combined with hardware implementations to better preserve EEG signal properties during simultaneous EEG-fMRI. Existing and novel BCG artifact correction methods should be validated by evaluating signal preservation of both ERPs and spontaneous EEG spectral power."
+    },
+    {
+      "paperId": "cfe5a67ce09848f0ffffd130ddeb338f5043704e",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0084",
+        "CorpusId": 278752735
+      },
+      "url": "https://www.semanticscholar.org/paper/cfe5a67ce09848f0ffffd130ddeb338f5043704e",
+      "title": "0084 Preprocessing Results from an All-Night fMRI Sleep Study",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0084?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0084, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108356372",
+          "name": "Patrick S. P. Wang"
+        },
+        {
+          "authorId": "2059010676",
+          "name": "Daniel S. Greene"
+        },
+        {
+          "authorId": "2362429716",
+          "name": "Hadar Halivni"
+        },
+        {
+          "authorId": "2315917428",
+          "name": "Niki Lam"
+        },
+        {
+          "authorId": "34967254",
+          "name": "Hendrik Mandelkow"
+        },
+        {
+          "authorId": "2297692721",
+          "name": "Nils Yang"
+        },
+        {
+          "authorId": "2243094099",
+          "name": "Zeynep Demir"
+        },
+        {
+          "authorId": "2380760131",
+          "name": "Pinar Ozbay"
+        },
+        {
+          "authorId": "2362437734",
+          "name": "Gail Tarlton"
+        },
+        {
+          "authorId": "2362514820",
+          "name": "J. Yi"
+        },
+        {
+          "authorId": "2331117143",
+          "name": "S. Inati"
+        },
+        {
+          "authorId": "33870602",
+          "name": "J. D. de Zwart"
+        },
+        {
+          "authorId": "48761025",
+          "name": "P. van Gelderen"
+        },
+        {
+          "authorId": "2318052004",
+          "name": "Jeff H. Duyn"
+        },
+        {
+          "authorId": "2219128",
+          "name": "D. Picchioni"
+        }
+      ],
+      "abstract": "\n \n \n Functional magnetic resonance imaging (fMRI) is emerging as a useful technique for investigating brain activity during sleep, offering superior spatial resolution compared to electroencephalography (EEG). A prior pilot study conducted by our lab highlighted the potential of fMRI to elucidate the neural correlates of dreaming, arousal thresholds, and other sleep-related phenomena. To expand on these findings, we conducted an extensive all-night fMRI sleep study. Here, we describe quality control metrics obtained during data preprocessing.\n \n \n \n Healthy participants (n=58) were enrolled in a two-night fMRI-EEG sleep study protocol. 43 participants successfully completed both nights, while 15 were withdrawn during the first or second night. At 6-8 random intervals throughout the night, participants were woken by auditory stimuli, which increased in intensity until wake onset. Once awake, participants completed a dream questionnaire. Preprocessing of fMRI data was performed using the Analysis of Functional Neuroimages (AFNI) toolbox, including nonlinear alignment to a Tailarach template, data censoring to eliminate outlier time points and artifacts from excessive head motion, and regression of systemic confounds from autonomic variability.\n \n \n \n A total of 877 runs of fMRI data were recorded with a mean length of 43.4 min (SD=34.5 min). Average temporal signal-to-noise ratio in brain voxels across all runs was 48.14 (SD=4.99). Post-regression, average global correlation across voxels was 0.013 (SD=0.005), indicating effective suppression of systemic confounds. Average maximum within-run motion displacement was a modest 2.78 mm (SD=2.23 mm), and average fraction of time points censored due to motion or outliers was 8.84% (SD=8.88%). Average spatial correlation between each subject’s anatomical and functional scans was 0.837 (SD=0.021), attributable to differences in brain coverage and resolution. Average spatial correlation between each subject’s anatomical scan and the Tailarach template was 0.981 (SD=0.005).\n \n \n \n These preprocessing results indicate the successful collection and preprocessing of high-quality, low-noise data and validate the effectiveness of our all-night fMRI sleep study protocol. Our next step is to perform group analyses using the auditory arousal threshold and dream questionnaire data collected.\n \n \n \n This work was supported by the Intramural Research Programs of the NINDS, NIDCD, and NIMH.\n"
+    },
+    {
+      "paperId": "d323159990be7296f8ba98ed946c05ff7f6e0030",
+      "externalIds": {
+        "MAG": "2110423529",
+        "DBLP": "journals/neuroimage/FreyerBACVR09",
+        "DOI": "10.1016/j.neuroimage.2009.06.022",
+        "CorpusId": 27816184,
+        "PubMed": "19539035"
+      },
+      "url": "https://www.semanticscholar.org/paper/d323159990be7296f8ba98ed946c05ff7f6e0030",
+      "title": "Ultrahigh-frequency EEG during fMRI: Pushing the limits of imaging-artifact correction",
+      "venue": "NeuroImage",
+      "year": 2009,
+      "citationCount": 75,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2009.06.022?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2009.06.022, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2050889",
+          "name": "Frank Freyer"
+        },
+        {
+          "authorId": "143655315",
+          "name": "R. Becker"
+        },
+        {
+          "authorId": "2190970",
+          "name": "K. Anami"
+        },
+        {
+          "authorId": "3073253",
+          "name": "G. Curio"
+        },
+        {
+          "authorId": "1738739",
+          "name": "A. Villringer"
+        },
+        {
+          "authorId": "3093136",
+          "name": "P. Ritter"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "8726516c9aead0daac2db3e271fb19bf11fdc7ec",
+      "externalIds": {
+        "MAG": "1897252409",
+        "DOI": "10.1111/psyp.12406",
+        "CorpusId": 32794598,
+        "PubMed": "25649223"
+      },
+      "url": "https://www.semanticscholar.org/paper/8726516c9aead0daac2db3e271fb19bf11fdc7ec",
+      "title": "On utilizing uncertainty information in template-based EEG-fMRI ballistocardiogram artifact removal.",
+      "venue": "Psychophysiology",
+      "year": 2015,
+      "citationCount": 5,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1111/psyp.12406?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/psyp.12406, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "122513917",
+          "name": "Marc-Andre Schulz"
+        },
+        {
+          "authorId": "3002379",
+          "name": "C. Regenbogen"
+        },
+        {
+          "authorId": "6755420",
+          "name": "C. Moessnang"
+        },
+        {
+          "authorId": "2512876",
+          "name": "I. Neuner"
+        },
+        {
+          "authorId": "2036464",
+          "name": "A. Finkelmeyer"
+        },
+        {
+          "authorId": "2782974",
+          "name": "U. Habel"
+        },
+        {
+          "authorId": "2664279",
+          "name": "T. Kellermann"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "0bc3c7c575c61f5c13b2364a7f6b177504da7f7a",
+      "externalIds": {
+        "MAG": "2080272138",
+        "DOI": "10.1016/J.MRI.2007.03.005",
+        "CorpusId": 5650437,
+        "PubMed": "17462844"
+      },
+      "url": "https://www.semanticscholar.org/paper/0bc3c7c575c61f5c13b2364a7f6b177504da7f7a",
+      "title": "Evaluating gradient artifact correction of EEG data acquired simultaneously with fMRI.",
+      "venue": "Magnetic Resonance Imaging",
+      "year": 2007,
+      "citationCount": 80,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.MRI.2007.03.005?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.MRI.2007.03.005, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3093136",
+          "name": "P. Ritter"
+        },
+        {
+          "authorId": "143655315",
+          "name": "R. Becker"
+        },
+        {
+          "authorId": "2000860165",
+          "name": "C. Graefe"
+        },
+        {
+          "authorId": "1738739",
+          "name": "A. Villringer"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "debcee2233a91e685be2dd4b3de0a31168a49f05",
+      "externalIds": {
+        "DBLP": "journals/tsp/DoraJH24",
+        "ArXiv": "2307.04155",
+        "DOI": "10.1109/TSP.2024.3403965",
+        "CorpusId": 259501451
+      },
+      "url": "https://www.semanticscholar.org/paper/debcee2233a91e685be2dd4b3de0a31168a49f05",
+      "title": "The WQN Algorithm for EEG Artifact Removal in the Absence of Scale Invariance",
+      "venue": "IEEE Transactions on Signal Processing",
+      "year": 2023,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2307.04155",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2307.04155, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "81003332",
+          "name": "M. Dora"
+        },
+        {
+          "authorId": "2161649",
+          "name": "S. Jaffard"
+        },
+        {
+          "authorId": "2896801",
+          "name": "D. Holcman"
+        }
+      ],
+      "abstract": "Electroencephalogram (EEG) signals reflect brain activity across different brain states, characterized by distinct frequency distributions. Through multifractal analysis tools, we investigate the scaling behaviour of several classes of EEG signals and artifacts. We show that brain states associated to sleep and general anaesthesia are not in general characterized by scale invariance. The lack of scale invariance motivates the development of artifact removal algorithms capable of operating independently at each scale. We examine here the properties of the wavelet quantile normalization (WQN) algorithm, a recently introduced adaptive method for real-time correction of transient artifacts in EEG signals. We establish general results regarding the regularization properties of the WQN algorithm, showing how it can eliminate singularities introduced by artefacts, and we compare it to traditional thresholding algorithms. Furthermore, we provide evidence that the algorithm performance is independent of the wavelet basis. We finally examine its continuity and boundedness properties and illustrate its distinctive non-local action on the wavelet coefficients through pathological examples."
+    },
+    {
+      "paperId": "589f803d3012ff7fbda2ea185b72251b2f6f95dc",
+      "externalIds": {
+        "DOI": "10.30574/ijsra.2025.15.2.1503",
+        "CorpusId": 279046329
+      },
+      "url": "https://www.semanticscholar.org/paper/589f803d3012ff7fbda2ea185b72251b2f6f95dc",
+      "title": "Ensemble learning framework for robust sleep stage classification using single-channel EEG",
+      "venue": "International Journal of Science and Research Archive",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.30574/ijsra.2025.15.2.1503",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.30574/ijsra.2025.15.2.1503?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.30574/ijsra.2025.15.2.1503, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2364441986",
+          "name": "Fajle Rabbi Refat"
+        },
+        {
+          "authorId": "2364442028",
+          "name": "Farhan Bin Jashim"
+        },
+        {
+          "authorId": "2358370862",
+          "name": "Md Imranul Hoque Bhuiyan"
+        },
+        {
+          "authorId": "2364478861",
+          "name": "Abdullah Al Masum"
+        },
+        {
+          "authorId": "2359175762",
+          "name": "Al Shahriar Uddin Khondakar Pranta"
+        }
+      ],
+      "abstract": "Sleep stage classification accuracy often suffers from inter-subject variability and signal artifacts. This study presents a novel ensemble learning framework for robust sleep stage classification using single-channel EEG data from the Physionet database. We develop specialized base classifiers optimized for each sleep stage transition and combine their outputs using a stacking approach with a meta-learner. Our framework employs confidence-weighted voting and a novel error-correction mechanism that identifies and rectifies physiologically implausible sleep stage transitions. Results demonstrate that the ensemble approach achieves 91.3% accuracy, outperforming individual classifier performance by 4.7-7.2%. Notably, the framework shows significantly improved robustness to artifacts, maintaining 89.6% accuracy when tested on noisy segments that cause individual classifiers to fail. The error-correction mechanism successfully identifies 93.4% of physiologically implausible transitions, improving temporal consistency. This methodology provides a powerful approach for reliable sleep staging in home environments where recording conditions may be suboptimal, offering potential for improved sleep disorder diagnosis outside laboratory settings."
+    },
+    {
+      "paperId": "a9c1fcb2fbe2f48b9e28632c84b4f3136e07bf5a",
+      "externalIds": {
+        "MAG": "1970379176",
+        "PubMedCentral": "4114285",
+        "DOI": "10.3389/fnins.2014.00226",
+        "CorpusId": 15346144,
+        "PubMed": "25120427"
+      },
+      "url": "https://www.semanticscholar.org/paper/a9c1fcb2fbe2f48b9e28632c84b4f3136e07bf5a",
+      "title": "Investigating the effect of modifying the EEG cap lead configuration on the gradient artifact in simultaneous EEG-fMRI",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2014,
+      "citationCount": 10,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2014.00226/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4114285, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2442536",
+          "name": "K. Mullinger"
+        },
+        {
+          "authorId": "3446957",
+          "name": "M. Chowdhury"
+        },
+        {
+          "authorId": "2220021",
+          "name": "R. Bowtell"
+        }
+      ],
+      "abstract": "EEG data recorded during simultaneous fMRI are contaminated by large voltages generated by time-varying magnetic field gradients. Correction of the resulting gradient artifact (GA) generally involves low-pass filtering to attenuate the high-frequency voltage fluctuations of the GA, followed by subtraction of a GA template produced by averaging over repeats of the artifact waveforms. This average artifact subtraction (AAS) process relies on the EEG amplifier having a large enough dynamic range to characterize the artifact voltages and on invariance of the artifact waveform over repeated image acquisitions. Saturation of the amplifiers and changes in subject position can leave unwanted residual GA after AAS. Previous modeling work suggested that modifying the lead layout and the exit position of the cable bundle on the EEG cap could reduce the GA amplitude. Here, we used simulations and experiments to evaluate the effect of modifying the lead paths on the magnitude of the GA and on the residual artifact after AAS. The modeling work showed that for wire paths following great circles, the smallest overall GA occurs when the leads converge at electrode Cz. The performance of this new cap design was compared with a standard cap in experiments on a spherical agar phantom and human subjects. Using gradient pulses applied separately along the three Cartesian axes, we found that the GA due to the foot-head gradient was most significantly reduced relative to a standard cap for the phantom, whereas the anterior-posterior GA was most attenuated for human subjects. In addition, there was an overall 37% reduction in the RMS GA amplitude produced by a standard EPI sequence when comparing the two caps on the phantom. In contrast, the subjects showed an 11% increase in the average RMS of the GA. This work shows that the optimal design reduces the GA on a spherical phantom however; these gains are not translated to human subjects, probably due to the differences in geometry."
+    },
+    {
+      "paperId": "b55349def380f09c0bc9b99ce2198cefc87555d9",
+      "externalIds": {
+        "MAG": "2063387614",
+        "DOI": "10.1016/J.CLINPH.2007.08.017",
+        "CorpusId": 23726034,
+        "PubMed": "17889599"
+      },
+      "url": "https://www.semanticscholar.org/paper/b55349def380f09c0bc9b99ce2198cefc87555d9",
+      "title": "Artifact removal in co-registered EEG/fMRI by selective average subtraction.",
+      "venue": "Clinical Neurophysiology",
+      "year": 2007,
+      "citationCount": 67,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.CLINPH.2007.08.017?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.CLINPH.2007.08.017, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "38386747",
+          "name": "S. Gonçalves"
+        },
+        {
+          "authorId": "35147248",
+          "name": "P. Pouwels"
+        },
+        {
+          "authorId": "50488844",
+          "name": "J. Kuijer"
+        },
+        {
+          "authorId": "144195350",
+          "name": "R. Heethaar"
+        },
+        {
+          "authorId": "83090249",
+          "name": "J. D. Munck"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "aee2c2093f5be10b16296571bcd6297a4b79388f",
+      "externalIds": {
+        "MAG": "2577500508",
+        "CorpusId": 64337842
+      },
+      "url": "https://www.semanticscholar.org/paper/aee2c2093f5be10b16296571bcd6297a4b79388f",
+      "title": "The helium pump artifact in simultaneous EEG-fMRI does not affect ERP signal-to-noise or topological consistency",
+      "venue": "",
+      "year": 2014,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://cds.ismrm.org/protected/14MProceedings/files/3114.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4324005",
+          "name": "J. Meer"
+        },
+        {
+          "authorId": "2271229",
+          "name": "A. Pampel"
+        },
+        {
+          "authorId": "2361430",
+          "name": "J. Ramautar"
+        },
+        {
+          "authorId": "1397998860",
+          "name": "Germán Gómez-Herrero"
+        },
+        {
+          "authorId": "2078489",
+          "name": "J. Lepsien"
+        },
+        {
+          "authorId": "3261270",
+          "name": "H. Möller"
+        },
+        {
+          "authorId": "50194916",
+          "name": "M. Walter"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b319dea68be926e770e0d3914d606f6d11ef1581",
+      "externalIds": {
+        "PubMedCentral": "3387650",
+        "MAG": "2136190703",
+        "DOI": "10.3389/fneur.2012.00100",
+        "CorpusId": 1121762,
+        "PubMed": "22783221"
+      },
+      "url": "https://www.semanticscholar.org/paper/b319dea68be926e770e0d3914d606f6d11ef1581",
+      "title": "EEG-fMRI Methods for the Study of Brain Networks during Sleep",
+      "venue": "Front. Neur.",
+      "year": 2012,
+      "citationCount": 53,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fneur.2012.00100/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3387650, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1805159",
+          "name": "J. Duyn"
+        }
+      ],
+      "abstract": "Modern neuroimaging methods may provide unique insights into the mechanism and role of sleep, as well as into particular mechanisms of brain function in general. Many of the recent neuroimaging studies have used concurrent EEG and fMRI, which present unique technical challenges ranging from the difficulty of inducing sleep in the MRI environment to appropriate instrumentation and data processing methods to obtain artifact free data. In addition, the use of EEG-fMRI during sleep leads to unique data interpretation issues, as common approaches developed for the analysis of task-evoked activity do not apply to sleep. Reviewed are a variety of statistical approaches that can be used to characterize brain activity from fMRI data acquired during sleep, with an emphasis on approaches that investigate the presence of correlated activity between brain regions. Each of these approaches has advantages and disadvantages that must be considered in concert with the theoretical questions of interest. Specifically, fundamental theories of sleep control and function should be considered when designing these studies and when choosing the associated statistical approaches. For example, the notion that local brain activity during sleep may be triggered by local, use-dependent activity during wakefulness may be tested by analyzing sleep networks as statistically independent components. Alternatively, the involvement of regions in more global processes such as arousal may be investigated with correlation analysis."
+    },
+    {
+      "paperId": "00d3a624e127aab3d5b5f8080654198a9ab38393",
+      "externalIds": {
+        "MAG": "2310586643",
+        "DBLP": "journals/neuroimage/FellnerVMGWGH16",
+        "DOI": "10.1016/j.neuroimage.2016.03.031",
+        "CorpusId": 3501765,
+        "PubMed": "27012498"
+      },
+      "url": "https://www.semanticscholar.org/paper/00d3a624e127aab3d5b5f8080654198a9ab38393",
+      "title": "Spurious correlations in simultaneous EEG-fMRI driven by in-scanner movement",
+      "venue": "NeuroImage",
+      "year": 2016,
+      "citationCount": 34,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "http://eprints.nottingham.ac.uk/32369/",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2016.03.031?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2016.03.031, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "39120722",
+          "name": "Marie-Christin Fellner"
+        },
+        {
+          "authorId": "2297490",
+          "name": "G. Volberg"
+        },
+        {
+          "authorId": "2442536",
+          "name": "K. Mullinger"
+        },
+        {
+          "authorId": "48332380",
+          "name": "Markus Goldhacker"
+        },
+        {
+          "authorId": "144345360",
+          "name": "M. Wimber"
+        },
+        {
+          "authorId": "2429633",
+          "name": "M. Greenlee"
+        },
+        {
+          "authorId": "1759530",
+          "name": "S. Hanslmayr"
+        }
+      ],
+      "abstract": "Simultaneous EEG-fMRI provides an increasingly attractive research tool to investigate cognitive processes with high temporal and spatial resolution. However, artifacts in EEG data introduced by the MR scanner still remain a major obstacle. This study, employing commonly used artifact correction steps, shows that head motion, one overlooked major source of artifacts in EEG-fMRI data, can cause plausible EEG effects and EEG-BOLD correlations. Specifically, low-frequency EEG (<20Hz) is strongly correlated with in-scanner movement. Accordingly, minor head motion (<0.2mm) induces spurious effects in a twofold manner: Small differences in task-correlated motion elicit spurious low-frequency effects, and, as motion concurrently influences fMRI data, EEG-BOLD correlations closely match motion-fMRI correlations. We demonstrate these effects in a memory encoding experiment showing that obtained theta power (~3-7Hz) effects and channel-level theta-BOLD correlations reflect motion in the scanner. These findings highlight an important caveat that needs to be addressed by future EEG-fMRI studies."
+    },
+    {
+      "paperId": "266e62063e66f5a8560c1ac0948d728ca31ff403",
+      "externalIds": {
+        "MAG": "2904452104",
+        "DOI": "10.1016/j.eplepsyres.2018.12.008",
+        "CorpusId": 56482204,
+        "PubMed": "30623776"
+      },
+      "url": "https://www.semanticscholar.org/paper/266e62063e66f5a8560c1ac0948d728ca31ff403",
+      "title": "Conductive gel bridge sensor for motion tracking in simultaneous EEG-fMRI recordings.",
+      "venue": "Epilepsy Research",
+      "year": 2019,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.eplepsyres.2018.12.008?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.eplepsyres.2018.12.008, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2065788111",
+          "name": "Noa Cohen"
+        },
+        {
+          "authorId": "46179686",
+          "name": "E. Tsizin"
+        },
+        {
+          "authorId": "1774949",
+          "name": "I. Fried"
+        },
+        {
+          "authorId": "3270012",
+          "name": "Firas Fahoum"
+        },
+        {
+          "authorId": "1705259",
+          "name": "T. Hendler"
+        },
+        {
+          "authorId": "47212999",
+          "name": "T. Gazit"
+        },
+        {
+          "authorId": "3369381",
+          "name": "Mordekhay Medvedovsky"
+        }
+      ],
+      "abstract": "EEG-fMRI allows the localization of the hemodynamic correlates of neural activity and has been shown to be useful as a diagnostic tool in pre-surgical evaluation of refractory epilepsy. However, EEG recordings may be highly contaminated by artifacts induced by movements inside the magnetic field thus rendering the scan difficult for interpretation. Existing methods for motion correction require additional equipment or hardware modification. We introduce a simple method for motion artifact detection, the conductive gel bridge sensor (CGBS), easily applicable using the standard setup. We report examples of CGBS use in two patients with epilepsy and demonstrate the method's ability to successfully differentiate between epochs of brain activity and those of movement."
+    },
+    {
+      "paperId": "f58ed83b3331864022495316de1485208d9ba938",
+      "externalIds": {
+        "PubMedCentral": "10696919",
+        "ArXiv": "1912.05507",
+        "MAG": "2995400749",
+        "DOI": "10.1088/1741-2552/ac1037",
+        "CorpusId": 209202858,
+        "PubMed": "34192674"
+      },
+      "url": "https://www.semanticscholar.org/paper/f58ed83b3331864022495316de1485208d9ba938",
+      "title": "Automated pipeline for EEG artifact reduction (APPEAR) recorded during fMRI",
+      "venue": "Journal of Neural Engineering",
+      "year": 2019,
+      "citationCount": 22,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://iopscience.iop.org/article/10.1088/1741-2552/ac1037/pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1912.05507, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2903724",
+          "name": "Ahmad Mayeli"
+        },
+        {
+          "authorId": "1381219044",
+          "name": "Obada Al Zoubi"
+        },
+        {
+          "authorId": "1454214842",
+          "name": "Kaylee R. Henry"
+        },
+        {
+          "authorId": "50455922",
+          "name": "C. Wong"
+        },
+        {
+          "authorId": "30292456",
+          "name": "Evan J. White"
+        },
+        {
+          "authorId": "2182195",
+          "name": "Q. Luo"
+        },
+        {
+          "authorId": "1724999",
+          "name": "V. Zotev"
+        },
+        {
+          "authorId": "1774428",
+          "name": "H. Refai"
+        },
+        {
+          "authorId": "1747797",
+          "name": "J. Bodurka"
+        }
+      ],
+      "abstract": "Objective. Simultaneous electroencephalography-functional magnetic resonance imaging (EEG-fMRI) recordings offer a high spatiotemporal resolution approach to study human brain and understand the underlying mechanisms mediating cognitive and behavioral processes. However, the high susceptibility of EEG to MRI-induced artifacts hinders a broad adaptation of this approach. More specifically, EEG data collected during fMRI acquisition are contaminated with MRI gradients and ballistocardiogram artifacts, in addition to artifacts of physiological origin. There have been several attempts for reducing these artifacts with manual and time-consuming pre-processing, which may result in biasing EEG data due to variations in selecting steps order, parameters, and classification of artifactual independent components. Thus, there is a strong urge to develop a fully automatic and comprehensive pipeline for reducing all major EEG artifacts. In this work, we introduced an open-access toolbox with a fully automatic pipeline for reducing artifacts from EEG data collected simultaneously with fMRI (refer to APPEAR). Approach. The pipeline integrates average template subtraction and independent component analysis to suppress both MRI-related and physiological artifacts. To validate our results, we tested APPEAR on EEG data recorded from healthy control subjects during resting-state (n= 48) and task-based (i.e. event-related-potentials (ERPs); n= 8) paradigms. The chosen gold standard is an expert manual review of the EEG database. Main results. We compared manually and automated corrected EEG data during resting-state using frequency analysis and continuous wavelet transformation and found no significant differences between the two corrections. A comparison between ERP data recorded during a so-called stop-signal task (e.g. amplitude measures and signal-to-noise ratio) also showed no differences between the manually and fully automatic fMRI-EEG-corrected data. Significance. APPEAR offers the first comprehensive open-source toolbox that can speed up advancement of EEG analysis and enhance replication by avoiding experimenters’ preferences while allowing for processing large EEG-fMRI cohorts composed of hundreds of subjects with manageable researcher time and effort."
+    },
+    {
+      "paperId": "a1ac44ed8919ad33b0fb317c894a0996de027b2b",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/JorgeGGZF15",
+        "MAG": "1656026513",
+        "DOI": "10.1016/j.neuroimage.2015.07.020",
+        "CorpusId": 1088424,
+        "PubMed": "26169325"
+      },
+      "url": "https://www.semanticscholar.org/paper/a1ac44ed8919ad33b0fb317c894a0996de027b2b",
+      "title": "Towards high-quality simultaneous EEG-fMRI at 7 T: Detection and reduction of EEG artifacts due to head motion",
+      "venue": "NeuroImage",
+      "year": 2015,
+      "citationCount": 57,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://infoscience.epfl.ch/record/210042/files/JJorge_EEGfMRIMotion_NeuroImage_2015.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2015.07.020?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2015.07.020, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143858664",
+          "name": "J. Jorge"
+        },
+        {
+          "authorId": "3141156",
+          "name": "F. Grouiller"
+        },
+        {
+          "authorId": "1969894",
+          "name": "R. Gruetter"
+        },
+        {
+          "authorId": "30599945",
+          "name": "W. Zwaag"
+        },
+        {
+          "authorId": "144846300",
+          "name": "P. Figueiredo"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "1a9ec36088983e52660070d5fc3d0b5fa10e9fcc",
+      "externalIds": {
+        "MAG": "2914025121",
+        "DBLP": "journals/neuroimage/JorgeBBMG19",
+        "DOI": "10.1016/j.neuroimage.2019.02.021",
+        "CorpusId": 72332752,
+        "PubMed": "30742980"
+      },
+      "url": "https://www.semanticscholar.org/paper/1a9ec36088983e52660070d5fc3d0b5fa10e9fcc",
+      "title": "Investigating the variability of cardiac pulse artifacts across heartbeats in simultaneous EEG‐fMRI recordings: A 7T study",
+      "venue": "NeuroImage",
+      "year": 2019,
+      "citationCount": 22,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://infoscience.epfl.ch/record/263945/files/Jorge_EEGfMRIPulseArtefacts_NeuroImage_2019.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2019.02.021?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2019.02.021, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143858664",
+          "name": "J. Jorge"
+        },
+        {
+          "authorId": "83014353",
+          "name": "Charlotte Bouloc"
+        },
+        {
+          "authorId": "51931350",
+          "name": "Lucie Bréchet"
+        },
+        {
+          "authorId": "3582784",
+          "name": "C. Michel"
+        },
+        {
+          "authorId": "1969894",
+          "name": "R. Gruetter"
+        }
+      ],
+      "abstract": "ABSTRACT Electroencephalography (EEG) recordings performed in magnetic resonance imaging (MRI) scanners are affected by complex artifacts caused by heart function, often termed pulse artifacts (PAs). PAs can strongly compromise EEG data quality, and remain an open problem for EEG‐fMRI. This study investigated the properties and mechanisms of PA variability across heartbeats, which has remained largely unaddressed to date, and evaluated its impact on PA correction approaches. Simultaneous EEG‐fMRI was performed at 7T on healthy participants at rest or under visual stimulation, with concurrent recordings of breathing and cardiac activity. PA variability was found to contribute to EEG variance with more than 500 &mgr;V2 at 7T, which extrapolates to 92 &mgr;V2 at 3T. Clustering analyses revealed that PA variability not only is linked to variations in head position/orientation, as previously hypothesized, but also, and more importantly, to the respiratory cycle and to heart rate fluctuations. The latter mechanisms are associated to short‐timescale variability (even across consecutive heartbeats), and their importance varied across EEG channels. In light of this PA variability, three PA correction techniques were compared: average artifact subtraction (AAS), optimal basis sets (OBS), and an approach based on K‐means clustering. All methods allowed the recovery of visual evoked potentials from the EEG data; nonetheless, OBS and K‐means tended to outperform AAS, likely due to the inability of the latter in modeling short‐timescale variability. Altogether, these results offer novel insights into the dynamics and underlying mechanisms of the pulse artifact, with important consequences for its correction, relevant to most EEG‐fMRI applications. HIGHLIGHTSPulse artifacts (PAs) remain a challenging problem for EEG‐fMRI analysis.This study investigates the properties and sources of PA variability across beats.PA variability is linked to head motion, respiration, and heart rate fluctuations.Different correction methods differ in their ability to account for PA variability.Despite its wide use, AAS cannot fully account for short‐timescale PA variability."
+    },
+    {
+      "paperId": "765dac186f9873233dd5ab6564c57c33a155bcfe",
+      "externalIds": {
+        "MAG": "2150299777",
+        "DOI": "10.1109/IEMBS.2007.4352609",
+        "CorpusId": 25132654,
+        "PubMed": "18002275"
+      },
+      "url": "https://www.semanticscholar.org/paper/765dac186f9873233dd5ab6564c57c33a155bcfe",
+      "title": "Correction for desynchronization of EEG and fMRI clocks through data interpolation optimizes artifact reduction",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2007,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IEMBS.2007.4352609?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IEMBS.2007.4352609, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "38386747",
+          "name": "S. Gonçalves"
+        },
+        {
+          "authorId": "2255135046",
+          "name": "P. Pouwels"
+        },
+        {
+          "authorId": "2247415189",
+          "name": "J. Kuijer"
+        },
+        {
+          "authorId": "2259258872",
+          "name": "R. M. Heethaar"
+        },
+        {
+          "authorId": "50364144",
+          "name": "J. D. de Munck"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "4b723b6f1f90cafec3d2b53bc246ce1cd82bd5fe",
+      "externalIds": {
+        "MAG": "2911891026",
+        "DBLP": "journals/bspc/DoraB19",
+        "DOI": "10.1016/J.BSPC.2019.01.023",
+        "CorpusId": 128304065
+      },
+      "url": "https://www.semanticscholar.org/paper/4b723b6f1f90cafec3d2b53bc246ce1cd82bd5fe",
+      "title": "Efficient detection and correction of variable strength ECG artifact from single channel EEG",
+      "venue": "Biomedical Signal Processing and Control",
+      "year": 2019,
+      "citationCount": 12,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.BSPC.2019.01.023?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.BSPC.2019.01.023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "30659717",
+          "name": "Chinmayee Dora"
+        },
+        {
+          "authorId": "145656736",
+          "name": "P. Biswal"
+        }
+      ],
+      "abstract": "Abstract The electroencephalogram (EEG) electrodes are susceptible to electrocardiogram (ECG) artifacts, misleading the analysis and diagnosis from the EEG recording. This paper mainly focuses on detection and correction of contaminating ECG artifact of various strengths, from a single channel EEG in the absence of a reference ECG channel. The algorithm involves two stages i.e. detection of ECG artifacts and correction of those artifacts. For detection of ECG artifact, modified S-transform (MST) is used on the bandpass filtered contaminated EEG to localize the higher energy QRS segments in time scale. For improved energy concentration of MST around the instantaneous frequency, artifact detection proximity in time scale is.05s. To correct ECG artifacts from EEG, a modified ensembled average subtraction is proposed, which restrict the overcompensation of the EEG in the correction process. The proposed algorithm is tested on MIT/BIH Polysomnography dataset and synthetic data set with various contamination strength, together more than 45 hours of EEG data. The proposed method achieves mean positive predictive value (PPV) and failed detection rate (FDR) of 97.87% and 2.13% respectively for MIT/BIH Polysomnography EEG recordings. The mean PPV and FDR for the CAP sleep EEG recordings with various contamination levels of ECG are found to be 98.77% and 1.22% respectively. The proposed algorithm is compared against existing Continuous wavelet transform (CWT) and Empirical ensembled mode decomposition (EEMD) based algorithms where the proposed algorithm found to be performing better in terms of spike to energy ratio (SER), spike to background energy ratio (SBR), correlation factors, Mutual information (MI), Mean absolute error (MAE) and Mean square error (MSE) along with a lower change in power spectral density (ΔPSD) in various brain frequency bands."
+    },
+    {
+      "paperId": "06b92882e04fe7fbd4e90fcac83744bf3fe5c5b7",
+      "externalIds": {
+        "DBLP": "journals/algorithms/HockeTF23",
+        "DOI": "10.3390/a16050230",
+        "CorpusId": 258411248
+      },
+      "url": "https://www.semanticscholar.org/paper/06b92882e04fe7fbd4e90fcac83744bf3fe5c5b7",
+      "title": "An Automatic Motion-Based Artifact Reduction Algorithm for fNIRS in Concurrent Functional Magnetic Resonance Imaging Studies (AMARA-fMRI)",
+      "venue": "Algorithms",
+      "year": 2023,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1999-4893/16/5/230/pdf?version=1682669114",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/a16050230?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/a16050230, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3480961",
+          "name": "L. Hocke"
+        },
+        {
+          "authorId": "34141069",
+          "name": "Y. Tong"
+        },
+        {
+          "authorId": "81606750",
+          "name": "B. Frederick"
+        }
+      ],
+      "abstract": "Multimodal functional near-infrared spectroscopy–functional magnetic resonance imaging (fNIRS–fMRI) studies have been highly beneficial for both the fNIRS and fMRI field as, for example, they shed light on the underlying mechanism of each method. However, several noise sources exist in both methods. Motion artifact removal is an important preprocessing step in fNIRS analysis. Several manual motion–artifact removal methods have been developed which require time and are highly dependent on expertise. Only a few automatic methods have been proposed. AMARA (acceleration-based movement artifact reduction algorithm) is one of the most promising automatic methods and was originally tested in an fNIRS sleep study with long acquisition times (~8 h). However, it relies on accelerometry data, which is problematic when performing concurrent fNIRS–fMIRI experiments. Most accelerometers are not MR compatible, and in any case, existing datasets do not have this data. Here, we propose a new way to retrospectively determine acceleration data for motion correction methods, such as AMARA in multimodal fNIRS–fMRI studies. We do so by considering the individual slice stack acquisition times of simultaneous multislice (SMS) acquisition and reconstructing high-resolution motion traces from each slice stack time. We validated our method on 10 participants during a memory task (2- and 3-back) with 6 fNIRS channels over the prefrontal cortex (limited field of view with fMRI). We found that this motion correction significantly improved the detection of activation in deoxyhemoglobin and outperformed up-sampled motion traces. However, we found no improvement in oxyhemoglobin. Furthermore, our data show a high overlap with fMRI activation when considering activation in channels according to both deoxyhemoglobin and oxyhemoglobin."
+    },
+    {
+      "paperId": "a0ac42b8e897e7c5173003bcb35668cfe56cccf2",
+      "externalIds": {
+        "PubMedCentral": "12681749",
+        "DOI": "10.1016/j.dib.2025.112258",
+        "CorpusId": 283095364,
+        "PubMed": "41362341"
+      },
+      "url": "https://www.semanticscholar.org/paper/a0ac42b8e897e7c5173003bcb35668cfe56cccf2",
+      "title": "Simultaneous electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) data during an inner speech task",
+      "venue": "Data in Brief",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.dib.2025.112258",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12681749, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2162860305",
+          "name": "F. Simistira Liwicki"
+        },
+        {
+          "authorId": "2325145420",
+          "name": "Rajkumar Saini"
+        },
+        {
+          "authorId": "73247427",
+          "name": "D. D. Chakladar"
+        },
+        {
+          "authorId": "2086789321",
+          "name": "S. Rakesh"
+        },
+        {
+          "authorId": "2239207098",
+          "name": "Vibha Gupta"
+        },
+        {
+          "authorId": "2239208206",
+          "name": "Marcus Liwicki"
+        },
+        {
+          "authorId": "2335905594",
+          "name": "Johan Eriksson"
+        }
+      ],
+      "abstract": "Inner speech, or covert speech, refers to the internal generation of language without overt articulation. Decoding inner speech has significant implications for brain-computer interfaces (BCIs), particularly for assistive communication in individuals with speech and motor impairments. To facilitate research in this area, we introduce a publicly available dataset comprising simultaneously recorded electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) data during inner speech production. Data were collected from three healthy, right-handed participants performing an inner speech task. The task involved silent repetition of visually presented words belonging to either a social or numerical category. The experiment consisted of 40 trials per word, with eight unique words and starts with a fixation period of two seconds. Stimuli were displayed for two seconds at the beginning of each session, followed by a 12-second rest period to allow hemodynamic responses to return to baseline. Participants were instructed to remain still and avoid movements to minimize artifacts. EEG was recorded using a 64-channel MR-compatible cap (BrainCap MR, EasyCap GmbH) at a 5 kHz sampling rate. Electrocardiogram (ECG) signals were simultaneously acquired using an additional electrode placed on the trapezius muscle to facilitate cardioballistic artifact correction. Gradient and cardioballistic artifacts were corrected using BrainVision Analyzer software. Functional MRI data were acquired using a 3T scanner with a 48-channel headcoil, and an echo-planar imaging (EPI) sequence optimized for whole-brain coverage. The repetition time (TR) was 2 s. High-resolution anatomical T1-weighted images were also acquired for structural reference. The dataset is publicly available in the OpenNeuro repository. The aim of this dataset is to provide a resource for studying inner speech processing, multimodal neuroimaging, EEG-fMRI fusion techniques, and BCI-driven speech prosthesis development."
+    },
+    {
+      "paperId": "18133e23192c7bcecf1cdc2a8bfcc84971389c51",
+      "externalIds": {
+        "MAG": "2029530130",
+        "DOI": "10.1007/s10548-014-0409-z",
+        "CorpusId": 9683753,
+        "PubMed": "25307731"
+      },
+      "url": "https://www.semanticscholar.org/paper/18133e23192c7bcecf1cdc2a8bfcc84971389c51",
+      "title": "Pulse Artifact Detection in Simultaneous EEG–fMRI Recording Based on EEG Map Topography",
+      "venue": "Brain Topography",
+      "year": 2014,
+      "citationCount": 29,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10548-014-0409-z?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10548-014-0409-z, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40411687",
+          "name": "G. Iannotti"
+        },
+        {
+          "authorId": "5116221",
+          "name": "F. Pittau"
+        },
+        {
+          "authorId": "3582784",
+          "name": "C. Michel"
+        },
+        {
+          "authorId": "1705376",
+          "name": "S. Vulliémoz"
+        },
+        {
+          "authorId": "3141156",
+          "name": "F. Grouiller"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "62f41a139b51af1071a0165fe8de0ea561495b43",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.1050",
+        "CorpusId": 278760746
+      },
+      "url": "https://www.semanticscholar.org/paper/62f41a139b51af1071a0165fe8de0ea561495b43",
+      "title": "1050 Validating MoTrPAC Sleep High Density EEG Data Collection in Children and Adolescents",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.1050?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.1050, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "119382979",
+          "name": "Caitlin M. Carroll"
+        },
+        {
+          "authorId": "2362393490",
+          "name": "I. Chen"
+        },
+        {
+          "authorId": "2362519809",
+          "name": "Henry Lin"
+        },
+        {
+          "authorId": "2363688876",
+          "name": "Sheldon Watanabe"
+        },
+        {
+          "authorId": "2362385143",
+          "name": "Dylan Barry"
+        },
+        {
+          "authorId": "2265390324",
+          "name": "D. Berisha"
+        },
+        {
+          "authorId": "2271695459",
+          "name": "A. Dave"
+        },
+        {
+          "authorId": "4485152",
+          "name": "B. Mander"
+        },
+        {
+          "authorId": "1387463560",
+          "name": "S. Radom-Aizik"
+        },
+        {
+          "authorId": "2265390258",
+          "name": "A. Neikrug"
+        },
+        {
+          "authorId": "2272914280",
+          "name": "R. Benca"
+        }
+      ],
+      "abstract": "\n \n \n Adolescence is marked by profound changes in sleep-wake physiology, driven by recognized neurodevelopmental shifts impacting macro- and micro-architecture of the electroencephalogram (EEG) during sleep. Ensuring reliable and high-quality data is critical for studying these developmental processes, particularly in multicenter settings. In this ancillary study to the Molecular Transducers of Physical Activity Consortium (MoTrPAC), we aimed to assess the reliability and data quality of sleep EEG by evaluating consistency and concordance in data collected across two sites, using identical platforms.\n \n \n \n 113 participants (Mage=14.5±2.5 years, 55% Female) completed the Pediatric MoTrPAC study and underwent standard overnight polysomnography (PSG) with high-density EEG (hdEEG; 128 channels) at two sleep laboratory sites: UCI Sleep Laboratory (n=66) or the Research Center for Exercise Medicine and Sleep (RCEMS/PERC; n=47). Both sites used the same equipment and protocols (Natus Neurology equipment, Waveguard original EEG cap, and Natus SleepWorks software). All recordings were scored by a boarded sleep medicine physician, using 30-second epochs. EEG data underwent preprocessing, artifact rejection, and segmentation into concatenated NREM epochs. Spectral power was calculated for frequency bands using a multitaper approach. Threshold-free cluster enhancement (TFCE) was used for multiple comparisons correction across topography.\n \n \n \n Total sleep time and time spent in each sleep stage did not differ between sites. Similarly, we observed no site-based differences in absolute or relative spectral power across all frequency bands. Consistent with prior work, age-related decreases in absolute power were observed at both sites for slow wave activity, slow oscillations, delta, theta, sigma, and beta frequency bands (all p< 0.05, TFCE corrected). Conversely, relative power in higher frequency bands including sigma, beta, and gamma increased with age (all p< 0.05, TFCE corrected). These patterns were observed at both sites with no significant differences between sites.\n \n \n \n This study demonstrates the reliability of PSG with hdEEG data collected at two sites using identical platforms. The findings align with previous studies showing age-related changes in spectral power, reflecting neurodevelopmental processes. These results validate the use of PSG with hdEEG for multicenter studies and support combining data across sites for future analyses advancing our understanding of sleep neurophysiology in adolescence.\n \n \n \n R01HL153807,T32AG033534,U01AR071158,PERC Systems Biology Program\n"
+    },
+    {
+      "paperId": "3dfeb24107b797f599e42a00488c09e6f16ca716",
+      "externalIds": {
+        "MAG": "2979894198",
+        "DOI": "10.1007/978-981-13-9113-2_18",
+        "CorpusId": 208099143
+      },
+      "url": "https://www.semanticscholar.org/paper/3dfeb24107b797f599e42a00488c09e6f16ca716",
+      "title": "Simultaneous EEG-fMRI",
+      "venue": "EEG Signal Processing and Feature Extraction",
+      "year": 2019,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-981-13-9113-2_18?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-981-13-9113-2_18, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143782792",
+          "name": "X. Lei"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "bb69938b3fc2a3e7ee8421be6d1930d7deb64b26",
+      "externalIds": {
+        "MAG": "2890257417",
+        "CorpusId": 54700252
+      },
+      "url": "https://www.semanticscholar.org/paper/bb69938b3fc2a3e7ee8421be6d1930d7deb64b26",
+      "title": "Electroencephalogram spindle detection from simultaneous Electroencephalogram (EEG) / functional Magnetic Resonance Imaging (fMRI) data for a sleep deprivation study",
+      "venue": "",
+      "year": 2018,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://spectrum.library.concordia.ca/983635/1/Jegou_MSc_S2018.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "74393015",
+          "name": "A. Jegou"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "f08be1a016049ea63ed35956f034092ef7b2a360",
+      "externalIds": {
+        "PubMedCentral": "5063756",
+        "MAG": "2295443523",
+        "DOI": "10.1016/j.dib.2016.03.001",
+        "CorpusId": 13957254,
+        "PubMed": "27761491"
+      },
+      "url": "https://www.semanticscholar.org/paper/f08be1a016049ea63ed35956f034092ef7b2a360",
+      "title": "“Eyes Open – Eyes Closed” EEG/fMRI data set including dedicated “Carbon Wire Loop” motion detection channels",
+      "venue": "Data in Brief",
+      "year": 2016,
+      "citationCount": 11,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.dib.2016.03.001",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5063756, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "114015911",
+          "name": "J. van der Meer"
+        },
+        {
+          "authorId": "2271229",
+          "name": "A. Pampel"
+        },
+        {
+          "authorId": "145653735",
+          "name": "E. V. van Someren"
+        },
+        {
+          "authorId": "2361430",
+          "name": "J. Ramautar"
+        },
+        {
+          "authorId": "2339718",
+          "name": "Y. D. van der Werf"
+        },
+        {
+          "authorId": "1397998860",
+          "name": "Germán Gómez-Herrero"
+        },
+        {
+          "authorId": "2078489",
+          "name": "J. Lepsien"
+        },
+        {
+          "authorId": "2697324",
+          "name": "L. Hellrung"
+        },
+        {
+          "authorId": "145663940",
+          "name": "H. Hinrichs"
+        },
+        {
+          "authorId": "3261270",
+          "name": "H. Möller"
+        },
+        {
+          "authorId": "50194916",
+          "name": "M. Walter"
+        }
+      ],
+      "abstract": "This data set contains electroencephalography (EEG) data as well as simultaneous EEG with functional magnetic resonance imaging (EEG/fMRI) data. During EEG/fMRI, the EEG cap was outfitted with a hardware-based add-on consisting of carbon-wire loops (CWL). These yielded six extra׳CWL׳ signals related to Faraday induction of these loops in the main magnetic field “Measurement and reduction of motion and ballistocardiogram artefacts from simultaneous EEG and fMRI recordings” (Masterton et al., 2007) [1]. In this data set, the CWL data make it possible to do a direct regression approach to deal with the BCG and specifically He artifact. The CWL-EEG/fMRI data in this paper has been recorded on two MRI scanners with different Helium pump systems (4 subjects on a 3 T TIM Trio and 4 subjects on a 3T VERIO). Separate EEG/fMRI data sets have been recorded for the helium pump ON as well as the helium pump OFF conditions. The EEG-only data (same subjects) has been recorded for a motion artifact-free reference EEG signal outside of the scanner. This paper also links to an EEGlab “EEGLAB: an open source toolbox for analysis of single-trial EEG dynamics including independent component analysis” (Delorme and Makeig, 2004) [2] plugin to perform a CWL regression approach to deal with the He pump artifact, as published in the main paper “Carbon-wire loop based artifact correction outperforms post-processing EEG/fMRI corrections-A validation of a real-time simultaneous EEG/fMRI correction method” (van der Meer et al., 2016) [3]."
+    },
+    {
+      "paperId": "65a542e93d0a3f3b1aed4d4a15746b3bb08b56e8",
+      "externalIds": {
+        "MAG": "2305898258",
+        "DBLP": "journals/neuroimage/WongZMPLB16",
+        "DOI": "10.1016/j.neuroimage.2016.01.042",
+        "CorpusId": 11229414,
+        "PubMed": "26826516"
+      },
+      "url": "https://www.semanticscholar.org/paper/65a542e93d0a3f3b1aed4d4a15746b3bb08b56e8",
+      "title": "Automatic EEG-assisted retrospective motion correction for fMRI (aE-REMCOR)",
+      "venue": "NeuroImage",
+      "year": 2016,
+      "citationCount": 31,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2016.01.042",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2016.01.042?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2016.01.042, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50455922",
+          "name": "C. Wong"
+        },
+        {
+          "authorId": "1724999",
+          "name": "V. Zotev"
+        },
+        {
+          "authorId": "3355781",
+          "name": "M. Misaki"
+        },
+        {
+          "authorId": "1697020",
+          "name": "Raquel Phillips"
+        },
+        {
+          "authorId": "2182195",
+          "name": "Q. Luo"
+        },
+        {
+          "authorId": "1747797",
+          "name": "J. Bodurka"
+        }
+      ],
+      "abstract": "Head motions during functional magnetic resonance imaging (fMRI) impair fMRI data quality and introduce systematic artifacts that can affect interpretation of fMRI results. Electroencephalography (EEG) recordings performed simultaneously with fMRI provide high-temporal-resolution information about ongoing brain activity as well as head movements. Recently, an EEG-assisted retrospective motion correction (E-REMCOR) method was introduced. E-REMCOR utilizes EEG motion artifacts to correct the effects of head movements in simultaneously acquired fMRI data on a slice-by-slice basis. While E-REMCOR is an efficient motion correction approach, it involves an independent component analysis (ICA) of the EEG data and identification of motion-related ICs. Here we report an automated implementation of E-REMCOR, referred to as aE-REMCOR, which we developed to facilitate the application of E-REMCOR in large-scale EEG-fMRI studies. The aE-REMCOR algorithm, implemented in MATLAB, enables an automated preprocessing of the EEG data, an ICA decomposition, and, importantly, an automatic identification of motion-related ICs. aE-REMCOR has been used to perform retrospective motion correction for 305 fMRI datasets from 16 subjects, who participated in EEG-fMRI experiments conducted on a 3T MRI scanner. Performance of aE-REMCOR has been evaluated based on improvement in temporal signal-to-noise ratio (TSNR) of the fMRI data, as well as correction efficiency defined in terms of spike reduction in fMRI motion parameters. The results show that aE-REMCOR is capable of substantially reducing head motion artifacts in fMRI data. In particular, when there are significant rapid head movements during the scan, a large TSNR improvement and high correction efficiency can be achieved. Depending on a subject's motion, an average TSNR improvement over the brain upon the application of aE-REMCOR can be as high as 27%, with top ten percent of the TSNR improvement values exceeding 55%. The average correction efficiency over the 305 fMRI scans is 18% and the largest achieved efficiency is 71%. The utility of aE-REMCOR on the resting state fMRI connectivity of the default mode network is also examined. The motion-induced position-dependent error in the DMN connectivity analysis is shown to be reduced when aE-REMCOR is utilized. These results demonstrate that aE-REMCOR can be conveniently and efficiently used to improve fMRI motion correction in large clinical EEG-fMRI studies."
+    },
+    {
+      "paperId": "64ee6cd0fede39f31152a3bafdaa1ee7bf6d3584",
+      "externalIds": {
+        "DOI": "10.1007/s10548-014-0409-z",
+        "CorpusId": 254372144
+      },
+      "url": "https://www.semanticscholar.org/paper/64ee6cd0fede39f31152a3bafdaa1ee7bf6d3584",
+      "title": "Pulse Artifact Detection in Simultaneous EEG–fMRI Recording Based on EEG Map Topography",
+      "venue": "Brain Topography",
+      "year": 2014,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10548-014-0409-z?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10548-014-0409-z, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40411687",
+          "name": "G. Iannotti"
+        },
+        {
+          "authorId": "5116221",
+          "name": "F. Pittau"
+        },
+        {
+          "authorId": "3582784",
+          "name": "C. Michel"
+        },
+        {
+          "authorId": "1705376",
+          "name": "S. Vulliémoz"
+        },
+        {
+          "authorId": "3141156",
+          "name": "F. Grouiller"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "bb6e30b1a9fe4fb31a6f4e2336c72e30070d711b",
+      "externalIds": {
+        "MAG": "2087806482",
+        "PubMedCentral": "4283719",
+        "DOI": "10.3389/fneur.2014.00260",
+        "CorpusId": 9348442,
+        "PubMed": "25601852"
+      },
+      "url": "https://www.semanticscholar.org/paper/bb6e30b1a9fe4fb31a6f4e2336c72e30070d711b",
+      "title": "Constructing Carbon Fiber Motion-Detection Loops for Simultaneous EEG–fMRI",
+      "venue": "Frontiers in Neurology",
+      "year": 2015,
+      "citationCount": 30,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fneur.2014.00260/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4283719, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2790701",
+          "name": "D. Abbott"
+        },
+        {
+          "authorId": "38352716",
+          "name": "R. Masterton"
+        },
+        {
+          "authorId": "2778074",
+          "name": "J. Archer"
+        },
+        {
+          "authorId": "49954675",
+          "name": "Steven W. Fleming"
+        },
+        {
+          "authorId": "4386401",
+          "name": "Aaron E. L. Warren"
+        },
+        {
+          "authorId": "144531937",
+          "name": "G. Jackson"
+        }
+      ],
+      "abstract": "One of the most significant impediments to high-quality EEG recorded in an MRI scanner is subject motion. Availability of motion artifact sensors can substantially improve the quality of the recorded EEG. In the study of epilepsy, it can also dramatically increase the confidence that one has in discriminating true epileptiform activity from artifact. This is due both to the reduction in artifact and the ability to visually inspect the motion sensor signals when reading the EEG, revealing whether or not head motion is present. We have previously described the use of carbon fiber loops for detecting and correcting artifact in EEG acquired simultaneously with MRI. The loops, attached to the subject’s head, are electrically insulated from the scalp. They provide a simple and direct measure of specific artifact that is contaminating the EEG, including both subject motion and residual artifact arising from magnetic field gradients applied during MRI. Our previous implementation was used together with a custom-built EEG–fMRI system that differs substantially from current commercially available EEG–fMRI systems. The present technical note extends this work, describing in more detail how to construct the carbon fiber motion-detection loops, and how to interface them with a commercially available simultaneous EEG–fMRI system. We hope that the information provided may help those wishing to utilize a motion-detection/correction solution to improve the quality of EEG recorded within an MRI scanner."
+    },
+    {
+      "paperId": "31c44799084994c7cdcf01acbeb3a31756d4678f",
+      "externalIds": {
+        "MAG": "2149309153",
+        "DOI": "10.1016/j.jneumeth.2013.07.012",
+        "CorpusId": 12352566,
+        "PubMed": "23933055"
+      },
+      "url": "https://www.semanticscholar.org/paper/31c44799084994c7cdcf01acbeb3a31756d4678f",
+      "title": "Reproducible paired sources from concurrent EEG-fMRI data using BICAR.",
+      "venue": "Journal of Neuroscience Methods",
+      "year": 2013,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jneumeth.2013.07.012?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jneumeth.2013.07.012, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2523563",
+          "name": "K. Brown"
+        },
+        {
+          "authorId": "1869286",
+          "name": "Ryan W. Kasper"
+        },
+        {
+          "authorId": "145080695",
+          "name": "B. Giesbrecht"
+        },
+        {
+          "authorId": "48681458",
+          "name": "J. Carlson"
+        },
+        {
+          "authorId": "3047772",
+          "name": "Scott T. Grafton"
+        }
+      ],
+      "abstract": "We introduce BICAR, an algorithm for obtaining robust, reproducible pairs of temporal and spatial components at the individual subject level from concurrent electroencephalographic and functional magnetic resonance imaging data. BICAR assigns a task-independent measure of component quality, reproducibility, to each paired source. Under BICAR a reproducibility cutoff is derived that can be used to objectively discard spuriously paired EEG-fMRI components. BICAR is run on minimally processed data: fMRI images undergo the standard preprocessing steps (alignment, motion correction, etc.) and EEG data, after scanner artifact removal, are simply bandpass filtered. This minimal processing allows the secondary scoring of the same set of BICAR components for a variety of different endpoint analyses; in this manuscript we propose a general method for scoring components for task event synchronization (evoked response analysis), but scoring using many other criteria, for example frequency content, are possible. BICAR is applied to five subjects performing a visual search task, and among the most reproducible components we find biologically relevant paired sources involved in visual processing, motor planning, execution, and attention."
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import math
+import os
 from typing import Any
 
 
@@ -9,19 +10,48 @@ class EmbeddingError(RuntimeError):
 
 
 class LocalMiniLMEmbeddingClient:
-    """Local MiniLM embeddings; never calls DeepSeek or an online embedding API."""
+    """Local MiniLM embeddings loaded from the local HuggingFace cache."""
 
-    def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2") -> None:
+    def __init__(
+        self,
+        model_name: str = "sentence-transformers/all-MiniLM-L6-v2",
+        *,
+        local_files_only: bool = True,
+        device: str | None = "cpu",
+        cache_folder: str | None = None,
+    ) -> None:
         self.model_name = model_name
+        self.local_files_only = local_files_only
+        self.device = device
+        self.cache_folder = cache_folder
         self._model: Any = None
 
     def _load(self) -> Any:
         if self._model is None:
+            if self.local_files_only:
+                os.environ.setdefault("HF_HUB_OFFLINE", "1")
+                os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+                os.environ.setdefault("HF_HOME", os.path.expanduser("~/.cache/huggingface"))
+                os.environ.setdefault("SENTENCE_TRANSFORMERS_HOME", os.path.expanduser("~/.cache/sentence_transformers"))
             try:
                 from sentence_transformers import SentenceTransformer
             except ModuleNotFoundError as exc:  # pragma: no cover
                 raise EmbeddingError("sentence-transformers is required for local MiniLM embeddings") from exc
-            self._model = SentenceTransformer(self.model_name)
+            kwargs: dict[str, Any] = {"local_files_only": self.local_files_only}
+            cache_folder = self.cache_folder or os.getenv("SENTENCE_TRANSFORMERS_HOME")
+            if cache_folder:
+                kwargs["cache_folder"] = cache_folder
+            if self.device:
+                kwargs["device"] = self.device
+            try:
+                self._model = SentenceTransformer(self.model_name, **kwargs)
+            except Exception as exc:  # pragma: no cover
+                if self.local_files_only:
+                    raise EmbeddingError(
+                        f"Failed to load local embedding model '{self.model_name}'. "
+                        "The model must exist in the local cache because online HuggingFace access is disabled."
+                    ) from exc
+                raise
         return self._model
 
     def embed(self, texts: list[str]) -> list[list[float]]:

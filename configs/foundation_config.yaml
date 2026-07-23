@@ -2,20 +2,25 @@ project:
   name: SleepAgent
   module: data_foundation
 
+foundation:
+  mode: empty_foundation
+
+runtime:
+  allow_fixtures: false
+
 paths:
   raw_data_dir: data/raw
   foundation_dir: data/foundation
-  fixture_dir: data/fixtures
   reports_dir: reports
 
 inputs:
-  subject_table: data/fixtures/toy_subject_index.csv
-  eeg_features: data/fixtures/toy_eeg_features.csv
-  fmri_features: data/fixtures/toy_fmri_features.csv
-  dti_features: data/fixtures/toy_dti_features.csv
-  mri_features: data/fixtures/toy_mri_features.csv
-  scale_features: data/fixtures/toy_scale_features.csv
-  qc_summary: data/fixtures/toy_qc_summary.csv
+  subject_table: data/raw/subject_index.csv
+  eeg_features: data/raw/eeg_features.csv
+  fmri_features: data/raw/fmri_features.csv
+  dti_features: data/raw/dti_features.csv
+  mri_features: data/raw/mri_features.csv
+  scale_features: data/raw/scale_features.csv
+  qc_summary: data/raw/qc_summary.csv
 
 outputs:
   subject_index: data/foundation/subject_index.csv
@@ -24,7 +29,10 @@ outputs:
   data_dictionary: data/foundation/data_dictionary.yaml
   qc_summary: data/foundation/qc_summary.csv
   multimodal_master_table: data/foundation/multimodal_master_table.csv
-  report: reports/data_foundation_report.md
+  manifest: data/foundation/foundation_manifest.json
+  data_asset_registry: data/foundation/data_asset_registry.jsonl
+  update_history: data/foundation/foundation_update_history.jsonl
+  report: reports/phase0_foundation_report.md
 
 subject_id:
   column: subject_id

@@ -1,12 +1,13 @@
-from sleep_ai_scientist.common.config import config_path, load_config
+from sleep_ai_scientist.common.config import config_path
 from sleep_ai_scientist.grounding.data_profile import build_analysis_ready_profile, build_observed_profile
 from sleep_ai_scientist.grounding.evidence_extractor import extract_evidence
 from sleep_ai_scientist.grounding.literature_loader import load_literature
 from sleep_ai_scientist.grounding.variable_mapper import map_variables
+from tests.config_helpers import toy_grounding_config
 
 
 def test_variable_mapping_marks_unavailable_without_real_column():
-    config = load_config("configs/grounding_config.yaml")
+    config = toy_grounding_config()
     papers = load_literature("data/fixtures/toy_seed_papers.csv")
     evidence = extract_evidence(papers)
     ready = build_analysis_ready_profile(config, build_observed_profile(config))

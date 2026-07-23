@@ -1,47 +1,587 @@
 variables:
-- variable: slow_wave_density
-  modality: EEG
+- variable: session
+  modality: fMRI
   role: feature
-  description: EEG variable slow_wave_density
+  description: fMRI variable session
   unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
-  source_column: slow_wave_density
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: session
   allowed_values: null
   valid_range: null
-- variable: spindle_density
-  modality: EEG
+- variable: task
+  modality: fMRI
   role: feature
-  description: EEG variable spindle_density
+  description: fMRI variable task
   unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
-  source_column: spindle_density
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: task
   allowed_values: null
   valid_range: null
-- variable: delta_power
-  modality: EEG
-  role: feature
-  description: EEG variable delta_power
+- variable: qc_signal_GS_pre_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_GS_pre_mean
   unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
-  source_column: delta_power
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_GS_pre_mean
   allowed_values: null
   valid_range: null
-- variable: beta_power
-  modality: EEG
-  role: feature
-  description: EEG variable beta_power
+- variable: qc_signal_GS_post_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_GS_post_mean
   unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
-  source_column: beta_power
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_GS_post_mean
   allowed_values: null
   valid_range: null
-- variable: in_scanner_sleep_time
-  modality: EEG
+- variable: qc_signal_GS_mean_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_GS_mean_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_GS_mean_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_GS_pre_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_GS_pre_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_GS_pre_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_GS_post_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_GS_post_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_GS_post_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_GS_sigma_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_GS_sigma_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_GS_sigma_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_GS_sigma_reduction_percent
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_GS_sigma_reduction_percent
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_GS_sigma_reduction_percent
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_GS_pre_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_GS_pre_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_GS_pre_max
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_GS_post_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_GS_post_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_GS_post_max
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_CSF_pre_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_CSF_pre_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_CSF_pre_mean
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_CSF_post_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_CSF_post_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_CSF_post_mean
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_CSF_mean_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_CSF_mean_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_CSF_mean_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_CSF_pre_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_CSF_pre_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_CSF_pre_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_CSF_post_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_CSF_post_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_CSF_post_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_CSF_sigma_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_CSF_sigma_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_CSF_sigma_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_CSF_sigma_reduction_percent
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_CSF_sigma_reduction_percent
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_CSF_sigma_reduction_percent
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_CSF_pre_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_CSF_pre_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_CSF_pre_max
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_CSF_post_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_CSF_post_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_CSF_post_max
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_WM_pre_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_WM_pre_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_WM_pre_mean
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_WM_post_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_WM_post_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_WM_post_mean
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_WM_mean_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_WM_mean_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_WM_mean_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_WM_pre_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_WM_pre_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_WM_pre_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_WM_post_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_WM_post_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_WM_post_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_WM_sigma_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_WM_sigma_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_WM_sigma_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_WM_sigma_reduction_percent
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_WM_sigma_reduction_percent
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_WM_sigma_reduction_percent
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_WM_pre_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_WM_pre_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_WM_pre_max
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_WM_post_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_WM_post_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_WM_post_max
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_DVARS_pre_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_DVARS_pre_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_DVARS_pre_mean
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_DVARS_post_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_DVARS_post_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_DVARS_post_mean
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_DVARS_mean_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_DVARS_mean_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_DVARS_mean_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_DVARS_pre_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_DVARS_pre_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_DVARS_pre_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_DVARS_post_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_DVARS_post_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_DVARS_post_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_DVARS_sigma_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_DVARS_sigma_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_DVARS_sigma_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_DVARS_sigma_reduction_percent
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_DVARS_sigma_reduction_percent
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_DVARS_sigma_reduction_percent
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_DVARS_pre_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_DVARS_pre_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_DVARS_pre_max
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_DVARS_post_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_DVARS_post_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_DVARS_post_max
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_FD_pre_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_FD_pre_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_FD_pre_mean
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_FD_post_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_FD_post_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_FD_post_mean
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_FD_mean_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_FD_mean_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_FD_mean_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_FD_pre_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_FD_pre_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_FD_pre_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_FD_post_sigma
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_FD_post_sigma
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_FD_post_sigma
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_FD_sigma_delta
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_FD_sigma_delta
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_FD_sigma_delta
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_FD_sigma_reduction_percent
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_FD_sigma_reduction_percent
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_FD_sigma_reduction_percent
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_FD_pre_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_FD_pre_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_FD_pre_max
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_FD_post_max
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_FD_post_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_FD_post_max
+  allowed_values: null
+  valid_range: null
+- variable: mean_FD
+  modality: fMRI
   role: covariate
-  description: EEG variable in_scanner_sleep_time
+  description: fMRI variable mean_FD
   unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_eeg_features.csv
-  source_column: in_scanner_sleep_time
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: mean_FD
+  allowed_values: null
+  valid_range: null
+- variable: max_FD
+  modality: fMRI
+  role: feature
+  description: fMRI variable max_FD
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: max_FD
+  allowed_values: null
+  valid_range: null
+- variable: mean_DVARS
+  modality: fMRI
+  role: feature
+  description: fMRI variable mean_DVARS
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: mean_DVARS
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_post_DVARS_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_post_DVARS_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_post_DVARS_mean
+  allowed_values: null
+  valid_range: null
+- variable: qc_signal_post_GS_mean
+  modality: fMRI
+  role: qc
+  description: fMRI variable qc_signal_post_GS_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: qc_signal_post_GS_mean
+  allowed_values: null
+  valid_range: null
+- variable: percent_high_motion
+  modality: fMRI
+  role: feature
+  description: fMRI variable percent_high_motion
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: percent_high_motion
+  allowed_values: null
+  valid_range: null
+- variable: post_DVARS_std
+  modality: fMRI
+  role: feature
+  description: fMRI variable post_DVARS_std
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: post_DVARS_std
+  allowed_values: null
+  valid_range: null
+- variable: timefreq_TR
+  modality: fMRI
+  role: feature
+  description: fMRI variable timefreq_TR
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: timefreq_TR
+  allowed_values: null
+  valid_range: null
+- variable: timefreq_sampling_rate_hz
+  modality: fMRI
+  role: feature
+  description: fMRI variable timefreq_sampling_rate_hz
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: timefreq_sampling_rate_hz
+  allowed_values: null
+  valid_range: null
+- variable: timefreq_ALFF_0.01_0.08
+  modality: fMRI
+  role: feature
+  description: fMRI variable timefreq_ALFF_0.01_0.08
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: timefreq_ALFF_0.01_0.08
+  allowed_values: null
+  valid_range: null
+- variable: timefreq_fALFF_0.01_0.08_over_0.01_0.25
+  modality: fMRI
+  role: feature
+  description: fMRI variable timefreq_fALFF_0.01_0.08_over_0.01_0.25
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: timefreq_fALFF_0.01_0.08_over_0.01_0.25
+  allowed_values: null
+  valid_range: null
+- variable: global_signal_psd_power_mean
+  modality: fMRI
+  role: feature
+  description: fMRI variable global_signal_psd_power_mean
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: global_signal_psd_power_mean
+  allowed_values: null
+  valid_range: null
+- variable: global_signal_psd_power_max
+  modality: fMRI
+  role: feature
+  description: fMRI variable global_signal_psd_power_max
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: global_signal_psd_power_max
+  allowed_values: null
+  valid_range: null
+- variable: roi_fc_status
+  modality: fMRI
+  role: feature
+  description: fMRI variable roi_fc_status
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: roi_fc_status
+  allowed_values: null
+  valid_range: null
+- variable: thalamus_roi_voxels
+  modality: fMRI
+  role: feature
+  description: fMRI variable thalamus_roi_voxels
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: thalamus_roi_voxels
+  allowed_values: null
+  valid_range: null
+- variable: DMN_roi_voxels
+  modality: fMRI
+  role: feature
+  description: fMRI variable DMN_roi_voxels
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: DMN_roi_voxels
+  allowed_values: null
+  valid_range: null
+- variable: salience_roi_voxels
+  modality: fMRI
+  role: feature
+  description: fMRI variable salience_roi_voxels
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: salience_roi_voxels
+  allowed_values: null
+  valid_range: null
+- variable: frontoparietal_roi_voxels
+  modality: fMRI
+  role: feature
+  description: fMRI variable frontoparietal_roi_voxels
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: frontoparietal_roi_voxels
   allowed_values: null
   valid_range: null
 - variable: thalamus_DMN_FC
@@ -49,8 +589,53 @@ variables:
   role: feature
   description: fMRI variable thalamus_DMN_FC
   unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
   source_column: thalamus_DMN_FC
+  allowed_values: null
+  valid_range: null
+- variable: thalamus_salience_FC
+  modality: fMRI
+  role: feature
+  description: fMRI variable thalamus_salience_FC
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: thalamus_salience_FC
+  allowed_values: null
+  valid_range: null
+- variable: thalamus_frontoparietal_FC
+  modality: fMRI
+  role: feature
+  description: fMRI variable thalamus_frontoparietal_FC
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: thalamus_frontoparietal_FC
+  allowed_values: null
+  valid_range: null
+- variable: DMN_salience_FC
+  modality: fMRI
+  role: feature
+  description: fMRI variable DMN_salience_FC
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: DMN_salience_FC
+  allowed_values: null
+  valid_range: null
+- variable: DMN_frontoparietal_FC
+  modality: fMRI
+  role: feature
+  description: fMRI variable DMN_frontoparietal_FC
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: DMN_frontoparietal_FC
+  allowed_values: null
+  valid_range: null
+- variable: salience_frontoparietal_FC
+  modality: fMRI
+  role: feature
+  description: fMRI variable salience_frontoparietal_FC
+  unit: null
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: salience_frontoparietal_FC
   allowed_values: null
   valid_range: null
 - variable: DMN_FC
@@ -58,7 +643,7 @@ variables:
   role: feature
   description: fMRI variable DMN_FC
   unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
   source_column: DMN_FC
   allowed_values: null
   valid_range: null
@@ -67,106 +652,16 @@ variables:
   role: feature
   description: fMRI variable salience_FC
   unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
   source_column: salience_FC
   allowed_values: null
   valid_range: null
-- variable: mean_FD
+- variable: frontoparietal_FC
   modality: fMRI
-  role: covariate
-  description: fMRI variable mean_FD
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_fmri_features.csv
-  source_column: mean_FD
-  allowed_values: null
-  valid_range: null
-- variable: thalamic_radiation_FA
-  modality: DTI
   role: feature
-  description: DTI variable thalamic_radiation_FA
+  description: fMRI variable frontoparietal_FC
   unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv
-  source_column: thalamic_radiation_FA
-  allowed_values: null
-  valid_range: null
-- variable: cingulum_FA
-  modality: DTI
-  role: feature
-  description: DTI variable cingulum_FA
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv
-  source_column: cingulum_FA
-  allowed_values: null
-  valid_range: null
-- variable: FA
-  modality: DTI
-  role: feature
-  description: DTI variable FA
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_dti_features.csv
-  source_column: FA
-  allowed_values: null
-  valid_range: null
-- variable: thalamus_volume
-  modality: MRI
-  role: feature
-  description: MRI variable thalamus_volume
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_mri_features.csv
-  source_column: thalamus_volume
-  allowed_values: null
-  valid_range: null
-- variable: hippocampus_volume
-  modality: MRI
-  role: feature
-  description: MRI variable hippocampus_volume
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_mri_features.csv
-  source_column: hippocampus_volume
-  allowed_values: null
-  valid_range: null
-- variable: ISI
-  modality: scales
-  role: outcome
-  description: scales variable ISI
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
-  source_column: ISI
-  allowed_values: null
-  valid_range: null
-- variable: PSQI
-  modality: scales
-  role: outcome
-  description: scales variable PSQI
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
-  source_column: PSQI
-  allowed_values: null
-  valid_range: null
-- variable: anxiety_score
-  modality: scales
-  role: scale
-  description: scales variable anxiety_score
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
-  source_column: anxiety_score
-  allowed_values: null
-  valid_range: null
-- variable: depression_score
-  modality: scales
-  role: scale
-  description: scales variable depression_score
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
-  source_column: depression_score
-  allowed_values: null
-  valid_range: null
-- variable: medication
-  modality: scales
-  role: covariate
-  description: scales variable medication
-  unit: null
-  source_file: /home/zyb/Agent_skills/SleepAgent/data/fixtures/toy_scale_features.csv
-  source_column: medication
+  source_file: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv
+  source_column: frontoparietal_FC
   allowed_values: null
   valid_range: null

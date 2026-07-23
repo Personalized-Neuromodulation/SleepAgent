@@ -1,8 +1,9 @@
 discovery_loop:
   run_id: sleep_discovery_loop
-  max_iterations: 3
+  max_iterations: 2
   verbose: true
   snapshot_features: true
+  enable_foundation_grounding_refresh: false
   stop_conditions:
     no_active_hypotheses: true
     no_experimental_feedback: false
@@ -17,7 +18,20 @@ hypothesis:
 experiment:
   config_path: configs/experiment_config.yaml
 
+foundation:
+  config_path: configs/foundation_config.yaml
+
+literature:
+  enabled: true
+  config_path: configs/literature_library_config.yaml
+  query_config_path: configs/literature_queries.yaml
+  library_version: sleep_literature_library_v1
+
+grounding:
+  config_path: configs/grounding_config.yaml
+  corpus_version: sleepagent_grounding_data_constrained_v1
+
 paths:
   loop_output_dir: outputs/discovery_loop
   iteration_state: outputs/discovery_loop/loop_state.json
-  iteration_report: reports/discovery_loop_report.md
+  iteration_report: reports/phase4_discovery_loop_report.md

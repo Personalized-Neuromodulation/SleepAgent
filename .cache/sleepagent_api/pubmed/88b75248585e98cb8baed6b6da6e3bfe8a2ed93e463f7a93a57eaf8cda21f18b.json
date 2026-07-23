@@ -1,0 +1,86 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "60",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42476764",
+      "42465729",
+      "42317125",
+      "42226471",
+      "42127602",
+      "42078421",
+      "42055676",
+      "41854820",
+      "41825747",
+      "41593837",
+      "41442069",
+      "41432849",
+      "40719861",
+      "40384657",
+      "40300399",
+      "40201187",
+      "39407094",
+      "39321409",
+      "39303180",
+      "39110927",
+      "38728202",
+      "38240213",
+      "38185848",
+      "37971828",
+      "37743764",
+      "36869598",
+      "36528860",
+      "36270890",
+      "37839009",
+      "35874152",
+      "35821379",
+      "33729109",
+      "33262670",
+      "32830221",
+      "32164035",
+      "32123914",
+      "32027695",
+      "31336598",
+      "31129280",
+      "31104028",
+      "30897041",
+      "30611726",
+      "30421546",
+      "29866443",
+      "29509806",
+      "29448003",
+      "29161673",
+      "29079677",
+      "29031764",
+      "28980102"
+    ],
+    "translationset": [
+      {
+        "from": "multiple",
+        "to": "\"multiple\"[All Fields] OR \"multiples\"[All Fields]"
+      },
+      {
+        "from": "comparison",
+        "to": "\"comparison\"[All Fields] OR \"comparisons\"[All Fields]"
+      },
+      {
+        "from": "correction",
+        "to": "\"correct\"[All Fields] OR \"correctability\"[All Fields] OR \"correctable\"[All Fields] OR \"corrected\"[All Fields] OR \"correctible\"[All Fields] OR \"correcting\"[All Fields] OR \"correction\"[All Fields] OR \"corrections\"[All Fields] OR \"corrective\"[All Fields] OR \"correctives\"[All Fields] OR \"correctness\"[All Fields] OR \"corrects\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"multiple\"[All Fields] OR \"multiples\"[All Fields]) AND (\"comparison\"[All Fields] OR \"comparisons\"[All Fields]) AND (\"correct\"[All Fields] OR \"correctability\"[All Fields] OR \"correctable\"[All Fields] OR \"corrected\"[All Fields] OR \"correctible\"[All Fields] OR \"correcting\"[All Fields] OR \"correction\"[All Fields] OR \"corrections\"[All Fields] OR \"corrective\"[All Fields] OR \"correctives\"[All Fields] OR \"correctness\"[All Fields] OR \"corrects\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])"
+  }
+}

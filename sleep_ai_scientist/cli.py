@@ -29,7 +29,7 @@ def build_parser() -> argparse.ArgumentParser:
     literature_sub = literature.add_subparsers(dest="command", required=True)
     item = literature_sub.add_parser("build")
     item.add_argument("--config", default="configs/literature_library_config.yaml")
-    item.add_argument("--query-config", default="configs/sleep_literature_queries.yaml")
+    item.add_argument("--query-config", default="configs/literature_queries.yaml")
     item.add_argument("--library-version", default="sleep_literature_library_v1")
     item.add_argument("--backend", default="sqlite")
     item.add_argument("--enable-api", action="store_true")

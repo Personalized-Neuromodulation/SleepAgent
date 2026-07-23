@@ -1,0 +1,35 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "11",
+    "retmax": "11",
+    "retstart": "0",
+    "idlist": [
+      "40774248",
+      "40397158",
+      "37117013",
+      "36998723",
+      "35638268",
+      "34270948",
+      "33867927",
+      "33067363",
+      "31761703",
+      "30297727",
+      "24760861"
+    ],
+    "translationset": [
+      {
+        "from": "optogenetic",
+        "to": "\"optogenetically\"[All Fields] OR \"optogenetics\"[MeSH Terms] OR \"optogenetics\"[All Fields] OR \"optogenetic\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"optogenetically\"[All Fields] OR \"optogenetics\"[MeSH Terms] OR \"optogenetics\"[All Fields] OR \"optogenetic\"[All Fields]) AND \"VLPO\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])"
+  }
+}

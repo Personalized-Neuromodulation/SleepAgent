@@ -41,6 +41,11 @@ def _write_api_outputs(config: dict[str, Any], api_records: list[LiteratureRecor
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
+def _log_progress(message: str, **fields: Any) -> None:
+    suffix = " ".join(f"{key}={value}" for key, value in fields.items())
+    print(f"[literature_build] {message}{(' ' + suffix) if suffix else ''}", flush=True)
+
+
 def _persist_records(session, records: list[LiteratureRecord], queries, query_set_version: str, retrieval_channel: str = "unknown") -> list[Any]:  # type: ignore[no-untyped-def]
     query_by_text = {query.query_text: query for query in queries}
     results = []
@@ -97,7 +102,7 @@ def _paper_to_record(paper: Paper) -> LiteratureRecord:
 def run_literature_build(
     config_path_value: str | Path = "configs/literature_library_config.yaml",
     *,
-    query_config_path: str | Path = "configs/sleep_literature_queries.yaml",
+    query_config_path: str | Path = "configs/literature_queries.yaml",
     library_version: str | None = None,
     backend: str | None = None,
     session=None,
@@ -112,7 +117,7 @@ def run_literature_build(
         config.setdefault("api", {})["enabled"] = api_enabled
     root = Path(config["_project_root"])
     query_config = resolve_path(query_config_path, root)
-    query_payload, queries = load_query_set(query_config)
+    query_payload, queries = load_query_set(query_config, scope="library")
     query_set_version = query_payload.get("query_set", {}).get("version", "")
     library_version = library_version or config.get("project", {}).get("library_version", "sleep_literature_library_v1")
 
@@ -124,7 +129,7 @@ def run_literature_build(
         run_repo = RunRepository()
         run = run_repo.create_run(session_obj, "literature_build", str(config_path_value), str(query_config_path), library_version)
         warnings: list[str] = []
-        api_config = apply_query_config(config, query_config)
+        api_config = apply_query_config(config, query_config, query_scope="library")
         api_papers: list[LiteratureRecord] = []
         api_summary: dict[str, Any] = {"enabled": False, "warnings": []}
         if api_config.get("api", {}).get("enabled", False):
@@ -134,39 +139,75 @@ def run_literature_build(
                 warnings.append(str(exc))
                 if not api_config.get("api", {}).get("fail_open", True):
                     raise
+        _log_progress("write_api_outputs_start", count=len(api_papers))
         _write_api_outputs(config, api_papers)
+        _log_progress("write_api_outputs_done", count=len(api_papers))
         journal_targeted_records: list[LiteratureRecord] = []
         if enable_journal_targeted or config.get("journal_targeted", {}).get("enabled", False):
+            _log_progress("journal_targeted_start")
             journal_targeted_records = retrieve_journal_targeted_records(config)
             write_journal_targeted_outputs(config, journal_targeted_records)
+            _log_progress("journal_targeted_done", count=len(journal_targeted_records))
+        _log_progress("write_queries_start", count=len(queries))
         write_queries_to_db(session_obj, queries)
+        _log_progress("write_queries_done", count=len(queries))
+        _log_progress("persist_api_records_start", count=len(api_papers))
         api_results = _persist_records(session_obj, api_papers, queries, query_set_version, "api_broad")
+        _log_progress("persist_api_records_done", count=len(api_results))
+        _log_progress("persist_journal_targeted_records_start", count=len(journal_targeted_records))
         targeted_results = _persist_records(session_obj, journal_targeted_records, queries, query_set_version, "journal_targeted")
+        _log_progress("persist_journal_targeted_records_done", count=len(targeted_results))
+        _log_progress("export_deduplication_start")
         dedup_paths = export_deduplication_artifacts(
             session_obj,
             _path(config, "deduplication_report"),
             config_path(config, "deduplication_summary", "outputs/literature/deduplication_summary.json"),
             config_path(config, "deduplication_manual_review", "outputs/literature/deduplication_manual_review.csv"),
         )
+        _log_progress("export_deduplication_done", duplicate_groups=dedup_paths["summary"]["merged_duplicate_count"])
+        _log_progress("export_registry_start")
         export_literature_registry_csv_jsonl(session_obj, _path(config, "registry_csv"), _path(config, "registry_jsonl"))
+        _log_progress("export_registry_done")
+        _log_progress("load_registry_start")
         registry = session_obj.query(Paper).all()
+        _log_progress("load_registry_done", count=len(registry))
+        _log_progress("export_summaries_start")
         query_summary = export_query_summary(session_obj, _path(config, "query_summary"))
         provider_summary = export_provider_summary(session_obj, _path(config, "provider_summary"))
+        _log_progress("export_summaries_done")
         query_groups = list(query_payload.get("queries", {}).keys())
+        _log_progress("coverage_audit_start", registry_records=len(registry))
         coverage = build_coverage_audit([_paper_to_record(paper) for paper in registry], query_groups, dedup_paths["summary"]["merged_duplicate_count"])
         coverage_csv = config_path(config, "query_coverage_audit", "outputs/literature/query_coverage_audit.csv")
         coverage_json = config_path(config, "coverage_audit", "outputs/literature/coverage_audit.json")
         write_coverage_audit(coverage, coverage_csv, coverage_json)
+        _log_progress("coverage_audit_done")
         registry_records = [_paper_to_record(paper) for paper in registry]
+        _log_progress("anchor_papers_start", registry_records=len(registry_records))
         anchors = select_anchor_papers(registry_records, query_groups)
         anchor_path = config_path(config, "anchor_papers", "outputs/literature/anchor_papers.csv")
         write_anchor_papers(anchor_path, anchors)
+        _log_progress("anchor_papers_done", count=len(anchors))
+        _log_progress("query_expansion_start")
         expansion = generate_query_expansion_candidates(registry_records, [query.query_text for query in queries])
         expansion_path = config_path(config, "query_expansion_candidates", "outputs/literature/query_expansion_candidates.csv")
         write_query_expansion_candidates(expansion_path, expansion)
+        _log_progress("query_expansion_done", count=len(expansion))
         rag_result = None
-        if enable_rag_index or config.get("rag_index", {}).get("enabled", False):
-            rag_result = build_rag_index(session_obj, config_path(config, "rag_index_jsonl", "outputs/literature/rag_abstract_chunks.jsonl"))
+        embedding_cfg = _load_embedding_config(config)
+        if enable_rag_index or config.get("rag_index", {}).get("enabled", False) or bool(embedding_cfg.get("enabled", False)):
+            _log_progress("rag_index_start", embedding_enabled=bool(embedding_cfg.get("enabled", False)))
+            rag_result = build_rag_index(
+                session_obj,
+                config_path(config, "rag_index_jsonl", "outputs/literature/rag_abstract_chunks.jsonl"),
+                embedding_config=embedding_cfg,
+            )
+            _log_progress(
+                "rag_index_done",
+                chunks=rag_result.get("chunk_count", 0) if rag_result else 0,
+                embedding_vectors=rag_result.get("embedding", {}).get("vector_count", 0) if rag_result else 0,
+            )
+        _log_progress("corpus_version_start", library_version=library_version)
         corpus_repo = CorpusRepository()
         corpus_repo.create_or_update_corpus_version(
             session_obj,
@@ -179,6 +220,7 @@ def run_literature_build(
             report_path=str(_path(config, "build_report")),
             notes="Sleep literature library build",
         )
+        _log_progress("corpus_version_done", library_version=library_version)
         paths = {**config.get("paths", {}), "coverage_audit": str(coverage_json), "anchor_papers": str(anchor_path), "query_expansion_candidates": str(expansion_path)}
         manifest = build_library_manifest(
             library_version,
@@ -192,7 +234,9 @@ def run_literature_build(
             },
             "Sleep Literature Library v1",
         )
+        _log_progress("manifest_start", path=_path(config, "manifest"))
         write_library_manifest(_path(config, "manifest"), manifest)
+        _log_progress("manifest_done", path=_path(config, "manifest"))
         summary = {
             "library_version": library_version,
             "query_set_version": query_set_version,
@@ -210,7 +254,9 @@ def run_literature_build(
             "manifest": str(_path(config, "manifest")),
             "warnings": warnings + api_summary.get("warnings", []),
         }
+        _log_progress("report_start", path=_path(config, "build_report"))
         write_library_report(_path(config, "build_report"), build_library_report(summary))
+        _log_progress("report_done", path=_path(config, "build_report"))
         run_repo.finish_run(session_obj, run.run_id, "completed")
         summary["run_id"] = run.run_id
         return summary
@@ -221,3 +267,8 @@ def run_literature_build(
         result = _run(session_obj)
     engine.dispose()
     return result
+
+
+def _load_embedding_config(config: dict[str, Any]) -> dict[str, Any]:
+    embedding_cfg = config.get("embedding", {})
+    return dict(embedding_cfg) if isinstance(embedding_cfg, dict) else {}

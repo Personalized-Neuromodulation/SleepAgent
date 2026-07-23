@@ -4,51 +4,83 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
+if [[ -f .env ]]; then
+  set -a
+  source .env
+  set +a
+fi
+
 export SLEEPAGENT_SQLITE_PATH="$ROOT_DIR/data/literature/sleep_literature.db"
 export PYTHONUNBUFFERED=1
 export SLEEPAGENT_API_VERBOSE=1
+LITERATURE_DB_BUILD_LOG="logs/literature_db_build_start.log"
 
-mkdir -p data/literature data/knowledge_sources outputs/grounding outputs/knowledge_sources outputs/profiles reports
+mkdir -p data/literature data/knowledge_sources outputs/grounding outputs/knowledge_sources outputs/profiles reports logs
 
-echo "[1/6] Build no-real-data foundation"
+echo "API environment preflight"
+echo "  NCBI_EMAIL: $([[ -n "${NCBI_EMAIL:-}" ]] && echo SET || echo MISSING)"
+echo "  NCBI_TOOL: ${NCBI_TOOL:-SleepAgent}"
+echo "  SEMANTIC_SCHOLAR_API_KEY: $([[ -n "${SEMANTIC_SCHOLAR_API_KEY:-}" ]] && echo SET || echo MISSING)"
+if [[ -z "${NCBI_EMAIL:-}" ]]; then
+  echo "Missing NCBI_EMAIL. Add it to .env or export it before running this script." >&2
+  exit 2
+fi
+
+echo "[1/6] Build foundation"
 python -m sleep_ai_scientist.cli foundation build \
-  --config configs/foundation_no_real_data.yaml
+  --config configs/foundation_config.yaml
 
-echo "[2/6] Run online grounding without fixture fallback"
+echo "[2/6] Build knowledge source registry"
+python -m sleep_ai_scientist.cli knowledge build \
+  --config configs/knowledge_sources_config.yaml \
+  --backend sqlite
+
+echo "[3/6] Build online sleep literature SQLite DB"
+{
+  echo "[literature_db_build_start] timestamp=$(date -Iseconds)"
+  echo "[literature_db_build_start] step=[3/6] Build online sleep literature SQLite DB"
+  echo "[literature_db_build_start] database=data/literature/sleep_literature.db"
+  echo "[literature_db_build_start] config=configs/literature_library_config.yaml"
+  echo "[literature_db_build_start] query_config=configs/literature_queries.yaml"
+  echo "[literature_db_build_start] library_version=sleep_literature_library_v1_online"
+} | tee -a "$LITERATURE_DB_BUILD_LOG"
+python -m sleep_ai_scientist.cli literature build \
+  --config configs/literature_library_config.yaml \
+  --query-config configs/literature_queries.yaml \
+  --library-version sleep_literature_library_v1_online \
+  --backend sqlite \
+  --enable-api \
+  --enable-rag-index
+
+echo "[4/6] Run grounding from unified literature DB RAG"
 python -u - <<'PY'
 import json
-from sleep_ai_scientist.common.config import load_config
-from sleep_ai_scientist.api.literature_client import apply_query_config
-from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
-
-config = load_config("configs/grounding_online_no_fixtures.yaml")
-config = apply_query_config(config, "configs/literature_queries.yaml")
-api_cfg = config.setdefault("api", {})
-api_cfg["enabled"] = True
-api_cfg["fail_open"] = True
-api_cfg["verbose"] = True
-api_cfg.setdefault("providers", {}).setdefault("openalex", {})["min_interval_seconds"] = 5
-tmp_config = "/tmp/sleepagent_grounding_online_no_fixtures.yaml"
+from pathlib import Path
 
 import yaml
-from pathlib import Path
+
+from sleep_ai_scientist.common.config import load_config
+from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
+
+config = load_config("configs/grounding_config.yaml")
+api_cfg = config.setdefault("api", {})
+api_cfg["enabled"] = False
+api_cfg["fail_open"] = False
+config.setdefault("retrieval", {})["top_k"] = int(config.get("retrieval", {}).get("top_k", 20))
+tmp_config = "/tmp/sleepagent_grounding_from_db_rag.yaml"
+
 payload = dict(config)
 payload.pop("_config_path", None)
 payload.pop("_project_root", None)
 Path(tmp_config).write_text(yaml.safe_dump(payload, sort_keys=False), encoding="utf-8")
 
-providers = [
-    name
-    for name, provider_cfg in api_cfg.get("providers", {}).items()
-    if provider_cfg.get("enabled", False)
-]
 print(
     json.dumps(
         {
             "grounding_config": tmp_config,
-            "providers": providers,
-            "query_count": len(api_cfg.get("search_queries", [])),
-            "max_results_per_query": api_cfg.get("max_results_per_query"),
+            "source": "literature_db_rag",
+            "database": "data/literature/sleep_literature.db",
+            "top_k": config.get("retrieval", {}).get("top_k"),
             "allow_fixtures": config.get("runtime", {}).get("allow_fixtures"),
             "output_grounding_dir": config.get("paths", {}).get("output_grounding_dir"),
         },
@@ -61,23 +93,10 @@ print(
 result = run_grounding_pipeline(
     tmp_config,
     query_config_path=None,
-    corpus_version="sleepagent_grounding_online_no_real_data_v1",
+    corpus_version="sleepagent_grounding_db_rag_v1",
 )
 print(json.dumps(result, ensure_ascii=False, indent=2))
 PY
-
-echo "[3/6] Build knowledge source registry"
-python -m sleep_ai_scientist.cli knowledge build \
-  --config configs/knowledge_sources_config.yaml \
-  --backend sqlite
-
-echo "[4/6] Build online sleep literature SQLite DB"
-python -m sleep_ai_scientist.cli literature build \
-  --config configs/literature_library_config.yaml \
-  --query-config configs/sleep_literature_queries.yaml \
-  --library-version sleep_literature_library_v1_online_no_real_data \
-  --backend sqlite \
-  --enable-api
 
 echo "[5/6] Validate core grounding outputs, literature DB, and knowledge sources"
 python - <<'PY'
@@ -107,8 +126,8 @@ final_count = int(api_summary.get("final_literature_count", 0) or 0)
 node_count = len(graph.get("nodes", []))
 edge_count = len(graph.get("edges", []))
 
-if foundation_manifest.get("foundation_mode") != "no_real_data":
-    raise SystemExit("Foundation manifest is not no_real_data mode")
+if foundation_manifest.get("foundation_mode") != "empty_foundation":
+    raise SystemExit("Foundation manifest mode is not empty_foundation")
 if raw_count <= 0:
     raise SystemExit("Online API retrieval returned zero raw records")
 if final_count <= 0:
@@ -123,6 +142,8 @@ if any(str(item.get("paper_id", "")).startswith("toy") for item in evidence):
 with sqlite3.connect(db_path) as conn:
     db_counts = {
         "papers": conn.execute("select count(*) from papers").fetchone()[0],
+        "rag_chunks": conn.execute("select count(*) from rag_chunks").fetchone()[0],
+        "rag_chunk_embeddings": conn.execute("select count(*) from rag_chunks where embedding_json is not null").fetchone()[0],
         "queries": conn.execute("select count(*) from queries").fetchone()[0],
         "query_results": conn.execute("select count(*) from query_results").fetchone()[0],
         "corpus_versions": conn.execute("select count(*) from corpus_versions").fetchone()[0],
@@ -150,8 +171,8 @@ print({
 })
 PY
 
-echo "[6/6] Run targeted no-real-data foundation/grounding, DB, and knowledge source tests"
-python -m pytest tests/test_no_real_data_foundation_grounding.py tests/test_literature_db_generation.py tests/test_knowledge_source_generation.py tests/test_knowledge_sources_db_integration.py
+echo "[6/6] Run targeted foundation/grounding, DB, and knowledge source tests"
+python -m pytest tests/test_empty_foundation_grounding.py tests/test_literature_db_generation.py tests/test_knowledge_source_generation.py tests/test_knowledge_sources_db_integration.py
 
 echo "Done. Core outputs:"
 echo "  outputs/grounding/evidence_table.json"

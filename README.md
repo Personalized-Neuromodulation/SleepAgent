@@ -10,10 +10,10 @@ Phase 1 reads Data Foundation outputs, retrieves literature through online API/R
 python -m sleep_ai_scientist.cli grounding build --config configs/grounding_config.yaml
 ```
 
-For the no-real-data online RAG smoke test:
+For the foundation online RAG smoke test:
 
 ```bash
-bash scripts/run_foundation_grounding_no_real_data_online.sh
+bash scripts/run_foundation_grounding_online.sh
 ```
 
 Main outputs:

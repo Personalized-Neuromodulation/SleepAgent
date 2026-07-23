@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "130",
+    "retmax": "20",
+    "retstart": "0",
+    "idlist": [
+      "42451333",
+      "42434996",
+      "42404114",
+      "42335492",
+      "42318094",
+      "42263875",
+      "42253803",
+      "42133008",
+      "42096869",
+      "42081294",
+      "42064550",
+      "42064174",
+      "42031015",
+      "41925207",
+      "41835066",
+      "41821256",
+      "41782052",
+      "41768370",
+      "41765604",
+      "41752801"
+    ],
+    "translationset": [
+      {
+        "from": "sleep quality",
+        "to": "\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"PSQI\"[All Fields] AND (\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields])"
+  }
+}

@@ -9,6 +9,15 @@ features:
   qc_status: ''
   approved: false
   role: feature
+- feature_name: spindle_density
+  modality: EEG
+  source_file: literature_grounding
+  source_column: spindle_density
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
 - feature_name: thalamus_DMN_FC
   modality: EEG-fMRI
   source_file: literature_grounding
@@ -18,10 +27,64 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: DMN_FC
-  modality: fMRI
+- feature_name: spindle
+  modality: electrophysiology
   source_file: literature_grounding
-  source_column: DMN_FC
+  source_column: spindle
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: slow oscillation
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: slow oscillation
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: FA
+  modality: DTI
+  source_file: literature_grounding
+  source_column: FA
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: spindle activity
+  modality: EEG
+  source_file: literature_grounding
+  source_column: spindle activity
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: REM latency
+  modality: PSG
+  source_file: literature_grounding
+  source_column: REM latency
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: age
+  modality: Method
+  source_file: literature_grounding
+  source_column: age
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: sigma power
+  modality: EEG
+  source_file: literature_grounding
+  source_column: sigma power
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -31,6 +94,42 @@ features:
   modality: Scale
   source_file: literature_grounding
   source_column: ISI
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: cortical neuron
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: cortical neuron
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: slow-wave activity
+  modality: EEG
+  source_file: literature_grounding
+  source_column: slow-wave activity
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: functional connectivity
+  modality: fMRI
+  source_file: literature_grounding
+  source_column: functional connectivity
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: hippocampus_volume
+  modality: MRI
+  source_file: literature_grounding
+  source_column: hippocampus_volume
   missing_rate: null
   n_available: null
   qc_status: ''

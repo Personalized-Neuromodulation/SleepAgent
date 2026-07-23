@@ -1,0 +1,49 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "25",
+    "retmax": "25",
+    "retstart": "0",
+    "idlist": [
+      "40417998",
+      "40232848",
+      "39419462",
+      "37487739",
+      "36892930",
+      "35883583",
+      "34504120",
+      "33986675",
+      "33664133",
+      "33188746",
+      "32084397",
+      "31417341",
+      "30843520",
+      "30689084",
+      "30348769",
+      "30282729",
+      "30269865",
+      "30149182",
+      "29735555",
+      "28386207",
+      "28235898",
+      "27546576",
+      "27227054",
+      "26797244",
+      "26190981"
+    ],
+    "translationset": [
+      {
+        "from": "DREADD",
+        "to": "\"dreadd\"[All Fields] OR \"dreadds\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"dreadd\"[All Fields] OR \"dreadds\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND \"wake\"[All Fields]"
+  }
+}

@@ -7,6 +7,7 @@ from sleep_ai_scientist.common.io import read_csv, read_yaml
 from sleep_ai_scientist.foundation.foundation_pipeline import run_foundation_pipeline
 from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
 from tests.api_test_utils import fake_online_literature_search
+from tests.config_helpers import toy_foundation_config_path
 
 
 def _tmp_config(tmp_path: Path) -> Path:
@@ -17,8 +18,10 @@ def _tmp_config(tmp_path: Path) -> Path:
         {
             "output_grounding_dir": str(tmp_path / "grounding"),
             "output_profiles_dir": str(tmp_path / "profiles"),
-            "report_path": str(tmp_path / "reports" / "grounding_report.md"),
-            "phase1_report_path": str(tmp_path / "reports" / "phase1_grounding_report.md"),
+            "feature_registry": str(tmp_path / "foundation" / "feature_registry.csv"),
+            "approved_variables": str(tmp_path / "foundation" / "approved_variables.yaml"),
+            "multimodal_master_table": str(tmp_path / "foundation" / "multimodal_master_table.csv"),
+            "report_path": str(tmp_path / "reports" / "phase1_grounding_report.md"),
             "literature_registry_csv": str(tmp_path / "literature_registry.csv"),
             "literature_registry_jsonl": str(tmp_path / "literature_registry.jsonl"),
             "literature_deduplication_report": str(tmp_path / "literature_deduplication_report.csv"),
@@ -32,7 +35,7 @@ def _tmp_config(tmp_path: Path) -> Path:
 
 def test_grounding_functional_with_mock_online_api(monkeypatch, tmp_path):
     monkeypatch.setattr("sleep_ai_scientist.grounding.grounding_pipeline.search_literature_apis", fake_online_literature_search)
-    run_foundation_pipeline("configs/foundation_config.yaml")
+    run_foundation_pipeline(toy_foundation_config_path(tmp_path))
     result = run_grounding_pipeline(_tmp_config(tmp_path))
     required = [
         tmp_path / "grounding" / "evidence_table.csv",
@@ -45,7 +48,7 @@ def test_grounding_functional_with_mock_online_api(monkeypatch, tmp_path):
         tmp_path / "profiles" / "theoretical_profile.yaml",
         tmp_path / "profiles" / "observed_profile.yaml",
         tmp_path / "profiles" / "analysis_ready_profile.yaml",
-        tmp_path / "reports" / "grounding_report.md",
+        tmp_path / "reports" / "phase1_grounding_report.md",
     ]
     for path in required:
         assert Path(path).exists(), path
@@ -59,6 +62,6 @@ def test_grounding_functional_with_mock_online_api(monkeypatch, tmp_path):
     unavailable = [item for item in mapping["mappings"] if item["mapping_status"] == "unavailable"]
     assert all(not item.get("approved_data_features") for item in unavailable)
     ready = read_yaml(tmp_path / "profiles" / "analysis_ready_profile.yaml")
-    registry_vars = {row["feature_name"] for row in read_csv(Path("data/foundation/feature_registry.csv"))}
+    registry_vars = {row["feature_name"] for row in read_csv(tmp_path / "foundation" / "feature_registry.csv")}
     assert {item["feature_name"] for item in ready["features"]} <= registry_vars
     assert result["api_summary"]["enabled"] is True

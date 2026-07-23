@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Any
 
 from sleep_ai_scientist.common.utils import stable_id
-from sleep_ai_scientist.hypothesis.agents.llm import build_llm_client, llm_enabled, load_prompt, normalize_llm_config
+from sleep_ai_scientist.llm.client import build_llm_client, llm_enabled, load_prompt, normalize_llm_config
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
 from sleep_ai_scientist.hypothesis.agents.state import HypothesisSessionState
 from sleep_ai_scientist.hypothesis.agents.tournament import Glicko2State, compute_glicko2_update

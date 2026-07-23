@@ -1,0 +1,39 @@
+{
+  "compression": "llm_grounding_context_v1",
+  "source_evidence_count": 412,
+  "selected_evidence_count": 220,
+  "source_graph_nodes": 471,
+  "source_graph_edges": 1694,
+  "selected_graph_nodes": 471,
+  "selected_graph_edges": 1500,
+  "selected_evidence_contexts": {
+    "human_neuroimaging": 54,
+    "human_general_sleep": 69,
+    "animal_mechanistic": 92,
+    "human_clinical": 5
+  },
+  "selected_directions": {
+    "support": 95,
+    "unclear": 125
+  },
+  "selected_mechanisms": {
+    "thalamocortical coupling": 42,
+    "white matter integrity": 24,
+    "confound / methodological limitation": 5,
+    "slow-wave generation": 25,
+    "spindle generation": 42,
+    "insomnia severity": 6,
+    "thalamic_reticular_spindle": 41,
+    "REM_NREM_switching": 24,
+    "cortical_slow_oscillation": 8,
+    "default mode network dysregulation": 1,
+    "limbic structural vulnerability": 2
+  },
+  "config": {
+    "enabled": true,
+    "max_total_evidence": 500,
+    "max_evidence_per_mechanism": 50,
+    "max_unclear_fraction": 0.25,
+    "max_graph_edges": 2000
+  }
+}

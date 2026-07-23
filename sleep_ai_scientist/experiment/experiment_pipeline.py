@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from sleep_ai_scientist.common.config import resolve_path
 from sleep_ai_scientist.common.io import read_yaml, write_json
 from sleep_ai_scientist.data_processing.fmri_local_split import run_fmri_local_split
 from sleep_ai_scientist.experiment.agents.experiment_design_agent import ExperimentDesignAgent
@@ -20,6 +21,7 @@ def run_experiment_pipeline(config_path_value: str | Path = "configs/experiment_
     config_path = Path(config_path_value)
     config = read_yaml(config_path)
     experiment_config = config.get("experiment", {})
+    experiment_config = _with_shared_llm_config(config, experiment_config)
     paths = config.get("paths", {})
     verbose = bool(experiment_config.get("verbose", True))
 
@@ -49,6 +51,9 @@ def run_experiment_pipeline(config_path_value: str | Path = "configs/experiment_
 
     bundles: list[ExperimentResultBundle] = []
     feedback_records: list[dict[str, Any]] = []
+    extracted_feature_tables: list[dict[str, Any]] = []
+    feature_profile_paths: list[str] = []
+    merged_feature_paths: list[str] = []
     for idx, plan in enumerate(plans, start=1):
         data_processing_result = None
         if bool(config.get("data_processing", {}).get("enabled", False)):
@@ -71,6 +76,11 @@ def run_experiment_pipeline(config_path_value: str | Path = "configs/experiment_
         if bool(config.get("feature_extraction", {}).get("enabled", False)):
             _log(verbose, f"plan {idx}/{len(plans)} feature extraction plan_id={plan.plan_id}")
             feature_result = run_feature_extraction(config.get("feature_extraction", {}), plan)
+            extracted_feature_tables.extend([table.model_dump(mode="json") for table in feature_result.tables])
+            if feature_result.profile_path:
+                feature_profile_paths.append(feature_result.profile_path)
+            if feature_result.merged_features_path:
+                merged_feature_paths.append(feature_result.merged_features_path)
             data_profile = load_data_profile(feature_result.profile_path)
             plan = TestabilityPrecheck().run(plan, data_profile)
             _log(
@@ -112,7 +122,35 @@ def run_experiment_pipeline(config_path_value: str | Path = "configs/experiment_
         "results": str(experiment_results_path),
         "experimental_feedback": str(feedback_path),
         "report": str(report_path),
+        "feature_tables": extracted_feature_tables,
+        "feature_profiles": feature_profile_paths,
+        "merged_feature_tables": merged_feature_paths,
     }
+
+
+def _with_shared_llm_config(config: dict[str, Any], experiment_config: dict[str, Any]) -> dict[str, Any]:
+    paths = config.get("paths", {})
+    llm_config_path = paths.get("llm_config")
+    if not llm_config_path:
+        return experiment_config
+    path = resolve_path(llm_config_path)
+    if not path.exists():
+        return experiment_config
+    shared = read_yaml(path)
+    provider = str(shared.get("llm_provider", "")).strip().lower()
+    if provider == "ollama":
+        selected = dict(shared.get("ollama", {}))
+        selected.setdefault("provider", "ollama")
+    elif provider == "online":
+        selected = dict(shared.get("online_llm", {}))
+        selected.setdefault("provider", "online")
+    else:
+        selected = dict(shared.get("llm", {}))
+    if not selected:
+        return experiment_config
+    merged = dict(experiment_config)
+    merged["llm"] = selected
+    return merged
 
 
 def _write_report(path: Path, bundles: list[ExperimentResultBundle], feedback: list[dict[str, Any]]) -> None:

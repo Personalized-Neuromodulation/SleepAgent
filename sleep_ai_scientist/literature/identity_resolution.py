@@ -9,7 +9,7 @@ from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 
-from sqlalchemy import select
+from sqlalchemy import or_, select
 from sqlalchemy.orm import Session
 
 from sleep_ai_scientist.common.io import ensure_parent, write_csv, write_json
@@ -59,7 +59,8 @@ def normalize_pmcid(pmcid: str | int | None) -> str:
 def normalize_title(title: str | None) -> str:
     value = str(title or "").lower()
     value = re.sub(r"<[^>]+>", " ", value)
-    value = re.sub(r"[^a-z0-9]+", " ", value)
+    value = re.sub(r"_+", " ", value)
+    value = re.sub(r"[^\w]+", " ", value, flags=re.UNICODE)
     return re.sub(r"\s+", " ", value).strip()
 
 
@@ -298,6 +299,16 @@ def _match_by_identifiers(session: Session, fp: dict[str, Any]) -> tuple[Paper |
     return None, "", 0.0
 
 
+def _match_by_canonical_id(session: Session, record: LiteratureRecord) -> tuple[Paper | None, str, float]:
+    canonical_id = assign_canonical_paper_id(record)
+    if not canonical_id:
+        return None, "", 0.0
+    paper = session.scalar(select(Paper).where(or_(Paper.canonical_paper_id == canonical_id, Paper.paper_id == canonical_id)))
+    if paper:
+        return paper, "canonical_paper_id", 1.0
+    return None, "", 0.0
+
+
 def _match_by_title(session: Session, record: LiteratureRecord, fp: dict[str, Any]) -> tuple[Paper | None, str, float, dict[str, Any] | None]:
     if fp["title_hash"]:
         exact = session.scalar(select(Paper).where(Paper.title_hash == fp["title_hash"]))
@@ -353,6 +364,9 @@ def _manual_review_row(existing: Paper, incoming: LiteratureRecord, score: float
 
 def resolve_existing_paper(record: LiteratureRecord, session: Session) -> tuple[Paper | None, str, float, dict[str, Any] | None]:
     fp = compute_fingerprint(record)
+    paper, matched_by, score = _match_by_canonical_id(session, record)
+    if paper:
+        return paper, matched_by, score, None
     paper, matched_by, score = _match_by_identifiers(session, fp)
     manual = None
     if paper:

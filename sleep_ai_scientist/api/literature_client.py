@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -17,6 +18,7 @@ from sleep_ai_scientist.api.semantic_scholar_client import SemanticScholarClient
 from sleep_ai_scientist.common.config import resolve_path
 from sleep_ai_scientist.common.io import ensure_parent, write_csv
 from sleep_ai_scientist.common.io import read_yaml
+from sleep_ai_scientist.literature.query_loader import select_query_payload
 from sleep_ai_scientist.schemas.api import APILiteratureRecord, APISearchResult
 from sleep_ai_scientist.schemas.literature import LiteratureRecord
 
@@ -46,12 +48,12 @@ def load_env_file(path: Path, *, override: bool = False) -> list[str]:
     return loaded
 
 
-def apply_query_config(config: dict[str, Any], query_config_path: str | Path | None) -> dict[str, Any]:
-    """Overlay a versioned literature query set onto the grounding API config."""
+def apply_query_config(config: dict[str, Any], query_config_path: str | Path | None, *, query_scope: str = "library") -> dict[str, Any]:
+    """Overlay a versioned literature query set onto an API config."""
     if not query_config_path:
         return config
     root = Path(config["_project_root"])
-    payload = read_yaml(resolve_path(query_config_path, root))
+    payload = select_query_payload(read_yaml(resolve_path(query_config_path, root)), scope=query_scope)
     query_groups = payload.get("queries", {})
     queries: list[str] = []
     for values in query_groups.values():
@@ -70,6 +72,7 @@ def apply_query_config(config: dict[str, Any], query_config_path: str | Path | N
     config["query_set"] = {
         "version": payload.get("query_set", {}).get("version", ""),
         "description": payload.get("query_set", {}).get("description", ""),
+        "scope": payload.get("scope", query_scope),
         "query_config_path": str(resolve_path(query_config_path, root)),
         "query_groups": {key: list(value or []) for key, value in query_groups.items()},
         "settings": settings,
@@ -115,6 +118,9 @@ def search_literature_apis(config: dict[str, Any], session: Any | None = None, r
     max_results = int(api_cfg.get("max_results_per_query", 20))
     queries = api_cfg.get("search_queries", [])
     verbose = bool(api_cfg.get("verbose", False) or os.getenv("SLEEPAGENT_API_VERBOSE", "").lower() in {"1", "true", "yes"})
+    verbose_detail = bool(api_cfg.get("verbose_detail", False) or os.getenv("SLEEPAGENT_API_VERBOSE_DETAIL", "").lower() in {"1", "true", "yes"})
+    compact_progress = bool(api_cfg.get("progress", True)) and verbose and not verbose_detail
+    progress_every = max(1, int(api_cfg.get("progress_update_every", max(1, len(queries) // 10 or 1))))
     all_records: list[APILiteratureRecord] = []
     results: list[APISearchResult] = []
     logs = []
@@ -126,11 +132,16 @@ def search_literature_apis(config: dict[str, Any], session: Any | None = None, r
     for provider, provider_cfg in api_cfg.get("providers", {}).items():
         if not provider_cfg.get("enabled", False) or provider not in CLIENTS:
             continue
-        if verbose:
+        progress = _APIProgress(provider, len(queries), progress_every=progress_every) if compact_progress else None
+        if verbose and not compact_progress:
             print(f"[api:{provider}] start", flush=True)
         client = build_client(provider, config, session=session, rate_limit_enabled=rate_limit_enabled)
+        provider_records = 0
+        provider_warnings = 0
+        if progress:
+            progress.update(0, records=provider_records, warnings=provider_warnings)
         for index, query in enumerate(queries, start=1):
-            if verbose:
+            if verbose_detail:
                 print(f"[api:{provider}] query {index}/{len(queries)}: {query}", flush=True)
             try:
                 result = client.search(query, max_results=max_results)
@@ -139,16 +150,23 @@ def search_literature_apis(config: dict[str, Any], session: Any | None = None, r
                 results.append(result)
                 all_records.extend(result.records)
                 warnings.extend(result.warnings)
-                if verbose:
+                provider_records += result.count
+                provider_warnings += len(result.warnings)
+                if verbose_detail:
                     print(f"[api:{provider}] -> {result.count} records", flush=True)
             except Exception as exc:
                 warnings.append(f"{provider}:{query}:{exc}")
-                if verbose:
+                provider_warnings += 1
+                if verbose_detail:
                     print(f"[api:{provider}] warning: {exc}", flush=True)
                 if not api_cfg.get("fail_open", True):
                     raise
+            if progress:
+                progress.update(index, records=provider_records, warnings=provider_warnings)
         logs.extend(client.base.logs)
-        if verbose:
+        if progress:
+            progress.done(records=provider_records, warnings=provider_warnings, accumulated=len(all_records))
+        elif verbose:
             print(f"[api:{provider}] done; accumulated raw records: {len(all_records)}", flush=True)
     deduped = deduplicate_api_records(all_records)
     if verbose:
@@ -192,6 +210,39 @@ def search_literature_apis(config: dict[str, Any], session: Any | None = None, r
         "log_path": str(log_path),
     }
     return literature, summary
+
+
+class _APIProgress:
+    def __init__(self, provider: str, total: int, *, progress_every: int = 1, width: int = 24) -> None:
+        self.provider = provider
+        self.total = max(0, total)
+        self.progress_every = max(1, progress_every)
+        self.width = max(10, width)
+        self._last_step = -1
+        self._interactive = sys.stdout.isatty()
+
+    def update(self, current: int, *, records: int, warnings: int) -> None:
+        if not self._interactive:
+            return
+        current = min(max(0, current), self.total)
+        if current not in {0, self.total} and current - self._last_step < self.progress_every:
+            return
+        self._last_step = current
+        sys.stdout.write("\r\033[K" + self._line(current, records=records, warnings=warnings))
+        sys.stdout.flush()
+
+    def done(self, *, records: int, warnings: int, accumulated: int) -> None:
+        prefix = "\r\033[K" if self._interactive else ""
+        sys.stdout.write(prefix + f"{self._line(self.total, records=records, warnings=warnings)} done accumulated_raw={accumulated}" + "\n")
+        sys.stdout.flush()
+
+    def _line(self, current: int, *, records: int, warnings: int) -> str:
+        if self.total:
+            filled = int(round((current / self.total) * self.width))
+        else:
+            filled = self.width
+        bar = "#" * filled + "-" * (self.width - filled)
+        return f"[api:{self.provider}] [{bar}] {current}/{self.total} records={records} warnings={warnings}"
 
 
 def _provider_counts(results: list[APISearchResult]) -> dict[str, int]:

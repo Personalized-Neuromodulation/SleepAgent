@@ -8,7 +8,7 @@ from typing import Any
 
 from sleep_ai_scientist.common.utils import stable_id
 from sleep_ai_scientist.hypothesis.agents.embedding import LocalMiniLMEmbeddingClient, dense_cosine
-from sleep_ai_scientist.hypothesis.agents.llm import build_llm_client, llm_enabled, load_prompt, normalize_llm_config
+from sleep_ai_scientist.llm.client import build_llm_client, llm_enabled, load_prompt, normalize_llm_config
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
 from sleep_ai_scientist.hypothesis.agents.state import HypothesisSessionState
 from sleep_ai_scientist.hypothesis.agents.tournament import seeded_glicko2_from_review_scores
@@ -223,7 +223,12 @@ def reject_near_duplicates(
         if item.status in {HypothesisStatus.active, HypothesisStatus.pending_review}
     ]
     if embedding_config and bool(embedding_config.get("enabled", False)):
-        client = LocalMiniLMEmbeddingClient(str(embedding_config.get("model", "sentence-transformers/all-MiniLM-L6-v2")))
+        client = LocalMiniLMEmbeddingClient(
+            str(embedding_config.get("model", "sentence-transformers/all-MiniLM-L6-v2")),
+            local_files_only=bool(embedding_config.get("local_files_only", True)),
+            device=str(embedding_config.get("device", "cpu")) if embedding_config.get("device", "cpu") else None,
+            cache_folder=str(embedding_config.get("cache_folder")) if embedding_config.get("cache_folder") else None,
+        )
         texts = [f"{item.title} {item.summary} {' '.join(item.key_assumptions)}" for item in active_or_pending]
         dense_vectors = dict(zip([item.hypothesis_id for item in active_or_pending], client.embed(texts)))
         for index, left in enumerate(active_or_pending):

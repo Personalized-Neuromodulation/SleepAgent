@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "226",
+    "retmax": "20",
+    "retstart": "0",
+    "idlist": [
+      "42454951",
+      "42331757",
+      "42180000",
+      "42064550",
+      "41791600",
+      "41715219",
+      "41405378",
+      "41330260",
+      "41327037",
+      "41325105",
+      "41316910",
+      "41289768",
+      "40962569",
+      "40888367",
+      "40524941",
+      "40507808",
+      "40389120",
+      "39951438",
+      "39426576",
+      "39401806"
+    ],
+    "translationset": [
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND \"slow\"[All Fields] AND \"wave\"[All Fields] AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields])"
+  }
+}

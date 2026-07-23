@@ -1,0 +1,52 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "62",
+    "retmax": "20",
+    "retstart": "0",
+    "idlist": [
+      "42363162",
+      "42323655",
+      "41783872",
+      "41443132",
+      "41136354",
+      "41082128",
+      "40884992",
+      "40151872",
+      "39868228",
+      "39743145",
+      "38113618",
+      "38052981",
+      "37255228",
+      "34858127",
+      "34562291",
+      "34099771",
+      "32849223",
+      "32597973",
+      "32562782",
+      "32132942"
+    ],
+    "translationset": [
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "default mode network",
+        "to": "\"default mode network\"[MeSH Terms] OR (\"default\"[All Fields] AND \"mode\"[All Fields] AND \"network\"[All Fields]) OR \"default mode network\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"default mode network\"[MeSH Terms] OR (\"default\"[All Fields] AND \"mode\"[All Fields] AND \"network\"[All Fields]) OR \"default mode network\"[All Fields])"
+  }
+}

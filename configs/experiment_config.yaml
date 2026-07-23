@@ -5,14 +5,6 @@ experiment:
   enable_ml: false
   bootstrap_iterations: 100
   verbose: true
-  llm:
-    enabled: true
-    provider: ollama
-    base_url: http://localhost:11434
-    model: richardyoung/qwen3-14b-abliterated:latest
-    timeout: 300
-    temperature: 0.1
-    log_calls: true
 
 feature_extraction:
   enabled: true
@@ -59,6 +51,7 @@ data_processing:
   env: {}
 
 paths:
+  llm_config: configs/llm_config.yaml
   hypothesis_pool: outputs/hypotheses/hypothesis_pool.json
   data_profile: outputs/profiles/analysis_ready_profile.yaml
   approved_variables: outputs/grounding/approved_variables_from_grounding.yaml

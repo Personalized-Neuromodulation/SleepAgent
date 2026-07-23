@@ -5,7 +5,7 @@ from typing import Any
 from sleep_ai_scientist.common.io import write_json
 from sleep_ai_scientist.common.utils import normalize_text
 from sleep_ai_scientist.hypothesis.agents.generation_agent import _coerce_list
-from sleep_ai_scientist.hypothesis.agents.llm import build_llm_client, llm_enabled, load_prompt, normalize_llm_config
+from sleep_ai_scientist.llm.client import build_llm_client, llm_enabled, load_prompt, normalize_llm_config
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
 from sleep_ai_scientist.hypothesis.agents.state import HypothesisSessionState
 from sleep_ai_scientist.hypothesis.agents.memory import apply_feedback_to_registry, promote_feedback_to_reward_memory, write_reward_memory

@@ -1,0 +1,70 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "31",
+    "retmax": "31",
+    "retstart": "0",
+    "idlist": [
+      "42392341",
+      "40972104",
+      "40415373",
+      "39940102",
+      "38866481",
+      "38844342",
+      "38415989",
+      "38352426",
+      "34432229",
+      "31736694",
+      "30243817",
+      "29845763",
+      "29590443",
+      "28808783",
+      "27859029",
+      "27761491",
+      "27723936",
+      "27030764",
+      "26505301",
+      "26082888",
+      "23727317",
+      "22743197",
+      "22493589",
+      "20821065",
+      "19964791",
+      "19775835",
+      "19015033",
+      "18688139",
+      "17645544",
+      "12704780",
+      "10764096"
+    ],
+    "translationset": [
+      {
+        "from": "scanner",
+        "to": "\"scanner\"[All Fields] OR \"scanner's\"[All Fields] OR \"scanners\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"scanner\"[All Fields] OR \"scanner s\"[All Fields] OR \"scanners\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

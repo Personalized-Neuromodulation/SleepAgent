@@ -1,0 +1,2182 @@
+{
+  "total": 28646,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "f4fe13f2541b4b779e4102044028e5611f105ced",
+      "externalIds": {
+        "DBLP": "journals/cbm/YouMW22",
+        "DOI": "10.1016/j.compbiomed.2022.105804",
+        "CorpusId": 250270595,
+        "PubMed": "35803081"
+      },
+      "url": "https://www.semanticscholar.org/paper/f4fe13f2541b4b779e4102044028e5611f105ced",
+      "title": "GTransU-CAP: Automatic labeling for cyclic alternating patterns in sleep EEG using gated transformer-based U-Net framework",
+      "venue": "Comput. Biol. Medicine",
+      "year": 2022,
+      "citationCount": 13,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.compbiomed.2022.105804?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.compbiomed.2022.105804, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2100887969",
+          "name": "jia-jia You"
+        },
+        {
+          "authorId": "121721088",
+          "name": "Yu Ma"
+        },
+        {
+          "authorId": "2146024372",
+          "name": "Yuanyuan Wang"
+        }
+      ],
+      "abstract": "Cyclic alternating pattern (CAP) sequences are composed of cycles of alternate activation phases (A-phases) and background phases. CAP A-phases can be further divided into three subtypes, which act as important bio-markers of sleep instability and are also associated with identifiable sleep pathologies. Thus, its accurate detection and identification is of great clinical interest and significance. To release the burden of sleep experts who manually perform this labeling task, several automatic detectors have been proposed, yet the characteristics of CAP have not been fully exploited to achieve a satisfactory performance. In this paper, we propose an automated method to detect A-phases and their subtypes using Transformer-based U-Net framework. In light of the long-span duration of A-phases, our method has intrinsic advantages as U-Net extracts local information while Transformer module provides global dependencies. We also use a curriculum-learning based training strategy to further improve the performance. The method is validated on the publicly available CAP Sleep Database. It obtains average F1 scores of 67.78% and 72.16% on 16 healthy subjects and 30 patients with nocturnal frontal lobe epilepsy respectively for A-phase detection, and the average macro F1-score is 59.5% for multi-class subtype classification. Compared with state-of-the-art methods, the proposed method achieves superior performance in these two CAP labeling tasks."
+    },
+    {
+      "paperId": "c23a318e786b5c8c4282c770fd3d50da5beee7b4",
+      "externalIds": {
+        "PubMedCentral": "12384930",
+        "DOI": "10.3390/brainsci15080854",
+        "CorpusId": 280949132,
+        "PubMed": "40867185"
+      },
+      "url": "https://www.semanticscholar.org/paper/c23a318e786b5c8c4282c770fd3d50da5beee7b4",
+      "title": "Automated Sleep Stage Classification Using PSO-Optimized LSTM on CAP EEG Sequences",
+      "venue": "Brain Science",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12384930, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2994299",
+          "name": "Manjur S. Kolhar"
+        },
+        {
+          "authorId": "1979029211",
+          "name": "Manahil Alfuraydan"
+        },
+        {
+          "authorId": "2377777691",
+          "name": "Abdulaziz Alshammary"
+        },
+        {
+          "authorId": "2377779462",
+          "name": "Khalid Alharoon"
+        },
+        {
+          "authorId": "2377780816",
+          "name": "Abdullah Alghamdi"
+        },
+        {
+          "authorId": "2377780227",
+          "name": "Ali Albader"
+        },
+        {
+          "authorId": "2377777652",
+          "name": "Abdulmalik Alnawah"
+        },
+        {
+          "authorId": "2404008769",
+          "name": "Aryam Alanazi"
+        }
+      ],
+      "abstract": "The automatic classification of sleep stages and Cyclic Alternating Pattern (CAP) subtypes from electroencephalogram (EEG) recordings remains a significant challenge in computational sleep research because of the short duration of CAP events and the inherent class imbalance in clinical datasets. Background/Objectives: The research introduces a domain-specific deep learning system that employs an LSTM network optimized through a PSO-Hyperband hybrid hyperparameter tuning method. Methods: The research enhances EEG-based sleep analysis through the implementation of hybrid optimization methods within an LSTM architecture that addresses CAP sequence classification requirements without requiring architectural changes. Results: The developed model demonstrates strong performance on the CAP Sleep Database by achieving 97% accuracy for REM and 96% accuracy for stage S0 and ROC AUC scores exceeding 0.92 across challenging CAP subtypes (A1–A3). The model transparency is improved through the application of SHAP-based interpretability techniques, which highlight the role of spectral and morphological EEG features in classification outcomes. Conclusions: The proposed framework demonstrates resistance to class imbalance and better discrimination between visually similar CAP subtypes. The results demonstrate how hybrid optimization methods improve the performance, generalizability, and interpretability of deep learning models for EEG-based sleep microstructure analysis."
+    },
+    {
+      "paperId": "c3248488c92df059a7a3f377e7398b7a470ce725",
+      "externalIds": {
+        "MAG": "1951913997",
+        "DBLP": "conf/tsp/KarimzadehSBT15",
+        "DOI": "10.1109/TSP.2015.7296302",
+        "CorpusId": 14424702
+      },
+      "url": "https://www.semanticscholar.org/paper/c3248488c92df059a7a3f377e7398b7a470ce725",
+      "title": "Presenting efficient features for automatic CAP detection in sleep EEG signals",
+      "venue": "International Conference on Telecommunications and Signal Processing",
+      "year": 2015,
+      "citationCount": 25,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TSP.2015.7296302?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TSP.2015.7296302, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35016099",
+          "name": "Foroozan Karimzadeh"
+        },
+        {
+          "authorId": "2707381",
+          "name": "Esmaeil Seraj"
+        },
+        {
+          "authorId": "2058711",
+          "name": "R. Boostani"
+        },
+        {
+          "authorId": "1397896519",
+          "name": "Mohammad Torabi-Nami"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "62f41a139b51af1071a0165fe8de0ea561495b43",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.1050",
+        "CorpusId": 278760746
+      },
+      "url": "https://www.semanticscholar.org/paper/62f41a139b51af1071a0165fe8de0ea561495b43",
+      "title": "1050 Validating MoTrPAC Sleep High Density EEG Data Collection in Children and Adolescents",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.1050?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.1050, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "119382979",
+          "name": "Caitlin M. Carroll"
+        },
+        {
+          "authorId": "2362393490",
+          "name": "I. Chen"
+        },
+        {
+          "authorId": "2362519809",
+          "name": "Henry Lin"
+        },
+        {
+          "authorId": "2363688876",
+          "name": "Sheldon Watanabe"
+        },
+        {
+          "authorId": "2362385143",
+          "name": "Dylan Barry"
+        },
+        {
+          "authorId": "2265390324",
+          "name": "D. Berisha"
+        },
+        {
+          "authorId": "2271695459",
+          "name": "A. Dave"
+        },
+        {
+          "authorId": "4485152",
+          "name": "B. Mander"
+        },
+        {
+          "authorId": "1387463560",
+          "name": "S. Radom-Aizik"
+        },
+        {
+          "authorId": "2265390258",
+          "name": "A. Neikrug"
+        },
+        {
+          "authorId": "2272914280",
+          "name": "R. Benca"
+        }
+      ],
+      "abstract": "\n \n \n Adolescence is marked by profound changes in sleep-wake physiology, driven by recognized neurodevelopmental shifts impacting macro- and micro-architecture of the electroencephalogram (EEG) during sleep. Ensuring reliable and high-quality data is critical for studying these developmental processes, particularly in multicenter settings. In this ancillary study to the Molecular Transducers of Physical Activity Consortium (MoTrPAC), we aimed to assess the reliability and data quality of sleep EEG by evaluating consistency and concordance in data collected across two sites, using identical platforms.\n \n \n \n 113 participants (Mage=14.5±2.5 years, 55% Female) completed the Pediatric MoTrPAC study and underwent standard overnight polysomnography (PSG) with high-density EEG (hdEEG; 128 channels) at two sleep laboratory sites: UCI Sleep Laboratory (n=66) or the Research Center for Exercise Medicine and Sleep (RCEMS/PERC; n=47). Both sites used the same equipment and protocols (Natus Neurology equipment, Waveguard original EEG cap, and Natus SleepWorks software). All recordings were scored by a boarded sleep medicine physician, using 30-second epochs. EEG data underwent preprocessing, artifact rejection, and segmentation into concatenated NREM epochs. Spectral power was calculated for frequency bands using a multitaper approach. Threshold-free cluster enhancement (TFCE) was used for multiple comparisons correction across topography.\n \n \n \n Total sleep time and time spent in each sleep stage did not differ between sites. Similarly, we observed no site-based differences in absolute or relative spectral power across all frequency bands. Consistent with prior work, age-related decreases in absolute power were observed at both sites for slow wave activity, slow oscillations, delta, theta, sigma, and beta frequency bands (all p< 0.05, TFCE corrected). Conversely, relative power in higher frequency bands including sigma, beta, and gamma increased with age (all p< 0.05, TFCE corrected). These patterns were observed at both sites with no significant differences between sites.\n \n \n \n This study demonstrates the reliability of PSG with hdEEG data collected at two sites using identical platforms. The findings align with previous studies showing age-related changes in spectral power, reflecting neurodevelopmental processes. These results validate the use of PSG with hdEEG for multicenter studies and support combining data across sites for future analyses advancing our understanding of sleep neurophysiology in adolescence.\n \n \n \n R01HL153807,T32AG033534,U01AR071158,PERC Systems Biology Program\n"
+    },
+    {
+      "paperId": "601f1c597e7c02459207368965aa21e4d74c5fdd",
+      "externalIds": {
+        "DOI": "10.31083/JIN26397",
+        "CorpusId": 277378346,
+        "PubMed": "40152575"
+      },
+      "url": "https://www.semanticscholar.org/paper/601f1c597e7c02459207368965aa21e4d74c5fdd",
+      "title": "Cyclic Alternating Pattern of EEG Activities and Heart Rate Variability in Parkinson's Disease Patients during Deep Sleep.",
+      "venue": "Journal of Integrative Neuroscience",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.imrpress.com/journal/JIN/24/3/10.31083/JIN26397/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.31083/JIN26397?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.31083/JIN26397, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2336022643",
+          "name": "Zilin Cheng"
+        },
+        {
+          "authorId": "2154498636",
+          "name": "Qi Li"
+        },
+        {
+          "authorId": "13653829",
+          "name": "Xueliang Zou"
+        },
+        {
+          "authorId": "51033112",
+          "name": "Zhijun Zhong"
+        },
+        {
+          "authorId": "2230605764",
+          "name": "Ouyang Qian"
+        },
+        {
+          "authorId": "2335955997",
+          "name": "Chunmei Gan"
+        },
+        {
+          "authorId": "2335872044",
+          "name": "Fang Yi"
+        },
+        {
+          "authorId": "2112602603",
+          "name": "Yaxin Luo"
+        },
+        {
+          "authorId": "2336833076",
+          "name": "Yuhao Mao"
+        },
+        {
+          "authorId": "2266829484",
+          "name": "Dongyuan Yao"
+        }
+      ],
+      "abstract": "BACKGROUND\nSleep disturbance and autonomic dysfunction are often found in Parkinson's disease (PD) patients, but little is known about changes in cyclic alternating patterns (CAPs) of electroencephalographic (EEG) activities and heart rate variability (HRV) during deep sleep in PD patients.\n\n\nOBJECTIVES\nTo investigate changes in EEG activities and HRV during CAPs and non-CAPs (NCAPs) of N3 sleep in PD patients.\n\n\nMETHODS\nPolysomnographic (PSG) examinations were carried out on 18 PD patients and 18 healthy controls, and power spectral analysis of EEG activities and HRV during CAPs and NCAPs (the segment of sleep without CAPs for more than 60 seconds) of N3 sleep were carried out.\n\n\nRESULTS\nThe percentages of N3 sleep with CAPs and CAP A1, as well as the CAP A1 index in the PD patients, were significantly smaller compared with the healthy controls. In addition, the power of α waves in NCAPs was significantly higher, while the powers of δ waves in Phase A and B of CAP A1 and A3, and NCAPs were significantly smaller. Furthermore, the durations of total δ waves and δ waves with an amplitude ≥75 μV were significantly shorter, and the low frequency (LF) power of HRV during CAPs and the LF/high frequency (HF) HRV ratio during both CAPs and NCAPs were significantly smaller.\n\n\nCONCLUSIONS\nThe changes documented in EEG activities and HRV in PD patients during CAPs and NCAPs of N3 sleep compared with healthy controls suggest that N3 sleep quality and sympathetic function are compromised in PD patients."
+    },
+    {
+      "paperId": "91aa3b482ab848cc16fd5b276425f63ed805f3ef",
+      "externalIds": {
+        "DOI": "10.1109/IITCEE64140.2025.10915450",
+        "CorpusId": 276992825
+      },
+      "url": "https://www.semanticscholar.org/paper/91aa3b482ab848cc16fd5b276425f63ed805f3ef",
+      "title": "Convolution Neural Networks for Multi-Channel EEG Based Sleep Stage Classification",
+      "venue": "2025 International Conference on Intelligent and Innovative Technologies in Computing, Electrical and Electronics (IITCEE)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IITCEE64140.2025.10915450?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IITCEE64140.2025.10915450, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2350005410",
+          "name": "Pakala Munisankar"
+        },
+        {
+          "authorId": "2286358227",
+          "name": "N. Siva"
+        },
+        {
+          "authorId": "2241954994",
+          "name": "Naga Malleswari"
+        },
+        {
+          "authorId": "2350003880",
+          "name": "Ippili Mouneshha"
+        },
+        {
+          "authorId": "2350005284",
+          "name": "Kondaveti Rohini"
+        }
+      ],
+      "abstract": "Sleep disorders raise serious public health concerns because of their complex causes and profoundly negative impacts on people’s quality of life. The symptoms of these diseases are diverse, overlap, and affected by various lifestyle and health related factors, making a precise diagnosis important and challenging. A pivotal part of this investigation involves relating sleep stages to electroencephalogram (EEG) signals. In our work, we proposed a CNN Transformer model that classifies multi-channel EEG signals. This model uses a FFT to get frequency features of signals. FFT helps extract important frequency factors that distinguish different stages of sleep. We evaluated our model using the CAP Sleep database (Cyclic Alternative Patterns), achieving an accuracy of 91.84%. The average precision was 0.9197, with an F1 score of 0.9185, a recall of 0.9184, and a Kappa coefficient of 0.8980, demonstrating a reliable classification of sleep stages"
+    },
+    {
+      "paperId": "5888082de58202d482192f53abda4a4693afcc89",
+      "externalIds": {
+        "DOI": "10.1109/ECCE64574.2025.11013384",
+        "CorpusId": 279002887
+      },
+      "url": "https://www.semanticscholar.org/paper/5888082de58202d482192f53abda4a4693afcc89",
+      "title": "A Machine Learning Approach for the Classification of Sleep Disorders Using Time and Frequency Domain Features of a Single Channel EEG Signal",
+      "venue": "European Conference on Cognitive Ergonomics",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ECCE64574.2025.11013384?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ECCE64574.2025.11013384, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2364196155",
+          "name": "Md. Hasan Newaz"
+        },
+        {
+          "authorId": "2379575269",
+          "name": "Saidur Rahman"
+        },
+        {
+          "authorId": "2245387845",
+          "name": "M. P. I. Bhuiyan"
+        }
+      ],
+      "abstract": "Sleep is crucial for both mental and physical health. Poor sleep quality can lead to numerous health issues. Accurate detection of different sleep disorders is crucial for early diagnosis, treatment, and prognosis. An automated sleep disorder-based detection scheme is proposed using single-channel EEG signals for six classes of sleep disorders: naming, Insomnia, Nocturnal frontal lobe epilepsy (NFLE), Narcolepsy, REM behavior disorder (RBD), Periodic leg movement (PLM) and Sleep Disorder Breathing (SDB) are featured. Time and frequency domain features are introduced for the classification of sleep disorders using machine learning classifiers such as Random Forest, multilayer perceptron (MLP) and so on. P-ANOVA analysis is carried out to demonstrate the discrimination of the features for various classes of disorders. An extensive evaluation of the CAP (Cyclic Alternating Pattern) sleep database was carried out in two different cases. In Case 1, binary classification between healthy subjects and a specific disorder is carried out. Multiclass classification is performed in Case 2. Each classification is done over different sleep stages. For Case 1, the accuracy rates are 97% for insomnia, 90% for NFLE, 99% for RBD, 94% for narcolepsy, 94% for PLM, and 98% for SDB, with the corresponding F1 scores being 92%, 94%, 88%, 87%, 88%, and 93%, respectively. On the other hand, 86% accuracy and 86% F1 score are obtained for multistage classification. The experimentation also indicates that, in general, the best classification performance can be achieved using the EEG signal corresponding to sleep stage 4,(S4)."
+    },
+    {
+      "paperId": "4a2db3080ca5381ed6ad43ae320ebcbdfafad3d9",
+      "externalIds": {
+        "DBLP": "conf/embc/HartmannB23",
+        "DOI": "10.1109/EMBC40787.2023.10340124",
+        "CorpusId": 266200225,
+        "PubMed": "38083045"
+      },
+      "url": "https://www.semanticscholar.org/paper/4a2db3080ca5381ed6ad43ae320ebcbdfafad3d9",
+      "title": "Subject-level Normalization to Improve A-phase Detection of Cyclic Alternating Pattern in Sleep EEG",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2023,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EMBC40787.2023.10340124?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EMBC40787.2023.10340124, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1380716531",
+          "name": "Simon Hartmann"
+        },
+        {
+          "authorId": "2273980290",
+          "name": "Mathias Baumert"
+        }
+      ],
+      "abstract": "Automatic detection systems for activation phases (A-phase) of the cyclic alternating pattern (CAP) in electroencephalograms (EEG) are designed to automatically score A-phases in any individual but typically fail to factor in EEG signal variations between individuals, e.g. due to sleep disorders, recording site differences or equipment differences. Here, we investigate the effect of subject-level normalization on the performance of an automatic A-phase detection system consisting of a recurrent neural network. We compared the classification performance of various subject-level normalization methods to the standard training set normalization. Systems were trained and tested on subjects with different sleep disorders using the publicly available CAP Sleep Database on Physionet. Subject-level normalization using Zscore or median and interquartile range (IQR) increases the F1-score for A1-phases by +11-22% (Z-Score: +11-20%, Median/IQR: +16-22%), for A2-phases by +2-9% (Z-Score: +59%, Median/IQR: +2-7%), for A3-phases by -1 - +8% (Z-Score: +3-8%, Median/IQR: -1-+5%) as compared to the standard training data normalization when tested across sleep disorders. Our results show that subject-level normalization drastically improves the precision of A-phase detection in case the training population differs from the testing population.Clinical Relevance— Subject-level normalisation improves the automatic CAP scoring system performances for the general population by minimizing the effect of individual EEG differences."
+    },
+    {
+      "paperId": "358ba4d7373f36b3e338c6a73b77e8f4695d4fb1",
+      "externalIds": {
+        "DOI": "10.3390/app131810299",
+        "CorpusId": 261978719
+      },
+      "url": "https://www.semanticscholar.org/paper/358ba4d7373f36b3e338c6a73b77e8f4695d4fb1",
+      "title": "Distributional Representation of Cyclic Alternating Patterns for A-Phase Classification in Sleep EEG",
+      "venue": "Applied Sciences",
+      "year": 2023,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2076-3417/13/18/10299/pdf?version=1694685717",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app131810299?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app131810299, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2242621819",
+          "name": "Diana Laura Vergara-Sánchez"
+        },
+        {
+          "authorId": "1742222",
+          "name": "Hiram Calvo"
+        },
+        {
+          "authorId": "1400605191",
+          "name": "M. A. Moreno-Armendáriz"
+        }
+      ],
+      "abstract": "This article describes a detailed methodology for the A-phase classification of the cyclic alternating patterns (CAPs) present in sleep electroencephalography (EEG). CAPs are a valuable EEG marker of sleep instability and represent an important pattern with which to analyze additional characteristics of sleep processes, and A-phase manifestations have been linked to some specific conditions. CAP phase detection and classification are not commonly carried out routinely due to the time and attention this problem requires (and if present, CAP labels are user-dependent, visually evaluated, and hand-made); thus, an automatic tool to solve the CAP classification problem is presented. The classification experiments were carried out using a distributional representation of the EEG data obtained from the CAP Sleep Database. For this purpose, data symbolization was performed using the one-dimensional symbolic aggregate approximation (1d-SAX), followed by the vectorization of symbolic data with a trained Doc2Vec model and a final classification with ten classic machine learning models for two separate validation strategies. The best results were obtained using a support vector classifier with a radial basis kernel. For hold-out validation, the best F1 Score was 0.7651; for stratified 10-fold cross-validation, the best F1 Score was 0.7611 ± 0.0133. This illustrates that the proposed methodology is suitable for CAP classification."
+    },
+    {
+      "paperId": "940b15609654b7242ae05fa0bf0c7e763f42643e",
+      "externalIds": {
+        "DOI": "10.1016/j.clinph.2025.2110811",
+        "CorpusId": 279507008,
+        "PubMed": "40602303"
+      },
+      "url": "https://www.semanticscholar.org/paper/940b15609654b7242ae05fa0bf0c7e763f42643e",
+      "title": "Sleep-related epilepsy through the lens of stereo-EEG: Clinical and research update.",
+      "venue": "Clinical Neurophysiology",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.clinph.2025.2110811",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.clinph.2025.2110811?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.clinph.2025.2110811, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2256963277",
+          "name": "L. Nobili"
+        },
+        {
+          "authorId": "145830709",
+          "name": "Steve A. Gibbs"
+        },
+        {
+          "authorId": "2352261071",
+          "name": "G. Burlando"
+        },
+        {
+          "authorId": "2368016000",
+          "name": "Gaia Patrone"
+        },
+        {
+          "authorId": "2368021901",
+          "name": "Giuseppe De Venuto"
+        },
+        {
+          "authorId": "50694880",
+          "name": "Sheng H. Wang"
+        },
+        {
+          "authorId": "2283461420",
+          "name": "G. Arnulfo"
+        },
+        {
+          "authorId": "2265564686",
+          "name": "M. Terzaghi"
+        },
+        {
+          "authorId": "2259008",
+          "name": "S. Francione"
+        },
+        {
+          "authorId": "3107739",
+          "name": "I. Sartori"
+        }
+      ],
+      "abstract": "The complex interactions between sleep and epilepsy have drawn increasing attention, and stereo-electroencephalography (SEEG) has become a pivotal tool for investigating their underlying pathophysiological mechanisms. This review highlights key contributions from SEEG studies over the past two decades, with a focus on Sleep-Related Hypermotor Epilepsy (SHE). Considered a disorder of frontal lobe origin, SHE is now recognized as a network-based epilepsy with a broader involvement of cortical regions. Sleep instability in Non-Rapid Eye Movement (NREM) sleep, indexed by the cyclic alternating pattern (CAP), and increased bistability, emerge as critical facilitators of epileptiform discharges. In contrast, rapid eye movement (REM) sleep, particularly its phasic substate, exerts a strong suppressive effect on epileptic activity. SEEG has been instrumental in characterizing these mechanisms and identifying novel biomarkers, including cross-frequency coupling and network-level measures of cortical instability. These findings have implications not only for diagnosis and surgical targeting but also for the development of neuromodulatory and state-based therapeutic approaches. Looking forward, the integration of SEEG with advanced computational tools offers new avenues for real-time brain-state mapping and seizure risk stratification. By bridging clinical neurophysiology with systems neuroscience, SEEG provides a unique platform for advancing the understanding of epilepsy within the dynamic context of sleep."
+    },
+    {
+      "paperId": "390cad894cb96dd6097ba5c0e1b0b05321568d1a",
+      "externalIds": {
+        "DOI": "10.1007/s11325-025-03515-9",
+        "CorpusId": 282269659,
+        "PubMed": "41123854"
+      },
+      "url": "https://www.semanticscholar.org/paper/390cad894cb96dd6097ba5c0e1b0b05321568d1a",
+      "title": "EEG based classification of sleep cyclic alternating patterns using frequency driven forward ternary encoding",
+      "venue": "Sleep and Breathing",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11325-025-03515-9?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11325-025-03515-9, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2468733",
+          "name": "Megha Agarwal"
+        },
+        {
+          "authorId": "2306463141",
+          "name": "Amit Singhal"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "97211c6a98c0cbcec0705013b6a58a6511be458f",
+      "externalIds": {
+        "PubMedCentral": "11420159",
+        "DOI": "10.3389/fnins.2024.1441897",
+        "CorpusId": 272566126,
+        "PubMed": "39319310"
+      },
+      "url": "https://www.semanticscholar.org/paper/97211c6a98c0cbcec0705013b6a58a6511be458f",
+      "title": "Signal quality evaluation of an in-ear EEG device in comparison to a conventional cap system",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2024,
+      "citationCount": 15,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11420159, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2307626529",
+          "name": "Hanane Moumane"
+        },
+        {
+          "authorId": "2307634269",
+          "name": "Jeremy Pazuelo"
+        },
+        {
+          "authorId": "2308730268",
+          "name": "Mérie Nassar"
+        },
+        {
+          "authorId": "2190181232",
+          "name": "José Yesith Juez"
+        },
+        {
+          "authorId": "2307634334",
+          "name": "Mario Valderrama"
+        },
+        {
+          "authorId": "114898353",
+          "name": "M. Le Van Quyen"
+        }
+      ],
+      "abstract": "Introduction Wearable in-ear electroencephalographic (EEG) devices hold significant promise for integrating brain monitoring technologies into real-life applications. However, despite the introduction of various in-ear EEG systems, there remains a necessity for validating these technologies against gold-standard, clinical-grade devices. This study aims to evaluate the signal quality of a newly developed mobile in-ear EEG device compared to a standard scalp EEG system among healthy volunteers during wakefulness and sleep. Methods The study evaluated an in-ear EEG device equipped with dry electrodes in a laboratory setting, recording a single bipolar EEG channel using a cross-ear electrode configuration. Thirty healthy participants were recorded simultaneously using the in-ear EEG device and a conventional EEG cap system with 64 wet electrodes. Based on two recording protocols, one during a resting state condition involving alternating eye opening and closure with a low degree of artifact contamination and another consisting of a daytime nap, several quality measures were used for a quantitative comparison including root mean square (RMS) analysis, artifact quantification, similarities of relative spectral power (RSP), signal-to-noise ratio (SNR) based on alpha peak criteria, and cross-signal correlations of alpha activity during eyes-closed conditions and sleep activities. The statistical significance of our results was assessed through nonparametric permutation tests with False Discovery Rate (FDR) control. Results During the resting state, in-ear and scalp EEG signals exhibited similar fluctuations, characterized by comparable RMS values. However, intermittent signal alterations were noticed in the in-ear recordings during nap sessions, attributed to movements of the head and facial muscles. Spectral analysis indicated similar patterns between in-ear and scalp EEG, showing prominent peaks in the alpha range (8–12 Hz) during rest and in the low-frequency range during naps (particularly in the theta range of 4–7 Hz). Analysis of alpha wave characteristics during eye closures revealed smaller alpha wave amplitudes and slightly lower signal-to-noise ratio (SNR) values in the in-ear EEG compared to scalp EEG. In around 80% of cases, cross-correlation analysis between in-ear and scalp signals, using a contralateral bipolar montage of 64 scalp electrodes, revealed significant correlations with scalp EEG (p < 0.01), particularly evident in the FT11-FT12 and T7-T8 electrode derivations. Conclusion Our findings support the feasibility of using in-ear EEG devices with dry-contact electrodes for brain activity monitoring, compared to a standard scalp EEG, notably for wakefulness and sleep uses. Although marginal signal degradation is associated with head and facial muscle contractions, the in-ear device offers promising applications for long-term EEG recordings, particularly in scenarios requiring enhanced comfort and user-friendliness."
+    },
+    {
+      "paperId": "8c04d9eda9a931c8dad3de024c38d97c0ca5c6b2",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsab006",
+        "CorpusId": 231868181,
+        "PubMed": "33555021"
+      },
+      "url": "https://www.semanticscholar.org/paper/8c04d9eda9a931c8dad3de024c38d97c0ca5c6b2",
+      "title": "Sleep EEG microstructure in children and adolescents with attention deficit hyperactivity disorder: a systematic review and meta-analysis.",
+      "venue": "Sleep",
+      "year": 2021,
+      "citationCount": 28,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/44/7/zsab006/38891033/zsab006.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsab006?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsab006, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40135586",
+          "name": "C. Biancardi"
+        },
+        {
+          "authorId": "12172159",
+          "name": "G. Sesso"
+        },
+        {
+          "authorId": "34882429",
+          "name": "G. Masi"
+        },
+        {
+          "authorId": "5939285",
+          "name": "U. Faraguna"
+        },
+        {
+          "authorId": "2644972",
+          "name": "F. Sicca"
+        }
+      ],
+      "abstract": "Attention deficit hyperactivity disorder (ADHD) is commonly associated with sleep problems, possibly due to shared pathophysiology. Microstructural sleep electroencephalographic (EEG) alterations may likely represent markers of disordered cortical maturation in ADHD, although literature data are still conflicting, deserving further assessment. After having systematically reviewed the literature, we included 11 studies from 598 abstracts, and assessed 23 parameters of cyclic alternating pattern (CAP), four parameters of sleep EEG power and one parameter of sleep graphoelements through 29 meta-analyses and, when possible, univariate meta-regressions. Slow wave activity (SWA) in ADHD was significantly higher in early childhood and lower in late childhood/adolescence compared to controls, with an inversion point at 10 years. Total CAP rate and CAP A1 index in non-rapid eye movement (NREM) stage 2 sleep, and CAP A1 rate in NREM sleep were significantly lower in ADHD patients than controls. SWA and CAP A1 changes are therefore possible markers of altered cortical maturation in ADHD, consistently with the neuropsychological deficits characterizing the disorder, likely fostering earlier detection of at-risk/milder conditions, and more tailored therapeutic interventions."
+    },
+    {
+      "paperId": "d99b47598fa86eed0a944e4cdee37770379cdd67",
+      "externalIds": {
+        "DBLP": "journals/titb/JainG25",
+        "DOI": "10.1109/JBHI.2024.3524079",
+        "CorpusId": 275155785,
+        "PubMed": "40030833"
+      },
+      "url": "https://www.semanticscholar.org/paper/d99b47598fa86eed0a944e4cdee37770379cdd67",
+      "title": "Effective Diagnosis of Various Sleep Disorders by LEE Classifier: LightGBM-EOG-EEG",
+      "venue": "IEEE journal of biomedical and health informatics",
+      "year": 2024,
+      "citationCount": 11,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JBHI.2024.3524079?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JBHI.2024.3524079, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2113688127",
+          "name": "Ritika Jain"
+        },
+        {
+          "authorId": "2054764622",
+          "name": "R. Ganesan"
+        }
+      ],
+      "abstract": "A novel method is proposed for diagnosing the sleep disorders of insomnia, narcolepsy, periodic leg movement syndrome, nocturnal frontal lobe epilepsy, rapid eye movement behavior disorder, and sleep-disordered breathing. We use the light gradient boosting decision tree model (LightGBM) for the classification of healthy controls and different sleep disorders. The proposed approach is evaluated on the publicly available CAP dataset of 108 subjects. The LightGBM classifier using only an electrooculogram (EOG) channel (L-EOG) achieves a seven-class classification accuracy of 83.3%. This performance improves to 93.3% with the LightGBM-EOG-EEG (LEE) classifier, which harnesses the combined strengths of EOG and electroencephalogram (EEG) channels. LEE classifier employs four binary classifiers that disambiguate the classes confused by the L-EOG classifier. An additional 1% improvement is achieved by applying a simple thresholding decision rule to the results of the LEE classifier, resulting in an overall accuracy of 94.4%, the best in the literature for the seven-class classification of sleep disorders."
+    },
+    {
+      "paperId": "ea58ebd2536fbdd918f46e7b43884c1ae4111169",
+      "externalIds": {
+        "DBLP": "conf/embc/JainG24",
+        "DOI": "10.1109/EMBC53108.2024.10782470",
+        "CorpusId": 274827483,
+        "PubMed": "40039043"
+      },
+      "url": "https://www.semanticscholar.org/paper/ea58ebd2536fbdd918f46e7b43884c1ae4111169",
+      "title": "Effective diagnosis of sleep disorders using EEG and EOG signals",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2024,
+      "citationCount": 7,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EMBC53108.2024.10782470?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EMBC53108.2024.10782470, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2113688127",
+          "name": "Ritika Jain"
+        },
+        {
+          "authorId": "2054764622",
+          "name": "R. Ganesan"
+        }
+      ],
+      "abstract": "This work focuses on the diagnosis of various sleep disorders such as insomnia, narcolepsy, periodic leg movement, nocturnal frontal lobe epilepsy, bruxism, REM behavior disorder, and sleep-disordered breathing. We utilize SVM for classifying each of the sleep disorders from healthy controls. The proposed approach is evaluated on the publicly available CAP dataset comprising 108 overnight recordings from healthy controls and patients with sleep disorders. A single feature called gridded distribution entropy derived from Poincaré plots of EEG signal provides 100% accuracy in distinguishing healthy controls from each pathology, except insomnia and PLM. With the EOG channel, we are able to classify these two groups as well with 100% accuracy, demonstrating the effectiveness of EOG in disambiguating insomnia and PLM from controls.Clinical relevance— Diagnosis of sleep disorders is important to facilitate appropriate treatment. It is challenging due to the diverse nature and inter-subject variation of the physiological symptoms. Automated sleep disorder detection can improve cost efficiency and reduce variability."
+    },
+    {
+      "paperId": "900a468b1da22298e2a0f682a06ad2713fc06591",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2024.09.025",
+        "CorpusId": 272876112,
+        "PubMed": "39353350"
+      },
+      "url": "https://www.semanticscholar.org/paper/900a468b1da22298e2a0f682a06ad2713fc06591",
+      "title": "Classification of cyclic alternating patterns of sleep using EEG signals.",
+      "venue": "Sleep Medicine",
+      "year": 2024,
+      "citationCount": 5,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2024.09.025?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2024.09.025, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2468733",
+          "name": "Megha Agarwal"
+        },
+        {
+          "authorId": "2306463141",
+          "name": "Amit Singhal"
+        }
+      ],
+      "abstract": "Cyclic alternating patterns (CAP) occur in electroencephalogram (EEG) signals during non-rapid eye movement sleep. The analysis of CAP can offer insights into various sleep disorders. The first step is the identification of phases A and B for the CAP cycles. In this work, we develop an easy-to-implement accurate system to differentiate between CAP A and CAP B. Small segments of the EEG signal are processed using Gaussian filters to obtain sub-band components. Features are extracted using some statistical characteristics of these signal components. Minimum redundancy maximum relevance test is employed to identify the more significant features. Three different machine learning classifiers are considered and their performance is compared. The results are analyzed for both the balanced and unbalanced datasets. The k-nearest neighbour (kNN) classifier achieves 79.14 % accuracy and F-1 score of 79.24 % for the balanced dataset. The proposed method outperforms the existing methods for CAP classification. It is easy-to-implement and can be considered as a candidate for real-time deployment."
+    },
+    {
+      "paperId": "26ce4dc2c181f2bd679e6ef22c8de1e49139c6cf",
+      "externalIds": {
+        "DBLP": "journals/access/SharmaLYSSA23",
+        "DOI": "10.1109/ACCESS.2023.3278800",
+        "CorpusId": 258882800
+      },
+      "url": "https://www.semanticscholar.org/paper/26ce4dc2c181f2bd679e6ef22c8de1e49139c6cf",
+      "title": "Automated Explainable Detection of Cyclic Alternating Pattern (CAP) Phases and Sub-Phases Using Wavelet-Based Single-Channel EEG Signals",
+      "venue": "IEEE Access",
+      "year": 2023,
+      "citationCount": 18,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/6287639/10005208/10132390.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2023.3278800?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2023.3278800, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "152877221",
+          "name": "M. Sharma"
+        },
+        {
+          "authorId": "2212875521",
+          "name": "Harsh Lodhi"
+        },
+        {
+          "authorId": "2212589712",
+          "name": "Rishita Yadav"
+        },
+        {
+          "authorId": "9433975",
+          "name": "Niranjana Sampathila"
+        },
+        {
+          "authorId": "2287281831",
+          "name": "I. S. Senior Member"
+        },
+        {
+          "authorId": "2265888352",
+          "name": "U. R. Acharya"
+        },
+        {
+          "authorId": "9433975",
+          "name": "Niranjana Sampathila"
+        }
+      ],
+      "abstract": "Sleep is a crucial component of health and well-being. It maintains the metabolism of the body and covers one-third of total life. The assessment of sleep quality is typically done by evaluating the macrostructure-based sleep stages, however, it does not take into account transient phenomena like K-complexes and transient fluctuations, which are crucial for the diagnosis of various sleep disorders. Cyclic alternating pattern (CAP) is a recurrent physiological electroencephalogram (EEG) activity that takes place in the brain during sleep and it is considered as a microstructure of sleep that can provide more accurate and relevant evaluation of sleep. The traditional way of CAP phase division is done manually by sleep specialists, which is sensitive, time-consuming, and prone to inaccuracies. Hence, there is a need for automated detection techniques that can solve the problems. This study proposes an automated, computerized approach for developing a machine learning model with explainable artificial intelligence (XAI) capabilities, using wavelet-based Hjorth parameters for classifying CAP A & B phases and phases A sub-phases (A1, A2, A3). The study utilizes SHAP (SHapley Additive exPlanations)-based feature ranking to provide insights into the model. This study uses the publicly accessible Physionet CAP sleep database. The model is developed using single-channel standardized EEG recordings from healthy subjects and patients with five types of sleep disorders, namely, insomnia, nocturnal frontal lobe epilepsy (NFLE), periodic leg movement disorder (PLM), rapid eye movement behavior disorder (RBD) and narcolepsy. The best performance is obtained using k-nearest neighbors (KNN) and ensemble bagged trees (EbagT) classifiers. The proposed model achieved a average classification accuracy of 91.6% for healthy subjects and 94.33%, 86.3%, 88.68%, 84.43%, and 88.5% for narcolepsy, RBD, PLM, NFLE, and insomnia subjects respectively, for classifying phases A and B. Our model achieved a average classification accuracy of 92.85% for healthy subjects and 93.9%, 84.9%, 88.0%, 80.92%, and 89.41% for narcolepsy, RBD, PLM, NFLE, and insomnia subjects, respectively while categorizing A subphases (A1, A2, A3). The proposed method may help sleep experts to examine a person’s sleep quality automatically using the microstructure of sleep."
+    },
+    {
+      "paperId": "c547acd006c00da2aa77898363118825a0919ff3",
+      "externalIds": {
+        "DBLP": "conf/biostec/KhanOIKFHHS13",
+        "MAG": "2222146028",
+        "DOI": "10.5220/0004247803420346",
+        "CorpusId": 10641969
+      },
+      "url": "https://www.semanticscholar.org/paper/c547acd006c00da2aa77898363118825a0919ff3",
+      "title": "A Two-step Subspace Approach for Automatic Detection of CAP Phases in Multichannel Ambulatory Sleep EEG",
+      "venue": "International Conference on Bio-inspired Systems and Signal Processing",
+      "year": 2013,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.5220/0004247803420346",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5220/0004247803420346?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5220/0004247803420346, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3340976",
+          "name": "Ammar H. Khan"
+        },
+        {
+          "authorId": "1783842",
+          "name": "Ibrahim Onaran"
+        },
+        {
+          "authorId": "1754194",
+          "name": "N. Ince"
+        },
+        {
+          "authorId": "1708603",
+          "name": "M. Kaveh"
+        },
+        {
+          "authorId": "26626675",
+          "name": "Tacjana Friday"
+        },
+        {
+          "authorId": "143900525",
+          "name": "Mike Howell"
+        },
+        {
+          "authorId": "1949625",
+          "name": "T. Henry"
+        },
+        {
+          "authorId": "33060837",
+          "name": "Zhiyi Sha"
+        }
+      ],
+      "abstract": "Cyclic Alternating Pattern (CAP) Occurs during Non-Rapid Eye Movement (NREM) Sleep and Is Exploited as a Neuro-Marker of Various Sleep Disorders. the CAP Is Build up from so Called a and B Phases Which Correspond to Widespread Synchronous and Regular Background Activities of EEG Respectively. Currently, These Phases Are Detected by Medical Experts through Visual Inspection, Thereby Limiting Their Potential to Be Used as a Gauge for Sleep Quality. This Paper Aims to Contribute to the Current Effort towards Automatic Detection of CAP Phases, so That Its Potential Can Be Improved in the Assessment of Sleep Quality. unlike Previous Research Where a Predefined Bipolar (and/or Monopolar) Channel Was Used for Automatic Detection, This Paper Explores the Use of a Two-Step Principal Component Analysis (PCA) in Spatial and Feature Domains to Extract Features from All 21 Recording Channels of Ambulatory EEG. Linear Discriminant Analysis (LDA) Was Used on the Extracted Features to Discriminate Phase a and B. over a Five Subject Database, Our Algorithm Reached an Average Classification Accuracy over 86%, Whereas the Baseline Approach Resulted in an 80.3% Success Rate. These Results Indicate That the Two Step PCA Procedure Can Be Used Effectively to Extract Features from Ambulatory EEG towards Detection of CAP."
+    },
+    {
+      "paperId": "e64ea128359b005fcaaa4bb2f225a7e3517e0ae8",
+      "externalIds": {
+        "DOI": "10.1109/PCEMS58491.2023.10136092",
+        "CorpusId": 259028481
+      },
+      "url": "https://www.semanticscholar.org/paper/e64ea128359b005fcaaa4bb2f225a7e3517e0ae8",
+      "title": "Gradient Descent Adversarial Attacks on SVM for CAP EEG signals",
+      "venue": "2023 2nd International Conference on Paradigm Shifts in Communications Embedded Systems, Machine Learning and Signal Processing (PCEMS)",
+      "year": 2023,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/PCEMS58491.2023.10136092?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/PCEMS58491.2023.10136092, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2205122885",
+          "name": "Bharti Dakhale"
+        },
+        {
+          "authorId": "2218749556",
+          "name": "Kurasingarapu Satwik"
+        },
+        {
+          "authorId": "2219238879",
+          "name": "Nallamothu Vinay Kumar"
+        },
+        {
+          "authorId": "2218749554",
+          "name": "Guttula. Narayana"
+        },
+        {
+          "authorId": "9346749",
+          "name": "Ankit A. Bhurane"
+        },
+        {
+          "authorId": "2204885140",
+          "name": "Ashwin Kothari"
+        }
+      ],
+      "abstract": "Machine learning models have been widely adopted in various applications, but their vulnerability to evasion attacks has become a significant concern. Evasion attacks on machine learning models aim to manipulate the test data in a way that causes the model to make incorrect predictions. In this paper, we performed gradient-based attacks on the support vector machine (SVM) model for cyclic alternating patterns (CAP) sleep phase test dataset. Performance of the classifier is evaluated under evasion attacks and detailed analysis on robustness of model has been done."
+    },
+    {
+      "paperId": "788968c629d13004bbc9615f00243cbb30b04268",
+      "externalIds": {
+        "DBLP": "journals/cbm/SharmaVAGA23",
+        "DOI": "10.1016/j.compbiomed.2023.107259",
+        "CorpusId": 259930267,
+        "PubMed": "37544251"
+      },
+      "url": "https://www.semanticscholar.org/paper/788968c629d13004bbc9615f00243cbb30b04268",
+      "title": "CAPSCNet: A novel scattering network for automated identification of phasic cyclic alternating patterns of human sleep using multivariate EEG signals",
+      "venue": "Comput. Biol. Medicine",
+      "year": 2023,
+      "citationCount": 8,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.compbiomed.2023.107259?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.compbiomed.2023.107259, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2191362730",
+          "name": "Manish Sharma"
+        },
+        {
+          "authorId": "2223495068",
+          "name": "Sarv Verma"
+        },
+        {
+          "authorId": "2223663775",
+          "name": "Divyansh Anand"
+        },
+        {
+          "authorId": "2724763",
+          "name": "V. Gadre"
+        },
+        {
+          "authorId": "2265888352",
+          "name": "U. R. Acharya"
+        }
+      ],
+      "abstract": "The Cyclic Alternating Pattern (CAP) can be considered a physiological marker of sleep instability. The CAP can examine various sleep-related disorders. Certain short events (A and B phases) manifest related to a specific physiological process or pathology during non-rapid eye movement (NREM) sleep. These phases unexpectedly modify EEG oscillations; hence, manual detection is challenging. Therefore, it is highly desirable to have an automated system for detecting the A-phases (AP). Deep convolution neural networks (CNN) have shown high performance in various healthcare applications. A variant of the deep neural network called the Wavelet Scattering Network (WSN) has been used to overcome the specific limitations of CNN, such as the need for a large amount of data to train the model. WSN is an optimized network that can learn features that help discriminate patterns hidden inside signals. Also, WSNs are invariant to local perturbations, making the network significantly more reliable and effective. It can also help improve performance on tasks where data is minimal. In this study, we proposed a novel WSN-based CAPSCNet to automatically detect AP using EEG signals. Seven dataset variants of cyclic alternating pattern (CAP) sleep cohort is employed for this study. Two electroencephalograms (EEG) derivations, namely: C4-A1 and F4-C4, are used to develop the CAPSCNet. The model is examined using healthy subjects and patients tormented by six different sleep disorders, namely: sleep-disordered breathing (SDB), insomnia, nocturnal frontal lobe epilepsy (NFLE), narcolepsy, periodic leg movement disorder (PLM) and rapid eye movement behavior disorder (RBD) subjects. Several different machine-learning algorithms were used to classify the features obtained from the WSN. The proposed CAPSCNet has achieved the highest average classification accuracy of 83.4% using a trilayered neural network classifier for the healthy data variant. The proposed CAPSCNet is efficient and computationally faster."
+    },
+    {
+      "paperId": "a2c0a613f8126c17fbd987c849f8b325f2dfef7b",
+      "externalIds": {
+        "DOI": "10.3390/fractalfract10030199",
+        "CorpusId": 286692401
+      },
+      "url": "https://www.semanticscholar.org/paper/a2c0a613f8126c17fbd987c849f8b325f2dfef7b",
+      "title": "MF-DFA–Enhanced Deep Learning for Robust Sleep Disorder Classification from EEG Signals",
+      "venue": "Fractal and Fractional",
+      "year": 2026,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2504-3110/10/3/199/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/fractalfract10030199?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/fractalfract10030199, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2302903040",
+          "name": "Abdulaziz Alorf"
+        }
+      ],
+      "abstract": "Sleep disorders are prevalent in the world, and they lead to severe health issues such as cardiovascular disease and cognitive disabilities. Conventional polysomnography-based diagnosis is based on manual EEG analysis under the supervision of trained specialists, which is time-consuming and may have inter-rater variability. Although the predictions of deep learning (DL) models on the task of sleep classification of EEG have been promising, they, in many cases, do not explain the multiscale, temporal dynamics that physiological signals are characterized by. In this work, a hybrid model that is a combination of CNN and multifractal detrended fluctuation analysis (MF-DFA) was proposed to detect localized temporal features and long-term fractal-based dynamics of single-channel EEG recordings. The performance of the suggested model was tested using two separate polysomnographic datasets: the CAP Sleep Dataset of five-class sleep disorder classification (Healthy, Insomnia, Narcolepsy, PLM, and RBD) and the ISRUC Sleep Dataset on the three-class subject-independent validation. In the CAP dataset, the framework had an accuracy of 86.38%. Cross-dataset transfer to the ISRUC Sleep Dataset, where only the classification head was fine-tuned on a small labeled subset while all feature-extraction layers remained frozen from CAP training, achieved 87.50% accuracy, demonstrating that the learned representations generalize across differing recording protocols, sampling rates, and diagnostic label spaces. The experiments of ablation proved the paramount importance of the MF-DFA features, and the lack of them led to low classification rates. The findings demonstrate the clinical feasibility of applying fractal analysis in conjunction with DL to detect sleep disorders in an automated, generalizable manner, suitable for use in large-scale monitoring and resource-starved clinical environments."
+    },
+    {
+      "paperId": "8468790f7a455e35dd5f54ae8b5bdebdefdf96cb",
+      "externalIds": {
+        "MAG": "3000538749",
+        "DBLP": "conf/bibe/MedinaMMC19",
+        "DOI": "10.1109/BIBE.2019.00143",
+        "CorpusId": 209496365
+      },
+      "url": "https://www.semanticscholar.org/paper/8468790f7a455e35dd5f54ae8b5bdebdefdf96cb",
+      "title": "Wavelet Singularity Analysis for CAP Sleep Delineation",
+      "venue": "International Conferences on Biological Information and Biomedical Engineering",
+      "year": 2019,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/BIBE.2019.00143?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/BIBE.2019.00143, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2383755968",
+          "name": "D. Medina"
+        },
+        {
+          "authorId": "3110285",
+          "name": "M. Méndez"
+        },
+        {
+          "authorId": "40404201",
+          "name": "J. S. Murguía"
+        },
+        {
+          "authorId": "32405725",
+          "name": "I. Chouvarda"
+        }
+      ],
+      "abstract": "Sleep is an essential process in our life, which covers 1/3 of our lifetime. But this process can be affected by disorders producing serious consequences at physiological and behavioral level. One of the major indexes connected to the sleep disorders is the dynamic of the sleep macrostructure that is used for the assessment of sleep quality. Beyond sleep macrostructure, recently attention is also given to a finer structure of sleep called Cyclic Alternating Pattern (CAP). CAP is composed by short cortical events (A-phases), where some transition processes can be observed. With the aim to unveil properties of this transition phenomenon, in this work, we present a wavelet singularity analysis of the EEG signal during the onset and offset of A-phases. The results showed that EEG signal presents significant differences between A-phases and activity of background when the average singularity is considered. This finding can help both in better delineating the A-phases of CAP sleep and in understanding the mechanisms behind the CAP dynamics."
+    },
+    {
+      "paperId": "4473e387688e6401aca2467d669828422c6a695e",
+      "externalIds": {
+        "DOI": "10.1088/1741-2552/aca2de",
+        "CorpusId": 253552568,
+        "PubMed": "36379059"
+      },
+      "url": "https://www.semanticscholar.org/paper/4473e387688e6401aca2467d669828422c6a695e",
+      "title": "MRASleepNet: a multi-resolution attention network for sleep stage classification using single-channel EEG",
+      "venue": "Journal of Neural Engineering",
+      "year": 2022,
+      "citationCount": 33,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/1741-2552/aca2de?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/1741-2552/aca2de, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2112771034",
+          "name": "Rui Yu"
+        },
+        {
+          "authorId": "2396216",
+          "name": "Zhuhuang Zhou"
+        },
+        {
+          "authorId": "1867355",
+          "name": "Shuicai Wu"
+        },
+        {
+          "authorId": "1782783",
+          "name": "Xiaorong Gao"
+        },
+        {
+          "authorId": "1773770",
+          "name": "Guangyu Bin"
+        }
+      ],
+      "abstract": "Objective. Computerized classification of sleep stages based on single-lead electroencephalography (EEG) signals is important, but still challenging. In this paper, we proposed a deep neural network called MRASleepNet for automatic sleep stage classification using single-channel EEG signals. Approach. The proposed MRASleepNet model consisted of a feature extraction (FE) module, a multi-resolution attention (MRA) module, and a gated multilayer perceptron (gMLP) module, as well as a direct pathway for computing statistical features. The FE, MRA, and gMLP modules were used to extract features, establish feature attention, and obtain temporal relationships between features, respectively. EEG signals were normalized and cut into 30 s segments, and enhanced by incorporating contextual information from adjacent data segments. After data enhancement, the 40 s data segments were input to the MRASleepNet model. The model was evaluated on the SleepEDF and the cyclic alternating pattern (CAP) databases, using such metrics as the accuracy, Kappa, and macro-F1 (MF1). Main results. For the SleepEDF-20 database, the proposed model had an accuracy of 84.5%, an MF1 of 0.789, and a Kappa of 0.786. For the SleepEDF-78 database, the model had an accuracy of 81.4%, an MF1 of 0.754, and a Kappa of 0.743. For the CAP database, the model had an accuracy of 74.3%, an MF1 of 0.656, and a Kappa of 0.652. The proposed model achieved satisfactory performance in automatic sleep stage classification tasks. Significance. The time- and frequency-domain features extracted by the FE module and filtered by the MRA module, together with the temporal features extracted by the gMLP module and the statistical features extracted by the statistical highway, enabled the proposed model to obtain a satisfying performance in sleep staging. The proposed MRASleepNet model may be used as a new deep learning method for automatic sleep stage classification. The code of MRASleepNet will be made available publicly on https://github.com/YuRui8879/."
+    },
+    {
+      "paperId": "12bf6e78dc17bdf0b17df238c9eb7836e7022f41",
+      "externalIds": {
+        "PubMedCentral": "8002569",
+        "DOI": "10.3390/ijerph18063087",
+        "CorpusId": 232385611,
+        "PubMed": "33802799"
+      },
+      "url": "https://www.semanticscholar.org/paper/12bf6e78dc17bdf0b17df238c9eb7836e7022f41",
+      "title": "Automatic Sleep-Stage Scoring in Healthy and Sleep Disorder Patients Using Optimal Wavelet Filter Bank Technique with EEG Signals",
+      "venue": "International Journal of Environmental Research and Public Health",
+      "year": 2021,
+      "citationCount": 75,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1660-4601/18/6/3087/pdf?version=1616301397",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8002569, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "152877221",
+          "name": "M. Sharma"
+        },
+        {
+          "authorId": "153590965",
+          "name": "Jainendra Tiwari"
+        },
+        {
+          "authorId": "2265888352",
+          "name": "U. R. Acharya"
+        },
+        {
+          "authorId": "2265538466",
+          "name": "P. Tchounwou"
+        },
+        {
+          "authorId": "2242676991",
+          "name": "A. Cicolin"
+        }
+      ],
+      "abstract": "Sleep stage classification plays a pivotal role in effective diagnosis and treatment of sleep related disorders. Traditionally, sleep scoring is done manually by trained sleep scorers. The analysis of electroencephalogram (EEG) signals recorded during sleep by clinicians is tedious, time-consuming and prone to human errors. Therefore, it is clinically important to score sleep stages using machine learning techniques to get accurate diagnosis. Several studies have been proposed for automated detection of sleep stages. However, these studies have employed only healthy normal subjects (good sleepers). The proposed study focuses on the automated sleep-stage scoring of subjects suffering from seven different kind of sleep disorders such as insomnia, bruxism, narcolepsy, nocturnal frontal lobe epilepsy (NFLE), periodic leg movement (PLM), rapid eye movement (REM) behavioural disorder and sleep-disordered breathing as well as normal subjects. The open source physionet’s cyclic alternating pattern (CAP) sleep database is used for this study. The EEG epochs are decomposed into sub-bands using a new class of optimized wavelet filters. Two EEG channels, namely F4-C4 and C4-A1, combined are used for this work as they can provide more insights into the changes in EEG signals during sleep. The norm features are computed from six sub-bands coefficients of optimal wavelet filter bank and fed to various supervised machine learning classifiers. We have obtained the highest classification performance using an ensemble of bagged tree (EBT) classifier with 10-fold cross validation. The CAP database comprising of 80 subjects is divided into ten different subsets and then ten different sleep-stage scoring tasks are performed. Since, the CAP database is unbalanced with different duration of sleep stages, the balanced dataset also has been created using over-sampling and under-sampling techniques. The highest average accuracy of 85.3% and Cohen’s Kappa coefficient of 0.786 and accuracy of 92.8% and Cohen’s Kappa coefficient of 0.915 are obtained for unbalanced and balanced databases, respectively. The proposed method can reliably classify the sleep stages using single or dual channel EEG epochs of 30 s duration instead of using multimodal polysomnography (PSG) which are generally used for sleep-stage scoring. Our developed automated system is ready to be tested with more sleep EEG data and can be employed in various sleep laboratories to evaluate the quality of sleep in various sleep disorder patients and normal subjects."
+    },
+    {
+      "paperId": "c781c878061da0d155242321c112317fa3261af4",
+      "externalIds": {
+        "MAG": "3176277941",
+        "DOI": "10.3390/electronics10131531",
+        "CorpusId": 237846629
+      },
+      "url": "https://www.semanticscholar.org/paper/c781c878061da0d155242321c112317fa3261af4",
+      "title": "Automated Identification of Sleep Disorder Types Using Triplet Half-Band Filter and Ensemble Machine Learning Techniques with EEG Signals",
+      "venue": "Electronics",
+      "year": 2021,
+      "citationCount": 48,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2079-9292/10/13/1531/pdf?version=1624584423",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/electronics10131531?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/electronics10131531, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "152877221",
+          "name": "M. Sharma"
+        },
+        {
+          "authorId": "153590965",
+          "name": "Jainendra Tiwari"
+        },
+        {
+          "authorId": "2130586001",
+          "name": "Virendra Patel"
+        },
+        {
+          "authorId": "2267441535",
+          "name": "U. R. Acharya"
+        }
+      ],
+      "abstract": "A sleep disorder is a medical condition that affects an individual’s regular sleeping pattern and routine, hence negatively affecting the individual’s health. The traditional procedures of identifying sleep disorders by clinicians involve questionnaires and polysomnography (PSG), which are subjective, time-consuming, and inconvenient. Hence, an automated sleep disorder identification is required to overcome these limitations. In the proposed study, we have proposed a method using electroencephalogram (EEG) signals for the automated identification of six sleep disorders, namely insomnia, nocturnal frontal lobe epilepsy (NFLE), narcolepsy, rapid eye movement behavior disorder (RBD), periodic leg movement disorder (PLM), and sleep-disordered breathing (SDB). To the best of our belief, this is one of the first studies ever undertaken to identify sleep disorders using EEG signals employing cyclic alternating pattern (CAP) sleep database. After sleep-scoring EEG epochs, we have created eight different data subsets of EEG epochs to develop the proposed model. A novel optimal triplet half-band filter bank (THFB) is used to obtain the subbands of EEG signals. We have extracted Hjorth parameters from subbands of EEG epochs. The selected features are fed to various supervised machine learning algorithms for the automated classification of sleep disorders. Our proposed system has obtained the highest accuracy of 99.2%, 98.2%, 96.2%, 98.3%, 98.8%, and 98.8% for insomnia, narcolepsy, NFLE, PLM, RBD, and SDB classes against normal healthy subjects, respectively, applying ensemble boosted trees classifier. As a result, we have attained the highest accuracy of 91.3% to identify the type of sleep disorder. The proposed method is simple, fast, efficient, and may reduce the challenges faced by medical practitioners during the diagnosis of various sleep disorders accurately in less time at sleep clinics and homes."
+    },
+    {
+      "paperId": "f5edf17b97124cd0eb5c2df62874354634483141",
+      "externalIds": {
+        "PubMedCentral": "9600064",
+        "DOI": "10.3390/diagnostics12102510",
+        "CorpusId": 252984099,
+        "PubMed": "36292199"
+      },
+      "url": "https://www.semanticscholar.org/paper/f5edf17b97124cd0eb5c2df62874354634483141",
+      "title": "L-Tetrolet Pattern-Based Sleep Stage Classification Model Using Balanced EEG Datasets",
+      "venue": "Diagnostics",
+      "year": 2022,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2075-4418/12/10/2510/pdf?version=1665921728",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9600064, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "30691907",
+          "name": "P. Barua"
+        },
+        {
+          "authorId": "2188210815",
+          "name": "Ilknur Tuncer"
+        },
+        {
+          "authorId": "2372361324",
+          "name": "Emrah Aydemir"
+        },
+        {
+          "authorId": "3270506",
+          "name": "O. Faust"
+        },
+        {
+          "authorId": "2153969545",
+          "name": "Subrata Chakraborty"
+        },
+        {
+          "authorId": "84218089",
+          "name": "V. Subbhuraam"
+        },
+        {
+          "authorId": "50186675",
+          "name": "T. Tuncer"
+        },
+        {
+          "authorId": "34689934",
+          "name": "M. Kutlu Sengul"
+        },
+        {
+          "authorId": "1704790",
+          "name": "Usha R. Acharya"
+        }
+      ],
+      "abstract": "Background: Sleep stage classification is a crucial process for the diagnosis of sleep or sleep-related diseases. Currently, this process is based on manual electroencephalogram (EEG) analysis, which is resource-intensive and error-prone. Various machine learning models have been recommended to standardize and automate the analysis process to address these problems. Materials and methods: The well-known cyclic alternating pattern (CAP) sleep dataset is used to train and test an L-tetrolet pattern-based sleep stage classification model in this research. By using this dataset, the following three cases are created, and they are: Insomnia, Normal, and Fused cases. For each of these cases, the machine learning model is tasked with identifying six sleep stages. The model is structured in terms of feature generation, feature selection, and classification. Feature generation is established with a new L-tetrolet (Tetris letter) function and multiple pooling decomposition for level creation. We fuse ReliefF and iterative neighborhood component analysis (INCA) feature selection using a threshold value. The hybrid and iterative feature selectors are named threshold selection-based ReliefF and INCA (TSRFINCA). The selected features are classified using a cubic support vector machine. Results: The presented L-tetrolet pattern and TSRFINCA-based sleep stage classification model yield 95.43%, 91.05%, and 92.31% accuracies for Insomnia, Normal dataset, and Fused cases, respectively. Conclusion: The recommended L-tetrolet pattern and TSRFINCA-based model push the envelope of current knowledge engineering by accurately classifying sleep stages even in the presence of sleep disorders."
+    },
+    {
+      "paperId": "666a7e1b410c4e8479f8968de2b500df3825253b",
+      "externalIds": {
+        "DOI": "10.1109/ElConRus54750.2022.9755612",
+        "CorpusId": 248269540
+      },
+      "url": "https://www.semanticscholar.org/paper/666a7e1b410c4e8479f8968de2b500df3825253b",
+      "title": "Comparing ML and DL Sleep Staging Methods with the effect of PCA using EEG Signals",
+      "venue": "2022 Conference of Russian Young Researchers in Electrical and Electronic Engineering (ElConRus)",
+      "year": 2022,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ElConRus54750.2022.9755612?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ElConRus54750.2022.9755612, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2162976466",
+          "name": "D. Palogiannidis"
+        },
+        {
+          "authorId": "2162973387",
+          "name": "Zineb Mihoub"
+        },
+        {
+          "authorId": "2075192314",
+          "name": "H. Solieman"
+        }
+      ],
+      "abstract": "This article studies the usage of Machine Learning (ML) and Deep Learning (DL) for the automated classification of sleep stages. Sleep-EDF Database Expanded and CAP Sleep Database v1.0.0 were used. Electroencephalogram (EEG) signals were preprocessed using bandpass filters to extract α, δ, and θ waves. The dataset included statistical features extracted from 2650 recordings. Three ML models were used including Random Forest (accuracy = 85.2%), k-NN (accuracy = 75.4%) and SVM (accuracy = 36.1%). The models were further explored for improvement using PCA (accuracy = 72.1% with 10 numeric components) and Manual Feature Selection (accuracy = 82% with 7 features). The DL approach was achieved using two types of Neural Networks to create three models. The first was a Convolutional Neural Network (СNN), the second was a Long Short-Term Memory network (LSTM), and the third was a combination of both. The best performance was achieved using CNN (accuracy = 94.1%)."
+    },
+    {
+      "paperId": "cba8bdab5166fb3a4a19fd7a9c876bdc203e4616",
+      "externalIds": {
+        "PubMedCentral": "8467236",
+        "DOI": "10.3390/diagnostics11091571",
+        "CorpusId": 237935068,
+        "PubMed": "34573913"
+      },
+      "url": "https://www.semanticscholar.org/paper/cba8bdab5166fb3a4a19fd7a9c876bdc203e4616",
+      "title": "Classification of Sleep Apnea Based on Sub-Band Decomposition of EEG Signals",
+      "venue": "Diagnostics",
+      "year": 2021,
+      "citationCount": 26,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2075-4418/11/9/1571/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8467236, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "39209298",
+          "name": "R. Jayaraj"
+        },
+        {
+          "authorId": "48827709",
+          "name": "Jagannath Mohan"
+        }
+      ],
+      "abstract": "To classify between normal and sleep apnea subjects based on sub-band decomposition of electroencephalogram (EEG) signals. This study comprised 159 subjects obtained from the ISRUC (Institute of System and Robotics—University of Coimbra), Sleep-EDF (European Data Format), and CAP (Cyclic Alternating Pattern) Sleep database, which consists of normal and sleep apnea subjects. The wavelet packet decomposition method was incorporated to categorize the EEG signals into five frequency bands, namely, alpha, beta, delta, gamma, and theta. Entropy and energy (non-linear) for all bands was calculated and as a result, 10 features were obtained for each EEG signal. The ratio of EEG bands included four parameters, including heart rate, brain perfusion, neural activity, and synchronization. In this study, a support vector machine with kernels and random forest classifiers was used for classification. The performance measures demonstrated that the improved results were obtained from the support vector machine classifier with a kernel polynomial order 2. The accuracy (90%), sensitivity (100%), and specificity (83%) with 14 features were estimated using the data obtained from ISRUC database. The proposed study is feasible and seems to be accurate in classifying the subjects with sleep apnea based on the extracted features from EEG signals using a support vector machine classifier."
+    },
+    {
+      "paperId": "3bdbe60c5d9005643bd3898814826b9e7c6ea87a",
+      "externalIds": {
+        "DOI": "10.1109/TNSRE.2022.3205267",
+        "CorpusId": 252209743,
+        "PubMed": "36099215"
+      },
+      "url": "https://www.semanticscholar.org/paper/3bdbe60c5d9005643bd3898814826b9e7c6ea87a",
+      "title": "Assessment of Singularities in the EEG During A-Phases of Sleep Based on Wavelet Decomposition",
+      "venue": "IEEE transactions on neural systems and rehabilitation engineering",
+      "year": 2022,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/tnsre.2022.3205267",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TNSRE.2022.3205267?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TNSRE.2022.3205267, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2184709666",
+          "name": "D. I. Medina-Ibarra"
+        },
+        {
+          "authorId": "32405725",
+          "name": "I. Chouvarda"
+        },
+        {
+          "authorId": "40404201",
+          "name": "J. S. Murguía"
+        },
+        {
+          "authorId": "144410205",
+          "name": "A. Alba"
+        },
+        {
+          "authorId": "1398764101",
+          "name": "E. Arce-Santana"
+        },
+        {
+          "authorId": "145691035",
+          "name": "A. Bianchi"
+        },
+        {
+          "authorId": "3110285",
+          "name": "M. Méndez"
+        }
+      ],
+      "abstract": "Electroencephalography (EEG) signals convey information related to different processes that take place in the brain. From the EEG fluctuations during sleep, it is possible to establish the sleep stages and identify short events, commonly related to a specific physiological process or pathology. Some of these short events (called A-phases) present an organization and build up the concept of the Cyclic Alternating Pattern (CAP) phenomenon. In general, the A-phases abruptly modify the EEG fluctuations, and a singular behavior could occur. With the aim to quantify the abrupt changes during A-phases, in this work the wavelet analysis is considered to compute Hölder exponents, which measure the singularity strength. We considered time windows of 2s outside and 5s inside A-phases onset (or offset). A total number of 5121 A-phases from 9 healthy participants and 10 patients with periodic leg movements were analyzed. Within an A-phase the Hölder numerical value tends to be 0.6, which implies a less abrupt singularity. Whereas outside of A-phases, it is observed that the Hölder value is approximately equal to 0.3, which implies stronger singularities, i.e., a more evident discontinuity in the signal behavior. In addition, it seems that the number of singularities increases inside of A-phases. The numerical results suggest that the EEG naturally conveys singularities modified by the A-phase occurrence, and this information could help to conceptualize the CAP phenomenon from a new perspective based on the sharpness of the EEG instead of the oscillatory way."
+    },
+    {
+      "paperId": "facc1cdfb92f5814d48f5a8acebde1444918bb5c",
+      "externalIds": {
+        "PubMedCentral": "9453302",
+        "DOI": "10.3389/fnhum.2022.915276",
+        "CorpusId": 251772243,
+        "PubMed": "36092650"
+      },
+      "url": "https://www.semanticscholar.org/paper/facc1cdfb92f5814d48f5a8acebde1444918bb5c",
+      "title": "EEG brain signals to detect the sleep health of a driver: An automated framework system based on deep learning",
+      "venue": "Frontiers in Human Neuroscience",
+      "year": 2022,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnhum.2022.915276/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9453302, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1659490950",
+          "name": "Halima Ettahiri"
+        },
+        {
+          "authorId": "134158126",
+          "name": "J. M. Ferrández Vicente"
+        },
+        {
+          "authorId": "6208337",
+          "name": "T. Fechtali"
+        }
+      ],
+      "abstract": "Mental fatigue is complex disorganization that affects the human being's efficiency in work and daily activities (e.g., driving, exercising). Encephalography is routinely used to discern this fatigue. Several automatic procedures have deployed conventional approaches to support neurologists in mental fatigue detection episodes (e.g., sleepy vs. normal). In all of the traditional procedures (e.g., support vector machine, discrimination fisher, K-nearest neighbor, and Bayesian classification), only a low accuracy is achieved when a binary classification task (e.g., tired vs. normal) is applied. The convolutional neural network model identifies the correct mathematical manipulation to turn the input into the output. In this study, a convolutional neural network is trained to recognize brain signals recorded by a wearable encephalographic cap. Unfortunately, the convolutional neural network works with large datasets. To overcome this problem, an augmentation scheme for a convolutional neural network model is essential because it can achieve higher accuracy than the traditional classifiers. The results show that our model achieved 97.3% compared to the state-of-the-art traditional methods (e.g., SVM and LDA)."
+    },
+    {
+      "paperId": "b980d4785567bf364912d90e5ef45c2be515c05f",
+      "externalIds": {
+        "ArXiv": "2112.11218",
+        "PubMedCentral": "9518445",
+        "DBLP": "journals/corr/abs-2112-11218",
+        "DOI": "10.3390/ijerph191710892",
+        "CorpusId": 245353707,
+        "PubMed": "36078611"
+      },
+      "url": "https://www.semanticscholar.org/paper/b980d4785567bf364912d90e5ef45c2be515c05f",
+      "title": "Multiple Time Series Fusion Based on LSTM: An Application to CAP A Phase Classification Using EEG",
+      "venue": "International Journal of Environmental Research and Public Health",
+      "year": 2021,
+      "citationCount": 12,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1660-4601/19/17/10892/pdf?version=1662037441",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2112.11218, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "22683562",
+          "name": "Fábio Mendonça"
+        },
+        {
+          "authorId": "3150163",
+          "name": "S. Mostafa"
+        },
+        {
+          "authorId": "2056093189",
+          "name": "Diogo Freitas"
+        },
+        {
+          "authorId": "2399078",
+          "name": "F. M. Dias"
+        },
+        {
+          "authorId": "1389967607",
+          "name": "A. Ravelo-García"
+        }
+      ],
+      "abstract": "The Cyclic Alternating Pattern (CAP) is a periodic activity detected in the electroencephalogram (EEG) signals. This pattern was identified as a marker of unstable sleep with several possible clinical applications; however, there is a need to develop automatic methodologies to facilitate real-world applications based on CAP assessment. Therefore, a deep learning-based EEG channels’ feature level fusion was proposed in this work and employed for the CAP A phase classification. Two optimization algorithms optimized the channel selection, fusion, and classification procedures. The developed methodologies were evaluated by fusing the information from multiple EEG channels for patients with nocturnal frontal lobe epilepsy and patients without neurological disorders. Results showed that both optimization algorithms selected a comparable structure with similar feature level fusion, consisting of three electroencephalogram channels (Fp2–F4, C4–A1, F4–C4), which is in line with the CAP protocol to ensure multiple channels’ arousals for CAP detection. Moreover, the two optimized models reached an area under the receiver operating characteristic curve of 0.82, with average accuracy ranging from 77% to 79%, a result in the upper range of the specialist agreement and best state-of-the-art works, despite a challenging dataset. The proposed methodology also has the advantage of providing a fully automatic analysis without requiring any manual procedure. Ultimately, the models were revealed to be noise-resistant and resilient to multiple channel loss, being thus suitable for real-world application."
+    },
+    {
+      "paperId": "9ea8257e1a91da6b1c2f8b01032e86b7dd78f911",
+      "externalIds": {
+        "DOI": "10.1109/USBEREIT51232.2021.9455089",
+        "CorpusId": 235637322
+      },
+      "url": "https://www.semanticscholar.org/paper/9ea8257e1a91da6b1c2f8b01032e86b7dd78f911",
+      "title": "Recognition of Sleep Apnea by EEG Using Nonlinear Dynamics Methods",
+      "venue": "2021 Ural Symposium on Biomedical Engineering, Radioelectronics and Information Technology (USBEREIT)",
+      "year": 2021,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/USBEREIT51232.2021.9455089?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/USBEREIT51232.2021.9455089, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2115015898",
+          "name": "Starchenkova Karina Smbatovna"
+        },
+        {
+          "authorId": "2115011880",
+          "name": "Manilo Lyudmila Alekseevna"
+        }
+      ],
+      "abstract": "Obstructive sleep apnea is a disorder characterized by frequent interruptions in breathing during sleep, usually accompanied by snoring. Currently, obstructive sleep apnea syndrome is diagnosed using polysomnography, a method of recording body activity during sleep and pulse oximetry, which measures the amount of oxygen in the blood at any time. Obstructive sleep apnea itself is not a life-threatening condition, but it can cause serious problems such as cardiovascular and cerebrovascular disease. Sleep apnea during the day can make a person feel excessively sleepy, have difficulty concentrating, or headaches. Electroencephalogram (EEG) signals were used for the study. Signals are taken from the CAP Sleep database [1]. Sleep apnea has been associated with disorders such as narcolepsy, bruxism, periodic limb movement syndrome, sleep apnea, and nocturnal frontal frontal lobe epilepsy. It should be noted that these disorders are found in different sections of the ICSD-3 classification. The paper investigates entropy methods and the calculation of the highest Lyapunov exponent in relation to the problem of recognizing sleep apnea by EEG. The developed algorithms and programs are intended for medical computer systems and implemented in the MATLAB software environment."
+    },
+    {
+      "paperId": "05b351c726ed94e1bb3db5753a8271da8477da5d",
+      "externalIds": {
+        "PubMedCentral": "7597285",
+        "DBLP": "journals/entropy/TripathyGGA20",
+        "MAG": "3092244114",
+        "DOI": "10.3390/e22101141",
+        "CorpusId": 225162796,
+        "PubMed": "33286910"
+      },
+      "url": "https://www.semanticscholar.org/paper/05b351c726ed94e1bb3db5753a8271da8477da5d",
+      "title": "Development of Automated Sleep Stage Classification System Using Multivariate Projection-Based Fixed Boundary Empirical Wavelet Transform and Entropy Features Extracted from Multichannel EEG Signals",
+      "venue": "Entropy",
+      "year": 2020,
+      "citationCount": 39,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1099-4300/22/10/1141/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7597285, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2245526684",
+          "name": "R. K. Tripathy"
+        },
+        {
+          "authorId": "152709536",
+          "name": "S. Ghosh"
+        },
+        {
+          "authorId": "50828037",
+          "name": "Pranjali Gajbhiye"
+        },
+        {
+          "authorId": "2245528449",
+          "name": "U. R. Acharya"
+        }
+      ],
+      "abstract": "The categorization of sleep stages helps to diagnose different sleep-related ailments. In this paper, an entropy-based information–theoretic approach is introduced for the automated categorization of sleep stages using multi-channel electroencephalogram (EEG) signals. This approach comprises of three stages. First, the decomposition of multi-channel EEG signals into sub-band signals or modes is performed using a novel multivariate projection-based fixed boundary empirical wavelet transform (MPFBEWT) filter bank. Second, entropy features such as bubble and dispersion entropies are computed from the modes of multi-channel EEG signals. Third, a hybrid learning classifier based on class-specific residuals using sparse representation and distances from nearest neighbors is used to categorize sleep stages automatically using entropy-based features computed from MPFBEWT domain modes of multi-channel EEG signals. The proposed approach is evaluated using the multi-channel EEG signals obtained from the cyclic alternating pattern (CAP) sleep database. Our results reveal that the proposed sleep staging approach has obtained accuracies of 91.77%, 88.14%, 80.13%, and 73.88% for the automated categorization of wake vs. sleep, wake vs. rapid eye movement (REM) vs. Non-REM, wake vs. light sleep vs. deep sleep vs. REM sleep, and wake vs. S1-sleep vs. S2-sleep vs. S3-sleep vs. REM sleep schemes, respectively. The developed method has obtained the highest overall accuracy compared to the state-of-art approaches and is ready to be tested with more subjects before clinical application."
+    },
+    {
+      "paperId": "edf6aff2b87cc75f3de6f7e97e830a1871c859f7",
+      "externalIds": {
+        "MAG": "2960237166",
+        "DOI": "10.1093/sleep/zsz164",
+        "CorpusId": 197423258,
+        "PubMed": "31312838"
+      },
+      "url": "https://www.semanticscholar.org/paper/edf6aff2b87cc75f3de6f7e97e830a1871c859f7",
+      "title": "Sleep cardiac dysautonomia and EEG oscillations in Amyotrophic Lateral Sclerosis.",
+      "venue": "Sleep",
+      "year": 2019,
+      "citationCount": 32,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://iris.unica.it/bitstream/11584/273788/1/Sleep%20cardiac%20dysautonomia%20and%20EEG%20oscillations%20in%20Amyotrophic%20Lateral%20Sclerosis..pdf",
+        "status": "GREEN",
+        "license": "other-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsz164?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsz164, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "36970808",
+          "name": "P. Congiu"
+        },
+        {
+          "authorId": "50321169",
+          "name": "S. Mariani"
+        },
+        {
+          "authorId": "9112460",
+          "name": "G. Milioli"
+        },
+        {
+          "authorId": "3064418",
+          "name": "L. Parrino"
+        },
+        {
+          "authorId": "151099451",
+          "name": "L. Tamburrino"
+        },
+        {
+          "authorId": "4527115",
+          "name": "G. Borghero"
+        },
+        {
+          "authorId": "5500260",
+          "name": "G. Defazio"
+        },
+        {
+          "authorId": "2061651634",
+          "name": "B. Pereira"
+        },
+        {
+          "authorId": "36684983",
+          "name": "M. Fantini"
+        },
+        {
+          "authorId": "3687541",
+          "name": "M. Puligheddu"
+        }
+      ],
+      "abstract": "STUDY OBJECTIVES\nAmyotrophic Lateral Sclerosis (ALS) is a progressive neurodegenerative disease due to loss of motor neurons. However, the Autonomic Nervous System (ANS) can also be involved. The aim of this research was to assess the sleep macro- and micro-structure, the cardiac ANS during sleep and the relationships between sleep, autonomic features and clinical parameters in a cohort of ALS patients.\n\n\nMETHODS\nForthy-two consecutive ALS patients underwent clinical evaluation and full-night video-polysomnography (video-PSG). Only 31 patients met inclusion criteria (absence of comorbidities, intake of cardioactive drugs, or recording artifacts) and were selected for assessment of sleep parameters, including cyclic alternating pattern (CAP) and heart rate variability (HRV). Subjective sleep quality and daytime vigilance were also assessed using specific questionnaires.\n\n\nRESULTS\nAlthough sleep was subjectively perceived as satisfactory, compared to age- and sex-matched healthy controls, ALS patients showed significant sleep alteration: decreased total sleep time and sleep efficiency, increased nocturnal awakenings, inverted stage 1 (N1) / stage 3 (N3) ratio, reduced REM sleep and decreased CAP rate, the latter supported by lower amounts of A phases with an inverted A1/A3 ratio. Moreover, a significant reduction in HRV parameters was observed during all sleep stages, indicative of impaired autonomic oscillations.\n\n\nCONCLUSION\nOur results indicate that sleep is significantly disrupted in ALS patients despite its subjective perception. Moreover, EEG activity and autonomic functions are less reactive, as shown by a decreased CAP rate and a reduction in HRV features, reflecting an unbalanced autonomic modulation."
+    },
+    {
+      "paperId": "7857c4c7c856c54bbb10905402a5e6397f95c4ea",
+      "externalIds": {
+        "DOI": "10.58530/2025/4397",
+        "CorpusId": 281342592
+      },
+      "url": "https://www.semanticscholar.org/paper/7857c4c7c856c54bbb10905402a5e6397f95c4ea",
+      "title": "A Head-Cap RF-Coil Array to Enable Comfortable Sleep and Concurrent TMS/EEG/fMRI",
+      "venue": "ISMRM Annual Meeting",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.58530/2025/4397?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.58530/2025/4397, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2033292001",
+          "name": "J. Maravilla"
+        },
+        {
+          "authorId": "2318069062",
+          "name": "Nazem Khairallah"
+        },
+        {
+          "authorId": "2228019600",
+          "name": "Ana C. Arias"
+        },
+        {
+          "authorId": "2307425179",
+          "name": "Michael Lustig"
+        }
+      ],
+      "abstract": "Motivation: To address the limitations of performing whole night uninterrupted sleep studies and concurrent TMS/EEG/fMRI in an MR environment. Goal(s): To develop an advanced 25-channel ultra-thin Head-Cap RF-Coil Array that provides full brain coverage, durability, and EEG/TMS compatibility with minimal performance degradation. Approach: An ultra-thin and modular Head-Cap Array is designed using 25 reinforced Twstr elements arranged in a \"soccer-ball\" geometry with adjustable cable routes to accommodate the needs of a study. Results: The Head-Cap demonstrates improved performance when compared to a standard head array, provides comfort and unrestricted head placement for sleep with minimal reduction in performance when used with EEG or TMS. Impact: This Head-Cap Array could enable prolonged overnight sleep studies and concurrent TMS/EEG/fMRI allowing researchers to study neural dynamics during sleep, and monitor the causal effects of TMS with minor reduction in imaging performance."
+    },
+    {
+      "paperId": "972ed5206d37798a5e3136c59114769df333c560",
+      "externalIds": {
+        "MAG": "3029194087",
+        "DOI": "10.1093/sleep/zsaa056.985",
+        "CorpusId": 219753601
+      },
+      "url": "https://www.semanticscholar.org/paper/972ed5206d37798a5e3136c59114769df333c560",
+      "title": "0989 Examining The Role Of Toddler Sleep Quality On Wake EEG And Language Ability",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/43/Supplement_1/A375/33309232/zsaa056.985.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaa056.985?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaa056.985, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "115209591",
+          "name": "J. Page"
+        },
+        {
+          "authorId": "134686687",
+          "name": "R. Walters"
+        },
+        {
+          "authorId": "145037582",
+          "name": "Russell A. Gould"
+        },
+        {
+          "authorId": "145047957",
+          "name": "L. Wakschlag"
+        },
+        {
+          "authorId": "144451087",
+          "name": "E. Norton"
+        }
+      ],
+      "abstract": "\n \n \n Sleep and the development of language are prominent concerns of many parents and until recently, many have examined these concerns tangentially. Children with developmental delays/disabilities have shown to have impaired sleep and poor sleep quality, and impairments or changes in sleep quality may play a prominent role in the acquisition of language and neuronal oscillatory patterns. This study examines the role of child sleep quality paired with a normed measure of language and wake electroencephalography (EEG). Examining the role of child sleep quality with language ability and wake EEG may provide nascent incremental utility to understanding the influences of sleep on healthy development.\n \n \n \n Data from 109 toddlers (age range 24 to 30.5 m, M = 26.83 ± 1.58 m, 52% male) from the Brief Infant Sleep Questionnaire (BISQ), Mullen Scales of Early Learning (MSEL), and continuous EEG were collected and analyzed. EEG was recorded (32 electrode cap BioSemi) while toddlers sat in a booster seat and watched a silent video. Data were analyzed in RStudio and Matlab to examine toddler’s sleep quality (infant sleep and parent behaviors) and relations with the MSEL and EEG (controlling for child age and gender).\n \n \n \n Means and standard deviations appeared within expected limits based on the range of each variable. Toddlers with slow-developing language were associated with relatively poor sleep quality, explaining 9.75% of the variance. We find preliminary evidence to suggest a potential sleep disruption around the time when a child is undergoing a rapid expansion in their vocabulary (expressive language). Toddler’s sleep quality and language acquisition were also correlated with wake EEG (alpha and beta).\n \n \n \n Sleep is regarded as an essential component supporting the myriad changes observed in early development. Sleep quality fundamentally influences healthy development across domains. Here, we showed child sleep quality is highly associated with toddler’s language ability, and wake EEG, providing new insights into the developing brain.\n \n \n \n National Institutes of Health R01DC016273, R01MH107652-03S1, and Johnson & Johnson Consumer Inc., Skillman, NJ, USA.\n"
+    },
+    {
+      "paperId": "e0f35c25e5eb1309064ec18279f73c68f783bd2d",
+      "externalIds": {
+        "MAG": "2903901888",
+        "DOI": "10.1093/sleep/zsy259",
+        "CorpusId": 58665068,
+        "PubMed": "30566659"
+      },
+      "url": "https://www.semanticscholar.org/paper/e0f35c25e5eb1309064ec18279f73c68f783bd2d",
+      "title": "A hemodynamic network involving the insula, the cingulate, and the basal forebrain correlates with EEG synchronization phases of sleep instability",
+      "venue": "Sleep",
+      "year": 2018,
+      "citationCount": 17,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/42/4/zsy259/28273575/zsy259.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsy259?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsy259, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50556159",
+          "name": "V. Kokkinos"
+        },
+        {
+          "authorId": "1705376",
+          "name": "S. Vulliémoz"
+        },
+        {
+          "authorId": "40634690",
+          "name": "Andreas M. Koupparis"
+        },
+        {
+          "authorId": "152803666",
+          "name": "M. Koutroumanidis"
+        },
+        {
+          "authorId": "2079040",
+          "name": "G. Kostopoulos"
+        },
+        {
+          "authorId": "1749095",
+          "name": "L. Lemieux"
+        },
+        {
+          "authorId": "1942597",
+          "name": "K. Garganis"
+        }
+      ],
+      "abstract": "The cyclic alternating pattern (CAP) encompasses the pseudoperiodic appearance of synchronized brain waves and rhythms and is considered a regulator of the nonrapid eye movement (NREM) sleep vigilance level, reflecting sleep instability. To determine the brain regions responsible for this phenomenon, we scored and analyzed sleep functional magnetic resonance imaging data acquired with simultaneous electroencephalography (EEG-fMRI). Group analysis revealed a set of brain areas showing statistically significant blood oxygen-level dependent signal correlated positively with the synchronization phase of the CAP, most prominent being the insula, the middle cingulate gyrus, and the basal forebrain. These areas may form a network acting as a synchronization pacemaker, controlling the level of NREM sleep vigilance and the sleeper's arousability."
+    },
+    {
+      "paperId": "8d34ef13f3a136361eb262096f87e7d670af482f",
+      "externalIds": {
+        "MAG": "2088936451",
+        "DOI": "10.1016/J.BRAINRESBULL.2003.12.013",
+        "CorpusId": 27572361,
+        "PubMed": "15245767"
+      },
+      "url": "https://www.semanticscholar.org/paper/8d34ef13f3a136361eb262096f87e7d670af482f",
+      "title": "Quantitative analysis of sleep EEG microstructure in the time-frequency domain.",
+      "venue": "Brain Research Bulletin",
+      "year": 2004,
+      "citationCount": 88,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.BRAINRESBULL.2003.12.013?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.BRAINRESBULL.2003.12.013, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2412513838",
+          "name": "Fabrizio De Carli"
+        },
+        {
+          "authorId": "2197571",
+          "name": "L. Nobili"
+        },
+        {
+          "authorId": "4971901",
+          "name": "M. Beelke"
+        },
+        {
+          "authorId": "2110545017",
+          "name": "Tsuyoshi Watanabe"
+        },
+        {
+          "authorId": "3067525",
+          "name": "A. Smerieri"
+        },
+        {
+          "authorId": "3064418",
+          "name": "L. Parrino"
+        },
+        {
+          "authorId": "143750017",
+          "name": "M. Terzano"
+        },
+        {
+          "authorId": "3671632",
+          "name": "F. Ferrillo"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "be2b711d4701336fae7afec1f886abf90037263e",
+      "externalIds": {
+        "MAG": "1997659002",
+        "DBLP": "conf/embc/ChouvardaMRBPGT11",
+        "DOI": "10.1109/IEMBS.2011.6090341",
+        "CorpusId": 4944979,
+        "PubMed": "22254603"
+      },
+      "url": "https://www.semanticscholar.org/paper/be2b711d4701336fae7afec1f886abf90037263e",
+      "title": "CAP sleep in insomnia: New methodological aspects for sleep microstructure analysis",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2011,
+      "citationCount": 12,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IEMBS.2011.6090341?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IEMBS.2011.6090341, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32405725",
+          "name": "I. Chouvarda"
+        },
+        {
+          "authorId": "3110285",
+          "name": "M. Méndez"
+        },
+        {
+          "authorId": "47567445",
+          "name": "V. Rosso"
+        },
+        {
+          "authorId": "145691035",
+          "name": "A. Bianchi"
+        },
+        {
+          "authorId": "3064418",
+          "name": "L. Parrino"
+        },
+        {
+          "authorId": "152833225",
+          "name": "A. Grassi"
+        },
+        {
+          "authorId": "143750017",
+          "name": "M. Terzano"
+        },
+        {
+          "authorId": "144338063",
+          "name": "N. Maglaveras"
+        },
+        {
+          "authorId": "22010550",
+          "name": "S. Cerutti"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "32a433f8e9e6ed3dd9f4dfd409fbef962194ffa1",
+      "externalIds": {
+        "MAG": "2058224725",
+        "DOI": "10.1016/J.BRAINRESBULL.2003.12.010",
+        "CorpusId": 27810567,
+        "PubMed": "15245764"
+      },
+      "url": "https://www.semanticscholar.org/paper/32a433f8e9e6ed3dd9f4dfd409fbef962194ffa1",
+      "title": "Is insomnia a neurophysiological disorder? The role of sleep EEG microstructure.",
+      "venue": "Brain Research Bulletin",
+      "year": 2004,
+      "citationCount": 68,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.BRAINRESBULL.2003.12.010?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.BRAINRESBULL.2003.12.010, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3064418",
+          "name": "L. Parrino"
+        },
+        {
+          "authorId": "3671632",
+          "name": "F. Ferrillo"
+        },
+        {
+          "authorId": "3067525",
+          "name": "A. Smerieri"
+        },
+        {
+          "authorId": "47971340",
+          "name": "M. C. Spaggiari"
+        },
+        {
+          "authorId": "3595391",
+          "name": "V. Palomba"
+        },
+        {
+          "authorId": "38277584",
+          "name": "Mariano Rossi"
+        },
+        {
+          "authorId": "143750017",
+          "name": "M. Terzano"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "5e11bf667918b76476d0f122090aaddd11bf61e0",
+      "externalIds": {
+        "DOI": "10.53759/7669/jmc202505053",
+        "CorpusId": 277599794
+      },
+      "url": "https://www.semanticscholar.org/paper/5e11bf667918b76476d0f122090aaddd11bf61e0",
+      "title": "Analysing the Thought Process of EEG Pattern using Compressed Sensing Architecture",
+      "venue": "Journal of Machine and Computing",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.53759/7669/jmc202505053",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.53759/7669/jmc202505053?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.53759/7669/jmc202505053, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2269932398",
+          "name": "A. S"
+        },
+        {
+          "authorId": "2227670336",
+          "name": "A. L"
+        }
+      ],
+      "abstract": "Sleep pattern recognition plays a crucial role in detecting pathological and psychological diseases. Various disorders can be identified through analysis of EEG patterns recorded during sleep. Sleep EEG consists of four primary waveforms: alpha, beta, theta, and delta waves, each associated with different sleep stages. The cyclic alternating pattern (CAP) is characterized by cerebral activity and autonomic motor functions, providing insights into motor events and neurovegetative functions that aid in understanding the pathophysiology of sleep disorders. This research focuses on identifying sleep patterns using a Compressed Sensing Architecture (CSA). The aim is to assist pathologists in accurately and efficiently diagnosing sleep disorders through automated analysis. Existing methodologies for extracting sleep patterns from EEG rely on various algorithms. In this study, error signals are extracted using CSA, and metrics such as the Percentage Root-mean-square Difference (PRD) and Signal-to-Noise Ratio (SNR) are computed after reconstructing the original signal. The proposed approach demonstrates enhanced accuracy, making it a promising solution for automated, error-free diagnosis of sleep disorders. The research findings have significant potential for practical implementation, improving diagnostic precision and clinical outcomes."
+    },
+    {
+      "paperId": "e0f65b6f5f25a7a53f7c4edb20d2ff6ec6cdeb5d",
+      "externalIds": {
+        "MAG": "2019834996",
+        "DOI": "10.1515/BMT.2006.029",
+        "CorpusId": 27290876,
+        "PubMed": "17061931"
+      },
+      "url": "https://www.semanticscholar.org/paper/e0f65b6f5f25a7a53f7c4edb20d2ff6ec6cdeb5d",
+      "title": "Multivariate and multiorgan analysis of cardiorespiratory variability signals: the CAP sleep case",
+      "venue": "Biomedizinische Technik. Biomedical engineering",
+      "year": 2006,
+      "citationCount": 9,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1515/BMT.2006.029?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1515/BMT.2006.029, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145691035",
+          "name": "A. Bianchi"
+        },
+        {
+          "authorId": "1390072607",
+          "name": "L. Ferini-Strambi"
+        },
+        {
+          "authorId": "48220165",
+          "name": "V. Castronovo"
+        },
+        {
+          "authorId": "22010550",
+          "name": "S. Cerutti"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b42cabd2ec0f99285af78d5154812c6411d24f21",
+      "externalIds": {
+        "CorpusId": 160028860
+      },
+      "url": "https://www.semanticscholar.org/paper/b42cabd2ec0f99285af78d5154812c6411d24f21",
+      "title": "Sleep Disorder Classifiers Using EEG Signal Processing",
+      "venue": "",
+      "year": 2017,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://www.ijsdr.org/papers/IJSDR1703034.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "83550029",
+          "name": "Dr. M Srinivasan"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "a15bd7edf280268e7fec4fb9c8e28d79e620580b",
+      "externalIds": {
+        "PubMedCentral": "12294043",
+        "DOI": "10.3390/brainsci15070691",
+        "CorpusId": 279845024,
+        "PubMed": "40722283"
+      },
+      "url": "https://www.semanticscholar.org/paper/a15bd7edf280268e7fec4fb9c8e28d79e620580b",
+      "title": "A Permutation Entropy Method for Sleep Disorder Screening",
+      "venue": "Brain Science",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12294043, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2296692221",
+          "name": "C. D. Duarte"
+        },
+        {
+          "authorId": "2202602446",
+          "name": "M. Meo"
+        },
+        {
+          "authorId": "2063153391",
+          "name": "F. Iaconis"
+        },
+        {
+          "authorId": "5574329",
+          "name": "A. Wainselboim"
+        },
+        {
+          "authorId": "2250694085",
+          "name": "G. Gasaneo"
+        },
+        {
+          "authorId": "2303728421",
+          "name": "Claudio Delrieux"
+        }
+      ],
+      "abstract": "Background/Objectives: We present a novel approach for detecting generalized sleep pathologies through the fractal analysis of single-channel electroencephalographic (EEG) signals. We propose that the fractal scaling exponent of permutation entropy time series serves as a robust biomarker of pathological sleep patterns, capturing alterations in brain dynamics across multiple disorders. Methods: Using two public datasets (Sleep-EDF and CAP Sleep Database) comprising 200 subjects (112 healthy controls and 88 patients with various sleep pathologies), we computed the fractal scaling of the permutation entropy of these signals. Results: The results demonstrate significantly reduced scaling exponents in pathological sleep compared to healthy controls (mean = 1.24 vs. 1.06, p<0.001), indicating disrupted long-range temporal correlations in neural activity. The method achieved 90% classification accuracy for rapid-eye-movement (REM) sleep behavior disorder (F1-score: 0.89) and maintained 74% accuracy when aggregating all pathologies (insomnia, narcolepsy, sleep-disordered breathing, etc.). Conclusions: The advantages of this approach, including compatibility with single-channel EEG (enabling potential wearable applications), independence from sleep-stage annotations, and generalizability across recording montages and sampling rates, stablish a framework for non-specific sleep pathology detection. This is a computationally efficient method that could transform screening protocols and enable earlier intervention. The robustness of this biomarker could enable straightforward clinical applications for common sleep pathologies as well as diseases associated with neurodegenerative conditions."
+    },
+    {
+      "paperId": "5ab6ca445abcd7bc1aeaafc3b2459d08f76eed2d",
+      "externalIds": {
+        "DOI": "10.1007/s11571-025-10261-x",
+        "CorpusId": 278756564,
+        "PubMed": "40401247"
+      },
+      "url": "https://www.semanticscholar.org/paper/5ab6ca445abcd7bc1aeaafc3b2459d08f76eed2d",
+      "title": "Efficient system for classifying cyclic alternating pattern phases in sleep",
+      "venue": "Cognitive Neurodynamics",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11571-025-10261-x?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11571-025-10261-x, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2468733",
+          "name": "Megha Agarwal"
+        },
+        {
+          "authorId": "2306463141",
+          "name": "Amit Singhal"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "2c446fd854ddf0eb639a542cdc215c7e0b03738e",
+      "externalIds": {
+        "DOI": "10.1109/ICWITE64848.2025.11306985",
+        "CorpusId": 284358218
+      },
+      "url": "https://www.semanticscholar.org/paper/2c446fd854ddf0eb639a542cdc215c7e0b03738e",
+      "title": "Deep Learning-Based Classification Framework for Detection of Insomia Sleep Disorder",
+      "venue": "2025 IEEE International Conference for Women in Innovation, Technology & Entrepreneurship (ICWITE)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICWITE64848.2025.11306985?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICWITE64848.2025.11306985, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2350003880",
+          "name": "Ippili Mouneshha"
+        },
+        {
+          "authorId": "2286358227",
+          "name": "N. Siva"
+        },
+        {
+          "authorId": "2241954994",
+          "name": "Naga Malleswari"
+        },
+        {
+          "authorId": "2401861976",
+          "name": "Kondaveeti Rohini"
+        }
+      ],
+      "abstract": "Sleep disorders particularly insomnia has significantly impact mental and physical health. Traditional diagnostic methods like polysomnography (PSG) are resource-intensive and rely on manual evaluation, limiting efficiency. By focusing on CAP Phase B, a critical recovery phase during sleep, the model enhances diagnostic precision, capturing subtle transitions and disruptions associated with sleep disorders. To tackle this issue, we propose a deep learning approach-based classification framework utilizing multimodal physiological signals EEG, EMG, and ECG. Three hybrid model like CNNLSTM, CNN-BiGRU, and CNN-BiLSTM are developed to enhance spatial and temporal feature extraction. The models are trained and evaluated using the CAP Sleep Database from PhysioNet. Among them, the CNN-BiLSTM model attains a top classification accuracy of (99.99%) outperforming CNN-BiGRU (96.69%) and CNN LSTM (94.46%). The integration of convolutional and bidirectional networks significantly improves detection accuracy, making the proposed method a promising tool for automated insomnia diagnosis."
+    },
+    {
+      "paperId": "b2c767f14f60b53a12539d41a6ebd6af9c6d4485",
+      "externalIds": {
+        "DOI": "10.1109/TLA.2024.10431420",
+        "CorpusId": 267576249
+      },
+      "url": "https://www.semanticscholar.org/paper/b2c767f14f60b53a12539d41a6ebd6af9c6d4485",
+      "title": "Time frequency distribution and deep neural network for automated identification of insomnia using single channel EEG-signals",
+      "venue": "IEEE Latin America Transactions",
+      "year": 2024,
+      "citationCount": 10,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/9907/10431416/10431420.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TLA.2024.10431420?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TLA.2024.10431420, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2400859159",
+          "name": "Kamlesh Kumar"
+        },
+        {
+          "authorId": "2279991572",
+          "name": "Prince Kumar"
+        },
+        {
+          "authorId": "2200235955",
+          "name": "Ruchit Kumar Patel"
+        },
+        {
+          "authorId": "2266166849",
+          "name": "Manish Sharma"
+        },
+        {
+          "authorId": "46409400",
+          "name": "V. Bajaj"
+        },
+        {
+          "authorId": "2265888352",
+          "name": "U. R. Acharya"
+        }
+      ],
+      "abstract": "It is essential to have enough sleep for a healthy life; otherwise, it may lead to sleep disorders such as apnea, narcolepsy, insomnia, and periodic leg movements. A polysomnogram (PSG) is typically used to analyze sleep and identify different sleep disorders. This work proposes a novel convolutional neural network (CNN)-based technique for insomnia detection using single-channel electroencephalogram (EEG) signals instead of complex PSG. Morlet wavelet-based continuous wavelet transforms and smoothed pseudo-Wigner-Ville distribution (SPWVD) are explored in the proposed method to obtain scalograms of EEG signals of duration 1s along with convolutional layers for features extraction and image classification. The Morlet transform is found to be a better time-frequency distribution. We have developed Morlet wavelet-based CNN (MWTCNNet) for the classification of healthy and insomniac patients using cyclic alternating pattern (CAP) and sleep disorder research centre (SDRC) databases with C4-A1 single-channel EEG derivation. We have used multiple cohorts/settings of the CAP and SDRC databases to analyse the performance of proposed model. The proposed MWTCNNet achieved an accuracy, sensitivity, and specificity of 98.9%, 99.03%, and 98.66%, respectively, using the CAP database, and 99.03%, 99.20%, and 98.87%, respectively, with the SDRC database. Our proposed model performs better than existing state-of-the-art models and can be tested on a vast, diverse database before being installed for clinical application."
+    },
+    {
+      "paperId": "11f826c723cee4bbde1d432cc5e4405b419d0347",
+      "externalIds": {
+        "DOI": "10.1109/EMBC58623.2025.11252911",
+        "CorpusId": 283470593,
+        "PubMed": "41336003"
+      },
+      "url": "https://www.semanticscholar.org/paper/11f826c723cee4bbde1d432cc5e4405b419d0347",
+      "title": "Assessment of Cyclic Alternating Pattern of sleep during late pregnancy",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EMBC58623.2025.11252911?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EMBC58623.2025.11252911, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2362992993",
+          "name": "S. Avila"
+        },
+        {
+          "authorId": "2342704963",
+          "name": "A. Hernandez-Silva"
+        },
+        {
+          "authorId": "2395926030",
+          "name": "Di. Medina"
+        },
+        {
+          "authorId": "1390140018",
+          "name": "J. Jimenez-Cruz"
+        },
+        {
+          "authorId": "2363005298",
+          "name": "B. Strizek"
+        },
+        {
+          "authorId": "2261995439",
+          "name": "F. Recker"
+        },
+        {
+          "authorId": "2274514408",
+          "name": "A. M. Bianchi"
+        },
+        {
+          "authorId": "1399342450",
+          "name": "J. S. Murguia-Ibarra"
+        },
+        {
+          "authorId": "2395929984",
+          "name": "M. O. Méndez"
+        }
+      ],
+      "abstract": "Cyclic Alternating Pattern (CAP) is an indicator of sleep instability often associated with various sleep disorders. CAP is characterized by transient changes in cerebral electrical activity, known as A-phases, that occur during sleep. These events are a fundamental component of sleep microstructure and serve as a metric for assessing sleep quality. This research aims to investigate the sleep patterns of pregnant women with good sleep quality in the third trimester to assess sleep behavior from a CAP perspective. An ensemble of deep learning models was developed and trained on electroencephalography (EEG) data from the Physionet CAP database and applied to automatically detect A-phases in EEG data from pregnant women. Statistical analyses were performed using various CAP indices calculated from the detected A-phases in pregnant and non-pregnant women who served as a control group. The results show that pregnant women have a reduction of approximately 10% in the CAP rate index compared to non-pregnant group. This reduction seems to be independent of the non-rapid eye movement (NREM) duration since it is similar in both groups. This finding is interesting because the CAP rate generally represents an increase in the pathological state. The results of this study show that pregnant women have a unique behavior of CAP, which could be an additional indicator of sleep quality in pregnancy. Clinical relevance—In the context of obstetrics and gynecology focused on pregnant women, CAP has not been evaluated, so this work opens the door to include new indicators such as sleep instability, which could provide relationship with the status of pregnant women."
+    },
+    {
+      "paperId": "968a97c1463e7e52ff4e46b76f41c90c2d0cc77f",
+      "externalIds": {
+        "MAG": "2552862371",
+        "PubMedCentral": "5609777",
+        "DOI": "10.1192/bjpo.bp.116.003483",
+        "CorpusId": 241092,
+        "PubMed": "29018561"
+      },
+      "url": "https://www.semanticscholar.org/paper/968a97c1463e7e52ff4e46b76f41c90c2d0cc77f",
+      "title": "Disturbed EEG sleep, paranoid cognition and somatic symptoms identify veterans with post-traumatic stress disorder",
+      "venue": "BJPsych Open",
+      "year": 2016,
+      "citationCount": 17,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/407DDA04B4182143E433366018D01DDD/S2056472400001861a.pdf/div-class-title-disturbed-eeg-sleep-paranoid-cognition-and-somatic-symptoms-identify-veterans-with-post-traumatic-stress-disorder-div.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5609777, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6809138",
+          "name": "H. Moldofsky"
+        },
+        {
+          "authorId": "2077369581",
+          "name": "Lorne Rothman"
+        },
+        {
+          "authorId": "47189971",
+          "name": "R. Kleinman"
+        },
+        {
+          "authorId": "5738195",
+          "name": "S. Rhind"
+        },
+        {
+          "authorId": "2271374663",
+          "name": "D. Richardson"
+        }
+      ],
+      "abstract": "Background Chronic post-traumatic stress disorder (PTSD) behavioural symptoms and medically unexplainable somatic symptoms are reported to occur following the stressful experience of military combatants in war zones. Aims To determine the contribution of disordered EEG sleep physiology in those military combatants who have unexplainable physical symptoms and PTSD behavioural difficulties following war-zone exposure. Method This case-controlled study compared 59 veterans with chronic sleep disturbance with 39 veterans with DSM-IV and clinician-administered PTSD Scale diagnosed PTSD who were unresponsive to pharmacological and psychological treatments. All had standardised EEG polysomnography, computerised sleep EEG cyclical alternating pattern (CAP) as a measure of sleep stability, self-ratings of combat exposure, paranoid cognition and hostility subscales of Symptom Checklist-90, Beck Depression Inventory and the Wahler Physical Symptom Inventory. Statistical group comparisons employed linear models, logistic regression and chi-square automatic interaction detection (CHAID)-like decision trees. Results Veterans with PTSD were more likely than those without PTSD to show disturbances in non-rapid eye movement (REM) and REM sleep including delayed sleep onset, less efficient EEG sleep, less stage 4 (deep) non-REM sleep, reduced REM and delayed onset to REM. There were no group differences in the prevalence of obstructive sleep apnoeas/hypopnoeas and periodic leg movements, but sleep-disturbed, non-PTSD military had more EEG CAP sleep instability. Rank order determinants for the diagnosis of PTSD comprise paranoid thinking, onset to REM sleep, combat history and somatic symptoms. Decision-tree analysis showed that a specific military event (combat), delayed onset to REM sleep, paranoid thinking and medically unexplainable somatic pain and fatigue characterise chronic PTSD. More PTSD veterans reported domestic and social misbehaviour. Conclusions Military combat, disturbed REM/non-REM EEG sleep, paranoid ideation and medically unexplained chronic musculoskeletal pain and fatigue are key factors in determining PTSD disability following war-zone exposure."
+    },
+    {
+      "paperId": "daa657336288f84d8aadecd32a01e522541b74de",
+      "externalIds": {
+        "MAG": "2045191186",
+        "DOI": "10.1016/S1388-2457(99)00245-X",
+        "CorpusId": 602429,
+        "PubMed": "10680563"
+      },
+      "url": "https://www.semanticscholar.org/paper/daa657336288f84d8aadecd32a01e522541b74de",
+      "title": "CAP components and EEG synchronization in the first 3 sleep cycles.",
+      "venue": "Clinical Neurophysiology",
+      "year": 2000,
+      "citationCount": 93,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/S1388-2457(99)00245-X?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S1388-2457(99)00245-X, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143750017",
+          "name": "M. Terzano"
+        },
+        {
+          "authorId": "3064418",
+          "name": "L. Parrino"
+        },
+        {
+          "authorId": "49632381",
+          "name": "Mirella Boselli"
+        },
+        {
+          "authorId": "3067525",
+          "name": "A. Smerieri"
+        },
+        {
+          "authorId": "47971340",
+          "name": "M. C. Spaggiari"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

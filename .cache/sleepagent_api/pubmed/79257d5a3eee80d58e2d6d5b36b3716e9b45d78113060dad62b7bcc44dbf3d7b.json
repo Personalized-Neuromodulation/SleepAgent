@@ -1,0 +1,60 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "32",
+    "retmax": "32",
+    "retstart": "0",
+    "idlist": [
+      "42386532",
+      "42191050",
+      "42128467",
+      "41865716",
+      "41767140",
+      "41671845",
+      "41631633",
+      "41598471",
+      "40665286",
+      "40398068",
+      "40279980",
+      "39951660",
+      "39333887",
+      "39233125",
+      "38519470",
+      "37924270",
+      "37836847",
+      "37682120",
+      "37611815",
+      "35381969",
+      "35197843",
+      "34606812",
+      "34393981",
+      "32406918",
+      "31455572",
+      "30524267",
+      "30118565",
+      "29577961",
+      "29353214",
+      "29306697",
+      "31236500",
+      "26414900"
+    ],
+    "translationset": [
+      {
+        "from": "subjective",
+        "to": "\"subjective\"[All Fields] OR \"subjectively\"[All Fields] OR \"subjectiveness\"[All Fields] OR \"subjectives\"[All Fields] OR \"subjectivities\"[All Fields] OR \"subjectivity\"[All Fields]"
+      },
+      {
+        "from": "sleep quality",
+        "to": "\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]"
+      },
+      {
+        "from": "brain connectivity",
+        "to": "\"Brain Connect\"[Journal:__jid101550313] OR (\"brain\"[All Fields] AND \"connectivity\"[All Fields]) OR \"brain connectivity\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"subjective\"[All Fields] OR \"subjectively\"[All Fields] OR \"subjectiveness\"[All Fields] OR \"subjectives\"[All Fields] OR \"subjectivities\"[All Fields] OR \"subjectivity\"[All Fields]) AND (\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]) AND (\"brain connect\"[Journal] OR (\"brain\"[All Fields] AND \"connectivity\"[All Fields]) OR \"brain connectivity\"[All Fields])"
+  }
+}

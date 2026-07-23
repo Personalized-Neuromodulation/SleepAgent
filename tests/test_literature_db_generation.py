@@ -48,6 +48,7 @@ def _library_config(tmp_path: Path) -> Path:
                 "rag_index_jsonl": str(tmp_path / "outputs" / "rag_abstract_chunks.jsonl"),
             },
             "api": {"enabled": False},
+            "embedding": {"enabled": False},
         },
     )
 
@@ -67,29 +68,28 @@ def _database_config(tmp_path: Path) -> Path:
     )
 
 
-def test_literature_build_generates_sqlite_db_with_core_tables(tmp_path, monkeypatch):
+def test_literature_build_generates_sqlite_db_with_core_tables(tmp_path, monkeypatch, capsys):
     import inspect
 
     from sleep_ai_scientist.literature import library_builder
-    from sleep_ai_scientist.schemas.literature import LiteratureRecord
+    from sleep_ai_scientist.api.normalizer import api_to_literature_record, make_api_record
 
     assert Path(inspect.getfile(library_builder)).resolve().is_relative_to(Path.cwd().resolve())
 
+    api_record = make_api_record(
+        "mock_provider",
+        "api_online_001",
+        "Online API sleep RAG paper",
+        abstract="Online insomnia slow wave EEG retrieval produces a RAG-ready abstract.",
+        year=2025,
+        source="api:mock",
+        query="insomnia slow wave EEG",
+    )
     monkeypatch.setattr(
         library_builder,
         "search_literature_apis",
         lambda config, session=None, rate_limit_enabled=True: (
-            [
-                LiteratureRecord(
-                    paper_id="api_online_001",
-                    title="Online API sleep RAG paper",
-                    abstract="Online insomnia slow wave EEG retrieval produces a RAG-ready abstract.",
-                    year=2025,
-                    source="api:mock",
-                    provider="mock_provider",
-                    query="insomnia slow wave EEG",
-                )
-            ],
+            [api_to_literature_record(api_record)],
             {"enabled": True, "warnings": []},
         ),
     )
@@ -106,11 +106,16 @@ def test_literature_build_generates_sqlite_db_with_core_tables(tmp_path, monkeyp
         api_enabled=True,
         enable_rag_index=True,
     )
+    output = capsys.readouterr().out
 
     assert db_path.exists()
     assert result["registry_records"] == 1
     assert result["rag_index"]["chunk_count"] == 1
     assert (tmp_path / "outputs" / "rag_abstract_chunks.jsonl").exists()
+    assert "[literature_build] persist_api_records_start count=1" in output
+    assert "[literature_build] persist_api_records_done count=1" in output
+    assert "[literature_build] export_registry_start" in output
+    assert "[literature_build] report_done" in output
 
     with sqlite3.connect(db_path) as conn:
         counts = {
@@ -127,7 +132,7 @@ def test_literature_build_generates_sqlite_db_with_core_tables(tmp_path, monkeyp
     }
 
 
-def test_online_no_real_data_script_builds_and_validates_literature_db():
+def test_online_foundation_script_builds_and_validates_literature_db():
     script = Path("scripts/run_foundation_grounding_online.sh").read_text(encoding="utf-8")
 
     assert "python -m sleep_ai_scientist.cli literature build" in script
@@ -135,3 +140,67 @@ def test_online_no_real_data_script_builds_and_validates_literature_db():
     assert "--enable-api" in script
     assert "data/literature/sleep_literature.db" in script
     assert "select count(*) from papers" in script
+    assert script.index("[3/6] Build online sleep literature SQLite DB") < script.index("[4/6] Run grounding from unified literature DB RAG")
+    assert "--enable-rag-index" in script
+    assert "select count(*) from rag_chunks" in script
+
+
+def test_literature_build_uses_own_embedding_config_for_rag_index(tmp_path, monkeypatch):
+    from sleep_ai_scientist.literature import library_builder
+    from sleep_ai_scientist.api.normalizer import api_to_literature_record, make_api_record
+
+    api_record = make_api_record(
+        "mock_provider",
+        "api_online_001",
+        "Online API sleep RAG paper",
+        abstract="Online insomnia slow wave EEG retrieval produces a RAG-ready abstract.",
+        year=2025,
+        source="api:mock",
+        query="insomnia slow wave EEG",
+    )
+    monkeypatch.setattr(
+        library_builder,
+        "search_literature_apis",
+        lambda config, session=None, rate_limit_enabled=True: (
+            [api_to_literature_record(api_record)],
+            {"enabled": True, "warnings": []},
+        ),
+    )
+    monkeypatch.setenv("SLEEPAGENT_SQLITE_PATH", str(tmp_path / "literature" / "sleep_literature.db"))
+    _database_config(tmp_path)
+    library_config = yaml.safe_load(_library_config(tmp_path).read_text(encoding="utf-8"))
+    library_config["embedding"] = {
+        "provider": "local_minilm",
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "enabled": True,
+        "log_file": str(tmp_path / "embedding.log"),
+    }
+    config_path = _write_yaml(tmp_path / "literature_library_config_embedding.yaml", library_config)
+
+    def fake_build_rag_index(session, output_jsonl, embedding_config=None):
+        Path(output_jsonl).parent.mkdir(parents=True, exist_ok=True)
+        Path(output_jsonl).write_text("", encoding="utf-8")
+        return {
+            "chunk_count": 1,
+            "path": str(output_jsonl),
+            "embedding": {
+                "enabled": bool(embedding_config.get("enabled")),
+                "model": embedding_config.get("model"),
+                "vector_count": 1,
+                "vector_dim": 384,
+            },
+        }
+
+    monkeypatch.setattr(library_builder, "build_rag_index", fake_build_rag_index)
+
+    result = library_builder.run_literature_build(
+        config_path,
+        query_config_path=_query_config(tmp_path),
+        library_version="test_sleep_library_v1",
+        backend="sqlite",
+        api_enabled=True,
+    )
+
+    assert result["rag_index"]["embedding"]["enabled"] is True
+    assert result["rag_index"]["embedding"]["model"] == "sentence-transformers/all-MiniLM-L6-v2"
+    assert result["rag_index"]["embedding"]["vector_dim"] == 384

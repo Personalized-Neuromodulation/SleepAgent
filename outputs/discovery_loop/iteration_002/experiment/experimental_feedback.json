@@ -1,0 +1,33 @@
+[
+  {
+    "hypothesis_id": "hypothesis_8d7ffd5b7dc0",
+    "plan_id": "experiment_plan_cdea5110b79a",
+    "support": "partially_supported",
+    "support_score": 0.75,
+    "computed_reward": 0.75,
+    "validated": true,
+    "refuted": false,
+    "primary_tests_passed": 3,
+    "primary_tests_total": 4,
+    "metadata": {
+      "review_status": "partially_supported",
+      "hypothesis_title": "Thalamic Spindle Modulation via Integrated Thalamocortical Coupling, Fractional Anisotropy, and Cortical Slow Oscillations in Sleep Phenotypes",
+      "predictors": [
+        "thalamus_DMN_FC",
+        "timefreq_fALFF_0.01_0.08_over_0.01_0.25"
+      ],
+      "outcomes": [
+        "salience_FC",
+        "frontoparietal_FC"
+      ],
+      "critic_findings": [
+        {
+          "severity": "medium",
+          "category": "missing_data",
+          "message": "Missing ROI voxel count variables may affect model accuracy.",
+          "recommendation": "Impute missing ROI voxel counts or include them in the model if available."
+        }
+      ]
+    }
+  }
+]

@@ -1,3 +1,29 @@
+llm_provider: ollama
+
+online_llm:
+  enabled: true
+  provider: online
+  base_url: https://api.deepseek.com
+  api_key: ${DEEPSEEK_API_KEY}
+  model: deepseek-chat
+  timeout: 300
+  temperature: 0.2
+  max_retries: 3
+  disable_thinking: true
+  debate_rating_threshold: 1400
+  fallback_to_rules: false
+
+ollama:
+  enabled: true
+  provider: ollama
+  base_url: http://localhost:11434
+  model: richardyoung/qwen3-14b-abliterated:latest
+  timeout: 600
+  temperature: 0.2
+  debate_rating_threshold: 1400
+  fallback_to_rules: false
+  log_calls: true
+
 llm:
   enabled: false
   provider: openai

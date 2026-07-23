@@ -1,0 +1,52 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "45",
+    "retmax": "20",
+    "retstart": "0",
+    "idlist": [
+      "42127149",
+      "41951845",
+      "41472688",
+      "41316910",
+      "41238552",
+      "41136354",
+      "41067666",
+      "41055981",
+      "40909627",
+      "40568102",
+      "40370321",
+      "39533111",
+      "38415989",
+      "38113618",
+      "37745863",
+      "36927172",
+      "36741053",
+      "36336346",
+      "35862450",
+      "35615855"
+    ],
+    "translationset": [
+      {
+        "from": "simultaneous",
+        "to": "\"simultaneous\"[All Fields] OR \"simultaneously\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "sleep slow wave",
+        "to": "\"sleep, slow-wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow-wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"sleep\"[All Fields] AND \"slow\"[All Fields] AND \"wave\"[All Fields]) OR \"sleep slow wave\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"simultaneous\"[All Fields] OR \"simultaneously\"[All Fields]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"sleep, slow wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"sleep\"[All Fields] AND \"slow\"[All Fields] AND \"wave\"[All Fields]) OR \"sleep slow wave\"[All Fields])"
+  }
+}

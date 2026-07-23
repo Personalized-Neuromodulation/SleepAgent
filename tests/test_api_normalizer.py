@@ -1,4 +1,4 @@
-from sleep_ai_scientist.api.normalizer import deduplicate_api_records, make_api_record, normalize_title
+from sleep_ai_scientist.api.normalizer import api_to_literature_record, deduplicate_api_records, make_api_record, normalize_title
 
 
 def test_api_normalizer_deduplicates_doi_and_title():
@@ -11,3 +11,10 @@ def test_api_normalizer_deduplicates_doi_and_title():
     assert normalize_title("Sleep,  EEG!") == "sleep eeg"
     assert "pubmed" in merged[0].source
 
+
+def test_api_to_literature_record_preserves_query_metadata():
+    record = make_api_record("pubmed", "1", "Sleep EEG", query="insomnia slow wave EEG")
+
+    converted = api_to_literature_record(record)
+
+    assert converted.query == "insomnia slow wave EEG"

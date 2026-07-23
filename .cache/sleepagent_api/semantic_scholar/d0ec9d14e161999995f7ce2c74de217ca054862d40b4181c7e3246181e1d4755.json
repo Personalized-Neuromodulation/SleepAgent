@@ -1,0 +1,2534 @@
+{
+  "total": 118,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "f8f4fac8055cb89250a31b4b5722f7a9e8447de0",
+      "externalIds": {
+        "ArXiv": "2604.12294",
+        "CorpusId": 287435750
+      },
+      "url": "https://www.semanticscholar.org/paper/f8f4fac8055cb89250a31b4b5722f7a9e8447de0",
+      "title": "The IQ-Motion Confound in Multi-Site Autism fMRI May Be Inflated by Site-Correlated Measurement Uncertainty",
+      "venue": "",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2604.12294, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "39336713",
+          "name": "K. Soliman"
+        }
+      ],
+      "abstract": "Multi-site autism neuroimaging studies routinely control for the confound between full-scale IQ and head motion by regressing framewise displacement against IQ scores and removing shared variance. This procedure assumes that ordinary least squares (OLS) provides an unbiased estimate of the confound magnitude. We tested this assumption on the ABIDE-I phenotypic dataset (n=935 subjects across 19 international scanning sites) using Probability Cloud Regression, an errors-in-variables (EIV) estimator that models per-observation measurement uncertainty in both variables. IQ measurement error was derived from published Wechsler test-retest reliability coefficients; response-side uncertainty was represented by a site-level proxy equal to the within-site standard deviation of mean framewise displacement. Three findings emerged. First, OLS overestimates the IQ-motion slope by a factor of 4.67 relative to the EIV-corrected estimate when the bias factor is computed from the full-precision fitted coefficients (OLS -0.00125, EIV -0.00027 mm per IQ point after rounding for display). Second, under leave-site-out cross-validation a single pooled predictor of raw FD produces negative out-of-sample R^2 at all 19 sites (overall R^2 = -0.074), indicating that the pooled predictor does not transport cleanly across sites once site information is removed. Third, the direction of the EIV-corrected slope is robust across all 64 configurations of an 8x8 sensitivity grid spanning 12-fold ranges of each noise parameter. These results suggest that pooled OLS may overstate the IQ-motion association in ABIDE-I, but direct downstream consequences for motion-correction pipelines remain to be quantified using raw motion traces and connectivity-level re-analysis. Formal EIV methods appear to remain uncommon in multi-site neuroimaging confound estimation."
+    },
+    {
+      "paperId": "b42f768362f9b78344f2d8a9716898714acf7dbd",
+      "externalIds": {
+        "PubMedCentral": "11426116",
+        "DOI": "10.1162/imag_a_00057",
+        "CorpusId": 289842376,
+        "PubMed": "39328846"
+      },
+      "url": "https://www.semanticscholar.org/paper/b42f768362f9b78344f2d8a9716898714acf7dbd",
+      "title": "Denoising task-correlated head motion from motor-task fMRI data with multi-echo ICA",
+      "venue": "Imaging Neuroscience",
+      "year": 2024,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://direct.mit.edu/imag/article-pdf/doi/10.1162/imag_a_00057/2205141/imag_a_00057.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11426116, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297017895",
+          "name": "Neha A. Reddy"
+        },
+        {
+          "authorId": "10788412",
+          "name": "Kristina M. Zvolanek"
+        },
+        {
+          "authorId": "51300101",
+          "name": "Stefano Moia"
+        },
+        {
+          "authorId": "1390111128",
+          "name": "C. Caballero-Gaudes"
+        },
+        {
+          "authorId": "2268973035",
+          "name": "Molly G. Bright"
+        }
+      ],
+      "abstract": "Abstract Motor-task functional magnetic resonance imaging (fMRI) is crucial in the study of several clinical conditions, including stroke and Parkinson’s disease. However, motor-task fMRI is complicated by task-correlated head motion, which can be magnified in clinical populations and confounds motor activation results. One method that may mitigate this issue is multi-echo independent component analysis (ME-ICA), which has been shown to separate the effects of head motion from the desired blood oxygenation level dependent (BOLD) signal but has not been tested in motor-task datasets with high amounts of motion. In this study, we collected an fMRI dataset from a healthy population who performed a hand grasp task with and without task-correlated amplified head motion to simulate a motor-impaired population. We analyzed these data using three models: single-echo (SE), multi-echo optimally combined (ME-OC), and ME-ICA. We compared the models’ performance in mitigating the effects of head motion on the subject level and group level. On the subject level, ME-ICA better dissociated the effects of head motion from the BOLD signal and reduced noise. Both ME models led to increased t-statistics in brain motor regions. In scans with high levels of motion, ME-ICA additionally mitigated artifacts and increased stability of beta coefficient estimates, compared to SE. On the group level, all three models produced activation clusters in expected motor areas in scans with both low and high motion, indicating that group-level averaging may also sufficiently resolve motion artifacts that vary by subject. These findings demonstrate that ME-ICA is a useful tool for subject-level analysis of motor-task data with high levels of task-correlated head motion. The improvements afforded by ME-ICA are critical to improve reliability of subject-level activation maps for clinical populations in which group-level analysis may not be feasible or appropriate, for example, in a chronic stroke cohort with varying stroke location and degree of tissue damage."
+    },
+    {
+      "paperId": "717c47419fd5fdc33da19d5e386df7a16469bc21",
+      "externalIds": {
+        "ArXiv": "2410.19802",
+        "DBLP": "journals/corr/abs-2410-19802",
+        "DOI": "10.48550/arXiv.2410.19802",
+        "CorpusId": 273654618
+      },
+      "url": "https://www.semanticscholar.org/paper/717c47419fd5fdc33da19d5e386df7a16469bc21",
+      "title": "The Useful Side of Motion: Using Head Motion Parameters to Correct for Respiratory Confounds in BOLD fMRI",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2410.19802, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40189603",
+          "name": "Abdoljalil Addeh"
+        },
+        {
+          "authorId": "2237638879",
+          "name": "G. Pike"
+        },
+        {
+          "authorId": "2237424756",
+          "name": "M. MacDonald"
+        }
+      ],
+      "abstract": "Acquiring accurate external respiratory data during functional Magnetic Resonance Imaging (fMRI) is challenging, prompting the exploration of machine learning methods to estimate respiratory variation (RV) from fMRI data. Respiration induces head motion, including real and pseudo motion, which likely provides useful information about respiratory events. Recommended notch filters mitigate respiratory-induced motion artifacts, suggesting that a bandpass filter at the respiratory frequency band isolates respiratory-induced head motion. This study seeks to enhance the accuracy of RV estimation from resting-state BOLD-fMRI data by integrating estimated head motion parameters. Specifically, we aim to determine the impact of incorporating raw versus bandpass-filtered head motion parameters on RV reconstruction accuracy using one-dimensional convolutional neural networks (1D-CNNs). This approach addresses the limitations of traditional filtering techniques and leverages the potential of head motion data to provide a more robust estimation of respiratory-induced variations."
+    },
+    {
+      "paperId": "4bb07cda472029386bbe04db364b489a76fbc618",
+      "externalIds": {
+        "PubMedCentral": "10370165",
+        "DOI": "10.1101/2023.07.19.549746",
+        "CorpusId": 260118199,
+        "PubMed": "37503125"
+      },
+      "url": "https://www.semanticscholar.org/paper/4bb07cda472029386bbe04db364b489a76fbc618",
+      "title": "Denoising task-correlated head motion from motor-task fMRI data with multi-echo ICA",
+      "venue": "bioRxiv",
+      "year": 2023,
+      "citationCount": 26,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://direct.mit.edu/imag/article-pdf/doi/10.1162/imag_a_00057/2205141/imag_a_00057.pdf",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10370165, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153497839",
+          "name": "N. Reddy"
+        },
+        {
+          "authorId": "10788412",
+          "name": "Kristina M. Zvolanek"
+        },
+        {
+          "authorId": "51300101",
+          "name": "Stefano Moia"
+        },
+        {
+          "authorId": "1390111128",
+          "name": "C. Caballero-Gaudes"
+        },
+        {
+          "authorId": "2388942",
+          "name": "M. Bright"
+        }
+      ],
+      "abstract": "Motor-task functional magnetic resonance imaging (fMRI) is crucial in the study of several clinical conditions, including stroke and Parkinson’s disease. However, motor-task fMRI is complicated by task-correlated head motion, which can be magnified in clinical populations and confounds motor activation results. One method that may mitigate this issue is multi-echo independent component analysis (ME-ICA), which has been shown to separate the effects of head motion from the desired BOLD signal but has not been tested in motor-task datasets with high amounts of motion. In this study, we collected an fMRI dataset from a healthy population who performed a hand grasp task with and without task-correlated amplified head motion to simulate a motor-impaired population. We analyzed these data using three models: single-echo (SE), multi-echo optimally combined (ME-OC), and ME-ICA. We compared the models’ performance in mitigating the effects of head motion on the subject level and group level. On the subject level, ME-ICA better dissociated the effects of head motion from the BOLD signal and reduced noise. Both ME models led to increased t-statistics in brain motor regions. In scans with high levels of motion, ME-ICA additionally mitigated artifacts and increased stability of beta coefficient estimates, compared to SE. On the group level, all three models produced activation clusters in expected motor areas in scans with both low and high motion, indicating that group-level averaging may also sufficiently resolve motion artifacts that vary by subject. These findings demonstrate that ME-ICA is a useful tool for subject-level analysis of motor-task data with high levels of task-correlated head motion. The improvements afforded by ME-ICA are critical to improve reliability of subject-level activation maps for clinical populations in which group-level analysis may not be feasible or appropriate, for example in a chronic stroke cohort with varying stroke location and degree of tissue damage."
+    },
+    {
+      "paperId": "5514b0114671630147d5397db0a89c7eeacdec5e",
+      "externalIds": {
+        "PubMedCentral": "10126373",
+        "DOI": "10.3389/fnins.2023.1096232",
+        "CorpusId": 258051656,
+        "PubMed": "37113158"
+      },
+      "url": "https://www.semanticscholar.org/paper/5514b0114671630147d5397db0a89c7eeacdec5e",
+      "title": "Brain motion networks predict head motion during rest- and task-fMRI",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2023,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2023.1096232/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10126373, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7339518",
+          "name": "D. Tomasi"
+        },
+        {
+          "authorId": "2184066",
+          "name": "N. Volkow"
+        }
+      ],
+      "abstract": "Introduction The capacity to stay still during scanning, which is necessary to avoid motion confounds while imaging, varies markedly between people. Methods Here we investigated the effect of head motion on functional connectivity using connectome-based predictive modeling (CPM) and publicly available brain functional magnetic resonance imaging (fMRI) data from 414 individuals with low frame-to-frame motion (Δd < 0.18 mm). Leave-one-out was used for internal cross-validation of head motion prediction in 207 participants, and twofold cross-validation was used in an independent sample (n = 207). Results and Discussion Parametric testing, as well as CPM-based permutations for null hypothesis testing, revealed strong linear associations between observed and predicted values of head motion. Motion prediction accuracy was higher for task- than for rest-fMRI, and for absolute head motion (d) than for Δd. Denoising attenuated the predictability of head motion, but stricter framewise displacement threshold (FD = 0.2 mm) for motion censoring did not alter the accuracy of the predictions obtained with lenient censoring (FD = 0.5 mm). For rest-fMRI, prediction accuracy was lower for individuals with low motion (mean Δd < 0.02 mm; n = 200) than for those with moderate motion (Δd < 0.04 mm; n = 414). The cerebellum and default-mode network (DMN) regions that forecasted individual differences in d and Δd during six different tasks- and two rest-fMRI sessions were consistently prone to the deleterious effect of head motion. However, these findings generalized to a novel group of 1,422 individuals but not to simulated datasets without neurobiological contributions, suggesting that cerebellar and DMN connectivity could partially reflect functional signals pertaining to inhibitory motor control during fMRI."
+    },
+    {
+      "paperId": "9b17c1d12b41a540d6672f6e358c8ab81b412691",
+      "externalIds": {
+        "MAG": "3010317781",
+        "DOI": "10.1101/2020.03.04.975417",
+        "CorpusId": 214727089
+      },
+      "url": "https://www.semanticscholar.org/paper/9b17c1d12b41a540d6672f6e358c8ab81b412691",
+      "title": "Implementation of a pre- and in-scan system to minimize head motion in pediatric participants undergoing fMRI scans",
+      "venue": "bioRxiv",
+      "year": 2020,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1101/2020.03.04.975417",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2020.03.04.975417?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2020.03.04.975417, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4679487",
+          "name": "C. Horien"
+        },
+        {
+          "authorId": "3247601",
+          "name": "Scuddy F. Fontenelle"
+        },
+        {
+          "authorId": "1436111320",
+          "name": "Kohrissa Joseph"
+        },
+        {
+          "authorId": "2059870043",
+          "name": "Nicole Powell"
+        },
+        {
+          "authorId": "1601866754",
+          "name": "C. Nutor"
+        },
+        {
+          "authorId": "1410364071",
+          "name": "D. Fortes"
+        },
+        {
+          "authorId": "1600507546",
+          "name": "M. Butler"
+        },
+        {
+          "authorId": "35064084",
+          "name": "K. Powell"
+        },
+        {
+          "authorId": "4080721",
+          "name": "Deanna M. Macris"
+        },
+        {
+          "authorId": "39915555",
+          "name": "Kangjoo Lee"
+        },
+        {
+          "authorId": "2239107027",
+          "name": "J. McPartland"
+        },
+        {
+          "authorId": "2237492182",
+          "name": "Fred R. Volkmar"
+        },
+        {
+          "authorId": "2842620",
+          "name": "D. Scheinost"
+        },
+        {
+          "authorId": "8916560",
+          "name": "K. Chawarska"
+        },
+        {
+          "authorId": "2243750066",
+          "name": "R. Constable"
+        }
+      ],
+      "abstract": "Background Performing fMRI scans of children can be a difficult task, as participants tend to move while being scanned. Head motion represents a significant confound in functional magnetic resonance imaging (fMRI) connectivity analyses, and methods to limit the impact of movement on data quality are needed. One approach has been to use shorter MRI protocols, though this potentially reduces the reliability of the results. Objective Here we describe steps we have taken to limit head motion in an ongoing fMRI study of children undergoing a 60 minute MRI scan protocol. Specifically, we have used a mock scan protocol that trains participants to lie still while being scanned. We provide a detailed protocol and describe other in-scanner measures we have implemented, including an incentive system and the use of a weighted blanket. Materials and methods Participants who received a formal mock scan (n = 12) were compared to participants who had an informal mock scan (n = 7). A replication group of participants (n = 16), including five with autism spectrum disorder, who received a formal mock scan were also compared to the informal mock scan group. The primary measure of interest was the mean frame-to-frame displacement across eight functional runs during the fMRI protocol. Results Participants in the formal mock scan and replication group tended to exhibit more low-motion functional scans than the informal mock scan group (P < 0.05). Across different functional scan conditions (i.e. while watching movie clips, performing an attention task, and during resting-state scans), effect sizes tended to be large (Hedge’s g > 0.8). Conclusion Results indicate that with appropriate measures, it is possible to achieve low-motion fMRI data in younger participants undergoing a long scan protocol."
+    },
+    {
+      "paperId": "625144c870e9982360da1dd4796b7228e27c7075",
+      "externalIds": {
+        "MAG": "2981634918",
+        "DOI": "10.1101/816116",
+        "CorpusId": 229284256
+      },
+      "url": "https://www.semanticscholar.org/paper/625144c870e9982360da1dd4796b7228e27c7075",
+      "title": "Let’s take a break: Head motion during fMRI tasks is reduced in children and adults if data acquisition is distributed across sessions or days",
+      "venue": "bioRxiv",
+      "year": 2019,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.dcn.2020.100803",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/816116?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/816116, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47949420",
+          "name": "Tobias W. Meissner"
+        },
+        {
+          "authorId": "35469202",
+          "name": "J. Walbrin"
+        },
+        {
+          "authorId": "3938019",
+          "name": "M. Nordt"
+        },
+        {
+          "authorId": "2649806",
+          "name": "Kami Koldewyn"
+        },
+        {
+          "authorId": "3074064",
+          "name": "S. Weigelt"
+        }
+      ],
+      "abstract": "Head motion remains a challenging confound in functional magnetic resonance imaging (fMRI) studies of both children and adults. Most pediatric neuroimaging labs have developed experience-based, child-friendly standards concerning e.g. the maximum length of a session or the date of mock scanner training. However, it is unclear which factors of child-friendly neuroimaging approaches are effective in reducing head motion. Here, we investigate three main factors including (i) time lag of mock scanner training to the actual scan, (ii) prior scan time, and (iii) task engagement in a dataset of 77 children and 64 adults using a multilevel modeling approach. In children, distributing fMRI data acquisition across multiple same-day sessions reduces head motion. Nevertheless, motion increases over the course of a study, especially in older children. In adults, splitting data acquisition into multiple days, but not same-day sessions, reduces head motion. Moreover, motion is reduced after inside-scanner breaks. In both children and adults, motion increases with run length. Our results suggest that splitting up fMRI data acquisition is an effective tool to reduce head motion in general. At the same time, different ways of splitting up data acquisition benefit children and adults. Highlights In children, fMRI data acquisition split into multiple sessions reduces head motion However, children’s head motion increases over the duration of the study In adults, fMRI data acquisition split into several days reduces head motion Moreover, adults’ motion decreases after inside-scanner breaks In both children and adults, motion increases with run length"
+    },
+    {
+      "paperId": "1874e0d49b941667121e6ac60894cb84f712f736",
+      "externalIds": {
+        "PubMedCentral": "4712830",
+        "MAG": "2224504938",
+        "DOI": "10.1371/journal.pone.0146271",
+        "CorpusId": 2470187,
+        "PubMed": "26745144"
+      },
+      "url": "https://www.semanticscholar.org/paper/1874e0d49b941667121e6ac60894cb84f712f736",
+      "title": "Head Motion and Inattention/Hyperactivity Share Common Genetic Influences: Implications for fMRI Studies of ADHD",
+      "venue": "PLoS ONE",
+      "year": 2016,
+      "citationCount": 79,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0146271&type=printable",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4712830, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "21260660",
+          "name": "B. Couvy-Duchesne"
+        },
+        {
+          "authorId": "3952923",
+          "name": "J. Ebejer"
+        },
+        {
+          "authorId": "2320377",
+          "name": "N. Gillespie"
+        },
+        {
+          "authorId": "2619319",
+          "name": "D. Duffy"
+        },
+        {
+          "authorId": "1740293",
+          "name": "I. Hickie"
+        },
+        {
+          "authorId": "2412795623",
+          "name": "P. Thompson"
+        },
+        {
+          "authorId": "2241270535",
+          "name": "N. Martin"
+        },
+        {
+          "authorId": "113225270",
+          "name": "G. D. de Zubicaray"
+        },
+        {
+          "authorId": "1691333",
+          "name": "K. Mcmahon"
+        },
+        {
+          "authorId": "145056501",
+          "name": "S. Medland"
+        },
+        {
+          "authorId": "2235489201",
+          "name": "M. Wright"
+        }
+      ],
+      "abstract": "Head motion (HM) is a well known confound in analyses of functional MRI (fMRI) data. Neuroimaging researchers therefore typically treat HM as a nuisance covariate in their analyses. Even so, it is possible that HM shares a common genetic influence with the trait of interest. Here we investigate the extent to which this relationship is due to shared genetic factors, using HM extracted from resting-state fMRI and maternal and self report measures of Inattention and Hyperactivity-Impulsivity from the Strengths and Weaknesses of ADHD Symptoms and Normal Behaviour (SWAN) scales. Our sample consisted of healthy young adult twins (N = 627 (63% females) including 95 MZ and 144 DZ twin pairs, mean age 22, who had mother-reported SWAN; N = 725 (58% females) including 101 MZ and 156 DZ pairs, mean age 25, with self reported SWAN). This design enabled us to distinguish genetic from environmental factors in the association between head movement and ADHD scales. HM was moderately correlated with maternal reports of Inattention (r = 0.17, p-value = 7.4E-5) and Hyperactivity-Impulsivity (r = 0.16, p-value = 2.9E-4), and these associations were mainly due to pleiotropic genetic factors with genetic correlations [95% CIs] of rg = 0.24 [0.02, 0.43] and rg = 0.23 [0.07, 0.39]. Correlations between self-reports and HM were not significant, due largely to increased measurement error. These results indicate that treating HM as a nuisance covariate in neuroimaging studies of ADHD will likely reduce power to detect between-group effects, as the implicit assumption of independence between HM and Inattention or Hyperactivity-Impulsivity is not warranted. The implications of this finding are problematic for fMRI studies of ADHD, as failing to apply HM correction is known to increase the likelihood of false positives. We discuss two ways to circumvent this problem: censoring the motion contaminated frames of the RS-fMRI scan or explicitly modeling the relationship between HM and Inattention or Hyperactivity-Impulsivity."
+    },
+    {
+      "paperId": "27df50ffe1a2547db46479faac5012605d0a3b5c",
+      "externalIds": {
+        "DBLP": "conf/embc/KumarKJBCI24",
+        "DOI": "10.1109/EMBC53108.2024.10782518",
+        "CorpusId": 274825214,
+        "PubMed": "40040138"
+      },
+      "url": "https://www.semanticscholar.org/paper/27df50ffe1a2547db46479faac5012605d0a3b5c",
+      "title": "Beyond Artifacts: Rethinking Motion-Related Signals in Resting-State fMRI Analysis",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EMBC53108.2024.10782518?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EMBC53108.2024.10782518, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2336024319",
+          "name": "Samujjwal Kumar"
+        },
+        {
+          "authorId": "2267345554",
+          "name": "S. Kinsey"
+        },
+        {
+          "authorId": "2287825019",
+          "name": "Kyle M. Jensen"
+        },
+        {
+          "authorId": "2332747432",
+          "name": "Prerana Bajracharya"
+        },
+        {
+          "authorId": "2183622231",
+          "name": "V. Calhoun"
+        },
+        {
+          "authorId": "2602754",
+          "name": "A. Iraji"
+        }
+      ],
+      "abstract": "Resting-state functional magnetic resonance imaging (rsfMRI) plays a pivotal role in estimating intrinsic brain functional connectivity within healthy and clinical populations. However, the pervasive impact of head motion confounds the interpretation of rsfMRI data and is typically addressed through preprocessing without further exploration. This investigation aims to scrutinize the intricate interplay between head motion and neurobiologically relevant BOLD signal as well as its potential clinical implications. Here, we use independent component analysis (ICA) to extract large-scale brain networks from BOLD fMRI and modeled head motion time series for 508 subjects sourced from three major psychosis projects. Our approach uncovers the presence of latent network information within modeled head motion data. Moreover, we find altered functional network connectivity (FNC) between healthy controls (HC) and individuals with schizophrenia (SZ) for BOLD and motion networks, revealing that projections of BOLD time series onto network features extracted from head motion data reflect cohort-specific information. Our approach challenges conventional perspectives by treating motion-related signals not as mere noise, but as potential repositories of valuable insights into functional brain connectivity across diverse populations."
+    },
+    {
+      "paperId": "d44374fe15923a033e249066b32f477cf682e8a3",
+      "externalIds": {
+        "MAG": "2993073672",
+        "CorpusId": 54761982
+      },
+      "url": "https://www.semanticscholar.org/paper/d44374fe15923a033e249066b32f477cf682e8a3",
+      "title": "Evaluation of the MCFLIRT Correction Algorithm in Head Motion from Resting State fMRI Data",
+      "venue": "",
+      "year": 2018,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://waset.org/publications/10008625/evaluation-of-the-mcflirt-correction-algorithm-in-head-motion-from-resting-state-fmri-data, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48726056",
+          "name": "V. Sacca"
+        },
+        {
+          "authorId": "1686556",
+          "name": "Alessia Sarica"
+        },
+        {
+          "authorId": "1878096",
+          "name": "F. Novellino"
+        },
+        {
+          "authorId": "152914945",
+          "name": "S. Barone"
+        },
+        {
+          "authorId": "4318573",
+          "name": "T. Tallarico"
+        },
+        {
+          "authorId": "4129048",
+          "name": "E. Filippelli"
+        },
+        {
+          "authorId": "46621965",
+          "name": "A. Granata"
+        },
+        {
+          "authorId": "5195370",
+          "name": "P. Valentino"
+        },
+        {
+          "authorId": "2321981",
+          "name": "A. Quattrone"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "cfe5a67ce09848f0ffffd130ddeb338f5043704e",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0084",
+        "CorpusId": 278752735
+      },
+      "url": "https://www.semanticscholar.org/paper/cfe5a67ce09848f0ffffd130ddeb338f5043704e",
+      "title": "0084 Preprocessing Results from an All-Night fMRI Sleep Study",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0084?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0084, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108356372",
+          "name": "Patrick S. P. Wang"
+        },
+        {
+          "authorId": "2059010676",
+          "name": "Daniel S. Greene"
+        },
+        {
+          "authorId": "2362429716",
+          "name": "Hadar Halivni"
+        },
+        {
+          "authorId": "2315917428",
+          "name": "Niki Lam"
+        },
+        {
+          "authorId": "34967254",
+          "name": "Hendrik Mandelkow"
+        },
+        {
+          "authorId": "2297692721",
+          "name": "Nils Yang"
+        },
+        {
+          "authorId": "2243094099",
+          "name": "Zeynep Demir"
+        },
+        {
+          "authorId": "2380760131",
+          "name": "Pinar Ozbay"
+        },
+        {
+          "authorId": "2362437734",
+          "name": "Gail Tarlton"
+        },
+        {
+          "authorId": "2362514820",
+          "name": "J. Yi"
+        },
+        {
+          "authorId": "2331117143",
+          "name": "S. Inati"
+        },
+        {
+          "authorId": "33870602",
+          "name": "J. D. de Zwart"
+        },
+        {
+          "authorId": "48761025",
+          "name": "P. van Gelderen"
+        },
+        {
+          "authorId": "2318052004",
+          "name": "Jeff H. Duyn"
+        },
+        {
+          "authorId": "2219128",
+          "name": "D. Picchioni"
+        }
+      ],
+      "abstract": "\n \n \n Functional magnetic resonance imaging (fMRI) is emerging as a useful technique for investigating brain activity during sleep, offering superior spatial resolution compared to electroencephalography (EEG). A prior pilot study conducted by our lab highlighted the potential of fMRI to elucidate the neural correlates of dreaming, arousal thresholds, and other sleep-related phenomena. To expand on these findings, we conducted an extensive all-night fMRI sleep study. Here, we describe quality control metrics obtained during data preprocessing.\n \n \n \n Healthy participants (n=58) were enrolled in a two-night fMRI-EEG sleep study protocol. 43 participants successfully completed both nights, while 15 were withdrawn during the first or second night. At 6-8 random intervals throughout the night, participants were woken by auditory stimuli, which increased in intensity until wake onset. Once awake, participants completed a dream questionnaire. Preprocessing of fMRI data was performed using the Analysis of Functional Neuroimages (AFNI) toolbox, including nonlinear alignment to a Tailarach template, data censoring to eliminate outlier time points and artifacts from excessive head motion, and regression of systemic confounds from autonomic variability.\n \n \n \n A total of 877 runs of fMRI data were recorded with a mean length of 43.4 min (SD=34.5 min). Average temporal signal-to-noise ratio in brain voxels across all runs was 48.14 (SD=4.99). Post-regression, average global correlation across voxels was 0.013 (SD=0.005), indicating effective suppression of systemic confounds. Average maximum within-run motion displacement was a modest 2.78 mm (SD=2.23 mm), and average fraction of time points censored due to motion or outliers was 8.84% (SD=8.88%). Average spatial correlation between each subject’s anatomical and functional scans was 0.837 (SD=0.021), attributable to differences in brain coverage and resolution. Average spatial correlation between each subject’s anatomical scan and the Tailarach template was 0.981 (SD=0.005).\n \n \n \n These preprocessing results indicate the successful collection and preprocessing of high-quality, low-noise data and validate the effectiveness of our all-night fMRI sleep study protocol. Our next step is to perform group analyses using the auditory arousal threshold and dream questionnaire data collected.\n \n \n \n This work was supported by the Intramural Research Programs of the NINDS, NIDCD, and NIMH.\n"
+    },
+    {
+      "paperId": "5c54cc62ba69c63763b65c622a9512b338112b6f",
+      "externalIds": {
+        "MAG": "2901293907",
+        "PubMedCentral": "8161527",
+        "DOI": "10.1038/s41596-018-0065-y",
+        "CorpusId": 53562160,
+        "PubMed": "30446748"
+      },
+      "url": "https://www.semanticscholar.org/paper/5c54cc62ba69c63763b65c622a9512b338112b6f",
+      "title": "Mitigating head motion artefact in functional connectivity MRI",
+      "venue": "Nature Protocols",
+      "year": 2018,
+      "citationCount": 303,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8161527",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8161527, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6949460",
+          "name": "R. Ciric"
+        },
+        {
+          "authorId": "34259665",
+          "name": "Adon F. G. Rosen"
+        },
+        {
+          "authorId": "35730504",
+          "name": "G. Erus"
+        },
+        {
+          "authorId": "3279805",
+          "name": "M. Cieslak"
+        },
+        {
+          "authorId": "5314949",
+          "name": "A. Adebimpe"
+        },
+        {
+          "authorId": "3355119",
+          "name": "Philip A Cook"
+        },
+        {
+          "authorId": "2264281",
+          "name": "D. Bassett"
+        },
+        {
+          "authorId": "1740714",
+          "name": "C. Davatzikos"
+        },
+        {
+          "authorId": "33506831",
+          "name": "D. Wolf"
+        },
+        {
+          "authorId": "2328653445",
+          "name": "T. Satterthwaite"
+        }
+      ],
+      "abstract": "Participant motion during functional magnetic resonance image (fMRI) acquisition produces spurious signal fluctuations that can confound measures of functional connectivity. Without mitigation, motion artifact can bias statistical inferences about relationships between connectivity and individual differences. To counteract motion artifact, this protocol describes the implementation of a validated, high-performance denoising strategy that combines a set of model features, including physiological signals, motion estimates, and mathematical expansions, to target both widespread and focal effects of subject movement. This protocol can be used to reduce motion-related variance to near zero in studies of functional connectivity, providing up to a 100-fold improvement over minimal-processing approaches in large datasets. Image denoising requires 40 min to 4 h of computing per image, depending on model specifications and data dimensionality. The protocol additionally includes instructions for assessing the performance of a denoising strategy. Associated software implements all denoising and diagnostic procedures, using a combination of established image-processing libraries and the eXtensible Connectivity Pipeline (XCP) software. Ciric et al. describe a protocol for the removal of motion artifacts from functional MRI data. They introduce a software package that implements common denoising protocols and provides tools for assessing the efficacy of denoising."
+    },
+    {
+      "paperId": "bdaf7ac9ab5f9b575740670da2abe5d3485fa4bf",
+      "externalIds": {
+        "PubMedCentral": "11876745",
+        "DOI": "10.1016/j.dcn.2025.101525",
+        "CorpusId": 276236306,
+        "PubMed": "39965287"
+      },
+      "url": "https://www.semanticscholar.org/paper/bdaf7ac9ab5f9b575740670da2abe5d3485fa4bf",
+      "title": "Infant sleep state coded from respiration and its relationship to the developing functional connectome: A feasibility study",
+      "venue": "Developmental Cognitive Neuroscience",
+      "year": 2025,
+      "citationCount": 6,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11876745, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1635088406",
+          "name": "Isabelle Mueller"
+        },
+        {
+          "authorId": "2341755128",
+          "name": "Raimundo X. Rodriguez"
+        },
+        {
+          "authorId": "39771057",
+          "name": "N. Pini"
+        },
+        {
+          "authorId": "87373475",
+          "name": "Cristin M Holland"
+        },
+        {
+          "authorId": "2344621913",
+          "name": "Rachel Ababio"
+        },
+        {
+          "authorId": "117057848",
+          "name": "S. Inala"
+        },
+        {
+          "authorId": "2316346916",
+          "name": "Kayla Delapenha"
+        },
+        {
+          "authorId": "31914384",
+          "name": "V. Mahmoodi"
+        },
+        {
+          "authorId": "2298767160",
+          "name": "Milana Khaitova"
+        },
+        {
+          "authorId": "2299077679",
+          "name": "Xuejun Hao"
+        },
+        {
+          "authorId": "2824175",
+          "name": "W. Fifer"
+        },
+        {
+          "authorId": "2842620",
+          "name": "D. Scheinost"
+        },
+        {
+          "authorId": "2243283514",
+          "name": "Marisa N. Spann"
+        }
+      ],
+      "abstract": "Most infants are scanned during natural sleep to maximize successful data acquisition by minimizing head and body motion. However, our understanding of how different sleep states affect the infant's functional connectome remains to be determined. In this feasibility study, we develop a novel approach to quantify active and quiet sleep during fMRI using time-locked infant respiration in twenty infants scanned within 47 weeks postmenstrual age. Sleep state (active versus quiet sleep) was then coded using established validated procedures from respiratory variability. Based on this sleep state coding, we investigated differences in the functional connectome comparing active versus quiet sleep. Eleven infants had sufficient quality respiration data to identify sleep states. There were no significant differences in the functional connectome of infants during active and quiet sleep. Still, large effect sizes existed, suggesting that sleep effects may be important in some studies. These findings demonstrate the feasibility and practicality of acquiring respiration data during scanning to facilitate sleep state coding and further understand its relationship to the neurodevelopment of infants. Given the relative ease of collecting respiration data using this setup, we conservatively recommend a wider adoption of our approach."
+    },
+    {
+      "paperId": "ae9d5759aa1fbc9649178af7d06c4a727e621f74",
+      "externalIds": {
+        "PubMedCentral": "7736342",
+        "DOI": "10.1038/s41598-020-78885-z",
+        "CorpusId": 229179516,
+        "PubMed": "33318557"
+      },
+      "url": "https://www.semanticscholar.org/paper/ae9d5759aa1fbc9649178af7d06c4a727e621f74",
+      "title": "Low-motion fMRI data can be obtained in pediatric participants undergoing a 60-minute scan protocol",
+      "venue": "Scientific Reports",
+      "year": 2020,
+      "citationCount": 26,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-020-78885-z.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7736342, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4679487",
+          "name": "C. Horien"
+        },
+        {
+          "authorId": "3247601",
+          "name": "Scuddy F. Fontenelle"
+        },
+        {
+          "authorId": "1436111320",
+          "name": "Kohrissa Joseph"
+        },
+        {
+          "authorId": "2059870043",
+          "name": "Nicole Powell"
+        },
+        {
+          "authorId": "1601866754",
+          "name": "C. Nutor"
+        },
+        {
+          "authorId": "1410364071",
+          "name": "D. Fortes"
+        },
+        {
+          "authorId": "1600507546",
+          "name": "M. Butler"
+        },
+        {
+          "authorId": "35064084",
+          "name": "K. Powell"
+        },
+        {
+          "authorId": "4080721",
+          "name": "Deanna M. Macris"
+        },
+        {
+          "authorId": "39915555",
+          "name": "Kangjoo Lee"
+        },
+        {
+          "authorId": "46213277",
+          "name": "A. Greene"
+        },
+        {
+          "authorId": "2239107027",
+          "name": "J. McPartland"
+        },
+        {
+          "authorId": "2237492182",
+          "name": "Fred R. Volkmar"
+        },
+        {
+          "authorId": "2842620",
+          "name": "D. Scheinost"
+        },
+        {
+          "authorId": "8916560",
+          "name": "K. Chawarska"
+        },
+        {
+          "authorId": "2243750066",
+          "name": "R. Constable"
+        }
+      ],
+      "abstract": "Performing functional magnetic resonance imaging (fMRI) scans of children can be a difficult task, as participants tend to move while being scanned. Head motion represents a significant confound in fMRI connectivity analyses. One approach to limit motion has been to use shorter MRI protocols, though this reduces the reliability of results. Hence, there is a need to implement methods to achieve high-quality, low-motion data while not sacrificing data quantity. Here we show that by using a mock scan protocol prior to a scan, in conjunction with other in-scan steps (weighted blanket and incentive system), it is possible to achieve low-motion fMRI data in pediatric participants (age range: 7–17 years old) undergoing a 60 min MRI session. We also observe that motion is low during the MRI protocol in a separate replication group of participants, including some with autism spectrum disorder. Collectively, the results indicate it is possible to conduct long scan protocols in difficult-to-scan populations and still achieve high-quality data, thus potentially allowing more reliable fMRI findings."
+    },
+    {
+      "paperId": "ab4582972ed4b1060b051433a09848e430672afa",
+      "externalIds": {
+        "ArXiv": "2603.07380",
+        "CorpusId": 286377841
+      },
+      "url": "https://www.semanticscholar.org/paper/ab4582972ed4b1060b051433a09848e430672afa",
+      "title": "Excessive data censoring in fMRI undermines individual precision and weakens brain-behavior associations",
+      "venue": "",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.07380, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2354556513",
+          "name": "Amanda F. Mejia"
+        },
+        {
+          "authorId": "25153147",
+          "name": "Joanne Hwang"
+        },
+        {
+          "authorId": "2086754440",
+          "name": "Damon D. Pham"
+        },
+        {
+          "authorId": "2307307390",
+          "name": "Stephanie Noble"
+        },
+        {
+          "authorId": "2126895581",
+          "name": "Ted Satterthwaite"
+        },
+        {
+          "authorId": "2342022049",
+          "name": "T. E. Nichols"
+        },
+        {
+          "authorId": "2377283680",
+          "name": "B. T. T. Yeo"
+        }
+      ],
+      "abstract": "Censoring high-motion volumes in fMRI is common practice to reduce effects of head motion on functional connectivity (FC). Although aggressive censoring removes more noise, it causes extensive data loss, creating a tradeoff that may ultimately improve or degrade FC accuracy. Here, we evaluate how censoring affects FC estimation and downstream brain-wide association studies (BWAS). Using extensively sampled participants from the Human Connectome Project (HCP) Retest dataset, we establish individual\"ground truth\"FC and assess the accuracy of FC estimated from 5-30 minute scans. We find that censoring degrades FC accuracy, with more aggressive censoring being more detrimental, particularly among participants exhibiting above-average motion. In these participants, aggressive censoring reduces FC accuracy by 30% for 30-minute scans denoised with ICA-FIX, an advanced denoising method, and by 3% for scans denoised with conventional confound regression. These effects reflect substantial data loss (34%) that outweighs comparatively modest noise reductions: 7% with ICA-FIX and 18% with confound regression. Compensating for this would require substantially longer scans (62% with confound regression; 76% with ICA-FIX), inflating data collection budgets. Introducing a repeated measures framework to separate motion trait from artifact, we find that standard QC metrics are dominated by motion trait and overstate motion bias, which is effectively mitigated with less aggressive censoring. Finally, using data from nearly 1,000 HCP participants, we demonstrate that unreliable FC substantially attenuates BWAS correlations: by ~30% under optimal conditions (longer ICA-FIX scans with no censoring) but exceeding 75% in short, aggressively censored scans. Our findings support the use of advanced denoising methods, limiting censoring, and collecting longer scans to maximize fidelity of FC and BWAS."
+    },
+    {
+      "paperId": "3ee6799dfef739e1f28d246b50b2f2ab48bab82c",
+      "externalIds": {
+        "MAG": "2104160540",
+        "DOI": "10.1007/s10548-014-0358-6",
+        "CorpusId": 6184028,
+        "PubMed": "24599620"
+      },
+      "url": "https://www.semanticscholar.org/paper/3ee6799dfef739e1f28d246b50b2f2ab48bab82c",
+      "title": "Head Motion Parameters in fMRI Differ Between Patients with Mild Cognitive Impairment and Alzheimer Disease Versus Elderly Control Subjects",
+      "venue": "Brain Topography",
+      "year": 2014,
+      "citationCount": 36,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "http://doc.rero.ch/record/325606/files/10548_2014_Article_358.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10548-014-0358-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10548-014-0358-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144398737",
+          "name": "S. Haller"
+        },
+        {
+          "authorId": "2088431",
+          "name": "A. Monsch"
+        },
+        {
+          "authorId": "1994765",
+          "name": "Jonas Richiardi"
+        },
+        {
+          "authorId": "2496051",
+          "name": "F. Barkhof"
+        },
+        {
+          "authorId": "4864404",
+          "name": "R. Kressig"
+        },
+        {
+          "authorId": "34658492",
+          "name": "E. Radue"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "0d97bd0ed94499bfdb5416fcb037ff2d933a1f59",
+      "externalIds": {
+        "MAG": "2124498607",
+        "DOI": "10.1002/mrm.20893",
+        "CorpusId": 41707825,
+        "PubMed": "16676336"
+      },
+      "url": "https://www.semanticscholar.org/paper/0d97bd0ed94499bfdb5416fcb037ff2d933a1f59",
+      "title": "Isolation and minimization of head motion‐induced signal variations in fMRI data using independent component analysis",
+      "venue": "Magnetic Resonance in Medicine",
+      "year": 2006,
+      "citationCount": 27,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mrm.20893",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/mrm.20893?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/mrm.20893, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145599132",
+          "name": "Rui Liao"
+        },
+        {
+          "authorId": "1711848",
+          "name": "M. McKeown"
+        },
+        {
+          "authorId": "2707147",
+          "name": "J. Krolik"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c5efa8bc74a298803dcaf4461ff7061d7d1538e0",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/KaplanMMPEABDDE22",
+        "PubMedCentral": "8803544",
+        "DOI": "10.1016/j.neuroimage.2021.118838",
+        "CorpusId": 245332986,
+        "PubMed": "34942363"
+      },
+      "url": "https://www.semanticscholar.org/paper/c5efa8bc74a298803dcaf4461ff7061d7d1538e0",
+      "title": "Filtering respiratory motion artifact from resting state fMRI data in infant and toddler populations",
+      "venue": "NeuroImage",
+      "year": 2021,
+      "citationCount": 30,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2021.118838",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8803544, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2086451407",
+          "name": "S. Kaplan"
+        },
+        {
+          "authorId": "2146851266",
+          "name": "Dominique Meyer"
+        },
+        {
+          "authorId": "4171515",
+          "name": "Oscar Miranda-Dominguez"
+        },
+        {
+          "authorId": "40901425",
+          "name": "Anders Perrone"
+        },
+        {
+          "authorId": "2253759",
+          "name": "E. Earl"
+        },
+        {
+          "authorId": "1382308075",
+          "name": "D. Alexopoulos"
+        },
+        {
+          "authorId": "2478230",
+          "name": "D. Barch"
+        },
+        {
+          "authorId": "2066535195",
+          "name": "Trevor K. M. Day"
+        },
+        {
+          "authorId": "2052065705",
+          "name": "Joseph Dust"
+        },
+        {
+          "authorId": "2645305",
+          "name": "A. Eggebrecht"
+        },
+        {
+          "authorId": "6906292",
+          "name": "E. Feczko"
+        },
+        {
+          "authorId": "66184682",
+          "name": "O. Kardan"
+        },
+        {
+          "authorId": "8765003",
+          "name": "Jeanette K. Kenley"
+        },
+        {
+          "authorId": "144174005",
+          "name": "C. Rogers"
+        },
+        {
+          "authorId": "31489597",
+          "name": "Muriah D. Wheelock"
+        },
+        {
+          "authorId": "1761064",
+          "name": "E. Yacoub"
+        },
+        {
+          "authorId": "49007681",
+          "name": "M. Rosenberg"
+        },
+        {
+          "authorId": "3048594",
+          "name": "J. Elison"
+        },
+        {
+          "authorId": "35365511",
+          "name": "D. Fair"
+        },
+        {
+          "authorId": "2212224",
+          "name": "C. Smyser"
+        }
+      ],
+      "abstract": "The importance of motion correction when processing resting state functional magnetic resonance imaging (rs-fMRI) data is well-established in adult cohorts. This includes adjustments based on self-limited, large amplitude subject head motion, as well as factitious rhythmic motion induced by respiration. In adults, such respiration artifact can be effectively removed by applying a notch filter to the motion trace, resulting in higher amounts of data retained after frame censoring (e.g., “scrubbing”) and more reliable correlation values. Due to the unique physiological and behavioral characteristics of infants and toddlers, rs-fMRI processing pipelines, including methods to identify and remove colored noise due to subject motion, must be appropriately modified to accurately reflect true neuronal signal. These younger cohorts are characterized by higher respiration rates and lower-amplitude head movements than adults; thus, the presence and significance of comparable respiratory artifact and the subsequent necessity of applying similar techniques remain unknown. Herein, we identify and characterize the consistent presence of respiratory artifact in rs-fMRI data collected during natural sleep in infants and toddlers across two independent cohorts (aged 8–24 months) analyzed using different pipelines. We further demonstrate how removing this artifact using an age-specific notch filter allows for both improved data quality and data retention in measured results. Importantly, this work reveals the critical need to identify and address respiratory-driven head motion in fMRI data acquired in young populations through the use of age-specific motion filters as a mechanism to optimize the accuracy of measured results in this population."
+    },
+    {
+      "paperId": "b7a78f7cb6d101d8a1e19089dbec44d5c79473a1",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/SchaefferGHGME19",
+        "MAG": "2921743494",
+        "DOI": "10.1016/j.neuroimage.2019.03.023",
+        "CorpusId": 76663688,
+        "PubMed": "30879997"
+      },
+      "url": "https://www.semanticscholar.org/paper/b7a78f7cb6d101d8a1e19089dbec44d5c79473a1",
+      "title": "Integrated radiofrequency array and animal holder design for minimizing head motion during awake marmoset functional magnetic resonance imaging",
+      "venue": "NeuroImage",
+      "year": 2019,
+      "citationCount": 45,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2019.03.023?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2019.03.023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "31698835",
+          "name": "D. Schaeffer"
+        },
+        {
+          "authorId": "2350402",
+          "name": "K. Gilbert"
+        },
+        {
+          "authorId": "3120162",
+          "name": "Y. Hori"
+        },
+        {
+          "authorId": "2065964",
+          "name": "J. Gati"
+        },
+        {
+          "authorId": "144637542",
+          "name": "Ravi S. Menon"
+        },
+        {
+          "authorId": "1739332",
+          "name": "S. Everling"
+        }
+      ],
+      "abstract": "&NA; Marmosets are small New World primates that are posited to become an important preclinical animal model for studying intractable human brain diseases. A critical step in the development of marmosets as a viable model for human brain dysfunction is to characterize brain networks that are homologous with human network topologies. In this regard, the use of functional magnetic resonance imaging (fMRI) holds tremendous potential for functional brain mapping in marmosets. Although possible, implementation of hardware for fMRI in awake marmosets (free of the confounding effects of anesthesia) is not trivial due to the technical challenges associated with developing specialized imaging hardware. Here, we describe the design and implementation of a marmoset holder and head‐fixation system with an integrated receive coil for awake marmoset fMRI. This design minimized head motion, with less than 100 &mgr;m of translation and 0.5 degrees of rotation over 15 consecutive resting state fMRI runs (at 15 min each) across 3 different marmosets. The fMRI data was of sufficient quality to reliably extract 8 resting state networks from each animal with only 60–90 min of resting state fMRI acquisition per animal. The restraint system proved to be an efficient and practical solution for securing an awake marmoset and positioning a receive array within minutes, limiting stress to the animal. This design is also amenable for multimodal imaging, allowing for electrode or lens placement above the skull via the open chamber design. All computer‐aided‐design (CAD) files and engineering drawings are provided as an open resource, with the majority of the parts designed to be 3D printed. HighlightsThe marmoset is a powerful preclinical model for studying human brain diseases.fMRI holds tremendous potential for functional brain mapping in marmosets.Awake marmoset fMRI (task‐based) is not trivial with little available MRIhardware.Here, we provide openly available designs allowing for fully awake marmoset fMRI."
+    },
+    {
+      "paperId": "d855142da8a74643e329568b6ef1589f73689f2a",
+      "externalIds": {
+        "DOI": "10.1007/s10548-014-0358-6",
+        "CorpusId": 254374741
+      },
+      "url": "https://www.semanticscholar.org/paper/d855142da8a74643e329568b6ef1589f73689f2a",
+      "title": "Head Motion Parameters in fMRI Differ Between Patients with Mild Cognitive Impairment and Alzheimer Disease Versus Elderly Control Subjects",
+      "venue": "Brain Topography",
+      "year": 2014,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "http://doc.rero.ch/record/325606/files/10548_2014_Article_358.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10548-014-0358-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10548-014-0358-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144398737",
+          "name": "S. Haller"
+        },
+        {
+          "authorId": "2088431",
+          "name": "A. Monsch"
+        },
+        {
+          "authorId": "1994765",
+          "name": "Jonas Richiardi"
+        },
+        {
+          "authorId": "2496051",
+          "name": "F. Barkhof"
+        },
+        {
+          "authorId": "4864404",
+          "name": "R. Kressig"
+        },
+        {
+          "authorId": "34658492",
+          "name": "E. Radue"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "6c4f0711f07c1cce759ceb54cde9013eab292610",
+      "externalIds": {
+        "MAG": "3024473201",
+        "DOI": "10.1093/cercor/bhaa096",
+        "CorpusId": 218633072,
+        "PubMed": "32406488"
+      },
+      "url": "https://www.semanticscholar.org/paper/6c4f0711f07c1cce759ceb54cde9013eab292610",
+      "title": "Transient Arousal Modulations Contribute to Resting-State Functional Connectivity Changes Associated with Head Motion Parameters.",
+      "venue": "Cerebral Cortex",
+      "year": 2020,
+      "citationCount": 27,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/cercor/article-pdf/30/10/5242/33713710/bhaa096.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/cercor/bhaa096?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/cercor/bhaa096, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4633382",
+          "name": "Yameng Gu"
+        },
+        {
+          "authorId": "50673687",
+          "name": "Feng Qi Han"
+        },
+        {
+          "authorId": "91661329",
+          "name": "Lucas E Sainburg"
+        },
+        {
+          "authorId": "2111310048",
+          "name": "Xiao Liu"
+        }
+      ],
+      "abstract": "Correlations of resting-state functional magnetic resonance imaging (rsfMRI) signals are being widely used for assessing the functional brain connectivity in health and disease. However, an association was recently observed between rsfMRI connectivity modulations and the head motion parameters and regarded as a causal relationship, which has raised serious concerns about the validity of many rsfMRI findings. Here, we studied the origin of this rsfMRI-motion association and its relationship to arousal modulations. By using a template-matching method to locate arousal-related fMRI changes, we showed that the effects of high motion time points on rsfMRI connectivity are largely due to their significant overlap with arousal-affected time points. The finding suggests that the association between rsfMRI connectivity and the head motion parameters arises from their comodulations at transient arousal modulations, and this information is critical not only for proper interpretation of motion-associated rsfMRI connectivity changes, but also for controlling the potential confounding effects of arousal modulation on rsfMRI metrics."
+    },
+    {
+      "paperId": "db655d3b5499f62221d5ca629b07d144e63daa9e",
+      "externalIds": {
+        "PubMedCentral": "5217095",
+        "MAG": "2521566269",
+        "DOI": "10.1002/hbm.23397",
+        "CorpusId": 3372299,
+        "PubMed": "27634551"
+      },
+      "url": "https://www.semanticscholar.org/paper/db655d3b5499f62221d5ca629b07d144e63daa9e",
+      "title": "Motion‐related artifacts in structural brain images revealed with independent estimates of in‐scanner head motion",
+      "venue": "Human Brain Mapping",
+      "year": 2016,
+      "citationCount": 156,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.23397",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5217095, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6731070",
+          "name": "N. K. Savalia"
+        },
+        {
+          "authorId": "7480132",
+          "name": "Phillip F. Agres"
+        },
+        {
+          "authorId": "5151783",
+          "name": "Micaela Y. Chan"
+        },
+        {
+          "authorId": "2293599574",
+          "name": "Eric J. Feczko"
+        },
+        {
+          "authorId": "35113621",
+          "name": "K. Kennedy"
+        },
+        {
+          "authorId": "145587736",
+          "name": "G. Wig"
+        }
+      ],
+      "abstract": "Motion‐contaminated T1‐weighted (T1w) magnetic resonance imaging (MRI) results in misestimates of brain structure. Because conventional T1w scans are not collected with direct measures of head motion, a practical alternative is needed to identify potential motion‐induced bias in measures of brain anatomy. Head movements during functional MRI (fMRI) scanning of 266 healthy adults (20–89 years) were analyzed to reveal stable features of in‐scanner head motion. The magnitude of head motion increased with age and exhibited within‐participant stability across different fMRI scans. fMRI head motion was then related to measurements of both quality control (QC) and brain anatomy derived from a T1w structural image from the same scan session. A procedure was adopted to “flag” individuals exhibiting excessive head movement during fMRI or poor T1w quality rating. The flagging procedure reliably reduced the influence of head motion on estimates of gray matter thickness across the cortical surface. Moreover, T1w images from flagged participants exhibited reduced estimates of gray matter thickness and volume in comparison to age‐ and gender‐matched samples, resulting in inflated effect sizes in the relationships between regional anatomical measures and age. Gray matter thickness differences were noted in numerous regions previously reported to undergo prominent atrophy with age. Recommendations are provided for mitigating this potential confound, and highlight how the procedure may lead to more accurate measurement and comparison of anatomical features. Hum Brain Mapp 38:472–492, 2017. © 2016 Wiley Periodicals, Inc."
+    },
+    {
+      "paperId": "108f20fd9fe5244a9a7462e043640ce2ff8416ae",
+      "externalIds": {
+        "MAG": "2530526094",
+        "DOI": "10.1093/cercor/bhw321",
+        "CorpusId": 6738715,
+        "PubMed": "27744290"
+      },
+      "url": "https://www.semanticscholar.org/paper/108f20fd9fe5244a9a7462e043640ce2ff8416ae",
+      "title": "Shared Genetic Factors Influence Head Motion During MRI and Body Mass Index",
+      "venue": "Cerebral Cortex",
+      "year": 2016,
+      "citationCount": 79,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/cercor/article-pdf/27/12/5539/25417732/bhw321.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1093/cercor/bhw321?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/cercor/bhw321, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144595855",
+          "name": "K. Hodgson"
+        },
+        {
+          "authorId": "145625277",
+          "name": "R. Poldrack"
+        },
+        {
+          "authorId": "2243579",
+          "name": "J. Curran"
+        },
+        {
+          "authorId": "1958944",
+          "name": "E. Knowles"
+        },
+        {
+          "authorId": "48943622",
+          "name": "S. Mathias"
+        },
+        {
+          "authorId": "4370188",
+          "name": "H. Göring"
+        },
+        {
+          "authorId": "49288887",
+          "name": "N. Yao"
+        },
+        {
+          "authorId": "145000205",
+          "name": "R. Olvera"
+        },
+        {
+          "authorId": "1690619",
+          "name": "P. Fox"
+        },
+        {
+          "authorId": "2907225",
+          "name": "L. Almasy"
+        },
+        {
+          "authorId": "1830365",
+          "name": "R. Duggirala"
+        },
+        {
+          "authorId": "2478230",
+          "name": "D. Barch"
+        },
+        {
+          "authorId": "2444058",
+          "name": "J. Blangero"
+        },
+        {
+          "authorId": "2355199",
+          "name": "D. Glahn"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "acb184b6c983091132da51e347cbb0e42d524e49",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/PoplawskyCRCVF23",
+        "PubMedCentral": "10240534",
+        "DOI": "10.1016/j.neuroimage.2023.120121",
+        "CorpusId": 258192183,
+        "PubMed": "37080347"
+      },
+      "url": "https://www.semanticscholar.org/paper/acb184b6c983091132da51e347cbb0e42d524e49",
+      "title": "Odor-evoked layer-specific fMRI activities in the awake mouse olfactory bulb",
+      "venue": "NeuroImage",
+      "year": 2023,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2023.120121",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10240534, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2472010",
+          "name": "A. Poplawsky"
+        },
+        {
+          "authorId": "2292163621",
+          "name": "Christopher Cover"
+        },
+        {
+          "authorId": "31046594",
+          "name": "Sujatha Reddy"
+        },
+        {
+          "authorId": "2197217380",
+          "name": "Harris B. Chishti"
+        },
+        {
+          "authorId": "38908660",
+          "name": "A. Vazquez"
+        },
+        {
+          "authorId": "46660487",
+          "name": "M. Fukuda"
+        }
+      ],
+      "abstract": "Awake rodent fMRI is increasingly common over the use of anesthesia since it permits behavioral paradigms and does not confound normal brain function or neurovascular coupling. It is well established that adequate acclimation to the loud fMRI environment and head fixation reduces stress in the rodents and allows for whole brain imaging with little contamination from motion. However, it is unknown whether high-resolution fMRI with increased susceptibility to motion and lower sensitivity can measure small, but spatially discrete, activations in awake mice. To examine this, we used contrast-enhanced cerebral blood volume-weighted (CBVw) fMRI in the mouse olfactory bulb for its enhanced sensitivity and neural specificity. We determined that activation patterns in the glomerular layer to four different odors were spatially distinct and were consistent with previously established histological patterns. In addition, odor-evoked laminar activations were greatest in superficial layers that decreased with laminar depth, similar to previous observations. Interestingly, the fMRI response strengths in the granule cell layer were greater in awake mice than our previous anesthetized rat studies, suggesting that feedback neural activities were intact with wakefulness. We finally determined that fMRI signal changes to repeated odor exposure (i.e., olfactory adaptation) attenuated relatively more in the feedback granule cell layer compared to the input glomerular layer, which is consistent with prior observations. We, therefore, conclude that high-resolution CBVw fMRI can measure odor-specific activation patterns and distinguish changes in laminar activity of head and body restrained awake mice."
+    },
+    {
+      "paperId": "5766b625300b471b74263bbcee151d9f97dfa77d",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/ZhaoLZFCN26",
+        "DOI": "10.1016/j.neuroimage.2026.122038",
+        "CorpusId": 289003075,
+        "PubMed": "42250836"
+      },
+      "url": "https://www.semanticscholar.org/paper/5766b625300b471b74263bbcee151d9f97dfa77d",
+      "title": "Stabilizing and cleaning functional connectivity measures via native eigenspace denoising of resting state fMRI data",
+      "venue": "NeuroImage",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2026.122038",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2026.122038?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2026.122038, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2027006933",
+          "name": "Wei Zhao"
+        },
+        {
+          "authorId": "2261863655",
+          "name": "Huanjie Li"
+        },
+        {
+          "authorId": "2129515840",
+          "name": "Yunge Zhang"
+        },
+        {
+          "authorId": "10839907",
+          "name": "B. Frederick"
+        },
+        {
+          "authorId": "2273986806",
+          "name": "Fengyu Cong"
+        },
+        {
+          "authorId": "2412185851",
+          "name": "Lisa D. Nickerson"
+        }
+      ],
+      "abstract": "Resting state functional magnetic resonance imaging (rs-fMRI) signals are sensitive to artifacts caused by head motion and non-neural physiological noise, complicating its use to investigate brain function. These effects contaminate rs-fMRI signal timeseries, confounding the calculation and analysis of functional connectivity measures and degrading the interpretation of brain function or changes due to neurological and psychiatric disorders. rs-fMRI denoising strategies play an essential role in addressing motion and non-neural noise and greatly enhance the interpretability of connectivity measures, yet this is still a highly active area of research. We propose an automated denoising method that performs data-driven noise estimation and suppression for rs-fMRI. The method is based on sliding window segmentation and nuisance regression in eigenspace for temporal and spatial eigenvectors, respectively. We show that efficient noise identification/rejection produces not only improved denoising but also enhances the reliability of functional connectivity. Without removing the global signal, the proposed method achieves denoising performance comparable to global signal regression, with trade-offs in different quality metrics. NESD shows advantages in motion and temporal noise suppression, while GSR excels in signal amplitude. Both methods produce similar negative connectivity correlations. We provide data quality visualization tools for automated assessment of noise contamination including time, space, frequency, and connectivity indicators. Our findings demonstrate that denoising is critical for processing rs-fMRI signals for connectivity analyses and that NESD offers a practical alternative to existing approaches, with trade-offs that should be considered based on specific study goals."
+    },
+    {
+      "paperId": "d4b831754c1840c4cb9ff5e1ebaca61abb0a23b1",
+      "externalIds": {
+        "PubMedCentral": "13008380",
+        "DOI": "10.1162/NETN.a.534",
+        "CorpusId": 282315375,
+        "PubMed": "41878612"
+      },
+      "url": "https://www.semanticscholar.org/paper/d4b831754c1840c4cb9ff5e1ebaca61abb0a23b1",
+      "title": "The motion sensitivity and predictive utility of different estimates of interregional functional coupling in resting-state functional MRI",
+      "venue": "bioRxiv",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://direct.mit.edu/netn/article-pdf/doi/10.1162/NETN.a.534/2567970/netn.a.534.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13008380, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2333430699",
+          "name": "K. Pavlovich"
+        },
+        {
+          "authorId": "2242202498",
+          "name": "James C. Pang"
+        },
+        {
+          "authorId": "2362590",
+          "name": "A. Fornito"
+        }
+      ],
+      "abstract": "Numerous methods exist for quantifying statistical dependencies, termed functional coupling (FC), between regional brain activity recorded with resting-state functional magnetic resonance imaging (rs-fMRI). However, their efficacy in mitigating the effects of known sources of noise, such as those induced by participant head motion, and in augmenting effect sizes for brain-wide association studies (BWAS), remains unclear. Here we compared 10 different measures of FC, including correlations, partial correlations, coherence, mutual information, and partial information decomposition, and one measure of effective connectivity (EC; regression dynamic causal modelling), across two independent datasets comprising a total of 1,797 participants (867 males). Each method was evaluated for its ability to mitigate motion-related confounds in FC/EC estimates and for its utility in predicting 94 behavioural measures, as assessed via cross-validated kernel ridge regression. Our analyses showed that EC was most resistant to motion artifacts but had the weakest behavioral predictions. Conversely, traditional correlation-based methods showed the highest sensitivity to motion, but offered the strongest behavioral prediction across most domains and datasets. Nonetheless, relative differences in predictive accuracies were small, indicating that the use of different FC or EC metrics in rs-fMRI does not significantly impact BWAS effect sizes."
+    },
+    {
+      "paperId": "369b4cb6acf1e51c7c9abc5e5299ff40fe29a0d1",
+      "externalIds": {
+        "PubMedCentral": "6710196",
+        "MAG": "2957714321",
+        "DOI": "10.1002/brb3.1341",
+        "CorpusId": 195892320,
+        "PubMed": "31297966"
+      },
+      "url": "https://www.semanticscholar.org/paper/369b4cb6acf1e51c7c9abc5e5299ff40fe29a0d1",
+      "title": "Combining Prospective Acquisition CorrEction (PACE) with retrospective correction to reduce motion artifacts in resting state fMRI data",
+      "venue": "Brain and Behavior",
+      "year": 2019,
+      "citationCount": 14,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc6710196?pdf=render",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6710196, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "16974071",
+          "name": "Pradyumna Lanka"
+        },
+        {
+          "authorId": "143879680",
+          "name": "G. Deshpande"
+        }
+      ],
+      "abstract": "Head movement in the scanner causes spurious signal changes in the blood‐oxygen‐level‐dependent (BOLD) signal, confounding resting state functional connectivity (RSFC) estimates obtained from functional magnetic resonance imaging (fMRI). We examined the effectiveness of Prospective Acquisition CorrEction (PACE) in reducing motion artifacts in BOLD data."
+    },
+    {
+      "paperId": "4c9fbeba17157864ddb90108b3b9ebc1c146116a",
+      "externalIds": {
+        "MAG": "3098424079",
+        "DOI": "10.1101/444463",
+        "CorpusId": 91372752
+      },
+      "url": "https://www.semanticscholar.org/paper/4c9fbeba17157864ddb90108b3b9ebc1c146116a",
+      "title": "Transient arousal modulations are responsible for resting-state functional connectivity changes associated with head motion",
+      "venue": "bioRxiv",
+      "year": 2018,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2020/03/24/444463.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/444463?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/444463, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4633382",
+          "name": "Yameng Gu"
+        },
+        {
+          "authorId": "50673687",
+          "name": "Feng Qi Han"
+        },
+        {
+          "authorId": "91661329",
+          "name": "Lucas E Sainburg"
+        },
+        {
+          "authorId": "2111310048",
+          "name": "Xiao Liu"
+        }
+      ],
+      "abstract": "Correlations of resting-state functional magnetic resonance imaging (rsfMRI) signals are being widely used for assessing functional connectivity of healthy and diseased brains. However, an association was recently observed between rsfMRI connectivity modulations and head motion and regarded as a causal relationship, which has raised serious concerns about the validity of many rsfMRI findings. Here, we studied the origin of this rsfMRI-motion association and its relationship to arousal modulations. By using a template-matching method to locate arousal-related fMRI changes, we showed that the effects of high motion time points on rsfMRI connectivity are due to their significant overlap with arousal-affected time points. The finding suggests that the association between rsfMRI connectivity and head motion arises from their co-modulations at transient arousal modulations, and this information is critical not only for proper interpretation of motion-associated rsfMRI connectivity changes but also for controlling the potential confounding effects of arousal modulation on rsMRI metrics."
+    },
+    {
+      "paperId": "0dde8e9062a8a2111b60092a078eb7221b895acf",
+      "externalIds": {
+        "CorpusId": 209587195
+      },
+      "url": "https://www.semanticscholar.org/paper/0dde8e9062a8a2111b60092a078eb7221b895acf",
+      "title": "White Matter Denoising Improves the Identifiability of Large-Scale Networks and Reduces the Effects of Motion in fMRI Functional Connectivity",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "39394335",
+          "name": "Michalis Kassinopoulos"
+        },
+        {
+          "authorId": "1777549",
+          "name": "G. Mitsis"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b5f3f8c2af174706546ebd399c4bd0ae8f214a3f",
+      "externalIds": {
+        "MAG": "2623257448",
+        "CorpusId": 125890435
+      },
+      "url": "https://www.semanticscholar.org/paper/b5f3f8c2af174706546ebd399c4bd0ae8f214a3f",
+      "title": "Comprehensive Head Motion Correction For Functional Magnetic Resonance Imaging",
+      "venue": "",
+      "year": 2017,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://tspace.library.utoronto.ca/bitstream/1807/77441/3/Faraji-Dana_Zahra_201703_PhD_thesis.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1401991657",
+          "name": "Z. Faraji-Dana"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "ea979a23ee9d3b29b65c11a37b4f26fc3c1babfc",
+      "externalIds": {
+        "MAG": "2516718464",
+        "DOI": "10.1093/cercor/bhw265",
+        "CorpusId": 13277478,
+        "PubMed": "27591147"
+      },
+      "url": "https://www.semanticscholar.org/paper/ea979a23ee9d3b29b65c11a37b4f26fc3c1babfc",
+      "title": "On the Stability of BOLD fMRI Correlations",
+      "venue": "Cerebral Cortex",
+      "year": 2016,
+      "citationCount": 522,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/cercor/article-pdf/27/10/4719/19832217/bhw265.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1093/cercor/bhw265?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/cercor/bhw265, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2440512",
+          "name": "Timothy O. Laumann"
+        },
+        {
+          "authorId": "143908863",
+          "name": "A. Snyder"
+        },
+        {
+          "authorId": "3220180",
+          "name": "A. Mitra"
+        },
+        {
+          "authorId": "40423158",
+          "name": "Evan M. Gordon"
+        },
+        {
+          "authorId": "33499806",
+          "name": "C. Gratton"
+        },
+        {
+          "authorId": "3681453",
+          "name": "Babatunde Adeyemo"
+        },
+        {
+          "authorId": "1840770",
+          "name": "Adrian W. Gilmore"
+        },
+        {
+          "authorId": "144332223",
+          "name": "S. M. Nelson"
+        },
+        {
+          "authorId": "40404843",
+          "name": "Jeffrey J. Berg"
+        },
+        {
+          "authorId": "2119889",
+          "name": "D. Greene"
+        },
+        {
+          "authorId": "121142633",
+          "name": "J. McCarthy"
+        },
+        {
+          "authorId": "2256632455",
+          "name": "E. Tagliazucchi"
+        },
+        {
+          "authorId": "2947530",
+          "name": "H. Laufs"
+        },
+        {
+          "authorId": "2963284",
+          "name": "B. Schlaggar"
+        },
+        {
+          "authorId": "3133713",
+          "name": "N. Dosenbach"
+        },
+        {
+          "authorId": "1878109",
+          "name": "S. Petersen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "2ce13a64c5a5358ff5c01d4a806d387f8cc48796",
+      "externalIds": {
+        "PubMedCentral": "4204812",
+        "MAG": "2047582838",
+        "DOI": "10.1371/journal.pone.0106498",
+        "CorpusId": 17559719,
+        "PubMed": "25333359"
+      },
+      "url": "https://www.semanticscholar.org/paper/2ce13a64c5a5358ff5c01d4a806d387f8cc48796",
+      "title": "Isolated Assessment of Translation or Rotation Severely Underestimates the Effects of Subject Motion in fMRI Data",
+      "venue": "PLoS ONE",
+      "year": 2014,
+      "citationCount": 31,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0106498&type=printable",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4204812, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143728745",
+          "name": "M. Wilke"
+        }
+      ],
+      "abstract": "Subject motion has long since been known to be a major confound in functional MRI studies of the human brain. For resting-state functional MRI in particular, data corruption due to motion artefacts has been shown to be most relevant. However, despite 6 parameters (3 for translations and 3 for rotations) being required to fully describe the head's motion trajectory between timepoints, not all are routinely used to assess subject motion. Using structural (n = 964) as well as functional MRI (n = 200) data from public repositories, a series of experiments was performed to assess the impact of using a reduced parameter set (translationonly and rotationonly) versus using the complete parameter set. It could be shown that the usage of 65 mm as an indicator of the average cortical distance is a valid approximation in adults, although care must be taken when comparing children and adults using the same measure. The effect of using slightly smaller or larger values is minimal. Further, both translationonly and rotationonly severely underestimate the full extent of subject motion; consequently, both translationonly and rotationonly discard substantially fewer datapoints when used for quality control purposes (“motion scrubbing”). Finally, both translationonly and rotationonly severely underperform in predicting the full extent of the signal changes and the overall variance explained by motion in functional MRI data. These results suggest that a comprehensive measure, taking into account all available parameters, should be used to characterize subject motion in fMRI."
+    },
+    {
+      "paperId": "f2b8dae019a382edbcbc70ba92f6fa3fe7970d17",
+      "externalIds": {
+        "MAG": "2081194079",
+        "PubMedCentral": "4076413",
+        "DBLP": "journals/neuroimage/ScheinostPC14",
+        "DOI": "10.1016/j.neuroimage.2014.03.035",
+        "CorpusId": 591757,
+        "PubMed": "24657356"
+      },
+      "url": "https://www.semanticscholar.org/paper/f2b8dae019a382edbcbc70ba92f6fa3fe7970d17",
+      "title": "The Impact of Image Smoothness on Intrinsic Functional Connectivity and Head Motion Confounds",
+      "venue": "NeuroImage",
+      "year": 2014,
+      "citationCount": 72,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4076413",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4076413, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2842620",
+          "name": "D. Scheinost"
+        },
+        {
+          "authorId": "1932911",
+          "name": "X. Papademetris"
+        },
+        {
+          "authorId": "145962954",
+          "name": "R. Todd Constable"
+        }
+      ],
+      "abstract": "We present a novel method for controlling the effects of group differences in motion on functional connectivity studies. Resting-state functional magnetic resonance imaging (rs-fMRI) is a powerful tool that allows for the assessment of whole-brain functional organization across a wide range of clinical populations. However, as highlighted by recent studies, many measures commonly used in rs-fMRI are highly correlated with subject head movement. A source of this problem is that motion itself, and motion correction algorithms, lead to spatial smoothing which is then variable across the brain and across subjects or groups dependent upon the amount of motion present during scanning. Studies aimed at elucidating differences between populations that have different head-motion characteristics (e.g., patients often move more in the scanner than healthy control subjects) are significantly confounded by these effects. In this work, we propose a solution to this problem, uniform smoothing, which ensures that all subject images in a study have equal effective spatial resolution. We establish that differences in the intrinsic smoothness of images across a group can confound connectivity results, and link these differences in smoothness to motion. We demonstrate that eliminating these smoothness differences via our uniform smoothing solution is successful in reducing confounds related to the differences in head motion between subjects."
+    },
+    {
+      "paperId": "ab536ca7378279f5698d7597967c376b1c53ab21",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/Couvy-DuchesneB14",
+        "MAG": "2132845986",
+        "DOI": "10.1016/j.neuroimage.2014.08.010",
+        "CorpusId": 27617446,
+        "PubMed": "25132021"
+      },
+      "url": "https://www.semanticscholar.org/paper/ab536ca7378279f5698d7597967c376b1c53ab21",
+      "title": "Heritability of head motion during resting state functional MRI in 462 healthy twins",
+      "venue": "NeuroImage",
+      "year": 2014,
+      "citationCount": 67,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://eprints.qut.edu.au/85716/1/nihms622545.pdf",
+        "status": "GREEN",
+        "license": "mit",
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2014.08.010?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2014.08.010, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "21260660",
+          "name": "B. Couvy-Duchesne"
+        },
+        {
+          "authorId": "145451690",
+          "name": "G. Blokland"
+        },
+        {
+          "authorId": "1740293",
+          "name": "I. Hickie"
+        },
+        {
+          "authorId": "2412795623",
+          "name": "P. Thompson"
+        },
+        {
+          "authorId": "2241270535",
+          "name": "N. Martin"
+        },
+        {
+          "authorId": "1729631",
+          "name": "G. Zubicaray"
+        },
+        {
+          "authorId": "1691333",
+          "name": "K. Mcmahon"
+        },
+        {
+          "authorId": "2235489201",
+          "name": "M. Wright"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b34cad0b5b4dcb6dd7bc1eb3b7485901adaa0372",
+      "externalIds": {
+        "MAG": "2592536986",
+        "DOI": "10.1101/114447",
+        "CorpusId": 90267400
+      },
+      "url": "https://www.semanticscholar.org/paper/b34cad0b5b4dcb6dd7bc1eb3b7485901adaa0372",
+      "title": "Differences in the spatial and temporal patterns of head motion during MRI of adults and infants",
+      "venue": "bioRxiv",
+      "year": 2017,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2017/03/06/114447.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/114447?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/114447, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "92245590",
+          "name": "R. Cusack"
+        },
+        {
+          "authorId": "2291770",
+          "name": "A. Linke"
+        },
+        {
+          "authorId": "1398018371",
+          "name": "L. Zubiaurre-Elorza"
+        },
+        {
+          "authorId": "46796515",
+          "name": "Hester Duffy"
+        },
+        {
+          "authorId": "6474634",
+          "name": "Charlotte Herzmann"
+        },
+        {
+          "authorId": "6547892",
+          "name": "Bobby Stojanoski"
+        },
+        {
+          "authorId": "143923742",
+          "name": "V. Han"
+        },
+        {
+          "authorId": "2115318024",
+          "name": "David S. C. Lee"
+        },
+        {
+          "authorId": "153092405",
+          "name": "C. Wild"
+        }
+      ],
+      "abstract": "Aim Head motion has a profound effect on MRI, and will contaminate comparisons of function or structure between groups that move differently. This work compares adults and infants. Infants might move differently for physical, physiological and cognitive reasons, but so far these differences have not been quantified. Methods The spatial modes and total magnitude of motion in the MRI scanner were measured (N=211). The effects of group (infant vs. adult) and stimulation paradigm (auditory vs. visual) were evaluated. Results Spatial modes of motion were found to be distinct between infant and adult groups. Infants had less anterior-posterior translational motion, but greater motion in other dimensions, often with complex multi-axis patterns. In magnitude distribution, sleeping infants often remained more still than adults, but when movement did occur it was more extreme and abrupt. Two groups of adults presented with different stimulation showed similar shapes of motion. Conclusion The spatial modes and magnitude distribution of motion differed substantially between groups, and must be considered carefully as a confound in comparisons of structure or function. The abruptness and magnitude of movement suggests that for infants relative to adults post-processing strategies such as de-noising are likely to be more effective than prospective motion correction. Key notes Quantified the spatial and temporal distribution of motion during MRI in 211 adults and neonates The different spatial modes in adults and infants were visualized and statistically contrasted The magnitude of motion had “heavier tails” in infants, with more still periods, and more large movements, than adults."
+    },
+    {
+      "paperId": "7b88f7efe9c487c975c090ede8ff13c2464bf445",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/ChenTHZBFL20",
+        "MAG": "2977526752",
+        "DOI": "10.1016/j.neuroimage.2019.116242",
+        "CorpusId": 203656180,
+        "PubMed": "31586674"
+      },
+      "url": "https://www.semanticscholar.org/paper/7b88f7efe9c487c975c090ede8ff13c2464bf445",
+      "title": "Sensory evoked fMRI paradigms in awake mice",
+      "venue": "NeuroImage",
+      "year": 2020,
+      "citationCount": 79,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2019.116242",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2019.116242?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2019.116242, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2109309401",
+          "name": "Xifan Chen"
+        },
+        {
+          "authorId": "47589346",
+          "name": "Chuanjun Tong"
+        },
+        {
+          "authorId": "2106781300",
+          "name": "Zhe Han"
+        },
+        {
+          "authorId": "2153281136",
+          "name": "Kaiwei Zhang"
+        },
+        {
+          "authorId": "93240822",
+          "name": "Binshi Bo"
+        },
+        {
+          "authorId": "2115387576",
+          "name": "Yanqiu Feng"
+        },
+        {
+          "authorId": "2339287",
+          "name": "Zhifeng Liang"
+        }
+      ],
+      "abstract": "Mouse fMRI has become increasingly popular in the small animal imaging field. However, compared to the more commonly used rat fMRI, it is challenging for mouse fMRI to obtain robust and specific functional imaging results. In the meantime, in other neuroscience modalities such as optical imaging, functional recording in the awake mice is common and becoming standard. Therefore, in the current study we developed comprehensive setups and analysis pipeline for multi-sensory fMRI paradigms in the awake mice. Customized setups of somatosensory (whisker), auditory and olfactory stimulation were developed for use in the cryogenic coil in the awake mouse fMRI setting. After carefully evaluating head motion and motion artefacts, the nuisance regression approach was optimized for reducing the confounding effect of motion. The high temporal resolution data (TR = 0.35 s) revealed fast temporal dynamics (time-to-peak ∼2 s) of evoked BOLD responses in most brain regions. Using the derived awake mouse specific hemodynamic response functions, high spatial resolution data revealed robust, specific and consistent cortical and subcortical activations in response to somatosensory, auditory and olfactory stimulations, respectively. Overall, we present comprehensive methods for acquiring and analyzing sensory evoked awake mouse fMRI data. The establishment of multi-sensory paradigms in awake mouse fMRI provides valuable tools for examining spatiotemporal characteristics and neural mechanisms of BOLD signals in the future."
+    },
+    {
+      "paperId": "79bea5c3d46763463a39b43f5fc7250d759d586b",
+      "externalIds": {
+        "PubMedCentral": "4068300",
+        "DBLP": "journals/neuroimage/PatelKRJVESB14",
+        "MAG": "2050597556",
+        "DOI": "10.1016/j.neuroimage.2014.03.012",
+        "CorpusId": 8297019,
+        "PubMed": "24657353"
+      },
+      "url": "https://www.semanticscholar.org/paper/79bea5c3d46763463a39b43f5fc7250d759d586b",
+      "title": "A wavelet method for modeling and despiking motion artifacts from resting-state fMRI time series",
+      "venue": "NeuroImage",
+      "year": 2014,
+      "citationCount": 374,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2014.03.012",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4068300, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145262656",
+          "name": "Ameera X. Patel"
+        },
+        {
+          "authorId": "2237882",
+          "name": "P. Kundu"
+        },
+        {
+          "authorId": "1798541",
+          "name": "M. Rubinov"
+        },
+        {
+          "authorId": "2256595856",
+          "name": "P. Jones"
+        },
+        {
+          "authorId": "1821358",
+          "name": "P. Vértes"
+        },
+        {
+          "authorId": "1852834",
+          "name": "K. Ersche"
+        },
+        {
+          "authorId": "1939498",
+          "name": "J. Suckling"
+        },
+        {
+          "authorId": "2237860473",
+          "name": "E. Bullmore"
+        }
+      ],
+      "abstract": "The impact of in-scanner head movement on functional magnetic resonance imaging (fMRI) signals has long been established as undesirable. These effects have been traditionally corrected by methods such as linear regression of head movement parameters. However, a number of recent independent studies have demonstrated that these techniques are insufficient to remove motion confounds, and that even small movements can spuriously bias estimates of functional connectivity. Here we propose a new data-driven, spatially-adaptive, wavelet-based method for identifying, modeling, and removing non-stationary events in fMRI time series, caused by head movement, without the need for data scrubbing. This method involves the addition of just one extra step, the Wavelet Despike, in standard pre-processing pipelines. With this method, we demonstrate robust removal of a range of different motion artifacts and motion-related biases including distance-dependent connectivity artifacts, at a group and single-subject level, using a range of previously published and new diagnostic measures. The Wavelet Despike is able to accommodate the substantial spatial and temporal heterogeneity of motion artifacts and can consequently remove a range of high and low frequency artifacts from fMRI time series, that may be linearly or non-linearly related to physical movements. Our methods are demonstrated by the analysis of three cohorts of resting-state fMRI data, including two high-motion datasets: a previously published dataset on children (N = 22) and a new dataset on adults with stimulant drug dependence (N = 40). We conclude that there is a real risk of motion-related bias in connectivity analysis of fMRI data, but that this risk is generally manageable, by effective time series denoising strategies designed to attenuate synchronized signal transients induced by abrupt head movements. The Wavelet Despiking software described in this article is freely available for download at www.brainwavelet.org."
+    },
+    {
+      "paperId": "9439817a66cd6b46b948cd8e2d538f9c3db0ce93",
+      "externalIds": {
+        "MAG": "2062157724",
+        "DOI": "10.1007/s10334-010-0199-6",
+        "CorpusId": 7052548,
+        "PubMed": "20169464"
+      },
+      "url": "https://www.semanticscholar.org/paper/9439817a66cd6b46b948cd8e2d538f9c3db0ce93",
+      "title": "Is sedation-induced BOLD fMRI low-frequency fluctuation increase mediated by increased motion?",
+      "venue": "Magnetic Resonance Materials in Physics, Biology and Medicine",
+      "year": 2010,
+      "citationCount": 15,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10334-010-0199-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10334-010-0199-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2858686",
+          "name": "J. Hlinka"
+        },
+        {
+          "authorId": "47747341",
+          "name": "C. Alexakis"
+        },
+        {
+          "authorId": "32352765",
+          "name": "J. Hardman"
+        },
+        {
+          "authorId": "31786126",
+          "name": "Q. Siddiqui"
+        },
+        {
+          "authorId": "145096387",
+          "name": "D. Auer"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "002764fbc1fb9c27f17fedcda026436cc00eea47",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/DamarajuTLC20",
+        "MAG": "2883385573",
+        "PubMedCentral": "7753906",
+        "DOI": "10.1101/380741",
+        "CorpusId": 92109884,
+        "PubMed": "32562782"
+      },
+      "url": "https://www.semanticscholar.org/paper/002764fbc1fb9c27f17fedcda026436cc00eea47",
+      "title": "Connectivity dynamics from wakefulness to sleep",
+      "venue": "bioRxiv",
+      "year": 2018,
+      "citationCount": 42,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2018/07/30/380741.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7753906, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3084169",
+          "name": "E. Damaraju"
+        },
+        {
+          "authorId": "2256632455",
+          "name": "E. Tagliazucchi"
+        },
+        {
+          "authorId": "2947530",
+          "name": "H. Laufs"
+        },
+        {
+          "authorId": "144048760",
+          "name": "V. Calhoun"
+        }
+      ],
+      "abstract": "Interest in time-resolved connectivity in fMRI has grown rapidly in recent years. The most widely used technique for studying connectivity changes over time utilizes a sliding windows approach. There has been some debate about the utility of shorter versus longer windows, the use of fixed versus adaptive windows, as well as whether observed resting state dynamics during wakefulness may be predominantly due to changes in sleep state and subject head motion. In this work we use an independent component analysis (ICA)-based pipeline applied to concurrent EEG/fMRI data collected during wakefulness and various sleep stages and show: 1) connectivity states obtained from clustering sliding windowed correlations of resting state functional network time courses well classify the sleep states obtained from EEG data, 2) using shorter sliding windows instead of longer non-overlapping windows improves the ability to capture transition dynamics even at windows as short as 30 seconds, 3) motion appears to be mostly associated with one of the states rather than spread across all of them 4) a fixed tapered sliding window approach outperforms an adaptive dynamic conditional correlation approach, and 5) consistent with prior EEG/fMRI work, we identify evidence of multiple states within the wakeful condition which are able to be classified with high accuracy. Classification of wakeful only states suggest the presence of time-varying changes in connectivity in fMRI data beyond sleep state or motion. Results also inform about advantageous technical choices, and the identification of different clusters within wakefulness that are separable suggest further studies in this direction."
+    },
+    {
+      "paperId": "6e930e973e0890dd3b72ab4173251cfe20702ab4",
+      "externalIds": {
+        "PubMedCentral": "5518296",
+        "MAG": "2617838712",
+        "DOI": "10.1002/hbm.23653",
+        "CorpusId": 1981118,
+        "PubMed": "28544076"
+      },
+      "url": "https://www.semanticscholar.org/paper/6e930e973e0890dd3b72ab4173251cfe20702ab4",
+      "title": "Challenges in measuring individual differences in functional connectivity using fMRI: The case of healthy aging",
+      "venue": "Human Brain Mapping",
+      "year": 2017,
+      "citationCount": 177,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.23653",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5518296, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2814450",
+          "name": "L. Geerligs"
+        },
+        {
+          "authorId": "2320296",
+          "name": "K. Tsvetanov"
+        },
+        {
+          "authorId": "1403420449",
+          "name": "Cam-Can"
+        },
+        {
+          "authorId": "30242557",
+          "name": "R. Henson"
+        }
+      ],
+      "abstract": "Many studies report individual differences in functional connectivity, such as those related to age. However, estimates of connectivity from fMRI are confounded by other factors, such as vascular health, head motion and changes in the location of functional regions. Here, we investigate the impact of these confounds, and pre‐processing strategies that can mitigate them, using data from the Cambridge Centre for Ageing & Neuroscience (www.cam-can.com). This dataset contained two sessions of resting‐state fMRI from 214 adults aged 18–88. Functional connectivity between all regions was strongly related to vascular health, most likely reflecting respiratory and cardiac signals. These variations in mean connectivity limit the validity of between‐participant comparisons of connectivity estimates, and were best mitigated by regression of mean connectivity over participants. We also showed that high‐pass filtering, instead of band‐pass filtering, produced stronger and more reliable age‐effects. Head motion was correlated with gray‐matter volume in selected brain regions, and with various cognitive measures, suggesting that it has a biological (trait) component, and warning against regressing out motion over participants. Finally, we showed that the location of functional regions was more variable in older adults, which was alleviated by smoothing the data, or using a multivariate measure of connectivity. These results demonstrate that analysis choices have a dramatic impact on connectivity differences between individuals, ultimately affecting the associations found between connectivity and cognition. It is important that fMRI connectivity studies address these issues, and we suggest a number of ways to optimize analysis choices. Hum Brain Mapp 38:4125–4156, 2017. © 2017 Wiley Periodicals, Inc."
+    },
+    {
+      "paperId": "b7cb5c067c3b1292764968139a7129e5248d39d8",
+      "externalIds": {
+        "MAG": "2962736189",
+        "PubMedCentral": "6700228",
+        "DOI": "10.3389/fnins.2019.00825",
+        "CorpusId": 199850088,
+        "PubMed": "31456656"
+      },
+      "url": "https://www.semanticscholar.org/paper/b7cb5c067c3b1292764968139a7129e5248d39d8",
+      "title": "Resting State fMRI: Going Through the Motions",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2019,
+      "citationCount": 83,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2019.00825/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6700228, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "88952898",
+          "name": "Sanam Maknojia"
+        },
+        {
+          "authorId": "2317334",
+          "name": "N. Churchill"
+        },
+        {
+          "authorId": "2241747910",
+          "name": "Tom A. Schweizer"
+        },
+        {
+          "authorId": "2241747910",
+          "name": "Tom A. Schweizer"
+        },
+        {
+          "authorId": "2254962869",
+          "name": "S. Graham"
+        },
+        {
+          "authorId": "2254962869",
+          "name": "S. Graham"
+        }
+      ],
+      "abstract": "Resting state functional magnetic resonance imaging (rs-fMRI) has become an indispensable tool in neuroscience research. Despite this, rs-fMRI signals are easily contaminated by artifacts arising from movement of the head during data collection. The artifacts can be problematic even for motions on the millimeter scale, with complex spatiotemporal properties that can lead to substantial errors in functional connectivity estimates. Effective correction methods must be employed, therefore, to distinguish true functional networks from motion-related noise. Research over the last three decades has produced numerous correction methods, many of which must be applied in combination to achieve satisfactory data quality. Subject instruction, training, and mild restraints are helpful at the outset, but usually insufficient. Improvements come from applying multiple motion correction algorithms retrospectively after rs-fMRI data are collected, although residual artifacts can still remain in cases of elevated motion, which are especially prevalent in patient populations. Although not commonly adopted at present, “real-time” correction methods are emerging that can be combined with retrospective methods and that promise better correction and increased rs-fMRI signal sensitivity. While the search for the ideal motion correction protocol continues, rs-fMRI research will benefit from good disclosure practices, such as: (1) reporting motion-related quality control metrics to provide better comparison between studies; and (2) including motion covariates in group-level analyses to limit the extent of motion-related confounds when studying group differences."
+    },
+    {
+      "paperId": "27d19da1826e7be4c3c8c017b09cb1c2e382a8d4",
+      "externalIds": {
+        "MAG": "2090988544",
+        "DBLP": "journals/brain/KimDLN14",
+        "DOI": "10.1089/brain.2013.0153",
+        "CorpusId": 13280132,
+        "PubMed": "24117373"
+      },
+      "url": "https://www.semanticscholar.org/paper/27d19da1826e7be4c3c8c017b09cb1c2e382a8d4",
+      "title": "Frequency-Dependent Relationship Between Resting-State Functional Magnetic Resonance Imaging Signal Power and Head Motion Is Localized Within Distributed Association Networks",
+      "venue": "Brain Connectivity",
+      "year": 2013,
+      "citationCount": 21,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc3929253?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1089/brain.2013.0153?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1089/brain.2013.0153, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2008298701",
+          "name": "Jieun Kim"
+        },
+        {
+          "authorId": "40077116",
+          "name": "K. V. Dijk"
+        },
+        {
+          "authorId": "34827394",
+          "name": "Alexandra Libby"
+        },
+        {
+          "authorId": "2656834",
+          "name": "V. Napadow"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "3482ed14a92847bea637d16342b4f71966b63597",
+      "externalIds": {
+        "PubMedCentral": "9247272",
+        "DBLP": "journals/fini/EnguixKLCL22",
+        "ArXiv": "2204.05137",
+        "DOI": "10.3389/fninf.2022.843114",
+        "CorpusId": 248085076,
+        "PubMed": "35784189"
+      },
+      "url": "https://www.semanticscholar.org/paper/3482ed14a92847bea637d16342b4f71966b63597",
+      "title": "NeoRS: A Neonatal Resting State fMRI Data Preprocessing Pipeline",
+      "venue": "Frontiers in Neuroinformatics",
+      "year": 2022,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fninf.2022.843114/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2204.05137, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "41049643",
+          "name": "Vicente Enguix"
+        },
+        {
+          "authorId": "8765003",
+          "name": "Jeanette K. Kenley"
+        },
+        {
+          "authorId": "4184275",
+          "name": "D. Luck"
+        },
+        {
+          "authorId": "1388340317",
+          "name": "J. Cohen-Adad"
+        },
+        {
+          "authorId": "2689494",
+          "name": "G. Lodygensky"
+        }
+      ],
+      "abstract": "Resting state functional MRI (rsfMRI) has been shown to be a promising tool to study intrinsic brain functional connectivity and assess its integrity in cerebral development. In neonates, where functional MRI is limited to very few paradigms, rsfMRI was shown to be a relevant tool to explore regional interactions of brain networks. However, to identify the resting state networks, data needs to be carefully processed to reduce artifacts compromising the interpretation of results. Because of the non-collaborative nature of the neonates, the differences in brain size and the reversed contrast compared to adults due to myelination, neonates can’t be processed with the existing adult pipelines, as they are not adapted. Therefore, we developed NeoRS, a rsfMRI pipeline for neonates. The pipeline relies on popular neuroimaging tools (FSL, AFNI, and SPM) and is optimized for the neonatal brain. The main processing steps include image registration to an atlas, skull stripping, tissue segmentation, slice timing and head motion correction and regression of confounds which compromise functional data interpretation. To address the specificity of neonatal brain imaging, particular attention was given to registration including neonatal atlas type and parameters, such as brain size variations, and contrast differences compared to adults. Furthermore, head motion was scrutinized, and motion management optimized, as it is a major issue when processing neonatal rsfMRI data. The pipeline includes quality control using visual assessment checkpoints. To assess the effectiveness of NeoRS processing steps we used the neonatal data from the Baby Connectome Project dataset including a total of 10 neonates. NeoRS was designed to work on both multi-band and single-band acquisitions and is applicable on smaller datasets. NeoRS also includes popular functional connectivity analysis features such as seed-to-seed or seed-to-voxel correlations. Language, default mode, dorsal attention, visual, ventral attention, motor and fronto-parietal networks were evaluated. Topology found the different analyzed networks were in agreement with previously published studies in the neonate. NeoRS is coded in Matlab and allows parallel computing to reduce computational times; it is open-source and available on GitHub (https://github.com/venguix/NeoRS). NeoRS allows robust image processing of the neonatal rsfMRI data that can be readily customized to different datasets."
+    },
+    {
+      "paperId": "f6fd877e984a8cbb092bebdf408ec658bdfd22b7",
+      "externalIds": {
+        "MAG": "1971853395",
+        "PubMedCentral": "4154676",
+        "DOI": "10.1371/journal.pone.0104947",
+        "CorpusId": 15547731,
+        "PubMed": "25188284"
+      },
+      "url": "https://www.semanticscholar.org/paper/f6fd877e984a8cbb092bebdf408ec658bdfd22b7",
+      "title": "Voxel-Wise Motion Artifacts in Population-Level Whole-Brain Connectivity Analysis of Resting-State fMRI",
+      "venue": "PLoS ONE",
+      "year": 2014,
+      "citationCount": 27,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0104947&type=printable",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4154676, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49561962",
+          "name": "T. Spisák"
+        },
+        {
+          "authorId": "153194548",
+          "name": "A. Jakab"
+        },
+        {
+          "authorId": "46879633",
+          "name": "S. Kis"
+        },
+        {
+          "authorId": "4489227",
+          "name": "G. Opposits"
+        },
+        {
+          "authorId": "50391865",
+          "name": "C. Aranyi"
+        },
+        {
+          "authorId": "144233666",
+          "name": "E. Berényi"
+        },
+        {
+          "authorId": "2992376",
+          "name": "M. Emri"
+        }
+      ],
+      "abstract": "Functional Magnetic Resonance Imaging (fMRI) based brain connectivity analysis maps the functional networks of the brain by estimating the degree of synchronous neuronal activity between brain regions. Recent studies have demonstrated that “resting-state” fMRI-based brain connectivity conclusions may be erroneous when motion artifacts have a differential effect on fMRI BOLD signals for between group comparisons. A potential explanation could be that in-scanner displacement, due to rotational components, is not spatially constant in the whole brain. However, this localized nature of motion artifacts is poorly understood and is rarely considered in brain connectivity studies. In this study, we initially demonstrate the local correspondence between head displacement and the changes in the resting-state fMRI BOLD signal. Than, we investigate how connectivity strength is affected by the population-level variation in the spatial pattern of regional displacement. We introduce Regional Displacement Interaction (RDI), a new covariate parameter set for second-level connectivity analysis and demonstrate its effectiveness in reducing motion related confounds in comparisons of groups with different voxel-vise displacement pattern and preprocessed using various nuisance regression methods. The effect of using RDI as second-level covariate is than demonstrated in autism-related group comparisons. The relationship between the proposed method and some of the prevailing subject-level nuisance regression techniques is evaluated. Our results show that, depending on experimental design, treating in-scanner head motion as a global confound may not be appropriate. The degree of displacement is highly variable among various brain regions, both within and between subjects. These regional differences bias correlation-based measures of brain connectivity. The inclusion of the proposed second-level covariate into the analysis successfully reduces artifactual motion-related group differences and preserves real neuronal differences, as demonstrated by the autism-related comparisons."
+    },
+    {
+      "paperId": "d596d86d99b6bc25274c34130080d3819e6d416d",
+      "externalIds": {
+        "DOI": "10.58530/2024/3437",
+        "CorpusId": 274314203
+      },
+      "url": "https://www.semanticscholar.org/paper/d596d86d99b6bc25274c34130080d3819e6d416d",
+      "title": "Assessing motion-associated tSNR of brainstem and spinal cord fMRI in a cohort with chronic hemiparetic stroke",
+      "venue": "ISMRM Annual Meeting",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.58530/2024/3437?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.58530/2024/3437, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47382816",
+          "name": "Kimberly J Hemmerling"
+        },
+        {
+          "authorId": "2332568772",
+          "name": "Neha Reddy"
+        },
+        {
+          "authorId": "2332604606",
+          "name": "Julius Dewald"
+        },
+        {
+          "authorId": "2318040079",
+          "name": "Molly Bright"
+        }
+      ],
+      "abstract": "Motivation: Motor-task fMRI is a critical modality for studying post-stroke neuronal changes in the brainstem and spinal cord, but data quality is reduced in these regions. Goal(s): We aimed to anticipate the degree of head-motion confounds before a motor-task fMRI scan and assess how this head motion affects fMRI data quality. Approach: Six post-stroke individuals performed a hand-grasp task during a head motion-capture session, then during cortical-brainstem and spinal-cord fMRI scans. Results: Head motion in the lab was positively correlated with head and spinal-cord motion during fMRI. Head and spinal-cord motion were correlated with decreased tSNR in the cortex, brainstem, and spinal cord. Impact: Head motion outside of the scanner is linked with head and spinal-cord fMRI motion and tSNR. With lab-based motion capture systems, we can anticipate motion and tSNR impacts in motor-task fMRI, useful as screening in clinical populations with increased movement."
+    },
+    {
+      "paperId": "8d3e6864d20b76341c40662d5328260c704001e6",
+      "externalIds": {
+        "DOI": "10.58530/2025/0347",
+        "CorpusId": 281340341
+      },
+      "url": "https://www.semanticscholar.org/paper/8d3e6864d20b76341c40662d5328260c704001e6",
+      "title": "Run-time motion and f0 control for 3D-EPI fMRI using short servo navigators",
+      "venue": "ISMRM Annual Meeting",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.58530/2025/0347?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.58530/2025/0347, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2119096109",
+          "name": "Malte Riedel"
+        },
+        {
+          "authorId": "2279789938",
+          "name": "Thomas Ulrich"
+        },
+        {
+          "authorId": "2359254134",
+          "name": "Samuel Bianchi"
+        },
+        {
+          "authorId": "2194604267",
+          "name": "Klaas Prüssmann"
+        }
+      ],
+      "abstract": "Motivation: Involuntary head motion and field variations are confounding factors in functional MRI. Goal(s): To implement run-time motion and field control for segmented 3D-EPI fMRI using servo navigation. Approach: Orbital navigators are integrated into the sequence for run-time motion and field control. f0-induced EPI phase corrections are applied relative to the central echo time to reduce f0 noise propagation into the EPI signal phase for high echo times and, by this, enable corrections by short navigators. Results: Servo navigation successfully stabilizes in-vivo voxel time series by run-time rigid motion and f0 corrections requiring only 3ms-navigator readouts and sub-second on-the-fly calibration. Impact: Servo navigation achieves run-time motion und field correction for 3D-EPI fMRI with high-precision, short navigators, and rapid on-the-fly calibration. The navigators are automatically drawn from the set imaging volume without external tracking instrumentation enabling plug-and-play motion correction for 3D fMRI."
+    },
+    {
+      "paperId": "8e7b09590e6dafe554201f8284f6531aa56ff4b8",
+      "externalIds": {
+        "MAG": "2145407006",
+        "DOI": "10.1002/hbm.21238",
+        "CorpusId": 12304086,
+        "PubMed": "21455942"
+      },
+      "url": "https://www.semanticscholar.org/paper/8e7b09590e6dafe554201f8284f6531aa56ff4b8",
+      "title": "Optimizing preprocessing and analysis pipelines for single‐subject fMRI. I. Standard temporal motion and physiological noise correction methods",
+      "venue": "Human Brain Mapping",
+      "year": 2012,
+      "citationCount": 117,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.21238?download=true",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/hbm.21238?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/hbm.21238, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2317334",
+          "name": "N. Churchill"
+        },
+        {
+          "authorId": "3434254",
+          "name": "Anita Oder"
+        },
+        {
+          "authorId": "144319186",
+          "name": "H. Abdi"
+        },
+        {
+          "authorId": "2390552",
+          "name": "F. Tam"
+        },
+        {
+          "authorId": "2280888",
+          "name": "Wayne Lee"
+        },
+        {
+          "authorId": "47553385",
+          "name": "Christopher G. Thomas"
+        },
+        {
+          "authorId": "2537613",
+          "name": "J. Ween"
+        },
+        {
+          "authorId": "145455673",
+          "name": "S. Graham"
+        },
+        {
+          "authorId": "2790050",
+          "name": "S. Strother"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "5ba92e3d374c855817c60a7013721ee9bbcacd8d",
+      "externalIds": {
+        "MAG": "3084031290",
+        "DOI": "10.1101/2020.09.09.290296",
+        "CorpusId": 221634919
+      },
+      "url": "https://www.semanticscholar.org/paper/5ba92e3d374c855817c60a7013721ee9bbcacd8d",
+      "title": "Modeling the hemodynamic response function using simultaneous EEG-fMRI data and convolutional sparse coding analysis with rank-1 constraints",
+      "venue": "bioRxiv",
+      "year": 2020,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2020/09/10/2020.09.09.290296.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2020.09.09.290296?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2020.09.09.290296, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2466492",
+          "name": "Prokopis C. Prokopiou"
+        },
+        {
+          "authorId": "39394335",
+          "name": "Michalis Kassinopoulos"
+        },
+        {
+          "authorId": "1473670038",
+          "name": "Alba Xifra-Porxas"
+        },
+        {
+          "authorId": "49086975",
+          "name": "M. Boudrias"
+        },
+        {
+          "authorId": "1777549",
+          "name": "G. Mitsis"
+        }
+      ],
+      "abstract": "Over the last few years, an increasing body of evidence points to the hemodynamic response function as an important confound of resting-state functional connectivity. Several studies in the literature proposed using blind deconvolution of resting-state fMRI data to retrieve the HRF, which can be subsequently used for hemodynamic deblurring. A basic hypothesis in these studies is that relevant information of the resting-state brain dynamics is condensed in discrete events resulting in large amplitude peaks in the BOLD signal. In this work, we showed that important information of resting-state activity, in addition to the larger amplitude peaks, is also concentrated in lower amplitude peaks. Moreover, due to the strong effect of physiological noise and head motion on the BOLD signal, which in many cases may not be completely removed after preprocessing, the neurophysiological origin of the large amplitude BOLD signal peaks is questionable. Hence, focusing on the large amplitude BOLD signal peaks may yield biased HRF estimates. To define discrete events of neuronal origins, we proposed using simultaneous EEG-fMRI along with convolutional sparse coding analysis. Our results suggested that events detected in the EEG are able to describe the slow oscillations of the BOLD signal and to obtain consistent HRF shapes across subjects under both task-based and resting-state conditions."
+    },
+    {
+      "paperId": "4d9d999e6dfe0bf91ea286869e09420a49fa6701",
+      "externalIds": {
+        "MAG": "2151036704",
+        "DBLP": "journals/neuroimage/MuraskinOGKTSB13",
+        "PubMedCentral": "3638742",
+        "DOI": "10.1016/j.neuroimage.2012.11.052",
+        "CorpusId": 6507861,
+        "PubMed": "23220430"
+      },
+      "url": "https://www.semanticscholar.org/paper/4d9d999e6dfe0bf91ea286869e09420a49fa6701",
+      "title": "Prospective active marker motion correction improves statistical power in BOLD fMRI",
+      "venue": "NeuroImage",
+      "year": 2012,
+      "citationCount": 23,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc3638742?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3638742, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2399401",
+          "name": "Jordan Muraskin"
+        },
+        {
+          "authorId": "3047299",
+          "name": "M. Ooi"
+        },
+        {
+          "authorId": "46502473",
+          "name": "R. Goldman"
+        },
+        {
+          "authorId": "34398776",
+          "name": "S. Krueger"
+        },
+        {
+          "authorId": "2055996343",
+          "name": "W. J. Thomas"
+        },
+        {
+          "authorId": "1812793",
+          "name": "P. Sajda"
+        },
+        {
+          "authorId": "145971274",
+          "name": "T. Brown"
+        }
+      ],
+      "abstract": "Group level statistical maps of blood oxygenation level dependent (BOLD) signals acquired using functional magnetic resonance imaging (fMRI) have become a basic measurement for much of systems, cognitive and social neuroscience. A challenge in making inferences from these statistical maps is the noise and potential confounds that arise from the head motion that occurs within and between acquisition volumes. This motion results in the scan plane being misaligned during acquisition, ultimately leading to reduced statistical power when maps are constructed at the group level. In most cases, an attempt is made to correct for this motion through the use of retrospective analysis methods. In this paper, we use a prospective active marker motion correction (PRAMMO) system that uses radio frequency markers for real-time tracking of motion, enabling on-line slice plane correction. We show that the statistical power of the activation maps is substantially increased using PRAMMO compared to conventional retrospective correction. Analysis of our results indicates that the PRAMMO acquisition reduces the variance without decreasing the signal component of the BOLD (beta). Using PRAMMO could thus improve the overall statistical power of fMRI based BOLD measurements, leading to stronger inferences of the nature of processing in the human brain."
+    },
+    {
+      "paperId": "ef6a509fc35858f61fffb6d4d3dcb42d997eb832",
+      "externalIds": {
+        "PubMedCentral": "8724036",
+        "DOI": "10.3389/fnins.2021.805679",
+        "CorpusId": 245336328,
+        "PubMed": "34992520"
+      },
+      "url": "https://www.semanticscholar.org/paper/ef6a509fc35858f61fffb6d4d3dcb42d997eb832",
+      "title": "Gradual Restraint Habituation for Awake Functional Magnetic Resonance Imaging Combined With a Sparse Imaging Paradigm Reduces Motion Artifacts and Stress Levels in Rodents",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2021,
+      "citationCount": 19,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2021.805679/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8724036, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1397433251",
+          "name": "G. Russo"
+        },
+        {
+          "authorId": "2143004",
+          "name": "X. Helluy"
+        },
+        {
+          "authorId": "3287614",
+          "name": "M. Behroozi"
+        },
+        {
+          "authorId": "1398200258",
+          "name": "D. Manahan‐Vaughan"
+        }
+      ],
+      "abstract": "Functional magnetic resonance imaging, as a non-invasive technique, offers unique opportunities to assess brain function and connectivity under a broad range of applications, ranging from passive sensory stimulation to high-level cognitive abilities, in awake animals. This approach is confounded, however, by the fact that physical restraint and loud unpredictable acoustic noise must inevitably accompany fMRI recordings. These factors induce marked stress in rodents, and stress-related elevations of corticosterone levels are known to alter information processing and cognition in the rodent. Here, we propose a habituation strategy that spans specific stages of adaptation to restraint, MRI noise, and confinement stress in awake rats and circumvents the need for surgical head restraint. This habituation protocol results in stress levels during awake fMRI that do not differ from pre-handling levels and enables stable image acquisition with very low motion artifacts. For this, rats were gradually trained over a period of three weeks and eighteen training sessions. Stress levels were assessed by analysis of fecal corticosterone metabolite levels and breathing rates. We observed significant drops in stress levels to below pre-handling levels at the end of the habituation procedure. During fMRI in awake rats, after the conclusion of habituation and using a non-invasive head-fixation device, breathing was stable and head motion artifacts were minimal. A task-based fMRI experiment, using acoustic stimulation, conducted 2 days after the end of habituation, resulted in precise whole brain mapping of BOLD signals in the brain, with clear delineation of the expected auditory-related structures. The active discrimination by the animals of the acoustic stimuli from the backdrop of scanner noise was corroborated by significant increases in BOLD signals in the thalamus and reticular formation. Taken together, these data show that effective habituation to awake fMRI can be achieved by gradual and incremental acclimatization to the experimental conditions. Subsequent BOLD recordings, even during superimposed acoustic stimulation, reflect low stress-levels, low motion and a corresponding high-quality image acquisition. Furthermore, BOLD signals obtained during fMRI indicate that effective habituation facilitates selective attention to sensory stimuli that can in turn support the discrimination of cognitive processes in the absence of stress confounds."
+    }
+  ]
+}

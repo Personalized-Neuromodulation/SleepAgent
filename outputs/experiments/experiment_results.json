@@ -1,0 +1,658 @@
+[
+  {
+    "plan": {
+      "plan_id": "experiment_plan_cdea5110b79a",
+      "hypothesis_id": "hypothesis_8d7ffd5b7dc0",
+      "hypothesis_title": "Thalamic Spindle Modulation via Integrated Thalamocortical Coupling, Fractional Anisotropy, and Cortical Slow Oscillations in Sleep Phenotypes",
+      "scientific_question": "How does the functional connectivity between the thalamus and various resting-state networks (DMN, salience, frontoparietal) influence the overall network interactions in the brain, and what is the relationship between these interactions and the number of voxels in the respective ROIs?",
+      "hypothesis_summary": "This hypothesis integrates thalamocortical coupling, fractional anisotropy (FA), and cortical slow oscillations to explain thalamic spindle modulation and sleep phenotypes, leveraging mechanisms from P1, P2, and P3.",
+      "hypothesis_content": "The hypothesis proposes that thalamic spindle modulation is mediated by a tripartite interaction between thalamocortical coupling, fractional anisotropy (FA) in white matter tracts, and cortical slow oscillations. These factors collectively influence spindle density, refractory periods, and functional connectivity, thereby shaping sleep phenotypes such as sleep continuity and spindle topography. The integration of FA, thalamocortical coupling, and cortical slow oscillations provides a mechanistic pathway linking white matter integrity and cortical rhythms to sleep architecture.",
+      "predictors": [
+        "thalamus_DMN_FC",
+        "timefreq_fALFF_0.01_0.08_over_0.01_0.25"
+      ],
+      "outcomes": [
+        "salience_FC",
+        "frontoparietal_FC"
+      ],
+      "covariates": [
+        "mean_FD"
+      ],
+      "negative_controls": [
+        "global_signal_psd_power_mean",
+        "global_signal_psd_power_max"
+      ],
+      "variables": [
+        {
+          "name": "thalamus_DMN_FC",
+          "role": "predictor",
+          "scientific_concept": "thalamus DMN FC",
+          "modality": "fMRI",
+          "source_file": "outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv",
+          "source_column": "thalamus_DMN_FC",
+          "approved": true,
+          "missing_rate": 0.24731182795698925,
+          "n_available": 70,
+          "mapping_confidence": 0.9,
+          "notes": "Selected from available analysis-ready profile."
+        },
+        {
+          "name": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "role": "predictor",
+          "scientific_concept": "timefreq fALFF 0.01 0.08 over 0.01 0.25",
+          "modality": "fMRI",
+          "source_file": "outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv",
+          "source_column": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "approved": true,
+          "missing_rate": 0.0,
+          "n_available": 93,
+          "mapping_confidence": 0.9,
+          "notes": "Selected from available analysis-ready profile."
+        },
+        {
+          "name": "salience_FC",
+          "role": "outcome",
+          "scientific_concept": "salience FC",
+          "modality": "fMRI",
+          "source_file": "outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv",
+          "source_column": "salience_FC",
+          "approved": true,
+          "missing_rate": 0.24731182795698925,
+          "n_available": 70,
+          "mapping_confidence": 0.9,
+          "notes": "Selected from available analysis-ready profile."
+        },
+        {
+          "name": "frontoparietal_FC",
+          "role": "outcome",
+          "scientific_concept": "frontoparietal FC",
+          "modality": "fMRI",
+          "source_file": "outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv",
+          "source_column": "frontoparietal_FC",
+          "approved": true,
+          "missing_rate": 0.24731182795698925,
+          "n_available": 70,
+          "mapping_confidence": 0.9,
+          "notes": "Selected from available analysis-ready profile."
+        },
+        {
+          "name": "mean_FD",
+          "role": "covariate",
+          "scientific_concept": "mean FD",
+          "modality": "fMRI",
+          "source_file": "outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv",
+          "source_column": "mean_FD",
+          "approved": true,
+          "missing_rate": 0.0,
+          "n_available": 93,
+          "mapping_confidence": 0.9,
+          "notes": "Selected from available analysis-ready profile."
+        },
+        {
+          "name": "global_signal_psd_power_mean",
+          "role": "negative_control",
+          "scientific_concept": "global signal psd power mean",
+          "modality": "fMRI",
+          "source_file": "outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv",
+          "source_column": "global_signal_psd_power_mean",
+          "approved": true,
+          "missing_rate": 0.0,
+          "n_available": 93,
+          "mapping_confidence": 0.9,
+          "notes": "Selected from available analysis-ready profile."
+        },
+        {
+          "name": "global_signal_psd_power_max",
+          "role": "negative_control",
+          "scientific_concept": "global signal psd power max",
+          "modality": "fMRI",
+          "source_file": "outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv",
+          "source_column": "global_signal_psd_power_max",
+          "approved": true,
+          "missing_rate": 0.0,
+          "n_available": 93,
+          "mapping_confidence": 0.9,
+          "notes": "Selected from available analysis-ready profile."
+        }
+      ],
+      "primary_tests": [
+        {
+          "test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_salience_FC",
+          "predictor": "thalamus_DMN_FC",
+          "outcome": "salience_FC",
+          "question": "Using available fmri features, does thalamus_DMN_FC relate to salience_FC?"
+        },
+        {
+          "test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_frontoparietal_FC",
+          "predictor": "thalamus_DMN_FC",
+          "outcome": "frontoparietal_FC",
+          "question": "Using available fmri features, does thalamus_DMN_FC relate to frontoparietal_FC?"
+        },
+        {
+          "test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_salience_FC",
+          "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "outcome": "salience_FC",
+          "question": "Using available fmri features, does timefreq_fALFF_0.01_0.08_over_0.01_0.25 relate to salience_FC?"
+        },
+        {
+          "test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_frontoparietal_FC",
+          "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "outcome": "frontoparietal_FC",
+          "question": "Using available fmri features, does timefreq_fALFF_0.01_0.08_over_0.01_0.25 relate to frontoparietal_FC?"
+        }
+      ],
+      "analysis_plan": "We will analyze the relationship between thalamus-DMN, thalamus-salience, and thalamus-frontoparietal FC with the corresponding ROI voxel counts. We will use correlation analysis to assess the strength and direction of the relationships.",
+      "metadata": {
+        "source": "ExperimentDesignAgent",
+        "generation_strategy": "evolution:cross_pollination",
+        "hypothesis_rating": 1491.0,
+        "requested_modalities": [
+          "fMRI"
+        ],
+        "llm_experiment_design": {
+          "scientific_question": "How does the functional connectivity between the thalamus and various resting-state networks (DMN, salience, frontoparietal) influence the overall network interactions in the brain, and what is the relationship between these interactions and the number of voxels in the respective ROIs?",
+          "analysis_plan": "We will analyze the relationship between thalamus-DMN, thalamus-salience, and thalamus-frontoparietal FC with the corresponding ROI voxel counts. We will use correlation analysis to assess the strength and direction of the relationships.",
+          "primary_tests": [
+            {
+              "test_id": "T1",
+              "predictor": "thalamus_DMN_FC",
+              "outcome": "DMN_roi_voxels",
+              "question": "Is there a significant correlation between thalamus-DMN FC and DMN ROI voxel count?"
+            },
+            {
+              "test_id": "T2",
+              "predictor": "thalamus_salience_FC",
+              "outcome": "salience_roi_voxels",
+              "question": "Is there a significant correlation between thalamus-salience FC and salience ROI voxel count?"
+            },
+            {
+              "test_id": "T3",
+              "predictor": "thalamus_frontoparietal_FC",
+              "outcome": "frontoparietal_roi_voxels",
+              "question": "Is there a significant correlation between thalamus-frontoparietal FC and frontoparietal ROI voxel count?"
+            }
+          ],
+          "risks": [
+            "Missing data in ROI voxel counts may reduce statistical power.",
+            "Assumption of linearity in correlation analysis may not hold.",
+            "Potential confounding variables not accounted for."
+          ],
+          "rationale": "The thalamus is a key relay station in the brain, and its connectivity with major resting-state networks may impact the structural integrity ( voxel count) of those networks. Understanding these relationships can provide insights into how thalamic interactions modulate network architecture and potentially relate to cognitive or clinical outcomes."
+        },
+        "testability_precheck": {
+          "available_modalities": [
+            "fmri"
+          ],
+          "excluded_modalities": [],
+          "full_requested_modalities_available": true,
+          "mode": "single_fmri_proxy_analysis",
+          "reason": "Only fMRI features are available; the plan was constrained to fMRI mechanism proxies and cannot directly test missing morphology, DTI, EEG, or scale outcomes.",
+          "analysis_modalities": [
+            "fmri"
+          ],
+          "selected_predictors": [
+            "thalamus_DMN_FC",
+            "timefreq_fALFF_0.01_0.08_over_0.01_0.25"
+          ],
+          "selected_outcomes": [
+            "salience_FC",
+            "frontoparietal_FC"
+          ],
+          "selected_covariates": [
+            "mean_FD"
+          ],
+          "selected_negative_controls": [
+            "global_signal_psd_power_mean",
+            "global_signal_psd_power_max"
+          ]
+        },
+        "variable_mapping_review": {
+          "judgment": "partially_valid",
+          "candidate_mappings": [
+            {
+              "variable": "thalamus_DMN_FC",
+              "source_column": "thalamus_DMN_FC",
+              "confidence": 0.9,
+              "reason": "The variable 'thalamus_DMN_FC' is present in the source columns with a missing rate of 24.73% and is marked as a feature."
+            },
+            {
+              "variable": "thalamus_salience_FC",
+              "source_column": "thalamus_salience_FC",
+              "confidence": 0.9,
+              "reason": "The variable 'thalamus_salience_FC' is present in the source columns with a missing rate of 24.73% and is marked as a feature."
+            },
+            {
+              "variable": "thalamus_frontoparietal_FC",
+              "source_column": "thalamus_frontoparietal_FC",
+              "confidence": 0.9,
+              "reason": "The variable 'thalamus_frontoparietal_FC' is present in the source columns with a missing rate of 24.73% and is marked as a feature."
+            },
+            {
+              "variable": "DMN_salience_FC",
+              "source_column": "DMN_salience_FC",
+              "confidence": 0.9,
+              "reason": "The variable 'DMN_salience_FC' is present in the source columns with a missing rate of 24.73% and is marked as a feature."
+            },
+            {
+              "variable": "DMN_frontoparietal_FC",
+              "source_column": "DMN_frontoparietal_FC",
+              "confidence": 0.9,
+              "reason": "The variable 'DMN_frontoparietal_FC' is present in the source columns with a missing rate of 24.73% and is marked as a feature."
+            },
+            {
+              "variable": "salience_frontoparietal_FC",
+              "source_column": "salience_frontoparietal_FC",
+              "confidence": 0.9,
+              "reason": "The variable 'salience_frontoparietal_FC' is present in the source columns with a missing rate of 24.73% and is marked as a feature."
+            },
+            {
+              "variable": "DMN_FC",
+              "source_column": "DMN_FC",
+              "confidence": 0.9,
+              "reason": "The variable 'DMN_FC' is present in the source columns with a missing rate of 24.73% and is marked as a feature."
+            },
+            {
+              "variable": "salience_FC",
+              "source_column": "salience_FC",
+              "confidence": 0.9,
+              "reason": "The variable 'salience_FC' is present in the source columns with a missing rate of 24.73% and is marked as a feature."
+            },
+            {
+              "variable": "frontoparietal_FC",
+              "source_column": "frontoparietal_FC",
+              "confidence": 0.9,
+              "reason": "The variable 'frontoparietal_FC' is present in the source columns with a missing rate of 24.73% and is marked as a feature."
+            }
+          ],
+          "missing_variables": [
+            "thalamus_roi_voxels",
+            "DMN_roi_voxels",
+            "salience_roi_voxels",
+            "frontoparietal_roi_voxels"
+          ],
+          "recommendations": [
+            "Check for consistency in the naming convention of the variables.",
+            "Consider the missing data rate of 24.73% for the variables with missing data and decide on imputation or exclusion strategies.",
+            "Verify if the 'candidate_mappings' variables are correctly mapped and if they are the intended features for analysis.",
+            "Ensure that the 'missing_variables' are accounted for in the analysis or consider their impact on model performance."
+          ]
+        }
+      }
+    },
+    "stats_result": {
+      "plan_id": "experiment_plan_cdea5110b79a",
+      "hypothesis_id": "hypothesis_8d7ffd5b7dc0",
+      "tests": [
+        {
+          "test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_salience_FC",
+          "predictor": "thalamus_DMN_FC",
+          "outcome": "salience_FC",
+          "method": "spearman_correlation",
+          "n": 70,
+          "effect": -0.14047764849969382,
+          "p_value": 0.24608124456303881,
+          "ci_low": -0.3634583639333564,
+          "ci_high": 0.09772639869685944,
+          "direction": "negative",
+          "passed": false,
+          "notes": "Primary controlled template: Spearman correlation."
+        },
+        {
+          "test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_frontoparietal_FC",
+          "predictor": "thalamus_DMN_FC",
+          "outcome": "frontoparietal_FC",
+          "method": "spearman_correlation",
+          "n": 70,
+          "effect": -0.3051526550607996,
+          "p_value": 0.010207974901201339,
+          "ci_low": -0.5039924506766033,
+          "ci_high": -0.07559495312514382,
+          "direction": "negative",
+          "passed": true,
+          "notes": "Primary controlled template: Spearman correlation."
+        },
+        {
+          "test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_salience_FC",
+          "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "outcome": "salience_FC",
+          "method": "spearman_correlation",
+          "n": 70,
+          "effect": 0.29168306958573564,
+          "p_value": 0.014286188225494656,
+          "ci_low": 0.060877374784290256,
+          "ci_high": 0.4928796901088234,
+          "direction": "positive",
+          "passed": true,
+          "notes": "Primary controlled template: Spearman correlation."
+        },
+        {
+          "test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_frontoparietal_FC",
+          "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "outcome": "frontoparietal_FC",
+          "method": "spearman_correlation",
+          "n": 70,
+          "effect": 0.27033741876127415,
+          "p_value": 0.023610893379682082,
+          "ci_low": 0.037757739840760314,
+          "ci_high": 0.47513350452477165,
+          "direction": "positive",
+          "passed": true,
+          "notes": "Primary controlled template: Spearman correlation."
+        }
+      ],
+      "summary": "3/4 primary statistical tests passed p<0.05."
+    },
+    "ml_result": null,
+    "robustness_results": [
+      {
+        "check_id": "robustness_1f16ea4951b7",
+        "target_test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_salience_FC",
+        "method": "bootstrap_spearman_ci",
+        "n_iterations": 100,
+        "original_effect": -0.14047764849969382,
+        "median_effect": -0.13348158421484588,
+        "ci_low": -0.42748123455239223,
+        "ci_high": 0.13049297563481657,
+        "sign_stability": 0.83,
+        "passed": true,
+        "notes": "Bootstrap resampling of the primary Spearman effect."
+      },
+      {
+        "check_id": "robustness_127e841a16e9",
+        "target_test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_frontoparietal_FC",
+        "method": "bootstrap_spearman_ci",
+        "n_iterations": 100,
+        "original_effect": -0.3051526550607996,
+        "median_effect": -0.2820226736070014,
+        "ci_low": -0.5356401938494088,
+        "ci_high": -0.0649309682267889,
+        "sign_stability": 1.0,
+        "passed": true,
+        "notes": "Bootstrap resampling of the primary Spearman effect."
+      },
+      {
+        "check_id": "robustness_2aff07fdbd5c",
+        "target_test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_salience_FC",
+        "method": "bootstrap_spearman_ci",
+        "n_iterations": 100,
+        "original_effect": 0.29168306958573564,
+        "median_effect": 0.29816204329928464,
+        "ci_low": 0.044046167946673105,
+        "ci_high": 0.4848535963188257,
+        "sign_stability": 0.99,
+        "passed": true,
+        "notes": "Bootstrap resampling of the primary Spearman effect."
+      },
+      {
+        "check_id": "robustness_61060e8a695e",
+        "target_test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_frontoparietal_FC",
+        "method": "bootstrap_spearman_ci",
+        "n_iterations": 100,
+        "original_effect": 0.27033741876127415,
+        "median_effect": 0.27618878716815254,
+        "ci_low": 0.05464143987482926,
+        "ci_high": 0.4951095171881521,
+        "sign_stability": 0.99,
+        "passed": true,
+        "notes": "Bootstrap resampling of the primary Spearman effect."
+      }
+    ],
+    "negative_control_results": [
+      {
+        "control_id": "negative_control_8be663e844e8",
+        "control_type": "negative_control_outcome",
+        "predictor": "thalamus_DMN_FC",
+        "outcome": "global_signal_psd_power_mean",
+        "n": 70,
+        "effect": -0.13830810952672554,
+        "passed": true,
+        "notes": "A negative control should not show a stronger nominal association."
+      },
+      {
+        "control_id": "negative_control_cd3ea38becfd",
+        "control_type": "negative_control_outcome",
+        "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "outcome": "global_signal_psd_power_mean",
+        "n": 93,
+        "effect": 0.2177875092802194,
+        "passed": false,
+        "notes": "A negative control should not show a stronger nominal association."
+      },
+      {
+        "control_id": "negative_control_505f7f389d3a",
+        "control_type": "negative_control_outcome",
+        "predictor": "thalamus_DMN_FC",
+        "outcome": "global_signal_psd_power_max",
+        "n": 70,
+        "effect": -0.03113133305169123,
+        "passed": true,
+        "notes": "A negative control should not show a stronger nominal association."
+      },
+      {
+        "control_id": "negative_control_45c428a4a35c",
+        "control_type": "negative_control_outcome",
+        "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "outcome": "global_signal_psd_power_max",
+        "n": 93,
+        "effect": 0.2392073199073399,
+        "passed": false,
+        "notes": "A negative control should not show a stronger nominal association."
+      }
+    ],
+    "critic_findings": [
+      {
+        "severity": "medium",
+        "category": "missing_data",
+        "message": "Missing ROI voxel count variables may affect model accuracy.",
+        "recommendation": "Impute missing ROI voxel counts or include them in the model if available."
+      }
+    ],
+    "evidence_update": {
+      "hypothesis_id": "hypothesis_8d7ffd5b7dc0",
+      "plan_id": "experiment_plan_cdea5110b79a",
+      "review_status": "partially_supported",
+      "support_score": 0.75,
+      "result_review": {
+        "support_score": 0.75,
+        "judgment": "partially_supported",
+        "critic_findings": [
+          {
+            "severity": "medium",
+            "category": "missing_data",
+            "message": "Missing ROI voxel count variables may affect model accuracy.",
+            "recommendation": "Impute missing ROI voxel counts or include them in the model if available."
+          }
+        ],
+        "confounds": [
+          "mean FD"
+        ],
+        "alternative_explanations": [
+          "Non-linear relationships between FC and outcomes could influence results."
+        ],
+        "next_steps": [
+          "Revise model to use linear regression with imputed ROI voxel counts.",
+          "Explore non-linear models if data allows.",
+          "Validate results with additional cohorts."
+        ]
+      },
+      "primary_tests": [
+        {
+          "test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_salience_FC",
+          "predictor": "thalamus_DMN_FC",
+          "outcome": "salience_FC",
+          "method": "spearman_correlation",
+          "n": 70,
+          "effect": -0.14047764849969382,
+          "p_value": 0.24608124456303881,
+          "ci_low": -0.3634583639333564,
+          "ci_high": 0.09772639869685944,
+          "direction": "negative",
+          "passed": false,
+          "notes": "Primary controlled template: Spearman correlation."
+        },
+        {
+          "test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_frontoparietal_FC",
+          "predictor": "thalamus_DMN_FC",
+          "outcome": "frontoparietal_FC",
+          "method": "spearman_correlation",
+          "n": 70,
+          "effect": -0.3051526550607996,
+          "p_value": 0.010207974901201339,
+          "ci_low": -0.5039924506766033,
+          "ci_high": -0.07559495312514382,
+          "direction": "negative",
+          "passed": true,
+          "notes": "Primary controlled template: Spearman correlation."
+        },
+        {
+          "test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_salience_FC",
+          "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "outcome": "salience_FC",
+          "method": "spearman_correlation",
+          "n": 70,
+          "effect": 0.29168306958573564,
+          "p_value": 0.014286188225494656,
+          "ci_low": 0.060877374784290256,
+          "ci_high": 0.4928796901088234,
+          "direction": "positive",
+          "passed": true,
+          "notes": "Primary controlled template: Spearman correlation."
+        },
+        {
+          "test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_frontoparietal_FC",
+          "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "outcome": "frontoparietal_FC",
+          "method": "spearman_correlation",
+          "n": 70,
+          "effect": 0.27033741876127415,
+          "p_value": 0.023610893379682082,
+          "ci_low": 0.037757739840760314,
+          "ci_high": 0.47513350452477165,
+          "direction": "positive",
+          "passed": true,
+          "notes": "Primary controlled template: Spearman correlation."
+        }
+      ],
+      "robustness_results": [
+        {
+          "check_id": "robustness_1f16ea4951b7",
+          "target_test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_salience_FC",
+          "method": "bootstrap_spearman_ci",
+          "n_iterations": 100,
+          "original_effect": -0.14047764849969382,
+          "median_effect": -0.13348158421484588,
+          "ci_low": -0.42748123455239223,
+          "ci_high": 0.13049297563481657,
+          "sign_stability": 0.83,
+          "passed": true,
+          "notes": "Bootstrap resampling of the primary Spearman effect."
+        },
+        {
+          "check_id": "robustness_127e841a16e9",
+          "target_test_id": "experiment_plan_cdea5110b79a_thalamus_DMN_FC_frontoparietal_FC",
+          "method": "bootstrap_spearman_ci",
+          "n_iterations": 100,
+          "original_effect": -0.3051526550607996,
+          "median_effect": -0.2820226736070014,
+          "ci_low": -0.5356401938494088,
+          "ci_high": -0.0649309682267889,
+          "sign_stability": 1.0,
+          "passed": true,
+          "notes": "Bootstrap resampling of the primary Spearman effect."
+        },
+        {
+          "check_id": "robustness_2aff07fdbd5c",
+          "target_test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_salience_FC",
+          "method": "bootstrap_spearman_ci",
+          "n_iterations": 100,
+          "original_effect": 0.29168306958573564,
+          "median_effect": 0.29816204329928464,
+          "ci_low": 0.044046167946673105,
+          "ci_high": 0.4848535963188257,
+          "sign_stability": 0.99,
+          "passed": true,
+          "notes": "Bootstrap resampling of the primary Spearman effect."
+        },
+        {
+          "check_id": "robustness_61060e8a695e",
+          "target_test_id": "experiment_plan_cdea5110b79a_timefreq_fALFF_0.01_0.08_over_0.01_0.25_frontoparietal_FC",
+          "method": "bootstrap_spearman_ci",
+          "n_iterations": 100,
+          "original_effect": 0.27033741876127415,
+          "median_effect": 0.27618878716815254,
+          "ci_low": 0.05464143987482926,
+          "ci_high": 0.4951095171881521,
+          "sign_stability": 0.99,
+          "passed": true,
+          "notes": "Bootstrap resampling of the primary Spearman effect."
+        }
+      ],
+      "negative_control_results": [
+        {
+          "control_id": "negative_control_8be663e844e8",
+          "control_type": "negative_control_outcome",
+          "predictor": "thalamus_DMN_FC",
+          "outcome": "global_signal_psd_power_mean",
+          "n": 70,
+          "effect": -0.13830810952672554,
+          "passed": true,
+          "notes": "A negative control should not show a stronger nominal association."
+        },
+        {
+          "control_id": "negative_control_cd3ea38becfd",
+          "control_type": "negative_control_outcome",
+          "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "outcome": "global_signal_psd_power_mean",
+          "n": 93,
+          "effect": 0.2177875092802194,
+          "passed": false,
+          "notes": "A negative control should not show a stronger nominal association."
+        },
+        {
+          "control_id": "negative_control_505f7f389d3a",
+          "control_type": "negative_control_outcome",
+          "predictor": "thalamus_DMN_FC",
+          "outcome": "global_signal_psd_power_max",
+          "n": 70,
+          "effect": -0.03113133305169123,
+          "passed": true,
+          "notes": "A negative control should not show a stronger nominal association."
+        },
+        {
+          "control_id": "negative_control_45c428a4a35c",
+          "control_type": "negative_control_outcome",
+          "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "outcome": "global_signal_psd_power_max",
+          "n": 93,
+          "effect": 0.2392073199073399,
+          "passed": false,
+          "notes": "A negative control should not show a stronger nominal association."
+        }
+      ]
+    },
+    "metadata": {
+      "model_trace": {
+        "model_review": {
+          "judgment": "needs_revision",
+          "recommended_primary_template": "linear_regression",
+          "recommended_robustness": [
+            "bootstrap_spearman_ci"
+          ],
+          "recommended_negative_controls": [
+            "negative_control_outcome"
+          ],
+          "rationale": "The analysis should use linear regression to model the relationship between predictors (thalamus-DMN FC, fALFF) and outcomes (salience FC, frontoparietal FC), while controlling for covariates (mean FD) and including negative controls. Bootstrap confidence intervals can enhance robustness. The missing variables (ROI voxel counts) need to be addressed, possibly through imputation or inclusion in the model.",
+          "warnings": [
+            "Missing ROI voxel count variables may affect model accuracy.",
+            "Consider non-linear relationships between FC and outcomes."
+          ]
+        },
+        "controlled_templates": {
+          "primary": "spearman_correlation",
+          "robustness": "bootstrap_spearman_ci",
+          "negative_control": "spearman_negative_control"
+        }
+      }
+    }
+  }
+]

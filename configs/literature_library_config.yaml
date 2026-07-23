@@ -5,6 +5,14 @@ project:
 
 database_config: configs/database_config.yaml
 
+embedding:
+  provider: local_minilm
+  model: sentence-transformers/all-MiniLM-L6-v2
+  enabled: true
+  local_files_only: true
+  device: cpu
+  log_file: logs/embedding_retrieval.log
+
 paths:
   literature_dir: data/literature
   outputs_dir: outputs/literature
@@ -21,6 +29,10 @@ paths:
 
 api:
   enabled: true
+  verbose: true
+  progress: true
+  verbose_detail: false
+  progress_update_every: 5
   cache_enabled: true
   cache_dir: .cache/sleepagent_api
   timeout_seconds: 20

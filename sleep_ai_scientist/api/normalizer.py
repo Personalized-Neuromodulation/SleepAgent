@@ -102,6 +102,7 @@ def api_to_literature_record(record: APILiteratureRecord) -> LiteratureRecord:
         is_open_access=record.is_open_access,
         provider=record.provider,
         provider_id=record.provider_id,
+        query=record.query,
     )
 
 

@@ -23,8 +23,7 @@ def test_grounding_api_integration_mock(monkeypatch, tmp_path):
         {
             "output_grounding_dir": str(tmp_path / "grounding"),
             "output_profiles_dir": str(tmp_path / "profiles"),
-            "report_path": str(tmp_path / "reports" / "grounding_report.md"),
-            "phase1_report_path": str(tmp_path / "reports" / "phase1_grounding_report.md"),
+            "report_path": str(tmp_path / "reports" / "phase1_grounding_report.md"),
             "literature_registry_csv": str(tmp_path / "literature_registry.csv"),
             "literature_registry_jsonl": str(tmp_path / "literature_registry.jsonl"),
             "literature_deduplication_report": str(tmp_path / "literature_deduplication_report.csv"),
