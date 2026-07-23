@@ -177,12 +177,13 @@ def test_literature_build_uses_own_embedding_config_for_rag_index(tmp_path, monk
     }
     config_path = _write_yaml(tmp_path / "literature_library_config_embedding.yaml", library_config)
 
-    def fake_build_rag_index(session, output_jsonl, embedding_config=None):
+    def fake_build_rag_index(session, output_jsonl, embedding_config=None, *, write_jsonl=True):
         Path(output_jsonl).parent.mkdir(parents=True, exist_ok=True)
-        Path(output_jsonl).write_text("", encoding="utf-8")
+        if write_jsonl:
+            Path(output_jsonl).write_text("", encoding="utf-8")
         return {
             "chunk_count": 1,
-            "path": str(output_jsonl),
+            "path": str(output_jsonl) if write_jsonl else None,
             "embedding": {
                 "enabled": bool(embedding_config.get("enabled")),
                 "model": embedding_config.get("model"),
@@ -204,3 +205,46 @@ def test_literature_build_uses_own_embedding_config_for_rag_index(tmp_path, monk
     assert result["rag_index"]["embedding"]["enabled"] is True
     assert result["rag_index"]["embedding"]["model"] == "sentence-transformers/all-MiniLM-L6-v2"
     assert result["rag_index"]["embedding"]["vector_dim"] == 384
+
+
+def test_literature_build_can_skip_duplicate_jsonl_exports(tmp_path, monkeypatch):
+    from sleep_ai_scientist.literature import library_builder
+    from sleep_ai_scientist.api.normalizer import api_to_literature_record, make_api_record
+
+    api_record = make_api_record(
+        "mock_provider",
+        "api_online_001",
+        "Online API sleep RAG paper",
+        abstract="Online insomnia slow wave EEG retrieval produces a RAG-ready abstract.",
+        year=2025,
+        source="api:mock",
+        query="insomnia slow wave EEG",
+    )
+    monkeypatch.setattr(
+        library_builder,
+        "search_literature_apis",
+        lambda config, session=None, rate_limit_enabled=True: (
+            [api_to_literature_record(api_record)],
+            {"enabled": True, "warnings": []},
+        ),
+    )
+
+    monkeypatch.setenv("SLEEPAGENT_SQLITE_PATH", str(tmp_path / "literature" / "sleep_literature.db"))
+    _database_config(tmp_path)
+    library_config = yaml.safe_load(_library_config(tmp_path).read_text(encoding="utf-8"))
+    library_config["outputs"] = {"write_jsonl": False, "write_rag_jsonl": False}
+    config_path = _write_yaml(tmp_path / "literature_library_config_no_jsonl.yaml", library_config)
+
+    result = library_builder.run_literature_build(
+        config_path,
+        query_config_path=_query_config(tmp_path),
+        library_version="test_sleep_library_v1",
+        backend="sqlite",
+        api_enabled=True,
+        enable_rag_index=True,
+    )
+
+    assert result["rag_index"]["chunk_count"] == 1
+    assert result["rag_index"]["path"] is None
+    assert not (tmp_path / "literature" / "sleep_library_api_retrieved_papers.jsonl").exists()
+    assert not (tmp_path / "outputs" / "rag_abstract_chunks.jsonl").exists()

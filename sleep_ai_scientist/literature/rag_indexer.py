@@ -15,7 +15,13 @@ from sleep_ai_scientist.hypothesis.agents.embedding import LocalMiniLMEmbeddingC
 from sleep_ai_scientist.storage.models import Paper, PaperSource, RagChunk, utc_now
 
 
-def build_rag_index(session: Session, output_jsonl: str | Path, embedding_config: dict[str, Any] | None = None) -> dict[str, Any]:
+def build_rag_index(
+    session: Session,
+    output_jsonl: str | Path,
+    embedding_config: dict[str, Any] | None = None,
+    *,
+    write_jsonl: bool = True,
+) -> dict[str, Any]:
     """Build one abstract chunk per canonical paper."""
     chunks: list[dict[str, Any]] = []
     for paper in session.scalars(select(Paper).order_by(Paper.paper_id)):
@@ -44,11 +50,12 @@ def build_rag_index(session: Session, output_jsonl: str | Path, embedding_config
     embedding_result = _embed_chunks(chunks, embedding_config or {})
     _upsert_rag_chunks(session, chunks, embedding_result)
     output_path = Path(output_jsonl)
-    ensure_parent(output_path)
-    with output_path.open("w", encoding="utf-8") as f:
-        for chunk in chunks:
-            f.write(json.dumps(chunk, ensure_ascii=False) + "\n")
-    return {"chunk_count": len(chunks), "path": str(output_path), "embedding": embedding_result}
+    if write_jsonl:
+        ensure_parent(output_path)
+        with output_path.open("w", encoding="utf-8") as f:
+            for chunk in chunks:
+                f.write(json.dumps(chunk, ensure_ascii=False) + "\n")
+    return {"chunk_count": len(chunks), "path": str(output_path) if write_jsonl else None, "embedding": embedding_result}
 
 
 def _upsert_rag_chunks(session: Session, chunks: list[dict[str, Any]], embedding_result: dict[str, Any]) -> None:

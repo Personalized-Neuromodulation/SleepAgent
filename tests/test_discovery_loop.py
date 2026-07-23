@@ -199,7 +199,7 @@ def test_discovery_loop_updates_foundation_and_refreshes_grounding_after_experim
         {
             "discovery_loop": {"run_id": "refresh_loop", "max_iterations": 1, "verbose": False, "snapshot_features": False, "enable_foundation_grounding_refresh": True, "stop_conditions": {"reward_convergence": {"enabled": False}, "no_active_hypotheses": False}},
             "foundation": {"config_path": str(foundation_config)},
-            "literature": {"enabled": True, "config_path": "configs/literature_library_config.yaml", "query_config_path": "configs/literature_queries.yaml", "library_version": "test_library"},
+            "literature": {"enabled": True, "intent_llm_enabled": False, "config_path": "configs/literature_library_config.yaml", "query_config_path": "configs/literature_queries.yaml", "library_version": "test_library"},
             "grounding": {"config_path": str(grounding_config), "corpus_version": "test_data_constrained"},
             "hypothesis": {"config_path": str(hypothesis_config)},
             "experiment": {"config_path": str(experiment_config)},
@@ -335,7 +335,14 @@ def test_discovery_loop_refreshes_literature_only_when_experiment_intent_accepts
         {
             "discovery_loop": {"max_iterations": 1, "verbose": False, "snapshot_features": False, "enable_foundation_grounding_refresh": True, "stop_conditions": {"reward_convergence": {"enabled": False}, "no_active_hypotheses": False}},
             "foundation": {"config_path": str(foundation_config)},
-            "literature": {"enabled": True, "config_path": "configs/literature_library_config.yaml", "query_config_path": str(query_config), "library_version": "test_library"},
+            "literature": {
+                "enabled": True,
+                "intent_llm_enabled": False,
+                "intent_log_path": str(tmp_path / "query_expansion_intents.jsonl"),
+                "config_path": "configs/literature_library_config.yaml",
+                "query_config_path": str(query_config),
+                "library_version": "test_library",
+            },
             "grounding": {"config_path": str(grounding_config), "corpus_version": "test_data_constrained"},
             "hypothesis": {"config_path": str(hypothesis_config)},
             "experiment": {"config_path": str(experiment_config)},

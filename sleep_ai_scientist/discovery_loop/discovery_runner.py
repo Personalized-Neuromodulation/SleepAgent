@@ -17,6 +17,7 @@ from sleep_ai_scientist.literature.experiment_intent import (
     write_intent_records,
 )
 from sleep_ai_scientist.literature.library_builder import run_literature_build
+from sleep_ai_scientist.llm.client import build_llm_client, normalize_llm_config
 
 
 def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_config.yaml") -> dict[str, Any]:
@@ -290,7 +291,15 @@ def _build_literature_expansion_if_needed(
     query_config_path = resolve_path(literature_cfg.get("query_config_path", "configs/literature_queries.yaml"))
     enriched = _experiment_summary_for_literature_intent(experiment_summary)
     _log(verbose, f"[literature_intent] start iteration={iteration_id}")
-    plan = build_literature_expansion_plan(enriched, iteration_id, query_config_path)
+    llm_client, llm_cfg = _literature_intent_llm(literature_cfg)
+    plan = build_literature_expansion_plan(
+        enriched,
+        iteration_id,
+        query_config_path,
+        llm_client=llm_client,
+        llm_config=llm_cfg,
+        max_queries=int(literature_cfg.get("max_experiment_queries_per_iteration", 8)),
+    )
     signals = plan.get("signals", {})
     _log(
         verbose,
@@ -404,6 +413,33 @@ def _write_incremental_query_config(query_config_path: Path, accepted_queries: l
     path = iteration_dir / "literature_incremental_queries.yaml"
     write_yaml(path, payload)
     return path
+
+
+def _literature_intent_llm(literature_cfg: dict[str, Any]) -> tuple[Any | None, dict[str, Any]]:
+    if "intent_llm_enabled" in literature_cfg and not bool(literature_cfg.get("intent_llm_enabled")):
+        return None, {"enabled": False}
+    config_path = resolve_path(literature_cfg.get("intent_llm_config_path", "configs/llm_config.yaml"))
+    if not config_path.exists():
+        return None, {"enabled": False}
+    shared = read_yaml(config_path)
+    provider_name = str(literature_cfg.get("intent_llm_provider") or shared.get("llm_provider", "")).strip().lower()
+    if provider_name and isinstance(shared.get(f"{provider_name}_llm"), dict):
+        raw = dict(shared[f"{provider_name}_llm"])
+    elif provider_name and isinstance(shared.get(provider_name), dict):
+        raw = dict(shared[provider_name])
+    elif isinstance(shared.get("ollama"), dict):
+        raw = dict(shared["ollama"])
+    else:
+        raw = dict(shared.get("llm", {}))
+    raw.update(literature_cfg.get("intent_llm", {}) if isinstance(literature_cfg.get("intent_llm"), dict) else {})
+    raw.setdefault("log_prefix", "literature_intent")
+    cfg = normalize_llm_config(raw)
+    if not bool(cfg.get("enabled", False)):
+        return None, cfg
+    try:
+        return build_llm_client(cfg), cfg
+    except Exception:
+        return None, {"enabled": False, "provider": cfg.get("provider", ""), "model": cfg.get("model", "")}
 
 
 def _last_experiment_feedback(iterations: list[dict[str, Any]]) -> str:

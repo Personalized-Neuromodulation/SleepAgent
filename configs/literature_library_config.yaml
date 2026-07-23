@@ -78,6 +78,7 @@ deduplication:
 
 outputs:
   write_csv: true
-  write_jsonl: true
+  write_jsonl: false
+  write_rag_jsonl: false
   write_manifest: true
   write_report: true

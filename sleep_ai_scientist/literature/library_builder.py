@@ -35,6 +35,8 @@ def _write_api_outputs(config: dict[str, Any], api_records: list[LiteratureRecor
     jsonl_path = _path(config, "api_retrieved_jsonl")
     rows = [record.model_dump(mode="json") for record in api_records]
     write_csv(csv_path, rows)
+    if not bool(config.get("outputs", {}).get("write_jsonl", True)):
+        return
     jsonl_path.parent.mkdir(parents=True, exist_ok=True)
     with jsonl_path.open("w", encoding="utf-8") as f:
         for row in rows:
@@ -201,6 +203,7 @@ def run_literature_build(
                 session_obj,
                 config_path(config, "rag_index_jsonl", "outputs/literature/rag_abstract_chunks.jsonl"),
                 embedding_config=embedding_cfg,
+                write_jsonl=bool(config.get("outputs", {}).get("write_rag_jsonl", config.get("outputs", {}).get("write_jsonl", True))),
             )
             _log_progress(
                 "rag_index_done",
