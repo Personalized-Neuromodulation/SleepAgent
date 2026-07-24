@@ -1,21 +1,3 @@
-, you are a helpful assistant.
-
-Okay, let's tackle this query. The user wants a research synthesis review of the current hypothesis pool related to insomnia and brain networks. The input includes several hypotheses, recent reviews, and a knowledge graph context. The output needs to be a concise Markdown report with four sections: strongest hypotheses, recurring weaknesses, underexplored mechanisms, and next steps.
-
-First, I need to parse the hypotheses. The top ones are the ones with the highest Elo ratings. The first hypothesis about DMN dysregulation and insomnia has Elo 1515, which is the highest. Then the thalamocortical and DMN integration at 1408. The next ones are lower. The recent reviews all seem positive for the thalamocortical and REM-NREM switching hypothesis, and the thalamocortical coupling with FA. The knowledge graph has a lot of connections between mechanisms and variables, like thalamocortical coupling linked to FA and DMN FC.
-
-For the strongest hypotheses, the top two are the DMN dysregulation and the thalamocortical integration with DMN. They have high Elo and good reviews. The thalamocortical coupling with FA is also strong but lower Elo.
-
-Recurring weaknesses: The reviews mention some common points. The thalamocortical coupling with REM-NREM switching has some mentions of needing more detailed mediation models. Also, the FA mediation might need more longitudinal data. The knowledge graph shows some confounds like age and motion parameters (mean_FD) which might be under-controlled in some studies.
-
-Underexplored mechanisms: The knowledge graph has nodes like circadian regulation, adenosine, GABA, and slow-wave generation. These are mentioned in the mechanism-variable paths but not as much in the hypotheses. The current hypotheses focus on DMN, thalamocortical, and FA, but maybe the circadian and neurotransmitter mechanisms are underexplored.
-
-Next steps: The user probably wants integration of circadian and neurotransmitter mechanisms with existing networks. Also, longitudinal studies to see how FA and thalamocortical coupling change over time. Maybe combining DTI with PSG and circadian markers. Also, exploring interactions between DMN and salience networks more.
-
-Now, structure the Markdown with the four sections. Use bullet points, bold headings. Make sure to mention the highest Elo hypotheses, the recurring issues like confounds and mediation models, the underexplored mechanisms, and the recommended next steps with multimodal approaches and longitudinal studies.
-</think>
-
-```markdown
 # research synthesis review: Hypotheses on Insomnia and Neural Mechanisms
 
 ## 1. Strongest Hypotheses
@@ -51,4 +33,3 @@ Now, structure the Markdown with the four sections. Use bullet points, bold head
   Expand on "salience network dysregulation" by testing interactions between salience-DMN and thalamocortical circuits using combined EEG-fMRI.
 - **Pharmacological Targets**:  
   Bridge gaps between adenosine/GABA systems and neural circuits (e.g., thalamocortical coupling) to identify pharmacological interventions.
-```
