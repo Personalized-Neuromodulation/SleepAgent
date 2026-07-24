@@ -117,9 +117,13 @@ def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
 
     def fake_hypothesis_pipeline(config_path):
         calls["hypothesis"] += 1
+        config = read_yaml(Path(config_path))
+        paths = config.get("paths", {})
+        output_dir = Path(paths["output_hypotheses_dir"])
+        report_path = Path(paths["report_path"])
         hypothesis_id = f"hyp-{calls['hypothesis']}"
         write_json(
-            hypothesis_dir / "hypothesis_pool.json",
+            output_dir / "hypothesis_pool.json",
             [
                 {
                     "hypothesis_id": hypothesis_id,
@@ -129,16 +133,24 @@ def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
                 }
             ],
         )
-        write_json(hypothesis_dir / "top_k_hypotheses.json", [{"hypothesis_id": hypothesis_id, "status": "active"}])
-        hypothesis_report.parent.mkdir(parents=True, exist_ok=True)
-        hypothesis_report.write_text("hypothesis report", encoding="utf-8")
+        write_json(output_dir / "top_k_hypotheses.json", [{"hypothesis_id": hypothesis_id, "status": "active"}])
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report_path.write_text("hypothesis report", encoding="utf-8")
         return {"hypotheses": 1, "active": 1}
 
     def fake_experiment_pipeline(config_path):
         calls["experiment"] += 1
-        write_json(experiment_results, [{"plan_id": f"plan-{calls['experiment']}"}])
+        config = read_yaml(Path(config_path))
+        paths = config.get("paths", {})
+        feature_output_root = Path(config["feature_extraction"]["output_root"])
+        result_path = Path(paths["experiment_results"])
+        feedback_output_path = Path(paths["experimental_feedback"])
+        report_path = Path(paths["experiment_report"])
+        visuals_path = Path(paths["experiment_visualizations"])
+        plan_id = f"plan-{calls['experiment']}"
+        write_json(result_path, [{"plan_id": plan_id}])
         write_json(
-            feedback_path,
+            feedback_output_path,
             [
                 {
                     "feedback_id": f"fb-{calls['experiment']}",
@@ -147,13 +159,18 @@ def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
                 }
             ],
         )
-        experiment_report.parent.mkdir(parents=True, exist_ok=True)
-        experiment_report.write_text("experiment report", encoding="utf-8")
-        visualization_dir.mkdir(parents=True, exist_ok=True)
-        (visualization_dir / "index.html").write_text("<html></html>", encoding="utf-8")
-        write_json(visualization_dir / "visualization_manifest.json", {"html": str(visualization_dir / "index.html")})
-        (feature_root / "fmri" / f"plan-{calls['experiment']}").mkdir(parents=True, exist_ok=True)
-        return {"plans": 1, "results": str(experiment_results), "visualizations": {"html": str(visualization_dir / "index.html")}}
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report_path.write_text("experiment report", encoding="utf-8")
+        visuals_path.mkdir(parents=True, exist_ok=True)
+        (visuals_path / "index.html").write_text("<html></html>", encoding="utf-8")
+        write_json(visuals_path / "visualization_manifest.json", {"html": str(visuals_path / "index.html")})
+        (feature_output_root / "fmri" / plan_id).mkdir(parents=True, exist_ok=True)
+        return {
+            "plans": 1,
+            "results": str(result_path),
+            "experimental_feedback": str(feedback_output_path),
+            "visualizations": {"html": str(visuals_path / "index.html")},
+        }
 
     monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_hypothesis_pipeline", fake_hypothesis_pipeline)
     monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_experiment_pipeline", fake_experiment_pipeline)
@@ -167,6 +184,8 @@ def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
     assert (tmp_path / "loop" / "iteration_002" / "experiment" / "experiment_results.json").exists()
     assert (tmp_path / "loop" / "iteration_002" / "experiment" / "visuals" / "index.html").exists()
     assert (tmp_path / "loop" / "iteration_002" / "features" / "fmri").exists()
+    assert not (tmp_path / "loop" / "iteration_002" / "features" / "fmri" / "plan-1").exists()
+    assert (tmp_path / "loop" / "iteration_002" / "features" / "fmri" / "plan-2").exists()
     state = read_json(tmp_path / "loop" / "loop_state.json")
     assert len(state["iterations"]) == 2
     assert state["iterations"][0]["hypothesis_feedback_input"]["available"] is False
@@ -258,14 +277,25 @@ def test_discovery_loop_updates_foundation_and_refreshes_grounding_after_experim
     )
 
     def fake_hypothesis_pipeline(config_path):
-        write_json(hypothesis_dir / "hypothesis_pool.json", [{"hypothesis_id": "h1", "status": "active"}])
-        write_json(hypothesis_dir / "top_k_hypotheses.json", [{"hypothesis_id": "h1"}])
+        config = read_yaml(Path(config_path))
+        output_dir = Path(config["paths"]["output_hypotheses_dir"])
+        write_json(output_dir / "hypothesis_pool.json", [{"hypothesis_id": "h1", "status": "active"}])
+        write_json(output_dir / "top_k_hypotheses.json", [{"hypothesis_id": "h1"}])
         return {"hypotheses": 1}
 
     def fake_experiment_pipeline(config_path):
-        write_json(experiment_dir / "experiment_results.json", [{"plan_id": "plan-1"}])
-        write_json(feedback_path, [{"hypothesis_id": "h1", "computed_reward": 0.4}])
-        return {"plans": 1, "feature_tables": [{"modality": "fMRI", "path": str(feature_table)}], "experimental_feedback": str(feedback_path)}
+        config = read_yaml(Path(config_path))
+        paths = config.get("paths", {})
+        result_path = Path(paths["experiment_results"])
+        feedback_output_path = Path(paths["experimental_feedback"])
+        write_json(result_path, [{"plan_id": "plan-1"}])
+        write_json(feedback_output_path, [{"hypothesis_id": "h1", "computed_reward": 0.4}])
+        return {
+            "plans": 1,
+            "results": str(result_path),
+            "feature_tables": [{"modality": "fMRI", "path": str(feature_table)}],
+            "experimental_feedback": str(feedback_output_path),
+        }
 
     grounding_calls = []
     literature_calls = []
@@ -319,7 +349,7 @@ def test_discovery_loop_updates_foundation_and_refreshes_grounding_after_experim
     manifest = read_json(foundation_dir / "foundation_manifest.json")
     assert manifest["data_assets"]["registry"] == str(foundation_dir / "data_asset_registry.jsonl")
     assert manifest["data_assets"]["update_history"] == str(foundation_dir / "foundation_update_history.jsonl")
-    assert state["result"]["last_experiment_feedback"] == str(feedback_path)
+    assert state["result"]["last_experiment_feedback"] == str(tmp_path / "loop" / "iteration_001" / "experiment" / "experimental_feedback.json")
 
 
 def test_discovery_loop_refreshes_literature_only_when_experiment_intent_accepts_queries(monkeypatch, tmp_path):
@@ -589,17 +619,24 @@ def test_discovery_loop_next_hypothesis_reads_previous_experiment_feedback(monke
     feedback_seen_by_hypothesis: list[bool] = []
 
     def fake_hypothesis_pipeline(config_path):
-        feedback_seen_by_hypothesis.append(feedback_path.exists())
+        config = read_yaml(Path(config_path))
+        paths = config.get("paths", {})
+        configured_feedback = Path(paths["experimental_feedback"])
+        output_dir = Path(paths["output_hypotheses_dir"])
+        feedback_seen_by_hypothesis.append(configured_feedback.exists())
         iteration = len(feedback_seen_by_hypothesis)
-        write_json(hypothesis_dir / "hypothesis_pool.json", [{"hypothesis_id": f"h{iteration}", "status": "active"}])
-        write_json(hypothesis_dir / "top_k_hypotheses.json", [{"hypothesis_id": f"h{iteration}"}])
-        return {"hypotheses": 1, "feedback_seen": feedback_path.exists()}
+        write_json(output_dir / "hypothesis_pool.json", [{"hypothesis_id": f"h{iteration}", "status": "active"}])
+        write_json(output_dir / "top_k_hypotheses.json", [{"hypothesis_id": f"h{iteration}"}])
+        return {"hypotheses": 1, "feedback_seen": configured_feedback.exists()}
 
     def fake_experiment_pipeline(config_path):
-        experiment_dir.mkdir(parents=True, exist_ok=True)
-        write_json(experiment_dir / "experiment_results.json", [{"plan_id": "p"}])
-        write_json(feedback_path, [{"hypothesis_id": "h", "computed_reward": 0.5}])
-        return {"plans": 1, "experimental_feedback": str(feedback_path)}
+        config = read_yaml(Path(config_path))
+        paths = config.get("paths", {})
+        result_path = Path(paths["experiment_results"])
+        feedback_output_path = Path(paths["experimental_feedback"])
+        write_json(result_path, [{"plan_id": "p"}])
+        write_json(feedback_output_path, [{"hypothesis_id": "h", "computed_reward": 0.5}])
+        return {"plans": 1, "results": str(result_path), "experimental_feedback": str(feedback_output_path)}
 
     monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_hypothesis_pipeline", fake_hypothesis_pipeline)
     monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_experiment_pipeline", fake_experiment_pipeline)

@@ -2,7 +2,7 @@
   "iteration": 1,
   "iteration_id": "iteration_001",
   "hypothesis_feedback_input": {
-    "path": "/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/experimental_feedback.json",
+    "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/hypothesis/experimental_feedback_input.json",
     "available": false,
     "size": 0
   },
@@ -24,114 +24,114 @@
       "RankAgent",
       "EvolutionMemoryAgent"
     ],
-    "output_hypotheses_dir": "/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses",
+    "output_hypotheses_dir": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/hypothesis",
     "report_path": "/home/zyb/Agent_skills/SleepAgent/reports/phase2_hypothesis_report.md"
   },
   "experiment_summary": {
     "plans": 1,
-    "results": "outputs/experiments/experiment_results.json",
-    "experimental_feedback": "outputs/hypotheses/experimental_feedback.json",
+    "results": "outputs/discovery_loop/iteration_001/experiment/experiment_results.json",
+    "experimental_feedback": "outputs/discovery_loop/iteration_001/experiment/experimental_feedback.json",
     "report": "reports/phase3_experiment_report.md",
     "visualizations": {
-      "html": "outputs/experiments/visuals/index.html",
-      "manifest": "outputs/experiments/visuals/visualization_manifest.json",
+      "html": "outputs/discovery_loop/iteration_001/experiment/visuals/index.html",
+      "manifest": "outputs/discovery_loop/iteration_001/experiment/visuals/visualization_manifest.json",
       "figures": [
-        "outputs/experiments/visuals/figures/primary_test_matrix.png",
-        "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_DMN_FC_salience_FC.png",
-        "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_DMN_FC_frontoparietal_FC.png",
-        "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_salience_FC_salience_FC.png",
-        "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_salience_FC_frontoparietal_FC.png",
-        "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_salience_FC.png",
-        "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_frontoparietal_FC.png",
-        "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_DMN_FC_salience_FC.png",
-        "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_DMN_FC_frontoparietal_FC.png",
-        "outputs/experiments/visuals/figures/robustness_bootstrap_experiment_plan_bb9459a66e3b.png",
-        "outputs/experiments/visuals/figures/negative_controls_experiment_plan_bb9459a66e3b.png",
-        "outputs/experiments/visuals/figures/missingness_experiment_plan_bb9459a66e3b.png",
-        "outputs/experiments/visuals/figures/ml_feature_importance_experiment_plan_bb9459a66e3b.png",
-        "outputs/experiments/visuals/figures/ml_regression_predicted_observed_experiment_plan_bb9459a66e3b.png"
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/primary_test_matrix.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_DMN_FC_salience_FC.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_DMN_FC_frontoparietal_FC.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_salience_FC_salience_FC.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_salience_FC_frontoparietal_FC.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_salience_FC.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_frontoparietal_FC.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_DMN_FC_salience_FC.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_DMN_FC_frontoparietal_FC.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/robustness_bootstrap_experiment_plan_bb9459a66e3b.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/negative_controls_experiment_plan_bb9459a66e3b.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/missingness_experiment_plan_bb9459a66e3b.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/ml_feature_importance_experiment_plan_bb9459a66e3b.png",
+        "outputs/discovery_loop/iteration_001/experiment/visuals/figures/ml_regression_predicted_observed_experiment_plan_bb9459a66e3b.png"
       ],
       "figure_records": [
         {
-          "path": "outputs/experiments/visuals/figures/primary_test_matrix.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/primary_test_matrix.png",
           "kind": "primary_test_matrix",
           "title": "Primary Test Matrix",
           "caption": "Effect size and p-value matrix across all primary predictor/outcome tests."
         },
         {
-          "path": "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_DMN_FC_salience_FC.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_DMN_FC_salience_FC.png",
           "kind": "linear_regression_fit",
           "title": "Linear Regression: thalamus-DMN FC -> salience FC",
           "caption": "Full variable pair: thalamus_DMN_FC -> salience_FC."
         },
         {
-          "path": "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_DMN_FC_frontoparietal_FC.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_DMN_FC_frontoparietal_FC.png",
           "kind": "linear_regression_fit",
           "title": "Linear Regression: thalamus-DMN FC -> frontoparietal FC",
           "caption": "Full variable pair: thalamus_DMN_FC -> frontoparietal_FC."
         },
         {
-          "path": "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_salience_FC_salience_FC.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_salience_FC_salience_FC.png",
           "kind": "linear_regression_fit",
           "title": "Linear Regression: thalamus-salience FC -> salience FC",
           "caption": "Full variable pair: thalamus_salience_FC -> salience_FC."
         },
         {
-          "path": "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_salience_FC_frontoparietal_FC.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_salience_FC_frontoparietal_FC.png",
           "kind": "linear_regression_fit",
           "title": "Linear Regression: thalamus-salience FC -> frontoparietal FC",
           "caption": "Full variable pair: thalamus_salience_FC -> frontoparietal_FC."
         },
         {
-          "path": "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_salience_FC.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_salience_FC.png",
           "kind": "linear_regression_fit",
           "title": "Linear Regression: thalamus-frontoparietal FC -> salience FC",
           "caption": "Full variable pair: thalamus_frontoparietal_FC -> salience_FC."
         },
         {
-          "path": "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_frontoparietal_FC.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_frontoparietal_FC.png",
           "kind": "linear_regression_fit",
           "title": "Linear Regression: thalamus-frontoparietal FC -> frontoparietal FC",
           "caption": "Full variable pair: thalamus_frontoparietal_FC -> frontoparietal_FC."
         },
         {
-          "path": "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_DMN_FC_salience_FC.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_DMN_FC_salience_FC.png",
           "kind": "linear_regression_fit",
           "title": "Linear Regression: DMN FC -> salience FC",
           "caption": "Full variable pair: DMN_FC -> salience_FC."
         },
         {
-          "path": "outputs/experiments/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_DMN_FC_frontoparietal_FC.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/linear_regression_fit_experiment_plan_bb9459a66e3b_DMN_FC_frontoparietal_FC.png",
           "kind": "linear_regression_fit",
           "title": "Linear Regression: DMN FC -> frontoparietal FC",
           "caption": "Full variable pair: DMN_FC -> frontoparietal_FC."
         },
         {
-          "path": "outputs/experiments/visuals/figures/robustness_bootstrap_experiment_plan_bb9459a66e3b.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/robustness_bootstrap_experiment_plan_bb9459a66e3b.png",
           "kind": "robustness_bootstrap",
           "title": "Bootstrap Sign Stability: plan bb9459a66e3b",
           "caption": "Bootstrap sign stability for each primary test. Labels show predictor/outcome pairs rather than internal test ids."
         },
         {
-          "path": "outputs/experiments/visuals/figures/negative_controls_experiment_plan_bb9459a66e3b.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/negative_controls_experiment_plan_bb9459a66e3b.png",
           "kind": "negative_controls",
           "title": "Negative Controls: plan bb9459a66e3b",
           "caption": "Negative controls: green=passed negative control; red=failed negative control. Bars show effect estimates; p-values are not available in the current negative-control result schema."
         },
         {
-          "path": "outputs/experiments/visuals/figures/missingness_experiment_plan_bb9459a66e3b.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/missingness_experiment_plan_bb9459a66e3b.png",
           "kind": "missingness",
           "title": "Variable Missingness: plan bb9459a66e3b",
           "caption": "Missing rate for variables used by this experiment plan."
         },
         {
-          "path": "outputs/experiments/visuals/figures/ml_feature_importance_experiment_plan_bb9459a66e3b.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/ml_feature_importance_experiment_plan_bb9459a66e3b.png",
           "kind": "ml_feature_importance",
           "title": "ML Feature Importance",
           "caption": "Feature importance from the selected machine-learning model."
         },
         {
-          "path": "outputs/experiments/visuals/figures/ml_regression_predicted_observed_experiment_plan_bb9459a66e3b.png",
+          "path": "outputs/discovery_loop/iteration_001/experiment/visuals/figures/ml_regression_predicted_observed_experiment_plan_bb9459a66e3b.png",
           "kind": "ml_regression_predicted_observed",
           "title": "ML Regression Predicted vs Observed",
           "caption": "Predicted versus observed regression outcomes."
@@ -170,7 +170,7 @@
     "feature_tables": [
       {
         "modality": "fMRI",
-        "path": "outputs/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
+        "path": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
         "subject_id_column": "subject_id",
         "feature_columns": [
           "qc_signal_GS_pre_mean",
@@ -254,10 +254,10 @@
       }
     ],
     "feature_profiles": [
-      "outputs/features/profile/experiment_plan_bb9459a66e3b/analysis_ready_profile.yaml"
+      "outputs/discovery_loop/iteration_001/features/profile/experiment_plan_bb9459a66e3b/analysis_ready_profile.yaml"
     ],
     "merged_feature_tables": [
-      "outputs/features/multimodal/experiment_plan_bb9459a66e3b/multimodal_features.csv"
+      "outputs/discovery_loop/iteration_001/features/multimodal/experiment_plan_bb9459a66e3b/multimodal_features.csv"
     ]
   },
   "foundation_update": {
@@ -266,7 +266,7 @@
     "feature_tables": [
       {
         "modality": "fMRI",
-        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv"
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv"
       }
     ],
     "foundation_config": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/foundation_update_config.yaml",
@@ -5617,9 +5617,9 @@
   },
   "metrics": {
     "iteration": 1,
-    "hypothesis_pool_path": "/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json",
-    "experiment_results_path": "/home/zyb/Agent_skills/SleepAgent/outputs/experiments/experiment_results.json",
-    "experimental_feedback_path": "/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/experimental_feedback.json",
+    "hypothesis_pool_path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/hypothesis/hypothesis_pool.json",
+    "experiment_results_path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/experiment_results.json",
+    "experimental_feedback_path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/experimental_feedback.json",
     "hypothesis_count": 5,
     "hypothesis_ids": [
       "hypothesis_57fdbe2e8962",

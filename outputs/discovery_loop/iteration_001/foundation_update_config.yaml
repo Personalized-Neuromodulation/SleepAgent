@@ -8,9 +8,9 @@ paths:
   foundation_dir: data/foundation
   reports_dir: reports
 inputs:
-  subject_table: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv
+  subject_table: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv
   eeg_features: __sleepagent_missing_eeg_features__.csv
-  fmri_features: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv
+  fmri_features: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv
   dti_features: __sleepagent_missing_dti_features__.csv
   mri_features: __sleepagent_missing_mri_features__.csv
   scale_features: __sleepagent_missing_scale_features__.csv
@@ -69,8 +69,8 @@ data_assets:
   iteration_id: iteration_001
   feature_tables:
   - modality: fMRI
-    path: /home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv
+    path: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv
   experiment_summary:
     plans: 1
-    results: outputs/experiments/experiment_results.json
-    experimental_feedback: outputs/hypotheses/experimental_feedback.json
+    results: outputs/discovery_loop/iteration_001/experiment/experiment_results.json
+    experimental_feedback: outputs/discovery_loop/iteration_001/experiment/experimental_feedback.json

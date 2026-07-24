@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import shutil
 from pathlib import Path
 from statistics import mean
 from typing import Any
@@ -53,13 +52,23 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
         iteration_id = f"iteration_{iteration:03d}"
         iteration_dir = output_dir / iteration_id
         iteration_dir.mkdir(parents=True, exist_ok=True)
-        hypothesis_feedback_input = _hypothesis_feedback_input(hypothesis_config_path)
+        iteration_hypothesis_config_path = _write_iteration_hypothesis_config(
+            hypothesis_config_path,
+            iteration_dir=iteration_dir,
+            previous_iteration_dir=output_dir / f"iteration_{iteration - 1:03d}" if iteration > 1 else None,
+        )
+        iteration_experiment_config_path = _write_iteration_experiment_config(
+            experiment_config_path,
+            iteration_dir=iteration_dir,
+            hypothesis_dir=iteration_dir / "hypothesis",
+        )
+        hypothesis_feedback_input = _hypothesis_feedback_input(iteration_hypothesis_config_path)
         _log(verbose, f"{iteration_id} hypothesis start")
-        hypothesis_summary = run_hypothesis_pipeline(hypothesis_config_path)
+        hypothesis_summary = run_hypothesis_pipeline(iteration_hypothesis_config_path)
         _log(verbose, f"{iteration_id} hypothesis done hypotheses={hypothesis_summary.get('hypotheses')}")
 
         _log(verbose, f"{iteration_id} experiment start")
-        experiment_summary = run_experiment_pipeline(experiment_config_path)
+        experiment_summary = run_experiment_pipeline(iteration_experiment_config_path)
         _log(verbose, f"{iteration_id} experiment done plans={experiment_summary.get('plans')}")
 
         if enable_foundation_grounding_refresh:
@@ -87,7 +96,7 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
             grounding_refresh = _refresh_grounding_if_needed(
                 foundation_update,
                 literature_expansion=literature_expansion,
-                hypothesis_config_path=hypothesis_config_path,
+                hypothesis_config_path=iteration_hypothesis_config_path,
                 grounding_config_path=grounding_config_path,
                 grounding_cfg=config.get("grounding", {}),
                 verbose=verbose,
@@ -100,8 +109,8 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
 
         metrics = _collect_iteration_metrics(
             iteration=iteration,
-            hypothesis_config_path=hypothesis_config_path,
-            experiment_config_path=experiment_config_path,
+            hypothesis_config_path=iteration_hypothesis_config_path,
+            experiment_config_path=iteration_experiment_config_path,
             previous_hypothesis_ids=previous_hypothesis_ids,
         )
         current_ids = set(metrics.get("hypothesis_ids", []))
@@ -111,8 +120,9 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
             reward_history.append(float(reward_mean))
         snapshot = _snapshot_iteration(
             iteration_dir,
-            hypothesis_config_path=hypothesis_config_path,
-            experiment_config_path=experiment_config_path,
+            hypothesis_config_path=iteration_hypothesis_config_path,
+            experiment_config_path=iteration_experiment_config_path,
+            experiment_summary=experiment_summary,
             snapshot_features=bool(loop_cfg.get("snapshot_features", True)),
         )
         record = {
@@ -166,6 +176,61 @@ def _hypothesis_feedback_input(hypothesis_config_path: Path) -> dict[str, Any]:
         "available": exists,
         "size": feedback_path.stat().st_size if exists else 0,
     }
+
+
+def _write_iteration_hypothesis_config(
+    base_config_path: Path,
+    *,
+    iteration_dir: Path,
+    previous_iteration_dir: Path | None,
+) -> Path:
+    config = read_yaml(base_config_path)
+    paths = dict(config.get("paths", {}))
+    hypothesis_dir = iteration_dir / "hypothesis"
+    paths["output_hypotheses_dir"] = str(hypothesis_dir)
+    paths["context_blocks_json"] = str(hypothesis_dir / "context_blocks.json")
+    paths["report_path"] = str(iteration_dir / "hypothesis_report.md")
+    previous_feedback = previous_iteration_dir / "experiment" / "experimental_feedback.json" if previous_iteration_dir else None
+    paths["experimental_feedback"] = str(previous_feedback if previous_feedback else hypothesis_dir / "experimental_feedback_input.json")
+    previous_top = previous_iteration_dir / "hypothesis" / "top_k_hypotheses.json" if previous_iteration_dir else None
+    if previous_top and previous_top.exists():
+        paths["prior_hypotheses_json"] = str(previous_top)
+    config["paths"] = paths
+    path = iteration_dir / "hypothesis_config.yaml"
+    write_yaml(path, _runtime_clean_config(config))
+    return path
+
+
+def _write_iteration_experiment_config(
+    base_config_path: Path,
+    *,
+    iteration_dir: Path,
+    hypothesis_dir: Path,
+) -> Path:
+    config = read_yaml(base_config_path)
+    paths = dict(config.get("paths", {}))
+    experiment_dir = iteration_dir / "experiment"
+    paths["hypothesis_pool"] = str(hypothesis_dir / "hypothesis_pool.json")
+    paths["experiment_output_dir"] = str(experiment_dir)
+    paths["experiment_results"] = str(experiment_dir / "experiment_results.json")
+    paths["experimental_feedback"] = str(experiment_dir / "experimental_feedback.json")
+    paths["experiment_report"] = str(experiment_dir / "phase3_experiment_report.md")
+    paths["experiment_visualizations"] = str(experiment_dir / "visuals")
+    config["paths"] = paths
+    feature_cfg = dict(config.get("feature_extraction", {}))
+    if feature_cfg:
+        feature_cfg["output_root"] = str(iteration_dir / "features")
+        config["feature_extraction"] = feature_cfg
+    path = iteration_dir / "experiment_config.yaml"
+    write_yaml(path, _runtime_clean_config(config))
+    return path
+
+
+def _runtime_clean_config(config: dict[str, Any]) -> dict[str, Any]:
+    cleaned = dict(config)
+    cleaned.pop("_config_path", None)
+    cleaned.pop("_project_root", None)
+    return cleaned
 
 
 MODALITY_INPUT_KEYS = {
@@ -641,17 +706,18 @@ def _snapshot_iteration(
     *,
     hypothesis_config_path: Path,
     experiment_config_path: Path,
+    experiment_summary: dict[str, Any],
     snapshot_features: bool,
 ) -> dict[str, Any]:
     hypothesis_config = read_yaml(hypothesis_config_path)
     experiment_config = read_yaml(experiment_config_path)
-    copied: dict[str, str] = {}
+    artifacts: dict[str, str] = {}
 
     hypothesis_output_dir = resolve_path(hypothesis_config.get("paths", {}).get("output_hypotheses_dir", "outputs/hypotheses"))
-    _copy_path(hypothesis_output_dir, iteration_dir / "hypothesis", copied, "hypothesis")
+    _record_existing_path(hypothesis_output_dir, artifacts, "hypothesis")
     hypothesis_report = hypothesis_config.get("paths", {}).get("report_path")
     if hypothesis_report:
-        _copy_path(resolve_path(hypothesis_report), iteration_dir / "hypothesis_report.md", copied, "hypothesis_report")
+        _record_existing_path(resolve_path(hypothesis_report), artifacts, "hypothesis_report")
 
     experiment_paths = experiment_config.get("paths", {})
     for key, default in {
@@ -659,30 +725,22 @@ def _snapshot_iteration(
         "experimental_feedback": "outputs/hypotheses/experimental_feedback.json",
         "experiment_report": "reports/phase3_experiment_report.md",
     }.items():
-        _copy_path(resolve_path(experiment_paths.get(key, default)), iteration_dir / "experiment" / Path(experiment_paths.get(key, default)).name, copied, key)
+        _record_existing_path(resolve_path(experiment_paths.get(key, default)), artifacts, key)
 
     visualization_default = Path(experiment_paths.get("experiment_output_dir", "outputs/experiments")) / "visuals"
     visualization_source = resolve_path(experiment_paths.get("experiment_visualizations", str(visualization_default)))
-    _copy_path(visualization_source, iteration_dir / "experiment" / "visuals", copied, "experiment_visualizations")
+    _record_existing_path(visualization_source, artifacts, "experiment_visualizations")
 
     if snapshot_features:
         feature_root = experiment_config.get("feature_extraction", {}).get("output_root")
         if feature_root:
-            _copy_path(resolve_path(feature_root), iteration_dir / "features", copied, "features")
-    return copied
+            _record_existing_path(resolve_path(feature_root), artifacts, "features")
+    return artifacts
 
 
-def _copy_path(source: Path, target: Path, copied: dict[str, str], label: str) -> None:
-    if not source.exists():
-        return
-    if source.is_dir():
-        if target.exists():
-            shutil.rmtree(target)
-        shutil.copytree(source, target)
-    else:
-        target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(source, target)
-    copied[label] = str(target)
+def _record_existing_path(path: Path, artifacts: dict[str, str], label: str) -> None:
+    if path.exists():
+        artifacts[label] = str(path)
 
 
 def _stop_reason(config: dict[str, Any], metrics: dict[str, Any], reward_history: list[float], iteration: int) -> str:
