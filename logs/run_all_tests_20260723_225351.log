@@ -1,0 +1,213 @@
+[run_all_tests] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_all_tests] iterations=2
+[run_all_tests] base_loop_config=configs/discovery_loop_config.yaml
+[run_all_tests] log_file=logs/run_all_tests_20260723_225351.log
+[run_all_tests] [1/2] foundation -> online grounding/RAG
+API environment preflight
+  NCBI_EMAIL: SET
+  NCBI_TOOL: SleepAgent
+  SEMANTIC_SCHOLAR_API_KEY: SET
+[1/6] Build foundation
+{
+  "mode": "empty_foundation",
+  "subject_count": 0,
+  "feature_count": 0,
+  "qc_record_count": 0,
+  "master_rows": 0,
+  "master_columns": 1,
+  "manifest": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_manifest.json",
+  "outputs": {
+    "subject_index": "/home/zyb/Agent_skills/SleepAgent/data/foundation/subject_index.csv",
+    "feature_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/feature_registry.csv",
+    "approved_variables": "/home/zyb/Agent_skills/SleepAgent/data/foundation/approved_variables.yaml",
+    "data_dictionary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_dictionary.yaml",
+    "qc_summary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/qc_summary.csv",
+    "multimodal_master_table": "/home/zyb/Agent_skills/SleepAgent/data/foundation/multimodal_master_table.csv",
+    "report": "/home/zyb/Agent_skills/SleepAgent/reports/phase0_foundation_report.md"
+  },
+  "data_assets": {
+    "registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+    "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+    "asset_count": 0,
+    "update_event_count": 0,
+    "last_update": {}
+  }
+}
+[2/6] Build knowledge source registry
+{
+  "registry_version": "sleepagent_knowledge_sources_v1",
+  "created_at": "2026-07-24T02:53:52.328033+00:00",
+  "enabled_sources": [
+    "clinical_trials",
+    "guidelines",
+    "standards",
+    "diagnostic_taxonomy",
+    "datasets",
+    "instruments",
+    "tools_methods"
+  ],
+  "clinical_trials_count": 0,
+  "guidelines_count": 9,
+  "standards_count": 7,
+  "diagnostic_terms_count": 6,
+  "datasets_count": 4,
+  "instruments_count": 4,
+  "tools_methods_count": 11,
+  "output_files": {
+    "clinical_trials_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.csv",
+    "clinical_trials_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.jsonl",
+    "guidelines_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.csv",
+    "guidelines_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.jsonl",
+    "standards_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.csv",
+    "standards_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.jsonl",
+    "diagnostic_taxonomy_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.yaml",
+    "diagnostic_taxonomy_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.json",
+    "datasets_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.csv",
+    "datasets_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.jsonl",
+    "instruments_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.yaml",
+    "instruments_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.json",
+    "tools_methods_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.yaml",
+    "tools_methods_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.json",
+    "manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_manifest.json",
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_report.md"
+  },
+  "database_backend": "sqlite",
+  "notes": "Metadata-only for restricted AASM/ICSD sources; no paywalled content downloaded.",
+  "warnings": [
+    "ClinicalTrials.gov live API skipped; set SLEEPAGENT_ENABLE_CLINICALTRIALS_LIVE=true to enable."
+  ],
+  "clinical_trial_conditions": {},
+  "clinical_trial_intervention_types": {},
+  "clinical_trial_status_counts": {},
+  "guideline_organizations": {
+    "American Academy of Sleep Medicine": 9
+  },
+  "guideline_topics": {
+    "insomnia": 1,
+    "sleep apnea": 1,
+    "circadian rhythm sleep wake disorders": 1,
+    "hypersomnia": 1,
+    "narcolepsy": 1,
+    "parasomnias": 1,
+    "pediatric sleep": 1,
+    "behavioral treatment": 1,
+    "pharmacologic treatment": 1
+  },
+  "standard_categories": {
+    "sleep_staging": 1,
+    "arousal": 1,
+    "respiratory_events": 1,
+    "movement_events": 1,
+    "cardiac_events": 1,
+    "montage": 1,
+    "technical_specifications": 1
+  },
+  "diagnostic_categories": {
+    "insomnia_disorders": 1,
+    "sleep_related_breathing_disorders": 1,
+    "central_disorders_of_hypersomnolence": 1,
+    "circadian_rhythm_sleep_wake_disorders": 1,
+    "parasomnias": 1,
+    "sleep_related_movement_disorders": 1
+  },
+  "dataset_modalities": {
+    "EEG": 3,
+    "PSG": 3,
+    "questionnaires": 1,
+    "clinical": 1,
+    "fMRI": 1,
+    "MRI": 1
+  },
+  "dataset_access_status": {
+    "open": 3,
+    "controlled/open depending dataset": 1
+  },
+  "instrument_domains": {
+    "insomnia severity": 1,
+    "sleep quality": 1,
+    "daytime sleepiness": 1,
+    "subjective sleep timing and quality": 1
+  },
+  "tool_method_modalities": {
+    "EEG": 2,
+    "fMRI": 1,
+    "neuroimaging": 1
+  },
+  "tool_method_roles": {
+    "preprocessing": 2,
+    "spectral_analysis": 1,
+    "event_detection": 1,
+    "sleep_staging": 1,
+    "spindle_detection": 1,
+    "slow_wave_detection": 1,
+    "confound_regression": 1,
+    "DTI preprocessing": 1,
+    "cortical_thickness": 1,
+    "subcortical_volume": 1,
+    "data_organization": 1,
+    "reproducibility": 1,
+    "metadata_query": 1,
+    "dataset_indexing": 1,
+    "feature_extraction": 2,
+    "confound_control": 1,
+    "statistical_validity": 1
+  },
+  "run_id": "run_db3fce86eb5d",
+  "exports": {
+    "clinical_trials": {
+      "count": 0,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.jsonl"
+    },
+    "guidelines": {
+      "count": 9,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.jsonl"
+    },
+    "standards": {
+      "count": 7,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.jsonl"
+    },
+    "diagnostic_taxonomy": {
+      "count": 6,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.json"
+    },
+    "datasets": {
+      "count": 4,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.jsonl"
+    },
+    "instruments": {
+      "count": 4,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.json"
+    },
+    "tools_methods": {
+      "count": 11,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.json"
+    },
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_report.md"
+  }
+}
+[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] timestamp=2026-07-23T22:53:52-04:00
+[literature_db_build_start] step=[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] database=data/literature/sleep_literature.db
+[literature_db_build_start] config=configs/literature_library_config.yaml
+[literature_db_build_start] query_config=configs/literature_queries.yaml
+[literature_db_build_start] library_version=sleep_literature_library_v1_online
+[api] enabled providers: pubmed, europe_pmc, openalex, semantic_scholar
+[api] query count: 120; max_results_per_query: 50
+[api:pubmed] [########################] 120/120 records=4662 warnings=0 done accumulated_raw=4662
+[api:europe_pmc] [########################] 120/120 records=5606 warnings=0 done accumulated_raw=10268
+[api:openalex] [########################] 120/120 records=5605 warnings=0 done accumulated_raw=15873
+[api:semantic_scholar] [########################] 120/120 records=5302 warnings=0 done accumulated_raw=21175
+[api] deduplicated records: 10769
+[literature_build] write_api_outputs_start count=10769
+[literature_build] write_api_outputs_done count=10769
+[literature_build] write_queries_start count=121
+[literature_build] write_queries_done count=121
+[literature_build] persist_api_records_start count=10769

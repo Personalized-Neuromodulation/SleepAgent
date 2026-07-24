@@ -1,0 +1,2576 @@
+{
+  "total": 586,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "95b749331f8f9c71e5213f0b7b99fbd6b1aa4cd6",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.1394",
+        "CorpusId": 278756509
+      },
+      "url": "https://www.semanticscholar.org/paper/95b749331f8f9c71e5213f0b7b99fbd6b1aa4cd6",
+      "title": "1394 Monthly Changes in Sleep Patterns in Koreans: A Mobile Sleep Tracking Data Analysis",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.1394?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.1394, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2314780458",
+          "name": "H. Hong"
+        },
+        {
+          "authorId": "2256298191",
+          "name": "Seunghun Kim"
+        },
+        {
+          "authorId": "2362537861",
+          "name": "Sungeun Moon"
+        },
+        {
+          "authorId": "2278383719",
+          "name": "Sooyeon Kim"
+        },
+        {
+          "authorId": "2985629",
+          "name": "Joonki Hong"
+        },
+        {
+          "authorId": "2115475969",
+          "name": "Dongheon Lee"
+        },
+        {
+          "authorId": "2243589701",
+          "name": "In-Young Yoon"
+        },
+        {
+          "authorId": "2116937673",
+          "name": "J. Kim"
+        },
+        {
+          "authorId": "2362390973",
+          "name": "Ki-Young Jung"
+        }
+      ],
+      "abstract": "\n \n \n Korea experiences significant seasonal variations in sunlight, temperature, and humidity, which are expected to influence sleep patterns. However, studies on the effects of these changes on sleep patterns in the Korean population are limited. This preliminary study uses consumer sleep trackers to observe monthly changes in sleep patterns by analyzing data collected from active users of Sleep Routine, a mobile, contactless sleep tracking service.\n \n \n \n Data were collected from December 1, 2023, to November 30, 2024, from users in Korea who used the sleep tracker at least once per month. This service requires users to manually start and stop measurement. Using this data, the following metrics were calculated: measurement time (time in bed), total sleep time, sleep onset time, wake time, sleep onset latency, and wakeup latency. These metrics were observed on a monthly basis to examine changes across different seasons.\n \n \n \n A total of 237,190 sessions from 1,067 users were analyzed, with an average of 19,765.8 sessions per month (ranging from 17,321 in December to 21,544 in March). The average number of measurements per user was 222.3 (SD = 74.21, range: 24-358). The average time in bed was 424.7 minutes, and the average total sleep time was 364.9 minutes, with the longest time in December (369.7 minutes) and the shortest in June (358.8 minutes) (p < 0.001). Average sleep onset occurred at 12:42 AM, and wake time at 6:39 AM, with the earliest wake time in June (6:34 AM) and the latest in October (6:43 AM). The average sleep latency was 17.85 minutes, and wakeup latency was 7.64 minutes, with the longest latency in August (9.03 minutes) and the shortest in December (6.38 minutes).\n \n \n \n Monthly changes in sleep patterns were observed on a significant scale, with notable fluctuations. Specifically, wake time appears to be more influenced by seasonal changes. A limitation of this study is the accuracy of the sleep tracking service, which is expected to improve with ongoing advancements in AI models and further validation studies.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "0e40a71e32206727701518d7ca6395bd413d3506",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.1400",
+        "CorpusId": 278761199
+      },
+      "url": "https://www.semanticscholar.org/paper/0e40a71e32206727701518d7ca6395bd413d3506",
+      "title": "1400 Sound-Based AI Model for Estimating Apnea-Hypopnea Index in Sleep Apnea Detection",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.1400?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.1400, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2256298191",
+          "name": "Seunghun Kim"
+        },
+        {
+          "authorId": "2267134885",
+          "name": "E. Cho"
+        },
+        {
+          "authorId": "2357117726",
+          "name": "Hankyeol Kyung"
+        },
+        {
+          "authorId": "2985629",
+          "name": "Joonki Hong"
+        },
+        {
+          "authorId": "2115475969",
+          "name": "Dongheon Lee"
+        },
+        {
+          "authorId": "2362390973",
+          "name": "Ki-Young Jung"
+        },
+        {
+          "authorId": "2243589701",
+          "name": "In-Young Yoon"
+        },
+        {
+          "authorId": "2116937673",
+          "name": "J. Kim"
+        }
+      ],
+      "abstract": "\n \n \n Obstructive sleep apnea (OSA) is a common sleep disorder associated with numerous health outcomes. Accurate diagnosis and severity assessment typically rely on the Apnea-Hypopnea Index (AHI), a standard metric obtained from polysomnography (PSG). However, PSG is costly and impractical for multi-night monitoring. This study validates a sound-based AI model to estimate AHI, exploring its potential as a convenient, contactless monitoring tool for long-term OSA management.\n \n \n \n The AI model simultaneously predicts OSA events, sleep stages and snoring events. Performance was enhanced by improving data quality, extending the attention range, and augmenting Mel spectrogram data. The training dataset included 2,973 nights of sleep recordings collected between 2013 and 2024, using either PSG microphones or smartphone microphones. All recordings were annotated with PSG for both OSA and sleep stages. The model predicts apnea or hypopnea events in 6-second intervals and uses a simple linear regression on their distribution across the predicted sleep stages to estimate the AHI. Performance was assessed by comparing the estimated AHI with the manually scored AHI from PSG.\n \n \n \n On a separate test set of 1,492 nights, the model’s estimated AHI strongly correlated with the PSG reference (r=0.97) and showed a mean estimation error of -0.74 events/hour (95% CI: -0.74 ± 11.02). As a screening tool at different AHI thresholds (≥5, ≥15, and ≥30), the model achieved accuracies of 92%, 93%, and 94%; sensitivities of 0.94, 0.94, and 0.93; specificities of 0.88, 0.91, and 0.95; and ROC AUCs of 0.97, 0.98, and 0.98, respectively. When classifying OSA severity into four categories (AHI 0 to < 5, 5 to < 15, 15 to < 30 and ≥ 30), it attained 81% accuracy and a macro F1 score of 0.80.\n \n \n \n This sound-based AI model accurately estimates AHI using only audio data, providing a low-cost and contactless approach to OSA screening and management. Its ability to enable home-based, long-term monitoring can greatly improve patient access to diagnosis and care. Future research will focus on enhancing robustness across diverse sleep environments and varying noise conditions.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "309e6c71b4ad8b102feaf57279fa82d22cdf5d43",
+      "externalIds": {
+        "DOI": "10.1016/j.jad.2023.02.031",
+        "CorpusId": 256887064,
+        "PubMed": "36796519"
+      },
+      "url": "https://www.semanticscholar.org/paper/309e6c71b4ad8b102feaf57279fa82d22cdf5d43",
+      "title": "Association of changes in sleep duration and quality with incidence of depression: A cohort study.",
+      "venue": "Journal of Affective Disorders",
+      "year": 2023,
+      "citationCount": 37,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jad.2023.02.031?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jad.2023.02.031, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7844022",
+          "name": "Y. Um"
+        },
+        {
+          "authorId": "2119251553",
+          "name": "Yejin Kim"
+        },
+        {
+          "authorId": "4832344",
+          "name": "Yoosoo Chang"
+        },
+        {
+          "authorId": "52190968",
+          "name": "Hyun-Suk Jung"
+        },
+        {
+          "authorId": "9822128",
+          "name": "I. Cho"
+        },
+        {
+          "authorId": "2927259",
+          "name": "S. Jeon"
+        },
+        {
+          "authorId": "3124988",
+          "name": "S. Ryu"
+        }
+      ],
+      "abstract": "BACKGROUND\nThe longitudinal relationship between sleep duration, sleep quality, and their changes with the risk of depressive symptoms is unclear. We examined the association between sleep duration, sleep quality, and their changes with incident depressive symptoms.\n\n\nMETHODS\nA total of 225,915 Korean adults without depression at baseline with a mean age of 38.5 years were followed for an average of 4.0 years. Sleep duration and quality were assessed using the Pittsburgh Sleep Quality Index. The presence of depressive symptoms was assessed using the Center for Epidemiologic Studies Depression scale. Flexible parametric proportional hazard models were used to determine hazard ratios (HRs) and 95 % confidence intervals (CIs).\n\n\nRESULTS\nIn total, 30,104 participants with incident depressive symptoms were identified. Multivariable-adjusted HRs (95 % CIs) for incident depression comparing sleep durations of ≤5, 6, 8, and ≥9 h with 7 h were 1.15 (1.11-1.20), 1.06 (1.03-1.09), 0.99 (0.95-1.03), and 1.06 (0.98-1.14), respectively. A similar trend was observed in patients with poor sleep quality. Compared with participants with persistently good sleep quality, participants with persistently poor sleep quality or who developed poor sleep quality were associated with the risk of incident depressive symptoms [HRs (95 % CIs) of 2.13 (2.01-2.25) and 1.67 (1.58-1.77), respectively].\n\n\nLIMITATIONS\nSleep duration was assessed using self-reported questionnaire and the study population may not reflect general population.\n\n\nCONCLUSIONS\nSleep duration, sleep quality and their changes were independently associated with incident depressive symptoms in young adults, suggesting that inadequate sleep quantity and quality play a role in depression risk."
+    },
+    {
+      "paperId": "962ed90b01aca2720b8113cf9db4105545361175",
+      "externalIds": {
+        "PubMedCentral": "11970270",
+        "DOI": "10.2147/NSS.S514631",
+        "CorpusId": 277490679,
+        "PubMed": "40190583"
+      },
+      "url": "https://www.semanticscholar.org/paper/962ed90b01aca2720b8113cf9db4105545361175",
+      "title": "Real-Time Snoring Detection Using Deep Learning: A Home-Based Smartphone Approach for Sleep Monitoring",
+      "venue": "Nature and Science of Sleep",
+      "year": 2025,
+      "citationCount": 8,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11970270, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2985629",
+          "name": "Joonki Hong"
+        },
+        {
+          "authorId": "2287406639",
+          "name": "Seung Koo Yang"
+        },
+        {
+          "authorId": "2256298191",
+          "name": "Seunghun Kim"
+        },
+        {
+          "authorId": "145883607",
+          "name": "Sung-Woo Cho"
+        },
+        {
+          "authorId": "2287880487",
+          "name": "Jayoung Oh"
+        },
+        {
+          "authorId": "2267134885",
+          "name": "E. Cho"
+        },
+        {
+          "authorId": "2243589701",
+          "name": "In-Young Yoon"
+        },
+        {
+          "authorId": "2115475969",
+          "name": "Dongheon Lee"
+        },
+        {
+          "authorId": "2116937673",
+          "name": "J. Kim"
+        }
+      ],
+      "abstract": "Background Despite the prevalence of sleep-related disorders, few studies have developed deep learning models to predict snoring using home-recorded smartphone audio. This study proposes a real-time snoring detection method utilizing a Vision Transformer-based deep learning model and smartphone recordings. Methods Participants’ sleep-breathing sounds were recorded using smartphones, with concurrent Level I or II polysomnography (PSG) conducted in home or hospital settings. A total of 200 minutes of smartphone audio per participant, corresponding to 400 30-second sleep stage epochs on PSG, were sampled. Each epoch was annotated independently by two trained labelers, with snoring labeled only when both agreed. Model performance was evaluated by epoch-by-epoch prediction accuracy and correlation between observed and predicted snoring ratios. Results The study included 214 participants (85,600 epochs). Hospital audio data from 105 participants (42,000 epochs) were used for training, while home audio data from 109 participants were split into 54 participants (21,600 epochs) for training and 55 participants (22,000 epochs) for testing. On the test dataset, the model demonstrated a sensitivity of 89.8% and a specificity of 91.3%. Correlation analysis showed strong agreement between observed and predicted snoring ratios (r = 0.97, 95% CI: 0.95–0.99). Conclusion This study demonstrates the feasibility of using deep learning for real-time snoring detection from home-recorded smartphone audio. With high accuracy and scalability, the approach offers a practical and accessible tool for monitoring sleep-related disorders, paving the way for home-based sleep health management solutions."
+    },
+    {
+      "paperId": "492d4bd13dd968c668b9d1006e6af8126ffe02e4",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.1274",
+        "CorpusId": 278762985
+      },
+      "url": "https://www.semanticscholar.org/paper/492d4bd13dd968c668b9d1006e6af8126ffe02e4",
+      "title": "1274 Longitudinal Changes in Resting-state EEG in Isolated REM Sleep Behavior Disorder",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.1274?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.1274, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34670357",
+          "name": "J. Hong"
+        },
+        {
+          "authorId": "2243589701",
+          "name": "In-Young Yoon"
+        },
+        {
+          "authorId": "2292089474",
+          "name": "Minji Lee"
+        }
+      ],
+      "abstract": "\n \n \n Patients with isolated REM sleep behavior disorder (iRBD), a prodromal alpha-synucleinopathy, has been reported to show electroencephalographic (EEG) slowing compared to healthy controls. However, longitudinal studies examining brain activity changes in iRBD are scarce. This study aimed to identify longitudinal changes in brain activity using resting-state quantitative EEG (qEEG) and their clinical significance in iRBD.\n \n \n \n Patients diagnosed with iRBD between 2014 and 2015 who underwent waking 64-channel EEG at both baseline and 5-year follow-up were included. Patients with mild cognitive impairment (MCI) at baseline were excluded, and included patients were divided into two groups, based on cognitive status at 5 years (non-MCI and 5yr-MCI groups). EEG spectral analysis was conducted using fast Fourier transform, with relative power values calculated for five frequency bands (delta, theta, alpha, beta, and high-beta) across five cerebral regions (frontal, temporal, central, parietal, and occipital). Longitudinal qEEG analyses were performed using generalized estimating equations (GEE), adjusting for clonazepam use.\n \n \n \n Fifty-one iRBD patients without baseline MCI (72.5% male, mean age 65.9 ± 5.7 years) were analyzed. After five years, six patients (11.8%) developed MCI. At baseline, the non-MCI group had significantly higher high-beta power than the 5yr-MCI group (frontal, temporal and parietal: p = 0.002; central: p = 0.025; occipital: p = 0.006). Longitudinally, the 5yr-MCI group showed significant increases in theta (frontal, central, and occipital: p < 0.001; temporal: p = 0.015; parietal: p = 0.005), delta (parietal: p = 0.021; occipital: p < 0.001), and beta (temporal and central: p < 0.001) power and decreases in alpha power (all regions: p < 0.001) at follow-up compared to baseline. In contrast, the non-MCI group exhibited minimal changes in brain activity over time.\n \n \n \n EEG slowing occurs in iRBD patients as cognitive decline develops. Reduced fast activity, such as high-beta power, may serve as a biomarker for predicting future cognitive impairment in iRBD.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "844041cd12acda271399867b50b5cd43225f331b",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.1376",
+        "CorpusId": 278751318
+      },
+      "url": "https://www.semanticscholar.org/paper/844041cd12acda271399867b50b5cd43225f331b",
+      "title": "1376 Effects of Real-Time Mattress Temperature Adjustment Based on Sleep Stages on Sleep Quality During the Summer Season",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.1376?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.1376, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2362407524",
+          "name": "Sungjin Heo"
+        },
+        {
+          "authorId": "2284763440",
+          "name": "Jaehyun Bae"
+        },
+        {
+          "authorId": "2985629",
+          "name": "Joonki Hong"
+        },
+        {
+          "authorId": "2115475969",
+          "name": "Dongheon Lee"
+        },
+        {
+          "authorId": "2362423788",
+          "name": "D. Hyun"
+        },
+        {
+          "authorId": "2362434513",
+          "name": "Gyrim Lee"
+        },
+        {
+          "authorId": "2323748079",
+          "name": "Taewon Yun"
+        },
+        {
+          "authorId": "2362390973",
+          "name": "Ki-Young Jung"
+        },
+        {
+          "authorId": "2116937673",
+          "name": "J. Kim"
+        },
+        {
+          "authorId": "2243589701",
+          "name": "In-Young Yoon"
+        }
+      ],
+      "abstract": "\n \n \n There is a wealth of research showing that tropical nights during the summer season can negatively affect sleep quality. As a result, many people resort to sleeping with the air conditioner on throughout the night. Studies have shown that a person’s body temperature gradually decreases after falling asleep, reaching its lowest point during deep sleep. Based on this, we aimed to investigate how providing an ideal mattress temperature during the summer affects sleep quality. Specifically, we proposed adjusting the mattress temperature in real-time—raising it during detected deep sleep and lowering it during other sleep stages.\n \n \n \n Over a 10-day period, 30 participants underwent three polysomnography sessions (IRB No.P01-202408-01-035): one for natural sleep, one for constant temperature control (CTC), and another for real-time temperature adjustment (RTA). For both CTC and RTA, the default temperature was set to 28°C, Korea’s preferred cooling mat temperature. During deep sleep (N3), RTA raised the temperature to 30°C in real time to prevent awakening caused by body temperature drops. For other sleep stages, including Light (N1, N2), and REM, the temperature returned to 28°C. Meanwhile, CTC consistently maintained 28°C as a control condition to compare the effects of static versus adaptive temperature control on sleep structure.\n \n \n \n Our results show significant changes in sleep architecture between Nature, CTC and RTA. Total sleep time (TST) increased from 6h41min, 6h44min to 7h13min (p<. 015, 023) and sleep efficiency (SE) from 83.35%, 83.83% to 89.77% (p<.019,.025). Wake after sleep onset (WASO) decreased from 79min, 78min to 49 minutes (p<.019,.024), REM Sleep extended from 87min, 93min to 106 minutes (p<.015, 018), and Duration of Deep sleep showed a significant difference only in the Nature between RTA. 41min to 56min (p<.047).\n \n \n \n The results showed that, compared to the Nature sleep condition, CTC and RTA led to statistically significant improvements in objective indicators of polysomnography: increased TST, SE, increased REM sleep time and deep sleep time, and higher proportions of REM and deep sleep stage. This study confirmed that providing mattress temperature adjustments based on sleep stages during summer can improve sleep quality.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "afbf5031d0843f27c52c82e56681f595543cbbbc",
+      "externalIds": {
+        "DOI": "10.1177/15578518251376624",
+        "CorpusId": 281251470,
+        "PubMed": "40930543"
+      },
+      "url": "https://www.semanticscholar.org/paper/afbf5031d0843f27c52c82e56681f595543cbbbc",
+      "title": "Sleep Disturbances and Metabolic Syndrome in Shift Workers: A Systematic Review",
+      "venue": "Metabolic Syndrome and Related Disorders",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/15578518251376624?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/15578518251376624, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2223290644",
+          "name": "Da-In Park"
+        },
+        {
+          "authorId": "2380024085",
+          "name": "Esther Wegener"
+        }
+      ],
+      "abstract": "Background: Poor sleep has been identified as a strong risk factor for metabolic syndrome. Shift workers, who often experience reduced and misaligned sleep due to nighttime work schedules, are particularly susceptible to both sleep disturbances and metabolic syndrome. However, the interplay among shift work, sleep disturbances, and metabolic syndrome remains insufficiently explored. This systematic review aimed to critically appraise, compare, and synthesize the current evidence on the pathways linking these factors. Methods: A comprehensive literature search was conducted across major electronic databases and peer-reviewed journals specializing in metabolic disorders and sleep disorders. Two independent reviewers screened titles, abstracts, and full texts for relevance. Methodological quality was assessed using the Newcastle–Ottawa Scale. Results: Out of 4,982 studies identified, 15 met the predefined inclusion criteria, encompassing diverse occupational groups with fixed and rotating shift patterns and totaling 37,147 participants. Most studies demonstrated a positive association between shift work and sleep disturbances, particularly among fixed night shift workers. Longer durations of night shift exposure were linked to increased risk of metabolic syndrome. Notably, reduced sleep quantity was more strongly associated with metabolic syndrome than impaired sleep quality. The methodological quality of the included studies was moderate to high. Conclusion: This review highlights a consistent association between shift work, sleep disturbances, and metabolic syndrome. Shift work appears to impact both sleep health and metabolic outcomes independently. These findings underscore the need for targeted interventions and longitudinal studies to further elucidate causal pathways and inform occupational health strategies."
+    },
+    {
+      "paperId": "a2df256f500e0e615326d29f1979b2306c698874",
+      "externalIds": {
+        "DOI": "10.1007/s11325-025-03465-2",
+        "CorpusId": 281613732,
+        "PubMed": "41014458"
+      },
+      "url": "https://www.semanticscholar.org/paper/a2df256f500e0e615326d29f1979b2306c698874",
+      "title": "Restorative effect of sequential 4-channel neuromuscular electrical stimulation in obstructive sleep apnea: a feasibility study",
+      "venue": "Sleep and Breathing",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11325-025-03465-2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11325-025-03465-2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2109633104",
+          "name": "J. Lim"
+        },
+        {
+          "authorId": "4386910",
+          "name": "J. Suh"
+        },
+        {
+          "authorId": "2382512304",
+          "name": "S. U. Lee"
+        },
+        {
+          "authorId": "2382481186",
+          "name": "W. Jo"
+        },
+        {
+          "authorId": "2382587800",
+          "name": "Jaewon Lee"
+        },
+        {
+          "authorId": "2255914456",
+          "name": "In-young Yoon"
+        },
+        {
+          "authorId": "2268194194",
+          "name": "Ju Seok Ryu"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "e7cde6fc66491cf2a592acf115d6a810ebfd19d3",
+      "externalIds": {
+        "DOI": "10.7586/jkbns.25.071",
+        "CorpusId": 283374579
+      },
+      "url": "https://www.semanticscholar.org/paper/e7cde6fc66491cf2a592acf115d6a810ebfd19d3",
+      "title": "Effects of light therapy on sleep efficiency in older adults in long-term care facilities: a systematic review and meta-analysis",
+      "venue": "Journal of Korean Biological Nursing Science",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://jkbns.org/upload/pdf/jkbns-25-071.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.7586/jkbns.25.071?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.7586/jkbns.25.071, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2317679488",
+          "name": "In Sun Cheon"
+        },
+        {
+          "authorId": "2317612672",
+          "name": "Sun Hee Lee"
+        },
+        {
+          "authorId": "2317478506",
+          "name": "Young Ran Chae"
+        }
+      ],
+      "abstract": "Purpose: This study aimed to systematically review the effects of light therapy on sleep efficiency in institutionalized older adults and to analyze effect sizes according to the characteristics of light therapy.Methods: A comprehensive literature search was conducted using RISS, KMBASE, KISS, NDSL, KISTI, NAL, PubMed, EMBASE, Cochrane Library, CINAHL, and ProQuest Global. Manual searches of reference lists were also performed. A total of 1,597 records were identified, and nine studies met the inclusion criteria and were included in the final analysis. Following quality assessment, all eligible studies were analyzed using RevMan and R software.Results: The overall effect size of light therapy on sleep efficiency was 0.67 (95% confidence interval [CI ]: 0.13~1.21), indicating a beneficial effect. In subgroup analyses, studies using light intensity ≥ 5,000 lux showed a significant effect size of 1.58 (95% CI: 0.80~2.37). For studies with light exposure durations shorter than 1 hour (n = 4), the effect size was 1.40 (95% CI: 0.74~2.06). Similarly, studies with intervention periods shorter than 3 weeks (n = 4) demonstrated an effect size of 1.40 (95% CI: 0.74~2.06). However, heterogeneity was high in all analyses. In contrast, when light application timing was categorized as morning, afternoon, or all day, no significant effects were observed.Conclusion: Despite considerable heterogeneity, light therapy showed beneficial effects on sleep efficiency in institutionalized older adults. When applying light therapy, factors such as appropriate light intensity, exposure duration, and intervention period should be carefully considered."
+    },
+    {
+      "paperId": "c90fb68ea3f2bb3000fc7ffbdc07c45b5e935cdd",
+      "externalIds": {
+        "DOI": "10.2319/051925-396.1",
+        "CorpusId": 286672563,
+        "PubMed": "41850550"
+      },
+      "url": "https://www.semanticscholar.org/paper/c90fb68ea3f2bb3000fc7ffbdc07c45b5e935cdd",
+      "title": "Effects of simulated arch constriction on upper airway function during sleep.",
+      "venue": "Angle Orthodontist",
+      "year": 2026,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.2319/051925-396.1",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.2319/051925-396.1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.2319/051925-396.1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2357981546",
+          "name": "Da In Kim"
+        },
+        {
+          "authorId": "2358171782",
+          "name": "Manuel Lagravere"
+        },
+        {
+          "authorId": "2241038084",
+          "name": "Fernanda R. Almeida"
+        },
+        {
+          "authorId": "3551463",
+          "name": "B. Pliska"
+        }
+      ],
+      "abstract": "Objectives\nTo characterize functional changes of the airway while wearing an appliance simulating severe arch constriction using level 3 polysomnography.\n\n\nMaterials and Methods\nFor this pilot, single-blinded prospective randomized cross-over trial, 34 participants were recruited from the student/staff population of a dental school. Epworth Sleepiness Scale, STOPBANG questionnaire, lateral cephalograms, and digital dental casts were gathered from all patients. Arch constriction was simulated by adding 5 mm thickness to lingual aspects of the dentition using vacuum-formed retainers (VFRs). Each participant completed three at-home sleep studies with a level 3 sleep monitor: the initial baseline test, and after random allocation of 6 days wearing either the control appliance (regular-VFR), or the simulated arch constriction (SAC) appliance, and following crossover of appliances. Oxygen Desaturation Indices (ODIs) and Respiratory Event Index (REI) were compared.\n\n\nResults\nUse of the SAC appliance did not affect airway function: No significant difference (P > .05) was found in REI or ODI among the three groups. Five participants had REI values 5.0 or greater on at least one sleep study; however, this was unrelated to appliance use.\n\n\nConclusion\nSimulated extreme dental arch constriction did not result in changes to REI. Constriction of the dental arches does not negatively affect airway function during sleep."
+    },
+    {
+      "paperId": "85fcc0437ae5f1f004185f60ce99ab505caaa9d5",
+      "externalIds": {
+        "PubMedCentral": "10800583",
+        "DOI": "10.3389/fpsyt.2023.1272812",
+        "CorpusId": 266884405,
+        "PubMed": "38260776"
+      },
+      "url": "https://www.semanticscholar.org/paper/85fcc0437ae5f1f004185f60ce99ab505caaa9d5",
+      "title": "Prevalence of poor sleep quality in COVID-19 patients: a systematic review and meta-analysis",
+      "venue": "Frontiers in Psychiatry",
+      "year": 2024,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2023.1272812/pdf?isPublishedV2=False",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10800583, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2278706138",
+          "name": "Zhen Gui"
+        },
+        {
+          "authorId": "2368295699",
+          "name": "Yue-ying Wang"
+        },
+        {
+          "authorId": "2256923329",
+          "name": "Jia-xin Li"
+        },
+        {
+          "authorId": "49180987",
+          "name": "Xiaohong Li"
+        },
+        {
+          "authorId": "2153420970",
+          "name": "Zhaohui Su"
+        },
+        {
+          "authorId": "5244668",
+          "name": "T. Cheung"
+        },
+        {
+          "authorId": "134256878",
+          "name": "Ka-In Lok"
+        },
+        {
+          "authorId": "5923733",
+          "name": "G. Ungvari"
+        },
+        {
+          "authorId": "2239527634",
+          "name": "Chee H. Ng"
+        },
+        {
+          "authorId": "2213531677",
+          "name": "Qinge Zhang"
+        },
+        {
+          "authorId": "1752584019",
+          "name": "Y. Xiang"
+        }
+      ],
+      "abstract": "Objective The coronavirus disease (COVID-19) and the public health responses were associated with a huge health burden, which could influence sleep quality. This meta-analysis and systematic review examined the prevalence of poor sleep quality in COVID-19 patients. Methods PubMed, Web of Science, Embase, and PsycINFO were systematically searched from their respective inception to October 27, 2022. Prevalence rates of poor sleep were analyzed using a random effects model. Results Totally, 24 epidemiological and 12 comparative studies with 8,146 COVID-19 patients and 5,787 healthy controls were included. The pooled prevalence of poor sleep quality based on the included studies was 65.0% (95%CI: 59.56–70.44%, I2 = 97.6%). COVID-19 patients had a higher risk of poor sleep quality compared to healthy controls (OR = 1.73, 95% CI: 1.30–2.30, p < 0.01, I2 = 78.1%) based on the 12 comparative studies. Subgroup analysis revealed that COVID-19 patients in low-income countries (p = 0.011) and in studies using a lower Pittsburgh Sleep Quality Index score cut-off (p < 0.001) were more likely to have poor sleep quality. Meta-regression analyses revealed that being female (p = 0.044), older (p < 0.001) and married (p = 0.009) were significantly correlated with a higher risk of poor sleep quality while quality score (p = 0.014) were negatively correlated with the prevalence of poor sleep quality in COVID-19 patients. Conclusion Poor sleep quality was found to be very common in COVID-19 patients. Considering the negative effects of poor sleep quality on daily life, sleep quality should be routinely assessed and appropriately addressed in COVID-19 patients."
+    },
+    {
+      "paperId": "a6b83629ad79d8d0043963e4f28e8fc3908da116",
+      "externalIds": {
+        "PubMedCentral": "10654909",
+        "DOI": "10.2196/50983",
+        "CorpusId": 262102798,
+        "PubMed": "37917155"
+      },
+      "url": "https://www.semanticscholar.org/paper/a6b83629ad79d8d0043963e4f28e8fc3908da116",
+      "title": "Accuracy of 11 Wearable, Nearable, and Airable Consumer Sleep Trackers: Prospective Multicenter Validation Study",
+      "venue": "JMIR mHealth and uHealth",
+      "year": 2023,
+      "citationCount": 94,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://mhealth.jmir.org/2023/1/e50983/PDF",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10654909, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2152475060",
+          "name": "Taeyoung Lee"
+        },
+        {
+          "authorId": "2243575926",
+          "name": "Younghoon Cho"
+        },
+        {
+          "authorId": "40638829",
+          "name": "Kwang Su Cha"
+        },
+        {
+          "authorId": "50590274",
+          "name": "Jinhwan Jung"
+        },
+        {
+          "authorId": "2355248750",
+          "name": "J. Cho"
+        },
+        {
+          "authorId": "49899913",
+          "name": "Hyunggug Kim"
+        },
+        {
+          "authorId": "2244640000",
+          "name": "Daewoo Kim"
+        },
+        {
+          "authorId": "2985629",
+          "name": "Joonki Hong"
+        },
+        {
+          "authorId": "2115475969",
+          "name": "Dongheon Lee"
+        },
+        {
+          "authorId": "2243619060",
+          "name": "M. Keum"
+        },
+        {
+          "authorId": "4247081",
+          "name": "C. Kushida"
+        },
+        {
+          "authorId": "2243589701",
+          "name": "In-Young Yoon"
+        },
+        {
+          "authorId": "2116937673",
+          "name": "J. Kim"
+        }
+      ],
+      "abstract": "Background Consumer sleep trackers (CSTs) have gained significant popularity because they enable individuals to conveniently monitor and analyze their sleep. However, limited studies have comprehensively validated the performance of widely used CSTs. Our study therefore investigated popular CSTs based on various biosignals and algorithms by assessing the agreement with polysomnography. Objective This study aimed to validate the accuracy of various types of CSTs through a comparison with in-lab polysomnography. Additionally, by including widely used CSTs and conducting a multicenter study with a large sample size, this study seeks to provide comprehensive insights into the performance and applicability of these CSTs for sleep monitoring in a hospital environment. Methods The study analyzed 11 commercially available CSTs, including 5 wearables (Google Pixel Watch, Galaxy Watch 5, Fitbit Sense 2, Apple Watch 8, and Oura Ring 3), 3 nearables (Withings Sleep Tracking Mat, Google Nest Hub 2, and Amazon Halo Rise), and 3 airables (SleepRoutine, SleepScore, and Pillow). The 11 CSTs were divided into 2 groups, ensuring maximum inclusion while avoiding interference between the CSTs within each group. Each group (comprising 8 CSTs) was also compared via polysomnography. Results The study enrolled 75 participants from a tertiary hospital and a primary sleep-specialized clinic in Korea. Across the 2 centers, we collected a total of 3890 hours of sleep sessions based on 11 CSTs, along with 543 hours of polysomnography recordings. Each CST sleep recording covered an average of 353 hours. We analyzed a total of 349,114 epochs from the 11 CSTs compared with polysomnography, where epoch-by-epoch agreement in sleep stage classification showed substantial performance variation. More specifically, the highest macro F1 score was 0.69, while the lowest macro F1 score was 0.26. Various sleep trackers exhibited diverse performances across sleep stages, with SleepRoutine excelling in the wake and rapid eye movement stages, and wearables like Google Pixel Watch and Fitbit Sense 2 showing superiority in the deep stage. There was a distinct trend in sleep measure estimation according to the type of device. Wearables showed high proportional bias in sleep efficiency, while nearables exhibited high proportional bias in sleep latency. Subgroup analyses of sleep trackers revealed variations in macro F1 scores based on factors, such as BMI, sleep efficiency, and apnea-hypopnea index, while the differences between male and female subgroups were minimal. Conclusions Our study showed that among the 11 CSTs examined, specific CSTs showed substantial agreement with polysomnography, indicating their potential application in sleep monitoring, while other CSTs were partially consistent with polysomnography. This study offers insights into the strengths of CSTs within the 3 different classes for individuals interested in wellness who wish to understand and proactively manage their own sleep."
+    },
+    {
+      "paperId": "a29acf82f11880eb2d0fe271b6bd8ad1d785bb47",
+      "externalIds": {
+        "PubMedCentral": "8777783",
+        "DOI": "10.3390/jpm12010092",
+        "CorpusId": 245895236,
+        "PubMed": "35055407"
+      },
+      "url": "https://www.semanticscholar.org/paper/a29acf82f11880eb2d0fe271b6bd8ad1d785bb47",
+      "title": "Decrease in Sleep Duration and Poor Sleep Quality over Time Is Associated with an Increased Risk of Incident Non-Alcoholic Fatty Liver Disease",
+      "venue": "Journal of Personalized Medicine",
+      "year": 2022,
+      "citationCount": 21,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2075-4426/12/1/92/pdf?version=1642585670",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8777783, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7844022",
+          "name": "Y. Um"
+        },
+        {
+          "authorId": "4832344",
+          "name": "Yoosoo Chang"
+        },
+        {
+          "authorId": "52190968",
+          "name": "Hyun-Suk Jung"
+        },
+        {
+          "authorId": "9822128",
+          "name": "I. Cho"
+        },
+        {
+          "authorId": "46936034",
+          "name": "Jun-ho Shin"
+        },
+        {
+          "authorId": "2252967",
+          "name": "Hocheol Shin"
+        },
+        {
+          "authorId": "145844465",
+          "name": "S. Wild"
+        },
+        {
+          "authorId": "145195394",
+          "name": "C. Byrne"
+        },
+        {
+          "authorId": "3124988",
+          "name": "S. Ryu"
+        }
+      ],
+      "abstract": "The impact of changes in sleep duration and sleep quality over time on the risk of non-alcoholic fatty liver disease (NAFLD) is not known. We investigated whether changes in sleep duration and in sleep quality between baseline and follow-up are associated with the risk of developing incident NAFLD. The cohort study included 86,530 Korean adults without NAFLD and with a low fibrosis score at baseline. The median follow-up was 3.6 years. Sleep duration and quality were assessed using the Pittsburgh Sleep Quality Index. Hepatic steatosis (HS) and liver fibrosis were assessed using ultrasonography and the fibrosis-4 index (FIB-4). Cox proportional hazard models were used to determine hazard ratios (HRs) and 95% confidence intervals (Cis). A total of 12,127 subjects with incident HS and 559 with incident HS plus intermediate/high FIB-4 was identified. Comparing the decrease in sleep duration of >1 h, with stable sleep duration, the multivariate-adjusted HR (95% CIs) for incident HS was 1.24 (1.15–1.35). The corresponding HRs for incident HS plus intermediate/high FIB-4 was 1.58 (1.10–2.29). Comparing persistently poor sleep quality with persistently good sleep quality, the multivariate-adjusted HR for incident HS was 1.13 (95% CI, 1.05–1.20). A decrease in sleep duration or poor sleep quality over time was associated with an increased risk of incident NAFLD, underscoring an important potential role for good sleep in preventing NAFLD risk."
+    },
+    {
+      "paperId": "251543eb5e12b233752f1a60323ec7d240ba7f03",
+      "externalIds": {
+        "DOI": "10.1177/0271678X251353142",
+        "CorpusId": 279600468,
+        "PubMed": "40562709"
+      },
+      "url": "https://www.semanticscholar.org/paper/251543eb5e12b233752f1a60323ec7d240ba7f03",
+      "title": "Brain water dynamics across sleep stages measured by near-infrared spectroscopy: Implications for glymphatic function",
+      "venue": "Journal of Cerebral Blood Flow and Metabolism",
+      "year": 2025,
+      "citationCount": 8,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/0271678X251353142?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/0271678X251353142, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2401748105",
+          "name": "Jee-Eun Yoon"
+        },
+        {
+          "authorId": "51251378",
+          "name": "Minsu Ji"
+        },
+        {
+          "authorId": "2335288542",
+          "name": "I. Hwang"
+        },
+        {
+          "authorId": "2257377634",
+          "name": "Woo-Jin Lee"
+        },
+        {
+          "authorId": "104268632",
+          "name": "Seongkwon Yu"
+        },
+        {
+          "authorId": "2368560666",
+          "name": "Jaemyoung Kim"
+        },
+        {
+          "authorId": "2347881837",
+          "name": "Chanhyung Lee"
+        },
+        {
+          "authorId": "2412202642",
+          "name": "Hae Woo Lee"
+        },
+        {
+          "authorId": "2368516544",
+          "name": "Bumjun Koh"
+        },
+        {
+          "authorId": "2368517543",
+          "name": "Hyeonmin Bae"
+        },
+        {
+          "authorId": "2193712097",
+          "name": "Chang-Ho Yun"
+        }
+      ],
+      "abstract": "This study investigates brain water dynamics across the sleep-wake cycle using near-infrared spectroscopy (NIRS) and linear mixed-effects modeling, motivated by prior observations that glymphatic activity increases during non-rapid eye movement (NREM) and decreases during REM sleep. Forty-one healthy volunteers underwent polysomnography with concurrent cerebral NIRS, with measurements taken 30 minutes before sleep, throughout the night, and for 60 minutes after waking. Brain water content (arbitrary unit, A.U.) was block-averaged for 5-minute epochs and analyzed across WAKE→NREM, NREM→WAKE, NREM→REM, and REM→NREM transitions. Water content significantly increased during WAKE→NREM (0.57 A.U., d = 0.77, p < 0.001) and decreased during NREM→WAKE (−0.93 A.U., d = −1.25, p < 0.001). Decreases during NREM→REM (−0.40 A.U., d = −0.53, p < 0.05) were followed by increases during REM→NREM (0.62 A.U., d = 1.10, p < 0.001). Brain water accumulation was significantly greater during the first compared to the last NREM cycle (0.70 A.U., d = 0.86, p < 0.01). These findings reveal robust, state-dependent fluctuations in brain water content that parallel established glymphatic physiology. Water-sensitive NIRS may offer a promising non-invasive approach to monitoring sleep-related brain fluid dynamics in humans, though further multimodal studies are needed to determine its specificity for glymphatic activity."
+    },
+    {
+      "paperId": "6e67e45072487c812f307810179dd7fd9d64fb80",
+      "externalIds": {
+        "PubMedCentral": "11432166",
+        "DOI": "10.3390/ijms25189791",
+        "CorpusId": 272574567,
+        "PubMed": "39337279"
+      },
+      "url": "https://www.semanticscholar.org/paper/6e67e45072487c812f307810179dd7fd9d64fb80",
+      "title": "Effect of Earthing Mats on Sleep Quality in Rats",
+      "venue": "International Journal of Molecular Sciences",
+      "year": 2024,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11432166, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4538407",
+          "name": "Minsook Ye"
+        },
+        {
+          "authorId": "2320607509",
+          "name": "Woojin Jeong"
+        },
+        {
+          "authorId": "2265621812",
+          "name": "H. Yu"
+        },
+        {
+          "authorId": "2108871419",
+          "name": "Kyu-Ri Kim"
+        },
+        {
+          "authorId": "40579154",
+          "name": "Sung-Ja Rhie"
+        },
+        {
+          "authorId": "2144087737",
+          "name": "Yong-seong Kim"
+        },
+        {
+          "authorId": "2320736026",
+          "name": "Jiyoun Kim"
+        },
+        {
+          "authorId": "32573351",
+          "name": "In-Sup Shim"
+        }
+      ],
+      "abstract": "Grounding, a therapeutic technique involving direct contact with the earth, has been proposed by various studies to potentially have beneficial effects on pressure, sleep quality, stress, inflammation, and mood. However, the scientific evidence supporting its sedative effects remains incomplete. This study examined the sedative effectiveness of an earthing mat on sleep quality and investigated the underlying neural mechanisms using electroencephalography (EEG) analysis in rodents, focusing on orexin and superoxide dismutase (SOD) levels in the brain. Rats were randomly assigned to four groups: the naïve normal group (Nor), the group exposed to an earthing mat for 7 days (A-7D), the group exposed to an earthing mat for 21 days (A-21D), and the group exposed to an electronic blanket for 21 days (EM). EEG results revealed that the A-21D group exhibited significantly reduced wake time and increased rapid eye movement (REM), non-rapid eye movement (NREM), and total sleep time compared to the Nor group (p < 0.05). Moreover, the A-21D group demonstrated a significant increase in NREM sleep (p < 0.001), REM sleep (p < 0.01), and total sleep time (p < 0.001), along with a decrease in wake time compared to the EM group (p < 0.001). The orexin level in the A-21D group was significantly lower compared to the Nor group (p < 0.01), while SOD1 expression was markedly elevated in the A-21D group compared to the Nor group (p < 0.001). These results suggest that the earthing mat may represent a promising new method for promoting sleep quality and could serve as an effective therapeutic technique."
+    },
+    {
+      "paperId": "184d96dccedf68c4c2bb03d8bbf3f84a8dc44e65",
+      "externalIds": {
+        "DOI": "10.1101/2024.10.20.24315783",
+        "CorpusId": 273493821
+      },
+      "url": "https://www.semanticscholar.org/paper/184d96dccedf68c4c2bb03d8bbf3f84a8dc44e65",
+      "title": "Polygenic scores for obstructive sleep apnea based on BMI- adjusted and - unadjusted genetic associations reveal pathways contributing to cardiovascular disease",
+      "venue": "medRxiv",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/21/2024.10.20.24315783.full.pdf",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2024.10.20.24315783?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2024.10.20.24315783, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "103553702",
+          "name": "N. Kurniansyah"
+        },
+        {
+          "authorId": "2155166233",
+          "name": "S. Strausz"
+        },
+        {
+          "authorId": "4922432",
+          "name": "G. Chittoor"
+        },
+        {
+          "authorId": "2326940863",
+          "name": "S. Gupta"
+        },
+        {
+          "authorId": "2326912752",
+          "name": "A. Justice"
+        },
+        {
+          "authorId": "2267024452",
+          "name": "Y. Hrytsenko"
+        },
+        {
+          "authorId": "2284106375",
+          "name": "B. Keenan"
+        },
+        {
+          "authorId": "1824293",
+          "name": "B. Cade"
+        },
+        {
+          "authorId": "2290024374",
+          "name": "B. Spitzer"
+        },
+        {
+          "authorId": "2282384424",
+          "name": "H. Wang"
+        },
+        {
+          "authorId": "2326917299",
+          "name": "J. Huffman"
+        },
+        {
+          "authorId": "2316441539",
+          "name": "M. Moll"
+        },
+        {
+          "authorId": "50681430",
+          "name": "B. Haring"
+        },
+        {
+          "authorId": "2281289886",
+          "name": "S. Jung"
+        },
+        {
+          "authorId": "2086879458",
+          "name": "L. Raffield"
+        },
+        {
+          "authorId": "2284181463",
+          "name": "R. Kaplan"
+        },
+        {
+          "authorId": "113809154",
+          "name": "J. Rotter"
+        },
+        {
+          "authorId": "2290023750",
+          "name": "S. Rich"
+        },
+        {
+          "authorId": "8707597",
+          "name": "Sina A. Gharib"
+        },
+        {
+          "authorId": "2086879440",
+          "name": "T. Bartz"
+        },
+        {
+          "authorId": "2202697798",
+          "name": "P. Liu"
+        },
+        {
+          "authorId": "2290286359",
+          "name": "H. Chen"
+        },
+        {
+          "authorId": "2250702918",
+          "name": "M. Fornage"
+        },
+        {
+          "authorId": "2327701848",
+          "name": "L. Hou"
+        },
+        {
+          "authorId": "2326915231",
+          "name": "D. Levy"
+        },
+        {
+          "authorId": "2326913322",
+          "name": "A. Morrison"
+        },
+        {
+          "authorId": "2299936563",
+          "name": "H. Ochs-Balcom"
+        },
+        {
+          "authorId": "2251536468",
+          "name": "B. Psaty"
+        },
+        {
+          "authorId": "2308654679",
+          "name": "P. Wilson"
+        },
+        {
+          "authorId": "2308612519",
+          "name": "K. Cho"
+        },
+        {
+          "authorId": "80907029",
+          "name": "A. Pack"
+        },
+        {
+          "authorId": "2356112255",
+          "name": "H. Ollila"
+        },
+        {
+          "authorId": "2266843996",
+          "name": "S. Redline"
+        },
+        {
+          "authorId": "2283479327",
+          "name": "D. Gottlieb"
+        },
+        {
+          "authorId": "2284092109",
+          "name": "T. Sofer"
+        },
+        {
+          "authorId": "2326440655",
+          "name": "FinnGen"
+        },
+        {
+          "authorId": "2326911644",
+          "name": "the Trans-Omics in Precision Medicine Consortium"
+        },
+        {
+          "authorId": "2227651599",
+          "name": "the Million Veteran Program"
+        }
+      ],
+      "abstract": "Background: Obstructive sleep apnea (OSA) is a heterogeneous disease, with obesity a significant risk factor via increased airway collapsibility, reduced lung volumes, and possibly body fat distribution. Methods: Using race/ethnic diverse samples from the Million Veteran Program, FinnGen, TOPMed, All of Us (AoU), Geisinger's MyCode, MGB Biobank, and the Human Phenotype Project (HPP), we developed, selected, and assessed polygenic scores (PGSs) for OSA, relying on genome-wide association studies both adjusted and unadjusted for BMI: BMIadjOSA- and BMIunadjOSA-PGS. We tested their associations with CVD in AoU. Results: Adjusted odds ratios (ORs) for OSA per 1 standard deviation of the PGSs ranged from 1.38 to 2.75. The associations of BMIadjOSA- and BMIunadjOSA-PGSs with CVD outcomes in AoU shared both common and distinct patterns. For example, BMIunadjOSA-PGS was associated with type 2 diabetes, heart failure, and coronary artery disease, but the associations of BMIadjOSA-PGS with these outcomes were statistically insignificant with estimated OR close to 1. In contrast, both BMIadjOSA- and BMIunadjOSA-PGSs were associated with hypertension and stroke. Sex stratified analyses revealed that BMIadjOSA-PGS association with hypertension was driven by data from OR=1.1, p-value=0.002, OR=1.01 p-value=0.2 in males). OSA PGSs were also associated with dual-energy X-ray absorptiometry (DXA) body fat measures with some sex-specific associations. Conclusions: Distinct components of OSA genetic risk are related to obesity and body fat distribution, and may influence clinical outcomes. These may explain differing OSA risks and associations with cardiometabolic morbidities between sex groups."
+    },
+    {
+      "paperId": "5137829256bf4858e7802cddd3fcce79911ea95f",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf347",
+        "CorpusId": 282747323,
+        "PubMed": "41182247"
+      },
+      "url": "https://www.semanticscholar.org/paper/5137829256bf4858e7802cddd3fcce79911ea95f",
+      "title": "Long-Term Cognitive Trajectories in Isolated REM Sleep Behavior Disorder: Effects of Sex and Longstanding Disease Duration.",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf347?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf347, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34670357",
+          "name": "J. Hong"
+        },
+        {
+          "authorId": "150147430",
+          "name": "Jiwon Han"
+        },
+        {
+          "authorId": "2290897775",
+          "name": "Jong-Min Kim"
+        },
+        {
+          "authorId": "152812361",
+          "name": "Soyeon Ahn"
+        },
+        {
+          "authorId": "2292001848",
+          "name": "I. Yoon"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "496ba91a54e115d9c9a44583730812a83d4f0a38",
+      "externalIds": {
+        "PubMedCentral": "13319880",
+        "DOI": "10.1016/j.identj.2026.109705",
+        "CorpusId": 289549979,
+        "PubMed": "42341599"
+      },
+      "url": "https://www.semanticscholar.org/paper/496ba91a54e115d9c9a44583730812a83d4f0a38",
+      "title": "Network Analysis of Sleep, Mental Health, and Stress in Korean Dentists",
+      "venue": "International Dental Journal",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.identj.2026.109705",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13319880, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2280128585",
+          "name": "Chisung Yuh"
+        },
+        {
+          "authorId": "2260851022",
+          "name": "In-Seok Song"
+        },
+        {
+          "authorId": "2153344341",
+          "name": "Heon-Jeong Lee"
+        },
+        {
+          "authorId": "2193532852",
+          "name": "Young-Mee Lee"
+        },
+        {
+          "authorId": "2258516458",
+          "name": "Chul-Hyun Cho"
+        }
+      ],
+      "abstract": "Introduction and aims Dentists are vulnerable to occupational stress, poor sleep, and related mental health problems. However, prior studies have treated sleep quality as a single aggregate score, obscuring which specific sleep dimensions are most closely connected with mental health and occupational stress. This study applied psychological network analysis to examine the interrelationships among individual sleep quality components, mental health indicators, and occupational stress in Korean dentists. Methods A cross-sectional online survey of 229 Korean dentists was conducted in 2016. Six Pittsburgh Sleep Quality Index (PSQI) components, the Center for Epidemiologic Studies Depression Scale (CES-D), State-Trait Anxiety Inventory (STAI), Brief Encounter Psychosocial Instrument-Korean (BEPSI-K), Physician Job Stress (PJS), and Dentist Job Stress (DJS) scales were analysed. A Gaussian Graphical Model was estimated using EBICglasso (gamma = 0.5) following nonparanormal transformation. Centrality indices, bridge centrality, and bootstrap stability were computed. Results The network revealed 31 non-zero edges among 11 nodes. The strongest edges were depression–anxiety (partial r = 0.60), physician–dentist job stress (0.42), and subjective sleep quality–daytime dysfunction (0.35). Depression showed the highest strength centrality (z = 1.65). Bridge centrality analysis identified daytime dysfunction (bridge strength = 0.385) and sleep latency (0.224) as the primary sleep-domain nodes connecting to mental health and stress domains. The network demonstrated excellent stability (CS-coefficient = 0.70). Conclusion Daytime dysfunction and sleep latency emerged as prominent bridge nodes linking sleep quality with mental health and occupational stress in dentists. These findings highlight specific sleep-related domains that may warrant attention in future screening and intervention studies. Clinical relevance Rather than treating poor sleep as a single construct, dental workforce well-being programmes could target daytime dysfunction and sleep latency as specific domains for screening and support. Early identification of depressive symptoms, which occupied a central position in the network, may help prevent broader deterioration of occupational functioning."
+    },
+    {
+      "paperId": "b5e3b8568525b8eb46a4684e84551a9505155676",
+      "externalIds": {
+        "DOI": "10.64278/jkamhot.2026.13.1.1",
+        "CorpusId": 288994221
+      },
+      "url": "https://www.semanticscholar.org/paper/b5e3b8568525b8eb46a4684e84551a9505155676",
+      "title": "A Systematic Review of the Effects of Light Therapy on Patients with Sleep Disorders and Depression: An Occupational Therapy Perspective",
+      "venue": "Korean Academy of Mental Health in Occupational Therapy",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.64278/jkamhot.2026.13.1.1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64278/jkamhot.2026.13.1.1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2055695999",
+          "name": "M. Nam"
+        },
+        {
+          "authorId": "2321157391",
+          "name": "Seong-Jin Kim"
+        },
+        {
+          "authorId": "115730638",
+          "name": "I. Choi"
+        },
+        {
+          "authorId": "2279152223",
+          "name": "Seonghoon Park"
+        },
+        {
+          "authorId": "2144572652",
+          "name": "Sang-hyeok Lee"
+        },
+        {
+          "authorId": "2118021745",
+          "name": "Sung-Hyun Kim"
+        },
+        {
+          "authorId": "2370241094",
+          "name": "Myoung-Ok Park"
+        }
+      ],
+      "abstract": "Objective : The purpose of this study was to identify effects, role types, dependent variables, and outcomes in a study on the effects of light therapy on depression, sleep disorders. \nMethods : studies information from February 2015 to February 2025. Electronic databases were collected using, Riss, Kiss, DBpia, Eric, Pubmed, Science Direct. The main search terms used were ‘Light Therapy’ AND ‘Depression’ AND ‘Sleep Disturbance'. \nResults : As a result of the study, light therapy showed overall positive effects on improving sleep quality and alleviating depressive symptoms in menopausal women with depression and sleep disorders, college students, adolescents, traumatic brain injury patients, Alzheimer's patients, adult intellectually disabled people, and postpartum women. \nConclusion : We have shown that light therapy can be extended to evidence-based interventions applicable in occupational therapy areas, and follow-up studies on occupational therapy-based light therapy should be conducted in Korea as well."
+    },
+    {
+      "paperId": "a19183ea699552e42d3db5e2003392bea40c3308",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsag091.1259",
+        "CorpusId": 288129321
+      },
+      "url": "https://www.semanticscholar.org/paper/a19183ea699552e42d3db5e2003392bea40c3308",
+      "title": "1260 A Large Multitask Sound AI Model for Comprehensive Sleep Analysis from Nocturnal Breathing Sounds",
+      "venue": "SLEEPJ",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsag091.1259?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsag091.1259, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2256298191",
+          "name": "Seunghun Kim"
+        },
+        {
+          "authorId": "2267134885",
+          "name": "E. Cho"
+        },
+        {
+          "authorId": "2115475969",
+          "name": "Dongheon Lee"
+        },
+        {
+          "authorId": "2985629",
+          "name": "Joonki Hong"
+        },
+        {
+          "authorId": "2292001848",
+          "name": "I. Yoon"
+        }
+      ],
+      "abstract": "\n \n \n Recent sound-based AI models have shown strong performance in predicting sleep staging, obstructive sleep apnea (OSA) events, and snore detection from nocturnal breathing sounds. Prior studies have also demonstrated that breathing sounds contain physiological signatures related to oxygen desaturation, arousals, and sleep position. However, current models typically use a shared feature extractor followed by separate task-specific classifiers, leading to rapid growth in parameters and training time as the number of tasks increases. To address this, we converted one of the existing classifiers into a multi-head classifier that outputs multiple tasks via lightweight multilayer perceptron (MLP) heads, incurring minimal additional computational cost. This study evaluates the unified model across six sleep-related tasks.\n \n \n \n The model integrates four tasks - OSA event, desaturation, arousal, and sleep position - into one shared classifier with lightweight MLP heads (sleep staging and snore detection retain their existing dedicated classifiers). The architecture processes 80 consecutive Mel-spectrogram frames representing each 30-second epoch. Training was performed using 2,973 nights of PSG data with synchronized audio, and evaluation was conducted on an independent dataset of 802 nights (age 50.5 ± 15.4; BMI 25.5 ± 3.6; AHI 21.2 ± 20.6; male:female = 530:272). All tasks, except sleep staging, were trained at the sub-epoch level but evaluated at the epoch level for comparison with previous single-task models.\n \n \n \n The unified model achieved performance comparable to single-task baselines. The three tasks maintained robust performance (sleep staging: macro F1 0.77, accuracy 80.6%; OSA: macro F1 0.78, accuracy 89.5%; snore detection: macro F1 0.89, accuracy 90.4%). The newly integrated tasks showed slight improvements relative to previously reported models: desaturation (F1 0.80, sensitivity 0.88, specificity 0.92 for desaturation-containing epochs), arousal (F1 0.67, sensitivity 0.74, specificity 0.91 for arousal-containing epochs), sleep position (F1 0.88, sensitivity 0.89, specificity 0.74 for supine epochs; overall accuracy 84.0%, macro F1 0.82).\n \n \n \n The ability to jointly infer diverse sleep events from a single multi-head classifier suggests that these tasks rely on overlapping physiological representations. This scalable architecture enables efficient multitask learning without loss of accuracy and provides a strong basis for developing a sound-based foundation model capable of comprehensive sleep analysis.\n Support (if any) \n"
+    },
+    {
+      "paperId": "d9aecdfc3cab15c8e600db12b8d11b7feb7894a2",
+      "externalIds": {
+        "DOI": "10.22251/jlcci.2025.25.3.1093",
+        "CorpusId": 276457606
+      },
+      "url": "https://www.semanticscholar.org/paper/d9aecdfc3cab15c8e600db12b8d11b7feb7894a2",
+      "title": "The effect of premenstrual syndrome, perceived stress, and psychological well-being on the sleep quality of nursing students",
+      "venue": "Korean Association For Learner-Centered Curriculum And Instruction",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.22251/jlcci.2025.25.3.1093?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.22251/jlcci.2025.25.3.1093, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2299111211",
+          "name": "M. Kang"
+        },
+        {
+          "authorId": "2299209447",
+          "name": "I. Kim"
+        }
+      ],
+      "abstract": "Objectives The purpose of this study is to analyze the correlation between premenstrual syndrome, perceived stress, psychological well-being, and sleep quality experienced by female nursing students, and ultimately to identify the factors affecting sleep quality. \nMethods The study was conducted from May 26 to August 10, 2024, with a convenience sample of 253 nursing students from online survey. Data were analyzed using the IBM SPSS 25.0 software, employing descriptive statistics, t-tests, ANOVA, Pearson’s correlation, and multiple linear regression. \nResults The results of the study showed that the sleep quality of nursing students was above average. There was a statistically significant difference in sleep quality depending on smoking habits and perceived mental health. Sleep quality had a positive correlation with premenstrual syndrome and perceived stress, while psychological well-being showed a negative correlation. Factors influencing sleep quality included perceived mental health, premenstrual syndrome, perceived stress, and psychological well-being, with an explanatory power of 48.3%. \nConclusions To improve the sleep quality of nursing students, it is essential to implement strategies that reduce premenstrual syndrome and perceived stress while enhancing psychological well-being through strengthened mental health management. Additionally, there is a need for the application of various programs and intervention studies that incorporate the factors affecting sleep quality identified in this research."
+    },
+    {
+      "paperId": "af65e2602109183091d31c9f8464a88508f4dedc",
+      "externalIds": {
+        "PubMedCentral": "11990472",
+        "DOI": "10.3390/nu17071155",
+        "CorpusId": 277406581,
+        "PubMed": "40218914"
+      },
+      "url": "https://www.semanticscholar.org/paper/af65e2602109183091d31c9f8464a88508f4dedc",
+      "title": "Mental Health, Sleep, and Caffeine Intake Among Shift Workers in a Nationally Representative Sample of the Korean Adult Population",
+      "venue": "Nutrients",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/nu17071155",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11990472, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2171887511",
+          "name": "G. Kim"
+        },
+        {
+          "authorId": "2269007271",
+          "name": "Jinmi Kim"
+        },
+        {
+          "authorId": "2108397417",
+          "name": "Jeong-Gyu Lee"
+        },
+        {
+          "authorId": "32881285",
+          "name": "Y. Tak"
+        },
+        {
+          "authorId": "2117177349",
+          "name": "Seunghun Lee"
+        },
+        {
+          "authorId": "1742191587",
+          "name": "Y. Ra"
+        },
+        {
+          "authorId": "2144513132",
+          "name": "Sangyeop Lee"
+        },
+        {
+          "authorId": "48747106",
+          "name": "Y. Cho"
+        },
+        {
+          "authorId": "2106647026",
+          "name": "E. Park"
+        },
+        {
+          "authorId": "2510233",
+          "name": "Youngin Lee"
+        },
+        {
+          "authorId": "119675215",
+          "name": "J. Choi"
+        },
+        {
+          "authorId": "4891607",
+          "name": "Y. Yi"
+        }
+      ],
+      "abstract": "Background: Caffeine, a widely consumed stimulant, affects sleep and mental health. Shift work disrupts the circadian rhythm and has been associated with various mental health issues, such as depression, anxiety, and suicidal ideation. Objective: This study explored the associations between caffeine consumption, sleep duration, and mental health outcomes, particularly suicidal ideation, among shift workers in Korea. Methods: Data from the 6th Korea National Health and Nutrition Examination Survey (2013, 2015), which comprised 4723 adults aged 19 and older, were analyzed. Participants were categorized into groups based on average daily coffee consumption and work patterns. Multiple logistic regression analyses were conducted to determine the impact of caffeine consumption and work patterns on mental health outcomes. Results: Participants worked longer hours, reported higher perceived stress levels, and slightly decreased sleep duration as daily coffee consumption increased. However, no significant differences were observed in depression or suicidal ideation across the coffee consumption groups. Logistic regression analysis indicated a trend towards higher suicidal ideation risk with increased coffee intake, particularly among those who consumed three or more cups per day (OR 5.67, 95% CI 1.82–17.59). Conclusion: This study suggests a complex relationship between caffeine consumption, work patterns, and mental health outcomes. Although caffeine intake is associated with increased work hours and stress, its impact on suicidal ideation is influenced by occupational factors."
+    },
+    {
+      "paperId": "12506cf874a70215aac8c968010340644674eb92",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2025.106533",
+        "CorpusId": 278035684,
+        "PubMed": "40315671"
+      },
+      "url": "https://www.semanticscholar.org/paper/12506cf874a70215aac8c968010340644674eb92",
+      "title": "Evaluation of sound-based sleep stage prediction in shared sleeping settings.",
+      "venue": "Sleep Medicine",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2025.106533?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2025.106533, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2116937673",
+          "name": "J. Kim"
+        },
+        {
+          "authorId": "2256298191",
+          "name": "Seunghun Kim"
+        },
+        {
+          "authorId": "2284299031",
+          "name": "E. Cho"
+        },
+        {
+          "authorId": "2357117726",
+          "name": "Hankyeol Kyung"
+        },
+        {
+          "authorId": "2108418499",
+          "name": "S. Park"
+        },
+        {
+          "authorId": "2985629",
+          "name": "Joonki Hong"
+        },
+        {
+          "authorId": "2115475969",
+          "name": "Dongheon Lee"
+        },
+        {
+          "authorId": "2287880487",
+          "name": "Jayoung Oh"
+        },
+        {
+          "authorId": "2243589701",
+          "name": "In-Young Yoon"
+        }
+      ],
+      "abstract": "BACKGROUND/OBJECTIVE\nSound-based AI models for sleep staging face challenges in shared sleeping environments due to acoustic interference from bed partners. This study aimed to evaluate the performance of a sound-based model in two-person polysomnography (PSG) scenarios, with independently recorded sound data for each participant.\n\n\nMETHODS\nEighty-eight participants (37 males, 51 females) were recruited, including 74 from mixed-gender pairs and 14 from all-female pairs. Bed partners underwent simultaneous PSG in a shared room, with sound recorded separately for each participant using MEMS microphones placed 1.2 m from the bed, oriented toward the closest participant. Sleep staging was classified into 4-stage (wake, REM, light NREM, deep NREM), 3-stage (wake, REM, NREM), and 2-stage (wake, sleep) categories. Macro F1 scores were used to evaluate the model's performance.\n\n\nRESULTS\nThe model achieved mean macro F1 scores of 0.590, 0.665, and 0.741 and Cohen's kappa of 0.470, 0.525, and 0.499 for 4-stage, 3-stage, and 2-stage classifications, respectively, across subjects. Performance for 4-stage classification varied by group composition, with macro F1 score and Cohen's kappa of 0.585 and 0.458 for mixed-gender pairs and 0.616 and 0.529 for all-female pairs. Subgroup analyses revealed higher macro F1 scores in males (0.683) compared to females (0.523) and in individuals with higher BMI (0.674), higher AHI (0.659), and higher sleep efficiency (0.641).\n\n\nCONCLUSION\nThis study demonstrates the ability of a sound-based model to predict sleep stages effectively in shared sleeping environments, overcoming the interference challenges from bed partners. Future research will aim to refine the model for broader demographic applicability."
+    },
+    {
+      "paperId": "e026303911602df677c788170aa1c59aaafade50",
+      "externalIds": {
+        "PubMedCentral": "12342256",
+        "DOI": "10.1371/journal.pone.0326859",
+        "CorpusId": 280637033,
+        "PubMed": "40794701"
+      },
+      "url": "https://www.semanticscholar.org/paper/e026303911602df677c788170aa1c59aaafade50",
+      "title": "Fermented rice germ extract with high concentration of gamma-aminobutyric acid enhances pentobarbital-induced sleep via GABAergic system in rats",
+      "venue": "PLoS ONE",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12342256, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4538407",
+          "name": "Minsook Ye"
+        },
+        {
+          "authorId": "2320607509",
+          "name": "Woojin Jeong"
+        },
+        {
+          "authorId": "2265621812",
+          "name": "H. Yu"
+        },
+        {
+          "authorId": "1582052423",
+          "name": "K. Rheu"
+        },
+        {
+          "authorId": "2265172009",
+          "name": "Bae-Jin Lee"
+        },
+        {
+          "authorId": "32573351",
+          "name": "In-Sup Shim"
+        }
+      ],
+      "abstract": "In modern societies, insomnia stands out as a widespread health concern. Gamma-aminobutyric acid (GABA), an inhibitory neurotransmitter, can exert hypnotic effects. However, despite various clinical trials conducted, scientific evidence regarding the impact of ingested GABA on sleep remains unclear. Therefore, in this study, we investigated the sedative effects of fermented rice germ (RG30) extract with a high GABA concentration through electroencephalography (EEG) analysis in a pentobarbital-induced sleep animal model. The exploration into the neural basis of these positive effects involved evaluating orexin, GABAA receptor, and serotonin (5-HT) immunoreactivity in the brain using immunohistochemical methods. Furthermore, we conducted a binding assay for GABAA receptors and 5-HT2C receptors, as these are considered pivotal targets in the mechanism of action for sleep aids. In the binding assay, RG30 displayed binding affinity to the GABAA receptor (IC50 value of 5.911 µg/mL) and 5-HT2C receptor (IC50 value of 56.89 µg/mL). Administration of RG30 increased NREM sleep time and reduced wake time in a pentobarbital-induced sleep model. Low-dose RG30 (RG30_L; 40 mg/kg) induced significant alterations in EEG-defined sleep architecture, whereas high-dose RG30 (RG30_H; 90 mg/kg) predominantly modulated orexin expression in the lateral hypothalamus and GABAA receptor levels in the ventrolateral preoptic nucleus. No significant changes were observed in 5-HT expression within the dorsal raphe nucleus. In conclusion, RG30 increased NREM sleep and significantly improved sleep behavior due to its action on the GABAA receptors. The collective findings suggest that RG30 could be considered as a novel sleep-enhancing agent in pharmaceutical and food industries."
+    },
+    {
+      "paperId": "c02ab7a2661fa70d3b3c12aab727b48da2ba455a",
+      "externalIds": {
+        "DOI": "10.1016/j.biopha.2025.118766",
+        "CorpusId": 282991046,
+        "PubMed": "41223765"
+      },
+      "url": "https://www.semanticscholar.org/paper/c02ab7a2661fa70d3b3c12aab727b48da2ba455a",
+      "title": "Evaluation of antidepressant and sleep-promoting effects of cordycepin in a menopause-like stress model.",
+      "venue": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.biopha.2025.118766",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.biopha.2025.118766?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.biopha.2025.118766, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4538407",
+          "name": "Minsook Ye"
+        },
+        {
+          "authorId": "2107980255",
+          "name": "Su-Chan Lee"
+        },
+        {
+          "authorId": "2392368084",
+          "name": "Si-Kwan Kim"
+        },
+        {
+          "authorId": "32573351",
+          "name": "In-Sup Shim"
+        }
+      ],
+      "abstract": "The menopausal transition is often accompanied by mood disturbances and sleep disorders, exacerbated by estrogen deficiency and chronic stress. Although hormone replacement therapy (HRT) is effective, its use is limited by safety concerns, underscoring the need for non-hormonal alternatives. Cordycepin (3'-deoxyadenosine), a bioactive compound derived from Cordyceps militaris, has demonstrated neuromodulatory and anti-inflammatory properties in various central nervous system models. However, its combined effects on mood and sleep disturbances under menopause-related conditions have not been fully elucidated. In this study, we evaluated the therapeutic potential of cordycepin in ovariectomized rats subjected to chronic immobilization stress (OVX+IMO), a validated preclinical model of menopausal mood and sleep dysregulation. Cordycepin treatment (intraperitoneally) significantly alleviated depressive- and anxiety-like behaviors in multiple behavioral paradigms, including the forced swim test, tail suspension test, and elevated plus maze, comparable to the effects of estradiol. At the neuroendocrine level, cordycepin decreased serum corticosterone and suppressed corticotropin-releasing factor (CRF) and c-fos expression in the hypothalamic paraventricular nucleus, indicating attenuation of hypothalamic-pituitary-adrenal (HPA) axis hyperactivity. Additionally, cordycepin elevated hippocampal and cortical levels of brain-derived neurotrophic factor (BDNF) and serotonin, restored the glutamate/GABA ratio, and increased melatonin concentrations in the hypothalamus. Electrophysiological analyses demonstrated reduced sleep latency and prolonged non-rapid eye movement (NREM) sleep duration, indicating improved sleep initiation and maintenance. These findings suggest that cordycepin exerts antidepressant and sleep-enhancing effects through multi-target modulation of neuroendocrine signaling, neurotransmitter systems, and circadian regulation. Given its efficacy, natural origin, and favorable safety profile, cordycepin emerges as a promising non-hormonal candidate for the management of menopausal mood and sleep disorders."
+    },
+    {
+      "paperId": "6da51d84085e275c49ec9da456514b826e92705c",
+      "externalIds": {
+        "DOI": "10.1007/s13273-025-00556-9",
+        "CorpusId": 280304752
+      },
+      "url": "https://www.semanticscholar.org/paper/6da51d84085e275c49ec9da456514b826e92705c",
+      "title": "Aging and the effects of chronic intermittent hypoxia caused by obstructive sleep apnea",
+      "venue": "Molecular & Cellular Toxicology",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s13273-025-00556-9?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s13273-025-00556-9, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "80316139",
+          "name": "Heayon Lee"
+        },
+        {
+          "authorId": "2368384917",
+          "name": "Bora Lee"
+        },
+        {
+          "authorId": "2368350208",
+          "name": "Sei Won Kim"
+        },
+        {
+          "authorId": "6881532",
+          "name": "C. Yeo"
+        },
+        {
+          "authorId": "4555710",
+          "name": "I. Kim"
+        },
+        {
+          "authorId": "2323731511",
+          "name": "Sang Haak Lee"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "9cce13582d583b219b3b5a01326f014f70539195",
+      "externalIds": {
+        "DBLP": "journals/cbm/LeePYPCKJ25",
+        "DOI": "10.1016/j.compbiomed.2025.110452",
+        "CorpusId": 279445982,
+        "PubMed": "40532503"
+      },
+      "url": "https://www.semanticscholar.org/paper/9cce13582d583b219b3b5a01326f014f70539195",
+      "title": "Patch-type wearable electrocardiography and impedance pneumography for sleep staging: A multi-modal deep learning approach",
+      "venue": "Comput. Biol. Medicine",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.compbiomed.2025.110452",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.compbiomed.2025.110452?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.compbiomed.2025.110452, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2289437747",
+          "name": "Sunghan Lee"
+        },
+        {
+          "authorId": "2352091440",
+          "name": "Ung Park"
+        },
+        {
+          "authorId": "2289865916",
+          "name": "Suyeon Yun"
+        },
+        {
+          "authorId": "2352425401",
+          "name": "Goeun Park"
+        },
+        {
+          "authorId": "2326654900",
+          "name": "Sung Pil Cho"
+        },
+        {
+          "authorId": "2149235520",
+          "name": "K. Kim"
+        },
+        {
+          "authorId": "2289240961",
+          "name": "In cheol Jeong"
+        }
+      ],
+      "abstract": "Sleep staging is critical for investigating sleep quality and detecting disorders. Polysomnography (PSG) remains the gold standard, but is costly and impractical for routine monitoring. This study evaluates the feasibility of a patch-type wearable device using single-lead electrocardiography (ECG) and impedance pneumography (IPG) for multi-stage sleep classification. Data from 92 patients were collected using a wearable ECG-IPG device. Preprocessing entailed bandpass filtering, segmentation into 5-min windows with 30-s overlaps, and feature extraction in time, frequency, and nonlinear domains. Three classification methods were tested and validated using 5-fold patient-independent cross-validation across 2-class (Wake, Sleep), 3-class (Wake, rapid eye movement (REM), and Non-REM), and 4-class (Wake, REM, N1, and N2) tasks. The combined approach achieved the highest accuracy in the 2-class task (accuracy: 83.6%, area under the receiver operating characteristic (AUROC): 86.0%). For 3- and 4-class tasks, feature-based methods outperformed the others, with the RCNN achieving the best F1-score (0.618 in 3-class and 0.552 in 4-class). Modality analysis revealed that IPG + R-R interval (RRI) + motion sensors provided the highest performance, with IPG and RRI identified as the most effective in sleep staging. Feature reduction using maximum relevance and minimum redundancy (mRMR) identified the top 15 features that retained 99% of the performance of the full feature set while reducing the training time by 73%. These findings highlight the feasibility of a portable ECG-IPG system for sleep staging, balancing accuracy and computational efficiency. The proposed approach has the potential to enable continuous sleep monitoring and personalized health management in real-world applications."
+    },
+    {
+      "paperId": "9a43d2e36df7584196e76a0b028ae5bb52e93bec",
+      "externalIds": {
+        "DOI": "10.1177/01939459251323675",
+        "CorpusId": 277070997,
+        "PubMed": "40098380"
+      },
+      "url": "https://www.semanticscholar.org/paper/9a43d2e36df7584196e76a0b028ae5bb52e93bec",
+      "title": "Sleep Quality of Persons with Dementia and Family Caregivers in Korean Americans: Wearable Technology to Study the Dyadic Association",
+      "venue": "Western Journal of Nursing Research",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1177/01939459251323675?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/01939459251323675, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "82260919",
+          "name": "Eun-Kyung Ju"
+        },
+        {
+          "authorId": "2268202716",
+          "name": "Yuqing Guo"
+        },
+        {
+          "authorId": "2268188437",
+          "name": "Jung In Park"
+        },
+        {
+          "authorId": "2268025418",
+          "name": "Julie Kim"
+        },
+        {
+          "authorId": "2267951014",
+          "name": "A. Qu"
+        },
+        {
+          "authorId": "2267504064",
+          "name": "Jung‐Ah Lee"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "fc1565e6e4c85f9c161036c0857acd4003bc838a",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0622",
+        "CorpusId": 278756363
+      },
+      "url": "https://www.semanticscholar.org/paper/fc1565e6e4c85f9c161036c0857acd4003bc838a",
+      "title": "0622 Analysis of Polysomnography in Patients with Sleep Disorders Accompanied by Tinnitus",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0622?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0622, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5064785",
+          "name": "W. Bae"
+        },
+        {
+          "authorId": "2386231687",
+          "name": "Dong Won Jung"
+        },
+        {
+          "authorId": "1390720511",
+          "name": "I. Park"
+        },
+        {
+          "authorId": "2354593709",
+          "name": "Y. Youn"
+        }
+      ],
+      "abstract": "\n \n \n Tinnitus is a symptom characterized by the perception of sound generated within the body, specifically by the spontaneous depolarization of auditory nerve fibers, without any external auditory stimulus. Although the exact etiology of tinnitus remains unknown, there is a strong electrophysiological hypothesis suggesting that functional changes in the limbic system’s amygdala and the cerebral cortex, as well as the subcortical structures, lead to tinnitus through autonomic nervous system dysfunction. Sleep disorders are also known to be influenced by and to influence the complex interactions among the ascending reticular system, central arousal system, cognitive system, and emotional regulating system in the central nervous system. Therefore, based on these theoretical foundations, we aimed to analyze the relationship between tinnitus and sleep by examining the association between tinnitus and polysomnography (PSG) results using the Tinnitus Handicap Inventory (THI).\n \n \n \n A retrospective analysis was conducted on patients who visited the clinic and underwent both PSG and the Korean version of the THI. The clinical characteristics, PSG results, and scores from psychiatric symptom questionnaires were compared between the group with tinnitus and the group without tinnitus. Additionally, the PSG results and questionnaire scores were compared based on the THI scores.\n \n \n \n There were statistically significant differences in the Periodic Limb Movement (PLM) index, sleep latency, and lowest SpO2 between the group with tinnitus and the group without tinnitus. The tinnitus group exhibited lower PLM index, higher sleep latency, and higher lowest SpO2 compared to the group without tinnitus. When analyzing the PSG results based on THI scores, a significant negative correlation was found between THI and REM latency. There were no significant differences in the average scores of questionnaires between the group with tinnitus and the group without tinnitus. Multiple regression analysis also did not reveal any significant correlations between THI scores and questionnaire scores.\n \n \n \n Tinnitus, sleep disorders, and depression are associated with autonomic nervous system overactivity through the limbic system. Studies that examine the relationship between tinnitus, sleep disorders, depression, anxiety, and stress using PSG and questionnaires can provide a better understanding of sleep patterns, autonomic nervous system function, and electrophysiological models.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "240faf1d52fe9c481d82a89c01410e7df511b521",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.1402",
+        "CorpusId": 278765023
+      },
+      "url": "https://www.semanticscholar.org/paper/240faf1d52fe9c481d82a89c01410e7df511b521",
+      "title": "1402 Exploring the Potential of Wake Probability in Hypnodensity from a Sound-Based AI Model as a Measure of Sleep Depth",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.1402?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.1402, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2256298191",
+          "name": "Seunghun Kim"
+        },
+        {
+          "authorId": "2238921789",
+          "name": "Sungwoo Park"
+        },
+        {
+          "authorId": "2291518466",
+          "name": "Namhee Kim"
+        },
+        {
+          "authorId": "2264395866",
+          "name": "Jiwon Lee"
+        },
+        {
+          "authorId": "2985629",
+          "name": "Joonki Hong"
+        },
+        {
+          "authorId": "2115475969",
+          "name": "Dongheon Lee"
+        },
+        {
+          "authorId": "2116937673",
+          "name": "J. Kim"
+        },
+        {
+          "authorId": "2362390973",
+          "name": "Ki-Young Jung"
+        },
+        {
+          "authorId": "2243589701",
+          "name": "In-Young Yoon"
+        }
+      ],
+      "abstract": "\n \n \n Conventional sleep staging classifies every 30-second epoch into discrete states, often missing ambiguous states. Hypnodensity, which provides probabilistic estimates of all stages, has shown potential in addressing these ambiguities. In this study, we focused on the wake probability (WP) component of hypnodensity to evaluate its potential as a continuous index of sleep depth, analogous to the Odds Ratio Product (ORP) derived from EEG signals. By integrating WP into a sound-based AI model that uses only audio recordings, we aimed to offer a novel metric for assessing sleep depth without polysomnography (PSG).\n \n \n \n A sound-based AI model was trained on a dataset including 2,973 nights of sleep recordings collected from 2013 to 2024, using PSG or smartphone microphones. Each recording was annotated with PSG for sleep stages. WP was derived by applying a softmax function to the wake-class logit for each 30-second epoch, generating values between 0 and 1. This study evaluated whether WP reflects sleep depth by analyzing its correlation with sleep stages, arousability (likelihood of arousal or awakening), and transitions within individual sleep cycles.\n \n \n \n On a separate test set of 1,492 nights, WP effectively predicted sleep/wake states, with a WP < 0.1 and > 0.9 achieving 97% and 93% accuracy for sleep and wake states, respectively. WP values progressively decrease with deeper sleep stages, reflecting increased sleep depth, as mean WP values (±SD) for PSG-defined stages were: W (0.72 ± 0.16), N1 (0.18 ± 0.13), N2 (0.04 ± 0.05), N3 (0.01 ± 0.03), and REM (0.03 ± 0.06). Binning epochs by WP into 20 intervals revealed a strong linear correlation (r = 0.96) with arousability in the subsequent 30-second epoch. In individual sessions, higher WP values consistently matched wake epochs, while small peaks or nonzero WP values frequently coincided with arousals.\n \n \n \n WP derived from hypnodensity in a sound-based AI model could offer insights into sleep depth and transitions, complementing conventional sleep staging. Future work will seek additional evidence to support the use of WP as a continuous measure of sleep depth.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "63769ca1b37d96dedecb2892087db79a63ac58af",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0973",
+        "CorpusId": 278751809
+      },
+      "url": "https://www.semanticscholar.org/paper/63769ca1b37d96dedecb2892087db79a63ac58af",
+      "title": "0973 Common Inadequate Sleep Health Behaviors and Its Impact on Insomnia Symptoms in a Non-Clinical Population in Korea",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0973?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0973, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297725139",
+          "name": "Jee Hyun Kim"
+        },
+        {
+          "authorId": "2243589701",
+          "name": "In-Young Yoon"
+        },
+        {
+          "authorId": "2287133480",
+          "name": "Dongyeop Kim"
+        },
+        {
+          "authorId": "2297853454",
+          "name": "Hye Ah Lee"
+        }
+      ],
+      "abstract": "\n \n \n This study examined the sleep hygiene status and inadequate sleep health behaviors in a non-clinical population in Korea, using the Korean Sleep Hygiene Practice Scale (SHPS-K) to investigate common inadequate sleep behaviors in different age groups and sex.\n \n \n \n We recruited non-clinical adults (aged 18-65) without a history of neurologic, psychiatric, or medical disorders and diagnosed sleep disorders. An online survey was done using the SHPS-K, Pittsburgh Sleep Quality Index (PSQI-K), Insomnia Severity Index (ISI-K), and Epworth Sleepiness Scale (KESS). 484 participants were enrolled (242 women, mean age of 43.8 □ 12.77 years). The detailed answers for each item of the SHPS-K were analyzed between age groups, sex, and groups with and without insomnia symptoms (ISIS-K □ 15). Using receiver operating characteristic analysis in different age groups, we also determined the cutoff values that could identify poor sleepers with insomnia symptoms (PSQI-K > 5 and ISI-K □ 15).\n \n \n \n The average total SHPS-K score was 71.2, with no sex difference. Mean ISI-K, PSQI-K, and KESS were not different between sex and age groups. The older participants had lower SHPS-K than the younger groups, with a significant trend for ages (p < 0.001). This trend was significant in both men and women. The most frequent inadequate sleep hygiene behaviors were doing irrelevant activities in bed, lack of regular exercise, sleep-in on weekends, staying in bed after waking up in the morning, lack of exposure to light during the day, and inconsistent bedtime. Men had poorer eating and drinking behaviors and complained of noise or light more than women. Women had poorer sleep scheduling and timing behaviors than men. Young adults with insomnia symptoms showed the highest SHPS-K than other age groups with insomnia (p < 0.001).\n \n \n \n This study showed that sleep-disturbing behaviors were different between age groups and sex. The group with insomnia symptoms showed worse sleep hygiene practices. Furthermore, young adults had significantly worse sleep hygiene than middle-aged or older adults. Sleep hygiene education could contribute differentially to improving sleep quality in non-clinical populations.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "8386471d368d869be293ae0bc256b64e743048db",
+      "externalIds": {
+        "DOI": "10.1177/08982643251379971",
+        "CorpusId": 281242750,
+        "PubMed": "40924598"
+      },
+      "url": "https://www.semanticscholar.org/paper/8386471d368d869be293ae0bc256b64e743048db",
+      "title": "The Role of Perceived Sleep Quality in Mental and Cognitive Health: A Study of Older Korean Americans Living in Subsidized Senior Housing.",
+      "venue": "Journal of Aging and Health",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1177/08982643251379971?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/08982643251379971, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2359594508",
+          "name": "Yuri Jang"
+        },
+        {
+          "authorId": "2243359562",
+          "name": "Juyoung Park"
+        },
+        {
+          "authorId": "2303309661",
+          "name": "Seo-Yun Choi"
+        },
+        {
+          "authorId": "3560927",
+          "name": "N. Park"
+        },
+        {
+          "authorId": "4232219",
+          "name": "D. Chiriboga"
+        },
+        {
+          "authorId": "2256950617",
+          "name": "Soondool Chung"
+        },
+        {
+          "authorId": "2268188437",
+          "name": "Jung In Park"
+        },
+        {
+          "authorId": "2275276879",
+          "name": "Sunmin Lee"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "6b220236bca24442b76e0d5a4ad88b4a7698add4",
+      "externalIds": {
+        "DOI": "10.1080/1091367X.2025.2460758",
+        "CorpusId": 276170481
+      },
+      "url": "https://www.semanticscholar.org/paper/6b220236bca24442b76e0d5a4ad88b4a7698add4",
+      "title": "How Does the Weekend Catch-Up Sleep Ratio Affect the Health and Lifestyle of Korean Adults? An Age- and Sex-Matched Study",
+      "venue": "Measurement in Physical Education and Exercise Science",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/1091367X.2025.2460758?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/1091367X.2025.2460758, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2237751104",
+          "name": "In-Whi Hwang"
+        },
+        {
+          "authorId": "2237753984",
+          "name": "Soo‐Ji Hwang"
+        },
+        {
+          "authorId": "2237849890",
+          "name": "Jun-Hao Shen"
+        },
+        {
+          "authorId": "2237752834",
+          "name": "Jisu Kim"
+        },
+        {
+          "authorId": "2237807881",
+          "name": "Jung-Min Lee"
+        }
+      ],
+      "abstract": "ABSTRACT This study examined the impact of Catch-Up Sleep Ratio (CSR) on health outcomes in Korean adults. Adjusted for age and gender, 2,484 participants were categorized into three groups: Weekday (CSR <1.0), Average (1.0 ≤ CSR < 1.5), and Weekend (1.5 ≤ CSR). Weekday participants were less likely to meet WHO’s moderate physical activity guidelines (OR = 0.79, p < .05), walk 4–6 days per week (OR = 0.70, p < .05), or engage in prolonged sedentary behavior (OR = 0.60, p < .001). The Weekend group exhibited higher odds of obesity (OR = 1.96, p < .01), increased stress (OR = 1.78, p < .001), and perceived themselves as more obese (OR = 1.32, p < .01) while showing lower rates of low HDL cholesterol (OR = 0.66, p < .01). These findings suggest that CSR could significantly impact health behaviors and outcomes."
+    },
+    {
+      "paperId": "daba4a31d7cfa38fcd80dc0f067aaee01b32bec4",
+      "externalIds": {
+        "PubMedCentral": "11843135",
+        "DOI": "10.7150/ijms.103639",
+        "CorpusId": 276040363,
+        "PubMed": "39991759"
+      },
+      "url": "https://www.semanticscholar.org/paper/daba4a31d7cfa38fcd80dc0f067aaee01b32bec4",
+      "title": "Long sleep duration and good sleep quality reduced incident peptic ulcer disease in a large Taiwanese population follow-up study",
+      "venue": "International Journal of Medical Sciences",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11843135, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2197051208",
+          "name": "Yi-Hsiang Huang"
+        },
+        {
+          "authorId": "2343265413",
+          "name": "Hsin-Yi Huang"
+        },
+        {
+          "authorId": "152353640",
+          "name": "Jia-In Lee"
+        },
+        {
+          "authorId": "47353762",
+          "name": "Ting-Yi Wu"
+        },
+        {
+          "authorId": "2276752966",
+          "name": "Shu-Pin Huang"
+        },
+        {
+          "authorId": "33889493",
+          "name": "J. Geng"
+        },
+        {
+          "authorId": "145067131",
+          "name": "C. Kuo"
+        },
+        {
+          "authorId": "2161227093",
+          "name": "Szu-Chia Chen"
+        }
+      ],
+      "abstract": "Poor sleep has been associated with diseases including cardiovascular, obesity and mental disorders. However, there is limited information on the correlation between sleep duration and quality with peptic ulcer disease (PUD). This study aimed to investigate the impact of sleep duration and quality on the incidence of PUD in a large Taiwanese population follow-up study. The study participants were recruited from the Taiwan Biobank. Sleep duration, sleep quality, and the presence of PUD were assessed using self-reported questionnaires. The participants were categorized into three groups based on sleep duration: < 7 hours/day, 7 hours/day, and > 7 hours/day. Sleep quality was divided into five levels: very poor, poor, normal, good and very good. The association between sleep duration and quality with incident PUD was analyzed using multiple logistic regression after controlling for confounders. We collected data from 22,561 participants (excluding those with pre-existing PUD, missing basic information, or lacking sleep data). Over an average follow-up period of 43 months, multivariable analysis showed that sleep duration > 7 hours/day (vs. < 7 hours/day; hazard ratio [HR], 0.771; 95% confidence interval [CI], 0.668 to 0.890; p < 0.001) was significantly associated with incident PUD. Further, sleep duration (per 1 hour/day; HR, 0.933; 95% CI, 0.889 to 0.979; p = 0.005) was also significantly associated with incident PUD. Those with poor sleep quality (vs. very poor quality; HR, 0.649; 95% CI, 0.491 to 0.858; p = 0.002), normal sleep quality (vs. very poor quality; HR, 0.611; 95% CI, 0.469 to 0.795; p < 0.001), good sleep quality (vs. very poor quality; HR, 0.507; 95% CI, 0.382 to 0.671; p < 0.001), and very good sleep quality (vs. very poor quality; HR, 0.493; 95% CI, 0.367 to 0.662; p < 0.001) were significantly associated with incident PUD. We found that longer sleep duration and better sleep quality were independent protective factors for PUD. Future research should explore the underlying mechanisms and verify whether improving sleep can directly reduce the incidence of PUD."
+    },
+    {
+      "paperId": "eec09b1b8b965f6601cac986945e6cef583eddb4",
+      "externalIds": {
+        "DOI": "10.17265/2159-5542/2025.01.001",
+        "CorpusId": 275860114
+      },
+      "url": "https://www.semanticscholar.org/paper/eec09b1b8b965f6601cac986945e6cef583eddb4",
+      "title": "Impact of Sleep Quality on Academic Performance in Children With and Without Learning Difficulties",
+      "venue": "Journal of psychological researches",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.davidpublisher.com/Public/uploads/Contribute/6791a02bf0189.pdf",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.17265/2159-5542/2025.01.001?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.17265/2159-5542/2025.01.001, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2343652907",
+          "name": "Fabrício Bruno"
+        },
+        {
+          "authorId": "2343650402",
+          "name": "Alfred Cardoso"
+        },
+        {
+          "authorId": "2343648984",
+          "name": "Aliny Carvalho Sholl-Franco"
+        },
+        {
+          "authorId": "144752437",
+          "name": "J. Demattê"
+        },
+        {
+          "authorId": "2343650936",
+          "name": "Vítor Galo"
+        },
+        {
+          "authorId": "2343683655",
+          "name": "Esteves"
+        },
+        {
+          "authorId": "2343648972",
+          "name": "L. Pinhel"
+        },
+        {
+          "authorId": "2342833092",
+          "name": "Washington Adolfo Battista"
+        },
+        {
+          "authorId": "2225308466",
+          "name": "F. Bonone"
+        },
+        {
+          "authorId": "2324498195",
+          "name": "Vitor da"
+        },
+        {
+          "authorId": "2343651025",
+          "name": "Silva Loureiro"
+        },
+        {
+          "authorId": "2068843482",
+          "name": "Cardoso"
+        },
+        {
+          "authorId": "2075901914",
+          "name": "In"
+        }
+      ],
+      "abstract": " This study investigated the differences between children with and without learning difficulties (LD) regarding academic performance (AP) and sleep quality (SLQ). A total of 1,501 children were evaluated, including 810 with LD and 691 without LD. The results indicated that children with LD scored significantly lower in AP and had poorer sleep quality, with greater variability in SLQ patterns. Correlation analysis revealed a significant negative association between sleep quality and academic performance (r = -0.646; p < 0.01), indicating that poorer sleep quality is related to lower academic performance. These findings underscore the importance of interventions focused on promoting sleep hygiene and consistent routines to mitigate the negative impacts of learning difficulties. Study limitations include the absence of mediating variables, such as screen time and mental health, suggesting the need for future research exploring longitudinal interventions and associated factors"
+    },
+    {
+      "paperId": "e9e3f3e3d78177b37073590e8e892b68f9096d4c",
+      "externalIds": {
+        "PubMedCentral": "12274434",
+        "DOI": "10.1038/s41598-025-99987-6",
+        "CorpusId": 280132657,
+        "PubMed": "40681769"
+      },
+      "url": "https://www.semanticscholar.org/paper/e9e3f3e3d78177b37073590e8e892b68f9096d4c",
+      "title": "Oxygen regulated protein 150 can be considered as a severity indicator in obstructive sleep apnea",
+      "venue": "Scientific Reports",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12274434, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "12369234",
+          "name": "Ö. Otlu"
+        },
+        {
+          "authorId": "2293542729",
+          "name": "Mehmet Erdem"
+        },
+        {
+          "authorId": "2075722966",
+          "name": "Tuğba Raika Kıran"
+        },
+        {
+          "authorId": "2278720809",
+          "name": "Feyza Inceoğlu"
+        },
+        {
+          "authorId": "1658837462",
+          "name": "A. Geçkil"
+        },
+        {
+          "authorId": "2144313881",
+          "name": "N. Berber"
+        },
+        {
+          "authorId": "9841818",
+          "name": "E. İn"
+        }
+      ],
+      "abstract": "Oxygen-regulated protein 150 (ORP150) is a chaperone found in the endoplasmic reticulum (ER) induced by ER stress, oxidative stress, glutamate toxicity, ischemia, and hypoxia. Increased expression of ORP150 protects the cells by stopping ER stress, maintaining calcium balance, and delaying apoptosis. In this study, we aim to investigate serum ORP150 amount in patients with different severity levels of obstructive sleep apnea (OSA). Forty-nine patients (25 of severe and 24 of mild-moderate), and 23 healthy controls were included in the study. Routine biochemical measurements and serum ORP150 measurements of all groups and sleep quality measurements of OSA groups were obtained. ELISA was used to measure ORP150 levels in serum samples. In addition, ROC analysis was performed to determine the diagnostic power of the ORP150 parameter. There are significant differences between all three groups in terms of ORP150 values (severe OSA: 8.03 ± 0.4 ng/mL; mild-moderate OSA: 5.54 ± 0.47 ng/mL; control: 4.41 ± 0.25 ng/mL, p < 0.017). The highest ORP150 level belongs to the severe OSA group and there is a direct correlation between the severity of the disease and ORP150 levels. ORP150 value is a distinguishing parameter for OSA and the cut-off value of ORP150 was observed as 7.14 ng/mL. We concluded that serum ORP150 levels can be a differential diagnostic parameter in OSA patients and that disease severity can be determined by serum ORP150 measurement."
+    },
+    {
+      "paperId": "efe67a3e60b4fee2103627db4ee77791e38a631c",
+      "externalIds": {
+        "DOI": "10.1093/occmed/kqaf035",
+        "CorpusId": 279320782,
+        "PubMed": "40512114"
+      },
+      "url": "https://www.semanticscholar.org/paper/efe67a3e60b4fee2103627db4ee77791e38a631c",
+      "title": "A qualitative study of shift-work nurses' sleep adaptation process.",
+      "venue": "Occupational Medicine",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1093/occmed/kqaf035?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/occmed/kqaf035, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2115235044",
+          "name": "Hyunju Yang"
+        },
+        {
+          "authorId": "2223520530",
+          "name": "Saeryun Kim"
+        },
+        {
+          "authorId": "2243323832",
+          "name": "Suhyun Kim"
+        },
+        {
+          "authorId": "143918161",
+          "name": "H. Chung"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "ca2bd01c9faf1ada5e252af927b1011f3337fa37",
+      "externalIds": {
+        "DOI": "10.3390/app152413231",
+        "CorpusId": 284090509
+      },
+      "url": "https://www.semanticscholar.org/paper/ca2bd01c9faf1ada5e252af927b1011f3337fa37",
+      "title": "Evaluation of Data Augmentation Under Label Scarcity for ECG-Based Detection of Sleep Apnea",
+      "venue": "Applied Sciences",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2076-3417/15/24/13231/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app152413231?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app152413231, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2320362773",
+          "name": "Semin Ryu"
+        },
+        {
+          "authorId": "2315309975",
+          "name": "Jeonghwan Koh"
+        },
+        {
+          "authorId": "2289240961",
+          "name": "In cheol Jeong"
+        }
+      ],
+      "abstract": "Supervised ECG-based sleep apnea detection typically depends on large and fully annotated datasets, yet the rarity and cost of labeling apneic events often lead to substantial annotation scarcity in practice. This study provides a controlled evaluation of how such scarcity degrades classification performance and, as a key contribution, investigates whether a constrained, morphology-preserving ECG augmentation framework can compensate for reduced apnea-label availability. Using the PhysioNet Apnea–ECG dataset, we simulated seven levels of label retention (r=5–100%) and trained a lightweight CNN–BiLSTM model under both subject-dependent (SD) and subject-independent (SI) five-fold protocols. Offline augmentation was applied only to apnea segments and consisted of simple, physiologically motivated time-domain perturbations designed to retain realistic cardiac and respiratory dynamics. Across both evaluation settings, augmentation substantially mitigated performance loss in the low- and mid-scarcity regimes. Under SI evaluation, the mean F1-score improved from 0.57 to 0.72 at r=5% and from 0.63 to 0.76 at r=10%, with scores at r=10–40% (0.75–0.77) approaching the full-label baseline of 0.79. Temporal and spectral analyses confirmed preservation of P–QRS–T morphology and respiratory modulation without distortion. These results demonstrate that simple and interpretable ECG augmentations provide an effective and reproducible baseline for data-efficient apnea screening and offer a practical path toward scalable annotation and robust single-lead deployment under label scarcity."
+    },
+    {
+      "paperId": "04c1522ebbcf1831dd428cff8df469887159ea25",
+      "externalIds": {
+        "PubMedCentral": "9845206",
+        "DOI": "10.1038/s41598-023-28142-w",
+        "CorpusId": 255967772,
+        "PubMed": "36650276"
+      },
+      "url": "https://www.semanticscholar.org/paper/04c1522ebbcf1831dd428cff8df469887159ea25",
+      "title": "Association between weekend catch-up sleep and dyslipidemia among Korean workers",
+      "venue": "Scientific Reports",
+      "year": 2023,
+      "citationCount": 24,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-023-28142-w.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9845206, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2201628768",
+          "name": "Y. Jang"
+        },
+        {
+          "authorId": "2155427298",
+          "name": "Y. Park"
+        },
+        {
+          "authorId": "2042792215",
+          "name": "Kyungduk Hurh"
+        },
+        {
+          "authorId": "2150922653",
+          "name": "E. Park"
+        },
+        {
+          "authorId": "34713943",
+          "name": "S. Jang"
+        }
+      ],
+      "abstract": "Within competitive sociocultural environments, most Korean workers are likely to shorten their sleep duration during the weekday. Short sleep duration is associated with dyslipidemia; however, studies on the correlation between various sleep patterns and dyslipidemia are still lacking. In hence this study aimed to investigate the association between weekend catch-up sleep (CUS) and dyslipidemia among South Korean workers. Our study used data from the 8th Korea National Health and Nutrition Examination Survey (KNHANES). The analysis covered 4,085 participants, excluding those who were diagnosed with dyslipidemia and not currently participating in economic activities. Weekend CUS was calculated as the absolute difference between self-reported weekday and weekend sleep duration. Dyslipidemia was diagnosed based on the levels of total cholesterol, high-density lipoprotein (HDL) cholesterol, low-density lipoprotein (LDL) cholesterol, and triglycerides in blood samples collected after 9–12 h of fasting. After adjusting for sociodemographic, economic, health-related, and sleep-related factors, a negative association of weekend CUS with dyslipidemia was observed in male workers (odds ratio: 0.76, 95% confidence interval: 0.61–0.95). Further, workers with total sleep duration of 7–8 h, night workers, and white-collar workers with CUS were at relatively low risk of dyslipidemia compared to the non-CUS group. Less than 2 h of weekend CUS was negatively related to dyslipidemia in Korean workers, especially males. This suggests that sleeping more on weekends for workers who had a lack of sleep during the week can help prevent dyslipidemia."
+    },
+    {
+      "paperId": "5b90a252e32c9b4325f0f3881eb78b93e9f39aad",
+      "externalIds": {
+        "DOI": "10.12972/nhs.2025.24.2.1",
+        "CorpusId": 284890163
+      },
+      "url": "https://www.semanticscholar.org/paper/5b90a252e32c9b4325f0f3881eb78b93e9f39aad",
+      "title": "Preliminary Effects of Low Intensity Exercise on Quality of Sleep, Activity of Daily Living, and Physiological Indicators of Kidney Function in Hemodialysis Patients",
+      "venue": "Nursing and Healthcare Science",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.12972/nhs.2025.24.2.1",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.12972/nhs.2025.24.2.1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.12972/nhs.2025.24.2.1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2406333029",
+          "name": "Kwi Kyung Kim"
+        },
+        {
+          "authorId": "2405756183",
+          "name": "Jung Hwa Lee"
+        },
+        {
+          "authorId": "2405693694",
+          "name": "Young Je Jo"
+        },
+        {
+          "authorId": "2108426648",
+          "name": "Jeong Mi Lee"
+        },
+        {
+          "authorId": "81575642",
+          "name": "Jisoo Bang"
+        },
+        {
+          "authorId": "118040064",
+          "name": "Hae-in Jeong"
+        },
+        {
+          "authorId": "2266717455",
+          "name": "K. Lim"
+        }
+      ],
+      "abstract": "Purpose: This preliminary study explored the effects of a 6-month low intensity exercise program on sleep, activity of daily living, physiological indicators in hemodialysis patients. Methods: A non-equivalent control group pre-post test design was used. Forty hemodialysis patients assigned to either the experimental group (n=20) or the control group (n=20). The experimental group received a low intensity exercise which provided by one nurse of the research team 3times per a week for 8weeks. In order to measure effects of the intervention, instruments of Sleep Quality Index and Self-Maintaining and Instrumental Activities of Daily Living and hematologic indicators of renal function were used. Data analysis was performed using the SPSS/WIN 29.0, descriptive statistics, t-test, and ANCOVA. Results: A low intensity exercise program during hemodialysis showed a significant effect on activities of daily living (F=5.43, p<.05) in the experimental group comparing the control group. In contrast, there was no significant difference between the experiment and control groups on sleep and hematological indicators for renal function. Conclusion: The f indings demonstrate the preliminary effects of a low intensity exercise to improve the participants’ activities of daily living among hemodialysis patients. For the future studies, we propose a study design that enhances research validity by controlling various variables that could influence sleep quality and hematological indicators for renal function since there was no significant effect on sleep quality and renal function hematological indicators."
+    },
+    {
+      "paperId": "1625c73f97c38ab7ebcf9d6d5cfed4c534746aab",
+      "externalIds": {
+        "DOI": "10.3928/00989134-20250519-01",
+        "CorpusId": 278820304,
+        "PubMed": "40403240"
+      },
+      "url": "https://www.semanticscholar.org/paper/1625c73f97c38ab7ebcf9d6d5cfed4c534746aab",
+      "title": "Understanding Factors Associated With Sleep Quality in Korean American Older Adults Residing in Subsidized Senior Housing.",
+      "venue": "Journal of Gerontological Nursing",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://journals.healio.com/doi/pdf/10.3928/00989134-20250519-01?download=true",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3928/00989134-20250519-01?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3928/00989134-20250519-01, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2268188437",
+          "name": "Jung In Park"
+        },
+        {
+          "authorId": "48081305",
+          "name": "Y. Shi"
+        },
+        {
+          "authorId": "2364967031",
+          "name": "Derek Chang"
+        },
+        {
+          "authorId": "2359594508",
+          "name": "Yuri Jang"
+        },
+        {
+          "authorId": "2275276879",
+          "name": "Sunmin Lee"
+        }
+      ],
+      "abstract": "PURPOSE\nSleep quality is crucial for older adults, yet many experience poor sleep due to physical, mental, and social factors. The current study addresses the research gap on sleep quality among Korean American older adults in senior housing by examining relevant factors.\n\n\nMETHOD\nUsing data from 314 Korean American residents in Los Angeles senior housing, we conducted descriptive analysis and logistic regression models.\n\n\nRESULTS\nPoor sleep was significantly associated with poor physical health (odds ratio [OR] = 4.89), low energy (OR = 7.92), severe pain (OR = 14.92), multiple chronic conditions (OR = 2.71), and poor mental health (OR = 5.82), including moderate to severe anxiety (OR = 4.71) and depression (OR = 5.11).\n\n\nCONCLUSION\nFindings emphasize the unique sleep needs of Korean American older adults in senior housing and provide insights to improve their well-being. The study also highlights the need for further research using longitudinal designs, broader samples, and comprehensive sleep measures. [Journal of Gerontological Nursing, xx(x), xx-xx.]."
+    },
+    {
+      "paperId": "46b0eda166c42b47a8ae9d53011cb9cd4bbcafa9",
+      "externalIds": {
+        "PubMedCentral": "12724476",
+        "DOI": "10.1002/brb3.71154",
+        "CorpusId": 284131745,
+        "PubMed": "41432658"
+      },
+      "url": "https://www.semanticscholar.org/paper/46b0eda166c42b47a8ae9d53011cb9cd4bbcafa9",
+      "title": "Obstructive Sleep Apnea and Postoperative Cognitive Decline in Non‐Cardiac Surgery: A Prospective Cohort Study",
+      "venue": "Brain and Behavior",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/brb3.71154",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12724476, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35548727",
+          "name": "S. Kinjo"
+        },
+        {
+          "authorId": "2277784270",
+          "name": "Junyong In"
+        },
+        {
+          "authorId": "2377594692",
+          "name": "Eunjung Lim"
+        }
+      ],
+      "abstract": "Obstructive sleep apnea may be linked to postoperative cognitive decline. We conducted a prospective observational study to determine whether the severity of sleep apnea is associated with postoperative cognitive decline following non‐cardiac surgery."
+    },
+    {
+      "paperId": "8547118f7b9a07b0c3fdc1c149a189ab95ee7117",
+      "externalIds": {
+        "DOI": "10.1016/j.jad.2025.119452",
+        "CorpusId": 278747323,
+        "PubMed": "40398607"
+      },
+      "url": "https://www.semanticscholar.org/paper/8547118f7b9a07b0c3fdc1c149a189ab95ee7117",
+      "title": "Physical activity, weekend catch-up sleep, and depressive symptoms: mediating effects of high-sensitivity C-reactive protein.",
+      "venue": "Journal of Affective Disorders",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jad.2025.119452?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jad.2025.119452, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2343472634",
+          "name": "Sun-Young Kim"
+        },
+        {
+          "authorId": "2412774596",
+          "name": "Soo In Kim"
+        },
+        {
+          "authorId": "2250441307",
+          "name": "Weon-Jeong Lim"
+        }
+      ],
+      "abstract": "BACKGROUND\nWe aimed to examine the effect of physical activity (PA) and weekend catch-up sleep (WCS) on depressive symptoms by evaluating their effects on high-sensitivity C-reactive protein (hsCRP) levels.\n\n\nMETHODS\nData were collected from 10,715 adults aged ≥19 years. PA and depressive symptoms were assessed using self-report scales. The WCS was calculated by subtracting self-reported average weekday sleep hours from weekend sleep hours, and serum hsCRP levels were measured using immunoturbidimetric methods. Given that depressive symptoms are characterized by their multifaceted nature, we identified specific symptoms associated with hsCRP levels. Path analysis was used to investigate the association between PA, WCS, hsCRP, and depressive symptoms, and that between PA, WCS, hsCRP, and specific symptoms related to hsCRP.\n\n\nRESULTS\nHigher levels of PA and WCS were associated with a decreased risk of depressive symptoms through lowering hsCRP levels. Among various depressive symptoms, sleep problems and appetite changes were associated with hsCRP. In pathway analyses using them as dependent variables, higher levels of PA and WCS were also associated with a decreased risk of sleep problems and appetite changes through lowering hsCRP levels.\n\n\nLIMITATIONS\nThe current study employed a cross-sectional design, and WCS and PA were based on participants' self-reports rather than objective measurements.\n\n\nCONCLUSIONS\nIncreased levels of PA and WCS may help alleviate depressive symptoms, particularly sleep problems and appetite changes, by mitigating chronic inflammation. Therefore, ensuring adequate exercise time and compensating for inadequate weekday sleep during weekends are crucial for maintaining mental well-being."
+    },
+    {
+      "paperId": "5b3e66e0e31c62c8cc4d145f6844c0e7e29cddf0",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsae100",
+        "CorpusId": 269385415,
+        "PubMed": "38666299"
+      },
+      "url": "https://www.semanticscholar.org/paper/5b3e66e0e31c62c8cc4d145f6844c0e7e29cddf0",
+      "title": "Impact of sleep disturbance in shift workers on hippocampal volume and psychomotor speed.",
+      "venue": "Sleep",
+      "year": 2024,
+      "citationCount": 8,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsae100?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsae100, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2152604048",
+          "name": "Yumi Song"
+        },
+        {
+          "authorId": "2128068549",
+          "name": "Shinhye Kim"
+        },
+        {
+          "authorId": "94156812",
+          "name": "Yoonji Joo"
+        },
+        {
+          "authorId": "32310500",
+          "name": "Eunji Ha"
+        },
+        {
+          "authorId": "2298433846",
+          "name": "Youngeun Shim"
+        },
+        {
+          "authorId": "2298469898",
+          "name": "Hyeonji Lee"
+        },
+        {
+          "authorId": "8135319",
+          "name": "H. Jeong"
+        },
+        {
+          "authorId": "2385157",
+          "name": "I. Lyoo"
+        },
+        {
+          "authorId": "2293661707",
+          "name": "Sujung Yoon"
+        },
+        {
+          "authorId": "2298567744",
+          "name": "Suji Lee"
+        }
+      ],
+      "abstract": "STUDY OBJECTIVES\nShift work interferes with circadian rhythms, affecting sleep quality and cognitive function. Poor sleep quality in shift workers can impair psychomotor performance due to fatigue and sleepiness, increasing the risk of errors, accidents, and reduced productivity. Given the potential for atrophic changes in the hippocampus due to sleep disturbances, our study investigates how poor sleep quality correlates with hippocampal structural alterations and impacts psychomotor performance among shift workers.\n\n\nMETHODS\nWe recruited 100 shift workers, classifying them based on sleep quality into two groups: good sleep-SW group (n = 59) and poor sleep-SW group (n = 41). Sleep quality was assessed using both 7-day actigraphy for sleep efficiency and the Pittsburgh Sleep Quality Index. A control group of 106 non-shift workers without sleep problems (non-SW group) was also included for comparison. The outcome measures were psychomotor speed and hippocampal volumes, both total and by subfield.\n\n\nRESULTS\nThe poor sleep-SW group showed significantly smaller hippocampal volumes than both the good sleep-SW group (P<0.001) and the non-SW group (P=0.003). Longer shift work years correlated with greater reductions in hippocampal volume in this group (r=-0.42, P=0.009), unlike in the good sleep-SW group (r=0.08, P=0.541). Furthermore, they demonstrated declines in psychomotor speed relative to the non-SW group (P=0.006), which correlated with smaller hippocampal volumes (r=0.37, P=0.020).\n\n\nCONCLUSIONS\nShift workers with poor sleep quality exhibit significant hippocampal volume reductions and psychomotor speed decline, underscoring the importance of early intervention and support for sleep issues in this population."
+    },
+    {
+      "paperId": "b2750375d450576723136a4e20fade952bedc69a",
+      "externalIds": {
+        "PubMedCentral": "11360799",
+        "DBLP": "journals/sensors/PaulSSSR24",
+        "DOI": "10.3390/s24165265",
+        "CorpusId": 272169613,
+        "PubMed": "39204960"
+      },
+      "url": "https://www.semanticscholar.org/paper/b2750375d450576723136a4e20fade952bedc69a",
+      "title": "Efficient Sleep Stage Identification Using Piecewise Linear EEG Signal Reduction: A Novel Algorithm for Sleep Disorder Diagnosis",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2024,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/s24165265",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11360799, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2075068029",
+          "name": "Yash Paul"
+        },
+        {
+          "authorId": "2318035970",
+          "name": "Rajesh Singh"
+        },
+        {
+          "authorId": "2318262043",
+          "name": "Surbhi Sharma"
+        },
+        {
+          "authorId": "2246923042",
+          "name": "Saurabh Singh"
+        },
+        {
+          "authorId": "2085871276",
+          "name": "In-Ho Ra"
+        }
+      ],
+      "abstract": "Sleep is a vital physiological process for human health, and accurately detecting various sleep states is crucial for diagnosing sleep disorders. This study presents a novel algorithm for identifying sleep stages using EEG signals, which is more efficient and accurate than the state-of-the-art methods. The key innovation lies in employing a piecewise linear data reduction technique called the Halfwave method in the time domain. This method simplifies EEG signals into a piecewise linear form with reduced complexity while preserving sleep stage characteristics. Then, a features vector with six statistical features is built using parameters obtained from the reduced piecewise linear function. We used the MIT-BIH Polysomnographic Database to test our proposed method, which includes more than 80 h of long data from different biomedical signals with six main sleep classes. We used different classifiers and found that the K-Nearest Neighbor classifier performs better in our proposed method. According to experimental findings, the average sensitivity, specificity, and accuracy of the proposed algorithm on the Polysomnographic Database considering eight records is estimated as 94.82%, 96.65%, and 95.73%, respectively. Furthermore, the algorithm shows promise in its computational efficiency, making it suitable for real-time applications such as sleep monitoring devices. Its robust performance across various sleep classes suggests its potential for widespread clinical adoption, making significant advances in the knowledge, detection, and management of sleep problems."
+    },
+    {
+      "paperId": "cf17fe8e76450b5cac1c27f3812b486c432b53ed",
+      "externalIds": {
+        "PubMedCentral": "11505973",
+        "DOI": "10.3390/cimb46100663",
+        "CorpusId": 273132513,
+        "PubMed": "39451543"
+      },
+      "url": "https://www.semanticscholar.org/paper/cf17fe8e76450b5cac1c27f3812b486c432b53ed",
+      "title": "GABALAGEN Facilitates Pentobarbital-Induced Sleep by Modulating the Serotonergic System in Rats",
+      "venue": "Current Issues in Molecular Biology",
+      "year": 2024,
+      "citationCount": 6,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/cimb46100663",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11505973, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4538407",
+          "name": "Minsook Ye"
+        },
+        {
+          "authorId": "1582052423",
+          "name": "K. Rheu"
+        },
+        {
+          "authorId": "2265172009",
+          "name": "Bae-Jin Lee"
+        },
+        {
+          "authorId": "32573351",
+          "name": "In-Sup Shim"
+        }
+      ],
+      "abstract": "Gamma-aminobutyric acid (GABA) is one of the inhibitory neurotransmitters with beneficial effects including sedative properties. However, despite various clinical trials, scientific evidence regarding the impact on sleep of orally ingested GABA, whether natural or synthesized through biological pathways, is not clear. GABALAGEN (GBL) is the product of fermented collagen by Lactobacillus brevis BJ20 (L. brevis BJ20) and Lactobacillus plantarum BJ21 (L. plantarum BJ21), enriched with GABA and characterized by low molecular weight. The aim of this study was to investigate the effect of GBL on sleep improvement via a receptor binding assay in a pentobarbital-induced sleep-related rat model. We utilized a pentobarbital-induced sleep-related rat model to conduct this research. The present study investigated the sedative effects of GBL through electroencephalography (EEG) analysis in the pentobarbital-induced sleep animal model. Exploration of the neural basis of these positive effects involved evaluating orexin in the brain via immunohistochemical methods and 5-HT in the serum using an enzyme-linked immunosorbent assay (ELISA). Furthermore, we conducted a binding assay for 5-HT2C receptors, as these are considered pivotal targets in the mechanism of action for sleep aids. Diazepam (DZP) was used as a positive control to compare the efficacy of GBL. Results: In the binding assay, GBL displayed binding affinity to the 5-HT2C receptor (IC50 value, 5.911 µg/mL). Administration of a low dose of GBL (GBL_L; 100 mg/kg) increased non-rapid eye movement sleep time and decreased wake time based on EEG data in pentobarbital-induced rats. Administration of a high dose of GBL (GBL_H; 250 mg/kg) increased non-rapid eye movement sleep time. Additionally, GBL groups significantly increased concentration of the 5-HT level in the serum. GBL_H decreased orexin expression in the lateral hypothalamus. Conclusion: Overall, the sedative effect of GBL may be linked to the activation of serotonergic systems, as indicated by the heightened affinity of the 5-HT2C receptor binding and elevated levels of 5-HT observed in the serum. This suggests that GBL holds promise as a novel compound for inducing sleep in natural products."
+    },
+    {
+      "paperId": "f49911366dae1029378908aa35805ad79bd65f0f",
+      "externalIds": {
+        "DOI": "10.1136/jech-2025-225353",
+        "CorpusId": 282813100,
+        "PubMed": "41203270"
+      },
+      "url": "https://www.semanticscholar.org/paper/f49911366dae1029378908aa35805ad79bd65f0f",
+      "title": "Association between sleep quality and seat belt use: a nationwide Korean study",
+      "venue": "Journal of Epidemiology and Community Health",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1136/jech-2025-225353?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1136/jech-2025-225353, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "8635751",
+          "name": "K. Park"
+        },
+        {
+          "authorId": "2390941922",
+          "name": "Young Ko"
+        },
+        {
+          "authorId": "2243552817",
+          "name": "In Cheol Hwang"
+        },
+        {
+          "authorId": "2243640267",
+          "name": "Hong Yup Ahn"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "7d568b3a172e05a48edb070579358fdb7e0c0fe1",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsae067.01025",
+        "CorpusId": 269285588
+      },
+      "url": "https://www.semanticscholar.org/paper/7d568b3a172e05a48edb070579358fdb7e0c0fe1",
+      "title": "1025 The Impact of Depression on Neurocognitive Functions and Conversion in Isolated REM Sleep Behavior Disorder",
+      "venue": "Sleep",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsae067.01025?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsae067.01025, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292001848",
+          "name": "I. Yoon"
+        },
+        {
+          "authorId": "2292089474",
+          "name": "Minji Lee"
+        },
+        {
+          "authorId": "34670357",
+          "name": "J. Hong"
+        },
+        {
+          "authorId": "2297732524",
+          "name": "Seock Hyeon Moon"
+        },
+        {
+          "authorId": "2297720333",
+          "name": "Sojung Han"
+        },
+        {
+          "authorId": "2298091344",
+          "name": "Chae Rin Park"
+        },
+        {
+          "authorId": "2297737027",
+          "name": "Hak Hyeon Kim"
+        }
+      ],
+      "abstract": "\n \n \n Depression is frequently observed in patients with isolated REM sleep behavior disorder (iRBD). The aim of this study was to analyze cognitive function and quantified electroencephalography (QEEG) in iRBD patients according to the presence of depression, and to evaluate the impact of depression on the conversion to neurodegenerative diseases.\n \n \n \n A total of 90 individuals with iRBD were included in this study. They were followed for up to 9 years, and 21 of them were converted to Parkinson's disease or dementia. Phenoconversion was defined when a definitive diagnosis of parkinsonism by neurologists or any form of dementia by geriatric psychiatrists was established based on evident clinical symptoms. The diagnosis of depression (27 among 90 iRBD) was made based on the initial interview or taking antidepressant medication.\n \n \n \n The depressed group showed poor performance in the executive function (p= 0.029, Stroop color test) than the non-depressed group. The depressed group tended to have lower z-scores than the non-depressed group in global cognition, attention, memory, and frontal/executive domains. The QEEG results, the relative gamma power in the temporal and parietal region, relative high gamma power in the parietal region were significantly increased (p=0.049; p=0.032; p=0.008) in the depressed than the non-depressed group. The conversion was significantly increased in iRBD patients with depression than iRBD without depression (p=0.013). The depression in iRBD patients had 3.319 of hazard ratio (p=0.011) for the risk of conversion to neurodegenerative diseases.\n \n \n \n Depressive symptoms in iRBD patients should be monitored as aggravating cognitive dysfunction and a risk factor for conversion.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "851ecd59f3cf778e7ed3d9b81e21f2c7001db6cb",
+      "externalIds": {
+        "PubMedCentral": "11672954",
+        "DOI": "10.3390/biomedicines12122905",
+        "CorpusId": 274958022,
+        "PubMed": "39767811"
+      },
+      "url": "https://www.semanticscholar.org/paper/851ecd59f3cf778e7ed3d9b81e21f2c7001db6cb",
+      "title": "GABALAGEN Alleviates Stress-Induced Sleep Disorders in Rats",
+      "venue": "Biomedicines",
+      "year": 2024,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/biomedicines12122905",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11672954, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2214097624",
+          "name": "Hyun-Jung Park"
+        },
+        {
+          "authorId": "40579154",
+          "name": "Sung-Ja Rhie"
+        },
+        {
+          "authorId": "2320607509",
+          "name": "Woojin Jeong"
+        },
+        {
+          "authorId": "2108871419",
+          "name": "Kyu-Ri Kim"
+        },
+        {
+          "authorId": "1582052423",
+          "name": "K. Rheu"
+        },
+        {
+          "authorId": "2265172009",
+          "name": "Bae-Jin Lee"
+        },
+        {
+          "authorId": "32573351",
+          "name": "In-Sup Shim"
+        }
+      ],
+      "abstract": "(1) Background: Gamma-aminobutyric acid (GABA) is an amino acid and the primary inhibitory neurotransmitter in the brain. GABA has been shown to reduce stress and promote sleep. GABALAGEN (GBL) is the product of fermented fish collagen by Lactobacillus brevis BJ20 and Lactobacillus plantarum BJ21, naturally enriched with GABA through the fermentation process and characterized by low molecular weight. (2) Methods: The present study evaluated the GABAA affinity of GBL through receptor binding assay. The sedative effects of GBL were investigated through electroencephalography (EEG) analysis in an animal model of electro foot shock (EFS) stress-induced sleep disorder, and then we examined the expression of orexin and the GABAA receptor in the brain region using immunohistochemistry and an enzyme-linked immunosorbent assay (ELISA). (3) Results: We found that on the binding assay, GBL displayed high affinity to the GABAA receptor. Also, after treatment with GBL, the percentage of the total time in rapid eye movement (REM) and non-rapid eye movement (NREM) sleep was significantly and dose-dependently increased in EFS-induced rats. Consistent with behavioral results, the GBL-treated groups showed that the expression of GABAA receptor immune-positive cells in the VLPO was markedly and dose-dependently increased. Also, the GBL-treated groups showed that the expression of the orexin-A level in LH was significantly decreased. (4) Conclusions: GBL showed efficacy and potential to be used as an anti-stress therapy to treat sleep deprivation through the stimulation of GABAA receptors and the consequent inhibition of orexin activity."
+    },
+    {
+      "paperId": "1ea552fd643ee6064480f59f97c85d8230167d8f",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2024.08.033",
+        "CorpusId": 272324028,
+        "PubMed": "39241433"
+      },
+      "url": "https://www.semanticscholar.org/paper/1ea552fd643ee6064480f59f97c85d8230167d8f",
+      "title": "Network structure of REM sleep behavior disorder symptoms in iRBD patients.",
+      "venue": "Sleep Medicine",
+      "year": 2024,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2024.08.033?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2024.08.033, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292089474",
+          "name": "Minji Lee"
+        },
+        {
+          "authorId": "2319056379",
+          "name": "Hyun Seok Do"
+        },
+        {
+          "authorId": "34670357",
+          "name": "J. Hong"
+        },
+        {
+          "authorId": "2292001848",
+          "name": "I. Yoon"
+        }
+      ],
+      "abstract": "OBJECTIVE\nEmploying the REM Sleep Behavior Disorder Questionnaire-Hong Kong (RBDQ-HK) to investigate symptoms and their severity in rapid eye movement (REM) sleep behavior disorder (RBD) patients, this study delves into the construct of RBD through the RBDQ-HK and its links to depression and sleep quality.\n\n\nMETHODS\nData from the RBDQ-HK, the Geriatric Depression Scale (GDS), and the Pittsburgh Sleep Quality Index (PSQI) were compiled from individuals with isolated RBD (iRBD) confirmed by polysomnography. We constructed a network analysis of the RBDQ-HK, measured the centrality of each symptom (node), conducted Exploratory Graph Analysis (EGA) to unveil the dimension structure of the questionnaire, and calculated bridge expected influence (BEI) to identifying critical bridge. Multivariate linear regression was also employed to discover relationships between RBDQ-HK dimensions and variables such as PSQI and GDS.\n\n\nRESULTS\nIn our cohort of 455 iRBD patients (299 males), the items in the RBDQ-HK were divided into three dimensions: dream, movement, and SRI/violence. The symptoms identified as most central to RBD were 'shouting or yelling in sleep', 'dream-enacting movements', and 'talking during sleep'. The highest (BEI) was 'violent and aggressive dreams', which has the potential to bridge three dimensions within the symptom network. Depression was significantly correlated with the movement and dream dimensions of RBD, and sleep quality was predominantly related to the dream dimension score.\n\n\nCONCLUSION\nOur findings verify that the principal symptoms of the RBDQ-HK align with the established diagnostic criteria and reveal a three-dimensional structure within RBD symptoms. The relationships between the RBD symptoms, depression, and sleep quality need to be identified for the effective management of RBD patients."
+    }
+  ]
+}

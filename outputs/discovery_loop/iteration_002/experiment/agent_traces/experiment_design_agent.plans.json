@@ -1,0 +1,461 @@
+[
+  {
+    "plan_id": "experiment_plan_86d736554104",
+    "hypothesis_id": "hypothesis_507f1dc573b1",
+    "hypothesis_title": "Thalamic Spindle Modulation and Insomnia Severity via Combined Thalamocortical and White Matter Pathways",
+    "scientific_question": "How do the functional connectivity patterns between the thalamus and key resting-state networks (DMN, salience, frontoparietal) relate to the number of voxels within those networks, and how does this relationship vary with different stages of sleep or wakefulness?",
+    "hypothesis_summary": "This hypothesis proposes that thalamic spindle modulation through combined thalamocortical coupling and white matter integrity pathways modulates insomnia severity, linking disrupted spindle activity and white matter connectivity to impaired sleep architecture.",
+    "hypothesis_content": "Thalamic spindle modulation through combined thalamocortical coupling and white matter pathways modulates insomnia severity by disrupting the synchronization between thalamocortical circuits and white matter tracts, leading to impaired sleep architecture and increased insomnia severity.",
+    "predictors": [
+      "thalamus_DMN_FC",
+      "timefreq_fALFF_0.01_0.08_over_0.01_0.25"
+    ],
+    "outcomes": [
+      "salience_FC",
+      "frontoparietal_FC"
+    ],
+    "covariates": [
+      "mean_FD"
+    ],
+    "negative_controls": [
+      "global_signal_psd_power_mean",
+      "global_signal_psd_power_max"
+    ],
+    "variables": [
+      {
+        "name": "thalamus_DMN_FC",
+        "role": "predictor",
+        "scientific_concept": "thalamus DMN FC",
+        "modality": "fMRI",
+        "source_file": "outputs/discovery_loop/iteration_002/features/fmri/experiment_plan_86d736554104/fmri_features.csv",
+        "source_column": "thalamus_DMN_FC",
+        "approved": true,
+        "missing_rate": 0.24731182795698925,
+        "n_available": 70,
+        "mapping_confidence": 0.9,
+        "notes": "Selected from available analysis-ready profile."
+      },
+      {
+        "name": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "role": "predictor",
+        "scientific_concept": "timefreq fALFF 0.01 0.08 over 0.01 0.25",
+        "modality": "fMRI",
+        "source_file": "outputs/discovery_loop/iteration_002/features/fmri/experiment_plan_86d736554104/fmri_features.csv",
+        "source_column": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.9,
+        "notes": "Selected from available analysis-ready profile."
+      },
+      {
+        "name": "salience_FC",
+        "role": "outcome",
+        "scientific_concept": "salience FC",
+        "modality": "fMRI",
+        "source_file": "outputs/discovery_loop/iteration_002/features/fmri/experiment_plan_86d736554104/fmri_features.csv",
+        "source_column": "salience_FC",
+        "approved": true,
+        "missing_rate": 0.24731182795698925,
+        "n_available": 70,
+        "mapping_confidence": 0.9,
+        "notes": "Selected from available analysis-ready profile."
+      },
+      {
+        "name": "frontoparietal_FC",
+        "role": "outcome",
+        "scientific_concept": "frontoparietal FC",
+        "modality": "fMRI",
+        "source_file": "outputs/discovery_loop/iteration_002/features/fmri/experiment_plan_86d736554104/fmri_features.csv",
+        "source_column": "frontoparietal_FC",
+        "approved": true,
+        "missing_rate": 0.24731182795698925,
+        "n_available": 70,
+        "mapping_confidence": 0.9,
+        "notes": "Selected from available analysis-ready profile."
+      },
+      {
+        "name": "mean_FD",
+        "role": "covariate",
+        "scientific_concept": "mean FD",
+        "modality": "fMRI",
+        "source_file": "outputs/discovery_loop/iteration_002/features/fmri/experiment_plan_86d736554104/fmri_features.csv",
+        "source_column": "mean_FD",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.9,
+        "notes": "Selected from available analysis-ready profile."
+      },
+      {
+        "name": "global_signal_psd_power_mean",
+        "role": "negative_control",
+        "scientific_concept": "global signal psd power mean",
+        "modality": "fMRI",
+        "source_file": "outputs/discovery_loop/iteration_002/features/fmri/experiment_plan_86d736554104/fmri_features.csv",
+        "source_column": "global_signal_psd_power_mean",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.9,
+        "notes": "Selected from available analysis-ready profile."
+      },
+      {
+        "name": "global_signal_psd_power_max",
+        "role": "negative_control",
+        "scientific_concept": "global signal psd power max",
+        "modality": "fMRI",
+        "source_file": "outputs/discovery_loop/iteration_002/features/fmri/experiment_plan_86d736554104/fmri_features.csv",
+        "source_column": "global_signal_psd_power_max",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.9,
+        "notes": "Selected from available analysis-ready profile."
+      }
+    ],
+    "primary_tests": [
+      {
+        "test_id": "experiment_plan_86d736554104_thalamus_DMN_FC_salience_FC",
+        "predictor": "thalamus_DMN_FC",
+        "outcome": "salience_FC",
+        "question": "Using available fmri features, does thalamus_DMN_FC relate to salience_FC?"
+      },
+      {
+        "test_id": "experiment_plan_86d736554104_thalamus_DMN_FC_frontoparietal_FC",
+        "predictor": "thalamus_DMN_FC",
+        "outcome": "frontoparietal_FC",
+        "question": "Using available fmri features, does thalamus_DMN_FC relate to frontoparietal_FC?"
+      },
+      {
+        "test_id": "experiment_plan_86d736554104_timefreq_fALFF_0.01_0.08_over_0.01_0.25_salience_FC",
+        "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "outcome": "salience_FC",
+        "question": "Using available fmri features, does timefreq_fALFF_0.01_0.08_over_0.01_0.25 relate to salience_FC?"
+      },
+      {
+        "test_id": "experiment_plan_86d736554104_timefreq_fALFF_0.01_0.08_over_0.01_0.25_frontoparietal_FC",
+        "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "outcome": "frontoparietal_FC",
+        "question": "Using available fmri features, does timefreq_fALFF_0.01_0.08_over_0.01_0.25 relate to frontoparietal_FC?"
+      }
+    ],
+    "analysis_plan": "We will conduct a multivariate regression analysis to examine the relationship between thalamus-DMN, thalamus-salience, and thalamus-frontoparietal FC (predictors) with the number of voxels in each network (outcome), while controlling for sleep stage. We will also compare these relationships across different sleep stages using ANCOVA.",
+    "metadata": {
+      "source": "ExperimentDesignAgent",
+      "generation_strategy": "literature_exploration",
+      "hypothesis_rating": 1529.0,
+      "hypothesis_data_testability": {
+        "status": "partially_testable",
+        "available_modalities": [
+          "fMRI"
+        ],
+        "required_modalities": [
+          "DTI",
+          "EEG"
+        ],
+        "missing_modalities": [
+          "DTI",
+          "EEG"
+        ],
+        "matched_variables": [
+          "DMN_FC",
+          "thalamus_DMN_FC"
+        ],
+        "missing_variables": [
+          "FA",
+          "spindle_density"
+        ],
+        "ranking_bonus": 10.0,
+        "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
+      },
+      "requested_modalities": [
+        "fMRI"
+      ],
+      "llm_experiment_design": {
+        "scientific_question": "How do the functional connectivity patterns between the thalamus and key resting-state networks (DMN, salience, frontoparietal) relate to the number of voxels within those networks, and how does this relationship vary with different stages of sleep or wakefulness?",
+        "analysis_plan": "We will conduct a multivariate regression analysis to examine the relationship between thalamus-DMN, thalamus-salience, and thalamus-frontoparietal FC (predictors) with the number of voxels in each network (outcome), while controlling for sleep stage. We will also compare these relationships across different sleep stages using ANCOVA.",
+        "primary_tests": [
+          {
+            "test_id": "Test1",
+            "predictor": "thalamus_DMN_FC",
+            "outcome": "DMN_roi_voxels",
+            "question": "Is there a significant relationship between thalamus-DMN FC and the number of voxels in the DMN, varying by sleep stage?"
+          },
+          {
+            "test_id": "Test2",
+            "predictor": "thalamus_salience_FC",
+            "outcome": "salience_roi_voxels",
+            "question": "Is there a significant relationship between thalamus-salience FC and the number of voxels in the salience network, varying by sleep stage?"
+          },
+          {
+            "test_id": "Test3",
+            "predictor": "thalamus_frontoparietal_FC",
+            "outcome": "frontoparietal_roi_voxels",
+            "question": "Is there a significant relationship between thalamus-frontoparietal FC and the number of voxels in the frontoparietal network, varying by sleep stage?"
+          }
+        ],
+        "risks": [
+          "Missing data in roi_voxels variables may reduce statistical power.",
+          "Assumptions of multivariate regression (linearity, homoscedasticity) may not be met.",
+          "Potential confounding variables (e.g., age, sleep quality) not accounted for."
+        ],
+        "rationale": "The thalamus is a key relay station in the brain, and its connectivity with resting-state networks is likely to influence the voxel count within those networks. Examining these relationships across sleep stages can provide insights into how sleep modulates network integration and voxel count, which may have implications for understanding sleep architecture and network dynamics."
+      },
+      "testability_precheck": {
+        "available_modalities": [
+          "fmri"
+        ],
+        "excluded_modalities": [],
+        "full_requested_modalities_available": true,
+        "mode": "single_fmri_proxy_analysis",
+        "reason": "Only fMRI features are available; the plan was constrained to fMRI mechanism proxies and cannot directly test missing morphology, DTI, EEG, or scale outcomes.",
+        "analysis_modalities": [
+          "fmri"
+        ],
+        "selected_predictors": [
+          "thalamus_DMN_FC",
+          "timefreq_fALFF_0.01_0.08_over_0.01_0.25"
+        ],
+        "selected_outcomes": [
+          "salience_FC",
+          "frontoparietal_FC"
+        ],
+        "selected_covariates": [
+          "mean_FD"
+        ],
+        "selected_negative_controls": [
+          "global_signal_psd_power_mean",
+          "global_signal_psd_power_max"
+        ]
+      },
+      "variable_mapping_review": {
+        "judgment": "partially_valid",
+        "candidate_mappings": [
+          {
+            "variable": "thalamus_DMN_FC",
+            "source_column": "thalamus_DMN_FC",
+            "confidence": 0.9,
+            "reason": "The variable 'thalamus_DMN_FC' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "thalamus_salience_FC",
+            "source_column": "thalamus_salience_FC",
+            "confidence": 0.9,
+            "reason": "The variable 'thalamus_salience_FC' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "thalamus_frontoparietal_FC",
+            "source_column": "thalamus_frontoparietal_FC",
+            "confidence": 0.9,
+            "reason": "The variable 'thalamus_frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "DMN_salience_FC",
+            "source_column": "DMN_salience_FC",
+            "confidence": 0.9,
+            "reason": "The variable 'DMN_salience_FC' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "DMN_frontoparietal_FC",
+            "source_column": "DMN_frontoparietal_FC",
+            "confidence": 0.9,
+            "reason": "The variable 'DMN_frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "salience_frontoparietal_FC",
+            "source_column": "salience_frontoparietal_FC",
+            "confidence": 0.9,
+            "reason": "The variable 'salience_frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "DMN_FC",
+            "source_column": "DMN_FC",
+            "confidence": 0.9,
+            "reason": "The variable 'DMN_FC' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "salience_FC",
+            "source_column": "salience_FC",
+            "confidence": 0.9,
+            "reason": "The variable 'salience_FC' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "frontoparietal_FC",
+            "source_column": "frontoparietal_FC",
+            "confidence": 0.9,
+            "reason": "The variable 'frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "timefreq_global_signal_power",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.7,
+            "reason": "The variable 'timefreq_global_signal_power' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis."
+          },
+          {
+            "variable": "timefreq_global_signal_power_max",
+            "source_column": "global_signal_psd_power_max",
+            "confidence": 0.7,
+            "reason": "The variable 'timefreq_global_signal_power_max' might correspond to 'global_signal_psd_power_max' as both relate to global signal power in time-frequency analysis."
+          },
+          {
+            "variable": "thalamus_roi_voxels",
+            "source_column": "thalamus_roi_voxels",
+            "confidence": 0.9,
+            "reason": "The variable 'thalamus_roi_voxels' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "DMN_roi_voxels",
+            "source_column": "DMN_roi_voxels",
+            "confidence": 0.9,
+            "reason": "The variable 'DMN_roi_voxels' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "salience_roi_voxels",
+            "source_column": "salience_roi_voxels",
+            "confidence": 0.9,
+            "reason": "The variable 'salience_roi_voxels' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "frontoparietal_roi_voxels",
+            "source_column": "frontoparietal_roi_voxels",
+            "confidence": 0.9,
+            "reason": "The variable 'frontoparietal_roi_voxels' is present in the source columns with a missing rate of 24.73%."
+          },
+          {
+            "variable": "timefreq_ALFF",
+            "source_column": "timefreq_ALFF",
+            "confidence": 0.5,
+            "reason": "The variable 'timefreq_ALFF' is not found in the source columns."
+          },
+          {
+            "variable": "timefreq_ReHo",
+            "source_column": "timefreq_ReHo",
+            "confidence": 0.5,
+            "reason": "The variable 'timefreq_ReHo' is not found in the source columns."
+          },
+          {
+            "variable": "timefreq_global_signal_power",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.7,
+            "reason": "The variable 'timefreq_global_signal_power' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis."
+          },
+          {
+            "variable": "timefreq_global_signal_power_max",
+            "source_column": "global_signal_psd_power_max",
+            "confidence": 0.7,
+            "reason": "The variable 'timefreq_global_signal_power_max' might correspond to 'global_signal_psd_power_max' as both relate to global signal power in time-frequency analysis."
+          },
+          {
+            "variable": "timefreq_global_signal_power_mean",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.7,
+            "reason": "The variable 'timefreq_global_signal_power_mean' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis."
+          },
+          {
+            "variable": "timefreq_global_signal_power_std",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_std' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis, though the standard deviation is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_median",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_median' might correspond to 'global_signal_psd_power_mean' as both relate to global_signal_psd_power_median."
+          },
+          {
+            "variable": "timefreq_global_signal_power_skew",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_skew' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis, though skewness is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_kurtosis",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_kurtosis' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis, though kurtosis is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_range",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_range' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis, though range is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_variance",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_variance' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis, though variance is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_sum",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_sum' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis, though sum is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_count",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_count' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis, though count is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_min",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_min' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis, though min is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_max",
+            "source_column": "global_signal_psd_power_max",
+            "confidence": 0.7,
+            "reason": "The variable 'timefreq_global_signal_power_max' might correspond to 'global_signal_psd_power_max' as both relate to global signal power in time-frequency analysis."
+          },
+          {
+            "variable": "timefreq_global_signal_power_mean",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.7,
+            "reason": "The variable 'timefreq_global_signal_power_mean' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis."
+          },
+          {
+            "variable": "timefreq_global_signal_power_std",
+            "source_column": "global_signal_psd_power_mean",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_std' might correspond to 'global_signal_psd_power_mean' as both relate to global signal power in time-frequency analysis, though standard deviation is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_median",
+            "source_column": "global_signal_psd_power_median",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_median' might correspond to 'global_signal_psd_power_median' as both relate to global signal power in time-frequency analysis, though median is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_skew",
+            "source_column": "global_signal_psd_power_skew",
+            "confidence": 0.6,
+            "reason": "The variable 'timefreq_global_signal_power_skew' might correspond to 'global_signal_psd_power_skew' as both relate to global signal power in time-frequency analysis, though skewness is not directly provided."
+          },
+          {
+            "variable": "timefreq_global_signal_power_kurtosis",
+            "source_column": "global_signal_psd_power_kurtosis",
+            "confidence": 0.6,
+            " \n": true
+          },
+          "timefreq_global_signal_power_range",
+          "source_column",
+          "global_signal_psd_power_range",
+          "confidence",
+          0.6,
+          "reason",
+          "The variable 'timefreq_global_signal_power_range' might correspond to 'global_signal_psd_power_range' as both relate to global signal power in time-frequency analysis, though range is not directly provided."
+        ],
+        "missing_variables": [
+          "timefreq_ALFF",
+          "timefreq_ReHo"
+        ],
+        "missing_variables_reason": "These variables are not present in the source columns."
+      }
+    }
+  }
+]

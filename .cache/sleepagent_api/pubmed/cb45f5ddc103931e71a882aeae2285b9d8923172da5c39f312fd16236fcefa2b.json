@@ -1,0 +1,40 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "39052121"
+    ],
+    "translationset": [
+      {
+        "from": "Global",
+        "to": "\"global\"[All Fields] OR \"globalism\"[All Fields] OR \"globalize\"[All Fields] OR \"globalized\"[All Fields] OR \"globalizes\"[All Fields] OR \"globalizing\"[All Fields] OR \"globally\"[All Fields] OR \"globals\"[All Fields] OR \"internationality\"[MeSH Terms] OR \"internationality\"[All Fields] OR \"globalization\"[All Fields]"
+      },
+      {
+        "from": "signal",
+        "to": "\"signal transduction\"[MeSH Terms] OR (\"signal\"[All Fields] AND \"transduction\"[All Fields]) OR \"signal transduction\"[All Fields] OR \"signaling\"[All Fields] OR \"signal\"[All Fields] OR \"signal's\"[All Fields] OR \"signaled\"[All Fields] OR \"signaler\"[All Fields] OR \"signaler's\"[All Fields] OR \"signalers\"[All Fields] OR \"signalings\"[All Fields] OR \"signalization\"[All Fields] OR \"signalled\"[All Fields] OR \"signaller\"[All Fields] OR \"signaller's\"[All Fields] OR \"signallers\"[All Fields] OR \"signalling\"[All Fields] OR \"signallings\"[All Fields] OR \"signals\"[All Fields]"
+      },
+      {
+        "from": "PSD",
+        "to": "\"Priv Stat Databases\"[Journal:__jid101743592] OR \"psd\"[All Fields]"
+      },
+      {
+        "from": "sleep studies",
+        "to": "\"polysomnography\"[MeSH Terms] OR \"polysomnography\"[All Fields] OR (\"sleep\"[All Fields] AND \"studies\"[All Fields]) OR \"sleep studies\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"global\"[All Fields] OR \"globalism\"[All Fields] OR \"globalize\"[All Fields] OR \"globalized\"[All Fields] OR \"globalizes\"[All Fields] OR \"globalizing\"[All Fields] OR \"globally\"[All Fields] OR \"globals\"[All Fields] OR \"internationality\"[MeSH Terms] OR \"internationality\"[All Fields] OR \"globalization\"[All Fields]) AND (\"signal transduction\"[MeSH Terms] OR (\"signal\"[All Fields] AND \"transduction\"[All Fields]) OR \"signal transduction\"[All Fields] OR \"signaling\"[All Fields] OR \"signal\"[All Fields] OR \"signal s\"[All Fields] OR \"signaled\"[All Fields] OR \"signaler\"[All Fields] OR \"signaler s\"[All Fields] OR \"signalers\"[All Fields] OR \"signalings\"[All Fields] OR \"signalization\"[All Fields] OR \"signalled\"[All Fields] OR \"signaller\"[All Fields] OR \"signaller s\"[All Fields] OR \"signallers\"[All Fields] OR \"signalling\"[All Fields] OR \"signallings\"[All Fields] OR \"signals\"[All Fields]) AND (\"priv stat databases\"[Journal] OR \"psd\"[All Fields]) AND (\"polysomnography\"[MeSH Terms] OR \"polysomnography\"[All Fields] OR (\"sleep\"[All Fields] AND \"studies\"[All Fields]) OR \"sleep studies\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

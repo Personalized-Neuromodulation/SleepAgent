@@ -1,0 +1,258 @@
+{
+  "hypothesis_id": "hypothesis_507f1dc573b1",
+  "plan_id": "experiment_plan_86d736554104",
+  "review_status": "partially_supported",
+  "support_score": 0.6,
+  "result_review": {
+    "judgment": "partially_supported",
+    "support_score": 0.6,
+    "critic_findings": [
+      {
+        "severity": "medium",
+        "category": "data_completeness",
+        "message": "Missing timefreq_ALFF and timefreq_ReHo variables may affect model accuracy.",
+        "recommendation": "Include these variables if available, or confirm their absence is not critical for the analysis."
+      },
+      {
+        "severity": "high",
+        "category": "model_completeness",
+        "message": "Original analysis plan assumes time-frequency measures not present in the source data.",
+        "recommendation": "Revise the model to align with available data or collect missing measures."
+      }
+    ],
+    "confounds": [
+      "mean_FD (motion covariate)"
+    ],
+    "alternative_explanations": [
+      "Non-specific associations captured in negative controls may influence results.",
+      "Missing time-frequency variables could introduce alternative explanations."
+    ],
+    "next_steps": [
+      "Revise the model to use linear regression with available predictors.",
+      "Collect missing timefreq_ALFF and timefreq_ReHo variables if feasible.",
+      "Validate negative controls to ensure non-specific effects are minimized."
+    ]
+  },
+  "primary_tests": [
+    {
+      "test_id": "experiment_plan_86d736554104_thalamus_DMN_FC_salience_FC",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "salience_FC",
+      "method": "linear_regression",
+      "n": 70,
+      "effect": -0.3103150103007966,
+      "p_value": 0.0016345541942639904,
+      "ci_low": -0.49898542930040357,
+      "ci_high": -0.12164459130118968,
+      "direction": "negative",
+      "passed": true,
+      "notes": "Primary controlled template: ordinary least squares linear regression.",
+      "metadata": {
+        "r_squared": 0.32564392399518216,
+        "adj_r_squared": 0.30551389187563527,
+        "coefficients": {
+          "Intercept": 0.8296150770873368,
+          "thalamus_DMN_FC": -0.3103150103007966,
+          "mean_FD": 0.8733225049661939
+        },
+        "p_values": {
+          "Intercept": 8.162357851713536e-13,
+          "thalamus_DMN_FC": 0.0016345541942639904,
+          "mean_FD": 0.0011130273652318644
+        },
+        "covariates": [
+          "mean_FD"
+        ]
+      }
+    },
+    {
+      "test_id": "experiment_plan_86d736554104_thalamus_DMN_FC_frontoparietal_FC",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "frontoparietal_FC",
+      "method": "linear_regression",
+      "n": 70,
+      "effect": -0.3579814716385665,
+      "p_value": 0.0010993829949969489,
+      "ci_low": -0.5674324659121496,
+      "ci_high": -0.14853047736498334,
+      "direction": "negative",
+      "passed": true,
+      "notes": "Primary controlled template: ordinary least squares linear regression.",
+      "metadata": {
+        "r_squared": 0.37125827222283636,
+        "adj_r_squared": 0.3524898624384434,
+        "coefficients": {
+          "Intercept": 0.8361186599882408,
+          "thalamus_DMN_FC": -0.3579814716385665,
+          "mean_FD": 1.1312813641051869
+        },
+        "p_values": {
+          "Intercept": 2.3669803940772854e-11,
+          "thalamus_DMN_FC": 0.0010993829949969489,
+          "mean_FD": 0.00017426636227214296
+        },
+        "covariates": [
+          "mean_FD"
+        ]
+      }
+    },
+    {
+      "test_id": "experiment_plan_86d736554104_timefreq_fALFF_0.01_0.08_over_0.01_0.25_salience_FC",
+      "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "outcome": "salience_FC",
+      "method": "linear_regression",
+      "n": 70,
+      "effect": 1.3688823550186253,
+      "p_value": 8.416274873947656e-05,
+      "ci_low": 0.7163959143934571,
+      "ci_high": 2.0213687956437933,
+      "direction": "positive",
+      "passed": true,
+      "notes": "Primary controlled template: ordinary least squares linear regression.",
+      "metadata": {
+        "r_squared": 0.3795516491151273,
+        "adj_r_squared": 0.3610308028200564,
+        "coefficients": {
+          "Intercept": -0.2636093375484308,
+          "timefreq_fALFF_0.01_0.08_over_0.01_0.25": 1.3688823550186253,
+          "mean_FD": 0.9511274253022916
+        },
+        "p_values": {
+          "Intercept": 0.263427571683949,
+          "timefreq_fALFF_0.01_0.08_over_0.01_0.25": 8.416274873947656e-05,
+          "mean_FD": 0.0001613251912365184
+        },
+        "covariates": [
+          "mean_FD"
+        ]
+      }
+    },
+    {
+      "test_id": "experiment_plan_86d736554104_timefreq_fALFF_0.01_0.08_over_0.01_0.25_frontoparietal_FC",
+      "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "outcome": "frontoparietal_FC",
+      "method": "linear_regression",
+      "n": 70,
+      "effect": 1.3253831747310538,
+      "p_value": 0.0007814376850377803,
+      "ci_low": 0.5738004433877522,
+      "ci_high": 2.0769659060743555,
+      "direction": "positive",
+      "passed": true,
+      "notes": "Primary controlled template: ordinary least squares linear regression.",
+      "metadata": {
+        "r_squared": 0.3772094370481912,
+        "adj_r_squared": 0.3586186739750028,
+        "coefficients": {
+          "Intercept": -0.2534027673689907,
+          "timefreq_fALFF_0.01_0.08_over_0.01_0.25": 1.3253831747310538,
+          "mean_FD": 1.2546748948800883
+        },
+        "p_values": {
+          "Intercept": 0.3499892417523116,
+          "timefreq_fALFF_0.01_0.08_over_0.01_0.25": 0.0007814376850377803,
+          "mean_FD": 2.0820574866221358e-05
+        },
+        "covariates": [
+          "mean_FD"
+        ]
+      }
+    }
+  ],
+  "robustness_results": [
+    {
+      "check_id": "robustness_715a2600788d",
+      "target_test_id": "experiment_plan_86d736554104_thalamus_DMN_FC_salience_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.3103150103007966,
+      "median_effect": -0.13348158421484588,
+      "ci_low": -0.42748123455239223,
+      "ci_high": 0.13049297563481657,
+      "sign_stability": 0.83,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_a6edbb339324",
+      "target_test_id": "experiment_plan_86d736554104_thalamus_DMN_FC_frontoparietal_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.3579814716385665,
+      "median_effect": -0.2820226736070014,
+      "ci_low": -0.5356401938494088,
+      "ci_high": -0.0649309682267889,
+      "sign_stability": 1.0,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_28bed1f3045e",
+      "target_test_id": "experiment_plan_86d736554104_timefreq_fALFF_0.01_0.08_over_0.01_0.25_salience_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 1.3688823550186253,
+      "median_effect": 0.29816204329928464,
+      "ci_low": 0.044046167946673105,
+      "ci_high": 0.4848535963188257,
+      "sign_stability": 0.99,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_522cf5e8ba39",
+      "target_test_id": "experiment_plan_86d736554104_timefreq_fALFF_0.01_0.08_over_0.01_0.25_frontoparietal_FC",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 1.3253831747310538,
+      "median_effect": 0.27618878716815254,
+      "ci_low": 0.05464143987482926,
+      "ci_high": 0.4951095171881521,
+      "sign_stability": 0.99,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    }
+  ],
+  "negative_control_results": [
+    {
+      "control_id": "negative_control_26add532868c",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 70,
+      "effect": -0.13830810952672554,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_49e3c289a238",
+      "control_type": "negative_control_outcome",
+      "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 93,
+      "effect": 0.2177875092802194,
+      "passed": false,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_400b7c0a1589",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "global_signal_psd_power_max",
+      "n": 70,
+      "effect": -0.03113133305169123,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_d9bb45cfc717",
+      "control_type": "negative_control_outcome",
+      "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "outcome": "global_signal_psd_power_max",
+      "n": 93,
+      "effect": 0.2392073199073399,
+      "passed": false,
+      "notes": "A negative control should not show a stronger nominal association."
+    }
+  ]
+}

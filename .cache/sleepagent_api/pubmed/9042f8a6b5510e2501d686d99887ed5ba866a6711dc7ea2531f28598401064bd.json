@@ -1,0 +1,47 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "41279757",
+      "27534393",
+      "24658633"
+    ],
+    "translationset": [
+      {
+        "from": "Effect",
+        "to": "\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]"
+      },
+      {
+        "from": "motion",
+        "to": "\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion's\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]"
+      },
+      {
+        "from": "parameters",
+        "to": "\"parameter\"[All Fields] OR \"parameter's\"[All Fields] OR \"parameters\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "architecture",
+        "to": "\"architectural\"[All Fields] OR \"architecturally\"[All Fields] OR \"architecture\"[MeSH Terms] OR \"architecture\"[All Fields] OR \"architecture's\"[All Fields] OR \"architectured\"[All Fields] OR \"architectures\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]) AND (\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion s\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]) AND (\"parameter\"[All Fields] OR \"parameter s\"[All Fields] OR \"parameters\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"architectural\"[All Fields] OR \"architecturally\"[All Fields] OR \"architecture\"[MeSH Terms] OR \"architecture\"[All Fields] OR \"architecture s\"[All Fields] OR \"architectured\"[All Fields] OR \"architectures\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "on"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

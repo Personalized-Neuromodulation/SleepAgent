@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "32809668"
+    ],
+    "translationset": [
+      {
+        "from": "Thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "feedback",
+        "to": "\"feedback\"[MeSH Terms] OR \"feedback\"[All Fields] OR \"feedbacks\"[All Fields] OR \"feedback's\"[All Fields]"
+      },
+      {
+        "from": "sleep disturbances",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disturbances\"[All Fields]) OR \"sleep disturbances\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"feedback\"[MeSH Terms] OR \"feedback\"[All Fields] OR \"feedbacks\"[All Fields] OR \"feedback s\"[All Fields]) AND \"loop\"[All Fields] AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disturbances\"[All Fields]) OR \"sleep disturbances\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

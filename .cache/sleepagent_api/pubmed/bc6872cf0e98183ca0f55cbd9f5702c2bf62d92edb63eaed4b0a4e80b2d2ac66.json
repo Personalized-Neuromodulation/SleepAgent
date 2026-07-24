@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "8",
+    "retmax": "8",
+    "retstart": "0",
+    "idlist": [
+      "42040346",
+      "41424171",
+      "39954565",
+      "39566269",
+      "39023172",
+      "37743764",
+      "37425014",
+      "36599195"
+    ],
+    "translationset": [
+      {
+        "from": "voxels",
+        "to": "\"voxel\"[All Fields] OR \"voxel's\"[All Fields] OR \"voxelization\"[All Fields] OR \"voxelized\"[All Fields] OR \"voxels\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "networks",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"ROI\"[All Fields] AND (\"voxel\"[All Fields] OR \"voxel s\"[All Fields] OR \"voxelization\"[All Fields] OR \"voxelized\"[All Fields] OR \"voxels\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields])"
+  }
+}
