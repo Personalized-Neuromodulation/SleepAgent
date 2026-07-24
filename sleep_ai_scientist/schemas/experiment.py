@@ -57,6 +57,7 @@ class StatisticalTestResult(BaseModel):
     direction: str = ""
     passed: bool = False
     notes: str = ""
+    metadata: dict[str, Any] = Field(default_factory=dict)
 
 
 class StatsAgentResult(BaseModel):
@@ -104,6 +105,7 @@ class MLAgentResult(BaseModel):
     score_std: float | None = None
     feature_importance: dict[str, float] = Field(default_factory=dict)
     notes: str = ""
+    metadata: dict[str, Any] = Field(default_factory=dict)
 
 
 class CriticFinding(BaseModel):

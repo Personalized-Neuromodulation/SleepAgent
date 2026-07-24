@@ -14,6 +14,7 @@ from sleep_ai_scientist.hypothesis.agents.state import HypothesisSessionState
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
 from sleep_ai_scientist.llm.client import normalize_llm_config
 from sleep_ai_scientist.hypothesis.agents.memory import load_experimental_feedback, load_reward_memory
+from sleep_ai_scientist.hypothesis.testability import load_analysis_ready_profile
 from sleep_ai_scientist.schemas.evidence import EvidenceRecord
 from sleep_ai_scientist.schemas.hypothesis import Hypothesis
 
@@ -65,6 +66,7 @@ class HypothesisSupervisor:
         evidence_path = _preferred_existing_path(config, "llm_evidence_context_json", full_evidence_path)
         knowledge_graph_path = _preferred_existing_path(config, "llm_mechanism_context_json", full_knowledge_graph_path)
         prior_hypotheses_path = config_path(config, "prior_hypotheses_json", "outputs/hypotheses/top_k_hypotheses.json")
+        analysis_ready_profile_path = config_path(config, "analysis_ready_profile", "outputs/profiles/analysis_ready_profile.yaml")
         output_dir = config_path(config, "output_hypotheses_dir", "outputs/hypotheses")
         report_path = config_path(config, "report_path", "reports/phase2_hypothesis_report.md")
         feedback_path = config_path(config, "experimental_feedback", "outputs/hypotheses/experimental_feedback.json")
@@ -95,6 +97,8 @@ class HypothesisSupervisor:
         state.artifacts["full_knowledge_graph_path"] = full_knowledge_graph_path
         state.artifacts["evidence_table_path"] = evidence_path
         state.artifacts["knowledge_graph_path"] = knowledge_graph_path
+        state.artifacts["analysis_ready_profile_path"] = analysis_ready_profile_path
+        state.artifacts["analysis_ready_profile"] = load_analysis_ready_profile(analysis_ready_profile_path)
         return state
 
 

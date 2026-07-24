@@ -1,99 +1,287 @@
 [
   {
-    "review_id": "review_810e785be179",
-    "hypothesis_id": "hypothesis_483a60d13062",
+    "review_id": "review_8371f082a79c",
+    "hypothesis_id": "hypothesis_507f1dc573b1",
     "session_id": "sleep_hypothesis_session",
     "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical coupling and white matter pathways in insomnia, showing plausible and testable mechanisms with existing evidence.",
+    "critique": "The hypothesis is novel in combining thalamocortical and white matter pathways. However, some assumptions may need more direct evidence linking FA and spindle density to insomnia severity. The experimental plan is robust but could benefit from considering confounding variables like age and medication.",
+    "supporting_evidence": [
+      "E_c111ff4a9c43",
+      "E_60727a02e87c",
+      "E_d8fe870ca211",
+      "E_2555c7f10cd0"
+    ],
+    "created_at": "2026-07-24T06:57:42.452764+00:00"
+  },
+  {
+    "review_id": "review_3c79942fc872",
+    "hypothesis_id": "hypothesis_507f1dc573b1",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical coupling and white matter pathways in insomnia, showing strong evidence support and testability.",
+    "critique": "The hypothesis is well-supported by existing evidence linking thalamocortical coupling and white matter integrity to insomnia. The integration of spindle modulation with white matter pathways is novel and plausible. The experimental plan is robust, using DTI and EEG with clear comparisons and correlations. Potential for further validation with additional measures of thalamocortical synchronization.",
+    "supporting_evidence": [
+      "E_c111ff4a9c43",
+      "E_60727a02e87c",
+      "E_d8fe870ca211",
+      "E_2555c7f10cd0"
+    ],
+    "created_at": "2026-07-24T06:58:02.782057+00:00"
+  },
+  {
+    "review_id": "review_056b1f6fd828",
+    "hypothesis_id": "hypothesis_507f1dc573b1",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical coupling and white matter pathways in insomnia, showing strong support from existing evidence and a clear experimental plan.",
+    "critique": "The hypothesis is well-structured and novel, combining thalamocortical and white matter pathways. The experimental plan is robust with DTI and EEG, and the assumptions are supported by prior evidence. The integration of default mode and sensorimotor networks is plausible. The directional prediction aligns with existing findings on white matter integrity and spindle density.",
+    "supporting_evidence": [
+      "E_c111ff4a9c43",
+      "E_60727a02e87c",
+      "E_d8fe870ca211",
+      "E_2555c7f10cd0"
+    ],
+    "created_at": "2026-07-24T06:58:23.435771+00:00"
+  },
+  {
+    "review_id": "review_1536f40a55e7",
+    "hypothesis_id": "hypothesis_507f1dc573b1",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical coupling and white matter pathways in insomnia, showing strong evidence and testability.",
+    "critique": "The hypothesis is well-structured with clear integration of thalamocortical and white matter pathways. The experimental plan is feasible with DTI and EEG. Supporting evidence includes E_c111ff4a9c43, E_60727a02e87c, E_d8fe870ca211, E_2555c7f10cd0.",
+    "supporting_evidence": [
+      "E_c111ff4a9c43",
+      "E_60727a02e87c",
+      "E_d8fe870ca211",
+      "E_2555c7f10cd0"
+    ],
+    "created_at": "2026-07-24T06:58:45.282869+00:00"
+  },
+  {
+    "review_id": "review_7dd19df96945",
+    "hypothesis_id": "hypothesis_507f1dc573b1",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates thalamocortical coupling and white matter pathways in insomnia, showing strong support from existing evidence and a clear experimental plan.",
+    "critique": "The hypothesis is well-structured and novel, combining thalamocortical and white matter pathways. Existing evidence supports thalamocortical coupling and white matter integrity (FA) in insomnia. The experimental plan is feasible with DTI and EEG. Potential for further exploration in longitudinal studies.",
+    "supporting_evidence": [
+      "E_c111ff4a9c43",
+      "E_60727a02e87c",
+      "E_d8fe870ca211",
+      "E_2555c7f10cd0"
+    ],
+    "created_at": "2026-07-24T06:59:05.082981+00:00"
+  },
+  {
+    "review_id": "review_7b48fb8eaf1d",
+    "hypothesis_id": "hypothesis_d0c51b2a03fe",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a plausible and testable link between thalamocortical coupling, spindle modulation, and insomnia severity, with a clear experimental plan and integration of existing evidence.",
+    "critique": "The hypothesis is novel in linking thalamocortical coupling with insomnia severity through spindle modulation. It is supported by existing evidence on thalamocortical coupling and functional connectivity. The experimental plan is well-defined, using EEG, fMRI, and DTI. However, the correctness could be improved by considering potential confounding factors such as age and medication. The integration of white matter integrity (FA) adds testability but may require further validation.",
+    "supporting_evidence": [
+      "E_d8fe870ca211",
+      "E_7b5420adadff",
+      "E_8dcf143ba794",
+      "E_e48e26fe50de"
+    ],
+    "created_at": "2026-07-24T06:59:27.721933+00:00"
+  },
+  {
+    "review_id": "review_df805357f30d",
+    "hypothesis_id": "hypothesis_d0c51b2a03fe",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a novel and testable mechanism linking thalamocortical coupling and insomnia severity through disrupted spindle activity and functional connectivity. Supported by existing evidence and modality integration.",
+    "critique": "The hypothesis effectively integrates thalamocortical coupling with white matter integrity, leveraging existing evidence on functional connectivity and spindle modulation. The experimental plan is well-structured, utilizing EEG, fMRI, and DTI. The directional prediction is clear, and the falsification criteria are well-defined. However, the role of white matter pathways in modulating thalamocortical coupling could be further explored.",
+    "supporting_evidence": [
+      "E_d8fe870ca211",
+      "E_7b5420adadff",
+      "E_8dcf143ba794",
+      "E_e48e26fe50de"
+    ],
+    "created_at": "2026-07-24T06:59:49.684106+00:00"
+  },
+  {
+    "review_id": "review_1a73a8321ccb",
+    "hypothesis_id": "hypothesis_d0c51b2a03fe",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a novel and testable mechanism linking thalamocortical coupling and insomnia severity through disrupted spindle activity and functional connectivity. The experimental plan is well-structured and supported by existing evidence.",
+    "critique": "The hypothesis effectively integrates thalamocortical coupling with white matter integrity, building on prior evidence of functional connectivity and spindle modulation. The assumptions are logically derived from existing findings, though further validation of the direct causal pathway between thalamocortical coupling and spindle modulation is needed. The use of FA as a measurable variable in DTI provides a strong testable component. The directional prediction is clear and aligns with the knowledge graph paths provided. The falsification criteria are well-defined, enhancing the hypothesis's robustness.",
+    "supporting_evidence": [
+      "E_d8fe870ca211",
+      "E_7b5420adadff",
+      "E_8dcf143ba794",
+      "E_e48e26fe50de"
+    ],
+    "created_at": "2026-07-24T07:00:13.865275+00:00"
+  },
+  {
+    "review_id": "review_be9539b87c9c",
+    "hypothesis_id": "hypothesis_d0c51b2a03fe",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a plausible and testable link between thalamocortical coupling, spindle modulation, and insomnia severity, supported by existing evidence on functional connectivity and white matter integrity. The integration of DTI with EEG and fMRI adds multimodal specificity.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence on thalamocortical coupling and functional connectivity. However, the assumption that thalamocortical coupling directly mediates spindle modulation in insomnia may require further validation, as other factors (e.g., cortical slow oscillations, GABAergic pathways) could also influence spindle activity. The experimental plan is robust but could benefit from including a control group for comparison. The use of FA as a measurable variable is sound, but the relationship between FA and thalamocortical coupling may need to be more explicitly modeled.",
+    "supporting_evidence": [
+      "E_d8fe870ca211",
+      "E_7b5420adadff",
+      "E_8dcf143ba794",
+      "E_e48e26fe50de"
+    ],
+    "created_at": "2026-07-24T07:00:39.705191+00:00"
+  },
+  {
+    "review_id": "review_3e3d20650999",
+    "hypothesis_id": "hypothesis_d0c51b2a03fe",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a novel link between thalamocortical coupling and insomnia severity, integrating spindle modulation and white matter integrity. It is supported by existing evidence on functional connectivity and spindle activity, though some assumptions require further validation.",
+    "critique": "The hypothesis introduces a plausible mechanism linking thalamocortical coupling to insomnia severity through spindle modulation and white matter integrity. The integration of DTI with EEG/fMRI is a strong point, enhancing testability. However, the assumption that thalamocortical coupling directly mediates spindle modulation in insomnia may be oversimplified, as other factors (e.g., cortical slow oscillations) could also play a role. The evidence from E1, E2, and E3 supports the role of thalamocortical coupling in spindle modulation, but the connection to white matter integrity (FA) needs more direct evidence. The directional prediction is well-defined, and the falsification criteria are clear, though the critique highlights the need for considering interactions between thalamocortical pathways and white matter integrity.",
+    "supporting_evidence": [
+      "E_d8fe870ca211",
+      "E_7b5420adadff",
+      "E_8dcf143ba794",
+      "E_e48e26fe50de"
+    ],
+    "created_at": "2026-07-24T07:01:08.828451+00:00"
+  },
+  {
+    "review_id": "review_c96742ab0844",
+    "hypothesis_id": "hypothesis_a627b04ae678",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and testable, linking cortico-thalamic connectivity to REM-NREM transitions in insomnia. Some evidence supports similar mechanisms, but novelty remains.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence on cortico-thalamic connectivity and REM-NREM transitions. However, the novelty is moderate as similar links between cortico-thalamic connectivity and sleep architecture have been observed in related studies. The experimental plan is robust, using fMRI and PSG data. The key assumptions are reasonable but could benefit from further validation with more diverse patient populations.",
+    "supporting_evidence": [
+      "E_151e490cbf7d",
+      "E_b196f06926bf",
+      "E_6c9cac407829",
+      "E_d4d331576ff1"
+    ],
+    "created_at": "2026-07-24T07:01:30.598033+00:00"
+  },
+  {
+    "review_id": "review_f8ef0fcd35ab",
+    "hypothesis_id": "hypothesis_a627b04ae678",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, novel, and testable with existing evidence supporting cortico-thalamic connectivity's role in REM-NREM transitions and insomnia.",
+    "critique": "The hypothesis integrates existing evidence on cortico-thalamic connectivity and REM-NREM transitions, showing a logical link to insomnia severity. The experimental plan is feasible with fMRI and PSG data. Novelty lies in connecting cortico-thalamic pathways specifically to REM-NREM switching in insomnia. Supporting evidence includes E_151e490cbf7d, E_b196f06926bf, E_6c9cac407829, and E_d4d331576ff1.",
+    "supporting_evidence": [
+      "E_151e490cbf7d",
+      "E_b196f06926bf",
+      "E_6c9cac407829",
+      "E_d4d331576ff1"
+    ],
+    "created_at": "2026-07-24T07:01:54.991881+00:00"
+  },
+  {
+    "review_id": "review_20eeb54b5bc2",
+    "hypothesis_id": "hypothesis_a627b04ae678",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is well-structured, novel, and testable with existing evidence supporting cortico-thalamic connectivity's role in REM-NREM transitions and insomnia severity.",
+    "critique": "The hypothesis integrates existing evidence on cortico-thalamic connectivity and REM-NREM transitions, showing a clear mechanistic link. The assumptions are logically derived from prior findings. The experimental plan is feasible with fMRI and PSG data. Potential for further validation with more diverse patient cohorts.",
+    "supporting_evidence": [
+      "E_151e490cbf7d",
+      "E_b196f06926bf",
+      "E_6c9cac407829",
+      "E_d4d331576ff1"
+    ],
+    "created_at": "2026-07-24T07:02:14.904643+00:00"
+  },
+  {
+    "review_id": "review_005ffb645bf4",
+    "hypothesis_id": "hypothesis_a627b04ae678",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
     "verdict": "pass",
     "novelty_score": 7.0,
     "correctness_score": 8.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is plausible and testable, with supporting evidence from the knowledge graph. It integrates existing findings on DMN and salience network dysregulation in insomnia.",
-    "critique": "The hypothesis builds on established evidence of DMN and salience network interactions in insomnia, but could benefit from further clarification on how altered synchronization specifically leads to cognitive impairments. The experimental plan is robust, though potential confounds like age and education level should be controlled for.",
+    "summary": "The hypothesis is plausible and testable, linking cortico-thalamic connectivity to REM-NREM transitions in insomnia. Supported by existing evidence on cortico-thalamic roles in sleep architecture.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence on cortico-thalamic connectivity and REM-NREM transitions. However, the specific role of cortico-thalamic pathways in modulating these transitions requires further detailed investigation. The experimental plan is robust, but potential confounds such as medication and age should be controlled.",
     "supporting_evidence": [
-      "E1",
-      "E2",
-      "E3",
-      "E_c65ed8c8481f",
-      "E_c111ff4a9c43",
-      "E_60727a02e87c",
-      "E_2555c7f10cd0"
+      "E_151e490cbf7d",
+      "E_b196f06926bf",
+      "E_6c9cac407829",
+      "E_d4d331576ff1"
     ],
-    "created_at": "2026-07-23T10:47:35.704380+00:00"
+    "created_at": "2026-07-24T07:02:35.839568+00:00"
   },
   {
-    "review_id": "review_a2bd28317a88",
-    "hypothesis_id": "hypothesis_483a60d13062",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "full",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-supported by existing evidence and integrates multiple findings from the knowledge graph, showing strong connectivity between DMN dysregulation and insomnia severity. The experimental plan is robust and testable.",
-    "critique": "The hypothesis effectively links DMN dysregulation with insomnia severity through resting-state connectivity, supported by evidence from the knowledge graph. The key assumptions are plausible and align with previous findings. The experimental plan using resting-state fMRI and graph theory analysis is methodologically sound. Potential areas for further exploration include the role of other networks and the integration of multimodal data.",
-    "supporting_evidence": [
-      "E1",
-      "E2",
-      "E3",
-      "E_c65ed8c8481f",
-      "E_c111ff4a9c43",
-      "E_60727a02e87c",
-      "E_2555c7f10cd0"
-    ],
-    "created_at": "2026-07-23T10:47:58.822899+00:00"
-  },
-  {
-    "review_id": "review_1893d2a87c94",
-    "hypothesis_id": "hypothesis_483a60d13062",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "deep_verification",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-supported by existing evidence and integrates multiple findings from the knowledge graph. The proposed mechanism of DMN dysregulation linking insomnia severity to cognitive impairments is plausible and testable with resting-state fMRI and graph theory analysis.",
-    "critique": "The hypothesis effectively links DMN dysregulation with insomnia severity through altered connectivity with the salience network. The evidence from the knowledge graph supports the key assumptions, particularly the increased DMN connectivity and decreased DMN-salience connectivity in insomnia patients. The experimental plan is robust, leveraging resting-state fMRI and graph theory analysis. However, potential confounding factors such as age and education level should be controlled for in the analysis. The hypothesis could benefit from considering other networks beyond the salience network, such as the frontoparietal network, which also showed altered connectivity in the evidence. The directional prediction is clear, but the falsification criteria are well-defined, enhancing the hypothesis's testability.",
-    "supporting_evidence": [
-      "E1",
-      "E2",
-      "E3",
-      "E_c65ed8c8481f",
-      "E_c111ff4a9c43",
-      "E_60727a02e87c",
-      "E_2555c7f10cd0"
-    ],
-    "created_at": "2026-07-23T10:48:28.193364+00:00"
-  },
-  {
-    "review_id": "review_d9db0d77dd49",
-    "hypothesis_id": "hypothesis_483a60d13062",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "simulation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-supported by existing evidence and integrates multiple brain networks with insomnia severity. The proposed mechanisms are plausible and testable with fMRI and graph theory analysis.",
-    "critique": "The hypothesis effectively links DMN dysregulation with insomnia severity through altered connectivity with the salience network. The evidence from the knowledge graph supports the proposed mechanisms, particularly the findings on increased DMN connectivity and decreased DMN-salience network connectivity. The experimental plan is robust, using resting-state fMRI and graph theory analysis. However, potential confounding factors such as age and education level should be controlled for in the analysis. The hypothesis is novel in integrating multiple networks and offers a clear directional prediction that aligns with existing findings.",
-    "supporting_evidence": [
-      "E1",
-      "E2",
-      "E3",
-      "E_c65ed8c8481f",
-      "E_c111ff4a9c43",
-      "E_60727a02e87c",
-      "E_2555c7f10cd0"
-    ],
-    "created_at": "2026-07-23T10:48:53.667824+00:00"
-  },
-  {
-    "review_id": "review_ad853a60a74a",
-    "hypothesis_id": "hypothesis_483a60d13062",
+    "review_id": "review_5e693f814f38",
+    "hypothesis_id": "hypothesis_a627b04ae678",
     "session_id": "sleep_hypothesis_session",
     "review_type": "observation",
     "verdict": "pass",
@@ -101,22 +289,19 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is well-supported by existing evidence and integrates multiple findings from the knowledge graph, showing strong connectivity between DMN dysregulation and insomnia severity. The experimental plan is feasible and testable.",
-    "critique": "The hypothesis effectively links DMN dysregulation with insomnia severity through resting-state connectivity, supported by evidence from the knowledge graph. The proposed experimental plan using resting-state fMRI and graph theory analysis is robust. However, the hypothesis could benefit from considering potential confounding factors such as age and education level, which were controlled in some previous studies. The integration of salience network interactions is well-justified, but further exploration of other networks (e.g., frontoparietal) might enhance the model's comprehensiveness.",
+    "summary": "The hypothesis is well-supported by existing evidence and integrates novel aspects of cortico-thalamic connectivity with REM-NREM transitions in insomnia. The experimental plan is feasible and the assumptions are plausible.",
+    "critique": "The hypothesis effectively links cortico-thalamic connectivity with REM-NREM transitions, a novel integration. The evidence from previous studies supports the role of cortico-thalamic connectivity in sleep architecture. The experimental plan using fMRI and PSG is robust. The assumptions are well-justified by existing literature. The directional prediction is clear and testable. Potential areas for further exploration include the specific pathways within the cortico-thalamic network and the interaction with other brain networks like the salience network.",
     "supporting_evidence": [
-      "E1",
-      "E2",
-      "E3",
-      "E_c65ed8c8481f",
-      "E_c111ff4a9c43",
-      "E_60727a02e87c",
-      "E_2555c7f10cd0"
+      "E_151e490cbf7d",
+      "E_b196f06926bf",
+      "E_6c9cac407829",
+      "E_d4d331576ff1"
     ],
-    "created_at": "2026-07-23T10:49:19.387283+00:00"
+    "created_at": "2026-07-24T07:02:59.660766+00:00"
   },
   {
-    "review_id": "review_2055851bb3d9",
-    "hypothesis_id": "hypothesis_3f33f45ba452",
+    "review_id": "review_8446d755e91b",
+    "hypothesis_id": "hypothesis_0dea35fcf609",
     "session_id": "sleep_hypothesis_session",
     "review_type": "initial",
     "verdict": "pass",
@@ -124,21 +309,19 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is plausible, integrating thalamocortical coupling and REM-NREM switching in insomnia, with strong support from existing evidence.",
-    "critique": "The hypothesis effectively combines thalamocortical coupling and REM-NREM switching, which are supported by evidence in the knowledge graph. The experimental plan is well-defined, using PSG and fMRI data. The key assumptions are grounded in existing findings, though further exploration of interactions with other networks could enhance the model.",
+    "summary": "The hypothesis is plausible and novel, linking white matter integrity (FA) with insomnia severity through disrupted DMN-sensorimotor connectivity. It is well-supported by existing evidence and has a clear experimental plan.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence from the knowledge graph. The proposed DTI and fMRI study is feasible and directly addresses the key assumptions. The directional prediction is clear, and the falsification criteria are well-defined. The novelty lies in connecting FA modulation specifically to DMN-sensorimotor connectivity in insomnia, which is supported by prior findings on DMN dysregulation and FA in insomnia. However, the hypothesis could benefit from considering potential confounds such as age, medication, and other sleep-related variables, which are listed in the knowledge graph as confounds.",
     "supporting_evidence": [
-      "evidence_id1",
-      "evidence_id2",
-      "E_d8fe870ca211",
-      "E_8dcf143ba794",
-      "E_3b52aae7cc54",
-      "E_261ecf08946b"
+      "E_88de064381e1",
+      "E_1045512ea122",
+      "E_57f61f661155",
+      "E_bf75dd3eeb62"
     ],
-    "created_at": "2026-07-23T10:49:40.549381+00:00"
+    "created_at": "2026-07-24T07:03:26.130613+00:00"
   },
   {
-    "review_id": "review_37fab26e3e31",
-    "hypothesis_id": "hypothesis_3f33f45ba452",
+    "review_id": "review_2aff3082a300",
+    "hypothesis_id": "hypothesis_0dea35fcf609",
     "session_id": "sleep_hypothesis_session",
     "review_type": "full",
     "verdict": "pass",
@@ -146,21 +329,22 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical coupling and REM-NREM switching in insomnia, supported by existing evidence and showing strong testability.",
-    "critique": "The hypothesis is well-supported by existing evidence, particularly the findings linking thalamocortical coupling with insomnia severity. The integration of REM-NREM switching adds a novel layer to the understanding of insomnia mechanisms. The experimental plan is robust, utilizing PSG and fMRI data. Potential areas for refinement include considering other brain networks and confirming the interaction between thalamocortical coupling and REM-NREM switching.",
+    "summary": "The hypothesis is well-structured, novel, and testable, with strong support from existing evidence linking FA, DMN, and insomnia severity.",
+    "critique": "The hypothesis effectively connects white matter integrity (FA) with disrupted DMN-sensorimotor connectivity in insomnia, supported by prior findings (E1, E2, E3). The experimental plan is robust, using DTI and fMRI. The directional prediction is clear, and the falsification criteria are well-defined. Novelty lies in integrating FA modulation with network connectivity in insomnia.",
     "supporting_evidence": [
-      "evidence_id1",
-      "evidence_id2",
-      "E_d8fe870ca211",
-      "E_8dcf143ba794",
-      "E_3b52aae7cc54",
-      "E_261ecf08946b"
+      "E1",
+      "E2",
+      "E3",
+      "E_88de064381e1",
+      "E_1045512ea122",
+      "E_57f61f661155",
+      "E_bf75dd3eeb62"
     ],
-    "created_at": "2026-07-23T10:50:03.103700+00:00"
+    "created_at": "2026-07-24T07:03:49.443278+00:00"
   },
   {
-    "review_id": "review_fec4f2eb3368",
-    "hypothesis_id": "hypothesis_3f33f45ba452",
+    "review_id": "review_83351d137992",
+    "hypothesis_id": "hypothesis_0dea35fcf609",
     "session_id": "sleep_hypothesis_session",
     "review_type": "deep_verification",
     "verdict": "pass",
@@ -168,21 +352,19 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is well-supported by existing evidence, showing strong integration of thalamocortical coupling and REM-NREM switching in insomnia. The experimental plan is robust and testable.",
-    "critique": "The hypothesis effectively combines thalamocortical coupling and REM-NREM switching, which are supported by evidence from the knowledge graph. The assumptions are well-founded, and the experimental plan using PSG and fMRI is feasible. The directional prediction aligns with existing findings, and the falsification criteria are clear. However, the interaction between thalamocortical coupling and other networks could be further explored.",
+    "summary": "The hypothesis is well-structured, novel, and testable with existing neuroimaging techniques. It integrates white matter integrity (FA) with functional connectivity between DMN and sensorimotor networks, linking them to insomnia severity.",
+    "critique": "The hypothesis is grounded in existing evidence linking DMN-sensorimotor connectivity and FA with insomnia. The assumptions are logically connected and supported by prior findings. The experimental plan is robust, using DTI and fMRI, which are standard in sleep neuroscience. The directional prediction is clear, and the falsification criteria are well-defined. Novelty lies in the integration of FA modulation with DMN-sensorimotor connectivity, though some prior studies have touched on similar networks.",
     "supporting_evidence": [
-      "evidence_id1",
-      "evidence_id2",
-      "E_d8fe870ca211",
-      "E_8dcf143ba794",
-      "E_3b52aae7cc54",
-      "E_261ecf08946b"
+      "E_88de064381e1",
+      "E_1045512ea122",
+      "E_57f61f661155",
+      "E_bf75dd3eeb62"
     ],
-    "created_at": "2026-07-23T10:50:26.465127+00:00"
+    "created_at": "2026-07-24T07:04:13.803342+00:00"
   },
   {
-    "review_id": "review_fb359e11d6de",
-    "hypothesis_id": "hypothesis_3f33f45ba452",
+    "review_id": "review_a76002ff64ae",
+    "hypothesis_id": "hypothesis_0dea35fcf609",
     "session_id": "sleep_hypothesis_session",
     "review_type": "simulation",
     "verdict": "pass",
@@ -190,21 +372,19 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical coupling and REM-NREM switching, linking them to insomnia severity and cognitive impairments. It is supported by evidence from PSG and fMRI data, showing disrupted thalamocortical coupling and altered REM-NREM dynamics in insomnia patients.",
-    "critique": "The hypothesis is well-structured and integrates existing evidence on thalamocortical coupling and REM-NREM switching. The experimental plan is feasible with PSG and fMRI data. However, the interaction between thalamocortical coupling and other brain networks (e.g., salience network) could be further explored. The falsification criteria are clear, but the hypothesis may need to consider alternative pathways if thalamocortical coupling is not the primary factor.",
+    "summary": "The hypothesis is well-structured, plausible, and testable with existing neuroimaging techniques. It integrates white matter integrity (FA) with functional connectivity between DMN and sensorimotor networks, a novel angle in insomnia research.",
+    "critique": "The hypothesis is grounded in existing evidence linking FA, DMN, and insomnia. The proposed DTI and fMRI experiments are feasible and align with current methodologies. The directional prediction is clear, and the falsification criteria are well-defined. However, potential confounds such as age, medication, and mean FD should be controlled for, as they are listed in the knowledge graph as confounds. The integration of FA with functional connectivity is a logical extension, but the specific pathways connecting FA modulation to disrupted connectivity require further elucidation.",
     "supporting_evidence": [
-      "evidence_id1",
-      "evidence_id2",
-      "E_d8fe870ca211",
-      "E_8dcf143ba794",
-      "E_3b52aae7cc54",
-      "E_261ecf08946b"
+      "E_88de064381e1",
+      "E_1045512ea122",
+      "E_57f61f661155",
+      "E_bf75dd3eeb62"
     ],
-    "created_at": "2026-07-23T10:50:52.391182+00:00"
+    "created_at": "2026-07-24T07:04:39.843010+00:00"
   },
   {
-    "review_id": "review_e8c2cbcd0bf4",
-    "hypothesis_id": "hypothesis_3f33f45ba452",
+    "review_id": "review_a84cddd9be9c",
+    "hypothesis_id": "hypothesis_0dea35fcf609",
     "session_id": "sleep_hypothesis_session",
     "review_type": "observation",
     "verdict": "pass",
@@ -212,152 +392,38 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical coupling and REM-NREM switching, linking them to insomnia severity and cognitive impairments. Supported by evidence from PSG and fMRI, with clear experimental plan and falsification criteria.",
-    "critique": "The hypothesis effectively combines thalamocortical coupling and REM-NREM switching, which are well-supported in the knowledge graph. The experimental plan is robust, using PSG and fMRI data. However, the interaction between thalamocortical coupling and other networks (e.g., salience network) could be further explored. The critique from the debate mentions potential oversight of other brain regions, but the refinement addresses this by integrating both factors.",
-    "supporting_evidence": [
-      "evidence_id1",
-      "evidence_id2",
-      "E_d8fe870ca211",
-      "E_8dcf143ba794",
-      "E_3b52aae7cc54",
-      "E_261ecf08946b"
-    ],
-    "created_at": "2026-07-23T10:51:16.973049+00:00"
-  },
-  {
-    "review_id": "review_532cd1a17a77",
-    "hypothesis_id": "hypothesis_d4273170d49f",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "initial",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is plausible and integrates existing evidence on thalamocortical coupling and REM-NREM switching in insomnia. It is novel in linking these factors to cognitive impairments and offers a testable experimental plan.",
-    "critique": "The hypothesis effectively combines established findings on thalamocortical coupling with REM-NREM switching, providing a coherent mechanism for insomnia severity and cognitive impairments. The experimental plan is well-structured, using fMRI and EEG data. The key assumptions are supported by existing evidence (E1, E2, E3). The integration of multiple modalities (fMRI, EEG, scale) enhances testability. The falsification criteria are clear, though further validation with larger cohorts could strengthen the hypothesis.",
-    "supporting_evidence": [
-      "E1",
-      "E2",
-      "E3",
-      "E_b196f06926bf",
-      "E_6c9cac407829",
-      "E_d4d331576ff1",
-      "E_3a2f3fb2f022"
-    ],
-    "created_at": "2026-07-23T10:51:42.442723+00:00"
-  },
-  {
-    "review_id": "review_067aba171487",
-    "hypothesis_id": "hypothesis_d4273170d49f",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "full",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured, integrating thalamocortical coupling and REM-NREM switching in insomnia, with strong supporting evidence from fMRI and EEG studies. The experimental plan is feasible and testable.",
-    "critique": "The hypothesis effectively links thalamocortical coupling with REM-NREM switching, supported by evidence from the knowledge graph. The integration of fMRI and EEG modalities enhances the credibility of the findings. However, the study could benefit from including longitudinal data to establish causality. The assumptions are well-founded, though further validation with diverse patient cohorts may be needed.",
-    "supporting_evidence": [
-      "E1",
-      "E2",
-      "E3",
-      "E_b196f06926bf",
-      "E_6c9cac407829",
-      "E_d4d331576ff1",
-      "E_3a2f3fb2f022"
-    ],
-    "created_at": "2026-07-23T10:52:05.706337+00:00"
-  },
-  {
-    "review_id": "review_f383ac423df9",
-    "hypothesis_id": "hypothesis_d4273170d49f",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "deep_verification",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured, integrating thalamocortical coupling and REM-NREM switching in insomnia. It is supported by existing evidence and has strong testability.",
-    "critique": "The hypothesis effectively links thalamocortical coupling with REM-NREM switching, providing a comprehensive view of insomnia mechanisms. The experimental plan is robust, using fMRI and EEG. The key assumptions are supported by evidence from the knowledge graph. However, further clarification on the interaction between thalamocortical coupling and REM-NREM switching could enhance the hypothesis.",
-    "supporting_evidence": [
-      "E1",
-      "E2",
-      "E3",
-      "E_b196f06926bf",
-      "E_6c9cac407829",
-      "E_d4d331576ff1",
-      "E_3a2f3fb2f022"
-    ],
-    "created_at": "2026-07-23T10:52:28.288759+00:00"
-  },
-  {
-    "review_id": "review_3d5ec7dd729e",
-    "hypothesis_id": "hypothesis_d4273170d49f",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "simulation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-structured, integrating thalamocortical coupling and REM-NREM switching in insomnia, with strong supporting evidence from fMRI and EEG studies. The experimental plan is feasible and testable.",
-    "critique": "The hypothesis effectively links thalamocortical coupling with REM-NREM switching, providing a comprehensive view of insomnia mechanisms. The use of fMRI and EEG modalities is appropriate. However, the integration of REM-NREM switching with thalamocortical coupling could benefit from more detailed temporal analysis. The evidence from E1, E2, and E3 supports the key assumptions, but further validation with larger cohorts may enhance robustness.",
+    "summary": "The hypothesis is well-structured, novel, and testable with existing DTI and fMRI techniques. It aligns with existing evidence on DMN and sensorimotor network connectivity in insomnia.",
+    "critique": "The hypothesis effectively links white matter integrity (FA) with disrupted DMN-sensorimotor connectivity in insomnia, supported by prior evidence (E1, E2, E3). The experimental plan is robust, though further validation with larger cohorts and control for confounds (e.g., age, medication) would strengthen the findings. The directional prediction is clear, and the falsification criteria are well-defined.",
     "supporting_evidence": [
       "E1",
       "E2",
       "E3"
     ],
-    "created_at": "2026-07-23T10:52:48.198352+00:00"
+    "created_at": "2026-07-24T07:04:58.904760+00:00"
   },
   {
-    "review_id": "review_f7979602447e",
-    "hypothesis_id": "hypothesis_d4273170d49f",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "observation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis is well-supported by existing evidence and integrates multiple mechanisms and variables relevant to insomnia. The experimental plan is feasible and the assumptions are plausible.",
-    "critique": "The hypothesis effectively links thalamocortical coupling with REM-NREM switching in insomnia, building on established evidence of thalamocortical disruption. The integration of cognitive impairments as an outcome is logical. The experimental plan using fMRI and EEG is appropriate. The key assumptions are supported by prior findings, though further validation with larger cohorts could enhance robustness.",
-    "supporting_evidence": [
-      "E1",
-      "E2",
-      "E3",
-      "E_b196f06926bf",
-      "E_6c9cac407829",
-      "E_d4d331576ff1",
-      "E_3a2f3fb2f022"
-    ],
-    "created_at": "2026-07-23T10:53:10.481146+00:00"
-  },
-  {
-    "review_id": "review_0e1899cd035c",
-    "hypothesis_id": "hypothesis_63c6962b797f",
+    "review_id": "review_a01219dbd8e4",
+    "hypothesis_id": "hypothesis_4610cc024bec",
     "session_id": "sleep_hypothesis_session",
     "review_type": "initial",
     "verdict": "pass",
     "novelty_score": 8.0,
-    "correctness_score": 9.0,
+    "correctness_score": 7.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is plausible, novel, and testable, linking thalamocortical coupling with insomnia severity through FA. Supported by existing evidence.",
-    "critique": "The hypothesis integrates existing evidence on thalamocortical coupling and FA, showing a clear pathway from structural white matter changes to insomnia severity. The experimental plan is well-defined, using DTI and cognitive metrics. Novelty lies in connecting FA with thalamocortical coupling during NREM sleep, though some evidence may be indirect.",
+    "summary": "The hypothesis integrates thalamic spindle modulation and REM-NREM switching through thalamocortical and cortico-thalamic pathways, showing good novelty and testability. It is supported by existing evidence on thalamocortical coupling and cortico-thalamic connectivity, though some assumptions require further validation.",
+    "critique": "The hypothesis is plausible and integrates existing findings on thalamocortical and cortico-thalamic pathways. The experimental plan is well-defined with EEG and fMRI measures. However, the link between spindle modulation and REM-NREM transitions is somewhat indirect and may require more detailed mechanistic evidence. The correctness is moderate due to the need for stronger evidence on the interaction between spindle density and REM latency. The novelty is high as it combines two pathways (thalamocortical and cortico-thalamic) in explaining insomnia, which is less commonly integrated in previous studies.",
     "supporting_evidence": [
-      "E_88de064381e1",
-      "E_1045512ea122",
-      "E_57f61f661155",
-      "E_bf75dd3eeb62"
+      "evidence from P1",
+      "evidence from P3",
+      "findings on thalamocortical coupling",
+      "findings on cortico-thalamic connectivity"
     ],
-    "created_at": "2026-07-23T10:53:31.481439+00:00"
+    "created_at": "2026-07-24T07:09:08.212081+00:00"
   },
   {
-    "review_id": "review_64f732af7e53",
-    "hypothesis_id": "hypothesis_63c6962b797f",
+    "review_id": "review_a3f351a7a263",
+    "hypothesis_id": "hypothesis_4610cc024bec",
     "session_id": "sleep_hypothesis_session",
     "review_type": "full",
     "verdict": "pass",
@@ -365,19 +431,20 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is well-structured, novel, and testable with existing evidence supporting thalamocortical coupling and FA in insomnia.",
-    "critique": "The hypothesis effectively links thalamocortical coupling with FA and insomnia severity, supported by existing evidence. The experimental plan is robust, though additional controls for confounding variables like age and education could enhance reliability. The integration of DTI and EEG data is strong, but more detailed analysis of specific white matter tracts may improve specificity.",
+    "summary": "The hypothesis integrates thalamic spindle modulation and REM-NREM switching through combined thalamocortical and cortico-thalamic pathways, showing strong coherence with existing evidence and novel integration of mechanisms. The experimental plan is robust and testable.",
+    "critique": "The hypothesis effectively combines thalamocortical and cortico-thalamic pathways, linking them to spindle modulation and REM-NREM transitions, which are supported by existing evidence (e.g., findings on thalamocortical coupling and cortico-thalamic connectivity). The key assumptions are well-aligned with the knowledge graph, particularly the connections between spindle generation (sigma power, spindle density) and thalamocortical coupling (thalamus_DMN_FC). The experimental plan using EEG and fMRI is feasible and integrates measurable variables like spindle density and cortico-thalamic connectivity. The novelty lies in the integration of spindle modulation with REM-NREM transitions, which is somewhat novel compared to existing models that focus more on individual components. The hypothesis is well-supported by existing findings on thalamocortical coupling and cortico-thalamic connectivity, and the proposed mechanisms are specific to sleep neuroimaging, making it a strong candidate for further testing.",
     "supporting_evidence": [
-      "E_88de064381e1",
-      "E_1045512ea122",
-      "E_57f61f661155",
-      "E_bf75dd3eeb62"
+      "evidence from P1",
+      "evidence from P3",
+      "findings on thalamocortical coupling",
+      "findings on cortico-thalamic connectivity",
+      "REM_NREM_switching"
     ],
-    "created_at": "2026-07-23T10:53:52.305767+00:00"
+    "created_at": "2026-07-24T07:09:39.006544+00:00"
   },
   {
-    "review_id": "review_dfb33c77f9e6",
-    "hypothesis_id": "hypothesis_63c6962b797f",
+    "review_id": "review_a9eb592b12f0",
+    "hypothesis_id": "hypothesis_4610cc024bec",
     "session_id": "sleep_hypothesis_session",
     "review_type": "deep_verification",
     "verdict": "pass",
@@ -385,19 +452,19 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is well-structured and novel, linking thalamocortical coupling with insomnia severity through fractional anisotropy. The experimental plan is robust and testable.",
-    "critique": "The hypothesis effectively connects thalamocortical coupling with white matter integrity (FA) and insomnia severity. The assumptions are logically derived from existing evidence. The experimental plan is comprehensive, using DTI and EEG, which are appropriate modalities. The key assumptions are supported by existing evidence, such as the relationship between FA and thalamocortical coupling. However, the integration of cognitive performance metrics could be further detailed to strengthen the link between structural and functional outcomes.",
+    "summary": "The hypothesis integrates thalamic spindle modulation and REM-NREM switching through thalamocortical and cortico-thalamic pathways, offering a novel and testable explanation for insomnia severity. Supported by existing evidence on spindle density, cortico-thalamic connectivity, and REM latency.",
+    "critique": "The hypothesis is well-structured and integrates existing findings on thalamocortical coupling and cortico-thalamic connectivity. The assumptions are logically connected and supported by prior evidence. The experimental plan is feasible with EEG and fMRI measures. Potential areas for further exploration include the precise mechanisms of spindle modulation during REM-NREM transitions and the role of specific thalamic nuclei.",
     "supporting_evidence": [
-      "E_88de064381e1",
-      "E_1045512ea122",
-      "E_57f61f661155",
-      "E_bf75dd3eeb62"
+      "evidence from P1",
+      "evidence from P3",
+      "findings on thalamocortical coupling",
+      "findings on cortico-thalamic connectivity"
     ],
-    "created_at": "2026-07-23T10:54:15.992880+00:00"
+    "created_at": "2026-07-24T07:10:00.506989+00:00"
   },
   {
-    "review_id": "review_cf4cdf569b28",
-    "hypothesis_id": "hypothesis_63c6962b797f",
+    "review_id": "review_78ce5f17a9e3",
+    "hypothesis_id": "hypothesis_4610cc024bec",
     "session_id": "sleep_hypothesis_session",
     "review_type": "simulation",
     "verdict": "pass",
@@ -405,18 +472,19 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is well-structured, novel, and testable with existing DTI and EEG modalities. The link between thalamocortical coupling, FA, and insomnia severity is supported by prior evidence.",
-    "critique": "The hypothesis integrates existing evidence on thalamocortical coupling and white matter integrity, showing a clear pathway from structural changes to insomnia severity. The assumptions are plausible and supported by prior findings (e.g., E_88de064381e1, E_57f61f661155). The experimental plan is robust, though further control for confounds like age and education level may enhance specificity. The use of FA as a mediator is well-justified by the knowledge graph paths.",
+    "summary": "The hypothesis integrates thalamic spindle modulation and REM-NREM switching through thalamocortical and cortico-thalamic pathways, offering a novel and testable explanation for insomnia severity. Supported by existing evidence on thalamocortical coupling and cortico-thalamic connectivity.",
+    "critique": "The hypothesis is well-structured and integrates existing evidence effectively. The proposed pathways are plausible and supported by prior findings on thalamocortical coupling and cortico-thalamic connectivity. The experimental plan is robust, utilizing EEG and fMRI to measure key variables. Potential areas for further exploration include the specific mechanisms of spindle modulation during REM-NREM transitions and the interaction between spindle density and cortico-thalamic connectivity.",
     "supporting_evidence": [
-      "E_88de064381e1",
-      "E_57f61f661155",
-      "E_bf75dd3eeb62"
+      "evidence from P1",
+      "evidence from P3",
+      "findings on thalamocortical coupling",
+      "findings on cortico-thalamic connectivity"
     ],
-    "created_at": "2026-07-23T10:54:40.305440+00:00"
+    "created_at": "2026-07-24T07:10:22.752290+00:00"
   },
   {
-    "review_id": "review_fe87413cc629",
-    "hypothesis_id": "hypothesis_63c6962b797f",
+    "review_id": "review_b096d5b8738b",
+    "hypothesis_id": "hypothesis_4610cc024bec",
     "session_id": "sleep_hypothesis_session",
     "review_type": "observation",
     "verdict": "pass",
@@ -424,110 +492,14 @@
     "correctness_score": 9.0,
     "testability_score": 9.0,
     "safety_flag": false,
-    "summary": "The hypothesis is well-structured and plausible, linking thalamocortical coupling with insomnia severity through FA. Supported by existing evidence and testable with DTI and EEG.",
-    "critique": "The hypothesis is novel in connecting FA with thalamocortical coupling in insomnia. Existing evidence supports the role of thalamocortical coupling in insomnia and FA as a marker of white matter integrity. The experimental plan is robust, using DTI and EEG. Potential confounds like age and education are accounted for in the evidence. The directional prediction is clear, and the falsification criteria are well-defined.",
+    "summary": "The hypothesis integrates thalamic spindle modulation and REM-NREM switching through thalamocortical and cortico-thalamic pathways, offering a novel and testable explanation for insomnia severity. Supported by existing evidence on spindle density, cortico-thalamic connectivity, and REM latency.",
+    "critique": "The hypothesis effectively combines established mechanisms of thalamocortical coupling and cortico-thalamic connectivity with REM-NREM transitions, providing a coherent framework. The experimental plan is well-structured, utilizing EEG and fMRI to measure key variables. The assumptions are grounded in prior findings, though further validation of the interaction between spindle modulation and REM-NREM transitions could enhance specificity.",
     "supporting_evidence": [
-      "E_88de064381e1",
-      "E_1045512ea122",
-      "E_57f61f661155",
-      "E_bf75dd3eeb62"
+      "evidence from P1",
+      "evidence from P3",
+      "findings on thalamocortical coupling",
+      "findings on cortico-thalamic connectivity"
     ],
-    "created_at": "2026-07-23T10:55:02.959765+00:00"
-  },
-  {
-    "review_id": "review_698a4308c0ad",
-    "hypothesis_id": "hypothesis_718aaf911452",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "initial",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical coupling and DMN dysregulation, offering a novel and testable mechanism for insomnia severity and cognitive impairments. Supported by existing evidence and multimodal biomarkers.",
-    "critique": "The hypothesis is well-structured and integrates existing findings on thalamocortical coupling and DMN dysregulation. The proposed interaction between these mechanisms is plausible and supported by prior studies (P1, P2, P3). The experimental plan is comprehensive, using PSG, fMRI, and DTI to measure key variables. The assumptions are reasonable and grounded in existing evidence. However, the integration of interhemispheric coordination as a mediator requires further exploration in the context of white matter integrity (FA).",
-    "supporting_evidence": [
-      "thalamocortical coupling",
-      "default mode network dysregulation",
-      "white matter integrity"
-    ],
-    "created_at": "2026-07-23T10:56:57.285343+00:00"
-  },
-  {
-    "review_id": "review_8bb3f1f985e1",
-    "hypothesis_id": "hypothesis_718aaf911452",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "full",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical coupling and DMN dysregulation, offering a novel and testable mechanism for insomnia severity and cognitive impairments. Supported by existing evidence and validated through multimodal neuroimaging techniques.",
-    "critique": "The hypothesis effectively combines thalamocortical and DMN mechanisms, well-supported by prior findings. The assumptions are plausible and testable with PSG, fMRI, and DTI. The integration of FA as a mediator strengthens the model. Potential for further exploration in interhemispheric coordination and cognitive metrics.",
-    "supporting_evidence": [
-      "finding_supports_mechanism--> thalamocortical coupling",
-      "finding_supports_mechanism--> default mode network dysregulation",
-      "finding_supports_mechanism--> white matter integrity",
-      "finding_supports_mechanism--> insomnia severity"
-    ],
-    "created_at": "2026-07-23T10:57:18.424228+00:00"
-  },
-  {
-    "review_id": "review_965e7e48f7cd",
-    "hypothesis_id": "hypothesis_718aaf911452",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "deep_verification",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical and DMN mechanisms with strong support from existing evidence, showing good novelty and testability.",
-    "critique": "The hypothesis is well-supported by existing findings on thalamocortical coupling and DMN dysregulation. The assumptions are plausible and grounded in prior studies. The integration of FA as a mediator between thalamocortical coupling and DMN connectivity is a novel addition. The experimental plan is comprehensive and feasible with current neuroimaging techniques.",
-    "supporting_evidence": [
-      "finding_supports_mechanism--> thalamocortical coupling",
-      "finding_supports_mechanism--> default mode network dysregulation",
-      "finding_supports_mechanism--> white matter integrity"
-    ],
-    "created_at": "2026-07-23T10:57:37.691055+00:00"
-  },
-  {
-    "review_id": "review_bf0a0fc3a369",
-    "hypothesis_id": "hypothesis_718aaf911452",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "simulation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical and DMN mechanisms with strong evidence support, showing good novelty and testability.",
-    "critique": "The hypothesis is well-supported by existing evidence, particularly the findings linking thalamocortical coupling and DMN dysregulation. The integration of FA as a mediator adds structural insight. However, the synergy between thalamocortical and DMN mechanisms during NREM requires further validation in diverse populations.",
-    "supporting_evidence": [
-      "finding_supports_mechanism--> thalamocortical coupling",
-      "finding_supports_mechanism--> default mode network dysregulation",
-      "finding_supports_mechanism--> white matter integrity"
-    ],
-    "created_at": "2026-07-23T10:57:56.164978+00:00"
-  },
-  {
-    "review_id": "review_3c8410701a31",
-    "hypothesis_id": "hypothesis_718aaf911452",
-    "session_id": "sleep_hypothesis_session",
-    "review_type": "observation",
-    "verdict": "pass",
-    "novelty_score": 8.0,
-    "correctness_score": 9.0,
-    "testability_score": 9.0,
-    "safety_flag": false,
-    "summary": "The hypothesis integrates thalamocortical and DMN mechanisms with strong support from existing evidence, showing good novelty and testability.",
-    "critique": "The hypothesis is well-supported by existing findings on thalamocortical coupling and DMN dysregulation. The integration of FA as a mediator between thalamocortical and DMN connectivity is novel and testable. The experimental plan is comprehensive, using PSG, fMRI, and DTI. The key assumptions are plausible given the evidence, though further validation of the FA mediation is needed.",
-    "supporting_evidence": [
-      "finding_supports_mechanism--> thalamocortical coupling",
-      "finding_supports_mechanism--> default mode network dysregulation",
-      "finding_supports_mechanism--> white matter integrity"
-    ],
-    "created_at": "2026-07-23T10:58:16.286440+00:00"
+    "created_at": "2026-07-24T07:10:44.217775+00:00"
   }
 ]

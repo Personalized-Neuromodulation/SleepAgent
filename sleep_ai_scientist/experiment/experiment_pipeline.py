@@ -12,6 +12,7 @@ from sleep_ai_scientist.experiment.agents.planning import load_data_profile
 from sleep_ai_scientist.experiment.agents.result_review_agent import ResultReviewAgent
 from sleep_ai_scientist.experiment.agents.statistical_model_agent import StatisticalModelAgent
 from sleep_ai_scientist.experiment.agents.variable_mapping_agent import VariableMappingAgent
+from sleep_ai_scientist.experiment.visualization import render_experiment_visualizations
 from sleep_ai_scientist.feature_extraction.feature_pipeline import run_feature_extraction
 from sleep_ai_scientist.feature_extraction.profile_builder import TestabilityPrecheck
 from sleep_ai_scientist.schemas.experiment import ExperimentResultBundle
@@ -92,7 +93,6 @@ def run_experiment_pipeline(config_path_value: str | Path = "configs/experiment_
         _log(verbose, f"plan {idx}/{len(plans)} statistics tests={len(mapped_plan.primary_tests)}")
         stats_result, ml_result, robustness, negative_controls, model_trace = statistical_agent.run(
             mapped_plan,
-            enable_ml=bool(experiment_config.get("enable_ml", False)),
             bootstrap_iterations=int(experiment_config.get("bootstrap_iterations", 100)),
         )
         bundle = ExperimentResultBundle(
@@ -116,12 +116,15 @@ def run_experiment_pipeline(config_path_value: str | Path = "configs/experiment_
     write_json(experiment_results_path, [bundle.model_dump() for bundle in bundles])
     write_json(feedback_path, feedback_records)
     _write_report(report_path, bundles, feedback_records)
-    _log(verbose, f"outputs results={experiment_results_path} feedback={feedback_path} report={report_path}")
+    visualization_dir = Path(paths.get("experiment_visualizations", experiment_results_path.parent / "visuals"))
+    visualizations = render_experiment_visualizations(bundles, visualization_dir)
+    _log(verbose, f"outputs results={experiment_results_path} feedback={feedback_path} report={report_path} visualizations={visualizations.get('html')}")
     return {
         "plans": len(plans),
         "results": str(experiment_results_path),
         "experimental_feedback": str(feedback_path),
         "report": str(report_path),
+        "visualizations": visualizations,
         "feature_tables": extracted_feature_tables,
         "feature_profiles": feature_profile_paths,
         "merged_feature_tables": merged_feature_paths,

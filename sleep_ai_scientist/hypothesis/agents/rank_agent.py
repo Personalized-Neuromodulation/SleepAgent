@@ -7,6 +7,7 @@ from sleep_ai_scientist.llm.client import build_llm_client, llm_enabled, load_pr
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
 from sleep_ai_scientist.hypothesis.agents.state import HypothesisSessionState
 from sleep_ai_scientist.hypothesis.agents.tournament import Glicko2State, compute_glicko2_update
+from sleep_ai_scientist.hypothesis.testability import annotate_registry_testability
 from sleep_ai_scientist.schemas.hypothesis import Hypothesis, TournamentMatch
 
 
@@ -188,6 +189,7 @@ class RankAgent:
     def run(self, state: HypothesisSessionState) -> HypothesisSessionState:
         round_number = int(state.artifacts.get("ranking_round", 0)) + 1
         state.artifacts["ranking_round"] = round_number
+        annotate_registry_testability(state.registry, state.artifacts.get("analysis_ready_profile"))
         matches = run_pairwise_ranking(
             state.registry,
             round_number=round_number,
@@ -195,5 +197,7 @@ class RankAgent:
             knowledge_context=state.context_blocks.get("knowledge_graph", ""),
         )
         state.matches.extend(matches)
-        state.artifacts["top_hypotheses"] = state.registry.top(int(state.config.get("hypothesis", {}).get("top_k", 5)), include_pending=True)
+        top_k = int(state.config.get("hypothesis", {}).get("top_k", 5))
+        state.artifacts["top_hypotheses"] = state.registry.top_by_experiment_priority(top_k, include_pending=True)
+        state.artifacts["top_hypotheses_scientific"] = state.registry.top(top_k, include_pending=True)
         return state

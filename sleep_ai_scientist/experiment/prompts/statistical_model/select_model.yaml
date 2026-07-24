@@ -9,7 +9,7 @@ user: |
   Return JSON with:
   {
     "judgment": "appropriate|needs_revision",
-    "recommended_primary_template": "spearman_correlation|linear_regression|mixed_effects",
+    "recommended_primary_template": "spearman_correlation|linear_regression|mixed_effects|logistic_regression",
     "recommended_robustness": ["bootstrap_spearman_ci"],
     "recommended_negative_controls": ["negative_control_outcome"],
     "rationale": "...",

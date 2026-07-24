@@ -13,6 +13,7 @@ from sleep_ai_scientist.experiment.agents.planning import (
     load_hypotheses,
     load_variable_mappings,
 )
+from sleep_ai_scientist.hypothesis.testability import experiment_priority_score
 from sleep_ai_scientist.schemas.experiment import ExperimentPlan
 
 
@@ -36,7 +37,7 @@ class ExperimentDesignAgent:
         variable_mapping_path: str | Path | None,
         top_k: int,
     ) -> list[ExperimentPlan]:
-        hypotheses = sorted(load_hypotheses(hypothesis_pool_path), key=lambda item: item.elo_rating, reverse=True)[:top_k]
+        hypotheses = sorted(load_hypotheses(hypothesis_pool_path), key=experiment_priority_score, reverse=True)[:top_k]
         profile = load_data_profile(data_profile_path)
         approved = load_approved_variables(approved_variables_path) if approved_variables_path else None
         mappings = load_variable_mappings(variable_mapping_path) if variable_mapping_path else None

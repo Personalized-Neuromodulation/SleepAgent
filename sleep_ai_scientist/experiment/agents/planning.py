@@ -10,6 +10,17 @@ from sleep_ai_scientist.schemas.data_profile import DataProfile, FeatureProfile,
 from sleep_ai_scientist.schemas.experiment import ExperimentPlan, ExperimentVariable, ExperimentVariableRole
 from sleep_ai_scientist.schemas.hypothesis import Hypothesis
 
+FMRI_PROXY_OUTCOMES = [
+    "salience_FC",
+    "frontoparietal_FC",
+    "DMN_FC",
+    "thalamus_salience_FC",
+    "thalamus_frontoparietal_FC",
+    "timefreq_ALFF_0.01_0.08",
+    "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+]
+NON_OUTCOME_FEATURES = {"subject_id", "subject", "session", "task", "run", "mean_FD", "mean_DVARS", "max_FD", "percent_high_motion"}
+
 
 def load_hypotheses(path: str | Path) -> list[Hypothesis]:
     raw = read_json(Path(path))
@@ -109,6 +120,7 @@ def build_experiment_plan_from_hypothesis(
             "source": "ExperimentDesignAgent",
             "generation_strategy": hypothesis.generation_strategy,
             "hypothesis_rating": hypothesis.elo_rating,
+            "hypothesis_data_testability": hypothesis.metadata.get("data_testability", {}),
             "requested_modalities": sorted({feature.modality for feature in variables if feature.modality}),
         },
     )
@@ -172,6 +184,18 @@ def _select_outcomes(profile: DataProfile, text: str, *, max_outcomes: int) -> l
     outcomes = [feature.feature_name for feature in profile.features if feature.role == "outcome" and _token_match(feature.feature_name, text)]
     if not outcomes:
         outcomes = [feature.feature_name for feature in profile.features if feature.role == "outcome"]
+    if not outcomes:
+        names = {feature.feature_name for feature in profile.features}
+        outcomes = [name for name in FMRI_PROXY_OUTCOMES if name in names]
+    if not outcomes:
+        outcomes = [
+            feature.feature_name
+            for feature in profile.features
+            if feature.role in {"scale", "feature"}
+            and feature.feature_name not in NON_OUTCOME_FEATURES
+            and not feature.feature_name.startswith("qc_")
+            and not feature.feature_name.startswith("global_signal_")
+        ]
     return _unique(outcomes)[:max_outcomes]
 
 

@@ -23,11 +23,11 @@ query_sets:
       include_methods: true
     queries:
       experiment_feedback_expansion:
-      - Global signal power in thalamus-DMN FC studies of insomnia
-      - Global_signal_psd as control in thalamus-salience FC in sleep disorders
-      - Global_signal_psd modulation of thalamus network connectivity in insomnia
-      - Thalamus FC and global_signal_psd in DMN and salience networks in insomnia
-      - Global_signal_psd control in thalamus connectivity studies of sleep disorders
-      - Mean_FD as covariate in thalamus-DMN FC in insomnia
-      - Effect of mean_FD on thalamus-salience FC in sleep disorders
-      - Mean_FD modulation of thalamus network connectivity in insomnia
+      - multivariate regression sleep networks
+      - regression models sleep stages
+      - ROI voxels sleep networks
+      - DMN ROI voxels insomnia
+      - salience ROI voxels sleep
+      - frontoparietal ROI voxels insomnia
+      - global signal power sleep
+      - timefreq global signal insomnia

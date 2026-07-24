@@ -5,6 +5,7 @@ from typing import Any
 
 from sleep_ai_scientist.common.io import read_json, write_csv, write_json
 from sleep_ai_scientist.common.utils import stable_id
+from sleep_ai_scientist.hypothesis.testability import experiment_priority_score
 from sleep_ai_scientist.schemas.hypothesis import (
     Hypothesis,
     HypothesisLineageRecord,
@@ -146,6 +147,13 @@ class HypothesisRegistry:
         rows = [h for h in self.all() if h.status in allowed]
         return sorted(rows, key=lambda h: h.elo_rating, reverse=True)[:n]
 
+    def top_by_experiment_priority(self, n: int = 10, include_pending: bool = False) -> list[Hypothesis]:
+        allowed = {HypothesisStatus.active}
+        if include_pending:
+            allowed.add(HypothesisStatus.pending_review)
+        rows = [h for h in self.all() if h.status in allowed]
+        return sorted(rows, key=experiment_priority_score, reverse=True)[:n]
+
     def count_by_status(self) -> dict[str, int]:
         counts: dict[str, int] = {}
         for hypothesis in self.all():
@@ -166,9 +174,9 @@ class HypothesisRegistry:
 
     def write_outputs(self, output_dir: Path, top_k: int = 5) -> None:
         output_dir.mkdir(parents=True, exist_ok=True)
-        hypotheses = [_dump_model(item) for item in self.all()]
+        hypotheses = [_flatten_testability(_dump_model(item)) for item in self.all()]
         write_json(output_dir / "hypothesis_pool.json", hypotheses)
-        write_json(output_dir / "top_k_hypotheses.json", [_dump_model(item) for item in self.top(top_k, include_pending=True)])
+        write_json(output_dir / "top_k_hypotheses.json", [_flatten_testability(_dump_model(item)) for item in self.top_by_experiment_priority(top_k, include_pending=True)])
         write_json(output_dir / "hypothesis_lineage.json", [_dump_model(item) for item in self.lineage()])
         write_csv(
             output_dir / "hypothesis_registry.csv",
@@ -183,6 +191,13 @@ class HypothesisRegistry:
                 "elo_rating",
                 "rating_deviation",
                 "status",
+                "data_testability_status",
+                "data_testability_available_modalities",
+                "data_testability_required_modalities",
+                "data_testability_missing_modalities",
+                "data_testability_matched_variables",
+                "data_testability_missing_variables",
+                "experiment_priority_score",
                 "parent_ids",
                 "created_at",
                 "updated_at",
@@ -197,3 +212,18 @@ class HypothesisRegistry:
         for row in read_json(path):
             registry.save_hypothesis(Hypothesis(**row))
         return registry
+
+
+def _flatten_testability(row: dict[str, Any]) -> dict[str, Any]:
+    testability = row.get("metadata", {}).get("data_testability", {}) if isinstance(row.get("metadata"), dict) else {}
+    row["data_testability_status"] = testability.get("status", "")
+    row["data_testability_available_modalities"] = ";".join(testability.get("available_modalities", []) or [])
+    row["data_testability_required_modalities"] = ";".join(testability.get("required_modalities", []) or [])
+    row["data_testability_missing_modalities"] = ";".join(testability.get("missing_modalities", []) or [])
+    row["data_testability_matched_variables"] = ";".join(testability.get("matched_variables", []) or [])
+    row["data_testability_missing_variables"] = ";".join(testability.get("missing_variables", []) or [])
+    try:
+        row["experiment_priority_score"] = float(row.get("elo_rating", 0.0)) + float(testability.get("ranking_bonus", 0.0) or 0.0)
+    except Exception:
+        row["experiment_priority_score"] = row.get("elo_rating", "")
+    return row

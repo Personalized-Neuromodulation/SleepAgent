@@ -2,7 +2,15 @@ experiment:
   top_k_hypotheses: 1
   max_predictors: 4
   max_outcomes: 2
-  enable_ml: false
+  primary_template: auto
+  ml_models:
+    - logistic_regression
+    - decision_tree
+    - random_forest
+    - svm
+    - xgboost
+    - lightgbm
+  ml_cv_folds: 5
   bootstrap_iterations: 100
   verbose: true
 
@@ -60,3 +68,4 @@ paths:
   experiment_results: outputs/experiments/experiment_results.json
   experimental_feedback: outputs/hypotheses/experimental_feedback.json
   experiment_report: reports/phase3_experiment_report.md
+  experiment_visualizations: outputs/experiments/visuals

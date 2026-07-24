@@ -1,17 +1,17 @@
 [
   {
-    "hypothesis_id": "hypothesis_4ecf9cc79ed6",
-    "plan_id": "experiment_plan_b8ba6d2b8320",
+    "hypothesis_id": "hypothesis_57fdbe2e8962",
+    "plan_id": "experiment_plan_bb9459a66e3b",
     "support": "partially_supported",
-    "support_score": 0.6,
-    "computed_reward": 0.63,
+    "support_score": 0.65,
+    "computed_reward": 0.595,
     "validated": false,
     "refuted": false,
-    "primary_tests_passed": 4,
+    "primary_tests_passed": 2,
     "primary_tests_total": 8,
     "metadata": {
       "review_status": "partially_supported",
-      "hypothesis_title": "Thalamocortical Network Dynamics and Insomnia Severity",
+      "hypothesis_title": "Thalamic Spindle Modulation and Insomnia Severity via Thalamocortical Coupling",
       "predictors": [
         "thalamus_DMN_FC",
         "thalamus_salience_FC",
@@ -25,15 +25,15 @@
       "critic_findings": [
         {
           "severity": "medium",
-          "category": "model_selection",
-          "message": "The use of Spearman correlation may not capture the complexity of thalamocortical FC relationships as effectively as linear regression.",
-          "recommendation": "Consider implementing linear regression as recommended in the model review for more accurate modeling."
+          "category": "data_completeness",
+          "message": "24.73% missing data in key variables like ISI and spindle density",
+          "recommendation": "Implement multiple imputation or use robust models that handle missing data effectively."
         },
         {
-          "severity": "low",
-          "category": "robustness",
-          "message": "Bootstrap confidence intervals showed some variability, indicating potential sensitivity to sample characteristics.",
-          "recommendation": "Increase sample size or use alternative robustness checks for more stable results."
+          "severity": "high",
+          "category": "model_selection",
+          "message": "EEG/fMRI scales not available in current profile",
+          "recommendation": "Integrate EEG/fMRI scales or use alternative modalities for better model calibration."
         }
       ]
     }

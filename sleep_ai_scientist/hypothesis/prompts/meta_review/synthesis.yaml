@@ -13,8 +13,13 @@ user: |
   Knowledge graph context:
   {{knowledge_context}}
 
+  Separate scientific merit from current-data testability. If a hypothesis is supported by literature
+  but requires missing modalities or variables (for example DTI/FA when only fMRI is available), label it
+  as not directly testable with the current foundation and do not describe it as experimentally validated.
+
   Write a concise Markdown report with:
-  1. strongest hypotheses,
-  2. recurring weaknesses,
-  3. underexplored mechanisms,
-  4. recommended next generation/evolution direction.
+  1. strongest hypotheses by scientific merit,
+  2. experiment-testable hypotheses with current data,
+  3. high-value but not directly testable mechanisms/data gaps,
+  4. recurring weaknesses,
+  5. recommended next generation/evolution direction.

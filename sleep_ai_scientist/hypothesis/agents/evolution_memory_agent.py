@@ -126,7 +126,8 @@ def synthesize_meta_review(
         llm_config = normalize_llm_config(ollama_config)
         client = build_llm_client(llm_config)
         hypotheses = "\n".join(
-            f"- {item.title} | Elo={item.elo_rating:.1f} | status={item.status.value} | {item.summary}"
+            f"- {item.title} | Elo={item.elo_rating:.1f} | status={item.status.value} | "
+            f"data_testability={_testability_status(item)} | missing_modalities={','.join(_testability_list(item, 'missing_modalities')) or 'none'} | {item.summary}"
             for item in registry.top(10, include_pending=True)
         )
         reviews = "\n".join(
@@ -153,19 +154,59 @@ def synthesize_meta_review(
 
     counts = registry.count_by_status()
     top = registry.top(3, include_pending=True)
+    experiment_top = registry.top_by_experiment_priority(3, include_pending=True)
     lines = [
         "# Hypothesis Meta Review",
         "",
         f"Total hypotheses: {len(registry.all())}",
         f"Status counts: {counts}",
         "",
-        "Top hypotheses:",
+        "## Scientific Strength Ranking",
     ]
     for index, hypothesis in enumerate(top, start=1):
-        lines.append(f"{index}. {hypothesis.title} (Elo {hypothesis.elo_rating:.1f}, {hypothesis.status.value})")
+        lines.append(
+            f"{index}. {hypothesis.title} (Elo {hypothesis.elo_rating:.1f}, {hypothesis.status.value}; "
+            f"data_testability={_testability_status(hypothesis)})"
+        )
+        lines.append(f"   - Current-data note: {_testability_note(hypothesis)}")
     lines.append("")
-    lines.append("Recommended next step: review pending hypotheses, reject near-duplicates, then rank active candidates.")
+    lines.append("## Current-Data Experiment Priority")
+    for index, hypothesis in enumerate(experiment_top, start=1):
+        lines.append(
+            f"{index}. {hypothesis.title} (experiment_priority={_experiment_priority_score(hypothesis):.1f}; "
+            f"data_testability={_testability_status(hypothesis)})"
+        )
+        missing_modalities = ", ".join(_testability_list(hypothesis, "missing_modalities")) or "none"
+        missing_variables = ", ".join(_testability_list(hypothesis, "missing_variables")) or "none"
+        lines.append(f"   - Missing modalities: {missing_modalities}; missing variables: {missing_variables}")
+    lines.append("")
+    lines.append(
+        "Recommended next step: treat literature-supported but not-directly-testable mechanisms as data gaps, "
+        "not as current experimental evidence."
+    )
     return "\n".join(lines)
+
+
+def _testability_payload(hypothesis: Hypothesis) -> dict[str, Any]:
+    return hypothesis.metadata.get("data_testability", {}) if isinstance(hypothesis.metadata, dict) else {}
+
+
+def _testability_status(hypothesis: Hypothesis) -> str:
+    return str(_testability_payload(hypothesis).get("status", "unknown"))
+
+
+def _testability_note(hypothesis: Hypothesis) -> str:
+    return str(_testability_payload(hypothesis).get("note", "No current-data testability annotation is available."))
+
+
+def _testability_list(hypothesis: Hypothesis, key: str) -> list[str]:
+    value = _testability_payload(hypothesis).get(key, [])
+    return [str(item) for item in value] if isinstance(value, list) else []
+
+
+def _experiment_priority_score(hypothesis: Hypothesis) -> float:
+    payload = _testability_payload(hypothesis)
+    return float(hypothesis.elo_rating) + float(payload.get("ranking_bonus", 0.0) or 0.0)
 
 
 class EvolutionMemoryAgent:

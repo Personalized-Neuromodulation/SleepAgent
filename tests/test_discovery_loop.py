@@ -60,6 +60,7 @@ def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
     hypothesis_report = reports_dir / "hypothesis_report.md"
     experiment_report = reports_dir / "experiment_report.md"
     experiment_results = experiment_dir / "experiment_results.json"
+    visualization_dir = experiment_dir / "visuals"
 
     hypothesis_config = tmp_path / "hypothesis_config.yaml"
     experiment_config = tmp_path / "experiment_config.yaml"
@@ -148,8 +149,11 @@ def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
         )
         experiment_report.parent.mkdir(parents=True, exist_ok=True)
         experiment_report.write_text("experiment report", encoding="utf-8")
+        visualization_dir.mkdir(parents=True, exist_ok=True)
+        (visualization_dir / "index.html").write_text("<html></html>", encoding="utf-8")
+        write_json(visualization_dir / "visualization_manifest.json", {"html": str(visualization_dir / "index.html")})
         (feature_root / "fmri" / f"plan-{calls['experiment']}").mkdir(parents=True, exist_ok=True)
-        return {"plans": 1, "results": str(experiment_results)}
+        return {"plans": 1, "results": str(experiment_results), "visualizations": {"html": str(visualization_dir / "index.html")}}
 
     monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_hypothesis_pipeline", fake_hypothesis_pipeline)
     monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_experiment_pipeline", fake_experiment_pipeline)
@@ -161,6 +165,7 @@ def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
     assert calls == {"hypothesis": 2, "experiment": 2}
     assert (tmp_path / "loop" / "iteration_001" / "hypothesis" / "hypothesis_pool.json").exists()
     assert (tmp_path / "loop" / "iteration_002" / "experiment" / "experiment_results.json").exists()
+    assert (tmp_path / "loop" / "iteration_002" / "experiment" / "visuals" / "index.html").exists()
     assert (tmp_path / "loop" / "iteration_002" / "features" / "fmri").exists()
     state = read_json(tmp_path / "loop" / "loop_state.json")
     assert len(state["iterations"]) == 2

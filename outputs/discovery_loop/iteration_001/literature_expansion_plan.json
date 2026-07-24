@@ -2,9 +2,9 @@
   "iteration_id": "iteration_001",
   "signals": {
     "records": 1,
-    "failed_tests": 4,
+    "failed_tests": 6,
     "negative_control_failures": 2,
-    "missing_variables": 9,
+    "missing_variables": 4,
     "modality_gaps": 4,
     "validated_or_high_reward": 0
   },
@@ -12,10 +12,10 @@
   "accepted_query_count": 8,
   "accepted_queries": [
     {
-      "query": "DVARS and thalamocortical connectivity in insomnia",
+      "query": "Global signal power in insomnia fMRI",
       "intent_type": "literature_search",
       "priority": 5.0,
-      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
+      "reason": "To find studies that use negative controls such as global_signal_psd_power_mean and global_signal_psd_power_max in fMRI studies of insomnia.",
       "source": "llm",
       "source_iteration": "iteration_001",
       "source_hypothesis_id": "",
@@ -23,10 +23,10 @@
       "status": "accepted"
     },
     {
-      "query": "Covariates in fMRI analysis of insomnia",
+      "query": "Global signal PSD in sleep studies",
       "intent_type": "literature_search",
       "priority": 5.0,
-      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
+      "reason": "To find studies that use negative controls such as global_signal_psd_power_mean and global_signal_psd_power_max in fMRI studies of insomnia.",
       "source": "llm",
       "source_iteration": "iteration_001",
       "source_hypothesis_id": "",
@@ -34,10 +34,32 @@
       "status": "accepted"
     },
     {
-      "query": "Thalamus-frontoparietal FC and insomnia",
+      "query": "Global signal power and insomnia",
+      "intent_type": "literature_search",
+      "priority": 5.0,
+      "reason": "To find studies that use negative controls such as global_signal_psd_power_mean and global_signal_psd_power_max in fMRI studies of insomnia.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Negative control variables in fMRI sleep research",
+      "intent_type": "literature_search",
+      "priority": 5.0,
+      "reason": "To find studies that use negative controls such as global_signal_psd_power_mean and global_signal_psd_power_max in fMRI studies of insomnia.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Effect of motion parameters on sleep architecture",
       "intent_type": "literature_search",
       "priority": 4.0,
-      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
+      "reason": "To find studies that explore the impact of covariates like mean_FD, mean_DVARS, percent_high_motion, and max_FD on sleep architecture and insomnia.",
       "source": "llm",
       "source_iteration": "iteration_001",
       "source_hypothesis_id": "",
@@ -45,10 +67,10 @@
       "status": "accepted"
     },
     {
-      "query": "Frontoparietal network connectivity in insomnia",
+      "query": "Mean_FD and insomnia severity",
       "intent_type": "literature_search",
       "priority": 4.0,
-      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
+      "reason": "To find studies that explore the impact of covariates like mean_FD, mean_DVARS, percent_high_motion, and max_FD on sleep architecture and insomnia.",
       "source": "llm",
       "source_iteration": "iteration_001",
       "source_hypothesis_id": "",
@@ -56,10 +78,10 @@
       "status": "accepted"
     },
     {
-      "query": "fMRI frontoparietal FC in sleep disorders",
+      "query": "DVARS in sleep studies",
       "intent_type": "literature_search",
       "priority": 4.0,
-      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
+      "reason": "To find studies that explore the impact of covariates like mean_FD, mean_DVARS, percent_high_motion, and max_FD on sleep architecture and insomnia.",
       "source": "llm",
       "source_iteration": "iteration_001",
       "source_hypothesis_id": "",
@@ -67,32 +89,10 @@
       "status": "accepted"
     },
     {
-      "query": "Thalamus-frontoparietal FC during NREM sleep",
+      "query": "Impact of motion on thalamic spindle modulation",
       "intent_type": "literature_search",
       "priority": 4.0,
-      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
-      "source": "llm",
-      "source_iteration": "iteration_001",
-      "source_hypothesis_id": "",
-      "source_plan_id": "",
-      "status": "accepted"
-    },
-    {
-      "query": "Thalamus-salience FC in insomnia",
-      "intent_type": "literature_search",
-      "priority": 3.0,
-      "reason": "To examine the role of thalamus-salience FC in insomnia and its relation to cognitive functions.",
-      "source": "llm",
-      "source_iteration": "iteration_001",
-      "source_hypothesis_id": "",
-      "source_plan_id": "",
-      "status": "accepted"
-    },
-    {
-      "query": "Salience network connectivity and insomnia severity",
-      "intent_type": "literature_search",
-      "priority": 3.0,
-      "reason": "To examine the role of thalamus-salience FC in insomnia and its relation to cognitive functions.",
+      "reason": "To find studies that explore the impact of covariates like mean_FD, mean_DVARS, percent_high_motion, and max_FD on sleep architecture and insomnia.",
       "source": "llm",
       "source_iteration": "iteration_001",
       "source_hypothesis_id": "",
@@ -101,13 +101,13 @@
     }
   ],
   "rejected_duplicate_count": 0,
-  "rejected_invalid_count": 4,
+  "rejected_invalid_count": 2,
   "rejected_queries": [
     {
-      "query": "Mean FD effects on thalamocortical FC",
+      "query": "Negative controls in thalamocortical coupling studies",
       "intent_type": "literature_search",
       "priority": 5.0,
-      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
+      "reason": "To find studies that use negative controls such as global_signal_psd_power_mean and global_signal_psd_power_max in fMRI studies of insomnia.",
       "source": "llm",
       "source_iteration": "iteration_001",
       "source_hypothesis_id": "",
@@ -116,34 +116,10 @@
       "rejection_reason": "missing_domain_term"
     },
     {
-      "query": "High motion effects on thalamocortical FC",
-      "intent_type": "literature_search",
-      "priority": 5.0,
-      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
-      "source": "llm",
-      "source_iteration": "iteration_001",
-      "source_hypothesis_id": "",
-      "source_plan_id": "",
-      "status": "candidate",
-      "rejection_reason": "missing_domain_term"
-    },
-    {
-      "query": "Motion parameters and thalamocortical FC",
-      "intent_type": "literature_search",
-      "priority": 5.0,
-      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
-      "source": "llm",
-      "source_iteration": "iteration_001",
-      "source_hypothesis_id": "",
-      "source_plan_id": "",
-      "status": "candidate",
-      "rejection_reason": "missing_domain_term"
-    },
-    {
-      "query": "Thalamus-frontoparietal FC and cognitive deficits",
+      "query": "Motion parameters and thalamocortical coupling",
       "intent_type": "literature_search",
       "priority": 4.0,
-      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
+      "reason": "To find studies that explore the impact of covariates like mean_FD, mean_DVARS, percent_high_motion, and max_FD on sleep architecture and insomnia.",
       "source": "llm",
       "source_iteration": "iteration_001",
       "source_hypothesis_id": "",

@@ -661,6 +661,10 @@ def _snapshot_iteration(
     }.items():
         _copy_path(resolve_path(experiment_paths.get(key, default)), iteration_dir / "experiment" / Path(experiment_paths.get(key, default)).name, copied, key)
 
+    visualization_default = Path(experiment_paths.get("experiment_output_dir", "outputs/experiments")) / "visuals"
+    visualization_source = resolve_path(experiment_paths.get("experiment_visualizations", str(visualization_default)))
+    _copy_path(visualization_source, iteration_dir / "experiment" / "visuals", copied, "experiment_visualizations")
+
     if snapshot_features:
         feature_root = experiment_config.get("feature_extraction", {}).get("output_root")
         if feature_root:

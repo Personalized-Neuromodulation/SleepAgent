@@ -17,6 +17,9 @@ from sleep_ai_scientist.hypothesis.hypothesis_pipeline import run_hypothesis_pip
 from sleep_ai_scientist.hypothesis.agents.review_agent import reject_near_duplicates, run_reflection
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
 from sleep_ai_scientist.hypothesis.agents.rank_agent import run_pairwise_ranking
+from sleep_ai_scientist.hypothesis.agents.evolution_memory_agent import synthesize_meta_review
+from sleep_ai_scientist.hypothesis.testability import annotate_registry_testability
+from sleep_ai_scientist.schemas.data_profile import DataProfile, FeatureProfile
 from sleep_ai_scientist.hypothesis.agents.memory import (
     ExperimentalFeedback,
     apply_feedback_to_registry,
@@ -110,6 +113,101 @@ def test_hypothesis_registry_rejects_near_duplicates():
     assert second.hypothesis_id in rejected
     assert registry.hypotheses[first.hypothesis_id].status == HypothesisStatus.active
     assert registry.hypotheses[second.hypothesis_id].status == HypothesisStatus.rejected
+
+
+def test_fa_dti_hypothesis_is_not_directly_testable_with_fmri_only_profile(tmp_path):
+    registry = HypothesisRegistry(session_id="testability_session")
+    dti = registry.add_hypothesis(
+        title="White Matter Integrity via FA in Insomnia",
+        summary="DTI fractional anisotropy may mediate thalamocortical insomnia mechanisms.",
+        content="Fractional anisotropy and white matter tract integrity are the core measurements.",
+        rationale="FA requires DTI.",
+        experimental_plan="Measure FA with DTI and relate it to insomnia severity.",
+        generation_strategy="literature_exploration",
+        elo_rating=1510,
+        status=HypothesisStatus.active,
+    )
+    fmri = registry.add_hypothesis(
+        title="DMN Functional Connectivity in Insomnia",
+        summary="fMRI DMN_FC relates to salience_FC in insomnia.",
+        content="Resting-state fMRI functional connectivity is the core measurement.",
+        rationale="DMN_FC is available.",
+        experimental_plan="Use fMRI DMN_FC and salience_FC.",
+        generation_strategy="literature_exploration",
+        elo_rating=1450,
+        status=HypothesisStatus.active,
+    )
+    profile = DataProfile(
+        profile_type="analysis_ready_profile",
+        features=[
+            FeatureProfile(feature_name="DMN_FC", modality="fMRI", source_file="fmri.csv", source_column="DMN_FC", approved=True, role="feature"),
+            FeatureProfile(feature_name="salience_FC", modality="fMRI", source_file="fmri.csv", source_column="salience_FC", approved=True, role="feature"),
+        ],
+    )
+
+    annotate_registry_testability(registry, profile)
+
+    dti_meta = registry.hypotheses[dti.hypothesis_id].metadata["data_testability"]
+    fmri_meta = registry.hypotheses[fmri.hypothesis_id].metadata["data_testability"]
+    assert dti_meta["status"] == "not_directly_testable"
+    assert dti_meta["missing_modalities"] == ["DTI"]
+    assert "FA" in dti_meta["missing_variables"]
+    assert fmri_meta["status"] == "directly_testable"
+    assert registry.top_by_experiment_priority(1)[0].hypothesis_id == fmri.hypothesis_id
+
+    registry.write_outputs(tmp_path, top_k=2)
+    top_rows = read_json(tmp_path / "top_k_hypotheses.json")
+    csv_text = (tmp_path / "hypothesis_registry.csv").read_text(encoding="utf-8")
+    assert top_rows[0]["metadata"]["data_testability"]["status"] == "directly_testable"
+    assert "data_testability_status" in csv_text
+    assert "not_directly_testable" in csv_text
+
+
+def test_meta_review_separates_scientific_strength_from_current_data_testability():
+    registry = HypothesisRegistry(session_id="report_testability_session")
+    registry.add_hypothesis(
+        title="White Matter Integrity via FA",
+        summary="High-value DTI hypothesis.",
+        content="DTI FA.",
+        rationale="Literature supported.",
+        generation_strategy="literature_exploration",
+        elo_rating=1510,
+        status=HypothesisStatus.active,
+        metadata={
+            "data_testability": {
+                "status": "not_directly_testable",
+                "missing_modalities": ["DTI"],
+                "missing_variables": ["FA"],
+                "ranking_bonus": -30.0,
+                "note": "DTI/FA is missing from the current foundation.",
+            }
+        },
+    )
+    registry.add_hypothesis(
+        title="DMN Functional Connectivity",
+        summary="Current fMRI hypothesis.",
+        content="fMRI DMN_FC.",
+        rationale="Data supported.",
+        generation_strategy="literature_exploration",
+        elo_rating=1450,
+        status=HypothesisStatus.active,
+        metadata={
+            "data_testability": {
+                "status": "directly_testable",
+                "missing_modalities": [],
+                "missing_variables": [],
+                "ranking_bonus": 40.0,
+                "note": "fMRI variables are available.",
+            }
+        },
+    )
+
+    report = synthesize_meta_review(registry, ollama_config={"enabled": False})
+
+    assert "Scientific Strength Ranking" in report
+    assert "Current-Data Experiment Priority" in report
+    assert "not_directly_testable" in report
+    assert "Missing modalities: DTI; missing variables: FA" in report
 
 
 def test_hypothesis_pipeline_writes_expected_artifacts(tmp_path):

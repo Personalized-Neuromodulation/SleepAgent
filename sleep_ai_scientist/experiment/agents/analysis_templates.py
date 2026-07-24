@@ -6,6 +6,8 @@ from typing import Any
 
 import pandas as pd
 from scipy import stats
+import statsmodels.api as sm
+from statsmodels.regression.mixed_linear_model import MixedLM
 
 from sleep_ai_scientist.common.utils import stable_id
 from sleep_ai_scientist.schemas.experiment import (
@@ -53,14 +55,18 @@ def load_analysis_table(plan: ExperimentPlan, required_variables: set[str] | Non
     return merged
 
 
-def run_primary_tests(plan: ExperimentPlan) -> list[StatisticalTestResult]:
+SUPPORTED_PRIMARY_TEMPLATES = {"spearman_correlation", "linear_regression", "mixed_effects", "logistic_regression"}
+
+
+def run_primary_tests(plan: ExperimentPlan, *, primary_template: str = "spearman_correlation") -> list[StatisticalTestResult]:
     results: list[StatisticalTestResult] = []
     for test in plan.primary_tests:
         predictor = str(test.get("predictor", ""))
         outcome = str(test.get("outcome", ""))
         test_id = str(test.get("test_id") or stable_id("primary_test", plan.plan_id, predictor, outcome))
-        table = load_analysis_table(plan, {predictor, outcome})
-        results.append(_spearman_result(table, test_id, predictor, outcome))
+        template = str(test.get("model") or primary_template or "spearman_correlation")
+        table = load_analysis_table(plan, _required_variables_for_template(plan, test, predictor, outcome, template))
+        results.append(_run_primary_template(table, test_id, predictor, outcome, template, plan, test))
     return results
 
 
@@ -169,6 +175,250 @@ def _spearman_result(table: pd.DataFrame, test_id: str, predictor: str, outcome:
     )
 
 
+def _run_primary_template(
+    table: pd.DataFrame,
+    test_id: str,
+    predictor: str,
+    outcome: str,
+    template: str,
+    plan: ExperimentPlan,
+    test: dict[str, Any],
+) -> StatisticalTestResult:
+    if template == "linear_regression":
+        return _linear_regression_result(table, test_id, predictor, outcome, plan)
+    if template == "logistic_regression":
+        return _logistic_regression_result(table, test_id, predictor, outcome, plan)
+    if template == "mixed_effects":
+        return _mixed_effects_result(table, test_id, predictor, outcome, plan, test)
+    return _spearman_result(table, test_id, predictor, outcome)
+
+
+def _required_variables_for_template(
+    plan: ExperimentPlan,
+    test: dict[str, Any],
+    predictor: str,
+    outcome: str,
+    template: str,
+) -> set[str]:
+    required = {predictor, outcome}
+    if template in {"linear_regression", "logistic_regression"}:
+        required.update(plan.covariates)
+    if template == "mixed_effects":
+        group = str(test.get("group") or _first_categorical_covariate(plan) or "")
+        if group:
+            required.add(group)
+        required.update(value for value in plan.covariates if value != group)
+    return required
+
+
+def _linear_regression_result(table: pd.DataFrame, test_id: str, predictor: str, outcome: str, plan: ExperimentPlan) -> StatisticalTestResult:
+    required = [predictor, outcome, *plan.covariates]
+    clean = _clean_model_table(table, required)
+    if len(clean) < max(4, len(plan.covariates) + 3):
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="linear_regression",
+            n=len(clean),
+            passed=False,
+            notes="Insufficient non-missing observations for linear regression.",
+        )
+    try:
+        x = _design_matrix(clean, [predictor, *plan.covariates])
+        y = pd.to_numeric(clean[outcome], errors="coerce")
+        model = sm.OLS(y, x).fit()
+        effect = float(model.params.get(predictor)) if predictor in model.params else None
+        p_value = float(model.pvalues.get(predictor)) if predictor in model.pvalues else None
+        ci_low = ci_high = None
+        if predictor in model.params:
+            interval = model.conf_int().loc[predictor]
+            ci_low = float(interval.iloc[0])
+            ci_high = float(interval.iloc[1])
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="linear_regression",
+            n=len(clean),
+            effect=effect,
+            p_value=p_value,
+            ci_low=ci_low,
+            ci_high=ci_high,
+            direction="positive" if effect is not None and effect > 0 else "negative" if effect is not None and effect < 0 else "",
+            passed=bool(p_value is not None and p_value < 0.05),
+            notes="Primary controlled template: ordinary least squares linear regression.",
+            metadata={
+                "r_squared": float(model.rsquared),
+                "adj_r_squared": float(model.rsquared_adj),
+                "coefficients": {_display_term_name(str(key)): float(value) for key, value in model.params.items()},
+                "p_values": {_display_term_name(str(key)): float(value) for key, value in model.pvalues.items()},
+                "covariates": list(plan.covariates),
+            },
+        )
+    except Exception as exc:
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="linear_regression",
+            n=len(clean),
+            passed=False,
+            notes=f"Linear regression failed: {type(exc).__name__}: {exc}",
+        )
+
+
+def _logistic_regression_result(table: pd.DataFrame, test_id: str, predictor: str, outcome: str, plan: ExperimentPlan) -> StatisticalTestResult:
+    required = [predictor, outcome, *plan.covariates]
+    clean = _clean_model_table(table, required)
+    metadata_base = {"covariates": list(plan.covariates)}
+    if len(clean) < max(6, len(plan.covariates) + 4):
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="logistic_regression",
+            n=len(clean),
+            passed=False,
+            notes="Insufficient non-missing observations for logistic regression.",
+            metadata=metadata_base,
+        )
+    y_raw = pd.to_numeric(clean[outcome], errors="coerce")
+    unique = sorted(y_raw.dropna().unique())
+    metadata_base["outcome_levels"] = [float(value) for value in unique]
+    if len(unique) != 2:
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="logistic_regression",
+            n=len(clean),
+            passed=False,
+            notes="Logistic regression requires a binary outcome.",
+            metadata=metadata_base,
+        )
+    try:
+        y = y_raw.map({unique[0]: 0.0, unique[1]: 1.0})
+        x = _design_matrix(clean, [predictor, *plan.covariates])
+        model = sm.Logit(y, x).fit(disp=False)
+        effect = float(model.params.get(predictor)) if predictor in model.params else None
+        p_value = float(model.pvalues.get(predictor)) if predictor in model.pvalues else None
+        ci_low = ci_high = None
+        if predictor in model.params:
+            interval = model.conf_int().loc[predictor]
+            ci_low = float(interval.iloc[0])
+            ci_high = float(interval.iloc[1])
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="logistic_regression",
+            n=len(clean),
+            effect=effect,
+            p_value=p_value,
+            ci_low=ci_low,
+            ci_high=ci_high,
+            direction="positive" if effect is not None and effect > 0 else "negative" if effect is not None and effect < 0 else "",
+            passed=bool(p_value is not None and p_value < 0.05),
+            notes="Primary controlled template: logistic regression for a binary outcome.",
+            metadata={
+                **metadata_base,
+                "coefficients": {_display_term_name(str(key)): float(value) for key, value in model.params.items()},
+                "odds_ratios": {_display_term_name(str(key)): _safe_exp(float(value)) for key, value in model.params.items()},
+                "p_values": {_display_term_name(str(key)): float(value) for key, value in model.pvalues.items()},
+                "pseudo_r_squared": float(model.prsquared),
+            },
+        )
+    except Exception as exc:
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="logistic_regression",
+            n=len(clean),
+            passed=False,
+            notes=f"Logistic regression failed: {type(exc).__name__}: {exc}",
+            metadata=metadata_base,
+        )
+
+
+def _mixed_effects_result(
+    table: pd.DataFrame,
+    test_id: str,
+    predictor: str,
+    outcome: str,
+    plan: ExperimentPlan,
+    test: dict[str, Any],
+) -> StatisticalTestResult:
+    group = str(test.get("group") or _first_categorical_covariate(plan) or "")
+    fixed_covariates = [value for value in plan.covariates if value != group]
+    required = [predictor, outcome, group, *fixed_covariates] if group else [predictor, outcome, *fixed_covariates]
+    clean = _clean_model_table(table, required)
+    if not group or group not in clean.columns:
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="mixed_effects",
+            n=len(clean),
+            passed=False,
+            notes="Mixed effects model requires a group variable.",
+        )
+    if clean[group].nunique() < 2 or len(clean) < max(6, len(fixed_covariates) + 4):
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="mixed_effects",
+            n=len(clean),
+            passed=False,
+            notes="Insufficient groups or observations for mixed effects model.",
+            metadata={"group_variable": group},
+        )
+    try:
+        x = _design_matrix(clean, [predictor, *fixed_covariates])
+        y = pd.to_numeric(clean[outcome], errors="coerce")
+        model = MixedLM(y, x, groups=clean[group]).fit(reml=False, method="lbfgs", disp=False)
+        effect = float(model.params.get(predictor)) if predictor in model.params else None
+        p_value = float(model.pvalues.get(predictor)) if predictor in model.pvalues else None
+        ci_low = ci_high = None
+        if predictor in model.params:
+            interval = model.conf_int().loc[predictor]
+            ci_low = float(interval.iloc[0])
+            ci_high = float(interval.iloc[1])
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="mixed_effects",
+            n=len(clean),
+            effect=effect,
+            p_value=p_value,
+            ci_low=ci_low,
+            ci_high=ci_high,
+            direction="positive" if effect is not None and effect > 0 else "negative" if effect is not None and effect < 0 else "",
+            passed=bool(p_value is not None and p_value < 0.05),
+            notes="Primary controlled template: mixed effects model with random intercept.",
+            metadata={
+                "group_variable": group,
+                "group_count": int(clean[group].nunique()),
+                "fixed_effects": {_display_term_name(str(key)): float(value) for key, value in model.params.items() if key != "Group Var"},
+                "p_values": {_display_term_name(str(key)): float(value) for key, value in model.pvalues.items()},
+            },
+        )
+    except Exception as exc:
+        return StatisticalTestResult(
+            test_id=test_id,
+            predictor=predictor,
+            outcome=outcome,
+            method="mixed_effects",
+            n=len(clean),
+            passed=False,
+            notes=f"Mixed effects model failed: {type(exc).__name__}: {exc}",
+            metadata={"group_variable": group},
+        )
+
+
 def _clean_pair(table: pd.DataFrame, predictor: str, outcome: str) -> pd.DataFrame:
     if table.empty or predictor not in table.columns or outcome not in table.columns:
         return pd.DataFrame(columns=[predictor, outcome])
@@ -176,6 +426,53 @@ def _clean_pair(table: pd.DataFrame, predictor: str, outcome: str) -> pd.DataFra
     clean[predictor] = pd.to_numeric(clean[predictor], errors="coerce")
     clean[outcome] = pd.to_numeric(clean[outcome], errors="coerce")
     return clean.dropna(subset=[predictor, outcome])
+
+
+def _clean_model_table(table: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
+    columns = [column for column in columns if column]
+    if table.empty or any(column not in table.columns for column in columns):
+        return pd.DataFrame(columns=["subject_id", *columns])
+    clean = table[["subject_id", *columns]].copy()
+    for column in columns:
+        if column == "subject_id":
+            continue
+        converted = pd.to_numeric(clean[column], errors="coerce")
+        if converted.notna().any():
+            clean[column] = converted
+    return clean.dropna(subset=columns)
+
+
+def _design_matrix(clean: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
+    frames: list[pd.Series | pd.DataFrame] = []
+    for column in columns:
+        series = clean[column]
+        if pd.api.types.is_numeric_dtype(series):
+            frames.append(pd.to_numeric(series, errors="coerce").rename(column))
+        else:
+            frames.append(pd.get_dummies(series.astype(str), prefix=column, drop_first=True, dtype=float))
+    x = pd.concat(frames, axis=1) if frames else pd.DataFrame(index=clean.index)
+    return sm.add_constant(x, has_constant="add")
+
+
+def _first_categorical_covariate(plan: ExperimentPlan) -> str:
+    for variable in plan.variables:
+        if variable.role == "covariate" and variable.name in plan.covariates:
+            name = variable.name.lower()
+            if any(token in name for token in ["site", "group", "subject", "session", "scanner"]):
+                return variable.name
+    for covariate in plan.covariates:
+        name = covariate.lower()
+        if any(token in name for token in ["site", "group", "subject", "session", "scanner"]):
+            return covariate
+    return ""
+
+
+def _display_term_name(name: str) -> str:
+    return "Intercept" if name == "const" else name
+
+
+def _safe_exp(value: float) -> float:
+    return float(math.exp(max(min(value, 50.0), -50.0)))
 
 
 def _collapse_duplicate_subject_rows(frame: pd.DataFrame) -> pd.DataFrame:

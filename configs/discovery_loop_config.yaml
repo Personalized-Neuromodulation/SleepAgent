@@ -3,7 +3,7 @@ discovery_loop:
   max_iterations: 2
   verbose: true
   snapshot_features: true
-  enable_foundation_grounding_refresh: false
+  enable_foundation_grounding_refresh: true
   stop_conditions:
     no_active_hypotheses: true
     no_experimental_feedback: false
