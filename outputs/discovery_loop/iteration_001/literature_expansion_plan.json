@@ -1,0 +1,164 @@
+{
+  "iteration_id": "iteration_001",
+  "signals": {
+    "records": 1,
+    "failed_tests": 4,
+    "negative_control_failures": 2,
+    "missing_variables": 9,
+    "modality_gaps": 4,
+    "validated_or_high_reward": 0
+  },
+  "candidate_count": 50,
+  "accepted_query_count": 8,
+  "accepted_queries": [
+    {
+      "query": "DVARS and thalamocortical connectivity in insomnia",
+      "intent_type": "literature_search",
+      "priority": 5.0,
+      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Covariates in fMRI analysis of insomnia",
+      "intent_type": "literature_search",
+      "priority": 5.0,
+      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Thalamus-frontoparietal FC and insomnia",
+      "intent_type": "literature_search",
+      "priority": 4.0,
+      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Frontoparietal network connectivity in insomnia",
+      "intent_type": "literature_search",
+      "priority": 4.0,
+      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "fMRI frontoparietal FC in sleep disorders",
+      "intent_type": "literature_search",
+      "priority": 4.0,
+      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Thalamus-frontoparietal FC during NREM sleep",
+      "intent_type": "literature_search",
+      "priority": 4.0,
+      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Thalamus-salience FC in insomnia",
+      "intent_type": "literature_search",
+      "priority": 3.0,
+      "reason": "To examine the role of thalamus-salience FC in insomnia and its relation to cognitive functions.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Salience network connectivity and insomnia severity",
+      "intent_type": "literature_search",
+      "priority": 3.0,
+      "reason": "To examine the role of thalamus-salience FC in insomnia and its relation to cognitive functions.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    }
+  ],
+  "rejected_duplicate_count": 0,
+  "rejected_invalid_count": 4,
+  "rejected_queries": [
+    {
+      "query": "Mean FD effects on thalamocortical FC",
+      "intent_type": "literature_search",
+      "priority": 5.0,
+      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "candidate",
+      "rejection_reason": "missing_domain_term"
+    },
+    {
+      "query": "High motion effects on thalamocortical FC",
+      "intent_type": "literature_search",
+      "priority": 5.0,
+      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "candidate",
+      "rejection_reason": "missing_domain_term"
+    },
+    {
+      "query": "Motion parameters and thalamocortical FC",
+      "intent_type": "literature_search",
+      "priority": 5.0,
+      "reason": "To explore the effect of covariates on thalamocortical FC in insomnia patients.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "candidate",
+      "rejection_reason": "missing_domain_term"
+    },
+    {
+      "query": "Thalamus-frontoparietal FC and cognitive deficits",
+      "intent_type": "literature_search",
+      "priority": 4.0,
+      "reason": "To investigate thalamus-frontoparietal FC in insomnia and its impact on cognitive functions.",
+      "source": "llm",
+      "source_iteration": "iteration_001",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "candidate",
+      "rejection_reason": "missing_domain_term"
+    }
+  ],
+  "query_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml",
+  "skip_literature_refresh": false,
+  "reason": "new_experiment_queries",
+  "append_summary": {
+    "appended": 8,
+    "group": "experiment_feedback_expansion",
+    "query_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml"
+  },
+  "incremental_query_config": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/literature_incremental_queries.yaml"
+}

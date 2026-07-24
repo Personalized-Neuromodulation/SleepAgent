@@ -33,6 +33,7 @@ def run_grounding_pipeline(
     *,
     query_config_path: str | Path | None = "configs/literature_queries.yaml",
     corpus_version: str = "sleepagent_grounding_corpus_v1",
+    retrieval_query: str | None = None,
 ) -> dict[str, Any]:
     """Run knowledge grounding end to end and write all grounding artifacts.
 
@@ -46,6 +47,8 @@ def run_grounding_pipeline(
     llm_config = read_yaml(llm_config_path) if llm_config_path.exists() else {}
     embedding_cfg = _load_embedding_config(config)
     retrieval_cfg = config.get("retrieval", {})
+    if retrieval_query and str(retrieval_query).strip():
+        retrieval_cfg = {**retrieval_cfg, "query": str(retrieval_query).strip(), "query_source": "dynamic_experiment_intent"}
     api_papers: list[Any] = []
     papers, api_summary = _load_grounding_papers(config, retrieval_cfg, embedding_cfg)
     duplicate_reports = []

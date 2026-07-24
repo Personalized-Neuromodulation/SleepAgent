@@ -72,15 +72,18 @@ def _paper_row(paper: Paper) -> dict[str, Any]:
     }
 
 
-def export_literature_registry_csv_jsonl(session: Session, output_csv: str | Path, output_jsonl: str | Path) -> dict[str, Any]:
+def export_literature_registry_csv_jsonl(session: Session, output_csv: str | Path, output_jsonl: str | Path | None = None) -> dict[str, Any]:
     papers = list(session.scalars(select(Paper).order_by(Paper.paper_id)))
     rows = [_paper_row(paper) for paper in papers]
     write_csv(Path(output_csv), rows)
-    ensure_parent(Path(output_jsonl))
-    with Path(output_jsonl).open("w", encoding="utf-8") as f:
-        for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + "\n")
-    return {"paper_count": len(rows), "csv": str(output_csv), "jsonl": str(output_jsonl)}
+    result = {"paper_count": len(rows), "csv": str(output_csv)}
+    if output_jsonl:
+        ensure_parent(Path(output_jsonl))
+        with Path(output_jsonl).open("w", encoding="utf-8") as f:
+            for row in rows:
+                f.write(json.dumps(row, ensure_ascii=False) + "\n")
+        result["jsonl"] = str(output_jsonl)
+    return result
 
 
 def export_query_summary(session: Session, output_csv: str | Path) -> dict[str, Any]:

@@ -1,0 +1,5036 @@
+{
+  "corpus_version": "sleepagent_grounding_data_constrained_v1",
+  "created_at": "2026-07-23T11:16:10.747447+00:00",
+  "query_set_version": "sleep_literature_queries_v2_broad_sleep_science",
+  "api_enabled": false,
+  "providers": [],
+  "api_literature_csv": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/api_retrieved_papers.csv",
+  "final_literature_registry": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/grounding_literature_registry.csv",
+  "evidence_table": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_table.csv",
+  "mechanism_graph": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/mechanism_graph.json",
+  "evidence_to_variable_map": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_to_variable_map.yaml",
+  "analysis_ready_profile": "/home/zyb/Agent_skills/SleepAgent/outputs/profiles/analysis_ready_profile.yaml",
+  "grounding_qc_report": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/grounding_qc_report.json",
+  "api_search_log": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/api_search_log.jsonl",
+  "query_results": [],
+  "api_summary": {
+    "source": "literature_db_rag",
+    "enabled": true,
+    "retrieval_hits": 1000,
+    "available_chunks": 7176,
+    "top_k": 1000,
+    "embedding_provider": "local_minilm",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "top_hits": [
+      {
+        "paper_id": "doi:10.1503/jpn.210066",
+        "chunk_id": "abstract:doi:10.1503/jpn.210066",
+        "score": 0.753856
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.0514",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.0514",
+        "score": 0.721938
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2023.1164869",
+        "chunk_id": "abstract:doi:10.3389/fneur.2023.1164869",
+        "score": 0.71596
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.25221",
+        "chunk_id": "abstract:doi:10.1002/hbm.25221",
+        "score": 0.713797
+      },
+      {
+        "paper_id": "doi:10.1002/wcs.70019",
+        "chunk_id": "abstract:doi:10.1002/wcs.70019",
+        "score": 0.711978
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2025.121639",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2025.121639",
+        "score": 0.707691
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2023.04.100",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2023.04.100",
+        "score": 0.707546
+      },
+      {
+        "paper_id": "doi:10.1016/j.clinimag.2022.04.015",
+        "chunk_id": "abstract:doi:10.1016/j.clinimag.2022.04.015",
+        "score": 0.706664
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.876",
+        "chunk_id": "abstract:doi:10.1002/brb3.876",
+        "score": 0.705544
+      },
+      {
+        "paper_id": "doi:10.1097/md.0000000000007037",
+        "chunk_id": "abstract:doi:10.1097/md.0000000000007037",
+        "score": 0.704652
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2018.05.013",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2018.05.013",
+        "score": 0.703715
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsab072.071",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsab072.071",
+        "score": 0.698021
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-026-40818-7",
+        "chunk_id": "abstract:doi:10.1038/s41598-026-40818-7",
+        "score": 0.69705
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf384",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf384",
+        "score": 0.696544
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad205",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad205",
+        "score": 0.696463
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci7030023",
+        "chunk_id": "abstract:doi:10.3390/brainsci7030023",
+        "score": 0.695217
+      },
+      {
+        "paper_id": "doi:10.1192/j.eurpsy.2024.810",
+        "chunk_id": "abstract:doi:10.1192/j.eurpsy.2024.810",
+        "score": 0.694996
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.3422",
+        "chunk_id": "abstract:doi:10.5665/sleep.3422",
+        "score": 0.692331
+      },
+      {
+        "paper_id": "doi:10.1097/wnr.0000000000001949",
+        "chunk_id": "abstract:doi:10.1097/wnr.0000000000001949",
+        "score": 0.689505
+      },
+      {
+        "paper_id": "doi:10.1038/s42003-026-09839-w",
+        "chunk_id": "abstract:doi:10.1038/s42003-026-09839-w",
+        "score": 0.688608
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad077.0383",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad077.0383",
+        "score": 0.685934
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s95224",
+        "chunk_id": "abstract:doi:10.2147/ndt.s95224",
+        "score": 0.685504
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.3411",
+        "chunk_id": "abstract:doi:10.1002/brb3.3411",
+        "score": 0.684712
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.106601",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.106601",
+        "score": 0.684364
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.1844",
+        "chunk_id": "abstract:doi:10.1002/brb3.1844",
+        "score": 0.68399
+      },
+      {
+        "paper_id": "doi:10.1503/jpn.140290",
+        "chunk_id": "abstract:doi:10.1503/jpn.140290",
+        "score": 0.681108
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-025-08408-1",
+        "chunk_id": "abstract:doi:10.1038/s41598-025-08408-1",
+        "score": 0.679542
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.26072",
+        "chunk_id": "abstract:doi:10.1002/hbm.26072",
+        "score": 0.678271
+      },
+      {
+        "paper_id": "doi:10.1016/j.pscychresns.2022.111578",
+        "chunk_id": "abstract:doi:10.1016/j.pscychresns.2022.111578",
+        "score": 0.677123
+      },
+      {
+        "paper_id": "doi:10.1007/s11920-020-01173-0",
+        "chunk_id": "abstract:doi:10.1007/s11920-020-01173-0",
+        "score": 0.676132
+      },
+      {
+        "paper_id": "doi:10.1016/j.nicl.2017.07.008",
+        "chunk_id": "abstract:doi:10.1016/j.nicl.2017.07.008",
+        "score": 0.675488
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2021.634984",
+        "chunk_id": "abstract:doi:10.3389/fnins.2021.634984",
+        "score": 0.675243
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2022.1036997",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2022.1036997",
+        "score": 0.674892
+      },
+      {
+        "paper_id": "doi:10.55782/ane-2011-1860",
+        "chunk_id": "abstract:doi:10.55782/ane-2011-1860",
+        "score": 0.674811
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2021.101569",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2021.101569",
+        "score": 0.673615
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.529",
+        "chunk_id": "abstract:doi:10.1002/brb3.529",
+        "score": 0.673609
+      },
+      {
+        "paper_id": "doi:10.1016/j.nicl.2017.10.013",
+        "chunk_id": "abstract:doi:10.1016/j.nicl.2017.10.013",
+        "score": 0.673468
+      },
+      {
+        "paper_id": "doi:10.31083/j.jin2206169",
+        "chunk_id": "abstract:doi:10.31083/j.jin2206169",
+        "score": 0.672509
+      },
+      {
+        "paper_id": "doi:10.9758/cpn.25.1272",
+        "chunk_id": "abstract:doi:10.9758/cpn.25.1272",
+        "score": 0.671037
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2022.1045934",
+        "chunk_id": "abstract:doi:10.3389/fnins.2022.1045934",
+        "score": 0.671029
+      },
+      {
+        "paper_id": "doi:10.1016/j.nbscr.2025.100137",
+        "chunk_id": "abstract:doi:10.1016/j.nbscr.2025.100137",
+        "score": 0.670493
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad077.0332",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad077.0332",
+        "score": 0.6701
+      },
+      {
+        "paper_id": "doi:10.1016/j.neubiorev.2017.03.013",
+        "chunk_id": "abstract:doi:10.1016/j.neubiorev.2017.03.013",
+        "score": 0.669893
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2026.1770086",
+        "chunk_id": "abstract:doi:10.3389/fneur.2026.1770086",
+        "score": 0.669772
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2019.07.089",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2019.07.089",
+        "score": 0.669265
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s137292",
+        "chunk_id": "abstract:doi:10.2147/ndt.s137292",
+        "score": 0.668045
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2023.1135995",
+        "chunk_id": "abstract:doi:10.3389/fnins.2023.1135995",
+        "score": 0.667636
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroscience.2025.07.012",
+        "chunk_id": "abstract:doi:10.1016/j.neuroscience.2025.07.012",
+        "score": 0.667549
+      },
+      {
+        "paper_id": "doi:10.1101/2025.08.10.669514",
+        "chunk_id": "abstract:doi:10.1101/2025.08.10.669514",
+        "score": 0.666124
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2021.661286",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2021.661286",
+        "score": 0.666122
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2023.1154095",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2023.1154095",
+        "score": 0.666093
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2023.1119595",
+        "chunk_id": "abstract:doi:10.3389/fneur.2023.1119595",
+        "score": 0.66577
+      },
+      {
+        "paper_id": "doi:10.3389/fnmol.2022.825286",
+        "chunk_id": "abstract:doi:10.3389/fnmol.2022.825286",
+        "score": 0.665504
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2020.08.021",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2020.08.021",
+        "score": 0.665243
+      },
+      {
+        "paper_id": "doi:10.1038/s41467-023-42945-5",
+        "chunk_id": "abstract:doi:10.1038/s41467-023-42945-5",
+        "score": 0.664872
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s297309",
+        "chunk_id": "abstract:doi:10.2147/nss.s297309",
+        "score": 0.664726
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s69681",
+        "chunk_id": "abstract:doi:10.2147/ndt.s69681",
+        "score": 0.664499
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13790",
+        "chunk_id": "abstract:doi:10.1111/jsr.13790",
+        "score": 0.663451
+      },
+      {
+        "paper_id": "doi:10.9758/cpn.23.1063",
+        "chunk_id": "abstract:doi:10.9758/cpn.23.1063",
+        "score": 0.663326
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad077.0422",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad077.0422",
+        "score": 0.662943
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13861",
+        "chunk_id": "abstract:doi:10.1111/jsr.13861",
+        "score": 0.660786
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.12953",
+        "chunk_id": "abstract:doi:10.1111/jsr.12953",
+        "score": 0.660754
+      },
+      {
+        "paper_id": "doi:10.1093/sleepadvances/zpaf065",
+        "chunk_id": "abstract:doi:10.1093/sleepadvances/zpaf065",
+        "score": 0.660561
+      },
+      {
+        "paper_id": "doi:10.1093/brain/awt329",
+        "chunk_id": "abstract:doi:10.1093/brain/awt329",
+        "score": 0.659354
+      },
+      {
+        "paper_id": "doi:10.1136/bmjment-2025-302410",
+        "chunk_id": "abstract:doi:10.1136/bmjment-2025-302410",
+        "score": 0.65832
+      },
+      {
+        "paper_id": "doi:10.1017/s1355617723007506",
+        "chunk_id": "abstract:doi:10.1017/s1355617723007506",
+        "score": 0.656847
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0252076",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0252076",
+        "score": 0.656249
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2026.1730858",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2026.1730858",
+        "score": 0.655732
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2017.00214",
+        "chunk_id": "abstract:doi:10.3389/fnins.2017.00214",
+        "score": 0.655589
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2019.07.066",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2019.07.066",
+        "score": 0.655447
+      },
+      {
+        "paper_id": "title:36bb7eee04228be32eb3c52b0316b4fdd73c230a",
+        "chunk_id": "abstract:title:36bb7eee04228be32eb3c52b0316b4fdd73c230a",
+        "score": 0.655401
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/31.6.777",
+        "chunk_id": "abstract:doi:10.1093/sleep/31.6.777",
+        "score": 0.655324
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.106527",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.106527",
+        "score": 0.65511
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0078830",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0078830",
+        "score": 0.655067
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/25.6.626",
+        "chunk_id": "abstract:doi:10.1093/sleep/25.6.626",
+        "score": 0.655032
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s128811",
+        "chunk_id": "abstract:doi:10.2147/ndt.s128811",
+        "score": 0.654983
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2024.1290345",
+        "chunk_id": "abstract:doi:10.3389/fnins.2024.1290345",
+        "score": 0.653783
+      },
+      {
+        "paper_id": "doi:10.1016/j.clinph.2025.2110774",
+        "chunk_id": "abstract:doi:10.1016/j.clinph.2025.2110774",
+        "score": 0.652695
+      },
+      {
+        "paper_id": "doi:10.1007/s11682-024-00958-8",
+        "chunk_id": "abstract:doi:10.1007/s11682-024-00958-8",
+        "score": 0.651843
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2024.11.002",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2024.11.002",
+        "score": 0.651173
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.1172",
+        "chunk_id": "abstract:doi:10.1002/brb3.1172",
+        "score": 0.650146
+      },
+      {
+        "paper_id": "doi:10.3389/fnagi.2018.00167",
+        "chunk_id": "abstract:doi:10.3389/fnagi.2018.00167",
+        "score": 0.649517
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsab072.064",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsab072.064",
+        "score": 0.649446
+      },
+      {
+        "paper_id": "doi:10.1093/sleepadvances/zpae070.146",
+        "chunk_id": "abstract:doi:10.1093/sleepadvances/zpae070.146",
+        "score": 0.648395
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2025.1568557",
+        "chunk_id": "abstract:doi:10.3389/fnins.2025.1568557",
+        "score": 0.648225
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2022.827749",
+        "chunk_id": "abstract:doi:10.3389/fneur.2022.827749",
+        "score": 0.647783
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2018.00917",
+        "chunk_id": "abstract:doi:10.3389/fnins.2018.00917",
+        "score": 0.647756
+      },
+      {
+        "paper_id": "doi:10.1186/s12916-025-04437-9",
+        "chunk_id": "abstract:doi:10.1186/s12916-025-04437-9",
+        "score": 0.647561
+      },
+      {
+        "paper_id": "doi:10.1155/2018/3678534",
+        "chunk_id": "abstract:doi:10.1155/2018/3678534",
+        "score": 0.647533
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2025.1736601",
+        "chunk_id": "abstract:doi:10.3389/fnins.2025.1736601",
+        "score": 0.647207
+      },
+      {
+        "paper_id": "doi:10.1016/j.jaac.2019.05.028",
+        "chunk_id": "abstract:doi:10.1016/j.jaac.2019.05.028",
+        "score": 0.64699
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s366234",
+        "chunk_id": "abstract:doi:10.2147/nss.s366234",
+        "score": 0.646517
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsab072.331",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsab072.331",
+        "score": 0.646409
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0433",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0433",
+        "score": 0.646201
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2026.1816963",
+        "chunk_id": "abstract:doi:10.3389/fnins.2026.1816963",
+        "score": 0.645808
+      },
+      {
+        "paper_id": "doi:10.1016/j.pnpbp.2025.111357",
+        "chunk_id": "abstract:doi:10.1016/j.pnpbp.2025.111357",
+        "score": 0.645269
+      },
+      {
+        "paper_id": "doi:10.1155/2022/9197858",
+        "chunk_id": "abstract:doi:10.1155/2022/9197858",
+        "score": 0.645191
+      },
+      {
+        "paper_id": "doi:10.1159/000552137",
+        "chunk_id": "abstract:doi:10.1159/000552137",
+        "score": 0.644673
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13693",
+        "chunk_id": "abstract:doi:10.1111/jsr.13693",
+        "score": 0.644514
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2020.00308",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2020.00308",
+        "score": 0.644501
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0716",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0716",
+        "score": 0.644344
+      },
+      {
+        "paper_id": "doi:10.3389/fnetp.2023.943223",
+        "chunk_id": "abstract:doi:10.3389/fnetp.2023.943223",
+        "score": 0.644037
+      },
+      {
+        "paper_id": "doi:10.20944/preprints202603.1007.v1",
+        "chunk_id": "abstract:doi:10.20944/preprints202603.1007.v1",
+        "score": 0.64271
+      },
+      {
+        "paper_id": "doi:10.1186/s12993-022-00188-2",
+        "chunk_id": "abstract:doi:10.1186/s12993-022-00188-2",
+        "score": 0.642696
+      },
+      {
+        "paper_id": "doi:10.1162/imag.a.1026",
+        "chunk_id": "abstract:doi:10.1162/imag.a.1026",
+        "score": 0.642609
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13884",
+        "chunk_id": "abstract:doi:10.1111/jsr.13884",
+        "score": 0.642525
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.0420",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.0420",
+        "score": 0.642224
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2024.12.025",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2024.12.025",
+        "score": 0.641418
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.5744",
+        "chunk_id": "abstract:doi:10.5665/sleep.5744",
+        "score": 0.640678
+      },
+      {
+        "paper_id": "doi:10.56618/2071-2693_2025_17_3_7",
+        "chunk_id": "abstract:doi:10.56618/2071-2693_2025_17_3_7",
+        "score": 0.640409
+      },
+      {
+        "paper_id": "doi:10.1186/s12916-025-04442-y",
+        "chunk_id": "abstract:doi:10.1186/s12916-025-04442-y",
+        "score": 0.640403
+      },
+      {
+        "paper_id": "doi:10.1111/cns.14183",
+        "chunk_id": "abstract:doi:10.1111/cns.14183",
+        "score": 0.640048
+      },
+      {
+        "paper_id": "doi:10.1186/s10194-024-01877-1",
+        "chunk_id": "abstract:doi:10.1186/s10194-024-01877-1",
+        "score": 0.639036
+      },
+      {
+        "paper_id": "doi:10.1088/1742-6596/1907/1/012013",
+        "chunk_id": "abstract:doi:10.1088/1742-6596/1907/1/012013",
+        "score": 0.638936
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0365",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0365",
+        "score": 0.638348
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.2796",
+        "chunk_id": "abstract:doi:10.5665/sleep.2796",
+        "score": 0.638244
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2021.678465",
+        "chunk_id": "abstract:doi:10.3389/fnins.2021.678465",
+        "score": 0.638157
+      },
+      {
+        "paper_id": "doi:10.1016/j.brat.2025.104776",
+        "chunk_id": "abstract:doi:10.1016/j.brat.2025.104776",
+        "score": 0.637941
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2025.1532011",
+        "chunk_id": "abstract:doi:10.3389/fnins.2025.1532011",
+        "score": 0.637789
+      },
+      {
+        "paper_id": "doi:10.31083/jin46749",
+        "chunk_id": "abstract:doi:10.31083/jin46749",
+        "score": 0.637749
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2025.1545885",
+        "chunk_id": "abstract:doi:10.3389/fnins.2025.1545885",
+        "score": 0.637543
+      },
+      {
+        "paper_id": "doi:10.1016/j.pnpbp.2026.111718",
+        "chunk_id": "abstract:doi:10.1016/j.pnpbp.2026.111718",
+        "score": 0.636861
+      },
+      {
+        "paper_id": "doi:10.1155/2015/817595",
+        "chunk_id": "abstract:doi:10.1155/2015/817595",
+        "score": 0.636829
+      },
+      {
+        "paper_id": "doi:10.3390/jcm15083080",
+        "chunk_id": "abstract:doi:10.3390/jcm15083080",
+        "score": 0.636686
+      },
+      {
+        "paper_id": "doi:10.1027/0269-8803/a000194",
+        "chunk_id": "abstract:doi:10.1027/0269-8803/a000194",
+        "score": 0.636524
+      },
+      {
+        "paper_id": "doi:10.1038/s41398-025-03605-y",
+        "chunk_id": "abstract:doi:10.1038/s41398-025-03605-y",
+        "score": 0.636326
+      },
+      {
+        "paper_id": "doi:10.1016/j.pscychresns.2025.111986",
+        "chunk_id": "abstract:doi:10.1016/j.pscychresns.2025.111986",
+        "score": 0.636038
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.70086",
+        "chunk_id": "abstract:doi:10.1111/jsr.70086",
+        "score": 0.635981
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2026.108769",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2026.108769",
+        "score": 0.635936
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pcbi.1011007",
+        "chunk_id": "abstract:doi:10.1371/journal.pcbi.1011007",
+        "score": 0.63539
+      },
+      {
+        "paper_id": "doi:10.1109/icicml63543.2024.10958094",
+        "chunk_id": "abstract:doi:10.1109/icicml63543.2024.10958094",
+        "score": 0.635204
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2018.00856",
+        "chunk_id": "abstract:doi:10.3389/fneur.2018.00856",
+        "score": 0.634731
+      },
+      {
+        "paper_id": "doi:10.1016/j.biopsych.2024.06.014",
+        "chunk_id": "abstract:doi:10.1016/j.biopsych.2024.06.014",
+        "score": 0.634692
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2024.1431837",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2024.1431837",
+        "score": 0.63456
+      },
+      {
+        "paper_id": "doi:10.21203/rs.3.rs-7419242/v1",
+        "chunk_id": "abstract:doi:10.21203/rs.3.rs-7419242/v1",
+        "score": 0.63325
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2020.00050",
+        "chunk_id": "abstract:doi:10.3389/fnins.2020.00050",
+        "score": 0.633194
+      },
+      {
+        "paper_id": "doi:10.1017/s0033291726103900",
+        "chunk_id": "abstract:doi:10.1017/s0033291726103900",
+        "score": 0.633149
+      },
+      {
+        "paper_id": "doi:10.1016/j.nicl.2019.101745",
+        "chunk_id": "abstract:doi:10.1016/j.nicl.2019.101745",
+        "score": 0.632272
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-021-81219-2",
+        "chunk_id": "abstract:doi:10.1038/s41598-021-81219-2",
+        "score": 0.632019
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2021.642411",
+        "chunk_id": "abstract:doi:10.3389/fneur.2021.642411",
+        "score": 0.631475
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.70246",
+        "chunk_id": "abstract:doi:10.1111/jsr.70246",
+        "score": 0.63129
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2018.07.004",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2018.07.004",
+        "score": 0.630933
+      },
+      {
+        "paper_id": "doi:10.1016/j.biopsycho.2025.109071",
+        "chunk_id": "abstract:doi:10.1016/j.biopsycho.2025.109071",
+        "score": 0.630584
+      },
+      {
+        "paper_id": "doi:10.1016/j.nicl.2025.103815",
+        "chunk_id": "abstract:doi:10.1016/j.nicl.2025.103815",
+        "score": 0.630306
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/31.12.1673",
+        "chunk_id": "abstract:doi:10.1093/sleep/31.12.1673",
+        "score": 0.629366
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2018.00220",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2018.00220",
+        "score": 0.629222
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.2638",
+        "chunk_id": "abstract:doi:10.5665/sleep.2638",
+        "score": 0.628816
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroscience.2024.11.046",
+        "chunk_id": "abstract:doi:10.1016/j.neuroscience.2024.11.046",
+        "score": 0.628806
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2019.00576",
+        "chunk_id": "abstract:doi:10.3389/fnins.2019.00576",
+        "score": 0.628401
+      },
+      {
+        "paper_id": "doi:10.1109/tnsre.2021.3076983",
+        "chunk_id": "abstract:doi:10.1109/tnsre.2021.3076983",
+        "score": 0.628222
+      },
+      {
+        "paper_id": "doi:10.1101/2024.11.27.625644",
+        "chunk_id": "abstract:doi:10.1101/2024.11.27.625644",
+        "score": 0.628082
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/31.6.887",
+        "chunk_id": "abstract:doi:10.1093/sleep/31.6.887",
+        "score": 0.627831
+      },
+      {
+        "paper_id": "doi:10.1177/02841851241310398",
+        "chunk_id": "abstract:doi:10.1177/02841851241310398",
+        "score": 0.627572
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2024.1414154",
+        "chunk_id": "abstract:doi:10.3389/fnins.2024.1414154",
+        "score": 0.62731
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2018.00093",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2018.00093",
+        "score": 0.627147
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad077.0196",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad077.0196",
+        "score": 0.627098
+      },
+      {
+        "paper_id": "doi:10.1186/1471-244x-12-146",
+        "chunk_id": "abstract:doi:10.1186/1471-244x-12-146",
+        "score": 0.627093
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.2794",
+        "chunk_id": "abstract:doi:10.5665/sleep.2794",
+        "score": 0.626693
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-021-96519-w",
+        "chunk_id": "abstract:doi:10.1038/s41598-021-96519-w",
+        "score": 0.626209
+      },
+      {
+        "paper_id": "doi:10.1046/j.1460-9568.1998.00189.x",
+        "chunk_id": "abstract:doi:10.1046/j.1460-9568.1998.00189.x",
+        "score": 0.626143
+      },
+      {
+        "paper_id": "doi:10.1016/s1388-2457(01)00600-9",
+        "chunk_id": "abstract:doi:10.1016/s1388-2457(01)00600-9",
+        "score": 0.62578
+      },
+      {
+        "paper_id": "doi:10.1038/s42003-026-09565-3",
+        "chunk_id": "abstract:doi:10.1038/s42003-026-09565-3",
+        "score": 0.625742
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.70091",
+        "chunk_id": "abstract:doi:10.1111/jsr.70091",
+        "score": 0.625441
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.5340",
+        "chunk_id": "abstract:doi:10.5665/sleep.5340",
+        "score": 0.625365
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-026-41601-4",
+        "chunk_id": "abstract:doi:10.1038/s41598-026-41601-4",
+        "score": 0.625308
+      },
+      {
+        "paper_id": "doi:10.1016/j.nicl.2018.01.012",
+        "chunk_id": "abstract:doi:10.1016/j.nicl.2018.01.012",
+        "score": 0.62527
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.0579",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.0579",
+        "score": 0.625173
+      },
+      {
+        "paper_id": "doi:10.1109/lsp.2025.3630086",
+        "chunk_id": "abstract:doi:10.1109/lsp.2025.3630086",
+        "score": 0.625076
+      },
+      {
+        "paper_id": "doi:10.1080/15402002.2018.1435546",
+        "chunk_id": "abstract:doi:10.1080/15402002.2018.1435546",
+        "score": 0.624763
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-026-35415-7",
+        "chunk_id": "abstract:doi:10.1038/s41598-026-35415-7",
+        "score": 0.624762
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleepx.2023.100086",
+        "chunk_id": "abstract:doi:10.1016/j.sleepx.2023.100086",
+        "score": 0.624729
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-025-29365-9",
+        "chunk_id": "abstract:doi:10.1038/s41598-025-29365-9",
+        "score": 0.624337
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2025.102093",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2025.102093",
+        "score": 0.624029
+      },
+      {
+        "paper_id": "doi:10.1016/j.bpsc.2023.03.007",
+        "chunk_id": "abstract:doi:10.1016/j.bpsc.2023.03.007",
+        "score": 0.622748
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2023.1201256",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2023.1201256",
+        "score": 0.622541
+      },
+      {
+        "paper_id": "doi:10.1001/jamapsychiatry.2025.0488",
+        "chunk_id": "abstract:doi:10.1001/jamapsychiatry.2025.0488",
+        "score": 0.622121
+      },
+      {
+        "paper_id": "doi:10.1016/j.bpsc.2019.04.012",
+        "chunk_id": "abstract:doi:10.1016/j.bpsc.2019.04.012",
+        "score": 0.621891
+      },
+      {
+        "paper_id": "doi:10.1016/j.nlm.2018.02.006",
+        "chunk_id": "abstract:doi:10.1016/j.nlm.2018.02.006",
+        "score": 0.621729
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0430",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0430",
+        "score": 0.621563
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-019-57024-3",
+        "chunk_id": "abstract:doi:10.1038/s41598-019-57024-3",
+        "score": 0.621541
+      },
+      {
+        "paper_id": "doi:10.1016/j.pnpbp.2020.110132",
+        "chunk_id": "abstract:doi:10.1016/j.pnpbp.2020.110132",
+        "score": 0.621489
+      },
+      {
+        "paper_id": "doi:10.1186/s12883-023-03481-3",
+        "chunk_id": "abstract:doi:10.1186/s12883-023-03481-3",
+        "score": 0.621381
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag192",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag192",
+        "score": 0.621344
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa056.142",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa056.142",
+        "score": 0.620968
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/30.9.1205",
+        "chunk_id": "abstract:doi:10.1093/sleep/30.9.1205",
+        "score": 0.620873
+      },
+      {
+        "paper_id": "doi:10.1007/s11325-026-03732-w",
+        "chunk_id": "abstract:doi:10.1007/s11325-026-03732-w",
+        "score": 0.619995
+      },
+      {
+        "paper_id": "doi:10.1016/j.neulet.2025.138313",
+        "chunk_id": "abstract:doi:10.1016/j.neulet.2025.138313",
+        "score": 0.619865
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s492585",
+        "chunk_id": "abstract:doi:10.2147/nss.s492585",
+        "score": 0.619768
+      },
+      {
+        "paper_id": "doi:10.58530/2023/0234",
+        "chunk_id": "abstract:doi:10.58530/2023/0234",
+        "score": 0.619703
+      },
+      {
+        "paper_id": "doi:10.17615/haq0-te82",
+        "chunk_id": "abstract:doi:10.17615/haq0-te82",
+        "score": 0.61961
+      },
+      {
+        "paper_id": "doi:10.1186/s12888-025-07347-5",
+        "chunk_id": "abstract:doi:10.1186/s12888-025-07347-5",
+        "score": 0.61908
+      },
+      {
+        "paper_id": "doi:10.1088/1361-6579/ae273e",
+        "chunk_id": "abstract:doi:10.1088/1361-6579/ae273e",
+        "score": 0.618879
+      },
+      {
+        "paper_id": "doi:10.64898/2026.05.05.722943",
+        "chunk_id": "abstract:doi:10.64898/2026.05.05.722943",
+        "score": 0.618846
+      },
+      {
+        "paper_id": "doi:10.3390/ctn7040030",
+        "chunk_id": "abstract:doi:10.3390/ctn7040030",
+        "score": 0.61842
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae301",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae301",
+        "score": 0.618276
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-025-00995-3",
+        "chunk_id": "abstract:doi:10.1038/s41598-025-00995-3",
+        "score": 0.618188
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.12901",
+        "chunk_id": "abstract:doi:10.1111/jsr.12901",
+        "score": 0.618141
+      },
+      {
+        "paper_id": "doi:10.21203/rs.3.rs-7066049/v1",
+        "chunk_id": "abstract:doi:10.21203/rs.3.rs-7066049/v1",
+        "score": 0.617833
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0156771",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0156771",
+        "score": 0.617794
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2012.00105",
+        "chunk_id": "abstract:doi:10.3389/fneur.2012.00105",
+        "score": 0.616931
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0382",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0382",
+        "score": 0.616516
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-017-12890-7",
+        "chunk_id": "abstract:doi:10.1038/s41598-017-12890-7",
+        "score": 0.616283
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2020.01.010",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2020.01.010",
+        "score": 0.615864
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2023.1114945",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2023.1114945",
+        "score": 0.615793
+      },
+      {
+        "paper_id": "doi:10.1007/s11682-024-00939-x",
+        "chunk_id": "abstract:doi:10.1007/s11682-024-00939-x",
+        "score": 0.615272
+      },
+      {
+        "paper_id": "doi:10.1016/j.brs.2022.02.011",
+        "chunk_id": "abstract:doi:10.1016/j.brs.2022.02.011",
+        "score": 0.615221
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2024.09.025",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2024.09.025",
+        "score": 0.615202
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2025.120455",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2025.120455",
+        "score": 0.614932
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2024.120782",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2024.120782",
+        "score": 0.614871
+      },
+      {
+        "paper_id": "doi:10.1038/s41531-026-01441-5",
+        "chunk_id": "abstract:doi:10.1038/s41531-026-01441-5",
+        "score": 0.614847
+      },
+      {
+        "paper_id": "doi:10.1038/s41380-026-03537-z",
+        "chunk_id": "abstract:doi:10.1038/s41380-026-03537-z",
+        "score": 0.614742
+      },
+      {
+        "paper_id": "doi:10.15294/biosaintifika.v14i2.36255",
+        "chunk_id": "abstract:doi:10.15294/biosaintifika.v14i2.36255",
+        "score": 0.614605
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2024.08.007",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2024.08.007",
+        "score": 0.614557
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2018.00860",
+        "chunk_id": "abstract:doi:10.3389/fnins.2018.00860",
+        "score": 0.614284
+      },
+      {
+        "paper_id": "doi:10.1046/j.0962-1105.2003.00370.x",
+        "chunk_id": "abstract:doi:10.1046/j.0962-1105.2003.00370.x",
+        "score": 0.61412
+      },
+      {
+        "paper_id": "doi:10.1891/jcpsy-d-21-00006",
+        "chunk_id": "abstract:doi:10.1891/jcpsy-d-21-00006",
+        "score": 0.613934
+      },
+      {
+        "paper_id": "doi:10.1101/2024.04.09.588765",
+        "chunk_id": "abstract:doi:10.1101/2024.04.09.588765",
+        "score": 0.613861
+      },
+      {
+        "paper_id": "doi:10.2174/138161208786549326",
+        "chunk_id": "abstract:doi:10.2174/138161208786549326",
+        "score": 0.613355
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s472323",
+        "chunk_id": "abstract:doi:10.2147/nss.s472323",
+        "score": 0.612135
+      },
+      {
+        "paper_id": "doi:10.3389/fnhum.2024.1392100",
+        "chunk_id": "abstract:doi:10.3389/fnhum.2024.1392100",
+        "score": 0.612134
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/33.12.1589",
+        "chunk_id": "abstract:doi:10.1093/sleep/33.12.1589",
+        "score": 0.611819
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2015.00032",
+        "chunk_id": "abstract:doi:10.3389/fneur.2015.00032",
+        "score": 0.611664
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-025-05592-y",
+        "chunk_id": "abstract:doi:10.1038/s41598-025-05592-y",
+        "score": 0.611447
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsz023",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsz023",
+        "score": 0.611241
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2019.01.007",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2019.01.007",
+        "score": 0.61087
+      },
+      {
+        "paper_id": "doi:10.21203/rs.3.rs-9507648/v1",
+        "chunk_id": "abstract:doi:10.21203/rs.3.rs-9507648/v1",
+        "score": 0.61064
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.1061",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.1061",
+        "score": 0.610544
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.576",
+        "chunk_id": "abstract:doi:10.1002/brb3.576",
+        "score": 0.610475
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2018.12.020",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2018.12.020",
+        "score": 0.610408
+      },
+      {
+        "paper_id": "doi:10.3390/s22083079",
+        "chunk_id": "abstract:doi:10.3390/s22083079",
+        "score": 0.610007
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2019.00020",
+        "chunk_id": "abstract:doi:10.3389/fneur.2019.00020",
+        "score": 0.609764
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-017-13065-0",
+        "chunk_id": "abstract:doi:10.1038/s41598-017-13065-0",
+        "score": 0.609585
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13604",
+        "chunk_id": "abstract:doi:10.1111/jsr.13604",
+        "score": 0.609553
+      },
+      {
+        "paper_id": "doi:10.1016/j.parkreldis.2025.107887",
+        "chunk_id": "abstract:doi:10.1016/j.parkreldis.2025.107887",
+        "score": 0.609517
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-018-33439-2",
+        "chunk_id": "abstract:doi:10.1038/s41598-018-33439-2",
+        "score": 0.609055
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13913",
+        "chunk_id": "abstract:doi:10.1111/jsr.13913",
+        "score": 0.608775
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/24.8.881",
+        "chunk_id": "abstract:doi:10.1093/sleep/24.8.881",
+        "score": 0.608641
+      },
+      {
+        "paper_id": "doi:10.1007/s10484-021-09525-z",
+        "chunk_id": "abstract:doi:10.1007/s10484-021-09525-z",
+        "score": 0.608526
+      },
+      {
+        "paper_id": "doi:10.1038/s44323-026-00094-0",
+        "chunk_id": "abstract:doi:10.1038/s44323-026-00094-0",
+        "score": 0.608382
+      },
+      {
+        "paper_id": "doi:10.1016/j.isci.2026.116151",
+        "chunk_id": "abstract:doi:10.1016/j.isci.2026.116151",
+        "score": 0.608202
+      },
+      {
+        "paper_id": "doi:10.1016/j.brs.2023.11.015",
+        "chunk_id": "abstract:doi:10.1016/j.brs.2023.11.015",
+        "score": 0.608009
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2026.1765885",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2026.1765885",
+        "score": 0.608009
+      },
+      {
+        "paper_id": "doi:10.3389/fncir.2015.00083",
+        "chunk_id": "abstract:doi:10.3389/fncir.2015.00083",
+        "score": 0.607877
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2025.1703747",
+        "chunk_id": "abstract:doi:10.3389/fneur.2025.1703747",
+        "score": 0.607801
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2023.1234477",
+        "chunk_id": "abstract:doi:10.3389/fnins.2023.1234477",
+        "score": 0.607726
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-017-13278-3",
+        "chunk_id": "abstract:doi:10.1038/s41598-017-13278-3",
+        "score": 0.607552
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2018.00651",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2018.00651",
+        "score": 0.607348
+      },
+      {
+        "paper_id": "doi:10.1109/cme60059.2023.10565502",
+        "chunk_id": "abstract:doi:10.1109/cme60059.2023.10565502",
+        "score": 0.607216
+      },
+      {
+        "paper_id": "doi:10.1097/00006842-200003000-00014",
+        "chunk_id": "abstract:doi:10.1097/00006842-200003000-00014",
+        "score": 0.607159
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2012.00100",
+        "chunk_id": "abstract:doi:10.3389/fneur.2012.00100",
+        "score": 0.607052
+      },
+      {
+        "paper_id": "doi:10.20944/preprints202510.0078.v1",
+        "chunk_id": "abstract:doi:10.20944/preprints202510.0078.v1",
+        "score": 0.606953
+      },
+      {
+        "paper_id": "doi:10.1111/ene.70008",
+        "chunk_id": "abstract:doi:10.1111/ene.70008",
+        "score": 0.606816
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-026-42639-0",
+        "chunk_id": "abstract:doi:10.1038/s41598-026-42639-0",
+        "score": 0.606535
+      },
+      {
+        "paper_id": "doi:10.3390/jcm9113425",
+        "chunk_id": "abstract:doi:10.3390/jcm9113425",
+        "score": 0.606477
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s500433",
+        "chunk_id": "abstract:doi:10.2147/nss.s500433",
+        "score": 0.606417
+      },
+      {
+        "paper_id": "doi:10.1093/cercor/bhad253",
+        "chunk_id": "abstract:doi:10.1093/cercor/bhad253",
+        "score": 0.60621
+      },
+      {
+        "paper_id": "doi:10.1038/s41531-025-01256-w",
+        "chunk_id": "abstract:doi:10.1038/s41531-025-01256-w",
+        "score": 0.606099
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13845",
+        "chunk_id": "abstract:doi:10.1111/jsr.13845",
+        "score": 0.605339
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.22412",
+        "chunk_id": "abstract:doi:10.1002/hbm.22412",
+        "score": 0.605207
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad296",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad296",
+        "score": 0.604695
+      },
+      {
+        "paper_id": "doi:10.1093/sleepadvances/zpab014.071",
+        "chunk_id": "abstract:doi:10.1093/sleepadvances/zpab014.071",
+        "score": 0.604667
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0364",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0364",
+        "score": 0.604595
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsac165",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsac165",
+        "score": 0.604443
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa274",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa274",
+        "score": 0.604334
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2021.831524",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2021.831524",
+        "score": 0.60431
+      },
+      {
+        "paper_id": "doi:10.3389/fnagi.2022.806374",
+        "chunk_id": "abstract:doi:10.3389/fnagi.2022.806374",
+        "score": 0.604228
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsy032",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsy032",
+        "score": 0.603985
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/30.8.955",
+        "chunk_id": "abstract:doi:10.1093/sleep/30.8.955",
+        "score": 0.603911
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2023.01.023",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2023.01.023",
+        "score": 0.603815
+      },
+      {
+        "paper_id": "doi:10.1093/cercor/bhad016",
+        "chunk_id": "abstract:doi:10.1093/cercor/bhad016",
+        "score": 0.603653
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2026.1745862",
+        "chunk_id": "abstract:doi:10.3389/fnins.2026.1745862",
+        "score": 0.603397
+      },
+      {
+        "paper_id": "doi:10.1186/s12888-026-08304-6",
+        "chunk_id": "abstract:doi:10.1186/s12888-026-08304-6",
+        "score": 0.603384
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroscience.2026.05.012",
+        "chunk_id": "abstract:doi:10.1016/j.neuroscience.2026.05.012",
+        "score": 0.603237
+      },
+      {
+        "paper_id": "doi:10.18632/oncotarget.17921",
+        "chunk_id": "abstract:doi:10.18632/oncotarget.17921",
+        "score": 0.603074
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2018.00317",
+        "chunk_id": "abstract:doi:10.3389/fneur.2018.00317",
+        "score": 0.60302
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.0418",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.0418",
+        "score": 0.60284
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.70217",
+        "chunk_id": "abstract:doi:10.1111/jsr.70217",
+        "score": 0.602383
+      },
+      {
+        "paper_id": "doi:10.1016/j.nicl.2022.103111",
+        "chunk_id": "abstract:doi:10.1016/j.nicl.2022.103111",
+        "score": 0.602161
+      },
+      {
+        "paper_id": "doi:10.3389/fphys.2016.00576",
+        "chunk_id": "abstract:doi:10.3389/fphys.2016.00576",
+        "score": 0.601933
+      },
+      {
+        "paper_id": "doi:10.3390/biomedicines13061293",
+        "chunk_id": "abstract:doi:10.3390/biomedicines13061293",
+        "score": 0.601896
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2026.121841",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2026.121841",
+        "score": 0.601881
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa056.301",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa056.301",
+        "score": 0.60187
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.108679",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.108679",
+        "score": 0.601766
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2020.00205",
+        "chunk_id": "abstract:doi:10.3389/fnins.2020.00205",
+        "score": 0.60136
+      },
+      {
+        "paper_id": "doi:10.55782/ane-1996-1129",
+        "chunk_id": "abstract:doi:10.55782/ane-1996-1129",
+        "score": 0.60106
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.24770",
+        "chunk_id": "abstract:doi:10.1002/hbm.24770",
+        "score": 0.600965
+      },
+      {
+        "paper_id": "doi:10.1007/s11325-025-03492-z",
+        "chunk_id": "abstract:doi:10.1007/s11325-025-03492-z",
+        "score": 0.600655
+      },
+      {
+        "paper_id": "doi:10.1017/s0033291726104188",
+        "chunk_id": "abstract:doi:10.1017/s0033291726104188",
+        "score": 0.600276
+      },
+      {
+        "paper_id": "doi:10.1186/s12888-025-07177-5",
+        "chunk_id": "abstract:doi:10.1186/s12888-025-07177-5",
+        "score": 0.600188
+      },
+      {
+        "paper_id": "doi:10.11591/ijece.v16i2.pp818-826",
+        "chunk_id": "abstract:doi:10.11591/ijece.v16i2.pp818-826",
+        "score": 0.600149
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.3588",
+        "chunk_id": "abstract:doi:10.5665/sleep.3588",
+        "score": 0.599974
+      },
+      {
+        "paper_id": "doi:10.1016/j.ijpsycho.2023.06.007",
+        "chunk_id": "abstract:doi:10.1016/j.ijpsycho.2023.06.007",
+        "score": 0.599919
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf353",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf353",
+        "score": 0.599721
+      },
+      {
+        "paper_id": "doi:10.7554/elife.18607",
+        "chunk_id": "abstract:doi:10.7554/elife.18607",
+        "score": 0.599541
+      },
+      {
+        "paper_id": "doi:10.64898/2026.06.05.730542",
+        "chunk_id": "abstract:doi:10.64898/2026.06.05.730542",
+        "score": 0.599073
+      },
+      {
+        "paper_id": "doi:10.1109/bci65088.2025.10931591",
+        "chunk_id": "abstract:doi:10.1109/bci65088.2025.10931591",
+        "score": 0.599008
+      },
+      {
+        "paper_id": "doi:10.1097/wnr.0000000000000091",
+        "chunk_id": "abstract:doi:10.1097/wnr.0000000000000091",
+        "score": 0.59874
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s338489",
+        "chunk_id": "abstract:doi:10.2147/ndt.s338489",
+        "score": 0.598583
+      },
+      {
+        "paper_id": "doi:10.1016/j.ijpsycho.2015.05.006",
+        "chunk_id": "abstract:doi:10.1016/j.ijpsycho.2015.05.006",
+        "score": 0.598189
+      },
+      {
+        "paper_id": "title:9190827b687b3f1adea46a508933049de981178c",
+        "chunk_id": "abstract:title:9190827b687b3f1adea46a508933049de981178c",
+        "score": 0.598148
+      },
+      {
+        "paper_id": "doi:10.1186/s12888-025-07084-9",
+        "chunk_id": "abstract:doi:10.1186/s12888-025-07084-9",
+        "score": 0.598101
+      },
+      {
+        "paper_id": "doi:10.1093/brain/awf021",
+        "chunk_id": "abstract:doi:10.1093/brain/awf021",
+        "score": 0.59784
+      },
+      {
+        "paper_id": "doi:10.4088/jcp.v66n1008",
+        "chunk_id": "abstract:doi:10.4088/jcp.v66n1008",
+        "score": 0.597822
+      },
+      {
+        "paper_id": "doi:10.1503/jpn.170195",
+        "chunk_id": "abstract:doi:10.1503/jpn.170195",
+        "score": 0.597708
+      },
+      {
+        "paper_id": "doi:10.1093/brain/awae119",
+        "chunk_id": "abstract:doi:10.1093/brain/awae119",
+        "score": 0.597569
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s162325",
+        "chunk_id": "abstract:doi:10.2147/ndt.s162325",
+        "score": 0.597538
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.6308",
+        "chunk_id": "abstract:doi:10.5665/sleep.6308",
+        "score": 0.597469
+      },
+      {
+        "paper_id": "doi:10.3390/s23104629",
+        "chunk_id": "abstract:doi:10.3390/s23104629",
+        "score": 0.597386
+      },
+      {
+        "paper_id": "doi:10.1007/s00415-016-8318-6",
+        "chunk_id": "abstract:doi:10.1007/s00415-016-8318-6",
+        "score": 0.597199
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s97449",
+        "chunk_id": "abstract:doi:10.2147/ndt.s97449",
+        "score": 0.597021
+      },
+      {
+        "paper_id": "doi:10.1111/ene.14784",
+        "chunk_id": "abstract:doi:10.1111/ene.14784",
+        "score": 0.596987
+      },
+      {
+        "paper_id": "doi:10.1002/ana.20373",
+        "chunk_id": "abstract:doi:10.1002/ana.20373",
+        "score": 0.596874
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2020.00815",
+        "chunk_id": "abstract:doi:10.3389/fneur.2020.00815",
+        "score": 0.596615
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0775",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0775",
+        "score": 0.5966
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroscience.2025.09.039",
+        "chunk_id": "abstract:doi:10.1016/j.neuroscience.2025.09.039",
+        "score": 0.596461
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.1094",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.1094",
+        "score": 0.596366
+      },
+      {
+        "paper_id": "doi:10.1016/j.neubiorev.2022.104909",
+        "chunk_id": "abstract:doi:10.1016/j.neubiorev.2022.104909",
+        "score": 0.596189
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsac079.245",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsac079.245",
+        "score": 0.596139
+      },
+      {
+        "paper_id": "doi:10.1073/pnas.0900924106",
+        "chunk_id": "abstract:doi:10.1073/pnas.0900924106",
+        "score": 0.595913
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0051",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0051",
+        "score": 0.595594
+      },
+      {
+        "paper_id": "doi:10.5463/thesis.621",
+        "chunk_id": "abstract:doi:10.5463/thesis.621",
+        "score": 0.595453
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s358763",
+        "chunk_id": "abstract:doi:10.2147/nss.s358763",
+        "score": 0.595447
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-018-23699-3",
+        "chunk_id": "abstract:doi:10.1038/s41598-018-23699-3",
+        "score": 0.595406
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.108698",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.108698",
+        "score": 0.595195
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2023.101821",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2023.101821",
+        "score": 0.595162
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2026.1763543",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2026.1763543",
+        "score": 0.594892
+      },
+      {
+        "paper_id": "doi:10.1186/s12888-025-07126-2",
+        "chunk_id": "abstract:doi:10.1186/s12888-025-07126-2",
+        "score": 0.594805
+      },
+      {
+        "paper_id": "doi:10.3389/fnhum.2025.1633506",
+        "chunk_id": "abstract:doi:10.3389/fnhum.2025.1633506",
+        "score": 0.59474
+      },
+      {
+        "paper_id": "doi:10.1093/cercor/bhaf314",
+        "chunk_id": "abstract:doi:10.1093/cercor/bhaf314",
+        "score": 0.594384
+      },
+      {
+        "paper_id": "doi:10.1186/s12931-025-03193-x",
+        "chunk_id": "abstract:doi:10.1186/s12931-025-03193-x",
+        "score": 0.594362
+      },
+      {
+        "paper_id": "doi:10.64898/2026.01.21.26344372",
+        "chunk_id": "abstract:doi:10.64898/2026.01.21.26344372",
+        "score": 0.594333
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2023.1277690",
+        "chunk_id": "abstract:doi:10.3389/fnins.2023.1277690",
+        "score": 0.59427
+      },
+      {
+        "paper_id": "doi:10.1111/j.1365-2869.2008.00651.x",
+        "chunk_id": "abstract:doi:10.1111/j.1365-2869.2008.00651.x",
+        "score": 0.594191
+      },
+      {
+        "paper_id": "doi:10.1038/s42003-025-08439-4",
+        "chunk_id": "abstract:doi:10.1038/s42003-025-08439-4",
+        "score": 0.593914
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2023.1131916",
+        "chunk_id": "abstract:doi:10.3389/fnins.2023.1131916",
+        "score": 0.593776
+      },
+      {
+        "paper_id": "doi:10.1016/j.ajp.2025.104563",
+        "chunk_id": "abstract:doi:10.1016/j.ajp.2025.104563",
+        "score": 0.593721
+      },
+      {
+        "paper_id": "doi:10.1523/eneuro.0291-25.2025",
+        "chunk_id": "abstract:doi:10.1523/eneuro.0291-25.2025",
+        "score": 0.593563
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa056.452",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa056.452",
+        "score": 0.593507
+      },
+      {
+        "paper_id": "doi:10.1038/s41386-026-02431-0",
+        "chunk_id": "abstract:doi:10.1038/s41386-026-02431-0",
+        "score": 0.593486
+      },
+      {
+        "paper_id": "doi:10.1145/3569192.3569214",
+        "chunk_id": "abstract:doi:10.1145/3569192.3569214",
+        "score": 0.593464
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2022.11.036",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2022.11.036",
+        "score": 0.593424
+      },
+      {
+        "paper_id": "doi:10.1038/s41537-026-00735-0",
+        "chunk_id": "abstract:doi:10.1038/s41537-026-00735-0",
+        "score": 0.593372
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.70388",
+        "chunk_id": "abstract:doi:10.1111/jsr.70388",
+        "score": 0.593338
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s518104",
+        "chunk_id": "abstract:doi:10.2147/nss.s518104",
+        "score": 0.593195
+      },
+      {
+        "paper_id": "doi:10.2174/157015908787386050",
+        "chunk_id": "abstract:doi:10.2174/157015908787386050",
+        "score": 0.593014
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2025.1696593",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2025.1696593",
+        "score": 0.592992
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.25125",
+        "chunk_id": "abstract:doi:10.1002/hbm.25125",
+        "score": 0.592951
+      },
+      {
+        "paper_id": "doi:10.1038/s41467-022-32840-w",
+        "chunk_id": "abstract:doi:10.1038/s41467-022-32840-w",
+        "score": 0.5929
+      },
+      {
+        "paper_id": "doi:10.1002/advs.75698",
+        "chunk_id": "abstract:doi:10.1002/advs.75698",
+        "score": 0.592849
+      },
+      {
+        "paper_id": "doi:10.3389/fncir.2015.00088",
+        "chunk_id": "abstract:doi:10.3389/fncir.2015.00088",
+        "score": 0.592538
+      },
+      {
+        "paper_id": "doi:10.1186/s41606-020-00057-9",
+        "chunk_id": "abstract:doi:10.1186/s41606-020-00057-9",
+        "score": 0.592455
+      },
+      {
+        "paper_id": "doi:10.3390/mi13030488",
+        "chunk_id": "abstract:doi:10.3390/mi13030488",
+        "score": 0.59224
+      },
+      {
+        "paper_id": "doi:10.1093/braincomms/fcaf102",
+        "chunk_id": "abstract:doi:10.1093/braincomms/fcaf102",
+        "score": 0.59196
+      },
+      {
+        "paper_id": "doi:10.1016/j.brainresbull.2025.111640",
+        "chunk_id": "abstract:doi:10.1016/j.brainresbull.2025.111640",
+        "score": 0.591855
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroscience.2025.09.018",
+        "chunk_id": "abstract:doi:10.1016/j.neuroscience.2025.09.018",
+        "score": 0.591119
+      },
+      {
+        "paper_id": "doi:10.1155/2016/7328725",
+        "chunk_id": "abstract:doi:10.1155/2016/7328725",
+        "score": 0.590251
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.106482",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.106482",
+        "score": 0.590164
+      },
+      {
+        "paper_id": "doi:10.1016/j.addbeh.2026.108730",
+        "chunk_id": "abstract:doi:10.1016/j.addbeh.2026.108730",
+        "score": 0.590141
+      },
+      {
+        "paper_id": "title:e262ddc337e7ce59aedce116c4894ab65f04dddf",
+        "chunk_id": "abstract:title:e262ddc337e7ce59aedce116c4894ab65f04dddf",
+        "score": 0.589807
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s355922",
+        "chunk_id": "abstract:doi:10.2147/nss.s355922",
+        "score": 0.58977
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.24855",
+        "chunk_id": "abstract:doi:10.1002/hbm.24855",
+        "score": 0.589686
+      },
+      {
+        "paper_id": "title:7cef2d96400af806fbd69715940bcfcdeba5e57a",
+        "chunk_id": "abstract:title:7cef2d96400af806fbd69715940bcfcdeba5e57a",
+        "score": 0.589621
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2022.11.027",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2022.11.027",
+        "score": 0.58961
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0427",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0427",
+        "score": 0.589515
+      },
+      {
+        "paper_id": "doi:10.1177/074873048700200304",
+        "chunk_id": "abstract:doi:10.1177/074873048700200304",
+        "score": 0.58897
+      },
+      {
+        "paper_id": "doi:10.1016/j.prdoa.2025.100413",
+        "chunk_id": "abstract:doi:10.1016/j.prdoa.2025.100413",
+        "score": 0.588277
+      },
+      {
+        "paper_id": "doi:10.1186/s12916-025-04089-9",
+        "chunk_id": "abstract:doi:10.1186/s12916-025-04089-9",
+        "score": 0.588235
+      },
+      {
+        "paper_id": "doi:10.1097/md.0000000000019151",
+        "chunk_id": "abstract:doi:10.1097/md.0000000000019151",
+        "score": 0.588008
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.5746",
+        "chunk_id": "abstract:doi:10.5665/sleep.5746",
+        "score": 0.58786
+      },
+      {
+        "paper_id": "doi:10.5334/tohm.1088",
+        "chunk_id": "abstract:doi:10.5334/tohm.1088",
+        "score": 0.587853
+      },
+      {
+        "paper_id": "doi:10.1046/j.1365-2869.1997.d01-36.x",
+        "chunk_id": "abstract:doi:10.1046/j.1365-2869.1997.d01-36.x",
+        "score": 0.587682
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s109633",
+        "chunk_id": "abstract:doi:10.2147/ndt.s109633",
+        "score": 0.58767
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-022-05378-6",
+        "chunk_id": "abstract:doi:10.1038/s41598-022-05378-6",
+        "score": 0.587625
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2023.1202514",
+        "chunk_id": "abstract:doi:10.3389/fnins.2023.1202514",
+        "score": 0.587491
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/23.5.1j",
+        "chunk_id": "abstract:doi:10.1093/sleep/23.5.1j",
+        "score": 0.587304
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-021-91211-5",
+        "chunk_id": "abstract:doi:10.1038/s41598-021-91211-5",
+        "score": 0.587113
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0356",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0356",
+        "score": 0.587079
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2023.08.016",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2023.08.016",
+        "score": 0.586923
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.0197-23.2023",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.0197-23.2023",
+        "score": 0.586778
+      },
+      {
+        "paper_id": "doi:10.1111/ejn.16240",
+        "chunk_id": "abstract:doi:10.1111/ejn.16240",
+        "score": 0.586737
+      },
+      {
+        "paper_id": "doi:10.1155/2016/6413473",
+        "chunk_id": "abstract:doi:10.1155/2016/6413473",
+        "score": 0.58672
+      },
+      {
+        "paper_id": "doi:10.1155/2020/7846914",
+        "chunk_id": "abstract:doi:10.1155/2020/7846914",
+        "score": 0.586648
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13928",
+        "chunk_id": "abstract:doi:10.1111/jsr.13928",
+        "score": 0.586621
+      },
+      {
+        "paper_id": "doi:10.1016/j.nicl.2022.103026",
+        "chunk_id": "abstract:doi:10.1016/j.nicl.2022.103026",
+        "score": 0.586619
+      },
+      {
+        "paper_id": "doi:10.1007/s11325-025-03495-w",
+        "chunk_id": "abstract:doi:10.1007/s11325-025-03495-w",
+        "score": 0.586609
+      },
+      {
+        "paper_id": "doi:10.1038/s41531-023-00557-2",
+        "chunk_id": "abstract:doi:10.1038/s41531-023-00557-2",
+        "score": 0.586482
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.2288-21.2022",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.2288-21.2022",
+        "score": 0.586452
+      },
+      {
+        "paper_id": "doi:10.1007/s11682-022-00654-5",
+        "chunk_id": "abstract:doi:10.1007/s11682-022-00654-5",
+        "score": 0.586204
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s406120",
+        "chunk_id": "abstract:doi:10.2147/nss.s406120",
+        "score": 0.586191
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci14010050",
+        "chunk_id": "abstract:doi:10.3390/brainsci14010050",
+        "score": 0.586101
+      },
+      {
+        "paper_id": "doi:10.5664/jcsm.10860",
+        "chunk_id": "abstract:doi:10.5664/jcsm.10860",
+        "score": 0.586029
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsac263",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsac263",
+        "score": 0.585819
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-025-34509-y",
+        "chunk_id": "abstract:doi:10.1038/s41598-025-34509-y",
+        "score": 0.585812
+      },
+      {
+        "paper_id": "doi:10.1080/08869634.2026.2666591",
+        "chunk_id": "abstract:doi:10.1080/08869634.2026.2666591",
+        "score": 0.585764
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0059",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0059",
+        "score": 0.585504
+      },
+      {
+        "paper_id": "doi:10.1038/s41398-026-03882-1",
+        "chunk_id": "abstract:doi:10.1038/s41398-026-03882-1",
+        "score": 0.585467
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2025.1629534",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2025.1629534",
+        "score": 0.585433
+      },
+      {
+        "paper_id": "doi:10.1016/j.ijpsycho.2025.112586",
+        "chunk_id": "abstract:doi:10.1016/j.ijpsycho.2025.112586",
+        "score": 0.585399
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2017.00696",
+        "chunk_id": "abstract:doi:10.3389/fnins.2017.00696",
+        "score": 0.585325
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci15101078",
+        "chunk_id": "abstract:doi:10.3390/brainsci15101078",
+        "score": 0.585071
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.2015-10.2010",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.2015-10.2010",
+        "score": 0.585066
+      },
+      {
+        "paper_id": "doi:10.1001/jamapsychiatry.2018.1941",
+        "chunk_id": "abstract:doi:10.1001/jamapsychiatry.2018.1941",
+        "score": 0.584903
+      },
+      {
+        "paper_id": "doi:10.1101/2025.10.20.683464",
+        "chunk_id": "abstract:doi:10.1101/2025.10.20.683464",
+        "score": 0.584587
+      },
+      {
+        "paper_id": "doi:10.1016/j.prdoa.2026.100427",
+        "chunk_id": "abstract:doi:10.1016/j.prdoa.2026.100427",
+        "score": 0.584318
+      },
+      {
+        "paper_id": "doi:10.1186/s12916-025-04126-7",
+        "chunk_id": "abstract:doi:10.1186/s12916-025-04126-7",
+        "score": 0.584218
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/30.12.1617",
+        "chunk_id": "abstract:doi:10.1093/sleep/30.12.1617",
+        "score": 0.58407
+      },
+      {
+        "paper_id": "doi:10.1046/j.0953-816x.2001.01597.x",
+        "chunk_id": "abstract:doi:10.1046/j.0953-816x.2001.01597.x",
+        "score": 0.583787
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae201",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae201",
+        "score": 0.583779
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2022.119823",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2022.119823",
+        "score": 0.583747
+      },
+      {
+        "paper_id": "doi:10.1016/j.ijchp.2026.100663",
+        "chunk_id": "abstract:doi:10.1016/j.ijchp.2026.100663",
+        "score": 0.583652
+      },
+      {
+        "paper_id": "doi:10.3389/fnhum.2017.00583",
+        "chunk_id": "abstract:doi:10.3389/fnhum.2017.00583",
+        "score": 0.583482
+      },
+      {
+        "paper_id": "doi:10.1111/ejn.15908",
+        "chunk_id": "abstract:doi:10.1111/ejn.15908",
+        "score": 0.583392
+      },
+      {
+        "paper_id": "title:49195186e7f7d475c75172a6a5c1a799aabffe16",
+        "chunk_id": "abstract:title:49195186e7f7d475c75172a6a5c1a799aabffe16",
+        "score": 0.583174
+      },
+      {
+        "paper_id": "doi:10.1101/2024.10.04.616683",
+        "chunk_id": "abstract:doi:10.1101/2024.10.04.616683",
+        "score": 0.583134
+      },
+      {
+        "paper_id": "doi:10.1016/j.tins.2024.02.002",
+        "chunk_id": "abstract:doi:10.1016/j.tins.2024.02.002",
+        "score": 0.582996
+      },
+      {
+        "paper_id": "doi:10.1186/2047-783x-19-32",
+        "chunk_id": "abstract:doi:10.1186/2047-783x-19-32",
+        "score": 0.582909
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2017.00259",
+        "chunk_id": "abstract:doi:10.3389/fnins.2017.00259",
+        "score": 0.582854
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa056.141",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa056.141",
+        "score": 0.582285
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.14252",
+        "chunk_id": "abstract:doi:10.1111/jsr.14252",
+        "score": 0.58215
+      },
+      {
+        "paper_id": "doi:10.3988/jcn.2012.8.2.130",
+        "chunk_id": "abstract:doi:10.3988/jcn.2012.8.2.130",
+        "score": 0.581983
+      },
+      {
+        "paper_id": "doi:10.1093/texcom/tgaa073",
+        "chunk_id": "abstract:doi:10.1093/texcom/tgaa073",
+        "score": 0.581944
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2024.1364713",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2024.1364713",
+        "score": 0.581908
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2024.120833",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2024.120833",
+        "score": 0.581488
+      },
+      {
+        "paper_id": "doi:10.1016/j.brainres.2024.149169",
+        "chunk_id": "abstract:doi:10.1016/j.brainres.2024.149169",
+        "score": 0.581186
+      },
+      {
+        "paper_id": "doi:10.1093/sleepadvances/zpaf041",
+        "chunk_id": "abstract:doi:10.1093/sleepadvances/zpaf041",
+        "score": 0.581074
+      },
+      {
+        "paper_id": "doi:10.1016/j.brainresbull.2025.111503",
+        "chunk_id": "abstract:doi:10.1016/j.brainresbull.2025.111503",
+        "score": 0.580992
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-022-11513-0",
+        "chunk_id": "abstract:doi:10.1038/s41598-022-11513-0",
+        "score": 0.580924
+      },
+      {
+        "paper_id": "doi:10.3233/jpd-191627",
+        "chunk_id": "abstract:doi:10.3233/jpd-191627",
+        "score": 0.580868
+      },
+      {
+        "paper_id": "doi:10.4088/jcp.13011su1c",
+        "chunk_id": "abstract:doi:10.4088/jcp.13011su1c",
+        "score": 0.580762
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag016",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag016",
+        "score": 0.580561
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-022-10802-y",
+        "chunk_id": "abstract:doi:10.1038/s41598-022-10802-y",
+        "score": 0.580498
+      },
+      {
+        "paper_id": "doi:10.1016/j.brainresbull.2026.112012",
+        "chunk_id": "abstract:doi:10.1016/j.brainresbull.2026.112012",
+        "score": 0.580362
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.14256",
+        "chunk_id": "abstract:doi:10.1111/jsr.14256",
+        "score": 0.580336
+      },
+      {
+        "paper_id": "doi:10.1254/jpssuppl.93.0_2-p-184",
+        "chunk_id": "abstract:doi:10.1254/jpssuppl.93.0_2-p-184",
+        "score": 0.580266
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2026.1718790",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2026.1718790",
+        "score": 0.580202
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s549263",
+        "chunk_id": "abstract:doi:10.2147/nss.s549263",
+        "score": 0.580116
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsab026",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsab026",
+        "score": 0.579564
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2026.1794237",
+        "chunk_id": "abstract:doi:10.3389/fnins.2026.1794237",
+        "score": 0.579444
+      },
+      {
+        "paper_id": "doi:10.3389/fnhum.2026.1757604",
+        "chunk_id": "abstract:doi:10.3389/fnhum.2026.1757604",
+        "score": 0.579377
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.14462",
+        "chunk_id": "abstract:doi:10.1111/jsr.14462",
+        "score": 0.579376
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.24974",
+        "chunk_id": "abstract:doi:10.1002/hbm.24974",
+        "score": 0.579162
+      },
+      {
+        "paper_id": "doi:10.1093/cercor/bhq295",
+        "chunk_id": "abstract:doi:10.1093/cercor/bhq295",
+        "score": 0.578988
+      },
+      {
+        "paper_id": "doi:10.1101/2021.08.12.456047",
+        "chunk_id": "abstract:doi:10.1101/2021.08.12.456047",
+        "score": 0.578647
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci14060556",
+        "chunk_id": "abstract:doi:10.3390/brainsci14060556",
+        "score": 0.578459
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.71338",
+        "chunk_id": "abstract:doi:10.1002/brb3.71338",
+        "score": 0.578432
+      },
+      {
+        "paper_id": "doi:10.1186/s12888-025-07379-x",
+        "chunk_id": "abstract:doi:10.1186/s12888-025-07379-x",
+        "score": 0.578397
+      },
+      {
+        "paper_id": "doi:10.22489/cinc.2018.175",
+        "chunk_id": "abstract:doi:10.22489/cinc.2018.175",
+        "score": 0.578381
+      },
+      {
+        "paper_id": "doi:10.1016/j.ijpsycho.2013.10.012",
+        "chunk_id": "abstract:doi:10.1016/j.ijpsycho.2013.10.012",
+        "score": 0.578236
+      },
+      {
+        "paper_id": "doi:10.1101/2020.04.29.067702",
+        "chunk_id": "abstract:doi:10.1101/2020.04.29.067702",
+        "score": 0.578163
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s78335",
+        "chunk_id": "abstract:doi:10.2147/ndt.s78335",
+        "score": 0.578127
+      },
+      {
+        "paper_id": "doi:10.33425/2641-4333.1086",
+        "chunk_id": "abstract:doi:10.33425/2641-4333.1086",
+        "score": 0.5781
+      },
+      {
+        "paper_id": "doi:10.1038/s41398-024-02985-x",
+        "chunk_id": "abstract:doi:10.1038/s41398-024-02985-x",
+        "score": 0.578078
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.24590",
+        "chunk_id": "abstract:doi:10.1002/hbm.24590",
+        "score": 0.578044
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2024.12.011",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2024.12.011",
+        "score": 0.577853
+      },
+      {
+        "paper_id": "doi:10.1016/0197-4580(89)90004-3",
+        "chunk_id": "abstract:doi:10.1016/0197-4580(89)90004-3",
+        "score": 0.577845
+      },
+      {
+        "paper_id": "doi:10.1038/s41398-025-03670-3",
+        "chunk_id": "abstract:doi:10.1038/s41398-025-03670-3",
+        "score": 0.577625
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsz033",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsz033",
+        "score": 0.577546
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsab072.761",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsab072.761",
+        "score": 0.577426
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0138113",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0138113",
+        "score": 0.577411
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2018.00395",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2018.00395",
+        "score": 0.577302
+      },
+      {
+        "paper_id": "doi:10.1152/physrev.00046.2019",
+        "chunk_id": "abstract:doi:10.1152/physrev.00046.2019",
+        "score": 0.577227
+      },
+      {
+        "paper_id": "doi:10.1073/pnas.1522520113",
+        "chunk_id": "abstract:doi:10.1073/pnas.1522520113",
+        "score": 0.577211
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2024.11.026",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2024.11.026",
+        "score": 0.576936
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0345",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0345",
+        "score": 0.576866
+      },
+      {
+        "paper_id": "doi:10.1038/srep17159",
+        "chunk_id": "abstract:doi:10.1038/srep17159",
+        "score": 0.576807
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0059318",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0059318",
+        "score": 0.576769
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0008",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0008",
+        "score": 0.576651
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.106503",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.106503",
+        "score": 0.576637
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2026.121926",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2026.121926",
+        "score": 0.576577
+      },
+      {
+        "paper_id": "doi:10.1016/j.bbr.2023.114283",
+        "chunk_id": "abstract:doi:10.1016/j.bbr.2023.114283",
+        "score": 0.576465
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.70354",
+        "chunk_id": "abstract:doi:10.1002/hbm.70354",
+        "score": 0.57637
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa031",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa031",
+        "score": 0.576253
+      },
+      {
+        "paper_id": "doi:10.1038/s42003-025-09205-2",
+        "chunk_id": "abstract:doi:10.1038/s42003-025-09205-2",
+        "score": 0.576103
+      },
+      {
+        "paper_id": "title:2bcdd64fb17bb23f2e1bde207c151d132d8280ec",
+        "chunk_id": "abstract:title:2bcdd64fb17bb23f2e1bde207c151d132d8280ec",
+        "score": 0.575998
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.106887",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.106887",
+        "score": 0.575889
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2026.122122",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2026.122122",
+        "score": 0.575858
+      },
+      {
+        "paper_id": "doi:10.1073/pnas.1111133109",
+        "chunk_id": "abstract:doi:10.1073/pnas.1111133109",
+        "score": 0.575849
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.4068",
+        "chunk_id": "abstract:doi:10.5665/sleep.4068",
+        "score": 0.575712
+      },
+      {
+        "paper_id": "doi:10.1093/psyrad/kkag001",
+        "chunk_id": "abstract:doi:10.1093/psyrad/kkag001",
+        "score": 0.575664
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2024.04.028",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2024.04.028",
+        "score": 0.575619
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.5154",
+        "chunk_id": "abstract:doi:10.5665/sleep.5154",
+        "score": 0.575391
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2024.01.003",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2024.01.003",
+        "score": 0.575263
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2025.102179",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2025.102179",
+        "score": 0.575225
+      },
+      {
+        "paper_id": "doi:10.5152/pcp.2025.24896",
+        "chunk_id": "abstract:doi:10.5152/pcp.2025.24896",
+        "score": 0.575201
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/10.3.199",
+        "chunk_id": "abstract:doi:10.1093/sleep/10.3.199",
+        "score": 0.57519
+      },
+      {
+        "paper_id": "doi:10.2741/1043",
+        "chunk_id": "abstract:doi:10.2741/1043",
+        "score": 0.575128
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa056.145",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa056.145",
+        "score": 0.575078
+      },
+      {
+        "paper_id": "doi:10.3389/fnhum.2021.738605",
+        "chunk_id": "abstract:doi:10.3389/fnhum.2021.738605",
+        "score": 0.575024
+      },
+      {
+        "paper_id": "doi:10.1093/braincomms/fcad210",
+        "chunk_id": "abstract:doi:10.1093/braincomms/fcad210",
+        "score": 0.574894
+      },
+      {
+        "paper_id": "doi:10.1007/s40675-017-0086-z",
+        "chunk_id": "abstract:doi:10.1007/s40675-017-0086-z",
+        "score": 0.574852
+      },
+      {
+        "paper_id": "doi:10.1093/sleepadvances/zpag017",
+        "chunk_id": "abstract:doi:10.1093/sleepadvances/zpag017",
+        "score": 0.574803
+      },
+      {
+        "paper_id": "doi:10.7717/peerj.18540",
+        "chunk_id": "abstract:doi:10.7717/peerj.18540",
+        "score": 0.574747
+      },
+      {
+        "paper_id": "doi:10.1038/s41398-024-02875-2",
+        "chunk_id": "abstract:doi:10.1038/s41398-024-02875-2",
+        "score": 0.574716
+      },
+      {
+        "paper_id": "title:3ebbbc3119d8621ba4674d017abf77ae3b80e3dc",
+        "chunk_id": "abstract:title:3ebbbc3119d8621ba4674d017abf77ae3b80e3dc",
+        "score": 0.574382
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2018.00046",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2018.00046",
+        "score": 0.574241
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0311",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0311",
+        "score": 0.574112
+      },
+      {
+        "paper_id": "doi:10.1093/ijnp/pyaf017",
+        "chunk_id": "abstract:doi:10.1093/ijnp/pyaf017",
+        "score": 0.573967
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.1062",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.1062",
+        "score": 0.573882
+      },
+      {
+        "paper_id": "doi:10.1016/j.pscychresns.2023.111730",
+        "chunk_id": "abstract:doi:10.1016/j.pscychresns.2023.111730",
+        "score": 0.573852
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2022.863056",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2022.863056",
+        "score": 0.573832
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/27.8.1567",
+        "chunk_id": "abstract:doi:10.1093/sleep/27.8.1567",
+        "score": 0.573775
+      },
+      {
+        "paper_id": "doi:10.3897/folmed.68.e193687",
+        "chunk_id": "abstract:doi:10.3897/folmed.68.e193687",
+        "score": 0.573247
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2025.12.043",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2025.12.043",
+        "score": 0.572991
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuron.2014.04.046",
+        "chunk_id": "abstract:doi:10.1016/j.neuron.2014.04.046",
+        "score": 0.572797
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuron.2019.05.015",
+        "chunk_id": "abstract:doi:10.1016/j.neuron.2019.05.015",
+        "score": 0.572749
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-024-51694-4",
+        "chunk_id": "abstract:doi:10.1038/s41598-024-51694-4",
+        "score": 0.572656
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.70069",
+        "chunk_id": "abstract:doi:10.1111/jsr.70069",
+        "score": 0.572644
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/30.12.1643",
+        "chunk_id": "abstract:doi:10.1093/sleep/30.12.1643",
+        "score": 0.572495
+      },
+      {
+        "paper_id": "doi:10.3389/fncom.2021.680549",
+        "chunk_id": "abstract:doi:10.3389/fncom.2021.680549",
+        "score": 0.572466
+      },
+      {
+        "paper_id": "doi:10.1101/2024.10.14.618165",
+        "chunk_id": "abstract:doi:10.1101/2024.10.14.618165",
+        "score": 0.572438
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2025.1705101",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2025.1705101",
+        "score": 0.572366
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa056.503",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa056.503",
+        "score": 0.5723
+      },
+      {
+        "paper_id": "doi:10.1093/braincomms/fcag021",
+        "chunk_id": "abstract:doi:10.1093/braincomms/fcag021",
+        "score": 0.572104
+      },
+      {
+        "paper_id": "doi:10.1136/jnnp.72.5.661",
+        "chunk_id": "abstract:doi:10.1136/jnnp.72.5.661",
+        "score": 0.572091
+      },
+      {
+        "paper_id": "doi:10.1016/j.bpsc.2026.06.007",
+        "chunk_id": "abstract:doi:10.1016/j.bpsc.2026.06.007",
+        "score": 0.572004
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci10020112",
+        "chunk_id": "abstract:doi:10.3390/brainsci10020112",
+        "score": 0.571901
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsy259",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsy259",
+        "score": 0.571838
+      },
+      {
+        "paper_id": "doi:10.64898/2026.06.21.732147",
+        "chunk_id": "abstract:doi:10.64898/2026.06.21.732147",
+        "score": 0.571805
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsx080",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsx080",
+        "score": 0.571751
+      },
+      {
+        "paper_id": "doi:10.1177/074873099129000894",
+        "chunk_id": "abstract:doi:10.1177/074873099129000894",
+        "score": 0.571698
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsy235",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsy235",
+        "score": 0.571567
+      },
+      {
+        "paper_id": "doi:10.3390/ijms20030607",
+        "chunk_id": "abstract:doi:10.3390/ijms20030607",
+        "score": 0.571469
+      },
+      {
+        "paper_id": "doi:10.1097/00000542-200512000-00024",
+        "chunk_id": "abstract:doi:10.1097/00000542-200512000-00024",
+        "score": 0.571408
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2015.00134",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2015.00134",
+        "score": 0.571408
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2020.09.103",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2020.09.103",
+        "score": 0.571365
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/20.4.267",
+        "chunk_id": "abstract:doi:10.1093/sleep/20.4.267",
+        "score": 0.571187
+      },
+      {
+        "paper_id": "doi:10.1093/brain/awh686",
+        "chunk_id": "abstract:doi:10.1093/brain/awh686",
+        "score": 0.571059
+      },
+      {
+        "paper_id": "doi:10.1111/j.1365-2869.1993.tb00065.x",
+        "chunk_id": "abstract:doi:10.1111/j.1365-2869.1993.tb00065.x",
+        "score": 0.571034
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.0280",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.0280",
+        "score": 0.570981
+      },
+      {
+        "paper_id": "doi:10.2174/1570159x13666150310002540",
+        "chunk_id": "abstract:doi:10.2174/1570159x13666150310002540",
+        "score": 0.570896
+      },
+      {
+        "paper_id": "doi:10.1093/brain/aww124",
+        "chunk_id": "abstract:doi:10.1093/brain/aww124",
+        "score": 0.57085
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.3934",
+        "chunk_id": "abstract:doi:10.5665/sleep.3934",
+        "score": 0.570847
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.3169-13.2013",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.3169-13.2013",
+        "score": 0.570846
+      },
+      {
+        "paper_id": "doi:10.1016/j.parkreldis.2026.108339",
+        "chunk_id": "abstract:doi:10.1016/j.parkreldis.2026.108339",
+        "score": 0.570768
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2018.03.015",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2018.03.015",
+        "score": 0.570762
+      },
+      {
+        "paper_id": "doi:10.4103/abr.abr_466_23",
+        "chunk_id": "abstract:doi:10.4103/abr.abr_466_23",
+        "score": 0.570441
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2021.118117",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2021.118117",
+        "score": 0.570254
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/32.6.760",
+        "chunk_id": "abstract:doi:10.1093/sleep/32.6.760",
+        "score": 0.570207
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.3142",
+        "chunk_id": "abstract:doi:10.5665/sleep.3142",
+        "score": 0.570189
+      },
+      {
+        "paper_id": "doi:10.1111/j.1365-2869.2004.00431.x",
+        "chunk_id": "abstract:doi:10.1111/j.1365-2869.2004.00431.x",
+        "score": 0.570017
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.17-08-02807.1997",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.17-08-02807.1997",
+        "score": 0.569932
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/18.5.346",
+        "chunk_id": "abstract:doi:10.1093/sleep/18.5.346",
+        "score": 0.569589
+      },
+      {
+        "paper_id": "doi:10.1016/j.jadohealth.2023.01.010",
+        "chunk_id": "abstract:doi:10.1016/j.jadohealth.2023.01.010",
+        "score": 0.569554
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.14452",
+        "chunk_id": "abstract:doi:10.1111/jsr.14452",
+        "score": 0.569516
+      },
+      {
+        "paper_id": "doi:10.1016/j.isci.2026.116589",
+        "chunk_id": "abstract:doi:10.1016/j.isci.2026.116589",
+        "score": 0.569499
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2019.00242",
+        "chunk_id": "abstract:doi:10.3389/fnins.2019.00242",
+        "score": 0.569388
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2026.1789842",
+        "chunk_id": "abstract:doi:10.3389/fneur.2026.1789842",
+        "score": 0.569365
+      },
+      {
+        "paper_id": "doi:10.23880/nnoaj-16000168",
+        "chunk_id": "abstract:doi:10.23880/nnoaj-16000168",
+        "score": 0.569221
+      },
+      {
+        "paper_id": "doi:10.1002/mds.29898",
+        "chunk_id": "abstract:doi:10.1002/mds.29898",
+        "score": 0.569195
+      },
+      {
+        "paper_id": "doi:10.1159/000119373",
+        "chunk_id": "abstract:doi:10.1159/000119373",
+        "score": 0.569171
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pcbi.1012852",
+        "chunk_id": "abstract:doi:10.1371/journal.pcbi.1012852",
+        "score": 0.569139
+      },
+      {
+        "paper_id": "doi:10.1109/ichi.2019.8904716",
+        "chunk_id": "abstract:doi:10.1109/ichi.2019.8904716",
+        "score": 0.56883
+      },
+      {
+        "paper_id": "doi:10.1046/j.1365-2869.1997.00045.x",
+        "chunk_id": "abstract:doi:10.1046/j.1365-2869.1997.00045.x",
+        "score": 0.568766
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.26488",
+        "chunk_id": "abstract:doi:10.1002/hbm.26488",
+        "score": 0.568764
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-019-54790-y",
+        "chunk_id": "abstract:doi:10.1038/s41598-019-54790-y",
+        "score": 0.568753
+      },
+      {
+        "paper_id": "doi:10.64898/2025.12.03.25341545",
+        "chunk_id": "abstract:doi:10.64898/2025.12.03.25341545",
+        "score": 0.568663
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf040",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf040",
+        "score": 0.568533
+      },
+      {
+        "paper_id": "doi:10.1016/j.drugalcdep.2026.113084",
+        "chunk_id": "abstract:doi:10.1016/j.drugalcdep.2026.113084",
+        "score": 0.568443
+      },
+      {
+        "paper_id": "doi:10.1093/brain/awz089",
+        "chunk_id": "abstract:doi:10.1093/brain/awz089",
+        "score": 0.568335
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13897",
+        "chunk_id": "abstract:doi:10.1111/jsr.13897",
+        "score": 0.568041
+      },
+      {
+        "paper_id": "doi:10.1016/j.celrep.2023.112200",
+        "chunk_id": "abstract:doi:10.1016/j.celrep.2023.112200",
+        "score": 0.568025
+      },
+      {
+        "paper_id": "title:83b0640a5424aa993f0ce3c75d467bc6a9f5dd7c",
+        "chunk_id": "abstract:title:83b0640a5424aa993f0ce3c75d467bc6a9f5dd7c",
+        "score": 0.567996
+      },
+      {
+        "paper_id": "doi:10.3389/fphar.2026.1732125",
+        "chunk_id": "abstract:doi:10.3389/fphar.2026.1732125",
+        "score": 0.567868
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.108720",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.108720",
+        "score": 0.567867
+      },
+      {
+        "paper_id": "doi:10.1002/da.22622",
+        "chunk_id": "abstract:doi:10.1002/da.22622",
+        "score": 0.567801
+      },
+      {
+        "paper_id": "doi:10.1016/j.ynstr.2023.100588",
+        "chunk_id": "abstract:doi:10.1016/j.ynstr.2023.100588",
+        "score": 0.567724
+      },
+      {
+        "paper_id": "doi:10.1038/nm.4433",
+        "chunk_id": "abstract:doi:10.1038/nm.4433",
+        "score": 0.567708
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad077.0778",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad077.0778",
+        "score": 0.567703
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2020.117190",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2020.117190",
+        "score": 0.567685
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2025.102141",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2025.102141",
+        "score": 0.567641
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13927",
+        "chunk_id": "abstract:doi:10.1111/jsr.13927",
+        "score": 0.567597
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.0084",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.0084",
+        "score": 0.567467
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.21183",
+        "chunk_id": "abstract:doi:10.1002/hbm.21183",
+        "score": 0.56742
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0458",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0458",
+        "score": 0.56737
+      },
+      {
+        "paper_id": "doi:10.1111/adb.70175",
+        "chunk_id": "abstract:doi:10.1111/adb.70175",
+        "score": 0.567337
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad077.0409",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad077.0409",
+        "score": 0.567277
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci11111528",
+        "chunk_id": "abstract:doi:10.3390/brainsci11111528",
+        "score": 0.567252
+      },
+      {
+        "paper_id": "doi:10.3389/fnagi.2018.00375",
+        "chunk_id": "abstract:doi:10.3389/fnagi.2018.00375",
+        "score": 0.567239
+      },
+      {
+        "paper_id": "doi:10.1159/000552944",
+        "chunk_id": "abstract:doi:10.1159/000552944",
+        "score": 0.567146
+      },
+      {
+        "paper_id": "doi:10.3233/jad-230101",
+        "chunk_id": "abstract:doi:10.3233/jad-230101",
+        "score": 0.566998
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.11-10-03200.1991",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.11-10-03200.1991",
+        "score": 0.566993
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s327221",
+        "chunk_id": "abstract:doi:10.2147/nss.s327221",
+        "score": 0.566922
+      },
+      {
+        "paper_id": "doi:10.1002/jmri.70417",
+        "chunk_id": "abstract:doi:10.1002/jmri.70417",
+        "score": 0.566849
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2026.108797",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2026.108797",
+        "score": 0.566818
+      },
+      {
+        "paper_id": "doi:10.1177/15500594261450039",
+        "chunk_id": "abstract:doi:10.1177/15500594261450039",
+        "score": 0.566628
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2024.1379259",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2024.1379259",
+        "score": 0.566542
+      },
+      {
+        "paper_id": "doi:10.1093/brain/awq296",
+        "chunk_id": "abstract:doi:10.1093/brain/awq296",
+        "score": 0.566522
+      },
+      {
+        "paper_id": "doi:10.21203/rs.3.rs-7629807/v1",
+        "chunk_id": "abstract:doi:10.21203/rs.3.rs-7629807/v1",
+        "score": 0.566504
+      },
+      {
+        "paper_id": "doi:10.31083/jin26397",
+        "chunk_id": "abstract:doi:10.31083/jin26397",
+        "score": 0.566423
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.0945-18.2018",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.0945-18.2018",
+        "score": 0.566353
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag201",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag201",
+        "score": 0.566307
+      },
+      {
+        "paper_id": "doi:10.1101/2025.01.02.24319683",
+        "chunk_id": "abstract:doi:10.1101/2025.01.02.24319683",
+        "score": 0.566252
+      },
+      {
+        "paper_id": "doi:10.1038/s42003-025-07679-8",
+        "chunk_id": "abstract:doi:10.1038/s42003-025-07679-8",
+        "score": 0.566187
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2019.01.031",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2019.01.031",
+        "score": 0.566112
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2022.1025174",
+        "chunk_id": "abstract:doi:10.3389/fneur.2022.1025174",
+        "score": 0.565947
+      },
+      {
+        "paper_id": "doi:10.1186/s12906-024-04612-0",
+        "chunk_id": "abstract:doi:10.1186/s12906-024-04612-0",
+        "score": 0.565898
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.4330",
+        "chunk_id": "abstract:doi:10.5665/sleep.4330",
+        "score": 0.565834
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad274",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad274",
+        "score": 0.565827
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-019-40398-9",
+        "chunk_id": "abstract:doi:10.1038/s41598-019-40398-9",
+        "score": 0.565814
+      },
+      {
+        "paper_id": "doi:10.1186/s12888-023-05009-y",
+        "chunk_id": "abstract:doi:10.1186/s12888-023-05009-y",
+        "score": 0.565672
+      },
+      {
+        "paper_id": "doi:10.3390/clockssleep5040042",
+        "chunk_id": "abstract:doi:10.3390/clockssleep5040042",
+        "score": 0.565496
+      },
+      {
+        "paper_id": "doi:10.1016/j.comppsych.2026.152728",
+        "chunk_id": "abstract:doi:10.1016/j.comppsych.2026.152728",
+        "score": 0.565487
+      },
+      {
+        "paper_id": "doi:10.1007/s11357-024-01417-4",
+        "chunk_id": "abstract:doi:10.1007/s11357-024-01417-4",
+        "score": 0.565482
+      },
+      {
+        "paper_id": "doi:10.1016/b978-0-323-90918-1.00010-1",
+        "chunk_id": "abstract:doi:10.1016/b978-0-323-90918-1.00010-1",
+        "score": 0.56542
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.26139",
+        "chunk_id": "abstract:doi:10.1002/hbm.26139",
+        "score": 0.565324
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae074",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae074",
+        "score": 0.565216
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.1232",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.1232",
+        "score": 0.56519
+      },
+      {
+        "paper_id": "doi:10.1101/2021.07.20.453026",
+        "chunk_id": "abstract:doi:10.1101/2021.07.20.453026",
+        "score": 0.565062
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci10020071",
+        "chunk_id": "abstract:doi:10.3390/brainsci10020071",
+        "score": 0.565051
+      },
+      {
+        "paper_id": "doi:10.1016/j.dib.2023.109059",
+        "chunk_id": "abstract:doi:10.1016/j.dib.2023.109059",
+        "score": 0.565014
+      },
+      {
+        "paper_id": "doi:10.1186/s13020-025-01236-5",
+        "chunk_id": "abstract:doi:10.1186/s13020-025-01236-5",
+        "score": 0.564946
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13166",
+        "chunk_id": "abstract:doi:10.1111/jsr.13166",
+        "score": 0.564902
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2019.07.027",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2019.07.027",
+        "score": 0.564676
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci15070691",
+        "chunk_id": "abstract:doi:10.3390/brainsci15070691",
+        "score": 0.564568
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa097",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa097",
+        "score": 0.564555
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2023.10.037",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2023.10.037",
+        "score": 0.564489
+      },
+      {
+        "paper_id": "doi:10.64898/2026.02.20.26346398",
+        "chunk_id": "abstract:doi:10.64898/2026.02.20.26346398",
+        "score": 0.564464
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.1138-24.2025",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.1138-24.2025",
+        "score": 0.564426
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.5254-14.2015",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.5254-14.2015",
+        "score": 0.564362
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci13111542",
+        "chunk_id": "abstract:doi:10.3390/brainsci13111542",
+        "score": 0.564338
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag053",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag053",
+        "score": 0.564302
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/32.10.1341",
+        "chunk_id": "abstract:doi:10.1093/sleep/32.10.1341",
+        "score": 0.564098
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-021-84417-0",
+        "chunk_id": "abstract:doi:10.1038/s41598-021-84417-0",
+        "score": 0.564085
+      },
+      {
+        "paper_id": "doi:10.1038/s41531-024-00670-w",
+        "chunk_id": "abstract:doi:10.1038/s41531-024-00670-w",
+        "score": 0.564036
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.25961",
+        "chunk_id": "abstract:doi:10.1002/hbm.25961",
+        "score": 0.563656
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s401270",
+        "chunk_id": "abstract:doi:10.2147/nss.s401270",
+        "score": 0.563461
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-025-33669-1",
+        "chunk_id": "abstract:doi:10.1038/s41598-025-33669-1",
+        "score": 0.563408
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae091",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae091",
+        "score": 0.563393
+      },
+      {
+        "paper_id": "doi:10.1016/j.nbd.2026.107457",
+        "chunk_id": "abstract:doi:10.1016/j.nbd.2026.107457",
+        "score": 0.563249
+      },
+      {
+        "paper_id": "doi:10.7554/elife.10781",
+        "chunk_id": "abstract:doi:10.7554/elife.10781",
+        "score": 0.563151
+      },
+      {
+        "paper_id": "doi:10.1684/epd.2019.1058",
+        "chunk_id": "abstract:doi:10.1684/epd.2019.1058",
+        "score": 0.563137
+      },
+      {
+        "paper_id": "doi:10.1162/netn_a_00272",
+        "chunk_id": "abstract:doi:10.1162/netn_a_00272",
+        "score": 0.563025
+      },
+      {
+        "paper_id": "doi:10.1073/pnas.1217897109",
+        "chunk_id": "abstract:doi:10.1073/pnas.1217897109",
+        "score": 0.563018
+      },
+      {
+        "paper_id": "doi:10.1101/2023.04.17.537191",
+        "chunk_id": "abstract:doi:10.1101/2023.04.17.537191",
+        "score": 0.562912
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag179",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag179",
+        "score": 0.56276
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad077.0789",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad077.0789",
+        "score": 0.562539
+      },
+      {
+        "paper_id": "doi:10.1007/s40675-024-00284-x",
+        "chunk_id": "abstract:doi:10.1007/s40675-024-00284-x",
+        "score": 0.562468
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2014.12.005",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2014.12.005",
+        "score": 0.562427
+      },
+      {
+        "paper_id": "doi:10.1002/alz.71242",
+        "chunk_id": "abstract:doi:10.1002/alz.71242",
+        "score": 0.562303
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf133",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf133",
+        "score": 0.562267
+      },
+      {
+        "paper_id": "doi:10.1007/s10548-026-01186-7",
+        "chunk_id": "abstract:doi:10.1007/s10548-026-01186-7",
+        "score": 0.562208
+      },
+      {
+        "paper_id": "doi:10.3389/fnsys.2020.549309",
+        "chunk_id": "abstract:doi:10.3389/fnsys.2020.549309",
+        "score": 0.562132
+      },
+      {
+        "paper_id": "doi:10.3389/fnhum.2015.00233",
+        "chunk_id": "abstract:doi:10.3389/fnhum.2015.00233",
+        "score": 0.562111
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2021.12.004",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2021.12.004",
+        "score": 0.562051
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2026.1779207",
+        "chunk_id": "abstract:doi:10.3389/fneur.2026.1779207",
+        "score": 0.561995
+      },
+      {
+        "paper_id": "doi:10.1101/2023.10.28.564524",
+        "chunk_id": "abstract:doi:10.1101/2023.10.28.564524",
+        "score": 0.561949
+      },
+      {
+        "paper_id": "doi:10.1016/bs.irn.2022.11.002",
+        "chunk_id": "abstract:doi:10.1016/bs.irn.2022.11.002",
+        "score": 0.561907
+      },
+      {
+        "paper_id": "doi:10.1073/pnas.1523980113",
+        "chunk_id": "abstract:doi:10.1073/pnas.1523980113",
+        "score": 0.561844
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/30.11.1587",
+        "chunk_id": "abstract:doi:10.1093/sleep/30.11.1587",
+        "score": 0.561796
+      },
+      {
+        "paper_id": "doi:10.1016/j.bpsc.2021.07.008",
+        "chunk_id": "abstract:doi:10.1016/j.bpsc.2021.07.008",
+        "score": 0.561745
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0181",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0181",
+        "score": 0.561656
+      },
+      {
+        "paper_id": "doi:10.1016/j.bbr.2026.116150",
+        "chunk_id": "abstract:doi:10.1016/j.bbr.2026.116150",
+        "score": 0.561533
+      },
+      {
+        "paper_id": "doi:10.21203/rs.3.rs-9844198/v1",
+        "chunk_id": "abstract:doi:10.21203/rs.3.rs-9844198/v1",
+        "score": 0.561475
+      },
+      {
+        "paper_id": "doi:10.1016/j.jneumeth.2017.02.008",
+        "chunk_id": "abstract:doi:10.1016/j.jneumeth.2017.02.008",
+        "score": 0.561407
+      },
+      {
+        "paper_id": "doi:10.58530/2024/4976",
+        "chunk_id": "abstract:doi:10.58530/2024/4976",
+        "score": 0.561352
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s78947",
+        "chunk_id": "abstract:doi:10.2147/nss.s78947",
+        "score": 0.561263
+      },
+      {
+        "paper_id": "doi:10.1186/s12916-026-04771-6",
+        "chunk_id": "abstract:doi:10.1186/s12916-026-04771-6",
+        "score": 0.561212
+      },
+      {
+        "paper_id": "doi:10.1111/j.1460-9568.2004.03518.x",
+        "chunk_id": "abstract:doi:10.1111/j.1460-9568.2004.03518.x",
+        "score": 0.561201
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.1426",
+        "chunk_id": "abstract:doi:10.5665/sleep.1426",
+        "score": 0.561127
+      },
+      {
+        "paper_id": "doi:10.1093/brain/awaf453",
+        "chunk_id": "abstract:doi:10.1093/brain/awaf453",
+        "score": 0.561093
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.02.016",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.02.016",
+        "score": 0.56107
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf115",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf115",
+        "score": 0.561007
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-026-53826-4",
+        "chunk_id": "abstract:doi:10.1038/s41598-026-53826-4",
+        "score": 0.560899
+      },
+      {
+        "paper_id": "doi:10.1016/j.ijpsycho.2024.112460",
+        "chunk_id": "abstract:doi:10.1016/j.ijpsycho.2024.112460",
+        "score": 0.560824
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa151",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa151",
+        "score": 0.560738
+      },
+      {
+        "paper_id": "doi:10.1101/2025.10.13.681720",
+        "chunk_id": "abstract:doi:10.1101/2025.10.13.681720",
+        "score": 0.560623
+      },
+      {
+        "paper_id": "doi:10.1016/s1474-4422(25)00273-x",
+        "chunk_id": "abstract:doi:10.1016/s1474-4422(25)00273-x",
+        "score": 0.560553
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.3316",
+        "chunk_id": "abstract:doi:10.5665/sleep.3316",
+        "score": 0.560292
+      },
+      {
+        "paper_id": "doi:10.1162/netn_a_00311",
+        "chunk_id": "abstract:doi:10.1162/netn_a_00311",
+        "score": 0.560282
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-022-23033-y",
+        "chunk_id": "abstract:doi:10.1038/s41598-022-23033-y",
+        "score": 0.560258
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae098",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae098",
+        "score": 0.560076
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2020.07.026",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2020.07.026",
+        "score": 0.560034
+      },
+      {
+        "paper_id": "doi:10.1016/j.brainresbull.2025.111220",
+        "chunk_id": "abstract:doi:10.1016/j.brainresbull.2025.111220",
+        "score": 0.560021
+      },
+      {
+        "paper_id": "doi:10.1038/s41467-020-16915-0",
+        "chunk_id": "abstract:doi:10.1038/s41467-020-16915-0",
+        "score": 0.559978
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2020.00321",
+        "chunk_id": "abstract:doi:10.3389/fnins.2020.00321",
+        "score": 0.559951
+      },
+      {
+        "paper_id": "doi:10.1038/s41398-020-01109-5",
+        "chunk_id": "abstract:doi:10.1038/s41398-020-01109-5",
+        "score": 0.559926
+      },
+      {
+        "paper_id": "doi:10.3390/diagnostics10121087",
+        "chunk_id": "abstract:doi:10.3390/diagnostics10121087",
+        "score": 0.559872
+      },
+      {
+        "paper_id": "doi:10.1046/j.1365-2869.7.s1.6.x",
+        "chunk_id": "abstract:doi:10.1046/j.1365-2869.7.s1.6.x",
+        "score": 0.559748
+      },
+      {
+        "paper_id": "doi:10.1016/j.pnpbp.2026.111678",
+        "chunk_id": "abstract:doi:10.1016/j.pnpbp.2026.111678",
+        "score": 0.559597
+      },
+      {
+        "paper_id": "doi:10.1097/yct.0000000000001265",
+        "chunk_id": "abstract:doi:10.1097/yct.0000000000001265",
+        "score": 0.559576
+      },
+      {
+        "paper_id": "doi:10.1097/wnr.0000000000001347",
+        "chunk_id": "abstract:doi:10.1097/wnr.0000000000001347",
+        "score": 0.559437
+      },
+      {
+        "paper_id": "doi:10.1016/j.neurobiolaging.2026.05.002",
+        "chunk_id": "abstract:doi:10.1016/j.neurobiolaging.2026.05.002",
+        "score": 0.559325
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2024.09.032",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2024.09.032",
+        "score": 0.559264
+      },
+      {
+        "paper_id": "doi:10.1038/s41597-024-03268-2",
+        "chunk_id": "abstract:doi:10.1038/s41597-024-03268-2",
+        "score": 0.559193
+      },
+      {
+        "paper_id": "doi:10.1109/ecce64574.2025.11013384",
+        "chunk_id": "abstract:doi:10.1109/ecce64574.2025.11013384",
+        "score": 0.559132
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag025",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag025",
+        "score": 0.558967
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2021.609640",
+        "chunk_id": "abstract:doi:10.3389/fnins.2021.609640",
+        "score": 0.558949
+      },
+      {
+        "paper_id": "title:39116a16cdedb3d7c717b519b1cc890e7144bdcd",
+        "chunk_id": "abstract:title:39116a16cdedb3d7c717b519b1cc890e7144bdcd",
+        "score": 0.55882
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2026.108915",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2026.108915",
+        "score": 0.558818
+      },
+      {
+        "paper_id": "doi:10.1016/j.bbih.2026.101171",
+        "chunk_id": "abstract:doi:10.1016/j.bbih.2026.101171",
+        "score": 0.558795
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.1156-13.2014",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.1156-13.2014",
+        "score": 0.558549
+      },
+      {
+        "paper_id": "doi:10.1111/cns.70141",
+        "chunk_id": "abstract:doi:10.1111/cns.70141",
+        "score": 0.558503
+      },
+      {
+        "paper_id": "doi:10.1093/sleepadvances/zpaf053.063",
+        "chunk_id": "abstract:doi:10.1093/sleepadvances/zpaf053.063",
+        "score": 0.558327
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.20428",
+        "chunk_id": "abstract:doi:10.1002/hbm.20428",
+        "score": 0.558177
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2025.06.017",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2025.06.017",
+        "score": 0.557953
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci14090932",
+        "chunk_id": "abstract:doi:10.3390/brainsci14090932",
+        "score": 0.557918
+      },
+      {
+        "paper_id": "doi:10.64898/2026.02.13.705774",
+        "chunk_id": "abstract:doi:10.64898/2026.02.13.705774",
+        "score": 0.557823
+      },
+      {
+        "paper_id": "doi:10.1111/jcpp.12945",
+        "chunk_id": "abstract:doi:10.1111/jcpp.12945",
+        "score": 0.557817
+      },
+      {
+        "paper_id": "doi:10.3389/fnmol.2026.1871404",
+        "chunk_id": "abstract:doi:10.3389/fnmol.2026.1871404",
+        "score": 0.557707
+      },
+      {
+        "paper_id": "doi:10.1186/s12888-026-08023-y",
+        "chunk_id": "abstract:doi:10.1186/s12888-026-08023-y",
+        "score": 0.557663
+      },
+      {
+        "paper_id": "doi:10.3389/fnhum.2018.00088",
+        "chunk_id": "abstract:doi:10.3389/fnhum.2018.00088",
+        "score": 0.557606
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.5460",
+        "chunk_id": "abstract:doi:10.5665/sleep.5460",
+        "score": 0.557571
+      },
+      {
+        "paper_id": "doi:10.1055/a-2605-8706",
+        "chunk_id": "abstract:doi:10.1055/a-2605-8706",
+        "score": 0.557404
+      },
+      {
+        "paper_id": "doi:10.64898/2026.05.26.725476",
+        "chunk_id": "abstract:doi:10.64898/2026.05.26.725476",
+        "score": 0.557251
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci16050460",
+        "chunk_id": "abstract:doi:10.3390/brainsci16050460",
+        "score": 0.557244
+      },
+      {
+        "paper_id": "doi:10.1093/cercor/bhn073",
+        "chunk_id": "abstract:doi:10.1093/cercor/bhn073",
+        "score": 0.557202
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2026.1746322",
+        "chunk_id": "abstract:doi:10.3389/fnins.2026.1746322",
+        "score": 0.557186
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s339639",
+        "chunk_id": "abstract:doi:10.2147/nss.s339639",
+        "score": 0.557146
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2017.00093",
+        "chunk_id": "abstract:doi:10.3389/fnins.2017.00093",
+        "score": 0.557133
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa056.079",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa056.079",
+        "score": 0.556982
+      },
+      {
+        "paper_id": "doi:10.1093/brain/awq183",
+        "chunk_id": "abstract:doi:10.1093/brain/awq183",
+        "score": 0.55697
+      },
+      {
+        "paper_id": "doi:10.2174/157015908785777229",
+        "chunk_id": "abstract:doi:10.2174/157015908785777229",
+        "score": 0.556957
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag060",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag060",
+        "score": 0.556865
+      },
+      {
+        "paper_id": "doi:10.1016/j.biopsycho.2023.108591",
+        "chunk_id": "abstract:doi:10.1016/j.biopsycho.2023.108591",
+        "score": 0.556864
+      },
+      {
+        "paper_id": "doi:10.1093/cercor/bhac534",
+        "chunk_id": "abstract:doi:10.1093/cercor/bhac534",
+        "score": 0.556858
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsz092",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsz092",
+        "score": 0.556825
+      },
+      {
+        "paper_id": "doi:10.3389/fnhum.2016.00605",
+        "chunk_id": "abstract:doi:10.3389/fnhum.2016.00605",
+        "score": 0.556662
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2012.00048",
+        "chunk_id": "abstract:doi:10.3389/fneur.2012.00048",
+        "score": 0.556548
+      },
+      {
+        "paper_id": "doi:10.1101/748871",
+        "chunk_id": "abstract:doi:10.1101/748871",
+        "score": 0.556212
+      },
+      {
+        "paper_id": "title:1f95671ef24a04955ea82b45633376f802d649f6",
+        "chunk_id": "abstract:title:1f95671ef24a04955ea82b45633376f802d649f6",
+        "score": 0.556199
+      },
+      {
+        "paper_id": "title:69be6366aa28019770daf95ee9365ea73e528e9b",
+        "chunk_id": "abstract:title:69be6366aa28019770daf95ee9365ea73e528e9b",
+        "score": 0.556152
+      },
+      {
+        "paper_id": "doi:10.5220/0011235400003438",
+        "chunk_id": "abstract:doi:10.5220/0011235400003438",
+        "score": 0.556031
+      },
+      {
+        "paper_id": "doi:10.1186/s12888-025-07484-x",
+        "chunk_id": "abstract:doi:10.1186/s12888-025-07484-x",
+        "score": 0.55593
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.06-01-00068.1986",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.06-01-00068.1986",
+        "score": 0.555457
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0142014",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0142014",
+        "score": 0.555416
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsy056",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsy056",
+        "score": 0.555345
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0209",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0209",
+        "score": 0.555284
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.994",
+        "chunk_id": "abstract:doi:10.1002/brb3.994",
+        "score": 0.55525
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2021.803507",
+        "chunk_id": "abstract:doi:10.3389/fnins.2021.803507",
+        "score": 0.55522
+      },
+      {
+        "paper_id": "doi:10.1016/j.pnpbp.2024.111226",
+        "chunk_id": "abstract:doi:10.1016/j.pnpbp.2024.111226",
+        "score": 0.555195
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2024.101907",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2024.101907",
+        "score": 0.555144
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.70870",
+        "chunk_id": "abstract:doi:10.1002/brb3.70870",
+        "score": 0.555106
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0224669",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0224669",
+        "score": 0.554832
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2020.563624",
+        "chunk_id": "abstract:doi:10.3389/fneur.2020.563624",
+        "score": 0.554732
+      },
+      {
+        "paper_id": "doi:10.1007/s41105-025-00628-2",
+        "chunk_id": "abstract:doi:10.1007/s41105-025-00628-2",
+        "score": 0.554584
+      },
+      {
+        "paper_id": "doi:10.1183/23120541.00857-2025",
+        "chunk_id": "abstract:doi:10.1183/23120541.00857-2025",
+        "score": 0.554487
+      },
+      {
+        "paper_id": "doi:10.1016/j.actaastro.2018.11.043",
+        "chunk_id": "abstract:doi:10.1016/j.actaastro.2018.11.043",
+        "score": 0.554385
+      },
+      {
+        "paper_id": "doi:10.1016/j.mex.2021.101318",
+        "chunk_id": "abstract:doi:10.1016/j.mex.2021.101318",
+        "score": 0.554336
+      },
+      {
+        "paper_id": "doi:10.1016/j.cnp.2023.08.004",
+        "chunk_id": "abstract:doi:10.1016/j.cnp.2023.08.004",
+        "score": 0.554305
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/30.12.1631",
+        "chunk_id": "abstract:doi:10.1093/sleep/30.12.1631",
+        "score": 0.554284
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsac235",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsac235",
+        "score": 0.55426
+      },
+      {
+        "paper_id": "doi:10.1172/jci.insight.176329",
+        "chunk_id": "abstract:doi:10.1172/jci.insight.176329",
+        "score": 0.554235
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/33.3.343",
+        "chunk_id": "abstract:doi:10.1093/sleep/33.3.343",
+        "score": 0.5542
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0277772",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0277772",
+        "score": 0.554115
+      },
+      {
+        "paper_id": "doi:10.3389/fnbeh.2021.613025",
+        "chunk_id": "abstract:doi:10.3389/fnbeh.2021.613025",
+        "score": 0.554091
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.2620",
+        "chunk_id": "abstract:doi:10.5665/sleep.2620",
+        "score": 0.553878
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2025.120517",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2025.120517",
+        "score": 0.553806
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2022.904820",
+        "chunk_id": "abstract:doi:10.3389/fnins.2022.904820",
+        "score": 0.553802
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/31.4.489",
+        "chunk_id": "abstract:doi:10.1093/sleep/31.4.489",
+        "score": 0.553717
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa054",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa054",
+        "score": 0.55365
+      },
+      {
+        "paper_id": "doi:10.1212/01.wnl.0000038348.94399.f6",
+        "chunk_id": "abstract:doi:10.1212/01.wnl.0000038348.94399.f6",
+        "score": 0.553611
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2021.03.041",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2021.03.041",
+        "score": 0.553581
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0376",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0376",
+        "score": 0.553407
+      },
+      {
+        "paper_id": "doi:10.18203/2320-6012.ijrms20202894",
+        "chunk_id": "abstract:doi:10.18203/2320-6012.ijrms20202894",
+        "score": 0.553255
+      },
+      {
+        "paper_id": "doi:10.1038/s42003-024-06028-5",
+        "chunk_id": "abstract:doi:10.1038/s42003-024-06028-5",
+        "score": 0.552923
+      },
+      {
+        "paper_id": "doi:10.1093/sleepadvances/zpac037",
+        "chunk_id": "abstract:doi:10.1093/sleepadvances/zpac037",
+        "score": 0.552769
+      },
+      {
+        "paper_id": "doi:10.1080/19585969.2026.2684199",
+        "chunk_id": "abstract:doi:10.1080/19585969.2026.2684199",
+        "score": 0.552431
+      },
+      {
+        "paper_id": "doi:10.1007/s11682-021-00618-1",
+        "chunk_id": "abstract:doi:10.1007/s11682-021-00618-1",
+        "score": 0.552286
+      },
+      {
+        "paper_id": "doi:10.1212/wnl.0000000000200326",
+        "chunk_id": "abstract:doi:10.1212/wnl.0000000000200326",
+        "score": 0.552215
+      },
+      {
+        "paper_id": "doi:10.1016/j.yebeh.2024.109903",
+        "chunk_id": "abstract:doi:10.1016/j.yebeh.2024.109903",
+        "score": 0.551883
+      },
+      {
+        "paper_id": "doi:10.1177/1099800419833781",
+        "chunk_id": "abstract:doi:10.1177/1099800419833781",
+        "score": 0.551836
+      },
+      {
+        "paper_id": "doi:10.1177/1073858413518152",
+        "chunk_id": "abstract:doi:10.1177/1073858413518152",
+        "score": 0.551772
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2026.03.025",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2026.03.025",
+        "score": 0.551656
+      },
+      {
+        "paper_id": "doi:10.1038/s41467-025-64414-x",
+        "chunk_id": "abstract:doi:10.1038/s41467-025-64414-x",
+        "score": 0.551656
+      },
+      {
+        "paper_id": "doi:10.1111/ene.15445",
+        "chunk_id": "abstract:doi:10.1111/ene.15445",
+        "score": 0.551652
+      },
+      {
+        "paper_id": "doi:10.1109/spmb.2018.8615603",
+        "chunk_id": "abstract:doi:10.1109/spmb.2018.8615603",
+        "score": 0.551539
+      },
+      {
+        "paper_id": "doi:10.5664/jcsm.8864",
+        "chunk_id": "abstract:doi:10.5664/jcsm.8864",
+        "score": 0.55151
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.1050",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.1050",
+        "score": 0.551459
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.71342",
+        "chunk_id": "abstract:doi:10.1002/brb3.71342",
+        "score": 0.551419
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s1248",
+        "chunk_id": "abstract:doi:10.2147/ndt.s1248",
+        "score": 0.551293
+      },
+      {
+        "paper_id": "doi:10.1101/2025.01.17.633689",
+        "chunk_id": "abstract:doi:10.1101/2025.01.17.633689",
+        "score": 0.551236
+      },
+      {
+        "paper_id": "doi:10.1097/md.0000000000025988",
+        "chunk_id": "abstract:doi:10.1097/md.0000000000025988",
+        "score": 0.551192
+      },
+      {
+        "paper_id": "doi:10.1016/j.jneumeth.2018.12.002",
+        "chunk_id": "abstract:doi:10.1016/j.jneumeth.2018.12.002",
+        "score": 0.550984
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf074",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf074",
+        "score": 0.550743
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2020.00067",
+        "chunk_id": "abstract:doi:10.3389/fnins.2020.00067",
+        "score": 0.550273
+      },
+      {
+        "paper_id": "doi:10.1016/j.pneurobio.2024.102589",
+        "chunk_id": "abstract:doi:10.1016/j.pneurobio.2024.102589",
+        "score": 0.550179
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-017-09744-7",
+        "chunk_id": "abstract:doi:10.1038/s41598-017-09744-7",
+        "score": 0.550131
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsab072.605",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsab072.605",
+        "score": 0.550093
+      },
+      {
+        "paper_id": "doi:10.1192/j.eurpsy.2023.1076",
+        "chunk_id": "abstract:doi:10.1192/j.eurpsy.2023.1076",
+        "score": 0.550071
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s297504",
+        "chunk_id": "abstract:doi:10.2147/ndt.s297504",
+        "score": 0.549994
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.70332",
+        "chunk_id": "abstract:doi:10.1111/jsr.70332",
+        "score": 0.549787
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae032",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae032",
+        "score": 0.549639
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-018-24226-0",
+        "chunk_id": "abstract:doi:10.1038/s41598-018-24226-0",
+        "score": 0.549237
+      },
+      {
+        "paper_id": "doi:10.1126/sciadv.adz9546",
+        "chunk_id": "abstract:doi:10.1126/sciadv.adz9546",
+        "score": 0.549149
+      },
+      {
+        "paper_id": "doi:10.1007/s10548-025-01144-9",
+        "chunk_id": "abstract:doi:10.1007/s10548-025-01144-9",
+        "score": 0.549128
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaa160",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaa160",
+        "score": 0.54904
+      },
+      {
+        "paper_id": "doi:10.1002/mco2.70130",
+        "chunk_id": "abstract:doi:10.1002/mco2.70130",
+        "score": 0.54901
+      },
+      {
+        "paper_id": "doi:10.1007/s11325-026-03704-0",
+        "chunk_id": "abstract:doi:10.1007/s11325-026-03704-0",
+        "score": 0.549009
+      },
+      {
+        "paper_id": "doi:10.7554/elife.90826",
+        "chunk_id": "abstract:doi:10.7554/elife.90826",
+        "score": 0.548951
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-022-05418-1",
+        "chunk_id": "abstract:doi:10.1038/s41598-022-05418-1",
+        "score": 0.548949
+      },
+      {
+        "paper_id": "doi:10.1101/2025.11.13.686572",
+        "chunk_id": "abstract:doi:10.1101/2025.11.13.686572",
+        "score": 0.548693
+      },
+      {
+        "paper_id": "doi:10.1101/2025.09.22.25336322",
+        "chunk_id": "abstract:doi:10.1101/2025.09.22.25336322",
+        "score": 0.548667
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0000867",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0000867",
+        "score": 0.548646
+      },
+      {
+        "paper_id": "doi:10.3390/jcm15093454",
+        "chunk_id": "abstract:doi:10.3390/jcm15093454",
+        "score": 0.548593
+      },
+      {
+        "paper_id": "doi:10.3389/fnagi.2021.690854",
+        "chunk_id": "abstract:doi:10.3389/fnagi.2021.690854",
+        "score": 0.548584
+      },
+      {
+        "paper_id": "doi:10.1093/schbul/sbq142",
+        "chunk_id": "abstract:doi:10.1093/schbul/sbq142",
+        "score": 0.548528
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2020.00754",
+        "chunk_id": "abstract:doi:10.3389/fnins.2020.00754",
+        "score": 0.548328
+      },
+      {
+        "paper_id": "doi:10.1016/j.ebiom.2026.106287",
+        "chunk_id": "abstract:doi:10.1016/j.ebiom.2026.106287",
+        "score": 0.548308
+      },
+      {
+        "paper_id": "doi:10.1159/000443372",
+        "chunk_id": "abstract:doi:10.1159/000443372",
+        "score": 0.548271
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0341279",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0341279",
+        "score": 0.548247
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2021.01.045",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2021.01.045",
+        "score": 0.548228
+      },
+      {
+        "paper_id": "doi:10.1038/s41467-022-29852-x",
+        "chunk_id": "abstract:doi:10.1038/s41467-022-29852-x",
+        "score": 0.547985
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.3028",
+        "chunk_id": "abstract:doi:10.1002/brb3.3028",
+        "score": 0.547976
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2017.08.003",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2017.08.003",
+        "score": 0.547826
+      },
+      {
+        "paper_id": "doi:10.1016/j.jad.2026.122121",
+        "chunk_id": "abstract:doi:10.1016/j.jad.2026.122121",
+        "score": 0.547737
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.1047",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.1047",
+        "score": 0.547732
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae233",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae233",
+        "score": 0.547595
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.0679",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.0679",
+        "score": 0.547492
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2020.116786",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2020.116786",
+        "score": 0.547408
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2020.00768",
+        "chunk_id": "abstract:doi:10.3389/fneur.2020.00768",
+        "score": 0.547222
+      },
+      {
+        "paper_id": "doi:10.2741/1064",
+        "chunk_id": "abstract:doi:10.2741/1064",
+        "score": 0.547222
+      },
+      {
+        "paper_id": "doi:10.3390/biomedicines13082005",
+        "chunk_id": "abstract:doi:10.3390/biomedicines13082005",
+        "score": 0.547192
+      },
+      {
+        "paper_id": "doi:10.3389/fpain.2025.1609524",
+        "chunk_id": "abstract:doi:10.3389/fpain.2025.1609524",
+        "score": 0.547166
+      },
+      {
+        "paper_id": "doi:10.1038/s41467-023-37352-9",
+        "chunk_id": "abstract:doi:10.1038/s41467-023-37352-9",
+        "score": 0.54696
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0155343",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0155343",
+        "score": 0.546949
+      },
+      {
+        "paper_id": "doi:10.3389/frsle.2024.1322995",
+        "chunk_id": "abstract:doi:10.3389/frsle.2024.1322995",
+        "score": 0.546928
+      },
+      {
+        "paper_id": "doi:10.1111/j.1467-7687.2006.00504.x",
+        "chunk_id": "abstract:doi:10.1111/j.1467-7687.2006.00504.x",
+        "score": 0.546892
+      },
+      {
+        "paper_id": "doi:10.1007/s00213-020-05660-3",
+        "chunk_id": "abstract:doi:10.1007/s00213-020-05660-3",
+        "score": 0.546847
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pcbi.1012262",
+        "chunk_id": "abstract:doi:10.1371/journal.pcbi.1012262",
+        "score": 0.546767
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0438",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0438",
+        "score": 0.546557
+      },
+      {
+        "paper_id": "doi:10.1176/ajp.2007.164.3.483",
+        "chunk_id": "abstract:doi:10.1176/ajp.2007.164.3.483",
+        "score": 0.546488
+      },
+      {
+        "paper_id": "doi:10.3758/s13428-025-02671-w",
+        "chunk_id": "abstract:doi:10.3758/s13428-025-02671-w",
+        "score": 0.546393
+      },
+      {
+        "paper_id": "doi:10.1101/2024.05.16.594515",
+        "chunk_id": "abstract:doi:10.1101/2024.05.16.594515",
+        "score": 0.546308
+      },
+      {
+        "paper_id": "doi:10.1101/833459",
+        "chunk_id": "abstract:doi:10.1101/833459",
+        "score": 0.546274
+      },
+      {
+        "paper_id": "doi:10.3390/clockssleep7040053",
+        "chunk_id": "abstract:doi:10.3390/clockssleep7040053",
+        "score": 0.546262
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.1290",
+        "chunk_id": "abstract:doi:10.5665/sleep.1290",
+        "score": 0.546199
+      },
+      {
+        "paper_id": "doi:10.1038/s41467-018-04497-x",
+        "chunk_id": "abstract:doi:10.1038/s41467-018-04497-x",
+        "score": 0.546045
+      },
+      {
+        "paper_id": "doi:10.7759/cureus.102771",
+        "chunk_id": "abstract:doi:10.7759/cureus.102771",
+        "score": 0.545984
+      },
+      {
+        "paper_id": "doi:10.1016/j.ibneur.2025.09.013",
+        "chunk_id": "abstract:doi:10.1016/j.ibneur.2025.09.013",
+        "score": 0.545973
+      },
+      {
+        "paper_id": "doi:10.1016/j.jalz.2019.06.4899",
+        "chunk_id": "abstract:doi:10.1016/j.jalz.2019.06.4899",
+        "score": 0.545673
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.4246",
+        "chunk_id": "abstract:doi:10.5665/sleep.4246",
+        "score": 0.545651
+      },
+      {
+        "paper_id": "doi:10.1101/2022.05.11.491489",
+        "chunk_id": "abstract:doi:10.1101/2022.05.11.491489",
+        "score": 0.54558
+      },
+      {
+        "paper_id": "doi:10.1038/s41531-026-01477-7",
+        "chunk_id": "abstract:doi:10.1038/s41531-026-01477-7",
+        "score": 0.54553
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-022-24837-8",
+        "chunk_id": "abstract:doi:10.1038/s41598-022-24837-8",
+        "score": 0.545502
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.71530",
+        "chunk_id": "abstract:doi:10.1002/brb3.71530",
+        "score": 0.545473
+      },
+      {
+        "paper_id": "doi:10.1080/09540260500104524",
+        "chunk_id": "abstract:doi:10.1080/09540260500104524",
+        "score": 0.545336
+      },
+      {
+        "paper_id": "doi:10.1038/srep35662",
+        "chunk_id": "abstract:doi:10.1038/srep35662",
+        "score": 0.545333
+      },
+      {
+        "paper_id": "doi:10.1093/sleepadvances/zpab019",
+        "chunk_id": "abstract:doi:10.1093/sleepadvances/zpab019",
+        "score": 0.545289
+      },
+      {
+        "paper_id": "doi:10.5665/sleep/31.8.1149",
+        "chunk_id": "abstract:doi:10.5665/sleep/31.8.1149",
+        "score": 0.545252
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/29.9.1155",
+        "chunk_id": "abstract:doi:10.1093/sleep/29.9.1155",
+        "score": 0.54517
+      },
+      {
+        "paper_id": "doi:10.1186/s12906-024-04703-y",
+        "chunk_id": "abstract:doi:10.1186/s12906-024-04703-y",
+        "score": 0.545156
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/33.4.449",
+        "chunk_id": "abstract:doi:10.1093/sleep/33.4.449",
+        "score": 0.545145
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2025.1674071",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2025.1674071",
+        "score": 0.545101
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.14310",
+        "chunk_id": "abstract:doi:10.1111/jsr.14310",
+        "score": 0.545078
+      },
+      {
+        "paper_id": "doi:10.1164/ajrccm.153.4.8616562",
+        "chunk_id": "abstract:doi:10.1164/ajrccm.153.4.8616562",
+        "score": 0.544993
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2025.1656278",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2025.1656278",
+        "score": 0.54492
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2024.12.027",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2024.12.027",
+        "score": 0.544886
+      },
+      {
+        "paper_id": "doi:10.1136/bmjopen-2019-034421",
+        "chunk_id": "abstract:doi:10.1136/bmjopen-2019-034421",
+        "score": 0.544796
+      },
+      {
+        "paper_id": "doi:10.3389/fnagi.2020.578037",
+        "chunk_id": "abstract:doi:10.3389/fnagi.2020.578037",
+        "score": 0.544634
+      },
+      {
+        "paper_id": "doi:10.1038/s41531-026-01320-z",
+        "chunk_id": "abstract:doi:10.1038/s41531-026-01320-z",
+        "score": 0.544623
+      },
+      {
+        "paper_id": "doi:10.1111/j.1600-0447.2007.00968.x",
+        "chunk_id": "abstract:doi:10.1111/j.1600-0447.2007.00968.x",
+        "score": 0.544531
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.70258",
+        "chunk_id": "abstract:doi:10.1111/jsr.70258",
+        "score": 0.544494
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2017.00249",
+        "chunk_id": "abstract:doi:10.3389/fnins.2017.00249",
+        "score": 0.544488
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2022.04.024",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2022.04.024",
+        "score": 0.544459
+      },
+      {
+        "paper_id": "doi:10.1093/ijnp/pyaf019",
+        "chunk_id": "abstract:doi:10.1093/ijnp/pyaf019",
+        "score": 0.544456
+      },
+      {
+        "paper_id": "doi:10.1038/s41597-025-05202-6",
+        "chunk_id": "abstract:doi:10.1038/s41597-025-05202-6",
+        "score": 0.544257
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pbio.2002909",
+        "chunk_id": "abstract:doi:10.1371/journal.pbio.2002909",
+        "score": 0.54424
+      },
+      {
+        "paper_id": "doi:10.1081/cbi-100101050",
+        "chunk_id": "abstract:doi:10.1081/cbi-100101050",
+        "score": 0.544228
+      },
+      {
+        "paper_id": "doi:10.1080/09291016.2025.2576686",
+        "chunk_id": "abstract:doi:10.1080/09291016.2025.2576686",
+        "score": 0.544081
+      },
+      {
+        "paper_id": "doi:10.1161/str.0000000000000453",
+        "chunk_id": "abstract:doi:10.1161/str.0000000000000453",
+        "score": 0.544067
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.70362",
+        "chunk_id": "abstract:doi:10.1002/hbm.70362",
+        "score": 0.543913
+      },
+      {
+        "paper_id": "doi:10.1007/s11682-026-01085-2",
+        "chunk_id": "abstract:doi:10.1007/s11682-026-01085-2",
+        "score": 0.543853
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2022.119625",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2022.119625",
+        "score": 0.543832
+      },
+      {
+        "paper_id": "doi:10.1186/2045-5380-2-22",
+        "chunk_id": "abstract:doi:10.1186/2045-5380-2-22",
+        "score": 0.543818
+      },
+      {
+        "paper_id": "doi:10.1016/j.beth.2024.02.003",
+        "chunk_id": "abstract:doi:10.1016/j.beth.2024.02.003",
+        "score": 0.543742
+      },
+      {
+        "paper_id": "doi:10.1016/j.encep.2025.04.003",
+        "chunk_id": "abstract:doi:10.1016/j.encep.2025.04.003",
+        "score": 0.543725
+      },
+      {
+        "paper_id": "doi:10.1101/2025.03.31.646309",
+        "chunk_id": "abstract:doi:10.1101/2025.03.31.646309",
+        "score": 0.543633
+      },
+      {
+        "paper_id": "doi:10.3233/jpd-202215",
+        "chunk_id": "abstract:doi:10.3233/jpd-202215",
+        "score": 0.543598
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.5660-10.2011",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.5660-10.2011",
+        "score": 0.543562
+      },
+      {
+        "paper_id": "doi:10.1007/978-1-4684-6767-3_12",
+        "chunk_id": "abstract:doi:10.1007/978-1-4684-6767-3_12",
+        "score": 0.543437
+      },
+      {
+        "paper_id": "doi:10.2147/jpr.s590177",
+        "chunk_id": "abstract:doi:10.2147/jpr.s590177",
+        "score": 0.5434
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0188122",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0188122",
+        "score": 0.543395
+      },
+      {
+        "paper_id": "doi:10.1101/2023.05.20.541586",
+        "chunk_id": "abstract:doi:10.1101/2023.05.20.541586",
+        "score": 0.543366
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.106755",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.106755",
+        "score": 0.543354
+      },
+      {
+        "paper_id": "doi:10.5665/sleep.2552",
+        "chunk_id": "abstract:doi:10.5665/sleep.2552",
+        "score": 0.543274
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/34.1.73",
+        "chunk_id": "abstract:doi:10.1093/sleep/34.1.73",
+        "score": 0.543106
+      },
+      {
+        "paper_id": "doi:10.1017/cjn.2025.10485",
+        "chunk_id": "abstract:doi:10.1017/cjn.2025.10485",
+        "score": 0.543073
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci12040463",
+        "chunk_id": "abstract:doi:10.3390/brainsci12040463",
+        "score": 0.542882
+      },
+      {
+        "paper_id": "doi:10.3390/children9091322",
+        "chunk_id": "abstract:doi:10.3390/children9091322",
+        "score": 0.542745
+      },
+      {
+        "paper_id": "doi:10.1101/2022.02.28.482273",
+        "chunk_id": "abstract:doi:10.1101/2022.02.28.482273",
+        "score": 0.542675
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuron.2026.04.037",
+        "chunk_id": "abstract:doi:10.1016/j.neuron.2026.04.037",
+        "score": 0.542672
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/13.5.430",
+        "chunk_id": "abstract:doi:10.1093/sleep/13.5.430",
+        "score": 0.542662
+      },
+      {
+        "paper_id": "doi:10.1109/embc53108.2024.10782470",
+        "chunk_id": "abstract:doi:10.1109/embc53108.2024.10782470",
+        "score": 0.542509
+      },
+      {
+        "paper_id": "doi:10.1152/physiol.2023.38.s1.5731406",
+        "chunk_id": "abstract:doi:10.1152/physiol.2023.38.s1.5731406",
+        "score": 0.542466
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.1083-25.2025",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.1083-25.2025",
+        "score": 0.542408
+      },
+      {
+        "paper_id": "doi:10.2466/pms.1966.22.3.927",
+        "chunk_id": "abstract:doi:10.2466/pms.1966.22.3.927",
+        "score": 0.54239
+      },
+      {
+        "paper_id": "doi:10.1016/j.cub.2025.06.064",
+        "chunk_id": "abstract:doi:10.1016/j.cub.2025.06.064",
+        "score": 0.542384
+      },
+      {
+        "paper_id": "doi:10.1046/j.1365-2869.2002.00273.x",
+        "chunk_id": "abstract:doi:10.1046/j.1365-2869.2002.00273.x",
+        "score": 0.542319
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychores.2019.02.012",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychores.2019.02.012",
+        "score": 0.542288
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf056",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf056",
+        "score": 0.542275
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsag091.0350",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsag091.0350",
+        "score": 0.542261
+      },
+      {
+        "paper_id": "doi:10.3389/fnsys.2025.1639981",
+        "chunk_id": "abstract:doi:10.3389/fnsys.2025.1639981",
+        "score": 0.542259
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-024-63765-7",
+        "chunk_id": "abstract:doi:10.1038/s41598-024-63765-7",
+        "score": 0.542246
+      },
+      {
+        "paper_id": "doi:10.1152/physiol.00019.2024",
+        "chunk_id": "abstract:doi:10.1152/physiol.00019.2024",
+        "score": 0.542232
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2026.1795824",
+        "chunk_id": "abstract:doi:10.3389/fneur.2026.1795824",
+        "score": 0.542164
+      },
+      {
+        "paper_id": "doi:10.1164/ajrccm.159.1.9805074",
+        "chunk_id": "abstract:doi:10.1164/ajrccm.159.1.9805074",
+        "score": 0.541935
+      },
+      {
+        "paper_id": "doi:10.1111/j.1365-2869.2012.01002.x",
+        "chunk_id": "abstract:doi:10.1111/j.1365-2869.2012.01002.x",
+        "score": 0.541928
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsac224",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsac224",
+        "score": 0.541841
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2020.101305",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2020.101305",
+        "score": 0.541821
+      },
+      {
+        "paper_id": "doi:10.1164/ajrccm.161.2.9904031",
+        "chunk_id": "abstract:doi:10.1164/ajrccm.161.2.9904031",
+        "score": 0.541526
+      },
+      {
+        "paper_id": "doi:10.1111/jsr.13841",
+        "chunk_id": "abstract:doi:10.1111/jsr.13841",
+        "score": 0.541316
+      },
+      {
+        "paper_id": "doi:10.1016/j.brainresbull.2023.110776",
+        "chunk_id": "abstract:doi:10.1016/j.brainresbull.2023.110776",
+        "score": 0.541256
+      },
+      {
+        "paper_id": "doi:10.1164/ajrccm.163.2.9912128",
+        "chunk_id": "abstract:doi:10.1164/ajrccm.163.2.9912128",
+        "score": 0.540631
+      },
+      {
+        "paper_id": "doi:10.1161/atvbaha.125.322880",
+        "chunk_id": "abstract:doi:10.1161/atvbaha.125.322880",
+        "score": 0.540593
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-026-45366-8",
+        "chunk_id": "abstract:doi:10.1038/s41598-026-45366-8",
+        "score": 0.540589
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.106519",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.106519",
+        "score": 0.540515
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0228473",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0228473",
+        "score": 0.540475
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.3524-04.2004",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.3524-04.2004",
+        "score": 0.540298
+      },
+      {
+        "paper_id": "doi:10.1093/sleepadvances/zpae055",
+        "chunk_id": "abstract:doi:10.1093/sleepadvances/zpae055",
+        "score": 0.540241
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsad077.0951",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsad077.0951",
+        "score": 0.540192
+      },
+      {
+        "paper_id": "doi:10.3389/fnins.2022.814745",
+        "chunk_id": "abstract:doi:10.3389/fnins.2022.814745",
+        "score": 0.540082
+      },
+      {
+        "paper_id": "doi:10.2147/ndt.s191441",
+        "chunk_id": "abstract:doi:10.2147/ndt.s191441",
+        "score": 0.540025
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/28.11.1446",
+        "chunk_id": "abstract:doi:10.1093/sleep/28.11.1446",
+        "score": 0.539957
+      },
+      {
+        "paper_id": "doi:10.2147/dddt.s566561",
+        "chunk_id": "abstract:doi:10.2147/dddt.s566561",
+        "score": 0.539922
+      },
+      {
+        "paper_id": "doi:10.3390/clockssleep2030023",
+        "chunk_id": "abstract:doi:10.3390/clockssleep2030023",
+        "score": 0.539918
+      },
+      {
+        "paper_id": "doi:10.1002/ana.25300",
+        "chunk_id": "abstract:doi:10.1002/ana.25300",
+        "score": 0.539799
+      },
+      {
+        "paper_id": "doi:10.1111/j.1469-7793.1997.851ba.x",
+        "chunk_id": "abstract:doi:10.1111/j.1469-7793.1997.851ba.x",
+        "score": 0.539727
+      },
+      {
+        "paper_id": "doi:10.2174/1874620900902010020",
+        "chunk_id": "abstract:doi:10.2174/1874620900902010020",
+        "score": 0.539712
+      },
+      {
+        "paper_id": "doi:10.1038/s41398-021-01619-w",
+        "chunk_id": "abstract:doi:10.1038/s41398-021-01619-w",
+        "score": 0.539712
+      },
+      {
+        "paper_id": "doi:10.1093/oso/9780198864998.001.0001",
+        "chunk_id": "abstract:doi:10.1093/oso/9780198864998.001.0001",
+        "score": 0.539611
+      },
+      {
+        "paper_id": "doi:10.1097/wnr.0b013e32833655c4",
+        "chunk_id": "abstract:doi:10.1097/wnr.0b013e32833655c4",
+        "score": 0.539607
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-020-79989-2",
+        "chunk_id": "abstract:doi:10.1038/s41598-020-79989-2",
+        "score": 0.539563
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsac079.655",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsac079.655",
+        "score": 0.539485
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-020-72802-0",
+        "chunk_id": "abstract:doi:10.1038/s41598-020-72802-0",
+        "score": 0.539395
+      },
+      {
+        "paper_id": "doi:10.1155/2017/4797545",
+        "chunk_id": "abstract:doi:10.1155/2017/4797545",
+        "score": 0.539329
+      },
+      {
+        "paper_id": "doi:10.1097/yic.0b013e32832e9b08",
+        "chunk_id": "abstract:doi:10.1097/yic.0b013e32832e9b08",
+        "score": 0.539244
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2020.117155",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2020.117155",
+        "score": 0.539191
+      },
+      {
+        "paper_id": "doi:10.1155/2013/932790",
+        "chunk_id": "abstract:doi:10.1155/2013/932790",
+        "score": 0.53914
+      },
+      {
+        "paper_id": "doi:10.1016/j.brainresbull.2026.112041",
+        "chunk_id": "abstract:doi:10.1016/j.brainresbull.2026.112041",
+        "score": 0.539094
+      },
+      {
+        "paper_id": "doi:10.1093/cercor/bhq064",
+        "chunk_id": "abstract:doi:10.1093/cercor/bhq064",
+        "score": 0.53906
+      },
+      {
+        "paper_id": "doi:10.1101/2020.09.01.274977",
+        "chunk_id": "abstract:doi:10.1101/2020.09.01.274977",
+        "score": 0.539038
+      },
+      {
+        "paper_id": "doi:10.1002/brb3.70785",
+        "chunk_id": "abstract:doi:10.1002/brb3.70785",
+        "score": 0.538923
+      },
+      {
+        "paper_id": "doi:10.1038/s44323-024-00017-x",
+        "chunk_id": "abstract:doi:10.1038/s44323-024-00017-x",
+        "score": 0.538826
+      },
+      {
+        "paper_id": "doi:10.1212/01.con.0000522244.13784.bf",
+        "chunk_id": "abstract:doi:10.1212/01.con.0000522244.13784.bf",
+        "score": 0.538819
+      },
+      {
+        "paper_id": "doi:10.1016/j.pscychresns.2026.112152",
+        "chunk_id": "abstract:doi:10.1016/j.pscychresns.2026.112152",
+        "score": 0.538763
+      },
+      {
+        "paper_id": "doi:10.33093/ijoras.2025.7.1.11",
+        "chunk_id": "abstract:doi:10.33093/ijoras.2025.7.1.11",
+        "score": 0.538753
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0137297",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0137297",
+        "score": 0.538703
+      },
+      {
+        "paper_id": "doi:10.1002/hbm.23596",
+        "chunk_id": "abstract:doi:10.1002/hbm.23596",
+        "score": 0.538675
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsae067.0277",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsae067.0277",
+        "score": 0.538674
+      },
+      {
+        "paper_id": "doi:10.1186/1471-2202-15-88",
+        "chunk_id": "abstract:doi:10.1186/1471-2202-15-88",
+        "score": 0.538658
+      },
+      {
+        "paper_id": "doi:10.1016/j.eplepsyres.2026.107753",
+        "chunk_id": "abstract:doi:10.1016/j.eplepsyres.2026.107753",
+        "score": 0.538625
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.1004-10.2010",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.1004-10.2010",
+        "score": 0.538437
+      },
+      {
+        "paper_id": "doi:10.1016/j.cub.2024.05.075",
+        "chunk_id": "abstract:doi:10.1016/j.cub.2024.05.075",
+        "score": 0.538379
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf090.0098",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf090.0098",
+        "score": 0.538359
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsab145",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsab145",
+        "score": 0.538348
+      },
+      {
+        "paper_id": "doi:10.1177/0269881115581963",
+        "chunk_id": "abstract:doi:10.1177/0269881115581963",
+        "score": 0.538257
+      },
+      {
+        "paper_id": "doi:10.1038/s41598-020-66066-x",
+        "chunk_id": "abstract:doi:10.1038/s41598-020-66066-x",
+        "score": 0.538152
+      },
+      {
+        "paper_id": "doi:10.3390/jcm14197119",
+        "chunk_id": "abstract:doi:10.3390/jcm14197119",
+        "score": 0.538118
+      },
+      {
+        "paper_id": "doi:10.3390/fractalfract10030199",
+        "chunk_id": "abstract:doi:10.3390/fractalfract10030199",
+        "score": 0.538117
+      },
+      {
+        "paper_id": "doi:10.3389/fpsyt.2022.1050403",
+        "chunk_id": "abstract:doi:10.3389/fpsyt.2022.1050403",
+        "score": 0.538106
+      },
+      {
+        "paper_id": "doi:10.1152/jn.1985.54.6.1473",
+        "chunk_id": "abstract:doi:10.1152/jn.1985.54.6.1473",
+        "score": 0.538046
+      },
+      {
+        "paper_id": "doi:10.1016/j.cnp.2026.05.001",
+        "chunk_id": "abstract:doi:10.1016/j.cnp.2026.05.001",
+        "score": 0.538045
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.0476-18.2018",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.0476-18.2018",
+        "score": 0.53803
+      },
+      {
+        "paper_id": "title:287bfa7d1f0597d56104c79a19aba83500944737",
+        "chunk_id": "abstract:title:287bfa7d1f0597d56104c79a19aba83500944737",
+        "score": 0.538001
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2024.08.031",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2024.08.031",
+        "score": 0.537953
+      },
+      {
+        "paper_id": "doi:10.1371/journal.pone.0237622",
+        "chunk_id": "abstract:doi:10.1371/journal.pone.0237622",
+        "score": 0.537881
+      },
+      {
+        "paper_id": "doi:10.1016/j.pscychresns.2026.112283",
+        "chunk_id": "abstract:doi:10.1016/j.pscychresns.2026.112283",
+        "score": 0.537796
+      },
+      {
+        "paper_id": "title:3ae1ee831dabb8fdb72bf279d3ebc52a0ea1a83c",
+        "chunk_id": "abstract:title:3ae1ee831dabb8fdb72bf279d3ebc52a0ea1a83c",
+        "score": 0.537761
+      },
+      {
+        "paper_id": "doi:10.1101/2024.07.03.601820",
+        "chunk_id": "abstract:doi:10.1101/2024.07.03.601820",
+        "score": 0.537548
+      },
+      {
+        "paper_id": "doi:10.1126/science.adm8203",
+        "chunk_id": "abstract:doi:10.1126/science.adm8203",
+        "score": 0.537465
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/15.4.337",
+        "chunk_id": "abstract:doi:10.1093/sleep/15.4.337",
+        "score": 0.537398
+      },
+      {
+        "paper_id": "doi:10.2147/nss.s515809",
+        "chunk_id": "abstract:doi:10.2147/nss.s515809",
+        "score": 0.537171
+      },
+      {
+        "paper_id": "doi:10.1038/s41586-025-10059-1",
+        "chunk_id": "abstract:doi:10.1038/s41586-025-10059-1",
+        "score": 0.537062
+      },
+      {
+        "paper_id": "doi:10.1038/s41380-024-02778-0",
+        "chunk_id": "abstract:doi:10.1038/s41380-024-02778-0",
+        "score": 0.537041
+      },
+      {
+        "paper_id": "doi:10.1038/s41467-026-73997-y",
+        "chunk_id": "abstract:doi:10.1038/s41467-026-73997-y",
+        "score": 0.536831
+      },
+      {
+        "paper_id": "doi:10.3389/fphys.2017.00624",
+        "chunk_id": "abstract:doi:10.3389/fphys.2017.00624",
+        "score": 0.536746
+      },
+      {
+        "paper_id": "doi:10.1016/j.sleep.2025.108728",
+        "chunk_id": "abstract:doi:10.1016/j.sleep.2025.108728",
+        "score": 0.536673
+      },
+      {
+        "paper_id": "doi:10.1186/s13195-019-0547-3",
+        "chunk_id": "abstract:doi:10.1186/s13195-019-0547-3",
+        "score": 0.536549
+      },
+      {
+        "paper_id": "doi:10.1002/hsr2.71796",
+        "chunk_id": "abstract:doi:10.1002/hsr2.71796",
+        "score": 0.536507
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.0617-23.2024",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.0617-23.2024",
+        "score": 0.536443
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/zsaf046",
+        "chunk_id": "abstract:doi:10.1093/sleep/zsaf046",
+        "score": 0.536432
+      },
+      {
+        "paper_id": "doi:10.1093/braincomms/fcab108",
+        "chunk_id": "abstract:doi:10.1093/braincomms/fcab108",
+        "score": 0.536369
+      },
+      {
+        "paper_id": "doi:10.1213/ane.0000000000006739",
+        "chunk_id": "abstract:doi:10.1213/ane.0000000000006739",
+        "score": 0.536364
+      },
+      {
+        "paper_id": "doi:10.1007/s11920-019-1013-4",
+        "chunk_id": "abstract:doi:10.1007/s11920-019-1013-4",
+        "score": 0.536319
+      },
+      {
+        "paper_id": "doi:10.1109/embc46164.2021.9631064",
+        "chunk_id": "abstract:doi:10.1109/embc46164.2021.9631064",
+        "score": 0.536282
+      },
+      {
+        "paper_id": "doi:10.1152/physrev.00042.2018",
+        "chunk_id": "abstract:doi:10.1152/physrev.00042.2018",
+        "score": 0.536281
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.2197-13.2013",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.2197-13.2013",
+        "score": 0.536254
+      },
+      {
+        "paper_id": "doi:10.1055/s-0046-1820471",
+        "chunk_id": "abstract:doi:10.1055/s-0046-1820471",
+        "score": 0.536233
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2023.120340",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2023.120340",
+        "score": 0.536173
+      },
+      {
+        "paper_id": "doi:10.1016/j.smrv.2025.102155",
+        "chunk_id": "abstract:doi:10.1016/j.smrv.2025.102155",
+        "score": 0.536142
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.0324-20.2020",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.0324-20.2020",
+        "score": 0.536112
+      },
+      {
+        "paper_id": "doi:10.1093/sleep/16.2.100",
+        "chunk_id": "abstract:doi:10.1093/sleep/16.2.100",
+        "score": 0.536026
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.0906-06.2006",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.0906-06.2006",
+        "score": 0.535973
+      },
+      {
+        "paper_id": "doi:10.1016/j.isci.2026.114882",
+        "chunk_id": "abstract:doi:10.1016/j.isci.2026.114882",
+        "score": 0.535898
+      },
+      {
+        "paper_id": "doi:10.1016/j.bbr.2022.114105",
+        "chunk_id": "abstract:doi:10.1016/j.bbr.2022.114105",
+        "score": 0.535897
+      },
+      {
+        "paper_id": "doi:10.1523/jneurosci.1374-24.2024",
+        "chunk_id": "abstract:doi:10.1523/jneurosci.1374-24.2024",
+        "score": 0.535879
+      },
+      {
+        "paper_id": "doi:10.3390/brainsci13010146",
+        "chunk_id": "abstract:doi:10.3390/brainsci13010146",
+        "score": 0.53583
+      },
+      {
+        "paper_id": "doi:10.1016/j.cub.2020.09.090",
+        "chunk_id": "abstract:doi:10.1016/j.cub.2020.09.090",
+        "score": 0.53579
+      },
+      {
+        "paper_id": "doi:10.1016/j.neuroimage.2021.117850",
+        "chunk_id": "abstract:doi:10.1016/j.neuroimage.2021.117850",
+        "score": 0.535714
+      },
+      {
+        "paper_id": "doi:10.1210/jc.2015-1844",
+        "chunk_id": "abstract:doi:10.1210/jc.2015-1844",
+        "score": 0.535701
+      },
+      {
+        "paper_id": "doi:10.1093/brain/awh425",
+        "chunk_id": "abstract:doi:10.1093/brain/awh425",
+        "score": 0.535636
+      },
+      {
+        "paper_id": "doi:10.1016/j.jpsychires.2019.03.009",
+        "chunk_id": "abstract:doi:10.1016/j.jpsychires.2019.03.009",
+        "score": 0.535469
+      },
+      {
+        "paper_id": "doi:10.1016/j.dcn.2025.101525",
+        "chunk_id": "abstract:doi:10.1016/j.dcn.2025.101525",
+        "score": 0.535465
+      },
+      {
+        "paper_id": "doi:10.3389/fneur.2012.00067",
+        "chunk_id": "abstract:doi:10.3389/fneur.2012.00067",
+        "score": 0.535437
+      },
+      {
+        "paper_id": "doi:10.1038/s41467-025-62265-0",
+        "chunk_id": "abstract:doi:10.1038/s41467-025-62265-0",
+        "score": 0.535424
+      },
+      {
+        "paper_id": "doi:10.1111/j.1365-2842.2011.02203.x",
+        "chunk_id": "abstract:doi:10.1111/j.1365-2842.2011.02203.x",
+        "score": 0.535319
+      },
+      {
+        "paper_id": "doi:10.21203/rs.3.rs-7159794/v1",
+        "chunk_id": "abstract:doi:10.21203/rs.3.rs-7159794/v1",
+        "score": 0.535319
+      },
+      {
+        "paper_id": "doi:10.1038/s41380-025-02924-2",
+        "chunk_id": "abstract:doi:10.1038/s41380-025-02924-2",
+        "score": 0.535231
+      },
+      {
+        "paper_id": "doi:10.1152/physrev.00032.2011",
+        "chunk_id": "abstract:doi:10.1152/physrev.00032.2011",
+        "score": 0.535097
+      },
+      {
+        "paper_id": "doi:10.1089/neu.2023.0647",
+        "chunk_id": "abstract:doi:10.1089/neu.2023.0647",
+        "score": 0.534997
+      }
+    ],
+    "provider_counts": {
+      "literature_db_rag": 1000
+    },
+    "query_count": 1,
+    "raw_count": 7176,
+    "deduplicated_count": 1000,
+    "warnings": [],
+    "final_literature_count": 1000
+  },
+  "notes": "Phase 1 Grounding Corpus v1"
+}

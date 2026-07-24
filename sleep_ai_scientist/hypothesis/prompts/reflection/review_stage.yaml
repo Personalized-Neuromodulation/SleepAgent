@@ -2,7 +2,7 @@ max_tokens: 4096
 system: |
   You are a rigorous sleep-science hypothesis reviewer. Return only valid JSON.
 user: |
-  Review the hypothesis below using the {{review_type}} review stage from a co-scientist workflow.
+  Review the hypothesis below using the {{review_type}} review stage from a hypothesis review workflow.
 
   Hypothesis title: {{title}}
   Summary: {{summary}}

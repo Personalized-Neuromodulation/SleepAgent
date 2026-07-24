@@ -1,242 +1,311 @@
 [
   {
-    "hypothesis_id": "hypothesis_1502c9c78b6b",
+    "hypothesis_id": "hypothesis_4ecf9cc79ed6",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Spindle Modulation via Thalamocortical Coupling and White Matter Integrity in Sleep Phenotypes",
-    "summary": "This hypothesis integrates thalamocortical coupling and white matter integrity to explain spindle modulation and sleep phenotypes, leveraging mechanisms from both P1 and P2.",
-    "content": "The hypothesis proposes that thalamocortical coupling, modulated by both the refractory period of thalamic spindles and white matter fractional anisotropy (FA), influences spindle density and topographical patterns, thereby shaping sleep phenotypes. Epileptic thalamic spikes increase the refractory period, while FA in white matter tracts modulates the topographical distribution of spindle subtypes. Together, these factors interact to influence spindle density and sleep architecture.",
-    "rationale": "By cross-pollinating P1's refractory period mechanism with P2's FA modulation, the hypothesis strengthens causal coherence and grounding in measurable variables (spindle density, FA, refractory period). It integrates both thalamocortical pathways and white matter integrity as dual modulators of spindle topography and density.",
-    "experimental_plan": "Combine EEG-fMRI and DTI in patients with EE-SWAS during sleep. Measure thalamic spindle refractory period and spindle density via EEG-fMRI pre- and post-epileptic spikes. Concurrently assess FA in thalamocortical white matter tracts using DTI. Correlate FA values with topographical spindle patterns and refractory period changes across slow and fast spindle subtypes.",
-    "novelty_assessment": "Novel integration of refractory period and FA as dual modulators of spindle topography and density, extending beyond individual mechanisms in P1 and P2.",
+    "title": "Thalamocortical Network Dynamics and Insomnia Severity",
+    "summary": "This hypothesis proposes that disrupted thalamocortical coupling during NREM sleep is a key mechanism linking insomnia severity to impaired cognitive functions.",
+    "content": "Disrupted thalamocortical coupling during NREM sleep, characterized by reduced thalamus_DMN_FC, leads to increased insomnia severity through impaired synchronization of slow waves and spindles, resulting in cognitive deficits.",
+    "rationale": "Evidence shows that thalamocortical coupling is critical for spindle generation and slow wave activity. Disrupted coupling in insomnia patients (as indicated by reduced thalamus_DMN_FC) correlates with reduced spindle density and impaired cognitive functions, suggesting a mechanistic link between thalamocortical dynamics and insomnia severity.",
+    "experimental_plan": "Compare thalamus_DMN_FC in insomnia patients vs controls during NREM sleep using fMRI and EEG. Measure spindle density and slow wave activity using PSG. Assess cognitive performance using standardized tests.",
+    "novelty_assessment": "Novel connection between thalamocortical coupling and insomnia severity, integrating network dynamics with cognitive outcomes.",
     "key_assumptions": [
-      "Epileptic spikes modulate refractory period and spindle density via thalamocortical pathways",
-      "FA in white matter tracts modulates topographical spindle patterns"
+      "Thalamocortical coupling is essential for spindle generation",
+      "Reduced thalamus_DMN_FC directly impacts cognitive functions"
     ],
     "citations": [
       "E1",
       "E2",
-      "E3",
-      "E4"
+      "E3"
+    ],
+    "generation_strategy": "literature_exploration",
+    "generation_round": 1,
+    "elo_rating": 1606.0,
+    "rating_deviation": 133.0,
+    "volatility": 0.059994,
+    "matches_played": 7,
+    "wins": 7,
+    "losses": 0,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_c65ed8c8481f",
+        "E_298c8f5f337c",
+        "E_c111ff4a9c43",
+        "E_60727a02e87c"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "Insomnia severity",
+      "neural_mechanism": "Thalamocortical coupling disruption",
+      "brain_regions": [
+        "Thalamus",
+        "DMN"
+      ],
+      "brain_networks": [
+        "Default Mode Network"
+      ],
+      "modalities": [
+        "fMRI",
+        "EEG",
+        "PSG",
+        "Scale"
+      ],
+      "measurable_variables": [
+        "thalamus_DMN_FC",
+        "spindle density",
+        "slow wave activity",
+        "cognitive performance"
+      ],
+      "directional_prediction": "Reduced thalamus_DMN_FC in insomnia patients compared to controls during NREM sleep.",
+      "falsification_criteria": "No difference in thalamus_DMN_FC between insomnia patients and controls during NREM sleep.",
+      "knowledge_graph_paths": [
+        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia severity"
+      ]
+    },
+    "created_at": "2026-07-23T10:07:45.990041+00:00",
+    "updated_at": "2026-07-23T10:30:38.319121+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_512d0f165139",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamocortical Coupling and REM-NREM Switching in Insomnia",
+    "summary": "This hypothesis integrates thalamocortical coupling during NREM sleep with REM-NREM switching to explain insomnia severity and cognitive impairments.",
+    "content": "The hypothesis proposes that disrupted thalamocortical coupling during NREM sleep leads to fragmented NREM and delayed REM onset, thereby exacerbating insomnia severity and cognitive impairments. This is achieved through the interaction of spindle generation, slow wave activity, and REM-NREM switching.",
+    "rationale": "The evolution combines the mechanisms from P1 and P2, enhancing the coherence by linking thalamocortical coupling with REM-NREM switching and cognitive impairments. It strengthens the evidence grounding by incorporating spindle density and slow wave activity as measurable variables.",
+    "experimental_plan": "Compare thalamus_DMN_FC in insomnia patients vs controls during NREM sleep using fMRI and EEG. Measure spindle density, slow wave activity, and REM latency using PSG. Assess cognitive performance using standardized tests and correlate with REM-NREM transitions.",
+    "novelty_assessment": "Introduces the integration of REM-NREM switching with thalamocortical coupling, enhancing the mechanistic link between NREM fragmentation and REM latency.",
+    "key_assumptions": [
+      "Disrupted thalamocortical coupling during NREM leads to fragmented NREM and delayed REM onset.",
+      "Spindle density and slow wave activity are critical mediators of cognitive impairments in insomnia."
+    ],
+    "citations": [
+      "evidence from knowledge graph on thalamocortical coupling and spindle generation",
+      "findings on REM latency and NREM stability"
     ],
     "generation_strategy": "evolution:cross_pollination",
     "generation_round": 2,
-    "elo_rating": 1461.0,
-    "rating_deviation": 155.0,
-    "volatility": 0.059998,
-    "matches_played": 3,
-    "wins": 2,
-    "losses": 0,
-    "draws": 1,
+    "elo_rating": 1439.0,
+    "rating_deviation": 147.0,
+    "volatility": 0.059997,
+    "matches_played": 4,
+    "wins": 3,
+    "losses": 1,
+    "draws": 0,
     "status": "active",
     "parent_ids": [
-      "hypothesis_a90cce5d491f",
-      "hypothesis_3e770bf1084f",
-      "hypothesis_7cb3d9619bd3"
+      "hypothesis_4ecf9cc79ed6",
+      "hypothesis_d4273170d49f",
+      "hypothesis_7b51d5745535"
     ],
     "metadata": {
       "evolved_from": [
-        "hypothesis_a90cce5d491f",
-        "hypothesis_3e770bf1084f",
-        "hypothesis_7cb3d9619bd3"
+        "hypothesis_4ecf9cc79ed6",
+        "hypothesis_d4273170d49f",
+        "hypothesis_7b51d5745535"
       ],
       "llm_provider": "ollama",
       "llm_model": "richardyoung/qwen3-14b-abliterated:latest"
     },
-    "created_at": "2026-07-23T06:15:25.832880+00:00",
-    "updated_at": "2026-07-23T06:23:25.037492+00:00"
+    "created_at": "2026-07-23T10:21:52.438662+00:00",
+    "updated_at": "2026-07-23T10:31:17.753378+00:00"
   },
   {
-    "hypothesis_id": "hypothesis_a90cce5d491f",
+    "hypothesis_id": "hypothesis_d4273170d49f",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Spindle Refractory Period Modulation via Thalamocortical Coupling",
-    "summary": "Epileptic thalamic spikes increase the thalamic spindle refractory period, modulating thalamocortical coupling and spindle density during sleep.",
-    "content": "Epileptic spikes in the thalamus increase the thalamic spindle refractory period, thereby modulating thalamocortical coupling and reducing spindle density during sleep.",
-    "rationale": "Evidence from [E1] and [E4] shows that thalamic spikes increase the refractory period (P ≈ 0), while [E2] and [E3] demonstrate that thalamic spikes downregulate spindle density (P < 0.01). These findings suggest a direct link between thalamic activity and spindle modulation through thalamocortical pathways.",
-    "experimental_plan": "Measure thalamic spindle refractory period and spindle density using EEG-fMRI in patients with EE-SWAS during sleep, comparing pre- and post-epileptic spike occurrences.",
-    "novelty_assessment": "Novel integration of refractory period modulation with thalamocortical coupling and spindle density, linking thalamic spikes to sleep spindle dynamics.",
+    "title": "Thalamocortical Coupling and REM-NREM Switching in Insomnia",
+    "summary": "This hypothesis explores the relationship between disrupted thalamocortical coupling during NREM sleep and REM-NREM switching, linking it to insomnia severity and cognitive impairments.",
+    "content": "Disrupted thalamocortical coupling during NREM sleep contributes to impaired REM-NREM switching, exacerbating insomnia severity and cognitive impairments.",
+    "rationale": "Evidence from the knowledge graph shows that thalamocortical coupling is linked to spindle generation and NREM stability, while REM-NREM switching is associated with REM latency. Disrupted coupling may lead to fragmented NREM and delayed REM onset, worsening insomnia. The prior hypotheses on thalamocortical dynamics and insomnia severity provide a foundation for extending this to REM-NREM interactions.",
+    "experimental_plan": "Analyze thalamocortical coupling during NREM sleep using EEG and fMRI in insomnia patients, comparing REM latency and spindle density with controls. Use PSG to measure REM-NREM transitions and correlate with thalamocortical connectivity metrics.",
+    "novelty_assessment": "Novel in connecting thalamocortical coupling during NREM to REM-NREM switching, integrating both NREM stability and REM dynamics in insomnia.",
     "key_assumptions": [
-      "Thalamic spikes directly influence refractory period via thalamocortical pathways",
-      "Reduced spindle density is a downstream effect of refractory period modulation"
-    ],
-    "citations": [
-      "paper_id from E1",
-      "paper_id from E2",
-      "paper_id from E3",
-      "paper_id from E4"
-    ],
-    "generation_strategy": "literature_exploration",
-    "generation_round": 1,
-    "elo_rating": 1422.0,
-    "rating_deviation": 138.0,
-    "volatility": 0.059997,
-    "matches_played": 5,
-    "wins": 3,
-    "losses": 1,
-    "draws": 1,
-    "status": "active",
-    "parent_ids": [],
-    "metadata": {
-      "evidence_ids": [
-        "E_0ac918c335eb",
-        "E_3a19c07ee427",
-        "E_b6befad4d320",
-        "E_69829639c773"
-      ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "EE-SWAS",
-      "neural_mechanism": "Thalamocortical coupling",
-      "brain_regions": [
-        "thalamus"
-      ],
-      "brain_networks": [
-        "thalamocortical network"
-      ],
-      "modalities": [
-        "EEG",
-        "fMRI"
-      ],
-      "measurable_variables": [
-        "thalamic spindle refractory period",
-        "spindle density"
-      ],
-      "directional_prediction": "Increased thalamic spikes lead to increased refractory period and decreased spindle density.",
-      "falsification_criteria": "No change in refractory period or spindle density following thalamic spike modulation.",
-      "knowledge_graph_paths": [
-        "thalamocortical coupling -> thalamus_DMN_FC -> EE-SWAS",
-        "spindle generation -> spindle density -> EE-SWAS"
-      ]
-    },
-    "created_at": "2026-07-23T06:04:36.767888+00:00",
-    "updated_at": "2026-07-23T06:20:28.695292+00:00"
-  },
-  {
-    "hypothesis_id": "hypothesis_3e770bf1084f",
-    "session_id": "sleep_hypothesis_session",
-    "title": "White Matter Integrity Modulates Thalamocortical Spindle Overlap via Fractional Anisotropy",
-    "summary": "This hypothesis proposes that fractional anisotropy (FA) in white matter tracts modulates the topographical patterns of thalamocortical spindle overlap, influencing the differentiation between slow and fast spindle subtypes during sleep.",
-    "content": "The hypothesis suggests that variations in white matter integrity, as measured by fractional anisotropy (FA) from diffusion tensor imaging (DTI), modulate the topographical patterns of thalamocortical spindle overlap, thereby influencing the differentiation between slow and fast spindle subtypes during slow wave sleep. This modulation is expected to be most pronounced in regions with high thalamocortical connectivity, such as the default mode network.",
-    "rationale": "Evidence from the knowledge graph indicates that white matter integrity is linked to spindle subtypes through FA measurements. The topographical patterns of thalamocortical spindle overlap, as observed in evidence, suggest a structural basis in white matter tracts. The integration of FA with spindle overlap patterns provides a novel pathway to explore how white matter integrity influences spindle differentiation.",
-    "experimental_plan": "Conduct a DTI analysis to measure FA in white matter tracts associated with thalamocortical pathways. Concurrently record EEG during slow wave sleep to measure spindle overlap patterns. Use statistical models to correlate FA values with the topographical distribution of slow and fast spindle subtypes.",
-    "novelty_assessment": "This hypothesis introduces a new pathway linking white matter integrity (FA) with thalamocortical spindle overlap, distinct from prior hypotheses that focused on thalamic refractory periods and spindle modulation through thalamocortical coupling.",
-    "key_assumptions": [
-      "FA in thalamocortical white matter tracts directly influences the topographical distribution of spindle overlap.",
-      "The default mode network is a key region for thalamocortical spindle overlap modulation."
+      "Thalamocortical coupling during NREM sleep is critical for smooth REM-NREM transitions.",
+      "Disrupted coupling leads to fragmented NREM and delayed REM onset."
     ],
     "citations": [
       "paper_id values from the evidence"
     ],
-    "generation_strategy": "research_expansion",
-    "generation_round": 4,
-    "elo_rating": 1402.0,
-    "rating_deviation": 137.0,
-    "volatility": 0.059994,
-    "matches_played": 5,
-    "wins": 2,
-    "losses": 1,
-    "draws": 2,
+    "generation_strategy": "assumption_chaining",
+    "generation_round": 3,
+    "elo_rating": 1359.0,
+    "rating_deviation": 124.0,
+    "volatility": 0.059995,
+    "matches_played": 7,
+    "wins": 4,
+    "losses": 3,
+    "draws": 0,
     "status": "active",
     "parent_ids": [],
     "metadata": {
       "evidence_ids": [
-        "E_8a7f67369d5e",
-        "E_0f81122479f4",
-        "E_0d6557b90c05",
-        "E_c8e1994a37e5"
+        "E_0851ca34e9d9",
+        "E_f439a6759569",
+        "E_cd0f672866cc",
+        "E_279bbc5a45d1"
       ],
       "llm_provider": "ollama",
       "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
       "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "slow wave sleep",
-      "neural_mechanism": "thalamocortical spindle overlap",
+      "sleep_phenotype": "Insomnia severity",
+      "neural_mechanism": "Thalamocortical coupling",
       "brain_regions": [
-        "default mode network"
+        "Thalamus",
+        "Cortex"
       ],
       "brain_networks": [
-        "default mode network"
+        "Default Mode Network (DMN)"
       ],
       "modalities": [
-        "DTI",
-        "EEG"
+        "PSG",
+        "EEG",
+        "fMRI"
       ],
       "measurable_variables": [
-        "fractional anisotropy",
-        "spindle overlap patterns"
+        "REM latency",
+        "Spindle density",
+        "Thalamocortical connectivity"
       ],
-      "directional_prediction": "Higher FA in thalamocortical white matter tracts correlates with distinct topographical patterns of thalamocortical spindle overlap, differentiating slow and fast spindle subtypes.",
-      "falsification_criteria": "If FA values do not correlate with the topographical distribution of slow and fast spindle subtypes, or if the default mode network is not a significant region for spindle overlap modulation.",
+      "directional_prediction": "Insomnia patients will show reduced thalamocortical coupling during NREM, leading to increased REM latency and fragmented NREM.",
+      "falsification_criteria": "If thalamocortical coupling during NREM is intact in insomnia patients, or REM latency is not correlated with spindle density.",
       "knowledge_graph_paths": [
-        "white matter integrity -> FA -> slow wave sleep"
+        "thalamocortical coupling -> spindle generation -> NREM stability",
+        "REM_NREM_switching -> REM latency -> insomnia severity"
       ]
     },
-    "created_at": "2026-07-23T06:07:01.383883+00:00",
-    "updated_at": "2026-07-23T06:23:11.620473+00:00"
+    "created_at": "2026-07-23T10:09:14.797917+00:00",
+    "updated_at": "2026-07-23T10:31:02.927499+00:00"
   },
   {
-    "hypothesis_id": "hypothesis_7cb3d9619bd3",
+    "hypothesis_id": "hypothesis_7b51d5745535",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Spindle Modulation via Thalamocortical Coupling in Sleep Phenotypes",
-    "summary": "This hypothesis explores how thalamic spindle modulation through thalamocortical coupling influences sleep phenotypes, integrating evidence from spindle activity and thalamocortical functional connectivity.",
-    "content": "Thalamic spindle modulation via thalamocortical coupling is a critical mechanism in shaping sleep phenotypes, particularly in the context of spindle density and functional connectivity within the default mode network.",
-    "rationale": "The evidence highlights the role of thalamocortical coupling in modulating spindle activity and its impact on sleep phenotypes. The integration of spindle density and default mode network connectivity provides a pathway to understand how these factors interact during sleep.",
-    "experimental_plan": "Analyze the relationship between thalamocortical functional connectivity (thalamus_DMN_FC) and spindle density across different age groups, using PSG and fMRI data.",
-    "novelty_assessment": "This hypothesis introduces a more comprehensive model by integrating the default mode network and age as a confound, offering a novel perspective on thalamocortical coupling's role in sleep.",
+    "title": "Thalamocortical Network Dynamics and Insomnia Severity",
+    "summary": "This hypothesis explores the relationship between disrupted thalamocortical coupling during NREM sleep and insomnia severity, linking it to impaired cognitive functions.",
+    "content": "Disrupted thalamocortical coupling during NREM sleep is a key mechanism linking insomnia severity to impaired cognitive functions.",
+    "rationale": "Evidence from the knowledge graph shows that thalamocortical coupling is associated with spindle generation and slow-wave activity, which are disrupted in insomnia. The correlation between spindle characteristics and sleep quality further supports this link.",
+    "experimental_plan": "Analyze the correlation between thalamocortical coupling metrics (from EEG and fMRI) and insomnia severity scores, while controlling for medication and comorbid conditions.",
+    "novelty_assessment": "This hypothesis integrates both thalamocortical dynamics and cognitive functions, providing a more comprehensive understanding of insomnia's neural mechanisms.",
     "key_assumptions": [
-      "Thalamocortical coupling modulates spindle density.",
-      "Age influences thalamocortical coupling and spindle activity."
+      "Thalamocortical coupling is disrupted in insomnia.",
+      "Disruption in thalamocortical coupling directly affects cognitive functions."
     ],
     "citations": [
-      "evidence_id_1",
-      "evidence_id_2"
+      "evidence_id1",
+      "evidence_id2"
     ],
     "generation_strategy": "scientific_debate",
     "generation_round": 2,
-    "elo_rating": 1124.0,
-    "rating_deviation": 141.0,
+    "elo_rating": 1218.0,
+    "rating_deviation": 124.0,
     "volatility": 0.059997,
-    "matches_played": 5,
-    "wins": 0,
+    "matches_played": 7,
+    "wins": 2,
     "losses": 5,
     "draws": 0,
     "status": "active",
     "parent_ids": [],
     "metadata": {
       "evidence_ids": [
-        "E_eb78b2a99f74",
-        "E_cfa9ffbfaf06",
-        "E_940ea2cf4786",
-        "E_97b3ac438fa8"
+        "E_e48e26fe50de",
+        "E_1f46709ddd97",
+        "E_261ecf08946b",
+        "E_aaac250ed3e6"
       ],
       "llm_provider": "ollama",
       "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
       "llm_strategy_detail": "single_turn_strict_debate_json",
-      "sleep_phenotype": "spindle density",
-      "neural_mechanism": "thalamocortical coupling",
+      "sleep_phenotype": "Insomnia severity",
+      "neural_mechanism": "Thalamocortical coupling",
       "brain_regions": [
-        "thalamus",
-        "default mode network"
+        "Thalamus",
+        "Cortex"
       ],
       "brain_networks": [
-        "default mode network"
+        "Thalamocortical network"
       ],
       "modalities": [
-        "PSG",
+        "EEG",
         "fMRI"
       ],
       "measurable_variables": [
-        "thalamus_DMN_FC",
-        "spindle density"
+        "Spindle density",
+        "Slow-wave amplitude"
       ],
-      "directional_prediction": "Increased thalamocortical coupling is associated with higher spindle density in younger subjects.",
-      "falsification_criteria": "No significant correlation between thalamocortical coupling and spindle density in younger subjects.",
+      "directional_prediction": "Increased disruption in thalamocortical coupling during NREM sleep will correlate with higher insomnia severity scores.",
+      "falsification_criteria": "If thalamocortical coupling metrics show no significant correlation with insomnia severity scores after controlling for confounds.",
       "knowledge_graph_paths": [
-        "thalamocortical coupling -> thalamus_DMN_FC -> spindle density"
+        "thalamocortical coupling -> spindle generation -> sleep quality"
       ],
-      "debate_critique": "The initial assumption may overlook the role of other brain networks and the influence of age as a confounding variable. Additionally, the evidence for thalamocortical coupling may not fully account for variations in spindle activity across different sleep stages.",
-      "debate_refinement": "The refined hypothesis incorporates the default mode network and considers age as a potential confound, strengthening the link between thalamocortical coupling and spindle modulation."
+      "debate_critique": "The initial hypothesis assumes a direct link between thalamocortical coupling and insomnia severity without considering other potential confounds such as medication effects or comorbid conditions.",
+      "debate_refinement": "The refined hypothesis incorporates the consideration of medication effects and comorbid conditions, strengthening the link between thalamocortical coupling and insomnia severity."
     },
-    "created_at": "2026-07-23T06:05:25.077054+00:00",
-    "updated_at": "2026-07-23T06:23:25.037512+00:00"
+    "created_at": "2026-07-23T10:08:28.304417+00:00",
+    "updated_at": "2026-07-23T10:31:26.490456+00:00"
+  },
+  {
+    "hypothesis_id": "hypothesis_c2a970f9f0a8",
+    "session_id": "sleep_hypothesis_session",
+    "title": "White Matter Integrity and Insomnia Severity: A Structural Link via FA",
+    "summary": "This hypothesis explores the relationship between white matter integrity, measured by fractional anisotropy (FA), and insomnia severity, suggesting a structural link in the brain's white matter pathways.",
+    "content": "The hypothesis posits that reduced fractional anisotropy (FA) in specific white matter tracts is a structural correlate of increased insomnia severity, mediated through disrupted connectivity between the thalamus and cortical regions involved in sleep regulation.",
+    "rationale": "Evidence from the knowledge graph indicates that white matter integrity is linked to FA, and insomnia severity is associated with thalamocortical coupling. The findings support a structural basis for insomnia, where white matter integrity, as measured by FA, could mediate the relationship between thalamocortical connectivity and insomnia severity.",
+    "experimental_plan": "Conduct a voxel-based morphometry (VBM) analysis of FA values in white matter tracts of patients with insomnia compared to controls, correlating FA values with insomnia severity scores (ISI or PSQI).",
+    "novelty_assessment": "This hypothesis introduces a novel structural pathway (white matter integrity via FA) linking insomnia severity to thalamocortical connectivity, expanding on existing hypotheses that focus on functional connectivity.",
+    "key_assumptions": [
+      "Reduced FA in white matter tracts is associated with increased insomnia severity.",
+      "Disrupted white matter integrity affects thalamocortical connectivity."
+    ],
+    "citations": [
+      "paper_id values from the evidence"
+    ],
+    "generation_strategy": "research_expansion",
+    "generation_round": 4,
+    "elo_rating": 1076.0,
+    "rating_deviation": 129.0,
+    "volatility": 0.059995,
+    "matches_played": 7,
+    "wins": 0,
+    "losses": 7,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_1f8c8b45df3b",
+        "E_f657c2bea7ad",
+        "E_d56145ba0757",
+        "E_be15a4d4efee"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "Insomnia severity",
+      "neural_mechanism": "White matter integrity",
+      "brain_regions": [
+        "thalamus",
+        "cortical regions"
+      ],
+      "brain_networks": [
+        "thalamocortical network"
+      ],
+      "modalities": [
+        "DTI",
+        "Scale"
+      ],
+      "measurable_variables": [
+        "FA",
+        "ISI",
+        "PSQI"
+      ],
+      "directional_prediction": "Reduced FA in white matter tracts will correlate with increased insomnia severity scores.",
+      "falsification_criteria": "If FA values in white matter tracts are not significantly different between insomnia patients and controls, or if there is no correlation between FA and insomnia severity scores.",
+      "knowledge_graph_paths": [
+        "white matter integrity -> FA -> insomnia severity"
+      ]
+    },
+    "created_at": "2026-07-23T10:09:58.595221+00:00",
+    "updated_at": "2026-07-23T10:31:26.490475+00:00"
   }
 ]

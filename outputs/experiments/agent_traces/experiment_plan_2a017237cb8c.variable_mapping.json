@@ -1,0 +1,97 @@
+{
+  "judgment": "partially_valid",
+  "candidate_mappings": [
+    {
+      "variable": "thalamus_DMN_FC",
+      "source_column": "thalamus_DMN_FC",
+      "confidence": 0.9,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "DMN_roi_voxels",
+      "source_column": "DMN_roi_voxels",
+      "confidence": 0.8,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "thalamus_roi_voxels",
+      "source_column": "thalamus_roi_voxels",
+      "confidence": 0.8,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "salience_roi_voxels",
+      "source_column": "salience_roi_voxels",
+      "confidence": 0.8,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "frontoparietal_roi_voxels",
+      "source_column": "frontoparietal_roi_voxels",
+      "confidence": 0.8,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "thalamus_salience_FC",
+      "source_column": "thalamus_salience_FC",
+      "confidence": 0.9,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "thalamus_frontoparietal_FC",
+      "source_column": "thalamus_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "DMN_salience_FC",
+      "source_column": "DMN_salience_FC",
+      "confidence": 0.9,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "DMN_frontoparietal_FC",
+      "source_column": "DMN_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "salience_frontoparietal_FC",
+      "source_column": "salience_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "DMN_FC",
+      "source_column": "DMN_FC",
+      "confidence": 0.8,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "salience_FC",
+      "source_column": "salience_FC",
+      "confidence": 0.8,
+      "reason": "The variable name matches the source column name directly."
+    },
+    {
+      "variable": "frontoparietal_FC",
+      "source_column": "frontoparietal_FC",
+      "confidence": 0.8,
+      "reason": "The variable name matches the source column name directly."
+    }
+  ],
+  "missing_variables": [
+    "time_to_event",
+    "event_occurred",
+    "age_at_event",
+    "baseline_age",
+    "gender",
+    "education_level",
+    "APOE4_status"
+  ],
+  "recommendations": [
+    "Check if variables like 'time_to_event' and 'event_occurred' are present in the dataset but might be named differently, such as 'survival_time' or 'event_flag'.",
+    "Consider adding demographic variables like 'age_at_event', 'baseline_age', 'gender', and 'education_level' if they are relevant to the analysis.",
+    "Verify if 'APOE4_status' is included in the dataset, possibly under a different name like 'APOE4_genotype' or 'APOE4_carrier'."
+  ]
+}

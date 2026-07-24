@@ -1,0 +1,100 @@
+{
+  "judgment": "partially_valid",
+  "candidate_mappings": [
+    {
+      "variable": "thalamus_roi_voxels",
+      "source_column": "thalamus_roi_voxels",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "DMN_roi_voxels",
+      "source_column": "DMN_roi_voxels",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "salience_roi_voxels",
+      "source_column": "salience_roi_voxels",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "frontoparietal_roi_voxels",
+      "source_column": "frontoparietal_roi_voxels",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "thalamus_DMN_FC",
+      "source_column": "thalamus_DMN_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "thalamus_salience_FC",
+      "source_column": "thalamus_salience_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "thalamus_frontoparietal_FC",
+      "source_column": "thalamus_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "DMN_salience_FC",
+      "source_column": "DMN_salience_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "DMN_frontoparietal_FC",
+      "source_column": "DMN_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "salience_frontoparietal_FC",
+      "source_column": "salience_frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "DMN_FC",
+      "source_column": "DMN_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "salience_FC",
+      "source_column": "salience_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    },
+    {
+      "variable": "frontoparietal_FC",
+      "source_column": "frontoparietal_FC",
+      "confidence": 0.9,
+      "reason": "Direct match in source column name."
+    }
+  ],
+  "missing_variables": [
+    "global_signal_psd_power_mean",
+    "global_signal_psd_power_max",
+    "timefreq_power_mean",
+    "timefreq_power_std",
+    "timefreq_power_max",
+    "timefreq_power_min",
+    "timefreq_power_median",
+    "timefreq_power_skew",
+    "timefreq_power_kurtosis"
+  ],
+  "recommendations": [
+    "Check if variables like 'timefreq_power_mean' and others related to time-frequency analysis are present in the source data or need to be computed.",
+    "Consider using imputation techniques for missing data in variables like 'thalamus_roi_voxels' which have a missing rate of 24.73%.",
+    "Verify if the 'global_signal_psd_power_mean' and 'global_signal_psd_power_max' are mapped correctly or if they need additional processing.",
+    "Ensure that the FC (Functional Connectivity) variables are correctly interpreted based on the ROI definitions."
+  ]
+}

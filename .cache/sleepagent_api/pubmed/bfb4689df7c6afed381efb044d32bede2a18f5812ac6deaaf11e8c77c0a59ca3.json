@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "NREM sleep",
+        "to": "\"sleep, slow-wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow-wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"nrem\"[All Fields] AND \"sleep\"[All Fields]) OR \"nrem sleep\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Thalamus-frontoparietal\"[All Fields] AND \"FC\"[All Fields] AND (\"sleep, slow wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"nrem\"[All Fields] AND \"sleep\"[All Fields]) OR \"nrem sleep\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "during"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

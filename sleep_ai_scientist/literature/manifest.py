@@ -13,7 +13,6 @@ def build_library_manifest(library_version: str, query_set_version: str, paths: 
         "query_set_version": query_set_version,
         "created_at": datetime.now(timezone.utc).isoformat(),
         "registry_csv": paths.get("registry_csv", ""),
-        "registry_jsonl": paths.get("registry_jsonl", ""),
         "provider_summary": paths.get("provider_summary", ""),
         "query_summary": paths.get("query_summary", ""),
         "coverage_audit": paths.get("coverage_audit", ""),
@@ -26,4 +25,3 @@ def build_library_manifest(library_version: str, query_set_version: str, paths: 
 
 def write_library_manifest(path: str | Path, manifest: dict[str, Any]) -> None:
     write_json(Path(path), manifest)
-

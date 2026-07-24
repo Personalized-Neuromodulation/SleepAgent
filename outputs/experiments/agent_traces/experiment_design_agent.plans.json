@@ -1,0 +1,184 @@
+[
+  {
+    "plan_id": "experiment_plan_2a017237cb8c",
+    "hypothesis_id": "hypothesis_483a60d13062",
+    "hypothesis_title": "Default Mode Network Dysregulation and Insomnia Severity: A Functional Link via Resting-State Connectivity",
+    "scientific_question": "How does the functional connectivity between the thalamus and key resting-state networks (DMN, salience, frontoparietal) relate to the number of voxels within those networks, and how might this relationship differ between patients with sleep disorders and healthy controls?",
+    "hypothesis_summary": "This hypothesis proposes that dysregulation in the default mode network (DMN) resting-state connectivity is a key mechanism linking insomnia severity to impaired cognitive functions.",
+    "hypothesis_content": "The hypothesis suggests that disrupted resting-state functional connectivity within the default mode network is a critical mechanism connecting insomnia severity to cognitive impairments. This dysregulation may manifest as altered synchronization between the DMN and other networks, such as the salience network, leading to impaired attention and memory consolidation.",
+    "predictors": [
+      "thalamus_DMN_FC",
+      "timefreq_sampling_rate_hz",
+      "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "timefreq_TR"
+    ],
+    "outcomes": [],
+    "covariates": [
+      "mean_FD"
+    ],
+    "negative_controls": [],
+    "variables": [
+      {
+        "name": "thalamus_DMN_FC",
+        "role": "predictor",
+        "scientific_concept": "thalamus DMN FC",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_b8ba6d2b8320/fmri_features.csv",
+        "source_column": "thalamus_DMN_FC",
+        "approved": true,
+        "missing_rate": 0.247,
+        "n_available": 70,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "timefreq_sampling_rate_hz",
+        "role": "predictor",
+        "scientific_concept": "timefreq sampling rate hz",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_b8ba6d2b8320/fmri_features.csv",
+        "source_column": "timefreq_sampling_rate_hz",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "role": "predictor",
+        "scientific_concept": "timefreq fALFF 0.01 0.08 over 0.01 0.25",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_b8ba6d2b8320/fmri_features.csv",
+        "source_column": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "timefreq_TR",
+        "role": "predictor",
+        "scientific_concept": "timefreq TR",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_b8ba6d2b8320/fmri_features.csv",
+        "source_column": "timefreq_TR",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "mean_FD",
+        "role": "covariate",
+        "scientific_concept": "mean FD",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_b8ba6d2b8320/fmri_features.csv",
+        "source_column": "mean_FD",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      }
+    ],
+    "primary_tests": [
+      {
+        "test_id": "Thalamus-DMN_FC_Voxels",
+        "predictor": "thalamus_DMN_FC",
+        "outcome": "DMN_roi_voxels",
+        "question": "Is there a significant relationship between thalamus-DMN functional connectivity and the number of voxels in the DMN ROI?"
+      },
+      {
+        "test_id": "Thalamus-Salience_FC_Voxels",
+        "predictor": "thalamus_salience_FC",
+        "outcome": "salience_roi_voxels",
+        "question": "Is there a significant relationship between thalamus-salience functional connectivity and the number of voxels in the salience ROI?"
+      },
+      {
+        "test_id": "Thalamus-Frontoparietal_FC_Voxels",
+        "predictor": "thalamus_frontoparietal_FC",
+        "outcome": "frontoparietal_roi_voxels",
+        "question": "Is there a significant relationship between thalamus-frontoparietal functional connectivity and the number of voxels in the frontoparietal ROI?"
+      },
+      {
+        "test_id": "Group_Differences_Thalamus-DMN",
+        "predictor": "thalamus_DMN_FC",
+        "outcome": "group",
+        "question": "Does the relationship between thalamus-DMN functional connectivity and DMN voxel count differ between sleep disorder patients and healthy controls?"
+      },
+      {
+        "test_id": "Group_Differences_Thalamus-Salience",
+        "predictor": "thalamus_salience_FC",
+        "outcome": "group",
+        "question": "Does the relationship between thalamus-salience functional connectivity and salience voxel count differ between sleep disorder patients and healthy controls?"
+      },
+      {
+        "test_id": "Group_Differences_Thalamus-Frontoparietal",
+        "predictor": "thalamus_frontoparietal_FC",
+        "outcome": "group",
+        "question": "Does the relationship between thalamus-frontoparietal functional connectivity and frontoparietal voxel count differ between sleep disorder patients and healthy controls?"
+      }
+    ],
+    "analysis_plan": "We will conduct a series of regression analyses to examine the relationship between thalamus-DMN, thalamus-salience, and thalamus-frontoparietal functional connectivity (FC) with the corresponding ROI voxel counts. We will compare these relationships between patients with sleep disorders and healthy controls using moderated regression or interaction terms.",
+    "metadata": {
+      "source": "ExperimentDesignAgent",
+      "generation_strategy": "literature_exploration",
+      "hypothesis_rating": 1515.0,
+      "requested_modalities": [
+        "fMRI"
+      ],
+      "llm_experiment_design": {
+        "scientific_question": "How does the functional connectivity between the thalamus and key resting-state networks (DMN, salience, frontoparietal) relate to the number of voxels within those networks, and how might this relationship differ between patients with sleep disorders and healthy controls?",
+        "analysis_plan": "We will conduct a series of regression analyses to examine the relationship between thalamus-DMN, thalamus-salience, and thalamus-frontoparietal functional connectivity (FC) with the corresponding ROI voxel counts. We will compare these relationships between patients with sleep disorders and healthy controls using moderated regression or interaction terms.",
+        "primary_tests": [
+          {
+            "test_id": "Thalamus-DMN_FC_Voxels",
+            "predictor": "thalamus_DMN_FC",
+            "outcome": "DMN_roi_voxels",
+            "question": "Is there a significant relationship between thalamus-DMN functional connectivity and the number of voxels in the DMN ROI?"
+          },
+          {
+            "test_id": "Thalamus-Salience_FC_Voxels",
+            "predictor": "thalamus_salience_FC",
+            "outcome": "salience_roi_voxels",
+            "question": "Is there a significant relationship between thalamus-salience functional connectivity and the number of voxels in the salience ROI?"
+          },
+          {
+            "test_id": "Thalamus-Frontoparietal_FC_Voxels",
+            "predictor": "thalamus_frontoparietal_FC",
+            "outcome": "frontoparietal_roi_voxels",
+            "question": "Is there a significant relationship between thalamus-frontoparietal functional connectivity and the number of voxels in the frontoparietal ROI?"
+          },
+          {
+            "test_id": "Group_Differences_Thalamus-DMN",
+            "predictor": "thalamus_DMN_FC",
+            "outcome": "group",
+            "question": "Does the relationship between thalamus-DMN functional connectivity and DMN voxel count differ between sleep disorder patients and healthy controls?"
+          },
+          {
+            "test_id": "Group_Differences_Thalamus-Salience",
+            "predictor": "thalamus_salience_FC",
+            "outcome": "group",
+            "question": "Does the relationship between thalamus-salience functional connectivity and salience voxel count differ between sleep disorder patients and healthy controls?"
+          },
+          {
+            "test_id": "Group_Differences_Thalamus-Frontoparietal",
+            "predictor": "thalamus_frontoparietal_FC",
+            "outcome": "group",
+            "question": "Does the relationship between thalamus-frontoparietal functional connectivity and frontoparietal voxel count differ between sleep disorder patients and healthy controls?"
+          }
+        ],
+        "risks": [
+          "Missing data in ROI voxel counts (24.7% missing) may reduce statistical power.",
+          "Assumption of linearity in regression models may not hold.",
+          "Potential confounding variables (e.g., age, medication) not accounted for in the analysis.",
+          "ROI definitions may vary between subjects, affecting voxel counts and FC measures."
+        ],
+        "rationale": "The thalamus is a key relay center in the brain, and its functional connectivity with resting-state networks is likely influenced by the size of those networks. Examining this relationship in sleep disorder patients and controls can reveal network-specific disruptions that may underlie sleep pathology. The missing data in ROI voxel counts is a concern, but the relatively high availability (70% of subjects) may still provide sufficient power for detection."
+      }
+    }
+  }
+]

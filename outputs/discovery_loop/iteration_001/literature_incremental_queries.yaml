@@ -1,0 +1,33 @@
+query_file:
+  version: sleepagent_experiment_feedback_incremental
+  description: Incremental query set generated from experiment feedback for one discovery
+    iteration.
+query_sets:
+  library:
+    query_set:
+      version: sleep_literature_queries_v2_broad_sleep_science_incremental
+      description: Broad sleep science query set for SleepAgent Sleep AI Scientist.
+    settings:
+      max_results_per_query: 50
+      providers:
+      - pubmed
+      - europe_pmc
+      - openalex
+      - semantic_scholar
+      include_human: true
+      include_animal: true
+      include_cellular_molecular: true
+      include_circuit_mechanisms: true
+      include_reviews: true
+      include_meta_analysis: true
+      include_methods: true
+    queries:
+      experiment_feedback_expansion:
+      - DVARS and thalamocortical connectivity in insomnia
+      - Covariates in fMRI analysis of insomnia
+      - Thalamus-frontoparietal FC and insomnia
+      - Frontoparietal network connectivity in insomnia
+      - fMRI frontoparietal FC in sleep disorders
+      - Thalamus-frontoparietal FC during NREM sleep
+      - Thalamus-salience FC in insomnia
+      - Salience network connectivity and insomnia severity

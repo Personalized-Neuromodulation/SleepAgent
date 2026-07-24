@@ -12,8 +12,28 @@ def _tmp_grounding_config(tmp_path: Path) -> Path:
     config = load_config("configs/grounding_config.yaml")
     config.pop("_config_path", None)
     config.pop("_project_root", None)
+    database_config = tmp_path / "database_config.yaml"
+    database_config.write_text(
+        yaml.safe_dump(
+            {
+                "database": {
+                    "enabled": True,
+                    "backend_env": "SLEEPAGENT_DATABASE_BACKEND",
+                    "default_backend": "sqlite",
+                    "sqlite_path_env": "SLEEPAGENT_SQLITE_PATH",
+                    "default_sqlite_path": str(tmp_path / "literature.db"),
+                }
+            },
+            sort_keys=False,
+        ),
+        encoding="utf-8",
+    )
+    literature_config = tmp_path / "literature_library_config.yaml"
+    literature_config.write_text(yaml.safe_dump({"embedding": {"enabled": False}}, sort_keys=False), encoding="utf-8")
     config["paths"].update(
         {
+            "database_config": str(database_config),
+            "literature_library_config": str(literature_config),
             "output_grounding_dir": str(tmp_path / "grounding"),
             "output_profiles_dir": str(tmp_path / "profiles"),
             "report_path": str(tmp_path / "reports" / "phase1_grounding_report.md"),
@@ -55,15 +75,11 @@ def test_grounding_api_build_generates_versioned_corpus(monkeypatch, tmp_path):
 
     def fake_search(config):
         csv_path = Path(config["api"]["output"]["api_literature_csv"])
-        jsonl_path = Path(config["api"]["output"]["api_literature_jsonl"])
-        log_path = Path(config["api"]["output"]["api_search_log"])
         ensure_parent(csv_path).write_text(
             "paper_id,title,abstract,year,doi,pmid,pmcid,source,provider,provider_id,journal,authors,url,keywords,citation_count,retrieved_at,query,raw_source_available\n"
             "api1,API slow wave paper,insomnia slow wave associated with ISI,2024,10.1/api,,,api:pubmed,pubmed,1,J,A,u,slow wave,3,now,insomnia slow wave EEG,true\n",
             encoding="utf-8",
         )
-        ensure_parent(jsonl_path).write_text('{"paper_id":"api1"}\n', encoding="utf-8")
-        ensure_parent(log_path).write_text('{"provider":"pubmed","success":true}\n', encoding="utf-8")
         return [
             LiteratureRecord(
                 paper_id="api1",

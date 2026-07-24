@@ -33,7 +33,6 @@ def _library_config(tmp_path: Path) -> Path:
                 "api_retrieved_csv": str(tmp_path / "literature" / "sleep_library_api_retrieved_papers.csv"),
                 "api_retrieved_jsonl": str(tmp_path / "literature" / "sleep_library_api_retrieved_papers.jsonl"),
                 "registry_csv": str(tmp_path / "literature" / "sleep_literature_registry.csv"),
-                "registry_jsonl": str(tmp_path / "literature" / "sleep_literature_registry.jsonl"),
                 "deduplication_report": str(tmp_path / "literature" / "literature_deduplication_report.csv"),
                 "deduplication_summary": str(tmp_path / "literature" / "deduplication_summary.json"),
                 "deduplication_manual_review": str(tmp_path / "literature" / "deduplication_manual_review.csv"),
@@ -111,7 +110,8 @@ def test_literature_build_generates_sqlite_db_with_core_tables(tmp_path, monkeyp
     assert db_path.exists()
     assert result["registry_records"] == 1
     assert result["rag_index"]["chunk_count"] == 1
-    assert (tmp_path / "outputs" / "rag_abstract_chunks.jsonl").exists()
+    assert result["rag_index"]["path"] is None
+    assert not (tmp_path / "outputs" / "rag_abstract_chunks.jsonl").exists()
     assert "[literature_build] persist_api_records_start count=1" in output
     assert "[literature_build] persist_api_records_done count=1" in output
     assert "[literature_build] export_registry_start" in output
@@ -177,13 +177,10 @@ def test_literature_build_uses_own_embedding_config_for_rag_index(tmp_path, monk
     }
     config_path = _write_yaml(tmp_path / "literature_library_config_embedding.yaml", library_config)
 
-    def fake_build_rag_index(session, output_jsonl, embedding_config=None, *, write_jsonl=True):
-        Path(output_jsonl).parent.mkdir(parents=True, exist_ok=True)
-        if write_jsonl:
-            Path(output_jsonl).write_text("", encoding="utf-8")
+    def fake_build_rag_index(session, output_jsonl, embedding_config=None):
         return {
             "chunk_count": 1,
-            "path": str(output_jsonl) if write_jsonl else None,
+            "path": None,
             "embedding": {
                 "enabled": bool(embedding_config.get("enabled")),
                 "model": embedding_config.get("model"),
@@ -231,9 +228,7 @@ def test_literature_build_can_skip_duplicate_jsonl_exports(tmp_path, monkeypatch
 
     monkeypatch.setenv("SLEEPAGENT_SQLITE_PATH", str(tmp_path / "literature" / "sleep_literature.db"))
     _database_config(tmp_path)
-    library_config = yaml.safe_load(_library_config(tmp_path).read_text(encoding="utf-8"))
-    library_config["outputs"] = {"write_jsonl": False, "write_rag_jsonl": False}
-    config_path = _write_yaml(tmp_path / "literature_library_config_no_jsonl.yaml", library_config)
+    config_path = _library_config(tmp_path)
 
     result = library_builder.run_literature_build(
         config_path,
@@ -246,5 +241,8 @@ def test_literature_build_can_skip_duplicate_jsonl_exports(tmp_path, monkeypatch
 
     assert result["rag_index"]["chunk_count"] == 1
     assert result["rag_index"]["path"] is None
+    assert (tmp_path / "literature" / "sleep_library_api_retrieved_papers.csv").exists()
+    assert (tmp_path / "literature" / "sleep_literature_registry.csv").exists()
     assert not (tmp_path / "literature" / "sleep_library_api_retrieved_papers.jsonl").exists()
+    assert not (tmp_path / "literature" / "sleep_literature_registry.jsonl").exists()
     assert not (tmp_path / "outputs" / "rag_abstract_chunks.jsonl").exists()

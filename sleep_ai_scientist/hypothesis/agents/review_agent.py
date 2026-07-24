@@ -19,7 +19,7 @@ TOKEN_RE = re.compile(r"[a-zA-Z0-9_]+")
 
 
 def review_hypothesis(hypothesis: Hypothesis) -> HypothesisReview:
-    """Deterministic review that approximates co-scientist's initial/full checks."""
+    """Deterministic review that approximates hypothesis review workflow's initial/full checks."""
     evidence_count = len(hypothesis.metadata.get("evidence_ids", []))
     citation_count = len(hypothesis.citations)
     assumptions = len(hypothesis.key_assumptions)

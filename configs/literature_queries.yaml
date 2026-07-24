@@ -1,6 +1,7 @@
 query_file:
   version: sleepagent_unified_literature_queries_v1
-  description: Unified broad literature query set for sleep literature RAG library construction.
+  description: Unified broad literature query set for sleep literature RAG library
+    construction.
 query_sets:
   library:
     query_set:
@@ -138,3 +139,20 @@ query_sets:
       - slow wave sleep glymphatic human
       - sleep deprivation animal human translation
       - rodent sleep spindle human sleep spindle
+      experiment_feedback_expansion:
+      - DVARS and thalamocortical connectivity in insomnia
+      - Covariates in fMRI analysis of insomnia
+      - Thalamus-frontoparietal FC and insomnia
+      - Frontoparietal network connectivity in insomnia
+      - fMRI frontoparietal FC in sleep disorders
+      - Thalamus-frontoparietal FC during NREM sleep
+      - Thalamus-salience FC in insomnia
+      - Salience network connectivity and insomnia severity
+      - Global signal power in thalamus-DMN FC studies of insomnia
+      - Global_signal_psd as control in thalamus-salience FC in sleep disorders
+      - Global_signal_psd modulation of thalamus network connectivity in insomnia
+      - Thalamus FC and global_signal_psd in DMN and salience networks in insomnia
+      - Global_signal_psd control in thalamus connectivity studies of sleep disorders
+      - Mean_FD as covariate in thalamus-DMN FC in insomnia
+      - Effect of mean_FD on thalamus-salience FC in sleep disorders
+      - Mean_FD modulation of thalamus network connectivity in insomnia

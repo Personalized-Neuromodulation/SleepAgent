@@ -2,7 +2,52 @@ import json
 from pathlib import Path
 
 from sleep_ai_scientist.common.io import read_json, read_yaml, write_json, write_yaml
-from sleep_ai_scientist.discovery_loop.discovery_runner import _collect_iteration_metrics, run_discovery_loop
+from sleep_ai_scientist.discovery_loop.discovery_runner import _build_grounding_retrieval_query_profile, _collect_iteration_metrics, run_discovery_loop
+
+
+def test_grounding_retrieval_query_profile_combines_research_intent_gaps_and_data_features(tmp_path):
+    hypothesis_config = tmp_path / "hypothesis_config.yaml"
+    foundation_config = tmp_path / "foundation_update_config.yaml"
+    foundation_dir = tmp_path / "foundation"
+    foundation_dir.mkdir()
+    feature_registry = foundation_dir / "feature_registry.csv"
+    approved_variables = foundation_dir / "approved_variables.yaml"
+    write_yaml(hypothesis_config, {"hypothesis": {"research_question": "sleep neuroimaging mechanisms and measurable multimodal biomarkers"}})
+    feature_registry.write_text(
+        "feature_name,modality,approved\nthalamus_DMN_FC,fMRI,true\nmean_FD,fMRI,true\nunapproved_noise,fMRI,false\n",
+        encoding="utf-8",
+    )
+    write_yaml(approved_variables, {"fMRI": ["thalamus_DMN_FC"], "qc": ["mean_FD"]})
+    write_yaml(
+        foundation_config,
+        {"outputs": {"feature_registry": str(feature_registry), "approved_variables": str(approved_variables)}},
+    )
+    literature_expansion = {
+        "accepted_queries": [
+            {
+                "query": "thalamus default mode network salience network functional connectivity sleep fMRI",
+                "intent_type": "resolve_failed_test",
+                "rationale": "primary test failed for thalamus_DMN_FC -> insomnia severity",
+            }
+        ],
+        "signals": {"failed_tests": 1, "missing_variables": 2},
+    }
+
+    profile = _build_grounding_retrieval_query_profile(
+        literature_expansion,
+        hypothesis_config_path=hypothesis_config,
+        foundation_update={"foundation_config": str(foundation_config)},
+    )
+
+    query = profile["query"]
+    assert "sleep neuroimaging mechanisms" in query
+    assert "thalamus default mode network" in query
+    assert "primary test failed" in query
+    assert "thalamus DMN FC" in query
+    assert "mean FD" in query
+    assert "unapproved_noise" not in query
+    assert profile["sources"]["research_question"] == ["sleep neuroimaging mechanisms and measurable multimodal biomarkers"]
+    assert profile["sources"]["accepted_queries"] == ["thalamus default mode network salience network functional connectivity sleep fMRI"]
 
 
 def test_discovery_loop_runs_iterations_and_snapshots(monkeypatch, tmp_path):
@@ -224,8 +269,8 @@ def test_discovery_loop_updates_foundation_and_refreshes_grounding_after_experim
         literature_calls.append({"config_path": str(config_path), "query_config_path": str(query_config_path), "library_version": library_version})
         return {"registry_records": 3, "rag_index": {"chunk_count": 2, "embedding": {"vector_count": 2}}}
 
-    def fake_grounding_pipeline(config_path, query_config_path=None, corpus_version=""):
-        grounding_calls.append({"config_path": str(config_path), "corpus_version": corpus_version})
+    def fake_grounding_pipeline(config_path, query_config_path=None, corpus_version="", retrieval_query=None):
+        grounding_calls.append({"config_path": str(config_path), "corpus_version": corpus_version, "retrieval_query": retrieval_query})
         write_json(grounding_dir / "mechanism_graph.json", {"nodes": [], "edges": []})
         return {"evidence": 1, "graph_nodes": 1}
 
@@ -239,7 +284,7 @@ def test_discovery_loop_updates_foundation_and_refreshes_grounding_after_experim
 
     assert summary["grounding_refreshes"] == 1
     assert literature_calls == []
-    assert grounding_calls == [{"config_path": str(grounding_config), "corpus_version": "test_data_constrained"}]
+    assert grounding_calls == [{"config_path": str(grounding_config), "corpus_version": "test_data_constrained", "retrieval_query": "thalamus DMN FC mean FD group"}]
     assert state["iterations"][0]["literature_expansion"]["accepted_query_count"] == 0
     assert state["iterations"][0]["literature_refresh"]["refreshed"] is False
     assert state["iterations"][0]["literature_refresh"]["reason"] == "no_new_experiment_queries"
@@ -388,7 +433,10 @@ def test_discovery_loop_refreshes_literature_only_when_experiment_intent_accepts
         literature_calls.append({"query_config_path": str(query_config_path), "library_version": library_version, "kwargs": kwargs})
         return {"registry_records": 5, "rag_index": {"chunk_count": 4, "embedding": {"vector_count": 4}}}
 
-    def fake_grounding_pipeline(config_path, query_config_path=None, corpus_version=""):
+    grounding_calls = []
+
+    def fake_grounding_pipeline(config_path, query_config_path=None, corpus_version="", retrieval_query=None):
+        grounding_calls.append({"retrieval_query": retrieval_query, "corpus_version": corpus_version})
         return {"evidence": 1, "graph_nodes": 1}
 
     monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_hypothesis_pipeline", fake_hypothesis_pipeline)
@@ -413,6 +461,103 @@ def test_discovery_loop_refreshes_literature_only_when_experiment_intent_accepts
     }
     assert state["iterations"][0]["literature_expansion"]["accepted_query_count"] == 1
     assert state["iterations"][0]["literature_expansion"]["incremental_query_config"] == str(incremental_config)
+    assert state["iterations"][0]["literature_refresh"]["refreshed"] is True
+    assert "thalamus default mode network salience network functional connectivity sleep fMRI" in grounding_calls[0]["retrieval_query"]
+    assert "resolve failed test" in grounding_calls[0]["retrieval_query"]
+    assert "thalamus DMN FC" in grounding_calls[0]["retrieval_query"]
+
+
+def test_discovery_loop_builds_literature_intent_when_foundation_is_unchanged(monkeypatch, tmp_path):
+    hypothesis_dir = tmp_path / "hypotheses"
+    experiment_dir = tmp_path / "experiments"
+    feedback_path = hypothesis_dir / "experimental_feedback.json"
+    query_config = tmp_path / "literature_queries.yaml"
+    loop_config = tmp_path / "discovery_loop_config.yaml"
+    hypothesis_config = tmp_path / "hypothesis_config.yaml"
+    experiment_config = tmp_path / "experiment_config.yaml"
+    foundation_config = tmp_path / "foundation_config.yaml"
+    grounding_config = tmp_path / "grounding_config.yaml"
+
+    write_yaml(
+        query_config,
+        {
+            "query_sets": {"library": {"queries": {"core": ["insomnia EEG"]}}},
+            "settings": {"max_results_per_query": 1, "providers": []},
+        },
+    )
+    write_yaml(hypothesis_config, {"paths": {"output_hypotheses_dir": str(hypothesis_dir), "experimental_feedback": str(feedback_path)}})
+    write_yaml(
+        experiment_config,
+        {
+            "paths": {
+                "experiment_output_dir": str(experiment_dir),
+                "experiment_results": str(experiment_dir / "experiment_results.json"),
+                "experimental_feedback": str(feedback_path),
+            }
+        },
+    )
+    write_yaml(foundation_config, {"paths": {}})
+    write_yaml(grounding_config, {"paths": {}})
+    write_yaml(
+        loop_config,
+        {
+            "discovery_loop": {"max_iterations": 1, "verbose": False, "snapshot_features": False, "enable_foundation_grounding_refresh": True, "stop_conditions": {"reward_convergence": {"enabled": False}, "no_active_hypotheses": False}},
+            "foundation": {"config_path": str(foundation_config)},
+            "literature": {
+                "enabled": True,
+                "intent_llm_enabled": False,
+                "intent_log_path": str(tmp_path / "query_expansion_intents.jsonl"),
+                "config_path": "configs/literature_library_config.yaml",
+                "query_config_path": str(query_config),
+                "library_version": "test_library",
+            },
+            "grounding": {"config_path": str(grounding_config), "corpus_version": "test_data_constrained"},
+            "hypothesis": {"config_path": str(hypothesis_config)},
+            "experiment": {"config_path": str(experiment_config)},
+            "paths": {"loop_output_dir": str(tmp_path / "loop"), "iteration_state": str(tmp_path / "loop" / "loop_state.json"), "iteration_report": str(tmp_path / "reports" / "loop.md")},
+        },
+    )
+
+    def fake_hypothesis_pipeline(config_path):
+        write_json(hypothesis_dir / "hypothesis_pool.json", [{"hypothesis_id": "h1", "status": "active"}])
+        write_json(hypothesis_dir / "top_k_hypotheses.json", [{"hypothesis_id": "h1"}])
+        return {"hypotheses": 1}
+
+    def fake_experiment_pipeline(config_path):
+        write_json(experiment_dir / "experiment_results.json", [{"plan_id": "plan-1"}])
+        write_json(feedback_path, [{"hypothesis_id": "h1", "computed_reward": 0.2}])
+        return {"plans": 1, "experimental_feedback": str(feedback_path)}
+
+    literature_calls = []
+
+    def fake_build_intent(experiment_summary, iteration_id, query_config_path, **kwargs):
+        return {
+            "iteration_id": iteration_id,
+            "accepted_query_count": 1,
+            "accepted_queries": [{"query": "failed insomnia hypothesis sleep spindle EEG", "intent_type": "resolve_failed_test", "source_iteration": iteration_id}],
+            "candidate_count": 1,
+            "rejected_duplicate_count": 0,
+            "rejected_invalid_count": 0,
+            "signals": {"failed_tests": 1},
+        }
+
+    def fake_literature_build(config_path, query_config_path="configs/literature_queries.yaml", library_version=None, **kwargs):
+        literature_calls.append({"query_config_path": str(query_config_path), "library_version": library_version})
+        return {"registry_records": 2, "rag_index": {"chunk_count": 1, "embedding": {"vector_count": 1}}}
+
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_hypothesis_pipeline", fake_hypothesis_pipeline)
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_experiment_pipeline", fake_experiment_pipeline)
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner._update_foundation_from_experiment_features", lambda *args, **kwargs: {"foundation_changed": False, "reason": "no_new_features"})
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.build_literature_expansion_plan", fake_build_intent)
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_literature_build", fake_literature_build)
+    monkeypatch.setattr("sleep_ai_scientist.discovery_loop.discovery_runner.run_grounding_pipeline", lambda *args, **kwargs: {"evidence": 1})
+
+    run_discovery_loop(loop_config)
+    state = read_json(tmp_path / "loop" / "loop_state.json")
+
+    assert len(literature_calls) == 1
+    assert state["iterations"][0]["foundation_update"]["foundation_changed"] is False
+    assert state["iterations"][0]["literature_expansion"]["accepted_query_count"] == 1
     assert state["iterations"][0]["literature_refresh"]["refreshed"] is True
 
 

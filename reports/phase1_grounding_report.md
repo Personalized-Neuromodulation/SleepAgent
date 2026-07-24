@@ -2,44 +2,44 @@
 
 ## Summary
 
-- Literature records: 20
-- Evidence records: 412
-- Mechanism graph nodes: 471
-- Mechanism graph edges: 1694
+- Literature records: 1000
+- Evidence records: 8681
+- Mechanism graph nodes: 9751
+- Mechanism graph edges: 34863
 
 ## Grounding Corpus Build
 
 - Corpus version: sleepagent_grounding_data_constrained_v1
 - Query set version: sleep_literature_queries_v2_broad_sleep_science
-- Build time: 2026-07-23T07:06:18.600336+00:00
+- Build time: 2026-07-23T11:16:10.747447+00:00
 - API enabled: True
 - Providers: none
 - Query count: 1
-- API raw retrieved count: 6895
-- API deduplicated count: 20
-- Final literature count: 20
-- Evidence count: 412
-- High-quality evidence count: 51
-- Mechanism graph nodes: 471
-- Mechanism graph edges: 1694
+- API raw retrieved count: 7176
+- API deduplicated count: 1000
+- Final literature count: 1000
+- Evidence count: 8681
+- High-quality evidence count: 1348
+- Mechanism graph nodes: 9751
+- Mechanism graph edges: 34863
 - Mapped concepts: 1
 - Ambiguous concepts: 0
-- Unavailable concepts: 10
+- Unavailable concepts: 20
 - Fallback used: False
 - Output manifest: /home/zyb/Agent_skills/SleepAgent/outputs/grounding/corpus_manifest.json
 
 ## Evidence Direction Counts
 
-- support: 95
-- refute: 0
-- null: 0
-- unclear: 317
+- support: 2749
+- refute: 16
+- null: 73
+- unclear: 5843
 
 ## Evidence Quality
 
-- min: 0.170
-- mean: 0.408
-- max: 0.838
+- min: 0.070
+- mean: 0.448
+- max: 1.000
 
 ## Analysis-Ready Variables
 
@@ -120,16 +120,26 @@
 
 ## Unavailable But Theoretically Relevant Variables
 
-- `slow-wave generation` candidates=['slow_wave_density', 'delta_power']
+- `hyperarousal` candidates=['beta_power', 'anxiety_score']
+- `default mode network dysregulation` candidates=[]
+- `confound / methodological limitation` candidates=[]
+- `white matter integrity` candidates=['FA', 'thalamic_radiation_FA', 'cingulum_FA']
+- `salience network dysregulation` candidates=[]
+- `insomnia severity` candidates=['ISI', 'PSQI']
+- `REM_NREM_switching` candidates=[]
+- `circadian_regulation` candidates=[]
+- `limbic structural vulnerability` candidates=[]
+- `gabaergic_sleep_promotion` candidates=[]
+- `sleep quality` candidates=[]
 - `spindle generation` candidates=['spindle_density', 'sigma_power']
 - `thalamic_reticular_spindle` candidates=[]
+- `inflammatory_sleep_regulation` candidates=[]
+- `slow-wave generation` candidates=['slow_wave_density', 'delta_power']
+- `structural morphology` candidates=[]
+- `adenosine_sleep_pressure` candidates=[]
+- `orexin_hypocretin_arousal` candidates=[]
+- `glymphatic_clearance` candidates=[]
 - `cortical_slow_oscillation` candidates=[]
-- `white matter integrity` candidates=['FA', 'thalamic_radiation_FA', 'cingulum_FA']
-- `REM_NREM_switching` candidates=[]
-- `confound / methodological limitation` candidates=[]
-- `insomnia severity` candidates=['ISI', 'PSQI']
-- `default mode network dysregulation` candidates=[]
-- `limbic structural vulnerability` candidates=[]
 
 ## Ambiguous Mappings
 
@@ -145,15 +155,15 @@
 - API enabled: True
 - Providers used: literature_db_rag
 - Search query count: 1
-- Records retrieved per provider: {'literature_db_rag': 20}
+- Records retrieved per provider: {'literature_db_rag': 1000}
 - Provider-level results:
   - PubMed: 0
   - Europe PMC: 0
   - OpenAlex: 0
   - Semantic Scholar: 0
-- API records before deduplication: 6895
-- API records after deduplication: 20
-- Final literature count: 20
+- API records before deduplication: 7176
+- API records after deduplication: 1000
+- Final literature count: 1000
 - API errors: none
 - API warnings: none
 - Cache enabled: False
@@ -164,7 +174,7 @@
 
 - Analysis-ready features: 74
 - Mapped variables: ['thalamus_DMN_FC']
-- Unavailable theory-only concepts: ['slow-wave generation', 'spindle generation', 'thalamic_reticular_spindle', 'cortical_slow_oscillation', 'white matter integrity', 'REM_NREM_switching', 'confound / methodological limitation', 'insomnia severity', 'default mode network dysregulation', 'limbic structural vulnerability']
+- Unavailable theory-only concepts: ['hyperarousal', 'default mode network dysregulation', 'confound / methodological limitation', 'white matter integrity', 'salience network dysregulation', 'insomnia severity', 'REM_NREM_switching', 'circadian_regulation', 'limbic structural vulnerability', 'gabaergic_sleep_promotion', 'sleep quality', 'spindle generation', 'thalamic_reticular_spindle', 'inflammatory_sleep_regulation', 'slow-wave generation', 'structural morphology', 'adenosine_sleep_pressure', 'orexin_hypocretin_arousal', 'glymphatic_clearance', 'cortical_slow_oscillation']
 - Major confounds:
   - mean_FD
   - in_scanner_sleep_time
@@ -174,57 +184,57 @@
 
 ## Grounding QC
 
-- Passed: False
-- Warnings: final literature count below 100; preferred mechanism coverage gaps detected; possible positive evidence bias
+- Passed: True
+- Warnings: none
 - Errors: none
-- Recommended next steps: Review query coverage or API availability before using this corpus for benchmark work.; Add targeted online queries for mechanisms listed in check_mechanism_coverage.gaps.; Review query set and extraction rules for null/refuting findings.
+- Recommended next steps: none
 
 ## Evidence Extraction Completeness
 
-- Total papers: 20
-- Papers with evidence: 20
-- Papers without evidence: 0
-- Evidence count: 412
-- Evidence per paper: mean=20.6, median=21.0
-- Direction counts: {'unclear': 317, 'support': 95}
-- Mechanism coverage: {'slow-wave generation': 25, 'spindle generation': 132, 'thalamocortical coupling': 58, 'thalamic_reticular_spindle': 127, 'cortical_slow_oscillation': 8, 'white matter integrity': 24, 'REM_NREM_switching': 24, 'confound / methodological limitation': 5, 'insomnia severity': 6, 'default mode network dysregulation': 1, 'limbic structural vulnerability': 2}
-- Mechanisms with zero evidence: ['hyperarousal', 'salience network dysregulation']
+- Total papers: 1000
+- Papers with evidence: 987
+- Papers without evidence: 13
+- Evidence count: 8681
+- Evidence per paper: mean=8.795, median=7.0
+- Direction counts: {'unclear': 5843, 'support': 2749, 'null': 73, 'refute': 16}
+- Mechanism coverage: {'hyperarousal': 303, 'thalamocortical coupling': 794, 'default mode network dysregulation': 676, 'confound / methodological limitation': 1066, 'white matter integrity': 795, 'salience network dysregulation': 56, 'insomnia severity': 418, 'REM_NREM_switching': 1325, 'circadian_regulation': 129, 'limbic structural vulnerability': 383, 'gabaergic_sleep_promotion': 85, 'sleep quality': 496, 'spindle generation': 577, 'thalamic_reticular_spindle': 565, 'inflammatory_sleep_regulation': 14, 'slow-wave generation': 551, 'structural morphology': 219, 'adenosine_sleep_pressure': 38, 'orexin_hypocretin_arousal': 18, 'glymphatic_clearance': 83, 'cortical_slow_oscillation': 90}
+- Mechanisms with zero evidence: []
 - Missing variable rate: 0.0
 - Missing modality rate: 0.0
-- Unclear direction rate: 0.769
-- Possible positive evidence bias: True
-- Unmatched relevant papers: []
+- Unclear direction rate: 0.673
+- Possible positive evidence bias: False
+- Unmatched relevant papers: ['doi:10.3389/fpsyt.2026.1730858', 'doi:10.1038/s41598-021-81219-2', 'doi:10.1016/j.neulet.2025.138313', 'doi:10.3389/fpsyt.2023.1114945', 'doi:10.1111/ene.14784', 'doi:10.1002/hbm.25125', 'doi:10.1093/brain/awq296', 'doi:10.1111/cns.70141', 'doi:10.1002/mco2.70130', 'doi:10.3389/fpain.2025.1609524']
 
 ## Evidence Quality and Feasibility
 
-- Mean extraction confidence score: 0.782
-- Mean evidence quality score: 0.408
-- Mean mechanistic strength score: 0.502
-- Mean clinical applicability score: 0.508
-- Mean evidence feasibility score: 0.504
-- Mean final evidence score: 0.516
-- High feasibility evidence count: 75
-- High citation but low feasibility evidence: 24
-- High mechanistic but low clinical applicability evidence: 8
+- Mean extraction confidence score: 0.813
+- Mean evidence quality score: 0.448
+- Mean mechanistic strength score: 0.446
+- Mean clinical applicability score: 0.584
+- Mean evidence feasibility score: 0.536
+- Mean final evidence score: 0.532
+- High feasibility evidence count: 2741
+- High citation but low feasibility evidence: 100
+- High mechanistic but low clinical applicability evidence: 69
 
 ## Citation and Journal Metadata
 
 - Citation availability rate: 1.0
-- Journal availability rate: 1.0
-- Median citation count: 19.0
-- Citation source breakdown: {'semantic_scholar': 170, 'openalex': 150, 'europe_pmc': 92}
+- Journal availability rate: 0.917
+- Median citation count: 9.0
+- Citation source breakdown: {'openalex': 3040, 'semantic_scholar': 3557, 'europe_pmc': 2084}
 - Journal metric availability: 0.0
 - Note: citation and journal metrics are auxiliary and not primary evidence quality determinants.
 
 ## Animal and Translational Evidence
 
-- Human evidence count: 34
-- Animal evidence count: 148
-- Translational evidence count: 203
-- Species distribution: {'unknown': 230, 'cat': 22, 'rat': 94, 'human': 34, 'mixed': 24, 'mouse': 8}
-- Evidence context distribution: {'human_general_sleep': 135, 'human_neuroimaging': 54, 'animal_mechanistic': 218, 'human_clinical': 5}
-- Downstream role distribution: {'direct_human_evidence': 145, 'translational_mechanistic_support': 203, 'background_mechanism': 23, 'not_for_hypothesis_generation': 34, 'critique_only': 7}
-- Translational risks: {'no_direct_human_measure': 373, 'non_clinical_model': 46, 'species_difference': 148, 'small_animal_model': 102}
+- Human evidence count: 1920
+- Animal evidence count: 2419
+- Translational evidence count: 3090
+- Species distribution: {'human': 1920, 'cat': 494, 'unknown': 4342, 'rat': 1637, 'mixed': 215, 'nonhuman_primate': 4, 'mouse': 69}
+- Evidence context distribution: {'human_clinical': 1460, 'human_neuroimaging': 2452, 'animal_mechanistic': 3229, 'human_general_sleep': 1508, 'cellular_molecular': 32}
+- Downstream role distribution: {'direct_human_evidence': 3362, 'background_mechanism': 764, 'critique_only': 1026, 'translational_mechanistic_support': 3090, 'not_for_hypothesis_generation': 439}
+- Translational risks: {'no_direct_human_measure': 6220, 'non_clinical_model': 713, 'species_difference': 2419, 'small_animal_model': 1706, 'artificial_sleep_deprivation': 118}
 - Animal evidence is used for mechanistic plausibility, not direct human clinical support.
 
 ## LLM-assisted Evidence Verification
@@ -235,7 +245,7 @@
 - LLM calls attempted: 0
 - LLM calls succeeded: 0
 - LLM calls failed: 0
-- Rule-only evidence count: 412
+- Rule-only evidence count: 8681
 - LLM-verified evidence count: 0
 - LLM-revised evidence count: 0
 - LLM split claim count: 0

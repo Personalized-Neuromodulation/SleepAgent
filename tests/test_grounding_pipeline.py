@@ -11,11 +11,28 @@ def _tmp_config(tmp_path: Path) -> Path:
     config = load_config("configs/grounding_config.yaml")
     config.pop("_config_path", None)
     config.pop("_project_root", None)
+    database_config = tmp_path / "database_config.yaml"
+    database_config.write_text(
+        yaml.safe_dump(
+            {
+                "database": {
+                    "enabled": True,
+                    "backend_env": "SLEEPAGENT_DATABASE_BACKEND",
+                    "default_backend": "sqlite",
+                    "sqlite_path_env": "SLEEPAGENT_SQLITE_PATH",
+                    "default_sqlite_path": str(tmp_path / "literature.db"),
+                }
+            },
+            sort_keys=False,
+        ),
+        encoding="utf-8",
+    )
     literature_config = tmp_path / "literature_library_config.yaml"
     literature_config.write_text(yaml.safe_dump({"embedding": {"enabled": False}}, sort_keys=False), encoding="utf-8")
     config.setdefault("api", {})["enabled"] = True
     config["paths"].update(
         {
+            "database_config": str(database_config),
             "literature_library_config": str(literature_config),
             "output_grounding_dir": str(tmp_path / "grounding"),
             "output_profiles_dir": str(tmp_path / "profiles"),
@@ -85,6 +102,29 @@ def test_grounding_pipeline_reads_embedding_config_from_literature_config_for_db
     run_grounding_pipeline(config_path)
 
     assert seen["embedding_config"] == literature_embedding
+
+
+def test_grounding_pipeline_accepts_dynamic_retrieval_query(monkeypatch, tmp_path):
+    config_path = _tmp_config(tmp_path)
+    config = yaml.safe_load(config_path.read_text(encoding="utf-8"))
+    literature_config = tmp_path / "literature_library_config.yaml"
+    literature_embedding = {"provider": "local_minilm", "model": "sentence-transformers/all-MiniLM-L6-v2", "enabled": True}
+    literature_config.write_text(yaml.safe_dump({"embedding": literature_embedding}, sort_keys=False), encoding="utf-8")
+    config["paths"]["literature_library_config"] = str(literature_config)
+    config_path.write_text(yaml.safe_dump(config, sort_keys=False), encoding="utf-8")
+    seen = {}
+
+    def fake_db_rag_retrieve(session, query, *, top_k=10, embedding_config=None):
+        seen["query"] = query
+        seen["top_k"] = top_k
+        return [], {"source": "literature_db_rag", "enabled": True, "retrieval_hits": 0, "available_chunks": 0}
+
+    monkeypatch.setattr("sleep_ai_scientist.grounding.grounding_pipeline.search_literature_apis", fake_online_literature_search)
+    monkeypatch.setattr("sleep_ai_scientist.grounding.grounding_pipeline.retrieve_literature_records_from_db", fake_db_rag_retrieve)
+
+    run_grounding_pipeline(config_path, retrieval_query="thalamus default mode network sleep fMRI")
+
+    assert seen["query"] == "thalamus default mode network sleep fMRI"
 
 
 def test_grounding_pipeline_skips_llm_context_when_disabled(monkeypatch, tmp_path):

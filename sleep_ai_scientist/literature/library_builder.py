@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from pathlib import Path
 from typing import Any
 
@@ -32,15 +31,8 @@ def _path(config: dict[str, Any], key: str) -> Path:
 
 def _write_api_outputs(config: dict[str, Any], api_records: list[LiteratureRecord]) -> None:
     csv_path = _path(config, "api_retrieved_csv")
-    jsonl_path = _path(config, "api_retrieved_jsonl")
     rows = [record.model_dump(mode="json") for record in api_records]
     write_csv(csv_path, rows)
-    if not bool(config.get("outputs", {}).get("write_jsonl", True)):
-        return
-    jsonl_path.parent.mkdir(parents=True, exist_ok=True)
-    with jsonl_path.open("w", encoding="utf-8") as f:
-        for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
 def _log_progress(message: str, **fields: Any) -> None:
@@ -168,7 +160,7 @@ def run_literature_build(
         )
         _log_progress("export_deduplication_done", duplicate_groups=dedup_paths["summary"]["merged_duplicate_count"])
         _log_progress("export_registry_start")
-        export_literature_registry_csv_jsonl(session_obj, _path(config, "registry_csv"), _path(config, "registry_jsonl"))
+        export_literature_registry_csv_jsonl(session_obj, _path(config, "registry_csv"))
         _log_progress("export_registry_done")
         _log_progress("load_registry_start")
         registry = session_obj.query(Paper).all()
@@ -203,7 +195,6 @@ def run_literature_build(
                 session_obj,
                 config_path(config, "rag_index_jsonl", "outputs/literature/rag_abstract_chunks.jsonl"),
                 embedding_config=embedding_cfg,
-                write_jsonl=bool(config.get("outputs", {}).get("write_rag_jsonl", config.get("outputs", {}).get("write_jsonl", True))),
             )
             _log_progress(
                 "rag_index_done",
@@ -219,7 +210,7 @@ def run_literature_build(
             query_set_version=query_set_version,
             manifest_path=str(_path(config, "manifest")),
             registry_csv_path=str(_path(config, "registry_csv")),
-            registry_jsonl_path=str(_path(config, "registry_jsonl")),
+            registry_jsonl_path="",
             report_path=str(_path(config, "build_report")),
             notes="Sleep literature library build",
         )

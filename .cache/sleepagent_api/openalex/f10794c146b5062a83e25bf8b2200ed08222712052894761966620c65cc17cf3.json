@@ -1,0 +1,3620 @@
+{
+  "meta": {
+    "count": 5,
+    "db_response_time_ms": 51,
+    "page": 1,
+    "per_page": 50,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (DVARS \"and\" thalamocortical connectivity in insomnia)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "DVARS and thalamocortical connectivity in insomnia",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:DVARS and thalamocortical connectivity in insomnia&per_page=50"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W3128474455",
+      "doi": "https://doi.org/10.3389/fneur.2021.625431",
+      "title": "Daily Morning Blue Light Therapy for Post-mTBI Sleep Disruption: Effects on Brain Structure and Function",
+      "display_name": "Daily Morning Blue Light Therapy for Post-mTBI Sleep Disruption: Effects on Brain Structure and Function",
+      "publication_year": 2021,
+      "cited_by_count": 27,
+      "abstract_inverted_index": {
+        "Background:": [
+          0
+        ],
+        "Mild": [
+          1
+        ],
+        "traumatic": [
+          2
+        ],
+        "brain": [
+          3,
+          37,
+          59
+        ],
+        "injuries": [
+          4
+        ],
+        "(mTBIs)": [
+          5
+        ],
+        "are": [
+          6,
+          43
+        ],
+        "associated": [
+          7,
+          220,
+          237,
+          255,
+          307,
+          323
+        ],
+        "with": [
+          8,
+          221,
+          238,
+          256,
+          308,
+          324
+        ],
+        "novel": [
+          9
+        ],
+        "or": [
+          10,
+          115
+        ],
+        "worsened": [
+          11
+        ],
+        "sleep": [
+          12,
+          310
+        ],
+        "disruption.": [
+          13
+        ],
+        "Several": [
+          14
+        ],
+        "studies": [
+          15
+        ],
+        "indicate": [
+          16
+        ],
+        "that": [
+          17,
+          132,
+          152,
+          339
+        ],
+        "daily": [
+          18,
+          55,
+          112,
+          285
+        ],
+        "morning": [
+          19,
+          56,
+          113,
+          286
+        ],
+        "blue": [
+          20,
+          114
+        ],
+        "light": [
+          21,
+          118,
+          200
+        ],
+        "therapy": [
+          22,
+          119
+        ],
+        "(BLT)": [
+          23
+        ],
+        "is": [
+          24,
+          49,
+          332
+        ],
+        "effective": [
+          25
+        ],
+        "for": [
+          26,
+          181,
+          187,
+          348
+        ],
+        "reducing": [
+          27
+        ],
+        "post-mTBI": [
+          28,
+          74
+        ],
+        "daytime": [
+          29,
+          75,
+          143,
+          217,
+          252,
+          313,
+          328
+        ],
+        "sleepiness": [
+          30,
+          218,
+          253
+        ],
+        "and": [
+          31,
+          39,
+          61,
+          64,
+          70,
+          123,
+          155,
+          169,
+          210,
+          213,
+          245,
+          248,
+          262,
+          274,
+          297,
+          304,
+          312,
+          317
+        ],
+        "fatigue.": [
+          32
+        ],
+        "Studies": [
+          33
+        ],
+        "demonstrating": [
+          34
+        ],
+        "changes": [
+          35,
+          69
+        ],
+        "in": [
+          36,
+          73,
+          95,
+          164,
+          201,
+          224,
+          292,
+          302,
+          326
+        ],
+        "structure": [
+          38,
+          60
+        ],
+        "function": [
+          40
+        ],
+        "following": [
+          41,
+          124
+        ],
+        "BLT": [
+          42,
+          57,
+          192,
+          235,
+          350
+        ],
+        "limited.": [
+          44
+        ],
+        "The": [
+          45
+        ],
+        "present": [
+          46
+        ],
+        "study's": [
+          47
+        ],
+        "purpose": [
+          48
+        ],
+        "to": [
+          50,
+          93,
+          105,
+          122,
+          175,
+          289,
+          334
+        ],
+        "identify": [
+          51,
+          335,
+          342
+        ],
+        "the": [
+          52,
+          65,
+          134,
+          178,
+          207,
+          230,
+          243,
+          336
+        ],
+        "effect": [
+          53
+        ],
+        "of": [
+          54,
+          80,
+          109,
+          141,
+          204,
+          229
+        ],
+        "on": [
+          58
+        ],
+        "functional": [
+          62,
+          157,
+          171,
+          240,
+          258,
+          298
+        ],
+        "connectivity": [
+          63,
+          172,
+          241,
+          259,
+          270,
+          299
+        ],
+        "association": [
+          66
+        ],
+        "between": [
+          67,
+          242,
+          260,
+          271
+        ],
+        "these": [
+          68,
+          320
+        ],
+        "self-reported": [
+          71,
+          142,
+          327
+        ],
+        "change": [
+          72,
+          163
+        ],
+        "sleepiness.": [
+          76,
+          144,
+          329
+        ],
+        "Methods:": [
+          77
+        ],
+        "A": [
+          78
+        ],
+        "total": [
+          79
+        ],
+        "62": [
+          81
+        ],
+        "individuals": [
+          82,
+          101,
+          127,
+          146,
+          190,
+          343
+        ],
+        "recovering": [
+          83,
+          344
+        ],
+        "from": [
+          84,
+          89,
+          173,
+          345
+        ],
+        "a": [
+          85,
+          96,
+          129,
+          139,
+          148,
+          346
+        ],
+        "mTBI": [
+          86,
+          347
+        ],
+        "were": [
+          87,
+          102,
+          177,
+          300,
+          322
+        ],
+        "recruited": [
+          88
+        ],
+        "two": [
+          90
+        ],
+        "US": [
+          91
+        ],
+        "cities": [
+          92
+        ],
+        "participate": [
+          94
+        ],
+        "double-blind": [
+          97
+        ],
+        "placebo-controlled": [
+          98
+        ],
+        "trial.": [
+          99
+        ],
+        "Eligible": [
+          100
+        ],
+        "randomly": [
+          103
+        ],
+        "assigned": [
+          104
+        ],
+        "undergo": [
+          106
+        ],
+        "6": [
+          107
+        ],
+        "weeks": [
+          108
+        ],
+        "30": [
+          110
+        ],
+        "min": [
+          111
+        ],
+        "placebo": [
+          116
+        ],
+        "amber": [
+          117,
+          199
+        ],
+        "(ALT).": [
+          120
+        ],
+        "Prior": [
+          121
+        ],
+        "treatment": [
+          125
+        ],
+        "all": [
+          126
+        ],
+        "completed": [
+          128
+        ],
+        "comprehensive": [
+          130
+        ],
+        "battery": [
+          131,
+          151
+        ],
+        "included": [
+          133,
+          153
+        ],
+        "Epworth": [
+          135
+        ],
+        "Sleepiness": [
+          136
+        ],
+        "Scale": [
+          137
+        ],
+        "as": [
+          138,
+          266,
+          268
+        ],
+        "measure": [
+          140
+        ],
+        "All": [
+          145
+        ],
+        "underwent": [
+          147
+        ],
+        "multimodal": [
+          149
+        ],
+        "neuroimaging": [
+          150
+        ],
+        "anatomical": [
+          154
+        ],
+        "resting-state": [
+          156
+        ],
+        "magnetic": [
+          158
+        ],
+        "resonance": [
+          159
+        ],
+        "imaging.": [
+          160
+        ],
+        "Atlas-based": [
+          161
+        ],
+        "regional": [
+          162
+        ],
+        "gray": [
+          165,
+          294
+        ],
+        "matter": [
+          166,
+          295
+        ],
+        "volume": [
+          167,
+          296
+        ],
+        "(GMV)": [
+          168
+        ],
+        "region-to-region": [
+          170
+        ],
+        "baseline": [
+          174
+        ],
+        "post-treatment": [
+          176
+        ],
+        "primary": [
+          179
+        ],
+        "endpoints": [
+          180
+        ],
+        "this": [
+          182
+        ],
+        "study.": [
+          183
+        ],
+        "Results:": [
+          184
+        ],
+        "After": [
+          185
+        ],
+        "adjusting": [
+          186
+        ],
+        "pre-treatment": [
+          188
+        ],
+        "GMV,": [
+          189
+        ],
+        "receiving": [
+          191,
+          198
+        ],
+        "had": [
+          193
+        ],
+        "greater": [
+          194,
+          222
+        ],
+        "GMV": [
+          195,
+          223
+        ],
+        "than": [
+          196
+        ],
+        "those": [
+          197
+        ],
+        "15": [
+          202
+        ],
+        "regions": [
+          203
+        ],
+        "interest,": [
+          205
+        ],
+        "including": [
+          206
+        ],
+        "right": [
+          208
+        ],
+        "thalamus": [
+          209,
+          244
+        ],
+        "bilateral": [
+          211
+        ],
+        "prefrontal": [
+          212,
+          247
+        ],
+        "orbitofrontal": [
+          214,
+          249
+        ],
+        "cortices.": [
+          215,
+          250
+        ],
+        "Improved": [
+          216,
+          251
+        ],
+        "was": [
+          219,
+          236,
+          254
+        ],
+        "74": [
+          225
+        ],
+        "ROIs,": [
+          226
+        ],
+        "covering": [
+          227
+        ],
+        "many": [
+          228
+        ],
+        "same": [
+          231
+        ],
+        "general": [
+          232
+        ],
+        "regions.": [
+          233
+        ],
+        "Likewise,": [
+          234
+        ],
+        "increased": [
+          239,
+          257
+        ],
+        "both": [
+          246,
+          293,
+          309
+        ],
+        "attention": [
+          261,
+          275
+        ],
+        "cognitive": [
+          263,
+          314
+        ],
+        "control": [
+          264
+        ],
+        "networks": [
+          265,
+          276,
+          305
+        ],
+        "well": [
+          267
+        ],
+        "decreased": [
+          269
+        ],
+        "visual,": [
+          272
+        ],
+        "motor,": [
+          273
+        ],
+        "(all": [
+          277
+        ],
+        "FDR": [
+          278
+        ],
+        "corrected": [
+          279
+        ],
+        "p": [
+          280
+        ],
+        "&amp;lt;": [
+          281
+        ],
+        "0.05).": [
+          282
+        ],
+        "Conclusions:": [
+          283
+        ],
+        "Following": [
+          284
+        ],
+        "BLT,": [
+          287
+        ],
+        "moderate": [
+          288
+        ],
+        "large": [
+          290
+        ],
+        "increases": [
+          291
+        ],
+        "observed": [
+          301
+        ],
+        "areas": [
+          303
+        ],
+        "previously": [
+          306
+        ],
+        "regulation": [
+          311
+        ],
+        "function,": [
+          315
+        ],
+        "alertness,": [
+          316
+        ],
+        "attention.": [
+          318
+        ],
+        "Additionally,": [
+          319
+        ],
+        "findings": [
+          321
+        ],
+        "improvements": [
+          325
+        ],
+        "Further": [
+          330
+        ],
+        "work": [
+          331
+        ],
+        "needed": [
+          333
+        ],
+        "personal": [
+          337
+        ],
+        "characteristics": [
+          338
+        ],
+        "may": [
+          340,
+          351
+        ],
+        "selectively": [
+          341
+        ],
+        "whom": [
+          349
+        ],
+        "be": [
+          352
+        ],
+        "optimally": [
+          353
+        ],
+        "beneficial.": [
+          354
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5032616740",
+            "display_name": "Adam C. Raikes",
+            "orcid": "https://orcid.org/0000-0002-1609-6727"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138006243",
+              "display_name": "University of Arizona",
+              "ror": "https://ror.org/03m2x1q45",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138006243"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I2800531696",
+              "display_name": "Arizona Science Center",
+              "ror": "https://ror.org/05g3rxr48",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I2800531696"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210138309",
+              "display_name": "Center for Innovation",
+              "ror": "https://ror.org/04c1v2b17",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1322918889",
+                "https://openalex.org/I2799886695",
+                "https://openalex.org/I4210089489",
+                "https://openalex.org/I4210138309"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Adam C. Raikes",
+          "raw_affiliation_strings": [
+            "Center for Innovation in Brain Science, University of Arizona, Tucson, AZ, United States"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Innovation in Brain Science, University of Arizona, Tucson, AZ, United States",
+              "institution_ids": [
+                "https://openalex.org/I138006243",
+                "https://openalex.org/I2800531696",
+                "https://openalex.org/I4210138309"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5035568207",
+            "display_name": "Natalie S. Dailey",
+            "orcid": "https://orcid.org/0000-0003-4800-4118"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138006243",
+              "display_name": "University of Arizona",
+              "ror": "https://ror.org/03m2x1q45",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138006243"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Natalie S. Dailey",
+          "raw_affiliation_strings": [
+            "Social, Cognitive, and Affective Neuroscience Lab, University of Arizona, Tucson, AZ, United States"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Social, Cognitive, and Affective Neuroscience Lab, University of Arizona, Tucson, AZ, United States",
+              "institution_ids": [
+                "https://openalex.org/I138006243"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5018207708",
+            "display_name": "Brittany Forbeck",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138006243",
+              "display_name": "University of Arizona",
+              "ror": "https://ror.org/03m2x1q45",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138006243"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Brittany Forbeck",
+          "raw_affiliation_strings": [
+            "Social, Cognitive, and Affective Neuroscience Lab, University of Arizona, Tucson, AZ, United States"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Social, Cognitive, and Affective Neuroscience Lab, University of Arizona, Tucson, AZ, United States",
+              "institution_ids": [
+                "https://openalex.org/I138006243"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5021874009",
+            "display_name": "Anna Alkozei",
+            "orcid": "https://orcid.org/0000-0002-4701-3672"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138006243",
+              "display_name": "University of Arizona",
+              "ror": "https://ror.org/03m2x1q45",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138006243"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Anna Alkozei",
+          "raw_affiliation_strings": [
+            "Social, Cognitive, and Affective Neuroscience Lab, University of Arizona, Tucson, AZ, United States"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Social, Cognitive, and Affective Neuroscience Lab, University of Arizona, Tucson, AZ, United States",
+              "institution_ids": [
+                "https://openalex.org/I138006243"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5081762691",
+            "display_name": "William D. S. Killgore",
+            "orcid": "https://orcid.org/0000-0002-5328-0208"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138006243",
+              "display_name": "University of Arizona",
+              "ror": "https://ror.org/03m2x1q45",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138006243"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "William D. S. Killgore",
+          "raw_affiliation_strings": [
+            "Social, Cognitive, and Affective Neuroscience Lab, University of Arizona, Tucson, AZ, United States"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Social, Cognitive, and Affective Neuroscience Lab, University of Arizona, Tucson, AZ, United States",
+              "institution_ids": [
+                "https://openalex.org/I138006243"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.3389/fneur.2021.625431",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3389/fneur.2021.625431",
+        "pdf_url": "https://www.frontiersin.org/articles/10.3389/fneur.2021.625431/pdf",
+        "source": {
+          "id": "https://openalex.org/S96975567",
+          "display_name": "Frontiers in Neurology",
+          "issn_l": "1664-2295",
+          "issn": [
+            "1664-2295"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320527",
+          "host_organization_name": "Frontiers Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320527"
+          ],
+          "host_organization_lineage_names": [
+            "Frontiers Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Frontiers in Neurology",
+        "raw_type": "journal-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.frontiersin.org/articles/10.3389/fneur.2021.625431/pdf",
+        "any_repository_has_fulltext": true
+      }
+    },
+    {
+      "id": "https://openalex.org/W4323041808",
+      "doi": "https://doi.org/10.11606/t.55.2022.tde-03032023-100207",
+      "title": "Plataforma de computação neurocognitiva:protótipo na reabilitação do zumbido através da regulação da emoção concomitante com a estimulação transcraniana por corrente diret",
+      "display_name": "Plataforma de computação neurocognitiva:protótipo na reabilitação do zumbido através da regulação da emoção concomitante com a estimulação transcraniana por corrente diret",
+      "publication_year": 2022,
+      "cited_by_count": 0,
+      "abstract_inverted_index": {
+        "Brain": [
+          0
+        ],
+        "cognitive": [
+          1,
+          28,
+          44,
+          63,
+          115,
+          126,
+          152,
+          165,
+          192,
+          219,
+          235
+        ],
+        "networks": [
+          2,
+          143
+        ],
+        "consolidate": [
+          3
+        ],
+        "emergently": [
+          4
+        ],
+        "according": [
+          5
+        ],
+        "to": [
+          6,
+          10,
+          15,
+          78,
+          90,
+          163,
+          179,
+          190,
+          227,
+          232,
+          262
+        ],
+        "but": [
+          7
+        ],
+        "not": [
+          8
+        ],
+        "limited": [
+          9
+        ],
+        "individual": [
+          11
+        ],
+        "lifelong": [
+          12
+        ],
+        "experiences": [
+          13
+        ],
+        "related": [
+          14
+        ],
+        "emotion,": [
+          16
+        ],
+        "stress,": [
+          17
+        ],
+        "fear,": [
+          18
+        ],
+        "attention,": [
+          19
+        ],
+        "learning,": [
+          20
+        ],
+        "society,": [
+          21
+        ],
+        "language,": [
+          22
+        ],
+        "religion,": [
+          23
+        ],
+        "culture,": [
+          24
+        ],
+        "and": [
+          25,
+          38,
+          45,
+          56,
+          59,
+          71,
+          85,
+          97,
+          131,
+          158,
+          196,
+          209,
+          223,
+          242,
+          246,
+          253
+        ],
+        "family": [
+          26
+        ],
+        "environment.Therefore,": [
+          27
+        ],
+        "functioning,": [
+          29
+        ],
+        "causality": [
+          30
+        ],
+        "versus": [
+          31
+        ],
+        "contingency": [
+          32
+        ],
+        "issues,": [
+          33
+        ],
+        "brain": [
+          34,
+          81
+        ],
+        "networks,": [
+          35
+        ],
+        "intervention": [
+          36
+        ],
+        "protocol,": [
+          37
+        ],
+        "rehabilitation": [
+          39,
+          64,
+          197
+        ],
+        "effectiveness": [
+          40
+        ],
+        "are": [
+          41,
+          88
+        ],
+        "challenges": [
+          42,
+          112
+        ],
+        "in": [
+          43,
+          161,
+          170,
+          215,
+          267
+        ],
+        "neuroscience": [
+          46
+        ],
+        "sciences.Additionally,": [
+          47
+        ],
+        "data-driven": [
+          48,
+          225,
+          256
+        ],
+        "knowledge": [
+          49,
+          70,
+          122
+        ],
+        "supports": [
+          50
+        ],
+        "discovering": [
+          51
+        ],
+        "patterns,": [
+          52
+        ],
+        "creating": [
+          53
+        ],
+        "decision-making": [
+          54
+        ],
+        "strategies,": [
+          55
+        ],
+        "making": [
+          57
+        ],
+        "predictive": [
+          58
+        ],
+        "perspective": [
+          60
+        ],
+        "analytics": [
+          61
+        ],
+        "possible.However,": [
+          62
+        ],
+        "is": [
+          65,
+          113,
+          119,
+          149
+        ],
+        "also": [
+          66
+        ],
+        "desired": [
+          67
+        ],
+        "by": [
+          68
+        ],
+        "updating": [
+          69
+        ],
+        "autonomous": [
+          72
+        ],
+        "learning": [
+          73,
+          266
+        ],
+        "through": [
+          74
+        ],
+        "new": [
+          75
+        ],
+        "conditions": [
+          76
+        ],
+        "due": [
+          77
+        ],
+        "individualized": [
+          79
+        ],
+        "emergent": [
+          80
+        ],
+        "consolidation.Eventually,": [
+          82
+        ],
+        "digital": [
+          83
+        ],
+        "infrastructure": [
+          84
+        ],
+        "computing": [
+          86,
+          116,
+          153,
+          189,
+          213
+        ],
+        "performance": [
+          87,
+          260
+        ],
+        "essential": [
+          89
+        ],
+        "make": [
+          91,
+          180
+        ],
+        "the": [
+          92,
+          100,
+          104,
+          234,
+          239,
+          255,
+          268
+        ],
+        "developed": [
+          93,
+          211
+        ],
+        "models": [
+          94
+        ],
+        "accessible,": [
+          95
+        ],
+        "affordable,": [
+          96
+        ],
+        "updatable": [
+          98
+        ],
+        "for": [
+          99,
+          203,
+          249
+        ],
+        "healthcare": [
+          101
+        ],
+        "system.One": [
+          102
+        ],
+        "of": [
+          103,
+          238
+        ],
+        "practical": [
+          105
+        ],
+        "solutions": [
+          106
+        ],
+        "that": [
+          107,
+          155
+        ],
+        "can": [
+          108,
+          156
+        ],
+        "collectively": [
+          109
+        ],
+        "address": [
+          110
+        ],
+        "all": [
+          111
+        ],
+        "a": [
+          114,
+          136,
+          150,
+          171
+        ],
+        "platform.Cognitive": [
+          117
+        ],
+        "Computing(CC)": [
+          118
+        ],
+        "an": [
+          120,
+          181
+        ],
+        "emerging": [
+          121
+        ],
+        "niche": [
+          123
+        ],
+        "grounded": [
+          124
+        ],
+        "on": [
+          125
+        ],
+        "science,": [
+          127,
+          130
+        ],
+        "neuroscience,": [
+          128
+        ],
+        "data": [
+          129
+        ],
+        "computer": [
+          132
+        ],
+        "technologies.Architecturally,": [
+          133
+        ],
+        "I": [
+          134,
+          177
+        ],
+        "propose": [
+          135
+        ],
+        "Cognitive": [
+          137,
+          183
+        ],
+        "Computing": [
+          138,
+          147
+        ],
+        "platform": [
+          139
+        ],
+        "constructed": [
+          140
+        ],
+        "from": [
+          141,
+          217
+        ],
+        "micro-module": [
+          142
+        ],
+        "called": [
+          144
+        ],
+        "neurocognitive": [
+          145,
+          188,
+          212
+        ],
+        "computing.Neurocognitive": [
+          146
+        ],
+        "(NcC)": [
+          148
+        ],
+        "self-regulatable": [
+          151
+        ],
+        "unit": [
+          154
+        ],
+        "learn": [
+          157
+        ],
+        "be": [
+          159
+        ],
+        "trained": [
+          160
+        ],
+        "real-time": [
+          162,
+          228
+        ],
+        "generate": [
+          164
+        ],
+        "system": [
+          166
+        ],
+        "mechanisms": [
+          167
+        ],
+        "individually": [
+          168
+        ],
+        "or": [
+          169
+        ],
+        "complex": [
+          172
+        ],
+        "network.In": [
+          173
+        ],
+        "this": [
+          174
+        ],
+        "8-year": [
+          175
+        ],
+        "project,": [
+          176
+        ],
+        "tried": [
+          178,
+          231
+        ],
+        "integrated": [
+          182
+        ],
+        "Rehabilitation": [
+          184
+        ],
+        "Platform": [
+          185
+        ],
+        "(iCRP)": [
+          186
+        ],
+        "as": [
+          187
+        ],
+        "navigate": [
+          191
+        ],
+        "impairment": [
+          193
+        ],
+        "(emotion": [
+          194
+        ],
+        "dysregulation)": [
+          195
+        ],
+        "with": [
+          198,
+          258
+        ],
+        "transcranial": [
+          199
+        ],
+        "electrical": [
+          200
+        ],
+        "stimulation": [
+          201
+        ],
+        "techniques": [
+          202
+        ],
+        "tinnitus": [
+          204
+        ],
+        "patients.In": [
+          205
+        ],
+        "iCRP,": [
+          206
+        ],
+        "we": [
+          207
+        ],
+        "conceptualized": [
+          208
+        ],
+        "partially": [
+          210
+        ],
+        "segments": [
+          214
+        ],
+        "parallel,": [
+          216
+        ],
+        "theoretical": [
+          218,
+          245
+        ],
+        "modeling,": [
+          220
+        ],
+        "clinical": [
+          221
+        ],
+        "trial,": [
+          222
+        ],
+        "un/supervised": [
+          224
+        ],
+        "mining": [
+          226
+        ],
+        "deep": [
+          229,
+          264
+        ],
+        "learning.I": [
+          230
+        ],
+        "document": [
+          233
+        ],
+        "science": [
+          236
+        ],
+        "section": [
+          237
+        ],
+        "project": [
+          240
+        ],
+        "concisely": [
+          241
+        ],
+        "profoundly,": [
+          243
+        ],
+        "developing": [
+          244
+        ],
+        "experimental": [
+          247
+        ],
+        "toolboxes": [
+          248
+        ],
+        "unsupervised": [
+          250
+        ],
+        "pattern": [
+          251
+        ],
+        "recognition": [
+          252
+        ],
+        "exploring": [
+          254
+        ],
+        "methodologies": [
+          257
+        ],
+        "metric": [
+          259
+        ],
+        "evaluations": [
+          261
+        ],
+        "fuel": [
+          263
+        ],
+        "reinforcement": [
+          265
+        ],
+        "future.": [
+          269
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5088460654",
+            "display_name": "Iman Ghodratitoostani",
+            "orcid": "https://orcid.org/0000-0002-9098-2663"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Iman Ghodratitoostani",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.11606/t.55.2022.tde-03032023-100207",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.11606/t.55.2022.tde-03032023-100207",
+        "pdf_url": "http://www.teses.usp.br/teses/disponiveis/55/55134/tde-03032023-100207/publico/ImanGhodratitoostani_rev.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Universidade de São Paulo",
+        "raw_type": "dissertation"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "http://www.teses.usp.br/teses/disponiveis/55/55134/tde-03032023-100207/publico/ImanGhodratitoostani_rev.pdf",
+        "any_repository_has_fulltext": null
+      }
+    },
+    {
+      "id": "https://openalex.org/W7153256626",
+      "doi": "https://doi.org/10.21203/rs.3.rs-9102163/v1",
+      "title": "Sleep Releases Action-Mode Network Revealed by Human Connectome",
+      "display_name": "Sleep Releases Action-Mode Network Revealed by Human Connectome",
+      "publication_year": 2026,
+      "cited_by_count": 0,
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5082042654",
+            "display_name": "Guoyuan Yang",
+            "orcid": "https://orcid.org/0000-0002-7864-3714"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I125839683",
+              "display_name": "Beijing Institute of Technology",
+              "ror": "https://ror.org/01skt4w74",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I125839683",
+                "https://openalex.org/I890469752"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Guoyuan Yang",
+          "raw_affiliation_strings": [
+            "Beijing Institute of Technology"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-7864-3714",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Beijing Institute of Technology",
+              "institution_ids": [
+                "https://openalex.org/I125839683"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5133368506",
+            "display_name": "Qihong Zou",
+            "orcid": "https://orcid.org/0000-0001-8732-6633"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I20231570",
+              "display_name": "Peking University",
+              "ror": "https://ror.org/02v51f717",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I20231570"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Qihong Zou",
+          "raw_affiliation_strings": [
+            "Peking University"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8732-6633",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Peking University",
+              "institution_ids": [
+                "https://openalex.org/I20231570"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5133356218",
+            "display_name": "Jinlong Li",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I125839683",
+              "display_name": "Beijing Institute of Technology",
+              "ror": "https://ror.org/01skt4w74",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I125839683",
+                "https://openalex.org/I890469752"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jinlong Li",
+          "raw_affiliation_strings": [
+            "Beijing Institute of Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Beijing Institute of Technology",
+              "institution_ids": [
+                "https://openalex.org/I125839683"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5133326365",
+            "display_name": "Yu Zhang",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I125839683",
+              "display_name": "Beijing Institute of Technology",
+              "ror": "https://ror.org/01skt4w74",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I125839683",
+                "https://openalex.org/I890469752"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yu Zhang",
+          "raw_affiliation_strings": [
+            "Beijing Institute of Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Beijing Institute of Technology",
+              "institution_ids": [
+                "https://openalex.org/I125839683"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5051164212",
+            "display_name": "Lang Qin",
+            "orcid": "https://orcid.org/0000-0001-7654-6278"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I144112489",
+              "display_name": "McGovern Institute for Brain Research",
+              "ror": "https://ror.org/05ymca674",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I144112489",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210115644",
+              "display_name": "Chinese Institute for Brain Research",
+              "ror": "https://ror.org/029819q61",
+              "country_code": "CN",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210115644"
+              ]
+            }
+          ],
+          "countries": [
+            "CN",
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Lang Qin",
+          "raw_affiliation_strings": [
+            "McGovern Institute of Brain Research, Peking University, Beijing, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "McGovern Institute of Brain Research, Peking University, Beijing, China",
+              "institution_ids": [
+                "https://openalex.org/I144112489",
+                "https://openalex.org/I4210115644"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Zhifeng Liang",
+            "orcid": "https://orcid.org/0000-0003-2758-1194"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I19820366",
+              "display_name": "Chinese Academy of Sciences",
+              "ror": "https://ror.org/034t30j35",
+              "country_code": "CN",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I19820366"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhifeng Liang",
+          "raw_affiliation_strings": [
+            "Institute of Neuroscience, Chinese Academy of Sciences"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2758-1194",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Neuroscience, Chinese Academy of Sciences",
+              "institution_ids": [
+                "https://openalex.org/I19820366"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5101640031",
+            "display_name": "Ting Xu",
+            "orcid": "https://orcid.org/0000-0002-0065-3832"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210103248",
+              "display_name": "Child Mind Institute",
+              "ror": "https://ror.org/01bfgxw09",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210103248"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ting Xu",
+          "raw_affiliation_strings": [
+            "Child Mind Institute"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0065-3832",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Child Mind Institute",
+              "institution_ids": [
+                "https://openalex.org/I4210103248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5075009651",
+            "display_name": "Ruiliang Bai",
+            "orcid": "https://orcid.org/0000-0003-4246-5984"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I76130692",
+              "display_name": "Zhejiang University",
+              "ror": "https://ror.org/00a2xv884",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I76130692"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ruiliang Bai",
+          "raw_affiliation_strings": [
+            "Zhejiang University"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4246-5984",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Zhejiang University",
+              "institution_ids": [
+                "https://openalex.org/I76130692"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5032668331",
+            "display_name": "Xi‐Nian Zuo",
+            "orcid": "https://orcid.org/0000-0001-9110-585X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I25254941",
+              "display_name": "Beijing Normal University",
+              "ror": "https://ror.org/022k4wk35",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I25254941"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Xi-Nian Zuo",
+          "raw_affiliation_strings": [
+            "Beijing Normal University"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9110-585X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Beijing Normal University",
+              "institution_ids": [
+                "https://openalex.org/I25254941"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5061226868",
+            "display_name": "Hesheng Liu",
+            "orcid": "https://orcid.org/0000-0002-7233-1509"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Hesheng Liu",
+          "raw_affiliation_strings": [
+            "Changping Laboratory"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-7233-1509",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Changping Laboratory",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5133375293",
+            "display_name": "Jia-Hong Gao",
+            "orcid": "https://orcid.org/0000-0002-9311-0297"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I144112489",
+              "display_name": "McGovern Institute for Brain Research",
+              "ror": "https://ror.org/05ymca674",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I144112489",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I20231570",
+              "display_name": "Peking University",
+              "ror": "https://ror.org/02v51f717",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I20231570"
+              ]
+            }
+          ],
+          "countries": [
+            "CN",
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jia-Hong Gao",
+          "raw_affiliation_strings": [
+            "McGovern Institute for Brain Research, Peking University"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9311-0297",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "McGovern Institute for Brain Research, Peking University",
+              "institution_ids": [
+                "https://openalex.org/I144112489",
+                "https://openalex.org/I20231570"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.21203/rs.3.rs-9102163/v1",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.21203/rs.3.rs-9102163/v1",
+        "pdf_url": "https://www.researchsquare.com/article/rs-9102163/latest.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306525896",
+          "display_name": "Research Square",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": "Research Square",
+        "raw_type": "posted-content"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.researchsquare.com/article/rs-9102163/latest.pdf",
+        "any_repository_has_fulltext": true
+      }
+    },
+    {
+      "id": "https://openalex.org/W3188846761",
+      "doi": null,
+      "title": "Towards an Embodied Account of Sleep Loss",
+      "display_name": "Towards an Embodied Account of Sleep Loss",
+      "publication_year": 2021,
+      "cited_by_count": 0,
+      "abstract_inverted_index": {
+        "Sleep": [
+          0
+        ],
+        "is": [
+          1,
+          42,
+          107,
+          377
+        ],
+        "fundamental": [
+          2
+        ],
+        "to": [
+          3,
+          14,
+          37,
+          94,
+          111,
+          123,
+          164,
+          295,
+          346,
+          427
+        ],
+        "life.": [
+          4
+        ],
+        "Multiple": [
+          5
+        ],
+        "biological": [
+          6
+        ],
+        "functions,": [
+          7
+        ],
+        "from": [
+          8,
+          194
+        ],
+        "peripheral": [
+          9,
+          159,
+          305,
+          312
+        ],
+        "immune": [
+          10,
+          319
+        ],
+        "and": [
+          11,
+          20,
+          28,
+          56,
+          71,
+          75,
+          138,
+          145,
+          176,
+          197,
+          217,
+          227,
+          251,
+          265,
+          274,
+          308,
+          311,
+          321,
+          340,
+          356,
+          374,
+          409,
+          453
+        ],
+        "cardiovascular": [
+          12,
+          146,
+          388
+        ],
+        "systems,": [
+          13
+        ],
+        "central": [
+          15,
+          297,
+          310,
+          405
+        ],
+        "brain": [
+          16,
+          55,
+          74,
+          154,
+          175,
+          220,
+          249,
+          263,
+          276,
+          355,
+          373,
+          406
+        ],
+        "operations": [
+          17
+        ],
+        "governing": [
+          18
+        ],
+        "cognition": [
+          19
+        ],
+        "emotion,": [
+          21
+        ],
+        "are": [
+          22,
+          77,
+          184,
+          198,
+          272,
+          314
+        ],
+        "perturbed": [
+          23
+        ],
+        "by": [
+          24,
+          30,
+          134,
+          269
+        ],
+        "sleep": [
+          25,
+          31,
+          41,
+          91,
+          105,
+          136,
+          182,
+          212,
+          236,
+          242,
+          270,
+          299,
+          325,
+          332,
+          392,
+          399,
+          421,
+          424,
+          444
+        ],
+        "when": [
+          26,
+          32
+        ],
+        "deficient": [
+          27
+        ],
+        "restored": [
+          29
+        ],
+        "sufficient.": [
+          33
+        ],
+        "This": [
+          34,
+          148
+        ],
+        "evidence": [
+          35
+        ],
+        "leads": [
+          36
+        ],
+        "the": [
+          38,
+          50,
+          73,
+          98,
+          101,
+          117,
+          166,
+          170,
+          209,
+          215,
+          245,
+          254,
+          262,
+          280,
+          290,
+          296,
+          302,
+          318,
+          354,
+          366,
+          372,
+          375,
+          387,
+          433,
+          440
+        ],
+        "proposition": [
+          39
+        ],
+        "that": [
+          40,
+          169,
+          211,
+          241,
+          309,
+          331,
+          341,
+          368
+        ],
+        "necessary": [
+          43,
+          110
+        ],
+        "for": [
+          44,
+          59,
+          127,
+          224,
+          437
+        ],
+        "coordinating": [
+          45
+        ],
+        "whole-organism": [
+          46
+        ],
+        "adaptation,": [
+          47
+        ],
+        "which": [
+          48
+        ],
+        "requires": [
+          49
+        ],
+        "active": [
+          51
+        ],
+        "co-regulation": [
+          52
+        ],
+        "of": [
+          53,
+          84,
+          89,
+          100,
+          104,
+          116,
+          119,
+          130,
+          158,
+          181,
+          219,
+          232,
+          235,
+          247,
+          261,
+          283,
+          304,
+          336,
+          404,
+          420,
+          432,
+          443
+        ],
+        "both": [
+          54,
+          135,
+          351
+        ],
+        "body": [
+          57,
+          76,
+          177,
+          376
+        ],
+        "systems": [
+          58,
+          178,
+          307
+        ],
+        "optimal": [
+          60
+        ],
+        "physiological": [
+          61,
+          160
+        ],
+        "stability": [
+          62
+        ],
+        "during": [
+          63
+        ],
+        "stress,": [
+          64
+        ],
+        "termed": [
+          65
+        ],
+        "allostasis.": [
+          66,
+          284,
+          438
+        ],
+        "Although": [
+          67
+        ],
+        "causal": [
+          68
+        ],
+        "links": [
+          69
+        ],
+        "within": [
+          70
+        ],
+        "between": [
+          72,
+          398
+        ],
+        "recognized": [
+          78
+        ],
+        "as": [
+          79,
+          142
+        ],
+        "essential,": [
+          80
+        ],
+        "a": [
+          81,
+          113,
+          128,
+          380,
+          430
+        ],
+        "multi-system": [
+          82,
+          102,
+          139
+        ],
+        "examination": [
+          83
+        ],
+        "these": [
+          85,
+          258,
+          414,
+          447
+        ],
+        "interactions": [
+          86
+        ],
+        "under": [
+          87,
+          179
+        ],
+        "conditions": [
+          88,
+          180
+        ],
+        "insufficient": [
+          90
+        ],
+        "has": [
+          92
+        ],
+        "yet": [
+          93
+        ],
+        "be": [
+          95
+        ],
+        "reported.": [
+          96
+        ],
+        "Elucidating": [
+          97
+        ],
+        "interdependence": [
+          99,
+          397
+        ],
+        "impacts": [
+          103
+        ],
+        "loss": [
+          106,
+          183,
+          213,
+          243,
+          300,
+          422,
+          425
+        ],
+        "not": [
+          108
+        ],
+        "only": [
+          109
+        ],
+        "build": [
+          112
+        ],
+        "deeper": [
+          114
+        ],
+        "understanding": [
+          115
+        ],
+        "function": [
+          118,
+          161,
+          216
+        ],
+        "sleep,": [
+          120
+        ],
+        "but": [
+          121
+        ],
+        "also": [
+          122
+        ],
+        "guide": [
+          124
+        ],
+        "informed": [
+          125
+        ],
+        "treatments": [
+          126
+        ],
+        "number": [
+          129
+        ],
+        "chronic": [
+          131,
+          143
+        ],
+        "diseases": [
+          132
+        ],
+        "characterized": [
+          133
+        ],
+        "disturbances": [
+          137
+        ],
+        "etiology,": [
+          140
+        ],
+        "such": [
+          141
+        ],
+        "pain": [
+          144,
+          348
+        ],
+        "disease.": [
+          147
+        ],
+        "thesis": [
+          149
+        ],
+        "combines": [
+          150
+        ],
+        "functional": [
+          151
+        ],
+        "magnetic": [
+          152
+        ],
+        "resonance": [
+          153
+        ],
+        "imaging": [
+          155
+        ],
+        "with": [
+          156,
+          222,
+          252
+        ],
+        "measurements": [
+          157
+        ],
+        "in": [
+          162,
+          200,
+          238,
+          279,
+          293,
+          328,
+          353,
+          371,
+          379,
+          385
+        ],
+        "order": [
+          163
+        ],
+        "test": [
+          165
+        ],
+        "overarching": [
+          167
+        ],
+        "hypothesis": [
+          168,
+          196,
+          210,
+          291,
+          367
+        ],
+        "dysfunction": [
+          171,
+          313,
+          370
+        ],
+        "observed": [
+          172
+        ],
+        "across": [
+          173,
+          445
+        ],
+        "multiple": [
+          174
+        ],
+        "intimately": [
+          185
+        ],
+        "interrelated,": [
+          186,
+          315
+        ],
+        "rather": [
+          187
+        ],
+        "than": [
+          188
+        ],
+        "independent.": [
+          189
+        ],
+        "Three": [
+          190
+        ],
+        "specific": [
+          191
+        ],
+        "aims": [
+          192
+        ],
+        "emerge": [
+          193
+        ],
+        "this": [
+          195,
+          201,
+          342
+        ],
+        "addressed": [
+          199
+        ],
+        "thesis:": [
+          202
+        ],
+        "(1)": [
+          203
+        ],
+        "The": [
+          204,
+          286,
+          362
+        ],
+        "first": [
+          205
+        ],
+        "aim": [
+          206,
+          288,
+          364
+        ],
+        "sets": [
+          207
+        ],
+        "forth": [
+          208
+        ],
+        "impairs": [
+          214,
+          301
+        ],
+        "architecture": [
+          218,
+          246
+        ],
+        "networks": [
+          221,
+          266
+        ],
+        "consequences": [
+          223
+        ],
+        "cognition,": [
+          225
+        ],
+        "affect,": [
+          226
+        ],
+        "physiology.": [
+          228
+        ],
+        "A": [
+          229,
+          390
+        ],
+        "comprehensive": [
+          230
+        ],
+        "review": [
+          231
+        ],
+        "neuroimaging": [
+          233
+        ],
+        "studies": [
+          234
+        ],
+        "deprivation": [
+          237,
+          271,
+          326,
+          333,
+          393
+        ],
+        "humans": [
+          239,
+          329
+        ],
+        "demonstrates": [
+          240,
+          330
+        ],
+        "alters": [
+          244
+        ],
+        "human": [
+          248
+        ],
+        "networks,": [
+          250,
+          408
+        ],
+        "it,": [
+          253
+        ],
+        "processes": [
+          255
+        ],
+        "dependent": [
+          256
+        ],
+        "on": [
+          257,
+          317
+        ],
+        "networks.": [
+          259
+        ],
+        "Many": [
+          260
+        ],
+        "regions": [
+          264,
+          277
+        ],
+        "most": [
+          267
+        ],
+        "impacted": [
+          268
+        ],
+        "affective": [
+          273
+        ],
+        "viscerosensory": [
+          275,
+          407
+        ],
+        "involved": [
+          278,
+          384
+        ],
+        "master": [
+          281
+        ],
+        "regulation": [
+          282
+        ],
+        "(2)": [
+          285
+        ],
+        "second": [
+          287,
+          391
+        ],
+        "addresses": [
+          289
+        ],
+        "that,": [
+          292
+        ],
+        "addition": [
+          294
+        ],
+        "brain,": [
+          298
+        ],
+        "functioning": [
+          303
+        ],
+        "adaptive": [
+          306
+        ],
+        "focusing": [
+          316
+        ],
+        "system": [
+          320,
+          383
+        ],
+        "pain.": [
+          322
+        ],
+        "An": [
+          323
+        ],
+        "experimental": [
+          324
+        ],
+        "study": [
+          327
+        ],
+        "increases": [
+          334
+        ],
+        "levels": [
+          335
+        ],
+        "circulating": [
+          337
+        ],
+        "pro-inflammatory": [
+          338,
+          343
+        ],
+        "cytokines,": [
+          339
+        ],
+        "state": [
+          344
+        ],
+        "contributes": [
+          345,
+          426
+        ],
+        "increased": [
+          347
+        ],
+        "perception": [
+          349
+        ],
+        "assessed": [
+          350
+        ],
+        "objectively": [
+          352
+        ],
+        "subjectively": [
+          357
+        ],
+        "through": [
+          358,
+          429
+        ],
+        "participant": [
+          359
+        ],
+        "ratings.": [
+          360
+        ],
+        "(3)": [
+          361
+        ],
+        "third": [
+          363
+        ],
+        "tests": [
+          365
+        ],
+        "interrelated": [
+          369
+        ],
+        "evident": [
+          378
+        ],
+        "different": [
+          381
+        ],
+        "model": [
+          382
+        ],
+        "allostasis,": [
+          386
+        ],
+        "system.": [
+          389
+        ],
+        "experiment": [
+          394
+        ],
+        "establishes": [
+          395
+        ],
+        "significant": [
+          396
+        ],
+        "loss-increased": [
+          400
+        ],
+        "blood": [
+          401
+        ],
+        "pressure,": [
+          402
+        ],
+        "disruption": [
+          403,
+          431
+        ],
+        "worse": [
+          410
+        ],
+        "mood": [
+          411
+        ],
+        "state.": [
+          412
+        ],
+        "Collectively,": [
+          413
+        ],
+        "results": [
+          415
+        ],
+        "support": [
+          416
+        ],
+        "an": [
+          417
+        ],
+        "embodied": [
+          418
+        ],
+        "framework": [
+          419
+        ],
+        "wherein": [
+          423
+        ],
+        "disease": [
+          428
+        ],
+        "brain-body": [
+          434
+        ],
+        "coordination": [
+          435
+        ],
+        "required": [
+          436
+        ],
+        "Considering": [
+          439
+        ],
+        "continual": [
+          441
+        ],
+        "erosion": [
+          442
+        ],
+        "society,": [
+          446
+        ],
+        "findings": [
+          448
+        ],
+        "hold": [
+          449
+        ],
+        "important": [
+          450
+        ],
+        "scientific,": [
+          451
+        ],
+        "clinical": [
+          452
+        ],
+        "public": [
+          454
+        ],
+        "health": [
+          455
+        ],
+        "implications.": [
+          456
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5009395485",
+            "display_name": "Adam Krause",
+            "orcid": "https://orcid.org/0000-0001-5529-1296"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Adam Krause",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0001-5529-1296",
+          "affiliations": []
+        }
+      ],
+      "primary_location": {
+        "id": "pmh:oai:escholarship.org/ark:/13030/qt6gx8544n",
+        "is_oa": true,
+        "landing_page_url": "https://escholarship.org/uc/item/6gx8544n",
+        "pdf_url": "https://escholarship.org/uc/item/6gx8544n",
+        "source": {
+          "id": "https://openalex.org/S4306400115",
+          "display_name": "eScholarship (California Digital Library)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I2801248553",
+          "host_organization_name": "California Digital Library",
+          "host_organization_lineage": [
+            "https://openalex.org/I2801248553"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "etd"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://escholarship.org/uc/item/6gx8544n",
+        "any_repository_has_fulltext": true
+      }
+    },
+    {
+      "id": "https://openalex.org/W7162821868",
+      "doi": null,
+      "title": "Exploring the Neural Correlates of Body Perception Disturbances Using Visual Illusions in Complex Regional Pain Syndrome",
+      "display_name": "Exploring the Neural Correlates of Body Perception Disturbances Using Visual Illusions in Complex Regional Pain Syndrome",
+      "publication_year": 2025,
+      "cited_by_count": 0,
+      "abstract_inverted_index": {
+        "Complex": [
+          0
+        ],
+        "regional": [
+          1
+        ],
+        "pain": [
+          2,
+          9,
+          51,
+          101,
+          120
+        ],
+        "syndrome": [
+          3,
+          10
+        ],
+        "(CRPS)": [
+          4
+        ],
+        "is": [
+          5
+        ],
+        "a": [
+          6,
+          115
+        ],
+        "debilitating": [
+          7
+        ],
+        "chronic": [
+          8
+        ],
+        "with": [
+          11,
+          16,
+          73
+        ],
+        "poorlyunderstood": [
+          12
+        ],
+        "mechanisms.": [
+          13
+        ],
+        "Many": [
+          14
+        ],
+        "individuals": [
+          15,
+          72
+        ],
+        "CRPS": [
+          17
+        ],
+        "experience": [
+          18
+        ],
+        "distorted": [
+          19
+        ],
+        "perceptions": [
+          20
+        ],
+        "of": [
+          21,
+          60,
+          102,
+          110,
+          132
+        ],
+        "their": [
+          22,
+          103
+        ],
+        "affected": [
+          23
+        ],
+        "limb": [
+          24,
+          122
+        ],
+        "(neglect,": [
+          25
+        ],
+        "body": [
+          26,
+          34,
+          45,
+          133
+        ],
+        "image": [
+          27,
+          46
+        ],
+        "mismatches,": [
+          28
+        ],
+        "sensorimotor": [
+          29
+        ],
+        "deficits),": [
+          30
+        ],
+        "referred": [
+          31
+        ],
+        "to": [
+          32,
+          114,
+          139
+        ],
+        "as": [
+          33
+        ],
+        "perception": [
+          35
+        ],
+        "disturbances": [
+          36
+        ],
+        "(BPD).": [
+          37
+        ],
+        "A": [
+          38
+        ],
+        "visual": [
+          39
+        ],
+        "hand": [
+          40,
+          62,
+          85
+        ],
+        "morph": [
+          41,
+          63,
+          86
+        ],
+        "illusion": [
+          42,
+          64,
+          87,
+          112
+        ],
+        "that": [
+          43
+        ],
+        "modulates": [
+          44
+        ],
+        "reduces": [
+          47
+        ],
+        "BPDs": [
+          48
+        ],
+        "and": [
+          49,
+          93,
+          100,
+          124
+        ],
+        "clinical": [
+          50
+        ],
+        "in": [
+          52,
+          71,
+          129,
+          136
+        ],
+        "CRPS.": [
+          53,
+          74,
+          148
+        ],
+        "Here,": [
+          54
+        ],
+        "we": [
+          55
+        ],
+        "investigated": [
+          56
+        ],
+        "the": [
+          57,
+          84,
+          111
+        ],
+        "neural": [
+          58
+        ],
+        "correlates": [
+          59
+        ],
+        "this": [
+          61
+        ],
+        "using": [
+          65
+        ],
+        "functional": [
+          66,
+          90
+        ],
+        "magnetic": [
+          67
+        ],
+        "resonance": [
+          68
+        ],
+        "imaging": [
+          69
+        ],
+        "(fMRI)": [
+          70
+        ],
+        "Forty-": [
+          75
+        ],
+        "four": [
+          76
+        ],
+        "participants": [
+          77
+        ],
+        "(22": [
+          78
+        ],
+        "CRPS,": [
+          79,
+          137
+        ],
+        "22": [
+          80
+        ],
+        "pain-free": [
+          81
+        ],
+        "controls)": [
+          82
+        ],
+        "completed": [
+          83
+        ],
+        "while": [
+          88
+        ],
+        "undergoing": [
+          89
+        ],
+        "brain": [
+          91,
+          130
+        ],
+        "MRI,": [
+          92
+        ],
+        "provided": [
+          94
+        ],
+        "ratings": [
+          95
+        ],
+        "trial-by-trial": [
+          96
+        ],
+        "on": [
+          97,
+          119
+        ],
+        "ownership,": [
+          98
+        ],
+        "likeability,": [
+          99
+        ],
+        "hand.": [
+          104
+        ],
+        "We": [
+          105,
+          126
+        ],
+        "found": [
+          106
+        ],
+        "no": [
+          107
+        ],
+        "main": [
+          108
+        ],
+        "effect": [
+          109
+        ],
+        "compared": [
+          113,
+          138
+        ],
+        "sham": [
+          116
+        ],
+        "control": [
+          117
+        ],
+        "condition": [
+          118
+        ],
+        "intensity,": [
+          121
+        ],
+        "ownership": [
+          123
+        ],
+        "likeability.": [
+          125
+        ],
+        "report": [
+          127
+        ],
+        "differences": [
+          128
+        ],
+        "activation": [
+          131
+        ],
+        "image-related": [
+          134
+        ],
+        "regions": [
+          135
+        ],
+        "controls.": [
+          140
+        ],
+        "These": [
+          141
+        ],
+        "findings": [
+          142
+        ],
+        "provide": [
+          143
+        ],
+        "potential": [
+          144
+        ],
+        "therapeutic": [
+          145
+        ],
+        "targets": [
+          146
+        ],
+        "for": [
+          147
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5120207927",
+            "display_name": "Matthew Mockford",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800843827",
+              "display_name": "University of Dental Medicine",
+              "ror": "https://ror.org/03ksn2k92",
+              "country_code": "MM",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I2800843827"
+              ]
+            }
+          ],
+          "countries": [
+            "MM"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Mockford, Matthew",
+          "raw_affiliation_strings": [
+            "Dental Biomedical Sciences Faculty of Dentistry University of Toronto Master of Dental Biomedical Sciences Faculty of Dentistry University of Toronto 2025"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Dental Biomedical Sciences Faculty of Dentistry University of Toronto Master of Dental Biomedical Sciences Faculty of Dentistry University of Toronto 2025",
+              "institution_ids": [
+                "https://openalex.org/I2800843827"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "pmh:oai:utoronto.scholaris.ca:1807/153129",
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/1807/153129",
+        "pdf_url": "https://utoronto.scholaris.ca/bitstreams/e86d6f71-478a-4300-93a6-5956f6db26c0/download",
+        "source": {
+          "id": "https://openalex.org/S4306400261",
+          "display_name": "TSpace (University of Toronto)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I185261750",
+          "host_organization_name": "University of Toronto",
+          "host_organization_lineage": [
+            "https://openalex.org/I185261750"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Thesis"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://utoronto.scholaris.ca/bitstreams/e86d6f71-478a-4300-93a6-5956f6db26c0/download",
+        "any_repository_has_fulltext": true
+      }
+    }
+  ],
+  "group_by": []
+}

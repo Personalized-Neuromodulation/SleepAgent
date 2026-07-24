@@ -1,0 +1,59 @@
+instruments:
+- instrument_id: instrument_0126ff9bb0ef
+  name: Sleep Diary
+  abbreviation: sleep_diary
+  domain: subjective sleep timing and quality
+  score_range: ''
+  direction: ''
+  cutoffs_json: []
+  license_status: check_before_use
+  reference: ''
+  role_json:
+  - outcome
+  - clinical_context
+  notes: Cutoffs are context-dependent and not universal truth.
+- instrument_id: instrument_18d929b1359e
+  name: Epworth Sleepiness Scale
+  abbreviation: ESS
+  domain: daytime sleepiness
+  score_range: ''
+  direction: higher=worse
+  cutoffs_json: []
+  license_status: check_before_use
+  reference: ''
+  role_json:
+  - covariate
+  - phenotype
+  notes: Cutoffs are context-dependent and not universal truth.
+- instrument_id: instrument_c80a95ab5e45
+  name: Pittsburgh Sleep Quality Index
+  abbreviation: PSQI
+  domain: sleep quality
+  score_range: 0-21
+  direction: higher=worse
+  cutoffs_json:
+  - '>5 poor sleep quality'
+  license_status: check_before_use
+  reference: ''
+  role_json:
+  - outcome
+  - phenotype
+  notes: Cutoffs are context-dependent and not universal truth.
+- instrument_id: instrument_d9a75d920511
+  name: Insomnia Severity Index
+  abbreviation: ISI
+  domain: insomnia severity
+  score_range: 0-28
+  direction: higher=worse
+  cutoffs_json:
+  - 0-7 no clinically significant insomnia
+  - 8-14 subthreshold insomnia
+  - 15-21 moderate insomnia
+  - 22-28 severe insomnia
+  license_status: check_before_use
+  reference: ''
+  role_json:
+  - outcome
+  - phenotype
+  - clinical_relevance
+  notes: Cutoffs are context-dependent and not universal truth.

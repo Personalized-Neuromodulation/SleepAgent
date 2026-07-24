@@ -44,3 +44,30 @@ def test_search_literature_apis_uses_compact_progress_in_verbose_mode(tmp_path, 
     assert "query one" not in out
     assert "query two" not in out
     assert out.count("[api:pubmed]") == 1
+
+
+def test_search_literature_apis_writes_csv_without_jsonl_exports(tmp_path, monkeypatch):
+    config = {
+        "_project_root": str(tmp_path),
+        "api": {
+            "enabled": True,
+            "verbose": False,
+            "progress": False,
+            "max_results_per_query": 3,
+            "providers": {"pubmed": {"enabled": True, "base_url": "https://example.test"}},
+            "output": {
+                "api_literature_csv": str(tmp_path / "papers.csv"),
+                "api_literature_jsonl": str(tmp_path / "papers.jsonl"),
+                "api_search_log": str(tmp_path / "api_log.jsonl"),
+            },
+            "search_queries": ["query one"],
+        },
+    }
+    monkeypatch.setattr(literature_client, "build_client", lambda provider, config, session=None, rate_limit_enabled=True: FakeClient(provider))
+    monkeypatch.setattr(literature_client, "deduplicate_api_records", lambda records: records)
+
+    literature_client.search_literature_apis(config)
+
+    assert (tmp_path / "papers.csv").exists()
+    assert not (tmp_path / "papers.jsonl").exists()
+    assert not (tmp_path / "api_log.jsonl").exists()

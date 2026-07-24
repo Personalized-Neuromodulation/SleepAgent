@@ -1,0 +1,416 @@
+profile_type: theoretical_profile
+features:
+- feature_name: beta_power
+  modality: EEG
+  source_file: literature_grounding
+  source_column: beta_power
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: thalamus_DMN_FC
+  modality: EEG-fMRI
+  source_file: literature_grounding
+  source_column: thalamus_DMN_FC
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: functional connectivity
+  modality: fMRI
+  source_file: literature_grounding
+  source_column: functional connectivity
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: age
+  modality: Method
+  source_file: literature_grounding
+  source_column: age
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: mean_FD
+  modality: Method
+  source_file: literature_grounding
+  source_column: mean_FD
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: DMN_FC
+  modality: fMRI
+  source_file: literature_grounding
+  source_column: DMN_FC
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: FA
+  modality: DTI
+  source_file: literature_grounding
+  source_column: FA
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: salience_FC
+  modality: fMRI
+  source_file: literature_grounding
+  source_column: salience_FC
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: ISI
+  modality: Scale
+  source_file: literature_grounding
+  source_column: ISI
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: REM latency
+  modality: PSG
+  source_file: literature_grounding
+  source_column: REM latency
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: circadian rhythm
+  modality: behavior
+  source_file: literature_grounding
+  source_column: circadian rhythm
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: thalamic connectivity
+  modality: EEG-fMRI
+  source_file: literature_grounding
+  source_column: thalamic connectivity
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: hippocampus_volume
+  modality: MRI
+  source_file: literature_grounding
+  source_column: hippocampus_volume
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: GABA neuron
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: GABA neuron
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: sleep quality
+  modality: Scale
+  source_file: literature_grounding
+  source_column: sleep quality
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: spindle_density
+  modality: EEG
+  source_file: literature_grounding
+  source_column: spindle_density
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: high-frequency EEG
+  modality: EEG
+  source_file: literature_grounding
+  source_column: high-frequency EEG
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: spindle
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: spindle
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: medication
+  modality: Method
+  source_file: literature_grounding
+  source_column: medication
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: IL-6
+  modality: molecular
+  source_file: literature_grounding
+  source_column: IL-6
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: sigma power
+  modality: EEG
+  source_file: literature_grounding
+  source_column: sigma power
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: slow_wave_density
+  modality: EEG
+  source_file: literature_grounding
+  source_column: slow_wave_density
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: PSQI
+  modality: Scale
+  source_file: literature_grounding
+  source_column: PSQI
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: cortical thickness
+  modality: MRI
+  source_file: literature_grounding
+  source_column: cortical thickness
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: adenosine receptor
+  modality: pharmacological
+  source_file: literature_grounding
+  source_column: adenosine receptor
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: beta activity
+  modality: EEG
+  source_file: literature_grounding
+  source_column: beta activity
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: volume
+  modality: MRI
+  source_file: literature_grounding
+  source_column: volume
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: gray matter volume
+  modality: MRI
+  source_file: literature_grounding
+  source_column: gray matter volume
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: orexin neuron
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: orexin neuron
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: CSF
+  modality: MRI
+  source_file: literature_grounding
+  source_column: CSF
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: insomnia severity index
+  modality: Scale
+  source_file: literature_grounding
+  source_column: insomnia severity index
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: delta power
+  modality: EEG
+  source_file: literature_grounding
+  source_column: delta power
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: slow oscillation
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: slow oscillation
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: sex
+  modality: Method
+  source_file: literature_grounding
+  source_column: sex
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: slow-wave activity
+  modality: EEG
+  source_file: literature_grounding
+  source_column: slow-wave activity
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: glymphatic flow
+  modality: MRI
+  source_file: literature_grounding
+  source_column: glymphatic flow
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: structural MRI
+  modality: MRI
+  source_file: literature_grounding
+  source_column: structural MRI
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: fractional anisotropy
+  modality: DTI
+  source_file: literature_grounding
+  source_column: fractional anisotropy
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: cortical neuron
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: cortical neuron
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: spindle activity
+  modality: EEG
+  source_file: literature_grounding
+  source_column: spindle activity
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: inhibitory neuron
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: inhibitory neuron
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: melatonin
+  modality: behavior
+  source_file: literature_grounding
+  source_column: melatonin
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: structural feature
+  modality: MRI
+  source_file: literature_grounding
+  source_column: structural feature
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: cytokine
+  modality: molecular
+  source_file: literature_grounding
+  source_column: cytokine
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: TNF
+  modality: molecular
+  source_file: literature_grounding
+  source_column: TNF
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: thalamic reticular neuron
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: thalamic reticular neuron
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature

@@ -1,6 +1,6 @@
 max_tokens: 6000
 system: |
-  You are a co-scientist evolution agent for sleep-science hypotheses. Return only valid JSON.
+  You are a hypothesis evolution agent for sleep-science hypotheses. Return only valid JSON.
 user: |
   Evolve the top-ranked hypothesis/hypotheses using strategy: {{strategy}}.
 

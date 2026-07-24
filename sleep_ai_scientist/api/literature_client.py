@@ -1,12 +1,10 @@
 from __future__ import annotations
 
-import json
 import os
 import sys
 from pathlib import Path
 from typing import Any
 
-from sleep_ai_scientist.api.api_log import append_api_logs
 from sleep_ai_scientist.api.base import BaseAPIClient
 from sleep_ai_scientist.api.cache import APICache
 from sleep_ai_scientist.api.europe_pmc_client import EuropePMCClient
@@ -16,7 +14,7 @@ from sleep_ai_scientist.api.pubmed_client import PubMedClient
 from sleep_ai_scientist.api.rate_limiter import RateLimiter
 from sleep_ai_scientist.api.semantic_scholar_client import SemanticScholarClient
 from sleep_ai_scientist.common.config import resolve_path
-from sleep_ai_scientist.common.io import ensure_parent, write_csv
+from sleep_ai_scientist.common.io import write_csv
 from sleep_ai_scientist.common.io import read_yaml
 from sleep_ai_scientist.literature.query_loader import select_query_payload
 from sleep_ai_scientist.schemas.api import APILiteratureRecord, APISearchResult
@@ -174,14 +172,7 @@ def search_literature_apis(config: dict[str, Any], session: Any | None = None, r
     root = Path(config["_project_root"])
     output_cfg = api_cfg.get("output", {})
     csv_path = resolve_path(output_cfg.get("api_literature_csv", "outputs/grounding/api_retrieved_papers.csv"), root)
-    jsonl_path = resolve_path(output_cfg.get("api_literature_jsonl", "outputs/grounding/api_retrieved_papers.jsonl"), root)
-    log_path = resolve_path(output_cfg.get("api_search_log", "outputs/grounding/api_search_log.jsonl"), root)
     write_csv(csv_path, [_csv_row(item) for item in deduped])
-    ensure_parent(jsonl_path)
-    with jsonl_path.open("w", encoding="utf-8") as f:
-        for item in deduped:
-            f.write(json.dumps(item.model_dump(mode="json"), ensure_ascii=False) + "\n")
-    append_api_logs(log_path, logs)
     literature = [api_to_literature_record(item) for item in deduped]
     errors = [f"{log.provider}:{log.query}:{log.error}" for log in logs if not log.success and log.error]
     cache_hit_count = sum(1 for log in logs if log.cached)
@@ -206,8 +197,6 @@ def search_literature_apis(config: dict[str, Any], session: Any | None = None, r
         "cache_hit_count": cache_hit_count,
         "cache_dir": api_cfg.get("cache_dir"),
         "csv_path": str(csv_path),
-        "jsonl_path": str(jsonl_path),
-        "log_path": str(log_path),
     }
     return literature, summary
 

@@ -6,7 +6,7 @@ from statistics import mean
 from typing import Any
 
 from sleep_ai_scientist.common.config import load_config, resolve_path
-from sleep_ai_scientist.common.io import read_json, read_yaml, write_json, write_yaml
+from sleep_ai_scientist.common.io import read_csv, read_json, read_yaml, write_json, write_yaml
 from sleep_ai_scientist.experiment.experiment_pipeline import run_experiment_pipeline
 from sleep_ai_scientist.foundation.foundation_pipeline import run_foundation_pipeline
 from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
@@ -86,6 +86,8 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
             )
             grounding_refresh = _refresh_grounding_if_needed(
                 foundation_update,
+                literature_expansion=literature_expansion,
+                hypothesis_config_path=hypothesis_config_path,
                 grounding_config_path=grounding_config_path,
                 grounding_cfg=config.get("grounding", {}),
                 verbose=verbose,
@@ -257,6 +259,8 @@ def _feature_table_input_key(modality: str) -> str:
 def _refresh_grounding_if_needed(
     foundation_update: dict[str, Any],
     *,
+    literature_expansion: dict[str, Any] | None = None,
+    hypothesis_config_path: Path,
     grounding_config_path: Path,
     grounding_cfg: dict[str, Any],
     verbose: bool,
@@ -264,15 +268,149 @@ def _refresh_grounding_if_needed(
     if not foundation_update.get("foundation_changed"):
         return {"refreshed": False, "reason": "foundation_unchanged"}
     corpus_version = str(grounding_cfg.get("corpus_version", "sleepagent_grounding_data_constrained_v1"))
-    summary = run_grounding_pipeline(grounding_config_path, corpus_version=corpus_version)
-    _log(verbose, f"grounding refreshed corpus_version={corpus_version}")
+    retrieval_profile = _build_grounding_retrieval_query_profile(
+        literature_expansion or {},
+        hypothesis_config_path=hypothesis_config_path,
+        foundation_update=foundation_update,
+    )
+    retrieval_query = str(retrieval_profile.get("query", ""))
+    source_counts = {key: len(value) for key, value in (retrieval_profile.get("sources", {}) or {}).items()}
+    _log(verbose, f"[grounding_topk_query] sources={source_counts}")
+    _log(verbose, f"[grounding_topk_query] query={retrieval_query or 'config_default'}")
+    summary = run_grounding_pipeline(grounding_config_path, corpus_version=corpus_version, retrieval_query=retrieval_query or None)
+    _log(verbose, f"grounding refreshed corpus_version={corpus_version} retrieval_query={retrieval_query or 'config_default'}")
     return {
         "refreshed": True,
         "reason": "foundation_changed",
         "grounding_config": str(grounding_config_path),
         "corpus_version": corpus_version,
+        "retrieval_query": retrieval_query,
+        "retrieval_query_sources": retrieval_profile.get("sources", {}),
         "grounding_summary": summary,
     }
+
+
+def _grounding_retrieval_query(literature_expansion: dict[str, Any]) -> str:
+    return _combine_query_parts(_accepted_query_texts(literature_expansion))
+
+
+def _build_grounding_retrieval_query_profile(
+    literature_expansion: dict[str, Any],
+    *,
+    hypothesis_config_path: Path,
+    foundation_update: dict[str, Any],
+) -> dict[str, Any]:
+    sources = {
+        "research_question": _research_question_terms(hypothesis_config_path),
+        "accepted_queries": _accepted_query_texts(literature_expansion),
+        "evidence_gap_terms": _evidence_gap_terms(literature_expansion),
+        "data_feature_terms": _data_feature_terms(foundation_update),
+    }
+    query = _combine_query_parts(
+        [
+            *sources["research_question"],
+            *sources["accepted_queries"],
+            *sources["evidence_gap_terms"],
+            *sources["data_feature_terms"],
+        ]
+    )
+    return {"query": query, "sources": sources}
+
+
+def _research_question_terms(hypothesis_config_path: Path) -> list[str]:
+    if not hypothesis_config_path.exists():
+        return []
+    config = read_yaml(hypothesis_config_path)
+    hypothesis_cfg = config.get("hypothesis", {}) if isinstance(config, dict) else {}
+    question = str(hypothesis_cfg.get("research_question") or hypothesis_cfg.get("research_goal") or "").strip()
+    return [question] if question else []
+
+
+def _accepted_query_texts(literature_expansion: dict[str, Any], *, limit: int = 4) -> list[str]:
+    queries: list[str] = []
+    for item in literature_expansion.get("accepted_queries") or []:
+        query = str(item.get("query", "") if isinstance(item, dict) else item).strip()
+        if query and query not in queries:
+            queries.append(query)
+        if len(queries) >= limit:
+            break
+    return queries
+
+
+def _evidence_gap_terms(literature_expansion: dict[str, Any], *, limit: int = 6) -> list[str]:
+    terms: list[str] = []
+    for item in literature_expansion.get("accepted_queries") or []:
+        if not isinstance(item, dict):
+            continue
+        intent_type = str(item.get("intent_type", ""))
+        rationale = str(item.get("rationale", ""))
+        if any(marker in f"{intent_type} {rationale}".lower() for marker in ["failed", "missing", "gap", "null", "confound", "negative_control"]):
+            term = _query_safe_phrase(rationale or intent_type)
+            if term and term not in terms:
+                terms.append(term)
+        if len(terms) >= limit:
+            break
+    return terms
+
+
+def _data_feature_terms(foundation_update: dict[str, Any], *, limit: int = 12) -> list[str]:
+    config_path = resolve_path(foundation_update.get("foundation_config", "")) if foundation_update.get("foundation_config") else None
+    if not config_path or not config_path.exists():
+        return []
+    config = read_yaml(config_path)
+    outputs = config.get("outputs", {}) if isinstance(config, dict) else {}
+    feature_names: list[str] = []
+    approved_path = resolve_path(outputs.get("approved_variables", "")) if outputs.get("approved_variables") else None
+    if approved_path and approved_path.exists():
+        feature_names.extend(_flatten_approved_variables(read_yaml(approved_path)))
+    registry_path = resolve_path(outputs.get("feature_registry", "")) if outputs.get("feature_registry") else None
+    if registry_path and registry_path.exists():
+        for row in read_csv(registry_path):
+            if str(row.get("approved", "")).strip().lower() in {"true", "1", "yes", "y"}:
+                feature_names.append(str(row.get("feature_name", "")).strip())
+    terms: list[str] = []
+    for name in feature_names:
+        term = _query_safe_phrase(name.replace("_", " "))
+        if term and term not in terms:
+            terms.append(term)
+        if len(terms) >= limit:
+            break
+    return terms
+
+
+def _flatten_approved_variables(payload: Any) -> list[str]:
+    if isinstance(payload, dict) and "approved_variables" in payload:
+        payload = payload["approved_variables"]
+    values: list[str] = []
+    if isinstance(payload, dict):
+        for item in payload.values():
+            values.extend(_flatten_approved_variables(item))
+    elif isinstance(payload, list):
+        for item in payload:
+            values.extend(_flatten_approved_variables(item))
+    elif payload:
+        values.append(str(payload))
+    return values
+
+
+def _query_safe_phrase(text: str) -> str:
+    return " ".join(str(text).replace("_", " ").replace("->", " ").split())
+
+
+def _combine_query_parts(parts: list[str], *, max_chars: int = 900) -> str:
+    combined: list[str] = []
+    seen: set[str] = set()
+    for part in parts:
+        phrase = _query_safe_phrase(part)
+        key = phrase.lower()
+        if not phrase or key in seen:
+            continue
+        candidate = " ".join([*combined, phrase])
+        if len(candidate) > max_chars:
+            break
+        combined.append(phrase)
+        seen.add(key)
+    return " ".join(combined)
 
 
 def _build_literature_expansion_if_needed(
@@ -284,8 +422,6 @@ def _build_literature_expansion_if_needed(
     iteration_id: str,
     verbose: bool,
 ) -> dict[str, Any]:
-    if not foundation_update.get("foundation_changed"):
-        return {"accepted_query_count": 0, "reason": "foundation_unchanged"}
     if not bool(literature_cfg.get("enabled", False)):
         return {"accepted_query_count": 0, "reason": "literature_refresh_disabled"}
     query_config_path = resolve_path(literature_cfg.get("query_config_path", "configs/literature_queries.yaml"))

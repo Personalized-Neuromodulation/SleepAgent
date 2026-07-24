@@ -1,0 +1,115 @@
+{
+  "iteration_id": "iteration_002",
+  "signals": {
+    "records": 1,
+    "failed_tests": 1,
+    "negative_control_failures": 2,
+    "missing_variables": 7,
+    "modality_gaps": 4,
+    "validated_or_high_reward": 1
+  },
+  "candidate_count": 66,
+  "accepted_query_count": 8,
+  "accepted_queries": [
+    {
+      "query": "Global signal power in thalamus-DMN FC studies of insomnia",
+      "intent_type": "literature_search",
+      "priority": 9.0,
+      "reason": "To find studies examining the role of global signal power (global_signal_psd) as a control variable in thalamus connectivity studies with DMN and salience networks in sleep disorders.",
+      "source": "llm",
+      "source_iteration": "iteration_002",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Global_signal_psd as control in thalamus-salience FC in sleep disorders",
+      "intent_type": "literature_search",
+      "priority": 9.0,
+      "reason": "To find studies examining the role of global signal power (global_signal_psd) as a control variable in thalamus connectivity studies with DMN and salience networks in sleep disorders.",
+      "source": "llm",
+      "source_iteration": "iteration_002",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Global_signal_psd modulation of thalamus network connectivity in insomnia",
+      "intent_type": "literature_search",
+      "priority": 9.0,
+      "reason": "To find studies examining the role of global signal power (global_signal_psd) as a control variable in thalamus connectivity studies with DMN and salience networks in sleep disorders.",
+      "source": "llm",
+      "source_iteration": "iteration_002",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Thalamus FC and global_signal_psd in DMN and salience networks in insomnia",
+      "intent_type": "literature_search",
+      "priority": 9.0,
+      "reason": "To find studies examining the role of global signal power (global_signal_psd) as a control variable in thalamus connectivity studies with DMN and salience networks in sleep disorders.",
+      "source": "llm",
+      "source_iteration": "iteration_002",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Global_signal_psd control in thalamus connectivity studies of sleep disorders",
+      "intent_type": "literature_search",
+      "priority": 9.0,
+      "reason": "To find studies examining the role of global signal power (global_signal_psd) as a control variable in thalamus connectivity studies with DMN and salience networks in sleep disorders.",
+      "source": "llm",
+      "source_iteration": "iteration_002",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Mean_FD as covariate in thalamus-DMN FC in insomnia",
+      "intent_type": "literature_search",
+      "priority": 8.0,
+      "reason": "To identify research on the impact of mean frame displacement (mean_FD) as a covariate in studies of thalamus connectivity with DMN and salience networks in sleep disorders.",
+      "source": "llm",
+      "source_iteration": "iteration_002",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Effect of mean_FD on thalamus-salience FC in sleep disorders",
+      "intent_type": "literature_search",
+      "priority": 8.0,
+      "reason": "To identify research on the impact of mean frame displacement (mean_FD) as a covariate in studies of thalamus connectivity with DMN and salience networks in sleep disorders.",
+      "source": "llm",
+      "source_iteration": "iteration_002",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Mean_FD modulation of thalamus network connectivity in insomnia",
+      "intent_type": "literature_search",
+      "priority": 8.0,
+      "reason": "To identify research on the impact of mean frame displacement (mean_FD) as a covariate in studies of thalamus connectivity with DMN and salience networks in sleep disorders.",
+      "source": "llm",
+      "source_iteration": "iteration_002",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    }
+  ],
+  "rejected_duplicate_count": 0,
+  "rejected_invalid_count": 0,
+  "rejected_queries": [],
+  "query_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml",
+  "skip_literature_refresh": false,
+  "reason": "new_experiment_queries",
+  "append_summary": {
+    "appended": 8,
+    "group": "experiment_feedback_expansion",
+    "query_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml"
+  },
+  "incremental_query_config": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/literature_incremental_queries.yaml"
+}

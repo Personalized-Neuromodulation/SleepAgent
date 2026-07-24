@@ -1,0 +1,52 @@
+{
+  "compression": "llm_grounding_context_v1",
+  "source_evidence_count": 8681,
+  "selected_evidence_count": 500,
+  "source_graph_nodes": 9751,
+  "source_graph_edges": 34863,
+  "selected_graph_nodes": 576,
+  "selected_graph_edges": 2000,
+  "selected_evidence_contexts": {
+    "human_clinical": 241,
+    "human_neuroimaging": 94,
+    "human_general_sleep": 67,
+    "animal_mechanistic": 80,
+    "cellular_molecular": 18
+  },
+  "selected_directions": {
+    "refute": 4,
+    "support": 445,
+    "null": 4,
+    "unclear": 47
+  },
+  "selected_mechanisms": {
+    "insomnia severity": 25,
+    "slow-wave generation": 25,
+    "spindle generation": 25,
+    "thalamocortical coupling": 25,
+    "default mode network dysregulation": 25,
+    "white matter integrity": 25,
+    "hyperarousal": 25,
+    "salience network dysregulation": 25,
+    "limbic structural vulnerability": 25,
+    "confound / methodological limitation": 25,
+    "sleep quality": 25,
+    "REM_NREM_switching": 25,
+    "circadian_regulation": 24,
+    "adenosine_sleep_pressure": 24,
+    "thalamic_reticular_spindle": 24,
+    "structural morphology": 24,
+    "gabaergic_sleep_promotion": 24,
+    "cortical_slow_oscillation": 24,
+    "glymphatic_clearance": 24,
+    "inflammatory_sleep_regulation": 14,
+    "orexin_hypocretin_arousal": 18
+  },
+  "config": {
+    "enabled": true,
+    "max_total_evidence": 500,
+    "max_evidence_per_mechanism": 50,
+    "max_unclear_fraction": 0.25,
+    "max_graph_edges": 2000
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "registry_version": "sleepagent_knowledge_sources_v1",
+  "created_at": "2026-07-23T10:07:02.617396+00:00",
+  "enabled_sources": [
+    "clinical_trials",
+    "guidelines",
+    "standards",
+    "diagnostic_taxonomy",
+    "datasets",
+    "instruments",
+    "tools_methods"
+  ],
+  "clinical_trials_count": 0,
+  "guidelines_count": 9,
+  "standards_count": 7,
+  "diagnostic_terms_count": 6,
+  "datasets_count": 4,
+  "instruments_count": 4,
+  "tools_methods_count": 11,
+  "output_files": {
+    "clinical_trials_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.csv",
+    "clinical_trials_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.jsonl",
+    "guidelines_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.csv",
+    "guidelines_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.jsonl",
+    "standards_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.csv",
+    "standards_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.jsonl",
+    "diagnostic_taxonomy_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.yaml",
+    "diagnostic_taxonomy_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.json",
+    "datasets_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.csv",
+    "datasets_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.jsonl",
+    "instruments_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.yaml",
+    "instruments_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.json",
+    "tools_methods_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.yaml",
+    "tools_methods_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.json",
+    "manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_manifest.json",
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_report.md"
+  },
+  "database_backend": "sqlite",
+  "notes": "Metadata-only for restricted AASM/ICSD sources; no paywalled content downloaded.",
+  "warnings": [
+    "ClinicalTrials.gov live API skipped; set SLEEPAGENT_ENABLE_CLINICALTRIALS_LIVE=true to enable."
+  ],
+  "clinical_trial_conditions": {},
+  "clinical_trial_intervention_types": {},
+  "clinical_trial_status_counts": {},
+  "guideline_organizations": {
+    "American Academy of Sleep Medicine": 9
+  },
+  "guideline_topics": {
+    "insomnia": 1,
+    "sleep apnea": 1,
+    "circadian rhythm sleep wake disorders": 1,
+    "hypersomnia": 1,
+    "narcolepsy": 1,
+    "parasomnias": 1,
+    "pediatric sleep": 1,
+    "behavioral treatment": 1,
+    "pharmacologic treatment": 1
+  },
+  "standard_categories": {
+    "sleep_staging": 1,
+    "arousal": 1,
+    "respiratory_events": 1,
+    "movement_events": 1,
+    "cardiac_events": 1,
+    "montage": 1,
+    "technical_specifications": 1
+  },
+  "diagnostic_categories": {
+    "insomnia_disorders": 1,
+    "sleep_related_breathing_disorders": 1,
+    "central_disorders_of_hypersomnolence": 1,
+    "circadian_rhythm_sleep_wake_disorders": 1,
+    "parasomnias": 1,
+    "sleep_related_movement_disorders": 1
+  },
+  "dataset_modalities": {
+    "EEG": 3,
+    "PSG": 3,
+    "questionnaires": 1,
+    "clinical": 1,
+    "fMRI": 1,
+    "MRI": 1
+  },
+  "dataset_access_status": {
+    "open": 3,
+    "controlled/open depending dataset": 1
+  },
+  "instrument_domains": {
+    "insomnia severity": 1,
+    "sleep quality": 1,
+    "daytime sleepiness": 1,
+    "subjective sleep timing and quality": 1
+  },
+  "tool_method_modalities": {
+    "EEG": 2,
+    "fMRI": 1,
+    "neuroimaging": 1
+  },
+  "tool_method_roles": {
+    "preprocessing": 2,
+    "spectral_analysis": 1,
+    "event_detection": 1,
+    "sleep_staging": 1,
+    "spindle_detection": 1,
+    "slow_wave_detection": 1,
+    "confound_regression": 1,
+    "DTI preprocessing": 1,
+    "cortical_thickness": 1,
+    "subcortical_volume": 1,
+    "data_organization": 1,
+    "reproducibility": 1,
+    "metadata_query": 1,
+    "dataset_indexing": 1,
+    "feature_extraction": 2,
+    "confound_control": 1,
+    "statistical_validity": 1
+  }
+}

@@ -1,7 +1,7 @@
 [
   {
-    "hypothesis_id": "hypothesis_1502c9c78b6b",
-    "plan_id": "experiment_plan_37edb94b6071",
+    "hypothesis_id": "hypothesis_4ecf9cc79ed6",
+    "plan_id": "experiment_plan_b8ba6d2b8320",
     "support": "partially_supported",
     "support_score": 0.6,
     "computed_reward": 0.63,
@@ -11,7 +11,7 @@
     "primary_tests_total": 8,
     "metadata": {
       "review_status": "partially_supported",
-      "hypothesis_title": "Thalamic Spindle Modulation via Thalamocortical Coupling and White Matter Integrity in Sleep Phenotypes",
+      "hypothesis_title": "Thalamocortical Network Dynamics and Insomnia Severity",
       "predictors": [
         "thalamus_DMN_FC",
         "thalamus_salience_FC",
@@ -25,15 +25,15 @@
       "critic_findings": [
         {
           "severity": "medium",
-          "category": "data_quality",
-          "message": "High missing data rate (24.73%) in fMRI features may affect reliability of FC measures.",
-          "recommendation": "Consider imputation methods or sensitivity analysis to assess impact of missing data."
+          "category": "model_selection",
+          "message": "The use of Spearman correlation may not capture the complexity of thalamocortical FC relationships as effectively as linear regression.",
+          "recommendation": "Consider implementing linear regression as recommended in the model review for more accurate modeling."
         },
         {
-          "severity": "medium",
-          "category": "control_analysis",
-          "message": "Negative controls for DMN_FC showed strong associations with global signal (r=0.89 and r=0.80), suggesting potential confounding by motion artifacts.",
-          "recommendation": "Include global signal regression as covariate in primary analysis."
+          "severity": "low",
+          "category": "robustness",
+          "message": "Bootstrap confidence intervals showed some variability, indicating potential sensitivity to sample characteristics.",
+          "recommendation": "Increase sample size or use alternative robustness checks for more stable results."
         }
       ]
     }

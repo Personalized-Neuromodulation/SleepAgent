@@ -1,13 +1,13 @@
 # Data Foundation Report
 
 - Project: SleepAgent
-- Run time: 2026-07-23T03:04:42
+- Run time: 2026-07-23T07:12:01
 
 ## Inputs
 
-- subject_table: `/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv`
+- subject_table: `/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_2a017237cb8c/fmri_features.csv`
 - eeg_features: `__sleepagent_missing_eeg_features__.csv`
-- fmri_features: `/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_cdea5110b79a/fmri_features.csv`
+- fmri_features: `/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_2a017237cb8c/fmri_features.csv`
 - dti_features: `__sleepagent_missing_dti_features__.csv`
 - mri_features: `__sleepagent_missing_mri_features__.csv`
 - scale_features: `__sleepagent_missing_scale_features__.csv`

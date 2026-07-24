@@ -15,7 +15,6 @@ def test_default_configs_keep_data_literature_canonical_only():
         "data/literature/sleep_literature.db",
         "data/literature",
         "data/literature/sleep_literature_registry.csv",
-        "data/literature/sleep_literature_registry.jsonl",
     }
     configs = [
         read_yaml(Path("configs/grounding_config.yaml")),

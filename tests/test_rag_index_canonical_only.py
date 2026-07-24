@@ -7,7 +7,7 @@ from sleep_ai_scientist.storage.db import create_engine_from_config, init_databa
 from sleep_ai_scientist.storage.models import RagChunk
 
 
-def test_rag_index_writes_one_abstract_chunk_per_canonical_paper(tmp_path, monkeypatch):
+def test_rag_index_writes_one_abstract_chunk_per_canonical_paper_to_db(tmp_path, monkeypatch):
     monkeypatch.setenv("SLEEPAGENT_SQLITE_PATH", str(tmp_path / "lit.db"))
     engine = create_engine_from_config("configs/database_config.yaml", backend="sqlite")
     init_database(engine)
@@ -24,14 +24,14 @@ def test_rag_index_writes_one_abstract_chunk_per_canonical_paper(tmp_path, monke
         )
         result = build_rag_index(session, tmp_path / "rag.jsonl")
 
-        rows = [json.loads(line) for line in (tmp_path / "rag.jsonl").read_text(encoding="utf-8").splitlines()]
         assert result["chunk_count"] == 1
-        assert rows[0]["chunk_id"] == "abstract:doi:10.1/a"
-        assert rows[0]["metadata"]["retrieval_channels"] == ["api_broad", "journal_targeted"]
-        assert rows[0]["metadata"]["journal_priority_score"] == 7.0
+        assert result["path"] is None
+        assert not (tmp_path / "rag.jsonl").exists()
         chunk = session.get(RagChunk, "abstract:doi:10.1/a")
         assert chunk is not None
         assert chunk.paper_id == "doi:10.1/a"
+        assert chunk.metadata_json["retrieval_channels"] == ["api_broad", "journal_targeted"]
+        assert chunk.metadata_json["journal_priority_score"] == 7.0
         assert chunk.embedding_json is None
     engine.dispose()
 
@@ -73,14 +73,13 @@ def test_rag_index_embeds_chunks_when_enabled(tmp_path, monkeypatch, capsys):
         assert chunk.embedding_model == "sentence-transformers/all-MiniLM-L6-v2"
 
     output = capsys.readouterr().out
-    rows = [json.loads(line) for line in (tmp_path / "rag.jsonl").read_text(encoding="utf-8").splitlines()]
     log_rows = [json.loads(line) for line in (tmp_path / "rag_embedding.log").read_text(encoding="utf-8").splitlines()]
     assert result["chunk_count"] == 1
+    assert result["path"] is None
+    assert not (tmp_path / "rag.jsonl").exists()
     assert result["embedding"]["enabled"] is True
     assert result["embedding"]["vector_count"] == 1
     assert result["embedding"]["vector_dim"] == 3
-    assert rows[0]["embedding"] == [0.1, 0.2, 0.3]
-    assert rows[0]["metadata"]["embedding_model"] == "sentence-transformers/all-MiniLM-L6-v2"
     assert "[embedding] rag index start" in output
     assert "[embedding] rag vectors encoded count=1 dim=3" in output
     assert [row["event"] for row in log_rows] == ["rag_index_start", "rag_vectors_encoded", "rag_index_done"]
