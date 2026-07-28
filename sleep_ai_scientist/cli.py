@@ -86,20 +86,49 @@ def build_parser() -> argparse.ArgumentParser:
     item.add_argument("--max-runtime-hours", type=float, default=None)
     item.add_argument("--resume", default=None)
     item.add_argument("--dry-run", action="store_true")
-    item.add_argument("--backend", default="sqlite")
+    item.add_argument("--backend", default="postgresql")
     knowledge = sub.add_parser("knowledge")
     knowledge_sub = knowledge.add_subparsers(dest="command", required=True)
     for command in ("build", "report", "export"):
         item = knowledge_sub.add_parser(command)
         item.add_argument("--config", default="configs/knowledge_sources_config.yaml")
-        item.add_argument("--backend", default="sqlite")
+        item.add_argument("--backend", default="postgresql")
+    ldb = sub.add_parser("literature-db")
+    ldb_sub = ldb.add_subparsers(dest="command", required=True)
+    for command in ("check-db", "rebuild-schema", "schema-status", "resolve-journal-urls", "build-journal-profiles", "crawl-all-journals", "crawl-journal", "journal-scan-status"):
+        item = ldb_sub.add_parser(command)
+        item.add_argument("--config", default="configs/literature_database.yaml")
+        if command in {"resolve-journal-urls", "build-journal-profiles"}:
+            item.add_argument("--all", action="store_true")
+            item.add_argument("--limit-journals", type=int, default=None)
+        if command in {"crawl-all-journals", "crawl-journal"}:
+            item.add_argument("--since")
+            item.add_argument("--until")
+            item.add_argument("--resume", action="store_true")
+            item.add_argument("--force-refresh-profiles", action="store_true")
+            item.add_argument("--retry-failed", action="store_true")
+            item.add_argument("--journal-workers", type=int)
+            item.add_argument("--listing-pages-per-journal", type=int)
+            item.add_argument("--article-pages-per-journal", type=int)
+            item.add_argument("--relevant-papers-per-journal", type=int)
+            item.add_argument("--sample-one-article-per-journal", action="store_true")
+            item.add_argument("--only-missing-samples", action="store_true")
+            item.add_argument("--access-failures-only", action="store_true", help="Retry only robots, 403/anti-bot, and login access failures")
+            item.add_argument("--web-search-audit-all", action="store_true", help="Ignore prior scan states and audit every target journal webpage/search form")
+            item.add_argument("--dry-run", action="store_true")
+        if command == "crawl-all-journals":
+            item.add_argument("--limit-journals", type=int, default=None, help="Debug only; default scans all journals")
+        if command == "crawl-journal":
+            item.add_argument("--journal-key", required=True)
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     """Dispatch CLI commands and print a machine-readable run summary."""
     args = build_parser().parse_args(argv)
-    if args.domain == "foundation" and args.command == "build":
+    if args.domain == "literature-db":
+        result = _run_literature_db(args)
+    elif args.domain == "foundation" and args.command == "build":
         result = run_foundation_pipeline(args.config)
     elif args.domain == "foundation" and args.command == "report":
         result = generate_foundation_report(args.config)
@@ -175,7 +204,62 @@ def main(argv: list[str] | None = None) -> int:
     else:
         raise ValueError(f"Unsupported command: {args}")
     print(json.dumps(result, ensure_ascii=False, indent=2))
+    if args.domain == "literature-db" and args.command == "schema-status":
+        return 0 if result.get("overall_schema_status") == "pass" else 1
+    if args.domain == "literature-db" and args.command == "rebuild-schema":
+        return 0 if result.get("success") else 1
+    if args.domain == "literature-db" and args.command in {"crawl-all-journals", "crawl-journal"} and not result.get("dry_run"):
+        return {"PASS": 0, "PARTIAL_PASS": 2, "FAIL": 1}.get(result.get("overall_result"), 1)
     return 0
+
+
+def _run_literature_db(args):
+    from sleep_ai_scientist.literature_db.schema import (
+        check_database,
+        rebuild_database,
+        schema_status,
+    )
+
+    if args.command == "check-db":
+        return check_database(args.config)
+    if args.command == "rebuild-schema":
+        return rebuild_database(args.config)
+    if args.command == "schema-status":
+        return schema_status(args.config)
+    if args.command in {"resolve-journal-urls", "build-journal-profiles", "crawl-all-journals", "crawl-journal", "journal-scan-status"}:
+        from datetime import date
+        from sleep_ai_scientist.literature_db.journal_crawlers.service import JournalCrawlService
+
+        service = JournalCrawlService(args.config)
+        try:
+            if args.command == "resolve-journal-urls":
+                return service.resolve_all(args.limit_journals)
+            if args.command == "build-journal-profiles":
+                return service.build_profiles(args.limit_journals)
+            if args.command == "journal-scan-status":
+                return service.status()
+            if args.force_refresh_profiles:
+                service.build_profiles()
+            return service.crawl_all(
+                limit_journals=getattr(args, "limit_journals", None),
+                journal_key=getattr(args, "journal_key", None),
+                resume=args.resume,
+                retry_failed=args.retry_failed,
+                dry_run=args.dry_run,
+                since=date.fromisoformat(args.since) if args.since else None,
+                until=date.fromisoformat(args.until) if args.until else None,
+                listing_pages=args.listing_pages_per_journal,
+                article_pages=args.article_pages_per_journal,
+                relevant_papers=args.relevant_papers_per_journal,
+                sample_one_article=args.sample_one_article_per_journal,
+                only_missing_samples=args.only_missing_samples,
+                access_failures_only=args.access_failures_only,
+                web_search_audit_all=args.web_search_audit_all,
+                journal_workers=args.journal_workers,
+            )
+        finally:
+            service.close()
+    raise ValueError(f"Unsupported literature-db command: {args.command}")
 
 
 def _enable_api_config(config_path: str) -> str:

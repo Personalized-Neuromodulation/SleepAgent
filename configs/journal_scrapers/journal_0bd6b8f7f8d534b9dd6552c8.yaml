@@ -1,0 +1,26 @@
+journal_key: journal:0bd6b8f7f8d534b9dd6552c8
+title: IEEE Transactions on Neural Networks and Learning Systems
+publisher: null
+verification_status: partial
+enabled: true
+homepage_url: http://cis.ieee.org/ieee-transactions-on-neural-networks-and-learning-systems.html
+latest_articles_url: null
+current_issue_url: null
+archive_url: null
+search_url_template: null
+rss_url: null
+sitemap_url: null
+discovery_rules: {}
+article_rules: {}
+request_policy:
+  requests_per_second_per_domain: 0.5
+  timeout_seconds: 20
+  max_retries: 2
+  obey_robots_txt: true
+  respect_retry_after: true
+last_error:
+  code: LISTING_URL_NOT_RESOLVED
+  message: Homepage resolved; listing discovery deferred to crawl
+adapter:
+  name: generic_jsonld
+  version: '1'

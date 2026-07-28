@@ -200,7 +200,12 @@ class PaperSourceRepository:
         return source
 
     def list_sources_for_paper(self, session: Session, paper_id: str) -> list[PaperSource]:
-        return list(session.scalars(select(PaperSource).where(PaperSource.paper_id == paper_id).order_by(PaperSource.id)))
+        resolved_id = paper_id
+        if session.get(Paper, paper_id) is None:
+            alias = session.scalar(select(PaperAlias).where(PaperAlias.alias_type == "source_paper_id", PaperAlias.alias_value == paper_id))
+            if alias:
+                resolved_id = alias.paper_id
+        return list(session.scalars(select(PaperSource).where(PaperSource.paper_id == resolved_id).order_by(PaperSource.id)))
 
 
 class DeduplicationRepository:

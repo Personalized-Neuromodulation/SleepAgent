@@ -1,13 +1,29 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 from typing import Any
+
+from dotenv import load_dotenv
 
 from sleep_ai_scientist.common.io import read_yaml
 
 
+_PROJECT_ROOT = Path(__file__).resolve().parents[2]
+_PROCESS_ENV_KEYS = frozenset(os.environ)
+load_dotenv(_PROJECT_ROOT / ".env", override=False)
+
+
 def project_root() -> Path:
-    return Path(__file__).resolve().parents[2]
+    return _PROJECT_ROOT
+
+
+def environment_value_source(name: str) -> str:
+    if name in _PROCESS_ENV_KEYS:
+        return "process_environment"
+    if name in os.environ:
+        return "project_root_dotenv"
+    return "missing"
 
 
 def resolve_path(value: str | Path, base_dir: Path | None = None) -> Path:

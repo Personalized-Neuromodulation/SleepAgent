@@ -3,15 +3,15 @@ services:
     image: postgres:16
     container_name: sleepagent-postgres
     environment:
-      POSTGRES_USER: sleepagent
-      POSTGRES_PASSWORD: sleepagent
-      POSTGRES_DB: sleepagent
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - "5432:5432"
+      - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - sleepagent_postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U sleepagent -d sleepagent"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 10s
       timeout: 5s
       retries: 5

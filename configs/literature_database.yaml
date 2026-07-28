@@ -1,0 +1,48 @@
+database:
+  backend: postgresql
+  url_env: SLEEPAGENT_DATABASE_URL
+  echo: false
+  create_tables: true
+  fail_open: false
+  schema: public
+
+journal_crawl:
+  enabled: true
+  scan_all_journals: true
+  search_queries:
+    - sleep
+  publisher_apis:
+    elsevier_sciencedirect:
+      enabled: true
+      api_key_env: ELSEVIER_API_KEY
+  journal_limit: null
+  stop_journal_after_relevant_limit: true
+  stop_entire_run_after_first_success: false
+  target_journal_file: data/external/2025_Q1_IF_5.csv
+  profile_dir: configs/journal_scrapers
+  cache_dir: data/literature/journal_crawl_cache
+  report_dir: reports/literature/journal_crawl
+  publication_window:
+    lookback_days: 365
+    overlap_days: 30
+  per_journal:
+    listing_pages: 2
+    article_pages: 20
+    relevant_papers: 5
+  concurrency:
+    journal_workers: 4
+    max_requests_per_domain: 1
+  request_policy:
+    requests_per_second_per_domain: 0.5
+    timeout_seconds: 20
+    max_retries: 2
+    obey_robots_txt: true
+    respect_retry_after: true
+  fallback:
+    use_crossref: false
+    use_openalex: true
+    use_pubmed: true
+    use_europe_pmc: true
+  resume:
+    enabled: true
+    retry_failed: true

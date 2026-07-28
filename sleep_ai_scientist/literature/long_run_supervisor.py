@@ -25,7 +25,7 @@ def run_long_run(
     max_runtime_hours: float | None = None,
     resume: str | Path | None = None,
     dry_run: bool = False,
-    backend: str | None = "sqlite",
+    backend: str | None = "postgresql",
 ) -> dict[str, Any]:
     config = load_config(config_path_value)
     root = Path(config["_project_root"])
@@ -100,4 +100,3 @@ def run_long_run(
     }
     write_json(run_dir / "final_status.json", final)
     return final
-

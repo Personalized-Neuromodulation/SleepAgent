@@ -366,7 +366,13 @@ def resolve_existing_paper(record: LiteratureRecord, session: Session) -> tuple[
 
 
 def _insert_paper(session: Session, record: LiteratureRecord, retrieval_channel: str) -> Paper:
+    incoming_paper_id = record.paper_id
     values = _values(record)
+    # Preserve explicitly curated seed identities for backward-compatible
+    # foreign keys; API/provider records still use the canonical identifier.
+    if record.source == "seed" and incoming_paper_id:
+        values["paper_id"] = incoming_paper_id
+        values["canonical_paper_id"] = incoming_paper_id
     values["retrieval_channels_json"] = [retrieval_channel]
     record.paper_id = values["paper_id"]
     record.retrieval_channel = retrieval_channel
@@ -375,6 +381,8 @@ def _insert_paper(session: Session, record: LiteratureRecord, retrieval_channel:
     session.add(paper)
     session.flush()
     _upsert_aliases(session, paper.paper_id, record)
+    if incoming_paper_id and incoming_paper_id != paper.paper_id:
+        PaperRepository().upsert_alias(session, paper.paper_id, "source_paper_id", incoming_paper_id, provider=_provider(record))
     return paper
 
 
@@ -474,7 +482,6 @@ def resolve_and_upsert(
     incoming_original_id = record.paper_id
     existing, matched_by, score, manual = resolve_existing_paper(record, session)
     if existing is None:
-        record.paper_id = assign_canonical_paper_id(record)
         paper = _insert_paper(session, record, retrieval_channel)
         _add_source(session, paper.paper_id, record, retrieval_channel, query_set_version=query_set_version)
         _add_query_result(session, paper.paper_id, record, retrieval_channel, True, query_lookup, rank)

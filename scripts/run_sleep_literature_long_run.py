@@ -12,7 +12,7 @@ def main() -> int:
     parser.add_argument("--max-runtime-hours", type=float, default=None)
     parser.add_argument("--resume", default=None)
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--backend", default="sqlite")
+    parser.add_argument("--backend", default="postgresql")
     args = parser.parse_args()
     result = run_long_run(args.config, max_runtime_hours=args.max_runtime_hours, resume=args.resume, dry_run=args.dry_run, backend=args.backend)
     print(json.dumps(result, indent=2, ensure_ascii=False))
@@ -21,4 +21,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

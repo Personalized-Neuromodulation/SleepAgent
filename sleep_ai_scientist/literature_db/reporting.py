@@ -1,0 +1,24 @@
+from __future__ import annotations
+import json
+from datetime import date
+from pathlib import Path
+from sqlalchemy import func,select
+from .models import AbstractVersion,CandidateRecord,DedupDecision,FulltextDocument,FulltextFetchAttempt,JournalScanState,Paper,PaperSource
+
+def build_report(session,run=None,journal_stats=None):
+    count=lambda model:int(session.scalar(select(func.count()).select_from(model)) or 0)
+    channels={}
+    for name,n in session.execute(select(CandidateRecord.discovery_method,func.count()).group_by(CandidateRecord.discovery_method)):channels[name]=n
+    api_ids={x for x, in session.execute(select(CandidateRecord.linked_paper_id).where(CandidateRecord.discovery_method=="api_topic_search",CandidateRecord.linked_paper_id.is_not(None)))}
+    journal_ids={x for x, in session.execute(select(CandidateRecord.linked_paper_id).where(CandidateRecord.discovery_method=="target_journal_scan",CandidateRecord.linked_paper_id.is_not(None)))}
+    overlap=api_ids&journal_ids;only_journal=journal_ids-api_ids;yield_value=len(only_journal)/len(journal_ids) if journal_ids else 0.0
+    decisions={k:v for k,v in session.execute(select(DedupDecision.decision,func.count()).group_by(DedupDecision.decision))}
+    pdf={k:v for k,v in session.execute(select(Paper.fulltext_status,func.count()).group_by(Paper.fulltext_status))}
+    snapshot={"canonical_papers":count(Paper),"candidates":count(CandidateRecord),"abstracts":count(AbstractVersion),"pdfs":count(FulltextDocument),"manual_pdfs":session.scalar(select(func.count()).select_from(FulltextDocument).where(FulltextDocument.acquisition_method=="manual")) or 0,"manual_review":session.scalar(select(func.count()).select_from(DedupDecision).where(DedupDecision.requires_manual_review)) or 0,"retryable_pdf":session.scalar(select(func.count()).select_from(FulltextFetchAttempt).where(FulltextFetchAttempt.retryable)) or 0}
+    return {"run_information":{"run_id":getattr(run,"run_id",None),"status":getattr(run,"status","snapshot")},"executive_summary":{"candidate_records":count(CandidateRecord),"new_canonical_papers":getattr(run,"created_paper_count",0),"updated_papers":getattr(run,"updated_paper_count",0),"new_abstracts":getattr(run,"new_abstract_count",0),"valid_pdfs":getattr(run,"pdf_success_count",0),"pdf_failures":getattr(run,"pdf_failure_count",0),"manual_review":snapshot["manual_review"],"warnings":getattr(run,"warning_count",0),"critical":getattr(run,"critical_count",0)},"discovery_channels":{"api":len(api_ids),"target_journals":len(journal_ids),"both":len(overlap),"api_only":len(api_ids-journal_ids),"journal_only":len(only_journal),"journal_incremental_yield":yield_value},"target_journal_coverage":journal_stats or {},"deduplication":decisions,"pdf_acquisition":pdf,"database_snapshot":snapshot,"manual_review_queue":{"identifier_conflicts":decisions.get("identifier_conflict",0),"fuzzy_duplicates":decisions.get("manual_review",0)},"alerts_and_anomalies":[],"important_new_literature":[],"actions":[]}
+
+def write_report(report,output_dir,run_date=None):
+    d=str(run_date or date.today());out=Path(output_dir);out.mkdir(parents=True,exist_ok=True);jp=out/f"{d}.json";mp=out/f"{d}.md";jp.write_text(json.dumps(report,ensure_ascii=False,indent=2,default=str),encoding="utf-8")
+    e=report["executive_summary"];c=report["discovery_channels"];s=report["database_snapshot"]
+    mp.write_text(f"# Sleep Literature Weekly Report — {d}\n\n## Run Information\n\nRun ID: {report['run_information']['run_id']}  \nStatus: {report['run_information']['status']}\n\n## Executive Summary\n\n- Candidate records: {e['candidate_records']}\n- New canonical papers: {e['new_canonical_papers']}\n- Manual review: {e['manual_review']}\n- PDF failures: {e['pdf_failures']}\n\n## Discovery Channel Contribution\n\n- API: {c['api']}\n- Target journals: {c['target_journals']}\n- Both: {c['both']}\n- Journal-only: {c['journal_only']}\n- Journal Incremental Yield: {c['journal_incremental_yield']:.2%}\n\n## Target Journal Coverage\n\n```json\n{json.dumps(report['target_journal_coverage'],ensure_ascii=False,indent=2)}\n```\n\n## Deduplication\n\n```json\n{json.dumps(report['deduplication'],indent=2)}\n```\n\n## Metadata Quality\n\nDatabase-derived snapshot available below.\n\n## PDF Acquisition\n\n```json\n{json.dumps(report['pdf_acquisition'],indent=2)}\n```\n\n## Database Snapshot\n\n- Canonical papers: {s['canonical_papers']}\n- Candidates: {s['candidates']}\n- Abstracts: {s['abstracts']}\n- PDFs: {s['pdfs']}\n\n## Manual Review Queue\n\n```json\n{json.dumps(report['manual_review_queue'],indent=2)}\n```\n\n## Alerts and Anomalies\n\nNone.\n\n## Important New Literature\n\nMetadata rules only; no LLM used.\n\n## Actions\n\nReview any queued conflicts and retryable PDF failures.\n",encoding="utf-8")
+    return {"markdown":str(mp),"json":str(jp)}

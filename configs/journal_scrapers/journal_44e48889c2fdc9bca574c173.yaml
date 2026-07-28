@@ -1,0 +1,26 @@
+journal_key: journal:44e48889c2fdc9bca574c173
+title: Journal of the American Heart Association
+publisher: null
+verification_status: partial
+enabled: true
+homepage_url: https://www.ahajournals.org/journal/jaha
+latest_articles_url: null
+current_issue_url: null
+archive_url: null
+search_url_template: null
+rss_url: null
+sitemap_url: null
+discovery_rules: {}
+article_rules: {}
+request_policy:
+  requests_per_second_per_domain: 0.5
+  timeout_seconds: 20
+  max_retries: 2
+  obey_robots_txt: true
+  respect_retry_after: true
+last_error:
+  code: LISTING_URL_NOT_RESOLVED
+  message: Homepage resolved; listing discovery deferred to crawl
+adapter:
+  name: generic_jsonld
+  version: '1'

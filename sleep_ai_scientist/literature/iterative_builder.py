@@ -25,7 +25,7 @@ def _limited_query_config(base_query_config: str | Path, output_path: str | Path
     return output
 
 
-def run_iteration(config: dict[str, Any], iteration: int, run_dir: str | Path, *, dry_run: bool = False, backend: str | None = "sqlite") -> dict[str, Any]:
+def run_iteration(config: dict[str, Any], iteration: int, run_dir: str | Path, *, dry_run: bool = False, backend: str | None = "postgresql") -> dict[str, Any]:
     root = Path(config.get("_project_root", Path.cwd()))
     base_config = resolve_path(config.get("inputs", {}).get("base_config", "configs/literature_library_config.yaml"), root)
     query_config = resolve_path(config.get("inputs", {}).get("initial_query_config", "configs/sleep_literature_queries.yaml"), root)
@@ -47,4 +47,3 @@ def run_iteration(config: dict[str, Any], iteration: int, run_dir: str | Path, *
     temp_base = Path(run_dir) / f"iteration_{iteration:03d}_library_config.yaml"
     write_yaml(temp_base, {k: v for k, v in base_payload.items() if not k.startswith("_")})
     return run_literature_build(temp_base, query_config_path=limited_query, library_version=config.get("project", {}).get("target_library_version"), backend=backend)
-

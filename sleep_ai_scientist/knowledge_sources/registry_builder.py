@@ -46,7 +46,7 @@ def _upsert_all(session, repo, rows: list[dict[str, Any]]) -> None:  # type: ign
 def build_knowledge_sources(
     config_path_value: str | Path = "configs/knowledge_sources_config.yaml",
     *,
-    backend: str | None = "sqlite",
+    backend: str | None = "postgresql",
     clinical_trials_session: Any | None = None,
 ) -> dict[str, Any]:
     config = load_config(config_path_value)
@@ -96,7 +96,7 @@ def build_knowledge_sources(
         summary = _summary(
             registry_version,
             enabled_sources,
-            backend or "sqlite",
+            backend or "postgresql",
             clinical_trials,
             guidelines,
             standards,
@@ -116,7 +116,7 @@ def build_knowledge_sources(
     return summary
 
 
-def export_knowledge_sources(config_path_value: str | Path = "configs/knowledge_sources_config.yaml", *, backend: str | None = "sqlite") -> dict[str, Any]:
+def export_knowledge_sources(config_path_value: str | Path = "configs/knowledge_sources_config.yaml", *, backend: str | None = "postgresql") -> dict[str, Any]:
     config = load_config(config_path_value)
     root = Path(config["_project_root"])
     db_config_path = resolve_path(config.get("database_config", "configs/database_config.yaml"), root)
@@ -127,7 +127,7 @@ def export_knowledge_sources(config_path_value: str | Path = "configs/knowledge_
         "registry_version": config.get("project", {}).get("registry_version", ""),
         "created_at": datetime.now(timezone.utc).isoformat(),
         "enabled_sources": [],
-        "database_backend": backend or "sqlite",
+        "database_backend": backend or "postgresql",
         "notes": "Export from existing database state.",
     }
     with session_scope(engine) as session:
@@ -147,7 +147,7 @@ def export_knowledge_sources(config_path_value: str | Path = "configs/knowledge_
     return {"output_files": outputs}
 
 
-def generate_knowledge_sources_report(config_path_value: str | Path = "configs/knowledge_sources_config.yaml", *, backend: str | None = "sqlite") -> dict[str, Any]:
+def generate_knowledge_sources_report(config_path_value: str | Path = "configs/knowledge_sources_config.yaml", *, backend: str | None = "postgresql") -> dict[str, Any]:
     return export_knowledge_sources(config_path_value, backend=backend)
 
 

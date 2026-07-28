@@ -8,3 +8,7 @@ dependencies:
   - pytest
   - pip:
       - pydantic>=2
+      - sqlalchemy>=2.0,<3
+      - psycopg[binary]>=3.1
+      - python-dotenv>=1.0
+      - rapidfuzz>=3.0

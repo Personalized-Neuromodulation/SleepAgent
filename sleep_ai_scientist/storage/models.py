@@ -6,7 +6,6 @@ from typing import Any
 from sqlalchemy import Boolean, DateTime, Float, ForeignKey, Index, Integer, String, Text, UniqueConstraint
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
-from sqlalchemy.types import JSON
 
 
 def utc_now() -> datetime:
@@ -17,13 +16,7 @@ class Base(DeclarativeBase):
     pass
 
 
-class JSONAuto(JSON):
-    """Use JSONB on PostgreSQL and JSON on SQLite."""
-
-    def load_dialect_impl(self, dialect):  # type: ignore[no-untyped-def]
-        if dialect.name == "postgresql":
-            return dialect.type_descriptor(JSONB())
-        return dialect.type_descriptor(JSON())
+JSONAuto = JSONB
 
 
 class Paper(Base):
