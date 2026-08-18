@@ -13,6 +13,20 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = PROJECT_ROOT / "config.yaml"
 REQUIRED_SERVICES = ("postgres", "grobid")
+SRC_PATH = PROJECT_ROOT / "src"
+
+if str(SRC_PATH) not in sys.path:
+    sys.path.insert(0, str(SRC_PATH))
+
+
+def subprocess_environment() -> dict[str, str]:
+    env = os.environ.copy()
+    existing = env.get("PYTHONPATH", "")
+    parts = [str(SRC_PATH)]
+    if existing:
+        parts.append(existing)
+    env["PYTHONPATH"] = os.pathsep.join(parts)
+    return env
 
 
 def run(*command: str, check: bool = True) -> subprocess.CompletedProcess[str]:
@@ -22,6 +36,7 @@ def run(*command: str, check: bool = True) -> subprocess.CompletedProcess[str]:
         cwd=PROJECT_ROOT,
         check=check,
         text=True,
+        env=subprocess_environment(),
     )
 
 
@@ -161,11 +176,13 @@ def main() -> None:
         host = subprocess.check_output(
             [sys.executable, "-c", "from paper_rag.config import settings; print(settings.api_host)"],
             cwd=PROJECT_ROOT,
+            env=subprocess_environment(),
             text=True,
         ).strip()
         port = subprocess.check_output(
             [sys.executable, "-c", "from paper_rag.config import settings; print(settings.api_port)"],
             cwd=PROJECT_ROOT,
+            env=subprocess_environment(),
             text=True,
         ).strip()
         run(

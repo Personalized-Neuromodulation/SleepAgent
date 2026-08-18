@@ -6,7 +6,11 @@ from dataclasses import dataclass
 from pathlib import Path, PureWindowsPath
 from uuid import uuid4
 
-from paper_rag.chunking import HierarchicalChunker, embedding_text
+from paper_rag.chunking import (
+    HierarchicalChunker,
+    deduplicate_chunks_by_level_text,
+    embedding_text,
+)
 from paper_rag.config import Settings
 from paper_rag.db import Database
 from paper_rag.domain import SourcePaper
@@ -250,6 +254,13 @@ class IngestionPipeline:
             document.warnings.extend(assess_parsed_document(document))
 
             chunks = self.chunker.chunk(document)
+            chunks, duplicate_chunks = deduplicate_chunks_by_level_text(chunks)
+            if duplicate_chunks:
+                logger.warning(
+                    "%s chunk去重跳过 %s 个同级重复块",
+                    source.doi or source.title,
+                    duplicate_chunks,
+                )
             child_chunks = [chunk for chunk in chunks if chunk.level == "child"]
             if not child_chunks:
                 raise ValueError("没有生成可Embedding的子块")

@@ -88,11 +88,12 @@ class MetadataDiscoveryTests(unittest.TestCase):
             session=session,
         )
 
-        rows = service.discover(
-            keywords=["sleep"],
-            start_date=date(2022, 1, 1),
-            end_date=date(2026, 12, 31),
-        )
+        with self.assertLogs("parser.metadata_discovery", level="INFO") as logs:
+            rows = service.discover(
+                keywords=["sleep"],
+                start_date=date(2022, 1, 1),
+                end_date=date(2026, 12, 31),
+            )
 
         self.assertEqual(
             {row["source"] for row in rows},
@@ -102,6 +103,11 @@ class MetadataDiscoveryTests(unittest.TestCase):
         crossref_call = session.calls[0]
         self.assertIn("from-pub-date:2022-01-01", crossref_call["params"]["filter"])
         self.assertEqual(crossref_call["params"]["query"], "sleep")
+        log_text = "\n".join(logs.output)
+        self.assertIn("source=crossref keyword=sleep returned=1", log_text)
+        self.assertIn("source=europe_pmc keyword=sleep returned=1", log_text)
+        self.assertIn("source=openalex keyword=sleep returned=1", log_text)
+        self.assertIn("source=semantic_scholar keyword=sleep returned=1", log_text)
 
 
 if __name__ == "__main__":

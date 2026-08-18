@@ -55,7 +55,16 @@ class MetadataDiscoveryService:
     def discover(self, keywords, start_date, end_date):
         rows = []
         seen = set()
-        for keyword in [str(value).strip() for value in (keywords or []) if str(value).strip()]:
+        clean_keywords = [str(value).strip() for value in (keywords or []) if str(value).strip()]
+        logger.info(
+            "METADATA_DISCOVERY start sources=%s keywords=%s window=%s..%s journal=%s",
+            ",".join(self.sources),
+            len(clean_keywords),
+            self._date_text(start_date),
+            self._date_text(end_date),
+            self.journal_name or "",
+        )
+        for keyword in clean_keywords:
             for source in self.sources:
                 for article in self._discover_source(source, keyword, start_date, end_date):
                     key = (str(article.get("doi") or "").lower(), str(article.get("title") or "").lower())
@@ -65,6 +74,10 @@ class MetadataDiscoveryService:
                     article["matched_keyword"] = keyword
                     article["metadata_sources"] = article.get("source", source)
                     rows.append(article)
+        logger.info(
+            "METADATA_DISCOVERY finish discovered_unique=%s",
+            len(rows),
+        )
         return rows
 
     def _discover_source(self, source, keyword, start_date, end_date):
@@ -78,7 +91,15 @@ class MetadataDiscoveryService:
             logger.warning("Unknown metadata discovery source skipped: %s", source)
             return []
         try:
-            return fetcher(keyword, start_date, end_date)
+            rows = fetcher(keyword, start_date, end_date)
+            logger.info(
+                "METADATA_DISCOVERY source=%s keyword=%s returned=%s with_abstract=%s",
+                source,
+                keyword,
+                len(rows),
+                sum(1 for row in rows if str(row.get("abstract") or "").strip()),
+            )
+            return rows
         except Exception as exc:
             logger.warning("Metadata discovery %s failed keyword=%s: %s", source, keyword, exc)
             return []

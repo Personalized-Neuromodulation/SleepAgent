@@ -156,9 +156,25 @@ class HierarchicalChunker:
         return output
 
 
+def deduplicate_chunks_by_level_text(chunks: list[Chunk]) -> tuple[list[Chunk], int]:
+    """Remove chunks that would violate the per-document chunk uniqueness key."""
+    deduped: list[Chunk] = []
+    seen: set[tuple[str, str]] = set()
+    skipped = 0
+
+    for chunk in chunks:
+        key = (chunk.level, chunk.text_hash)
+        if key in seen:
+            skipped += 1
+            continue
+        seen.add(key)
+        deduped.append(chunk)
+
+    return deduped, skipped
+
+
 def embedding_text(paper_title: str, chunk: Chunk) -> str:
     return normalize_whitespace(
         f"Paper: {paper_title}\nSection: {chunk.section_type}\n"
         f"Heading: {chunk.section_title}\nText: {chunk.text}"
     )
-
