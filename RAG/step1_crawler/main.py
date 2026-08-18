@@ -37,11 +37,19 @@ import openpyxl
 
 from tools.topic_utils import PLATFORM_FAMILIES, TopicConfig, article_matches_topic, load_supported_journals_from_csv, safe_path_name
 from crawl_checkpoint import CrawlCheckpointStore, article_key, checkpoint_scope
+from parser.metadata_discovery import MetadataDiscoveryService
+from parser.metadata_merge import merge_metadata_pair, metadata_key
 
 # EXPORTS_DIR = BASE_DIR / "exports"
 EXPORTS_DIR = Path("/data/RAG/step1_crawler/exports/")
 
-os.makedirs(EXPORTS_DIR / "logs", exist_ok=True)
+try:
+    os.makedirs(EXPORTS_DIR / "logs", exist_ok=True)
+    LOG_FILE = EXPORTS_DIR / "logs" / "crawler.log"
+    with open(LOG_FILE, "a", encoding="utf-8-sig"):
+        pass
+except OSError:
+    LOG_FILE = Path("/tmp") / "sleepagent_crawler.log"
 
 # 日志配置
 if hasattr(sys.stdout, "reconfigure"):
@@ -55,7 +63,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(EXPORTS_DIR / "logs" / "crawler.log", encoding="utf-8-sig"),
+        logging.FileHandler(LOG_FILE, encoding="utf-8-sig"),
         logging.StreamHandler()
     ]
 )
@@ -80,6 +88,7 @@ ALL_INFO_FIELDS = [
     "abstract_repair_status",
     "abstract_repair_method",
     "abstract_source",
+    "metadata_sources",
     "publisher_attempted",
     "publisher_status",
     "publisher_http_status",
@@ -591,6 +600,7 @@ class CrawlerSystem:
             "abstract_repair_status": "",
             "abstract_repair_method": "",
             "abstract_source": "",
+            "metadata_sources": paper.get("metadata_sources", ""),
             "publisher_attempted": "",
             "publisher_status": "",
             "publisher_http_status": "",
@@ -655,6 +665,279 @@ class CrawlerSystem:
         )
 
         return written
+
+    def _metadata_discovery_enabled(self):
+        return self._csv_bool(
+            self.config_manager.get(
+                "METADATA_DISCOVERY_ENABLED",
+                False,
+            )
+        )
+
+    def _metadata_discovery_sources(self):
+        raw = self.config_manager.get(
+            "METADATA_DISCOVERY_SOURCES",
+            [
+                "crossref",
+                "europe_pmc",
+                "openalex",
+                "semantic_scholar",
+            ],
+        )
+        if isinstance(raw, str):
+            values = re.split(r"[,;|]+", raw)
+        else:
+            values = raw or []
+        sources = [
+            str(value).strip().lower()
+            for value in values
+            if str(value).strip()
+        ]
+        return sources or [
+            "crossref",
+            "europe_pmc",
+            "openalex",
+            "semantic_scholar",
+        ]
+
+    def _metadata_discovery_date_window(
+        self,
+        start_date_str,
+        end_date_str,
+    ):
+        try:
+            years = max(
+                1,
+                int(
+                    self.config_manager.get(
+                        "METADATA_DISCOVERY_YEARS",
+                        5,
+                    )
+                ),
+            )
+        except Exception:
+            years = 5
+
+        try:
+            end_date = datetime.strptime(
+                str(end_date_str),
+                "%Y-%m-%d",
+            ).date()
+        except Exception:
+            end_date = datetime.now().date()
+
+        window_start = end_date.replace(
+            year=end_date.year - years + 1,
+            month=1,
+            day=1,
+        )
+
+        return (
+            window_start.isoformat(),
+            end_date.isoformat(),
+        )
+
+    def _metadata_discovery_int(self, key, default, minimum=1):
+        try:
+            value = int(self.config_manager.get(key, default))
+        except Exception:
+            value = int(default)
+        return max(minimum, value)
+
+    def _metadata_discovery_float(self, key, default, minimum=0.0):
+        try:
+            value = float(self.config_manager.get(key, default))
+        except Exception:
+            value = float(default)
+        return max(minimum, value)
+
+    def _discover_and_merge_all_info_csv(
+        self,
+        all_info_path,
+        journal,
+        subjournal_name,
+        agent,
+        start_date_str,
+        end_date_str,
+    ):
+        if not self._metadata_discovery_enabled():
+            return {
+                "metadata_discovery_enabled": False,
+                "discovered": 0,
+                "metadata_discovery_unique": 0,
+                "metadata_merged_existing": 0,
+                "metadata_discovery_added": 0,
+            }
+
+        keywords = [
+            str(value).strip()
+            for value in getattr(agent, "topic_keywords", []) or []
+            if str(value).strip()
+        ]
+        if not keywords:
+            logger.warning(
+                f"{journal} {subjournal_name}: "
+                f"METADATA_DISCOVERY已启用，但topic_keywords为空，跳过"
+            )
+            return {
+                "metadata_discovery_enabled": True,
+                "discovered": 0,
+                "metadata_discovery_unique": 0,
+                "metadata_merged_existing": 0,
+                "metadata_discovery_added": 0,
+            }
+
+        discovery_start, discovery_end = self._metadata_discovery_date_window(
+            start_date_str,
+            end_date_str,
+        )
+        service = MetadataDiscoveryService(
+            sources=self._metadata_discovery_sources(),
+            rows=self._metadata_discovery_int(
+                "METADATA_DISCOVERY_ROWS",
+                50,
+            ),
+            max_pages_per_keyword=self._metadata_discovery_int(
+                "METADATA_DISCOVERY_MAX_PAGES_PER_KEYWORD",
+                2,
+            ),
+            timeout=self._metadata_discovery_int(
+                "METADATA_DISCOVERY_TIMEOUT_SECONDS",
+                15,
+            ),
+            min_interval=self._metadata_discovery_float(
+                "METADATA_DISCOVERY_MIN_INTERVAL_SECONDS",
+                0.5,
+            ),
+            mailto=self.config_manager.get(
+                "METADATA_DISCOVERY_MAILTO",
+                None,
+            ),
+            openalex_api_key=self.config_manager.get(
+                "OPENALEX_API_KEY",
+                None,
+            ),
+            semantic_scholar_api_key=self.config_manager.get(
+                "SEMANTIC_SCHOLAR_API_KEY",
+                None,
+            ),
+            journal_name=subjournal_name or journal,
+        )
+
+        discovered = service.discover(
+            keywords,
+            discovery_start,
+            discovery_end,
+        )
+
+        incoming_by_key = {}
+        incoming_rows = []
+        for paper in discovered:
+            row = self._normalize_metadata_for_disk(
+                paper,
+                subjournal_name,
+            )
+            key = metadata_key(row)
+            if key and key in incoming_by_key:
+                position = incoming_by_key[key]
+                incoming_rows[position] = merge_metadata_pair(
+                    incoming_rows[position],
+                    row,
+                )
+                continue
+            if key:
+                incoming_by_key[key] = len(incoming_rows)
+            incoming_rows.append(row)
+
+        if not incoming_rows:
+            logger.info(
+                f"{journal} {subjournal_name}: "
+                f"METADATA_DISCOVERY未发现可合并论文"
+            )
+            return {
+                "metadata_discovery_enabled": True,
+                "discovered": len(discovered),
+                "metadata_discovery_unique": 0,
+                "metadata_merged_existing": 0,
+                "metadata_discovery_added": 0,
+            }
+
+        temp_path = f"{all_info_path}.metadata_discovery.tmp"
+        merged_existing = 0
+        added = 0
+        fieldnames = list(ALL_INFO_FIELDS)
+
+        try:
+            with open(
+                all_info_path,
+                "r",
+                encoding="utf-8-sig",
+                newline="",
+            ) as source_handle, open(
+                temp_path,
+                "w",
+                encoding="utf-8-sig",
+                newline="",
+            ) as target_handle:
+                reader = csv.DictReader(source_handle)
+                for field in reader.fieldnames or []:
+                    if field not in fieldnames:
+                        fieldnames.append(field)
+
+                writer = csv.DictWriter(
+                    target_handle,
+                    fieldnames=fieldnames,
+                    extrasaction="ignore",
+                )
+                writer.writeheader()
+
+                for row in reader:
+                    key = metadata_key(row)
+                    if key and key in incoming_by_key:
+                        position = incoming_by_key.pop(key)
+                        merged = merge_metadata_pair(
+                            row,
+                            incoming_rows[position],
+                        )
+                        writer.writerow(merged)
+                        merged_existing += 1
+                        continue
+                    writer.writerow(row)
+
+                for position, row in enumerate(incoming_rows):
+                    if position in incoming_by_key.values():
+                        writer.writerow(row)
+                        added += 1
+
+            os.replace(
+                temp_path,
+                all_info_path,
+            )
+        except Exception:
+            if os.path.exists(temp_path):
+                try:
+                    os.remove(temp_path)
+                except OSError:
+                    pass
+            raise
+
+        logger.info(
+            f"{journal} {subjournal_name}: METADATA_DISCOVERY完成 "
+            f"keywords={len(keywords)}, "
+            f"window={discovery_start}..{discovery_end}, "
+            f"discovered={len(discovered)}, "
+            f"unique={len(incoming_rows)}, "
+            f"merged_existing={merged_existing}, "
+            f"added={added}"
+        )
+
+        return {
+            "metadata_discovery_enabled": True,
+            "discovered": len(discovered),
+            "metadata_discovery_unique": len(incoming_rows),
+            "metadata_merged_existing": merged_existing,
+            "metadata_discovery_added": added,
+        }
 
 
     def _abstract_repair_parallel_config(self):
@@ -1687,7 +1970,11 @@ class CrawlerSystem:
         start_date_str,
         end_date_str,
     ):
-        """Disk pipeline: expanded-title-gated abstract repair -> TOPIC -> cumulative LLM.
+        """Disk pipeline: discovery merge -> abstract repair -> TOPIC -> cumulative LLM.
+
+        Metadata discovery:
+            query external metadata APIs by TOPIC keywords and a configurable
+            recent date window, then merge by DOI/title before LLM review.
 
         Abstract repair:
             only empty-abstract rows whose titles hit expanded terms are repaired.
@@ -1696,6 +1983,15 @@ class CrawlerSystem:
             every TOPIC_KEYWORDS hit is reviewed unless its article_key is already
             present in the persistent related CSV.
         """
+        discovery_stats = self._discover_and_merge_all_info_csv(
+            all_info_path,
+            journal,
+            subjournal_name,
+            agent,
+            start_date_str,
+            end_date_str,
+        )
+
         repair_stats = self._repair_all_info_csv(
             all_info_path,
             journal,
@@ -1717,7 +2013,8 @@ class CrawlerSystem:
             )
         )
 
-        result = dict(repair_stats)
+        result = dict(discovery_stats)
+        result.update(repair_stats)
         result.update(review_stats)
         return result
 
