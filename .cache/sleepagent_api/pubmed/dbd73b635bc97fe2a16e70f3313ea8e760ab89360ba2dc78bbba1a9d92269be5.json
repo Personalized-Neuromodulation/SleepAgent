@@ -1,0 +1,57 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "GABA",
+        "to": "\"gamma-aminobutyric acid\"[Supplementary Concept] OR \"gamma-aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma-aminobutyric acid\"[MeSH Terms] OR (\"gamma-aminobutyric\"[All Fields] AND \"acid\"[All Fields])"
+      },
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "insomnia:",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "motion",
+        "to": "\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion's\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]"
+      },
+      {
+        "from": "artifact",
+        "to": "\"artifacted\"[All Fields] OR \"artifacts\"[MeSH Terms] OR \"artifacts\"[All Fields] OR \"artifact\"[All Fields]"
+      },
+      {
+        "from": "control",
+        "to": "\"controling\"[All Fields] OR \"controllability\"[All Fields] OR \"controllable\"[All Fields] OR \"controllably\"[All Fields] OR \"controller\"[All Fields] OR \"controller's\"[All Fields] OR \"controllers\"[All Fields] OR \"controlling\"[All Fields] OR \"controls\"[All Fields] OR \"prevention and control\"[Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"control\"[All Fields] OR \"control groups\"[MeSH Terms] OR (\"control\"[All Fields] AND \"groups\"[All Fields]) OR \"control groups\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"gamma aminobutyric acid\"[Supplementary Concept] OR \"gamma aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma aminobutyric acid\"[MeSH Terms] OR (\"gamma aminobutyric\"[All Fields] AND \"acid\"[All Fields])) AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND \"FC\"[All Fields] AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion s\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]) AND (\"artifacted\"[All Fields] OR \"artifacts\"[MeSH Terms] OR \"artifacts\"[All Fields] OR \"artifact\"[All Fields]) AND (\"controling\"[All Fields] OR \"controllability\"[All Fields] OR \"controllable\"[All Fields] OR \"controllably\"[All Fields] OR \"controller\"[All Fields] OR \"controller s\"[All Fields] OR \"controllers\"[All Fields] OR \"controlling\"[All Fields] OR \"controls\"[All Fields] OR \"prevention and control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"control\"[All Fields] OR \"control groups\"[MeSH Terms] OR (\"control\"[All Fields] AND \"groups\"[All Fields]) OR \"control groups\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

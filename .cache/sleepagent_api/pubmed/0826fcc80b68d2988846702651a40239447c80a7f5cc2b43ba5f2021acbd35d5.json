@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "thalamus",
+        "to": "\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]"
+      },
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "architecture",
+        "to": "\"architectural\"[All Fields] OR \"architecturally\"[All Fields] OR \"architecture\"[MeSH Terms] OR \"architecture\"[All Fields] OR \"architecture's\"[All Fields] OR \"architectured\"[All Fields] OR \"architectures\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]) AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND \"FC\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"architectural\"[All Fields] OR \"architecturally\"[All Fields] OR \"architecture\"[MeSH Terms] OR \"architecture\"[All Fields] OR \"architecture s\"[All Fields] OR \"architectured\"[All Fields] OR \"architectures\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

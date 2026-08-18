@@ -1,0 +1,128 @@
+{
+  "iteration_id": "iteration_003",
+  "signals": {
+    "records": 1,
+    "failed_tests": 1,
+    "negative_control_failures": 0,
+    "missing_variables": 0,
+    "modality_gaps": 0,
+    "validated_or_high_reward": 0
+  },
+  "candidate_count": 19,
+  "accepted_query_count": 8,
+  "accepted_queries": [
+    {
+      "query": "Role of thalamus-DMN FC in mediating cognitive deficits in insomnia",
+      "intent_type": "literature_search",
+      "priority": 0.9,
+      "reason": "Investigate the association between thalamus-DMN functional connectivity (FC) and insomnia severity (ISI), considering its role in cognitive impairment and sleep quality.",
+      "source": "llm",
+      "source_iteration": "iteration_003",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Impact of thalamus-DMN FC on sleep quality and ISI scores",
+      "intent_type": "literature_search",
+      "priority": 0.9,
+      "reason": "Investigate the association between thalamus-DMN functional connectivity (FC) and insomnia severity (ISI), considering its role in cognitive impairment and sleep quality.",
+      "source": "llm",
+      "source_iteration": "iteration_003",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "thalamus coord y ISI sleep fMRI",
+      "intent_type": "resolve_failed_test",
+      "priority": 0.86,
+      "reason": "primary test failed for thalamus_coord_y -> ISI",
+      "source": "rules",
+      "source_iteration": "iteration_003",
+      "source_hypothesis_id": "hypothesis_2faad4927002",
+      "source_plan_id": "experiment_plan_cbd0440661bb",
+      "status": "accepted"
+    },
+    {
+      "query": "Thalamus connectivity and cognitive performance in insomnia: DMN, salience, and frontoparietal networks",
+      "intent_type": "literature_search",
+      "priority": 0.85,
+      "reason": "Investigate the connection between thalamus connectivity (DMN, salience, frontoparietal) and cognitive performance (task execution, decision-making) in insomnia.",
+      "source": "llm",
+      "source_iteration": "iteration_003",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Impact of thalamus-DMN FC on task execution and decision-making in insomnia",
+      "intent_type": "literature_search",
+      "priority": 0.85,
+      "reason": "Investigate the connection between thalamus connectivity (DMN, salience, frontoparietal) and cognitive performance (task execution, decision-making) in insomnia.",
+      "source": "llm",
+      "source_iteration": "iteration_003",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Role of thalamic networks in mediating cognitive deficits during sleep disturbances",
+      "intent_type": "literature_search",
+      "priority": 0.85,
+      "reason": "Investigate the connection between thalamus connectivity (DMN, salience, frontoparietal) and cognitive performance (task execution, decision-making) in insomnia.",
+      "source": "llm",
+      "source_iteration": "iteration_003",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Thalamus-salience FC and insomnia severity (ISI): influence of anxiety and depression",
+      "intent_type": "literature_search",
+      "priority": 0.8,
+      "reason": "Explore the relationship between thalamus-salience FC and insomnia severity (ISI), including potential interactions with psychological factors like anxiety and depression.",
+      "source": "llm",
+      "source_iteration": "iteration_003",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    },
+    {
+      "query": "Salience network connectivity in insomnia: role of thalamus and psychological comorbidities",
+      "intent_type": "literature_search",
+      "priority": 0.8,
+      "reason": "Explore the relationship between thalamus-salience FC and insomnia severity (ISI), including potential interactions with psychological factors like anxiety and depression.",
+      "source": "llm",
+      "source_iteration": "iteration_003",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "accepted"
+    }
+  ],
+  "rejected_duplicate_count": 0,
+  "rejected_invalid_count": 1,
+  "rejected_queries": [
+    {
+      "query": "Thalamus-DMN functional connectivity and insomnia severity (ISI): association with cognitive impairment and sleep quality",
+      "intent_type": "literature_search",
+      "priority": 0.9,
+      "reason": "Investigate the association between thalamus-DMN functional connectivity (FC) and insomnia severity (ISI), considering its role in cognitive impairment and sleep quality.",
+      "source": "llm",
+      "source_iteration": "iteration_003",
+      "source_hypothesis_id": "",
+      "source_plan_id": "",
+      "status": "candidate",
+      "rejection_reason": "length"
+    }
+  ],
+  "query_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml",
+  "skip_literature_refresh": false,
+  "reason": "new_experiment_queries",
+  "append_summary": {
+    "appended": 8,
+    "group": "experiment_feedback_expansion",
+    "query_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml"
+  },
+  "incremental_query_config": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/literature_incremental_queries.yaml"
+}

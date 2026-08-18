@@ -1,0 +1,48 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "41694716",
+      "36094570"
+    ],
+    "translationset": [
+      {
+        "from": "fALFF",
+        "to": "\"falff\"[All Fields] OR \"falffs\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "neuroimaging",
+        "to": "\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]"
+      },
+      {
+        "from": "studies",
+        "to": "\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study's\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"falff\"[All Fields] OR \"falffs\"[All Fields]) AND \"ALFF\"[All Fields] AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields])",
+    "errorlist": {
+      "phrasesnotfound": [
+        "timefreq"
+      ],
+      "fieldsnotfound": []
+    },
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

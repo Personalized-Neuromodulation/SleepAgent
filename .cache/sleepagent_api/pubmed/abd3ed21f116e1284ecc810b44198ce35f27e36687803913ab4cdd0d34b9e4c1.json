@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "thalamus",
+        "to": "\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "biology",
+        "to": "\"biologies\"[All Fields] OR \"biology\"[MeSH Terms] OR \"biology\"[All Fields] OR \"biology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]) AND \"DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"biologies\"[All Fields] OR \"biology\"[MeSH Terms] OR \"biology\"[All Fields] OR \"biology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

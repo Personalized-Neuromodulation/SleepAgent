@@ -1,0 +1,1603 @@
+{
+  "total": 40,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "09b4d253a6ffa48996628395ec8fcde1a3de6a35",
+      "externalIds": {
+        "DOI": "10.3390/app15031035",
+        "CorpusId": 275807199
+      },
+      "url": "https://www.semanticscholar.org/paper/09b4d253a6ffa48996628395ec8fcde1a3de6a35",
+      "title": "Multimodal Neural Network Analysis of Single-Night Sleep Stages for Screening Obstructive Sleep Apnea",
+      "venue": "Applied Sciences",
+      "year": 2025,
+      "citationCount": 5,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/app15031035",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app15031035?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app15031035, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1922339575",
+          "name": "Jayroop Ramesh"
+        },
+        {
+          "authorId": "2138789522",
+          "name": "Zahra Solatidehkordi"
+        },
+        {
+          "authorId": "2275742989",
+          "name": "A. Sagahyroon"
+        },
+        {
+          "authorId": "2191270286",
+          "name": "F. Aloul"
+        }
+      ],
+      "abstract": "Obstructive Sleep Apnea (OSA) is a prevalent chronic sleep-related breathing disorder characterized by partial or complete airway obstruction. The expensive, time-consuming, and labor-intensive nature of the gold-standard approach, polysomnography (PSG), and the lack of regular monitoring of patients’ daily lives with existing solutions motivates the development of clinical support for enhanced prognosis. In this study, we utilize image representations of sleep stages and contextual patient-specific data, including medical history and stage durations, to investigate the use of wearable devices for OSA screening and comorbid conditions. For this purpose, we leverage the publicly available Wisconsin Sleep Cohort (WSC) dataset. Given that wearable devices are adept at detecting sleep stages (often using proprietary algorithms), and medical history data can be efficiently captured through simple binary (yes/no) responses, we seek to explore neural network models with this. Without needing access to the raw physiological signals and using epoch-wise sleep scores and demographic data, we attempt to validate the effectiveness of screening capabilities and assess the interplay between sleep stages, OSA, insomnia, and depression. Our findings reveal that sleep stage representations combined with demographic data enhance the precision of OSA screening, achieving F1 scores of up to 69.40. This approach holds potential for broader applications in population health management as a plausible alternative to traditional diagnostic approaches. However, we find that purely modality-agnostic sleep stages for a single night and routine lifestyle information by themselves may be insufficient for clinical utility, and further work accommodating individual variability and longitudinal data is needed for real-world applicability."
+    },
+    {
+      "paperId": "4ef53f5f4953c1a5b2a9ba30cad365adec3472aa",
+      "externalIds": {
+        "DBLP": "journals/sensors/ChengLW23",
+        "PubMedCentral": "10099216",
+        "DOI": "10.3390/s23073468",
+        "CorpusId": 257789565,
+        "PubMed": "37050528"
+      },
+      "url": "https://www.semanticscholar.org/paper/4ef53f5f4953c1a5b2a9ba30cad365adec3472aa",
+      "title": "Simultaneous Sleep Stage and Sleep Disorder Detection from Multimodal Sensors Using Deep Learning",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2023,
+      "citationCount": 36,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/23/7/3468/pdf?version=1680091738",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10099216, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2117234329",
+          "name": "Yifan Cheng"
+        },
+        {
+          "authorId": "2101090",
+          "name": "M. Lech"
+        },
+        {
+          "authorId": "46907412",
+          "name": "Richardt H. Wilkinson"
+        }
+      ],
+      "abstract": "Sleep scoring involves the inspection of multimodal recordings of sleep data to detect potential sleep disorders. Given that symptoms of sleep disorders may be correlated with specific sleep stages, the diagnosis is typically supported by the simultaneous identification of a sleep stage and a sleep disorder. This paper investigates the automatic recognition of sleep stages and disorders from multimodal sensory data (EEG, ECG, and EMG). We propose a new distributed multimodal and multilabel decision-making system (MML-DMS). It comprises several interconnected classifier modules, including deep convolutional neural networks (CNNs) and shallow perceptron neural networks (NNs). Each module works with a different data modality and data label. The flow of information between the MML-DMS modules provides the final identification of the sleep stage and sleep disorder. We show that the fused multilabel and multimodal method improves the diagnostic performance compared to single-label and single-modality approaches. We tested the proposed MML-DMS on the PhysioNet CAP Sleep Database, with VGG16 CNN structures, achieving an average classification accuracy of 94.34% and F1 score of 0.92 for sleep stage detection (six stages) and an average classification accuracy of 99.09% and F1 score of 0.99 for sleep disorder detection (eight disorders). A comparison with related studies indicates that the proposed approach significantly improves upon the existing state-of-the-art approaches."
+    },
+    {
+      "paperId": "8185e6d61738004c553a7bc6479a097cffd2784e",
+      "externalIds": {
+        "DOI": "10.1111/jsr.13875",
+        "CorpusId": 257581894,
+        "PubMed": "36922163"
+      },
+      "url": "https://www.semanticscholar.org/paper/8185e6d61738004c553a7bc6479a097cffd2784e",
+      "title": "Is obstructive sleep apnea a circadian rhythm disorder?",
+      "venue": "Journal of Sleep Research",
+      "year": 2023,
+      "citationCount": 28,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jsr.13875",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jsr.13875?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jsr.13875, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212002092",
+          "name": "Julija Šmon"
+        },
+        {
+          "authorId": "2007828386",
+          "name": "Eva Kočar"
+        },
+        {
+          "authorId": "3582125",
+          "name": "T. Pintar"
+        },
+        {
+          "authorId": "1401070276",
+          "name": "L. Dolenc-Grošelj"
+        },
+        {
+          "authorId": "2684510",
+          "name": "D. Rozman"
+        }
+      ],
+      "abstract": "Obstructive sleep apnea is the most common sleep‐related breathing disorder worldwide and remains underdiagnosed. Its multiple associated comorbidities contribute to a decreased quality of life and work performance as well as an increased risk of death. Standard treatment seems to have limited effects on cardiovascular and metabolic aspects of the disease, emphasising the need for early diagnosis and additional therapeutic approaches. Recent evidence suggests that the dysregulation of circadian rhythms, processes with endogenous rhythmicity that are adjusted to the environment through various cues, is involved in the pathogenesis of comorbidities. In patients with obstructive sleep apnea, altered circadian gene expression patterns have been demonstrated. Obstructive respiratory events may promote circadian dysregulation through the effects of sleep disturbance and intermittent hypoxia, with subsequent inflammation and disruption of neural and hormonal homeostasis. In this review, current knowledge on obstructive sleep apnea, circadian rhythm regulation, and circadian rhythm sleep disorders is summarised. Studies that connect obstructive sleep apnea to circadian rhythm abnormalities are critically evaluated. Furthermore, pathogenetic mechanisms that may underlie this association, most notably hypoxia signalling, are presented. A bidirectional relationship between obstructive sleep apnea and circadian rhythm dysregulation is proposed. Approaching obstructive sleep apnea as a circadian rhythm disorder may prove beneficial for the development of new, personalised diagnostic, therapeutic and prognostic tools. However, further studies are needed before the clinical approach to obstructive sleep apnea includes targeting the circadian system."
+    },
+    {
+      "paperId": "917735d1a053c76c116dd968b5a23fb9641d9fee",
+      "externalIds": {
+        "DOI": "10.1109/ASENS64990.2025.11011242",
+        "CorpusId": 278936564
+      },
+      "url": "https://www.semanticscholar.org/paper/917735d1a053c76c116dd968b5a23fb9641d9fee",
+      "title": "Multimodal Fusion for OSA Detection Using Deep Neural Networks",
+      "venue": "2025 2nd International Conference on Algorithms, Software Engineering and Network Security (ASENS)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ASENS64990.2025.11011242?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ASENS64990.2025.11011242, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2228262400",
+          "name": "Ran Li"
+        },
+        {
+          "authorId": "2266014508",
+          "name": "Peng Zhang"
+        },
+        {
+          "authorId": "2364415686",
+          "name": "Jinru Cai"
+        },
+        {
+          "authorId": "2363738877",
+          "name": "H. Quan"
+        }
+      ],
+      "abstract": "This paper proposes a multimodal recognition method based on snoring sounds and respiratory tract structural variation videos for the auxiliary diagnosis of Obstructive Sleep Apnea Syndrome (OSA). It is important to note that snoring alone is not a definitive indicator of OSA; it is merely one potential symptom that should be considered in conjunction with additional information for a more accurate diagnosis. By integrating data from these two modalities, the diagnostic accuracy and robustness are significantly enhanced. Experimental results demonstrate that the proposed method outperforms single-modality approaches in key performance metrics, including accuracy and recall. This study provides a novel and effective solution for the diagnosis of OSA, offering new insights into the development of advanced diagnostic tools for sleep-related breathing disorders."
+    },
+    {
+      "paperId": "5b2be2cf404853dee93560089e7aaaa47d528a0c",
+      "externalIds": {
+        "DOI": "10.1109/QPAIN69676.2026.11546101",
+        "CorpusId": 289193644
+      },
+      "url": "https://www.semanticscholar.org/paper/5b2be2cf404853dee93560089e7aaaa47d528a0c",
+      "title": "DeepSleepNet-XAI: Explainable Deep Learning for Sleep Disorder Classification",
+      "venue": "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN)",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/QPAIN69676.2026.11546101?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/QPAIN69676.2026.11546101, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2442164747",
+          "name": "Rikha Akther"
+        },
+        {
+          "authorId": "2211287927",
+          "name": "Mamunur Rashid Alex"
+        },
+        {
+          "authorId": "2134241599",
+          "name": "Abubokor Hanip"
+        },
+        {
+          "authorId": "2384430069",
+          "name": "M. Hassan"
+        }
+      ],
+      "abstract": "Sleep disorders are common clinical problems, and its diagnosis continues to be based on polysomnography (PSG), which is an inconvenient and resource-consuming process. Regardless of the improvement in the deep learning techniques, the majority of the current systems need multi-channel PSG, laboratory controlled conditions, and sophisticated sensor design, which restricts scalability to home-based screening. Most of the approaches are also not interpretable and therefore cannot be adopted in clinical settings. The current paper proposes an efficient and understandable deep learning architecture to identify sleep-related disorders based on a limited set of physiological and lifestyle features that may be obtained without laboratory measurement instruments. The suggested approach helps to mitigate major shortcomings of the previous studies such as the reliance on high-density EEG, vulnerability to noise in audio-based designs, and the computational cost of multimodal systems. The use of SMOTE to alleviate class imbalance is used to enhance generalization. There are four neural network designs (DNN, DCNN, LSTM-GRU and BiLSTM) that are analyzed. The DNN, with the test accuracy of 99.5%, and LSTM-GRU, with the highest cross-validation accuracy of 98.79%, were used. These scores are significant performance improvements, with the DNN increasing in 9.5-12.5 percentage points over previous DNN models $(87-90 \\%)$ and the LSTM-GRU increasing in 9.78-11.38 percentage points over previous GRU-LSTM models (87.41-89.01%). The AHI and $\\text{SaO}_{2}$ are demonstrated as the most influential features, which can be attributed to physiological relevance, as model interpretability is ensured by SHAP and LIME analyses. In general, the suggested strategy allows effective, realistic, and analyzable at-home screening of sleep-disorder with the use of low input signals."
+    },
+    {
+      "paperId": "d28b7990545eab8b79f075031e0d1e4d4a2b39a0",
+      "externalIds": {
+        "DOI": "10.1088/1741-2552/adb996",
+        "CorpusId": 276578283,
+        "PubMed": "39993330"
+      },
+      "url": "https://www.semanticscholar.org/paper/d28b7990545eab8b79f075031e0d1e4d4a2b39a0",
+      "title": "GraphSleepFormer: a multi-modal graph neural network for sleep staging in OSA patients",
+      "venue": "Journal of Neural Engineering",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/1741-2552/adb996?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/1741-2552/adb996, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2305675157",
+          "name": "Chen Wang"
+        },
+        {
+          "authorId": "2212866727",
+          "name": "Xiuquan Jiang"
+        },
+        {
+          "authorId": "2305674071",
+          "name": "Chengyan Lv"
+        },
+        {
+          "authorId": "2297758787",
+          "name": "Qi Meng"
+        },
+        {
+          "authorId": "2347893266",
+          "name": "Pengcheng Zhao"
+        },
+        {
+          "authorId": "2347382134",
+          "name": "Di Yan"
+        },
+        {
+          "authorId": "2261060674",
+          "name": "Chao Feng"
+        },
+        {
+          "authorId": "2249840586",
+          "name": "Fangzhou Xu"
+        },
+        {
+          "authorId": "2143827851",
+          "name": "Shanshan Lu"
+        },
+        {
+          "authorId": "2247382396",
+          "name": "Tzyy-Ping Jung"
+        },
+        {
+          "authorId": "1814313",
+          "name": "Jiancai Leng"
+        }
+      ],
+      "abstract": "Objective. Obstructive sleep apnea (OSA) is a prevalent sleep disorder. Accurate sleep staging is one of the prerequisites in the study of sleep-related disorders and the evaluation of sleep quality. We introduce a novel GraphSleepFormer (GSF) network designed to effectively capture global dependencies and node characteristics in graph-structured data. Approach. The network incorporates centrality coding and spatial coding into its architecture. It employs adaptive learning of adjacency matrices for spatial encoding between channels located on the head, thereby encoding graph structure information to enhance the model’s representation and understanding of spatial relationships. Centrality encoding integrates the degree matrix into node features, assigning varying degrees of attention to different channels. Ablation experiments demonstrate the effectiveness of these encoding methods. The Shapley Additive Explanations (SHAP) method was employed to evaluate the contribution of each channel in sleep staging, highlighting the necessity of using multimodal data. Main results. We trained our model on overnight polysomnography data collected from 28 OSA patients in a clinical setting and achieved an overall accuracy of 80.10%. GSF achieved performance comparable to state-of-the-art methods on two subsets of the ISRUC database. Significance. The GSF Accurately identifies sleep periods, providing a critical basis for diagnosing and treating OSA, thereby contributing to advancements in sleep medicine."
+    },
+    {
+      "paperId": "631955e1e79d2bd1e8f465f8d611567a1f5ac0a6",
+      "externalIds": {
+        "DOI": "10.12974/2313-1047.2025.12.08",
+        "CorpusId": 284575891
+      },
+      "url": "https://www.semanticscholar.org/paper/631955e1e79d2bd1e8f465f8d611567a1f5ac0a6",
+      "title": "The Vestibular System as a Circadian Modulator: Neural Pathways to the Hypothalamus Shaping Sleep, Autonomic Activity, and Hormonal Rhythms",
+      "venue": "Journal of Psychology and Psychotherapy Research",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.savvysciencepublisher.com/index.php/jppr/article/download/1170/1194",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.12974/2313-1047.2025.12.08?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.12974/2313-1047.2025.12.08, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47608045",
+          "name": "A. Ried"
+        },
+        {
+          "authorId": "2398192944",
+          "name": "Catalina Arrau"
+        }
+      ],
+      "abstract": "Physiological homeostasis in humans relies on the precise integration of autonomic, endocrine, and circadian regulatory mechanisms, largely orchestrated by hypothalamic nuclei [1-3]. These regulatory domains include: (1) autonomic nervous system control through sympathetic and parasympathetic outputs, governing cardiovascular, respiratory, gastrointestinal, and metabolic functions [4, 5]; (2) endocrine secretion via hypothalamic–pituitary axes, modulating stress responses, growth, reproduction, and energy balance [6, 7]; and (3) circadian regulation of sleep–wake cycles and daily physiological rhythms through interactions with the suprachiasmatic nucleus (SCN) [8-10]. Dysregulation of these hypothalamic-controlled variables gives rise to a wide spectrum of somatic and neuropsychiatric symptoms—such as fatigue, sleep disturbances, autonomic instability, metabolic imbalance, anxiety, and mood disorders—which profoundly limit quality of life, particularly in individuals with mental illnesses [11-13]. \nThe vestibular system of the inner ear is classically defined as a sensory system specialized in detecting head motion, spatial orientation, and balance, ensuring postural stability and coordinated eye movements [14]. However, accumulating evidence indicates that vestibular afferent signals extend far beyond motor control. Anatomical and functional studies demonstrate direct and indirect projections from vestibular nuclei to hypothalamic regions involved in autonomic regulation, neuroendocrine secretion, and circadian timing [15-18]. Through these connections, vestibular input appears capable of modulating core physiological functions traditionally attributed to hypothalamic control. \nThis paper reviews current evidence supporting the role of the vestibular system as a regulator of bodily physiology via its influence on hypothalamic networks. Through vestibulo–hypothalamic interactions, vestibular input may contribute not only to somatic regulation but also to psychological and clinical manifestations frequently observed in anxiety, depressive disorders, stress-related conditions, and sleep disorders, including impaired emotional regulation, altered stress responsiveness, cognitive dysfunction, and reduced quality of life. Finally, future perspectives are discussed, highlighting vestibular stimulation as a promising neuromodulatory approach to indirectly target hypothalamic dysfunction in disorders characterized by autonomic, endocrine, and circadian dysregulation."
+    },
+    {
+      "paperId": "7f834ddf578be0c232cd1c7d5a8dfca9e3902543",
+      "externalIds": {
+        "ArXiv": "2512.00063",
+        "CorpusId": 283449526
+      },
+      "url": "https://www.semanticscholar.org/paper/7f834ddf578be0c232cd1c7d5a8dfca9e3902543",
+      "title": "Exploring the changes in brain network SC-FC coupling patterns of partial sleep deprivation based on DTI-fMRI fusion analysis",
+      "venue": "",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.00063, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2386548412",
+          "name": "Mengyuan Liu"
+        },
+        {
+          "authorId": "2386761122",
+          "name": "Jing Hu"
+        },
+        {
+          "authorId": "2403511555",
+          "name": "Zhen-Gang Ru"
+        },
+        {
+          "authorId": "2395671513",
+          "name": "Ruomeng Quan"
+        },
+        {
+          "authorId": "2355676401",
+          "name": "Xu Zhang"
+        },
+        {
+          "authorId": "2386266862",
+          "name": "Ning Qiang"
+        },
+        {
+          "authorId": "2387509246",
+          "name": "Jin Li"
+        }
+      ],
+      "abstract": "Sleep disorder is a serious global public health issue, with cognitive-emotional dysfunction being a core symptom. The analysis of multimodal MRI data provides an effective method for detecting sleep deprivation-induced neural network abnormalities. The structure-function coupling (SC-FC) integrates functional connectivity with white matter structural information, which can enable comprehensive detection of brain network abnormalities and offer quantitative measures of sleep deprivation-induced neural damage. This study integrates diffusion tensor imaging (DTI) and resting-state fMRI (rs-fMRI) to systematically investigate brain network reorganization and their relationship with emotional functions in partial sleep deprivation (PSD). Our methodology employed DTI to construct structural connectivity (SC) networks and rs-fMRI to establish functional connectivity (FC) networks, then construct SC-FC coupling model . The experiment included 16 healthy controls (HC) and 20 PSD patients, with comprehensive whole-brain and nodal-level SC-FC analyses performed. The results show that (1) severe FC disruptions in PSD patients involving the limbic system, default mode network, sensorimotor network, and visual networks; (2) altered SC in default mode, sensorimotor, visual, language, and auditory networks; (3) significant SC-FC decoupling in these networks; and (4) strong correlations between these neural changes and clinical measures (KSQ and HADS scores). The SC-FC coupling approach achieved comprehensive detection of PSD-related network abnormalities. Compared to single-modal approaches, this integrated SC-FC analysis provides more comprehensive biomarkers for sleep-related emotional dysregulation. This innovative multimodal neuroimaging approach elucidates the neural mechanisms of SC-FC imbalance induced by PSD, establishing novel biomarkers for sleep-mediated emotional dysregulation."
+    },
+    {
+      "paperId": "6db29533c8cbc65a3d51cc7d5e2219f8b2d4f7d5",
+      "externalIds": {
+        "DOI": "10.30978/unj2026-2-23",
+        "CorpusId": 288882548
+      },
+      "url": "https://www.semanticscholar.org/paper/6db29533c8cbc65a3d51cc7d5e2219f8b2d4f7d5",
+      "title": "Digital stress: neurobiological mechanisms of anxiety and opportunities of neural network modulation (review)",
+      "venue": "Ukrainian Neurological Journal",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.30978/unj2026-2-23",
+        "status": "GOLD",
+        "license": "CCBYND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.30978/unj2026-2-23?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.30978/unj2026-2-23, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2343927427",
+          "name": "N. Bozhenko"
+        },
+        {
+          "authorId": "1661126419",
+          "name": "M. Bozhenko"
+        },
+        {
+          "authorId": "2364964060",
+          "name": "O. Bozhenko"
+        }
+      ],
+      "abstract": "Digitalization of modern society has led to continuous information exposure, multitasking, and constant online connectivity. These conditions contribute to a new form of chronic stress associated with dysregulation of functional brain networks, activation of the hypothalamic-pituitary-adrenal axis, and neuroinflammation. In clinical practice, these changes may manifest as anxiety disorders, cognitive exhaustion, and sleep disturbances.\nObjective — to summarize current evidence regarding neurobiological mechanisms of anxiety in the context of digital stress and to analyze possible strategies for modulation of dysfunctional brain networks.\nMaterials and methods. A narrative review of scientific publications indexed in PubMed, Scopus, and Web of Science was conducted focusing on neurobiology of stress, functional brain networks, and therapeutic approaches to anxiety-related disorders.\nResults and discussion. Chronic digital stress is associated with reorganization of large-scale functional brain networks including the salience network, default mode network, and central executive network. Prolonged activation of the hypothalamic-pituitary-adrenal axis leads to elevated cortisol levels, neuroinflammation, and impaired neuroplasticity. These changes may contribute to the development of anxiety and cognitive disorders.\nConclusions. Anxiety in the context of digital stress has a clear neurobiological basis and is associated with impaired interactions among large-scale brain networks. Multimodal strategies combining psychotherapy, lifestyle interventions, rehabilitation, and pharmacotherapy may contribute to restoring neural network balance."
+    },
+    {
+      "paperId": "7a98efcf1421c5216d9672abdf4138ea43a65366",
+      "externalIds": {
+        "DOI": "10.56238/levv16n54-054",
+        "CorpusId": 283032998
+      },
+      "url": "https://www.semanticscholar.org/paper/7a98efcf1421c5216d9672abdf4138ea43a65366",
+      "title": "TRICHOTILLOMANIA AND SKIN-PICKING DISORDER: NEUROBIOLOGICAL CORRELATES AND TREATMENT OUTCOMES",
+      "venue": "Lumen et Virtus",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://periodicos.newsciencepubl.com/LEV/article/download/9913/11606",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.56238/levv16n54-054?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.56238/levv16n54-054, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2293503468",
+          "name": "Raquel Furlan Buosi"
+        },
+        {
+          "authorId": "2392540775",
+          "name": "Willayne Rodrigues"
+        },
+        {
+          "authorId": "2392543032",
+          "name": "B. N. B. Leal"
+        },
+        {
+          "authorId": "2389562914",
+          "name": "Luísa Cesario Miguel"
+        },
+        {
+          "authorId": "2402896205",
+          "name": "Liliana Sanchez Torres"
+        },
+        {
+          "authorId": "2392540144",
+          "name": "F. Mayer"
+        },
+        {
+          "authorId": "2392540906",
+          "name": "Laura Teixeira Moraes"
+        }
+      ],
+      "abstract": "Introduction: Trichotillomania and skin-picking disorder are chronic body-focused repetitive behaviors that result in significant psychological distress and physical harm. Both conditions are classified under obsessive-compulsive and related disorders, sharing neurobiological mechanisms involving cortico-striatal-thalamo-cortical circuitry dysregulation. Despite advances in understanding these disorders, their underlying pathophysiology and optimal treatment strategies remain incompletely elucidated. \nObjective: The main objective of this review was to systematically evaluate the neurobiological correlates and treatment outcomes in patients with trichotillomania and skin-picking disorder. Secondary objectives included: (1) examining the role of functional and structural neuroimaging in elucidating neural abnormalities; (2) assessing pharmacological interventions, including glutamatergic and serotonergic agents; (3) evaluating the efficacy of cognitive-behavioral therapies and habit reversal training; (4) comparing outcomes across combined therapeutic modalities; and (5) identifying gaps in the literature to guide future research. \n  \nMethods: A systematic search was performed in PubMed, Scopus, Web of Science, Cochrane Library, LILACS, ClinicalTrials.gov, and the WHO ICTRP registry for studies published between January 2015 and December 2025. Eligible studies included randomized controlled trials, cohort studies, case-control designs, and neuroimaging research involving human participants diagnosed with trichotillomania or skin-picking disorder. Animal and in vitro studies were included separately when relevant. Risk of bias was assessed using RoB 2 and ROBINS-I tools, and evidence certainty was appraised through the GRADE framework. \nResults and Discussion: Twenty-three studies met inclusion criteria, encompassing neuroimaging analyses, pharmacological trials, and behavioral therapy evaluations. Neurobiological findings consistently implicated hyperactivity in the anterior cingulate cortex, insula, and basal ganglia regions, while pharmacological interventions such as N-acetylcysteine and SSRIs showed variable efficacy. Cognitive-behavioral interventions, particularly habit reversal therapy, demonstrated the most consistent improvement across studies. Multimodal treatment approaches appeared to yield superior outcomes. \nConclusion: Trichotillomania and skin-picking disorder exhibit shared neural dysregulation within inhibitory control circuits, supporting their conceptualization as related compulsive spectrum disorders. Behavioral therapy remains the cornerstone of treatment, though adjunctive pharmacological strategies may enhance outcomes in selected cases. Continued research integrating neuroimaging and longitudinal follow-up is essential to refine individualized, mechanism-based interventions."
+    },
+    {
+      "paperId": "48cb481f27504297425726ed181056319c78b4a8",
+      "externalIds": {
+        "DOI": "10.61958/ndqg5111",
+        "CorpusId": 287163054
+      },
+      "url": "https://www.semanticscholar.org/paper/48cb481f27504297425726ed181056319c78b4a8",
+      "title": "Network pharmacology reveals the potential molecular mechanisms of Polygonatum sibiricum in the treatment of sleep disorders",
+      "venue": "New Discovery",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.61958/ndqg5111?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.61958/ndqg5111, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2149151094",
+          "name": "Zhao Wei"
+        },
+        {
+          "authorId": "6826936",
+          "name": "Yu-feng Liao"
+        },
+        {
+          "authorId": "2387031198",
+          "name": "K. Zhuo"
+        }
+      ],
+      "abstract": "Background: Sleep disorders are multifactorial conditions involving complex physiological dysregulation. Despite the widespread traditional use of Polygonatum sibiricum (P. sibiricum) for health enhancement, its potential therapeutic effects on sleep disorders remain insufficiently characterized. To address this gap, the present study employed a network pharmacology approach to elucidate the molecular mechanisms through which P. sibiricum may exert anti–sleep disorder effects. Methods: We initially conducted a comprehensive screening using TCMSP, Herb, and GeneCards. Venn analysis was employed to identify intersections between the active components of P. sibiricum and sleep disorder-related genes, yielding 114 core intersection targets. A protein interaction (PPI) network was constructed using the STRING database, and core genes were identified through Cytoscape software. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analyses were conducted to elucidate the biological functions, signaling pathways, and potential mechanistic roles of these core genes in mediating the therapeutic effects of P. sibiricum on sleep disorders. Results: A total of 2,076 sleep disorder-related targets and 243 P. sibiricum-related targets were retrieved. Cross-analysis revealed 10 core genes, including caspase 3 (CASP3), epidermal growth factor receptor (EGFR), mechanistic target of rapamycin (MTOR), hypoxia inducible factor 1 subunit alpha (HIF1A), AKT serine/threonine kinase 1 (AKT1), caspase 8 (CASP8), tumor necrosis factor (TNF), Jun proto-oncogene (JUN), BCL2 apoptosis regulator (BCL2), and estrogen receptor 1 (ESR1). GO enrichment analysis indicated that these genes primarily regulate chemotaxis, modulate cellular responses to growth factors via MAPK3 and EGFR, participate in neural repair and inflammatory homeostasis, and influence neurological function and inflammation through endoplasmic reticulum stress and membrane signaling. They may also affect hemoglobin-binding capacity to regulate oxidative stress and inflammation, suggesting a novel mechanistic pathway. KEGG analysis further highlighted the central role of TNF-mediated inflammatory signaling and the enrichment of tumor-related pathways due to their shared inflammatory and cellular stress mechanisms. Conclusions: P. sibiricum may improve sleep disorders through a multitarget, multipathway mechanism. Its active components regulate core genes such as CASP3, EGFR, and HIF1A, thereby modulating inflammatory microenvironment, neural functions, and oxidative stress-related pathways."
+    },
+    {
+      "paperId": "3f169c67dc1db81bb54697953eb5d6c9cf123f57",
+      "externalIds": {
+        "DOI": "10.1016/j.pnpbp.2026.111700",
+        "CorpusId": 287529551,
+        "PubMed": "41990963"
+      },
+      "url": "https://www.semanticscholar.org/paper/3f169c67dc1db81bb54697953eb5d6c9cf123f57",
+      "title": "Chronobiological disruption in ADHD: Developmental mechanisms linking sleep, behavior, and comorbid conditions.",
+      "venue": "Progress in Neuro-psychopharmacology and Biological Psychiatry",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.pnpbp.2026.111700",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.pnpbp.2026.111700?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.pnpbp.2026.111700, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "112965697",
+          "name": "D. Glavan"
+        },
+        {
+          "authorId": "2257068531",
+          "name": "Ion Udriștoiu"
+        },
+        {
+          "authorId": "2257067332",
+          "name": "D. Hermann"
+        },
+        {
+          "authorId": "4101059",
+          "name": "M. Fîlfan"
+        },
+        {
+          "authorId": "2315266500",
+          "name": "T. Doeppner"
+        },
+        {
+          "authorId": "2249730716",
+          "name": "V. Gheorman"
+        },
+        {
+          "authorId": "2257066266",
+          "name": "Aurel Popa-Wagner"
+        }
+      ],
+      "abstract": "BACKGROUND\nAttention-Deficit/Hyperactivity Disorder (ADHD) is increasingly recognized as a neurodevelopmental condition involving both dopaminergic dysfunction and circadian misalignment. While these mechanisms have traditionally been studied independently, their combined impact on symptom expression and comorbidity-particularly with mood disorders, substance use disorders, and obesity-remains insufficiently understood. This review aims to integrate current evidence on the interaction between circadian and dopaminergic dysfunction in ADHD and to evaluate the therapeutic potential of chronobiological interventions.\n\n\nMETHODS\nWe conducted an integrative review of studies across neurobiology, chronobiology, psychopharmacology, and genetics, including evidence from both human and animal models. The review focuses on molecular and clinical findings related to circadian regulation, dopaminergic signaling, and their interaction in ADHD pathophysiology and treatment response.\n\n\nRESULTS\nEvidence indicates that dopaminergic dysregulation contributes to impaired reward processing and motivational deficits, while circadian disruption is associated with sleep disturbances, emotional dysregulation, and metabolic dysfunction. These processes appear to interact bidirectionally, potentially amplifying symptom severity and comorbidity. Emerging findings implicate circadian genes-particularly CRY1-in the regulation of both neural and metabolic pathways. Chronotherapeutic interventions, including light therapy, melatonin supplementation, and sleep-focused behavioral strategies, show promise, particularly when aligned with individual circadian profiles.\n\n\nCONCLUSIONS\nElucidating the interplay between circadian misalignment and dopaminergic dysfunction may inform more precise, biomarker-guided treatment strategies in ADHD. Stratified care models that incorporate circadian timing and individual variability have the potential to improve outcomes and address the high comorbidity burden. Large-scale, controlled clinical studies are needed to validate these approaches and facilitate their translation into personalized interventions."
+    },
+    {
+      "paperId": "6c8babc2c9c493a8e42091c2de44e1aa0f6552d1",
+      "externalIds": {
+        "DOI": "10.1038/s41582-022-00635-8",
+        "CorpusId": 247781279,
+        "PubMed": "35352034"
+      },
+      "url": "https://www.semanticscholar.org/paper/6c8babc2c9c493a8e42091c2de44e1aa0f6552d1",
+      "title": "Post-traumatic stress disorder: clinical and translational neuroscience from cells to circuits",
+      "venue": "Nature Reviews Neurology",
+      "year": 2022,
+      "citationCount": 360,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9682920",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41582-022-00635-8?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41582-022-00635-8, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2328040",
+          "name": "K. Ressler"
+        },
+        {
+          "authorId": "39243641",
+          "name": "S. Berretta"
+        },
+        {
+          "authorId": "3023992",
+          "name": "V. Bolshakov"
+        },
+        {
+          "authorId": "2571590",
+          "name": "I. Rosso"
+        },
+        {
+          "authorId": "5118634",
+          "name": "E. Meloni"
+        },
+        {
+          "authorId": "2213047",
+          "name": "S. Rauch"
+        },
+        {
+          "authorId": "4451160",
+          "name": "W. Carlezon"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "a17964a267d9f1e945e1385d6729e377e4dac330",
+      "externalIds": {
+        "PubMedCentral": "13092983",
+        "DOI": "10.1093/psyrad/kkag009",
+        "CorpusId": 286356474,
+        "PubMed": "42017053"
+      },
+      "url": "https://www.semanticscholar.org/paper/a17964a267d9f1e945e1385d6729e377e4dac330",
+      "title": "Brain entropy as a biomarker of major depression in adolescents and young adults: insights from multimodal resting-state functional magentic resonance imaging",
+      "venue": "Psychoradiology",
+      "year": 2026,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13092983, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2298030665",
+          "name": "Ruoxi Lu"
+        },
+        {
+          "authorId": "2297930317",
+          "name": "Jianyu Li"
+        },
+        {
+          "authorId": "2346552589",
+          "name": "Yiran Li"
+        },
+        {
+          "authorId": "2346997821",
+          "name": "Xinglin Zeng"
+        },
+        {
+          "authorId": "2216651821",
+          "name": "Yan Guo"
+        },
+        {
+          "authorId": "7379610",
+          "name": "Danian Li"
+        },
+        {
+          "authorId": "1481734615",
+          "name": "Ying Cui"
+        },
+        {
+          "authorId": "2143616753",
+          "name": "Xinyu Liang"
+        },
+        {
+          "authorId": "2119079874",
+          "name": "Hanyue Zhang"
+        },
+        {
+          "authorId": "2375158232",
+          "name": "Jing Wang"
+        },
+        {
+          "authorId": "2375255395",
+          "name": "Baohua Cheng"
+        },
+        {
+          "authorId": "2108240852",
+          "name": "Yujie Liu"
+        },
+        {
+          "authorId": "2345397041",
+          "name": "Ze Wang"
+        },
+        {
+          "authorId": "2332594838",
+          "name": "Shijun Qiu"
+        }
+      ],
+      "abstract": "Abstract Background Major depressive disorder (MDD) in adolescents and young adults is increasingly prevalent, yet accurate diagnosis remains challenging due to the limitations of conventional neuroimaging metrics. Traditional resting-state functional magnetic resonance imaging (rs-fMRI) measures such as amplitude of low-frequency fluctuations (ALFF), regional homogeneity (ReHo), and functional connectivity density (FCD) primarily capture static aspects of brain activity and may overlook critical neural dynamics. Brain entropy (BEN), which quantifies temporal irregularity in rs-fMRI signals, may offer a complementary approach to better characterize neural alterations in MDD. Methods We analyzed multimodal rs-fMRI data from 204 individuals aged 12–24 years (119 with MDD and 85 healthy controls). BEN was computed alongside ALFF, ReHo, and FCD to extract region-wise features across the brain. A support vector machine with recursive feature elimination (SVM-RFE) was used to classify MDD and healthy controls based on various feature combinations. Classification performance was evaluated using repeated cross-validation and permutation testing. Additionally, partial Spearman correlations were performed between selected brain features and clinical measures including depression severity, childhood trauma, sleep quality, and cognitive control. Results Models incorporating BEN consistently outperformed those using traditional rs-fMRI features alone. The combination of BEN, ALFF, and FCD achieved the highest classification accuracy (AUC = 0.877, permutation test P < 0.001). The most frequently selected brain regions contributing to MDD classification included the putamen, paracentral lobule, cuneus, middle frontal gyrus, and rectus. BEN features also showed preliminary correlations with clinical variables such as childhood trauma and sleep quality, suggesting functional relevance. Conclusions This study demonstrates that BEN provides complementary diagnostic information to traditional rs-fMRI features in classifying adolescent and young adult MDD. BEN-related alterations in brain activity may reflect underlying neurobiological disruptions and show potential as a functional neuroimaging biomarker for depression during a critical stage of brain development."
+    },
+    {
+      "paperId": "b550039711b9757a75d841a96a8c01a0a320955b",
+      "externalIds": {
+        "PubMedCentral": "12344682",
+        "DOI": "10.1080/20008066.2025.2538906",
+        "CorpusId": 280632053,
+        "PubMed": "40792524"
+      },
+      "url": "https://www.semanticscholar.org/paper/b550039711b9757a75d841a96a8c01a0a320955b",
+      "title": "A biobank for complex post-traumatic stress disorder (C-PTSD) and PTSD: study protocol for a cross-sectional study",
+      "venue": "European Journal of Psychotraumatology",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.tandfonline.com/doi/pdf/10.1080/20008066.2025.2538906?needAccess=true",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12344682, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2375696263",
+          "name": "Alice H Mok"
+        },
+        {
+          "authorId": "2375704868",
+          "name": "Chrystal Douflias"
+        },
+        {
+          "authorId": "4005752",
+          "name": "L. Oestreich"
+        }
+      ],
+      "abstract": "ABSTRACT Background Complex Post-Traumatic Stress Disorder (C-PTSD) is a severe mental illness recently defined in the International Classification of Diseases 11th edition. In addition to the classic PTSD symptoms of avoidance, re-experiencing, and hypervigilance, it includes disturbances in emotion regulation, negative self-concept, and interpersonal relationships. Emerging evidence suggests C-PTSD has distinct neurobiological profiles compared to PTSD, but comprehensive investigations are lacking. This study aims to explore the neural mechanisms associated with C-PTSD, identifying distinct and shared brain alterations in C-PTSD and PTSD, while establishing a biobank incorporating neuroimaging, inflammatory, physiological, genetic, and psychosocial measures. Methods This cross-sectional study will compare three groups: individuals with C-PTSD (n = 40), PTSD (n = 30), and trauma-exposed healthy controls (n = 30). During a single visit, participants will undergo MRI scanning including structural, diffusion-weighted, resting-state, and task-based functional MRI. Blood samples will be collected for inflammatory marker analysis, and Genome-Wide Association Studies (GWAS). Participants will complete validated psychosocial self-report measures assessing trauma history, resilience, social support, emotion regulation, sleep quality, and mental health symptoms. Additionally, participants will wear an Actigraph smart watch for seven days to collect actigraphy-derived physiological data, including sleep patterns and heart rate variability. All de-identified data will be made openly available on the Open Science Framework upon publication of the main study findings, in accordance with ethical approvals and institutional guidelines for privacy and data security. Conclusion This comprehensive protocol addresses significant gaps in understanding C-PTSD through its multimodal approach. By comparing C-PTSD, PTSD, and trauma-exposed controls, the study aims to identify neurobiological markers specific to C-PTSD, potentially supporting its diagnostic distinction and informing targeted treatment approaches. Integrating neuroimaging, inflammatory, genetic, and psychophysiological measures acknowledges the complex interactions between biological systems in trauma responses. Findings may help inform future research on personalized intervention strategies by identifying potential biological profiles and resilience factors associated with trauma-related outcomes. HIGHLIGHTS This study protocol describes the creation of a biobank to investigate the biological and psychological mechanisms underlying complex post-traumatic stress disorder (C-PTSD) and post-traumatic stress disorder (PTSD). The study compares people with C-PTSD, PTSD, and trauma-exposed individuals without mental illness using brain scans, blood markers, genetic data, actigraphy-derived physiological data, and self-report questionnaires. The aim of this study is to identify biological markers that distinguish C-PTSD from PTSD, and to support future research into diagnosis, treatment, and resilience in people affected by trauma."
+    },
+    {
+      "paperId": "c79a6c913e51456d79e78bb96a1de4c6538aa223",
+      "externalIds": {
+        "DOI": "10.1111/andr.70191",
+        "CorpusId": 285468917,
+        "PubMed": "41669835"
+      },
+      "url": "https://www.semanticscholar.org/paper/c79a6c913e51456d79e78bb96a1de4c6538aa223",
+      "title": "Sleep Disorders and Male Infertility: Integrated Mechanisms and Precision Therapeutic Strategies.",
+      "venue": "Andrology",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/andr.70191?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/andr.70191, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2343982931",
+          "name": "Jinyue Rong"
+        },
+        {
+          "authorId": "2069776495",
+          "name": "Meng Dong"
+        }
+      ],
+      "abstract": "BACKGROUND\nMale factor infertility accounts for nearly half of infertility cases worldwide, yet modifiable lifestyle-related risk factors remain insufficiently integrated into andrological research and clinical practice. Sleep disorders have emerged as an increasingly important but underrecognized determinant of male reproductive health, with growing evidence linking disturbed sleep to impaired spermatogenesis and gonadal dysfunction.\n\n\nOBJECTIVES\nThis review synthesizes current evidence on the association between sleep disorders and male infertility, identifies key mechanistic pathways underlying sleep-related reproductive impairment, and proposes an integrated pathophysiological framework to inform precision phenotyping and targeted interventions.\n\n\nMETHODS\nA narrative review was conducted integrating epidemiological, experimental, and clinical studies addressing sleep disorders and male reproductive outcomes, with emphasis on oxidative stress, inflammation, endocrine and metabolic dysregulation, circadian rhythm disruption, epigenetic regulation, and related therapeutic evidence.\n\n\nRESULTS\nEvidence indicates that sleep disorders compromise male fertility through converging mechanisms. Excessive reactive oxygen species (ROS) generation and chronic inflammatory activation directly damage testicular tissue and sperm DNA. Disruption of the hypothalamic-pituitary-gonadal (HPG) axis impairs testosterone synthesis and hormonal rhythmicity essential for spermatogenesis, while metabolic-endocrine dysregulation further exacerbates gonadal dysfunction. Circadian misalignment induces epigenetic reprogramming in spermatozoa, potentially mediating intergenerational reproductive effects. Integrating these findings, we propose the sleep-oxidative stress-circadian disruption-epigenetics-spermatogenesis axis as a unifying model linking sleep disorders to male infertility. Multimodal interventions, including continuous positive airway pressure (CPAP), antioxidant therapy, endocrine and metabolic modulation, circadian rhythm restoration, and cognitive-behavioral approaches, demonstrate potential to mitigate sleep-related reproductive impairment.\n\n\nCONCLUSIONS\nSleep disorders represent clinically actionable contributors to male infertility. An integrated framework incorporating oxidative stress, circadian biology, endocrine regulation, and epigenetic inheritance supports a precision andrology approach. Future directions include epigenetic biomarker - guided stratification, artificial intelligence (AI) - assisted sleep assessment, and longitudinal follow-up to optimize individualized management of sleep-related male reproductive dysfunction."
+    },
+    {
+      "paperId": "b1a4cfaf66a4f080b678324eb09619ab88bb27af",
+      "externalIds": {
+        "PubMedCentral": "12895676",
+        "DOI": "10.3389/fnins.2026.1722979",
+        "CorpusId": 285228483,
+        "PubMed": "41695979"
+      },
+      "url": "https://www.semanticscholar.org/paper/b1a4cfaf66a4f080b678324eb09619ab88bb27af",
+      "title": "Depression mediated sleep disturbances and cognitive decline in Parkinson’s disease patient",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12895676, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1825705051",
+          "name": "Huashuo Zhao"
+        },
+        {
+          "authorId": "2422282490",
+          "name": "Yi Sun"
+        },
+        {
+          "authorId": "2304708963",
+          "name": "Qiushuang Wang"
+        },
+        {
+          "authorId": "1858654238",
+          "name": "Sizhao Li"
+        },
+        {
+          "authorId": "2305002888",
+          "name": "Zixuan Zhao"
+        }
+      ],
+      "abstract": "Objective This study investigated the distinct mechanistic pathways linking depression, sleep disturbances, and cognitive decline in Parkinson’s disease, with emphasis on differential roles of daytime sleepiness versus rapid eye movement sleep disorder. Participants The study included 450 Parkinson’s disease patients enrolled in the Parkinson’s Progression Markers Initiative (PPMI) between 2010 and 2024, leveraging longitudinal clinical and biomarker data. Measurements Depressive symptoms (Geriatric Depression Scale, GDS), sleep disturbances (Epworth Sleepiness Scale, ESS for daytime sleepiness; REM Sleep Behavior Disorder Questionnaire, RBDSQ), and cognition (Montreal Cognitive Assessment, MoCA) were analyzed using mixed-effects models and structural equation modeling (SEM) with bootstrapped mediation. Results Structural equation modeling demonstrated excellent model fit (CFI/TLI > 0.94; RMSEA < 0.08). Analyses revealed distinct pathological pathways: (1) Excessive daytime sleepiness impaired cognition fully through depression mediation (indirect effect β = −0.084, 95%CI [−0.097,-0.028], 66.1% mediated), while (2) REM sleep behavior disorder showed both direct negative effects on cognition (β = −0.116, p = 0.035) and depression-mediated effects (indirect effect β = −0.071, 95%CI [−0.110,-0.029], 38.2% mediated). These results highlight different intervention targets - treating depressive symptoms may fully mitigate cognitive impacts of daytime hypersomnia, while RBD may require both antidepressant and direct neuroprotective approaches. Conclusion Divergent neurobehavioral mechanisms underlie sleep-related cognitive decline in PD: daytime sleepiness operates through mood dysregulation, while rapid eye movement sleep disorder involves additional direct neural insult. Interventions targeting these pathways may require distinct strategies."
+    },
+    {
+      "paperId": "314af5cb293a149e37de816941dee8f2795af09a",
+      "externalIds": {
+        "PubMedCentral": "13199736",
+        "DOI": "10.2147/NDT.S611548",
+        "CorpusId": 288577074,
+        "PubMed": "42199924"
+      },
+      "url": "https://www.semanticscholar.org/paper/314af5cb293a149e37de816941dee8f2795af09a",
+      "title": "MicroRNA-425-3p: A Promising Biomarker and Candidate for Pharmacological Intervention in Neuropsychiatric Disabilities with Relevance to Major Depressive Disorder",
+      "venue": "Neuropsychiatric Disease and Treatment",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.dovepress.com/article/download/115411",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13199736, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2437553288",
+          "name": "Lloreal May"
+        },
+        {
+          "authorId": "2299010264",
+          "name": "Y. Dwivedi"
+        }
+      ],
+      "abstract": "Abstract Major depressive disorder (MDD) affects more than 280 million people worldwide and is one of the leading contributors to disability, premature mortality, and overall disease burden. Nearly 60% of individuals who die by suicide have an MDD diagnosis, underscoring its profound impact on both individuals and society. MDD arises from a complex interplay of genetic vulnerability, life experiences, and molecular alterations. Among these, epigenetic mechanisms have received particular attention because they help explain how environmental stress—especially chronic stress—can produce enduring biological changes. MicroRNAs (miRNAs) represent a key class of epigenetic regulators. These small, noncoding RNAs influence the efficiency with which target genes are translated into protein, thereby exerting potent post-transcriptional control over gene expression. Approximately 70% of known miRNAs are expressed in the brain, where they shape neuronal development, synaptic plasticity, and stress responsivity. Dysregulation of miRNA expression can disrupt coordinated gene networks and has been repeatedly associated with impairments in neurogenesis, neurotransmission, neuroinflammation, and endocrine signaling—processes central to the pathophysiology of MDD and other stress-related psychiatric conditions. Within this broader landscape, miR-425 has emerged as a particularly relevant epigenetic regulator across several brain disorders. Alterations in miR-425 expression have been reported in individuals with stress-related conditions and in animal models of chronic stress exposure. Emerging evidence suggests that miR-425 modulates several mood-relevant pathways, including regulation of the hypothalamic–pituitary–adrenal (HPA) axis, neuronal cell death, inflammatory signaling, and antidepressant treatment response as well as key signaling networks such as MAPK and Wnt. Given its regulatory role and disease-associated expression changes, miR-425 has gained significant interest as both a biomarker and a potential therapeutic target. In this review, we examine its biogenesis, molecular targets, and translational importance, positioning miR-425 as a promising candidate for psychiatric intervention strategies. A substantial knowledge gap remains and needs further study. For example, the functions of miR-425 within specific cell types and neural circuits are less defined, and most available evidence derives from rodent studies. Also, the support for miR-425 as a biomarker needs large, standardized, multisite, longitudinal studies integrating neuroimaging, proteomics, and detailed clinical phenotyping. In addition, we are only beginning to understand how pharmacologic and lifestyle interventions influence miR-425 expression. Finally, key downstream targets of miR-425 and safe, cell–type–specific delivery approaches for miR-425–based therapeutics remain underdeveloped. Collectively, these gaps underscore the need for rigorous, multimodal, translational research to determine the potential of miR-425 as both a biomarker and a target for novel treatments."
+    },
+    {
+      "paperId": "1eb3c3bc387a67a30cb4e8e5de7e981469cbbf95",
+      "externalIds": {
+        "DOI": "10.1016/j.brainres.2026.150304",
+        "CorpusId": 287222941,
+        "PubMed": "41951091"
+      },
+      "url": "https://www.semanticscholar.org/paper/1eb3c3bc387a67a30cb4e8e5de7e981469cbbf95",
+      "title": "Intrinsic neural timescale abnormalities reveal molecular and neuromodulatory basis of concomitant exotropia.",
+      "venue": "Brain Research",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.brainres.2026.150304?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.brainres.2026.150304, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153216464",
+          "name": "Fangren Yu"
+        },
+        {
+          "authorId": "2329165284",
+          "name": "Yuan-Zhi He"
+        },
+        {
+          "authorId": "2393827274",
+          "name": "Zhan-Xiang Hu"
+        },
+        {
+          "authorId": "2331374382",
+          "name": "Zirui Zheng"
+        },
+        {
+          "authorId": "2344371448",
+          "name": "Xin Huang"
+        }
+      ],
+      "abstract": "BACKGROUND\nConcomitant exotropia (CE) is a prevalent strabismic disorder characterized by outward ocular deviation and impaired binocular vision. While structural and functional brain abnormalities have been reported in CE, the temporal dynamics of intrinsic neural timescale remain largely unexplored.\n\n\nMETHODS\nThis study employed a multimodal framework combining resting-state functional MRI (rs-fMRI), transcriptomic data from the Allen Human Brain Atlas (AHBA), and neurotransmitter receptor density maps to investigate alterations in intrinsic neural timescales (INT) in CE. A total of 87 participants (43 CE patients, 44 matched controls) underwent rs-fMRI scanning. Voxel-wise and network-level INT were computed, followed by partial least squares (PLS) regression linking INT alterations with regional gene expression. Functional enrichment, cell-type specificity, and spatial correlations with PET-based receptor maps were also analyzed.\n\n\nRESULTS\nCompared to controls, CE patients exhibited significantly reduced INT in the right middle frontal gyrus and basal ganglia network, indicating impaired temporal integration in oculomotor and executive control circuits. Transcriptomic analyses revealed that INT-related genes were enriched for immune-inflammatory and neurodevelopmental pathways. Excitatory and inhibitory neurons were the dominant contributors to the altered transcriptional profiles, implicating excitation-inhibition imbalance as a core mechanism. Furthermore, INT alterations showed significant negative correlations with glutamatergic, GABAergic, and opioid receptor distributions, suggesting neuromodulatory dysregulation in CE.\n\n\nCONCLUSIONS\nThis study provides the first evidence of altered INT in CE and uncovers their molecular and neurochemical substrates. The findings highlight INT as a sensitive biomarker for temporal dysfunction in CE and emphasize the utility of integrative imaging-genomic approaches in elucidating its pathophysiology."
+    },
+    {
+      "paperId": "41d72064cff118b6d6159fe4fbae0339eb3c41d1",
+      "externalIds": {
+        "PubMedCentral": "13296426",
+        "DOI": "10.3390/brainsci16060610",
+        "CorpusId": 288987700,
+        "PubMed": "42352621"
+      },
+      "url": "https://www.semanticscholar.org/paper/41d72064cff118b6d6159fe4fbae0339eb3c41d1",
+      "title": "Neural Mechanisms of Neuroticism: Large-Scale Brain Networks, Developmental Trajectories, and Translational Implications",
+      "venue": "Brain Science",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2076-3425/16/6/610/pdf?version=1780563092",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13296426, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2440809222",
+          "name": "Xingye Ren"
+        },
+        {
+          "authorId": "2294714701",
+          "name": "Lijuan An"
+        },
+        {
+          "authorId": "2328154731",
+          "name": "Ning Jia"
+        },
+        {
+          "authorId": "2360047708",
+          "name": "Kexin Lv"
+        },
+        {
+          "authorId": "9737404",
+          "name": "Zhanling Cui"
+        }
+      ],
+      "abstract": "Highlights What are the main findings? Neuroticism is characterized by dysregulation of three large-scale brain circuits: hyperactive amygdala (emotion generation), hypoactive prefrontal cortex (cognitive control), and hyperconnected default mode network (self-referential rumination). A lifespan trajectory of Limbic Sensitivity → Regulatory Strain → Prefrontal Decline describes the dynamic evolution of neural vulnerability across adolescence, middle age, and old age. What are the implications of the main findings? The Emotion–Cognition Imbalance Model identifies amygdala-prefrontal-DMN circuits as candidate neural targets for early intervention in affective disorders. The demonstrated malleability of neuroticism-related circuits through neuromodulation and behavioral interventions challenges the traditional view of neuroticism as a fixed trait. Abstract Neuroticism, a Big Five trait characterized by emotional instability and susceptibility to negative affect, is a robust transdiagnostic predictor for the onset, severity, and persistence of anxiety disorders, major depressive disorder (MDD), and other affective conditions. Recent advances in functional magnetic resonance imaging (fMRI) techniques—including resting-state fMRI, multimodal neuroimaging, and their integration with machine learning—have enabled multi-perspective investigations into the neural substrates of neuroticism. Current research in this field primarily follows three complementary approaches: cross-sectional studies identifying key brain regions for emotional processing and cognitive control (e.g., amygdala (AMG), prefrontal cortex); longitudinal studies capturing neural mechanisms evolution across adolescence, middle age, and old age to elucidate relationships between neuroticism and brain plasticity; and intervention studies exploring plastic pathways for reshaping the neural representations of neuroticism, challenging the classic “trait stability” paradigm. This review synthesizes recent progress in the cognitive neuroscience of neuroticism across these three approaches, proposes a unified emotion-cognition neural model centered on the AMG-prefrontal-default mode network circuit, and outlines a hypothesized lifespan trajectory of Limbic Sensitivity → Regulatory Strain → Prefrontal Decline. While accumulated evidence broadly supports the cross-sectional and interventional pillars of this framework, the lifespan trajectory remains a theoretically informed working model requiring further longitudinal validation. The field still faces critical limitations, including small effect sizes, methodological heterogeneity, and unresolved questions regarding causality and circuit specificity. This review aims to provide a conceptual integration of existing findings, identify key uncertainties, and propose evidence-based future directions. We further link the proposed neural model to clinical phenotypic characteristics of high neuroticism and discuss its implications for targeted neural interventions, thereby advancing our understanding of the biological basis of neuroticism and providing a theoretical framework for prevention and intervention in neuroticism-related affective disorders."
+    },
+    {
+      "paperId": "24155c01700ac06248f5b0472e532724e17e6d1c",
+      "externalIds": {
+        "DOI": "10.66234/kx3q7207",
+        "CorpusId": 288690799
+      },
+      "url": "https://www.semanticscholar.org/paper/24155c01700ac06248f5b0472e532724e17e6d1c",
+      "title": "Neuroimaging in Anxiety and Depression: An Integrative Review of fMRI, EEG, and Neural Biomarkers",
+      "venue": "Journal of Biomedical &amp; Space Sciences (JBSS)",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.66234/kx3q7207",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.66234/kx3q7207?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.66234/kx3q7207, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2438783496",
+          "name": "Marina Corrêa Freitas"
+        },
+        {
+          "authorId": "2438842401",
+          "name": "Fabrício Corrêa Veloso"
+        }
+      ],
+      "abstract": "Anxiety and depressive disorders are highly prevalent psychiatric conditions associated with significant disability worldwide. Neuroimaging has advanced understanding of their neural substrates, particularly through functional magnetic resonance imaging (fMRI) and electroencephalography (EEG). This integrative review synthesized studies published between 2013 and 2025 retrieved from PubMed, Scopus, Web of Science, and PsycINFO, including adult clinical samples diagnosed with anxiety and/or depressive disorders. Evidence consistently indicates dysregulation within fronto-limbic circuitry and large-scale brain networks, notably involving the amygdala, prefrontal cortex, anterior cingulate cortex, and default mode network. fMRI findings highlight altered functional connectivity and impaired emotional regulation, whereas EEG studies reveal abnormalities in oscillatory activity and event-related potentials linked to attentional bias and cognitive control. Although convergent neural markers emerge across modalities, methodological heterogeneity limits reproducibility and clinical application. Multimodal integration of spatial and temporal neural measures may enhance biomarker reliability and support the development of precision psychiatry approaches."
+    },
+    {
+      "paperId": "f018e1a600410063b447e78d98e0f10683a87490",
+      "externalIds": {
+        "MAG": "2050363864",
+        "PubMedCentral": "3316963",
+        "DOI": "10.1155/2012/950602",
+        "CorpusId": 3565412,
+        "PubMed": "22482049"
+      },
+      "url": "https://www.semanticscholar.org/paper/f018e1a600410063b447e78d98e0f10683a87490",
+      "title": "Fibromyalgia as a Disorder Related to Distress and its Therapeutic Implications",
+      "venue": "Pain Research and Treatment",
+      "year": 2012,
+      "citationCount": 5,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://downloads.hindawi.com/archive/2012/950602.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3316963, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2461695",
+          "name": "P. Schweinhardt"
+        },
+        {
+          "authorId": "5028600",
+          "name": "M. Fitzcharles"
+        },
+        {
+          "authorId": "1947555",
+          "name": "C. Boomershine"
+        },
+        {
+          "authorId": "5936061",
+          "name": "C. Vierck"
+        },
+        {
+          "authorId": "7598874",
+          "name": "M. Yunus"
+        }
+      ],
+      "abstract": "The concept of fibromyalgia has considerably evolved over the past two decades and now incorporates symptoms beyond pain, such as affective disturbances and fatigue [1]. This evolution of the clinical understanding of fibromyalgia, together with neurophysiological research showing abnormalities in central pain processing, has helped to establish the implication of the central nervous system (CNS) in fibromyalgia. The CNS, or more specifically the brain, is key when the organism is not (or no longer) capable to mount adaptive responses to stressors, that is, physical or emotional stimuli that threaten homeostasis. As a consequence stress turns into distress and homeostasis of the organism is no longer maintained. \n \nThis special issue is centered on incorporating the concept of (dis-)stress into our understanding of fibromyalgia. A wide range of topics is covered, from clinical presentation to pathophysiology to treatment approaches, unified by the attempt to explore how stressors, together with individual vulnerability, impact on fibromyalgia. The paper by M. A. Fitzcharles and M. B. Yunus explains the clinical concept of fibromyalgia, demonstrating what fibromyalgia is from a clinical standpoint and what it is not. A call for standardization of assessment methods in the diagnosis of fibromyalgia and symptom severity as well as treatment outcomes is made by C. S. Boomershine, who provides a comprehensive evaluation of currently available tools. This paper might well serve as a starting point for discussions within groups like Outcome Measures in Rheumatology (OMERACT) with the goal of providing standardized assessment tools, which would clearly improve comparison of study results. The contribution by M. B. Yunus deals with the prevalence of fibromyalgia in other chronic pain conditions. On one hand, the overlap with other so-called functional pain syndromes is considered; on the other hand, the prevalence of fibromyalgia in diseases with clear (structural) organic cause is discussed. This approach is useful because it demonstrates that peripheral inflammatory and nociceptive events may trigger fibromyalgia symptoms in some patients while such events might be completely absent in patients presenting without any other organic disease. Then, Gracely et al. review commonalities and differences of fibromyalgia and depression. This is important for at least two reasons. First, depression is a frequent comorbidity of fibromyalgia. Second, fibromyalgia symptoms are regarded by some clinicians and/or researchers as a manifestation of a depressive disorder. The authors of this paper come to the interesting conclusion that although, in general, fibromyalgia may be more appropriately grouped with other functional pain disorders, certain subgroups of fibromyalgia patients with high level of psychological distress could be additionally or solely grouped with affective spectrum disorders. \n \nThe paper by L. A. Low and P. Schweinhardt investigates how different stressors early in life, including pain itself as well as psychological trauma, contribute to increased vulnerability of stress and pain systems to further insult later in life. This is potentially important because it might explain pathophysiological changes observed in adult fibromyalgia patients. The following four contributions are concerned in detail with the pathophysiological alterations that might underlie the numerous symptoms of fibromyalgia. Ceko et al. carefully describe the experimental evidence for altered sensory processing that has been obtained in research settings. The authors discuss increased sensitivity to nociceptive stimulation, potentially altered endogenous pain modulation as well as increased sensitivity in response to other unpleasant sensory stimuli, which once more is indicative of a CNS disturbance rather than peripheral tissue abnormalities. Accordingly, they discuss neurobiological changes that might underlie fibromyalgia symptoms. S. Becker and P. Schweinhardt discuss in depth the possibility that dysfunctional neurotransmitter systems might be responsible for fibromyalgia symptoms. At first glance, this notion might seem at odds with the view that alterations in stress systems underlie fibromyalgia. However, the authors carefully explain how various symptoms of fibromyalgia could be explained by dysfunctional neurotransmitter systems and how alterations in the hypothalamic-pituitary-adrenal (HPA) stress system fit into this model. The paper by M. Martinez-Lavin is concerned with the important role of the body's second stress system in fibromyalgia. The paper illustrates how dysregulation of the sympathetic nervous system could be key in converting distress into pain. Light et al. review genetic polymorphisms that have been implicated in conveying susceptibility for fibromyalgia. In addition, they provide novel and existing data showing differential alterations of gene expression profiles in fibromyalgia and fibromyalgia comorbid with chronic fatigue syndrome. These results emphasize the importance of carefully subgrouping fibromyalgia patients. Furthermore, the genes identified include genes pertaining to the adrenergic system, to exercise-responsive metabolite sensing ion channels, and to sensory receptors possibly responding to muscle fatigue. Thereby they provide further evidence how autonomic dysregulation and vasoconstriction could be turned into ischemic muscle pain and fatigue. \n \nTreatment for fibromyalgia presently consists of a multimodal approach combining pharmacological and nonpharmacological interventions. Two papers in this special issue directly address the important topic of treatment, incorporating current information on pathophysiology in the choice of treatment. The first one by C. J. Vierck is built on the hypothesis that pain in fibromyalgia might be partly caused by insufficient perfusion of skeletal muscles, as mentioned in the preceding paragraph. The author focuses on physical exercise as a first-line treatment for fibromyalgia with the rationale that exercise can attenuate consequences of stress in the periphery, that is, vasoconstriction and resulting ischemic pain, as well as in the CNS. In the CNS, exercise could interrupt the reciprocal interactions between stress and systems that control autonomic regulation, mood, sleep, and possibly pain sensitivity. The paper by R. L. Woolfolk et al. in the special issue addresses a therapeutic intervention that directly targets the CNS. They report on using an individually administered form of cognitive behavioral therapy (CBT) with an emphasis on achieving competence in relaxation methods and improving patients' emotional self-awareness. The results of this form of CBT are impressive—almost two thirds of patients in the treatment group show 30% pain reduction compared to 5% in the control group that received treatment as usual. This is an encouraging start and justifies future studies focusing on determining which aspect of the individualized affective CBT drove those good treatment results by using more sophisticated control groups. \n \nThe reader will appreciate some divergence between the different contributions to this special issue. For example, central sensitization has been classically regarded as a spinal process resulting from prolonged and/or high intensity afferent barrage related to peripheral injury. Then, some authors started to use the term relatively loosely by using it for any suspected CNS amplification of nociceptive processing. Recently, psychological stress has been shown to indeed modulate spinal glutamatergic neurotransmission, albeit possibly with different mechanisms than classical central sensitization [2]. These examples indicate that disturbance of homeostasis by different types of stressors, such as peripheral injury or psychological stress, might result in pain augmentation via different mechanisms. It remains to be determined whether there is a final common pathway of how different types of stressors that exceed the adaptive capacity of an individual lead to fibromyalgia. Although many questions regarding fibromyalgia are still unsolved, we have already come a long way. New diagnostic criteria have been developed and new etiological frameworks incorporating vulnerability to stress have been proposed. Research has greatly advanced our understanding of physiological alterations associated with fibromyalgia, including changes of the autonomic system and the CNS. Finally, nonpharmacological treatment approaches have been suggested based on the improved understanding of this challenging condition. Advancing our understanding of the mechanisms responsible for converting distress into pain and other symptoms of fibromyalgia further will likely have important implications for the development of new therapeutic perspectives. \n \nPetra Schweinhardt \n \nMary-Ann Fitzcharles \n \nChad Boomershine \n \nCharles Vierck \n \nMuhammad B. Yunus"
+    },
+    {
+      "paperId": "77d0f1d01a2d1cfdb9f483f978fa9ff567e8f4e7",
+      "externalIds": {
+        "DOI": "10.1093/schbul/sbaf199.002",
+        "CorpusId": 283304532
+      },
+      "url": "https://www.semanticscholar.org/paper/77d0f1d01a2d1cfdb9f483f978fa9ff567e8f4e7",
+      "title": "DEVELOPMENT OF A PSYCHOPHYSIOLOGICAL STRESS MODEL FOR INTELLIGENT ENVIRONMENTAL CONTROL SYSTEMS: A HUMAN-CENTRIC AFFECTIVE COMPUTING APPROACH",
+      "venue": "Schizophrenia bulletin",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/schbul/sbaf199.002?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/schbul/sbaf199.002, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2398088971",
+          "name": "Dongya Song"
+        },
+        {
+          "authorId": "2394740004",
+          "name": "Xijun Wang"
+        },
+        {
+          "authorId": "2394819517",
+          "name": "Yan Zhang"
+        }
+      ],
+      "abstract": "\n \n \n This study aims to develop an intelligent environmental control system based on psychophysiological stress modeling and affective computing to optimize human mental well-being in confined spaces. By integrating psychological stress theory and neural response mechanisms, this research seeks to establish a real-time stress assessment framework that dynamically adjusts environmental parameters (e.g., lighting, temperature, airflow) to mitigate anxiety, emotional dysregulation, and stress-related symptoms.\n \n \n \n The study involved 60 human participants exposed to a controlled simulated confined environment, divided into experimental (n = 30, adaptive system) and control (n = 30, static environment) groups. Psychophysiological indicators—heart rate variability (HRV), electrodermal activity, and behavioral cues (e.g., posture shifts, facial expressions)—were collected via wearable sensors and computer vision. A machine learning model (random forest and LSTM networks) classified stress levels using multimodal data. The intelligent system dynamically adjusted environmental parameters based on real-time stress feedback. Psychological scales (Perceived Stress Scale, State–Trait Anxiety Inventory) and task performance metrics were evaluated over four weeks.\n \n \n \n The stress classification model achieved 89% accuracy, with HRV and electrodermal activity as key predictors. The experimental group demonstrated significantly reduced stress levels (p<.01), showing a 30% decrease in self-reported anxiety and a 25% improvement in emotional regulation compared to controls. Task performance efficiency increased by 15%, and physiological markers indicated enhanced recovery from stress-induced arousal. The adaptive system effectively modulated environmental stimuli, such as softening lighting during high-stress periods.\n \n \n \n Affective computing-driven environmental control systems can significantly improve human mental health by dynamically mitigating psychophysiological stress. This approach highlights the importance of real-time, data-informed interventions for anxiety reduction and emotional stability. Future research should explore applications in clinical settings for individuals with diagnosed anxiety disorders and integrate neurophysiological biomarkers for precision mental health support.\n \n \n \n Funded by the “Tianchi Talent” Introduction Program of Xinjiang (Letter from the Xinjiang Human Resources and Social Security Department [2024] No. 57) (2023TCLJ03); Scientific Research Project for High-level Talents of Xinjiang Institute of Technology (XJLG2023G007); Autonomous Region-level College Students’ Innovation and Training Program Project of Xinjiang Institute of Technology in 2024 (S202413558012).\n"
+    },
+    {
+      "paperId": "92cf78d5aecbfa564ae7cb897f5d007aa5e2d5bd",
+      "externalIds": {
+        "PubMedCentral": "13149290",
+        "DOI": "10.3389/fpain.2026.1786367",
+        "CorpusId": 287744606,
+        "PubMed": "42110391"
+      },
+      "url": "https://www.semanticscholar.org/paper/92cf78d5aecbfa564ae7cb897f5d007aa5e2d5bd",
+      "title": "Non-pharmacological pain treatments as neuro-epigenetic revalidation strategies: integrating chronobiology, acupuncture, and pharmaco-nutrition",
+      "venue": "Frontiers in Pain Research",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://public-pages-files-2025.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2026.1786367/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13149290, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2431435985",
+          "name": "Agnès Mazic de Sonis"
+        },
+        {
+          "authorId": "2254614220",
+          "name": "C. Granger"
+        }
+      ],
+      "abstract": "Background Chronic pain is increasingly conceptualized as a disorder of maladaptive neural plasticity sustained by central sensitization, neuroinflammation signalling, disrupted biological rhythms, metabolic dysregulation and environmentally mediated epigenetic modulation, and altered gut–brain interactions. While pharmacological approaches remain central to pain management, their long-term efficacy is limited by tolerance, adverse effects, opioid-induced hyperalgesia, and inter-individual variability. Growing evidence suggests that non-pharmacological interventions may modulate pain not only symptomatically, but through deeper neurobiological and epigenetic mechanisms. Hypothesis We propose that selected non-pharmacological pain treatments, particularly chronobiology-informed acupuncture and targeted pharmaco-nutrition, may be considered as neuro-epigenetic revalidation strategies. These interventions may restore adaptive gene expression profiles and neural, immune, metabolic and circadian regulation disrupted in chronic pain, thereby reducing nociceptive sensitization and improving treatment responsiveness. Rationale Acupuncture has been shown to modulate central pain networks, including prefrontal, limbic, and sensorimotor regions, with effects distinct from sham procedures. Chronobiological regulation of sleep–wake cycles, hormonal rhythms, and feeding timing influences inflammatory pathways and epigenetic regulation. In parallel, the gut–brain axis, through intestinal barrier integrity, microbiome composition, and immune–glial signalling, plays a critical role in pain chronification and drug metabolism. Nutritional and nutraceutical interventions can influence these pathways and have been associated with changes in inflammatory tone, opioid tolerance, and neuroimmune interactions. Testable predictions This framework generates testable predictions linking multimodal interventions to dynamic modulation of epigenetic signatures (DNA methylation, microRNA expression), chronobiological and sleep parameters, inflammatory mediators, gut-brain markers and clinically meaningful outcomes. Longitudinal, multimodal study designs are required to evaluate association between regulatory recalibration and sustained clinical improvement. Conclusion Viewing non-pharmacological pain treatments within a neuro-epigenetic revalidation model provides a coherent system-level perspective model that bridges neuroscience, chronobiology, epigenetics, and integrative pain medicine. This integrative model supports the development of personalized, mechanism-based strategies for chronic pain management while encouraging biomarker-informed translational research."
+    },
+    {
+      "paperId": "709c82418ca0e8b1d03876df81f624dd758c60d4",
+      "externalIds": {
+        "PubMedCentral": "12997488",
+        "DOI": "10.1080/20008066.2026.2636453",
+        "CorpusId": 286665717,
+        "PubMed": "41841360"
+      },
+      "url": "https://www.semanticscholar.org/paper/709c82418ca0e8b1d03876df81f624dd758c60d4",
+      "title": "Cumulative trauma, neural circuits, and burnout: an integrative model of healthcare worker post-traumatic stress syndromes",
+      "venue": "European Journal of Psychotraumatology",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.tandfonline.com/doi/pdf/10.1080/20008066.2026.2636453?needAccess=true",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12997488, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4024537",
+          "name": "A. Taren"
+        },
+        {
+          "authorId": "2239425189",
+          "name": "Martin P. Paulus"
+        }
+      ],
+      "abstract": "ABSTRACT Background: Frontline healthcare workers (HCWs) experience unique patterns of repeated, chronic, and unpredictable traumatic event exposure, coupled with physiologic stress in the setting of shift-work circadian rhythm disruption, contributing to high rates of post-traumatic stress syndromes (PTSS) and substantial workforce and economic burden. The neurobiology underlying HCW-specific risk remains incompletely understood. Objective: To synthesise epidemiological, neuroimaging, physiological, and interventional evidence into a mechanistic model of HCW PTSS and to identify priorities for biomarker-guided prevention and care. Method: Literature for this narrative review was identified through a comprehensive search of peer-reviewed articles in PubMed, PsycINFO, and Google Scholar up to May 2025. Studies were included if they addressed (1) the epidemiology of PTSD in healthcare settings, (2) risk and protective factors specific to occupational trauma exposure, (3) neural, physiological, or molecular mechanisms associated with stress-related disorders in trauma-exposed personnel, or (4) interventions targeting PTSD/PTSS in HCWs and first responder populations. Results: Across studies, PTSS prevalence among HCWs is variable (≈15–74%). Repeated, chronic, and unpredictable occupational trauma, exacerbated by circadian disruption, appears to destabilise frontal-limbic circuits and systemic stress pathways, culminating in allostatic overload. Converging data suggest that multimodal biomarkers, including resting-state and task-evoked fMRI metrics, MR spectroscopy, heart rate variability, sleep architecture, cortisol and inflammatory indices can identify prodromal dysregulation and define risk stratification. Conclusions: Longitudinal, multimodal cohort designs are critically needed to track trajectories and evaluate neuroscientifically-informed treatment modalities for PTSS in this population. Framing HCW PTSS as an occupational neurobiological injury highlights the need to identify and prevent functional decline. A biomarker-guided strategy that links brain-circuit measures with autonomic, sleep, and molecular indices may offer a path to earlier identification, precision interventions, and improved outcomes for a critically at-need population that is essential to our workforce."
+    },
+    {
+      "paperId": "7978ba099739d5631c381ba6d85378b06c671618",
+      "externalIds": {
+        "DOI": "10.63125/64hftc92",
+        "CorpusId": 282915030
+      },
+      "url": "https://www.semanticscholar.org/paper/7978ba099739d5631c381ba6d85378b06c671618",
+      "title": "AI-ENABLED NEUROBIOLOGICAL DIAGNOSTIC MODELS FOR EARLY DETECTION OF PTSD AND TRAUMA DISORDERS",
+      "venue": "American Journal of Interdisciplinary Studies",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.63125/64hftc92?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.63125/64hftc92, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2392459407",
+          "name": "Md. Akbar Hossain"
+        },
+        {
+          "authorId": "2391734587",
+          "name": "Sharmin Ara"
+        }
+      ],
+      "abstract": "This systematic literature review examines the development and application of artificial intelligence (AI)-enabled neurobiological diagnostic models for the early detection of post-traumatic stress disorder (PTSD) and trauma-related disorders. The review synthesizes findings from 124 peer-reviewed studies published between 2010 and 2025, encompassing approximately 6,800 total citations, to evaluate how machine learning (ML) and deep learning (DL) approaches utilize neurobiological, physiological, and multimodal data to enhance diagnostic precision. Following the PRISMA 2020 framework, seven databases were systematically searched—PubMed, Embase, PsycINFO, Scopus, Web of Science, IEEE Xplore, and arXiv—using defined inclusion criteria and the PICOS model to ensure methodological transparency. Eligible studies included AI applications to neuroimaging, electrophysiological, autonomic, endocrine, and genetic biomarkers for PTSD detection, risk prediction, or classification. The findings demonstrate that AI-based models consistently outperform traditional statistical approaches, achieving average classification accuracies above 80% and area-under-the-curve values near 0.85. Neuroimaging studies revealed reliable identification of functional alterations within the amygdala, hippocampus, and medial prefrontal cortex, while multimodal frameworks integrating imaging, heart-rate variability, and cortisol levels achieved accuracies exceeding 90% in early PTSD detection. Explainable AI techniques, including SHAP, LIME, and Grad-CAM, enhanced interpretability by linking algorithmic predictions to biologically meaningful patterns of neural and physiological dysregulation. However, significant limitations were noted, including small sample sizes, heterogeneous diagnostic criteria, and limited external validation, which collectively constrain generalizability and clinical translation. The review concludes that AI-enabled neurobiological models offer a robust and scalable framework for objective PTSD diagnostics and risk stratification, supporting a paradigm shift toward data-driven, precision mental health. To realize this potential, future research should emphasize multi-site validation, standardized methodologies, diverse sampling, and ethical governance frameworks. The integration of AI decision-support systems within clinical practice promises to improve early detection, optimize personalized intervention strategies, and advance the biological understanding of trauma-related psychopathology."
+    },
+    {
+      "paperId": "431e801e91e3aacccbb672e028aee9c2ce1fb67c",
+      "externalIds": {
+        "DOI": "10.36959/784/430",
+        "CorpusId": 247533697
+      },
+      "url": "https://www.semanticscholar.org/paper/431e801e91e3aacccbb672e028aee9c2ce1fb67c",
+      "title": "Aberrant Intrinsic Neural Networks Strength in Individuals with \"Smartphone Addiction\": An MRI Data Fusion Study",
+      "venue": "Journal of Psychiatry Treatment and Research",
+      "year": 2022,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.scholars.direct/Articles/psychiatry/jptr-4-012.pdf?jid=psychiatry",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.36959/784/430?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.36959/784/430, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2159303840",
+          "name": "Schmitgen Mike Michael"
+        },
+        {
+          "authorId": "2159300620",
+          "name": "Wolf Nadine Donata"
+        },
+        {
+          "authorId": "2159301750",
+          "name": "Mundinger Christina"
+        },
+        {
+          "authorId": "2159303859",
+          "name": "Horvath Juliane"
+        },
+        {
+          "authorId": "2159294905",
+          "name": "Sambataro Fabio"
+        },
+        {
+          "authorId": "2159300782",
+          "name": "Hirjak Dušan"
+        },
+        {
+          "authorId": "2159301926",
+          "name": "Kubera Katharina Maria"
+        },
+        {
+          "authorId": "2159303992",
+          "name": "Koenig Julian"
+        },
+        {
+          "authorId": "2159300578",
+          "name": "Wolf Robert Christian"
+        }
+      ],
+      "abstract": "Objectives: Excessive smartphone use, sometimes also referred to as “smartphone addiction”, has increasingly attracted neuroscientific interest due to its similarities with other behavioral addictions, particularly internet gaming disorder. Little is known so far about the neural mechanisms underlying smartphone addiction. Here, we explored interrelationships between brain structure and function to specify neurobiological correlates of smartphone addiction on a neural system level. Methods: Gray matter volume and intrinsic neural activity was investigated in individuals with smartphone addiction (n = 20) compared to controls (n = 24), using multimodal magnetic resonance imaging and multivariate data fusion techniques, i.e., parallel Independent Component Analysis. Results: The joint analysis of both data modalities explored shared information between gray matter volume and intrinsic neural activity which were not revealed by previous modality-specific approaches. Two amplitude of low frequency fluctuations-based independent neural systems significantly differed between individuals with smartphone addiction and controls. A medial/dorsolateral prefrontal system exhibited lower functional network strength lower in smartphone addiction vs. controls, whereas the opposite pattern was detected in a parietal cortical/cerebellar system. Neural network strength was significantly related to duration of smartphone use and sleep difficulties. Conclusions: We show modality-specific associations of the brain’s resting-state activity with distinct and shared smartphone addiction symptom dimensions. In particular, the data suggest contributions of aberrant prefrontal and parietal neural network strength as a possible signature of deficient executive control in smartphone addiction."
+    },
+    {
+      "paperId": "56eae728cbab5873cff5edd42619ac88e3aab022",
+      "externalIds": {
+        "PubMedCentral": "8930415",
+        "DOI": "10.3389/fnsys.2022.826475",
+        "CorpusId": 247223545,
+        "PubMed": "35308564"
+      },
+      "url": "https://www.semanticscholar.org/paper/56eae728cbab5873cff5edd42619ac88e3aab022",
+      "title": "Lateral Habenula Beyond Avoidance: Roles in Stress, Memory, and Decision-Making With Implications for Psychiatric Disorders",
+      "venue": "Frontiers in Systems Neuroscience",
+      "year": 2022,
+      "citationCount": 30,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnsys.2022.826475/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8930415, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1844912",
+          "name": "Phillip M Baker"
+        },
+        {
+          "authorId": "1724878",
+          "name": "Victor P Mathis"
+        },
+        {
+          "authorId": "4646766",
+          "name": "L. Lecourtier"
+        },
+        {
+          "authorId": "118752719",
+          "name": "Sarah C. Simmons"
+        },
+        {
+          "authorId": "5863175",
+          "name": "F. Nugent"
+        },
+        {
+          "authorId": "2054717600",
+          "name": "Sierra Hill"
+        },
+        {
+          "authorId": "143731484",
+          "name": "S. Mizumori"
+        }
+      ],
+      "abstract": "In this Perspective review, we highlight some of the less explored aspects of lateral habenula (LHb) function in contextual memory, sleep, and behavioral flexibility. We provide evidence that LHb is well-situated to integrate different internal state and multimodal sensory information from memory-, stress-, motivational-, and reward-related circuits essential for both survival and decision making. We further discuss the impact of early life stress (ELS) on LHb function as an example of stress-induced hyperactivity and dysregulation of neuromodulatory systems within the LHb that promote anhedonia and motivational deficits following ELS. We acknowledge that recent technological advancements in manipulation and recording of neural circuits in simplified and well-controlled behavioral paradigms have been invaluable in our understanding of the critical role of LHb in motivation and emotional regulation as well as the involvement of LHb dysfunction in stress-induced psychopathology. However, we also argue that the use of ethologically-relevant behaviors with consideration of complex aspects of decision-making is warranted for future studies of LHb contributions in a wide range of psychiatric illnesses. We conclude this Perspective with some of the outstanding issues for the field to consider where a multi-systems approach is needed to investigate the complex nature of LHb circuitry interactions with environmental stimuli that predisposes psychiatric disorders."
+    },
+    {
+      "paperId": "a1d35f8c7e50a8a88799eb1d9d35e9e51990182d",
+      "externalIds": {
+        "PubMedCentral": "13131855",
+        "DOI": "10.21203/rs.3.rs-9450979/v1",
+        "CorpusId": 287916387,
+        "PubMed": "42078877"
+      },
+      "url": "https://www.semanticscholar.org/paper/a1d35f8c7e50a8a88799eb1d9d35e9e51990182d",
+      "title": "Altered cerebrospinal fluid-based clearance mechanisms in aging autistic adults",
+      "venue": "Research Square",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13131855, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2308293132",
+          "name": "Danielle Christensen"
+        },
+        {
+          "authorId": "2276225224",
+          "name": "Giuseppe Barisano"
+        },
+        {
+          "authorId": "2316792826",
+          "name": "Bradley J. Wilkes"
+        },
+        {
+          "authorId": "2316897139",
+          "name": "Young Seon Shin"
+        },
+        {
+          "authorId": "2308370188",
+          "name": "Jingying Wang"
+        },
+        {
+          "authorId": "2103646490",
+          "name": "E. Parks"
+        },
+        {
+          "authorId": "2316792996",
+          "name": "Ann-Marie Orlando"
+        },
+        {
+          "authorId": "2378332254",
+          "name": "Bikram Karmakar"
+        },
+        {
+          "authorId": "2308295677",
+          "name": "Stephen A Coombes"
+        },
+        {
+          "authorId": "2241891041",
+          "name": "S. Sotgiu"
+        },
+        {
+          "authorId": "2308520219",
+          "name": "Zheng Wang"
+        }
+      ],
+      "abstract": "Background. Autistic adults demonstrate a 4–6-fold increased risk of unspecified dementia compared with the general population; however, the neurobiological substrates underlying this elevated risk remain unexplored. Alterations in cerebrospinal fluid–based mechanisms involved in brain metabolic waste clearance may represent a shared neuropathological pathway between autism spectrum disorder and dementia. Specifically, developmental deviations in cerebrospinal fluid-related imaging markers have been consistently reported in autistic infants, children, and adolescents, and brain amyloid and other metabolic waste accumulation is a hallmark of Alzheimer’s disease and related dementias. Despite this overlap, cerebrospinal fluid-based regulatory mechanisms have not been systematically examined in ageing autistic adults. Here, we used a multimodal magnetic resonance imaging approach to quantify structural and diffusion-based markers of cerebrospinal fluid regulation in middle-aged and older autistic adults compared with matched controls. Methods. Forty-nine autistic adults aged 30–73 years and 61 age-, sex-, and intelligence quotient–matched controls underwent T1-, T2-, and diffusion-weighted imaging. Measures included white matter perivascular space volume fraction, count fraction, and mean diameter; diffusion-based indices of fluid movement along perivascular pathways; and volumes of the lateral ventricles and choroid plexus. Results. With increasing age, autistic adults exhibited significantly greater increases in white matter perivascular volume fraction within the left inferior parietal lobule compared with controls. Autistic adults also showed significantly reduced diffusion indices and larger bilateral lateral ventricle and choroid plexus volumes relative to controls. Across both groups, increasing age was associated with higher white matter perivascular volume fraction in the right pars triangularis, reduced diffusion indices, and enlargement of the bilateral lateral ventricles and left choroid plexus. Limitations. First, the cross-sectional design limited our ability to quantify intra-individual variability and capture longitudinal trajectories. Second, the sample primarily comprised cognitively unimpaired autistic adults. Third, participants were predominantly of average or above-average intelligence; thus, findings may not generalize to autistic adults with ID. Finally, health factors including sleep disturbance, cardiovascular and metabolic disease, polypharmacy, and lifelong medication exposure, may have influenced these findings. Future large-scale studies should systematically evaluate their potential confounding and moderating effects. Conclusions. These findings demonstrate that ageing autistic adults exhibit convergent alterations in cerebrospinal fluid regulatory mechanisms, reflected in perivascular space morphology, diffusion-based fluid dynamics, and ventricular and choroid plexus enlargement. Together, the results link early developmental deviations to later-life vulnerability and highlight cerebrospinal fluid dysregulation as a potential candidate neurobiological substrate contributing to the increased prevalence of dementia in autistic adults."
+    },
+    {
+      "paperId": "bed87239bf5967e4e7549edef4bfc06135043d25",
+      "externalIds": {
+        "DOI": "10.65718/inspirehealth.2026.2006",
+        "CorpusId": 285456237
+      },
+      "url": "https://www.semanticscholar.org/paper/bed87239bf5967e4e7549edef4bfc06135043d25",
+      "title": "Inaugural Editorial of the Inspire Health First Issue Publication",
+      "venue": "Inspire Health Journal",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://inspirequill.org/index.php/InspireHealth/article/download/26/27",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.65718/inspirehealth.2026.2006?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.65718/inspirehealth.2026.2006, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2661997",
+          "name": "Jaafar M. Alghazo"
+        }
+      ],
+      "abstract": "Recent advances in molecular science, AI, and health informatics are transforming how complex diseases are understood, predicted, and managed. For accurate diagnosis and prognosis, multimodal and integrative frameworks that integrate imaging, clinical, genomic, and environmental data are frequently used [1]. Interdisciplinary approaches that incorporate molecular mechanisms, imaging data, environmental influences, and behavioral patterns in addition to isolated clinical observations are necessary to address contemporary health challenges. More all-encompassing approaches to illness prevention, early detection, and tailored intervention across various populations are made possible by this convergence.Oxidative stress plays a major role in the development and course of many chronic and degenerative diseases at the molecular level. The antioxidant qualities of polyphenols, especially flavonoids, are well known. They are derived from phenolic hydroxyl groups linked to aromatic rings that have the ability to chelate pro-oxidant metal ions and neutralize reactive oxygen species. Through optimized molecular architecture that promotes metal ion binding via hydroxyl and carbonyl groups, flavonoids' antioxidant capacity can be further increased. Improving metal chelation potency not only strengthens free radical scavenging but also limits metal-catalyzed oxidative reactions. This emphasizes the importance of structure–function relationships in the design of effective antioxidant compounds [2-3].Data-driven approaches have become more popular in addressing global infectious diseases like tuberculosis concurrently with molecular approaches. Tuberculosis (TB) is still a major public health burden even though it is mostly preventable and treatable, especially in areas with limited resources [4]. The broader biological, socioeconomic, and environmental factors that affect disease transmission may not be fully captured by traditional diagnostic and predictive frameworks, which frequently place a strong emphasis on clinical indicators. By using machine learning models to leverage non-clinical determinants, TB prediction can be improved, allowing for earlier intervention and more focused public health responses in vulnerable communities [5].Additionally, AI has shown great promise in the early detection of non-communicable diseases, especially thanks to developments in deep learning. When it comes to the early detection of lung, breast, and skin cancers, where prompt diagnosis is essential for enhancing survival outcomes, multimodal deep learning frameworks that combine medical imaging with complementary data sources have demonstrated strong performance [6-7]. Similar to this, deep learning methods like convolutional neural networks and vision transformers have made it possible to accurately detect and classify diabetic retinopathy from fundus images in ophthalmology, particularly when combined through feature fusion strategies [8]. AI-based systems provide scalable, affordable screening tools that can increase access to early diagnosis while reducing the workload of specialists.In the digital age, children's and teenagers' mental health has become more important than their physical health [9–10]. A higher risk of mental health issues in young people has been linked to increased exposure to online environments, especially excessive internet use and gaming. Machine learning is being used more and more to support mental health interventions, identify early warning indicators, and analyze behavioral patterns [11]. Bibliometric analyses of this research domain reveal rapidly expanding scholarly attention to children’s mental health and online gaming disorder [9-11]. These research directions demonstrate the revolutionary potential of combining multimodal data analysis, machine learning, and molecular design in contemporary healthcare. From molecular bioactivity and disease prediction to sophisticated diagnostic technologies and bibliometric analyses of new mental health issues, the following collection of contributions in this first journal issue highlights various but related fields. The first contribution examines flavonoids as bioactive substances that, due to their molecular structures, have antimicrobial, anti-inflammatory, and cardioprotective properties. Using molecular modeling, it finds that myricetin is the most stable and efficient metal chelator and antioxidant, highlighting the function of π-electron systems and catechol groups in lowering metal toxicity and oxidative stress. For improved antioxidant defense in conditions like cancer and chronic kidney disease, a combination treatment involving flavonoids and allicin is suggested.In the second contribution, non-clinical factors like socioeconomic and environmental data are integrated with machine learning to predict tuberculosis in Nigeria's Niger Delta. RIPPER demonstrated the best balance among the three classifiers examined, underscoring the significance of incorporating risk factors beyond clinical symptoms for precise TB prediction.A multimodal deep learning framework that combines imaging and biomarker data for the early detection of skin, breast, and lung cancers is presented in the third contribution. Through explainability tools like SHAP and GradCAM, it enhances accuracy and interpretability using CNNs and fully connected networks with an attention-based fusion, exhibiting robust performance across various datasets.A bibliometric analysis of studies on children's mental health and online gaming disorder is provided in the fourth contribution, which highlights important themes, significant authors, and leading nations like the US. With deep learning models demonstrating promise in assessing behavioral indicators like sleep quality, it highlights the potential of machine learning to predict gaming disorders and evaluate related mental health issues.In order to detect diabetic retinopathy from fundus images, the fifth contribution presents a hybrid deep learning model that combines CNN (AlexNet) and Vision Transformer (Swin Transformer) features. Using a Random Forest classifier, this fusion approach achieved 98.2% accuracy when tested on the APTOS 2019 dataset, outperforming standalone models and providing a potent tool for early diagnosis and prevention of vision loss.\nData Availability StatementNot applicable.FundingThis work was supported without any funding.Conflicts of InterestThe author declares no conflicts of interest.Ethical Approval and Consent to ParticipateNot applicable.\n \nList of Contributions1.    Lee, S. M., Kyung, R., & Cho, B. (2026). A Study on Molecular Architecture to Scavenge ROS and improve Metal Chelation Potency. Inspire Health Journal, 1(1), 1-12. 2.    Manzano, P., Baadel, S. & Uzoka, F. M. (2026). Leveraging Non-Clinical Factors and Machine Learning for Improved Tuberculosis Prediction in Resource-Limited Areas. Inspire Health Journal, 1(1), 13-20. 3.    Kalusivaligam, A. K., Patel, J. (2026). Multimodal Deep Learning for Early Detection of Lung, Breast, and Skin Cancer. Inspire Health Journal, 1(1), 21-34. 4.    Singh, S. (2026). Trends in Machine Learning Research on Children’s Mental Health and Online Gaming Disorder: A Bibliometric Perspective. Inspire Health Journal, 1(1), 35-46. 5.    Verma, P., Latif, G., Kaur, J., Butt, M. (2026). Diabetic Retinopathy Detection and Classification from Fundus Images using Optimized Deep Learning Models. Inspire Health Journal, 1(1), 47-62. \n \nReferences[1].    Xu, X., Li, J., Zhu, Z., Zhao, L., Wang, H., Song, C., ... & Pei, Y. (2024). A comprehensive review on synergy of multi-modal data and ai technologies in medical diagnosis. Bioengineering, 11(3), 219.[2].    Zhang, H., & Tsao, R. (2016). Dietary polyphenols, oxidative stress and antioxidant and anti-inflammatory effects. Current Opinion in Food Science, 8, 33-42.[3].    Rudrapal, M., Khairnar, S. J., Khan, J., Dukhyil, A. B., Ansari, M. A., Alomary, M. N., ... & Devi, R. (2022). Dietary polyphenols and their role in oxidative stress-induced human diseases: Insights into protective effects, antioxidant potentials and mechanism (s) of action. Frontiers in pharmacology, 13, 806470.[4].    Rahman M, Shiddik AB. Utilizing artificial intelligence to predict and analyze socioeconomic, environmental, and healthcare factors driving tuberculosis globally. Sci Rep. 2025.[5].    Faccin M, Rusumba O, Ushindi A, et al. Data-driven identification of communities with high levels of tuberculosis infection in the Democratic Republic of Congo. Sci Rep. 2022[6].    Shao, W., Wang, T., Sun, L., Dong, T., Han, Z., Huang, Z., ... & Huang, K. (2020). Multi-task multi-modal learning for joint diagnosis and prognosis of human cancers. Medical image analysis, 65, 101795.[7].    Toochukwu, J. M. (2025). Machine learning integration for early-stage cancer detection using multi-modal imaging analysis. WORLD, 25(1), 385-413. [8].    Wan, S., Liang, Y., & Zhang, Y. (2018). Deep convolutional neural networks for diabetic retinopathy detection by image classification. Computers & Electrical Engineering, 72, 274-282.[9].    Sugaya, N., Shirasaka, T., Takahashi, K., & Kanda, H. (2019). Bio-psychosocial factors of children and adolescents with internet gaming disorder: a systematic review. BioPsychoSocial medicine, 13(1), 3.[10].    Gao, Y. X., Wang, J. Y., & Dong, G. H. (2022). The prevalence and possible risk factors of internet gaming disorder among adolescents and young adults: Systematic reviews and meta-analyses. Journal of psychiatric research, 154, 35-43.[11].    Gan, Y., Kuang, L., Xu, X. M., Ai, M., He, J. L., Wang, W., ... & Zhang, Q. (2025). Application of machine learning in predicting adolescent Internet behavioral addiction. Frontiers in Psychiatry, 15, 1521051."
+    },
+    {
+      "paperId": "a6d5473ff126b9d37b08402d6e01eaf445c6f10c",
+      "externalIds": {
+        "MAG": "2212820485",
+        "DOI": "10.1016/j.pnpbp.2015.07.004",
+        "CorpusId": 40397164,
+        "PubMed": "26169576"
+      },
+      "url": "https://www.semanticscholar.org/paper/a6d5473ff126b9d37b08402d6e01eaf445c6f10c",
+      "title": "Molecular neurobiology of major depressive disorder.",
+      "venue": "Progress in Neuro-psychopharmacology and Biological Psychiatry",
+      "year": 2016,
+      "citationCount": 15,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.pnpbp.2015.07.004?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.pnpbp.2015.07.004, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "67220094",
+          "name": "Yong-Ku Kim"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "e079acd3729e47f4774450a0e227f38dc0b12208",
+      "externalIds": {
+        "DOI": "10.1038/s41398-026-04151-x",
+        "CorpusId": 288988518,
+        "PubMed": "42248832"
+      },
+      "url": "https://www.semanticscholar.org/paper/e079acd3729e47f4774450a0e227f38dc0b12208",
+      "title": "Prenatal stress, excitatory-inhibitory imbalance, and ADHD risk: a hypothesis-driven perspective on psilocybin-induced neuroplasticity.",
+      "venue": "Translational Psychiatry",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1038/s41398-026-04151-x",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41398-026-04151-x?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41398-026-04151-x, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292601725",
+          "name": "S. Ahmadian-Moghadam"
+        },
+        {
+          "authorId": "102137786",
+          "name": "S. Roshan-Milani"
+        },
+        {
+          "authorId": "2370573199",
+          "name": "Ehsan Saboory"
+        }
+      ],
+      "abstract": "Attention-deficit/hyperactivity disorder (ADHD) is a prevalent neurodevelopmental condition in which prenatal stress and long-lasting disruptions of excitatory-inhibitory (E/I) balance have been implicated as key vulnerability factors. Although established pharmacological and behavioral treatments are effective for many individuals, they are not universally successful and do not directly target upstream neurodevelopmental mechanisms. In this hypothesis-driven perspective, we examine whether psilocybin-induced neuroplasticity could theoretically modulate stress-related neurodevelopmental risk pathways relevant to ADHD. Rather than presenting psilocybin as an evidence-based intervention, we synthesize findings from related preclinical and clinical literatures to explore conceptual plausibility. Preclinical studies in non-ADHD models indicate that psilocybin can induce rapid and sustained synaptic plasticity, alter cortical E/I dynamics, and reverse stress-associated structural and functional alterations. Human clinical trials in adults-primarily in mood, trauma-related, and substance use disorders-demonstrate durable changes in emotional regulation, cognitive flexibility, and large-scale brain network organization, processes that overlap with neural systems implicated in ADHD. Research into the use of psilocybin for ADHD is in its early stages, with emerging, largely self-reported, and preliminary studies suggesting potential benefits for managing symptoms like inattention, impulsivity, and emotional dysregulation. We therefore frame psilocybin as a speculative (secondary/tertiary) approach that could, in principle, be explored to probe mechanisms of E/I rebalancing and neuroplasticity. Key mechanistic uncertainties-including the state-dependent effects of psilocybin on excitation and inhibition and the possibility of exacerbating existing imbalances-are explicitly discussed. Ethical and developmental considerations, particularly regarding vulnerable populations, are emphasized as critical constraints on translation. Finally, we propose a translational research roadmap encompassing preclinical prenatal-stress models, biomarker-driven pilot studies in ADHD, and multimodal outcome measures integrating neuroimaging, electrophysiology, and molecular indices. By clearly distinguishing established evidence from hypothesis, this perspective aims to stimulate rigorous and ethically grounded research rather than to advocate premature clinical application."
+    },
+    {
+      "paperId": "6368e0273ddb890cae2386f8f9d66137ef50e55b",
+      "externalIds": {
+        "DOI": "10.3758/s13415-026-01461-x",
+        "CorpusId": 289134184,
+        "PubMed": "42265382"
+      },
+      "url": "https://www.semanticscholar.org/paper/6368e0273ddb890cae2386f8f9d66137ef50e55b",
+      "title": "Racism and alterations in brain structure and function: A narrative review of emerging neuroimaging evidence in racialized individuals.",
+      "venue": "Cognitive, Affective, & Behavioral Neuroscience",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.3758/s13415-026-01461-x.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3758/s13415-026-01461-x?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3758/s13415-026-01461-x, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "68975835",
+          "name": "Seyed Mohammad Mahdi Moshirian Farahi"
+        },
+        {
+          "authorId": "4961618",
+          "name": "J. Cénat"
+        }
+      ],
+      "abstract": "Racial discrimination functions as a chronic psychosocial stressor that underlies racial trauma and elevates risk for mental disorders among racialized individuals. Emerging neuroimaging research has identified associations between experiences of racial discrimination and alterations in brain structure and function. However, the limited number of studies among racialized individuals constitutes a major gap in the scientific literature, leading to critical deficiencies in scientific knowledge, clinical practice, and informed public health strategies. This narrative review synthesizes findings from 19 neuroimaging studies examining the associations between experiences of racial discrimination and brain structure and function among racialized individuals across the lifespan. Neuroimaging studies have revealed consistent alterations in neural circuits involved in emotion regulation, threat detection, cognitive control, and self-referential processing among Black and other racialized individuals with experiences of racial discrimination. Notably, experiences of racial discrimination are associated with increased salience network connectivity (e.g., amygdala-insula), reduced prefrontal connectivity, decreased white matter integrity, and cortical thinning in regions, such as the cingulate cortex and hippocampus. These neural alterations are linked to heightened vigilance, emotion dysregulation, and higher risk for mental and physical health problems. This review highlights the limitations of previous studies along with providing future research directions. Recent neuroimaging studies on racial discrimination reveal key methodological limitations, including reliance on cross-sectional designs, limited sample diversity, small sample sizes, and inadequate intersectional analyses. Future research should employ longitudinal, multimodal approaches with larger, more diverse samples to elucidate causal pathways and protective factors underlying racism-related neurobiological outcomes."
+    },
+    {
+      "paperId": "4975b981b4b3ecdeb5625ffce6142df3366fb228",
+      "externalIds": {
+        "DOI": "10.1002/wps.21081",
+        "CorpusId": 258568949,
+        "PubMed": "37159353"
+      },
+      "url": "https://www.semanticscholar.org/paper/4975b981b4b3ecdeb5625ffce6142df3366fb228",
+      "title": "Balancing the beautiful and the good in pursuit of biomarkers for depression",
+      "venue": "World Psychiatry",
+      "year": 2023,
+      "citationCount": 9,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/wps.21081",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/wps.21081?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/wps.21081, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2245080",
+          "name": "H. Mayberg"
+        },
+        {
+          "authorId": "3182740",
+          "name": "B. Dunlop"
+        }
+      ],
+      "abstract": "265 nia, and antipsychotic medications used to treat or prevent recurrence of mania/hy pomania impact dopamine transmission. More over, the prefrontal corticalstriatal reward neural network, which has been implicat ed in bipolar disorder and predisposition to mania/hypomania, has extensive dopa mine projections: midbrain ventral teg men tal area to ventral striatum (mesolimbic), midbrain substantia nigra pars compacta to dorsal striatum (nigro striatal), and ventral tegmental area to prefrontal cortex (mesocortical) pathways. Furthermore, amphetamineinduced ventral striatal dopamine release was positively associated with increase in mania/ hypomania in adults with bipolar disorder vs. non-psychiatric control participants; and a large rodent literature associates elevated reward network ventral tegmental area dopamine transmission with rewarddriven impulsive behavior, as well as other features of mania/hypomania, such as reduced sleep and increased energy. Together, these findings indicate that the combination of specific reward expectan cy paradigms and multimodal imaging ap p roaches examining reward expectancyrelated neural network activity and underlying dopaminergic modulation is a promising way to identify biomarkers reflecting neurobiological mechanisms predisposing to mania/hypomania. Bipolar disorder has also been conceptualized as a disorder of energy regulation, involving high levels of mitochondrial dysfunction and oxidative stress that might result from elevated dopamine transmission. Elegant translational work in mice and hu mans has shown that sustained elevated do pamine synthesis results in ele vated cy tosolic dopamine, which in turn leads to increased metabolism of dopamine by mon oamine oxidase. In this pro cess, mon oamine oxidase anchors to the outer mito chondrial membrane and transfers ele ctrons generated by dopamine deamination into the mitochondri al intermembrane space, increasing electron transport chain activity and supporting elevated dopamine synthesis and release. Increased metabolic demand can, however, ultimately lead to impaired mitochondrial function and a toxic cascade in which elevated oxidative stressinduced mitochondrial dysfunction results in cytosolic dopamine oxidation, with elevat ed cytosolic dopamine further contributing to mitochondrial oxidative stress. Thus, elevated dopamine transmis sion and asso ciated mitochondrial dysfunction is a putative mechanism underlying the energy regulation dysfunction characterizing mania/ hypo mania in bipolar disorder. These examples provide possible app roaches that can be adopted by future studies aiming to identify biomarkers reflecting core neurobiological mechanisms underlying key features characterizing and predis pos ing to mania/hypomania. An im portant point to note, however, is that these features, especially rewarddriven impulsive decisionmaking and behavior, are associated, at least in part, with other disorders, such as substance use disorders. Thus, these approaches will likely yield biomark ers that are not necessarily specific to a given psychiatric disorder as currently defined by the DSM5, but instead reflect neurobiological mechanisms underlying constructs that cut across different diagnostic categories. This transdiagnostic approach accords with the Research Domain Criteria model, where the two reward expectancy contexts described above link with two subconstructs of the Reward Valuation construct of Positive Valence Systems. As AbiDargham et al highlight in their paper, a given DSM5defined disorder may be associated with several different biomarkers, each reflecting a neurobiological mechanism related to a transdiagnostic construct, which may promote a move toward biologically-based classification systems in psychiatry. Clearly, there is a need for extensive work replicating findings in independent samples to ultimately provide robust and reliable biomarkers of any given disorder. Yet, I remain hopeful that with increasingly sophisticated neuroimaging methodologies (e.g., higher field strength magnetic resonance imaging), alongside better animal and cellular models, there is now an opportunity to elucidate neurobio logi cal mechanisms of key transdiagnostic constructs and provide robust biomarkers to help shape new classification systems. This will yield targets to aid risk identification and help develop new interventions. As AbiDargham et al note, this is not only a major scientific goal in our field, but is also a critical clinical mission to improve the health and wellbeing of all of those suffering from these debilitating and yet common illnesses."
+    },
+    {
+      "paperId": "e56343d909e764e719107caa2c3550b351bec615",
+      "externalIds": {
+        "MAG": "2130828081",
+        "DOI": "10.7326/0003-4819-142-3-200502010-00010",
+        "CorpusId": 8612217,
+        "PubMed": "15684207"
+      },
+      "url": "https://www.semanticscholar.org/paper/e56343d909e764e719107caa2c3550b351bec615",
+      "title": "Obstructive Sleep Apnea",
+      "venue": "Annals of Internal Medicine",
+      "year": 2005,
+      "citationCount": 239,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.7326/0003-4819-142-3-200502010-00010?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.7326/0003-4819-142-3-200502010-00010, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5000422",
+          "name": "S. Caples"
+        },
+        {
+          "authorId": "6097541",
+          "name": "A. Gami"
+        },
+        {
+          "authorId": "145534559",
+          "name": "V. Somers"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "e25e7ee30d4b03a2e8ff190248619b0e0a090159",
+      "externalIds": {
+        "MAG": "1987489449",
+        "DBLP": "journals/fini/CortesMM14",
+        "PubMedCentral": "4271603",
+        "DOI": "10.3389/fninf.2014.00086",
+        "CorpusId": 8886784,
+        "PubMed": "25566050"
+      },
+      "url": "https://www.semanticscholar.org/paper/e25e7ee30d4b03a2e8ff190248619b0e0a090159",
+      "title": "Editorial for the research topic: information-based methods for neuroimaging: analyzing structure, function and dynamics",
+      "venue": "Front. Neuroinform.",
+      "year": 2014,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fninf.2014.00086/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4271603, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144616731",
+          "name": "J. Cortes"
+        },
+        {
+          "authorId": "2786475",
+          "name": "Daniele Marinazzo"
+        },
+        {
+          "authorId": "143813953",
+          "name": "M. A. Muñoz"
+        }
+      ],
+      "abstract": "This Research Topic gathers different contributions highlighting novel types of analysis and methods to deal more efficiently with neuroimaging data, simulated and real, acquired with different modalities. These approaches allow us to shed light on the mechanisms of brain organization, with focus on the relationship between brain structure, function and dynamics. \n \nThe first article of this Topic (Sanz Leon et al., 2013), introduces The Virtual Brain, a Neuroinformatics platform for full brain network simulations using realistic connectivity, putting in evidence that the integration between brain structure and function is perfectly plausible by simulating realistic brain activity (more specifically, neural mass models) on the architecture of the structural connectome. The authors show that dynamical models aimed at reproducing the functional connectivity patterns observed in the resting brain exhibit a much better performance when they are tuned around a balanced state favoring the shifting between attractors. This balanced state is described in terms of energy landscape, as discussed also in Watanabe et al. (2014), where the state transitions (in terms of energy landscape) between two representative Resting State Networks—the Default Mode Network and the Fronto-Parietal Network—are addressed. \n \nWith an alternative approach, the relation between structural and functional networks is tackled in Ajilore et al. (2013), by using the functional-by-structural hierarchical (FSH) mapping. This was developed for multimodal integration of the resting state fMRI (rsfMRI) and the whole brain (tractography-derived) connectome and is based on the evidence that the level of resting-state functional correlation between any two regions (in general) decreases as the graph distance of the corresponding structural connectivity matrix between them increases. Results are reported in health and depression. \n \nEffective connectivity methods are devised to infer directed connectivity patterns from time-series data. A new method based on Variational Bayesian Inference to infer causality from time series was proposed in Luessi et al. (2014). The method uses a vector autoregressive model for the latent variables describing neuronal activity in combination with a linear observation model based on a convolution with a hemodynamic response function. The method is validated using both real and synthetic resting fMRI data. \n \nContinuing with the problem of causality inference, classical methods like Granger causality were extended to the situation of time-varying signals in Chicharro and Panzeri (2014). This study also provides a graphical approach to predict dynamic statistical dependencies between the signals from the causal structure. \n \nA different approach is presented in Kolchinsky et al. (2014), where brain regions and networks are characterized by information-theoretic measures using both functional and structural information in a complementary manner. In particular, Kolchinsky et al., quantify the amount of functional coupling between sets of regions of interest (ROIs) as well as integration within sets of ROIs. Several information-based measures are considered, and their scaling with subsystem size is explored. \n \nRegarding consciousness and its relationship with Information Theory, two papers have been contributed to this Research Topic. In Lee et al. (2013) the Approximate Entropy (ApEn), a measure known to correlate with the level of brain consciousness, is used to characterize EEG signals in children and adults to show that the amount of ApEn is lower in children and that it correlates, in children as in adults, with consciousness; in particular, the authors show that ApEn decreases across the transition from awake to REM sleep to non-REM sleep. For patients with deficit of consciousness (DOC) after traumatic brain injury, (Maki-Marttunen et al., 2013) show two possible markers from fMRI time series that can distinguish between DOC patients and healthy subjects. The inter-hemispheric correlations (but not the intra-hemispheric correlations) between left-right homolog areas decrease, as does the intra-hemispheric information flow, in DOC patients compared to control. For a small group of 4 patients who fully recovered from coma, the study also reports an increase of the intra-hemisphere information flow with respect to controls. \n \nInformation-based measures have been associated with altered information processing in Autism Spectrum Disorder (ASD). The close link between active information storage and general theories of cortical function has been addressed in Gomez et al. (2014), by analyzing magnetoencephalography (MEG) signals. The authors report a significant reduction of information storage in the hippocampus in ASD patients. The amount of information and entropy of MEG signals in ASD (Asperger syndrome in this case) has been analyzed also in Perez Velazquez and Galan (2013). The analysis, carried out at the source level, addresses the relationship between resting state activity and the brain inner processing with regards to information production, as quantified by the relative entropy. The results suggest that the brains of individuals with ASD produce more information than the age-matched participants. \n \nThe complementary role of the three components of information processing, transfer, storage and modification is investigated in Wibral et al. (2014). Local information storage is analyzed in detail in neural data and associated to neural properties such as stimulus preferences and surprise. \n \nThe connection between information content of brain activity signals and function has been explored also in Sokunbi (2014). The author investigates the power of a similarity measure (the Sample Entropy) to discriminate between young and elderly subjects emphasizing on the possible limitations arising from the reduced length of time series that are commonly encountered in fMRI studies. \n \nInformation-based measures are also useful for developing new technical tools for structural and functional analysis. Novel algorithms have been proposed to improve the construction of the structural connectome in Roine et al. (2014), by investigating the isotropic partial volume effects caused by non-white matter tissue on fiber orientation diffusion estimated with constrained spherical de-convolution. Diffusion weighted signals are simulated with varying diffusion weightings, signal-to-noise ratios, fiber configurations, and tissue fractions. \n \nThe equivalence between the information-based and model-based approaches to directed dynamical connectivity in the frequency domain was explored in Takahashi et al. (2014). To enhance the understanding of the possibly complex interaction between multiple time series the authors decompose the established approaches to Directed Coherence into different modes of interaction. \n \nConcerning improvements to functional analysis, a novel information-theoretic approach for spatial components ranking has been proposed in Ossadtchi et al. (2013). The proposed method is based on the Mutual Information (MI) Spectrum which serves as a power-invariant measure of repetitive task-related signal in the temporal loadings of spatial components. Using realistic simulations, the authors in show that the task-relatedness measure, based on estimating the MI between a component and the expanded binary stimulus signal, allows for significantly higher detector characteristics when compared with conventional alternatives. The application of the MI Spectrum for the selection of task-related independent components is validated with real MEG data. \n \nWe hope that the reader will find in this Research Topic a useful reference for the state of the art in the emerging field of tools rooted in information theory and applied to neuroscience."
+    },
+    {
+      "paperId": "56e648c7e1d57785a2aab34185b072057fbcf0ee",
+      "externalIds": {
+        "MAG": "2133167527",
+        "CorpusId": 49578160
+      },
+      "url": "https://www.semanticscholar.org/paper/56e648c7e1d57785a2aab34185b072057fbcf0ee",
+      "title": "Associations between stress and hearing problems : epidemiological and experimental findings",
+      "venue": "",
+      "year": 2012,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openarchive.ki.se/xmlui/bitstream/handle/10616/40962/Thesis_Martin_Benka_Wall%C3%A9n.pdf?isAllowed=y&sequence=1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6513824",
+          "name": "M. B. Wallén"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "0f77a3c75c06d286a68d4c867e3a4c912461ddaa",
+      "externalIds": {
+        "MAG": "604209753",
+        "CorpusId": 141944385
+      },
+      "url": "https://www.semanticscholar.org/paper/0f77a3c75c06d286a68d4c867e3a4c912461ddaa",
+      "title": "Frontiers in human brain topography : proceedings of the 15th World Congress of the International Society for Brain Electromagnetic Topography (ISBET 2004) held in Urayasu, Japan between 11 and 14 April 2004",
+      "venue": "",
+      "year": 2004,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "47852127",
+          "name": "M. Nakagawa"
+        },
+        {
+          "authorId": "66001927",
+          "name": "平田 幸一"
+        },
+        {
+          "authorId": "2093351209",
+          "name": "古賀 良彦"
+        },
+        {
+          "authorId": "69572106",
+          "name": "長田 乾"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "66a40a0ef2b4fc1838b05930337d9b0c49850284",
+      "externalIds": {
+        "CorpusId": 216070437
+      },
+      "url": "https://www.semanticscholar.org/paper/66a40a0ef2b4fc1838b05930337d9b0c49850284",
+      "title": "BOOK REVIEW Windows to the Brain: Insights From Neuroimaging",
+      "venue": "",
+      "year": 2009,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "47490371",
+          "name": "R. Hurley"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "f5266581cdd250d39525d92a80ee8daa75414021",
+      "externalIds": {
+        "MAG": "361069260",
+        "CorpusId": 142086630
+      },
+      "url": "https://www.semanticscholar.org/paper/f5266581cdd250d39525d92a80ee8daa75414021",
+      "title": "Brain topography today : proceedings of the III Pan-Pacific Conference on Brain Topography (BTOPPS III), Tokyo Bay, Japan, April 1-4, 1997",
+      "venue": "",
+      "year": 1998,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "2093351209",
+          "name": "古賀 良彦"
+        },
+        {
+          "authorId": "69572106",
+          "name": "長田 乾"
+        },
+        {
+          "authorId": "66001927",
+          "name": "平田 幸一"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

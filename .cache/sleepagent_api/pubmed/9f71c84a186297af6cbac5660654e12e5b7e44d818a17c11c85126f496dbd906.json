@@ -1,0 +1,45 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "role",
+        "to": "\"role\"[MeSH Terms] OR \"role\"[All Fields]"
+      },
+      {
+        "from": "thalamus",
+        "to": "\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]"
+      },
+      {
+        "from": "REM sleep",
+        "to": "\"sleep, rem\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"rem\"[All Fields]) OR \"rem sleep\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields])"
+      },
+      {
+        "from": "regulation",
+        "to": "\"legislation and jurisprudence\"[Subheading] OR (\"legislation\"[All Fields] AND \"jurisprudence\"[All Fields]) OR \"legislation and jurisprudence\"[All Fields] OR \"regulations\"[All Fields] OR \"social control, formal\"[MeSH Terms] OR (\"social\"[All Fields] AND \"control\"[All Fields] AND \"formal\"[All Fields]) OR \"formal social control\"[All Fields] OR \"regulate\"[All Fields] OR \"regulates\"[All Fields] OR \"regulating\"[All Fields] OR \"regulation's\"[All Fields] OR \"regulative\"[All Fields] OR \"regulator\"[All Fields] OR \"regulator's\"[All Fields] OR \"regulators\"[All Fields] OR \"regulated\"[All Fields] OR \"regulation\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"role\"[MeSH Terms] OR \"role\"[All Fields]) AND (\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]) AND (\"sleep, rem\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"rem\"[All Fields]) OR \"rem sleep\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields])) AND (\"legislation and jurisprudence\"[MeSH Subheading] OR (\"legislation\"[All Fields] AND \"jurisprudence\"[All Fields]) OR \"legislation and jurisprudence\"[All Fields] OR \"regulations\"[All Fields] OR \"social control, formal\"[MeSH Terms] OR (\"social\"[All Fields] AND \"control\"[All Fields] AND \"formal\"[All Fields]) OR \"formal social control\"[All Fields] OR \"regulate\"[All Fields] OR \"regulates\"[All Fields] OR \"regulating\"[All Fields] OR \"regulation s\"[All Fields] OR \"regulative\"[All Fields] OR \"regulator\"[All Fields] OR \"regulator s\"[All Fields] OR \"regulators\"[All Fields] OR \"regulated\"[All Fields] OR \"regulation\"[All Fields]) AND \"via\"[All Fields] AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

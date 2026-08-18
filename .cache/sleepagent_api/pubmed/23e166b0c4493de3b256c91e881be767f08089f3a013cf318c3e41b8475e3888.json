@@ -1,0 +1,47 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "confounding variable",
+        "to": "\"confounding factors, epidemiologic\"[MeSH Terms] OR (\"confounding\"[All Fields] AND \"factors\"[All Fields] AND \"epidemiologic\"[All Fields]) OR \"epidemiologic confounding factors\"[All Fields] OR (\"confounding\"[All Fields] AND \"variable\"[All Fields]) OR \"confounding variable\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "studies",
+        "to": "\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study's\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "networks",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"ALFF\"[All Fields] AND (\"confounding factors, epidemiologic\"[MeSH Terms] OR (\"confounding\"[All Fields] AND \"factors\"[All Fields] AND \"epidemiologic\"[All Fields]) OR \"epidemiologic confounding factors\"[All Fields] OR (\"confounding\"[All Fields] AND \"variable\"[All Fields]) OR \"confounding variable\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "as",
+        "a",
+        "in",
+        "of"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

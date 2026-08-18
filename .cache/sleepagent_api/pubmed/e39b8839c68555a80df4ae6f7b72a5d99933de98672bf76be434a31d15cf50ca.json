@@ -1,0 +1,58 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Thalamus",
+        "to": "\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "cognitive",
+        "to": "\"cognition\"[MeSH Terms] OR \"cognition\"[All Fields] OR \"cognitions\"[All Fields] OR \"cognitive\"[All Fields] OR \"cognitively\"[All Fields] OR \"cognitives\"[All Fields]"
+      },
+      {
+        "from": "performance",
+        "to": "\"perform\"[All Fields] OR \"performable\"[All Fields] OR \"performance\"[All Fields] OR \"performance's\"[All Fields] OR \"performances\"[All Fields] OR \"performative\"[All Fields] OR \"performatively\"[All Fields] OR \"performatives\"[All Fields] OR \"performativities\"[All Fields] OR \"performativity\"[All Fields] OR \"performed\"[All Fields] OR \"performer\"[All Fields] OR \"performer's\"[All Fields] OR \"performers\"[All Fields] OR \"performing\"[All Fields] OR \"performs\"[All Fields]"
+      },
+      {
+        "from": "insomnia:",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": ", salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "frontoparietal",
+        "to": "\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]"
+      },
+      {
+        "from": "networks",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"cognition\"[MeSH Terms] OR \"cognition\"[All Fields] OR \"cognitions\"[All Fields] OR \"cognitive\"[All Fields] OR \"cognitively\"[All Fields] OR \"cognitives\"[All Fields]) AND (\"perform\"[All Fields] OR \"performable\"[All Fields] OR \"performance\"[All Fields] OR \"performance s\"[All Fields] OR \"performances\"[All Fields] OR \"performative\"[All Fields] OR \"performatively\"[All Fields] OR \"performatives\"[All Fields] OR \"performativities\"[All Fields] OR \"performativity\"[All Fields] OR \"performed\"[All Fields] OR \"performer\"[All Fields] OR \"performer s\"[All Fields] OR \"performers\"[All Fields] OR \"performing\"[All Fields] OR \"performs\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND \"DMN\"[All Fields] AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in",
+        ","
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

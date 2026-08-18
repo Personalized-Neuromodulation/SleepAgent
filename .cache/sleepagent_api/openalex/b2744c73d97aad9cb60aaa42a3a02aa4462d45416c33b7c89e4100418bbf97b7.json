@@ -1,0 +1,775 @@
+{
+  "meta": {
+    "count": 1,
+    "db_response_time_ms": 121,
+    "page": 1,
+    "per_page": 50,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (thalamus coord y ISI sleep fMRI)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "thalamus coord y ISI sleep fMRI",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:thalamus coord y ISI sleep fMRI&per_page=50"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2081014071",
+      "doi": "https://doi.org/10.1371/journal.pone.0024932",
+      "title": "Influence of Body Position on Cortical Pain-Related Somatosensory Processing: An ERP Study",
+      "display_name": "Influence of Body Position on Cortical Pain-Related Somatosensory Processing: An ERP Study",
+      "publication_year": 2011,
+      "cited_by_count": 28,
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "Despite": [
+          1
+        ],
+        "the": [
+          2,
+          7,
+          25,
+          36,
+          89,
+          116,
+          150,
+          220,
+          238
+        ],
+        "consistent": [
+          3
+        ],
+        "information": [
+          4
+        ],
+        "available": [
+          5
+        ],
+        "on": [
+          6,
+          24,
+          43,
+          132
+        ],
+        "physiological": [
+          8
+        ],
+        "changes": [
+          9
+        ],
+        "induced": [
+          10
+        ],
+        "by": [
+          11,
+          49,
+          83
+        ],
+        "head": [
+          12
+        ],
+        "down": [
+          13
+        ],
+        "bed": [
+          14,
+          41,
+          66,
+          202
+        ],
+        "rest,": [
+          15
+        ],
+        "a": [
+          16,
+          144
+        ],
+        "condition": [
+          17
+        ],
+        "which": [
+          18
+        ],
+        "simulates": [
+          19
+        ],
+        "space": [
+          20
+        ],
+        "microgravity,": [
+          21
+        ],
+        "our": [
+          22
+        ],
+        "knowledge": [
+          23
+        ],
+        "possible": [
+          26
+        ],
+        "perceptual-cortical": [
+          27
+        ],
+        "alterations": [
+          28
+        ],
+        "is": [
+          29
+        ],
+        "still": [
+          30
+        ],
+        "poor.": [
+          31
+        ],
+        "The": [
+          32,
+          185
+        ],
+        "present": [
+          33
+        ],
+        "study": [
+          34
+        ],
+        "investigated": [
+          35
+        ],
+        "effects": [
+          37
+        ],
+        "of": [
+          38,
+          194,
+          210,
+          241,
+          249
+        ],
+        "2-h": [
+          39
+        ],
+        "head-down": [
+          40,
+          65
+        ],
+        "rest": [
+          42,
+          67,
+          203
+        ],
+        "subjective": [
+          44
+        ],
+        "and": [
+          45,
+          92,
+          136,
+          158,
+          213,
+          232
+        ],
+        "cortical": [
+          46
+        ],
+        "responses": [
+          47
+        ],
+        "elicited": [
+          48,
+          82
+        ],
+        "electrical,": [
+          50
+        ],
+        "pain-related": [
+          51
+        ],
+        "somatosensory": [
+          52,
+          152,
+          182,
+          222
+        ],
+        "stimulation.": [
+          53
+        ],
+        "METHODOLOGY/PRINCIPAL": [
+          54
+        ],
+        "FINDINGS:": [
+          55
+        ],
+        "Twenty": [
+          56
+        ],
+        "male": [
+          57
+        ],
+        "subjects": [
+          58
+        ],
+        "were": [
+          59,
+          81
+        ],
+        "randomly": [
+          60,
+          87
+        ],
+        "assigned": [
+          61
+        ],
+        "to": [
+          62,
+          88,
+          127,
+          206
+        ],
+        "two": [
+          63
+        ],
+        "groups,": [
+          64
+        ],
+        "(BR)": [
+          68
+        ],
+        "or": [
+          69
+        ],
+        "sitting": [
+          70,
+          142
+        ],
+        "control": [
+          71,
+          97
+        ],
+        "condition.": [
+          72
+        ],
+        "Starting": [
+          73
+        ],
+        "from": [
+          74
+        ],
+        "individual": [
+          75
+        ],
+        "electrical": [
+          76,
+          84,
+          100
+        ],
+        "thresholds,": [
+          77
+        ],
+        "Somatosensory": [
+          78
+        ],
+        "Evoked": [
+          79
+        ],
+        "Potentials": [
+          80
+        ],
+        "stimuli": [
+          85
+        ],
+        "administered": [
+          86
+        ],
+        "left": [
+          90
+        ],
+        "wrist": [
+          91
+        ],
+        "divided": [
+          93
+        ],
+        "into": [
+          94
+        ],
+        "four": [
+          95,
+          133
+        ],
+        "conditions:": [
+          96
+        ],
+        "painless": [
+          98
+        ],
+        "condition,": [
+          99
+        ],
+        "pain": [
+          101,
+          105,
+          109,
+          112,
+          122,
+          211,
+          216,
+          242
+        ],
+        "threshold,": [
+          102,
+          106
+        ],
+        "30%": [
+          103,
+          107
+        ],
+        "above": [
+          104
+        ],
+        "below": [
+          108
+        ],
+        "threshold.": [
+          110
+        ],
+        "Subjective": [
+          111
+        ],
+        "ratings": [
+          113
+        ],
+        "collected": [
+          114
+        ],
+        "during": [
+          115
+        ],
+        "EEG": [
+          117
+        ],
+        "session": [
+          118
+        ],
+        "showed": [
+          119,
+          180
+        ],
+        "significantly": [
+          120
+        ],
+        "reduced": [
+          121
+        ],
+        "perception": [
+          123
+        ],
+        "in": [
+          124,
+          141,
+          149,
+          161,
+          191,
+          244
+        ],
+        "BR": [
+          125,
+          162,
+          178,
+          198
+        ],
+        "compared": [
+          126,
+          196
+        ],
+        "Control": [
+          128
+        ],
+        "group.": [
+          129,
+          163,
+          199
+        ],
+        "Statistical": [
+          130
+        ],
+        "analysis": [
+          131,
+          139
+        ],
+        "electrode": [
+          134
+        ],
+        "clusters": [
+          135
+        ],
+        "sLORETA": [
+          137
+        ],
+        "source": [
+          138
+        ],
+        "revealed,": [
+          140
+        ],
+        "controls,": [
+          143
+        ],
+        "P1": [
+          145
+        ],
+        "component": [
+          146
+        ],
+        "(40-50": [
+          147
+        ],
+        "ms)": [
+          148,
+          167,
+          188
+        ],
+        "right": [
+          151,
+          170
+        ],
+        "cortex,": [
+          153
+        ],
+        "whereas": [
+          154,
+          177
+        ],
+        "it": [
+          155
+        ],
+        "was": [
+          156,
+          189,
+          204
+        ],
+        "bilateral": [
+          157
+        ],
+        "differently": [
+          159
+        ],
+        "located": [
+          160
+        ],
+        "Controls'": [
+          164
+        ],
+        "N1": [
+          165
+        ],
+        "(80-90": [
+          166
+        ],
+        "had": [
+          168
+        ],
+        "widespread": [
+          169
+        ],
+        "hemisphere": [
+          171
+        ],
+        "activation,": [
+          172
+        ],
+        "involving": [
+          173
+        ],
+        "also": [
+          174,
+          218,
+          236
+        ],
+        "anterior": [
+          175
+        ],
+        "cingulate,": [
+          176
+        ],
+        "group": [
+          179
+        ],
+        "primary": [
+          181,
+          221
+        ],
+        "cortex": [
+          183
+        ],
+        "activation.": [
+          184
+        ],
+        "P2": [
+          186
+        ],
+        "(190-220": [
+          187
+        ],
+        "larger": [
+          190
+        ],
+        "left-central": [
+          192
+        ],
+        "locations": [
+          193
+        ],
+        "Controls": [
+          195
+        ],
+        "with": [
+          197
+        ],
+        "CONCLUSIONS/SIGNIFICANCE:": [
+          200
+        ],
+        "Head-down": [
+          201
+        ],
+        "associated": [
+          205
+        ],
+        "an": [
+          207,
+          214
+        ],
+        "overall": [
+          208
+        ],
+        "decrease": [
+          209
+        ],
+        "sensitivity": [
+          212
+        ],
+        "altered": [
+          215
+        ],
+        "network": [
+          217
+        ],
+        "outside": [
+          219
+        ],
+        "cortex.": [
+          223
+        ],
+        "Results": [
+          224
+        ],
+        "have": [
+          225
+        ],
+        "implications": [
+          226
+        ],
+        "not": [
+          227
+        ],
+        "only": [
+          228
+        ],
+        "for": [
+          229,
+          237
+        ],
+        "astronauts'": [
+          230
+        ],
+        "health": [
+          231
+        ],
+        "spaceflight": [
+          233
+        ],
+        "risks,": [
+          234
+        ],
+        "but": [
+          235
+        ],
+        "clinical": [
+          239
+        ],
+        "aspects": [
+          240
+        ],
+        "detection": [
+          243
+        ],
+        "bedridden": [
+          245
+        ],
+        "patients": [
+          246
+        ],
+        "at": [
+          247
+        ],
+        "risk": [
+          248
+        ],
+        "fatal": [
+          250
+        ],
+        "undetected": [
+          251
+        ],
+        "complications.": [
+          252
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5020316312",
+            "display_name": "Chiara Spironelli",
+            "orcid": "https://orcid.org/0000-0002-8547-2431"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138689650",
+              "display_name": "University of Padua",
+              "ror": "https://ror.org/00240q980",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Chiara Spironelli",
+          "raw_affiliation_strings": [
+            "Department of General Psychology, University of Padova, Padova, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of General Psychology, University of Padova, Padova, Italy",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5029589567",
+            "display_name": "Alessandro Angrilli",
+            "orcid": "https://orcid.org/0000-0002-5571-7637"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138689650",
+              "display_name": "University of Padua",
+              "ror": "https://ror.org/00240q980",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138689650"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210113153",
+              "display_name": "Neuroscience Institute",
+              "ror": "https://ror.org/0240rwx68",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210113153",
+                "https://openalex.org/I4210155236"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Alessandro Angrilli",
+          "raw_affiliation_strings": [
+            "CNR Institute of Neuroscience, Padova, Italy",
+            "Department of General Psychology, University of Padova, Padova, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CNR Institute of Neuroscience, Padova, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210113153"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of General Psychology, University of Padova, Padova, Italy",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1371/journal.pone.0024932",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1371/journal.pone.0024932",
+        "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0024932&type=printable",
+        "source": {
+          "id": "https://openalex.org/S202381698",
+          "display_name": "PLoS ONE",
+          "issn_l": "1932-6203",
+          "issn": [
+            "1932-6203"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310315706",
+          "host_organization_name": "Public Library of Science",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315706"
+          ],
+          "host_organization_lineage_names": [
+            "Public Library of Science"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "PLoS ONE",
+        "raw_type": "journal-article"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0024932&type=printable",
+        "any_repository_has_fulltext": true
+      }
+    }
+  ],
+  "group_by": []
+}

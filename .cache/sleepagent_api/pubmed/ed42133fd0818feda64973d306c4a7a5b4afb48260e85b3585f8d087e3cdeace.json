@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Motion",
+        "to": "\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion's\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]"
+      },
+      {
+        "from": "parameters",
+        "to": "\"parameter\"[All Fields] OR \"parameter's\"[All Fields] OR \"parameters\"[All Fields]"
+      },
+      {
+        "from": "affecting",
+        "to": "\"affect\"[MeSH Terms] OR \"affect\"[All Fields] OR \"affects\"[All Fields] OR \"affected\"[All Fields] OR \"affecteds\"[All Fields] OR \"affecting\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "patients",
+        "to": "\"patient's\"[All Fields] OR \"patients\"[MeSH Terms] OR \"patients\"[All Fields] OR \"patient\"[All Fields] OR \"patients's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion s\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]) AND (\"parameter\"[All Fields] OR \"parameter s\"[All Fields] OR \"parameters\"[All Fields]) AND (\"affect\"[MeSH Terms] OR \"affect\"[All Fields] OR \"affects\"[All Fields] OR \"affected\"[All Fields] OR \"affecteds\"[All Fields] OR \"affecting\"[All Fields]) AND \"FC\"[All Fields] AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"patient s\"[All Fields] OR \"patients\"[MeSH Terms] OR \"patients\"[All Fields] OR \"patient\"[All Fields] OR \"patients s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

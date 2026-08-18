@@ -1,0 +1,48 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "9",
+    "retmax": "9",
+    "retstart": "0",
+    "idlist": [
+      "42512811",
+      "41495162",
+      "41330260",
+      "38000184",
+      "37865032",
+      "36215687",
+      "35467018",
+      "29502530",
+      "23170244"
+    ],
+    "translationset": [
+      {
+        "from": "neural",
+        "to": "\"neural\"[All Fields] OR \"neuralization\"[All Fields] OR \"neuralize\"[All Fields] OR \"neuralized\"[All Fields] OR \"neuralizes\"[All Fields] OR \"neuralizing\"[All Fields] OR \"neurally\"[All Fields]"
+      },
+      {
+        "from": "power",
+        "to": "\"power, psychological\"[MeSH Terms] OR (\"power\"[All Fields] AND \"psychological\"[All Fields]) OR \"psychological power\"[All Fields] OR \"power\"[All Fields] OR \"powered\"[All Fields] OR \"powers\"[All Fields] OR \"powering\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "severity",
+        "to": "\"sever\"[All Fields] OR \"severe\"[All Fields] OR \"severed\"[All Fields] OR \"severely\"[All Fields] OR \"severer\"[All Fields] OR \"severes\"[All Fields] OR \"severing\"[All Fields] OR \"severities\"[All Fields] OR \"severity\"[All Fields] OR \"severs\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"neural\"[All Fields] OR \"neuralization\"[All Fields] OR \"neuralize\"[All Fields] OR \"neuralized\"[All Fields] OR \"neuralizes\"[All Fields] OR \"neuralizing\"[All Fields] OR \"neurally\"[All Fields]) AND (\"power, psychological\"[MeSH Terms] OR (\"power\"[All Fields] AND \"psychological\"[All Fields]) OR \"psychological power\"[All Fields] OR \"power\"[All Fields] OR \"powered\"[All Fields] OR \"powers\"[All Fields] OR \"powering\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"sever\"[All Fields] OR \"severe\"[All Fields] OR \"severed\"[All Fields] OR \"severely\"[All Fields] OR \"severer\"[All Fields] OR \"severes\"[All Fields] OR \"severing\"[All Fields] OR \"severities\"[All Fields] OR \"severity\"[All Fields] OR \"severs\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

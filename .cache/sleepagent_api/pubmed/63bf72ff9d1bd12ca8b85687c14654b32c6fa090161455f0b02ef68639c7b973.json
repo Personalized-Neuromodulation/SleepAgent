@@ -1,0 +1,40 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "42168216"
+    ],
+    "translationset": [
+      {
+        "from": "thalamocortical",
+        "to": "\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]"
+      },
+      {
+        "from": "coupling",
+        "to": "\"couple's\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]"
+      },
+      {
+        "from": "mechanisms",
+        "to": "\"mechanism\"[All Fields] OR \"mechanisms\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]) AND (\"couple s\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]) AND (\"mechanism\"[All Fields] OR \"mechanisms\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

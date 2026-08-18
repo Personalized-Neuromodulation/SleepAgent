@@ -1,10 +1,16 @@
 EEG: []
 fMRI:
 - DMN_FC
+- DMN_coord_x
+- DMN_coord_y
+- DMN_coord_z
 - DMN_frontoparietal_FC
 - DMN_roi_voxels
 - DMN_salience_FC
 - frontoparietal_FC
+- frontoparietal_coord_x
+- frontoparietal_coord_y
+- frontoparietal_coord_z
 - frontoparietal_roi_voxels
 - global_signal_psd_power_max
 - global_signal_psd_power_mean
@@ -12,13 +18,21 @@ fMRI:
 - mean_DVARS
 - percent_high_motion
 - post_DVARS_std
+- roi_coord_source
+- roi_coord_space
 - roi_fc_status
 - salience_FC
+- salience_coord_x
+- salience_coord_y
+- salience_coord_z
 - salience_frontoparietal_FC
 - salience_roi_voxels
 - session
 - task
 - thalamus_DMN_FC
+- thalamus_coord_x
+- thalamus_coord_y
+- thalamus_coord_z
 - thalamus_frontoparietal_FC
 - thalamus_roi_voxels
 - thalamus_salience_FC
@@ -28,7 +42,14 @@ fMRI:
 - timefreq_sampling_rate_hz
 DTI: []
 MRI: []
-scales: []
+scales:
+- BAI
+- BDI
+- ISI
+- PSQI
+- baseline_is_substituted
+- baseline_source_visit
+- sleepiness
 covariates:
 - mean_FD
 group: []

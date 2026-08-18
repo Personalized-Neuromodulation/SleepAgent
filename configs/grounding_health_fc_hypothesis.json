@@ -1,0 +1,29 @@
+{
+  "hypothesis_id": "grounding_health_fc_001",
+  "source": "grounding",
+  "hypothesis": "Grounding evidence predicts that non-healthy sleep status is associated with altered thalamo-cortical and large-scale network functional connectivity, especially among thalamus, default mode, salience, and frontoparietal networks.",
+  "candidate_fc": [
+    "thalamus_DMN_FC",
+    "thalamus_salience_FC",
+    "thalamus_frontoparietal_FC",
+    "DMN_salience_FC",
+    "DMN_frontoparietal_FC",
+    "salience_frontoparietal_FC",
+    "DMN_FC",
+    "salience_FC",
+    "frontoparietal_FC"
+  ],
+  "clinical_anchors": [
+    "ISI",
+    "PSQI",
+    "BAI",
+    "BDI",
+    "sleepiness"
+  ],
+  "validation_policy": {
+    "local_data_role": "confirmatory_validation_only",
+    "healthy_label_rule": "subject starts with sub-YZHC",
+    "analysis_unit": "subject",
+    "feature_selection": "candidate_fc must be prespecified by grounding before local outcome testing"
+  }
+}

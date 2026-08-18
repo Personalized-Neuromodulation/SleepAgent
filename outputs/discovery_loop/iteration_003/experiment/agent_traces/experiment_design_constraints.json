@@ -1,0 +1,50 @@
+{
+  "avoid_signatures": [
+    "DMN_FC,thalamus_DMN_FC,timefreq_ALFF_0.01_0.08,timefreq_fALFF_0.01_0.08_over_0.01_0.25|ISI|max_FD,mean_DVARS,mean_FD,percent_high_motion",
+    "thalamus_DMN_FC,thalamus_coord_z,thalamus_frontoparietal_FC,thalamus_salience_FC|ISI,PSQI|max_FD,mean_DVARS,mean_FD,percent_high_motion"
+  ],
+  "failed_tests": [
+    {
+      "predictor": "DMN_FC",
+      "outcome": "ISI",
+      "method": "linear_regression",
+      "p_value": 0.3095379768732761,
+      "effect": 4.581763233700648
+    },
+    {
+      "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "outcome": "ISI",
+      "method": "linear_regression",
+      "p_value": 0.44728667667030764,
+      "effect": -5.282105139620406
+    },
+    {
+      "predictor": "thalamus_coord_z",
+      "outcome": "ISI",
+      "method": "linear_regression",
+      "p_value": 0.08932691368000314,
+      "effect": -0.08116568434183898
+    }
+  ],
+  "negative_control_failed_predictors": [
+    "DMN_FC",
+    "thalamus_coord_z",
+    "timefreq_ALFF_0.01_0.08",
+    "timefreq_fALFF_0.01_0.08_over_0.01_0.25"
+  ],
+  "tested_hypothesis_ids": [
+    "hypothesis_0475574660a3",
+    "hypothesis_91f214f8e57d"
+  ],
+  "tested_plan_ids": [
+    "experiment_plan_6769bf7afde1",
+    "experiment_plan_f5361333fc9a"
+  ],
+  "validated_plan_ids": [],
+  "recommended_design_shifts": [
+    "avoid exact repeat of tested predictor/outcome/covariate signatures",
+    "prefer untested available predictors or outcomes when scientifically coherent",
+    "if reusing a negative-control-failed predictor, make the design explicitly confound-focused",
+    "if no non-duplicate measurable plan exists, select the next-ranked hypothesis"
+  ]
+}

@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import shutil
 from pathlib import Path
 from statistics import mean
 from typing import Any
 
 from sleep_ai_scientist.common.config import load_config, resolve_path
 from sleep_ai_scientist.common.io import read_csv, read_json, read_yaml, write_json, write_yaml
+from sleep_ai_scientist.experiment.grounding_validation import run_grounding_locked_validation
 from sleep_ai_scientist.experiment.experiment_pipeline import run_experiment_pipeline
 from sleep_ai_scientist.foundation.foundation_pipeline import run_foundation_pipeline
 from sleep_ai_scientist.grounding.grounding_pipeline import run_grounding_pipeline
@@ -16,7 +18,7 @@ from sleep_ai_scientist.literature.experiment_intent import (
     write_intent_records,
 )
 from sleep_ai_scientist.literature.library_builder import run_literature_build
-from sleep_ai_scientist.llm.client import build_llm_client, normalize_llm_config
+from sleep_ai_scientist.llm.client import build_llm_client, select_llm_profile
 
 
 def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_config.yaml") -> dict[str, Any]:
@@ -118,6 +120,11 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
         reward_mean = metrics.get("reward_mean")
         if reward_mean is not None:
             reward_history.append(float(reward_mean))
+        locked_validation = _run_iteration_locked_validation(
+            config.get("grounding_locked_validation", {}),
+            iteration_dir=iteration_dir,
+            verbose=verbose,
+        )
         snapshot = _snapshot_iteration(
             iteration_dir,
             hypothesis_config_path=iteration_hypothesis_config_path,
@@ -135,6 +142,7 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
             "literature_expansion": literature_expansion,
             "literature_refresh": literature_refresh,
             "grounding_refresh": grounding_refresh,
+            "grounding_locked_validation": locked_validation,
             "metrics": metrics,
             "snapshot": snapshot,
         }
@@ -161,7 +169,7 @@ def run_discovery_loop(config_path_value: str | Path = "configs/discovery_loop_c
         "iteration_state": str(state_path),
         "iteration_report": str(report_path),
     }
-    write_json(state_path, {"config": str(config_path), "result": result, "iterations": iterations})
+    write_json(state_path, {"config": str(config_path), "stop_reason": stop_reason, "result": result, "iterations": iterations})
     _write_report(report_path, result, iterations)
     _log(verbose, f"done iterations={result['iterations']} stop_reason={stop_reason}")
     return result
@@ -192,6 +200,12 @@ def _write_iteration_hypothesis_config(
     paths["report_path"] = str(iteration_dir / "hypothesis_report.md")
     previous_feedback = previous_iteration_dir / "experiment" / "experimental_feedback.json" if previous_iteration_dir else None
     paths["experimental_feedback"] = str(previous_feedback if previous_feedback else hypothesis_dir / "experimental_feedback_input.json")
+    previous_results = sorted(iteration_dir.parent.glob("iteration_*/experiment/experiment_results.json"))
+    previous_feedback_paths = sorted(iteration_dir.parent.glob("iteration_*/experiment/experimental_feedback.json"))
+    previous_results = [path for path in previous_results if path.parent.parent.name < iteration_dir.name]
+    previous_feedback_paths = [path for path in previous_feedback_paths if path.parent.parent.name < iteration_dir.name]
+    paths["previous_experiment_results"] = [str(path) for path in previous_results]
+    paths["previous_experimental_feedback"] = [str(path) for path in previous_feedback_paths]
     previous_top = previous_iteration_dir / "hypothesis" / "top_k_hypotheses.json" if previous_iteration_dir else None
     if previous_top and previous_top.exists():
         paths["prior_hypotheses_json"] = str(previous_top)
@@ -216,6 +230,12 @@ def _write_iteration_experiment_config(
     paths["experimental_feedback"] = str(experiment_dir / "experimental_feedback.json")
     paths["experiment_report"] = str(experiment_dir / "phase3_experiment_report.md")
     paths["experiment_visualizations"] = str(experiment_dir / "visuals")
+    previous_results = sorted(iteration_dir.parent.glob("iteration_*/experiment/experiment_results.json"))
+    previous_feedback = sorted(iteration_dir.parent.glob("iteration_*/experiment/experimental_feedback.json"))
+    previous_results = [path for path in previous_results if path.parent.parent.name < iteration_dir.name]
+    previous_feedback = [path for path in previous_feedback if path.parent.parent.name < iteration_dir.name]
+    paths["previous_experiment_results"] = [str(path) for path in previous_results]
+    paths["previous_experimental_feedback"] = [str(path) for path in previous_feedback]
     config["paths"] = paths
     feature_cfg = dict(config.get("feature_extraction", {}))
     if feature_cfg:
@@ -575,6 +595,55 @@ def _refresh_literature_if_needed(
     }
 
 
+def _run_iteration_locked_validation(
+    validation_cfg: dict[str, Any],
+    *,
+    iteration_dir: Path,
+    verbose: bool,
+) -> dict[str, Any]:
+    if validation_cfg.get("enabled") is False:
+        return {"status": "skipped", "reason": "disabled"}
+    master_table = resolve_path(validation_cfg.get("master_table", "data/foundation/multimodal_master_table.csv"))
+    hypothesis_spec = resolve_path(validation_cfg.get("hypothesis_spec", "configs/grounding_health_fc_hypothesis.json"))
+    missing = [str(path) for path in (master_table, hypothesis_spec) if not path.exists()]
+    if missing:
+        return {"status": "skipped", "reason": "missing_inputs", "missing": missing}
+
+    output_dir = iteration_dir / "experiment" / "visuals" / "grounding_candidate_fc_group_contrast"
+    result = run_grounding_locked_validation(
+        master_table,
+        hypothesis_spec,
+        output_dir=output_dir,
+        make_plots=bool(validation_cfg.get("make_plots", True)),
+    )
+    figures_dir = iteration_dir / "experiment" / "visuals" / "figures"
+    figures_dir.mkdir(parents=True, exist_ok=True)
+    for stale in figures_dir.glob("classification_weight_connectome*"):
+        if stale.is_file():
+            stale.unlink()
+    copied_figures: list[str] = []
+    for item in result.get("connection_visualizations", []):
+        if item.get("renderer") not in {"nilearn_connectome", "nilearn_connectome_3d", "plotly_3d_connectome"}:
+            continue
+        source = resolve_path(item.get("path", ""))
+        if not source.exists() or source.suffix.lower() not in {".png", ".html"}:
+            continue
+        target = figures_dir / source.name
+        shutil.copy2(source, target)
+        copied_figures.append(str(target))
+    _log(verbose, f"{iteration_dir.name} candidate FC group contrast status=run connectome_figures={len(copied_figures)}")
+    return {
+        "status": "run",
+        "output_dir": str(output_dir),
+        "metadata": result.get("metadata", {}),
+        "feature_stats": result.get("feature_stats", ""),
+        "metrics": result.get("metrics", ""),
+        "hypothesis_support_path": result.get("hypothesis_support_path", ""),
+        "connection_visualizations": result.get("connection_visualizations", []),
+        "copied_figures": copied_figures,
+    }
+
+
 def _experiment_summary_for_literature_intent(experiment_summary: dict[str, Any]) -> dict[str, Any]:
     enriched = dict(experiment_summary)
     results_path = experiment_summary.get("results") or experiment_summary.get("experiment_results")
@@ -623,18 +692,17 @@ def _literature_intent_llm(literature_cfg: dict[str, Any]) -> tuple[Any | None, 
     if not config_path.exists():
         return None, {"enabled": False}
     shared = read_yaml(config_path)
-    provider_name = str(literature_cfg.get("intent_llm_provider") or shared.get("llm_provider", "")).strip().lower()
-    if provider_name and isinstance(shared.get(f"{provider_name}_llm"), dict):
-        raw = dict(shared[f"{provider_name}_llm"])
-    elif provider_name and isinstance(shared.get(provider_name), dict):
-        raw = dict(shared[provider_name])
-    elif isinstance(shared.get("ollama"), dict):
-        raw = dict(shared["ollama"])
-    else:
-        raw = dict(shared.get("llm", {}))
-    raw.update(literature_cfg.get("intent_llm", {}) if isinstance(literature_cfg.get("intent_llm"), dict) else {})
-    raw.setdefault("log_prefix", "literature_intent")
-    cfg = normalize_llm_config(raw)
+    if literature_cfg.get("intent_llm_provider"):
+        shared["llm_provider"] = literature_cfg["intent_llm_provider"]
+    if isinstance(literature_cfg.get("intent_llm"), dict):
+        profile_name = "_literature_intent_override"
+        profiles = dict(shared.get("llm_profiles", {}))
+        profiles[profile_name] = dict(literature_cfg["intent_llm"])
+        shared["llm_profiles"] = profiles
+        tasks = dict(shared.get("llm_tasks", {}))
+        tasks["literature_intent"] = profile_name
+        shared["llm_tasks"] = tasks
+    cfg = select_llm_profile(shared, "literature_intent", log_prefix="literature_intent")
     if not bool(cfg.get("enabled", False)):
         return None, cfg
     try:

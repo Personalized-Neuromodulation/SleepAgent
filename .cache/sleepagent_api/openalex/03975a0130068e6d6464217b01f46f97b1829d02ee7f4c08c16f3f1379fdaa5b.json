@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "count": 0,
+    "db_response_time_ms": 155,
+    "page": 1,
+    "per_page": 50,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (timefreq ALFF 0.01 0.08 PSQI sleep fMRI)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "timefreq ALFF 0.01 0.08 PSQI sleep fMRI",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:timefreq ALFF 0.01 0.08 PSQI sleep fMRI&per_page=50"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [],
+  "group_by": []
+}

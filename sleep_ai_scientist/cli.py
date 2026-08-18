@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import argparse
 import json
+from pathlib import Path
+from typing import Any
 
 from sleep_ai_scientist.foundation.foundation_pipeline import generate_foundation_report, run_foundation_pipeline
 from sleep_ai_scientist.grounding.grounding_pipeline import generate_grounding_report, run_grounding_pipeline
@@ -47,6 +49,14 @@ def build_parser() -> argparse.ArgumentParser:
         item = knowledge_sub.add_parser(command)
         item.add_argument("--config", default="configs/knowledge_sources_config.yaml")
         item.add_argument("--backend", default="sqlite")
+    experiment = sub.add_parser("experiment")
+    experiment_sub = experiment.add_subparsers(dest="command", required=True)
+    item = experiment_sub.add_parser("validate-grounding")
+    item.add_argument("--master-table", default="data/foundation/multimodal_master_table.csv")
+    item.add_argument("--hypothesis-spec", required=True, help="Grounding-derived hypothesis JSON with candidate_fc.")
+    item.add_argument("--output-dir", default="outputs/group_contrast/grounding_candidate_fc")
+    item.add_argument("--healthy-prefix", default="sub-YZHC")
+    item.add_argument("--no-plots", action="store_true")
     return parser
 
 
@@ -105,10 +115,58 @@ def main(argv: list[str] | None = None) -> int:
         from sleep_ai_scientist.knowledge_sources.registry_builder import generate_knowledge_sources_report
 
         result = generate_knowledge_sources_report(args.config, backend=args.backend)
+    elif args.domain == "experiment" and args.command == "validate-grounding":
+        from sleep_ai_scientist.experiment.grounding_validation import run_grounding_locked_validation
+
+        result = run_grounding_locked_validation(
+            args.master_table,
+            args.hypothesis_spec,
+            output_dir=args.output_dir,
+            healthy_prefix=args.healthy_prefix,
+            make_plots=not args.no_plots,
+        )
     else:
         raise ValueError(f"Unsupported command: {args}")
-    print(json.dumps(result, ensure_ascii=False, indent=2))
+    print(_format_cli_summary(args.domain, args.command, result), flush=True)
     return 0
+
+
+def _format_cli_summary(domain: str, command: str, result: dict[str, Any]) -> str:
+    parts = [f"[sleep_ai_scientist] {domain}.{command}"]
+    for key, value in _compact_items(result):
+        parts.append(f"{key}={value}")
+    return " ".join(parts)
+
+
+def _compact_items(payload: dict[str, Any], prefix: str = "") -> list[tuple[str, str]]:
+    items: list[tuple[str, str]] = []
+    for key, value in payload.items():
+        name = f"{prefix}_{key}" if prefix else str(key)
+        if isinstance(value, dict):
+            count = value.get("count")
+            if isinstance(count, (int, float, str)):
+                items.append((f"{name}_count", str(count)))
+            for path_key in ("path", "csv", "json", "jsonl", "yaml", "report", "manifest", "database"):
+                path_value = value.get(path_key)
+                if isinstance(path_value, str) and path_value:
+                    items.append((f"{name}_{path_key}", _short_path(path_value)))
+            continue
+        if isinstance(value, list):
+            items.append((f"{name}_count", str(len(value))))
+            continue
+        if isinstance(value, (str, int, float, bool)) or value is None:
+            text = str(value)
+            if "/" in text:
+                text = _short_path(text)
+            items.append((name, text))
+    return items[:24]
+
+
+def _short_path(value: str) -> str:
+    path = Path(value)
+    if len(path.parts) <= 3:
+        return value
+    return str(Path(*path.parts[-3:]))
 
 
 def _set_api_enabled(config_path: str, enabled: bool) -> str:

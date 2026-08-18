@@ -1,0 +1,437 @@
+[run_discovery_loop] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_discovery_loop] config=/tmp/sleepagent_full_discovery_loop_cFm7ue.yaml
+[run_discovery_loop] iterations=config_default
+[run_discovery_loop] python=/opt/fsl/bin/python
+[run_discovery_loop] log_file=logs/run_discovery_loop_20260807_031916.log
+[run_discovery_loop] effective_config=/tmp/sleepagent_full_discovery_loop_cFm7ue.yaml
+[run_discovery_loop] max_iterations=3
+[run_discovery_loop] hypothesis_config=/home/zyb/Agent_skills/SleepAgent/configs/hypothesis_config.yaml
+[run_discovery_loop] experiment_config=/home/zyb/Agent_skills/SleepAgent/configs/experiment_config.yaml
+[run_discovery_loop] hypothesis inputs:
+[run_discovery_loop] hypothesis_input.evidence_table_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_table.json exists=true size=36889704
+[run_discovery_loop] hypothesis_input.knowledge_graph_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/mechanism_graph.json exists=true size=14658707
+[run_discovery_loop] hypothesis_input.llm_evidence_context_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_evidence_context.json exists=true size=1545903
+[run_discovery_loop] hypothesis_input.llm_mechanism_context_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_mechanism_context.json exists=true size=617880
+[run_discovery_loop] hypothesis_input.prior_hypotheses_json=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/top_k_hypotheses.json exists=false size=0
+[run_discovery_loop] hypothesis_input.experimental_feedback=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/experimental_feedback.json exists=false size=0
+[run_discovery_loop] hypothesis_input.reward_memory=/home/zyb/Agent_skills/SleepAgent/outputs/memory/reward_memory.json exists=false size=0
+[run_discovery_loop] hypothesis_input.context_blocks_json=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/context_blocks.json exists=false size=0
+[run_discovery_loop] experiment inputs:
+[run_discovery_loop] experiment_input.hypothesis_pool=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json exists=false size=0
+[run_discovery_loop] experiment_input.data_profile=/home/zyb/Agent_skills/SleepAgent/outputs/profiles/analysis_ready_profile.yaml exists=true size=50
+[run_discovery_loop] experiment_input.approved_variables=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/approved_variables_from_grounding.yaml exists=true size=23
+[run_discovery_loop] experiment_input.variable_mapping=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_to_variable_map.yaml exists=true size=3612
+[run_discovery_loop] expected_hypothesis_pool=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json
+[run_discovery_loop] experiment_reads_hypothesis_pool=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json
+[discovery_loop] start config=/tmp/sleepagent_full_discovery_loop_cFm7ue.yaml max_iterations=3
+[discovery_loop] hypothesis_config=/home/zyb/Agent_skills/SleepAgent/configs/hypothesis_config.yaml
+[discovery_loop] experiment_config=/home/zyb/Agent_skills/SleepAgent/configs/experiment_config.yaml
+[discovery_loop] foundation_config=/home/zyb/Agent_skills/SleepAgent/configs/foundation_config.yaml
+[discovery_loop] grounding_config=/home/zyb/Agent_skills/SleepAgent/configs/grounding_config.yaml
+[discovery_loop] iteration_001 hypothesis start
+[llm] task=hypothesis_generation profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_generation profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_review profile=reasoning provider=ollama model=qwen3:14b
+[llm] task=hypothesis_rank profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_evolution profile=reasoning provider=ollama model=qwen3:14b
+[llm] task=hypothesis_meta_review profile=disabled provider=rules model=deterministic
+[hypothesis] experiment_preflight_constraints avoid_signatures=0 tested_hypotheses=0 failed_tests=0 negative_failed_predictors=0
+[hypothesis] start session=sleep_hypothesis_session
+[hypothesis] inputs evidence=500 graph_nodes=575 graph_edges=2000 priors=0 feedback=0 memory=0
+[hypothesis] llm provider=ollama model=qwen3:14b enabled=True
+[hypothesis] ContextAgent done
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=7174
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9149
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=8115
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=8314
+[hypothesis] GenerationAgent done hypotheses=4
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11655
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11652
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11665
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11658
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11659
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12286
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12283
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12296
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12289
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12290
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11836
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11833
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11846
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11839
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11840
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11690
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11687
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11700
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11693
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11694
+[hypothesis] ReviewAgent done active=4 reviews=20 duplicates_rejected=0
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9885
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=10004
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9945
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9949
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9890
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=10009
+[hypothesis] RankAgent done matches=6
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12490
+[hypothesis] EvolutionMemoryAgent done feedback_updates=0 evolved=hypothesis_fb896112ca6b
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11079
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11076
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11089
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11082
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=11083
+[hypothesis] ReviewAgent second pass done active=5 reviews=25
+[hypothesis][llm] provider=ollama model=qwen3:14b json=False messages=2 prompt_chars=9622
+[hypothesis][llm] provider=ollama model=qwen3:14b json=False messages=4 prompt_chars=12613
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=6 prompt_chars=14649
+[hypothesis][llm] provider=ollama model=qwen3:14b json=False messages=2 prompt_chars=9756
+[hypothesis][llm] provider=ollama model=qwen3:14b json=False messages=4 prompt_chars=11929
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=6 prompt_chars=13188
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=10004
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9885
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9996
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=10009
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9890
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=10055
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9936
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9949
+[hypothesis] RankAgent second pass done matches=16
+[hypothesis] outputs written dir=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/hypothesis report=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/hypothesis_report.md
+[discovery_loop] iteration_001 hypothesis done hypotheses=5
+[discovery_loop] iteration_001 experiment start
+[experiment] start config=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment_config.yaml
+[experiment] pre-experiment feature extraction plan_id=pre_experiment_features
+[experiment] PreExperimentFeatureExtraction done tables=2 profile=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/profile/pre_experiment_features/analysis_ready_profile.yaml
+[experiment] loaded data_profile=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/profile/pre_experiment_features/analysis_ready_profile.yaml features=90
+[llm] task=experiment_design profile=default provider=ollama model=qwen3:14b
+[experiment:constraints] tried_signatures=0 tested_hypotheses=0 failed_tests=0 negative_failed_predictors=0
+[experiment][llm] task=ExperimentDesignAgent: review and refine experiment plan provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=45411
+[experiment] ExperimentDesignAgent done plans=1
+[llm] task=experiment_statistical_model profile=default provider=ollama model=qwen3:14b
+[llm] task=experiment_result_review profile=reasoning provider=ollama model=qwen3:14b
+[experiment] plan 1/1 mapping plan_id=experiment_plan_c046eb2a08e1
+[experiment] plan 1/1 statistics tests=4
+[experiment][llm] task=StatisticalModelAgent: select AnalysisDSL and controlled templates provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=18184
+[experiment:model_selection] plan=experiment_plan_c046eb2a08e1 primary=linear_regression source=rule ml=enabled n=43 covariates=mean_FD,mean_DVARS,percent_high_motion,max_FD reason=fMRI/QC motion covariates available (max_FD, mean_DVARS, mean_FD, percent_high_motion); linear regression controls confounding.
+[experiment][llm] task=ResultReviewAgent: judge support, confounds, and feedback provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=60545
+[experiment] plan 1/1 reviewed status=partially_supported
+[experiment] outputs results=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/experiment_results.json feedback=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/experimental_feedback.json report=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/phase3_experiment_report.md visualizations=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/index.html
+[discovery_loop] iteration_001 experiment done plans=1
+[discovery_loop] iteration_001 foundation updated features=95 assets=2
+[discovery_loop] [literature_intent] start iteration=iteration_001
+[llm] task=literature_intent profile=default provider=ollama model=qwen3:14b
+[literature_intent][llm] provider=ollama model=qwen3:14b json=True messages=1 prompt_chars=12274
+[discovery_loop] [literature_intent] extracted signals failed_tests=1 negative_control_failures=2 missing_variables=0 modality_gaps=0
+[discovery_loop] [literature_intent] candidates generated=27
+[discovery_loop] [literature_intent] accepted=8 rejected_duplicate=3 rejected_invalid=0
+[discovery_loop] [literature_intent] appended query_config=/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml group=experiment_feedback_expansion count=8
+[discovery_loop] [literature_refresh] incremental start new_queries=8 query_config=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/literature_incremental_queries.yaml
+[api] enabled providers: pubmed, europe_pmc, openalex, semantic_scholar
+[api] query count: 8; max_results_per_query: 50
+[api:pubmed] [########################] 8/8 records=60 warnings=0 done accumulated_raw=60
+[api:europe_pmc] [########################] 8/8 records=374 warnings=0 done accumulated_raw=434
+[api:openalex] [########################] 8/8 records=346 warnings=0 done accumulated_raw=780
+[api:semantic_scholar] [########################] 8/8 records=162 warnings=0 done accumulated_raw=942
+[api] deduplicated records: 756
+[literature_build] write_api_outputs_start count=756
+[literature_build] write_api_outputs_done count=756
+[literature_build] write_queries_start count=8
+[literature_build] write_queries_done count=8
+[literature_build] persist_api_records_start count=756
+[literature_build] persist_api_records_done count=756
+[literature_build] persist_journal_targeted_records_start count=0
+[literature_build] persist_journal_targeted_records_done count=0
+[literature_build] export_deduplication_start
+[literature_build] export_deduplication_done duplicate_groups=43153
+[literature_build] export_registry_start
+[literature_build] export_registry_done
+[literature_build] load_registry_start
+[literature_build] load_registry_done count=20007
+[literature_build] export_summaries_start
+[literature_build] export_summaries_done
+[literature_build] coverage_audit_start registry_records=20007
+[literature_build] coverage_audit_done
+[literature_build] anchor_papers_start registry_records=20007
+[literature_build] anchor_papers_done count=5
+[literature_build] query_expansion_start
+[literature_build] query_expansion_done count=200
+[literature_build] rag_index_start embedding_enabled=True
+[embedding] rag index start provider=local_minilm model=sentence-transformers/all-MiniLM-L6-v2 chunks=15002
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 17876.17it/s]
+[embedding] rag vectors encoded count=15002 dim=384 elapsed=142.521s
+[embedding] rag index done chunks=15002 vectors=15002 elapsed=142.522s
+[literature_build] rag_index_done chunks=15002 embedding_vectors=15002
+[literature_build] corpus_version_start library_version=sleep_literature_library_v1
+[literature_build] corpus_version_done library_version=sleep_literature_library_v1
+[literature_build] manifest_start path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_manifest.json
+[literature_build] manifest_done path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_manifest.json
+[literature_build] report_start path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_build_report.md
+[literature_build] report_done path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_build_report.md
+[discovery_loop] literature DB refreshed registry_records=20007 rag_chunks=15002 embedding_vectors=15002
+[discovery_loop] [grounding_topk_query] sources={'research_question': 1, 'accepted_queries': 4, 'evidence_gap_terms': 0, 'data_feature_terms': 12}
+[discovery_loop] [grounding_topk_query] query=sleep neuroimaging mechanisms and measurable multimodal biomarkers Fractional anisotropy in thalamic white matter and insomnia severity DTI measures of insular cortex integrity and NREM spindle density White matter microstructure correlates with sleep spindle coherence Thalamus-DMN functional connectivity and insomnia symptomatology DMN FC DMN coord x DMN coord y DMN coord z DMN frontoparietal FC DMN roi voxels DMN salience FC frontoparietal FC frontoparietal coord x frontoparietal coord y frontoparietal coord z frontoparietal roi voxels
+[embedding] db rag retrieval start model=sentence-transformers/all-MiniLM-L6-v2 chunks=15002 top_k=1000
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 15302.26it/s]
+[embedding] db rag retrieval done hits=1000 elapsed=1.744s
+[discovery_loop] grounding refreshed corpus_version=sleepagent_grounding_data_constrained_v1 retrieval_query=sleep neuroimaging mechanisms and measurable multimodal biomarkers Fractional anisotropy in thalamic white matter and insomnia severity DTI measures of insular cortex integrity and NREM spindle density White matter microstructure correlates with sleep spindle coherence Thalamus-DMN functional connectivity and insomnia symptomatology DMN FC DMN coord x DMN coord y DMN coord z DMN frontoparietal FC DMN roi voxels DMN salience FC frontoparietal FC frontoparietal coord x frontoparietal coord y frontoparietal coord z frontoparietal roi voxels
+[discovery_loop] iteration_001 candidate FC group contrast status=run connectome_figures=34
+[discovery_loop] iteration_001 metrics active=5 feedback=1 reward_mean=0.5275
+[discovery_loop] iteration_002 hypothesis start
+[llm] task=hypothesis_generation profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_generation profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_review profile=reasoning provider=ollama model=qwen3:14b
+[llm] task=hypothesis_rank profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_evolution profile=reasoning provider=ollama model=qwen3:14b
+[llm] task=hypothesis_meta_review profile=disabled provider=rules model=deterministic
+[hypothesis] experiment_preflight_constraints avoid_signatures=1 tested_hypotheses=1 failed_tests=1 negative_failed_predictors=1
+[hypothesis] start session=sleep_hypothesis_session
+[hypothesis] inputs evidence=500 graph_nodes=580 graph_edges=2000 priors=5 feedback=1 memory=0
+[hypothesis] llm provider=ollama model=qwen3:14b enabled=True
+[hypothesis] ContextAgent done
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=7481
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=9383
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=7687
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=8191
+[hypothesis] GenerationAgent done hypotheses=4
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14598
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14595
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14608
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14601
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14602
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15456
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15453
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15466
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15459
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15460
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14900
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14897
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14910
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14903
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14904
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14860
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14857
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14870
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14863
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14864
+[hypothesis] ReviewAgent done active=4 reviews=20 duplicates_rejected=0
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12716
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12778
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12813
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12697
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12732
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12794
+[hypothesis] RankAgent done matches=6
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15222
+[hypothesis] EvolutionMemoryAgent done feedback_updates=0 evolved=hypothesis_1e552c79505f
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14088
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14085
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14098
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14091
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14092
+[hypothesis] ReviewAgent second pass done active=5 reviews=25
+[hypothesis][llm] provider=ollama model=qwen3:14b json=False messages=2 prompt_chars=12487
+[hypothesis][llm] provider=ollama model=qwen3:14b json=False messages=4 prompt_chars=14886
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=6 prompt_chars=16903
+[hypothesis][llm] provider=ollama model=qwen3:14b json=False messages=2 prompt_chars=12437
+[hypothesis][llm] provider=ollama model=qwen3:14b json=False messages=4 prompt_chars=12942
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=6 prompt_chars=14600
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12697
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12732
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12778
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12778
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12813
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12759
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12794
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=12794
+[hypothesis] RankAgent second pass done matches=16
+[hypothesis] outputs written dir=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/hypothesis report=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/hypothesis_report.md
+[discovery_loop] iteration_002 hypothesis done hypotheses=5
+[discovery_loop] iteration_002 experiment start
+[experiment] start config=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment_config.yaml
+[experiment] pre-experiment feature extraction plan_id=pre_experiment_features
+[experiment] PreExperimentFeatureExtraction done tables=2 profile=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/features/profile/pre_experiment_features/analysis_ready_profile.yaml
+[experiment] loaded data_profile=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/features/profile/pre_experiment_features/analysis_ready_profile.yaml features=90
+[experiment] [experiment:constraints] previous_results=1 tried_signatures=1 negative_failed_predictors=1
+[llm] task=experiment_design profile=default provider=ollama model=qwen3:14b
+[experiment:constraints] tried_signatures=1 tested_hypotheses=1 failed_tests=1 negative_failed_predictors=1
+[experiment][llm] task=ExperimentDesignAgent: review and refine experiment plan provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=46891
+[experiment] ExperimentDesignAgent done plans=1
+[llm] task=experiment_statistical_model profile=default provider=ollama model=qwen3:14b
+[llm] task=experiment_result_review profile=reasoning provider=ollama model=qwen3:14b
+[experiment] plan 1/1 mapping plan_id=experiment_plan_071dd5ec29e3
+[experiment] plan 1/1 statistics tests=8
+[experiment][llm] task=StatisticalModelAgent: select AnalysisDSL and controlled templates provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=18880
+[experiment:model_selection] plan=experiment_plan_071dd5ec29e3 primary=linear_regression source=rule ml=enabled n=43 covariates=mean_FD,mean_DVARS,percent_high_motion,max_FD reason=fMRI/QC motion covariates available (max_FD, mean_DVARS, mean_FD, percent_high_motion); linear regression controls confounding.
+[experiment][llm] task=ResultReviewAgent: judge support, confounds, and feedback provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=83601
+[experiment] plan 1/1 reviewed status=weakens
+[experiment] outputs results=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/experiment_results.json feedback=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/experimental_feedback.json report=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/phase3_experiment_report.md visualizations=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/visuals/index.html
+[discovery_loop] iteration_002 experiment done plans=1
+[discovery_loop] iteration_002 foundation updated features=95 assets=2
+[discovery_loop] [literature_intent] start iteration=iteration_002
+[llm] task=literature_intent profile=default provider=ollama model=qwen3:14b
+[literature_intent][llm] provider=ollama model=qwen3:14b json=True messages=1 prompt_chars=12274
+[discovery_loop] [literature_intent] extracted signals failed_tests=5 negative_control_failures=2 missing_variables=0 modality_gaps=0
+[discovery_loop] [literature_intent] candidates generated=36
+[discovery_loop] [literature_intent] accepted=8 rejected_duplicate=10 rejected_invalid=0
+[discovery_loop] [literature_intent] appended query_config=/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml group=experiment_feedback_expansion count=8
+[discovery_loop] [literature_refresh] incremental start new_queries=8 query_config=/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/literature_incremental_queries.yaml
+[api] enabled providers: pubmed, europe_pmc, openalex, semantic_scholar
+[api] query count: 8; max_results_per_query: 50
+[api:pubmed] [########################] 8/8 records=7 warnings=0 done accumulated_raw=7
+[api:europe_pmc] [########################] 8/8 records=325 warnings=0 done accumulated_raw=332
+[api:openalex] [########################] 8/8 records=313 warnings=0 done accumulated_raw=645
+[api:semantic_scholar] [########################] 8/8 records=19 warnings=0 done accumulated_raw=664
+[api] deduplicated records: 468
+[literature_build] write_api_outputs_start count=468
+[literature_build] write_api_outputs_done count=468
+[literature_build] write_queries_start count=8
+[literature_build] write_queries_done count=8
+[literature_build] persist_api_records_start count=468
+[literature_build] persist_api_records_done count=468
+[literature_build] persist_journal_targeted_records_start count=0
+[literature_build] persist_journal_targeted_records_done count=0
+[literature_build] export_deduplication_start
+[literature_build] export_deduplication_done duplicate_groups=43535
+[literature_build] export_registry_start
+[literature_build] export_registry_done
+[literature_build] load_registry_start
+[literature_build] load_registry_done count=20081
+[literature_build] export_summaries_start
+[literature_build] export_summaries_done
+[literature_build] coverage_audit_start registry_records=20081
+[literature_build] coverage_audit_done
+[literature_build] anchor_papers_start registry_records=20081
+[literature_build] anchor_papers_done count=5
+[literature_build] query_expansion_start
+[literature_build] query_expansion_done count=200
+[literature_build] rag_index_start embedding_enabled=True
+[embedding] rag index start provider=local_minilm model=sentence-transformers/all-MiniLM-L6-v2 chunks=15070
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 17993.81it/s]
+[embedding] rag vectors encoded count=15070 dim=384 elapsed=137.502s
+[embedding] rag index done chunks=15070 vectors=15070 elapsed=137.502s
+[literature_build] rag_index_done chunks=15070 embedding_vectors=15070
+[literature_build] corpus_version_start library_version=sleep_literature_library_v1
+[literature_build] corpus_version_done library_version=sleep_literature_library_v1
+[literature_build] manifest_start path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_manifest.json
+[literature_build] manifest_done path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_manifest.json
+[literature_build] report_start path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_build_report.md
+[literature_build] report_done path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_build_report.md
+[discovery_loop] literature DB refreshed registry_records=20081 rag_chunks=15070 embedding_vectors=15070
+[discovery_loop] [grounding_topk_query] sources={'research_question': 1, 'accepted_queries': 4, 'evidence_gap_terms': 0, 'data_feature_terms': 12}
+[discovery_loop] [grounding_topk_query] query=sleep neuroimaging mechanisms and measurable multimodal biomarkers Thalamus-DMN functional connectivity and insomnia severity index (ISI) correlation Impact of thalamocortical coupling on sleep quality (PSQI) in sleep-disrupted populations Role of thalamus-DMN FC in sleep disruption: literature review DMN functional connectivity and insomnia severity (ISI) in sleep disorders DMN FC DMN coord x DMN coord y DMN coord z DMN frontoparietal FC DMN roi voxels DMN salience FC frontoparietal FC frontoparietal coord x frontoparietal coord y frontoparietal coord z frontoparietal roi voxels
+[embedding] db rag retrieval start model=sentence-transformers/all-MiniLM-L6-v2 chunks=15070 top_k=1000
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 18004.31it/s]
+[embedding] db rag retrieval done hits=1000 elapsed=1.746s
+[discovery_loop] grounding refreshed corpus_version=sleepagent_grounding_data_constrained_v1 retrieval_query=sleep neuroimaging mechanisms and measurable multimodal biomarkers Thalamus-DMN functional connectivity and insomnia severity index (ISI) correlation Impact of thalamocortical coupling on sleep quality (PSQI) in sleep-disrupted populations Role of thalamus-DMN FC in sleep disruption: literature review DMN functional connectivity and insomnia severity (ISI) in sleep disorders DMN FC DMN coord x DMN coord y DMN coord z DMN frontoparietal FC DMN roi voxels DMN salience FC frontoparietal FC frontoparietal coord x frontoparietal coord y frontoparietal coord z frontoparietal roi voxels
+[discovery_loop] iteration_002 candidate FC group contrast status=run connectome_figures=34
+[discovery_loop] iteration_002 metrics active=5 feedback=1 reward_mean=0.4338
+[discovery_loop] iteration_003 hypothesis start
+[llm] task=hypothesis_generation profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_generation profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_review profile=reasoning provider=ollama model=qwen3:14b
+[llm] task=hypothesis_rank profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_evolution profile=reasoning provider=ollama model=qwen3:14b
+[llm] task=hypothesis_meta_review profile=disabled provider=rules model=deterministic
+[hypothesis] experiment_preflight_constraints avoid_signatures=2 tested_hypotheses=2 failed_tests=6 negative_failed_predictors=2
+[hypothesis] start session=sleep_hypothesis_session
+[hypothesis] inputs evidence=500 graph_nodes=579 graph_edges=2000 priors=5 feedback=1 memory=0
+[hypothesis] llm provider=ollama model=qwen3:14b enabled=True
+[hypothesis] ContextAgent done
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=7599
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=8943
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=7852
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=8166
+[hypothesis] GenerationAgent done hypotheses=4
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15261
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15258
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15271
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15264
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15265
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=16053
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=16050
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=16063
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=16056
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=16057
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14973
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14970
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14983
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14976
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14977
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15479
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15476
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15489
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15482
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15483
+[hypothesis] ReviewAgent done active=4 reviews=20 duplicates_rejected=0
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=13197
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=13188
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=13278
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=13156
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=13246
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=13237
+[hypothesis] RankAgent done matches=6
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=15741
+[hypothesis] EvolutionMemoryAgent done feedback_updates=0 evolved=hypothesis_b9d14fce1772
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14539
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14536
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14549
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14542
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=14543
+[hypothesis] ReviewAgent second pass done active=5 reviews=25
+[hypothesis][llm] provider=ollama model=qwen3:14b json=False messages=2 prompt_chars=12938
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/discovery_loop/discovery_runner.py", line 69, in run_discovery_loop
+    hypothesis_summary = run_hypothesis_pipeline(iteration_hypothesis_config_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/hypothesis_pipeline.py", line 18, in run_hypothesis_pipeline
+    return HypothesisSupervisor().run(config_path_value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/supervisor.py", line 56, in run
+    state = self.rank_agent.run(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/agents/rank_agent.py", line 210, in run
+    matches = run_pairwise_ranking(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/agents/rank_agent.py", line 128, in run_pairwise_ranking
+    result, rationale = _debate_match(left, right, ollama_config, knowledge_context=knowledge_context)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/agents/rank_agent.py", line 75, in _debate_match
+    advocacy = client.call(
+               ^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/llm/client.py", line 191, in call
+    return self._call_ollama(messages, temperature=temperature, json_mode=json_mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/llm/client.py", line 377, in _call_ollama
+    with urllib.request.urlopen(request, timeout=float(self.config.get("timeout", 120))) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/opt/fsl/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out

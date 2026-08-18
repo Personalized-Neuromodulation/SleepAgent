@@ -1,0 +1,43 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Psychological distress",
+        "to": "\"psychological distress\"[MeSH Terms] OR (\"psychological\"[All Fields] AND \"distress\"[All Fields]) OR \"psychological distress\"[All Fields]"
+      },
+      {
+        "from": "mediator",
+        "to": "\"mediated\"[All Fields] OR \"mediational\"[All Fields] OR \"mediator\"[All Fields] OR \"mediator's\"[All Fields] OR \"mediators\"[All Fields] OR \"negotiating\"[MeSH Terms] OR \"negotiating\"[All Fields] OR \"mediate\"[All Fields] OR \"mediates\"[All Fields] OR \"mediating\"[All Fields] OR \"mediation\"[All Fields] OR \"mediations\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "sleep disturbances",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disturbances\"[All Fields]) OR \"sleep disturbances\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"psychological distress\"[MeSH Terms] OR (\"psychological\"[All Fields] AND \"distress\"[All Fields]) OR \"psychological distress\"[All Fields]) AND (\"mediated\"[All Fields] OR \"mediational\"[All Fields] OR \"mediator\"[All Fields] OR \"mediator s\"[All Fields] OR \"mediators\"[All Fields] OR \"negotiating\"[MeSH Terms] OR \"negotiating\"[All Fields] OR \"mediate\"[All Fields] OR \"mediates\"[All Fields] OR \"mediating\"[All Fields] OR \"mediation\"[All Fields] OR \"mediations\"[All Fields]) AND \"amygdala-prefrontal\"[All Fields] AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disturbances\"[All Fields]) OR \"sleep disturbances\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "as",
+        "a",
+        "of",
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "40864649"
+    ],
+    "translationset": [
+      {
+        "from": "Effect",
+        "to": "\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]"
+      },
+      {
+        "from": "motion",
+        "to": "\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion's\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]"
+      },
+      {
+        "from": "parameters",
+        "to": "\"parameter\"[All Fields] OR \"parameter's\"[All Fields] OR \"parameters\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "analysis",
+        "to": "\"analysis\"[Subheading] OR \"analysis\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]) AND (\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion s\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]) AND (\"parameter\"[All Fields] OR \"parameter s\"[All Fields] OR \"parameters\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"analysis\"[MeSH Subheading] OR \"analysis\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "on",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,2713 @@
+{
+  "total": 985,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "8887c49768f455206fa6ebc3b3a59de5d704c5b8",
+      "externalIds": {
+        "DOI": "10.1109/ICBME64381.2024.10895473",
+        "CorpusId": 276673806
+      },
+      "url": "https://www.semanticscholar.org/paper/8887c49768f455206fa6ebc3b3a59de5d704c5b8",
+      "title": "How Psychological Scores Influence Head Motion in Resting-State fMRI",
+      "venue": "Iranian Conference on Biomedical Engineering",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICBME64381.2024.10895473?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICBME64381.2024.10895473, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1471172033",
+          "name": "Sadeq Mohammadi"
+        },
+        {
+          "authorId": "31250105",
+          "name": "G. Hossein-Zadeh"
+        },
+        {
+          "authorId": "2639644",
+          "name": "M. R. Raoufy"
+        }
+      ],
+      "abstract": "The relationship between psychological health and head motion during resting-state functional magnetic resonance imaging (rs-fMRI) helps improve data quality. This study explores the links between the scores of the General Health Questionnaire-28 (GHQ-28) and the Depression Anxiety Stress Scales-42 (DASS-42) and head motion parameters, such as mean and maximum framewise displacement (FD), as well as mean and maximum translational and rotational movements in healthy individuals. After motion correction in the preprocessing of the rs-fMRI, we performed a correlation analysis to reveal the relationship between psychological scores and motion parameters. Our results showed significant correlations between psychological scores and motion parameters. Specifically, higher scores on the somatic dysfunction subscales of the GHQ-28 test were linked to larger translational and rotational movements. Similarly, increased anxiety and stress scores from the DASS-42 test were associated with higher levels of motion. These findings suggest that assessing participants’ psychological health can help predict their head motion during scanning, which is crucial for selecting participants in fMRI studies to ensure high data quality and prevent the loss of resources due to high motion artifacts in fMRI data. Incorporating psychological health assessments into the subject selection process may reduce motion-related artifacts and enhance the reliability of fMRI data."
+    },
+    {
+      "paperId": "c6d0023d8f5d02eaf32454f118634fe38e5c5e4d",
+      "externalIds": {
+        "PubMedCentral": "12573454",
+        "DOI": "10.1016/j.eclinm.2025.103452",
+        "CorpusId": 281544628,
+        "PubMed": "41181843"
+      },
+      "url": "https://www.semanticscholar.org/paper/c6d0023d8f5d02eaf32454f118634fe38e5c5e4d",
+      "title": "Identification of critical brain regions for autism diagnosis from fMRI data using explainable AI: an observational analysis of the ABIDE dataset",
+      "venue": "EClinicalMedicine",
+      "year": 2025,
+      "citationCount": 11,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12573454, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2322499760",
+          "name": "Suryansh Vidya"
+        },
+        {
+          "authorId": "2322642627",
+          "name": "Kush Gupta"
+        },
+        {
+          "authorId": "2322743193",
+          "name": "Amir Aly"
+        },
+        {
+          "authorId": "2322501804",
+          "name": "Andy Wills"
+        },
+        {
+          "authorId": "2322499824",
+          "name": "Emmanuel C. Ifeachor"
+        },
+        {
+          "authorId": "2322501490",
+          "name": "Rohit Shankar"
+        }
+      ],
+      "abstract": "Summary Background Diagnosis of autism spectrum disorder (ASD) significantly improves quality of life, yet current diagnostic practices rely on subjective behavioural assessments. While machine learning models using functional Magnetic Resonance Imaging (fMRI) show promise for objective diagnosis, existing approaches have critical limitations. High-accuracy models often neglect interpretability, increasing clinical distrust, while interpretable approaches frequently suffer from low accuracy and lack neuroscientific validation of identified biomarkers. Furthermore, no studies have systematically benchmarked which interpretability methods are most effective for fMRI data, hindering the translation of Artificial intelligence (AI) findings into clinical practice. Methods In this observational study, we used the Autism Brain Imaging Data Exchange I (ABIDE I) dataset comprising 884 participants (408 with ASD; 476 controls with typical development) aged 7–64 years from five countries (Belgium, Germany, Ireland, the Netherlands, and the USA) across 17 international sites after applying mean framewise displacement (FD) filtering (>0.2 mm). Data were collected at the respective sites prior to the release of the ABIDE I dataset in August 2012. We described an explainable deep learning (DL) pipeline using a Stacked Sparse Autoencoder (SSAE) with a softmax classifier, trained on functional connectivity data. We systematically benchmarked seven interpretability methods using the Remove And Retrain (ROAR) technique and cross-validated our findings across three preprocessing pipelines. Critically, we validated identified biomarkers against independent neuroscientific literature from genetic, neuroanatomical, and functional studies. Findings Filtering head movement (FD > 0.2 mm) increased classification accuracy from 91% to 98.2% (F1-score: 0.97), achieving state-of-the-art performance. ROAR analysis revealed gradient-based methods, particularly Integrated Gradients, as most reliable for fMRI interpretation. The model consistently identified visual processing regions (calcarine sulcus, cuneus) as critical for ASD classification. These findings aligned with independent genetic studies and neuroimaging research, confirming our model captured genuine neurobiological ASD markers rather than overfitting to dataset artifacts. Interpretation We addressed three key research gaps by developing a highly accurate, interpretable ASD classification model, establishing a benchmarking framework for interpretability methods in the fMRI modality, and validating our identified biomarkers against established neuroscience literature. The consistent importance of visual processing regions suggests a fundamental biomarker potentially present across the ASD spectrum, offering new directions for diagnostic biomarker research, though translation to individual-level clinical applications requires further development. Funding This work was supported by the Engineering and Physical Sciences Research Council, UK [EP/W524554/1]."
+    },
+    {
+      "paperId": "800b947f356abe9e275da764464d697af0b1cdff",
+      "externalIds": {
+        "DOI": "10.1038/s41596-024-01110-y",
+        "CorpusId": 275953094,
+        "PubMed": "39875591"
+      },
+      "url": "https://www.semanticscholar.org/paper/800b947f356abe9e275da764464d697af0b1cdff",
+      "title": "fMRI data acquisition and analysis for task-free, anesthetized rats",
+      "venue": "Nature Protocols",
+      "year": 2025,
+      "citationCount": 5,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41596-024-01110-y?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41596-024-01110-y, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2132468385",
+          "name": "Roël M Vrooman"
+        },
+        {
+          "authorId": "2318217386",
+          "name": "Monica van den Berg"
+        },
+        {
+          "authorId": "2119734110",
+          "name": "Gabriel Desrosiers-Grégoire"
+        },
+        {
+          "authorId": "2342674989",
+          "name": "Wessel A van Engelenburg"
+        },
+        {
+          "authorId": "2323940424",
+          "name": "Marie E Galteau"
+        },
+        {
+          "authorId": "2332907683",
+          "name": "Sung-Ho Lee"
+        },
+        {
+          "authorId": "5794877",
+          "name": "A. Veltien"
+        },
+        {
+          "authorId": "4987102",
+          "name": "D. Barrière"
+        },
+        {
+          "authorId": "2303854863",
+          "name": "D. Cash"
+        },
+        {
+          "authorId": "2288568961",
+          "name": "M. Chakravarty"
+        },
+        {
+          "authorId": "2318186467",
+          "name": "Gabriel A. Devenyi"
+        },
+        {
+          "authorId": "4380479",
+          "name": "A. Gozzi"
+        },
+        {
+          "authorId": "2253721906",
+          "name": "Olli Gröhn"
+        },
+        {
+          "authorId": "2059618250",
+          "name": "Andreas Hess"
+        },
+        {
+          "authorId": "2332604802",
+          "name": "J. Homberg"
+        },
+        {
+          "authorId": "2312303396",
+          "name": "I. Jelescu"
+        },
+        {
+          "authorId": "2318218802",
+          "name": "Georgios A Keliris"
+        },
+        {
+          "authorId": "2275656588",
+          "name": "T. Scheenen"
+        },
+        {
+          "authorId": "2237999428",
+          "name": "Y. Shih"
+        },
+        {
+          "authorId": "2253883472",
+          "name": "M. Verhoye"
+        },
+        {
+          "authorId": "5544995",
+          "name": "C. Wary"
+        },
+        {
+          "authorId": "2332581579",
+          "name": "Marcel P. Zwiers"
+        },
+        {
+          "authorId": "2238217285",
+          "name": "J. Grandjean"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "84d1279a259b61795d94bb46efc2407c855a1a4e",
+      "externalIds": {
+        "DOI": "10.64898/2025.12.16.688826",
+        "CorpusId": 284075939
+      },
+      "url": "https://www.semanticscholar.org/paper/84d1279a259b61795d94bb46efc2407c855a1a4e",
+      "title": "Cross-modal quality transfer: enhancing MEG spatial resolution using BOLD-fMRI and Explainable machine learning",
+      "venue": "bioRxiv",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2025/12/19/2025.12.16.688826.full.pdf",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.64898/2025.12.16.688826?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64898/2025.12.16.688826, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2380758344",
+          "name": "Jiri Benacek"
+        },
+        {
+          "authorId": "2332724522",
+          "name": "Krish D. Singh"
+        },
+        {
+          "authorId": "2280101218",
+          "name": "Derek K. Jones"
+        },
+        {
+          "authorId": "117762288",
+          "name": "Phoebe M. Asquith"
+        },
+        {
+          "authorId": "2195560930",
+          "name": "David Marshall"
+        },
+        {
+          "authorId": "2249240373",
+          "name": "Simon K. Rushton"
+        },
+        {
+          "authorId": "2260349511",
+          "name": "Marco Palombo"
+        }
+      ],
+      "abstract": "Purpose:1 Blood-oxygen-level-dependent functional MRI (BOLD-fMRI) and magnetoencephalog-raphy (MEG) offer complementary insights into brain function, with BOLD-fMRI providing high spatial resolution and MEG offering high temporal sensitivity. This study aimed to enhance MEG’s spatial resolution through learning inter-modal relationships via data-driven fusion with BOLD-fMRI using explainable machine learning (xML). Methods: MEG and BOLD-fMRI data were collected for sixteen participants watching the same naturalistic visual stimulus. MEG signals were filtered into standard frequency bands and processed to match the haemodynamic response. Data were then decomposed using Tenso-rial Independent Component Analysis (TICA), yielding 250 MEG (25 per frequency band) and 30 BOLD-fMRI components. A set of Extreme Gradient Boosted tree (XGBoost) models were trained to predict MEG component activity from downsampled BOLD-fMRI components. The models with best-performing configuration of hyperparameters at this resolution were then used to generate voxelwise upsampled MEG maps using the natively higher-resolution BOLD-fMRI data. Performance was compared to trilinear interpolation using R², mean squared error (MSE), and structural similarity index (SSI). Model inter-pretability was enhanced by generating Shapley values (SHAP), describing relationships between input data and model output. Results: Models trained on 6mm³ data achieved high predictive performance on previously unseen data (R² = 0.80, MSE = .07). Using higher-resolution 2mm³ BOLD-fMRI data, MEG activ-ity was upsampled to 2mm³, resulting in more detailed image, while maintaining reasonable congruence to naive interpolation (R² = .81, MSE = .06). Conclusions: This work demonstrates that explainable machine learning enables spatial super-resolution of MEG maps via BOLD-fMRI-informed quality transfer, enabling enhancement of spatial resolution, and offering improved localization, as well as means of generating data-driven insights into neurovascular coupling."
+    },
+    {
+      "paperId": "31099231f3186bfeae5a942af4c54d94c3406514",
+      "externalIds": {
+        "DOI": "10.1016/j.jpsychires.2023.10.037",
+        "CorpusId": 264385061,
+        "PubMed": "39492234"
+      },
+      "url": "https://www.semanticscholar.org/paper/31099231f3186bfeae5a942af4c54d94c3406514",
+      "title": "Alterations in the global brain network in older adults with poor sleep quality: A resting-state fMRI study.",
+      "venue": "Journal of Psychiatric Research",
+      "year": 2023,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jpsychires.2023.10.037?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jpsychires.2023.10.037, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2030111851",
+          "name": "E. Cheong"
+        },
+        {
+          "authorId": "2240520194",
+          "name": "Yumie Rhee"
+        },
+        {
+          "authorId": "2261088418",
+          "name": "Chang Oh Kim"
+        },
+        {
+          "authorId": "2260945123",
+          "name": "Hyeon Chang Kim"
+        },
+        {
+          "authorId": "2553259",
+          "name": "N. Hong"
+        },
+        {
+          "authorId": "2261070631",
+          "name": "Yong-Wook Shin"
+        }
+      ],
+      "abstract": "OBJECTIVES\nOlder adults often experience more fragmented and less restful sleep than younger individuals. However, the mechanisms in the brain that underlie these phenomena have been rarely studied. The aim of this study was to identify the differences in global brain network properties between older adults with good and poor sleep quality and to explore the relationship between these network properties and symptoms of insomnia.\n\n\nMETHODS\nWe performed a graph-theoretic analysis of resting-state functional magnetic resonance imaging data from two groups of older adults: 59 with good sleep quality and 59 with poor sleep quality. Functional connectivity among 264 brain regions of interest was estimated, and undirected graphs were constructed. Network topological properties were compared using one-way repeated-measures analysis of variance. Pearson's correlation analysis assessed the relationship between the mean scores of the global network properties across network sparsity and insomnia symptoms, as measured using the global Pittsburgh Sleep Quality Index score.\n\n\nRESULTS\nOlder adults with poor sleep quality displayed increased small-world-ness, global efficiency and modularity in the functional brain network during rest. Conversely, they exhibited decreased local efficiency, characteristic path length and clustering coefficient. In the total population, we found associations between insomnia symptoms and global network characteristics, except for betweenness centrality and modularity.\n\n\nCONCLUSIONS\nIn older adults with poor sleep quality, global network measures revealed a functional brain architecture that tended towards integration rather than segregation. Further research is needed to better understand what these findings mean about the effects of aging on poor sleep quality."
+    },
+    {
+      "paperId": "5064185a98559251c30a867b0418c1b6282eec07",
+      "externalIds": {
+        "PubMedCentral": "9120555",
+        "DOI": "10.1002/hbm.25829",
+        "CorpusId": 247548401,
+        "PubMed": "35305030"
+      },
+      "url": "https://www.semanticscholar.org/paper/5064185a98559251c30a867b0418c1b6282eec07",
+      "title": "ENIGMA HALFpipe: Interactive, reproducible, and efficient analysis for resting‐state and task‐based fMRI data",
+      "venue": "bioRxiv",
+      "year": 2021,
+      "citationCount": 100,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.25829",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9120555, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4073334",
+          "name": "L. Waller"
+        },
+        {
+          "authorId": "2716428",
+          "name": "S. Erk"
+        },
+        {
+          "authorId": "49204128",
+          "name": "E. Pozzi"
+        },
+        {
+          "authorId": "52163217",
+          "name": "Y. Toenders"
+        },
+        {
+          "authorId": "3925483",
+          "name": "C. Haswell"
+        },
+        {
+          "authorId": "2091846410",
+          "name": "Marc Büttner"
+        },
+        {
+          "authorId": "145363223",
+          "name": "P. Thompson"
+        },
+        {
+          "authorId": "3411113",
+          "name": "L. Schmaal"
+        },
+        {
+          "authorId": "2001160",
+          "name": "R. Morey"
+        },
+        {
+          "authorId": "2106817580",
+          "name": "H. Walter"
+        },
+        {
+          "authorId": "2135146",
+          "name": "I. Veer"
+        }
+      ],
+      "abstract": "The reproducibility crisis in neuroimaging has led to an increased demand for standardized data processing workflows. Within the ENIGMA consortium, we developed HALFpipe (Harmonized AnaLysis of Functional MRI pipeline), an open-source, containerized, user-friendly tool that facilitates reproducible analysis of task-based and resting-state fMRI data through uniform application of preprocessing, quality assessment, single-subject feature extraction, and group-level statistics. It provides state-of-the-art preprocessing using fMRIPrep without the requirement for input data in Brain Imaging Data Structure (BIDS) format. HALFpipe extends the functionality of fMRIPrep with additional preprocessing steps, which include spatial smoothing, grand mean scaling, temporal filtering, and confound regression. HALFpipe generates an interactive quality assessment (QA) webpage to assess the quality of key preprocessing outputs and raw data in general. HALFpipe features myriad post-processing functions at the individual subject level, including calculation of task-based activation, seed-based connectivity, network-template (or dual) regression, atlas-based functional connectivity matrices, regional homogeneity (ReHo), and fractional amplitude of low frequency fluctuations (fALFF), offering support to evaluate a combinatorial number of features or preprocessing settings in one run. Finally, flexible factorial models can be defined for mixed-effects regression analysis at the group level, including multiple comparison correction. Here, we introduce the theoretical framework in which HALFpipe was developed, and present an overview of the main functions of the pipeline. HALFpipe offers the scientific community a major advance toward addressing the reproducibility crisis in neuroimaging, providing a workflow that encompasses preprocessing, post-processing, and QA of fMRI data, while broadening core principles of data analysis for producing reproducible results. Instructions and code can be found at https://github.com/HALFpipe/HALFpipe."
+    },
+    {
+      "paperId": "79a4089b3322b9dc52699729434ce1018fca13a3",
+      "externalIds": {
+        "PubMedCentral": "9886598",
+        "DOI": "10.1007/s00415-022-11479-z",
+        "CorpusId": 253418817,
+        "PubMed": "36350401"
+      },
+      "url": "https://www.semanticscholar.org/paper/79a4089b3322b9dc52699729434ce1018fca13a3",
+      "title": "Resting-state functional MRI in multicenter studies on multiple sclerosis: a report on raw data quality and functional connectivity features from the Italian Neuroimaging Network Initiative",
+      "venue": "Journal of Neurology",
+      "year": 2022,
+      "citationCount": 11,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s00415-022-11479-z.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9886598, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2106148468",
+          "name": "Alessandro Pasquale De Rosa"
+        },
+        {
+          "authorId": "35811124",
+          "name": "F. Esposito"
+        },
+        {
+          "authorId": "2649341",
+          "name": "P. Valsasina"
+        },
+        {
+          "authorId": "1432147694",
+          "name": "A. d’Ambrosio"
+        },
+        {
+          "authorId": "4823202",
+          "name": "A. Bisecco"
+        },
+        {
+          "authorId": "2067450950",
+          "name": "M. Rocca"
+        },
+        {
+          "authorId": "21655378",
+          "name": "S. Tommasin"
+        },
+        {
+          "authorId": "25119347",
+          "name": "C. Marzi"
+        },
+        {
+          "authorId": "143901430",
+          "name": "N. de Stefano"
+        },
+        {
+          "authorId": "48731952",
+          "name": "M. Battaglini"
+        },
+        {
+          "authorId": "34566412",
+          "name": "P. Pantano"
+        },
+        {
+          "authorId": "40372121",
+          "name": "M. Cirillo"
+        },
+        {
+          "authorId": "144143273",
+          "name": "G. Tedeschi"
+        },
+        {
+          "authorId": "145348456",
+          "name": "M. Filippi"
+        },
+        {
+          "authorId": "145185060",
+          "name": "A. Gallo"
+        },
+        {
+          "authorId": null,
+          "name": "Manuela Riccardo Rocco Loredana Elisabetta Mauro Claudia S Altieri Borgo Capuano Storelli Pagani Sibilia Pier"
+        },
+        {
+          "authorId": "49377196",
+          "name": "M. Altieri"
+        },
+        {
+          "authorId": "2123591406",
+          "name": "R. Borgo"
+        },
+        {
+          "authorId": "5393476",
+          "name": "Rocco Capuano"
+        },
+        {
+          "authorId": "3378875",
+          "name": "L. Storelli"
+        },
+        {
+          "authorId": "13783662",
+          "name": "E. Pagani"
+        },
+        {
+          "authorId": "145071347",
+          "name": "Mauro Sibilia"
+        },
+        {
+          "authorId": "49945246",
+          "name": "C. Piervincenzi"
+        },
+        {
+          "authorId": "36547377",
+          "name": "S. Ruggieri"
+        },
+        {
+          "authorId": "6787836",
+          "name": "N. Petsas"
+        },
+        {
+          "authorId": "6138288",
+          "name": "R. Cortese"
+        },
+        {
+          "authorId": "6203179",
+          "name": "M. Stromillo"
+        }
+      ],
+      "abstract": "The Italian Neuroimaging Network Initiative (INNI) is an expanding repository of brain MRI data from multiple sclerosis (MS) patients recruited at four Italian MRI research sites. We describe the raw data quality of resting-state functional MRI (RS-fMRI) time-series in INNI and the inter-site variability in functional connectivity (FC) features after unified automated data preprocessing. MRI datasets from 489 MS patients and 246 healthy control (HC) subjects were retrieved from the INNI database. Raw data quality metrics included temporal signal-to-noise ratio (tSNR), spatial smoothness (FWHM), framewise displacement (FD), and differential variation in signals (DVARS). Automated preprocessing integrated white-matter lesion segmentation (SAMSEG) into a standard fMRI pipeline (fMRIPrep). FC features were calculated on pre-processed data and harmonized between sites (Combat) prior to assessing general MS-related alterations. Across centers (both groups), median tSNR and FWHM ranged from 47 to 84 and from 2.0 to 2.5, and median FD and DVARS ranged from 0.08 to 0.24 and from 1.06 to 1.22. After preprocessing, only global FC-related features were significantly correlated with FD or DVARS. Across large-scale networks, age/sex/FD-adjusted and harmonized FC features exhibited both inter-site and site-specific inter-group effects. Significant general reductions were obtained for somatomotor and limbic networks in MS patients (vs. HC). The implemented procedures provide technical information on raw data quality and outcome of fully automated preprocessing that might serve as reference in future RS-fMRI studies within INNI. The unified pipeline introduced little bias across sites and appears suitable for multisite FC analyses on harmonized network estimates."
+    },
+    {
+      "paperId": "ed174d61d36a4ab1db91277cfbe5f440959dbc76",
+      "externalIds": {
+        "PubMedCentral": "9157440",
+        "DOI": "10.1016/j.dcn.2022.101116",
+        "CorpusId": 244090833,
+        "PubMed": "35636344"
+      },
+      "url": "https://www.semanticscholar.org/paper/ed174d61d36a4ab1db91277cfbe5f440959dbc76",
+      "title": "Real-time motion monitoring improves functional MRI data quality in infants",
+      "venue": "bioRxiv",
+      "year": 2021,
+      "citationCount": 20,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.dcn.2022.101116",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9157440, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1741953637",
+          "name": "C. B. D’Andrea"
+        },
+        {
+          "authorId": "8765003",
+          "name": "Jeanette K. Kenley"
+        },
+        {
+          "authorId": "5413166",
+          "name": "D. Montez"
+        },
+        {
+          "authorId": "8203352",
+          "name": "A. Mirro"
+        },
+        {
+          "authorId": "1491047467",
+          "name": "Ryland L. Miller"
+        },
+        {
+          "authorId": "2253759",
+          "name": "E. Earl"
+        },
+        {
+          "authorId": "37341195",
+          "name": "J. M. Koller"
+        },
+        {
+          "authorId": "2142232498",
+          "name": "Sooyeon Sung"
+        },
+        {
+          "authorId": "1761064",
+          "name": "E. Yacoub"
+        },
+        {
+          "authorId": "3048594",
+          "name": "J. Elison"
+        },
+        {
+          "authorId": "35365511",
+          "name": "D. Fair"
+        },
+        {
+          "authorId": "3133713",
+          "name": "N. Dosenbach"
+        },
+        {
+          "authorId": "144174005",
+          "name": "C. Rogers"
+        },
+        {
+          "authorId": "2212224",
+          "name": "C. Smyser"
+        },
+        {
+          "authorId": "2119889",
+          "name": "D. Greene"
+        }
+      ],
+      "abstract": "Imaging the infant brain with MRI has improved our understanding of early stages of neurodevelopment. However, head motion during MRI acquisition is detrimental to both functional and structural MRI scan quality. Though infants are commonly scanned while asleep, they commonly exhibit motion during scanning, causing data loss. Our group has shown that providing MRI technicians with real-time motion estimates via Framewise Integrated Real-Time MRI Monitoring (FIRMM) software helps obtain high-quality, low motion fMRI data. By estimating head motion in real time and displaying motion metrics to the MR technician during an fMRI scan, FIRMM can improve scanning efficiency. Hence, we compared average framewise displacement (FD), a proxy for head motion, and the amount of usable fMRI data (FD ≤ 0.2mm) in infants scanned with (n = 407) and without FIRMM (n = 295). Using a mixed-effects model, we found that the addition of FIRMM to current state-of-the-art infant scanning protocols significantly increased the amount of usable fMRI data acquired per infant, demonstrating its value for research and clinical infant neuroimaging."
+    },
+    {
+      "paperId": "ad10dc64476db2c765830f64ce6ea88306bb2ea4",
+      "externalIds": {
+        "MAG": "3008903779",
+        "DBLP": "journals/neuroimage/AquinoFPSF20",
+        "DOI": "10.1101/662726",
+        "CorpusId": 195402680,
+        "PubMed": "32084564"
+      },
+      "url": "https://www.semanticscholar.org/paper/ad10dc64476db2c765830f64ce6ea88306bb2ea4",
+      "title": "Identifying and removing widespread signal deflections from fMRI data: Rethinking the global signal regression problem",
+      "venue": "bioRxiv",
+      "year": 2019,
+      "citationCount": 116,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2020.116614",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/662726?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/662726, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2007613",
+          "name": "K. Aquino"
+        },
+        {
+          "authorId": "48792891",
+          "name": "Ben D. Fulcher"
+        },
+        {
+          "authorId": "33522651",
+          "name": "Linden Parkes"
+        },
+        {
+          "authorId": "81137195",
+          "name": "K. Sabaroedin"
+        },
+        {
+          "authorId": "2362590",
+          "name": "A. Fornito"
+        }
+      ],
+      "abstract": "One of the most controversial procedures in the analysis of resting-state functional magnetic resonance imaging (rsfMRI) data is global signal regression (GSR): the removal, via linear regression, of the mean signal averaged over the entire brain, from voxel-wise or regional time series. On one hand, the global mean signal contains variance associated with respiratory, scanner-, and motion-related artifacts. Its removal via GSR improves various quality control metrics, enhances the anatomical specificity of functional connectivity patterns, and can increase the behavioural variance explained by such patterns. On the other hand, GSR alters the distribution of regional signal correlations in the brain, can induce artifactual anticorrelations, may remove real neural signal, and can distort case-control comparisons of functional-connectivity measures. Global signal fluctuations can be identified by visualizing a matrix of colour-coded signal intensities, called a carpet plot, in which rows represent voxels and columns represent time. Prior to GSR, large, periodic bands of coherent signal changes that affect most of the brain are often apparent; after GSR, these apparent global changes are greatly diminished. Here, using three independent datasets, we show that reordering carpet plots to emphasize cluster structure in the data reveals a greater diversity of spatially widespread signal deflections (WSDs) than previously thought. Their precise form varies across time and participants and GSR is only effective in removing specific kinds of WSDs. We present an alternative, iterative correction method called Diffuse Cluster Estimation and Regression (DiCER), that identifies representative signals associated with large clusters of coherent voxels. DiCER is more effective than GSR at removing diverse WSDs as visualized in carpet plots, reduces correlations between functional connectivity and head-motion estimates, reduces inter-individual variability in global correlation structure, and results in comparable or improved identification of canonical functional-connectivity networks. All code for implementing DiCER and replicating our results is available at https://github.com/BMHLab/DiCER."
+    },
+    {
+      "paperId": "535b002caa51e6b401e17331198b8e7c0647921a",
+      "externalIds": {
+        "CorpusId": 15271564
+      },
+      "url": "https://www.semanticscholar.org/paper/535b002caa51e6b401e17331198b8e7c0647921a",
+      "title": "FMRI Data Quality",
+      "venue": "",
+      "year": 2012,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://cbi.nyu.edu/Downloads/dataQuality.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50000419",
+          "name": "P. Velasco"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "254958e171661cada7666c7d49985c4803b43977",
+      "externalIds": {
+        "PubMedCentral": "10809475",
+        "DOI": "10.1186/s12876-024-03124-y",
+        "CorpusId": 267201175,
+        "PubMed": "38267863"
+      },
+      "url": "https://www.semanticscholar.org/paper/254958e171661cada7666c7d49985c4803b43977",
+      "title": "Symptom effects and central mechanism of acupuncture in patients with functional gastrointestinal disorders: a systematic review based on fMRI studies",
+      "venue": "BMC Gastroenterology",
+      "year": 2024,
+      "citationCount": 17,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://bmcgastroenterol.biomedcentral.com/counter/pdf/10.1186/s12876-024-03124-y",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10809475, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2157233729",
+          "name": "Lin Wang"
+        },
+        {
+          "authorId": "2115829454",
+          "name": "Xiaoying Luo"
+        },
+        {
+          "authorId": "2054317911",
+          "name": "Xiangli Qing"
+        },
+        {
+          "authorId": "2150092716",
+          "name": "S. Fang"
+        },
+        {
+          "authorId": "153189186",
+          "name": "Tianyuan Jiang"
+        },
+        {
+          "authorId": "2109025832",
+          "name": "Qianying Wang"
+        },
+        {
+          "authorId": "2281256730",
+          "name": "Zhuotai Zhong"
+        },
+        {
+          "authorId": "2152916711",
+          "name": "Yang Yang"
+        },
+        {
+          "authorId": "46478026",
+          "name": "Jianqin Yang"
+        },
+        {
+          "authorId": "2273650691",
+          "name": "Gengqing Song"
+        },
+        {
+          "authorId": "7883959",
+          "name": "Xiao-lan Su"
+        },
+        {
+          "authorId": "2149191795",
+          "name": "Wei Wei"
+        }
+      ],
+      "abstract": "Background Functional gastrointestinal disorders (FGIDs) are closely related to disorders of brain-gut interaction. FGIDs are the dominant disease of acupuncture treatment, which can improve the symptoms and emotional state. Aim To evaluate the results and quality of the available clinical evidence and to summarize the central mechanism and effect of acupuncture on FGIDs. Methods PubMed, EMBASE, Web of science, Cochrane Library, China National Knowledge Infrastructure (CNKI) were searched by computer to collect the randomized controlled trials (RCTs), which contained central mechanisms via fMRI research of acupuncture in the treatment of FGIDs patients. The search time limit was from the establishment of the database to June 22, 2022. Two researchers independently screened the literature, extracted data, and evaluated the quality. Results Ten RCTs involving fMRI data were included in this study, including 4 Functional dyspepsia (FD) studies, 3 irritable bowel syndrome (IBS) studies, and 3 functional constipation (FC) studies. The score of improvements in both gastrointestinal symptoms and psychological symptoms showed that acupuncture could significantly improve the clinical symptoms of FGIDs patients, including abdominal pain, abdominal distension, frequency of defecation, and stool characteristics, and could relieve anxiety and depression symptoms of patients. Acupuncture could regulate brain functional connections and functional activity in FGIDs patients, mainly including insula, anterior cingulate cortex, prefrontal cortex, thalamus, hippocampus, amygdala and other brain regions. Conclusion Acupuncture can improve gastrointestinal symptoms and psychological status in FGIDs patients, and regulate functional connectivity and activity of brain regions such as insula, ACC, PFC, thalamus, HIPP, amygdala, etc. These changes in brain activity may related to visceral sensation, pain regulation, emotion, but further studies of high quality are still necessary."
+    },
+    {
+      "paperId": "2e95c4541823a320c0cc416f66cc29c022bc6d61",
+      "externalIds": {
+        "PubMedCentral": "11345634",
+        "DOI": "10.1002/hbm.70003",
+        "CorpusId": 271951948,
+        "PubMed": "39185668"
+      },
+      "url": "https://www.semanticscholar.org/paper/2e95c4541823a320c0cc416f66cc29c022bc6d61",
+      "title": "Measuring and reducing the carbon footprint of fMRI preprocessing in fMRIPrep",
+      "venue": "Human Brain Mapping",
+      "year": 2024,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1002/hbm.70003",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11345634, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1484371248",
+          "name": "Nicholas E. Souter"
+        },
+        {
+          "authorId": "2267804871",
+          "name": "Nikhil Bhagwat"
+        },
+        {
+          "authorId": "2265375536",
+          "name": "Chris Racey"
+        },
+        {
+          "authorId": "2316912360",
+          "name": "Reese Wilkinson"
+        },
+        {
+          "authorId": "2265590365",
+          "name": "Niall W. Duncan"
+        },
+        {
+          "authorId": "2055420379",
+          "name": "G. Samuel"
+        },
+        {
+          "authorId": "138108783",
+          "name": "Loïc Lannelongue"
+        },
+        {
+          "authorId": "36481129",
+          "name": "Raghavendra Selvan"
+        },
+        {
+          "authorId": "2265377256",
+          "name": "Charlotte L. Rae"
+        }
+      ],
+      "abstract": "Computationally expensive data processing in neuroimaging research places demands on energy consumption—and the resulting carbon emissions contribute to the climate crisis. We measured the carbon footprint of the functional magnetic resonance imaging (fMRI) preprocessing tool fMRIPrep, testing the effect of varying parameters on estimated carbon emissions and preprocessing performance. Performance was quantified using (a) statistical individual‐level task activation in regions of interest and (b) mean smoothness of preprocessed data. Eight variants of fMRIPrep were run with 257 participants who had completed an fMRI stop signal task (the same data also used in the original validation of fMRIPrep). Some variants led to substantial reductions in carbon emissions without sacrificing data quality: for instance, disabling FreeSurfer surface reconstruction reduced carbon emissions by 48%. We provide six recommendations for minimising emissions without compromising performance. By varying parameters and computational resources, neuroimagers can substantially reduce the carbon footprint of their preprocessing. This is one aspect of our research carbon footprint over which neuroimagers have control and agency to act upon."
+    },
+    {
+      "paperId": "7ae858b5b01eeab26d68549e26a5b10b5b94e230",
+      "externalIds": {
+        "PubMedCentral": "13181030",
+        "DOI": "10.1038/s41598-026-44794-w",
+        "CorpusId": 287096195,
+        "PubMed": "41922478"
+      },
+      "url": "https://www.semanticscholar.org/paper/7ae858b5b01eeab26d68549e26a5b10b5b94e230",
+      "title": "Resting-state fMRI using hidden Markov models reveals abnormal dynamic brain functional states in asthma",
+      "venue": "Scientific Reports",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-026-44794-w_reference.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13181030, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2362944192",
+          "name": "Chunyang Xu"
+        },
+        {
+          "authorId": "2148953528",
+          "name": "Xiangyu Wei"
+        }
+      ],
+      "abstract": "Asthma involves not only airway inflammation but also aberrant central nervous system regulation. While static functional connectivity studies have revealed brain network abnormalities in asthma patients, the transient temporal dynamics of brain functional states remain largely unexplored. To investigate brain dynamic functional connectivity characteristics in asthma patients using Hidden Markov Models (HMM) and to identify potential neurobiological markers associated with clinical symptoms. Resting-state fMRI data were acquired from an initial pool of participants, with 120 age- and gender-matched individuals (60 asthma patients and 60 healthy controls) included after stringent quality control and head-motion scrubbing. HMM was applied to identify recurring brain states based on the Schaefer-142 parcellation. We compared groups on fractional occupancy (FO), mean dwell time (MDT), and transition probabilities. Exploratory correlation analyses were performed to evaluate the relationship between HMM-derived metrics and clinical scores (ACT and pulmonary function). HMM identified nine distinct functional states. Asthma patients exhibited a significantly increased MDT and FO in State 2 (characterized by somatomotor and dorsal attention network involvement) compared to healthy controls (p < 0.05). Exploratory analysis revealed a nominal positive correlation between the MDT of State 2 and Asthma Control Test (ACT) scores (r = 0.30, p < 0.05, uncorrected), suggesting a potential compensatory role of this state in symptom monitoring. Our findings reveal altered brain state dynamics in asthma, particularly the prolonged occupancy in a sensory-attention-related state. While the brain-clinical associations are exploratory, these dynamic metrics provide novel insights into the central mechanisms of asthma and may serve as preliminary neurobiological markers for symptom control."
+    },
+    {
+      "paperId": "3eb3bf47efc9bf1511df1aa466cbebde7a67d5ef",
+      "externalIds": {
+        "PubMedCentral": "13346258",
+        "DOI": "10.1007/s10803-025-06742-x",
+        "CorpusId": 276286010,
+        "PubMed": "39934479"
+      },
+      "url": "https://www.semanticscholar.org/paper/3eb3bf47efc9bf1511df1aa466cbebde7a67d5ef",
+      "title": "Efficacy and Safety of Propofol as a Sole Sedative for fMRI Sedation in Autism Spectrum Disorder Individuals with Low IQ",
+      "venue": "Journal of Autism and Developmental Disorders",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10803-025-06742-x.pdf",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13346258, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2110637498",
+          "name": "Xiong Wei"
+        },
+        {
+          "authorId": "2347171821",
+          "name": "Jiawei Zhang"
+        },
+        {
+          "authorId": "2344994074",
+          "name": "Maoyuan Niu"
+        },
+        {
+          "authorId": "153041377",
+          "name": "Weiyong Yu"
+        },
+        {
+          "authorId": "115023839",
+          "name": "Zhenbo Chen"
+        },
+        {
+          "authorId": "2344992445",
+          "name": "Hongwei Bu"
+        },
+        {
+          "authorId": "2353313453",
+          "name": "Jianjun Liu"
+        },
+        {
+          "authorId": "2114129779",
+          "name": "Liu Qi"
+        },
+        {
+          "authorId": "2344990394",
+          "name": "Duan Xinyu"
+        },
+        {
+          "authorId": "2344992236",
+          "name": "Bulideerqing Jiaerheng"
+        },
+        {
+          "authorId": "71278571",
+          "name": "Wang Qiang"
+        },
+        {
+          "authorId": "2394590112",
+          "name": "Zhang Hao"
+        }
+      ],
+      "abstract": "Autism spectrum disorder (ASD) is a group of complicated neurodevelopmental disorders. Functional magnetic resonance imaging (fMRI) can help to analyze the aberrant neurological functioning in ASD. However, due to their limited cognitive abilities, ASD individuals with low IQ may face challenges in cooperating during fMRI scanning. Consequently, sedation becomes necessary for them. To analyze and evaluate the sedative efficacy and safety of a single intravenous propofol sedation regimen for ASD individuals with low IQ undergoing fMRI examination. Seventy-seven ASD individuals with low IQ, aged 4 to 23 years, who underwent fMRI examination under propofol sedation, were included. Details of the sedation protocol, evaluation indices for effectiveness such as framewise displacement (FD) and temporal signal-to-noise ratio (tSNR), as well as safety assessment measures including pulse oxygen saturation (SPO2) and blood pressure were collected. Adverse events were also recorded. Data analysis was conducted upon completion of the study. Body movement was observed in 12 patients. The median and quartiles (25th percentile, 75th percentile) of FD was 0.065 (0.057, 0.086) mm, while the tSNR averaged at 89.6 ± 11.4. The image data from sixty-two cases (80.5%) were classified as high quality based on their tSNR surpassing 80. No serious adverse events, such as oxygen desaturation, hypotension, nausea, or vomiting, occurred that necessitated hospitalization. The exclusive propofol intravenous sedation protocol employed in this study demonstrates efficacy and safety for administering fMRI examinations to ASD individuals with low IQ, thereby warranting further investigation and validation towards its adoption in clinical practice."
+    },
+    {
+      "paperId": "acbdfbcbad20f99765a35301f1b2baabea8c8042",
+      "externalIds": {
+        "MAG": "3009320482",
+        "DOI": "10.1007/s10548-020-00761-w",
+        "CorpusId": 212576369,
+        "PubMed": "32144628"
+      },
+      "url": "https://www.semanticscholar.org/paper/acbdfbcbad20f99765a35301f1b2baabea8c8042",
+      "title": "On the Quality, Statistical Efficiency, and Safety of Simultaneously Recorded Multiband fMRI/EEG",
+      "venue": "Brain Topography",
+      "year": 2020,
+      "citationCount": 8,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10548-020-00761-w?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10548-020-00761-w, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108266641",
+          "name": "Joseph C. C. Chen"
+        },
+        {
+          "authorId": "47314393",
+          "name": "A. Forsyth"
+        },
+        {
+          "authorId": "2690887",
+          "name": "D. Dubowitz"
+        },
+        {
+          "authorId": "1721173",
+          "name": "S. Muthukumaraswamy"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "222739f3927b6e8c8bab75b7f568adbf34e4c33f",
+      "externalIds": {
+        "DBLP": "conf/biostec/SoaresALBSCD21",
+        "DOI": "10.5220/0010327803060313",
+        "CorpusId": 232094408
+      },
+      "url": "https://www.semanticscholar.org/paper/222739f3927b6e8c8bab75b7f568adbf34e4c33f",
+      "title": "On the Optimal Strategy for Tackling Head Motion in fMRI Data",
+      "venue": "International Conference on Bio-inspired Systems and Signal Processing",
+      "year": 2021,
+      "citationCount": 6,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.5220/0010327803060313",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5220/0010327803060313?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5220/0010327803060313, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "152524176",
+          "name": "Júlia F. Soares"
+        },
+        {
+          "authorId": "145080116",
+          "name": "Rodolfo Abreu"
+        },
+        {
+          "authorId": "2072822920",
+          "name": "A. C. Lima"
+        },
+        {
+          "authorId": "113500733",
+          "name": "S. Batista"
+        },
+        {
+          "authorId": "27389459",
+          "name": "L. Sousa"
+        },
+        {
+          "authorId": "1390131251",
+          "name": "M. Castelo‐Branco"
+        },
+        {
+          "authorId": "37149426",
+          "name": "J. Duarte"
+        }
+      ],
+      "abstract": "Head motion critically hampers the quality of functional magnetic resonance imaging (fMRI) data, with several methods for its correction being already available in the literature. Head shifts are usually corrected by realigning all functional volumes with relation to a reference volume using affine transformations, from which the estimated motion parameters (MPs) can be additionally regressed out from fMRI data. However, a consensus regarding the number of MPs to regress has not been achieved yet. More critically, abrupt head motion induces the so-called motion outliers in the data, which cannot be accounted for by affine transformations. Two common approaches are widely used to tackle this type of motion, namely modelling strategies such as censoring, and volume interpolation. However, a direct comparison between strategies to tackle motion outliers has not been performed so far. Importantly, to our knowledge no study has focused on determining the extent at which the effects of different head motion correction methods differ between groups in clinical studies. This is particularly relevant in task-related functional connectivity fMRI studies, which are rapidly increasing in clinical research. In this study, we started by determining the optimal number of MPs (between 6 and 24) to be regressed out from fMRI data collected from 8 participants (4 patients with Multiple Sclerosis and 4 healthy controls) performing a perceptual decision-making task. Then we tested motion censoring and volume interpolation for correcting motion outliers, using FD and DVARS metrics to detect the outlier volumes. We found that task-specific activated brain regions were detected with higher sensitivity when using 6 MPs relatively to using 24 MPs. As for the correction of motion outliers, our results suggest that volume interpolation is the best method to use, however more data and external validation is needed to achieve a definite conclusion. Importantly, the performance of motion correction algorithms was irrespective of the subject group (patients and healthy participants). Our results pave the way towards finding an optimal motion correction strategy, which is required to improve the accuracy of fMRI analyses in healthy and patient populations and are an encouragement to test comprehensively different approaches."
+    },
+    {
+      "paperId": "848bd836cf57e99ecf27361aaec6fd59d7b7825e",
+      "externalIds": {
+        "PubMedCentral": "13035833",
+        "DOI": "10.1038/s41597-026-06879-z",
+        "CorpusId": 285871356,
+        "PubMed": "41723198"
+      },
+      "url": "https://www.semanticscholar.org/paper/848bd836cf57e99ecf27361aaec6fd59d7b7825e",
+      "title": "A dense longitudinal multimodal single-subject rs-fMRI dataset acquired by self-administered scanning",
+      "venue": "Scientific Data",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13035833, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2378453744",
+          "name": "Evgeny Petrovskiy"
+        }
+      ],
+      "abstract": "Dense longitudinal neuroimaging usually requires substantial institutional resources, yet can also be achieved by an individual using standard clinical MRI infrastructure. This work presents a multimodal single-subject dataset comprising 85 hours of resting-state fMRI acquired over 11 months, including 51.6 hours under a standardized protocol (paired eyes-open/-closed runs, 128 sessions over 7.5 months). Additional data include 195 T1-weighted structural scans, 54 diffusion MRI sessions, physiological recordings, pre-session behavioral assessments, and detailed medication and lifestyle logs. Scans were collected primarily via self-administered acquisition on a clinical 3 T system, with sub-3 mm between-session positioning reproducibility observed in later sessions. Quality control identified 58 hours of low-motion data (mean framewise displacement <0.2 mm), with higher-motion runs occurring predominantly during sleep. The acquisition period included antidepressant dose changes and seasonal variation, forming a single-subject naturalistic context with collinear factors that preclude causal inference. The dataset follows the BIDS standard and is intended for methodological development, reliability analyses, preprocessing benchmarking, and educational use."
+    },
+    {
+      "paperId": "850e6220449fab7d0f69840fe2d5880d693af7ef",
+      "externalIds": {
+        "PubMedCentral": "12044599",
+        "DOI": "10.1002/hbm.70080",
+        "CorpusId": 278234829,
+        "PubMed": "40309965"
+      },
+      "url": "https://www.semanticscholar.org/paper/850e6220449fab7d0f69840fe2d5880d693af7ef",
+      "title": "Multi‐Metric Approach for the Comparison of Denoising Techniques for Resting‐State fMRI",
+      "venue": "Human Brain Mapping",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12044599, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2276638270",
+          "name": "F. Goffi"
+        },
+        {
+          "authorId": "2274514408",
+          "name": "A. M. Bianchi"
+        },
+        {
+          "authorId": "4881526",
+          "name": "G. Schiena"
+        },
+        {
+          "authorId": "2307390677",
+          "name": "Paolo Brambilla"
+        },
+        {
+          "authorId": "3336577",
+          "name": "E. Maggioni"
+        }
+      ],
+      "abstract": "Despite the increasing use of resting‐state functional magnetic resonance imaging (rs‐fMRI) data for studying the spontaneous functional interactions within the brain, the achievement of robust results is often hampered by insufficient data quality and by poor knowledge of the most effective denoising methods. The present study aims to define an appropriate denoising strategy for rs‐fMRI data by proposing a robust framework for the quantitative and comprehensive comparison of the performance of multiple pipelines made available by the newly proposed HALFpipe software. This will ultimately contribute to standardizing rs‐fMRI preprocessing and denoising steps. Fifty‐three participants took part in the study by undergoing a rs‐fMRI session. Synthetic rs‐fMRI data from one subject were also generated. Nine different denoising pipelines were applied in parallel to the minimally preprocessed fMRI data. The comparison was conducted by computing previously proposed and novel metrics that quantify the degree of artifact removal, signal enhancement, and resting‐state network identifiability. A summary performance index, accounting for both noise removal and information preservation, was proposed. The results confirm the performance heterogeneity of different denoising pipelines across the different quality metrics. In both real and synthetic data, the summary performance index favored the denoising strategy including the regression of mean signals from white matter and cerebrospinal fluid brain areas and global signal. This pipeline resulted in the best compromise between artifact removal and preservation of the information on resting‐state networks. Our study provided useful methodological tools and key information on the effectiveness of multiple denoising strategies for rs‐fMRI data. Besides providing a robust comparison approach that could be adapted to other fMRI studies, a suitable denoising pipeline for rs‐fMRI data was identified, which could be used to improve the reproducibility of rs‐fMRI findings."
+    },
+    {
+      "paperId": "cfe5a67ce09848f0ffffd130ddeb338f5043704e",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0084",
+        "CorpusId": 278752735
+      },
+      "url": "https://www.semanticscholar.org/paper/cfe5a67ce09848f0ffffd130ddeb338f5043704e",
+      "title": "0084 Preprocessing Results from an All-Night fMRI Sleep Study",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0084?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0084, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108356372",
+          "name": "Patrick S. P. Wang"
+        },
+        {
+          "authorId": "2059010676",
+          "name": "Daniel S. Greene"
+        },
+        {
+          "authorId": "2362429716",
+          "name": "Hadar Halivni"
+        },
+        {
+          "authorId": "2315917428",
+          "name": "Niki Lam"
+        },
+        {
+          "authorId": "34967254",
+          "name": "Hendrik Mandelkow"
+        },
+        {
+          "authorId": "2297692721",
+          "name": "Nils Yang"
+        },
+        {
+          "authorId": "2243094099",
+          "name": "Zeynep Demir"
+        },
+        {
+          "authorId": "2380760131",
+          "name": "Pinar Ozbay"
+        },
+        {
+          "authorId": "2362437734",
+          "name": "Gail Tarlton"
+        },
+        {
+          "authorId": "2362514820",
+          "name": "J. Yi"
+        },
+        {
+          "authorId": "2331117143",
+          "name": "S. Inati"
+        },
+        {
+          "authorId": "33870602",
+          "name": "J. D. de Zwart"
+        },
+        {
+          "authorId": "48761025",
+          "name": "P. van Gelderen"
+        },
+        {
+          "authorId": "2318052004",
+          "name": "Jeff H. Duyn"
+        },
+        {
+          "authorId": "2219128",
+          "name": "D. Picchioni"
+        }
+      ],
+      "abstract": "\n \n \n Functional magnetic resonance imaging (fMRI) is emerging as a useful technique for investigating brain activity during sleep, offering superior spatial resolution compared to electroencephalography (EEG). A prior pilot study conducted by our lab highlighted the potential of fMRI to elucidate the neural correlates of dreaming, arousal thresholds, and other sleep-related phenomena. To expand on these findings, we conducted an extensive all-night fMRI sleep study. Here, we describe quality control metrics obtained during data preprocessing.\n \n \n \n Healthy participants (n=58) were enrolled in a two-night fMRI-EEG sleep study protocol. 43 participants successfully completed both nights, while 15 were withdrawn during the first or second night. At 6-8 random intervals throughout the night, participants were woken by auditory stimuli, which increased in intensity until wake onset. Once awake, participants completed a dream questionnaire. Preprocessing of fMRI data was performed using the Analysis of Functional Neuroimages (AFNI) toolbox, including nonlinear alignment to a Tailarach template, data censoring to eliminate outlier time points and artifacts from excessive head motion, and regression of systemic confounds from autonomic variability.\n \n \n \n A total of 877 runs of fMRI data were recorded with a mean length of 43.4 min (SD=34.5 min). Average temporal signal-to-noise ratio in brain voxels across all runs was 48.14 (SD=4.99). Post-regression, average global correlation across voxels was 0.013 (SD=0.005), indicating effective suppression of systemic confounds. Average maximum within-run motion displacement was a modest 2.78 mm (SD=2.23 mm), and average fraction of time points censored due to motion or outliers was 8.84% (SD=8.88%). Average spatial correlation between each subject’s anatomical and functional scans was 0.837 (SD=0.021), attributable to differences in brain coverage and resolution. Average spatial correlation between each subject’s anatomical scan and the Tailarach template was 0.981 (SD=0.005).\n \n \n \n These preprocessing results indicate the successful collection and preprocessing of high-quality, low-noise data and validate the effectiveness of our all-night fMRI sleep study protocol. Our next step is to perform group analyses using the auditory arousal threshold and dream questionnaire data collected.\n \n \n \n This work was supported by the Intramural Research Programs of the NINDS, NIDCD, and NIMH.\n"
+    },
+    {
+      "paperId": "b8ba1ad237712bce5d1fe73564601442f16920bf",
+      "externalIds": {
+        "DBLP": "journals/cbm/RiemerRSWSEG25",
+        "DOI": "10.1016/j.compbiomed.2025.109920",
+        "CorpusId": 276758078,
+        "PubMed": "40037172"
+      },
+      "url": "https://www.semanticscholar.org/paper/b8ba1ad237712bce5d1fe73564601442f16920bf",
+      "title": "Deep learning based image enhancement for dynamic non-Cartesian MRI: Application to \"silent\" fMRI",
+      "venue": "Comput. Biol. Medicine",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.compbiomed.2025.109920",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.compbiomed.2025.109920?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.compbiomed.2025.109920, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40598103",
+          "name": "F. Riemer"
+        },
+        {
+          "authorId": "2348387986",
+          "name": "Marius Eldevik Rusaas"
+        },
+        {
+          "authorId": "1419499650",
+          "name": "L. B. Sandøy"
+        },
+        {
+          "authorId": "2251316460",
+          "name": "Florian Wiesinger"
+        },
+        {
+          "authorId": "33852333",
+          "name": "A. Solana"
+        },
+        {
+          "authorId": "2280188219",
+          "name": "Lars Ersland"
+        },
+        {
+          "authorId": "2334748286",
+          "name": "Renate Grüner"
+        }
+      ],
+      "abstract": "Radial based non-Cartesian sequences may be used for silent functional MRI examinations particularly in settings where scanner noise could pose issues. However, to achieve reasonable temporal resolution, under-sampled 3D radial k-space commonly results in reduced image quality. In recent years, deep learning models for improving image quality have emerged. In this study, we investigate the applicability of deep learning image enhancement methods with a focus on preserving dynamic temporal signal changes. By utilizing high-resolution resting-state fMRI datasets from the Human Connectome Project (HCP) foundation, a ground-truth training set was constructed. The k-space trajectory coordinates of a so-called silent 'Looping Star' fMRI sequence was used to simulate non-Cartesian MRI data from the HCP datasets. Subsequently, these sparse resampled k-space were reconstructed, thereby generating pairs of simulated 'Looping Star' images and ground truth HCP images. The dataset served as the basis for training both 2D-UNet and 3D-UNet deep learning models for image enhancement. A comparative analysis was conducted, and the superior model was further fine-tuned. Evaluation of the final model's performance included standard image quality metrics as well as resting-state fMRI (rs-fMRI) analysis in the time-domain. The 3D-UNet outperformed the 2D-UNet in the image enhancement task, resulting in a significant reduction in error between the network input and the ground truth. Specifically, the 3D-UNet achieved a 97 % reduction in the mean square error between the simulated Looping Star input and the HCP ground truth in the pre-processed dataset. Moreover, the 3D-UNet successfully preserved voxel variations, observed as the correlated activity in the posterior cingulate cortex (PCC) during rs-fMRI analysis while simultaneously mitigating noise in the time-series images. In summary, image quality was improved and artifacts were effectively eliminated through the application of both 2D and 3D deep learning approaches. Comparative analysis of the networks indicated that the use of 3D convolutions is more advantageous than employing a deeper network with 2D convolutions, particularly in scenarios involving global artifacts. Furthermore by demonstrating that the trained neural network successfully preserved temporal characteristics in the BOLD signals, the results suggest applicability in fMRI studies."
+    },
+    {
+      "paperId": "7c952518f8dd99caedd5f0d86ec85b9a8caf859e",
+      "externalIds": {
+        "MAG": "2801251405",
+        "ArXiv": "1609.02123",
+        "PubMedCentral": "6128670",
+        "DOI": "10.1002/sim.7680",
+        "CorpusId": 25750372,
+        "PubMed": "29717508"
+      },
+      "url": "https://www.semanticscholar.org/paper/7c952518f8dd99caedd5f0d86ec85b9a8caf859e",
+      "title": "Time Series Analysis of fMRI Data: Spatial Modelling and Bayesian Computation",
+      "venue": "Statistics in Medicine",
+      "year": 2016,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "http://deepblue.lib.umich.edu/bitstream/2027.42/144653/3/sim7680_am.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1609.02123, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47069941",
+          "name": "Ming Teng"
+        },
+        {
+          "authorId": "37196290",
+          "name": "T. Johnson"
+        },
+        {
+          "authorId": "1924451",
+          "name": "F. Nathoo"
+        }
+      ],
+      "abstract": "Time series analysis of fMRI data is an important area of medical statistics for neuroimaging data. Spatial models and Bayesian approaches for inference in such models have advantages over more traditional mass univariate approaches; however, a major challenge for such analyses is the required computation. As a result, the neuroimaging community has embraced approximate Bayesian inference based on mean‐field variational Bayes (VB) approximations. These approximations are implemented in standard software packages such as the popular statistical parametric mapping software. While computationally efficient, the quality of VB approximations remains unclear even though they are commonly used in the analysis of neuroimaging data. For reliable statistical inference, it is important that these approximations be accurate and that users understand the scenarios under which they may not be accurate. We consider this issue for a particular model that includes spatially varying coefficients. To examine the accuracy of the VB approximation, we derive Hamiltonian Monte Carlo (HMC) for this model and conduct simulation studies to compare its performance with VB in terms of estimation accuracy, posterior variability, the spatial smoothness of estimated images, and computation time. As expected, we find that the computation time required for VB is considerably less than that for HMC. In settings involving a high or moderate signal‐to‐noise ratio (SNR), we find that the 2 approaches produce very similar results suggesting that the VB approximation is useful in this setting. On the other hand, when one considers a low SNR, substantial differences are found, suggesting that the approximation may not be accurate in such cases and we demonstrate that VB produces Bayes estimators with larger mean squared error. A comparison of the 2 computational approaches in an application examining the hemodynamic response to face perception in addition to a comparison with the traditional mass univariate approach in this application is also considered. Overall, our work clarifies the usefulness of VB for the spatiotemporal analysis of fMRI data, while also pointing out the limitation of VB when the SNR is low and the utility of HMC in this case."
+    },
+    {
+      "paperId": "08669988f2d0522069a9c4e206bb7cd8ef26f652",
+      "externalIds": {
+        "MAG": "563295814",
+        "DBLP": "journals/titb/WangZCYC16",
+        "DOI": "10.1109/JBHI.2015.2439685",
+        "CorpusId": 8098872,
+        "PubMed": "26054077"
+      },
+      "url": "https://www.semanticscholar.org/paper/08669988f2d0522069a9c4e206bb7cd8ef26f652",
+      "title": "A Novel Brain Networks Enhancement Model (BNEM) for BOLD fMRI Data Analysis With Highly Spatial Reproducibility",
+      "venue": "IEEE journal of biomedical and health informatics",
+      "year": 2016,
+      "citationCount": 14,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JBHI.2015.2439685?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JBHI.2015.2439685, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "8047942",
+          "name": "Ni-zhuan Wang"
+        },
+        {
+          "authorId": "50159494",
+          "name": "Weiming Zeng"
+        },
+        {
+          "authorId": "2200717",
+          "name": "Dongtailang Chen"
+        },
+        {
+          "authorId": "2119273160",
+          "name": "Jun Yin"
+        },
+        {
+          "authorId": "2146071072",
+          "name": "Lei Chen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "53cbd97d2242e70fa1191d59b7a8f15cb5233dcf",
+      "externalIds": {
+        "ArXiv": "2405.18726",
+        "DBLP": "journals/corr/abs-2405-18726",
+        "DOI": "10.48550/arXiv.2405.18726",
+        "CorpusId": 270095336
+      },
+      "url": "https://www.semanticscholar.org/paper/53cbd97d2242e70fa1191d59b7a8f15cb5233dcf",
+      "title": "Reverse the auditory processing pathway: Coarse-to-fine audio reconstruction from fMRI",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.18726, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2268363116",
+          "name": "Che Liu"
+        },
+        {
+          "authorId": "3383868",
+          "name": "Changde Du"
+        },
+        {
+          "authorId": "2301168668",
+          "name": "Xiaoyu Chen"
+        },
+        {
+          "authorId": "2244114915",
+          "name": "Huiguang He"
+        }
+      ],
+      "abstract": "Drawing inspiration from the hierarchical processing of the human auditory system, which transforms sound from low-level acoustic features to high-level semantic understanding, we introduce a novel coarse-to-fine audio reconstruction method. Leveraging non-invasive functional Magnetic Resonance Imaging (fMRI) data, our approach mimics the inverse pathway of auditory processing. Initially, we utilize CLAP to decode fMRI data coarsely into a low-dimensional semantic space, followed by a fine-grained decoding into the high-dimensional AudioMAE latent space guided by semantic features. These fine-grained neural features serve as conditions for audio reconstruction through a Latent Diffusion Model (LDM). Validation on three public fMRI datasets-Brain2Sound, Brain2Music, and Brain2Speech-underscores the superiority of our coarse-to-fine decoding method over stand-alone fine-grained approaches, showcasing state-of-the-art performance in metrics like FD, FAD, and KL. Moreover, by employing semantic prompts during decoding, we enhance the quality of reconstructed audio when semantic features are suboptimal. The demonstrated versatility of our model across diverse stimuli highlights its potential as a universal brain-to-audio framework. This research contributes to the comprehension of the human auditory system, pushing boundaries in neural decoding and audio reconstruction methodologies."
+    },
+    {
+      "paperId": "41a473f85e403f86058f93f574a62692a85c2e55",
+      "externalIds": {
+        "DBLP": "conf/ijcnn/LiMCHGT25",
+        "DOI": "10.1109/IJCNN64981.2025.11228631",
+        "CorpusId": 283014961
+      },
+      "url": "https://www.semanticscholar.org/paper/41a473f85e403f86058f93f574a62692a85c2e55",
+      "title": "FD-GAN: A Dual-Domain Approach with Fourier Domain Discriminators for Denoising Low-Dose CT Images",
+      "venue": "IEEE International Joint Conference on Neural Network",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IJCNN64981.2025.11228631?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IJCNN64981.2025.11228631, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2278649914",
+          "name": "Jiashuo Li"
+        },
+        {
+          "authorId": "2392421315",
+          "name": "Yixuan Mi"
+        },
+        {
+          "authorId": "2374019792",
+          "name": "Moyang Chen"
+        },
+        {
+          "authorId": "2296284287",
+          "name": "Kuan Huang"
+        },
+        {
+          "authorId": "2269070829",
+          "name": "G. Gupta"
+        },
+        {
+          "authorId": "2392428101",
+          "name": "G. Tong"
+        }
+      ],
+      "abstract": "Low-Dose CT (LDCT) denoising is critical for minimizing radiation exposure while maintaining diagnostic image quality. Conventional model-based and transform domain approaches often result in over-smoothed images with diminished structural details. To overcome these limitations, deep learning techniques have emerged as powerful alternatives, leveraging data-driven models to achieve superior noise suppression and structural preservation. In this work, we propose a novel model named FD-GAN that incorporates dual discriminators operating in both the image and Fourier domains. By jointly optimizing spatial and Fourier domain information, FD-GAN addresses common issues such as over-smoothing, loss of high-frequency details, and training instability observed in traditional Generative Adversarial Network (GAN) models. Our framework integrates pixel-wise reconstruction loss with adversarial and Fourier domain losses to ensure global consistency and local detail enhancement. Extensive experiments on the NIHAAPM-Mayo Clinic LDCT dataset demonstrate that FD-GAN outperforms conventional Mean Squared Error (MSE)-based and single-domain GAN models in both quantitative metrics and visual quality. Furthermore, FD-GAN offers improved stability during training and robustness against artifacts, making it a promising solution for clinical LDCT denoising applications."
+    },
+    {
+      "paperId": "c5efa8bc74a298803dcaf4461ff7061d7d1538e0",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/KaplanMMPEABDDE22",
+        "PubMedCentral": "8803544",
+        "DOI": "10.1016/j.neuroimage.2021.118838",
+        "CorpusId": 245332986,
+        "PubMed": "34942363"
+      },
+      "url": "https://www.semanticscholar.org/paper/c5efa8bc74a298803dcaf4461ff7061d7d1538e0",
+      "title": "Filtering respiratory motion artifact from resting state fMRI data in infant and toddler populations",
+      "venue": "NeuroImage",
+      "year": 2021,
+      "citationCount": 30,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2021.118838",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8803544, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2086451407",
+          "name": "S. Kaplan"
+        },
+        {
+          "authorId": "2146851266",
+          "name": "Dominique Meyer"
+        },
+        {
+          "authorId": "4171515",
+          "name": "Oscar Miranda-Dominguez"
+        },
+        {
+          "authorId": "40901425",
+          "name": "Anders Perrone"
+        },
+        {
+          "authorId": "2253759",
+          "name": "E. Earl"
+        },
+        {
+          "authorId": "1382308075",
+          "name": "D. Alexopoulos"
+        },
+        {
+          "authorId": "2478230",
+          "name": "D. Barch"
+        },
+        {
+          "authorId": "2066535195",
+          "name": "Trevor K. M. Day"
+        },
+        {
+          "authorId": "2052065705",
+          "name": "Joseph Dust"
+        },
+        {
+          "authorId": "2645305",
+          "name": "A. Eggebrecht"
+        },
+        {
+          "authorId": "6906292",
+          "name": "E. Feczko"
+        },
+        {
+          "authorId": "66184682",
+          "name": "O. Kardan"
+        },
+        {
+          "authorId": "8765003",
+          "name": "Jeanette K. Kenley"
+        },
+        {
+          "authorId": "144174005",
+          "name": "C. Rogers"
+        },
+        {
+          "authorId": "31489597",
+          "name": "Muriah D. Wheelock"
+        },
+        {
+          "authorId": "1761064",
+          "name": "E. Yacoub"
+        },
+        {
+          "authorId": "49007681",
+          "name": "M. Rosenberg"
+        },
+        {
+          "authorId": "3048594",
+          "name": "J. Elison"
+        },
+        {
+          "authorId": "35365511",
+          "name": "D. Fair"
+        },
+        {
+          "authorId": "2212224",
+          "name": "C. Smyser"
+        }
+      ],
+      "abstract": "The importance of motion correction when processing resting state functional magnetic resonance imaging (rs-fMRI) data is well-established in adult cohorts. This includes adjustments based on self-limited, large amplitude subject head motion, as well as factitious rhythmic motion induced by respiration. In adults, such respiration artifact can be effectively removed by applying a notch filter to the motion trace, resulting in higher amounts of data retained after frame censoring (e.g., “scrubbing”) and more reliable correlation values. Due to the unique physiological and behavioral characteristics of infants and toddlers, rs-fMRI processing pipelines, including methods to identify and remove colored noise due to subject motion, must be appropriately modified to accurately reflect true neuronal signal. These younger cohorts are characterized by higher respiration rates and lower-amplitude head movements than adults; thus, the presence and significance of comparable respiratory artifact and the subsequent necessity of applying similar techniques remain unknown. Herein, we identify and characterize the consistent presence of respiratory artifact in rs-fMRI data collected during natural sleep in infants and toddlers across two independent cohorts (aged 8–24 months) analyzed using different pipelines. We further demonstrate how removing this artifact using an age-specific notch filter allows for both improved data quality and data retention in measured results. Importantly, this work reveals the critical need to identify and address respiratory-driven head motion in fMRI data acquired in young populations through the use of age-specific motion filters as a mechanism to optimize the accuracy of measured results in this population."
+    },
+    {
+      "paperId": "a12b249f7672c095bf0311d716d5abbcd8a10a35",
+      "externalIds": {
+        "DOI": "10.1038/s41597-026-07914-9",
+        "CorpusId": 290398140,
+        "PubMed": "42477344"
+      },
+      "url": "https://www.semanticscholar.org/paper/a12b249f7672c095bf0311d716d5abbcd8a10a35",
+      "title": "A multicenter ROI-level SLE neuroimaging dataset of rs-fMRI time series and DTI connectivity matrices from 631 participants.",
+      "venue": "Scientific Data",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41597-026-07914-9_reference.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41597-026-07914-9?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41597-026-07914-9, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2086843647",
+          "name": "Peng Ding"
+        },
+        {
+          "authorId": "2142140804",
+          "name": "Yifan Yang"
+        },
+        {
+          "authorId": "150047880",
+          "name": "Bailing Tian"
+        },
+        {
+          "authorId": "2272865419",
+          "name": "Li Su"
+        },
+        {
+          "authorId": "2451826082",
+          "name": "Li Liu"
+        },
+        {
+          "authorId": "2451845524",
+          "name": "Junmei He"
+        },
+        {
+          "authorId": "2261903126",
+          "name": "Shuang Liu"
+        },
+        {
+          "authorId": "2065884734",
+          "name": "R. Bai"
+        },
+        {
+          "authorId": "2116726443",
+          "name": "Shu Li"
+        },
+        {
+          "authorId": "2181988609",
+          "name": "Ruotong Zhao"
+        },
+        {
+          "authorId": "2370072740",
+          "name": "Guofang Zhang"
+        },
+        {
+          "authorId": "2381269332",
+          "name": "Xinyu Xu"
+        },
+        {
+          "authorId": "2377273687",
+          "name": "Pingting Yang"
+        },
+        {
+          "authorId": "2329746778",
+          "name": "Yuqi Cheng"
+        },
+        {
+          "authorId": "2323675082",
+          "name": "Jian Xu"
+        }
+      ],
+      "abstract": "Systemic lupus erythematosus (SLE) is a chronic autoimmune disease that frequently affects the central nervous system. Publicly available SLE neuroimaging datasets remain limited in scale and modality. Here, we present a cross-sectional multicenter dataset comprising resting-state functional MRI (rs-fMRI) and diffusion tensor imaging (DTI) data from 631 participants (396 SLE patients, 235 healthy controls) across four Chinese clinical centers. The released dataset does not include individual-level raw DICOM or NIfTI images; instead, all shared imaging files are de-identified, processed ROI-level derivatives, including AAL-based BOLD time series and DTI-derived structural connectivity matrices weighted by fractional anisotropy and fiber number. ROI-level BOLD time series and DTI-derived structural connectivity matrices are paired in three centers. Data underwent rigorous quality control, including head-motion screening and outlier detection; cross-center comparability was further evaluated using ComBat harmonization of selected derived validation features, including regional ALFF and regional mean FA strength, for which no significant inter-site differences remained after harmonization. Clinical and neuropsychological assessments are also available. This dataset supports diverse computational neuroimaging analyses, including functional characterization, structural connectivity modeling, and structure-function coupling studies."
+    },
+    {
+      "paperId": "2a947c2395064055cbe0d81cd14dcc893b8151fa",
+      "externalIds": {
+        "PubMedCentral": "13205925",
+        "DOI": "10.3390/diagnostics16101478",
+        "CorpusId": 288234931,
+        "PubMed": "42196844"
+      },
+      "url": "https://www.semanticscholar.org/paper/2a947c2395064055cbe0d81cd14dcc893b8151fa",
+      "title": "Autistic vs. Control Differences in MRI Scan Quality Across ABIDE-II Sites",
+      "venue": "Diagnostics",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/diagnostics16101478",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13205925, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297101015",
+          "name": "João Pinheiro"
+        },
+        {
+          "authorId": "2346386401",
+          "name": "Beatriz Afonso"
+        },
+        {
+          "authorId": "2299237120",
+          "name": "E. Seiça"
+        },
+        {
+          "authorId": "2111985424",
+          "name": "R. Gonçalves"
+        },
+        {
+          "authorId": "87489224",
+          "name": "Luís P Ribeiro"
+        },
+        {
+          "authorId": "2064968346",
+          "name": "Joana Reis"
+        }
+      ],
+      "abstract": "Background: Head motion and variability in scan quality remain major methodological challenges in autism neuroimaging. Large multi-site datasets such as ABIDE-II provide a unique opportunity to systematically quantify diagnostic differences in MRI data quality and assess the influence of site-level heterogeneity. Methods: Functional MRI Quality Assessment Protocol (QAP) metrics were combined with phenotypic data from ABIDE-II. Participants were classified as autistic (ASD) or typically developing (TD). Key quality metrics—including mean framewise displacement (mFD), proportion of volumes exceeding 0.20 mm (FD > 0.20), signal-to-noise ratio (SNR), and entropy focus criterion (EFC)—were analyzed alongside age, sex, IQ, and site. Group differences were evaluated using non-parametric tests and linear mixed-effects models with site as a random factor. Additional analyses examined site-level heterogeneity and the impact of quality-control (QC) thresholds on sample composition. Results: The final sample included 1277 participants (579 ASD; 698 TD) across 14 sites. ASD participants exhibited significantly greater head motion (median mFD = 0.101 vs. 0.081 mm; p < 1 × 10−10) and modest reductions in signal quality (lower SNR, higher EFC). Elevated motion in ASD was observed in 12 of 14 sites, although effect sizes varied substantially. Mixed-effects models confirmed that diagnosis remained a significant predictor of motion after adjusting for covariates. In contrast, signal-quality differences were small and largely explained by site effects. Simulated QC procedures disproportionately excluded ASD participants, with exclusion rates up to 31% compared to 18% in TD. Conclusions: ASD participants show consistently higher head motion, while signal-quality differences are minimal and largely site-driven. Standard QC procedures disproportionately exclude ASD individuals, highlighting the need for improved motion handling and more balanced quality-control strategies in multi-site studies."
+    },
+    {
+      "paperId": "8190faa93c7a3aa51d3f18d364a9a057d8d73434",
+      "externalIds": {
+        "DOI": "10.1016/j.jad.2024.08.216",
+        "CorpusId": 272392789,
+        "PubMed": "39233246"
+      },
+      "url": "https://www.semanticscholar.org/paper/8190faa93c7a3aa51d3f18d364a9a057d8d73434",
+      "title": "Glutamate dynamics and BOLD response during OCD symptom provocation in the lateral occipital cortex: A 7 Tesla fMRI-fMRS study.",
+      "venue": "Journal of Affective Disorders",
+      "year": 2024,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.jad.2024.08.216",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jad.2024.08.216?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jad.2024.08.216, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "120967497",
+          "name": "N. D. de Joode"
+        },
+        {
+          "authorId": "2100497",
+          "name": "O. A. van den Heuvel"
+        },
+        {
+          "authorId": "2213944698",
+          "name": "Merel Koster"
+        },
+        {
+          "authorId": "2213700640",
+          "name": "William T. Clarke"
+        },
+        {
+          "authorId": "2297567288",
+          "name": "A. V. van Balkom"
+        },
+        {
+          "authorId": "6617921",
+          "name": "A. Schrantee"
+        },
+        {
+          "authorId": "4215882",
+          "name": "C. Vriend"
+        }
+      ],
+      "abstract": "Obsessive-compulsive disorder (OCD) is linked with dysfunction in frontal-striatal, fronto-limbic, and visual brain regions. Research using proton magnetic resonance spectroscopy (1H-MRS) suggests that altered neurometabolite levels, like glutamate, may contribute to this dysfunction. However, static neurometabolite levels in OCD patients have shown inconsistent results, likely due to previous studies' limited focus on neurometabolite dynamics. We employ functional MRS (fMRS) and functional magnetic resonance imaging (fMRI) to explore these dynamics and brain activation during OCD symptom provocation. We utilized a combined 7-tesla fMRI-fMRS setup to examine task-related BOLD response and glutamate changes in the lateral occipital cortex (LOC) of 30 OCD participants and 34 matched controls during an OCD-specific symptom provocation task. The study examined main effects and between-group differences in brain activation and glutamate levels during the task. A whole sample task-effects analysis on data meeting predefined quality criteria showed significant glutamate increases (n = 41 (22 OCD, 19 controls), mean change: 3.2 %, z = 3.75, p < .001) and task activation (n = 54 (26 OCD, 28 controls), p < .001) in the LOC during OCD blocks compared to neutral blocks. However, no differences in task-induced glutamate dynamics or activation between groups were found, nor a correlation between glutamate levels and task activation. We were able to measure task-induced increases in glutamate and BOLD levels, emphasizing its feasibility for OCD research. The absence of group differences highlights the need for further exploration to discern to what extent neurometabolite dynamics differ between OCD patients and controls. Once established, future studies can use pre-post intervention fMRS-fMRI to probe the effects of therapies modulating glutamate pathways in OCD."
+    },
+    {
+      "paperId": "04ce46ddaf3172ae7a335a022f254385454e333d",
+      "externalIds": {
+        "MAG": "3023876303",
+        "CorpusId": 73455316,
+        "PubMed": "30766454"
+      },
+      "url": "https://www.semanticscholar.org/paper/04ce46ddaf3172ae7a335a022f254385454e333d",
+      "title": "Data Quality Assessment in Emergency Medical Services: What Are the Stakeholders' Perspectives?",
+      "venue": "Perspectives in health information management",
+      "year": 2019,
+      "citationCount": 12,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://perspectives.ahima.org/wp-content/uploads/2019/12/DataQualityAssessment.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3867416",
+          "name": "M. Mashoufi"
+        },
+        {
+          "authorId": "13291861",
+          "name": "H. Ayatollahi"
+        },
+        {
+          "authorId": "1469353861",
+          "name": "And Davoud Khorasani-Zavareh"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c2cfb2dfe2f427026e6eb932533b98ee1246b5e7",
+      "externalIds": {
+        "MAG": "2950484868",
+        "DOI": "10.3389/feart.2019.00166",
+        "CorpusId": 195856051
+      },
+      "url": "https://www.semanticscholar.org/paper/c2cfb2dfe2f427026e6eb932533b98ee1246b5e7",
+      "title": "Impact of Ice Data Quality and Treatment on Wave Hindcast Statistics in Seasonally Ice-Covered Seas",
+      "venue": "Frontiers in Earth Science",
+      "year": 2019,
+      "citationCount": 20,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/feart.2019.00166/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3389/feart.2019.00166?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3389/feart.2019.00166, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1400750572",
+          "name": "L. Tuomi"
+        },
+        {
+          "authorId": "68976054",
+          "name": "H. Kanarik"
+        },
+        {
+          "authorId": "97629189",
+          "name": "Jan‐Victor Björkqvist"
+        },
+        {
+          "authorId": "103691698",
+          "name": "Riikka Marjamaa"
+        },
+        {
+          "authorId": "144942765",
+          "name": "J. Vainio"
+        },
+        {
+          "authorId": "11723674",
+          "name": "R. Hordoir"
+        },
+        {
+          "authorId": "47959159",
+          "name": "A. Höglund"
+        },
+        {
+          "authorId": "12349053",
+          "name": "K. Kahma"
+        }
+      ],
+      "abstract": "The seasonal ice cover has significant effect on the wave climate of the Baltic Sea. We used the third-generation wave model WAM to simulate the Baltic Sea wave field during four ice seasons (2009â€ -2012). We used data from two different sources: daily ice charts compiled by FMI’s Ice Service and modeled daily mean ice concentration from SMHI’s NEMOâ€ Nordic model. We utilized two different methods: a fixed threshold of 30 % ice concentration, after which wave energy is set to zero, and a grid obstruction method up to 70 % ice concentration, after which wave energy is set to zero. The simulations run using ice chart data had slightly better accuracy than the simulation using NEMO-Nordic ice data, when compared to altimeter measurements. The analysis of the monthly mean statistics of significant wave height (SWH) showed that the differences between the simulations were relatively small and mainly seen in the Bothnian Bay, the Quark, and the eastern Gulf of Finland. There were larger differences, up to 3.2 m, in the monthly maximum values of SWH. These resulted from individual high wind situations during which the ice edge in the ice chart and NEMO-Nordic was located differently. The two different methods to handle ice concentration resulted only in small differences in the SWH statistics, typically near the ice edge. However, in some individual cases the two methods resulted in quite large differences in the simulated SWH and the handling of ice concentrations as additional grid obstructions could be important, for example, in operational wave forecasting."
+    },
+    {
+      "paperId": "a685625c7a43a31f2370f10e7a7634aad6f320e6",
+      "externalIds": {
+        "MAG": "2560405063",
+        "DBLP": "journals/neuroimage/EklundLV17",
+        "ArXiv": "1612.00690",
+        "DOI": "10.1101/091066",
+        "CorpusId": 5003049,
+        "PubMed": "28473287"
+      },
+      "url": "https://www.semanticscholar.org/paper/a685625c7a43a31f2370f10e7a7634aad6f320e6",
+      "title": "A Bayesian Heteroscedastic GLM with Application to fMRI Data with Motion Spikes",
+      "venue": "bioRxiv",
+      "year": 2016,
+      "citationCount": 20,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1612.00690",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1612.00690, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1409436948",
+          "name": "A. Eklund"
+        },
+        {
+          "authorId": "1754035",
+          "name": "M. Lindquist"
+        },
+        {
+          "authorId": "1764448",
+          "name": "M. Villani"
+        }
+      ],
+      "abstract": "We propose a voxel-wise general linear model with autoregressive noise and heteroscedastic noise innovations (GLMH) for analyzing functional magnetic resonance imaging (fMRI) data. The model is analyzed from a Bayesian perspective and has the benefit of automatically down-weighting time points close to motion spikes in a data-driven manner. We develop a highly efficient Markov Chain Monte Carlo (MCMC) algorithm that allows for Bayesian variable selection among the regressors to model both the mean (i.e., the design matrix) and variance. This makes it possible to include a broad range of explanatory variables in both the mean and variance (e.g., time trends, activation stimuli, head motion parameters and their temporal derivatives), and to compute the posterior probability of inclusion from the MCMC output. Variable selection is also applied to the lags in the autoregressive noise process, making it possible to infer the lag order from the data simultaneously with all other model parameters. We use both simulated data and real fMRI data from OpenfMRI to illustrate the importance of proper modeling of heteroscedasticity in fMRI data analysis. Our results show that the GLMH tends to detect more brain activity, compared to its homoscedastic counterpart, by allowing the variance to change over time depending on the degree of head motion."
+    },
+    {
+      "paperId": "b3fe679ffb2cbdcf70cfe7c600743ad3faa7a6b0",
+      "externalIds": {
+        "DOI": "10.21926/rpn.2602006",
+        "CorpusId": 288860076
+      },
+      "url": "https://www.semanticscholar.org/paper/b3fe679ffb2cbdcf70cfe7c600743ad3faa7a6b0",
+      "title": "Does Accepting a Wider Variety of Foods Mean Eating Better? The Food Paradox of Children and Adolescents with Feeding Difficulties",
+      "venue": "Recent Progress in Nutrition",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.21926/rpn.2602006",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.21926/rpn.2602006?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.21926/rpn.2602006, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2068583862",
+          "name": "Raquel Ricci"
+        },
+        {
+          "authorId": "2069972578",
+          "name": "Luana Romão Nogueira"
+        },
+        {
+          "authorId": "1933466045",
+          "name": "P. Maximino"
+        },
+        {
+          "authorId": "2439923997",
+          "name": "William Cabral de Miranda"
+        },
+        {
+          "authorId": "2439922461",
+          "name": "Karina Rizzardo Sella"
+        },
+        {
+          "authorId": "2303047629",
+          "name": "Nathalia de Paula"
+        },
+        {
+          "authorId": "2170840659",
+          "name": "M. Fisberg"
+        }
+      ],
+      "abstract": "This study descriptively investigates the food acceptance patterns and dietary profiles of neurotypical infants, children, and adolescents with Feeding Difficulties (FD) at a Brazilian pediatric reference center. It further examines whether a broader food repertoire translates into improved nutritional quality. The research, an observational, analytical cross-sectional study, analyzed data from 237 patients aged 10 to 204 months with FD. Findings revealed a discrepancy between family perceptions and professional assessments, with families underestimating the variety of foods their children accept. While the average number of accepted foods increased with age (from 19.68 items in infants to 29.46 in adolescents), suggesting an expansion of food exposure, this did not necessarily lead to improved nutritional quality. Infants’ diets, despite being smaller in repertoire, showed a more favorable nutritional profile with more fruits and vegetables and fewer snacks and sweets. However, from preschool age onwards, the dietary profile worsened, marked by increased intake of ultra-processed foods, snacks, sweets, and sugary drinks. The study identified a predominance of sweet-tasting, light-colored, solid, and “dissolvable” hard-solid texture foods among accepted items, reflecting sensory preferences. Ultra-processed and hyperpalatable foods, particularly sweets, showed increased acceptance from preschool age onward, while less chewing-demanding consistencies and infant formulas were characteristic of younger ages. This highlights the critical role of parental attitudes and early interventions to promote healthy eating habits, emphasizing that sensory preferences often guide food choices in children with FD, leading to a diet rich in less nutritious options."
+    },
+    {
+      "paperId": "29a81de0ec6585b6b6d799ac1c5d2927c0f7c4f8",
+      "externalIds": {
+        "DOI": "10.1212/WNL.0000000000214298",
+        "CorpusId": 282197083,
+        "PubMed": "41105904"
+      },
+      "url": "https://www.semanticscholar.org/paper/29a81de0ec6585b6b6d799ac1c5d2927c0f7c4f8",
+      "title": "Functional Connectivity Changes in Traumatic Brain Injury: A Systematic Review and Coordinate-Based Meta-Analysis of fMRI Studies.",
+      "venue": "Neurology",
+      "year": 2025,
+      "citationCount": 5,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1212/WNL.0000000000214298?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1212/WNL.0000000000214298, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2268039332",
+          "name": "Sandra Leskinen"
+        },
+        {
+          "authorId": "2056569990",
+          "name": "Neel H. Mehta"
+        },
+        {
+          "authorId": "2167140767",
+          "name": "Harshal A. Shah"
+        },
+        {
+          "authorId": "2305089742",
+          "name": "Mica Quelle"
+        },
+        {
+          "authorId": "2386400883",
+          "name": "Reese Woodworth"
+        },
+        {
+          "authorId": "2392148727",
+          "name": "G. Dituri"
+        },
+        {
+          "authorId": "3874989",
+          "name": "C. Balucani"
+        },
+        {
+          "authorId": "2243310561",
+          "name": "Randy S. D’Amico"
+        }
+      ],
+      "abstract": "BACKGROUND AND OBJECTIVES\nTraumatic brain injury (TBI) is associated with widespread disruptions in functional connectivity (FC), yet how these alterations vary by injury severity remains unclear. Traditional classification systems fail to capture network-level dysfunction, limiting prognostic accuracy and targeted rehabilitation strategies. The aim of this study was to systematically evaluate fMRI-detected FC alterations after mild, moderate-severe, and severe TBI using coordinate-based meta-analysis and network-level mapping.\n\n\nMETHODS\nA systematic search of MEDLINE/PubMed, Embase, and Web of Science was conducted to identify studies examining FC changes in TBI using fMRI. This review was not funded or prospectively registered. Studies were stratified by TBI severity and time since injury. Significant peak Montreal Neurological Institute coordinates were extracted, matched to the Yeo-17 brain network atlas, and analyzed using Seed-based d Mapping with Permutation of Subject Images (SDM-PSI). Study quality and evidence level were assessed using an adapted NIH Quality Assessment Tool and the Oxford Centre for Evidence-Based Medicine criteria. Eligible studies included adult participants with TBI assessed using resting-state or task-based fMRI; studies lacking severity classification or involving pediatric populations were excluded.\n\n\nRESULTS\nSeventy-six studies were included, totaling 5,064 participants (2,993 patients with TBI, 1,914 controls; mean age 35.5 vs 35.0 years; 37.6% female overall). Mild TBI (mTBI) was the most common severity (n = 59 studies; 77.6%). Twenty-two studies contributed data for meta-analysis: 15 with resting-state fMRI and 7 with task-based fMRI. Aggregated peak coordinates most frequently mapped to subcomponents of the default mode (22.9%), ventral attention (18.8%), and somatomotor (10.1%) networks in mTBI and to the frontoparietal (36%), ventral attention (20%), and dorsal attention (14.7%) networks in moderate-severe/severe TBI. SDM-PSI identified uncorrected clusters in default mode and frontoparietal regions in mTBI and moderate-severe/severe TBI, respectively, but no clusters survived family-wise error rate correction (standardized mean difference Z score range -1.986 to 3.911, p < 0.05 uncorrected). Heterogeneity was low across analyses (I2 < 21%).\n\n\nDISCUSSION\nFC changes after TBI potentially involve large-scale brain networks such as the default mode, attention, and executive control networks in a severity-dependent and phase-dependent manner. Although meta-analysis revealed consistent patterns, corrected statistical significance was not achieved, highlighting the need for larger, harmonized data sets and standardized analysis pipelines in future research."
+    },
+    {
+      "paperId": "e4dfcefd7772180e25a7972fcb8136ef2ed4b084",
+      "externalIds": {
+        "MAG": "2610899545",
+        "PubMedCentral": "5417595",
+        "DOI": "10.1371/journal.pone.0176810",
+        "CorpusId": 7481664,
+        "PubMed": "28472074"
+      },
+      "url": "https://www.semanticscholar.org/paper/e4dfcefd7772180e25a7972fcb8136ef2ed4b084",
+      "title": "Data quality and factor analysis of the Danish version of the Relationship Scale Questionnaire",
+      "venue": "PLoS ONE",
+      "year": 2017,
+      "citationCount": 9,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0176810&type=printable",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5417595, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3929291",
+          "name": "C. M. Andersen"
+        },
+        {
+          "authorId": "47194007",
+          "name": "A. Pedersen"
+        },
+        {
+          "authorId": "27427828",
+          "name": "A. Carlsen"
+        },
+        {
+          "authorId": "3349136",
+          "name": "F. Olesen"
+        },
+        {
+          "authorId": "2680190",
+          "name": "P. Vedsted"
+        }
+      ],
+      "abstract": "Background The Relationship Scale Questionnaire (RSQ) is a widely-used measure of adult attachment, but whether the results obtained by the RSQ fit the attachment construct has only been examined to a limited extent. Objective The objectives of this study were to investigate the psychometric properties of the Danish translation of the RSQ and to test whether the results are consistent with the hypothesized model of attachment. Methods The study included two samples: 602 general practitioners and 611 cancer patients. The two samples were analyzed separately. Data quality was assessed by mean, median and missing values for each item, floor and ceiling effects, average inter-item correlations and Cronbach’s α for each subscale. Test-retest was assessed by intra-class correlations among 76 general practitioners. A confirmatory factor analysis was conducted to establish evidence of the four proposed subscales. Due to an inadequate fit of the model, data was randomly split into two equally sized subsamples and an exploratory factor analysis was conducted for all 30 items in the first subsample comprised of 286 cancer patients and 285 general practitioners. The EFA yielded a three-factor structure which was validated through a confirmatory factor analyses in a second subsample comprised of 278 cancer patients and 289 general practitioners. Results The data quality of the RSQ was generally good, except low internal consistency and low to moderate test-retest reliability. The four subscales of the RSQ were not confirmed by the confirmatory factor analysis. An exploratory factor analysis suggested a three-factor solution for both general practitioners and patients, which accounted for 61.1% of the variance among general practitioners and 62.5% among patients. The new three-factor solution was verified in a confirmatory factor analyses. Conclusion The proposed four-factor model of the RSQ could not be confirmed in this study. Similar challenges have been found by other studies validating the RSQ. An alternative three-factor structure was found for the RSQ."
+    },
+    {
+      "paperId": "36e8e3f47be801c254b3f8a597d4f7c6e4cc3241",
+      "externalIds": {
+        "PubMedCentral": "12368612",
+        "DOI": "10.1162/IMAG.a.114",
+        "CorpusId": 280474764,
+        "PubMed": "40851911"
+      },
+      "url": "https://www.semanticscholar.org/paper/36e8e3f47be801c254b3f8a597d4f7c6e4cc3241",
+      "title": "CICADA: An automated and flexible tool for comprehensive fMRI noise reduction",
+      "venue": "Imaging neuroscience",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12368612, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212074570",
+          "name": "Keith Dodd"
+        },
+        {
+          "authorId": "2293631593",
+          "name": "Maureen McHugo"
+        },
+        {
+          "authorId": "2354250202",
+          "name": "Lauren Sarabia"
+        },
+        {
+          "authorId": "2868158",
+          "name": "Korey P. Wylie"
+        },
+        {
+          "authorId": "4634727",
+          "name": "Kristina T. Legget"
+        },
+        {
+          "authorId": "47407451",
+          "name": "M. Cornier"
+        },
+        {
+          "authorId": "2354252776",
+          "name": "Jason R Tregellas"
+        }
+      ],
+      "abstract": "Abstract Independent component analysis (ICA) denoising methods can be highly effective for reducing functional magnetic resonance imaging (fMRI) noise. ICA denoising method success heavily depends, however, on the accurate classification of fMRI data ICs as either neural signal or noise. While manual IC classification (“manual ICA denoising”) is a current gold-standard, it requires extensive time and training. Automated methods of IC classification (“automated ICA denoising”), meanwhile, are less accurate and effective, especially in clinical populations where motion artifacts are more common. To address these challenges, a novel denoising method, Comprehensive Independent Component Analysis Denoising Assistant (CICADA), was developed. Uniquely, CICADA uses manual classification guidelines to automatically, comprehensively, and accurately capture most common sources of fMRI noise. As such, we hypothesized that CICADA would perform similarly to manual ICA denoising and outperform other current automated denoising methods. CICADA was evaluated against two well-established automated ICA denoising methods (FIX and ICA-AROMA) across three fMRI datasets. The datasets included high-motion resting-state (N = 57) and visual-task data (N = 53), both from individuals with schizophrenia, as well as low-motion resting-state healthy control data from an openly available dataset (N = 56). IC classification accuracy was first evaluated against manual IC classification in a subset (N = 30) of each dataset. Denoising performance efficacy was then evaluated with commonly used quality control (QC) benchmarks and correlations with fMRI noise profiles across all data. With a 97.9% mean overall accuracy in IC classification, CICADA performed nearly as well as manual IC classification and was significantly more accurate than FIX (92.9% mean overall accuracy; all p-values < 0.01) and ICA-AROMA (83.8% mean overall accuracy; all p-values < 0.001). CICADA also matched or outperformed FIX and ICA-AROMA across most QC and noise profile metrics across all data. Furthermore, CICADA greatly eased implementation of manual ICA denoising by decreasing the number of ICs a user must inspect by an average of 75%. Overall, CICADA is a novel, accurate, comprehensive, and automated ICA denoising tool for use in both resting-state and task-based fMRI. It performed similarly to the labor-intensive manual IC classification gold-standard and, in some datasets, outperformed current automated ICA denoising methods. Finally, CICADA may facilitate more efficient manual ICA denoising without reducing efficacy."
+    },
+    {
+      "paperId": "a31e278722813aa600c34a0c2b0fdbc803540b5e",
+      "externalIds": {
+        "DOI": "10.1109/ICBME68496.2025.11392189",
+        "CorpusId": 286242876
+      },
+      "url": "https://www.semanticscholar.org/paper/a31e278722813aa600c34a0c2b0fdbc803540b5e",
+      "title": "An Automatic Pipeline for Simultaneous EEG-FMRI Artifact-removal (SEFA)",
+      "venue": "Iranian Conference on Biomedical Engineering",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICBME68496.2025.11392189?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICBME68496.2025.11392189, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2421851161",
+          "name": "Farid Hosseinzadeh"
+        },
+        {
+          "authorId": "2396033437",
+          "name": "A. M. Mohammadi"
+        },
+        {
+          "authorId": "2347749554",
+          "name": "Mehrdad Anvarifard"
+        },
+        {
+          "authorId": "2352089763",
+          "name": "Sasan Keshavarz"
+        },
+        {
+          "authorId": "40590031",
+          "name": "E. Ebrahimzadeh"
+        },
+        {
+          "authorId": "2261929684",
+          "name": "H. Soltanian-Zadeh"
+        }
+      ],
+      "abstract": "Simultaneous EEG-fMRI provides complementary temporal and spatial information about brain function, but its utility is hindered by severe scanner-induced artifacts such as gradient and ballistocardiographic (BCG) noise. Manual artifact correction is effective but laborintensive, inconsistent, and difficult to scale. We introduce SEFA, a fully automated two-stage preprocessing pipeline for simultaneous EEG-fMRI that integrates MRI-specific artifact correction (average artifact subtraction, optimal basis set, and PCA/OBS modeling) with state-of-the-art EEG cleaning techniques adapted from a previous popular standard EEG preprocessing pipeline, HAPPE, including automated independent component classification (MARA and ICLabel), bad-channel detection, multitaper regression for line noise, and segment-level quality control. Validation against manually corrected datasets from a reward-based decision-making task demonstrated that SEFA achieves near-perfect equivalence with expert preprocessing. Event-related potentials (ERPs) from both approaches exhibited indistinguishable morphology, latency, and amplitude, with mean channel-wise correlations of $\\mathrm{r}=0.91 \\pm 0.14$, and 72 % of electrodes exceeding $\\mathrm{r}>0.90$. Signal-to-noise ratio (SNR) improved from $\\sim 0.8 \\text{dB}$ in raw data to 6.7 dB with SEFA, matching manual performance (6.9 dB). Statistical testing confirmed no significant differences in ERP amplitude or latency between automated and manual methods (all $\\mathrm{p} > \\text{0.1}$). By reducing operator bias and cutting processing time from hours to minutes, SEFA enables reproducible, scalable, and clinically feasible preprocessing of simultaneous EEG-fMRI data."
+    },
+    {
+      "paperId": "11e6ba8936a6210414086c718f1fb51b6419f1fd",
+      "externalIds": {
+        "DOI": "10.3390/electronics14224432",
+        "CorpusId": 283093525
+      },
+      "url": "https://www.semanticscholar.org/paper/11e6ba8936a6210414086c718f1fb51b6419f1fd",
+      "title": "Research on fMRI Image Generation from EEG Signals Based on Diffusion Models",
+      "venue": "Electronics",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/electronics14224432",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/electronics14224432?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/electronics14224432, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2140006926",
+          "name": "Xiaoming Sun"
+        },
+        {
+          "authorId": "2039143400",
+          "name": "Yutong Sun"
+        },
+        {
+          "authorId": "2349198159",
+          "name": "Junxia Chen"
+        },
+        {
+          "authorId": "2072391821",
+          "name": "Bochao Su"
+        },
+        {
+          "authorId": "103155086",
+          "name": "T. Nie"
+        },
+        {
+          "authorId": "2393096099",
+          "name": "Ke Shui"
+        }
+      ],
+      "abstract": "Amidrapid advances in intelligent medicine, decoding brain activity from electroencephalogram (EEG) signals has emerged as a critical technical frontier for brain–computer interfaces and medical AI systems. Given the inherent spatial resolution limitations of an EEG, researchers frequently integrate functional magnetic resonance imaging (fMRI) to enhance neural activity representation. However, fMRI acquisition is inherently complex. Consequently, efforts increasingly focus on cross-modal transformation methods that map EEG signals to fMRI data, thereby extending EEG applications in neural mechanism studies. The central challenge remains generating high-fidelity fMRI images from EEG signals. To address this, we propose a diffusion model-based framework for cross-modal EEG-to-fMRI generation. To address pronounced noise contamination in electroencephalographic (EEG) signals acquired via simultaneous recording systems and temporal misalignments between EEGs and functional magnetic resonance imaging (fMRI), we first apply Fourier transforms to EEG signals and perform dimensionality expansion. This constructs a spatiotemporally aligned EEG–fMRI paired dataset. Building on this foundation, we design an EEG encoder integrating a multi-layer recursive spectral attention mechanism with a residual architecture.In response to the limited dynamic mapping capabilities and suboptimal image quality prevalent in existing cross-modal generation research, we propose a diffusion-model-driven EEG-to-fMRI generation algorithm. This framework unifies the EEG feature encoder and a cross-modal interaction module within an end-to-end denoising U-Net architecture. By leveraging the diffusion process, EEG-derived features serve as conditional priors to guide fMRI reconstruction, enabling high-fidelity cross-modal image generation. Empirical evaluations on the resting-state NODDI dataset and the task-based XP-2 dataset demonstrate that our EEG encoder significantly enhances cross-modal representational congruence, providing robust semantic features for fMRI synthesis. Furthermore, the proposed cross-modal generative model achieves marked improvements in structural similarity, the root mean square error, and the peak signal-to-noise ratio in generated fMRI images, effectively resolving the nonlinear mapping challenge inherent in EEG–fMRI data."
+    },
+    {
+      "paperId": "5514b0114671630147d5397db0a89c7eeacdec5e",
+      "externalIds": {
+        "PubMedCentral": "10126373",
+        "DOI": "10.3389/fnins.2023.1096232",
+        "CorpusId": 258051656,
+        "PubMed": "37113158"
+      },
+      "url": "https://www.semanticscholar.org/paper/5514b0114671630147d5397db0a89c7eeacdec5e",
+      "title": "Brain motion networks predict head motion during rest- and task-fMRI",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2023,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2023.1096232/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10126373, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7339518",
+          "name": "D. Tomasi"
+        },
+        {
+          "authorId": "2184066",
+          "name": "N. Volkow"
+        }
+      ],
+      "abstract": "Introduction The capacity to stay still during scanning, which is necessary to avoid motion confounds while imaging, varies markedly between people. Methods Here we investigated the effect of head motion on functional connectivity using connectome-based predictive modeling (CPM) and publicly available brain functional magnetic resonance imaging (fMRI) data from 414 individuals with low frame-to-frame motion (Δd < 0.18 mm). Leave-one-out was used for internal cross-validation of head motion prediction in 207 participants, and twofold cross-validation was used in an independent sample (n = 207). Results and Discussion Parametric testing, as well as CPM-based permutations for null hypothesis testing, revealed strong linear associations between observed and predicted values of head motion. Motion prediction accuracy was higher for task- than for rest-fMRI, and for absolute head motion (d) than for Δd. Denoising attenuated the predictability of head motion, but stricter framewise displacement threshold (FD = 0.2 mm) for motion censoring did not alter the accuracy of the predictions obtained with lenient censoring (FD = 0.5 mm). For rest-fMRI, prediction accuracy was lower for individuals with low motion (mean Δd < 0.02 mm; n = 200) than for those with moderate motion (Δd < 0.04 mm; n = 414). The cerebellum and default-mode network (DMN) regions that forecasted individual differences in d and Δd during six different tasks- and two rest-fMRI sessions were consistently prone to the deleterious effect of head motion. However, these findings generalized to a novel group of 1,422 individuals but not to simulated datasets without neurobiological contributions, suggesting that cerebellar and DMN connectivity could partially reflect functional signals pertaining to inhibitory motor control during fMRI."
+    },
+    {
+      "paperId": "e93111b18da55133eb5cdbc3353ddd03801607e7",
+      "externalIds": {
+        "DOI": "10.1080/00387010.2024.2445691",
+        "CorpusId": 275166827
+      },
+      "url": "https://www.semanticscholar.org/paper/e93111b18da55133eb5cdbc3353ddd03801607e7",
+      "title": "Research on corn quality detection based on near-infrared spectroscopy",
+      "venue": "Spectroscopy Letters",
+      "year": 2024,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/00387010.2024.2445691?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/00387010.2024.2445691, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2311905446",
+          "name": "Zhenzhen Zhang"
+        },
+        {
+          "authorId": "49080140",
+          "name": "Panpan Xu"
+        },
+        {
+          "authorId": "7678351",
+          "name": "Haining Zhou"
+        },
+        {
+          "authorId": "2310399682",
+          "name": "Xinxin Peng"
+        },
+        {
+          "authorId": "2339733075",
+          "name": "Jun Qi"
+        },
+        {
+          "authorId": "2273937965",
+          "name": "Yan Zhang"
+        }
+      ],
+      "abstract": "Abstract To improve the efficiency and accuracy of corn quality detection, this study aims to utilize near-infrared (NIR) spectroscopy for the nondestructive analysis of key quality components in corn, including moisture, oil, protein, and starch. By applying first derivative (FD) preprocessing to the spectral data, background noise was removed, and signal features were enhanced. Multiple dimensionality reduction algorithms, such as synergy interval partial least squares (SiPLS), competitive adaptive reweighted sampling (CARS), successive projections algorithm (SPA), and correlation coefficient (CC), were employed to select the most representative characteristic wavelengths. Predictive models were then established using support vector machine (SVM) and backpropagation (BP) neural network. The results demonstrated that the SiPLS-CARS-SVM model exhibited superior performance in predicting moisture, oil, protein, and starch content, with higher coefficients of determination (R2P), lower root mean square error of prediction (RMSEP), and higher residual predictive deviation (RPD) compared to the BP neural network model. This study shows that NIR spectroscopy combined with the SiPLS-CARS-SVM model can significantly enhance the efficiency and accuracy of corn quality detection, providing a valuable reference for corn quality assessment and production."
+    },
+    {
+      "paperId": "7ec9740c0f56d021e2a1c93f1df3546fdd4c8bd8",
+      "externalIds": {
+        "PubMedCentral": "9882243",
+        "DOI": "10.1101/2023.01.12.523791",
+        "CorpusId": 255850223,
+        "PubMed": "36711722"
+      },
+      "url": "https://www.semanticscholar.org/paper/7ec9740c0f56d021e2a1c93f1df3546fdd4c8bd8",
+      "title": "Real-time feedback reduces participant motion during task-based fMRI",
+      "venue": "bioRxiv",
+      "year": 2023,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2023/01/24/2023.01.12.523791.full.pdf",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9882243, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "10880970",
+          "name": "Chad S. Rogers"
+        },
+        {
+          "authorId": "2218396193",
+          "name": "Michael S. Jones"
+        },
+        {
+          "authorId": "4425339",
+          "name": "Sarah McConkey"
+        },
+        {
+          "authorId": "41067765",
+          "name": "Drew J. McLaughlin"
+        },
+        {
+          "authorId": "3122160",
+          "name": "J. Peelle"
+        }
+      ],
+      "abstract": "The potential negative impact of head movement during fMRI has long been appreciated. Although a variety of prospective and retrospective approaches have been developed to help mitigate these effects, reducing head movement in the first place remains the most appealing strategy for optimizing data quality. Real-time interventions, in which participants are provided feedback regarding their scan-to-scan motion, have recently shown promise in reducing motion during resting state fMRI. However, whether feedback might similarly reduce motion during task-based fMRI is an open question. In particular, it is unclear whether participants can effectively monitor motion feedback while attending to task-related demands. Here we assessed whether a combination of real-time and between-run feedback could reduce head motion during task-based fMRI. During an auditory word repetition task, 78 adult participants (aged 19–81) were pseudorandomly assigned to receive feedback or not. Feedback was provided FIRMM software that used real-time calculation of realignment parameters to estimate participant motion. We quantified movement using framewise displacement (FD). We found that motion feedback resulted in a statistically significant reduction in participant head motion, with a small-to-moderate effect size (reducing average FD from 0.347 to 0.282). Reductions were most apparent in high-motion events. We conclude that under some circumstances real-time feedback may reduce head motion during task-based fMRI, although its effectiveness may depend on the specific participant population and task demands of a given study."
+    },
+    {
+      "paperId": "df35ff461fc24d05ddcb9a693e6f9fbf7a306e95",
+      "externalIds": {
+        "PubMedCentral": "12762093",
+        "DOI": "10.1093/geroni/igaf122.1783",
+        "CorpusId": 284480317
+      },
+      "url": "https://www.semanticscholar.org/paper/df35ff461fc24d05ddcb9a693e6f9fbf7a306e95",
+      "title": "Person-Place Fit and Quality of Life Among Older Adults in Disadvantaged Areas in Sweden",
+      "venue": "Innovation in aging",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12762093, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6958385",
+          "name": "M. Granbom"
+        },
+        {
+          "authorId": "15554989",
+          "name": "Afsaneh Taei"
+        },
+        {
+          "authorId": "2262474853",
+          "name": "Anders Kottorp"
+        }
+      ],
+      "abstract": "Abstract Disadvantaged residential areas (DAs), often affected by territorial stigmatization, influence the health and quality of life in older adults. Nevertheless, older adults may prefer to stay in these areas due to emotional bonds. With the Person-Place Fit Measure for Older Adults (PPFM-OA), older adults self-assess how their home and community environments suit their needs. The aim of the study was to explore associations between person-place fit and quality of life among older adults living in different types of DAs. Survey data were collected from 459 older adults living in urban areas with low socioeconomic status and depopulated rural areas in Sweden. Person-place fit was measured using the Swedish 19-item version of the PPFM-OA and quality of life was assessed with WHOQOL-BREF. Mean age was 76 years (SD 7), with 51% being women and 13% were not born in Sweden. Linear regression models demonstrated significant associations between person-place fit and all aspects of quality of life (overall QoL, overall health, physical health, psychological health, social relationships, and environment) even after adjusting for sex, gender and ADL performance. No differences were found between residents of urban and rural DAs. The study shows that older adults’ perceptions of how well their home and community environments meet their needs are associated with their quality of life. Furthermore, the results suggest that residential areas that, from an outsider perspective are considered non-age-friendly, may not be perceived as such by older the older residents."
+    },
+    {
+      "paperId": "640ed451decea2520db1e9b81c89c171acb93b5d",
+      "externalIds": {
+        "PubMedCentral": "10143236",
+        "DBLP": "journals/sensors/SatoHHWOKSM23",
+        "DOI": "10.3390/s23083867",
+        "CorpusId": 258085624,
+        "PubMed": "37112208"
+      },
+      "url": "https://www.semanticscholar.org/paper/640ed451decea2520db1e9b81c89c171acb93b5d",
+      "title": "Screening for Major Depressive Disorder Using a Wearable Ultra-Short-Term HRV Monitor and Signal Quality Indices",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2023,
+      "citationCount": 20,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/23/8/3867/pdf?version=1681129659",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10143236, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1382821820",
+          "name": "Shohei Sato"
+        },
+        {
+          "authorId": "2214225954",
+          "name": "Takuma Hiratsuka"
+        },
+        {
+          "authorId": "98728075",
+          "name": "Kenya Hasegawa"
+        },
+        {
+          "authorId": "2214187327",
+          "name": "Keisuke Watanabe"
+        },
+        {
+          "authorId": "48544087",
+          "name": "Yusuke Obara"
+        },
+        {
+          "authorId": "47489929",
+          "name": "Nobutoshi Kariya"
+        },
+        {
+          "authorId": "5267334",
+          "name": "T. Shinba"
+        },
+        {
+          "authorId": "2996284",
+          "name": "T. Matsui"
+        }
+      ],
+      "abstract": "To encourage potential major depressive disorder (MDD) patients to attend diagnostic sessions, we developed a novel MDD screening system based on sleep-induced autonomic nervous responses. The proposed method only requires a wristwatch device to be worn for 24 h. We evaluated heart rate variability (HRV) via wrist photoplethysmography (PPG). However, previous studies have indicated that HRV measurements obtained using wearable devices are susceptible to motion artifacts. We propose a novel method to improve screening accuracy by removing unreliable HRV data (identified on the basis of signal quality indices (SQIs) obtained by PPG sensors). The proposed algorithm enables real-time calculation of signal quality indices in the frequency domain (SQI-FD). A clinical study conducted at Maynds Tower Mental Clinic enrolled 40 MDD patients (mean age, 37.5 ± 8.8 years) diagnosed on the basis of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, and 29 healthy volunteers (mean age, 31.9 ± 13.0 years). Acceleration data were used to identify sleep states, and a linear classification model was trained and tested using HRV and pulse rate data. Ten-fold cross-validation showed a sensitivity of 87.3% (80.3% without SQI-FD data) and specificity of 84.0% (73.3% without SQI-FD data). Thus, SQI-FD drastically improved sensitivity and specificity."
+    },
+    {
+      "paperId": "39c088c179b99827df1687d6b2bdbd36d47a5e21",
+      "externalIds": {
+        "PubMedCentral": "11518827",
+        "DOI": "10.3389/fneur.2024.1425399",
+        "CorpusId": 273385594,
+        "PubMed": "39474366"
+      },
+      "url": "https://www.semanticscholar.org/paper/39c088c179b99827df1687d6b2bdbd36d47a5e21",
+      "title": "Brain functional alteration and cognitive performance in cardiovascular diseases: a systematic review of fMRI studies",
+      "venue": "Frontiers in Neurology",
+      "year": 2024,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3389/fneur.2024.1425399",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11518827, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2005381669",
+          "name": "Syeda Humayra"
+        },
+        {
+          "authorId": "12181995",
+          "name": "N. Yahya"
+        },
+        {
+          "authorId": "2233667278",
+          "name": "Chai Jia Ning"
+        },
+        {
+          "authorId": "8539896",
+          "name": "I. A. Mir"
+        },
+        {
+          "authorId": "2297434378",
+          "name": "Abdul Latiff Mohamed"
+        },
+        {
+          "authorId": "7645472",
+          "name": "H. A. Manan"
+        }
+      ],
+      "abstract": "Background Functional magnetic resonance imaging (fMRI) is a useful tool to evaluate brain inefficiencies secondary to cardiovascular diseases (CVDs); nevertheless, limited fMRI studies have been conducted to investigate the effect of CVDs on brain functional changes and cognitive function. This systematic review aims to explore, synthesise, and report fMRI outcomes (resting state and task-based) and cognitive performance in patients with CVDs. Methods Two reviewers independently searched published literature until April 2024 on ScienceDirect, PubMed, Web of Science, and ClinicalTrials.gov adhering to the PRISMA protocol. A total of 26 eligible studies were considered for full-text screening, of which 10 were included in this review. The methodological quality was assessed by mixed methods appraisal tool and was reported as empirically fair. Results Among 336 subjects with CVDs, aged between 49.90 ± 6.10 to 72.20 ± 5.70 years, the majority had coronary artery diseases (n = 177, 52.68%) and hypertension (n = 200, 59.52%), and approximately half of them were females (n = 169, 50.30%). Based on the qualitative synthesis, subjects with CVDs demonstrated an increased cognitive decline (reduced Mini-Mental State Examination/Montreal Cognitive Assessment mean values) and attenuated task performance (lower mean 2-back task scores and slower reaction time). Results also indicated impaired brain activity at the supplementary motor area associated with poor ejection fraction; reduced default mode network suppression linked to high low-density lipoprotein cholesterol; lower regional homogeneity and amplitude of low-frequency fluctuation values; and reduced functional connectivity. In summary, alterations in brain networks connectivity may have contributed to an impaired cognitive performance in patients with cardiovascular diseases. Conclusion It can be extrapolated that CVDs tend to alter the brain network connectivity and result in cognitive impairment and poorer task performance. However, for future imaging studies, more stringent and homogenous demographic data are highly recommended."
+    },
+    {
+      "paperId": "56a58b8408873d10ca39e8dd8772fd7e0f814a94",
+      "externalIds": {
+        "DOI": "10.1016/j.clinbiochem.2026.111096",
+        "CorpusId": 285438283,
+        "PubMed": "41655674"
+      },
+      "url": "https://www.semanticscholar.org/paper/56a58b8408873d10ca39e8dd8772fd7e0f814a94",
+      "title": "Inter-laboratory variability in vancomycin measurement in an external quality assessment scheme 2016-2025.",
+      "venue": "Clinical Biochemistry",
+      "year": 2026,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.clinbiochem.2026.111096",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.clinbiochem.2026.111096?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.clinbiochem.2026.111096, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2309616333",
+          "name": "A. Larsson"
+        },
+        {
+          "authorId": "2409710306",
+          "name": "Jonathan Cedernaes"
+        },
+        {
+          "authorId": "2300697349",
+          "name": "M. Eriksson"
+        },
+        {
+          "authorId": "2409703855",
+          "name": "Anders Helldén"
+        },
+        {
+          "authorId": "6194409",
+          "name": "Moa Skarin"
+        },
+        {
+          "authorId": "3706107",
+          "name": "P. Ranta"
+        },
+        {
+          "authorId": "2212783209",
+          "name": "Mathias Karlsson"
+        },
+        {
+          "authorId": "144487588",
+          "name": "Anna-Karin Hamberg"
+        }
+      ],
+      "abstract": "INTRODUCTION\nVancomycin is a critical antibiotic for treating severe Gram-positive infections. Due to its narrow therapeutic window, reliable plasma concentration measurements are essential for dose adjustment and avoiding toxicity. However, method-dependent analytical variability between immunoassay platforms may compromise result comparability.\n\n\nMETHODS\nData from 78 external quality assurance (EQA) samples distributed between 2016 and 2025 by Labquality (Helsinki, Finland) and Equalis (Uppsala, Sweden) were analyzed. Results from laboratories using immunoassays from Abbott Laboratories (n = 1391), Beckman Coulter (n = 172), Roche Diagnostics (n = 3584), Ortho Clinical Diagnostics (n = 78), Siemens Healthineers (n = 1670), Thermo Fisher (n = 152), and ARK Diagnostics (n = 33) were included (total = 7104). The mean consensus value for each sample was used as reference.\n\n\nRESULTS\nAcross the study period, Abbott Laboratories (+4.7%), Thermo Fisher (+12%), Ortho Clinical Diagnostics (-4.6%), and Siemens Healthineers (-4.9%) showed systematic biases relative to the consensus mean, whereas Beckman Coulter (-0.3%), Roche Diagnostics (<0.1%), and ARK Diagnostics (-2.4%) displayed good agreement. Temporal trends indicated method-specific drifts, most notably for Beckman Coulter (-20.2%) and Siemens Healthineers (+12.5%). Coefficients of variation ranged from 0.9% (ARK Diagnostics) to 12.1% (Beckman Coulter).\n\n\nCONCLUSION\nConsiderable intermethod bias and temporal drift exist among commonly used vancomycin immunoassays, underscoring the need for improved calibration harmonization and traceability to ensure consistent therapeutic drug monitoring."
+    },
+    {
+      "paperId": "4033edcb496536bc85c91c493488c51d04bd7019",
+      "externalIds": {
+        "PubMedCentral": "10009926",
+        "DOI": "10.1186/s13075-023-03026-6",
+        "CorpusId": 257485698,
+        "PubMed": "36915202"
+      },
+      "url": "https://www.semanticscholar.org/paper/4033edcb496536bc85c91c493488c51d04bd7019",
+      "title": "Site-specific assessment of spinal radiographic progression improves detection of TNF blocker-associated disease modification in axial spondyloarthritis: longitudinal observational data from the Swiss Clinical Quality Management Registry",
+      "venue": "Arthritis Research & Therapy",
+      "year": 2023,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://arthritis-research.biomedcentral.com/counter/pdf/10.1186/s13075-023-03026-6",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10009926, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2060039917",
+          "name": "V. Popova"
+        },
+        {
+          "authorId": "121521706",
+          "name": "S. Kissling"
+        },
+        {
+          "authorId": "5377581",
+          "name": "R. Micheroli"
+        },
+        {
+          "authorId": "2100012962",
+          "name": "René Bräm"
+        },
+        {
+          "authorId": "117108715",
+          "name": "M. de Hooge"
+        },
+        {
+          "authorId": "3625162",
+          "name": "X. Baraliakos"
+        },
+        {
+          "authorId": "49020752",
+          "name": "M. Nissen"
+        },
+        {
+          "authorId": "38319195",
+          "name": "B. Möller"
+        },
+        {
+          "authorId": "8511816",
+          "name": "P. Exer"
+        },
+        {
+          "authorId": "1962336642",
+          "name": "M. Andor"
+        },
+        {
+          "authorId": "4580511",
+          "name": "O. Distler"
+        },
+        {
+          "authorId": "2850097",
+          "name": "A. Scherer"
+        },
+        {
+          "authorId": "6490293",
+          "name": "C. Ospelt"
+        },
+        {
+          "authorId": "33749988",
+          "name": "A. Ciurea"
+        }
+      ],
+      "abstract": "Objectives To analyse whether time-varying treatment with tumour necrosis factor inhibitors (TNFi) in radiographic axial spondyloarthritis (r-axSpA) has a differential impact on structural damage progression on different spinal segments (cervical versus lumbar spine). Methods Patients with r-axSpA in the Swiss Clinical Quality Management cohort were included if cervical and lumbar radiographs were available at intervals of 2 years for a maximum of 10 years. Paired radiographs were scored by two calibrated readers according to the modified Stoke Ankylosing Spondylitis Spine Score (mSASSS). The relationship between TNFi use and progression in the cervical and the lumbar spine was analysed using generalised estimating equation models and adjustment for potential confounding. Radiographic progression per spinal segment was defined as an increase of ≥ 1 mSASSS unit or by the formation of ≥ 1 new syndesmophyte over 2 years. Results Mean ± SD symptom duration was 13.8 ± 9.8 years. Mean ± SD mSASSS progression per radiographic interval was 0.41 ± 1.69 units in the cervical spine and 0.45 ± 1.45 units in the lumbar spine ( p  = 0.66). Prior use of TNFi significantly reduced the odds of progression in the cervical spine by 68% (OR 0.32, 95% CI 0.14–0.72), but not in the lumbar spine (OR 0.99, 95% CI 0.52–1.88). A more restricted inhibition of progression in the lumbar spine was confirmed after multiple imputation of missing covariate data (OR 0.43, 95% CI 0.24–0.77 and 0.85, 95% CI 0.51–1.41, for the cervical and lumbar spine, respectively). It was also confirmed with progression defined as formation of ≥ 1 syndesmophyte (OR 0.31, 95% CI 0.12–0.80 versus OR 0.56, 95% CI 0.26–1.24 for the cervical and lumbar spine, respectively). Conclusion Disease modification by treatment with TNFi seems to more profoundly affect the cervical spine in this r-axSpA population with longstanding disease. Site-specific analysis of spinal progression might, therefore, improve detection of disease modification in clinical trials in axSpA."
+    },
+    {
+      "paperId": "561e38f72e1c4787f588a146e6733b632fa41d95",
+      "externalIds": {
+        "DBLP": "conf/isbi/DuanDWSD25",
+        "PubMedCentral": "12922508",
+        "ArXiv": "2502.15595",
+        "DOI": "10.1109/ISBI60581.2025.10980933",
+        "CorpusId": 276558213,
+        "PubMed": "41728049"
+      },
+      "url": "https://www.semanticscholar.org/paper/561e38f72e1c4787f588a146e6733b632fa41d95",
+      "title": "CAUSAL MODELING OF FMRI TIME-SERIES FOR INTERPRETABLE AUTISM SPECTRUM DISORDER CLASSIFICATION",
+      "venue": "IEEE International Symposium on Biomedical Imaging",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.15595, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2307079255",
+          "name": "Peiyu Duan"
+        },
+        {
+          "authorId": "5507046",
+          "name": "N. Dvornek"
+        },
+        {
+          "authorId": "2235889581",
+          "name": "Jiyao Wang"
+        },
+        {
+          "authorId": "2273001266",
+          "name": "Lawrence H. Staib"
+        },
+        {
+          "authorId": "2308273251",
+          "name": "James S. Duncan"
+        }
+      ],
+      "abstract": "Autism spectrum disorder (ASD) is a neurological and developmental disorder that affects social and communicative behaviors. It emerges in early life and is generally associated with lifelong disabilities. Thus, accurate and early diagnosis could facilitate treatment outcomes for those with ASD. Functional magnetic resonance imaging (fMRI) is a useful tool that measures changes in brain signaling to facilitate our understanding of ASD. Much effort is being made to identify ASD biomarkers using various connectome-based machine learning and deep learning classifiers. However, correlation-based models cannot capture the non-linear interactions between brain regions. To solve this problem, we introduce a causality-inspired deep learning model that uses time-series information from fMRI and captures causality among ROIs useful for ASD classification. The model is compared with other baseline and state-of-the-art models with 5-fold cross-validation on the ABIDE dataset. We filtered the dataset by choosing all the images with mean FD less than 15mm to ensure data quality. Our proposed model achieved the highest average classification accuracy of 71.9% and an average AUC of 75.8%. Moreover, the inter-ROI causality interpretation of the model suggests that the left precuneus, right precuneus, and cerebellum are placed in the top 10 ROIs in inter-ROI causality among the ASD population. In contrast, these ROIs are not ranked in the top 10 in the control population. We have validated our findings with the literature and found that abnormalities in these ROIs are often associated with ASD."
+    },
+    {
+      "paperId": "6937baddf97566075e948aa9e55c05d3d7110c63",
+      "externalIds": {
+        "PubMedCentral": "11208545",
+        "DOI": "10.1038/s41598-024-65619-8",
+        "CorpusId": 270763135,
+        "PubMed": "38926539"
+      },
+      "url": "https://www.semanticscholar.org/paper/6937baddf97566075e948aa9e55c05d3d7110c63",
+      "title": "Data imbalance in cardiac health diagnostics using CECG-GAN",
+      "venue": "Scientific Reports",
+      "year": 2024,
+      "citationCount": 15,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-024-65619-8.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11208545, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2284611684",
+          "name": "Yang Yang"
+        },
+        {
+          "authorId": "2256959229",
+          "name": "Tianyu Lan"
+        },
+        {
+          "authorId": "2387184666",
+          "name": "Yang Wang"
+        },
+        {
+          "authorId": "2284473365",
+          "name": "Fengtian Li"
+        },
+        {
+          "authorId": "2155272884",
+          "name": "Liyan Liu"
+        },
+        {
+          "authorId": "2308463868",
+          "name": "Xupeng Huang"
+        },
+        {
+          "authorId": "2284572451",
+          "name": "Fei Gao"
+        },
+        {
+          "authorId": "2308649889",
+          "name": "Shuhua Jiang"
+        },
+        {
+          "authorId": "2257887879",
+          "name": "Zhijun Zhang"
+        },
+        {
+          "authorId": "2284485743",
+          "name": "Xing Chen"
+        }
+      ],
+      "abstract": "Heart disease is the world’s leading cause of death. Diagnostic models based on electrocardiograms (ECGs) are often limited by the scarcity of high-quality data and issues of data imbalance. To address these challenges, we propose a conditional generative adversarial network (CECG-GAN). This strategy enables the generation of samples that closely approximate the distribution of ECG data. Additionally, CECG-GAN addresses waveform jitter, slow processing speeds, and dataset imbalance issues through the integration of a transformer architecture. We evaluated this approach using two datasets: MIT-BIH and CSPC2020. The experimental results demonstrate that CECG-GAN achieves outstanding performance metrics. Notably, the percentage root mean square difference (PRD) reached 55.048, indicating a high degree of similarity between generated and actual ECG waveforms. Additionally, the Fréchet distance (FD) was approximately 1.139, the root mean square error (RMSE) registered at 0.232, and the mean absolute error (MAE) was recorded at 0.166."
+    },
+    {
+      "paperId": "787f4d27a392e339c9491c2a7e5684f83075dc6d",
+      "externalIds": {
+        "MAG": "2105545913",
+        "PubMedCentral": "3648631",
+        "DOI": "10.1016/j.mri.2012.11.007",
+        "CorpusId": 24968848,
+        "PubMed": "23290482"
+      },
+      "url": "https://www.semanticscholar.org/paper/787f4d27a392e339c9491c2a7e5684f83075dc6d",
+      "title": "A quality control method for detecting and suppressing uncorrected residual motion in fMRI studies",
+      "venue": "Magnetic Resonance Imaging",
+      "year": 2013,
+      "citationCount": 23,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc3648631?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3648631, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1745549",
+          "name": "Anthony G. Christodoulou"
+        },
+        {
+          "authorId": "2057268446",
+          "name": "T. Bauer"
+        },
+        {
+          "authorId": "2662745",
+          "name": "K. Kiehl"
+        },
+        {
+          "authorId": "7529320",
+          "name": "Sarah W. Feldstein Ewing"
+        },
+        {
+          "authorId": "4334169",
+          "name": "A. Bryan"
+        },
+        {
+          "authorId": "144048760",
+          "name": "V. Calhoun"
+        }
+      ],
+      "abstract": "Motion correction is an important step in the functional magnetic resonance imaging (fMRI) analysis pipeline. While many studies simply exclude subjects who are estimated to have moved beyond an arbitrary threshold, there exists no objective method for determining an appropriate threshold. Furthermore, any criterion based only upon motion estimation ignores the potential for proper realignment. The method proposed here uses unsupervised learning (specifically k-means clustering) on features derived from the mean square derivative (MSD) of the signal before and after realignment to identify problem data. These classifications are refined through analysis of correlation between subject activation maps and the mean activation map, as well as the relationship between tasking and motion as measured through regression of the canonical hemodynamic response functions to fit both estimated motion parameters and MSD. The MSD is further used to identify specific scans containing residual motion, data which is suppressed by adding nuisance regressors to the general linear model; this statistical suppression is performed for identified problem subjects, but has potential for use over all subjects. For problem subjects, our results show increased hemodynamic activity more consistent with group results; that is, the addition of nuisance regressors resulted in a doubling of the correlation between the activation map for the problem subjects and the activation map for all subjects. The proposed method should be useful in helping fMRI researchers make more efficient use of their data by reducing the need to exclude entire subjects from studies and thus collect new data to replace excluded subjects."
+    },
+    {
+      "paperId": "ecdc3385452c6fea46bd9692e3826d2c2553361c",
+      "externalIds": {
+        "DOI": "10.48175/ijarsct-36590",
+        "CorpusId": 289275994
+      },
+      "url": "https://www.semanticscholar.org/paper/ecdc3385452c6fea46bd9692e3826d2c2553361c",
+      "title": "Impact of Healthcare Infrastructure Quality on Patient Satisfaction and Retention in Private Hospitals",
+      "venue": "International Journal of Advanced Research in Science, Communication and Technology",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.48175/ijarsct-36590",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.48175/ijarsct-36590?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48175/ijarsct-36590, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2442688357",
+          "name": "Sanjay Kumar Suman and Prof. Anshu Goel"
+        }
+      ],
+      "abstract": "This paper looks at how the quality of infrastructure in private hospitals in India affects whether patients are satisfied with their visit and whether they come back to the same hospital in the future. The study collected primary data from 96 patients who visited a private hospital at least once in the past year. A structured questionnaire with 20 questions was used. The questionnaire covered eight areas of infrastructure quality -cleanliness, medical equipment, waiting time, staff communication, physical environment, digital services, patient room comfort, and support services. Data was analyzed using percentage analysis, mean scores, standard deviation, and correlation analysis in Microsoft Excel.\nThe results show that all eight infrastructure areas have a positive relationship with both patient satisfaction and patient retention. Modern medical equipment got the highest satisfaction score (mean = 3.95) while waiting time got the lowest (mean = 3.19). Staff behavior and communication quality showed the strongest link with patient retention, with correlation values of 0.79 and 0.81 across two retention measures. About 80.2% of patients said that rude staff behavior would stop them from returning to the same hospital, even if the medical treatment was excellent. About 77.1% said poor cleanliness would make them switch hospitals. Both alternate hypotheses of the study were accepted, confirming that healthcare infrastructure quality significantly impacts patient satisfaction and retention in Indian private hospitals"
+    },
+    {
+      "paperId": "58addb41573d00a449e3014dafaeea3bea3be0be",
+      "externalIds": {
+        "PubMedCentral": "13292408",
+        "DOI": "10.1016/j.ero.2026.02.002",
+        "CorpusId": 286201985,
+        "PubMed": "42370120"
+      },
+      "url": "https://www.semanticscholar.org/paper/58addb41573d00a449e3014dafaeea3bea3be0be",
+      "title": "Standardised multidisciplinary rehabilitation improves health-related quality of life and productivity costs in patients with rheumatic, musculoskeletal and other diseases",
+      "venue": "EULAR rheumatology open",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ero.eular.org/article/S3050-7081(26)00019-4/pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13292408, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2074148100",
+          "name": "I. Johansen"
+        },
+        {
+          "authorId": "2305940773",
+          "name": "R. H. Moe"
+        },
+        {
+          "authorId": "2219845738",
+          "name": "I. Eid"
+        },
+        {
+          "authorId": "40986177",
+          "name": "H. Fossmo"
+        },
+        {
+          "authorId": "2330746605",
+          "name": "Anniken Hjellbakk Hole"
+        },
+        {
+          "authorId": "1403972603",
+          "name": "Tarja Rajalahti Kvalheim"
+        },
+        {
+          "authorId": "2219844778",
+          "name": "A. D. Lyken"
+        },
+        {
+          "authorId": "2269076437",
+          "name": "Anders Orpana"
+        },
+        {
+          "authorId": "81579980",
+          "name": "M. Vervaart"
+        },
+        {
+          "authorId": "2305715187",
+          "name": "I. Kjeken"
+        }
+      ],
+      "abstract": "Objectives This study aims to assess changes in health-related quality of life (HRQoL) and productivity costs following rehabilitation. Methods This prospective cohort study of rheumatic and musculoskeletal diseases (RMDs) and 7 other groups collected HRQoL EuroQol 5-Dimension 5-Level (EQ-5D-5L) data for 12 months and work absence data for 24 months postrehabilitation. Differences from baseline in quality-adjusted life years (QALYs) and productivity costs were estimated using the area-under-the-curve method and human capital approach, respectively. Results were adjusted for age, gender (biologically), and education. Results We included 3192 patients: mean age 53.1 years, 71% female, 42% had RMDs. HRQoL improved for all participants over 12 months, except for neurological and cancer patients. Differences in QALYs from baseline ranged from −0.014 (neurological diseases) to 0.075 (RMDs). Among 2642 employed participants, productivity costs decreased over 24 months, driven mainly by reduced sick leave (largest in cancer €18,110, smallest in neurological diseases €5747). In contrast, productivity costs for severe obesity increased by €11,614. Mean rehabilitation costs ranged from €3072 to €11,674 for cancer and neurological diseases, respectively, and were €7923 for RMDs. Conclusions Following rehabilitation, participants improved in HRQoL and reduced productivity costs from baseline, driven mainly by lower sick leave. Randomised controlled trials are needed to confirm the extent to which these improvements are attributable to the rehabilitation."
+    }
+  ]
+}

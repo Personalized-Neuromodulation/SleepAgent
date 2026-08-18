@@ -1,0 +1,675 @@
+{
+  "hypothesis_id": "hypothesis_2faad4927002",
+  "plan_id": "experiment_plan_cbd0440661bb",
+  "review_status": "partially_supported",
+  "support_score": 0.6,
+  "result_review": {
+    "judgment": "partially_supported",
+    "support_score": 0.6,
+    "critic_findings": [
+      "Sample size mismatch between primary analysis (n=51) and robustness check (n=93) may affect generalizability",
+      "Lack of multiple testing correction for multiple FC predictors",
+      "Normality checks for covariates (age, sex, motion) not explicitly reported"
+    ],
+    "confounds": [
+      "Unaccounted motion parameters in fMRI preprocessing",
+      "Potential batch effects from different scanning sessions"
+    ],
+    "alternative_explanations": [
+      "Thalamus connectivity may interact with other brain networks not included in the model",
+      "ISI scores could be influenced by factors unrelated to thalamus connectivity (e.g., sleep quality)"
+    ],
+    "next_steps": [
+      "Conduct power analysis for thalamus_frontoparietal_FC (CI: -0.01 to 0.31)",
+      "Implement Bonferroni correction for multiple FC predictors",
+      "Validate normality assumptions for covariates",
+      "Replicate findings with larger sample size (n>100) to address robustness concerns"
+    ]
+  },
+  "primary_tests": [
+    {
+      "test_id": "experiment_plan_cbd0440661bb_thalamus_DMN_FC_ISI",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "ISI",
+      "method": "linear_regression",
+      "n": 82,
+      "effect": 6.7487514446244905,
+      "p_value": 0.00017456585708054367,
+      "ci_low": 3.344204896397184,
+      "ci_high": 10.153297992851797,
+      "direction": "positive",
+      "passed": true,
+      "notes": "Primary controlled template: ordinary least squares linear regression.",
+      "metadata": {
+        "r_squared": 0.2780300726260754,
+        "adj_r_squared": 0.2305320510883171,
+        "coefficients": {
+          "Intercept": 6.173078206914801,
+          "thalamus_DMN_FC": 6.7487514446244905,
+          "mean_FD": -13.970540601833525,
+          "mean_DVARS": 1.6123125259038207,
+          "percent_high_motion": 25.685514090891346,
+          "max_FD": -0.0722523218063373
+        },
+        "p_values": {
+          "Intercept": 0.029262970772979725,
+          "thalamus_DMN_FC": 0.00017456585708054367,
+          "mean_FD": 0.2968391825342927,
+          "mean_DVARS": 0.0025800777465957627,
+          "percent_high_motion": 0.05285965054540983,
+          "max_FD": 0.6538573746019263
+        },
+        "covariates": [
+          "mean_FD",
+          "mean_DVARS",
+          "percent_high_motion",
+          "max_FD"
+        ],
+        "clinical_group_context": {
+          "task": "healthy_vs_nonhealthy_context",
+          "status": "run",
+          "healthy_label_rule": "subject_id starts with sub-YZHC",
+          "n_healthy": 19,
+          "n_nonhealthy": 63,
+          "predictor_group_difference": {
+            "variable": "thalamus_DMN_FC",
+            "is_scale_anchor": false,
+            "healthy_mean": 0.23112444221391093,
+            "nonhealthy_mean": 0.3244076513084307,
+            "nonhealthy_minus_healthy": 0.09328320909451976,
+            "welch_p": 0.44048871689421776,
+            "fdr_q": 0.6134032279411066,
+            "direction": "nonhealthy_greater",
+            "n_healthy": 19,
+            "n_nonhealthy": 63,
+            "status": "run"
+          },
+          "outcome_group_difference": {
+            "variable": "ISI",
+            "is_scale_anchor": true,
+            "healthy_mean": 2.6842105263157894,
+            "nonhealthy_mean": 16.174603174603174,
+            "nonhealthy_minus_healthy": 13.490392648287385,
+            "welch_p": 1.3844743601832678e-15,
+            "fdr_q": 1.3844743601832678e-15,
+            "direction": "nonhealthy_greater",
+            "n_healthy": 19,
+            "n_nonhealthy": 63,
+            "status": "run"
+          },
+          "within_group_associations": {
+            "method": "spearman_correlation",
+            "healthy": {
+              "group": "healthy",
+              "n": 19,
+              "effect": -0.005453013418055771,
+              "p_value": 0.9823239268992485,
+              "direction": "negative",
+              "status": "run"
+            },
+            "nonhealthy": {
+              "group": "nonhealthy",
+              "n": 63,
+              "effect": 0.3812788025364388,
+              "p_value": 0.0020487431605933884,
+              "direction": "positive",
+              "status": "run"
+            },
+            "effect_difference_hint": 0.3867318159544946,
+            "interpretation": "association_specific_to_nonhealthy"
+          },
+          "group_specific_models": {
+            "model": "linear_regression_by_health_group",
+            "healthy": {
+              "group": "healthy",
+              "n": 19,
+              "slope": -0.39384809015529276,
+              "intercept": 2.775238446469946,
+              "p_value": 0.8495082328991848,
+              "r_squared": 0.0021786432138454215,
+              "status": "run"
+            },
+            "nonhealthy": {
+              "group": "nonhealthy",
+              "n": 63,
+              "slope": 4.1708164667488825,
+              "intercept": 14.821558400586639,
+              "p_value": 0.0013305659298186714,
+              "r_squared": 0.1565175043685575,
+              "status": "run"
+            },
+            "interaction": {
+              "model": "outcome ~ predictor + healthy_label + predictor:healthy_label",
+              "n": 82,
+              "nonhealthy_slope": 4.170816466748877,
+              "healthy_slope": -0.3938480901552932,
+              "slope_difference_healthy_minus_nonhealthy": -4.56466455690417,
+              "p_value": 0.09997989858618353,
+              "r_squared": 0.6341739556284125,
+              "status": "run",
+              "interpretation": "no_nominal_slope_difference"
+            }
+          },
+          "clinical_interpretation": "fc_and_scale_both_different_between_groups"
+        }
+      }
+    },
+    {
+      "test_id": "experiment_plan_cbd0440661bb_thalamus_salience_FC_ISI",
+      "predictor": "thalamus_salience_FC",
+      "outcome": "ISI",
+      "method": "linear_regression",
+      "n": 82,
+      "effect": 6.989418056185588,
+      "p_value": 0.00031866231478514667,
+      "ci_low": 3.298838145812435,
+      "ci_high": 10.67999796655874,
+      "direction": "positive",
+      "passed": true,
+      "notes": "Primary controlled template: ordinary least squares linear regression.",
+      "metadata": {
+        "r_squared": 0.26715136186532307,
+        "adj_r_squared": 0.2189376356722521,
+        "coefficients": {
+          "Intercept": 5.277376937037889,
+          "thalamus_salience_FC": 6.989418056185588,
+          "mean_FD": -13.94321808278193,
+          "mean_DVARS": 1.8019282428147714,
+          "percent_high_motion": 24.4998425201808,
+          "max_FD": -0.0706839551745787
+        },
+        "p_values": {
+          "Intercept": 0.08003617952393002,
+          "thalamus_salience_FC": 0.00031866231478514667,
+          "mean_FD": 0.30191019195193375,
+          "mean_DVARS": 0.0014265457278137745,
+          "percent_high_motion": 0.06758096706870222,
+          "max_FD": 0.6632921661998099
+        },
+        "covariates": [
+          "mean_FD",
+          "mean_DVARS",
+          "percent_high_motion",
+          "max_FD"
+        ],
+        "clinical_group_context": {
+          "task": "healthy_vs_nonhealthy_context",
+          "status": "run",
+          "healthy_label_rule": "subject_id starts with sub-YZHC",
+          "n_healthy": 19,
+          "n_nonhealthy": 63,
+          "predictor_group_difference": {
+            "variable": "thalamus_salience_FC",
+            "is_scale_anchor": false,
+            "healthy_mean": 0.28533790397516584,
+            "nonhealthy_mean": 0.3472721895011841,
+            "nonhealthy_minus_healthy": 0.06193428552601826,
+            "welch_p": 0.6134032279411066,
+            "fdr_q": 0.6134032279411066,
+            "direction": "nonhealthy_greater",
+            "n_healthy": 19,
+            "n_nonhealthy": 63,
+            "status": "run"
+          },
+          "outcome_group_difference": {
+            "variable": "ISI",
+            "is_scale_anchor": true,
+            "healthy_mean": 2.6842105263157894,
+            "nonhealthy_mean": 16.174603174603174,
+            "nonhealthy_minus_healthy": 13.490392648287385,
+            "welch_p": 1.3844743601832678e-15,
+            "fdr_q": 1.3844743601832678e-15,
+            "direction": "nonhealthy_greater",
+            "n_healthy": 19,
+            "n_nonhealthy": 63,
+            "status": "run"
+          },
+          "within_group_associations": {
+            "method": "spearman_correlation",
+            "healthy": {
+              "group": "healthy",
+              "n": 19,
+              "effect": 0.29628039571436354,
+              "p_value": 0.21807319741817427,
+              "direction": "positive",
+              "status": "run"
+            },
+            "nonhealthy": {
+              "group": "nonhealthy",
+              "n": 63,
+              "effect": 0.31949405941623027,
+              "p_value": 0.010698266109077705,
+              "direction": "positive",
+              "status": "run"
+            },
+            "effect_difference_hint": 0.023213663701866727,
+            "interpretation": "association_specific_to_nonhealthy"
+          },
+          "group_specific_models": {
+            "model": "linear_regression_by_health_group",
+            "healthy": {
+              "group": "healthy",
+              "n": 19,
+              "slope": 0.17155727936081674,
+              "intercept": 2.6352587318112928,
+              "p_value": 0.9317884112363126,
+              "r_squared": 0.00044372771973288927,
+              "status": "run"
+            },
+            "nonhealthy": {
+              "group": "nonhealthy",
+              "n": 63,
+              "slope": 3.965836144706771,
+              "intercept": 14.797378573427924,
+              "p_value": 0.003651358241754196,
+              "r_squared": 0.13033188940617757,
+              "status": "run"
+            },
+            "interaction": {
+              "model": "outcome ~ predictor + healthy_label + predictor:healthy_label",
+              "n": 82,
+              "nonhealthy_slope": 3.965836144706776,
+              "healthy_slope": 0.17155727936081533,
+              "slope_difference_healthy_minus_nonhealthy": -3.7942788653459605,
+              "p_value": 0.16745018578485893,
+              "r_squared": 0.624416234468497,
+              "status": "run",
+              "interpretation": "no_nominal_slope_difference"
+            }
+          },
+          "clinical_interpretation": "fc_and_scale_both_different_between_groups"
+        }
+      }
+    },
+    {
+      "test_id": "experiment_plan_cbd0440661bb_thalamus_frontoparietal_FC_ISI",
+      "predictor": "thalamus_frontoparietal_FC",
+      "outcome": "ISI",
+      "method": "linear_regression",
+      "n": 82,
+      "effect": 5.142589099944574,
+      "p_value": 0.002798873688208742,
+      "ci_low": 1.8275754054380986,
+      "ci_high": 8.457602794451049,
+      "direction": "positive",
+      "passed": true,
+      "notes": "Primary controlled template: ordinary least squares linear regression.",
+      "metadata": {
+        "r_squared": 0.22704771234781151,
+        "adj_r_squared": 0.17619558816016745,
+        "coefficients": {
+          "Intercept": 7.83757601813116,
+          "thalamus_frontoparietal_FC": 5.142589099944574,
+          "mean_FD": -14.57587202321593,
+          "mean_DVARS": 1.5269006732438446,
+          "percent_high_motion": 25.003924224099446,
+          "max_FD": -0.06489352657864014
+        },
+        "p_values": {
+          "Intercept": 0.006256559016477023,
+          "thalamus_frontoparietal_FC": 0.002798873688208742,
+          "mean_FD": 0.2948442117751272,
+          "mean_DVARS": 0.0061346019378453204,
+          "percent_high_motion": 0.07009271669966327,
+          "max_FD": 0.6973098290565405
+        },
+        "covariates": [
+          "mean_FD",
+          "mean_DVARS",
+          "percent_high_motion",
+          "max_FD"
+        ],
+        "clinical_group_context": {
+          "task": "healthy_vs_nonhealthy_context",
+          "status": "run",
+          "healthy_label_rule": "subject_id starts with sub-YZHC",
+          "n_healthy": 19,
+          "n_nonhealthy": 63,
+          "predictor_group_difference": {
+            "variable": "thalamus_frontoparietal_FC",
+            "is_scale_anchor": false,
+            "healthy_mean": 0.11250359849936278,
+            "nonhealthy_mean": 0.1942258669157445,
+            "nonhealthy_minus_healthy": 0.08172226841638172,
+            "welch_p": 0.5169031374473975,
+            "fdr_q": 0.6134032279411066,
+            "direction": "nonhealthy_greater",
+            "n_healthy": 19,
+            "n_nonhealthy": 63,
+            "status": "run"
+          },
+          "outcome_group_difference": {
+            "variable": "ISI",
+            "is_scale_anchor": true,
+            "healthy_mean": 2.6842105263157894,
+            "nonhealthy_mean": 16.174603174603174,
+            "nonhealthy_minus_healthy": 13.490392648287385,
+            "welch_p": 1.3844743601832678e-15,
+            "fdr_q": 1.3844743601832678e-15,
+            "direction": "nonhealthy_greater",
+            "n_healthy": 19,
+            "n_nonhealthy": 63,
+            "status": "run"
+          },
+          "within_group_associations": {
+            "method": "spearman_correlation",
+            "healthy": {
+              "group": "healthy",
+              "n": 19,
+              "effect": 0.05816547645926156,
+              "p_value": 0.813025569747875,
+              "direction": "positive",
+              "status": "run"
+            },
+            "nonhealthy": {
+              "group": "nonhealthy",
+              "n": 63,
+              "effect": 0.20110139303974342,
+              "p_value": 0.11401022858002699,
+              "direction": "positive",
+              "status": "run"
+            },
+            "effect_difference_hint": 0.14293591658048185,
+            "interpretation": "no_nominal_within_group_association"
+          },
+          "group_specific_models": {
+            "model": "linear_regression_by_health_group",
+            "healthy": {
+              "group": "healthy",
+              "n": 19,
+              "slope": -0.3709647518277539,
+              "intercept": 2.725945395812835,
+              "p_value": 0.8541220180654705,
+              "r_squared": 0.002045749257360008,
+              "status": "run"
+            },
+            "nonhealthy": {
+              "group": "nonhealthy",
+              "n": 63,
+              "slope": 2.9989989360342433,
+              "intercept": 15.592120006372527,
+              "p_value": 0.013813503631743078,
+              "r_squared": 0.0953300396834752,
+              "status": "run"
+            },
+            "interaction": {
+              "model": "outcome ~ predictor + healthy_label + predictor:healthy_label",
+              "n": 82,
+              "nonhealthy_slope": 2.998998936034238,
+              "healthy_slope": -0.37096475182776434,
+              "slope_difference_healthy_minus_nonhealthy": -3.3699636878620023,
+              "p_value": 0.21907146431693597,
+              "r_squared": 0.6115876988132958,
+              "status": "run",
+              "interpretation": "no_nominal_slope_difference"
+            }
+          },
+          "clinical_interpretation": "fc_and_scale_both_different_between_groups"
+        }
+      }
+    },
+    {
+      "test_id": "experiment_plan_cbd0440661bb_thalamus_coord_y_ISI",
+      "predictor": "thalamus_coord_y",
+      "outcome": "ISI",
+      "method": "linear_regression",
+      "n": 82,
+      "effect": -0.19529352198581176,
+      "p_value": 0.1491438187805101,
+      "ci_low": -0.46219231899628355,
+      "ci_high": 0.07160527502465999,
+      "direction": "negative",
+      "passed": false,
+      "notes": "Primary controlled template: ordinary least squares linear regression.",
+      "metadata": {
+        "r_squared": 0.15361152799915512,
+        "adj_r_squared": 0.09792807589383634,
+        "coefficients": {
+          "Intercept": 13.293962088913245,
+          "thalamus_coord_y": -0.19529352198581176,
+          "mean_FD": -25.057301865847908,
+          "mean_DVARS": 0.8922560263400009,
+          "percent_high_motion": 33.10432820208766,
+          "max_FD": 0.04229704636283117
+        },
+        "p_values": {
+          "Intercept": 2.3650632020323555e-06,
+          "thalamus_coord_y": 0.1491438187805101,
+          "mean_FD": 0.08415332281652615,
+          "mean_DVARS": 0.09229404428516781,
+          "percent_high_motion": 0.02085245450206994,
+          "max_FD": 0.8114383487481657
+        },
+        "covariates": [
+          "mean_FD",
+          "mean_DVARS",
+          "percent_high_motion",
+          "max_FD"
+        ],
+        "clinical_group_context": {
+          "task": "healthy_vs_nonhealthy_context",
+          "status": "run",
+          "healthy_label_rule": "subject_id starts with sub-YZHC",
+          "n_healthy": 19,
+          "n_nonhealthy": 63,
+          "predictor_group_difference": {
+            "variable": "thalamus_coord_y",
+            "is_scale_anchor": false,
+            "healthy_mean": 6.220278474896405,
+            "nonhealthy_mean": 2.7608367517151713,
+            "nonhealthy_minus_healthy": -3.459441723181234,
+            "welch_p": 0.016034022832308828,
+            "fdr_q": 0.06413609132923531,
+            "direction": "nonhealthy_lower",
+            "n_healthy": 19,
+            "n_nonhealthy": 63,
+            "status": "run"
+          },
+          "outcome_group_difference": {
+            "variable": "ISI",
+            "is_scale_anchor": true,
+            "healthy_mean": 2.6842105263157894,
+            "nonhealthy_mean": 16.174603174603174,
+            "nonhealthy_minus_healthy": 13.490392648287385,
+            "welch_p": 1.3844743601832678e-15,
+            "fdr_q": 1.3844743601832678e-15,
+            "direction": "nonhealthy_greater",
+            "n_healthy": 19,
+            "n_nonhealthy": 63,
+            "status": "run"
+          },
+          "within_group_associations": {
+            "method": "spearman_correlation",
+            "healthy": {
+              "group": "healthy",
+              "n": 19,
+              "effect": -0.010154283578560425,
+              "p_value": 0.9670906842264646,
+              "direction": "negative",
+              "status": "run"
+            },
+            "nonhealthy": {
+              "group": "nonhealthy",
+              "n": 63,
+              "effect": 0.1297998132980681,
+              "p_value": 0.3106206592051363,
+              "direction": "positive",
+              "status": "run"
+            },
+            "effect_difference_hint": 0.13995409687662855,
+            "interpretation": "no_nominal_within_group_association"
+          },
+          "group_specific_models": {
+            "model": "linear_regression_by_health_group",
+            "healthy": {
+              "group": "healthy",
+              "n": 19,
+              "slope": -0.21844105332979147,
+              "intercept": 4.04297470837679,
+              "p_value": 0.23627980815636565,
+              "r_squared": 0.08144379492582321,
+              "status": "run"
+            },
+            "nonhealthy": {
+              "group": "nonhealthy",
+              "n": 63,
+              "slope": 0.03220510986862245,
+              "intercept": 16.08569012368486,
+              "p_value": 0.7642909003862703,
+              "r_squared": 0.0014849689123351828,
+              "status": "run"
+            },
+            "interaction": {
+              "model": "outcome ~ predictor + healthy_label + predictor:healthy_label",
+              "n": 82,
+              "nonhealthy_slope": 0.03220510986862187,
+              "healthy_slope": -0.21844105332979522,
+              "slope_difference_healthy_minus_nonhealthy": -0.2506461631984171,
+              "p_value": 0.33825116071266315,
+              "r_squared": 0.5812998120373098,
+              "status": "run",
+              "interpretation": "no_nominal_slope_difference"
+            }
+          },
+          "clinical_interpretation": "fc_and_scale_both_different_between_groups"
+        }
+      }
+    }
+  ],
+  "robustness_results": [
+    {
+      "check_id": "robustness_f69525a0108f",
+      "target_test_id": "experiment_plan_cbd0440661bb_thalamus_DMN_FC_ISI",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 6.7487514446244905,
+      "median_effect": 0.284185110135319,
+      "ci_low": 0.06617269874459308,
+      "ci_high": 0.5086621517078366,
+      "sign_stability": 0.99,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_db9347d34c41",
+      "target_test_id": "experiment_plan_cbd0440661bb_thalamus_salience_FC_ISI",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 6.989418056185588,
+      "median_effect": 0.2865984627372945,
+      "ci_low": 0.07326629032852475,
+      "ci_high": 0.4700579483118932,
+      "sign_stability": 0.99,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_a7f790f4d3dc",
+      "target_test_id": "experiment_plan_cbd0440661bb_thalamus_frontoparietal_FC_ISI",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": 5.142589099944574,
+      "median_effect": 0.20151167020785218,
+      "ci_low": -0.0021064936900755324,
+      "ci_high": 0.4155324503587365,
+      "sign_stability": 0.96,
+      "passed": true,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    },
+    {
+      "check_id": "robustness_db300f149a27",
+      "target_test_id": "experiment_plan_cbd0440661bb_thalamus_coord_y_ISI",
+      "method": "bootstrap_spearman_ci",
+      "n_iterations": 100,
+      "original_effect": -0.19529352198581176,
+      "median_effect": -0.10174198313545443,
+      "ci_low": -0.307235983617682,
+      "ci_high": 0.1404286200462178,
+      "sign_stability": 0.79,
+      "passed": false,
+      "notes": "Bootstrap resampling of the primary Spearman effect."
+    }
+  ],
+  "negative_control_results": [
+    {
+      "control_id": "negative_control_b796081d1e0e",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 93,
+      "effect": -0.08700128316075317,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_7255e5292acd",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_salience_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 93,
+      "effect": -0.02754319477186595,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_642c0c8e3ebc",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_frontoparietal_FC",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 93,
+      "effect": -0.06290471785383903,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_715305e0b73a",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_coord_y",
+      "outcome": "global_signal_psd_power_mean",
+      "n": 93,
+      "effect": 0.06904735712985771,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_74f30b35fa74",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_DMN_FC",
+      "outcome": "global_signal_psd_power_max",
+      "n": 93,
+      "effect": -0.014310602875922554,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_b0714c38ce65",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_salience_FC",
+      "outcome": "global_signal_psd_power_max",
+      "n": 93,
+      "effect": 0.08189425295418455,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_1b59fb4e1597",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_frontoparietal_FC",
+      "outcome": "global_signal_psd_power_max",
+      "n": 93,
+      "effect": -0.011460420238486467,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    },
+    {
+      "control_id": "negative_control_ca041aea8a08",
+      "control_type": "negative_control_outcome",
+      "predictor": "thalamus_coord_y",
+      "outcome": "global_signal_psd_power_max",
+      "n": 93,
+      "effect": 0.07019835614150009,
+      "passed": true,
+      "notes": "A negative control should not show a stronger nominal association."
+    }
+  ]
+}

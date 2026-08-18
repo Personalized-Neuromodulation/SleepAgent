@@ -1,0 +1,47 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "41013363",
+      "31209175",
+      "24249784"
+    ],
+    "translationset": [
+      {
+        "from": "combining",
+        "to": "\"combinable\"[All Fields] OR \"combinated\"[All Fields] OR \"combination\"[All Fields] OR \"combinational\"[All Fields] OR \"combinations\"[All Fields] OR \"combinative\"[All Fields] OR \"combine\"[All Fields] OR \"combined\"[All Fields] OR \"combines\"[All Fields] OR \"combining\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "sleep disorder",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorder\"[All Fields]) OR \"sleep disorder\"[All Fields]"
+      },
+      {
+        "from": "biomarkers",
+        "to": "\"biomarker's\"[All Fields] OR \"biomarkers\"[Supplementary Concept] OR \"biomarkers\"[All Fields] OR \"biomarker\"[All Fields] OR \"biomarkers\"[MeSH Terms]"
+      }
+    ],
+    "querytranslation": "(\"combinable\"[All Fields] OR \"combinated\"[All Fields] OR \"combination\"[All Fields] OR \"combinational\"[All Fields] OR \"combinations\"[All Fields] OR \"combinative\"[All Fields] OR \"combine\"[All Fields] OR \"combined\"[All Fields] OR \"combines\"[All Fields] OR \"combining\"[All Fields]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorder\"[All Fields]) OR \"sleep disorder\"[All Fields]) AND (\"biomarker s\"[All Fields] OR \"biomarkers\"[Supplementary Concept] OR \"biomarkers\"[All Fields] OR \"biomarker\"[All Fields] OR \"biomarkers\"[MeSH Terms])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "for"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

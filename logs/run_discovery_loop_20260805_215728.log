@@ -1,0 +1,106 @@
+[run_discovery_loop] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_discovery_loop] config=/tmp/sleepagent_full_discovery_loop_upcoBW.yaml
+[run_discovery_loop] iterations=config_default
+[run_discovery_loop] python=/opt/fsl/bin/python
+[run_discovery_loop] log_file=logs/run_discovery_loop_20260805_215728.log
+[run_discovery_loop] effective_config=/tmp/sleepagent_full_discovery_loop_upcoBW.yaml
+[run_discovery_loop] max_iterations=1
+[run_discovery_loop] hypothesis_config=/home/zyb/Agent_skills/SleepAgent/configs/hypothesis_config.yaml
+[run_discovery_loop] experiment_config=/home/zyb/Agent_skills/SleepAgent/configs/experiment_config.yaml
+[run_discovery_loop] hypothesis inputs:
+[run_discovery_loop] hypothesis_input.evidence_table_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_table.json exists=true size=36813779
+[run_discovery_loop] hypothesis_input.knowledge_graph_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/mechanism_graph.json exists=true size=14631707
+[run_discovery_loop] hypothesis_input.llm_evidence_context_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_evidence_context.json exists=true size=1544192
+[run_discovery_loop] hypothesis_input.llm_mechanism_context_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_mechanism_context.json exists=true size=616697
+[run_discovery_loop] hypothesis_input.prior_hypotheses_json=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/top_k_hypotheses.json exists=false size=0
+[run_discovery_loop] hypothesis_input.experimental_feedback=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/experimental_feedback.json exists=false size=0
+[run_discovery_loop] hypothesis_input.reward_memory=/home/zyb/Agent_skills/SleepAgent/outputs/memory/reward_memory.json exists=false size=0
+[run_discovery_loop] hypothesis_input.context_blocks_json=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/context_blocks.json exists=false size=0
+[run_discovery_loop] experiment inputs:
+[run_discovery_loop] experiment_input.hypothesis_pool=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json exists=false size=0
+[run_discovery_loop] experiment_input.data_profile=/home/zyb/Agent_skills/SleepAgent/outputs/profiles/analysis_ready_profile.yaml exists=true size=50
+[run_discovery_loop] experiment_input.approved_variables=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/approved_variables_from_grounding.yaml exists=true size=23
+[run_discovery_loop] experiment_input.variable_mapping=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_to_variable_map.yaml exists=true size=3612
+[run_discovery_loop] expected_hypothesis_pool=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json
+[run_discovery_loop] experiment_reads_hypothesis_pool=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json
+[discovery_loop] start config=/tmp/sleepagent_full_discovery_loop_upcoBW.yaml max_iterations=1
+[discovery_loop] hypothesis_config=/home/zyb/Agent_skills/SleepAgent/configs/hypothesis_config.yaml
+[discovery_loop] experiment_config=/home/zyb/Agent_skills/SleepAgent/configs/experiment_config.yaml
+[discovery_loop] foundation_config=/home/zyb/Agent_skills/SleepAgent/configs/foundation_config.yaml
+[discovery_loop] grounding_config=/home/zyb/Agent_skills/SleepAgent/configs/grounding_config.yaml
+[discovery_loop] iteration_001 hypothesis start
+[llm] task=hypothesis_generation profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_generation profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_review profile=reasoning provider=ollama model=qwen3:14b
+[llm] task=hypothesis_rank profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_evolution profile=reasoning provider=ollama model=qwen3:14b
+[llm] task=hypothesis_meta_review profile=disabled provider=rules model=deterministic
+[hypothesis] experiment_preflight_constraints avoid_signatures=0 tested_hypotheses=0 failed_tests=0 negative_failed_predictors=0
+[hypothesis] start session=sleep_hypothesis_session
+[hypothesis] inputs evidence=500 graph_nodes=575 graph_edges=2000 priors=0 feedback=0 memory=0
+[hypothesis] llm provider=ollama model=qwen3:14b enabled=True
+[hypothesis] ContextAgent done
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=16981
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=4712
+[hypothesis][llm] provider=ollama model=qwen3:14b json=True messages=2 prompt_chars=18879
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/discovery_loop/discovery_runner.py", line 69, in run_discovery_loop
+    hypothesis_summary = run_hypothesis_pipeline(iteration_hypothesis_config_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/hypothesis_pipeline.py", line 18, in run_hypothesis_pipeline
+    return HypothesisSupervisor().run(config_path_value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/supervisor.py", line 45, in run
+    state = self.generation_agent.run(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/agents/generation_agent.py", line 467, in run
+    state.registry = generate_initial_hypotheses(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/agents/generation_agent.py", line 447, in generate_initial_hypotheses
+    generate_hypothesis_from_evidence(
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/agents/generation_agent.py", line 336, in generate_hypothesis_from_evidence
+    return _generate_with_llm(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/agents/generation_agent.py", line 235, in _generate_with_llm
+    payload = client.call_json(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/llm/client.py", line 212, in call_json
+    response = self.call(messages, max_tokens=max_tokens, temperature=temperature, json_mode=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/llm/client.py", line 191, in call
+    return self._call_ollama(messages, temperature=temperature, json_mode=json_mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/llm/client.py", line 377, in _call_ollama
+    with urllib.request.urlopen(request, timeout=float(self.config.get("timeout", 120))) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/opt/fsl/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out

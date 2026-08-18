@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4",
+    "retmax": "4",
+    "retstart": "0",
+    "idlist": [
+      "41362845",
+      "40629377",
+      "40482291",
+      "36624131"
+    ],
+    "translationset": [
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "prediction",
+        "to": "\"predict\"[All Fields] OR \"predictabilities\"[All Fields] OR \"predictability\"[All Fields] OR \"predictable\"[All Fields] OR \"predictably\"[All Fields] OR \"predicted\"[All Fields] OR \"predicting\"[All Fields] OR \"prediction\"[All Fields] OR \"predictions\"[All Fields] OR \"predictive\"[All Fields] OR \"predictively\"[All Fields] OR \"predictiveness\"[All Fields] OR \"predictives\"[All Fields] OR \"predictivities\"[All Fields] OR \"predictivity\"[All Fields] OR \"predicts\"[All Fields]"
+      },
+      {
+        "from": "ISI",
+        "to": "\"ISI\"[Journal:__jid101647733] OR \"isi\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"predict\"[All Fields] OR \"predictabilities\"[All Fields] OR \"predictability\"[All Fields] OR \"predictable\"[All Fields] OR \"predictably\"[All Fields] OR \"predicted\"[All Fields] OR \"predicting\"[All Fields] OR \"prediction\"[All Fields] OR \"predictions\"[All Fields] OR \"predictive\"[All Fields] OR \"predictively\"[All Fields] OR \"predictiveness\"[All Fields] OR \"predictives\"[All Fields] OR \"predictivities\"[All Fields] OR \"predictivity\"[All Fields] OR \"predicts\"[All Fields]) AND (\"isi\"[Journal] OR \"isi\"[All Fields]) AND \"PSQI\"[All Fields]"
+  }
+}

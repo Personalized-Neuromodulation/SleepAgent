@@ -1,0 +1,41 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "outcomes",
+        "to": "\"outcome\"[All Fields] OR \"outcomes\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Thalamus-DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"outcome\"[All Fields] OR \"outcomes\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

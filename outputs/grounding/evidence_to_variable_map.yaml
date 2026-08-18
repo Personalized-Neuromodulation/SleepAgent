@@ -1,14 +1,10 @@
 mappings:
-- concept: confound / methodological limitation
-  candidate_variables: []
+- concept: hyperarousal
+  candidate_variables:
+  - beta_power
+  - anxiety_score
   approved_data_features: []
-  modality: ''
-  mapping_confidence: 0.0
-  mapping_status: unavailable
-- concept: default mode network dysregulation
-  candidate_variables: []
-  approved_data_features: []
-  modality: ''
+  modality: EEG
   mapping_confidence: 0.0
   mapping_status: unavailable
 - concept: thalamocortical coupling
@@ -20,42 +16,19 @@ mappings:
   modality: EEG-fMRI
   mapping_confidence: 0.9
   mapping_status: mapped
-- concept: REM_NREM_switching
+- concept: default mode network dysregulation
   candidate_variables: []
   approved_data_features: []
   modality: ''
   mapping_confidence: 0.0
   mapping_status: unavailable
-- concept: structural morphology
+- concept: confound / methodological limitation
   candidate_variables: []
   approved_data_features: []
   modality: ''
   mapping_confidence: 0.0
   mapping_status: unavailable
-- concept: white matter integrity
-  candidate_variables:
-  - FA
-  - thalamic_radiation_FA
-  - cingulum_FA
-  approved_data_features: []
-  modality: DTI
-  mapping_confidence: 0.0
-  mapping_status: unavailable
-- concept: hyperarousal
-  candidate_variables:
-  - beta_power
-  - anxiety_score
-  approved_data_features: []
-  modality: EEG
-  mapping_confidence: 0.0
-  mapping_status: unavailable
-- concept: limbic structural vulnerability
-  candidate_variables: []
-  approved_data_features: []
-  modality: ''
-  mapping_confidence: 0.0
-  mapping_status: unavailable
-- concept: orexin_hypocretin_arousal
+- concept: salience network dysregulation
   candidate_variables: []
   approved_data_features: []
   modality: ''
@@ -69,13 +42,28 @@ mappings:
   modality: Scale
   mapping_confidence: 0.0
   mapping_status: unavailable
-- concept: salience network dysregulation
+- concept: white matter integrity
+  candidate_variables:
+  - FA
+  - thalamic_radiation_FA
+  - cingulum_FA
+  approved_data_features: []
+  modality: DTI
+  mapping_confidence: 0.0
+  mapping_status: unavailable
+- concept: REM_NREM_switching
   candidate_variables: []
   approved_data_features: []
   modality: ''
   mapping_confidence: 0.0
   mapping_status: unavailable
 - concept: circadian_regulation
+  candidate_variables: []
+  approved_data_features: []
+  modality: ''
+  mapping_confidence: 0.0
+  mapping_status: unavailable
+- concept: limbic structural vulnerability
   candidate_variables: []
   approved_data_features: []
   modality: ''
@@ -95,7 +83,37 @@ mappings:
   modality: EEG
   mapping_confidence: 0.0
   mapping_status: unavailable
-- concept: cortical_slow_oscillation
+- concept: thalamic_reticular_spindle
+  candidate_variables: []
+  approved_data_features: []
+  modality: ''
+  mapping_confidence: 0.0
+  mapping_status: unavailable
+- concept: structural morphology
+  candidate_variables: []
+  approved_data_features: []
+  modality: ''
+  mapping_confidence: 0.0
+  mapping_status: unavailable
+- concept: orexin_hypocretin_arousal
+  candidate_variables: []
+  approved_data_features: []
+  modality: ''
+  mapping_confidence: 0.0
+  mapping_status: unavailable
+- concept: glymphatic_clearance
+  candidate_variables: []
+  approved_data_features: []
+  modality: ''
+  mapping_confidence: 0.0
+  mapping_status: unavailable
+- concept: adenosine_sleep_pressure
+  candidate_variables: []
+  approved_data_features: []
+  modality: ''
+  mapping_confidence: 0.0
+  mapping_status: unavailable
+- concept: gabaergic_sleep_promotion
   candidate_variables: []
   approved_data_features: []
   modality: ''
@@ -109,25 +127,7 @@ mappings:
   modality: EEG
   mapping_confidence: 0.0
   mapping_status: unavailable
-- concept: thalamic_reticular_spindle
-  candidate_variables: []
-  approved_data_features: []
-  modality: ''
-  mapping_confidence: 0.0
-  mapping_status: unavailable
-- concept: adenosine_sleep_pressure
-  candidate_variables: []
-  approved_data_features: []
-  modality: ''
-  mapping_confidence: 0.0
-  mapping_status: unavailable
-- concept: glymphatic_clearance
-  candidate_variables: []
-  approved_data_features: []
-  modality: ''
-  mapping_confidence: 0.0
-  mapping_status: unavailable
-- concept: gabaergic_sleep_promotion
+- concept: cortical_slow_oscillation
   candidate_variables: []
   approved_data_features: []
   modality: ''

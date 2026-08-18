@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "count": 0,
+    "db_response_time_ms": 342,
+    "page": 1,
+    "per_page": 50,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Unaccounted circadian rhythm variability in 32% of participants confound thalamus DMN connectivity sleep fMRI)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Unaccounted circadian rhythm variability in 32% of participants confound thalamus DMN connectivity sleep fMRI",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:Unaccounted circadian rhythm variability in 32%25 of participants confound thalamus DMN connectivity sleep fMRI&per_page=50"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [],
+  "group_by": []
+}

@@ -21,24 +21,39 @@ from sleep_ai_scientist.experiment.agents.analysis_templates import load_analysi
 from sleep_ai_scientist.schemas.experiment import ExperimentResultBundle, StatisticalTestResult
 
 
-def render_experiment_visualizations(bundles: list[ExperimentResultBundle], output_dir: str | Path) -> dict[str, Any]:
+def render_experiment_visualizations(
+    bundles: list[ExperimentResultBundle],
+    output_dir: str | Path,
+    *,
+    skipped_plans: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
     output = Path(output_dir)
     figures_dir = output / "figures"
     if figures_dir.exists():
         shutil.rmtree(figures_dir)
     figures_dir.mkdir(parents=True, exist_ok=True)
     figures: list[str] = []
-    dashboard = {"plans": [_bundle_dashboard(bundle) for bundle in bundles]}
+    skipped_plans = skipped_plans or []
+    dashboard = {
+        "plans": [_bundle_dashboard(bundle) for bundle in bundles],
+        "skipped_plans": skipped_plans,
+    }
 
     matrix = _plot_primary_test_matrix(bundles, figures_dir)
     if matrix:
         figures.append(str(matrix))
+    skipped = _plot_skipped_plans(skipped_plans, figures_dir)
+    if skipped:
+        figures.append(str(skipped))
 
     for bundle in bundles:
         for test in bundle.stats_result.tests if bundle.stats_result else []:
             model_fig = _plot_model_specific_result(bundle, test, figures_dir)
             if model_fig:
                 figures.append(str(model_fig))
+            group_fig = _plot_group_specific_scatter(bundle, test, figures_dir)
+            if group_fig:
+                figures.append(str(group_fig))
 
         robustness = _plot_robustness(bundle, figures_dir)
         if robustness:
@@ -69,7 +84,7 @@ def render_experiment_visualizations(bundles: list[ExperimentResultBundle], outp
         "dashboard": dashboard,
     }
     write_json(manifest_path, manifest)
-    _write_html(html_path, bundles, figure_records, output)
+    _write_html(html_path, bundles, figure_records, output, skipped_plans=skipped_plans)
     return manifest
 
 
@@ -116,6 +131,19 @@ def _plot_primary_test_matrix(bundles: list[ExperimentResultBundle], figures_dir
     return _save(fig, figures_dir / "primary_test_matrix.png")
 
 
+def _plot_skipped_plans(skipped_plans: list[dict[str, Any]], figures_dir: Path) -> Path | None:
+    if not skipped_plans:
+        return None
+    counts = pd.Series([str(item.get("reason", "unknown")) for item in skipped_plans]).value_counts()
+    fig, ax = plt.subplots(figsize=(max(6.0, len(counts) * 2.2), 4.2), constrained_layout=True)
+    bars = ax.bar(range(len(counts)), counts.values, color="#64748b")
+    ax.set_xticks(range(len(counts)), [_wrap_label(label, 22) for label in counts.index], rotation=20, ha="right")
+    ax.set_ylabel("Skipped plan count")
+    ax.set_title("Skipped Experiment Plans\nNo statistical figures were generated for skipped plans", pad=12)
+    ax.bar_label(bars, labels=[str(value) for value in counts.values], padding=3, fontsize=9)
+    return _save(fig, figures_dir / "skipped_plans_diagnostic.png")
+
+
 def _plot_model_specific_result(bundle: ExperimentResultBundle, test: StatisticalTestResult, figures_dir: Path) -> Path | None:
     if test.method == "linear_regression":
         return _plot_linear_regression(bundle, test, figures_dir)
@@ -135,6 +163,52 @@ def _plot_spearman(bundle: ExperimentResultBundle, test: StatisticalTestResult, 
     ax.set_ylabel(_wrap_label(_display_label(test.outcome), 26))
     ax.text(0.02, 0.98, _stat_label(test), transform=ax.transAxes, va="top", fontsize=8)
     return _save(fig, figures_dir / f"spearman_scatter_{_safe(test.test_id)}.png")
+
+
+def _plot_group_specific_scatter(bundle: ExperimentResultBundle, test: StatisticalTestResult, figures_dir: Path) -> Path | None:
+    clean = _test_table(bundle, test)
+    if clean.empty or "healthy_label" not in clean.columns:
+        return None
+    clean = clean.copy()
+    clean["healthy_label"] = pd.to_numeric(clean["healthy_label"], errors="coerce")
+    clean = clean.dropna(subset=[test.predictor, test.outcome, "healthy_label"])
+    if clean["healthy_label"].nunique() < 2:
+        return None
+    models = ((test.metadata.get("clinical_group_context") or {}).get("group_specific_models") or {})
+    healthy_model = models.get("healthy") or {}
+    nonhealthy_model = models.get("nonhealthy") or {}
+    interaction = models.get("interaction") or {}
+    fig, axes = plt.subplots(1, 2, figsize=(10.4, 4.6), sharey=True, constrained_layout=True)
+    groups = [
+        ("healthy", 1, "#2563eb", healthy_model),
+        ("nonhealthy", 0, "#dc2626", nonhealthy_model),
+    ]
+    for ax, (label, value, color, model) in zip(axes, groups, strict=False):
+        group = clean[clean["healthy_label"] == value]
+        ax.scatter(group[test.predictor], group[test.outcome], color=color, alpha=0.78)
+        slope = model.get("slope")
+        intercept = model.get("intercept")
+        if slope is not None and intercept is not None and len(group) >= 2:
+            ordered = pd.to_numeric(group[test.predictor], errors="coerce").sort_values()
+            ax.plot(ordered, float(intercept) + float(slope) * ordered, color="#111827", linewidth=1.6)
+        ax.set_title(f"{label} n={len(group)}")
+        ax.set_xlabel(_wrap_label(_display_label(test.predictor), 24))
+        ax.text(
+            0.02,
+            0.98,
+            f"slope={_fmt(model.get('slope'))}\np={_fmt(model.get('p_value'))}",
+            transform=ax.transAxes,
+            va="top",
+            fontsize=8,
+        )
+    axes[0].set_ylabel(_wrap_label(_display_label(test.outcome), 24))
+    fig.suptitle(
+        _wrap_title(
+            f"Group-specific model: {_display_label(test.predictor)} -> {_display_label(test.outcome)} "
+            f"(interaction p={_fmt(interaction.get('p_value'))})"
+        )
+    )
+    return _save(fig, figures_dir / f"group_specific_scatter_{_safe(test.test_id)}.png")
 
 
 def _plot_linear_regression(bundle: ExperimentResultBundle, test: StatisticalTestResult, figures_dir: Path) -> Path | None:
@@ -232,12 +306,18 @@ def _plot_ml_feature_importance(bundle: ExperimentResultBundle, figures_dir: Pat
     result = bundle.ml_result
     if not result or not result.feature_importance:
         return None
-    labels = list(result.feature_importance)
-    values = [result.feature_importance[label] for label in labels]
-    fig, ax = plt.subplots(figsize=(max(5, len(labels) * 1.1), 3.8))
-    ax.bar(labels, values, color="#4f46e5")
-    ax.set_title(f"ML Feature Importance: {result.model_type}")
-    ax.tick_params(axis="x", rotation=30)
+    pairs = sorted(result.feature_importance.items(), key=lambda item: float(item[1] or 0.0))
+    labels = [label for label, _ in pairs]
+    values = [float(value or 0.0) for _, value in pairs]
+    fig, ax = plt.subplots(figsize=_ml_feature_importance_figsize(labels), constrained_layout=True)
+    bars = ax.barh(range(len(labels)), values, color="#4f46e5")
+    ax.set_yticks(range(len(labels)), [_wrap_feature_importance_label(label) for label in labels])
+    ax.tick_params(axis="y", labelsize=9, pad=4)
+    ax.tick_params(axis="x", labelsize=9)
+    ax.set_xlabel("Mean feature importance")
+    ax.set_title(_ml_feature_importance_title(result.model_type), pad=12)
+    ax.margins(x=0.12, y=0.08)
+    ax.bar_label(bars, labels=[f"{value:.2g}" for value in values], padding=3, fontsize=8)
     return _save(fig, figures_dir / f"ml_feature_importance_{_safe(bundle.plan.plan_id)}.png")
 
 
@@ -315,9 +395,9 @@ def _plot_ml_regression_predictions(bundle: ExperimentResultBundle, models: dict
     ]
     if not usable:
         return None
-    fig, ax = plt.subplots(figsize=(5.5, 4.2))
+    fig, ax = plt.subplots(figsize=(6.4, 4.8), constrained_layout=True)
     for name, payload in usable:
-        ax.scatter(payload["observed"], payload["predictions"], alpha=0.7, label=_short(name, 18))
+        ax.scatter(payload["observed"], payload["predictions"], alpha=0.7, label=_ml_regression_model_label(name, payload))
     values = [value for _, payload in usable for value in [*payload["observed"], *payload["predictions"]]]
     if values:
         lo, hi = min(values), max(values)
@@ -325,7 +405,7 @@ def _plot_ml_regression_predictions(bundle: ExperimentResultBundle, models: dict
     ax.set_xlabel("Observed")
     ax.set_ylabel("Predicted")
     ax.set_title("ML Regression Predicted vs Observed")
-    ax.legend(fontsize=8)
+    ax.legend(fontsize=8, loc="best")
     return _save(fig, figures_dir / f"ml_regression_predicted_observed_{_safe(bundle.plan.plan_id)}.png")
 
 
@@ -333,7 +413,10 @@ def _test_table(bundle: ExperimentResultBundle, test: StatisticalTestResult) -> 
     table = load_analysis_table(bundle.plan, {test.predictor, test.outcome})
     if table.empty or test.predictor not in table.columns or test.outcome not in table.columns:
         return pd.DataFrame()
-    clean = table[[test.predictor, test.outcome]].copy()
+    columns = [test.predictor, test.outcome]
+    if "healthy_label" in table.columns:
+        columns.append("healthy_label")
+    clean = table[columns].copy()
     clean[test.predictor] = pd.to_numeric(clean[test.predictor], errors="coerce")
     clean[test.outcome] = pd.to_numeric(clean[test.outcome], errors="coerce")
     return clean.dropna()
@@ -362,6 +445,12 @@ def _figure_metadata(path: Path, bundles: list[ExperimentResultBundle]) -> tuple
             "primary_test_matrix",
             "Primary Test Matrix",
             "Effect size and p-value matrix across all primary predictor/outcome tests.",
+        )
+    if name == "skipped_plans_diagnostic.png":
+        return (
+            "skipped_plans",
+            "Skipped Experiment Plans",
+            "Diagnostic summary for experiment plans skipped before statistical execution.",
         )
     for bundle in bundles:
         if f"_{_safe(bundle.plan.plan_id)}" in name:
@@ -404,7 +493,14 @@ def _figure_metadata(path: Path, bundles: list[ExperimentResultBundle]) -> tuple
     return ("figure", path.stem, path.name)
 
 
-def _write_html(path: Path, bundles: list[ExperimentResultBundle], figure_records: list[dict[str, str]], output_dir: Path) -> None:
+def _write_html(
+    path: Path,
+    bundles: list[ExperimentResultBundle],
+    figure_records: list[dict[str, str]],
+    output_dir: Path,
+    *,
+    skipped_plans: list[dict[str, Any]] | None = None,
+) -> None:
     rows = []
     for bundle in bundles:
         tests = bundle.stats_result.tests if bundle.stats_result else []
@@ -415,6 +511,16 @@ def _write_html(path: Path, bundles: list[ExperimentResultBundle], figure_record
             f"<td>{sum(1 for test in tests if test.passed)}/{len(tests)}</td>"
             f"<td>{escape(', '.join(sorted({test.method for test in tests})))}</td>"
             f"<td>{escape(bundle.ml_result.model_type if bundle.ml_result else '')}</td>"
+            "</tr>"
+        )
+    skipped_rows = []
+    for item in skipped_plans or []:
+        skipped_rows.append(
+            "<tr>"
+            f"<td>{escape(str(item.get('plan_id', '')))}</td>"
+            f"<td>{escape(str(item.get('hypothesis_id', '')))}</td>"
+            f"<td>{escape(str(item.get('stage', '')))}</td>"
+            f"<td>{escape(str(item.get('reason', '')))}</td>"
             "</tr>"
         )
     image_tags = "\n".join(
@@ -447,6 +553,11 @@ def _write_html(path: Path, bundles: list[ExperimentResultBundle], figure_record
     <thead><tr><th>Plan</th><th>Hypothesis</th><th>Tests Passed</th><th>Statistical Models</th><th>ML Models</th></tr></thead>
     <tbody>{''.join(rows)}</tbody>
   </table>
+  <h2>Skipped Plans</h2>
+  <table>
+    <thead><tr><th>Plan</th><th>Hypothesis</th><th>Stage</th><th>Reason</th></tr></thead>
+    <tbody>{''.join(skipped_rows)}</tbody>
+  </table>
   {image_tags}
 </body>
 </html>
@@ -461,6 +572,16 @@ def _stat_label(test: StatisticalTestResult) -> str:
     if test.p_value is not None:
         parts.append(f"p={test.p_value:.3g}")
     return "\n".join(parts)
+
+
+def _fmt(value: Any) -> str:
+    if value is None:
+        return "NA"
+    try:
+        numeric = float(value)
+    except (TypeError, ValueError):
+        return str(value)
+    return f"{numeric:.3g}"
 
 
 def _save(fig: plt.Figure, path: Path) -> Path:
@@ -492,6 +613,32 @@ def _display_label(value: str, limit: int = 42) -> str:
     label = label.replace("DMN_FC", "DMN FC")
     label = label.replace("_", " ")
     return _short(label, limit)
+
+
+def _wrap_feature_importance_label(value: str) -> str:
+    return _wrap_label(_display_label(value, limit=96), 24)
+
+
+def _ml_feature_importance_title(model_type: str) -> str:
+    readable_models = str(model_type).replace("_", " ").replace(",", ", ")
+    readable_models = " ".join(readable_models.split())
+    return _wrap_title(f"ML Feature Importance: {readable_models}")
+
+
+def _ml_feature_importance_figsize(labels: list[str]) -> tuple[float, float]:
+    display_labels = [_display_label(label, limit=96) for label in labels] or [""]
+    max_line = max(len(line) for label in display_labels for line in label.split("\n"))
+    width = min(14.0, max(8.0, 6.0 + max_line * 0.12))
+    height = min(12.0, max(4.8, 1.7 + len(display_labels) * 0.55))
+    return width, height
+
+
+def _ml_regression_model_label(name: str, payload: dict[str, Any]) -> str:
+    label = str(name).replace("_", " ")
+    r2 = payload.get("r2")
+    if isinstance(r2, int | float):
+        return f"{label} R2={r2:.2f}"
+    return label
 
 
 def _wrap_label(value: str, width: int) -> str:

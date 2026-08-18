@@ -1,0 +1,43 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Impact",
+        "to": "\"impact\"[All Fields] OR \"impactful\"[All Fields] OR \"impacting\"[All Fields] OR \"impacts\"[All Fields] OR \"tooth, impacted\"[MeSH Terms] OR (\"tooth\"[All Fields] AND \"impacted\"[All Fields]) OR \"impacted tooth\"[All Fields] OR \"impacted\"[All Fields]"
+      },
+      {
+        "from": "execution",
+        "to": "\"executable\"[All Fields] OR \"executables\"[All Fields] OR \"execute\"[All Fields] OR \"executed\"[All Fields] OR \"executer\"[All Fields] OR \"executes\"[All Fields] OR \"executing\"[All Fields] OR \"execution\"[All Fields] OR \"executional\"[All Fields] OR \"executions\"[All Fields] OR \"executive\"[All Fields] OR \"executive's\"[All Fields] OR \"executively\"[All Fields] OR \"executives\"[All Fields]"
+      },
+      {
+        "from": "decision-making",
+        "to": "\"decision making\"[MeSH Terms] OR (\"decision\"[All Fields] AND \"making\"[All Fields]) OR \"decision making\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"impact\"[All Fields] OR \"impactful\"[All Fields] OR \"impacting\"[All Fields] OR \"impacts\"[All Fields] OR \"tooth, impacted\"[MeSH Terms] OR (\"tooth\"[All Fields] AND \"impacted\"[All Fields]) OR \"impacted tooth\"[All Fields] OR \"impacted\"[All Fields]) AND \"thalamus-DMN\"[All Fields] AND \"FC\"[All Fields] AND \"task\"[All Fields] AND (\"executable\"[All Fields] OR \"executables\"[All Fields] OR \"execute\"[All Fields] OR \"executed\"[All Fields] OR \"executer\"[All Fields] OR \"executes\"[All Fields] OR \"executing\"[All Fields] OR \"execution\"[All Fields] OR \"executional\"[All Fields] OR \"executions\"[All Fields] OR \"executive\"[All Fields] OR \"executive s\"[All Fields] OR \"executively\"[All Fields] OR \"executives\"[All Fields]) AND (\"decision making\"[MeSH Terms] OR (\"decision\"[All Fields] AND \"making\"[All Fields]) OR \"decision making\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "on",
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

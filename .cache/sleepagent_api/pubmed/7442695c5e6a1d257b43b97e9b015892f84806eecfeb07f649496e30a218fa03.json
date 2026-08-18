@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "dysregulation",
+        "to": "\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "anxiety",
+        "to": "\"anxiety\"[MeSH Terms] OR \"anxiety\"[All Fields] OR \"anxieties\"[All Fields] OR \"anxiety's\"[All Fields]"
+      },
+      {
+        "from": "depression",
+        "to": "\"depressed\"[All Fields] OR \"depression\"[MeSH Terms] OR \"depression\"[All Fields] OR \"depressions\"[All Fields] OR \"depression's\"[All Fields] OR \"depressive disorder\"[MeSH Terms] OR (\"depressive\"[All Fields] AND \"disorder\"[All Fields]) OR \"depressive disorder\"[All Fields] OR \"depressivity\"[All Fields] OR \"depressive\"[All Fields] OR \"depressively\"[All Fields] OR \"depressiveness\"[All Fields] OR \"depressives\"[All Fields]"
+      },
+      {
+        "from": "sleep quality",
+        "to": "\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DMN\"[All Fields] AND (\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"anxiety\"[MeSH Terms] OR \"anxiety\"[All Fields] OR \"anxieties\"[All Fields] OR \"anxiety s\"[All Fields]) AND (\"depressed\"[All Fields] OR \"depression\"[MeSH Terms] OR \"depression\"[All Fields] OR \"depressions\"[All Fields] OR \"depression s\"[All Fields] OR \"depressive disorder\"[MeSH Terms] OR (\"depressive\"[All Fields] AND \"disorder\"[All Fields]) OR \"depressive disorder\"[All Fields] OR \"depressivity\"[All Fields] OR \"depressive\"[All Fields] OR \"depressively\"[All Fields] OR \"depressiveness\"[All Fields] OR \"depressives\"[All Fields]) AND (\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

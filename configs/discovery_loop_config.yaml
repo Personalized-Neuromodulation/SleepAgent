@@ -1,6 +1,6 @@
 discovery_loop:
   run_id: sleep_discovery_loop
-  max_iterations: 2
+  max_iterations: 3
   verbose: true
   snapshot_features: true
   enable_foundation_grounding_refresh: true
@@ -10,7 +10,7 @@ discovery_loop:
     reward_convergence:
       enabled: true
       min_iterations: 2
-      delta: 0.03
+      delta: 0.001
 
 hypothesis:
   config_path: configs/hypothesis_config.yaml
@@ -30,6 +30,12 @@ literature:
 grounding:
   config_path: configs/grounding_config.yaml
   corpus_version: sleepagent_grounding_data_constrained_v1
+
+grounding_locked_validation:
+  enabled: true
+  master_table: data/foundation/multimodal_master_table.csv
+  hypothesis_spec: configs/grounding_health_fc_hypothesis.json
+  make_plots: true
 
 paths:
   loop_output_dir: outputs/discovery_loop

@@ -1,0 +1,51 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "connectivity:",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "Association",
+        "to": "\"associate\"[All Fields] OR \"associated\"[All Fields] OR \"associates\"[All Fields] OR \"associating\"[All Fields] OR \"association\"[MeSH Terms] OR \"association\"[All Fields] OR \"associations\"[All Fields]"
+      },
+      {
+        "from": "psychological distress",
+        "to": "\"psychological distress\"[MeSH Terms] OR (\"psychological\"[All Fields] AND \"distress\"[All Fields]) OR \"psychological distress\"[All Fields]"
+      },
+      {
+        "from": "sleep disturbances",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disturbances\"[All Fields]) OR \"sleep disturbances\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"associate\"[All Fields] OR \"associated\"[All Fields] OR \"associates\"[All Fields] OR \"associating\"[All Fields] OR \"association\"[MeSH Terms] OR \"association\"[All Fields] OR \"associations\"[All Fields]) AND (\"psychological distress\"[MeSH Terms] OR (\"psychological\"[All Fields] AND \"distress\"[All Fields]) OR \"psychological distress\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disturbances\"[All Fields]) OR \"sleep disturbances\"[All Fields])",
+    "errorlist": {
+      "phrasesnotfound": [
+        "network-thalamus"
+      ],
+      "fieldsnotfound": []
+    },
+    "warninglist": {
+      "phrasesignored": [
+        "with",
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

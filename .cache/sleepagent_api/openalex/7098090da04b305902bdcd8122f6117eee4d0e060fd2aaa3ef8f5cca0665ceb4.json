@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "count": 0,
+    "db_response_time_ms": 34,
+    "page": 1,
+    "per_page": 50,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Role of timefreq_fALFF in predicting sleep quality PSQI)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Role of timefreq_fALFF in predicting sleep quality (PSQI)",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:Role of timefreq_fALFF in predicting sleep quality %28PSQI%29&per_page=50"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [],
+  "group_by": []
+}

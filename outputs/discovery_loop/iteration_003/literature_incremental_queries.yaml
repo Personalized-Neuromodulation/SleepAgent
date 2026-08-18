@@ -1,0 +1,36 @@
+query_file:
+  version: sleepagent_experiment_feedback_incremental
+  description: Incremental query set generated from experiment feedback for one discovery
+    iteration.
+query_sets:
+  library:
+    query_set:
+      version: sleep_literature_queries_v2_broad_sleep_science_incremental
+      description: Broad sleep science query set for SleepAgent Sleep AI Scientist.
+    settings:
+      max_results_per_query: 50
+      providers:
+      - pubmed
+      - europe_pmc
+      - openalex
+      - semantic_scholar
+      include_human: true
+      include_animal: true
+      include_cellular_molecular: true
+      include_circuit_mechanisms: true
+      include_reviews: true
+      include_meta_analysis: true
+      include_methods: true
+    queries:
+      experiment_feedback_expansion:
+      - Role of thalamus-DMN FC in mediating cognitive deficits in insomnia
+      - Impact of thalamus-DMN FC on sleep quality and ISI scores
+      - thalamus coord y ISI sleep fMRI
+      - 'Thalamus connectivity and cognitive performance in insomnia: DMN, salience,
+        and frontoparietal networks'
+      - Impact of thalamus-DMN FC on task execution and decision-making in insomnia
+      - Role of thalamic networks in mediating cognitive deficits during sleep disturbances
+      - 'Thalamus-salience FC and insomnia severity (ISI): influence of anxiety and
+        depression'
+      - 'Salience network connectivity in insomnia: role of thalamus and psychological
+        comorbidities'

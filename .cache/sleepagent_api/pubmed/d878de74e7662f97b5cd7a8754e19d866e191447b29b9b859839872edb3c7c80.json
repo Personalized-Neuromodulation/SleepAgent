@@ -1,0 +1,50 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6",
+    "retmax": "6",
+    "retstart": "0",
+    "idlist": [
+      "42349608",
+      "41845389",
+      "41559193",
+      "37531587",
+      "36739104",
+      "31877505"
+    ],
+    "translationset": [
+      {
+        "from": "spindle",
+        "to": "\"spindle\"[All Fields] OR \"spindle's\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]"
+      },
+      {
+        "from": "density",
+        "to": "\"densities\"[All Fields] OR \"density\"[All Fields]"
+      },
+      {
+        "from": "thalamocortical",
+        "to": "\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]"
+      },
+      {
+        "from": "coupling",
+        "to": "\"couple's\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]"
+      },
+      {
+        "from": "sleep disorders",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"spindle\"[All Fields] OR \"spindle s\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]) AND (\"densities\"[All Fields] OR \"density\"[All Fields]) AND (\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]) AND (\"couple s\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

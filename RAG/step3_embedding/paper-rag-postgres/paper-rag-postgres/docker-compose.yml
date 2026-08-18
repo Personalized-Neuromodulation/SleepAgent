@@ -1,0 +1,36 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: paper-rag-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: paper_rag
+      POSTGRES_USER: paper_rag
+      POSTGRES_PASSWORD: paper_rag_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - paper_rag_pgdata:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/001-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U paper_rag -d paper_rag"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  grobid:
+    image: grobid/grobid:0.9.1-crf
+    container_name: paper-rag-grobid
+    restart: unless-stopped
+    ports:
+      - "8070:8070"
+    init: true
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8070/api/isalive || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+volumes:
+  paper_rag_pgdata:
+

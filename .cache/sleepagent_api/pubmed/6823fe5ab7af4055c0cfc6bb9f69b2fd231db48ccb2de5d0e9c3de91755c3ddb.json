@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "REM sleep",
+        "to": "\"sleep, rem\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"rem\"[All Fields]) OR \"rem sleep\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields])"
+      },
+      {
+        "from": "instability",
+        "to": "\"instabilities\"[All Fields] OR \"instability\"[All Fields] OR \"instable\"[All Fields]"
+      },
+      {
+        "from": "frontoparietal",
+        "to": "\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "dysfunction",
+        "to": "\"dysfunctional\"[All Fields] OR \"dysfunctionals\"[All Fields] OR \"dysfunctioning\"[All Fields] OR \"dysfunctions\"[All Fields] OR \"physiopathology\"[Subheading] OR \"physiopathology\"[All Fields] OR \"dysfunction\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep, rem\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"rem\"[All Fields]) OR \"rem sleep\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields])) AND (\"instabilities\"[All Fields] OR \"instability\"[All Fields] OR \"instable\"[All Fields]) AND (\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"dysfunctional\"[All Fields] OR \"dysfunctionals\"[All Fields] OR \"dysfunctioning\"[All Fields] OR \"dysfunctions\"[All Fields] OR \"physiopathology\"[MeSH Subheading] OR \"physiopathology\"[All Fields] OR \"dysfunction\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

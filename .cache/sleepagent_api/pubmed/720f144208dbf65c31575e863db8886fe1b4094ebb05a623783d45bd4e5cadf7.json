@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "robustness",
+        "to": "\"robust\"[All Fields] OR \"robustness\"[All Fields]"
+      },
+      {
+        "from": "check",
+        "to": "\"check\"[All Fields] OR \"checked\"[All Fields] OR \"checking\"[All Fields] OR \"checkings\"[All Fields] OR \"checks\"[All Fields] OR \"cheque\"[All Fields] OR \"cheques\"[All Fields]"
+      },
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"robust\"[All Fields] OR \"robustness\"[All Fields]) AND (\"check\"[All Fields] OR \"checked\"[All Fields] OR \"checking\"[All Fields] OR \"checkings\"[All Fields] OR \"checks\"[All Fields] OR \"cheque\"[All Fields] OR \"cheques\"[All Fields]) AND \"thalamus dmn\"[All Fields] AND \"FC\"[All Fields] AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND \"FC\"[All Fields] AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

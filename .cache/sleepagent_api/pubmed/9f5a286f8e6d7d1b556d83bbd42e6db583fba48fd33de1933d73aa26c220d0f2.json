@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "correlation",
+        "to": "\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation's\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"thalamus-DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND \"FC\"[All Fields] AND (\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation s\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

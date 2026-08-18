@@ -25,6 +25,10 @@ VARIABLE_TERMS = {
     "thalamus_DMN_FC": ["thalamus_dmn_fc", "thalamus dmn", "thalamocortical"],
     "slow_wave_density": ["slow_wave_density", "slow wave density", "slow-wave density"],
     "spindle_density": ["spindle_density", "spindle density"],
+    "REM_latency": ["rem latency", "rem_latency"],
+    "sleep_efficiency": ["sleep efficiency", "sleep_efficiency"],
+    "NREM_duration": ["nrem duration", "nrem_duration", "nrem sleep"],
+    "REM_duration": ["rem duration", "rem_duration", "rem sleep"],
     "ISI": ["insomnia severity index", " isi "],
     "PSQI": [" psqi ", "sleep quality"],
 }
@@ -92,7 +96,12 @@ def assess_hypothesis_testability(hypothesis: Hypothesis, profile: DataProfile |
 
 def experiment_priority_score(hypothesis: Hypothesis) -> float:
     testability = hypothesis.metadata.get("data_testability", {}) if isinstance(hypothesis.metadata, dict) else {}
-    return float(hypothesis.elo_rating) + float(testability.get("ranking_bonus", 0.0) or 0.0)
+    preflight = hypothesis.metadata.get("experiment_preflight", {}) if isinstance(hypothesis.metadata, dict) else {}
+    return (
+        float(hypothesis.elo_rating)
+        + float(testability.get("ranking_bonus", 0.0) or 0.0)
+        + float(preflight.get("ranking_penalty", 0.0) or 0.0)
+    )
 
 
 def _hypothesis_text(hypothesis: Hypothesis) -> str:

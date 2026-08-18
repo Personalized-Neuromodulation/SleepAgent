@@ -1,0 +1,2382 @@
+{
+  "total": 20484,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "5e7496a2a81eb5731fdd09be3e98acded9123748",
+      "externalIds": {
+        "PubMedCentral": "13059288",
+        "DOI": "10.1186/s13019-026-03911-6",
+        "CorpusId": 286227992,
+        "PubMed": "41772606"
+      },
+      "url": "https://www.semanticscholar.org/paper/5e7496a2a81eb5731fdd09be3e98acded9123748",
+      "title": "The association between sleep disorders and the risk of atherosclerotic cardiovascular disease: regression analysis and neural network prediction based on NHANES data",
+      "venue": "Journal of Cardiothoracic Surgery",
+      "year": 2026,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13059288, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2367687188",
+          "name": "Ling-Bing Meng"
+        },
+        {
+          "authorId": "31640729",
+          "name": "K. Cui"
+        },
+        {
+          "authorId": "2220588666",
+          "name": "Yanjun Song"
+        },
+        {
+          "authorId": "2315792430",
+          "name": "Bowen Li"
+        },
+        {
+          "authorId": "2383105210",
+          "name": "Yongbao Zhang"
+        },
+        {
+          "authorId": "2253602094",
+          "name": "K. Dou"
+        }
+      ],
+      "abstract": "Background Sleep quality and duration play a critical role in cardiovascular health. In recent years, sleep disorders have been identified as potential risk factors for atherosclerotic cardiovascular disease (ASCVD). However, their independent effects and underlying mechanisms remain unclear. Methods This study analyzed data from the National Health and Nutrition Examination Survey (NHANES) conducted between 2013 and 2018, encompassing information on sleep quality, sleep duration, and atherosclerotic cardiovascular disease (ASCVD)-related details from 4,719 participants. Spearman correlation analysis, restricted cubic spline regression, and multivariate logistic regression were employed to evaluate the associations. To enhance predictive modeling under class imbalance, we also developed and compared class-weighted neural networks, random forests, and XGBoost models. Results The results revealed a significant association between sleep disturbances and ASCVD risk (OR = 1.69, 95% CI: 1.20–2.37, P = 0.0079). A “U-shaped” nonlinear relationship was observed between sleep duration and ASCVD, with the lowest risk occurring at 6–8 h of sleep. Compared to 6–8 h of sleep, short sleep (< 6 h) and long sleep (> 8 h) increased ASCVD risk by 45% and 28%, respectively. Among the machine learning models, the neural network demonstrated the highest sensitivity (0.819) and area under the curve (AUC, 0.841) for ASCVD detection, outperforming random forests and XGBoost in identifying true positive cases. Conclusion In a large, nationally representative U.S. cohort study, self-reported sleep disturbances and abnormal sleep durations were significantly and independently associated with an increased risk of ASCVD. These findings underscore the potential value of sleep health assessment in public health strategies for preventing ASCVD and highlight the utility of neural network models in improving screening sensitivity under conditions of imbalanced data."
+    },
+    {
+      "paperId": "cb3cb24b27c7aa8ea66d002b9713d906b2c3e73a",
+      "externalIds": {
+        "DOI": "10.1093/cercor/bhab282",
+        "CorpusId": 237573321,
+        "PubMed": "34541601"
+      },
+      "url": "https://www.semanticscholar.org/paper/cb3cb24b27c7aa8ea66d002b9713d906b2c3e73a",
+      "title": "A Multivariate Functional Connectivity Approach to Mapping Brain Networks and Imputing Neural Activity in Mice.",
+      "venue": "Cerebral Cortex",
+      "year": 2021,
+      "citationCount": 9,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9016290",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/cercor/bhab282?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/cercor/bhab282, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "13463083",
+          "name": "L. Brier"
+        },
+        {
+          "authorId": "2051184099",
+          "name": "Xiaohui Zhang"
+        },
+        {
+          "authorId": "33110721",
+          "name": "A. Bice"
+        },
+        {
+          "authorId": "2088617175",
+          "name": "Seana H Gaines"
+        },
+        {
+          "authorId": "6808942",
+          "name": "E. Landsness"
+        },
+        {
+          "authorId": "2144683149",
+          "name": "Jin-Moo Lee"
+        },
+        {
+          "authorId": "1768850",
+          "name": "M. Anastasio"
+        },
+        {
+          "authorId": "144123322",
+          "name": "J. Culver"
+        }
+      ],
+      "abstract": "Temporal correlation analysis of spontaneous brain activity (e.g., Pearson \"functional connectivity,\" FC) has provided insights into the functional organization of the human brain. However, bivariate analysis techniques such as this are often susceptible to confounding physiological processes (e.g., sleep, Mayer-waves, breathing, motion), which makes it difficult to accurately map connectivity in health and disease as these physiological processes affect FC. In contrast, a multivariate approach to imputing individual neural networks from spontaneous neuroimaging data could be influential to our conceptual understanding of FC and provide performance advantages. Therefore, we analyzed neural calcium imaging data from Thy1-GCaMP6f mice while either awake, asleep, anesthetized, during low and high bouts of motion, or before and after photothrombotic stroke. A linear support vector regression approach was used to determine the optimal weights for integrating the signals from the remaining pixels to accurately predict neural activity in a region of interest (ROI). The resultant weight maps for each ROI were interpreted as multivariate functional connectivity (MFC), resembled anatomical connectivity, and demonstrated a sparser set of strong focused positive connections than traditional FC. While global variations in data have large effects on standard correlation FC analysis, the MFC mapping methods were mostly impervious. Lastly, MFC analysis provided a more powerful connectivity deficit detection following stroke compared to traditional FC."
+    },
+    {
+      "paperId": "3c96d3701ca9fd4cdd40645544699e9a6b1051c6",
+      "externalIds": {
+        "MAG": "2306577644",
+        "PubMedCentral": "7189085",
+        "DOI": "10.34172/JRHS162484",
+        "CorpusId": 13245369,
+        "PubMed": "27061997"
+      },
+      "url": "https://www.semanticscholar.org/paper/3c96d3701ca9fd4cdd40645544699e9a6b1051c6",
+      "title": "Sleep Quality in Medical Students; the Impact of Over-Use of Mobile CellPhone and Social Networks",
+      "venue": "Journal of research in health sciences",
+      "year": 2016,
+      "citationCount": 167,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7189085, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6678315",
+          "name": "A. Mohammadbeigi"
+        },
+        {
+          "authorId": "12760346",
+          "name": "Rozita Absari"
+        },
+        {
+          "authorId": "40598544",
+          "name": "F. Valizadeh"
+        },
+        {
+          "authorId": "40432156",
+          "name": "M. Saadati"
+        },
+        {
+          "authorId": "15577019",
+          "name": "Soroush Sharifimoghadam"
+        },
+        {
+          "authorId": "144673356",
+          "name": "A. Ahmadi"
+        },
+        {
+          "authorId": "35389391",
+          "name": "Mohsen Mokhtari"
+        },
+        {
+          "authorId": "36572210",
+          "name": "H. Ansari"
+        }
+      ],
+      "abstract": "Background: Poor sleep quality is closely associated with lifestyle habits including use of mobile cell-phones. This study aimed to identify the relationship between sleep quality due to abuse in mobile cell-phones and engagement in social networks. Methods: This cross-sectional study was conducted on 380 undergraduate students selected by proportional stratified sampling in Qom, Iran in 2015. Data were collected by two statndard questionnaire including Cell-Phone Over-Use Scale (COS) and Pittsburgh sleep quality questionnaire beside the status of usage in cell-phone social networks. T-test, chi-square, Pearson correlation coefficient and multivariate logistic regression were used in data analysis. Results: The mean age of participants was 21.8 ±3.2 yr, 69.1% were female, and 11.7% were married. The mean of COS and sleep quality scores were 48.18 ±17.5 and 5.38 ±2.31, respectively. The prevalence of over-use of cell phone was 10.7% (CI 0.95; 8.8%, 12.6%) and the prevalence of poor sleep quality was 61.7% (CI 0.95; 57.1%, 66.3%). The mean of all aspects and total score of sleep quality showed a direct significant association by cell-phone addiction score except sleep duration score that was inversely. Based on multivariate analysis affected to cell-phone addiction, being male gender and studying in general physician level are the most important predictors of poor sleep quality. Conclusions: Over use of internet and social networks via smart phones is related to poor sleep quality and quantity. Predefined sport programs, educational, cultural, and interesting entertainment are the essential needs for all medical students. These interventions are more important especially for male students who have longer educational."
+    },
+    {
+      "paperId": "adf5582f2accb954718ac9a1ec53fc9841af6144",
+      "externalIds": {
+        "DOI": "10.1016/j.jad.2024.03.157",
+        "CorpusId": 268792834,
+        "PubMed": "38554883"
+      },
+      "url": "https://www.semanticscholar.org/paper/adf5582f2accb954718ac9a1ec53fc9841af6144",
+      "title": "Unmasking the triad of burnout, absenteeism, and poor sleep among healthcare workers during the third wave of COVID-19 pandemics. Results from the national AMADEUS study.",
+      "venue": "Journal of Affective Disorders",
+      "year": 2024,
+      "citationCount": 12,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://figshare.com/articles/journal_contribution/Unmasking_the_triad_of_burnout_absenteeism_and_poor_sleep_among_healthcare_workers_during_the_third_wave_of_COVID-19_pandemics_Results_from_the_national_AMADEUS_study_/25487806/1/files/45682368.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jad.2024.03.157?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jad.2024.03.157, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145042543",
+          "name": "G. Fond"
+        },
+        {
+          "authorId": "2257931943",
+          "name": "Lee Smith"
+        },
+        {
+          "authorId": "119317442",
+          "name": "Bach Tran"
+        },
+        {
+          "authorId": "2281191547",
+          "name": "G. Lucas"
+        },
+        {
+          "authorId": "2294171634",
+          "name": "T. Nguyen"
+        },
+        {
+          "authorId": "9713864",
+          "name": "D. Yon"
+        },
+        {
+          "authorId": "2268825871",
+          "name": "Laurent Boyer"
+        }
+      ],
+      "abstract": "BACKGROUND\nBurnout and absenteeism are prevalent among healthcare workers, reflecting prolonged work-related stress and dissatisfaction with their job. Identifying poor sleep as a contributing factor can assist in developing targeted interventions. This study explored the relationship between burnout, absenteeism, and sleep among healthcare workers.\n\n\nMETHODS\nA nationwide online cross-sectional study was conducted among healthcare professionals in France during the third wave of COVID-19, from May 2021 to June 2021. Recruitment strategies included outreach through social and professional networks and email invitations. Burnout was assessed using the Maslach Burnout Inventory, absenteeism through self-reported days absent in the preceding 12 months, and sleep quality using the Pittsburgh Sleep Quality Index. The association between burnout, absenteeism, and poor sleep was analyzed using multivariate logistic regression, accounting for individual and professional variables. The study also explored various sleep dimension abnormalities.\n\n\nRESULTS\nOf 10,087 healthcare workers, 55.2 % reported burnout, 20.5 % absenteeism, and 64.8 % poor sleep. Burnout and absenteeism were more frequent in individuals with poor sleep compared to those with good sleep (74.2 % vs. 25.8 % and 75.6 % vs. 24.4 %, respectively). The multivariate analyses confirmed the associations between burnout, absenteeism, and poor sleep (Adjusted Odds Ratio [aOR] = 2.15, 95 % CI [1.97-2.35], p < 0.001; and aOR = 1.49, 95 % CI [1.32-1.67], p < 0.001, respectively).\n\n\nINTERPRETATION\nThe study highlighted the intricate relationship between burnout, absenteeism, and poor sleep among healthcare professionals, informing workforce management and policy decisions to foster a supportive work environment and enhance their well-being."
+    },
+    {
+      "paperId": "43ce002cd5f57652109561e9085bd8baa4fec5f3",
+      "externalIds": {
+        "MAG": "2011805513",
+        "DOI": "10.1088/0967-3334/36/4/683",
+        "CorpusId": 29397558,
+        "PubMed": "25799205"
+      },
+      "url": "https://www.semanticscholar.org/paper/43ce002cd5f57652109561e9085bd8baa4fec5f3",
+      "title": "Linear and non-linear brain–heart and brain–brain interactions during sleep",
+      "venue": "Physiological Measurement",
+      "year": 2015,
+      "citationCount": 107,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1088/0967-3334/36/4/683?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/0967-3334/36/4/683, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2249557",
+          "name": "L. Faes"
+        },
+        {
+          "authorId": "2786475",
+          "name": "Daniele Marinazzo"
+        },
+        {
+          "authorId": "5508166",
+          "name": "F. Jurysta"
+        },
+        {
+          "authorId": "2940201",
+          "name": "G. Nollo"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "d7f942a443c7e5b2ddad925177321598a71bb2d9",
+      "externalIds": {
+        "PubMedCentral": "12993931",
+        "DOI": "10.3389/fpubh.2026.1727263",
+        "CorpusId": 286317164,
+        "PubMed": "41853149"
+      },
+      "url": "https://www.semanticscholar.org/paper/d7f942a443c7e5b2ddad925177321598a71bb2d9",
+      "title": "Exploring the core symptoms and influencing factors of fatigue-related symptom clusters in patients with HIV/AIDS",
+      "venue": "Frontiers in Public Health",
+      "year": 2026,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12993931, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2244775990",
+          "name": "Dan Xu"
+        },
+        {
+          "authorId": "2108314017",
+          "name": "Jianghui Zhang"
+        },
+        {
+          "authorId": "2128134286",
+          "name": "Lan Shen"
+        },
+        {
+          "authorId": "2149051914",
+          "name": "Hao Chen"
+        },
+        {
+          "authorId": "2221648044",
+          "name": "Jia Li"
+        }
+      ],
+      "abstract": "Objective To explore the core symptoms and associated factors of fatigue-related symptom clusters in people living with HIV/AIDS during follow-up, with the aim of informing precision-based symptom management strategies. Methods Fatigue-related symptom clusters in patients with HIV/AIDS were assessed using the Fatigue Self-Assessment Scale, the Pittsburgh Sleep Quality Index, the Sexual Dysfunction Scale, and the Groningen Frailty Indicator. Symptom networks were constructed using R software to identify central symptoms based on network metrics. Univariate analysis and multivariate linear regression were then performed to explore potential factors associated with these core symptoms. Results Among male patients living with HIV/AIDS, the three most prevalent symptoms within the fatigue-related symptom cluster were fatigue (86.32%), sleep disturbances (44.63%), and weakness (43.32%). In female patients, the top three symptoms were fatigue (73.04%), sexual dysfunction (72.17%), and sleep disturbances (45.22%). In the symptom network for males, the three nodes with the highest strength centrality were sleep disturbances (D5, rs = 1.61), fatigue severity and type (C1, rs = 1.60), and sleep quality (D1, rs = 1.52). In females, the top three most central symptoms were difficulty achieving orgasm (B4, rs = 2.16), daytime functioning (D7, rs = 1.66), and sexual satisfaction (B5, rs = 1.09). Partner’s HIV status, employment status, number of sexual partners, and duration of ART were identified as significant factors influencing the core symptoms within the fatigue-related symptom cluster (p < 0.05). Conclusion In the fatigue-related symptom clusters among people living with HIV/AIDS, the core symptoms shared by both male and female patients namely sleep disturbances and impaired daytime functioning indicate that sleep problems are a central feature of these clusters. Accordingly, sleep issues may be considered a primary target for symptom management in this population. Healthcare professionals should develop targeted interventions based on these core symptoms and their influencing factors to improve the efficiency and precision of symptom management for individuals living with HIV/AIDS."
+    },
+    {
+      "paperId": "d76e4b42ec49ecbccc4d945f5e11de804793c2f2",
+      "externalIds": {
+        "PubMedCentral": "9650511",
+        "DOI": "10.1016/j.jksus.2022.102441",
+        "CorpusId": 253447787,
+        "PubMed": "36405649"
+      },
+      "url": "https://www.semanticscholar.org/paper/d76e4b42ec49ecbccc4d945f5e11de804793c2f2",
+      "title": "Determinants, predictors and negative impacts of burnout among health care workers during COVID-19 pandemic",
+      "venue": "Journal of King Saud University: Science",
+      "year": 2022,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.jksus.2022.102441",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9650511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "81560304",
+          "name": "T. Al-Otaibi"
+        },
+        {
+          "authorId": "144788031",
+          "name": "Ahmad Abbas"
+        },
+        {
+          "authorId": "2054700427",
+          "name": "Osama Ashry Gheith"
+        },
+        {
+          "authorId": "8547034",
+          "name": "P. Nair"
+        },
+        {
+          "authorId": "21739723",
+          "name": "M. Zahab"
+        },
+        {
+          "authorId": "2191602272",
+          "name": "Mryhan A. A. Hammouda"
+        },
+        {
+          "authorId": "2078549119",
+          "name": "Mahmoud M. Farid"
+        },
+        {
+          "authorId": "1492078705",
+          "name": "Reem M. Aljowaie"
+        },
+        {
+          "authorId": "112849395",
+          "name": "Noorah A. Alkubaisi"
+        },
+        {
+          "authorId": "2341340745",
+          "name": "E. Mohamed"
+        },
+        {
+          "authorId": "2191603198",
+          "name": "Arshad Mehmood Abassi"
+        },
+        {
+          "authorId": "2187308449",
+          "name": "Y. H. Eisa"
+        }
+      ],
+      "abstract": "The first defense line of the battle, healthcare workers (HCWs), faces a significant challenge in managing the current COVID-19 pandemic. An online electronic survey was sent to HCWs via email and social media networks. Socio-demographic data and work environment-related variables were assessed. Consequences of burnout (BO) were reported, e.g., elicited medical errors. Maslach burnout inventory was used to diagnose BO. Two hundred and eighty-four participants were included with a mean age of 39.83 ± 7.34 years, 70.8% worked in the COVID-19 frontline, 91.9% were followed daily updates about COVID-19, 63.7% were not satisfied with the coordination between triage and isolation, 64.4% got COVID-19 infection, 91.9% had a colleague or family member developed COVID-19 infection, and 21.5% experienced a colleague /a family member died due to COVID-19. Multivariate analysis by linear regression revealed that; working as a frontline HCW (OR 1.28, CI = 0.14–2.55) and sleep deprivation (OR 3.93, CI = 1.88–8.22) were the predictors of burnout."
+    },
+    {
+      "paperId": "7f77e2c30bfd7a1cb0ef45b8a78f49cb2a814b04",
+      "externalIds": {
+        "MAG": "2886478588",
+        "DOI": "10.1016/j.ajp.2018.08.015",
+        "CorpusId": 52142186,
+        "PubMed": "30170199"
+      },
+      "url": "https://www.semanticscholar.org/paper/7f77e2c30bfd7a1cb0ef45b8a78f49cb2a814b04",
+      "title": "Prevalence of and factors related to anxiety and depression symptoms among married patients with gynecological malignancies in China.",
+      "venue": "Asian Journal of Psychiatry",
+      "year": 2018,
+      "citationCount": 17,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.ajp.2018.08.015?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.ajp.2018.08.015, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "25106034",
+          "name": "Yueyang Hu"
+        },
+        {
+          "authorId": "2026826646",
+          "name": "Zhi-mian Ma"
+        },
+        {
+          "authorId": "2119076918",
+          "name": "Han Zhang"
+        },
+        {
+          "authorId": "8725387",
+          "name": "Tingting Gao"
+        },
+        {
+          "authorId": "15381426",
+          "name": "Jinglei Gao"
+        },
+        {
+          "authorId": "14181038",
+          "name": "Yixi Kong"
+        },
+        {
+          "authorId": "51133786",
+          "name": "Zeying Qin"
+        },
+        {
+          "authorId": "35530185",
+          "name": "Songli Mei"
+        }
+      ],
+      "abstract": "OBJECTIVE\nThis study aims to investigate the prevalence of anxiety and depression among married patients with gynecological malignancies in China and then explores factors related to anxiety and depression.\n\n\nMETHODS\nA cross-sectional study was conducted from July 2016 to July 2017 in Jilin Province. A total of 394 married patients with gynecological malignancies completed the Hospital Anxiety and Depression Scale (HADS). Univariate analysis and multivariate logistic regression analysis were used to evaluate the association between influencing factors of anxiety and depression. Back propagation neural networks (BP neural networks) were used to examine the ranking of these influencing factors.\n\n\nRESULTS\nThe prevalence of anxiety and depression was 79.95% and 94.16% in married patients with gynecological malignancies. Multivariate logistic analysis revealed that patients' anxiety showed significant relationships with low income, frequency of chemotherapy, diagnostic results and low sleep quality(P < 0.05), and patients' depression showed significant relationships with low quality sleep and frequency of chemotherapy (P < 0.05). Using BP neural networks, the order of importance of these factors in influencing anxiety, from high to low, was determined to be sleep quality, frequency of chemotherapy, monthly income, diagnostic results, age and fertility demand.\n\n\nCONCLUSIONS\nIt is important to reduce anxiety and depression in these patients by improving sleep quality and clinical treatment."
+    },
+    {
+      "paperId": "e634830844c8a2ed5a48e25ca7b9db0781d0e987",
+      "externalIds": {
+        "PubMedCentral": "8461574",
+        "CorpusId": 238236723,
+        "PubMed": "34602879"
+      },
+      "url": "https://www.semanticscholar.org/paper/e634830844c8a2ed5a48e25ca7b9db0781d0e987",
+      "title": "Predictors of Depressive Symptoms Based on the Human Capital Model Approach: Findings From the Indonesia Family Life Survey",
+      "venue": "The Yale Journal of Biology and Medicine",
+      "year": 2021,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8461574, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "80640098",
+          "name": "T. D. Tama"
+        },
+        {
+          "authorId": "2378679245",
+          "name": "Erni Astutik"
+        },
+        {
+          "authorId": "66537115",
+          "name": "J. O. Reuwpassa"
+        }
+      ],
+      "abstract": "Depression is the leading factor of disability and the overall global burden of diseases. The human capital model provides an appropriate conceptual model for managing human health. This study aimed to determine the association between human capital (including social, emotional, physical, financial, and intellectual capital) and depressive symptoms among productive age groups in Indonesia. A cross-sectional study was conducted by analyzing data of 9,858 respondents aged 15-59 years that were obtained from the Indonesia Family Life Survey 5 (IFLS 5). Multivariate logistic regression was used to assess the association between human capital components and depressive symptoms. Among respondents, 23.65% had higher depressive symptoms. Social trust and social networks (part of social capital) were significantly related to depressive symptoms. Self-reported satisfaction (part of emotional capital) were also related to depressive symptoms, as well as self-rated health, sleep quality, a number of chronic disease, body mass index (BMI), and physical functioning (part of physical capital). Log income (part of financial capital) and education level (part of intellectual capital) were related to depressive symptoms after controlling for other variables. Of all the components of human capital, physical capital has the most attributes associated with the risk of depressive symptoms. Therefore, depression prevention programs can be prioritized on attributes related to physical capital."
+    },
+    {
+      "paperId": "ff7e7462b8380611dd30b0bce4671aae651bbace",
+      "externalIds": {
+        "DOI": "10.1007/s11325-025-03506-w",
+        "CorpusId": 282616016,
+        "PubMed": "41175331"
+      },
+      "url": "https://www.semanticscholar.org/paper/ff7e7462b8380611dd30b0bce4671aae651bbace",
+      "title": "FEV1/FVC is linked to the severity of OSA in a multivariate regression analysis",
+      "venue": "Sleep and Breathing",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11325-025-03506-w?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11325-025-03506-w, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3543543",
+          "name": "Reza Erfanian"
+        },
+        {
+          "authorId": "2389577525",
+          "name": "Maryam Zare"
+        },
+        {
+          "authorId": "2261520124",
+          "name": "Reihaneh Heidari"
+        },
+        {
+          "authorId": "1650211101",
+          "name": "Parnian Khamushian"
+        },
+        {
+          "authorId": "5333541",
+          "name": "F. Heidari"
+        },
+        {
+          "authorId": "2389597603",
+          "name": "Maryam Keyfari Alamdari"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c6023c8fdbe31bcbb17d81271c8f3488f6a78f57",
+      "externalIds": {
+        "PubMedCentral": "12331856",
+        "DOI": "10.1007/s11325-025-03438-5",
+        "CorpusId": 280545320,
+        "PubMed": "40772987"
+      },
+      "url": "https://www.semanticscholar.org/paper/c6023c8fdbe31bcbb17d81271c8f3488f6a78f57",
+      "title": "Determinants of patient satisfaction in continuous positive airway pressure therapy for obstructive sleep apnea: A multivariate analysis of knowledge, technical, and psychosocial factors",
+      "venue": "Sleep and Breathing",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12331856, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2155104780",
+          "name": "M. Braun"
+        },
+        {
+          "authorId": "1411294563",
+          "name": "S. Dietz-Terjung"
+        },
+        {
+          "authorId": "2210743614",
+          "name": "T. Eggert"
+        },
+        {
+          "authorId": "2358147669",
+          "name": "C. Schoebel"
+        }
+      ],
+      "abstract": "Positive airway pressure (PAP) therapy is the primary treatment for obstructive sleep apnea (OSA), but long-term adherence remains challenging. This study aimed to identify key predictors of patient satisfaction with PAP therapy by examining the interrelationships between disease knowledge, care provision, health beliefs, and patient-reported experiences. A cross-sectional study was conducted at a tertiary sleep center in Germany. Adult patients with confirmed OSA diagnosis and experience with PAP therapy completed a comprehensive questionnaire assessing four domains: health attitudes and self-management, OSA care provision perceptions, OSA disease knowledge, and treatment experience. Multiple regression analysis was performed to identify predictors of treatment satisfaction. Among 148 participants (72.8% male, mean age 57.9 ± 11.8 years), 58.8% were active PAP users. High levels of family support (> 90%) and disease knowledge were reported, with 94.4% acknowledging the importance of regular treatment. Treatment experience emerged as the primary predictor of satisfaction in domain-level analysis. The final regression model identified four significant predictors explaining 75.9% of variance in satisfaction: treatment effectiveness (β = 0.304, p <. 001), routine integration (β = 0.286, p =. 001), nocturnal awakening (β = 0.273, p <. 001), and mask removal (β = 0.198, p =. 007). Patient satisfaction negatively correlated with alternative treatment usage (τ=-0.274, p <. 001) and positively with disease duration (τ = 0.187, p =. 008). PAP therapy satisfaction is predominantly influenced by treatment-specific factors rather than general health attitudes or care provision perceptions. Understanding these predictors may help clinicians identify patients at risk for low satisfaction and target interventions accordingly."
+    },
+    {
+      "paperId": "f709beef23ac0d4b99b394c01037cd55d082bb20",
+      "externalIds": {
+        "MAG": "2883273084",
+        "DOI": "10.1016/J.CHEMOLAB.2018.07.008",
+        "CorpusId": 125327010
+      },
+      "url": "https://www.semanticscholar.org/paper/f709beef23ac0d4b99b394c01037cd55d082bb20",
+      "title": "Modern practical convolutional neural networks for multivariate regression: Applications to NIR calibration",
+      "venue": "Chemometrics and Intelligent Laboratory Systems",
+      "year": 2018,
+      "citationCount": 284,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://discovery.ucl.ac.uk/10053349/1/Fearn_Modern%20practical%20convolutional%20neural%20networks%20for%20multivariate%20regression.%20Applications%20to%20NIR%20calibration_AAM.pdf",
+        "status": "GREEN",
+        "license": "other-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.CHEMOLAB.2018.07.008?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.CHEMOLAB.2018.07.008, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": null,
+          "name": "Chenhao Cui"
+        },
+        {
+          "authorId": "2560333",
+          "name": "T. Fearn"
+        }
+      ],
+      "abstract": "Abstract In this study, we investigate the use of convolutional neural networks (CNN) for near infrared (NIR) calibration. We propose a unified CNN structure that can be used for general multivariate regression purpose. The comparison between the CNN method and the partial least squares regression (PLSR) method was done on three different NIR datasets of spectra and lab reference values. Datasets are from different sources and contain 6998, 1000 and 415 training and 618, 597 and 108 validation samples, respectively. Results indicated that compared to the PLSR models, the CNN models are more accurate and less noisy. The convolutional layer in the CNN model can automatically find the suitable spectral preprocessing filter on the dataset, which significantly saves efforts in training the model."
+    },
+    {
+      "paperId": "4feffedb2ec057238296d60836e30ce6246153a2",
+      "externalIds": {
+        "DOI": "10.1145/3789692.3789841",
+        "CorpusId": 287949083
+      },
+      "url": "https://www.semanticscholar.org/paper/4feffedb2ec057238296d60836e30ce6246153a2",
+      "title": "Multivariate Regression Analysis on Connection Between Cloud Infrastructure and Digital Performanc",
+      "venue": "Proceedings of the 9th International Conference on Future Networks and Distributed Systems",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1145/3789692.3789841",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3789692.3789841?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3789692.3789841, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2306990066",
+          "name": "Aziz Zikriyoev"
+        },
+        {
+          "authorId": "101743678",
+          "name": "S. Mirzaliev"
+        },
+        {
+          "authorId": "2301492530",
+          "name": "Ahmed Aziz"
+        },
+        {
+          "authorId": "2122699642",
+          "name": "D. Abduturapova"
+        },
+        {
+          "authorId": "2091353533",
+          "name": "O. Tuychiev"
+        }
+      ],
+      "abstract": "Current study examines the relationship between digital infrastructure, artificial intelligence (AI) adoption, and cybersecurity investment by 86 international IT companies participating in the 9th International Conference on Future Networks and Distributed Systems (ICFNDS). Using the MVREG model, the research investigates the influence of firm-level determinants — R&D Expenditure, Market Share, Profit Margin, Innovation Score, Digitalization Level, and Employee Count — on the technological change and performance of businesses in the era of distributed systems and cloud-based networks. The data were standardized and tested for reliability on variance inflation factor (VIF) for multicollinearity, Breusch–Pagan for heteroskedasticity, and Shapiro–Wilk for normality. Diagnostic visualizations such as Graph Box, Cumulative Distribution, and Binscatter Plots were used to analyze variable dispersion, normality, and linearity on dimensions. Main results can be provided strong relationship among Performance Index, Innovation Score, and R&D Expenditure and Cloud Infrastructure Score. When we estimated marginal effect employee number has negative relationship with digital performance. While digitalization addresess functional role in investment into cybersecurity increases dramatically with companies higher levels of digitalization performance. The next results can be drawn relevance of scope of operations in forms of risks from digitalization process. Finally, moderate determination coefficient R² = 0.33 for AI Integration which eproves that the technological genesis is causal dependency on circumstance. Current paper work explains an empirical perspective on digital resource provision by IT companies in order to improve digital performance, acquire innovation technology, and provide competitiveness in the rigid transformation in context of future technology and information systems."
+    },
+    {
+      "paperId": "b2f58e9b6cf685a3058d1553ec252260a4106aec",
+      "externalIds": {
+        "PubMedCentral": "12671439",
+        "DOI": "10.1093/sleep/zsaf088",
+        "CorpusId": 277450244,
+        "PubMed": "40156904"
+      },
+      "url": "https://www.semanticscholar.org/paper/b2f58e9b6cf685a3058d1553ec252260a4106aec",
+      "title": "Fitbit-Measured Sleep Duration in Young Adolescents is Associated with Functional Connectivity in Attentional, Executive Control, Memory, and Sensory Networks",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 5,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12671439, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2316195467",
+          "name": "Ozerk Turan"
+        },
+        {
+          "authorId": "2181265265",
+          "name": "Jonathan Garner"
+        },
+        {
+          "authorId": "2329956495",
+          "name": "Amal Isaiah"
+        },
+        {
+          "authorId": "2314106727",
+          "name": "Maylin Palatino"
+        },
+        {
+          "authorId": "2244843766",
+          "name": "Thomas Ernst"
+        },
+        {
+          "authorId": "2182133945",
+          "name": "Ze Wang"
+        },
+        {
+          "authorId": "2309791541",
+          "name": "Linda Chang"
+        }
+      ],
+      "abstract": "Study Objectives: Adolescents often do not sleep as much as recommended by most national guidelines, which may impact their brain development. The current study aims to evaluate the relationship between objective assessment of sleep duration measured with actigraphy, and brain network connectivity on functional magnetic resonance imaging (fMRI). Methods: We used data from the two-year follow-up of the Adolescent Brain Cognitive Development (ABCD) study comprising 3,799 adolescents, ages 10 to 13 years old, to assess the relationship between sleep duration, measured by two weeks of Fitbit-derived actigraphy, and brain network connectivity derived from resting-state fMRI, using linear regression models. Linear regression analysis was also used to investigate the interaction between participant sex and sleep duration on brain network connectivity. Results: We identified both positive and negative correlations between mean sleep duration and 6 within brain network and 30 between-network pairs. These included networks involved in attention (Dorsal and Ventral Attention networks), executive control (Cingulo-Opercular and Default Mode networks), memory (Retrosplenial Temporal network), and sensory function (Auditory and Sensorimotor networks). We also identified sex-specific effects in three network pairs (Auditory – Retrosplenial Temporal, Retrosplenial Temporal – Sensorimotor, and Visual – Visual) and sex differences in functional connectivity across 23 distinct within- and between-network connections. Conclusions: Sleep duration is associated with the functional network connectivity in attentional, executive control, memory, and sensory networks during early adolescence. The identification of sex-specific effects in select network pairs underscores the importance of sex as a biological variable in studies of adolescent sleep and brain development."
+    },
+    {
+      "paperId": "c606df2b439481365569e807d5323363263beac5",
+      "externalIds": {
+        "PubMedCentral": "7517272",
+        "DBLP": "journals/entropy/AntonacciANF20",
+        "MAG": "3038357560",
+        "DOI": "10.3390/e22070732",
+        "CorpusId": 221141796,
+        "PubMed": "33286504"
+      },
+      "url": "https://www.semanticscholar.org/paper/c606df2b439481365569e807d5323363263beac5",
+      "title": "Information Transfer in Linear Multivariate Processes Assessed through Penalized Regression Techniques: Validation and Application to Physiological Networks",
+      "venue": "Entropy",
+      "year": 2020,
+      "citationCount": 49,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7517272",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7517272, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "8579431",
+          "name": "Y. Antonacci"
+        },
+        {
+          "authorId": "3006953",
+          "name": "L. Astolfi"
+        },
+        {
+          "authorId": "2940201",
+          "name": "G. Nollo"
+        },
+        {
+          "authorId": "2249557",
+          "name": "L. Faes"
+        }
+      ],
+      "abstract": "The framework of information dynamics allows the dissection of the information processed in a network of multiple interacting dynamical systems into meaningful elements of computation that quantify the information generated in a target system, stored in it, transferred to it from one or more source systems, and modified in a synergistic or redundant way. The concepts of information transfer and modification have been recently formulated in the context of linear parametric modeling of vector stochastic processes, linking them to the notion of Granger causality and providing efficient tools for their computation based on the state–space (SS) representation of vector autoregressive (VAR) models. Despite their high computational reliability these tools still suffer from estimation problems which emerge, in the case of low ratio between data points available and the number of time series, when VAR identification is performed via the standard ordinary least squares (OLS). In this work we propose to replace the OLS with penalized regression performed through the Least Absolute Shrinkage and Selection Operator (LASSO), prior to computation of the measures of information transfer and information modification. First, simulating networks of several coupled Gaussian systems with complex interactions, we show that the LASSO regression allows, also in conditions of data paucity, to accurately reconstruct both the underlying network topology and the expected patterns of information transfer. Then we apply the proposed VAR-SS-LASSO approach to a challenging application context, i.e., the study of the physiological network of brain and peripheral interactions probed in humans under different conditions of rest and mental stress. Our results, which document the possibility to extract physiologically plausible patterns of interaction between the cardiovascular, respiratory and brain wave amplitudes, open the way to the use of our new analysis tools to explore the emerging field of Network Physiology in several practical applications."
+    },
+    {
+      "paperId": "0504b7cc39d2e601a5eaec344c2c188544294d43",
+      "externalIds": {
+        "DBLP": "journals/corr/ChambonGAWG17",
+        "MAG": "2736245719",
+        "ArXiv": "1707.03321",
+        "DOI": "10.1109/TNSRE.2018.2813138",
+        "CorpusId": 4787295,
+        "PubMed": "29641380"
+      },
+      "url": "https://www.semanticscholar.org/paper/0504b7cc39d2e601a5eaec344c2c188544294d43",
+      "title": "A Deep Learning Architecture for Temporal Sleep Stage Classification Using Multivariate and Multimodal Time Series",
+      "venue": "IEEE transactions on neural systems and rehabilitation engineering",
+      "year": 2017,
+      "citationCount": 565,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1707.03321",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1707.03321, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "31838855",
+          "name": "Stanislas Chambon"
+        },
+        {
+          "authorId": "34832231",
+          "name": "M. Galtier"
+        },
+        {
+          "authorId": "5413513",
+          "name": "P. Arnal"
+        },
+        {
+          "authorId": "2083287",
+          "name": "G. Wainrib"
+        },
+        {
+          "authorId": "1797840",
+          "name": "Alexandre Gramfort"
+        }
+      ],
+      "abstract": "Sleep stage classification constitutes an important preliminary exam in the diagnosis of sleep disorders. It is traditionally performed by a sleep expert who assigns to each 30 s of the signal of a sleep stage, based on the visual inspection of signals such as electroencephalograms (EEGs), electrooculograms (EOGs), electrocardiograms, and electromyograms (EMGs). We introduce here the first deep learning approach for sleep stage classification that learns end-to-end without computing spectrograms or extracting handcrafted features, that exploits all multivariate and multimodal polysomnography (PSG) signals (EEG, EMG, and EOG), and that can exploit the temporal context of each 30-s window of data. For each modality, the first layer learns linear spatial filters that exploit the array of sensors to increase the signal-to-noise ratio, and the last layer feeds the learnt representation to a softmax classifier. Our model is compared to alternative automatic approaches based on convolutional networks or decisions trees. Results obtained on 61 publicly available PSG records with up to 20 EEG channels demonstrate that our network architecture yields the state-of-the-art performance. Our study reveals a number of insights on the spatiotemporal distribution of the signal of interest: a good tradeoff for optimal classification performance measured with balanced accuracy is to use 6 EEG with 2 EOG (left and right) and 3 EMG chin channels. Also exploiting 1 min of data before and after each data segment offers the strongest improvement when a limited number of channels are available. As sleep experts, our system exploits the multivariate and multimodal nature of PSG signals in order to deliver the state-of-the-art classification performance with a small computational cost."
+    },
+    {
+      "paperId": "ff39af291a7cd9e590305f4400c2cedc138f47d8",
+      "externalIds": {
+        "MAG": "2034027234",
+        "DBLP": "journals/jcisd/LuiT99",
+        "DOI": "10.1021/ci980090f",
+        "CorpusId": 29188512
+      },
+      "url": "https://www.semanticscholar.org/paper/ff39af291a7cd9e590305f4400c2cedc138f47d8",
+      "title": "Multivariate Regression Outperforms Several Robust Architectures of Neural Networks in QSAR Modeling",
+      "venue": "Journal of chemical information and computer sciences",
+      "year": 1999,
+      "citationCount": 116,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1021/ci980090f?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/ci980090f, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32642486",
+          "name": "Bono Lui"
+        },
+        {
+          "authorId": "1683224",
+          "name": "N. Trinajstic"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "951bceda47033ba6c91af5c44e92cc8b8cc618b1",
+      "externalIds": {
+        "MAG": "2072106824",
+        "DOI": "10.1061/(ASCE)HE.1943-5584.0000245",
+        "CorpusId": 31774940
+      },
+      "url": "https://www.semanticscholar.org/paper/951bceda47033ba6c91af5c44e92cc8b8cc618b1",
+      "title": "Comparison of Multivariate Regression and Artificial Neural Networks for Peak Urban Water-Demand Forecasting: Evaluation of Different ANN Learning Algorithms",
+      "venue": "",
+      "year": 2010,
+      "citationCount": 239,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1061/(ASCE)HE.1943-5584.0000245?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1061/(ASCE)HE.1943-5584.0000245, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143630452",
+          "name": "J. Adamowski"
+        },
+        {
+          "authorId": "12206543",
+          "name": "Christina Karapataki"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "72c6f23f15774c1d59718d805dc791514e6a313e",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2023.06.027",
+        "CorpusId": 259500069,
+        "PubMed": "37423023"
+      },
+      "url": "https://www.semanticscholar.org/paper/72c6f23f15774c1d59718d805dc791514e6a313e",
+      "title": "The effect of obstructive sleep apnea on fatty liver disease may be obscured by alcohol consumption: An ordinal logistic regression analysis.",
+      "venue": "Sleep Medicine",
+      "year": 2023,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2023.06.027?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2023.06.027, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2221708115",
+          "name": "Baokun Zhang"
+        },
+        {
+          "authorId": "2143827851",
+          "name": "Shanshan Lu"
+        },
+        {
+          "authorId": "2189413082",
+          "name": "Huiying Guo"
+        },
+        {
+          "authorId": "1390818959",
+          "name": "Juanjuan Xu"
+        },
+        {
+          "authorId": "2195019133",
+          "name": "Xiao Zhang"
+        },
+        {
+          "authorId": "9113250",
+          "name": "Hongyao Zhao"
+        },
+        {
+          "authorId": "2277620713",
+          "name": "Jiyou Tang"
+        }
+      ],
+      "abstract": "BACKGROUND\nObstructive sleep apnea (OSA) is closely associated with non-alcoholic fatty liver disease (NAFLD). The current definition of NAFLD cannot exclude the involvement of alcohol consumption in the development of fatty liver disease (FLD), but alcohol can aggravate OSA and participate in steatosis. There is limited evidence on the relationship between OSA and alcohol and its effect on FLD severity.\n\n\nOBJECTIVE\nTo determine the effect of OSA on FLD severity based on ordinal responses, and its relationship with alcohol consumption, in order to develop strategies for the prevention and treatment of FLD.\n\n\nMETHODS\nPatients with chief complaints of \"snoring\" who underwent polysomnography and abdominal ultrasound between January 2015 and October 2022 were selected. A total of 325 cases were divided into three groups according to abdominal ultrasound results: no FLD (n = 66), mild FLD (n = 116), and moderately severe FLD (n = 143) group. Patients were also categorized into alcoholic and nonalcoholic groups. Univariate analysis was used to examine the correlation between OSA and FLD severity. Multivariate ordinal logistic regression analysis was further used to identify the determinants of FLD severity and differences between the alcoholic and nonalcoholic groups.\n\n\nRESULTS\nA higher proportion of moderately severe FLD was observed in the group with an apnea/hypopnea index (AHI) > 30 compared to the AHI<15 group in all participants and in the nonalcoholic population (all p < 0.05). There was no significant difference among these groups in the alcoholic population. Ordinal logistic regression analysis found that in all participants, age [OR = 0.966(0.947-0.986)], BMI [OR = 1.293 (1.205-1.394)], diabetes mellitus [OR = 1.932(1.132-3.343)], hyperlipidemia [OR = 2.432(1.355-4.464)], severe OSA [OR = 2.36(1.315-4.259)] (all p < 0.05) were the independent risk factors for more severe FLD. However, different risk factors applied according to alcohol consumption. In addition to age and BMI, the independent risk factors for the alcoholic group also included diabetes mellitus [OR = 3.323(1.494-7.834)] while in the non-alcoholic group risk factors included hyperlipidemia [OR = 4.094(1.639-11.137)], and severe OSA[OR = 2.956(1.334-6.664)] (all p < 0.05).\n\n\nCONCLUSION\nSevere OSA is an independent determinant for developing more severe NAFLD in nonalcoholic population, and alcohol consumption may obscure the effect of OSA on the progression of FLD."
+    },
+    {
+      "paperId": "782dd3f9485dc16899e9a19467193f4904d5aad2",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf023",
+        "CorpusId": 276781016,
+        "PubMed": "40036969"
+      },
+      "url": "https://www.semanticscholar.org/paper/782dd3f9485dc16899e9a19467193f4904d5aad2",
+      "title": "Effects of contextual stress on Black mothers' self-reported and actigraph-estimated postpartum sleep.",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf023?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2047920412",
+          "name": "Ariel R. Hart"
+        },
+        {
+          "authorId": "2283467381",
+          "name": "Steven R H Beach"
+        },
+        {
+          "authorId": "2283224498",
+          "name": "Chantelle N Hart"
+        },
+        {
+          "authorId": "2274361750",
+          "name": "Isha W. Metzger"
+        },
+        {
+          "authorId": "6180795",
+          "name": "Justin A. Lavner"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "bcc0735c87f0caf4103eb3a1749e27acb7cee300",
+      "externalIds": {
+        "MAG": "1544437461",
+        "DOI": "10.1007/978-3-642-12990-2_98",
+        "CorpusId": 53517213
+      },
+      "url": "https://www.semanticscholar.org/paper/bcc0735c87f0caf4103eb3a1749e27acb7cee300",
+      "title": "Supply Chain Flexibility Assessment by Multivariate Regression and Neural Networks",
+      "venue": "International Symposium on Neural Networks",
+      "year": 2010,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://figshare.com/articles/conference_contribution/Supply_chain_flexibility_assessment_by_multivariate_regression_and_neural_networks/13456013",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-642-12990-2_98?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-642-12990-2_98, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1897856",
+          "name": "Ananda Jeeva"
+        },
+        {
+          "authorId": "34649992",
+          "name": "William W. Guo"
+        }
+      ],
+      "abstract": "This paper compares two vastly different methods of analysis – multiple regression and neural networks, in supply chain flexibility assessment. Data of manufacturing firms evaluating their prominent suppliers were analysed by multiple regression and simulated using three-layer multilayer perceptron (MLP) neural networks. Our study shows that NN can accurately determine a supplier’s flexibility capability within an error of 1% The incorporation of these two methods can lead to better understanding and dynamic prediction of supply chain flexibility for buyers."
+    },
+    {
+      "paperId": "df2ad8ecddf96a933cd2a134ee0308a5b71cd337",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.1223",
+        "CorpusId": 278749649
+      },
+      "url": "https://www.semanticscholar.org/paper/df2ad8ecddf96a933cd2a134ee0308a5b71cd337",
+      "title": "1223 Social Desirability, Self-Reported Sleep Disturbance, and Mental Health in College Students",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.1223?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.1223, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297714533",
+          "name": "Emme Tucker"
+        },
+        {
+          "authorId": "2362415866",
+          "name": "Lauren Elmore"
+        },
+        {
+          "authorId": "2362413759",
+          "name": "Cordell Stover"
+        },
+        {
+          "authorId": "7924461",
+          "name": "Sarah E. Emert"
+        },
+        {
+          "authorId": "2110340659",
+          "name": "Kelly N. Kim"
+        },
+        {
+          "authorId": "11485886",
+          "name": "Alisa Huskey"
+        },
+        {
+          "authorId": "2297843468",
+          "name": "Daniel J. Taylor"
+        }
+      ],
+      "abstract": "\n \n \n The validity of self-report measures may be impacted when individuals feel obligated to respond in a way that represents themselves favorably. This is known as social-desirability bias. Prior research has examined social desirability effects on academic achievement reports (e.g., GPA) and financial behavior. However, little research has explored the role of social desirability in self-reported mental health. This study aims to investigate the effect of social desirability on multiple mental health screeners.\n \n \n \n College students (N=1886; Mage=20.54 years, 57% female, 73.80% Caucasian) from two universities completed self-report questionnaires on the following domains: social desirability (SDRS-5), sleep disturbance (ASSQ-SDS), generalized anxiety disorder (GAD-7), major depressive disorder (PHQ-9), and posttraumatic stress disorder (PC-PTSD-5). Multivariate multiple regression was used to examine social desirability on the total scores of the mental health screeners.\n \n \n \n The overall multivariate multiple regression model was significant, F(4,1331) = 5.507, p <.001, Wilks’ lamba = 0.984. Social desirability predicted symptoms of PTSD (PCL-5, F(1, 1334) = 14.985, p <.001, B = -1.378), generalized anxiety (GAD-7, F(1, 1334) = 16.375, p <.001, B = -.462), and major depression (PHQ-9, F(1, 1334) = 19.461, p <.001, B = -.550), but not sleep disturbance (ASSQ-SDS, F(1, 1334) = 2.549, p =.111, B = -.109).\n \n \n \n The results of this study highlight the role that social desirability plays in self-reported sleep disturbance and mental health symptomology. While social desirability significantly predicted lower scores on self-reported mental health symptoms, its effect on sleep disturbances was not statistically significant. This suggests that sleep-related concerns may be perceived differently or are potentially less stigmatized than other mental health concerns. Future research may explore whether the relationship between social desirability and sleep reporting varies based on symptom severity, chronicity, or comorbid mental health concerns.\n \n \n \n Pacific-12 Conference Student-Athlete Health and Well-being Initiative Grant\n"
+    },
+    {
+      "paperId": "7f069d96f4d643df45e02db4698a222cd8cfac8f",
+      "externalIds": {
+        "DBLP": "journals/tim/WangLPP20",
+        "MAG": "2968024977",
+        "DOI": "10.1109/TIM.2019.2935576",
+        "CorpusId": 202134080
+      },
+      "url": "https://www.semanticscholar.org/paper/7f069d96f4d643df45e02db4698a222cd8cfac8f",
+      "title": "Multivariate Regression-Based Fault Detection and Recovery of UAV Flight Data",
+      "venue": "IEEE Transactions on Instrumentation and Measurement",
+      "year": 2020,
+      "citationCount": 126,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TIM.2019.2935576?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TIM.2019.2935576, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "30820521",
+          "name": "Benkuan Wang"
+        },
+        {
+          "authorId": "7416020",
+          "name": "Datong Liu"
+        },
+        {
+          "authorId": "145730941",
+          "name": "Yu Peng"
+        },
+        {
+          "authorId": "32716995",
+          "name": "Xiyuan Peng"
+        }
+      ],
+      "abstract": "With the wide applications of the unmanned aerial vehicle (UAV), operating safety becomes a critical issue. Thus, fault detection (FD) has been focused, which can realize fault alarm and schedule maintenance in time. Since the accurate physical model of UAV is usually difficult to obtain and flight data with random noise has both spatial and temporal correlation, a huge challenge is posed to FD. In this article, a data-driven multivariate regression approach based on long short-term memory with residual filtering (LSTM-RF) is proposed to fulfill UAV flight data FD and recovery. First, an LSTM network is designed as a regression model, which can extract the spatial–temporal features from the flight data and obtain an estimation of the monitored parameter. Second, a filter is utilized to smooth the residuals between real flight data and estimated values, which mitigates the effect of random noise and dramatically improves the detection performance. Finally, FD is achieved by comparing the smoothed residual with a statistical threshold. Then, fault recovery is fulfilled by replacing fault data with the estimated value. To validate the effectiveness of the proposed method, experiments are conducted based on simulation data and real flight data. The experimental results demonstrate that the proposed method has good performance in FD and recovery of UAV flight data."
+    },
+    {
+      "paperId": "5b5907e3f062c7b2d18ddefa5168a911a558c7c4",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2025.106688",
+        "CorpusId": 280321693,
+        "PubMed": "40712527"
+      },
+      "url": "https://www.semanticscholar.org/paper/5b5907e3f062c7b2d18ddefa5168a911a558c7c4",
+      "title": "Sleep regularity is associated with cognitive function and shows an inverted U-shaped relationship with serum brain-derived neurotrophic factor.",
+      "venue": "Sleep Medicine",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.sleep.2025.106688",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2025.106688?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2025.106688, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2251427663",
+          "name": "Yue Cao"
+        },
+        {
+          "authorId": "2140343152",
+          "name": "Jaehee Lee"
+        },
+        {
+          "authorId": "84722847",
+          "name": "Jaehoon Seol"
+        },
+        {
+          "authorId": "2201717814",
+          "name": "Kyohei Shibuya"
+        },
+        {
+          "authorId": "13563273",
+          "name": "Jieun Yoon"
+        },
+        {
+          "authorId": "2237869204",
+          "name": "T. Arai"
+        },
+        {
+          "authorId": "2308986189",
+          "name": "M. Yanagisawa"
+        },
+        {
+          "authorId": "2338236433",
+          "name": "Tomohiro Okura"
+        }
+      ],
+      "abstract": "OBJECTIVES\nDay-to-day sleep patterns have been hypothesized to influence cognitive health and Alzheimer's disease. However, it remains unclear whether sleep irregularity is associated with cognitive function and its key marker, brain-derived neurotrophic factor (BDNF), especially in individuals with subjective concerns about cognition and sleep but who are otherwise relatively healthy.\n\n\nMETHODS\nA total of 458 participants (aged 65.0 ± 11.1 years, 51.1 % female) participated in the Tsukuba Happiness Life Study between 2023 and 2024 in Japan. Day-to-day sleep patterns were measured using the Sleep Regularity Index (SRI) via 24/7 actigraphy. Cognitive function was evaluated using a comprehensive assessment battery. Serum BDNF was measured in a subgroup of 232 participants. Multivariate regression analysis was used for the main analysis.\n\n\nRESULTS\nOverall, the SRI ranged from 10.86 to 85.59; after adjusting for demographic factors and total sleep time, participants with higher SRI (range, 65.35-85.59) exhibited higher global cognitive function (B = 0.13, 95 % CI = 0.02, 0.24) than the lower SRI group (range, 10.86-54.08). Notably, a nonlinear relationship (inverted U-shaped) was observed between SRI and serum BDNF levels, whereas balanced SRI (around 60) and the middle SRI group exhibited significantly higher serum BDNF levels (B = 0.17, 95 % CI = 0.04, 0.30) than the lower SRI group.\n\n\nCONCLUSIONS\nHigher SRI serves as an important factor for cognitive function. Maintaining a balanced SRI, which is neither too rigid nor highly irregular, might benefit Alzheimer's disease progression."
+    },
+    {
+      "paperId": "b94eb9e5110c7614db9a50499fb882de15d7e99d",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2025.106684",
+        "CorpusId": 280334389,
+        "PubMed": "40716257"
+      },
+      "url": "https://www.semanticscholar.org/paper/b94eb9e5110c7614db9a50499fb882de15d7e99d",
+      "title": "Cognitive-friendly sleep patterns in older Adults:A cross-regional HCAP study.",
+      "venue": "Sleep Medicine",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2025.106684?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2025.106684, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2187709463",
+          "name": "Jianhong Liao"
+        },
+        {
+          "authorId": "2180065657",
+          "name": "Yunhan Shi"
+        },
+        {
+          "authorId": "2252051825",
+          "name": "Yanru Li"
+        },
+        {
+          "authorId": "2003820897",
+          "name": "Demin Han"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "33220155c7f4891f2e0ef82aa625f86874d08511",
+      "externalIds": {
+        "PubMedCentral": "12713855",
+        "DOI": "10.3389/frsle.2025.1528458",
+        "CorpusId": 277217010,
+        "PubMed": "41425173"
+      },
+      "url": "https://www.semanticscholar.org/paper/33220155c7f4891f2e0ef82aa625f86874d08511",
+      "title": "Sleep disturbance after pediatric and adolescent concussion",
+      "venue": "Frontiers in sleep",
+      "year": 2025,
+      "citationCount": 5,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3389/frsle.2025.1528458",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12713855, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2327327735",
+          "name": "James Wilkes"
+        },
+        {
+          "authorId": "2155852362",
+          "name": "D. Fedonni"
+        },
+        {
+          "authorId": "2351389167",
+          "name": "Jelsia Cottone"
+        },
+        {
+          "authorId": "36974303",
+          "name": "K. Arbogast"
+        },
+        {
+          "authorId": "3454060",
+          "name": "Christina L. Master"
+        }
+      ],
+      "abstract": "Introduction Sleep disturbances following concussion are common. The goal of this study was to describe subjective reports of sleep disturbances for pediatric and adolescent patients, whether they predict prolonged recovery or moderate the relationship between comorbidities, symptom burden, and recovery. Materials and methods Clinical electronic health record (EHR) data from a prospective concussion registry of patients aged 5–18 were used for this study. Specific demographic and injury characteristics included sex, age, race and ethnicity, previous concussion history, symptom scores, and personal history of mental health diagnoses and sleep problems. Categorical variables were compared with Pearson's chi-squared tests and continuous variables were compared with Kruskal-Wallis rank sum test. Univariate and multivariate logistic regression were used to calculate odds ratios, 95% confidence intervals and p-values for factors associated with prolonged concussion recovery. Interaction terms were created for each comorbidity and sleep changes to test for moderation effects of comorbidities on the relationship between sleep disturbance and prolonged recovery. Results A total of 4,469 patients with a concussion were seen within 28 days of injury during the study period and included in analyses, with 3,002 (67%) reporting new sleep disturbance. Those with sleep disturbance differed by sex, age, time from injury to initial visit, Post Concussion Symptom Inventory (PCSI) at initial visit, concussion history, presence of comorbidities, and COI. In the multivariate model, female patients (OR 1.43, 95% CI 1.25–1.64), those with new sleep disturbance (OR 1.37, 95% CI 1.18–1.60), patients without a previous concussion diagnosis (OR 1.31, 95% CI 1.15–1.52), medical history of a learning disability (OR 1.3, 95% CI 1.10–1.67), more days between injury to initial visit (CI 1.08–1.10), and a higher initial PCSI score (OR 1.03, 95% CI 1.03–1.03) had greater odds of prolonged recovery. Interaction terms for moderation effects of comorbidities on the relationship between sleep disturbance and prolonged recovery were not statistically significant. Discussion Nearly 2/3 of concussion patients self-reported changes in sleep after injury, a higher rate than previously reported (51%). Sleep disturbances following concussion were the second strongest predictor of prolonged recovery past 28 days, only behind female sex, and comorbidities did not moderate that relationship."
+    },
+    {
+      "paperId": "68df33d3425c138e548022f77d1e25485a6dfc37",
+      "externalIds": {
+        "PubMedCentral": "12205219",
+        "DOI": "10.2147/NSS.S529355",
+        "CorpusId": 279589394,
+        "PubMed": "40584285"
+      },
+      "url": "https://www.semanticscholar.org/paper/68df33d3425c138e548022f77d1e25485a6dfc37",
+      "title": "Association Between Sleep and Vertigo Severity in Benign Paroxysmal Positional Vertigo: Mediating Role of Psychological Factors",
+      "venue": "Nature and Science of Sleep",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12205219, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2368361849",
+          "name": "Juanli Xing"
+        },
+        {
+          "authorId": "2368825539",
+          "name": "Xinyu Xu"
+        },
+        {
+          "authorId": "2368366378",
+          "name": "Hongying Shan"
+        },
+        {
+          "authorId": "2368372831",
+          "name": "Jiaqian Wu"
+        },
+        {
+          "authorId": "2368371418",
+          "name": "Peiyu Liu"
+        },
+        {
+          "authorId": "2355050821",
+          "name": "Wenyan Shi"
+        },
+        {
+          "authorId": "2354704028",
+          "name": "Peihua Ren"
+        },
+        {
+          "authorId": "2376796998",
+          "name": "Jinling Liu"
+        },
+        {
+          "authorId": "1753619998",
+          "name": "Yuge Huang"
+        },
+        {
+          "authorId": "2368381385",
+          "name": "Baibing Mi"
+        }
+      ],
+      "abstract": "Objective To investigate the relationship between sleep quality and vertigo severity among patients with benign paroxysmal positional vertigo (BPPV) and to elucidate the mediating effects of anxiety and depression on this association. Methods We analyzed baseline data from an ongoing cohort study of 1056 BPPV patients in Northwest China. Vertigo severity was assessed using the Dizziness Handicap Inventory (DHI), sleep quality was measured with the Pittsburgh Sleep Quality Index (PSQI), and psychological states were evaluated using the Hospital Anxiety and Depression Scale (HADS), Self-rating Anxiety Scale (SAS), and Self-rating Depression Scale (SDS). Multiple regression and mediation analysis were conducted to explore the relationships between sleep quality, psychological factors, and vertigo severity. Results Robust correlations were demonstrated between total PSQI scores and all DHI subscales (p < 0.001). Multivariate ordered logistic regression revealed that patients exhibiting sleep disorders manifested a substantially elevated risk of severe vertigo compared to those without (OR: 2.024; 95% CI: 1.571–2.608). Psychological factors emerged as significant mediators in this relationship, with anxiety accounting for 28.5% of the mediation effect, depression contributing 38%, and HADS mediating 37.7% of the association. A pronounced dose-response relationship was noted, with increased risk of vertigo severity as PSQI scores exceeded 7. Conclusion This study shows a strong correlation between poor sleep quality and increased vertigo severity in BPPV patients, with anxiety and depression as significant mediators. These findings emphasize the need to address sleep-related factors and psychological symptoms in BPPV management, suggesting integrated sleep therapy and psychological interventions."
+    },
+    {
+      "paperId": "00e1f69dec99e34412db91cf7b02cfd205916551",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2025.03.017",
+        "CorpusId": 277215412,
+        "PubMed": "40132383"
+      },
+      "url": "https://www.semanticscholar.org/paper/00e1f69dec99e34412db91cf7b02cfd205916551",
+      "title": "Association between atherogenic index of plasma level and cardiovascular events in patients with obstructive sleep apnea: The sleep heart health study.",
+      "venue": "Sleep Medicine",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2025.03.017?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2025.03.017, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2332899970",
+          "name": "Lixia Wang"
+        },
+        {
+          "authorId": "2279497157",
+          "name": "Xinjie Hui"
+        },
+        {
+          "authorId": "2143632498",
+          "name": "R. Huang"
+        },
+        {
+          "authorId": "2318933785",
+          "name": "Yi Xiao"
+        }
+      ],
+      "abstract": "BACKGROUND\nThe atherogenic index of plasma (AIP) has been demonstrated as a predictor for cardiovascular disease (CVD) in various populations. However, there are quite limited studies on the association between AIP and incident CVD among adults with obstructive sleep apnea (OSA).\n\n\nMETHODS\nData were obtained from the Sleep Heart Health Study, including 2578 participants with OSA and without pre-existing CVD. AIP was calculated as lg (triglycerides/high-density lipoprotein-cholesterol). Baseline AIP was stratified into quartiles (Q1-Q4). Multivariate logistic regression and restricted cubic spline analyses were performed to examine the relationship between AIP and CVD.\n\n\nRESULTS\nAfter a median follow-up of 11.67 years, 580 (22.50 %) OSA patients developed CVD, including 184 (7.10 %) with myocardial infarction (MI), and 400 (15.50 %) with coronary artery disease (CHD [including MI]), and 127 (4.90 %) with stroke. The multivariate logistic regression and restricted cubic spline analyses demonstrated a significant association between AIP and incidence of CVD, CHD, and MI, but not stroke. Compared with Q1 group, the fully adjusted odds ratios from Q2 group to Q4 group were: 1.33 (0.98, 1.80), 1.41 (1.03, 1.92), and 1.54 (1.12, 2.14) for CVD; 1.71 (1.04, 2.86), 1.92 (1.17, 3.21), and 2.01 (1.19, 3.45) for MI; 1.48 (1.04, 2.11), 1.68 (1.18, 2.40), and 1.70 (1.18, 2.47) for CHD.\n\n\nCONCLUSION\nThis study demonstrated that higher AIP level is associated with incident CVD, except stroke, independent of OSA severity and hypoxia among OSA patients. These findings suggest that monitoring AIP can facilitate the early identification of OSA patients at high risk of CVD."
+    },
+    {
+      "paperId": "aeb3679c6c2144f5dde4df6d4d95eabfcca6e99a",
+      "externalIds": {
+        "DOI": "10.1007/s11325-025-03390-4",
+        "CorpusId": 279582736,
+        "PubMed": "40551077"
+      },
+      "url": "https://www.semanticscholar.org/paper/aeb3679c6c2144f5dde4df6d4d95eabfcca6e99a",
+      "title": "Impact of self-rated health status on sleep disturbance among elderly diabetics: finding from the indonesian family life survey",
+      "venue": "Sleep and Breathing",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11325-025-03390-4?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11325-025-03390-4, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "96741630",
+          "name": "Y. Asri"
+        },
+        {
+          "authorId": "2329590598",
+          "name": "Hsiao-Yean Chiu"
+        },
+        {
+          "authorId": "2282130829",
+          "name": "Faizul Hasan"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "0545b12b1086c6052ef30b403ab7fc7b02200e7d",
+      "externalIds": {
+        "DOI": "10.1007/s11325-025-03243-0",
+        "CorpusId": 275785695,
+        "PubMed": "39841314"
+      },
+      "url": "https://www.semanticscholar.org/paper/0545b12b1086c6052ef30b403ab7fc7b02200e7d",
+      "title": "Association between obstructive sleep apnea and Tinnitus in the United States: NHANES 2005–2020",
+      "venue": "Sleep and Breathing",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11325-025-03243-0?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11325-025-03243-0, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2284933354",
+          "name": "Chao Wang"
+        },
+        {
+          "authorId": "2300851564",
+          "name": "Mengdi Shi"
+        },
+        {
+          "authorId": "2284772747",
+          "name": "Liangzhen Xie"
+        },
+        {
+          "authorId": "2284830095",
+          "name": "Zhu Qin"
+        },
+        {
+          "authorId": "2284823467",
+          "name": "Wentao Li"
+        },
+        {
+          "authorId": "2328276053",
+          "name": "Dianyi Wang"
+        },
+        {
+          "authorId": "2342237436",
+          "name": "W. Peng"
+        },
+        {
+          "authorId": "2341558148",
+          "name": "Jianli Wu"
+        },
+        {
+          "authorId": "2300034598",
+          "name": "Yan Li"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "34f51443ff85ee7e5d2c35f30fe8656486c7530d",
+      "externalIds": {
+        "PubMedCentral": "11776509",
+        "DOI": "10.2147/NSS.S492796",
+        "CorpusId": 275914007,
+        "PubMed": "39881849"
+      },
+      "url": "https://www.semanticscholar.org/paper/34f51443ff85ee7e5d2c35f30fe8656486c7530d",
+      "title": "Development and Evaluation of a Hypertension Prediction Model for Community-Based Screening of Sleep-Disordered Breathing",
+      "venue": "Nature and Science of Sleep",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.dovepress.com/article/download/99620",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11776509, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2313930660",
+          "name": "Tong Feng"
+        },
+        {
+          "authorId": "2238199453",
+          "name": "Guangliang Shan"
+        },
+        {
+          "authorId": "2248976882",
+          "name": "Yaoda Hu"
+        },
+        {
+          "authorId": "2281909518",
+          "name": "Huijing He"
+        },
+        {
+          "authorId": "2160566443",
+          "name": "Guo Pei"
+        },
+        {
+          "authorId": "2344568910",
+          "name": "Ruohan Zhou"
+        },
+        {
+          "authorId": "2310986201",
+          "name": "Qiong Ou"
+        }
+      ],
+      "abstract": "Purpose Approximately 30% of patients with sleep-disordered breathing (SDB) present with masked hypertension, primarily characterized by elevated nighttime blood pressure. This study aimed to develop a hypertension prediction model tailored for primary care physicians, utilizing simple, readily available predictors derived from type IV sleep monitoring devices. Patients and Methods Participants were recruited from communities in Guangdong Province, China, between April and May 2021. Data collection included demographic information, clinical indicators, and results from type IV sleep monitors, which recorded oxygen desaturation index (ODI), average nocturnal oxygen saturation (MeanSpO2), and lowest recorded oxygen saturation (MinSpO2). Hypertension was diagnosed using blood pressure monitoring or self-reported antihypertensive medication use. A nomogram was constructed using multivariate logistic regression after Least Absolute Shrinkage and Selection Operator (LASSO) regression identified six predictors: waist circumference, age, ODI, diabetes status, family history of hypertension, and apnea. Model performance was evaluated using area under the curve (AUC), calibration plots, and decision curve analysis (DCA). Results The model, developed in a cohort of 680 participants and validated in 401 participants, achieved an AUC of 0.775 (95% CI: 0.730–0.820) in validation set. Calibration plots demonstrated excellent agreement between predictions and outcomes, while DCA confirmed significant clinical utility. Conclusion This hypertension prediction model leverages easily accessible indicators, including oximetry data from type IV sleep monitors, enabling effective screening during community-based SDB assessments. It provides a cost-effective and practical tool for prioritizing early intervention and management strategies in both primary care and clinical settings."
+    },
+    {
+      "paperId": "490768df7c0c91a2d6f04b3b3a775affc9942bf5",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2025.03.016",
+        "CorpusId": 277197834,
+        "PubMed": "40132385"
+      },
+      "url": "https://www.semanticscholar.org/paper/490768df7c0c91a2d6f04b3b3a775affc9942bf5",
+      "title": "Sleep breathing impairment index predicts incident atrial fibrillation in obstructive sleep apnea: A prospective cohort study.",
+      "venue": "Sleep Medicine",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.sleep.2025.03.016",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2025.03.016?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2025.03.016, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2332899970",
+          "name": "Lixia Wang"
+        },
+        {
+          "authorId": "2279497157",
+          "name": "Xinjie Hui"
+        },
+        {
+          "authorId": "6065730",
+          "name": "W. Cao"
+        },
+        {
+          "authorId": "2143632498",
+          "name": "R. Huang"
+        },
+        {
+          "authorId": "2318933785",
+          "name": "Yi Xiao"
+        }
+      ],
+      "abstract": "OBJECTIVES\nRespiratory-event-associated hypoxia is crucial in cardiovascular comorbidities of obstructive sleep apnea (OSA). Intermittent hypoxia is an independent risk factor for atrial fibrillation (AF). The sleep breathing impairment index (SBII) is a novel metric that quantifies respiratory events and hypoxia, showing exceptional efficacy in predicting cardiovascular diseases. This study aims to evaluate the association between SBII and AF in OSA patients and compare the predictive performance of various OSA severity indices in predicting incident AF.\n\n\nMETHODS\nThis study included 1660 OSA patients without pre-existing AF from the Sleep Heart Health Study. Baseline SBII values were stratified into quartiles. Multivariate logistic regression analysis and restricted cubic spline analysis were conducted to explore the association between SBII and incident AF. Harrell's concordance statistic (C-statistic) was performed to compare the predictive value of SBII against other OSA severity indices.\n\n\nRESULTS\nDuring a mean follow-up of 5.3 years, 190 (11.5 %) OSA patients developed AF. SBII and hypoxic burden (HB) were associated with an increased risk of incident AF, with adjusted odds ratios of 1.87 (95 %CI: 1.14, 3.11; P = 0.015) and 2.01 (95 %CI: 1.20, 3.41; P = 0.009) for the third and fourth quartiles of SBII, respectively, and 1.70 (95 %CI: 1.04, 2.81; P = 0.038) for the fourth quartile of HB. Moreover, SBII had the largest C-statistic (0.75, 95 % CI: 0.709, 0.782) compared with HB, AHI, and ODI.\n\n\nCONCLUSION\nThis study demonstrated that elevated SBII and HB levels increased the risk of incident AF in OSA patients, with SBII outperforming other OSA severity indices in predicting AF."
+    },
+    {
+      "paperId": "42a42025ac2019e2f087dfdf6f75011c9344168c",
+      "externalIds": {
+        "PubMedCentral": "12011028",
+        "DOI": "10.2147/NSS.S400125",
+        "CorpusId": 277879537,
+        "PubMed": "40260090"
+      },
+      "url": "https://www.semanticscholar.org/paper/42a42025ac2019e2f087dfdf6f75011c9344168c",
+      "title": "Association Between Metabolic Score for Insulin Resistance (METS-IR) and Risk of Obstructive Sleep Apnea: Analysis of NHANES Database and a Chinese Cohort",
+      "venue": "Nature and Science of Sleep",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12011028, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2289902334",
+          "name": "Beini Zhou"
+        },
+        {
+          "authorId": "2315577104",
+          "name": "Yan Yao"
+        },
+        {
+          "authorId": "2323611339",
+          "name": "Yuhan Wang"
+        },
+        {
+          "authorId": "2323132514",
+          "name": "Wuriliga Yue"
+        },
+        {
+          "authorId": "2216216622",
+          "name": "Jingyi Zhang"
+        },
+        {
+          "authorId": "2258331676",
+          "name": "Yang He"
+        },
+        {
+          "authorId": "2120449643",
+          "name": "Qingfeng Zhang"
+        },
+        {
+          "authorId": "2274909466",
+          "name": "Yixuan Wang"
+        },
+        {
+          "authorId": "2257905338",
+          "name": "K. Hu"
+        }
+      ],
+      "abstract": "Purpose Insulin resistance (IR) plays a significant role in the development of obstructive sleep apnea (OSA). The metabolic score for insulin resistance (METS-IR) is a novel method for assessing IR. This study aims to explore the relationship between METS-IR and the risk of OSA. Patients and Methods This cross-sectional study included a total of 8297 subjects from NHANES (National Health and Nutrition Examination Survey) database, as well as 581 patients who underwent sleep monitoring in Renmin Hospital of Wuhan University. Logistic regression, subgroup analysis, and receiver operating characteristic (ROC) curve analysis were employed for evaluation. Results In the American population, a significant positive association was found between METS-IR and increased risk of OSA. For each unit increase in METS-IR, the risk of OSA increased by 4.4% (OR= 1.044; 95% CI: 1.037–1.059; P <0.001). A similar relationship was observed in the Chinese population. Multivariate Logistic regression model showed that for each unit increase in METS-IR, the prevalence of OSA increased by 6.7% (OR= 1.067; 95% CI: 1.035–1.103; P <0.001), and apnea-hypopnea index (AHI) increased by 0.732 (β= 0.732; 95% CI: 0.573–0.732; P <0.001). Gender subgroup analysis further showed that the association between METS-IR and OSA was particularly significant in male participants (OR= 1.111; 95% CI: 1.065–1.163; P <0.001). In the ROC analysis, the area under the curve (AUC) value of METS-IR for predicting OSA was 0.777, but it is not statistically significantly different from triglyceride glucose (TyG) (AUC = 0.749; P = 0.054), body mass index (BMI) (AUC = 0.769; P = 0.269), and triglyceride glucose-body mass index (TyG-BMI) (AUC = 0.777; P = 0.996). Conclusion METS-IR is significantly associated with the risk of OSA and may serve as an effective predictive marker for identifying OSA."
+    },
+    {
+      "paperId": "bd126a764d155876945bb673d198cd27f912b6cd",
+      "externalIds": {
+        "PubMedCentral": "11910049",
+        "DOI": "10.2147/NSS.S503570",
+        "CorpusId": 276951223,
+        "PubMed": "40092552"
+      },
+      "url": "https://www.semanticscholar.org/paper/bd126a764d155876945bb673d198cd27f912b6cd",
+      "title": "Lifestyle and Job-Related Factors Associated with Sleep Quality: Gender-Specific Insights from Taiwanese Hospital Physicians",
+      "venue": "Nature and Science of Sleep",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.2147/nss.s503570",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11910049, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2061634699",
+          "name": "Wenjuan Hou"
+        },
+        {
+          "authorId": "2371996361",
+          "name": "Tzu-Chin Hsu"
+        },
+        {
+          "authorId": "2278581226",
+          "name": "Fu-Li Chen"
+        },
+        {
+          "authorId": "1390705228",
+          "name": "Jeng‑Cheng Wu"
+        }
+      ],
+      "abstract": "Background Poor sleep in physicians is a major concern, affecting their physical and psychological well-being and increasing the risk of medical errors. In this cross-sectional study, we explored gender-specific differences in factors associated with sleep quality in physicians. Participants and Methods Self-report questionnaires were distributed to 401 hospital physicians in Taiwan. Statistical analyses—Student’s t test, Pearson’s correlation test, and multivariate linear regression—were conducted to identify factors associated with sleep quality. Subgroup analyses were also conducted to analyze gender-specific differences in sleep quality and its related factors. Results Of a total of 189 physicians, approximately 40% reported poor sleep quality, with no significant gender-specific differences. Multivariate analysis revealed that unhealthy dietary habits (β = 0.39, p = 0.02) and a lack of regular exercise (β = −0.52, p = 0.04) were significantly associated with poor sleep quality in the female physicians. By contrast, higher job demands were significantly associated with poorer sleep quality in the male physicians (β = 0.16, p = 0.03). Conclusion In physicians, sleep quality is influenced by gender-specific factors. To enhance sleep quality, male physicians should focus on reducing their workload, and female physicians should prioritize improving their dietary and exercise habits. To achieve these goals, we recommend implementing gender-sensitive strategies involving flexible scheduling and workload management to reduce job demands for male physicians. We also recommend providing on-site healthy meal options and establishing exercise facilities to promote healthier lifestyle habits for female physicians. In addition, we recommend developing sleep hygiene education and mentorship programs to support work–life balance and aid stress management tailored to gender-specific needs. These strategies could help enhance the sleep quality of physicians, potentially improving their well-being and patient care quality."
+    },
+    {
+      "paperId": "b0b8a525b950fecdb9687d2052c3eb2056036445",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0928",
+        "CorpusId": 278767693
+      },
+      "url": "https://www.semanticscholar.org/paper/b0b8a525b950fecdb9687d2052c3eb2056036445",
+      "title": "0928 Somatic Symptomatology and Sleep-Related Daytime Dysfunction Post-Mild Traumatic Brain Injury: Exploring Gender Specific Associations",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0928?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0928, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297697718",
+          "name": "Nekabari Yakpogoro"
+        },
+        {
+          "authorId": "11485886",
+          "name": "Alisa Huskey"
+        },
+        {
+          "authorId": "2350127376",
+          "name": "Kathryn E R Kennedy"
+        },
+        {
+          "authorId": "2267192749",
+          "name": "Michael A Grandner"
+        },
+        {
+          "authorId": "2297690592",
+          "name": "W. Killgore"
+        }
+      ],
+      "abstract": "\n \n \n Somatization is the manifestation of physical symptoms such as, pain or weakness, and is linked to impaired daytime functioning from poor sleep quality. Pre-injury somatization has been linked to higher concussion symptom scores and prolonged recovery, with worse effects in females. We hypothesized that somatization would be associated with sleep-related daytime dysfunction in women, but not men.\n \n \n \n Participants included healthy adults (n=30) and individuals with mild traumatic brain injury (mTBI; n=150). Measures were collected from 113 adults (72 females; M age=23.79, SD=6.90, and 41 males; M age=26.88, SD=8.51) at five timepoints following injury (2-weeks, 1-month, 3-months, 6-months, 12-months). Daytime dysfunction was measured using a subscale of the Pittsburgh Sleep Quality Index (higher scores indicated greater sleep-related dysfunction). Somatization was assessed using the Personality Assessment Inventory. Multivariate regression and Pearson correlation analyses were used to examine the relationship between somatization and daytime dysfunction for the group and separately for males and females, controlling for age and time since injury.\n \n \n \n Somatization accounted for 62.3% of the variance in sleep-related daytime dysfunction at two-weeks (R2=0.62,F(2,7)=8.42) post-injury. When evaluated separately by sex, somatization predicted sleep-related daytime dysfunction in females (β=1.11, p=0.04) but not males (β=0.31, p=0.51). At one-month, somatization accounted for 21.9% of the variance in daytime dysfunction (R2=0.219,F(2,18)=3.80). After Bonferroni correction (p=0.042), males trended toward significance (β=1.041, p=0.083) but not females (β=0.57, p=0.33). There were no significant correlations at three-months. At six-months, somatization accounted for 49.5% of the variance in daytime dysfunction (R2=0.495,F(2,17)=10.30). Somatization predicted daytime dysfunction for both females (β=1.540, p< 0.001) and males (β=1.686, p< 0.001). There were no significant correlations at twelve-months post-injury.\n \n \n \n Somatization was strongly associated with sleep-related daytime dysfunction, with notable sex differences at various points following injury. Early post-injury, females with somatization experienced greater sleep-related daytime dysfunction while males demonstrated stronger correlations over time. These findings suggest that females may show the strongest association between sleep-related dysfunction and somatization early in the course of injury, but these effects may be more apparent later in men.\n \n \n \n W81XWH-12-1-0386\n"
+    },
+    {
+      "paperId": "48c772a074bba3ca553e1c0ea904b4fa782977ac",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.1075",
+        "CorpusId": 278767633
+      },
+      "url": "https://www.semanticscholar.org/paper/48c772a074bba3ca553e1c0ea904b4fa782977ac",
+      "title": "1075 Factors Associated with the Use of Self-help Strategies for Sleep in Children and Adolescents with Epilepsy",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.1075?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.1075, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2298219629",
+          "name": "Pei-Yu Wu"
+        },
+        {
+          "authorId": "2249156740",
+          "name": "Shao-Yu Tsai"
+        }
+      ],
+      "abstract": "\n \n \n Sleep problems are common in children and adolescents with epilepsy. Our previous analyses have shown that this population used a variety of self-help strategies to improve sleep. However, factors associated with the use of these self-help strategies have not been investigated. Exploring these factors is crucial for identifying the groups of children and adolescents most in need of intervention. This cross-sectional observational study aims to examine factors associated with the use of self-help strategies for sleep in children and adolescents with epilepsy.\n \n \n \n A convenience sample of 251 children and adolescents with epilepsy aged 1-18 years and their parents or caregivers were recruited from a university-affiliated hospital in Northern Taiwan. Participants completed a socio-demographic form and 1-week diaries documenting their self-help strategies for sleep. Multivariate regression analyses were conducted to explore factors associated with the use of self-help strategies for sleep in children and adolescents with epilepsy.\n \n \n \n The mean age of children and adolescents with epilepsy was 6.1 ± 4.47 years, and 56.2% were male. A total of 177 (70.5%) parents reported using self-help strategies to help their children’s sleep. The most commonly used self-help strategies were accompanying the child (46.6%) and relaxation techniques (25.1%). Multivariate analyses revealed that younger age (β = -.071, p <.01), having an employed mother (β = 0.371, p <.01), being an only child (β = 0.312, p <.01), and a higher frequency of seizures over the past 3 months (β =.284, p <.01) were significantly associated with greater strategy use.\n \n \n \n This study shows that various demographic and clinical factors are associated with the use of self-help strategies for improving sleep in children and adolescents with epilepsy. Future studies should explore how these factors influence the choice and effectiveness of self-help strategies for sleep in this population.\n \n \n \n This work was supported by the National Science and Technology Council, Taiwan, MOST 104-2314-B-002-115-MY3 and NSTC 112-2628-B-002-003.\n"
+    },
+    {
+      "paperId": "bd5bca9af2e4b31eef0457fb069151149b165e11",
+      "externalIds": {
+        "DOI": "10.1016/j.sleh.2025.09.001",
+        "CorpusId": 282831023,
+        "PubMed": "41203460"
+      },
+      "url": "https://www.semanticscholar.org/paper/bd5bca9af2e4b31eef0457fb069151149b165e11",
+      "title": "Trajectories and predictors of sleep quality during and after the pandemic in five European populations.",
+      "venue": "Sleep Health",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleh.2025.09.001?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleh.2025.09.001, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "118678415",
+          "name": "A. Lepinteur"
+        },
+        {
+          "authorId": "2278947218",
+          "name": "Claus Vögele"
+        },
+        {
+          "authorId": "2304886917",
+          "name": "Conchita D’Ambrosio"
+        },
+        {
+          "authorId": "2261530093",
+          "name": "S. Stranges"
+        }
+      ],
+      "abstract": "OBJECTIVES\nThis paper investigates the trajectory and potential predictors of sleep quality across 13 waves of data on 5 European populations from April 2020-September 2024.\n\n\nMETHODS\nData are based on the ongoing COME-HERE survey, a comprehensive longitudinal study designed to capture the socioeconomic, health, and psychological impacts of the COVID-19 pandemic across multiple European countries, including 8063 participants and over 60,000 observations drawn from representative samples in France, Germany, Italy, Spain, and Sweden.\n\n\nRESULTS\nOur findings reveal an upward trend in average sleep quality over time, with fluctuations that align with major COVID-19 waves, suggesting pandemic-related disruptions to typical seasonal sleep patterns. Through multivariate regression analysis, female gender, income, employment, physical activity, mental health, and social interactions are key predictors of sleep quality, with financial security and mental health showing particularly strong associations. Importantly, our results hold across diverse groups (by country, gender, age, and education) and remain consistent from the height of the pandemic through to the postpandemic period, supporting the enduring influence of mental health, socioeconomic, and lifestyle factors on sleep quality.\n\n\nCONCLUSIONS\nOur study highlights the complex interplay between social determinants, mental health, and lifestyles in shaping sleep quality in the general population, regardless of geographic context and the potential impact of major public health emergencies such as the recent COVID-19 pandemic. These findings further emphasize the need for greater attention to sleep health in both clinical and public health settings."
+    },
+    {
+      "paperId": "2a97a4b22cc4e70576534ecf7bfa0e4f161a5b71",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2025.106816",
+        "CorpusId": 281593171,
+        "PubMed": "41014696"
+      },
+      "url": "https://www.semanticscholar.org/paper/2a97a4b22cc4e70576534ecf7bfa0e4f161a5b71",
+      "title": "Impact of procedural pain during NICU hospitalization on sleep, physical growth, brain maturation and neurobehavioral development in preterm infants: A prospective longitudinal study.",
+      "venue": "Sleep Medicine",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2025.106816?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2025.106816, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2391893091",
+          "name": "Shiting Lv"
+        },
+        {
+          "authorId": "2261253228",
+          "name": "Qian Wang"
+        },
+        {
+          "authorId": "2158294578",
+          "name": "Yuqi Wei"
+        },
+        {
+          "authorId": "2320505776",
+          "name": "Lei Chen"
+        },
+        {
+          "authorId": "2278103713",
+          "name": "Qiling Zhang"
+        },
+        {
+          "authorId": "2362285924",
+          "name": "Jing Zhang"
+        },
+        {
+          "authorId": "2382085431",
+          "name": "Yao Fang"
+        },
+        {
+          "authorId": "2275342217",
+          "name": "Hui Rong"
+        },
+        {
+          "authorId": "2145787321",
+          "name": "Jing Zhou"
+        },
+        {
+          "authorId": "50201046",
+          "name": "Haixia Gao"
+        }
+      ],
+      "abstract": "STUDY OBJECTIVES\nTo assess procedural pain's effects on sleep patterns from discharge through 3 months corrected age (CA), physical growth trajectories from admission through 3 months CA, brain maturation at discharge and neurobehavior at term-equivalent age, while investigating sleep's moderating role in these pain-development relationships.\n\n\nMETHODS\nIn 99 preterm infants (gestational age <37 weeks), procedural pain frequency was recorded. Sleep was assessed using amplitude-integrated electroencephalography (aEEG) combined with behavioral observation at discharge and the Brief Infant Sleep Questionnaire at 1 and 3 months CA. Growth parameters were measured and converted to Z-scores. Brain maturation and neurobehavior were quantified using Burdjalov aEEG score and Neonatal Behavioral Neurological Assessment (NBNA), respectively. Linear mixed-effects models, multivariate regression, and PROCESS moderation analyses were employed.\n\n\nRESULTS\nHigher procedural pain exposure was associated with: (1) Reduced active sleep at discharge (B = -1.42, p = 0.006), persisting as less nighttime sleep at 1 month CA (B = -1.14, p = 0.013) and more awakenings at 3 months CA (B = 1.57, p < 0.001); (2) lower weight Z-scores up to 3 months CA (B = -0.44, p = 0.016), with no significant associations in length or head circumference Z-scores after correction; and (3) poorer brain maturation at discharge (B = -1.50, p = 0.002), but not with NBNA score at 40 weeks. Sleep moderated the pain-weight relationship (p < 0.05), but not pain-brain maturation.\n\n\nCONCLUSIONS\nProcedural pain persistently disrupts sleep, weight growth, brain maturation, but not early neurobehavior in preterm infants. Sleep moderates its impact on weight growth, suggesting dual interventions-pain reduction and sleep optimization-are critical for mitigating developmental impairment."
+    },
+    {
+      "paperId": "a6537415c2ab2edea67be227edd18e0516ca3912",
+      "externalIds": {
+        "DOI": "10.1007/s11325-025-03308-0",
+        "CorpusId": 277610704,
+        "PubMed": "40192892"
+      },
+      "url": "https://www.semanticscholar.org/paper/a6537415c2ab2edea67be227edd18e0516ca3912",
+      "title": "Lifestyle and health mediators of the relationship between religious attendance and sleep quality and disorders in adults",
+      "venue": "Sleep and Breathing",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11325-025-03308-0?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11325-025-03308-0, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2274690777",
+          "name": "Giovana Longo-Silva"
+        },
+        {
+          "authorId": "2149127185",
+          "name": "Rísia Cristina Egito de Menezes"
+        },
+        {
+          "authorId": "2224674001",
+          "name": "Márcia de Oliveira Lima"
+        },
+        {
+          "authorId": "2354077014",
+          "name": "Thauanny Heslley Lima Dos Santos"
+        },
+        {
+          "authorId": "2354079098",
+          "name": "Júlia Souza de Melo"
+        },
+        {
+          "authorId": "2320218556",
+          "name": "Larissa de Lima Soares"
+        },
+        {
+          "authorId": "2256840616",
+          "name": "R. Serenini"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "56271ba8ac343428481bb97e54622a714a698089",
+      "externalIds": {
+        "DOI": "10.1007/s11325-025-03330-2",
+        "CorpusId": 278454774,
+        "PubMed": "40343553"
+      },
+      "url": "https://www.semanticscholar.org/paper/56271ba8ac343428481bb97e54622a714a698089",
+      "title": "Impact of obstructive sleep apnea on hematocrit levels and erythrocytosis – a clinical study",
+      "venue": "Sleep and Breathing",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11325-025-03330-2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11325-025-03330-2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212321603",
+          "name": "Patrícia Guerra"
+        },
+        {
+          "authorId": "2212977223",
+          "name": "Daniel Alfaiate"
+        },
+        {
+          "authorId": "2212284988",
+          "name": "Nuno Pinto"
+        },
+        {
+          "authorId": "2143077556",
+          "name": "T. Pereira"
+        },
+        {
+          "authorId": "2213849381",
+          "name": "Alexandre Pereira"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c4b3412594ca2c5a272238dba2a0635d086e616a",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0642",
+        "CorpusId": 278747931
+      },
+      "url": "https://www.semanticscholar.org/paper/c4b3412594ca2c5a272238dba2a0635d086e616a",
+      "title": "0642 Risk Factors for Sleep Disordered Breathing Among Hispanics and Non-Hispanics – A Retrospective Study",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0642?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0642, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2362376489",
+          "name": "Masood Azhar"
+        },
+        {
+          "authorId": "2297697184",
+          "name": "Wendy Cárdenas"
+        },
+        {
+          "authorId": "2344460997",
+          "name": "Anshul Saxena"
+        },
+        {
+          "authorId": "2153478398",
+          "name": "M. Ahmed"
+        },
+        {
+          "authorId": "2285359648",
+          "name": "J. Rankin"
+        },
+        {
+          "authorId": "2362402176",
+          "name": "Harneet K. Walia"
+        }
+      ],
+      "abstract": "\n \n \n Sleep Disordered Breathing (SDB) is highly prevalent in the Hispanic population. However, limited research exists on the risk factors associated with SDB. This study examines the risk factors among SDB patients in Hispanic and non-Hispanic (NH) populations.\n \n \n \n Retrospective data from Baptist Health’s sleep study database (September 2020–September 2022) were analyzed. Adult patients diagnosed with SDB via polysomnogram, split-night polysomnogram, or home sleep apnea testing were included. SDB was classified based on apnea-hypopnea index (AHI), as negative/mild (AHI < 15) or moderate/severe (AHI ≥ 15). AHI category, age, sex, BMI, ethnicity, average and minimum blood oxygen saturation (SpO2), and secondary diagnoses were compared between Hispanic and NH patients. Multivariate logistic regression analyses were used to calculate the odds ratio (OR) for moderate/severe SDB.\n \n \n \n Of 9,111 patients, 5,816 (63.8%) were Hispanic, and 3,295 (36.2%) were NH. Males comprised 53% of Hispanic and 57.4% of NH (P< 0.001). Obesity was observed in 59.4% of Hispanic vs. 57.4% of NH (P< 0.001). Among Hispanic patients, 47.8% had moderate/severe SDB vs. 45.6% NH patients (P=0.04). Median AHI was 14.2 among Hispanic and 13.5 among NH patients (P=0.01). Similarly, average SpO2 was 94.1% in Hispanic vs. 93.9% in NH patients (P=0.03). Overall, Hispanic ethnicity (OR 1.20 [CI 1.09–1.31]), male sex (OR 2.07 [CI 1.89–2.28]), obesity (OR 3.81 [CI 3.24–4.49]), hypertension (OR 1.22 [CI 1.10–1.36]), and respiratory illnesses (OR 1.28 [CI 1.15–1.42]) were associated with moderate/severe SBD. Among Hispanic patients, male sex (OR 2.00 [CI 1.78–2.25]), obesity (OR 4.70 [CI 3.78–5.84]), hypertension (OR 1.22 [CI 1.06–1.39]), and respiratory illnesses (OR 1.35 [CI 1.18–1.54]) were the key risk factors for moderate/severe SDB, whereas in NH patients, male sex (OR 2.39 [CI 2.04–2.80]), obesity (OR 2.94 [CI 2.29–3.77]), and diabetes (OR 1.29 [CI 1.06–1.58]) were significant risk factors for moderate/severe SDB.\n \n \n \n Overall, Hispanic ethnicity, male sex, obesity, and hypertension were significantly associated with moderate/severe SDB category. In addition, respiratory illness was a risk factor among Hispanic patients, while diabetes was more significant in NH patients.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "65a3ca139f70f825b783284ae69b0e3c6c8b7835",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0366",
+        "CorpusId": 278764843
+      },
+      "url": "https://www.semanticscholar.org/paper/65a3ca139f70f825b783284ae69b0e3c6c8b7835",
+      "title": "0366 School Start Times, Sleep Opportunity, and Asthma in Elementary School Children",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0366?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0366, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2362488234",
+          "name": "Pauline Esantsi"
+        },
+        {
+          "authorId": "2362395809",
+          "name": "Weston T. Powell"
+        },
+        {
+          "authorId": "2362527794",
+          "name": "Maida Chen"
+        },
+        {
+          "authorId": "2297690330",
+          "name": "Michelle Garrison"
+        }
+      ],
+      "abstract": "\n \n \n School start times influence the window of sleep opportunity in childhood. Inadequate sleep is a known risk factor for multiple chronic health conditions, including asthma. However, data linking school start times, especially in early childhood, with specific medical conditions are not well explored at the population level.\n \n \n \n We utilized data from the nationally representative ECLS-K 2011 longitudinal cohort study. Metrics included annual school-reported school start times starting in kindergarten, and parent-reported diagnosis of asthma starting the year after kindergarten and annually for the subsequent 5 years. Unadjusted chi-squared tests and multivariate logistic regression analyses were used to evaluate the impact of kindergarten school start times on parent report of asthma diagnosis in subsequent years. Kindergarten school start times were grouped as 7:45 or earlier [group A], 7:45 to 8:15 [group B], 8:15 to 8:45 [group C], or after 8:45 AM [group D].\n \n \n \n 7,940 students were included. 17.6% had a kindergarten school start time that begins at 7:45 AM or earlier. Asthma prevalence was 15.4% and 17.2% at one and five years after kindergarten, respectively. In unadjusted analyses, asthma at 5 years after kindgergarten was significantly associated with earlier kindergarten school start times: 20.1% in group A, 17.1% in group B, 16.6% in group C, 14.5% in group C (p< 0.01). After adjusting for potential confounders (child sex, household income, urban location, and Title 1 school at the kindergarten baseline), early school start times remained a statistically significant predictor of parent-reported child asthma four and five years later (OR=1.31, 95%CI 1.02–1.69 and OR=1.47, 95%CI 1.14-1.88, respectively), but was no longer statistically significant at the first three follow-up time points (with ORs of 1.22, 1.19, and 1.29 and p-values of 0.11, 0.15, and 0.05 respectively).\n \n \n \n Kindergarten start times may influence both development and persistence of chronic childhood conditions such as asthma. Health problems associated with earlier kindergarten start times may be linked to shorter sleep duration/opportunity, or circadian timing of disease-related processes, such as airways inflammation in asthma.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "75086e21d81f56586887b4d7355dd34a456d2cae",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0533",
+        "CorpusId": 278761918
+      },
+      "url": "https://www.semanticscholar.org/paper/75086e21d81f56586887b4d7355dd34a456d2cae",
+      "title": "0533 Insomnia Severity, Sleep Related Impairment, and Diet Quality Among Black Adults in the US",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0533?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0533, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2282520121",
+          "name": "Velarie Yaa Ansu Baidoo"
+        },
+        {
+          "authorId": "2362448092",
+          "name": "Astrid N Zamora"
+        },
+        {
+          "authorId": "2298216096",
+          "name": "Michelle G. Thompson"
+        },
+        {
+          "authorId": "2258283916",
+          "name": "Carolina Scaramutti"
+        },
+        {
+          "authorId": "2267192749",
+          "name": "Michael A Grandner"
+        },
+        {
+          "authorId": "2160564963",
+          "name": "A. Seixas"
+        },
+        {
+          "authorId": "2266825464",
+          "name": "Girardin Jean-Louis"
+        }
+      ],
+      "abstract": "\n \n \n Adequate sleep and a healthy diet are known to play beneficial roles in cardiometabolic health. However, there is limited epidemiological evidence of this relationship among Black adults, potentially contributing to higher rates of cardiometabolic diseases. This study investigated the associations between 1) diet quality and insomnia severity and 2) diet quality and sleep-related impairment (SRI).\n \n \n \n Baseline data was obtained from 534 Black participants (females 64%; age range 18-75 years) who were enrolled in the NIH-funded study, ESSENTIAL. The Insomnia Severity Index (ISI) and the Patient-Reported Outcomes Measurement Information System-SRI (PROMIS-SRI) were used. Diet quality was assessed via the Rapid Eating Assessment for Participants–Short Form (REAP-S); higher scores indicated a healthier diet quality. Using the REAP-S, we also calculated separate categories for healthy and unhealthy diet quality; lower scores indicating lower vs. higher consumption, respectively. Multivariate linear regression models were used to evaluate the associations between diet quality (predictor variable) with insomnia symptoms and SRI (outcome variables). Adjusted covariates included age, sex, education, body mass index, and marital status.\n \n \n \n Mean (SD) scores for ISI and SRI were 16.97 (7.03) and 53.64 (8.72), respectively. The total mean REAP-S score was 26.22 (5.03), indicating a lower average score compared with the United States mean of 32. Multivariate regression analysis revealed that higher ISI scores were associated with lower total diet quality (β = -0.20, p = 0.002) and a lower unhealthy diet score (β = -0.43, p = 0.002), indicating increased intake of unhealthy foods. Similarly, higher SRI scores were associated with lower total diet quality (β = -0.30, p = 0.0002), lower unhealthy diet scores (β = -0.58, p = 0.001), and lower healthy diet consumption (β = -0.70, p = 0.003).\n \n \n \n Inverse relationships were observed between diet quality and both insomnia and sleep-related impairment among Black adults. Future studies should examine dietary patterns and metabolic outcomes among larger, more diverse populations.\n \n \n \n 5T32HL166609-02, U24DK132733, R01HL142066\n"
+    },
+    {
+      "paperId": "0ec537e87f5659317a842370b01226c5b63c8241",
+      "externalIds": {
+        "DOI": "10.5664/jcsm.11614",
+        "CorpusId": 277262907,
+        "PubMed": "40123542"
+      },
+      "url": "https://www.semanticscholar.org/paper/0ec537e87f5659317a842370b01226c5b63c8241",
+      "title": "The association between sleep fragmentation and incident atrial fibrillation: a prospective cohort study in a community population",
+      "venue": "Journal of Clinical Sleep Medicine (JCSM)",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12225268/",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5664/jcsm.11614?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5664/jcsm.11614, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2332899970",
+          "name": "Lixia Wang"
+        },
+        {
+          "authorId": "2279497157",
+          "name": "Xinjie Hui"
+        },
+        {
+          "authorId": "2143632498",
+          "name": "R. Huang"
+        },
+        {
+          "authorId": "2318933785",
+          "name": "Yi Xiao"
+        }
+      ],
+      "abstract": "Sleep fragmentation (SF) has been recognized as a risk factor for cardiovascular disease. This study aims to investigate the impact of SF on atrial fibrillation (AF). A total of 2,377 participants without pre-existing AF from the Sleep Heart Health Study were enrolled in this study. Wake after sleep onset (WASO), SF index, arousal index, and sleep efficiency were used to describe SF objectively. Multivariate logistic regression and restricted cubic spline analysis were conducted to investigate the association between SF and AF. During a mean follow-up of 5.3 years, we observed 221 (9.30%) participants developed AF. Participants with incident AF had significantly worse WASO, arousal index, and sleep efficiency compared with those without incident AF. Multivariate logistic regression revealed that WASO was associated with incident AF in both overall sample and participants without obstructive sleep apnea, with odds ratios of 1.61 (95% confidence interval: 1.04, 2.49; P = .033) and 5.89 (95% confidence interval: 2.18, 19.16; P = .001) for the fourth quartile of WASO, respectively. The first quartile of sleep efficiency (odds ratio, 3.51; 95% confidence interval: 1.28, 10.49; P = .019) and the fourth quartile of arousal index (odds ratio, 3.16; 95% confidence interval: 1.23, 9.01; P = .021) were associated with incident AF in participants without obstructive sleep apnea. This study demonstrated that worsening SF, as assessed by WASO, sleep efficiency, and arousal index, was associated with an increased odds of incident AF in participants without obstructive sleep apnea. Thus, improving SF may contribute to decreasing the odds of incident AF. Wang L, Hui X, Huang R, Xiao Y. The association between sleep fragmentation and incident atrial fibrillation: a prospective cohort study in a community population. J Clin Sleep Med. 2025;21(7):1191–1200."
+    },
+    {
+      "paperId": "5f6a40bee0a95ed42a0829a3887f78dc5c288023",
+      "externalIds": {
+        "DOI": "10.1016/j.sleh.2025.01.011",
+        "CorpusId": 277146185,
+        "PubMed": "40107928"
+      },
+      "url": "https://www.semanticscholar.org/paper/5f6a40bee0a95ed42a0829a3887f78dc5c288023",
+      "title": "Parental knowledge and beliefs about sleep health for children with overweight and obesity.",
+      "venue": "Sleep Health",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleh.2025.01.011?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleh.2025.01.011, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "12484524",
+          "name": "Hsiu-Jung Cheng"
+        },
+        {
+          "authorId": "2284215724",
+          "name": "Yi-Ching Tung"
+        },
+        {
+          "authorId": "2284232289",
+          "name": "Chuen-Min Huang"
+        },
+        {
+          "authorId": "2297701076",
+          "name": "Chien-Chang Lee"
+        },
+        {
+          "authorId": "46969767",
+          "name": "S. Kuo"
+        },
+        {
+          "authorId": "2276503343",
+          "name": "Teresa M. Ward"
+        },
+        {
+          "authorId": "2249156740",
+          "name": "Shao-Yu Tsai"
+        }
+      ],
+      "abstract": "OBJECTIVE\nTo examine parental knowledge and beliefs about sleep health and their relation to sleep practices in a community sample of school-age children with overweight and obesity.\n\n\nMETHODS\nSleep in 246 overweight or obese children was assessed objectively using actigraphy. Parents completed a questionnaire about their knowledge and beliefs about sleep health and the Children's Sleep Habits Questionnaire (CSHQ). Multivariate linear regression models were performed to predict CSHQ sleep disturbance scores and actigraphy-derived sleep characteristics in children.\n\n\nRESULTS\nOn average, parents answered 6.19 of the 10 sleep health questions correctly. Questions concerning child sleep needs and bedtime routines had the most incorrect responses ranging from 45.9% to 84.5%. Although up to 244 (99.2%) children obtained less than the recommended 9 hours of daily sleep and 208 (84.6%) children had clinically significant CSHQ sleep disturbance scores, only 12.6% of parents believed that their child slept too little and only 9.3% of parents believed that their child had inadequate sleep habits. Increased levels of parental sleep knowledge were associated with earlier sleep onset, and stronger parental beliefs about children's sleep health predicted earlier sleep onset and offset, longer sleep duration, and lower CSHQ sleep disturbance scores in children (all p<.05).\n\n\nCONCLUSIONS\nParents' knowledge gaps and misconceptions about sleep health are associated with poorer and shorter sleep duration in children with overweight and obesity. Healthcare professionals should provide parents with sleep-related education and address parents' inaccurate beliefs about sleep health, particularly regarding consistent bedtime routine and recommended sleep duration for children."
+    },
+    {
+      "paperId": "683783685b7fd02e977a6b6d58e3c0810610aa19",
+      "externalIds": {
+        "DOI": "10.1111/jsr.70228",
+        "CorpusId": 282321771,
+        "PubMed": "41133426"
+      },
+      "url": "https://www.semanticscholar.org/paper/683783685b7fd02e977a6b6d58e3c0810610aa19",
+      "title": "Associations of Maternal Sleep Quality Trajectories During Pregnancy and Preterm Birth: A Prospective Cohort Study",
+      "venue": "Journal of Sleep Research",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jsr.70228?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jsr.70228, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2284302676",
+          "name": "Bin Sun"
+        },
+        {
+          "authorId": "2408133",
+          "name": "Mei Ma"
+        },
+        {
+          "authorId": "2129473066",
+          "name": "Haibo Li"
+        },
+        {
+          "authorId": "2292219774",
+          "name": "Haiyan Gao"
+        },
+        {
+          "authorId": "2143739697",
+          "name": "Wen-juan Liu"
+        },
+        {
+          "authorId": "2157338639",
+          "name": "Wei Li"
+        },
+        {
+          "authorId": "2146268405",
+          "name": "Zheng-qin Wu"
+        },
+        {
+          "authorId": "2410440150",
+          "name": "Yi-bing Zhu"
+        },
+        {
+          "authorId": "1753159621",
+          "name": "Chong Miao"
+        }
+      ],
+      "abstract": "Little is known about the relationship between sleep quality trajectories during pregnancy and preterm birth. To address this issue, we conducted a longitudinal assessment of maternal sleep quality to examine the relationship between sleep quality trajectories across all trimesters and the risk of preterm birth. A prospective birth cohort study was conducted in China, and a total of 15,042 women who had singleton births were included, including 647 who subsequently developed preterm birth. Sleep quality was evaluated using the Pittsburgh Sleep Quality Index (PSQI) scale at each study visit (8–14, 22–27 and 32–37 weeks of gestation). Preterm birth was defined as birth less than 37 weeks of gestation. Latent class trajectory models were applied to identify different sleep quality trajectories, and multivariate logistic regression models were applied to examine the associations between the determined trajectories and preterm birth. This study identified three distinct sleep quality trajectories: stable good group, stable poor group and increasing poor group. After adjusting for covariates, the odds ratio for preterm birth in the increasing poor group was 1.32 (95% confidence interval: 1.05–1.66) compared to the stable good group. Positive associations of the increasing poor group with preterm birth were exhibited only among women aged less than 30 years, those with normal BMI, or mothers of female infants. Our findings revealed that an increasing poor sleep quality trajectory was associated with an increased risk of preterm birth and emphasised the imperative to identify the high‐risk groups as a priority target for intervention and treatment."
+    },
+    {
+      "paperId": "cad2a5dcf8ce8965ca32d6ae709ed8be3592d3e5",
+      "externalIds": {
+        "PubMedCentral": "12399886",
+        "DOI": "10.2147/NSS.S551944",
+        "CorpusId": 280932189,
+        "PubMed": "40901280"
+      },
+      "url": "https://www.semanticscholar.org/paper/cad2a5dcf8ce8965ca32d6ae709ed8be3592d3e5",
+      "title": "Arousal Threshold Score: A New Indicator for Examining the Relationship Between Obstructive Sleep Apnea and Overlap Syndrome — A Retrospective Study",
+      "venue": "Nature and Science of Sleep",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12399886, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2121408881",
+          "name": "Donghao Wang"
+        },
+        {
+          "authorId": "2281323923",
+          "name": "Yuting Zhang"
+        },
+        {
+          "authorId": "2243930834",
+          "name": "Qiming Gan"
+        },
+        {
+          "authorId": "4895185",
+          "name": "X. Su"
+        },
+        {
+          "authorId": "2202749281",
+          "name": "Yating Chen"
+        },
+        {
+          "authorId": "2211622385",
+          "name": "Haojie Zhang"
+        },
+        {
+          "authorId": "2144198576",
+          "name": "Yanyan Zhou"
+        },
+        {
+          "authorId": "2211517589",
+          "name": "Zhiyang Zhuang"
+        },
+        {
+          "authorId": "2265952142",
+          "name": "Jingcun Wang"
+        },
+        {
+          "authorId": "2285940847",
+          "name": "Yutong Ding"
+        },
+        {
+          "authorId": "2260789526",
+          "name": "Dongxing Zhao"
+        },
+        {
+          "authorId": "65857981",
+          "name": "Nuofu Zhang"
+        }
+      ],
+      "abstract": "Objective A low arousal threshold (AT) appears to contribute to obstructive sleep apnea (OSA) pathogenesis. However, the role of low AT in OSA and overlap syndrome (OVS) is still unclear. This study is aimed to investigate the value of the AT score, a new method for qualifying AT, for examining the relationship between OSA and OVS, including chronic obstructive pulmonary disease (COPD) and asthma. Methods In this retrospective study, a total of 3400 adults diagnosed with OSA at a sleep medicine center were finally included. All patients were stratified into low-, high- and very high-AT score groups according to the previous logistic regression for qualifying AT. Multivariate logistic regression was conducted to evaluate the association between AT score and OVS prevalence. We compared this association with that of the apnea hypopnea index (AHI). Results 40.3%, 42.9% and 16.8% of OSA patients had low-, high- and very high AT score, respectively. Compared with the very high AT score, the low AT score was independently associated with the prevalence of COPD (OR = 2.17, 95% CI = 1.09–4.32) and asthma (OR = 4.54, 95% CI = 2.52–8.17). With decreasing AT score, the adjusted ORs of the comorbidities increased stepwise, particularly in some subgroups based on sex, age and BMI. Conversely, the classification of AHI did not show similar values. Conclusion In individuals with OSA, low AT is a common pathophysiological feature associated with COPD and asthma. The AT score is a new and effective indicator for evaluating the relationship between OSA and OVS."
+    },
+    {
+      "paperId": "f1cfad7f1db28bd7091533ecf334becf5b633eb6",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2025.03.007",
+        "CorpusId": 276998669,
+        "PubMed": "40120537"
+      },
+      "url": "https://www.semanticscholar.org/paper/f1cfad7f1db28bd7091533ecf334becf5b633eb6",
+      "title": "Natural sleep at home and psychosis in patients with Parkinson's disease: A post-hoc analysis of the ZEAL study.",
+      "venue": "Sleep Medicine",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2025.03.007?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2025.03.007, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2238788150",
+          "name": "Hiroshi Kataoka"
+        },
+        {
+          "authorId": "2144075412",
+          "name": "Masahiro Isogawa"
+        },
+        {
+          "authorId": "39776712",
+          "name": "H. Nanaura"
+        },
+        {
+          "authorId": "2279906459",
+          "name": "Hiroyuki Kurakami"
+        },
+        {
+          "authorId": "2022025132",
+          "name": "Miyoko Hasebe"
+        },
+        {
+          "authorId": "23964113",
+          "name": "K. Kinugawa"
+        },
+        {
+          "authorId": "2241886579",
+          "name": "Takao Kiriyama"
+        },
+        {
+          "authorId": "5318705",
+          "name": "T. Izumi"
+        },
+        {
+          "authorId": "2279906715",
+          "name": "Masato Kasahara"
+        },
+        {
+          "authorId": "2238856584",
+          "name": "Kazuma Sugie"
+        }
+      ],
+      "abstract": "OBJECTIVES\nPsychosis remains problematic in patients with Parkinson's disease and sleep disorders are frequent non-motor symptoms of PD. Few research studies have correctly assessed objective sleep architecture to determine the association between psychosis and sleep disorders. A mobile two-channel electroencephalography (EEG)/electrooculography (EOG) recording system is a self-applicable and affordable method for objectively measuring sleep at home. We studied patients with PD who were enrolled in ZEAL study of the randomized placebo-control clinical trial investigating the efficacy of zonisamide for sleep disorders to determine whether sleep disorders and psychosis are related by using the EEG/EOG recording system.\n\n\nMETHODS\n24 independent variables were evaluated and variables with a statistically significant correlation (p < 0.05) to psychosis on univariate logistic regression analyses were entered into multivariate logistic regression analysis using forced entry.\n\n\nRESULTS\nForty-one patients with PD with no missing data, in both the potable EEG/EOG recording device and subjective clinical characteristics before the initiation of zonisamide, were analyzed. The major result was the reduced total sleep time (TST) and time spent in REM sleep, identified by univariate logistic regression analysis, in PD patients with psychosis. Multivariate logistic regression analysis identified nocturnal PD symptoms on the PDSS as a significant risk factor for psychosis (OR 1.409, 95 %CI 1.073-1.850; p = 0.014).\n\n\nCONCLUSION\nOur findings reveal that the nocturnal PD symptoms that affect regular home-based sleep may be associated with psychosis."
+    },
+    {
+      "paperId": "1d13e3810ffcdf29161db3263e2b5a171ec6eb4d",
+      "externalIds": {
+        "PubMedCentral": "11705669",
+        "DOI": "10.1186/s12888-024-06415-6",
+        "CorpusId": 275356446,
+        "PubMed": "39762774"
+      },
+      "url": "https://www.semanticscholar.org/paper/1d13e3810ffcdf29161db3263e2b5a171ec6eb4d",
+      "title": "Assessment and analysis of factors influencing suicidal ideation in young adults: a large cohort study using an elastic network logistic regression model",
+      "venue": "BMC Psychiatry",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1186/s12888-024-06415-6",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11705669, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297142504",
+          "name": "Zixuan Guo"
+        },
+        {
+          "authorId": "2284580562",
+          "name": "Xiaoli Han"
+        },
+        {
+          "authorId": "2265514231",
+          "name": "Tiantian Kong"
+        },
+        {
+          "authorId": "2284493308",
+          "name": "Yan Wu"
+        },
+        {
+          "authorId": "2285210677",
+          "name": "Yimin Kang"
+        },
+        {
+          "authorId": "2244123264",
+          "name": "Yanlong Liu"
+        },
+        {
+          "authorId": "2285991822",
+          "name": "Fan Wang"
+        }
+      ],
+      "abstract": "This study aims to review and analyze factors associated with suicidal ideation to provide a rationale for subsequent effective interventions. Data from this study were obtained from the Assessing Nocturnal Sleep/Wake Effects on Risk of Suicide (ANSWERS). The University of Arizona evaluated 404 young adults aged 18–25 years using different scales. Then, general demographic data was recorded. An elastic network (EN) was used to optimize feature selection, combined with logistic regression, to determine the influencing factors associated with SI in young adults. The EN regression retained 11 potential influencing factors with nonzero coefficients. In the multivariate logistic regression analysis, INQ-15 perceived burdensomeness (PB) scores (OR: 1.10, 95% CI: 1.04–1.17), CESD depression mood scores (OR: 1.16, 95% CI: 1.07–1.26), and age (OR: 0.72, 95% CI: 0.55–0.94) were significant factors for SI. This is the first study to use an Elastic Network logistic regression model to assess the factors affecting suicidal ideation in young adults. Perceived Burdensome, depression, and age play an important risk role and are the best predictor combination of suicidal ideation in young adults, with depression being the most significant risk factor. Increased focus on Perceived Burdensome and negative emotions, along with simultaneous interventions for other potentially influential factors, can be more effective in preventing suicidal behavior in young adults."
+    },
+    {
+      "paperId": "bf9d29983a6c8edb40d90f6e08dab01971471bd8",
+      "externalIds": {
+        "DOI": "10.1111/jsr.70252",
+        "CorpusId": 283426754,
+        "PubMed": "41316872"
+      },
+      "url": "https://www.semanticscholar.org/paper/bf9d29983a6c8edb40d90f6e08dab01971471bd8",
+      "title": "Association of Sleep Disturbance and Physical Functioning Following Acute Hospitalisation in Older Adults",
+      "venue": "Journal of Sleep Research",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jsr.70252?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jsr.70252, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2362412683",
+          "name": "Emily Arentson-Lantz"
+        },
+        {
+          "authorId": "2297698346",
+          "name": "Julia T Boyle"
+        },
+        {
+          "authorId": "5057469",
+          "name": "R. Deer"
+        },
+        {
+          "authorId": "2150630634",
+          "name": "Manasa Kokonda"
+        },
+        {
+          "authorId": "2395372957",
+          "name": "Danielle Bennetsen"
+        },
+        {
+          "authorId": "41022834",
+          "name": "Samantha A. Carreon"
+        },
+        {
+          "authorId": "116552291",
+          "name": "J. Meers"
+        },
+        {
+          "authorId": "2319856620",
+          "name": "George E Taffet"
+        },
+        {
+          "authorId": "2106853989",
+          "name": "F. Vahidy"
+        },
+        {
+          "authorId": "2395374378",
+          "name": "K. Agarwal"
+        },
+        {
+          "authorId": "2358015731",
+          "name": "Elena Volpi"
+        },
+        {
+          "authorId": "2262832007",
+          "name": "Sara Nowakowski"
+        }
+      ],
+      "abstract": "Three out of 10 older adults are admitted in US hospitals where they are at risk for a decline in physical function. Identifying factors related to sleep and recovery of physical function is key to facilitating independence after discharge. This study examined the association between sleep and functional recovery following an acute hospitalisation in community‐dwelling older adults. Participants aged 65+ years (n = 52) were recruited during hospitalisation at the UTMB hospital in Galveston, Texas. Prior to discharge (baseline) and at 4‐weeks post‐discharge (follow‐up), participants completed sleep questionnaires, including PROMIS Sleep‐Related Impairment and Sleep Disturbance, as well as physical function testing and questionnaires, Short Physical Performance Battery (SPPB) and PROMIS Physical Function. A subset of participants (n = 24) wore an actigraphy device for 4 weeks post‐discharge to record sleep continuity. Separate multivariate regression models were conducted to determine whether baseline sleep predicted physical functioning at follow‐up as well as if pre‐post hospital changes in sleep predicted pre‐post changes in physical functioning. Baseline PROMIS Sleep‐Related Impairment was inversely associated with SPPB Balance (p = 0.023), SPPB Chair Stand (p = 0.0406), SPPB Total (p = 0.01), and PROMIS Physical Function (p = 0.008). Change in PROMIS Sleep‐Related Impairment between baseline and follow‐up was inversely associated with change in SPPB Total (p = 0.03), SPPB Balance (p = 0.0102), and PROMIS Physical Function (p = 0.012). Additionally, change in PROMIS Sleep Disturbance was inversely correlated with change in PROMIS Physical Function (p = 0.04). These results showed that self‐reported sleep disturbances and daytime sleep‐related impairments during and after hospitalisation predicted physical functioning at 4‐weeks post‐discharge."
+    }
+  ]
+}

@@ -222,33 +222,21 @@ def _generate_with_llm(
     llm_config = normalize_llm_config(llm_config)
     client = build_llm_client(llm_config)
     temperature = float(llm_config.get("temperature", 0.2))
+    prompt_inputs = {
+        "evidence_context": _evidence_context(selected),
+        "existing_hypotheses": _context_with_rlef(_existing_context(registry) or "None yet.", rlef_context, prior_context),
+        "knowledge_context": knowledge_context or "No knowledge graph context was provided.",
+    }
+    prompt_inputs = _compact_generation_prompt_inputs(prompt_inputs)
     system, prompt, max_tokens = load_prompt(
         "generation",
         strategy,
-        {
-            "evidence_context": _evidence_context(selected),
-            "existing_hypotheses": _context_with_rlef(_existing_context(registry) or "None yet.", rlef_context, prior_context),
-            "knowledge_context": knowledge_context or "No knowledge graph context was provided.",
-        },
+        prompt_inputs,
     )
-    if strategy == GenerationStrategy.scientific_debate.value:
-        payload = client.call_json(
-            [
-                {"role": "system", "content": system},
-                {
-                    "role": "user",
-                    "content": prompt + "\n\n" + _strict_debate_json_instruction(),
-                },
-            ],
-            max_tokens=max_tokens,
-            temperature=min(temperature, 0.1),
-        )
-    else:
-        payload = client.call_json(
-            [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
-            max_tokens=max_tokens,
-            temperature=temperature,
-        )
+    try:
+        payload = _call_generation_json(client, system, prompt, max_tokens=max_tokens, temperature=temperature, strategy=strategy)
+    except TimeoutError:
+        payload = _call_generation_json(client, system, prompt, max_tokens=max_tokens, temperature=temperature, strategy=strategy)
     payload = _coerce_hypothesis_payload(payload)
     missing = _missing_required_fields(payload)
     if missing:
@@ -284,6 +272,50 @@ def _generate_with_llm(
         generation_round=round_number,
         metadata=metadata,
     )
+
+
+def _call_generation_json(
+    client: Any,
+    system: str,
+    prompt: str,
+    *,
+    max_tokens: int,
+    temperature: float,
+    strategy: str,
+) -> dict[str, Any]:
+    output_tokens = min(max_tokens, 2000)
+    if strategy == GenerationStrategy.scientific_debate.value:
+        return client.call_json(
+            [
+                {"role": "system", "content": system},
+                {
+                    "role": "user",
+                    "content": prompt + "\n\n" + _strict_debate_json_instruction(),
+                },
+            ],
+            max_tokens=output_tokens,
+            temperature=min(temperature, 0.1),
+        )
+    return client.call_json(
+        [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
+        max_tokens=output_tokens,
+        temperature=temperature,
+    )
+
+
+def _compact_generation_prompt_inputs(inputs: dict[str, str]) -> dict[str, str]:
+    return {
+        "evidence_context": _truncate_text(inputs.get("evidence_context", ""), 4000),
+        "existing_hypotheses": _truncate_text(inputs.get("existing_hypotheses", ""), 1200),
+        "knowledge_context": _truncate_text(inputs.get("knowledge_context", ""), 4000),
+    }
+
+
+def _truncate_text(text: str, max_chars: int) -> str:
+    value = str(text or "")
+    if len(value) <= max_chars:
+        return value
+    return value[:max_chars] + "\n\n[context truncated for timeout retry]"
 
 
 def _strict_debate_json_instruction() -> str:
@@ -468,7 +500,7 @@ class GenerationAgent:
             state.evidence_table,
             session_id=str(hypothesis_cfg.get("session_id", state.registry.session_id)),
             max_hypotheses=int(hypothesis_cfg.get("max_hypotheses", 4)),
-            ollama_config=state.config.get("_selected_llm", {}),
+            ollama_config=state.config.get("_llm_tasks", {}).get("hypothesis_generation", state.config.get("_selected_llm", {})),
             rlef_context=state.context_blocks.get("rlef_context", ""),
             prior_context=state.context_blocks.get("prior_context", ""),
             knowledge_context=context_block,
@@ -482,5 +514,6 @@ def _join_context_blocks(state: HypothesisSessionState) -> str:
         "## EVIDENCE SUMMARY\n" + state.context_blocks.get("evidence", ""),
         "## KNOWLEDGE GRAPH CONTEXT\n" + state.context_blocks.get("knowledge_graph", ""),
         "## PRIOR HYPOTHESES\n" + state.context_blocks.get("prior_hypotheses", ""),
+        "## EXPERIMENT DESIGN CONSTRAINTS\n" + state.context_blocks.get("experiment_constraints", ""),
     ]
     return "\n\n".join(block for block in blocks if block.strip())

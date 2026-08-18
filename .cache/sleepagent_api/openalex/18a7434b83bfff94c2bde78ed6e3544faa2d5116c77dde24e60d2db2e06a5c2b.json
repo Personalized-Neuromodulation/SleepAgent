@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "count": 0,
+    "db_response_time_ms": 68,
+    "page": 1,
+    "per_page": 50,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Thalamic GABA's role in salience network connectivity: insomnia \"and\" motion correction)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Thalamic GABA's role in salience network connectivity: insomnia and motion correction",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:Thalamic GABA%27s role in salience network connectivity: insomnia and motion correction&per_page=50"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [],
+  "group_by": []
+}

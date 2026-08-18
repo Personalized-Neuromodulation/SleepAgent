@@ -1,440 +1,69 @@
 [
   {
-    "hypothesis_id": "hypothesis_507f1dc573b1",
+    "hypothesis_id": "hypothesis_91f214f8e57d",
     "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Spindle Modulation and Insomnia Severity via Combined Thalamocortical and White Matter Pathways",
-    "summary": "This hypothesis proposes that thalamic spindle modulation through combined thalamocortical coupling and white matter integrity pathways modulates insomnia severity, linking disrupted spindle activity and white matter connectivity to impaired sleep architecture.",
-    "content": "Thalamic spindle modulation through combined thalamocortical coupling and white matter pathways modulates insomnia severity by disrupting the synchronization between thalamocortical circuits and white matter tracts, leading to impaired sleep architecture and increased insomnia severity.",
-    "rationale": "Evidence shows that thalamocortical coupling is associated with spindle modulation, while white matter integrity (measured by FA) modulates connectivity between the default mode network and sensorimotor networks. The integration of these pathways could explain the disrupted sleep architecture in insomnia.",
-    "experimental_plan": "Use DTI to measure white matter integrity (FA) and EEG to measure thalamocortical spindle activity in patients with insomnia. Compare FA values and spindle density between insomnia patients and controls, and correlate with insomnia severity scores.",
-    "novelty_assessment": "Novel integration of thalamocortical coupling and white matter pathways in explaining insomnia severity, combining both structural and functional aspects of sleep biology.",
+    "title": "White Matter Microstructural Integrity Mediates Network-Specific Connectivity Disruptions in Insomnia",
+    "summary": "This hypothesis proposes that white matter microstructural abnormalities in insomnia specifically disrupt connectivity between the salience network and default mode network, independent of global hyperarousal or limbic vulnerability.",
+    "content": "Reduced fractional anisotropy (FA) in white matter tracts connecting the salience network (e.g., anterior insula, dorsal anterior cingulate) and default mode network (DMN) hubs mediates the altered functional connectivity patterns observed in insomnia, including increased DMN-frontoparietal connectivity and decreased salience-DMN coupling.",
+    "rationale": "Evidence shows insomnia is associated with both white matter integrity deficits (E1-E3) and specific functional connectivity alterations (E4). Current hypotheses focus on limbic vulnerability or thalamocortical coupling but do not address how white matter microstructure directly influences network-level connectivity. The salience-DMN disconnection observed in insomnia (E4) may result from compromised white matter tracts that anatomically link these networks.",
+    "experimental_plan": "1. Use tract-based spatial statistics (TBSS) to compare FA in white matter tracts connecting salience network nodes (insula, ACC) to DMN hubs (PCC, medial prefrontal cortex) in insomnia vs. controls. 2. Correlate FA values with resting-state fMRI metrics of salience-DMN connectivity. 3. Use mediation analysis to test if white matter integrity explains the relationship between insomnia severity and network connectivity changes.",
+    "novelty_assessment": "Unlike existing hypotheses focusing on limbic vulnerability or thalamocortical coupling, this hypothesis specifically links white matter microstructure to network-specific connectivity disruptions, targeting the salience-DMN relationship not previously mechanistically addressed.",
     "key_assumptions": [
-      "Thalamocortical coupling modulates spindle activity in insomnia patients.",
-      "White matter integrity (FA) modulates connectivity between the default mode network and sensorimotor networks in insomnia patients."
+      "White matter tracts connecting salience and DMN networks are selectively compromised in insomnia",
+      "FA in these tracts directly mediates functional connectivity changes between networks"
     ],
     "citations": [
-      "paper_id values from the evidence"
-    ],
-    "generation_strategy": "literature_exploration",
-    "generation_round": 1,
-    "elo_rating": 1529.0,
-    "rating_deviation": 127.0,
-    "volatility": 0.059992,
-    "matches_played": 7,
-    "wins": 5,
-    "losses": 0,
-    "draws": 2,
-    "status": "active",
-    "parent_ids": [],
-    "metadata": {
-      "evidence_ids": [
-        "E_c111ff4a9c43",
-        "E_60727a02e87c",
-        "E_d8fe870ca211",
-        "E_2555c7f10cd0"
-      ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "Insomnia severity",
-      "neural_mechanism": "Thalamic spindle modulation through combined thalamocortical and white matter pathways",
-      "brain_regions": [
-        "Thalamus",
-        "Sensorimotor networks"
-      ],
-      "brain_networks": [
-        "Default mode network",
-        "Sensorimotor networks"
-      ],
-      "modalities": [
-        "EEG",
-        "DTI",
-        "Scale"
-      ],
-      "measurable_variables": [
-        "Fractional Anisotropy (FA)",
-        "Spindle density",
-        "Insomnia severity scores"
-      ],
-      "directional_prediction": "Lower FA values and reduced spindle density in insomnia patients compared to controls, correlated with higher insomnia severity scores.",
-      "falsification_criteria": "No significant correlation between FA values, spindle density, and insomnia severity scores in insomnia patients compared to controls.",
-      "knowledge_graph_paths": [
-        "insomnia severity -> thalamocortical coupling -> spindle",
-        "insomnia severity -> white matter integrity -> FA"
-      ],
-      "data_testability": {
-        "status": "partially_testable",
-        "available_modalities": [
-          "fMRI"
-        ],
-        "required_modalities": [
-          "DTI",
-          "EEG"
-        ],
-        "missing_modalities": [
-          "DTI",
-          "EEG"
-        ],
-        "matched_variables": [
-          "DMN_FC",
-          "thalamus_DMN_FC"
-        ],
-        "missing_variables": [
-          "FA",
-          "spindle_density"
-        ],
-        "ranking_bonus": 10.0,
-        "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
-      }
-    },
-    "created_at": "2026-07-24T06:54:54.022963+00:00",
-    "updated_at": "2026-07-24T07:14:46.825717+00:00",
-    "data_testability_status": "partially_testable",
-    "data_testability_available_modalities": "fMRI",
-    "data_testability_required_modalities": "DTI;EEG",
-    "data_testability_missing_modalities": "DTI;EEG",
-    "data_testability_matched_variables": "DMN_FC;thalamus_DMN_FC",
-    "data_testability_missing_variables": "FA;spindle_density",
-    "experiment_priority_score": 1539.0
-  },
-  {
-    "hypothesis_id": "hypothesis_4610cc024bec",
-    "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Spindle Modulation and REM-NREM Switching in Insomnia via Combined Thalamocortical and Cortico-Thalamic Pathways",
-    "summary": "This hypothesis integrates thalamic spindle modulation and REM-NREM switching through combined thalamocortical and cortico-thalamic pathways to explain insomnia severity, linking disrupted spindle activity and cortico-thalamic connectivity to fragmented sleep architecture.",
-    "content": "The hypothesis proposes that thalamic spindle modulation, mediated by thalamocortical coupling and cortico-thalamic connectivity, interacts with REM-NREM switching to modulate insomnia severity. Disrupted spindle activity and impaired cortico-thalamic connectivity during REM-NREM transitions contribute to fragmented sleep architecture, exacerbating insomnia severity.",
-    "rationale": "By cross-pollinating P1's thalamocortical coupling and white matter pathways with P3's cortico-thalamic connectivity and REM-NREM switching, the hypothesis integrates both spindle modulation and REM-NREM transitions, enhancing coherence and grounding in measurable variables like spindle density, cortico-thalamic connectivity, and REM latency.",
-    "experimental_plan": "Use EEG to measure thalamocortical spindle activity and fMRI to assess cortico-thalamic connectivity in insomnia patients. Compare spindle density, cortico-thalamic connectivity, and REM latency between insomnia patients and controls, correlating with insomnia severity scores (ISI).",
-    "novelty_assessment": "Novel integration of thalamic spindle modulation with REM-NREM switching via combined thalamocortical and cortico-thalamic pathways, extending beyond individual pathways in P1 and P3.",
-    "key_assumptions": [
-      "Thalamocortical coupling modulates spindle density",
-      "Cortico-thalamic connectivity regulates REM-NREM transitions",
-      "Disrupted pathways contribute to fragmented sleep architecture"
-    ],
-    "citations": [
-      "evidence from P1",
-      "evidence from P3",
-      "findings on thalamocortical coupling",
-      "findings on cortico-thalamic connectivity"
-    ],
-    "generation_strategy": "evolution:cross_pollination",
-    "generation_round": 2,
-    "elo_rating": 1494.0,
-    "rating_deviation": 148.0,
-    "volatility": 0.059995,
-    "matches_played": 4,
-    "wins": 3,
-    "losses": 0,
-    "draws": 1,
-    "status": "active",
-    "parent_ids": [
-      "hypothesis_507f1dc573b1",
-      "hypothesis_d0c51b2a03fe",
-      "hypothesis_a627b04ae678"
-    ],
-    "metadata": {
-      "evolved_from": [
-        "hypothesis_507f1dc573b1",
-        "hypothesis_d0c51b2a03fe",
-        "hypothesis_a627b04ae678"
-      ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "data_testability": {
-        "status": "partially_testable",
-        "available_modalities": [
-          "fMRI"
-        ],
-        "required_modalities": [
-          "DTI",
-          "EEG",
-          "fMRI",
-          "scales"
-        ],
-        "missing_modalities": [
-          "DTI",
-          "EEG",
-          "scales"
-        ],
-        "matched_variables": [
-          "thalamus_DMN_FC"
-        ],
-        "missing_variables": [
-          "ISI",
-          "spindle_density"
-        ],
-        "ranking_bonus": 10.0,
-        "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
-      }
-    },
-    "created_at": "2026-07-24T07:08:43.163995+00:00",
-    "updated_at": "2026-07-24T07:15:41.773027+00:00",
-    "data_testability_status": "partially_testable",
-    "data_testability_available_modalities": "fMRI",
-    "data_testability_required_modalities": "DTI;EEG;fMRI;scales",
-    "data_testability_missing_modalities": "DTI;EEG;scales",
-    "data_testability_matched_variables": "thalamus_DMN_FC",
-    "data_testability_missing_variables": "ISI;spindle_density",
-    "experiment_priority_score": 1504.0
-  },
-  {
-    "hypothesis_id": "hypothesis_d0c51b2a03fe",
-    "session_id": "sleep_hypothesis_session",
-    "title": "Thalamic Spindle Modulation and Insomnia Severity via Thalamocortical Coupling",
-    "summary": "This hypothesis explores the role of thalamic spindle modulation through thalamocortical coupling in insomnia severity, linking disrupted spindle activity to impaired sleep architecture.",
-    "content": "Thalamic spindle modulation through thalamocortical coupling is a key mechanism linking insomnia severity to disrupted sleep architecture, suggesting a novel pathway for targeted intervention.",
-    "rationale": "The evidence shows that frequent insomnia symptoms are associated with altered functional connectivity within the default mode network and frontoparietal network, and decreased connectivity between the salience network and the default mode network. Additionally, thalamocortical coupling is implicated in spindle modulation, which is crucial for sleep architecture.",
-    "experimental_plan": "Analyze the relationship between thalamocortical coupling (measured via EEG and fMRI) and white matter integrity (measured via DTI) in patients with insomnia, using fractional anisotropy (FA) as a measurable variable.",
-    "novelty_assessment": "This hypothesis introduces a focused integration of thalamocortical coupling with existing evidence on functional connectivity, providing a more specific pathway compared to prior hypotheses that included broader white matter pathways.",
-    "key_assumptions": [
-      "Thalamocortical coupling is a primary mediator of spindle modulation in insomnia.",
-      "Disrupted thalamocortical coupling leads to altered functional connectivity in the default mode network."
-    ],
-    "citations": [
-      "E1",
-      "E2",
-      "E3"
-    ],
-    "generation_strategy": "scientific_debate",
-    "generation_round": 2,
-    "elo_rating": 1376.0,
-    "rating_deviation": 122.0,
-    "volatility": 0.059997,
-    "matches_played": 7,
-    "wins": 4,
-    "losses": 3,
-    "draws": 0,
-    "status": "active",
-    "parent_ids": [],
-    "metadata": {
-      "evidence_ids": [
-        "E_d8fe870ca211",
-        "E_7b5420adadff",
-        "E_8dcf143ba794",
-        "E_e48e26fe50de"
-      ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "llm_strategy_detail": "single_turn_strict_debate_json",
-      "sleep_phenotype": "Insomnia severity",
-      "neural_mechanism": "Thalamocortical coupling",
-      "brain_regions": [
-        "Thalamus",
-        "Prefrontal Cortex"
-      ],
-      "brain_networks": [
-        "Default Mode Network",
-        "Salience Network"
-      ],
-      "modalities": [
-        "EEG",
-        "fMRI",
-        "DTI",
-        "Scale"
-      ],
-      "measurable_variables": [
-        "Fractional Anisotropy (FA)",
-        "Functional Connectivity",
-        "Spindle Activity"
-      ],
-      "directional_prediction": "Increased thalamocortical coupling will correlate with reduced insomnia severity and improved functional connectivity within the default mode network.",
-      "falsification_criteria": "If thalamocortical coupling does not show a significant correlation with insomnia severity or functional connectivity in the default mode network.",
-      "knowledge_graph_paths": [
-        "thalamocortical coupling -> spindle activity -> insomnia severity",
-        "thalamocortical coupling -> functional connectivity -> insomnia severity"
-      ],
-      "debate_critique": "The initial hypothesis may have overlooked the role of white matter integrity and the potential interactions between thalamocortical coupling and white matter pathways in modulating insomnia severity.",
-      "debate_refinement": "The refined hypothesis integrates thalamocortical coupling with white matter integrity, but focuses on thalamocortical pathways as the primary mechanism, considering the evidence on functional connectivity and spindle modulation.",
-      "data_testability": {
-        "status": "partially_testable",
-        "available_modalities": [
-          "fMRI"
-        ],
-        "required_modalities": [
-          "DTI",
-          "EEG",
-          "fMRI"
-        ],
-        "missing_modalities": [
-          "DTI",
-          "EEG"
-        ],
-        "matched_variables": [
-          "DMN_FC",
-          "frontoparietal_FC",
-          "salience_FC",
-          "thalamus_DMN_FC"
-        ],
-        "missing_variables": [
-          "FA"
-        ],
-        "ranking_bonus": 10.0,
-        "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
-      }
-    },
-    "created_at": "2026-07-24T06:55:47.832862+00:00",
-    "updated_at": "2026-07-24T07:15:19.633422+00:00",
-    "data_testability_status": "partially_testable",
-    "data_testability_available_modalities": "fMRI",
-    "data_testability_required_modalities": "DTI;EEG;fMRI",
-    "data_testability_missing_modalities": "DTI;EEG",
-    "data_testability_matched_variables": "DMN_FC;frontoparietal_FC;salience_FC;thalamus_DMN_FC",
-    "data_testability_missing_variables": "FA",
-    "experiment_priority_score": 1386.0
-  },
-  {
-    "hypothesis_id": "hypothesis_a627b04ae678",
-    "session_id": "sleep_hypothesis_session",
-    "title": "REM-NREM Switching and Insomnia Severity via Cortico-Thalamic Connectivity",
-    "summary": "This hypothesis proposes that disrupted REM-NREM switching, mediated by cortico-thalamic connectivity, contributes to insomnia severity through altered sleep architecture.",
-    "content": "Disrupted REM-NREM switching, mediated by cortico-thalamic connectivity, contributes to insomnia severity through altered sleep architecture.",
-    "rationale": "Evidence suggests that cortico-thalamic connectivity is associated with slow-wave sleep and REM-NREM transitions. Disrupted connectivity may lead to fragmented sleep patterns, increasing insomnia severity.",
-    "experimental_plan": "Analyze cortico-thalamic connectivity using fMRI and compare REM-NREM transition patterns in PSG data between insomnia patients and controls.",
-    "novelty_assessment": "Integrates cortico-thalamic connectivity with REM-NREM transitions, providing a novel pathway for insomnia severity.",
-    "key_assumptions": [
-      "Cortico-thalamic connectivity modulates REM-NREM transitions",
-      "Altered connectivity leads to fragmented sleep patterns"
-    ],
-    "citations": [
-      "paper_id values from the evidence"
-    ],
-    "generation_strategy": "assumption_chaining",
-    "generation_round": 3,
-    "elo_rating": 1232.0,
-    "rating_deviation": 123.0,
-    "volatility": 0.059996,
-    "matches_played": 7,
-    "wins": 2,
-    "losses": 5,
-    "draws": 0,
-    "status": "active",
-    "parent_ids": [],
-    "metadata": {
-      "evidence_ids": [
-        "E_151e490cbf7d",
-        "E_b196f06926bf",
-        "E_6c9cac407829",
-        "E_d4d331576ff1"
-      ],
-      "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
-      "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "Insomnia Severity",
-      "neural_mechanism": "Cortico-Thalamic Connectivity",
-      "brain_regions": [
-        "Cortex",
-        "Thalamus"
-      ],
-      "brain_networks": [
-        "Default Mode Network",
-        "Salience Network"
-      ],
-      "modalities": [
-        "PSG",
-        "fMRI"
-      ],
-      "measurable_variables": [
-        "REM-NREM transitions",
-        "Cortico-thalamic connectivity strength"
-      ],
-      "directional_prediction": "Increased cortico-thalamic connectivity strength correlates with reduced REM-NREM transitions in insomnia patients.",
-      "falsification_criteria": "No significant correlation between cortico-thalamic connectivity and REM-NREM transitions in insomnia patients.",
-      "knowledge_graph_paths": [
-        "REM_NREM_switching -> cortico_thalamic_connectivity -> insomnia_severity"
-      ],
-      "data_testability": {
-        "status": "not_directly_testable",
-        "available_modalities": [
-          "fMRI"
-        ],
-        "required_modalities": [
-          "EEG",
-          "fMRI"
-        ],
-        "missing_modalities": [
-          "EEG"
-        ],
-        "matched_variables": [],
-        "missing_variables": [],
-        "ranking_bonus": -30.0,
-        "note": "The hypothesis depends on missing modalities/variables and is not directly testable with the current foundation."
-      }
-    },
-    "created_at": "2026-07-24T06:56:24.985166+00:00",
-    "updated_at": "2026-07-24T07:15:54.419037+00:00",
-    "data_testability_status": "not_directly_testable",
-    "data_testability_available_modalities": "fMRI",
-    "data_testability_required_modalities": "EEG;fMRI",
-    "data_testability_missing_modalities": "EEG",
-    "data_testability_matched_variables": "",
-    "data_testability_missing_variables": "",
-    "experiment_priority_score": 1202.0
-  },
-  {
-    "hypothesis_id": "hypothesis_0dea35fcf609",
-    "session_id": "sleep_hypothesis_session",
-    "title": "White Matter Integrity and Insomnia Severity via Fractional Anisotropy Modulation",
-    "summary": "This hypothesis explores the relationship between white matter integrity, measured by fractional anisotropy (FA), and insomnia severity, focusing on disrupted connectivity between the default mode network (DMN) and sensorimotor networks.",
-    "content": "The hypothesis proposes that white matter integrity, as measured by fractional anisotropy (FA), modulates insomnia severity through disrupted connectivity between the default mode network (DMN) and sensorimotor networks. This disruption in connectivity is expected to contribute to the pathophysiology of insomnia by affecting the integration of self-referential thought and sensory processing.",
-    "rationale": "The evidence from the knowledge graph indicates that frequent insomnia symptoms are associated with altered functional connectivity between the DMN and sensorimotor networks, as well as between the salience network and the DMN. Additionally, white matter integrity, as measured by FA, has been linked to these connectivity patterns. These findings suggest that FA modulation in white matter tracts connecting the DMN and sensorimotor networks could be a key mechanism in the pathophysiology of insomnia.",
-    "experimental_plan": "Conduct a DTI study comparing FA values in white matter tracts connecting the DMN and sensorimotor networks in patients with insomnia and healthy controls. Use resting-state fMRI to assess functional connectivity between the DMN and sensorimotor networks. Correlate FA values with insomnia severity scores.",
-    "novelty_assessment": "This hypothesis introduces a specific pathway linking white matter integrity, measured by FA, to insomnia severity through disrupted connectivity between the DMN and sensorimotor networks, which has not been previously detailed in the existing hypotheses.",
-    "key_assumptions": [
-      "Disrupted connectivity between the DMN and sensorimotor networks is a key feature of insomnia.",
-      "Fractional anisotropy (FA) in white matter tracts connecting the DMN and sensorimotor networks is modulated in insomnia."
-    ],
-    "citations": [
-      "E1",
-      "E2",
-      "E3"
+      "doi:10.1371/journal.pone.0116864",
+      "doi:10.1016/j.sleep.2025.106875",
+      "doi:10.1038/s41398-020-01109-5",
+      "doi:10.1111/jsr.13790"
     ],
     "generation_strategy": "research_expansion",
     "generation_round": 4,
-    "elo_rating": 1121.0,
-    "rating_deviation": 127.0,
-    "volatility": 0.059995,
+    "elo_rating": 1597.0,
+    "rating_deviation": 134.0,
+    "volatility": 0.059994,
     "matches_played": 7,
-    "wins": 0,
-    "losses": 6,
-    "draws": 1,
+    "wins": 7,
+    "losses": 0,
+    "draws": 0,
     "status": "active",
     "parent_ids": [],
     "metadata": {
       "evidence_ids": [
-        "E_88de064381e1",
+        "E_192c38bac62b",
+        "E_3b433faa085a",
         "E_1045512ea122",
-        "E_57f61f661155",
-        "E_bf75dd3eeb62"
+        "E_57f61f661155"
       ],
       "llm_provider": "ollama",
-      "llm_model": "richardyoung/qwen3-14b-abliterated:latest",
+      "llm_model": "qwen3:14b",
       "llm_strategy_detail": "single_turn_json",
-      "sleep_phenotype": "Insomnia severity",
-      "neural_mechanism": "Fractional anisotropy modulation in white matter tracts connecting the DMN and sensorimotor networks",
+      "sleep_phenotype": "insomnia",
+      "neural_mechanism": "white matter microstructural integrity disruption",
       "brain_regions": [
-        "Default Mode Network",
-        "Sensorimotor Networks"
+        "anterior insula",
+        "dorsal anterior cingulate cortex",
+        "posterior cingulate cortex",
+        "medial prefrontal cortex"
       ],
       "brain_networks": [
-        "Default Mode Network",
-        "Salience Network",
-        "Sensorimotor Networks"
+        "salience network",
+        "default mode network"
       ],
       "modalities": [
         "DTI",
-        "fMRI",
-        "Scale"
+        "fMRI"
       ],
       "measurable_variables": [
-        "Fractional Anisotropy (FA)",
-        "Functional Connectivity",
-        "Insomnia Severity Scores"
+        "FA",
+        "resting-state functional connectivity"
       ],
-      "directional_prediction": "Lower FA values in white matter tracts connecting the DMN and sensorimotor networks will correlate with higher insomnia severity scores.",
-      "falsification_criteria": "If there is no significant correlation between FA values in the white matter tracts connecting the DMN and sensorimotor networks and insomnia severity scores, the hypothesis will be refuted.",
+      "directional_prediction": "Lower FA in salience-DMN connecting tracts correlates with decreased salience-DMN connectivity and increased DMN-frontoparietal connectivity in insomnia",
+      "falsification_criteria": "No significant correlation between FA in salience-DMN tracts and functional connectivity metrics after controlling for insomnia severity",
       "knowledge_graph_paths": [
-        "white matter integrity -> fractional anisotropy -> insomnia severity",
-        "default mode network dysregulation -> functional connectivity -> insomnia severity"
+        "white matter integrity -> FA -> insomnia",
+        "white matter integrity -> functional connectivity -> default mode network dysregulation"
       ],
       "data_testability": {
         "status": "partially_testable",
@@ -450,23 +79,517 @@
         ],
         "matched_variables": [
           "DMN_FC",
-          "salience_FC"
+          "salience_FC",
+          "thalamus_DMN_FC"
         ],
         "missing_variables": [
           "FA"
         ],
         "ranking_bonus": 10.0,
         "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
+      },
+      "experiment_preflight": {
+        "status": "candidate_experiment_signature_available",
+        "signature": "thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+        "duplicates_prior_experiment": false,
+        "previously_tested_hypothesis": false,
+        "ranking_penalty": 0.0,
+        "predictors": [
+          "thalamus_salience_FC"
+        ],
+        "outcomes": [
+          "salience_FC",
+          "frontoparietal_FC"
+        ],
+        "covariates": [
+          "mean_FD"
+        ],
+        "avoid_signature_count": 1,
+        "note": "The hypothesis maps to an untested executable experiment signature under current data constraints."
       }
     },
-    "created_at": "2026-07-24T06:57:23.201608+00:00",
-    "updated_at": "2026-07-24T07:15:54.419055+00:00",
+    "created_at": "2026-08-11T04:45:03.801941+00:00",
+    "updated_at": "2026-08-11T05:47:24.329965+00:00",
     "data_testability_status": "partially_testable",
     "data_testability_available_modalities": "fMRI",
     "data_testability_required_modalities": "DTI;fMRI",
     "data_testability_missing_modalities": "DTI",
-    "data_testability_matched_variables": "DMN_FC;salience_FC",
+    "data_testability_matched_variables": "DMN_FC;salience_FC;thalamus_DMN_FC",
     "data_testability_missing_variables": "FA",
-    "experiment_priority_score": 1131.0
+    "experiment_preflight_status": "candidate_experiment_signature_available",
+    "experiment_preflight_signature": "thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+    "experiment_preflight_duplicates_prior": false,
+    "experiment_preflight_previously_tested": false,
+    "experiment_priority_score": 1607.0
+  },
+  {
+    "hypothesis_id": "hypothesis_7c22a24f9a65",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Thalamocortical Coupling Disruption Links Insomnia to Limbic Structural Vulnerability",
+    "summary": "Disrupted thalamocortical coupling in insomnia may drive limbic structural vulnerability, leading to hippocampal volume reduction and impaired frontolimbic connectivity.",
+    "content": "Sleep disruption in insomnia alters thalamocortical coupling, which may propagate to limbic regions, causing structural vulnerability in the hippocampus and frontolimbic networks, as evidenced by convergent decreases in thalamus_DMN_FC and hippocampus_volume.",
+    "rationale": "Evidence [E1] shows thalamocortical coupling regulates thalamic structure, while [E3] and [E4] link insomnia to limbic vulnerability and hippocampal changes. These findings suggest a mechanistic pathway where thalamocortical dysfunction in insomnia disrupts limbic integrity.",
+    "experimental_plan": "Correlate thalamus_DMN_FC (from EEG-fMRI) with hippocampus_volume (from MRI) in insomnia cohorts, controlling for age, depression, and AHI. Test for mediation by limbic network connectivity.",
+    "novelty_assessment": "This hypothesis uniquely connects thalamocortical coupling (a thalamic mechanism) to limbic structural vulnerability (a hippocampal mechanism) in insomnia, bridging two previously separate lines of evidence.",
+    "key_assumptions": [
+      "Thalamocortical coupling directly influences limbic network integrity",
+      "Hippocampal volume is a downstream consequence of disrupted thalamocortical-limbic interactions"
+    ],
+    "citations": [
+      "doi:10.1038/s41598-026-40818-7",
+      "doi:10.1038/s41537-022-00291-3",
+      "doi:10.1017/s0033291725000303"
+    ],
+    "generation_strategy": "literature_exploration",
+    "generation_round": 1,
+    "elo_rating": 1338.0,
+    "rating_deviation": 124.0,
+    "volatility": 0.059997,
+    "matches_played": 7,
+    "wins": 4,
+    "losses": 3,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_c111ff4a9c43",
+        "E_60727a02e87c",
+        "E_6274409063e4",
+        "E_70e974bddf1b"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "qwen3:14b",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "Insomnia severity",
+      "neural_mechanism": "Thalamocortical coupling dysregulation",
+      "brain_regions": [
+        "thalamus",
+        "hippocampus",
+        "medial prefrontal gyrus",
+        "parahippocampal gyrus"
+      ],
+      "brain_networks": [
+        "default mode network (DMN)",
+        "limbic network"
+      ],
+      "modalities": [
+        "EEG-fMRI",
+        "MRI"
+      ],
+      "measurable_variables": [
+        "thalamus_DMN_FC",
+        "hippocampus_volume"
+      ],
+      "directional_prediction": "Lower thalamus_DMN_FC correlates with reduced hippocampus_volume in insomnia patients",
+      "falsification_criteria": "No significant correlation between thalamus_DMN_FC and hippocampus_volume, or positive correlation after controlling for confounders",
+      "knowledge_graph_paths": [
+        "thalamocortical coupling -> thalamus_DMN_FC -> insomnia severity",
+        "limbic structural vulnerability -> hippocampus_volume -> insomnia severity"
+      ],
+      "data_testability": {
+        "status": "partially_testable",
+        "available_modalities": [
+          "fMRI"
+        ],
+        "required_modalities": [
+          "EEG",
+          "MRI",
+          "fMRI"
+        ],
+        "missing_modalities": [
+          "EEG",
+          "MRI"
+        ],
+        "matched_variables": [
+          "DMN_FC",
+          "thalamus_DMN_FC"
+        ],
+        "missing_variables": [],
+        "ranking_bonus": 10.0,
+        "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
+      },
+      "experiment_preflight": {
+        "status": "candidate_experiment_signature_available",
+        "signature": "thalamus_DMN_FC,thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+        "duplicates_prior_experiment": false,
+        "previously_tested_hypothesis": false,
+        "ranking_penalty": 0.0,
+        "predictors": [
+          "thalamus_DMN_FC",
+          "thalamus_salience_FC"
+        ],
+        "outcomes": [
+          "salience_FC",
+          "frontoparietal_FC"
+        ],
+        "covariates": [
+          "mean_FD"
+        ],
+        "avoid_signature_count": 1,
+        "note": "The hypothesis maps to an untested executable experiment signature under current data constraints."
+      }
+    },
+    "created_at": "2026-08-11T04:39:04.526130+00:00",
+    "updated_at": "2026-08-11T05:52:30.469002+00:00",
+    "data_testability_status": "partially_testable",
+    "data_testability_available_modalities": "fMRI",
+    "data_testability_required_modalities": "EEG;MRI;fMRI",
+    "data_testability_missing_modalities": "EEG;MRI",
+    "data_testability_matched_variables": "DMN_FC;thalamus_DMN_FC",
+    "data_testability_missing_variables": "",
+    "experiment_preflight_status": "candidate_experiment_signature_available",
+    "experiment_preflight_signature": "thalamus_DMN_FC,thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+    "experiment_preflight_duplicates_prior": false,
+    "experiment_preflight_previously_tested": false,
+    "experiment_priority_score": 1348.0
+  },
+  {
+    "hypothesis_id": "hypothesis_05d1d4f93052",
+    "session_id": "sleep_hypothesis_session",
+    "title": "REM/NREM Switching Dysregulation Impairs Salience-DMN Coupling in Insomnia",
+    "summary": "Disrupted REM/NREM transitions in insomnia may decouple the salience network from the default mode network, impairing emotional regulation through altered connectivity in prefrontal and cingulate regions.",
+    "content": "Chronic insomnia disrupts REM/NREM switching, leading to hyperarousal and impaired synchronization between the salience network (SN) and default mode network (DMN). This dysconnectivity reduces emotional regulation capacity by weakening top-down control from the SN over DMN-driven self-referential processing, measurable via REM latency and fMRI connectivity metrics.",
+    "rationale": "Evidence links REM latency and switching abnormalities to emotional dysregulation (E4) and DMN dysregulation (E9). The salience network's role in emotional processing and its known interactions with the DMN provide a mechanistic bridge between REM disruption and affective symptoms in insomnia.",
+    "experimental_plan": "Measure REM latency via PSG and SN-DMN functional connectivity via fMRI in insomnia patients. Compare connectivity strength against REM latency and ISI scores. Test for negative correlation between REM latency and SN-DMN connectivity.",
+    "novelty_assessment": "Unlike existing hypotheses focusing on thalamocortical or DMN-limbic pathways, this hypothesis uniquely links REM/NREM switching to salience-DMN decoupling, integrating both sleep architecture and network-level neuroimaging biomarkers.",
+    "key_assumptions": [
+      "REM/NREM switching abnormalities directly alter SN-DMN synchronization",
+      "SN-DMN connectivity strength inversely correlates with REM latency in insomnia"
+    ],
+    "citations": [
+      "doi:10.1038/s41537-022-00291-3",
+      "doi:10.5665/sleep.6308",
+      "doi:10.1093/sleep/zsy056",
+      "doi:10.1016/j.bandc.2020.105642"
+    ],
+    "generation_strategy": "assumption_chaining",
+    "generation_round": 3,
+    "elo_rating": 1289.0,
+    "rating_deviation": 124.0,
+    "volatility": 0.060002,
+    "matches_played": 7,
+    "wins": 3,
+    "losses": 4,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_151e490cbf7d",
+        "E_3a2f3fb2f022",
+        "E_a1efe5db1c8e",
+        "E_dd1e3850ebf2"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "qwen3:14b",
+      "llm_strategy_detail": "single_turn_json",
+      "sleep_phenotype": "Insomnia",
+      "neural_mechanism": "Disrupted REM/NREM switching impairing salience-DMN coupling",
+      "brain_regions": [
+        "anterior cingulate cortex",
+        "medial prefrontal cortex",
+        "insula"
+      ],
+      "brain_networks": [
+        "salience network",
+        "default mode network"
+      ],
+      "modalities": [
+        "PSG",
+        "fMRI"
+      ],
+      "measurable_variables": [
+        "REM latency",
+        "functional connectivity (SN-DMN)"
+      ],
+      "directional_prediction": "Increased REM latency correlates with reduced SN-DMN connectivity strength",
+      "falsification_criteria": "No significant negative correlation between REM latency and SN-DMN connectivity in insomnia patients",
+      "knowledge_graph_paths": [
+        "REM_NREM_switching -> REM latency -> insomnia",
+        "REM_NREM_switching -> functional connectivity -> emotional regulation"
+      ],
+      "data_testability": {
+        "status": "partially_testable",
+        "available_modalities": [
+          "fMRI"
+        ],
+        "required_modalities": [
+          "fMRI",
+          "scales"
+        ],
+        "missing_modalities": [
+          "scales"
+        ],
+        "matched_variables": [
+          "DMN_FC",
+          "salience_FC"
+        ],
+        "missing_variables": [
+          "ISI",
+          "REM_latency"
+        ],
+        "ranking_bonus": 10.0,
+        "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
+      },
+      "experiment_preflight": {
+        "status": "candidate_experiment_signature_available",
+        "signature": "thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+        "duplicates_prior_experiment": false,
+        "previously_tested_hypothesis": false,
+        "ranking_penalty": 0.0,
+        "predictors": [
+          "thalamus_salience_FC"
+        ],
+        "outcomes": [
+          "salience_FC",
+          "frontoparietal_FC"
+        ],
+        "covariates": [
+          "mean_FD"
+        ],
+        "avoid_signature_count": 1,
+        "note": "The hypothesis maps to an untested executable experiment signature under current data constraints."
+      }
+    },
+    "created_at": "2026-08-11T04:43:12.409557+00:00",
+    "updated_at": "2026-08-11T05:57:53.125504+00:00",
+    "data_testability_status": "partially_testable",
+    "data_testability_available_modalities": "fMRI",
+    "data_testability_required_modalities": "fMRI;scales",
+    "data_testability_missing_modalities": "scales",
+    "data_testability_matched_variables": "DMN_FC;salience_FC",
+    "data_testability_missing_variables": "ISI;REM_latency",
+    "experiment_preflight_status": "candidate_experiment_signature_available",
+    "experiment_preflight_signature": "thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+    "experiment_preflight_duplicates_prior": false,
+    "experiment_preflight_previously_tested": false,
+    "experiment_priority_score": 1299.0
+  },
+  {
+    "hypothesis_id": "hypothesis_c2ad9cd586b5",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Integrated Mechanism of Thalamocortical-White Matter Coupling and REM Disruption in Insomnia",
+    "summary": "This hypothesis proposes that insomnia arises from a synergistic disruption of thalamocortical coupling, white matter microstructural integrity, and REM/NREM switching, collectively impairing salience-DMN connectivity and limbic structural integrity.",
+    "content": "Insomnia results from a tripartite disruption: (1) thalamocortical coupling dysfunction (P2), (2) white matter microstructural degradation (P1), and (3) REM/NREM switching abnormalities (P3). These mechanisms interact to weaken salience-DMN connectivity while promoting limbic atrophy, creating a feedback loop that exacerbates sleep fragmentation and cognitive dysfunction.",
+    "rationale": "Integrates P1's white matter-salience-DMN link, P2's thalamocortical-limbic pathway, and P3's REM-disconnection mechanism into a unified framework, addressing both structural and functional pathways with sleep stage modulation as a critical mediator.",
+    "experimental_plan": "1. Measure thalamocortical coupling (fMRI), white matter integrity (DTI), and REM latency (PSG) in insomnia patients and controls. 2. Assess salience-DMN connectivity (fMRI) and hippocampal volume (MRI). 3. Test interactions between thalamocortical coupling/white matter integrity and REM latency on connectivity outcomes.",
+    "novelty_assessment": "Synthesizes three distinct mechanisms into a cohesive model, introducing the concept of REM latency as a modulator of white matter-thalamocortical interactions, which was absent in parent hypotheses.",
+    "key_assumptions": [
+      "Thalamocortical coupling and white matter integrity are interdependent in maintaining salience-DMN connectivity",
+      "REM latency amplifies the impact of white matter degradation on limbic structures"
+    ],
+    "citations": [
+      "P1 white matter-salience link",
+      "P2 thalamocortical-limbic pathway",
+      "P3 REM-disconnection mechanism"
+    ],
+    "generation_strategy": "evolution:cross_pollination",
+    "generation_round": 2,
+    "elo_rating": 1227.0,
+    "rating_deviation": 144.0,
+    "volatility": 0.060002,
+    "matches_played": 4,
+    "wins": 1,
+    "losses": 3,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [
+      "hypothesis_91f214f8e57d",
+      "hypothesis_7c22a24f9a65",
+      "hypothesis_05d1d4f93052"
+    ],
+    "metadata": {
+      "evolved_from": [
+        "hypothesis_91f214f8e57d",
+        "hypothesis_7c22a24f9a65",
+        "hypothesis_05d1d4f93052"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "qwen3:14b",
+      "data_testability": {
+        "status": "partially_testable",
+        "available_modalities": [
+          "fMRI"
+        ],
+        "required_modalities": [
+          "DTI",
+          "fMRI"
+        ],
+        "missing_modalities": [
+          "DTI"
+        ],
+        "matched_variables": [
+          "thalamus_DMN_FC"
+        ],
+        "missing_variables": [
+          "FA",
+          "REM_latency"
+        ],
+        "ranking_bonus": 10.0,
+        "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
+      },
+      "experiment_preflight": {
+        "status": "candidate_experiment_signature_available",
+        "signature": "thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+        "duplicates_prior_experiment": false,
+        "previously_tested_hypothesis": false,
+        "ranking_penalty": 0.0,
+        "predictors": [
+          "thalamus_salience_FC"
+        ],
+        "outcomes": [
+          "salience_FC",
+          "frontoparietal_FC"
+        ],
+        "covariates": [
+          "mean_FD"
+        ],
+        "avoid_signature_count": 1,
+        "note": "The hypothesis maps to an untested executable experiment signature under current data constraints."
+      }
+    },
+    "created_at": "2026-08-11T05:24:32.357157+00:00",
+    "updated_at": "2026-08-11T05:56:07.429287+00:00",
+    "data_testability_status": "partially_testable",
+    "data_testability_available_modalities": "fMRI",
+    "data_testability_required_modalities": "DTI;fMRI",
+    "data_testability_missing_modalities": "DTI",
+    "data_testability_matched_variables": "thalamus_DMN_FC",
+    "data_testability_missing_variables": "FA;REM_latency",
+    "experiment_preflight_status": "candidate_experiment_signature_available",
+    "experiment_preflight_signature": "thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+    "experiment_preflight_duplicates_prior": false,
+    "experiment_preflight_previously_tested": false,
+    "experiment_priority_score": 1237.0
+  },
+  {
+    "hypothesis_id": "hypothesis_adf9d78ead64",
+    "session_id": "sleep_hypothesis_session",
+    "title": "Adenosine-Driven DMN-Limbic Disconnection in Insomnia Impairs Memory Consolidation",
+    "summary": "Chronic insomnia disrupts adenosine-mediated synchronization between the default mode network (DMN) and limbic regions, impairing memory consolidation through hyperarousal and structural vulnerability.",
+    "content": "Chronic insomnia induces a bidirectional interaction between adenosine sleep pressure and limbic-DMN disconnection, where elevated adenosine receptor activity during NREM sleep fails to stabilize hippocampal-DMN connectivity, exacerbating structural vulnerability in the subgenual anterior cingulate and amygdala, and impairing memory consolidation.",
+    "rationale": "Evidence from E1 links limbic structural vulnerability to hippocampal volume reduction, while E3 shows insomnia disrupts DMN functional connectivity during NREM sleep. E2 implicates adenosine receptor dysregulation in sleep pressure, and E4 connects cortical FCD disruptions to poor sleep quality. Together, these suggest adenosine's role in modulating DMN-limbic synchronization is critical.",
+    "experimental_plan": "Use PSG and EEG-fMRI to measure adenosine receptor activity (via pharmacological challenges) alongside DMN-hippocampal FC during NREM sleep in insomnia patients (E3). Compare hippocampal volume (E1) and sleep quality (E4) as mediators.",
+    "novelty_assessment": "Unlike prior hypotheses, this integrates adenosine's role in DMN-limbic synchronization and structural vulnerability, offering a mechanistic link between sleep pressure and memory consolidation failure in insomnia.",
+    "key_assumptions": [
+      "Adenosine receptor activity during NREM sleep directly modulates DMN-hippocampal connectivity",
+      "Limbic structural vulnerability in insomnia is exacerbated by disrupted adenosine-mediated synchronization"
+    ],
+    "citations": [
+      "doi:10.1001/jamapsychiatry.2025.0488",
+      "doi:10.1002/advs.75698",
+      "doi:10.1002/brb3.1172",
+      "doi:10.1002/brb3.1844"
+    ],
+    "generation_strategy": "scientific_debate",
+    "generation_round": 2,
+    "elo_rating": 1142.0,
+    "rating_deviation": 128.0,
+    "volatility": 0.059998,
+    "matches_played": 7,
+    "wins": 1,
+    "losses": 6,
+    "draws": 0,
+    "status": "active",
+    "parent_ids": [],
+    "metadata": {
+      "evidence_ids": [
+        "E_8dcf143ba794",
+        "E_3b52aae7cc54",
+        "E_f84d4af8e3d0",
+        "E_69edb24a08b9"
+      ],
+      "llm_provider": "ollama",
+      "llm_model": "qwen3:14b",
+      "llm_strategy_detail": "single_turn_strict_debate_json",
+      "sleep_phenotype": "Insomnia severity with poor sleep quality",
+      "neural_mechanism": "Adenosine-mediated DMN-limbic disconnection",
+      "brain_regions": [
+        "subgenual anterior cingulate cortex",
+        "amygdala",
+        "hippocampus"
+      ],
+      "brain_networks": [
+        "Default Mode Network"
+      ],
+      "modalities": [
+        "PSG",
+        "fMRI",
+        "Scale"
+      ],
+      "measurable_variables": [
+        "hippocampus_volume",
+        "adenosine receptor activity",
+        "sleep quality",
+        "DMN functional connectivity"
+      ],
+      "directional_prediction": "Higher insomnia severity correlates with reduced adenosine receptor-mediated DMN-hippocampal synchronization during NREM sleep and greater limbic structural vulnerability.",
+      "falsification_criteria": "No significant correlation between adenosine receptor activity and DMN-hippocampal FC in insomnia patients, or no mediation effect of hippocampal volume on sleep quality.",
+      "knowledge_graph_paths": [
+        "adenosine receptor activity -> DMN functional connectivity -> insomnia severity",
+        "hippocampus_volume -> sleep quality -> insomnia severity"
+      ],
+      "debate_critique": "Weaknesses include E2's low-quality evidence on adenosine receptor mechanisms and potential confounds from comorbid hyperarousal. Alternative interpretations could attribute DMN dysregulation to circadian misalignment rather than adenosine.",
+      "debate_refinement": "Refined to focus on adenosine's role in synchronizing DMN-limbic networks during NREM sleep, leveraging E1's structural and E3's functional evidence to isolate insomnia-specific mechanisms.",
+      "data_testability": {
+        "status": "partially_testable",
+        "available_modalities": [
+          "fMRI"
+        ],
+        "required_modalities": [
+          "EEG",
+          "MRI",
+          "fMRI",
+          "scales"
+        ],
+        "missing_modalities": [
+          "EEG",
+          "MRI",
+          "scales"
+        ],
+        "matched_variables": [
+          "DMN_FC"
+        ],
+        "missing_variables": [
+          "NREM_duration",
+          "PSQI"
+        ],
+        "ranking_bonus": 10.0,
+        "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
+      },
+      "experiment_preflight": {
+        "status": "candidate_experiment_signature_available",
+        "signature": "thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+        "duplicates_prior_experiment": false,
+        "previously_tested_hypothesis": false,
+        "ranking_penalty": 0.0,
+        "predictors": [
+          "thalamus_salience_FC"
+        ],
+        "outcomes": [
+          "salience_FC",
+          "frontoparietal_FC"
+        ],
+        "covariates": [
+          "mean_FD"
+        ],
+        "avoid_signature_count": 1,
+        "note": "The hypothesis maps to an untested executable experiment signature under current data constraints."
+      }
+    },
+    "created_at": "2026-08-11T04:41:30.068913+00:00",
+    "updated_at": "2026-08-11T05:57:53.125514+00:00",
+    "data_testability_status": "partially_testable",
+    "data_testability_available_modalities": "fMRI",
+    "data_testability_required_modalities": "EEG;MRI;fMRI;scales",
+    "data_testability_missing_modalities": "EEG;MRI;scales",
+    "data_testability_matched_variables": "DMN_FC",
+    "data_testability_missing_variables": "NREM_duration;PSQI",
+    "experiment_preflight_status": "candidate_experiment_signature_available",
+    "experiment_preflight_signature": "thalamus_salience_FC|frontoparietal_FC,salience_FC|mean_FD",
+    "experiment_preflight_duplicates_prior": false,
+    "experiment_preflight_previously_tested": false,
+    "experiment_priority_score": 1152.0
   }
 ]

@@ -1,0 +1,41 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "default mode network",
+        "to": "\"default mode network\"[MeSH Terms] OR (\"default\"[All Fields] AND \"mode\"[All Fields] AND \"network\"[All Fields]) OR \"default mode network\"[All Fields]"
+      },
+      {
+        "from": "thalamocortical",
+        "to": "\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]"
+      },
+      {
+        "from": "interactions",
+        "to": "\"interact\"[All Fields] OR \"interactant\"[All Fields] OR \"interactants\"[All Fields] OR \"interacted\"[All Fields] OR \"interacting\"[All Fields] OR \"interaction\"[All Fields] OR \"interactional\"[All Fields] OR \"interactions\"[All Fields] OR \"interactive\"[All Fields] OR \"interactively\"[All Fields] OR \"interactives\"[All Fields] OR \"interactivities\"[All Fields] OR \"interactivity\"[All Fields] OR \"interacts\"[All Fields]"
+      },
+      {
+        "from": "sleep disorders",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"default mode network\"[MeSH Terms] OR (\"default\"[All Fields] AND \"mode\"[All Fields] AND \"network\"[All Fields]) OR \"default mode network\"[All Fields]) AND \"DMN\"[All Fields] AND (\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]) AND (\"interact\"[All Fields] OR \"interactant\"[All Fields] OR \"interactants\"[All Fields] OR \"interacted\"[All Fields] OR \"interacting\"[All Fields] OR \"interaction\"[All Fields] OR \"interactional\"[All Fields] OR \"interactions\"[All Fields] OR \"interactive\"[All Fields] OR \"interactively\"[All Fields] OR \"interactives\"[All Fields] OR \"interactivities\"[All Fields] OR \"interactivity\"[All Fields] OR \"interacts\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

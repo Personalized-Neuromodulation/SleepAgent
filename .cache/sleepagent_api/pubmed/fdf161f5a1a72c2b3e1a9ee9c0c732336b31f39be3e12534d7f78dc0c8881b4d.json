@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "41253778"
+    ],
+    "translationset": [
+      {
+        "from": "thalamus",
+        "to": "\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]"
+      },
+      {
+        "from": "REM sleep latency",
+        "to": "\"sleep latency\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"latency\"[All Fields]) OR \"sleep latency\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields] AND \"latency\"[All Fields]) OR \"rem sleep latency\"[All Fields]"
+      },
+      {
+        "from": "predictors",
+        "to": "\"predictor\"[All Fields] OR \"predictors\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]) AND \"FC\"[All Fields] AND (\"sleep latency\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"latency\"[All Fields]) OR \"sleep latency\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields] AND \"latency\"[All Fields]) OR \"rem sleep latency\"[All Fields]) AND (\"predictor\"[All Fields] OR \"predictors\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

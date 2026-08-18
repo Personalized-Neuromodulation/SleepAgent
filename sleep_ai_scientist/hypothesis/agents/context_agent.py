@@ -29,6 +29,7 @@ class ContextAgent:
             "prior_hypotheses": _format_prior_hypotheses(state.prior_hypotheses),
             "prior_context": build_prior_block(priors),
             "rlef_context": build_rlef_injection_block(state.experimental_feedback),
+            "experiment_constraints": _format_experiment_constraints(state.artifacts.get("experiment_design_constraints", {})),
         }
         state.artifacts["retrieved_priors"] = priors
         context_path = config_path(config, "context_blocks_json", "outputs/hypotheses/context_blocks.json")
@@ -41,6 +42,7 @@ class ContextAgent:
                 "prior_hypotheses": state.context_blocks["prior_hypotheses"],
                 "prior_context": state.context_blocks["prior_context"],
                 "rlef_context": state.context_blocks["rlef_context"],
+                "experiment_constraints": state.context_blocks["experiment_constraints"],
                 "retrieved_priors": [item.model_dump(mode="json") for item in priors],
             },
         )
@@ -110,3 +112,32 @@ def _format_prior_hypotheses(priors: list[Any], limit: int = 8) -> str:
     if not priors:
         return "No prior hypotheses were provided."
     return "\n".join(f"- {item.title}: {item.summary}" for item in priors[:limit])
+
+
+def _format_experiment_constraints(constraints: dict[str, Any], limit: int = 12) -> str:
+    avoid = [str(item) for item in constraints.get("avoid_signatures", []) if str(item)]
+    failed = [item for item in constraints.get("failed_tests", []) if isinstance(item, dict)]
+    negative_failed = [str(item) for item in constraints.get("negative_control_failed_predictors", []) if str(item)]
+    tested_hypotheses = [str(item) for item in constraints.get("tested_hypothesis_ids", []) if str(item)]
+    lines = [
+        "Experiment design constraints for this hypothesis round:",
+        f"- Already tested executable signatures: {len(avoid)}",
+        f"- Failed primary tests: {len(failed)}",
+        f"- Negative-control/confound failed predictors: {len(negative_failed)}",
+        f"- Previously tested hypotheses: {len(tested_hypotheses)}",
+    ]
+    if avoid:
+        lines.append("- Avoid exact repeat signatures:")
+        lines.extend(f"  - {signature}" for signature in avoid[:limit])
+    if negative_failed:
+        lines.append("- Avoid or explicitly justify these failed/confounded predictors: " + ", ".join(negative_failed[:limit]))
+    if tested_hypotheses:
+        lines.append("- Do not simply repeat these previously tested hypothesis IDs: " + ", ".join(tested_hypotheses[:limit]))
+    if failed:
+        lines.append("- Prior failed tests:")
+        lines.extend(
+            f"  - {item.get('predictor', '')} -> {item.get('outcome', '')}; method={item.get('method', '')}; p={item.get('p_value')}; effect={item.get('effect')}"
+            for item in failed[:limit]
+        )
+    lines.append("New hypotheses should imply a non-duplicate executable predictor/outcome/covariate signature under the current data profile.")
+    return "\n".join(lines)

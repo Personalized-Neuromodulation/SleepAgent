@@ -1,0 +1,59 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "15",
+    "retmax": "15",
+    "retstart": "0",
+    "idlist": [
+      "42372691",
+      "41506480",
+      "40475604",
+      "40203612",
+      "39397183",
+      "39287881",
+      "39145301",
+      "38934787",
+      "36872118",
+      "36777329",
+      "36474090",
+      "34432059",
+      "32220803",
+      "29713176",
+      "26414900"
+    ],
+    "translationset": [
+      {
+        "from": "Salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "cognitive",
+        "to": "\"cognition\"[MeSH Terms] OR \"cognition\"[All Fields] OR \"cognitions\"[All Fields] OR \"cognitive\"[All Fields] OR \"cognitively\"[All Fields] OR \"cognitives\"[All Fields]"
+      },
+      {
+        "from": "state",
+        "to": "\"state\"[All Fields] OR \"state's\"[All Fields] OR \"stated\"[All Fields] OR \"states\"[All Fields] OR \"stating\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND \"FC\"[All Fields] AND (\"cognition\"[MeSH Terms] OR \"cognition\"[All Fields] OR \"cognitions\"[All Fields] OR \"cognitive\"[All Fields] OR \"cognitively\"[All Fields] OR \"cognitives\"[All Fields]) AND (\"state\"[All Fields] OR \"state s\"[All Fields] OR \"stated\"[All Fields] OR \"states\"[All Fields] OR \"stating\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "during"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

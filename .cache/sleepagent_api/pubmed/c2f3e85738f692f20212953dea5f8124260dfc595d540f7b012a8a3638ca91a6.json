@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "42058019",
+      "39759571"
+    ],
+    "translationset": [
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "psychological",
+        "to": "\"psychologic\"[All Fields] OR \"psychological\"[All Fields] OR \"psychologically\"[All Fields] OR \"psychologization\"[All Fields] OR \"psychologized\"[All Fields] OR \"psychologizing\"[All Fields]"
+      },
+      {
+        "from": "comorbidities",
+        "to": "\"comorbid\"[All Fields] OR \"comorbidity\"[MeSH Terms] OR \"comorbidity\"[All Fields] OR \"comorbidities\"[All Fields] OR \"comorbids\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"resting-state\"[All Fields] AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND \"DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"psychologic\"[All Fields] OR \"psychological\"[All Fields] OR \"psychologically\"[All Fields] OR \"psychologization\"[All Fields] OR \"psychologized\"[All Fields] OR \"psychologizing\"[All Fields]) AND (\"comorbid\"[All Fields] OR \"comorbidity\"[MeSH Terms] OR \"comorbidity\"[All Fields] OR \"comorbidities\"[All Fields] OR \"comorbids\"[All Fields])"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Statistical models",
+        "to": "\"models, statistical\"[MeSH Terms] OR (\"models\"[All Fields] AND \"statistical\"[All Fields]) OR \"statistical models\"[All Fields] OR (\"statistical\"[All Fields] AND \"models\"[All Fields])"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"models, statistical\"[MeSH Terms] OR (\"models\"[All Fields] AND \"statistical\"[All Fields]) OR \"statistical models\"[All Fields] OR (\"statistical\"[All Fields] AND \"models\"[All Fields])) AND \"thalamus-DMN\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "for",
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "41398163",
+      "38329566",
+      "32661938"
+    ],
+    "translationset": [
+      {
+        "from": "Salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "dysregulation",
+        "to": "\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "patients",
+        "to": "\"patient's\"[All Fields] OR \"patients\"[MeSH Terms] OR \"patients\"[All Fields] OR \"patient\"[All Fields] OR \"patients's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"patient s\"[All Fields] OR \"patients\"[MeSH Terms] OR \"patients\"[All Fields] OR \"patient\"[All Fields] OR \"patients s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,2310 @@
+{
+  "total": 50,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "5996c2183325981197a3522cc47346d6f2e8caae",
+      "externalIds": {
+        "PubMedCentral": "12627739",
+        "DOI": "10.1038/s41398-025-03670-3",
+        "CorpusId": 283075972,
+        "PubMed": "41253778"
+      },
+      "url": "https://www.semanticscholar.org/paper/5996c2183325981197a3522cc47346d6f2e8caae",
+      "title": "Hypothalamic functional connectivity, depressive symptoms, and post-treatment SOREMPs in narcolepsy type 1: links to sleep latency and mediation mechanisms",
+      "venue": "Translational Psychiatry",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41398-025-03670-3.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12627739, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2301061693",
+          "name": "Mengmeng Wang"
+        },
+        {
+          "authorId": "2213719662",
+          "name": "Haodong Zhang"
+        },
+        {
+          "authorId": "2279900303",
+          "name": "Xiaosong Dong"
+        },
+        {
+          "authorId": "2274358343",
+          "name": "F. Han"
+        },
+        {
+          "authorId": "10267458",
+          "name": "F. Xiao"
+        }
+      ],
+      "abstract": "Narcolepsy type 1 (NT1) is characterized by sleep-onset rapid eye movement periods (SOREMPs), reflecting dysregulated rapid eye movement (REM) sleep control. Treatment response variability in SOREMP persistence remains poorly understood, particularly regarding hypothalamic functional connectivity (FC) and depressive symptoms. This study investigated clinical, polysomnographic, and neuroimaging differences between NT1 patients with low (0–1) versus high (≥2) post-treatment SOREMPs, and explored whether hypothalamic FC mediates the relationship between depressive symptoms and SOREMPs outcomes. One hundred ten NT1 patients were categorized into low (n = 62) and high (n = 48) post-treatment SOREMPs groups. Demographic, clinical variables (symptoms and questionnaires), and polysomnography (PSG)/multiple sleep latency test (MSLT) parameters were compared. Resting-state fMRI assessed hypothalamic FC with whole-brain regions. LASSO regression modeled associations between FC, sleep latency, and clinical variables, while mediation analysis tested hypothalamic pathways as mediators of depression-SOREMP relationships. High post-treatment SOREMPs patients exhibited shorter pre/post-treatment REM sleep latency, lower post-treatment wakefulness index, and higher depressive symptom prevalence compared to low SOREMPs patients. Hypothalamic FC differed significantly between groups: low SOREMPs patients showed enhanced connectivity in right medial hypothalamus-right thalamus/left precuneus, left medial hypothalamus-left inferior parietal lobule (IPL), and right lateral hypothalamus-left IPL pathways, but reduced connectivity in left lateral hypothalamus-right insula/left anterior cingulate cortex pathways (p < 0.05, GRF-corrected). LASSO regression identified left medial hypothalamus-left IPL FC as a significant predictor of post-treatment MSLT mean sleep latency (β = 0.272, p = 0.001), alongside age (β = −0.256, p = 0.002) and pre-treatment sleep latency (β = 0.392, p < 0.001). Mediation analysis revealed complete mediation by two hypothalamic pathways: depressive symptoms predicted reduced right lateral hypothalamus-left IPL FC (indirect effect: 0.15–1.05), associated with fewer SOREMPs, and increased left lateral hypothalamus-right insula FC (indirect effect: 0.08–1.14), associated with more SOREMPs. Hypothalamic-parietal/insular FC abnormalities link depressive symptoms to post-treatment SOREMP variability in NT1, with specific pathways mediating opposing effects on REM sleep regulation. These findings highlight hypothalamic connectivity as a critical neural substrate for treatment response, integrating sleep-wake and emotional processing networks. Targeting these pathways may improve personalized management for NT1 patients with comorbid depression and treatment-resistant SOREMPs."
+    },
+    {
+      "paperId": "b56a5ce58e80e3458f311f22209629981bf32cbe",
+      "externalIds": {
+        "DOI": "10.64898/2026.05.15.725408",
+        "CorpusId": 288492431
+      },
+      "url": "https://www.semanticscholar.org/paper/b56a5ce58e80e3458f311f22209629981bf32cbe",
+      "title": "Bandwidth-aware fusion of resting-state EEG–fMRI connectivity in cortical eigenmode space",
+      "venue": "bioRxiv",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.64898/2026.05.15.725408",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.64898/2026.05.15.725408?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64898/2026.05.15.725408, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2282463046",
+          "name": "Hyung G. Park"
+        }
+      ],
+      "abstract": "We introduce a geometry-informed, bandwidth-aware model for fusing resting-state EEG and fMRI connectivity by treating each modality as a masked, physics-limited observation of a shared latent cortical connectivity structure. Both modalities are represented in a shared cortical Laplace–Beltrami (LB) eigenmode basis that provides an anatomically grounded ordering of spatial scales. In this coordinate system, fMRI constrains connectivity across a broad range of spatial scales but only at slow timescales, whereas EEG provides frequency-resolved information primarily for coarse spatial modes. We formalize this complementarity through a latent spatio-spectral connectivity object and estimate it using a low-rank factorization with shared eigenmode-network factors and subject- and frequency-specific nonnegative strengths. Estimation is driven by the regions supported by each modality (EEG: coarse spatial modes across broad frequencies; fMRI: broad spatial modes at low frequencies), while unobserved bands are inferred through shared low-rank structure and spectral smoothness regularization. In the MPI–LEMON cohort, the fused representation yields compact, interpretable subject features (fMRI network strengths and EEG oscillatory summaries) that support out-of-sample age prediction under nested cross-validation, and coherent multi-view interpretation through cortical maps, spectral profiles, and atlas-referenced system composition summaries. These results demonstrate that explicitly modeling modality-specific bandwidth gaps enables principled EEG–fMRI connectivity fusion and provides a practical route to multimodal network biomarkers for individual-differences research."
+    },
+    {
+      "paperId": "9943eb0941bde75373e9049d676ffa8aae753c6c",
+      "externalIds": {
+        "DBLP": "journals/iotj/NgoJHD25",
+        "DOI": "10.1109/JIOT.2024.3495567",
+        "CorpusId": 273976456
+      },
+      "url": "https://www.semanticscholar.org/paper/9943eb0941bde75373e9049d676ffa8aae753c6c",
+      "title": "A Novel Satellite-Based REM Construction in Cognitive GEO-LEO Satellite IoT Networks",
+      "venue": "IEEE Internet of Things Journal",
+      "year": 2025,
+      "citationCount": 14,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JIOT.2024.3495567?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JIOT.2024.3495567, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40560385",
+          "name": "Q. Ngo"
+        },
+        {
+          "authorId": "2319163",
+          "name": "B. Jayawickrama"
+        },
+        {
+          "authorId": "2283251714",
+          "name": "Ying He"
+        },
+        {
+          "authorId": "1725132",
+          "name": "E. Dutkiewicz"
+        }
+      ],
+      "abstract": "The advancement of sixth-generation (6G) technology significantly enhances the Internet of Things (IoT) applications, especially in remote areas where traditional cellular infrastructure is not feasible. Satellite communication, a crucial component of 6G, extends IoT connectivity to these underserved regions. In this context, the growing interest in low Earth orbit (LEO) satellite communication stems from its recent advancements in offering high data rate services and minimizing service latency. Next-generation LEO satellite systems, with regenerative capabilities, allow for adaptability in bandwidth management and on-board data processing. However, the scarcity of satellite spectrum presents a barrier to the expansion of LEO satellite networks and the development of integrated terrestrial-space infrastructures. To address this challenge, we propose constructing a radio environment map (REM) aboard LEO satellites to opportunistically tap into the unused spectrum of geostationary (GEO) satellites within a cognitive GEO-LEO satellite IoT network. This solution facilitates REM construction through collaboration among neighboring LEO satellites while also considering the frequency reuse scheme of GEO satellites. Our REM construction approach leverages cyclostationary-based sensing at LEO satellites, serving the dual purpose of REM construction and Doppler shift estimation to track multiple GEO frequency signals. Following REM construction, LEO satellites utilize deep learning techniques to predict GEO spectrum occupancy without further sensing, thereby optimizing secondary spectrum utilization of the IoT network. We propose a deep learning neural network architecture based on a sequence-to-sequence model tailored for spectrum prediction at LEO satellites. Simulations demonstrate superior performance in detection probability of the proposed deep learning network compared to convolutional long short-term memory networks, achieving this with lower computational complexity."
+    },
+    {
+      "paperId": "741ed58349a8e05b494e2d14851bbe6aa697a0b1",
+      "externalIds": {
+        "PubMedCentral": "8596958",
+        "DOI": "10.1002/hbm.25656",
+        "CorpusId": 238228225,
+        "PubMed": "34587333"
+      },
+      "url": "https://www.semanticscholar.org/paper/741ed58349a8e05b494e2d14851bbe6aa697a0b1",
+      "title": "A deep learning based approach identifies regions more relevant than resting‐state networks to the prediction of general intelligence from resting‐state fMRI",
+      "venue": "Human Brain Mapping",
+      "year": 2021,
+      "citationCount": 21,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8596958",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8596958, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145151932",
+          "name": "Bruno Hebling Vieira"
+        },
+        {
+          "authorId": "46552927",
+          "name": "J. Dubois"
+        },
+        {
+          "authorId": "144048760",
+          "name": "V. Calhoun"
+        },
+        {
+          "authorId": "8259070",
+          "name": "C. E. Garrido Salmon"
+        }
+      ],
+      "abstract": "Prediction of cognitive ability latent factors such as general intelligence from neuroimaging has elucidated questions pertaining to their neural origins. However, predicting general intelligence from functional connectivity limit hypotheses to that specific domain, being agnostic to time‐distributed features and dynamics. We used an ensemble of recurrent neural networks to circumvent this limitation, bypassing feature extraction, to predict general intelligence from resting‐state functional magnetic resonance imaging regional signals of a large sample (n = 873) of Human Connectome Project adult subjects. Ablating common resting‐state networks (RSNs) and measuring degradation in performance, we show that model reliance can be mostly explained by network size. Using our approach based on the temporal variance of saliencies, that is, gradients of outputs with regards to inputs, we identify a candidate set of networks that more reliably affect performance in the prediction of general intelligence than similarly sized RSNs. Our approach allows us to further test the effect of local alterations on data and the expected changes in derived metrics such as functional connectivity and instantaneous innovations."
+    },
+    {
+      "paperId": "ffb154b0bc4dddb6ae800e5d310dc7acf7ca7354",
+      "externalIds": {
+        "DOI": "10.1109/ICCCT63501.2025.11019814",
+        "CorpusId": 279267539
+      },
+      "url": "https://www.semanticscholar.org/paper/ffb154b0bc4dddb6ae800e5d310dc7acf7ca7354",
+      "title": "Multimodal Deep Learning Algorithms for Autism Prediction: Integrating Functional MRI and Gut Microbiome Data",
+      "venue": "International Conference on Computing and Convergence Technology",
+      "year": 2025,
+      "citationCount": 14,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCCT63501.2025.11019814?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCCT63501.2025.11019814, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2366237890",
+          "name": "Associate Professor V. Nandhini"
+        },
+        {
+          "authorId": "2359941336",
+          "name": "Dr. K. Ananthajothi"
+        }
+      ],
+      "abstract": "Autism Spectrum Disorder (ASD) is a complex neurodevelopmental condition that affects an individual's social interactions, communication abilities, and behavioral patterns. Recent studies suggest that both neurological and gastrointestinal factors contribute to ASD etiology, necessitating multimodal diagnostic approaches. However, integrating functional MRI (fMRI) and gut microbiome data remains a critical challenge, especially when datasets lack common individuals. This study explores different Deep Learning methods for multimodal ASD prediction, including Multimodal Variational Autoencoder (MVAE), Generalized Canonical Correlation Analysis (GCCA), and Graph Neural Networks (GNNs). Each algorithm addresses specific challenges: MVAE effectively handles missing modalities, GCCA aligns feature spaces across datasets without requiring paired samples, and GNNs leverage functional connectivity networks to extract graph-based neurobiological patterns. By applying these models to fMRI-derived connectivity matrices and microbiome composition profiles, we systematically evaluate their classification accuracy, robustness, and interpretability. Experimental results demonstrate that GNN-based approaches achieve the highest predictive accuracy (91.62%), outperforming conventional multimodal fusion techniques. MVAE provides strong latent representations but struggles with small, heterogeneous datasets, while GCCA offers a scalable framework for cross-modal correlation learning. This study emphasizes the potential of graph-based deep learning in diagnosing ASD and highlights the significance of integrating multimodal data in research on neurodevelopmental disorders. Future extensions may explore transformer-based architectures and domain adaptation techniques to enhance predictive performance further."
+    },
+    {
+      "paperId": "edd10f8b9d2c2941a63741caa6bc177adb5457f9",
+      "externalIds": {
+        "DOI": "10.1109/ICIC68258.2025.11413220",
+        "CorpusId": 286328526
+      },
+      "url": "https://www.semanticscholar.org/paper/edd10f8b9d2c2941a63741caa6bc177adb5457f9",
+      "title": "Anticipatory Handover and Multi-Connectivity Algorithm Robust to Intermittent Backhaul and Heterogeneous RATs",
+      "venue": "International Conference on Intelligent Computing",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICIC68258.2025.11413220?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICIC68258.2025.11413220, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48392476",
+          "name": "M. Aman"
+        }
+      ],
+      "abstract": "Reliable mobility management in heterogeneous wireless environments is challenging in dense urban corridors where intermittent backhaul, mixed traffic, and coexisting RATs (sub-6 LTE/NR and Wi-Fi) are the norm. We present an BAMCC (Backhaul-Aware Mobility and Connectivity Controller) design centered on anticipatory handover (A-HO) and backhaul-aware multi-connectivity (BA-MC) that fuses lightweight trajectory prediction with probabilistic radio environment maps (REMs) and a short-horizon backhaul predictor at the MEC/RSU edge. We formalize a risk-aware objective (latency + CVaR tail-risk + handover cost) and derive practical policies implementable on low-cost edge nodes. A MATLAB Monte-Carlo digital twin, using AR(1) radio fluctuations, Gilbert-Elliott backhaul, and per-flow MPTCP-like splitting, shows large improvements over event-triggered baselines: across representative outage regimes, p95 latency improves significantly, mean latency by approximately 88%, and handover failures drop by approximately 89% at the cost of a modest increase in handovers and ping-pong events. The design and evaluation target Pakistani urban corridors and emphasize low-cost feasibility with local operators and regulators."
+    },
+    {
+      "paperId": "f585a26339f451d45c9267728161e9fb40b5e840",
+      "externalIds": {
+        "DBLP": "journals/cmpb/WangLBZ24",
+        "DOI": "10.1016/j.cmpb.2024.108065",
+        "CorpusId": 267952988,
+        "PubMed": "38428249"
+      },
+      "url": "https://www.semanticscholar.org/paper/f585a26339f451d45c9267728161e9fb40b5e840",
+      "title": "Residual graph transformer for autism spectrum disorder prediction",
+      "venue": "Comput. Methods Programs Biomed.",
+      "year": 2024,
+      "citationCount": 55,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.cmpb.2024.108065?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.cmpb.2024.108065, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2267308173",
+          "name": "Yibin Wang"
+        },
+        {
+          "authorId": "2054875084",
+          "name": "Haixia Long"
+        },
+        {
+          "authorId": "2062816859",
+          "name": "T. Bo"
+        },
+        {
+          "authorId": "2267314093",
+          "name": "Jianwei Zheng"
+        }
+      ],
+      "abstract": "Brain functional connectivity (FC) based on resting-state functional magnetic resonance imaging (rs-fMRI) has been in vogue to predict Autism Spectrum Disorder (ASD), which is a neuropsychiatric disease up the plight of locating latent biomarkers for clinical diagnosis. Albeit massive endeavors have been made, most studies are fed up with several chronic issues, such as the intractability of harnessing the interaction flourishing within brain regions, the astriction of representation due to vanishing gradient within deeper network architecture, and the poor interpretability leading to unpersuasive diagnosis. To ameliorate these issues, a FC-learned Residual Graph Transformer Network, namely RGTNet, is proposed. Specifically, we design a Graph Encoder to extract temporal-related features with long-range dependencies, from which interpretable FC matrices would be modeled. Besides, the residual trick is introduced to deepen the GCN architecture, thereby learning the higher-level information. Moreover, a novel Graph Sparse Fitting followed by weighted aggregation is proposed to ease dimensionality explosion. Empirically, the results on two types of ABIDE data sets demonstrate the meliority of RGTNet. Notably, the achieved ACC metric reaches 73.4%, overwhelming most competitors with merely 70.9% on the AAL atlas using a five-fold cross-validation policy. Moreover, the investigated biomarkers concord closely with the authoritative medical knowledge, paving a viable way for ASD-clinical diagnosis. Our code is available at https://github.com/CodeGoat24/RGTNet."
+    },
+    {
+      "paperId": "788182b4255ecc6854783b843233975a665f5a02",
+      "externalIds": {
+        "PubMedCentral": "12716869",
+        "DBLP": "conf/miccai/HuHCL24",
+        "DOI": "10.1007/978-3-031-72069-7_9",
+        "CorpusId": 273232535,
+        "PubMed": "41425331"
+      },
+      "url": "https://www.semanticscholar.org/paper/788182b4255ecc6854783b843233975a665f5a02",
+      "title": "Consecutive-Contrastive Spherical U-Net: Enhancing Reliability of Individualized Functional Brain Parcellation for Short-Duration fMRI Scans",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+      "year": 2024,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12716869, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2070033451",
+          "name": "Dan Hu"
+        },
+        {
+          "authorId": "2260595169",
+          "name": "Kangfu Han"
+        },
+        {
+          "authorId": "1988742364",
+          "name": "Jiale Cheng"
+        },
+        {
+          "authorId": "2325201571",
+          "name": "Gang Li"
+        }
+      ],
+      "abstract": "Individualized brain parcellations derived from functional MRI (fMRI) are essential for discerning unique functional patterns of individuals, facilitating personalized diagnoses and treatments. Unfortunately, as fMRI signals are inherently noisy, establishing reliable individualized parcellations typically necessitates long-duration fMRI scan (> 25 min), posing a major challenge and resulting in the exclusion of numerous short-duration fMRI scans from individualized studies. To address this issue, we develop a novel Consecutive-Contrastive Spherical U-net (CC-SUnet) to enable the prediction of reliable individualized brain parcellation using short-duration fMRI data, greatly expanding its practical applicability. Specifically, 1) the widely used functional diffusion map (DM), obtained from functional connectivity, is carefully selected as the predictive feature, for its advantage in tracing the transitions between regions while reducing noise. To ensure a robust depiction of brain network, we propose a dual-task model to predict DM and cortical parcellation simultaneously, fully utilizing their reciprocal relationship. 2) By constructing a stepwise dataset to capture the gradual changes of DM over increasing scan durations, a consecutive prediction framework is designed to realize the prediction from short-to-long gradually. 3) A stepwise-denoising-prediction module is further proposed. The noise representations are separated and replaced by the latent representations of a group-level diffusion map, realizing informative guidance and denoising concurrently. 4) Additionally, an N-pair contrastive loss is introduced to strengthen the discriminability of the individualized parcellations. Extensive experimental results demonstrated the superiority of our proposed CC-SUnet in enhancing the reliability of the individualized parcellation with short-duration fMRI data, thereby significantly boosting their utility in individualized studies."
+    },
+    {
+      "paperId": "325aff53e5a7b175bb4c5feb538654d4c8c30153",
+      "externalIds": {
+        "PubMedCentral": "11919153",
+        "DOI": "10.1155/2024/3103115",
+        "CorpusId": 269861917,
+        "PubMed": "40226711"
+      },
+      "url": "https://www.semanticscholar.org/paper/325aff53e5a7b175bb4c5feb538654d4c8c30153",
+      "title": "Brain Connectomics Improve the Prediction of High-Risk Depression Profiles in the First Year following Breast Cancer Diagnosis",
+      "venue": "Depression and Anxiety",
+      "year": 2024,
+      "citationCount": 13,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://downloads.hindawi.com/journals/da/2024/3103115.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11919153, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "9418796",
+          "name": "M. Liang"
+        },
+        {
+          "authorId": "2158171516",
+          "name": "Peng Chen"
+        },
+        {
+          "authorId": "2033764515",
+          "name": "Ying Tang"
+        },
+        {
+          "authorId": "2276422118",
+          "name": "Xiao Na Tang"
+        },
+        {
+          "authorId": "2258926942",
+          "name": "A. Molassiotis"
+        },
+        {
+          "authorId": "2301420780",
+          "name": "M. Knobf"
+        },
+        {
+          "authorId": "47842591",
+          "name": "Mei Ling Liu"
+        },
+        {
+          "authorId": "39692345",
+          "name": "G. Hu"
+        },
+        {
+          "authorId": "2118237855",
+          "name": "Zhe Sun"
+        },
+        {
+          "authorId": "47112087",
+          "name": "Y. Yu"
+        },
+        {
+          "authorId": "1927886271",
+          "name": "Zengjie Ye"
+        }
+      ],
+      "abstract": "Background Prediction of high-risk depression trajectories in the first year following breast cancer diagnosis with fMRI-related brain connectomics is unclear. Methods The Be Resilient to Breast Cancer (BRBC) study is a multicenter trial in which 189/232 participants (81.5%) completed baseline resting-state functional magnetic resonance imaging (rs-fMRI) and four sequential assessments of depression (T0-T3). The latent growth mixture model (LGMM) was utilized to differentiate depression profiles (high vs. low risk) and was followed by multivoxel pattern analysis (MVPA) to recognize distinct brain connectivity patterns. The incremental value of brain connectomics in the prediction model was also estimated. Results Four depression profiles were recognized and classified into high-risk (delayed and chronic, 14.8% and 12.7%) and low-risk (resilient and recovery, 50.3% and 22.2%). Frontal medial cortex and frontal pole were identified as two important brain areas against the high-risk profile outcome. The prediction model achieved 16.82-76.21% in NRI and 12.63-50.74% in IDI when brain connectomics were included. Conclusion Brain connectomics can optimize the prediction against high-risk depression profiles in the first year since breast cancer diagnoses."
+    },
+    {
+      "paperId": "269d696d7816b8f95a76ca83cd750ab93c4752d2",
+      "externalIds": {
+        "DOI": "10.1117/12.3110021",
+        "CorpusId": 290250473
+      },
+      "url": "https://www.semanticscholar.org/paper/269d696d7816b8f95a76ca83cd750ab93c4752d2",
+      "title": "Multimodal graph neural networks for early risk prediction of Alzheimer's disease",
+      "venue": "The 2nd International Conference on Artificial Intelligence, Deep Learning and Neural Networks (AIDLNN 2025)",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1117/12.3110021?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1117/12.3110021, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2450727714",
+          "name": "Jintao Shi"
+        },
+        {
+          "authorId": "2450644209",
+          "name": "Jialin Yu"
+        },
+        {
+          "authorId": "2450468181",
+          "name": "Yuyan Kuang"
+        },
+        {
+          "authorId": "2450897630",
+          "name": "Junyang Zhang"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "3bb9635b32267b5556f3df56f3c27812f7d7042f",
+      "externalIds": {
+        "PubMedCentral": "11118598",
+        "DBLP": "journals/corr/abs-2405-07977",
+        "ArXiv": "2405.07977",
+        "DOI": "10.48550/arXiv.2405.07977",
+        "CorpusId": 269757840,
+        "PubMed": "38800653"
+      },
+      "url": "https://www.semanticscholar.org/paper/3bb9635b32267b5556f3df56f3c27812f7d7042f",
+      "title": "A Demographic-Conditioned Variational Autoencoder for fMRI Distribution Sampling and Removal of Confounds",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.07977, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2269145",
+          "name": "Anton Orlichenko"
+        },
+        {
+          "authorId": "152337129",
+          "name": "Gang Qu"
+        },
+        {
+          "authorId": "2257373238",
+          "name": "Ziyu Zhou"
+        },
+        {
+          "authorId": "1439754913",
+          "name": "A. Liu"
+        },
+        {
+          "authorId": "2278840185",
+          "name": "Hong-Wen Deng"
+        },
+        {
+          "authorId": "2280193749",
+          "name": "Zhengming Ding"
+        },
+        {
+          "authorId": "2256549595",
+          "name": "J. Stephen"
+        },
+        {
+          "authorId": "2251991894",
+          "name": "T. W. Wilson"
+        },
+        {
+          "authorId": "2249955576",
+          "name": "Vince D. Calhoun"
+        },
+        {
+          "authorId": "2177285198",
+          "name": "Yu-Ping Wang"
+        }
+      ],
+      "abstract": "Objective: fMRI and derived measures such as functional connectivity (FC) have been used to predict brain age, general fluid intelligence, psychiatric disease status, and preclinical neurodegenerative disease. However, it is not always clear that all demographic confounds, such as age, sex, and race, have been removed from fMRI data. Additionally, many fMRI datasets are restricted to authorized researchers, making dissemination of these valuable data sources challenging. Methods: We create a variational autoencoder (VAE)-based model, DemoVAE, to decorrelate fMRI features from demographics and generate high-quality synthetic fMRI data based on user-supplied demographics. We train and validate our model using two large, widely used datasets, the Philadelphia Neurodevelopmental Cohort (PNC) and Bipolar and Schizophrenia Network for Intermediate Phenotypes (BSNIP). Results: We find that DemoVAE recapitulates group differences in fMRI data while capturing the full breadth of individual variations. Significantly, we also find that most clinical and computerized battery fields that are correlated with fMRI data are not correlated with DemoVAE latents. An exception are several fields related to schizophrenia medication and symptom severity. Conclusion: Our model generates fMRI data that captures the full distribution of FC better than traditional VAE or GAN models. We also find that most prediction using fMRI data is dependent on correlation with, and prediction of, demographics. Significance: Our DemoVAE model allows for generation of high quality synthetic data conditioned on subject demographics as well as the removal of the confounding effects of demographics. We identify that FC-based prediction tasks are highly influenced by demographic confounds."
+    },
+    {
+      "paperId": "8eebb8538bf5ce6242e2e4fc25aea5fa3f10ae95",
+      "externalIds": {
+        "ArXiv": "2603.20452",
+        "DBLP": "journals/corr/abs-2603-20452",
+        "DOI": "10.48550/arXiv.2603.20452",
+        "CorpusId": 286762270
+      },
+      "url": "https://www.semanticscholar.org/paper/8eebb8538bf5ce6242e2e4fc25aea5fa3f10ae95",
+      "title": "SDE-Driven Spatio-Temporal Hypergraph Neural Networks for Irregular Longitudinal fMRI Connectome Modeling in Alzheimer's Disease",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.20452, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2353376893",
+          "name": "Ruiying Chen"
+        },
+        {
+          "authorId": "2253841896",
+          "name": "Yutong Wang"
+        },
+        {
+          "authorId": "2254293569",
+          "name": "Houliang Zhou"
+        },
+        {
+          "authorId": "2262441655",
+          "name": "Wei Liang"
+        },
+        {
+          "authorId": "2115841280",
+          "name": "Yong Chen"
+        },
+        {
+          "authorId": "40901818",
+          "name": "Lifang He"
+        }
+      ],
+      "abstract": "Longitudinal neuroimaging is essential for modeling disease progression in Alzheimer's disease (AD), yet irregular sampling and missing visits pose substantial challenges for learning reliable temporal representations. To address this challenge, we propose SDE-HGNN, a stochastic differential equation (SDE)-driven spatio-temporal hypergraph neural network for irregular longitudinal fMRI connectome modeling. The framework first employs an SDE-based reconstruction module to recover continuous latent trajectories from irregular observations. Based on these reconstructed representations, dynamic hypergraphs are constructed to capture higher-order interactions among brain regions over time. To further model temporal evolution, hypergraph convolution parameters evolve through SDE-controlled recurrent dynamics conditioned on inter-visit intervals, enabling disease-stage-adaptive connectivity modeling. We also incorporate a sparsity-based importance learning mechanism to identify salient brain regions and discriminative connectivity patterns. Extensive experiments on the OASIS-3 and ADNI cohorts demonstrate consistent improvements over state-of-the-art graph and hypergraph baselines in AD progression prediction. The source code is available at https://anonymous.4open.science/r/SDE-HGNN-017F."
+    },
+    {
+      "paperId": "77767fa851bd8d2620143db71d5978f1ed0c8dea",
+      "externalIds": {
+        "PubMedCentral": "10514061",
+        "DOI": "10.1038/s41598-023-42533-z",
+        "CorpusId": 262124323,
+        "PubMed": "37735201"
+      },
+      "url": "https://www.semanticscholar.org/paper/77767fa851bd8d2620143db71d5978f1ed0c8dea",
+      "title": "A low dimensional embedding of brain dynamics enhances diagnostic accuracy and behavioral prediction in stroke",
+      "venue": "Scientific Reports",
+      "year": 2023,
+      "citationCount": 16,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-023-42533-z.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10514061, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40768412",
+          "name": "S. Idesis"
+        },
+        {
+          "authorId": "2220401516",
+          "name": "Michele Allegra"
+        },
+        {
+          "authorId": "52033010",
+          "name": "J. Vohryzek"
+        },
+        {
+          "authorId": "1945182919",
+          "name": "Y. Sanz Perl"
+        },
+        {
+          "authorId": "35283145",
+          "name": "Joshua Faskowitz"
+        },
+        {
+          "authorId": "2238443848",
+          "name": "Olaf Sporns"
+        },
+        {
+          "authorId": "2248474278",
+          "name": "Maurizio Corbetta"
+        },
+        {
+          "authorId": "145333301",
+          "name": "G. Deco"
+        }
+      ],
+      "abstract": "Large-scale brain networks reveal structural connections as well as functional synchronization between distinct regions of the brain. The latter, referred to as functional connectivity (FC), can be derived from neuroimaging techniques such as functional magnetic resonance imaging (fMRI). FC studies have shown that brain networks are severely disrupted by stroke. However, since FC data are usually large and high-dimensional, extracting clinically useful information from this vast amount of data is still a great challenge, and our understanding of the functional consequences of stroke remains limited. Here, we propose a dimensionality reduction approach to simplify the analysis of this complex neural data. By using autoencoders, we find a low-dimensional representation encoding the fMRI data which preserves the typical FC anomalies known to be present in stroke patients. By employing the latent representations emerging from the autoencoders, we enhanced patients’ diagnostics and severity classification. Furthermore, we showed how low-dimensional representation increased the accuracy of recovery prediction."
+    },
+    {
+      "paperId": "af2f263aa422bf8993f1b71c1885092e2ed0f36f",
+      "externalIds": {
+        "ArXiv": "2410.00068",
+        "CorpusId": 273022912
+      },
+      "url": "https://www.semanticscholar.org/paper/af2f263aa422bf8993f1b71c1885092e2ed0f36f",
+      "title": "Denoising VAE as an Explainable Feature Reduction and Diagnostic Pipeline for Autism Based on Resting state fMRI",
+      "venue": "",
+      "year": 2024,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2410.00068, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2304710793",
+          "name": "Xinyuan Zheng"
+        },
+        {
+          "authorId": "1679918508",
+          "name": "Orren Ravid"
+        },
+        {
+          "authorId": "2242026821",
+          "name": "Robert J. Barry"
+        },
+        {
+          "authorId": "118136159",
+          "name": "Yoo-Ho Kim"
+        },
+        {
+          "authorId": "2299663844",
+          "name": "Qian Wang"
+        },
+        {
+          "authorId": "2304627101",
+          "name": "Young-geun Kim"
+        },
+        {
+          "authorId": "2218991656",
+          "name": "Xi Zhu"
+        },
+        {
+          "authorId": "2243911010",
+          "name": "Xiaofu He"
+        }
+      ],
+      "abstract": "Autism spectrum disorders (ASDs) are developmental conditions characterized by restricted interests and difficulties in communication. The complexity of ASD has resulted in a deficiency of objective diagnostic biomarkers. Deep learning methods have gained recognition for addressing these challenges in neuroimaging analysis, but finding and interpreting such diagnostic biomarkers are still challenging computationally. Here, we propose a feature reduction pipeline using resting-state fMRI data. We used Craddock atlas and Power atlas to extract functional connectivity data from rs-fMRI, resulting in over 30 thousand features. By using a denoising variational autoencoder, our proposed pipeline further compresses the connectivity features into 5 latent Gaussian distributions, providing is a low-dimensional representation of the data to promote computational efficiency and interpretability. To test the method, we employed the extracted latent representations to classify ASD using traditional classifiers such as SVM on a large multi-site dataset. The 95% confidence interval for the prediction accuracy of SVM is [0.63, 0.76] after site harmonization using the extracted latent distributions. Without using DVAE for dimensionality reduction, the prediction accuracy is 0.70, which falls within the interval. The DVAE successfully encoded the diagnostic information from rs-fMRI data without sacrificing prediction performance. The runtime for training the DVAE and obtaining classification results from its extracted latent features was 7 times shorter compared to training classifiers directly on the raw data. Our findings suggest that the Power atlas provides more effective brain connectivity insights for diagnosing ASD than Craddock atlas. Additionally, we visualized the latent representations to gain insights into the brain networks contributing to the differences between ASD and neurotypical brains."
+    },
+    {
+      "paperId": "f9c6798cd688e70aeef7dd82d3c8bc46f744ca0f",
+      "externalIds": {
+        "DOI": "10.1101/2024.05.16.594528",
+        "CorpusId": 270056752,
+        "PubMed": "38798580"
+      },
+      "url": "https://www.semanticscholar.org/paper/f9c6798cd688e70aeef7dd82d3c8bc46f744ca0f",
+      "title": "A Demographic-Conditioned Variational Autoencoder for fMRI Distribution Sampling and Removal of Confounds",
+      "venue": "bioRxiv",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11118390",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2024.05.16.594528?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2024.05.16.594528, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2269145",
+          "name": "Anton Orlichenko"
+        },
+        {
+          "authorId": "152337129",
+          "name": "Gang Qu"
+        },
+        {
+          "authorId": "2257373238",
+          "name": "Ziyu Zhou"
+        },
+        {
+          "authorId": "1439754913",
+          "name": "A. Liu"
+        },
+        {
+          "authorId": "2278840185",
+          "name": "Hong-Wen Deng"
+        },
+        {
+          "authorId": "2280193749",
+          "name": "Zhengming Ding"
+        },
+        {
+          "authorId": "2256549595",
+          "name": "J. Stephen"
+        },
+        {
+          "authorId": "2251991894",
+          "name": "T. W. Wilson"
+        },
+        {
+          "authorId": "2183622231",
+          "name": "V. Calhoun"
+        },
+        {
+          "authorId": "2143488876",
+          "name": "Yu-Ping Wang"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "31c5a7c185cb65839a572a7328f86061754568eb",
+      "externalIds": {
+        "DOI": "10.64898/2026.01.07.26343590",
+        "CorpusId": 284540064
+      },
+      "url": "https://www.semanticscholar.org/paper/31c5a7c185cb65839a572a7328f86061754568eb",
+      "title": "Stable Network-Level Functional Connectivity Alterations in Alzheimer's Disease Identified via Interpretable Latent Modelling",
+      "venue": "medRxiv",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.medrxiv.org/content/medrxiv/early/2026/01/08/2026.01.07.26343590.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.64898/2026.01.07.26343590?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64898/2026.01.07.26343590, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2403141727",
+          "name": "S. Blas Laguzza"
+        },
+        {
+          "authorId": "2288484434",
+          "name": "H. Aimar"
+        },
+        {
+          "authorId": "2403273735",
+          "name": "D. M. Mateos"
+        },
+        {
+          "authorId": "12989570",
+          "name": "M. Belzunce"
+        }
+      ],
+      "abstract": "Resting-state fMRI provides a non-invasive window into large-scale network-level alterations in Alzheimer's disease (AD), but the high-dimensional functional connectivity (FC) and multi-site heterogeneity pose challenges to both classification and interpretability. We propose an explainable deep-learning framework that combines diagnosis-agnostic latent representation learning with a rigorously nested and interpretable classification pipeline to identify reproducible connectivity biomarkers of AD. Using a multi-site ADNI cohort (rs-fMRI, N=431; 95 AD, 89 CN, 247 MCI), a diagnosis-agnostic b-VAE was trained diagnosis-agnostically on CN+MCI+AD data to learn a smooth latent representation of multichannel connectivity. We evaluated seven candidate connectivity measures spanning static, graph-filtered, dynamic, and effective connectivity. A systematic ablation study identified three complementary static channels as the most informative: Full Pearson correlation, OMST-reweighted Pearson, and k-NN-based Mutual Information. Fold-specific latent means were then combined with age and sex and classified under a strictly nested 5 x 5 cross-validation scheme. Across outer test folds, Logistic Regression achieved a mean ROC--AUC of 0.843 and PR--AUC of 0.864. Pooled out-of-fold predictions for CN vs. AD subjects yielded a ROC--AUC 0.829 and a low Brier score (0.197), indicating well-calibrated probabilities. An attribution pipeline combining SHAP in latent space, followed by Integrated Gradients backprojected to edges, recovered a compact and reproducible AD signature. At the systems level, the differential saliency highlights Default Mode, Limbic, and Visual networks. Enforcing strict croos-fold stability criteria (replication frequency and sign consistency) yielded a consensus subgraph of 11 highly reliable connections. Importantly, the identified multivariate signature was largely disjoint from the strongest mass-univariate effects, indicating that the model captures complementary information beyond marginal group differences. Confounder analyses showed only moderate persistence of scanner-related signal in the latent space, with no evidence that acquisition or demographic factors systematically drove AD classification performance. Together, these results demonstrate a principled route toward interpretable, reproducible, and well-calibrated connectivity-based biomarkers for Alzheimer's disease. All code, trained models, and mappings are publicly available to support transparency and external validation."
+    },
+    {
+      "paperId": "d696f12b3c567ec8d7b62c1d07d867fb93671681",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2605-07026",
+        "ArXiv": "2605.07026",
+        "DOI": "10.48550/arXiv.2605.07026",
+        "CorpusId": 288111368
+      },
+      "url": "https://www.semanticscholar.org/paper/d696f12b3c567ec8d7b62c1d07d867fb93671681",
+      "title": "Learning Cross-Atlas Consistent Brain Disorder Representations via Disentangled Multi-Atlas Functional Connectivity Learning",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2605.07026, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2321419052",
+          "name": "Minheng Chen"
+        },
+        {
+          "authorId": "5762440",
+          "name": "C. Cao"
+        },
+        {
+          "authorId": "2321458300",
+          "name": "Jing Zhang"
+        },
+        {
+          "authorId": "2268264342",
+          "name": "Tianming Liu"
+        },
+        {
+          "authorId": "2256392233",
+          "name": "Dajiang Zhu"
+        }
+      ],
+      "abstract": "Functional connectivity (FC) derived from resting-state fMRI is widely used to characterize large-scale brain network alterations in neurological and psychiatric disorders. However, FC construction critically depends on the choice of brain atlas, and different parcellations may emphasize distinct organizational features, leading to heterogeneous and sometimes inconsistent representations. Existing multi-atlas approaches partially alleviate this issue but often fuse atlas-derived features or predictions at a relatively shallow level, while single-atlas disentanglement methods do not explicitly address cross-atlas heterogeneity. We propose Multi-Atlas Disentangled Connectivity LEarning (MADCLE), a multi-branch representation learning framework that jointly encodes FC matrices derived from different brain atlases. Rather than introducing a single explicitly shared latent variable across parcellations, MADCLE learns atlas-wise disease-related representations and encourages them to be cross-atlas consistent through distributional alignment. Meanwhile, covariate-related and atlas-dependent residual factors are modeled separately using covariate similarity supervision, atlas-specific reconstruction, and decorrelation constraints, thereby reducing the leakage of non-disease and parcellation-dependent information into the disease-related embeddings. Experiments on the ADNI and ADHD-200 datasets suggest that MADCLE achieves competitive or improved performance compared with single-atlas baselines, multi-atlas GNN/Transformer models, and recent multi-atlas consistency frameworks. These results support the potential value of structured disentanglement for FC-based disorder identification under heterogeneous parcellation schemes."
+    },
+    {
+      "paperId": "2c71a027923792e1381116bfb338723e39af641c",
+      "externalIds": {
+        "PubMedCentral": "9208020",
+        "DOI": "10.1162/netn_a_00234",
+        "CorpusId": 233245419,
+        "PubMed": "35733420"
+      },
+      "url": "https://www.semanticscholar.org/paper/2c71a027923792e1381116bfb338723e39af641c",
+      "title": "Latent functional connectivity underlying multiple brain states",
+      "venue": "bioRxiv",
+      "year": 2021,
+      "citationCount": 29,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://direct.mit.edu/netn/article-pdf/doi/10.1162/netn_a_00234/2021027/netn_a_00234.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9208020, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50405848",
+          "name": "E. McCormick"
+        },
+        {
+          "authorId": "4167027",
+          "name": "Katelyn L. Arnemann"
+        },
+        {
+          "authorId": "47865284",
+          "name": "Taku Ito"
+        },
+        {
+          "authorId": "1727849",
+          "name": "S. Hanson"
+        },
+        {
+          "authorId": "3030267",
+          "name": "Michael W. Cole"
+        }
+      ],
+      "abstract": "Functional connectivity (FC) studies have predominantly focused on resting state, where ongoing dynamics are thought to reflect the brain’s intrinsic network architecture, which is thought to be broadly relevant because it persists across brain states (i.e., is state-general). However, it is unknown whether resting state is the optimal state for measuring intrinsic FC. We propose that latent FC, reflecting shared connectivity patterns across many brain states, better captures state-general intrinsic FC relative to measures derived from resting state alone. We estimated latent FC independently for each connection using leave-one-task-out factor analysis in 7 highly distinct task states (24 conditions) and resting state using fMRI data from the Human Connectome Project. Compared to resting-state connectivity, latent FC improves generalization to held-out brain states, better explaining patterns of connectivity and task-evoked activation. We also found that latent connectivity improved prediction of behavior outside the scanner, indexed by the general intelligence factor (g). Our results suggest that FC patterns shared across many brain states, rather than just resting state, better reflects state-general connectivity. This affirms the notion of “intrinsic” brain network architecture as a set of connectivity properties persistent across brain states, providing an updated conceptual and mathematical framework of intrinsic connectivity as a latent factor."
+    },
+    {
+      "paperId": "0c35b4c0f739eb8234814f15f5911ae0afe02343",
+      "externalIds": {
+        "MAG": "3047472563",
+        "DBLP": "journals/tmi/HuZWWWSLLS20",
+        "PubMedCentral": "7773223",
+        "DOI": "10.1109/TMI.2020.3013825",
+        "CorpusId": 220965996,
+        "PubMed": "32746154"
+      },
+      "url": "https://www.semanticscholar.org/paper/0c35b4c0f739eb8234814f15f5911ae0afe02343",
+      "title": "Disentangled-Multimodal Adversarial Autoencoder: Application to Infant Age Prediction with Incomplete Multimodal Neuroimages",
+      "venue": "IEEE Transactions on Medical Imaging",
+      "year": 2020,
+      "citationCount": 53,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7773223",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7773223, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2070033451",
+          "name": "Dan Hu"
+        },
+        {
+          "authorId": null,
+          "name": "Han Zhang"
+        },
+        {
+          "authorId": "3319431",
+          "name": "Zhengwang Wu"
+        },
+        {
+          "authorId": "152115830",
+          "name": "Fan Wang"
+        },
+        {
+          "authorId": "49680659",
+          "name": "Li Wang"
+        },
+        {
+          "authorId": "2234159611",
+          "name": "J. Smith"
+        },
+        {
+          "authorId": "144482122",
+          "name": "Weili Lin"
+        },
+        {
+          "authorId": "2149146066",
+          "name": "Gang Li"
+        },
+        {
+          "authorId": "144986260",
+          "name": "D. Shen"
+        }
+      ],
+      "abstract": "Effective fusion of structural magnetic resonance imaging (sMRI) and functional magnetic resonance imaging (fMRI) data has the potential to boost the accuracy of infant age prediction thanks to the complementary information provided by different imaging modalities. However, functional connectivity measured by fMRI during infancy is largely immature and noisy compared to the morphological features from sMRI, thus making the sMRI and fMRI fusion for infant brain analysis extremely challenging. With the conventional multimodal fusion strategies, adding fMRI data for age prediction has a high risk of introducing more noises than useful features, which would lead to reduced accuracy than that merely using sMRI data. To address this issue, we develop a novel model termed as disentangled-multimodal adversarial autoencoder (DMM-AAE) for infant age prediction based on multimodal brain MRI. Specifically, we disentangle the latent variables of autoencoder into common and specific codes to represent the shared and complementary information among modalities, respectively. Then, cross-reconstruction requirement and common-specific distance ratio loss are designed as regularizations to ensure the effectiveness and thoroughness of the disentanglement. By arranging relatively independent autoencoders to separate the modalities and employing disentanglement under cross-reconstruction requirement to integrate them, our DMM-AAE method effectively restrains the possible interference cross modalities, while realizing effective information fusion. Taking advantage of the latent variable disentanglement, a new strategy is further proposed and embedded into DMM-AAE to address the issue of incompleteness of the multimodal neuroimages, which can also be used as an independent algorithm for missing modality imputation. By taking six types of cortical morphometric features from sMRI and brain functional connectivity from fMRI as predictors, the superiority of the proposed DMM-AAE is validated on infant age (35 to 848 days after birth) prediction using incomplete multimodal neuroimages. The mean absolute error of the prediction based on DMM-AAE reaches 37.6 days, outperforming state-of-the-art methods. Generally, our proposed DMM-AAE can serve as a promising model for prediction with multimodal data."
+    },
+    {
+      "paperId": "2a09caf8560bb973098e1dbbda18383f769cbeba",
+      "externalIds": {
+        "MAG": "2746145198",
+        "DBLP": "conf/miccai/RiazAAADCS17",
+        "DOI": "10.1007/978-3-319-67159-8_9",
+        "CorpusId": 6431053
+      },
+      "url": "https://www.semanticscholar.org/paper/2a09caf8560bb973098e1dbbda18383f769cbeba",
+      "title": "FCNet: A Convolutional Neural Network for Calculating Functional Connectivity from Functional MRI",
+      "venue": "CNI@MICCAI",
+      "year": 2017,
+      "citationCount": 57,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-319-67159-8_9?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-319-67159-8_9, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6537761",
+          "name": "A. Riaz"
+        },
+        {
+          "authorId": "1918684",
+          "name": "Muhammad Asad"
+        },
+        {
+          "authorId": "2249237742",
+          "name": "S. M. Masudur"
+        },
+        {
+          "authorId": "2287363071",
+          "name": "Rahman Al-Arif"
+        },
+        {
+          "authorId": "2302563152",
+          "name": "Eduardo Alonso"
+        },
+        {
+          "authorId": "2400587532",
+          "name": "Danai Dima"
+        },
+        {
+          "authorId": "49774668",
+          "name": "P. Corr"
+        },
+        {
+          "authorId": "7622560",
+          "name": "G. Slabaugh"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "dfae09e535651b50831468c538deae38a9c7e503",
+      "externalIds": {
+        "DBLP": "journals/ni/GuhaRD24",
+        "PubMedCentral": "11578796",
+        "DOI": "10.1007/s12021-024-09670-w",
+        "CorpusId": 270377132,
+        "PubMed": "38861097"
+      },
+      "url": "https://www.semanticscholar.org/paper/dfae09e535651b50831468c538deae38a9c7e503",
+      "title": "A Bayesian Multiplex Graph Classifier of Functional Brain Connectivity Across Diverse Tasks of Cognitive Control",
+      "venue": "Neuroinformatics",
+      "year": 2024,
+      "citationCount": 9,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11578796, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48782382",
+          "name": "Sharmistha Guha"
+        },
+        {
+          "authorId": "2305657572",
+          "name": "Jose Rodriguez-Acosta"
+        },
+        {
+          "authorId": "2064525401",
+          "name": "Ivo D. Dinov"
+        }
+      ],
+      "abstract": "This article seeks to investigate the impact of aging on functional connectivity across different cognitive control scenarios, particularly emphasizing the identification of brain regions significantly associated with early aging. By conceptualizing functional connectivity within each cognitive control scenario as a graph, with brain regions as nodes, the statistical challenge revolves around devising a regression framework to predict a binary scalar outcome (aging or normal) using multiple graph predictors. Popular regression methods utilizing multiplex graph predictors often face limitations in effectively harnessing information within and across graph layers, leading to potentially less accurate inference and predictive accuracy, especially for smaller sample sizes. To address this challenge, we propose the Bayesian Multiplex Graph Classifier (BMGC). Accounting for multiplex graph topology, our method models edge coefficients at each graph layer using bilinear interactions between the latent effects associated with the two nodes connected by the edge. This approach also employs a variable selection framework on node-specific latent effects from all graph layers to identify influential nodes linked to observed outcomes. Crucially, the proposed framework is computationally efficient and quantifies the uncertainty in node identification, coefficient estimation, and binary outcome prediction. BMGC outperforms alternative methods in terms of the aforementioned metrics in simulation studies. An additional BMGC validation was completed using an fMRI study of brain networks in adults. The proposed BMGC technique identified that sensory motor brain network obeys certain lateral symmetries, whereas the default mode network exhibits significant brain asymmetries associated with early aging."
+    },
+    {
+      "paperId": "f4559915de6f85674741c285aa7ac7132f425285",
+      "externalIds": {
+        "DBLP": "journals/access/PatelWSCW25",
+        "PubMedCentral": "12499305",
+        "DOI": "10.1109/ACCESS.2025.3601649",
+        "CorpusId": 280709467,
+        "PubMed": "41059400"
+      },
+      "url": "https://www.semanticscholar.org/paper/f4559915de6f85674741c285aa7ac7132f425285",
+      "title": "MJNMF-GAT: Multi-Task Joint Non-Negative Matrix Factorization Graph Attention Network for Understanding Adolescent Neurodevelopment",
+      "venue": "IEEE Access",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12499305, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2301720447",
+          "name": "Binish Patel"
+        },
+        {
+          "authorId": "2251991894",
+          "name": "T. W. Wilson"
+        },
+        {
+          "authorId": "2256549595",
+          "name": "J. Stephen"
+        },
+        {
+          "authorId": "2183622231",
+          "name": "V. Calhoun"
+        },
+        {
+          "authorId": "2143488876",
+          "name": "Yu-Ping Wang"
+        }
+      ],
+      "abstract": "Integration of multi-task brain imaging data is crucial for furthering our understanding of neurodevelopment. By utilizing functional magnetic resonance imaging (fMRI) data and machine learning methods such as graph neural networks to measure brain activity, one can efficiently capture complex brain network interactions. In this work, we introduce the Multi-Task Joint Non-Negative Matrix Factorization Graph Attention Network (MJNMF-GAT) to investigate fMRI data of multiple tasks with the goal of determining age-related differences in adolescence. Our framework integrates joint non-negative matrix factorization for extracting shared latent features across tasks with graph attention networks to model brain connectivity patterns. The model is capable of integrating data from different fMRI tasks to enhance both predictive performance and network interpretation. We applied GNNExplainer for model interpretability and identified key subnetworks that contribute to prediction tasks. The proposed MJNMF-GAT model demonstrates superior results over existing methods, achieving a root mean square error (RMSE) of <inline-formula> <tex-math notation=\"LaTeX\">$1.9212~\\pm ~0.1742$ </tex-math></inline-formula>, mean absolute error (MAE) of <inline-formula> <tex-math notation=\"LaTeX\">$1.5368~\\pm ~0.1469$ </tex-math></inline-formula>, and correlation of <inline-formula> <tex-math notation=\"LaTeX\">$0.8032~\\pm ~0.0469$ </tex-math></inline-formula> in an age prediction task on the Philadelphia Neurodevelomental Cohort (PNC). The model also identifies the critical functional connections that change with the different stages of adolescent neurodevelopment. Our approach improves the predictive accuracy and, more importantly, interprets informative brain connectivity patterns, especially for detecting those important sub-networks responsible in age prediction. The MJNMF-GAT framework opens a new avenue for analyzing multi-task neuroimaging studies, which helps identify significant brain networks and develop a deeper understanding of functional connectivity changes in adolescence."
+    },
+    {
+      "paperId": "184e806a9a5680ab4cf5291c2fa171e343971911",
+      "externalIds": {
+        "DOI": "10.64898/2025.12.21.695029",
+        "CorpusId": 284276732
+      },
+      "url": "https://www.semanticscholar.org/paper/184e806a9a5680ab4cf5291c2fa171e343971911",
+      "title": "Disentangling Brain-Psychopathology Associations: A Systematic Evaluation of Transdiagnostic Latent Factor Models",
+      "venue": "bioRxiv",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2025/12/23/2025.12.21.695029.full.pdf",
+        "status": "GREEN",
+        "license": "public-domain",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.64898/2025.12.21.695029?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64898/2025.12.21.695029, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153140919",
+          "name": "Martin Gell"
+        },
+        {
+          "authorId": "2347759816",
+          "name": "MS Hoffmann"
+        },
+        {
+          "authorId": "2325333913",
+          "name": "Tyler M Moore"
+        },
+        {
+          "authorId": "1897788",
+          "name": "A. Nikolaidis"
+        },
+        {
+          "authorId": "2279545767",
+          "name": "Ruben C. Gur"
+        },
+        {
+          "authorId": "2288210963",
+          "name": "Giovanni A. Salum"
+        },
+        {
+          "authorId": "2233110755",
+          "name": "Michael P. Milham"
+        },
+        {
+          "authorId": "145788357",
+          "name": "R. Langner"
+        },
+        {
+          "authorId": "2357086895",
+          "name": "Veronika I. Müller"
+        },
+        {
+          "authorId": "2256438152",
+          "name": "S. Eickhoff"
+        },
+        {
+          "authorId": "2367506661",
+          "name": "Theodore D. Satterthwaite"
+        },
+        {
+          "authorId": "1390175672",
+          "name": "B. Tervo-Clemmens"
+        }
+      ],
+      "abstract": "Identifying robust brain-psychopathology associations with neuroimaging remains difficult, in part due to substantial heterogeneity within and comorbidity between diagnostic categories. Transdiagnostic latent factor models aim to address this structure by separating shared and unique symptom variance. However, it remains unclear whether latent factor modeling translates into stronger and more interpretable brain-psychopathology associations within contemporary whole-brain prediction frameworks. Using two large developmental cohorts, we systematically compared transdiagnostic bifactor models, correlated factor models, and typical summary scores derived from the Child Behaviour Checklist (CBCL) in their reliability and multivariate associations with whole-brain structure (MRI) and function (resting-state fMRI). General psychopathology, internalising, externalising, and attention dimensions could be significantly predicted from resting-state connectivity but not cortical thickness. We found no consistent evidence that latent factors (bifactor or correlated factor models) strengthened reliability or brain-psychopathology associations, relative to summary scores. Neural signatures were also highly consistent across all scoring methods, with triple network (DMN, FPN, CO) involvement in general, internalizing, and externalising psychopathology. Bifactor scores did, however, display more distinct neural signatures between general, internalising, and externalising dimensions than did summary or correlated factor scores. Collectively, results suggest that additional phenotypic modelling of psychopathology alone does not systematically strengthen the predictive utility of neuroimaging, possibly reflecting fundamental limits on the amount of explainable symptom variance by brain features. While latent factor models may aid in distinguishing neural correlates between constructs, improving phenotypic assessment may be necessary for improvements to brain-psychopathology association strength."
+    },
+    {
+      "paperId": "14dc33dc6e608e9c20dd6589762ef02712232304",
+      "externalIds": {
+        "DBLP": "conf/miccai/YaoYGSZL21",
+        "DOI": "10.1007/978-3-030-87240-3_17",
+        "CorpusId": 238208284
+      },
+      "url": "https://www.semanticscholar.org/paper/14dc33dc6e608e9c20dd6589762ef02712232304",
+      "title": "Tensor-Based Multi-index Representation Learning for Major Depression Disorder Detection with Resting-State fMRI",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+      "year": 2021,
+      "citationCount": 7,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-030-87240-3_17?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-030-87240-3_17, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2985611",
+          "name": "Dongren Yao"
+        },
+        {
+          "authorId": "3444345",
+          "name": "Erkun Yang"
+        },
+        {
+          "authorId": null,
+          "name": "Hao Guan"
+        },
+        {
+          "authorId": "144511104",
+          "name": "J. Sui"
+        },
+        {
+          "authorId": "2108963095",
+          "name": "Zhizhong Zhang"
+        },
+        {
+          "authorId": "2128817641",
+          "name": "Mingxia Liu"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "a22f8b92f4d4851055289ab9f9544f5357a6e2b4",
+      "externalIds": {
+        "PubMedCentral": "11457411",
+        "DBLP": "journals/neuroimage/KimAL24",
+        "DOI": "10.1016/j.neuroimage.2024.120806",
+        "CorpusId": 271918083,
+        "PubMed": "39179011"
+      },
+      "url": "https://www.semanticscholar.org/paper/a22f8b92f4d4851055289ab9f9544f5357a6e2b4",
+      "title": "Separating group- and individual-level brain signatures in the newborn functional connectome: A deep learning approach",
+      "venue": "NeuroImage",
+      "year": 2024,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2024.120806",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11457411, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2137589581",
+          "name": "Jung-Hoon Kim"
+        },
+        {
+          "authorId": "1422339770",
+          "name": "J. D. Asis-Cruz"
+        },
+        {
+          "authorId": "3230485",
+          "name": "C. Limperopoulos"
+        }
+      ],
+      "abstract": "Recent studies indicate that differences in cognition among individuals may be partially attributed to unique brain wiring patterns. While functional connectivity (FC)-based fingerprinting has demonstrated high accuracy in identifying adults, early studies on neonates suggest that individualized FC signatures are absent. We posit that individual uniqueness is present in neonatal FC data and that conventional linear models fail to capture the rapid developmental trajectories characteristic of newborn brains. To explore this hypothesis, we employed a deep generative model, known as a variational autoencoder (VAE), leveraging two extensive public datasets: one comprising resting-state functional MRI (rs-fMRI) scans from 100 adults and the other from 464 neonates. VAE models trained on rs-fMRI from both adults and newborns produced superior age prediction performance (with r between predicted- and actual age ~ 0.7) and individual identification accuracy (~45 %) compared to models trained solely on adult or neonatal data. The VAE model also showed significantly higher individual identification accuracy than linear models (=10~30 %). Importantly, the VAE differentiated connections reflecting age-related changes from those indicative of individual uniqueness, a distinction not possible with linear models. Moreover, we derived 20 latent variables, each corresponding to distinct patterns of cortical functional network (CFNs). These CFNs varied in their representation of brain maturation and individual signatures; notably, certain CFNs that failed to capture neurodevelopmental traits, in fact, exhibited individual signatures. CFNs associated with neonatal neurodevelopment predominantly encompassed unimodal regions such as visual and sensorimotor areas, whereas those linked to individual uniqueness spanned multimodal and transmodal brain regions. The VAE’s capacity to extract features from rs-fMRI data beyond the capabilities of linear models positions it as a valuable tool for delineating cognitive traits inherent in rs-fMRI and exploring individualized imaging phenotypes."
+    },
+    {
+      "paperId": "650c3bd09d1a037c25f160400a082cc09aa37401",
+      "externalIds": {
+        "PubMedCentral": "9731893",
+        "DOI": "10.1016/j.ynstr.2022.100507",
+        "CorpusId": 254243809,
+        "PubMed": "36505960"
+      },
+      "url": "https://www.semanticscholar.org/paper/650c3bd09d1a037c25f160400a082cc09aa37401",
+      "title": "Sex-dependent effects of early life stress on reinforcement learning and limbic cortico-striatal functional connectivity",
+      "venue": "Neurobiology of Stress",
+      "year": 2022,
+      "citationCount": 15,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.ynstr.2022.100507",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9731893, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2143568121",
+          "name": "Katharina Zühlsdorff"
+        },
+        {
+          "authorId": "1393623845",
+          "name": "L. Lopez-Cruz"
+        },
+        {
+          "authorId": "2299148574",
+          "name": "E. Dutcher"
+        },
+        {
+          "authorId": "1409889010",
+          "name": "Jolyon Jones"
+        },
+        {
+          "authorId": "90483843",
+          "name": "C. Pama"
+        },
+        {
+          "authorId": "2080892",
+          "name": "S. Sawiak"
+        },
+        {
+          "authorId": "48395077",
+          "name": "Shahid Khan"
+        },
+        {
+          "authorId": "4686941",
+          "name": "A. Milton"
+        },
+        {
+          "authorId": "1854466",
+          "name": "T. Robbins"
+        },
+        {
+          "authorId": "34217324",
+          "name": "E. Bullmore"
+        },
+        {
+          "authorId": "2353941",
+          "name": "J. Dalley"
+        }
+      ],
+      "abstract": "Major depressive disorder (MDD) is a stress-related condition hypothesized to involve aberrant reinforcement learning (RL) with positive and negative stimuli. The present study investigated whether repeated early maternal separation (REMS) stress, a procedure widely recognized to cause depression-like behaviour, affects how subjects learn from positive and negative feedback. The REMS procedure was implemented by separating male and female rats from their dam for 6 h each day from post-natal day 5–19. Control rat offspring were left undisturbed during this period. Rats were tested as adults for behavioral flexibility and feedback sensitivity on a probabilistic reversal learning task. A computational approach based on RL theory was used to derive latent behavioral variables related to reward learning and flexibility. To assess underlying brain substrates, a seed-based functional MRI connectivity analysis was applied both before and after an additional adulthood stressor in control and REMS rats. Female but not male rats exposed to REMS stress showed increased response ‘stickiness’ (repeated responses regardless of reward outcome). Following repeated adulthood stress, reduced functional connectivity from the basolateral amygdala (BLA) to the dorsolateral striatum (DLS), cingulate cortex (Cg), and anterior insula (AI) cortex was observed in females. By contrast, control male rats exposed to the second stressor showed impaired learning from negative feedback (i.e., non-reward) and reduced functional connectivity from the BLA to the DLS and AI compared to maternally separated males. RL in male rats exposed to REMS was unaffected. The fMRI data further revealed that connectivity between the mOFC and other prefrontal cortical and subcortical structures was positively correlated with response ‘stickiness’. These findings reveal differences in how females and males respond to early life adversity and subsequent stress. These effects may be mediated by functional divergence in resting-state connectivity between the basolateral amygdala and fronto-striatal brain regions."
+    },
+    {
+      "paperId": "dbbd1dc21bc7d8c55f5e28cf6f1ad671e92f03c9",
+      "externalIds": {
+        "DOI": "10.30693/smj.2026.15.2.97",
+        "CorpusId": 286432114
+      },
+      "url": "https://www.semanticscholar.org/paper/dbbd1dc21bc7d8c55f5e28cf6f1ad671e92f03c9",
+      "title": "Graph Autoencoder–Based Latent Learning Identifies Depression-related Functional Network",
+      "venue": "Korean Institute of Smart Media",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.30693/smj.2026.15.2.97?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.30693/smj.2026.15.2.97, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2269749975",
+          "name": "Y. Kim"
+        },
+        {
+          "authorId": "73199722",
+          "name": "Hanbyeol Bae"
+        },
+        {
+          "authorId": "2273968895",
+          "name": "Han-Gue Jo"
+        }
+      ],
+      "abstract": "Major depressive disorder (MDD) is highly heterogeneous, and there is a growing need for objective biomarkers that can complement symptom-based diagnosis. In this study, we analyzed resting-state fMRI functional connectivity in 821 patients with MDD using a graph autoencoder (GAE) that integrates a variational autoencoder (VAE) and graph convolutional networks (GCNs). Connectivity matrices from 160 regions of interest were embedded into a low-dimensional latent space, and sensitivity analysis was used to identify connections most influential to the learned representations. The model with a 16-dimensional latent vector showed stable performance and emphasized fronto-temporo-occipital connectivity as a key feature. In particular, superior frontal–occipital and ventromedial prefrontal cortex (vmPFC)–temporal connections were negatively associated with HAM-D items related to agitation and psychic anxiety (p < 0.001), suggesting a potential role of prefrontal top-down regulation in these symptoms. Overall, our results support the utility of unsupervised GAE-based learning for extracting clinically interpretable connectivity features in MDD, with implications for future studies on subtype characterization and treatment-response prediction."
+    },
+    {
+      "paperId": "38c5555b6e95ff16315191d282f53183371c3751",
+      "externalIds": {
+        "DOI": "10.64898/2026.06.07.730750",
+        "CorpusId": 289100442
+      },
+      "url": "https://www.semanticscholar.org/paper/38c5555b6e95ff16315191d282f53183371c3751",
+      "title": "Cross-domain encoding models reveal shared and domain-specific neural representations across language and mathematics",
+      "venue": "bioRxiv",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.64898/2026.06.07.730750?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64898/2026.06.07.730750, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6306416",
+          "name": "Tomoya Nakai"
+        },
+        {
+          "authorId": "2281750585",
+          "name": "Rieko Kubo"
+        },
+        {
+          "authorId": "2346109244",
+          "name": "Shinji Nishimoto"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "594de2863ee4abde32b2aa0f6e8411cab6ce6e8f",
+      "externalIds": {
+        "DOI": "10.32469/10355/105066",
+        "CorpusId": 272778362
+      },
+      "url": "https://www.semanticscholar.org/paper/594de2863ee4abde32b2aa0f6e8411cab6ce6e8f",
+      "title": "Regulation of craving and underlying resting-state functional connectivity are associated with smoking lapse",
+      "venue": "",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.32469/10355/105066?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.32469/10355/105066, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2199800203",
+          "name": "Spencer Upton"
+        }
+      ],
+      "abstract": "[EMBARGOED UNTIL 05/01/2025] Significance: Identifying neural circuitry dynamics associated with the proactive regulation of craving (ROC) for drugs of abuse may assist in identifying individuals at greater risk for relapse and inform treatment targets for clinical intervention. Methods: Nicotine-dependent adult smokers (N=213) underwent resting-state fMRI and then outside the scanner, performed a smoking relapse analog task (SRT) to assess ROC, latency to inhibit smoking, and smoking lapse (binary outcome). Functional connectivity multivariate pattern analysis (fc-MVPA) and post-hoc seed-based connectivity (SBC) analyses were used to investigate resting-state functional connectivity (rsFC) underlying ROC, while Cox regression survival analyses were used to examine if ROC performance or underlying rsFC were associated with smoking lapse. Results: Worse ROC performance was associated with a greater hazard for smoking lapse ([beta] = 0.257, SE = 0.121, HR = 1.294, 95 percent CI = 1.020 to 1.641, p = 0.034). ROC fc-MVPA regression analyses identified 29 functional clusters displaying multivariate patterns of rsFC associated with ROC, 8 of which were selected for ROC SBC regression analyses. Overall, SBC analyses identified 60 resting-state circuits associated with ROC; and better performance was associated with both stronger (n=48 circuits) and weaker (n=12 circuits) rsFC. Furthermore, a subset of ROC resting-state circuits (n=10 circuits) were also shown to be associated with smoking lapse. Lastly, analyses revealed that the use of composite rsFC scores, as opposed to single circuit rsFC values, always resulted in more robust associations with behavior. Conclusions: In summary, this study triangulated associations between ROC, rsFC, and smoking lapse. Study findings suggest that ROC performance and underlying rsFC may inform prediction models of smoking relapse vulnerability and potentially serve as treatment targets for smoking cessation interventions."
+    },
+    {
+      "paperId": "3a6de93f6238b79d8f541703464531e32106b196",
+      "externalIds": {
+        "DBLP": "journals/tmi/YangYGWXM24",
+        "DOI": "10.1109/TMI.2023.3294967",
+        "CorpusId": 259856934,
+        "PubMed": "37440391"
+      },
+      "url": "https://www.semanticscholar.org/paper/3a6de93f6238b79d8f541703464531e32106b196",
+      "title": "Mapping Multi-Modal Brain Connectome for Brain Disorder Diagnosis via Cross-Modal Mutual Learning",
+      "venue": "IEEE Transactions on Medical Imaging",
+      "year": 2023,
+      "citationCount": 77,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TMI.2023.3294967?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TMI.2023.3294967, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108648724",
+          "name": "Yanwu Yang"
+        },
+        {
+          "authorId": "3204214",
+          "name": "Chenfei Ye"
+        },
+        {
+          "authorId": "11907256",
+          "name": "Xutao Guo"
+        },
+        {
+          "authorId": "2223195498",
+          "name": "Tao Wu"
+        },
+        {
+          "authorId": "2184743626",
+          "name": "Yang Xiang"
+        },
+        {
+          "authorId": "2114187488",
+          "name": "Tingxia Ma"
+        }
+      ],
+      "abstract": "Recently, the study of multi-modal brain connectome has recorded a tremendous increase and facilitated the diagnosis of brain disorders. In this paradigm, functional and structural networks, e.g., functional and structural connectivity derived from fMRI and DTI, are in some manner interacted but are not necessarily linearly related. Accordingly, there remains a great challenge to leverage complementary information for brain connectome analysis. Recently, Graph Convolutional Networks (GNN) have been widely applied to the fusion of multi-modal brain connectome. However, most existing GNN methods fail to couple inter-modal relationships. In this regard, we propose a Cross-modal Graph Neural Network (Cross-GNN) that captures inter-modal dependencies through dynamic graph learning and mutual learning. Specifically, the inter-modal representations are attentively coupled into a compositional space for reasoning inter-modal dependencies. Additionally, we investigate mutual learning in explicit and implicit ways: (1) Cross-modal representations are obtained by cross-embedding explicitly based on the inter-modal correspondence matrix. (2) We propose a cross-modal distillation method to implicitly regularize latent representations with cross-modal semantic contexts. We carry out statistical analysis on the attentively learned correspondence matrices to evaluate inter-modal relationships for associating disease biomarkers. Our extensive experiments on three datasets demonstrate the superiority of our proposed method for disease diagnosis with promising prediction performance and multi-modal connectome biomarker location."
+    },
+    {
+      "paperId": "a47c8f67afad9820e9897da9bb7b9d6e2991ed98",
+      "externalIds": {
+        "DBLP": "journals/titb/UsmanRSRGLKR26",
+        "DOI": "10.1109/JBHI.2024.3505421",
+        "CorpusId": 274282104,
+        "PubMed": "40030298"
+      },
+      "url": "https://www.semanticscholar.org/paper/a47c8f67afad9820e9897da9bb7b9d6e2991ed98",
+      "title": "Advancing Metaverse-Based Healthcare With Multimodal Neuroimaging Fusion via Multi-Task Adversarial Variational Autoencoder for Brain Age Estimation",
+      "venue": "IEEE journal of biomedical and health informatics",
+      "year": 2024,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://figshare.com/articles/journal_contribution/Advancing_Metaverse-Based_Healthcare_With_Multimodal_Neuroimaging_Fusion_Via_Multi-Task_Adversarial_Variational_Autoencoder_for_Brain_Age_Estimation/27949347",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JBHI.2024.3505421?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JBHI.2024.3505421, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143997402",
+          "name": "Muhammad Usman"
+        },
+        {
+          "authorId": "152711058",
+          "name": "Azka Rehman"
+        },
+        {
+          "authorId": "2189754690",
+          "name": "Abdullah Shahid"
+        },
+        {
+          "authorId": "2130624166",
+          "name": "A. Rehman"
+        },
+        {
+          "authorId": "3263386",
+          "name": "Sung‐Min Gho"
+        },
+        {
+          "authorId": "2331270114",
+          "name": "Aleum Lee"
+        },
+        {
+          "authorId": "2280161256",
+          "name": "T. M. Khan"
+        },
+        {
+          "authorId": "1630421985",
+          "name": "Imran Razzak"
+        }
+      ],
+      "abstract": "The metaverse, which integrates physical and virtual realities through technologies such as high-speed internet, virtual and augmented reality, and artificial intelligence (AI), offers transformative prospects across various fields, particularly healthcare. This integration introduces a new paradigm in AI-driven medical imaging, particularly in assessing brain age–a crucial marker for detecting age-related neuropathologies such as Alzheimer's disease (AD) using magnetic resonance imaging (MRI). Despite advances in deep learning for estimating brain age from structural MRI (sMRI), incorporating functional MRI (fMRI) data presents significant challenges due to its complex data structure and the noisy nature of functional connectivity measurements. To address these challenges, we present the Multitask Adversarial Variational Autoencoder (M-AVAE), a bespoke deep learning framework designed to enhance brain age predictions through multimodal MRI data integration. The M-AVAE uniquely separates latent variables into generic and unique codes, effectively isolating shared and modality-specific features. Additionally, integrating multitask learning with sex classification as a supplementary task enables the model to account for sex-specific aging nuances. Evaluated on the OpenBHB dataset–a comprehensive multisite brain MRI aggregation–the M-AVAE demonstrates exceptional performance, achieving a mean absolute error of 2.77 years, surpassing conventional methodologies. This success positions M-AVAE as a powerful tool for metaverse-based healthcare applications in brain age estimation."
+    },
+    {
+      "paperId": "25ad3517fe42ce05ca73a6e87d21adef006bf058",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/PoppTFSSH24",
+        "DOI": "10.1101/2023.02.09.527639",
+        "CorpusId": 256810660,
+        "PubMed": "38492685"
+      },
+      "url": "https://www.semanticscholar.org/paper/25ad3517fe42ce05ca73a6e87d21adef006bf058",
+      "title": "Structural-Functional Brain Network Coupling Predicts Human Cognitive Ability",
+      "venue": "bioRxiv",
+      "year": 2023,
+      "citationCount": 61,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2024.120563",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2023.02.09.527639?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2023.02.09.527639, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2205378928",
+          "name": "Johanna L. Popp"
+        },
+        {
+          "authorId": "2122690063",
+          "name": "Jonas A. Thiele"
+        },
+        {
+          "authorId": "2122988473",
+          "name": "Joshua Faskowitz"
+        },
+        {
+          "authorId": "2308902",
+          "name": "Caio Seguin"
+        },
+        {
+          "authorId": "1694232",
+          "name": "O. Sporns"
+        },
+        {
+          "authorId": "9835678",
+          "name": "Kirsten Hilger"
+        }
+      ],
+      "abstract": "Individual differences in general cognitive ability (GCA) have a biological basis within the structure and function of the human brain. Network neuroscience investigations revealed neural correlates of GCA in structural as well as in functional brain networks. However, whether the relationship between structural and functional networks, the structural-functional brain network coupling (SC-FC coupling), is related to individual differences in GCA remains an open question. We used data from 1030 adults of the Human Connectome Project, derived structural connectivity from diffusion weighted imaging, functional connectivity from resting-state fMRI, and assessed GCA as a latent g-factor from 12 cognitive tasks. Two similarity measures and six communication measures were used to model possible functional interactions arising from structural brain networks. SC-FC coupling was estimated as the degree to which these measures align with the actual functional connectivity, providing insights into different neural communication strategies. At the whole-brain level, higher GCA was associated with higher SC-FC coupling, but only when considering path transitivity as neural communication strategy. Taking region-specific variations in the SC-FC coupling strategy into account and differentiating between positive and negative associations with GCA, allows for prediction of individual cognitive ability scores in a cross-validated prediction framework (correlation between predicted and observed scores: r = .25, p < .001). The same model also predicts GCA scores in a completely independent sample (N = 567, r = .19, p < .001). Our results propose structural-functional brain network coupling as a neurobiological correlate of GCA and suggest brain region-specific coupling strategies as neural basis of efficient information processing predictive of cognitive ability."
+    },
+    {
+      "paperId": "d4838211d7f65628f56b9f6faab30a95ff7b51f8",
+      "externalIds": {
+        "CorpusId": 251590094
+      },
+      "url": "https://www.semanticscholar.org/paper/d4838211d7f65628f56b9f6faab30a95ff7b51f8",
+      "title": "for Prediction City Region Re-Weighting",
+      "venue": "",
+      "year": 2022,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://www.paperdigest.org/wp-content/uploads/2022/08/KDD-2022-Paper-Digests.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1746034",
+          "name": "L. Getoor"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "5a9a38464802397032fff634ffb4f6f691a4424e",
+      "externalIds": {
+        "ArXiv": "2509.24715",
+        "CorpusId": 281674531
+      },
+      "url": "https://www.semanticscholar.org/paper/5a9a38464802397032fff634ffb4f6f691a4424e",
+      "title": "Dark Signals in the Brain: Augment Brain Network Dynamics to the Complex-valued Field",
+      "venue": "",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.24715, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2283874621",
+          "name": "Jiang Zhang"
+        },
+        {
+          "authorId": "2303852286",
+          "name": "C. Qian"
+        },
+        {
+          "authorId": "2253277335",
+          "name": "Wenlian Lu"
+        },
+        {
+          "authorId": "2246230437",
+          "name": "Gustavo Deco"
+        },
+        {
+          "authorId": "2337250717",
+          "name": "Weiyang Ding"
+        },
+        {
+          "authorId": "2267242589",
+          "name": "Jianfeng Feng"
+        }
+      ],
+      "abstract": "Recordings of brain activity, such as functional MRI (fMRI), provide low-dimensional, indirect observations of neural dynamics evolving in high-dimensional, unobservable spaces. Embedding observed brain dynamics into a higher-dimensional representation may help reveal functional organization, but precisely how remains unclear. Hamiltonian mechanics suggests that, by introducing an additional dimension of conjugate momenta, the dynamical behaviour of a conservative system can be formulated in a more compact and mathematically elegant manner. Here we develop a physics-informed, data-driven framework that lifts whole-brain activity to the complex-valued field. Specifically, we augment observed signals (generalized coordinates) with latent ``dark signals''that play the role of conjugate momenta in a whole-brain Hamiltonian system. We show that the Hilbert transform provides an augmentation approach with optimal fitting accuracy within this framework, yielding a Schr\\\"odinger-like equation governing complex-valued, augmented brain dynamics. Empirically, this complex-valued model consistently outperforms its real-valued counterpart, improving short-horizon prediction in the linear regime (correlation 0.12$\\to$0.82) and achieving superior fits under nonlinear, nonequilibrium dynamics (0.47$\\to$0.88). The framework strengthens structure-function coupling, recovers hierarchical intrinsic timescales, and yields biologically plausible directed effective connectivity that varies systematically with age and reconfigures from rest to task via global rescaling plus targeted rewiring. Together, these results establish a principled, testable paradigm for network neuroscience and offer transformative insight into the spatiotemporal organization and functional roles of large-scale brain dynamics."
+    },
+    {
+      "paperId": "e6afa8fbe7754052abbc2b5ee10713c14f4b92d8",
+      "externalIds": {
+        "PubMedCentral": "8058068",
+        "DOI": "10.1038/s42003-021-02002-7",
+        "CorpusId": 233313599,
+        "PubMed": "33879819"
+      },
+      "url": "https://www.semanticscholar.org/paper/e6afa8fbe7754052abbc2b5ee10713c14f4b92d8",
+      "title": "Enhanced inter-regional coupling of neural responses and repetition suppression provide separate contributions to long-term behavioral priming",
+      "venue": "Communications Biology",
+      "year": 2021,
+      "citationCount": 10,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s42003-021-02002-7.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8058068, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2574746",
+          "name": "S. Gotts"
+        },
+        {
+          "authorId": "2681421",
+          "name": "Shawn C. Milleville"
+        },
+        {
+          "authorId": "144404253",
+          "name": "Alex Martin"
+        }
+      ],
+      "abstract": "Stimulus identification commonly improves with repetition over long delays (“repetition priming”), whereas neural activity commonly decreases (“repetition suppression”). Multiple models have been proposed to explain this brain-behavior relationship, predicting alterations in functional and/or effective connectivity (Synchrony and Predictive Coding models), in the latency of neural responses (Facilitation model), and in the relative similarity of neural representations (Sharpening model). Here, we test these predictions with fMRI during overt and covert naming of repeated and novel objects. While we find partial support for predictions of the Facilitation and Sharpening models in the left fusiform gyrus and left frontal cortex, the data were most consistent with the Synchrony model, with increased coupling between right temporoparietal and anterior cingulate cortex for repeated objects that correlated with priming magnitude across participants. Increased coupling and repetition suppression varied independently, each explaining unique variance in priming and requiring modifications of all current models. Gotts et al. test different theoretical model predictions for repetition-associated alterations in functional and/or effective brain connectivity using fMRI. They report that the generated data is most consistent with a Synchrony model-based prediction and provide data which informs the refinement of all models tested."
+    },
+    {
+      "paperId": "9fac06d86fbba7a5079d9e5491716d0d988eeb44",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsad077.0332",
+        "CorpusId": 258983330
+      },
+      "url": "https://www.semanticscholar.org/paper/9fac06d86fbba7a5079d9e5491716d0d988eeb44",
+      "title": "0332 Improving Sleep with Continuous Theta Burst Transcranial Magnetic Stimulation (TMS) of the Default Mode Network",
+      "venue": "Sleep",
+      "year": 2023,
+      "citationCount": 5,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/46/Supplement_1/A147/50466776/zsad077.0332.pdf",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsad077.0332?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsad077.0332, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46990957",
+          "name": "W. Killgore"
+        },
+        {
+          "authorId": "2167418501",
+          "name": "Samantha Jankowski"
+        },
+        {
+          "authorId": "2219261991",
+          "name": "Kymberly Henderson-Arredondo"
+        },
+        {
+          "authorId": "2219262024",
+          "name": "Lindsey Hildebrand"
+        },
+        {
+          "authorId": "2219258517",
+          "name": "Christopher Trapani"
+        },
+        {
+          "authorId": "2219103415",
+          "name": "Daniel Lucas"
+        },
+        {
+          "authorId": "2219293345",
+          "name": "Emmett Suckow"
+        },
+        {
+          "authorId": "2218537971",
+          "name": "Shivani Desai"
+        },
+        {
+          "authorId": "2219254338",
+          "name": "Melissa Reich-Fuhrer"
+        },
+        {
+          "authorId": "2219262231",
+          "name": "Gabriela Franca"
+        },
+        {
+          "authorId": "2158862555",
+          "name": "Deva Reign"
+        },
+        {
+          "authorId": "11485886",
+          "name": "Alisa Huskey"
+        },
+        {
+          "authorId": "2109364134",
+          "name": "Yu-Chin Chen"
+        },
+        {
+          "authorId": "1972588",
+          "name": "Y. Chou"
+        },
+        {
+          "authorId": "4490592",
+          "name": "N. Dailey"
+        }
+      ],
+      "abstract": "\n \n \n Chronic insomnia is a disorder associated with increased cognitive arousal. Insomnia is also associated with activation/connectivity within the default mode network (DMN) of the brain, consistent with the hyperarousal theory. We hypothesized that suppression of the DMN with a type of repetitive transcranial magnetic stimulation (rTMS) known as continuous theta burst stimulation (cTBS) would lead to improved overnight sleep.\n \n \n \n Twenty participants (12 female; age=26.9, SD=6.6 years) meeting criteria for insomnia/sleep disorder completed a counterbalanced sham-controlled crossover study in which they served as their own controls on two separate nights of in-laboratory polysomnography (PSG) monitored sleep. In-lab visits occurred on separate weeks at least 5 days apart. Sessions included two resting state functional magnetic resonance imaging (fMRI) sessions separated by a brief 40 second cTBS rTMS session applied over an easily accessible cortical surface node of the DMN located at the left inferior parietal lobe. After scanning/stimulation, participants were allowed an 8-hour sleep opportunity from 2300 to 0700 monitored with PSG.\n \n \n \n One session of active cTBS significantly altered functional connectivity (p<.05, FDR corrected) within the DMN, while the sham condition produced no changes in functional connectivity from pre- to post-treatment. After controlling for age and IQ, active treatment was associated with significant (p<.05) improvements in PSG measured Total Sleep Time (TST; ηp2=.28), latency to Slow Wave Sleep (SWS; ηp2=.23), Sleep Efficiency (SE; ηp2=.28), and a lower Arousal Index (ηp2=.22). Overall, individuals obtained 16 minutes more sleep after active cTBS compared to sham. Moreover, changes in brain connectivity following cTBS significantly (p<.05) predicted sleep outcomes, including TST, sleep latency, SE, minutes of wake, SWS, number of awakenings, arousals, and arousal index, and a trend toward increased REM (p=.06).\n \n \n \n A brief targeted 40-second stimulation with cTBS altered DMN brain functioning, and improved PSG measured sleep outcomes during the night following stimulation. The effect sizes often exceeded those reported for other established treatments such as cognitive behavioral therapy for insomnia or hypnotic sleep medications. Further work involving multiple stimulations over several days or weeks will be necessary to demonstrate the potential utility of this approach as a treatment for insomnia.\n \n \n \n W81XWH2010173\n"
+    },
+    {
+      "paperId": "344585d338f6ec3f0a1dc123bb39d7b0d74e14b4",
+      "externalIds": {
+        "CorpusId": 261818264
+      },
+      "url": "https://www.semanticscholar.org/paper/344585d338f6ec3f0a1dc123bb39d7b0d74e14b4",
+      "title": "Related to Mild Cognitive and in Patients With Isolated",
+      "venue": "",
+      "year": 2022,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://n.neurology.org/content/neurology/early/2022/04/18/WNL.0000000000200326.full.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "8917855",
+          "name": "Jee-Young Lee"
+        },
+        {
+          "authorId": "2108984582",
+          "name": "Heejung Kim"
+        },
+        {
+          "authorId": "24547815",
+          "name": "Dallah Yoo"
+        },
+        {
+          "authorId": "2063067223",
+          "name": "Jung"
+        },
+        {
+          "authorId": "2408205930",
+          "name": "H.-W. Shin"
+        },
+        {
+          "authorId": "2240448518",
+          "name": "Hyunwoo Nam"
+        },
+        {
+          "authorId": "52140912",
+          "name": "B. Jeon"
+        },
+        {
+          "authorId": "2135799071",
+          "name": "Y. Kim"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "d93b604edc69362f64d9bbd11e66f07b47fcc19e",
+      "externalIds": {
+        "MAG": "2317670062",
+        "DOI": "10.1017/S0952523811000125",
+        "CorpusId": 23670505,
+        "PubMed": "21554775"
+      },
+      "url": "https://www.semanticscholar.org/paper/d93b604edc69362f64d9bbd11e66f07b47fcc19e",
+      "title": "Segregation of frontoparietal and cerebellar components within saccade and vergence networks using hierarchical independent component analysis of fMRI",
+      "venue": "Visual Neuroscience",
+      "year": 2011,
+      "citationCount": 31,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1017/S0952523811000125?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1017/S0952523811000125, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2513536",
+          "name": "Y. Alkan"
+        },
+        {
+          "authorId": "2268929",
+          "name": "B. Biswal"
+        },
+        {
+          "authorId": "144814758",
+          "name": "P. Taylor"
+        },
+        {
+          "authorId": "1814012",
+          "name": "T. Alvarez"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "6d75e05e3192e83967c44231d934c4865337c010",
+      "externalIds": {
+        "PubMedCentral": "6616568",
+        "MAG": "2901596090",
+        "DOI": "10.1007/s12264-018-0307-6",
+        "CorpusId": 53279853,
+        "PubMed": "30421271"
+      },
+      "url": "https://www.semanticscholar.org/paper/6d75e05e3192e83967c44231d934c4865337c010",
+      "title": "Independent Component Analysis and Graph Theoretical Analysis in Patients with Narcolepsy",
+      "venue": "Neuroscience Bulletin",
+      "year": 2018,
+      "citationCount": 35,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s12264-018-0307-6.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6616568, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "10267458",
+          "name": "F. Xiao"
+        },
+        {
+          "authorId": "2110142014",
+          "name": "Chao Lu"
+        },
+        {
+          "authorId": "7427243",
+          "name": "Dianjiang Zhao"
+        },
+        {
+          "authorId": "2253564024",
+          "name": "Q. Zou"
+        },
+        {
+          "authorId": "2959620",
+          "name": "Liyue Xu"
+        },
+        {
+          "authorId": "2152907609",
+          "name": "Jing Li"
+        },
+        {
+          "authorId": "49050646",
+          "name": "Jun Zhang"
+        },
+        {
+          "authorId": "144925264",
+          "name": "F. Han"
+        }
+      ],
+      "abstract": "The present study was aimed to evaluate resting-state functional connectivity and topological properties of brain networks in narcolepsy patients compared with healthy controls. Resting-state fMRI was performed in 26 adult narcolepsy patients and 30 matched healthy controls. MRI data were first analyzed by group independent component analysis, then a graph theoretical method was applied to evaluate the topological properties in the whole brain. Small-world network parameters and nodal topological properties were measured. Altered topological properties in brain areas between groups were selected as region-of-interest seeds, then the functional connectivity among these seeds was compared between groups. Partial correlation analysis was performed to evaluate the relationship between the severity of sleepiness and functional connectivity or topological properties in the narcolepsy patients. Twenty-one independent components out of 48 were obtained. Compared with healthy controls, the narcolepsy patients exhibited significantly decreased functional connectivity within the executive and salience networks, along with increased functional connectivity in the bilateral frontal lobes within the executive network. There were no differences in small-world network properties between patients and controls. The altered brain areas in nodal topological properties between groups were mainly in the inferior frontal cortex, basal ganglia, anterior cingulate, sensory cortex, supplementary motor cortex, and visual cortex. In the partial correlation analysis, nodal topological properties in the putamen, anterior cingulate, and sensory cortex as well as functional connectivity between these regions were correlated with the severity of sleepiness (sleep latency, REM sleep latency, and Epworth sleepiness score) among narcolepsy patients. Altered connectivity within the executive and salience networks was found in narcolepsy patients. Functional connection changes between the left frontal cortex and left caudate nucleus may be one of the parameters describing the severity of narcolepsy. Changes in the nodal topological properties in the left putamen and left posterior cingulate, changes in functional connectivity between the left supplementary motor area and right occipital as well as in functional connectivity between the left anterior cingulate gyrus and bilateral postcentral gyrus can be considered as a specific indicator for evaluating the severity of narcolepsy."
+    },
+    {
+      "paperId": "8aaec2025e95aafd476e08dccb0a1ada32e37b87",
+      "externalIds": {
+        "MAG": "3022031918",
+        "DOI": "10.1101/2020.05.08.084921",
+        "CorpusId": 218631919
+      },
+      "url": "https://www.semanticscholar.org/paper/8aaec2025e95aafd476e08dccb0a1ada32e37b87",
+      "title": "Enhanced inter-regional coupling of neural responses underlies long-term behavioral priming",
+      "venue": "bioRxiv",
+      "year": 2020,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2020/05/10/2020.05.08.084921.full.pdf",
+        "status": "GREEN",
+        "license": "public-domain",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2020.05.08.084921?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2020.05.08.084921, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2574746",
+          "name": "S. Gotts"
+        },
+        {
+          "authorId": "2681421",
+          "name": "Shawn C. Milleville"
+        },
+        {
+          "authorId": "144404253",
+          "name": "Alex Martin"
+        }
+      ],
+      "abstract": "Stimulus identification commonly improves with repetition over long delays (“repetition priming”), whereas neural activity commonly decreases (“repetition suppression”). Multiple models have been proposed to explain this brain-behavior relationship, predicting alterations in functional and/or effective connectivity (Synchrony and Predictive Coding models), in the latency of neural responses (Facilitation model), and in the relative similarity of neural representations (Sharpening model). Here, we test these predictions with fMRI during overt and covert naming of repeated and novel objects. While we find partial support for predictions of the Facilitation and Sharpening models in the left fusiform gyrus and left frontal cortex, the strongest support was observed for the Synchrony model, with increased coupling between right temporoparietal and anterior cingulate cortex for repeated objects that correlated with priming magnitude across participants. Despite overlap with regions showing repetition suppression, increased coupling and repetition suppression varied independently, establishing that they follow from distinct mechanisms. Highlights Tested four prominent neural models of repetition suppression and long-term priming Connectivity analyses supported Synchrony model but not Predictive Coding model Timing, spatial similarity of responses partially support Facilitation, Sharpening Repetition suppression was independent of coupling, implying distinct mechanisms eTOC Gotts et al. test four prominent neural models of repetition suppression and behavioral priming. They show that the model with the most support is the Synchrony model: a whole-brain connectivity analysis revealed that temporoparietal cortex has increased coupling with anterior cingulate cortex following repetition, particularly for strongly primed objects."
+    },
+    {
+      "paperId": "2354b0dc73d063c94de14d76453d102c314f37ec",
+      "externalIds": {
+        "PubMedCentral": "3729201",
+        "MAG": "2144526311",
+        "DOI": "10.1093/cercor/bhs211",
+        "CorpusId": 14840835,
+        "PubMed": "22811008"
+      },
+      "url": "https://www.semanticscholar.org/paper/2354b0dc73d063c94de14d76453d102c314f37ec",
+      "title": "Concurrent Repetition Enhancement and Suppression Responses in Extrastriate Visual Cortex",
+      "venue": "Cerebral Cortex",
+      "year": 2012,
+      "citationCount": 86,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/cercor/article-pdf/23/9/2235/17309165/bhs211.pdf",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3729201, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "102540877",
+          "name": "Vincent de Gardelle"
+        },
+        {
+          "authorId": "6992461",
+          "name": "M. Waszczuk"
+        },
+        {
+          "authorId": "1900710",
+          "name": "T. Egner"
+        },
+        {
+          "authorId": "2372244",
+          "name": "C. Summerfield"
+        }
+      ],
+      "abstract": "Visual cortical responses are usually attenuated by repetition, a phenomenon known as repetition suppression (RS). Here, we use multivoxel pattern analyses of functional magnetic resonance imaging (fMRI) data to show that RS co-occurs with the converse phenomenon (repetition enhancement, RE) in a single cortical region. We presented human volunteers with short sequences of repeated faces and measured brain activity using fMRI. In an independently defined face-responsive extrastriate region, the response of each voxel to repetition (RS vs. RE) was consistent across scanner runs, and multivoxel patterns for both RS and RE voxels were stable. Moreover, RS and RE voxels responded to repetition with dissociable latencies and exhibited different patterns of connectivity with lower and higher visual regions. Computational simulations demonstrated that these effects must be due to differences in repetition sensitivity, and not feature selectivity. These findings establish that 2 classes of repetition responses coexist within 1 visual region and support models acknowledging this distinction, such as predictive coding models where perception requires the computation of both predictions (which are enhanced by repetition) and prediction errors (which are suppressed by repetition)."
+    },
+    {
+      "paperId": "cd0c25bc620e25ea85c5bd999979795aec2fa8ad",
+      "externalIds": {
+        "PubMedCentral": "10241511",
+        "DOI": "10.7554/eLife.80878",
+        "CorpusId": 249854554,
+        "PubMed": "37184067"
+      },
+      "url": "https://www.semanticscholar.org/paper/cd0c25bc620e25ea85c5bd999979795aec2fa8ad",
+      "title": "Toward a more informative representation of the fetal–neonatal brain connectome using variational autoencoder",
+      "venue": "bioRxiv",
+      "year": 2022,
+      "citationCount": 6,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.7554/elife.80878",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10241511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2137589581",
+          "name": "Jung-Hoon Kim"
+        },
+        {
+          "authorId": "1429732029",
+          "name": "Josepheen De Asis-Cruz"
+        },
+        {
+          "authorId": "2032798137",
+          "name": "Dhineshvikram Krishnamurthy"
+        },
+        {
+          "authorId": "3230485",
+          "name": "C. Limperopoulos"
+        }
+      ],
+      "abstract": "Recent advances in functional magnetic resonance imaging (fMRI) have helped elucidate previously inaccessible trajectories of early-life prenatal and neonatal brain development. To date, the interpretation of fetal-neonatal fMRI data has relied on linear analytic models, akin to adult neuroimaging data. However, unlike the adult brain, the fetal and newborn brain develops extraordinarily rapidly, far outpacing any other brain development period across the lifespan. Consequently, conventional linear computational models may not adequately capture these accelerated and complex neurodevelopmental trajectories during this critical period of brain development along the prenatal-neonatal continuum. To obtain a nuanced understanding of fetal-neonatal brain development, including non-linear growth, for the first time, we developed quantitative, systems-wide representations of neuronal circuitry in a large sample (>700) of fetuses, preterm, and full-term neonates using an unsupervised deep generative model called Variational Autoencoder (VAE), a model previously shown to be superior to linear models in representing complex resting state data in healthy adults. Here, we demonstrated that non-linear brain features, i.e., latent variables, derived with the VAE, carried important individual neural signatures, leading to improved representation of prenatal-neonatal brain maturational patterns and more accurate and stable age prediction compared to linear models. Using the VAE decoder, we also revealed distinct functional brain networks spanning the sensory and default mode networks. Using the VAE, we are able to reliably capture and quantify complex, non-linear fetal-neonatal functional neural connectivity. This will lay the critical foundation for detailed mapping of healthy and aberrant functional brain signatures that have their origins in fetal life."
+    },
+    {
+      "paperId": "12594270ba0bb5f9ccbe0cc8beb5054e3cc05d05",
+      "externalIds": {
+        "CorpusId": 286944048
+      },
+      "url": "https://www.semanticscholar.org/paper/12594270ba0bb5f9ccbe0cc8beb5054e3cc05d05",
+      "title": "City Research Online City St George’s, University of London",
+      "venue": "",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openaccess.city.ac.uk/id/eprint/18045/1/CNI-14.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212264432",
+          "name": "Atif Riaz"
+        },
+        {
+          "authorId": "2284064981",
+          "name": "Muhammad Asad"
+        },
+        {
+          "authorId": "2249237742",
+          "name": "S. M. Masudur"
+        },
+        {
+          "authorId": "2287363071",
+          "name": "Rahman Al-Arif"
+        },
+        {
+          "authorId": "2302563152",
+          "name": "Eduardo Alonso"
+        },
+        {
+          "authorId": "2400587532",
+          "name": "Danai Dima"
+        },
+        {
+          "authorId": "2365146905",
+          "name": "P. Corr"
+        },
+        {
+          "authorId": "7622560",
+          "name": "G. Slabaugh"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "eeb80a34866f6343ed9bdbe0d4984d5a719446a1",
+      "externalIds": {
+        "MAG": "3029401150",
+        "DOI": "10.1093/sleep/zsaa056.757",
+        "CorpusId": 219754533
+      },
+      "url": "https://www.semanticscholar.org/paper/eeb80a34866f6343ed9bdbe0d4984d5a719446a1",
+      "title": "0761 Independent Components Analysis And Graph Theoretical Analysis In Patients With Narcolepsy",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/43/Supplement_1/A289/33305497/zsaa056.757.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaa056.757?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaa056.757, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "10267458",
+          "name": "F. Xiao"
+        },
+        {
+          "authorId": "37744778",
+          "name": "Long Zhao"
+        },
+        {
+          "authorId": "2180900719",
+          "name": "Fang Han"
+        }
+      ],
+      "abstract": "\n \n \n To evaluate resting state functional connectivity and topological properties of brain network in narcolepsy compared with healthy controls.\n \n \n \n Resting state fMRI was performed in 26 adult narcolepsy patients and 30 matched healthy controls. MRI data was first analyzed by group independent component analysis, then a graph theoretical method was applied to evaluate topological properties within whole brain. Small-world network parameters and nodal topological properties were measured. Altered topological properties in brain areas between groups were selected as ROI-seeds, then functional connectivity among these ROI-seeds were compared between groups. Partial correlation analysis was performed to evaluate the relationship between sleepiness severity and functional connectivity or topological properties in the narcolepsy.\n \n \n \n 21 independent components out of 48 components were obtained. Compared with healthy controls, narcolepsy exhibited a significant decreased functional connectivity within the executive and salience network, while increased functional connectivity in bilateral frontal lobe within executive network can be detected in narcolepsy. There were no differences in small-world network properties between narcolepsy and healthy controls. The altered brain areas in nodal topological properties were mainly located in inferior frontal cortex, basal ganglia, anterior cingulate, sensory cortex, supplementary motor cortex and visual cortex between groups. In the partial correlation analysis, nodal topological properties in putamen, anterior cingulate and sensory cortex as well as functional connectivity between these brain regions were correlated with the severity of sleepiness (sleep latency, REM sleep latency and ESS) among narcolepsy.\n \n \n \n Altered connectivity within executive network and salience network were found in narcolepsy. Functional connection changes between left frontal cortex and left caudate nucleus may be one of the parameters describing the severity of narcolepsy. Nodal topological properties alterations in left putamen and left posterior cingulate, changes in functional connectivity between left supplementary motor area and right occipital as well as changes in functional connectivity between left anterior cingulate gyrus and bilateral postcentral gyrus can be considered to be a specific indicator for evaluating the severity of narcolepsy.\n \n \n \n National Natural Science Foundation of China (81700088)National Program on Key Basic Research Project of China (973 Program, 2015CB856405)\n"
+    },
+    {
+      "paperId": "d6a8ed30b18e3b87683e6e7a95a6b6bdd05dbc6f",
+      "externalIds": {
+        "MAG": "1596985001",
+        "DBLP": "journals/ficn/AxelrodT15",
+        "PubMedCentral": "4489150",
+        "DOI": "10.3389/fncom.2015.00083",
+        "CorpusId": 9328054,
+        "PubMed": "26190999"
+      },
+      "url": "https://www.semanticscholar.org/paper/d6a8ed30b18e3b87683e6e7a95a6b6bdd05dbc6f",
+      "title": "Commentary: When the brain takes a break: a model-based analysis of mind wandering",
+      "venue": "Frontiers in Computational Neuroscience",
+      "year": 2015,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3389/fncom.2015.00083",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4489150, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2443303",
+          "name": "Vadim Axelrod"
+        },
+        {
+          "authorId": "2052977347",
+          "name": "R. Teodorescu"
+        }
+      ],
+      "abstract": "In recent years, the importance of integrating cognitive modeling with neuroimaging experiments has been repeatedly emphasized (e.g., Forstmann et al., 2011; Brown, 2014). The main challenge, however, remains realizing this approach in practice. Toward this aim, the recent work of Mittner et al. (2014), which explored the mechanisms of mind-wandering using a combination of brain imaging, pupillometry and cognitive modeling, serves as an important illustration of how this methodological amalgam can be effectively implemented. \n \nIn a functional MRI (fMRI) experiment with concurrent eye-tracking, the authors used a standard stop-signal paradigm (142 “stop-trials” and 284 “go-trials”). About 15% of the pseudorandom “go-trials” were followed by thought probes, requiring participants to rate their level of mind-wandering during the preceding trial. Subsequently, a Support Vector Machine (SVM) multivariate classifier was trained and tested on the thought-probe trials data using activity levels and functional connectivity within and between regions of interest (ROIs) of the default mode network (DMN) and its anti-correlated network, and measures of pupil size. Having successfully decoded the level of mind-wandering on thought-probe trials, the authors were able to use the classifier to predict the likelihood of mind-wandering on all remaining trials. Thus, the main benefit of using a combination of brain imaging, pupillometry, and behavioral measures over a typical behavioral experiment (e.g., Mcvay and Kane, 2012) was that it provided an estimation of mind-wandering levels for hundreds of consecutive trials, without the added distraction of incessant thought probes. \n \nThe authors' finding that pupils were informative for predicting the level of mind-wandering confirmed corresponding previous reports (Smallwood et al., 2012; Franklin et al., 2013), and anticipated an interesting recent study reporting a link between DMN activity and change of pupil size (Yellin et al., 2015). The results of Mittner et al. also accord well with brain stimulation (Axelrod et al., 2015) and fMRI imaging studies that implicated DMN in mind-wandering by using average activity level (for meta-analyses: Fox et al., 2015; Stawarczyk and D'Argembeau, 2015), multivariate (Tusche et al., 2014) and connectivity (Kucyi et al., 2013; Kucyi and Davis, 2014) patterns. Interestingly, while not discussed by the authors, the fact that the measures of functional connectivity, calculated using a sliding window of 40 s, contributed to successful prediction suggests that fluctuations in mind-wandering had a slow dynamics. To the best of our knowledge, slow fluctuations of mind-wandering have not been previously shown. Graphically, this phenomenon can be illustrated by plotting the predicted probability of mind-wandering across all trials as a function of time and by observing periodic oscillations. \n \nIn the second part of the study, the predicted likelihood of mind-wandering of all experimental trials was used in cognitive modeling analysis. Behavioral choice and Response Time (RT) data were analyzed using an independent race model where each available course of action (right, left, refrain from response) was represented by an independent stochastic accumulator. The first accumulator to reach a predetermined threshold determined the elicited response (or lack thereof) and its latency. The distributions of accumulator termination time were parameterized by seven parameters: three drift-rates with one for each response alternative; one common threshold; and three non-decision time parameters (one for each accumulator) representing the duration of all non-decision processes, such as perceptual encoding and response execution. Only three parameters were allowed to play a role in the mechanisms underlying the behavioral difference between trials with high- and low-level mind-wandering: correct drift-rate, refrain drift-rate and threshold (i.e., modulation of response caution). All three parameters were found to play a role and were lower for the high mind-wandering trials, reflecting poorer information processing efficiency and lower response caution. \n \nTechnical and theoretical assumptions are at the basis of every model and directly affect the interpretation of the fitting results (Teodorescu and Usher, 2013; Jones and Dzhafarov, 2014; Teodorescu et al., 2015). In this study a selective influence assumption (Ashby and Townsend, 1980) was made whereby mind-wandering influences only decision-related parameters (drift-rate and threshold). The grounds for this assumption, however, are not discussed. Importantly, mind-wandering might also affect non-decision processes. For example, by delaying initiation of perceptual encoding or habitual motor response (van Vugt et al., 2015). Thus, the selective influence assumption can hinder detection of any role that non-decision processes might play. To avoid potentially inaccurate estimates for the remaining (decision) parameters, the role of non-decision processes could be further tested by allowing this parameter to vary between conditions. \n \nIt is noteworthy that modeling interpretations are dependent not only upon selective influence assumptions, but also upon the choice of parameters that are omitted entirely from the model. For example, in order to provide adequate simultaneous accounts of both correct and error RT distributions, choice-RT models often include parameters that represent the magnitude of between-trial fluctuations in the state of the organism (Ratcliff and Mckoon, 2008). Although mind-wandering constitutes a potential source for such fluctuations, between-trial drift-variability parameters are absent in the current study. Furthermore, high drift-variability is associated with high behavioral response variability, which was indeed found by Mittner et al. Crucially, higher levels of between-trial drift-variability have been successfully used in the past to account for the higher response variability associated with mind-wandering (Mcvay and Kane, 2012). Thus, the inclusion of a drift-variability parameter could potentially provide an alternative interpretation for the modeling results of Mittner et al. \n \nFinally, the stop signal paradigm used by the authors does not produce many error responses. The lack of error responses is a potential limitation since error-RT distributions are essential for constraining choice-RT models. Importantly, higher between-trial drift-rate variability, leads to slower errors compared to correct responses. Thus, the inclusion of error RT distributions could potentially disentangle the drift variability account of mind-wandering [higher between trial drift-rate variability] (Mcvay and Kane, 2012) from the [lower drift-rate + lower threshold] account adopted by Mittner and colleagues. The latter predicts increased error-rates, but a constant relation between correct and error RTs, whereas the former predicts increased error-rates and slower error RTs. In order to answer this question, future studies can consider using paradigms that generate more errors [e.g., Error Awareness Task (Allen et al., 2013)]. \n \nIn sum, the study by Mittner and colleagues provides an inspiring example of combining cognitive modeling with neuroimaging—an approach that has great potential for advancing our understanding of cognitive mechanisms. It is noteworthy that the approach by Mittner et al. was to some extent indirect, since the brain imaging and pupillometry data were only used to generate per trial mind-wandering ratings, which were subsequently used in the modeling. Thus, a natural advancement would constitute a move toward an approach that directly models the neuroimaging data (e.g., Jahn et al., 2014)."
+    },
+    {
+      "paperId": "d36ee9406d18f5d35c0448f2970330f61a5952eb",
+      "externalIds": {
+        "MAG": "3042174362",
+        "DOI": "10.1101/2020.07.13.200576",
+        "CorpusId": 220602385
+      },
+      "url": "https://www.semanticscholar.org/paper/d36ee9406d18f5d35c0448f2970330f61a5952eb",
+      "title": "Multi-Task Learning based 3-Dimensional Striatal Segmentation of MRI – a Multi-modal Objective Assessment",
+      "venue": "bioRxiv",
+      "year": 2020,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2020/07/14/2020.07.13.200576.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2020.07.13.200576?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2020.07.13.200576, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1387964232",
+          "name": "Mario Serrano-Sosa"
+        },
+        {
+          "authorId": "1893627",
+          "name": "Jared X. Van Snellenberg"
+        },
+        {
+          "authorId": "95081761",
+          "name": "Jiayan Meng"
+        },
+        {
+          "authorId": "28059614",
+          "name": "K. Spuhler"
+        },
+        {
+          "authorId": "32604010",
+          "name": "J. Weinstein"
+        },
+        {
+          "authorId": "115106007",
+          "name": "A. Abi-Dargham"
+        },
+        {
+          "authorId": "3235451",
+          "name": "M. Slifstein"
+        },
+        {
+          "authorId": "2115387401",
+          "name": "Chuan Huang"
+        }
+      ],
+      "abstract": "The human striatum is a collection of subcortical nuclei that serves as a critical node in an information processing network. Recent studies have established a clear topographical and functional organization of projections to and from striatal regions that involves detailed and complex subdivisions of the striatum. Manual segmentation of these functional subdivisions is labor-intensive and time-consuming, yet automated methods have also been a challenging computational problem. Recently, deep learning has emerged as a powerful tool for various tasks, including semantic segmentation. Multi-Task Learning (MTL) is a machine learning technique that allows latent representations between related tasks to be shared during model prediction of multiple tasks with better accuracy. We utilized MTL to segment subregions of the striatum consisting of pre-commissural putamen (prePU), pre-commissural caudate (preCA), post-commissural putamen (postPU), post-commissural caudate (postCA), and ventral striatum (VST). Dice similarity coefficients (DSC) demonstrate excellent spatial agreement between manual and MTL-generated segmentations (≥ 0.72 across all striatal subregions). Further quantitative task-based analysis was also conducted. Binding potential values, BPND, of [11C]raclopride PET, and ROI time-series and whole-brain connectivity using fMRI images were compared between results generated from manual segmentations and MTL-generated segmentations. BPND values from MTL-generated segmentations were shown to correlate well with manual segmentations with R2 ≥ 0.91 in all caudate and putamen subregions, and R2=0.69 in VST. Mean Pearson correlation coefficients of the fMRI data between MTL-generated and manual segmentations were also high in time-series (≥0.86) and whole-brain connectivity (≥0.89) across all subregions. We conclude that the MTL approach is a fast, robust and reliable method for 3D striatal subregion segmentation with results comparable to manually segmented ROIs."
+    },
+    {
+      "paperId": "16a1d45178b6f471bedec30b2fcc03c66c9e42b6",
+      "externalIds": {
+        "MAG": "2106034143",
+        "PubMedCentral": "3501288",
+        "DOI": "10.3389/fpsyg.2012.00416",
+        "CorpusId": 642805,
+        "PubMed": "23181030"
+      },
+      "url": "https://www.semanticscholar.org/paper/16a1d45178b6f471bedec30b2fcc03c66c9e42b6",
+      "title": "Brain Oscillations and Predictive Processing",
+      "venue": "Front. Psychology",
+      "year": 2012,
+      "citationCount": 17,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2012.00416/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3501288, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2031843",
+          "name": "J. Yordanova"
+        },
+        {
+          "authorId": "1944869",
+          "name": "V. Kolev"
+        },
+        {
+          "authorId": "5352963",
+          "name": "R. Kirov"
+        }
+      ],
+      "abstract": "The hierarchical generative model presented in the target article is based on theoretical and computational grounds. However, providing neurophysiologic evidence for the presence of distinct neural mechanisms mediating top-down predictions and bottom-up transmission of prediction error is critical for model validity. \n \nIn human cognitive electrophysiology, several event-related potentials (ERPs) are related to the mechanisms of comparing incoming with expected events. These are the mismatch negativity (MMN), error-related negativity (ERN), and feedback-related negativity (FRN) operating basically in the sensory, action/performance, and cognitive domains, respectively. These ERP components are all correlated with generating and transmitting mismatch information (Falkenstein et al., 1991; Nieuwenhuis et al., 2004; Naatanen et al., 2007) and have been previously targeted as markers of bottom-up prediction error (Garrido et al., 2009; Cavanagh et al., 2010; Friston, 2012). There are, however, several issues that may question the suitability of these components for testing the predictive coding model. \n \nThe latencies of mismatch ERP components are relatively long (150–250 ms for MMN, 200–300 ms for FRN, and around 100 ms for ERN) under the assumption that they reflect a feed-forward “error” input from lower processing levels to the cortex. More critically, there is experimental evidence that much earlier ERP components are sensitive to deviance. For example, brainstem and middle-latency components within 10–80 ms (Slabu et al., 2010, 2012), the P1 component within 10–100 ms (Bendixen et al., 2009), and early gamma (>30 Hz) oscillatory responses at around 50 ms of auditory ERPs (Schadow et al., 2009) discriminate deviant from standard stimuli. Further, the sources of auditory MMN have been localized in the bilateral temporal and in the prefrontal cortices (Giard et al., 1990; Rinne et al., 2000), the latter supposed to mediate a switch/re-allocation of attention focus (Escera et al., 1998, 2003). Likewise, the sources of ERN and FRN are localized in the medial frontal and prefrontal brain regions (Ullsperger and von Cramon, 2001; Holroyd et al., 2004; Cohen et al., 2011). These data show that the “error” negativities of human ERPs may not represent the virtual error information transmitted to the cortex from lower processing levels. Rather, they may reflect a follow-up utilization of the mismatch information that would be incorporated to update and optimize top-down representations (via attention, memory, and emotional activations). Thus, the feed-forward “error” signal presumed by the predictive coding theory should be sought in much earlier time windows after stimulus and even before stimulus (Romei et al., 2010). Referring to the classical “error” or “prediction-violation” ERP components needs to be conceptually clarified. \n \nIn search for error prediction ERP signatures, it is important to recognize that ERP components have a complex heterogeneous structure composed of frequency-specific oscillations (Kolev et al., 1997; Yordanova et al., 2000). The ERN, in particular, comprises at least two oscillatory sub-components that carry error signals from co-existent processing systems (theta – 4–7 Hz and delta – <4 Hz) operating in parallel at the level of movement and behavioral control (Yordanova et al., 2004). It is remarkable that the oscillatory theta component has been detected not only for ERN (Luu and Tucker, 2001; Yordanova et al., 2004; Cavanagh et al., 2009, 2010), but it has also been established as a primary constituent of MMN (Fuentemilla et al., 2008; Hsiao et al., 2009; Ko et al., 2012) and FRN (Cohen et al., 2007, 2011; Marco-Pallares et al., 2008; Christie and Tata, 2009). Thus, the oscillatory theta activity may be a consistent neurophysiologic marker of the utilization of the mismatch (error) information by the executive-control systems in the cortex. \n \nIn contrast, there is evidence that increased fast-frequency (beta/gamma – 15–80 Hz) oscillations may signal match detection. Cohen et al. (2007) and Marco-Pallares et al. (2008) demonstrated that positive feedback (prediction confirmation) was associated with increased beta/gamma activity, in contrast to negative feedback characterized by enhanced theta oscillations. Schadow et al. (2009) showed that early phase-locked gamma-band responses (20–80 Hz) were significantly increased for predictable regular auditory stimuli as compared to deviant stimuli, as found for fast-frequency responses in the brainstem (Slabu et al., 2012). This is in line with a model according to which matching between incoming stimulus and a memory template results in enhanced gamma-band activity (Herrmann et al., 2004). Thus, time-frequency decomposition of brain responses may be critical for identifying error signals in functional systems operating in parallel at different processing levels. \n \nIn the context of the generative predictive model, a major focus of exploration needs to be placed on error processing in different brain states, in which top-down executive-control mechanisms are reduced, totally inhibited, or qualitatively altered. Such states are best represented by different stages of sleep, anesthesia, coma, and brain diseases. For example, neuroimaging studies have demonstrated that subcortical regions and extrastriate visual cortices are more active during rapid eye movement (REM) sleep compared with wake and non-REM sleep, whereas executive-control (dorsolateral prefrontal and parietal) and primary visual cortices are suppressed in REM sleep compared with wake; In non-REM sleep, the activity of all brain areas relevant for information processing during wake is mostly suppressed (Maquet et al., 1996; Braun et al., 1997, 1998; Nofzinger et al., 1997). Interestingly, although inconsistent and contradictory, there is some evidence that in REM sleep, an analog of the MMN emerges despite the gross suppression of both executive top-down processing and external input transmission (Atienza et al., 2000; Ibanez et al., 2009). No MMN has been reliably recorded during non-REM sleep and slow wave sleep (Ibanez et al., 2009; Sculthorpe et al., 2009). It remains poorly understood if and how brain states differing dramatically in top-down and bottom-up mechanisms, neurochemistry, synaptic connectivity, and neuroelectric signaling such as sleep stages (Hobson et al., 2000; Hobson and Pace-Schott, 2002; Nir and Tononi, 2010) affect deviance detection, if inherent (free of executive-control prediction) error signals can be generated, and the extent to which the proposed dynamic Bayesian predictions are moderated by consciousness. Probing generative prediction theory would certainly benefit from referring to such models."
+    },
+    {
+      "paperId": "e25e7ee30d4b03a2e8ff190248619b0e0a090159",
+      "externalIds": {
+        "MAG": "1987489449",
+        "DBLP": "journals/fini/CortesMM14",
+        "PubMedCentral": "4271603",
+        "DOI": "10.3389/fninf.2014.00086",
+        "CorpusId": 8886784,
+        "PubMed": "25566050"
+      },
+      "url": "https://www.semanticscholar.org/paper/e25e7ee30d4b03a2e8ff190248619b0e0a090159",
+      "title": "Editorial for the research topic: information-based methods for neuroimaging: analyzing structure, function and dynamics",
+      "venue": "Front. Neuroinform.",
+      "year": 2014,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fninf.2014.00086/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4271603, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144616731",
+          "name": "J. Cortes"
+        },
+        {
+          "authorId": "2786475",
+          "name": "Daniele Marinazzo"
+        },
+        {
+          "authorId": "143813953",
+          "name": "M. A. Muñoz"
+        }
+      ],
+      "abstract": "This Research Topic gathers different contributions highlighting novel types of analysis and methods to deal more efficiently with neuroimaging data, simulated and real, acquired with different modalities. These approaches allow us to shed light on the mechanisms of brain organization, with focus on the relationship between brain structure, function and dynamics. \n \nThe first article of this Topic (Sanz Leon et al., 2013), introduces The Virtual Brain, a Neuroinformatics platform for full brain network simulations using realistic connectivity, putting in evidence that the integration between brain structure and function is perfectly plausible by simulating realistic brain activity (more specifically, neural mass models) on the architecture of the structural connectome. The authors show that dynamical models aimed at reproducing the functional connectivity patterns observed in the resting brain exhibit a much better performance when they are tuned around a balanced state favoring the shifting between attractors. This balanced state is described in terms of energy landscape, as discussed also in Watanabe et al. (2014), where the state transitions (in terms of energy landscape) between two representative Resting State Networks—the Default Mode Network and the Fronto-Parietal Network—are addressed. \n \nWith an alternative approach, the relation between structural and functional networks is tackled in Ajilore et al. (2013), by using the functional-by-structural hierarchical (FSH) mapping. This was developed for multimodal integration of the resting state fMRI (rsfMRI) and the whole brain (tractography-derived) connectome and is based on the evidence that the level of resting-state functional correlation between any two regions (in general) decreases as the graph distance of the corresponding structural connectivity matrix between them increases. Results are reported in health and depression. \n \nEffective connectivity methods are devised to infer directed connectivity patterns from time-series data. A new method based on Variational Bayesian Inference to infer causality from time series was proposed in Luessi et al. (2014). The method uses a vector autoregressive model for the latent variables describing neuronal activity in combination with a linear observation model based on a convolution with a hemodynamic response function. The method is validated using both real and synthetic resting fMRI data. \n \nContinuing with the problem of causality inference, classical methods like Granger causality were extended to the situation of time-varying signals in Chicharro and Panzeri (2014). This study also provides a graphical approach to predict dynamic statistical dependencies between the signals from the causal structure. \n \nA different approach is presented in Kolchinsky et al. (2014), where brain regions and networks are characterized by information-theoretic measures using both functional and structural information in a complementary manner. In particular, Kolchinsky et al., quantify the amount of functional coupling between sets of regions of interest (ROIs) as well as integration within sets of ROIs. Several information-based measures are considered, and their scaling with subsystem size is explored. \n \nRegarding consciousness and its relationship with Information Theory, two papers have been contributed to this Research Topic. In Lee et al. (2013) the Approximate Entropy (ApEn), a measure known to correlate with the level of brain consciousness, is used to characterize EEG signals in children and adults to show that the amount of ApEn is lower in children and that it correlates, in children as in adults, with consciousness; in particular, the authors show that ApEn decreases across the transition from awake to REM sleep to non-REM sleep. For patients with deficit of consciousness (DOC) after traumatic brain injury, (Maki-Marttunen et al., 2013) show two possible markers from fMRI time series that can distinguish between DOC patients and healthy subjects. The inter-hemispheric correlations (but not the intra-hemispheric correlations) between left-right homolog areas decrease, as does the intra-hemispheric information flow, in DOC patients compared to control. For a small group of 4 patients who fully recovered from coma, the study also reports an increase of the intra-hemisphere information flow with respect to controls. \n \nInformation-based measures have been associated with altered information processing in Autism Spectrum Disorder (ASD). The close link between active information storage and general theories of cortical function has been addressed in Gomez et al. (2014), by analyzing magnetoencephalography (MEG) signals. The authors report a significant reduction of information storage in the hippocampus in ASD patients. The amount of information and entropy of MEG signals in ASD (Asperger syndrome in this case) has been analyzed also in Perez Velazquez and Galan (2013). The analysis, carried out at the source level, addresses the relationship between resting state activity and the brain inner processing with regards to information production, as quantified by the relative entropy. The results suggest that the brains of individuals with ASD produce more information than the age-matched participants. \n \nThe complementary role of the three components of information processing, transfer, storage and modification is investigated in Wibral et al. (2014). Local information storage is analyzed in detail in neural data and associated to neural properties such as stimulus preferences and surprise. \n \nThe connection between information content of brain activity signals and function has been explored also in Sokunbi (2014). The author investigates the power of a similarity measure (the Sample Entropy) to discriminate between young and elderly subjects emphasizing on the possible limitations arising from the reduced length of time series that are commonly encountered in fMRI studies. \n \nInformation-based measures are also useful for developing new technical tools for structural and functional analysis. Novel algorithms have been proposed to improve the construction of the structural connectome in Roine et al. (2014), by investigating the isotropic partial volume effects caused by non-white matter tissue on fiber orientation diffusion estimated with constrained spherical de-convolution. Diffusion weighted signals are simulated with varying diffusion weightings, signal-to-noise ratios, fiber configurations, and tissue fractions. \n \nThe equivalence between the information-based and model-based approaches to directed dynamical connectivity in the frequency domain was explored in Takahashi et al. (2014). To enhance the understanding of the possibly complex interaction between multiple time series the authors decompose the established approaches to Directed Coherence into different modes of interaction. \n \nConcerning improvements to functional analysis, a novel information-theoretic approach for spatial components ranking has been proposed in Ossadtchi et al. (2013). The proposed method is based on the Mutual Information (MI) Spectrum which serves as a power-invariant measure of repetitive task-related signal in the temporal loadings of spatial components. Using realistic simulations, the authors in show that the task-relatedness measure, based on estimating the MI between a component and the expanded binary stimulus signal, allows for significantly higher detector characteristics when compared with conventional alternatives. The application of the MI Spectrum for the selection of task-related independent components is validated with real MEG data. \n \nWe hope that the reader will find in this Research Topic a useful reference for the state of the art in the emerging field of tools rooted in information theory and applied to neuroscience."
+    },
+    {
+      "paperId": "68555008aeac8b46dbcff3d374f581938e8ba2ea",
+      "externalIds": {
+        "CorpusId": 248347939
+      },
+      "url": "https://www.semanticscholar.org/paper/68555008aeac8b46dbcff3d374f581938e8ba2ea",
+      "title": "lecture A1-I Evolving Needs in Pathology Education",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://hrcak.srce.hr/file/353954, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "65764284",
+          "name": "P. Bešlić"
+        },
+        {
+          "authorId": "46767813",
+          "name": "V. Cubela"
+        },
+        {
+          "authorId": "2793180",
+          "name": "I. Galić"
+        },
+        {
+          "authorId": "6116665",
+          "name": "E. Galić"
+        },
+        {
+          "authorId": "2163312910",
+          "name": "Petelin Gadže"
+        },
+        {
+          "authorId": "5330007",
+          "name": "K. Tudor"
+        },
+        {
+          "authorId": "2137148812",
+          "name": "Maja Živković"
+        },
+        {
+          "authorId": "2114965018",
+          "name": "A. Kovač"
+        },
+        {
+          "authorId": "2131744754",
+          "name": "Biljana Dapic Ivancic"
+        },
+        {
+          "authorId": "3505802",
+          "name": "S. Nanković"
+        },
+        {
+          "authorId": "6012857",
+          "name": "V. Šulentić"
+        },
+        {
+          "authorId": "2046194231",
+          "name": "Ira Brezak"
+        },
+        {
+          "authorId": "5335146",
+          "name": "Petra Nimac Kozina"
+        },
+        {
+          "authorId": "69545641",
+          "name": "Barbara Sitaš"
+        },
+        {
+          "authorId": "48845296",
+          "name": "B. Radić"
+        },
+        {
+          "authorId": "50860443",
+          "name": "M. Mudrovčić"
+        },
+        {
+          "authorId": "3602369",
+          "name": "Z. Poljaković"
+        },
+        {
+          "authorId": "3516980",
+          "name": "S. Hajnsek"
+        }
+      ],
+      "abstract": "The Joint Programming Initiative was originally created as a Member States-led initiative in Europe. It aims to address “grand challenges” to the EU and global society by coordinating national research pro-grammes to increase the impact and effectiveness of research efforts. Neurodegenerative diseases (ND) and dementia in particular, represent one of the world’s most pressing medical and societal challenges and the solutions are likely beyond the scope and resources of any single country. JPND aims to find causes, develop cures and identify better ways of caring for people with neurodegenerative diseases. Although JPND originally a European initiative, it global, 30 countries JPND medicine life each longer life expectancy without is our brain health: neurodegenerative dementia one third of the aging populations 85 years of age, mental health disorders including addictions 12% entire and neurodevelopmental disorders 15% European global mea-surements We analyzed changes in dendritic morphology and spine density on associative layer IIIc cortical projecting neurons and large layer V subcortical projecting pyramidal neurons to establish age-related changes within microcircuitries of the human prefrontal cortex (Brodmann area 9). Postmortem human brain tissue of adults was processed using the rapid Golgi method in two age groups: 38 – 64 years (n = 8) and 72 – 91 years, (n = 7). Neuropathological findings were unre-markable in all analyzed brain specimens. From each layer, the basal dendritic arbor and side dendritic branches from 10 – 15 well-impregnated pyramidal neurons per subject were three-dimensionally recon-structed using Neurolucida software. Soma size, total dendritic length, total segment number, individual segment length and spine density were quantitatively analyzed. Regarding layer V neurons, no significant differences were observed between adults and the elderly, either for dendritic morphology or for the spine density. The interindividual differences in the elderly group were however higher than in adults. Regarding associative layer IIIc pyramidal neurons, the mean values of spine density, on both side branches and basal dendrites, were 20–25% lower in the elderly than in adults (p = 0.07). In two aged cases the spine density was around mean level of adult and in the remaining aged subjects values were lower than in all adult subjects. These data show that the dendritic morphology and synaptic connectivity of the major classes of principal neurons in higher order associative areas are largely preserved in aging, while the connectivity of associative cortico-cortical layers is more prone to regression. is accumulating that in cardiometabolic diseases changes in glycosylation are not only biomarkers, but functional effectors that actively participate in disease is a kinase involved in DNA damage response (DDR), regulation of response to oxidative stress, autophagy and mitophagy. Mutations in the ATM gene in humans result in ataxia-telangiectasia disease (A-T) characterized by a variety of symptoms with neurodegeneration and premature ageing among them. In this study, we have focused on the process of senescence in A-T cells. Given that brain is one of the most affected organs in A-T, we turned our attention to neural progenitor cells (NPCs) derived from A-T reprogrammed fibroblasts. We observed that A-T NPCs obtained through neural differentiation of iPSCs in 5% oxygen possessed some features of senescence including increased activity of SA-β-gal and secretion of IL6 and IL8 in comparison to control NPCs. This phenotype of A-T NPC was accompanied by elevated oxidative stress resulting in 4-HNE protein modification. A-T NPCs exhibited symptoms of impaired autophagy and mitophagy with lack of response to chloroquine treatment. Additional sources of oxidative stress like increased oxygen concentration and re-spectively aggravated the phenotype of senescence and the process of mitophagy. The by transcriptional analysis of several NPCs reacted to the treatment. We conclude that oxidative stress may be responsible for the phenotype of senescence and impairment of autophagy in A-T NPCs. Our results point to senescent A-T cells as a potential therapeutic target in this disease. Idiopathic rapid eye movement (REM) sleep behavior disorder (iRBD) is increasingly recognised as an important precursor disease state of alpha-synucle-inopathies. This parasomnia is characterized by a history of recurrent nocturnal dream enactment behaviour, loss of skeletal muscle atonia, and increased pha-sic muscle activity during REM sleep. Neuroimaging studies of striatal dopamine transporter uptake tracer signalling suggest increasing dopaminergic deficit across the continuum of the alpha-synucleinopathies, with early sleep dysfunction suggestive of early cau-date dysfunction. We will discuss the implication of utilising this window of the opportunity in the disease process to intervene, and to potentially abort, further development of neurodegenerative process. The changes in sleep-wake process over the lifespan are well established. Epidemiological data show that 50–65% of older adults report impaired sleep quality (SQ). This impairment can rather be attributed to health status and various psychosocial factors than to the aging process per se. The results of our previous study showed the expectedly impaired SQ in nursing home residents, best predicted by self-perceived health and functional ability. The aims of the current study were to examine SQ of older adults living in different arrangements and to examine factors contributing to their SQ. Participants were 334 older adults (73% fe-males) from Zagreb. Half were the NH residents and half OH residents. Their dominant age was 78 years, varying between 69 and 100 years. All were ambula-tory, without diagnosis of dementia. Trained inter-viewers collected data individually, through structured interviews in nursing homes and in gerontology center. Questionnaire comprised of general questions, questions to assess self-perceived health and standardized scales to measure social participation, functional ability, life satisfaction, and SQ. SQ was assessed by the Pittsburgh Sleep Quality Index (PSQI). Our results showed PSQI score greater than 5, indicating poor SQ in 60% of older adults. In NH residents the percentage was higher than in OH residents (71% vs. 50%, p < .001). Selected set of predictors explained small but significant proportion of variance in PSQI score and 7 domains. Predictors explained the highest proportion of variance in the use of sleep medication (22.6%) and subjective SQ (21%). Expectedly, women had poorer total PSQI, longer sleep PSQI, sleep functional predicted shorter sleep latency daytime functioning. There is a need to identify reliable predictors of mild cognitive impairment (MCI) and dementia due to Alzheimer’s disease (AD) in normal elderly people to en able timely intervention. The Mini‐Mental State Examination (MMSE) is the best‐known and the most often used short screening tool for providing an overall measure of cognitive impairment in clinical, research, and community settings. However, MMSE is not actually a mental status examination designed to detect dementia as it was originally developed to dif-ferentiate organic from functional psychiatric patients. The MMSE has low sensitivity in detecting dementia as as poor specificity, and low negative (NPV), and positive predictive values (PPV), in ear-ly-stage A recent systematic review not role hidden-goal task (HGT) in the human subject target navigational imaged positive cells counted for each Results correlated to lesion the composition of unknown substances on a molecular basis. Methods. The study included 80 age matched subjects from the Reference Center for Glaucoma, UHC “Sestre milosrdnice”, divided into two groups 1) 40 glaucoma patients and 2) a control group comprising 40 patients with cataracts. For the purpose of molecular analysis, all aqueous humor samples were collected at the start of the glaucoma or cataract surgery. FTIR spectra of the samples dried on transparent silicon windows were obtained in a transmission mode, followed by principal component analysis (PCA) modeling of the recorded spectra. Results. FTIR spectra with vibrational modes specific to glaucoma and cataract were examined. In the chemomet-ric analysis of the spectroscopic data, all 40 (100%) of the cataract eyes were correctly diagnosed as the cataract group and all 40 (100%) glaucoma eyes were diagnosed as the glaucoma group, demonstrating a distinct correlation between studied eye diseases and their FTIR spectra. conclusions. FTIR spectroscopy combined with the chemometrics has proven to be a promising method for molecular analysis of the aqueous humor as the differentiation between eyes with cataract and glaucoma has been achieved. Separation of the two groups of FTIR spectra in the created PCA statistical model also indicates that this method may have a promising role in the discovery of glaucoma biomarkers. possible and have piloted a project to collect DNA and phenotype data of ADR cases using international standardized phenotypic criteria. Patients with ADRs (N=860) and controls were genotyped for pharmacogenes. Univariate and multi-variate prediction of ADRs were carried by means of binary logistic regression in order to identify novel associations or validate findings in cohorts of patients with well-defined phenotypes. Results. We developed a comprehensive knowledge repository of actionable pharmacogenes. HALMED developed a method for informing physicians or pharmacists and their patients about a possible pharmacogenetic involvement in the ADR pathogenesis. An anonymized copy of the test results has been used for the interpretation of possible signals. Several publications from this project have been published, depending on the medication in question (warfarin, statins, clopidogrel, methotrexate, AEDs, psych"
+    },
+    {
+      "paperId": "b9738d935fc9c65e4ea2dc56a9fc84660dcdb6a4",
+      "externalIds": {
+        "MAG": "2060319038",
+        "DOI": "10.1017/S0140525X05220022",
+        "CorpusId": 144999741
+      },
+      "url": "https://www.semanticscholar.org/paper/b9738d935fc9c65e4ea2dc56a9fc84660dcdb6a4",
+      "title": "Redefining memory consolidation",
+      "venue": "",
+      "year": 2005,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1017/S0140525X05220022?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1017/S0140525X05220022, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145485426",
+          "name": "M. Atienza"
+        },
+        {
+          "authorId": "145703031",
+          "name": "J. Cantero"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

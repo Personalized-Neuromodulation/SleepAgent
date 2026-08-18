@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "27568202"
+    ],
+    "translationset": [
+      {
+        "from": "missing",
+        "to": "\"missed\"[All Fields] OR \"misses\"[All Fields] OR \"missing\"[All Fields] OR \"missings\"[All Fields]"
+      },
+      {
+        "from": "variables",
+        "to": "\"variabilities\"[All Fields] OR \"variability\"[All Fields] OR \"variable\"[All Fields] OR \"variable's\"[All Fields] OR \"variables\"[All Fields] OR \"variably\"[All Fields]"
+      },
+      {
+        "from": "sleep disorder",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorder\"[All Fields]) OR \"sleep disorder\"[All Fields]"
+      },
+      {
+        "from": "neuroimaging",
+        "to": "\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]"
+      },
+      {
+        "from": "studies",
+        "to": "\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study's\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"missed\"[All Fields] OR \"misses\"[All Fields] OR \"missing\"[All Fields] OR \"missings\"[All Fields]) AND (\"variabilities\"[All Fields] OR \"variability\"[All Fields] OR \"variable\"[All Fields] OR \"variable s\"[All Fields] OR \"variables\"[All Fields] OR \"variably\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorder\"[All Fields]) OR \"sleep disorder\"[All Fields]) AND (\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

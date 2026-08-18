@@ -1,0 +1,58 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Impact",
+        "to": "\"impact\"[All Fields] OR \"impactful\"[All Fields] OR \"impacting\"[All Fields] OR \"impacts\"[All Fields] OR \"tooth, impacted\"[MeSH Terms] OR (\"tooth\"[All Fields] AND \"impacted\"[All Fields]) OR \"impacted tooth\"[All Fields] OR \"impacted\"[All Fields]"
+      },
+      {
+        "from": "thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "GABA",
+        "to": "\"gamma-aminobutyric acid\"[Supplementary Concept] OR \"gamma-aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma-aminobutyric acid\"[MeSH Terms] OR (\"gamma-aminobutyric\"[All Fields] AND \"acid\"[All Fields])"
+      },
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "patients",
+        "to": "\"patient's\"[All Fields] OR \"patients\"[MeSH Terms] OR \"patients\"[All Fields] OR \"patient\"[All Fields] OR \"patients's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"impact\"[All Fields] OR \"impactful\"[All Fields] OR \"impacting\"[All Fields] OR \"impacts\"[All Fields] OR \"tooth, impacted\"[MeSH Terms] OR (\"tooth\"[All Fields] AND \"impacted\"[All Fields]) OR \"impacted tooth\"[All Fields] OR \"impacted\"[All Fields]) AND (\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"gamma aminobutyric acid\"[Supplementary Concept] OR \"gamma aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma aminobutyric acid\"[MeSH Terms] OR (\"gamma aminobutyric\"[All Fields] AND \"acid\"[All Fields])) AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"patient s\"[All Fields] OR \"patients\"[MeSH Terms] OR \"patients\"[All Fields] OR \"patient\"[All Fields] OR \"patients s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "on",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

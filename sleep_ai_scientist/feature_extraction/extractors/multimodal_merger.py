@@ -9,7 +9,7 @@ from sleep_ai_scientist.feature_extraction.schemas import FeatureTable
 
 
 class MultimodalMerger:
-    """Inner-joins extracted modality tables on the normalized subject key."""
+    """Inner-joins extracted modality tables while preserving session rows."""
 
     def run(self, tables: list[FeatureTable], output_path: str | Path) -> str:
         frames: list[pd.DataFrame] = []
@@ -22,11 +22,13 @@ class MultimodalMerger:
         else:
             merged = frames[0]
             for frame in frames[1:]:
-                merged = merged.merge(frame, on="subject", how="inner")
+                keys = ["subject", "subject_id"] if _is_session_level(merged) and _is_session_level(frame) else ["subject"]
+                merged = merged.merge(frame, on=keys, how="inner")
+                if "subject_id_x" in merged.columns and "subject_id_y" in merged.columns:
+                    merged["subject_id"] = merged["subject_id_x"].where(merged["subject_id_x"].astype(str).ne(merged["subject"]), merged["subject_id_y"])
+                    merged = merged.drop(columns=["subject_id_x", "subject_id_y"])
             if "subject_id" not in merged.columns:
                 merged.insert(0, "subject_id", merged["subject"])
-            else:
-                merged["subject_id"] = merged["subject"]
         output_path = Path(output_path)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         merged.to_csv(output_path, index=False)
@@ -47,16 +49,13 @@ def _prepare_for_merge(frame: pd.DataFrame, modality: str) -> pd.DataFrame:
             continue
         if not str(column).startswith(f"{modality_prefix}_"):
             rename[column] = f"{modality_prefix}_{column}"
-    prepared = prepared.rename(columns=rename)
+    return prepared.rename(columns=rename)
 
-    subject_ids = prepared[["subject", "subject_id"]].copy()
-    features = prepared.drop(columns=["subject_id"])
-    if features["subject"].duplicated().any():
-        numeric_cols = [column for column in features.columns if column != "subject" and pd.api.types.is_numeric_dtype(features[column])]
-        features = features.groupby("subject", as_index=False)[numeric_cols].mean()
-        subject_ids = subject_ids.groupby("subject", as_index=False).first()
-        features = subject_ids.merge(features, on="subject", how="left").drop(columns=["subject_id"])
-    return features
+
+def _is_session_level(frame: pd.DataFrame) -> bool:
+    if "subject_id" not in frame.columns or "subject" not in frame.columns:
+        return False
+    return bool(frame["subject_id"].astype(str).ne(frame["subject"].astype(str)).any())
 
 
 def _base_subject(value: object) -> str:

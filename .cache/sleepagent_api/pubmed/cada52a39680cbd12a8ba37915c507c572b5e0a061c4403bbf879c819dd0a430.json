@@ -1,0 +1,47 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "42367628",
+      "40384680",
+      "27045987"
+    ],
+    "translationset": [
+      {
+        "from": "anisotropy",
+        "to": "\"anisotropy\"[MeSH Terms] OR \"anisotropy\"[All Fields] OR \"anisotropies\"[All Fields]"
+      },
+      {
+        "from": "thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "white matter",
+        "to": "\"white matter\"[MeSH Terms] OR (\"white\"[All Fields] AND \"matter\"[All Fields]) OR \"white matter\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "severity",
+        "to": "\"sever\"[All Fields] OR \"severe\"[All Fields] OR \"severed\"[All Fields] OR \"severely\"[All Fields] OR \"severer\"[All Fields] OR \"severes\"[All Fields] OR \"severing\"[All Fields] OR \"severities\"[All Fields] OR \"severity\"[All Fields] OR \"severs\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Fractional\"[All Fields] AND (\"anisotropy\"[MeSH Terms] OR \"anisotropy\"[All Fields] OR \"anisotropies\"[All Fields]) AND (\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"white matter\"[MeSH Terms] OR (\"white\"[All Fields] AND \"matter\"[All Fields]) OR \"white matter\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"sever\"[All Fields] OR \"severe\"[All Fields] OR \"severed\"[All Fields] OR \"severely\"[All Fields] OR \"severer\"[All Fields] OR \"severes\"[All Fields] OR \"severing\"[All Fields] OR \"severities\"[All Fields] OR \"severity\"[All Fields] OR \"severs\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in",
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

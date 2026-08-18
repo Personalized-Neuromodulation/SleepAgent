@@ -1,0 +1,43 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "7",
+    "retmax": "7",
+    "retstart": "0",
+    "idlist": [
+      "42317125",
+      "40864649",
+      "40705166",
+      "37479785",
+      "32364596",
+      "31911344",
+      "27534393"
+    ],
+    "translationset": [
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "motion",
+        "to": "\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion's\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]"
+      },
+      {
+        "from": "parameters",
+        "to": "\"parameter\"[All Fields] OR \"parameter's\"[All Fields] OR \"parameters\"[All Fields]"
+      },
+      {
+        "from": "sleep disorder",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorder\"[All Fields]) OR \"sleep disorder\"[All Fields]"
+      },
+      {
+        "from": "analysis",
+        "to": "\"analysis\"[Subheading] OR \"analysis\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion s\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]) AND (\"parameter\"[All Fields] OR \"parameter s\"[All Fields] OR \"parameters\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorder\"[All Fields]) OR \"sleep disorder\"[All Fields]) AND (\"analysis\"[MeSH Subheading] OR \"analysis\"[All Fields])"
+  }
+}

@@ -1,0 +1,38 @@
+[run_all_tests] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_all_tests] iterations=config_default
+[run_all_tests] base_loop_config=/tmp/pytest-of-zyb/pytest-70/test_run_all_tests_script_runs0/discovery_loop_config.yaml
+[run_all_tests] log_file=logs/run_all_tests_20260805_055452.log
+[run_all_tests] [1/4] foundation -> online grounding/RAG
+API environment preflight
+  NCBI_EMAIL: SET
+  NCBI_TOOL: SleepAgent
+  SEMANTIC_SCHOLAR_API_KEY: SET
+[1/6] Build foundation
+[2/6] Build knowledge source registry
+[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] timestamp=2026-08-05T05:54:52-04:00
+[literature_db_build_start] step=[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] database=data/literature/sleep_literature.db
+[literature_db_build_start] config=configs/literature_library_config.yaml
+[literature_db_build_start] query_config=configs/literature_queries.yaml
+[literature_db_build_start] library_version=sleep_literature_library_v1_online
+[4/6] Run grounding from unified literature DB RAG
+[5/6] Validate core grounding outputs, literature DB, and knowledge sources
+[6/6] Foundation/grounding online flow validation complete
+Done. Core outputs:
+  outputs/grounding/evidence_table.json
+  outputs/grounding/mechanism_graph.json
+  data/literature/sleep_literature.db
+  outputs/knowledge_sources/knowledge_sources_manifest.json
+[run_all_tests] [2/4] pre-experiment scale/fMRI feature extraction
+[run_all_tests] closed_loop_scale_dir=outputs/scale_features
+[run_all_tests] [3/4] hypothesis -> experiment -> foundation update -> grounding refresh loop
+[run_discovery_loop] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_discovery_loop] config=/tmp/sleepagent_full_discovery_loop_3KD5tb.yaml
+[run_discovery_loop] iterations=config_default
+[run_discovery_loop] python=/tmp/pytest-of-zyb/pytest-70/test_run_all_tests_script_runs0/bin/python
+[run_discovery_loop] log_file=logs/run_discovery_loop_20260805_055452.log
+[run_all_tests] [4/4] grounding locked validation
+[run_all_tests] closed_loop_validation_table=data/foundation/multimodal_master_table.csv
+[run_all_tests] closed_loop_validation_dir=outputs/health_classification/grounding_closed_loop
+[run_all_tests] done

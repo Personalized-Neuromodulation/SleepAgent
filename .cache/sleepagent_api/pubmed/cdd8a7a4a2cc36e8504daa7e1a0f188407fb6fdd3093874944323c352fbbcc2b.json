@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "biomarker",
+        "to": "\"biomarker's\"[All Fields] OR \"biomarkers\"[Supplementary Concept] OR \"biomarkers\"[All Fields] OR \"biomarker\"[All Fields] OR \"biomarkers\"[MeSH Terms]"
+      },
+      {
+        "from": "sleep disturbances:",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disturbances\"[All Fields]) OR \"sleep disturbances\"[All Fields]"
+      },
+      {
+        "from": "literature review",
+        "to": "\"review\"[Publication Type] OR \"review literature as topic\"[MeSH Terms] OR \"literature review\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"biomarker s\"[All Fields] OR \"biomarkers\"[Supplementary Concept] OR \"biomarkers\"[All Fields] OR \"biomarker\"[All Fields] OR \"biomarkers\"[MeSH Terms]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disturbances\"[All Fields]) OR \"sleep disturbances\"[All Fields]) AND (\"review\"[Publication Type] OR \"review literature as topic\"[MeSH Terms] OR \"literature review\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "as",
+        "a",
+        "for"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

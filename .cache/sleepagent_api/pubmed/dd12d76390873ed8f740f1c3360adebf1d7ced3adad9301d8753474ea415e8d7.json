@@ -1,0 +1,54 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "thalamus",
+        "to": "\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]"
+      },
+      {
+        "from": "global",
+        "to": "\"global\"[All Fields] OR \"globalism\"[All Fields] OR \"globalize\"[All Fields] OR \"globalized\"[All Fields] OR \"globalizes\"[All Fields] OR \"globalizing\"[All Fields] OR \"globally\"[All Fields] OR \"globals\"[All Fields] OR \"internationality\"[MeSH Terms] OR \"internationality\"[All Fields] OR \"globalization\"[All Fields]"
+      },
+      {
+        "from": "signal",
+        "to": "\"signal transduction\"[MeSH Terms] OR (\"signal\"[All Fields] AND \"transduction\"[All Fields]) OR \"signal transduction\"[All Fields] OR \"signaling\"[All Fields] OR \"signal\"[All Fields] OR \"signal's\"[All Fields] OR \"signaled\"[All Fields] OR \"signaler\"[All Fields] OR \"signaler's\"[All Fields] OR \"signalers\"[All Fields] OR \"signalings\"[All Fields] OR \"signalization\"[All Fields] OR \"signalled\"[All Fields] OR \"signaller\"[All Fields] OR \"signaller's\"[All Fields] OR \"signallers\"[All Fields] OR \"signalling\"[All Fields] OR \"signallings\"[All Fields] OR \"signals\"[All Fields]"
+      },
+      {
+        "from": "confound",
+        "to": "\"confound\"[All Fields] OR \"confounded\"[All Fields] OR \"confounder\"[All Fields] OR \"confounders\"[All Fields] OR \"confounding\"[All Fields] OR \"confounds\"[All Fields]"
+      },
+      {
+        "from": "resting",
+        "to": "\"rest\"[MeSH Terms] OR \"rest\"[All Fields] OR \"rested\"[All Fields] OR \"resting\"[All Fields]"
+      },
+      {
+        "from": "state",
+        "to": "\"state\"[All Fields] OR \"state's\"[All Fields] OR \"stated\"[All Fields] OR \"states\"[All Fields] OR \"stating\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]) AND \"coord\"[All Fields] AND \"z\"[All Fields] AND (\"global\"[All Fields] OR \"globalism\"[All Fields] OR \"globalize\"[All Fields] OR \"globalized\"[All Fields] OR \"globalizes\"[All Fields] OR \"globalizing\"[All Fields] OR \"globally\"[All Fields] OR \"globals\"[All Fields] OR \"internationality\"[MeSH Terms] OR \"internationality\"[All Fields] OR \"globalization\"[All Fields]) AND (\"signal transduction\"[MeSH Terms] OR (\"signal\"[All Fields] AND \"transduction\"[All Fields]) OR \"signal transduction\"[All Fields] OR \"signaling\"[All Fields] OR \"signal\"[All Fields] OR \"signal s\"[All Fields] OR \"signaled\"[All Fields] OR \"signaler\"[All Fields] OR \"signaler s\"[All Fields] OR \"signalers\"[All Fields] OR \"signalings\"[All Fields] OR \"signalization\"[All Fields] OR \"signalled\"[All Fields] OR \"signaller\"[All Fields] OR \"signaller s\"[All Fields] OR \"signallers\"[All Fields] OR \"signalling\"[All Fields] OR \"signallings\"[All Fields] OR \"signals\"[All Fields]) AND (\"confound\"[All Fields] OR \"confounded\"[All Fields] OR \"confounder\"[All Fields] OR \"confounders\"[All Fields] OR \"confounding\"[All Fields] OR \"confounds\"[All Fields]) AND (\"rest\"[MeSH Terms] OR \"rest\"[All Fields] OR \"rested\"[All Fields] OR \"resting\"[All Fields]) AND (\"state\"[All Fields] OR \"state s\"[All Fields] OR \"stated\"[All Fields] OR \"states\"[All Fields] OR \"stating\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

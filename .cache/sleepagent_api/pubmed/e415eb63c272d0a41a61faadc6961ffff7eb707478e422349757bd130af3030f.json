@@ -1,0 +1,45 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "studies",
+        "to": "\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study's\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]"
+      },
+      {
+        "from": "frontoparietal",
+        "to": "\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]"
+      },
+      {
+        "from": "REM",
+        "to": "\"Rangel Ecol Manag\"[Journal:__jid101737744] OR \"rem\"[All Fields]"
+      },
+      {
+        "from": "latency",
+        "to": "\"latencies\"[All Fields] OR \"latency\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]) AND (\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]) AND \"FC\"[All Fields] AND (\"rangel ecol manag\"[Journal] OR \"rem\"[All Fields]) AND (\"latencies\"[All Fields] OR \"latency\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

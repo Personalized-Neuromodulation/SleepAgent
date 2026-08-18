@@ -1,0 +1,378 @@
+[run_all_tests] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_all_tests] iterations=config_default
+[run_all_tests] base_loop_config=configs/discovery_loop_config.yaml
+[run_all_tests] log_file=logs/run_all_tests_20260728_012049.log
+[run_all_tests] [1/2] foundation -> online grounding/RAG
+API environment preflight
+  NCBI_EMAIL: SET
+  NCBI_TOOL: SleepAgent
+  SEMANTIC_SCHOLAR_API_KEY: SET
+[1/6] Build foundation
+{
+  "mode": "empty_foundation",
+  "subject_count": 0,
+  "feature_count": 0,
+  "qc_record_count": 0,
+  "master_rows": 0,
+  "master_columns": 1,
+  "manifest": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_manifest.json",
+  "outputs": {
+    "subject_index": "/home/zyb/Agent_skills/SleepAgent/data/foundation/subject_index.csv",
+    "feature_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/feature_registry.csv",
+    "approved_variables": "/home/zyb/Agent_skills/SleepAgent/data/foundation/approved_variables.yaml",
+    "data_dictionary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_dictionary.yaml",
+    "qc_summary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/qc_summary.csv",
+    "multimodal_master_table": "/home/zyb/Agent_skills/SleepAgent/data/foundation/multimodal_master_table.csv",
+    "report": "/home/zyb/Agent_skills/SleepAgent/reports/phase0_foundation_report.md"
+  },
+  "data_assets": {
+    "registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+    "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+    "asset_count": 0,
+    "update_event_count": 0,
+    "last_update": {}
+  }
+}
+[2/6] Build knowledge source registry
+{
+  "registry_version": "sleepagent_knowledge_sources_v1",
+  "created_at": "2026-07-28T05:20:52.049321+00:00",
+  "enabled_sources": [
+    "clinical_trials",
+    "guidelines",
+    "standards",
+    "diagnostic_taxonomy",
+    "datasets",
+    "instruments",
+    "tools_methods"
+  ],
+  "clinical_trials_count": 0,
+  "guidelines_count": 9,
+  "standards_count": 7,
+  "diagnostic_terms_count": 6,
+  "datasets_count": 4,
+  "instruments_count": 4,
+  "tools_methods_count": 11,
+  "output_files": {
+    "clinical_trials_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.csv",
+    "clinical_trials_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.jsonl",
+    "guidelines_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.csv",
+    "guidelines_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.jsonl",
+    "standards_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.csv",
+    "standards_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.jsonl",
+    "diagnostic_taxonomy_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.yaml",
+    "diagnostic_taxonomy_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.json",
+    "datasets_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.csv",
+    "datasets_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.jsonl",
+    "instruments_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.yaml",
+    "instruments_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.json",
+    "tools_methods_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.yaml",
+    "tools_methods_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.json",
+    "manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_manifest.json",
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_report.md"
+  },
+  "database_backend": "sqlite",
+  "notes": "Metadata-only for restricted AASM/ICSD sources; no paywalled content downloaded.",
+  "warnings": [
+    "ClinicalTrials.gov live API skipped; set SLEEPAGENT_ENABLE_CLINICALTRIALS_LIVE=true to enable."
+  ],
+  "clinical_trial_conditions": {},
+  "clinical_trial_intervention_types": {},
+  "clinical_trial_status_counts": {},
+  "guideline_organizations": {
+    "American Academy of Sleep Medicine": 9
+  },
+  "guideline_topics": {
+    "insomnia": 1,
+    "sleep apnea": 1,
+    "circadian rhythm sleep wake disorders": 1,
+    "hypersomnia": 1,
+    "narcolepsy": 1,
+    "parasomnias": 1,
+    "pediatric sleep": 1,
+    "behavioral treatment": 1,
+    "pharmacologic treatment": 1
+  },
+  "standard_categories": {
+    "sleep_staging": 1,
+    "arousal": 1,
+    "respiratory_events": 1,
+    "movement_events": 1,
+    "cardiac_events": 1,
+    "montage": 1,
+    "technical_specifications": 1
+  },
+  "diagnostic_categories": {
+    "insomnia_disorders": 1,
+    "sleep_related_breathing_disorders": 1,
+    "central_disorders_of_hypersomnolence": 1,
+    "circadian_rhythm_sleep_wake_disorders": 1,
+    "parasomnias": 1,
+    "sleep_related_movement_disorders": 1
+  },
+  "dataset_modalities": {
+    "EEG": 3,
+    "PSG": 3,
+    "questionnaires": 1,
+    "clinical": 1,
+    "fMRI": 1,
+    "MRI": 1
+  },
+  "dataset_access_status": {
+    "open": 3,
+    "controlled/open depending dataset": 1
+  },
+  "instrument_domains": {
+    "insomnia severity": 1,
+    "sleep quality": 1,
+    "daytime sleepiness": 1,
+    "subjective sleep timing and quality": 1
+  },
+  "tool_method_modalities": {
+    "EEG": 2,
+    "fMRI": 1,
+    "neuroimaging": 1
+  },
+  "tool_method_roles": {
+    "preprocessing": 2,
+    "spectral_analysis": 1,
+    "event_detection": 1,
+    "sleep_staging": 1,
+    "spindle_detection": 1,
+    "slow_wave_detection": 1,
+    "confound_regression": 1,
+    "DTI preprocessing": 1,
+    "cortical_thickness": 1,
+    "subcortical_volume": 1,
+    "data_organization": 1,
+    "reproducibility": 1,
+    "metadata_query": 1,
+    "dataset_indexing": 1,
+    "feature_extraction": 2,
+    "confound_control": 1,
+    "statistical_validity": 1
+  },
+  "run_id": "run_5bc7089a2345",
+  "exports": {
+    "clinical_trials": {
+      "count": 0,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.jsonl"
+    },
+    "guidelines": {
+      "count": 9,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.jsonl"
+    },
+    "standards": {
+      "count": 7,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.jsonl"
+    },
+    "diagnostic_taxonomy": {
+      "count": 6,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.json"
+    },
+    "datasets": {
+      "count": 4,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.jsonl"
+    },
+    "instruments": {
+      "count": 4,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.json"
+    },
+    "tools_methods": {
+      "count": 11,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.json"
+    },
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_report.md"
+  }
+}
+[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] timestamp=2026-07-28T01:20:52-04:00
+[literature_db_build_start] step=[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] database=data/literature/sleep_literature.db
+[literature_db_build_start] config=configs/literature_library_config.yaml
+[literature_db_build_start] query_config=configs/literature_queries.yaml
+[literature_db_build_start] library_version=sleep_literature_library_v1_online
+[api] enabled providers: pubmed, europe_pmc, openalex, semantic_scholar
+[api] query count: 279; max_results_per_query: 50
+[api:pubmed] [########################] 279/279 records=5794 warnings=0 done accumulated_raw=5794
+[api:europe_pmc] [########################] 279/279 records=12532 warnings=0 done accumulated_raw=18326
+[api:openalex] [########################] 279/279 records=12539 warnings=0 done accumulated_raw=30865
+[api:semantic_scholar] [########################] 279/279 records=8862 warnings=0 done accumulated_raw=39727
+[api] deduplicated records: 16887
+[literature_build] write_api_outputs_start count=16887
+[literature_build] write_api_outputs_done count=16887
+[literature_build] write_queries_start count=280
+[literature_build] write_queries_done count=280
+[literature_build] persist_api_records_start count=16887
+[literature_build] persist_api_records_done count=16887
+[literature_build] persist_journal_targeted_records_start count=0
+[literature_build] persist_journal_targeted_records_done count=0
+[literature_build] export_deduplication_start
+[literature_build] export_deduplication_done duplicate_groups=215
+[literature_build] export_registry_start
+[literature_build] export_registry_done
+[literature_build] load_registry_start
+[literature_build] load_registry_done count=16632
+[literature_build] export_summaries_start
+[literature_build] export_summaries_done
+[literature_build] coverage_audit_start registry_records=16632
+[literature_build] coverage_audit_done
+[literature_build] anchor_papers_start registry_records=16632
+[literature_build] anchor_papers_done count=65
+[literature_build] query_expansion_start
+[literature_build] query_expansion_done count=200
+[literature_build] rag_index_start embedding_enabled=True
+[embedding] rag index start provider=local_minilm model=sentence-transformers/all-MiniLM-L6-v2 chunks=12174
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 16422.62it/s]
+[embedding] rag vectors encoded count=12174 dim=384 elapsed=119.334s
+[embedding] rag index done chunks=12174 vectors=12174 elapsed=119.335s
+[literature_build] rag_index_done chunks=12174 embedding_vectors=12174
+[literature_build] corpus_version_start library_version=sleep_literature_library_v1_online
+[literature_build] corpus_version_done library_version=sleep_literature_library_v1_online
+[literature_build] manifest_start path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_manifest.json
+[literature_build] manifest_done path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_manifest.json
+[literature_build] report_start path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_build_report.md
+[literature_build] report_done path=/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_build_report.md
+{
+  "library_version": "sleep_literature_library_v1_online",
+  "query_set_version": "sleep_literature_queries_v2_broad_sleep_science",
+  "api_papers": 16887,
+  "journal_targeted_records": 0,
+  "registry_records": 16632,
+  "duplicate_groups": 215,
+  "deduplication": {
+    "report_rows": 16887,
+    "manual_review_rows": 40,
+    "summary": {
+      "total_incoming_records": 16887,
+      "inserted_new_count": 16632,
+      "merged_duplicate_count": 215,
+      "skipped_duplicate_count": 0,
+      "manual_review_count": 40,
+      "doi_match_count": 0,
+      "pmid_match_count": 25,
+      "pmcid_match_count": 0,
+      "title_exact_match_count": 168,
+      "fuzzy_match_count": 62,
+      "conflict_count": 185,
+      "records_with_multiple_sources": 235,
+      "records_from_api_broad": 16632,
+      "records_from_journal_targeted": 0,
+      "overlap_api_broad_and_journal_targeted": 0,
+      "duplicate_rate": 0.0151
+    }
+  },
+  "rag_index": {
+    "chunk_count": 12174,
+    "path": null,
+    "embedding": {
+      "enabled": true,
+      "provider": "local_minilm",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "local_files_only": true,
+      "device": "cpu",
+      "vector_count": 12174,
+      "vector_dim": 384,
+      "log_file": "/home/zyb/Agent_skills/SleepAgent/logs/embedding_retrieval.log"
+    }
+  },
+  "provider_summary": {
+    "query_result_counts": {
+      "europe_pmc": 2019,
+      "openalex": 2938,
+      "pubmed": 2357,
+      "semantic_scholar": 4068
+    },
+    "paper_source_counts": {
+      "europe_pmc": 3538,
+      "openalex": 4647,
+      "pubmed": 4036,
+      "semantic_scholar": 4666
+    }
+  },
+  "query_summary": {
+    "query_count": 280,
+    "path": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/query_summary.csv"
+  },
+  "coverage_audit": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/coverage_audit.json",
+  "anchor_papers": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/anchor_papers.csv",
+  "query_expansion_candidates": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/query_expansion_candidates.csv",
+  "manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_manifest.json",
+  "warnings": [],
+  "run_id": "run_5a818a55f687"
+}
+[4/6] Run grounding from unified literature DB RAG
+[grounding] config=/tmp/sleepagent_grounding_from_db_rag.yaml source=literature_db_rag database=data/literature/sleep_literature.db top_k=1000 allow_fixtures=False output_dir=outputs/grounding
+[embedding] db rag retrieval start model=sentence-transformers/all-MiniLM-L6-v2 chunks=12174 top_k=1000
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 15644.15it/s]
+[embedding] db rag retrieval done hits=1000 elapsed=3.43s
+[grounding] result evidence=12008 graph_nodes=13080 graph_edges=48167 report=/home/zyb/Agent_skills/SleepAgent/reports/phase1_grounding_report.md
+[5/6] Validate core grounding outputs, literature DB, and knowledge sources
+{'api_raw_count': 12174, 'registered_literature_count': 1000, 'evidence_count': 12008, 'graph_nodes': 13080, 'graph_edges': 48167, 'literature_db': 'data/literature/sleep_literature.db', 'db_counts': {'papers': 16632, 'rag_chunks': 12174, 'rag_chunk_embeddings': 12174, 'queries': 280, 'query_results': 11382, 'corpus_versions': 1, 'build_runs': 2, 'guidelines': 9, 'standards_rules': 7, 'diagnostic_terms': 6, 'datasets': 4, 'instruments': 4, 'tools_methods': 11}}
+[6/6] Foundation/grounding online flow validation complete
+Done. Core outputs:
+  outputs/grounding/evidence_table.json
+  outputs/grounding/mechanism_graph.json
+  data/literature/sleep_literature.db
+  outputs/knowledge_sources/knowledge_sources_manifest.json
+[run_all_tests] full_loop_config=/tmp/sleepagent_full_discovery_loop_lpwIA5.yaml
+[run_all_tests] [2/2] hypothesis -> experiment -> foundation update -> grounding refresh loop
+[run_discovery_loop] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_discovery_loop] config=/tmp/sleepagent_full_discovery_loop_lpwIA5.yaml
+[run_discovery_loop] iterations=config_default
+[run_discovery_loop] python=/opt/fsl/bin/python
+[run_discovery_loop] log_file=logs/run_discovery_loop_20260728_020527.log
+[run_discovery_loop] effective_config=/tmp/sleepagent_full_discovery_loop_lpwIA5.yaml
+[run_discovery_loop] max_iterations=5
+[run_discovery_loop] hypothesis_config=/home/zyb/Agent_skills/SleepAgent/configs/hypothesis_config.yaml
+[run_discovery_loop] experiment_config=/home/zyb/Agent_skills/SleepAgent/configs/experiment_config.yaml
+[run_discovery_loop] hypothesis inputs:
+[run_discovery_loop] hypothesis_input.evidence_table_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_table.json exists=true size=36265888
+[run_discovery_loop] hypothesis_input.knowledge_graph_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/mechanism_graph.json exists=true size=14426544
+[run_discovery_loop] hypothesis_input.llm_evidence_context_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_evidence_context.json exists=true size=1532169
+[run_discovery_loop] hypothesis_input.llm_mechanism_context_json=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_mechanism_context.json exists=true size=612203
+[run_discovery_loop] hypothesis_input.prior_hypotheses_json=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/top_k_hypotheses.json exists=false size=0
+[run_discovery_loop] hypothesis_input.experimental_feedback=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/experimental_feedback.json exists=false size=0
+[run_discovery_loop] hypothesis_input.reward_memory=/home/zyb/Agent_skills/SleepAgent/outputs/memory/reward_memory.json exists=false size=0
+[run_discovery_loop] hypothesis_input.context_blocks_json=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/context_blocks.json exists=false size=0
+[run_discovery_loop] experiment inputs:
+[run_discovery_loop] experiment_input.hypothesis_pool=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json exists=false size=0
+[run_discovery_loop] experiment_input.data_profile=/home/zyb/Agent_skills/SleepAgent/outputs/profiles/analysis_ready_profile.yaml exists=true size=50
+[run_discovery_loop] experiment_input.approved_variables=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/approved_variables_from_grounding.yaml exists=true size=23
+[run_discovery_loop] experiment_input.variable_mapping=/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_to_variable_map.yaml exists=true size=3612
+[run_discovery_loop] expected_hypothesis_pool=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json
+[run_discovery_loop] experiment_reads_hypothesis_pool=/home/zyb/Agent_skills/SleepAgent/outputs/hypotheses/hypothesis_pool.json
+[discovery_loop] start config=/tmp/sleepagent_full_discovery_loop_lpwIA5.yaml max_iterations=5
+[discovery_loop] hypothesis_config=/home/zyb/Agent_skills/SleepAgent/configs/hypothesis_config.yaml
+[discovery_loop] experiment_config=/home/zyb/Agent_skills/SleepAgent/configs/experiment_config.yaml
+[discovery_loop] foundation_config=/home/zyb/Agent_skills/SleepAgent/configs/foundation_config.yaml
+[discovery_loop] grounding_config=/home/zyb/Agent_skills/SleepAgent/configs/grounding_config.yaml
+[discovery_loop] iteration_001 hypothesis start
+[llm] task=hypothesis_generation profile=default provider=ollama model=qwen3:14b
+[llm] task=hypothesis_generation profile=legacy provider=ollama model=None
+[llm] task=hypothesis_review profile=legacy provider=ollama model=None
+[llm] task=hypothesis_rank profile=legacy provider=ollama model=None
+[llm] task=hypothesis_evolution profile=legacy provider=ollama model=None
+[llm] task=hypothesis_meta_review profile=legacy provider=ollama model=None
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/discovery_loop/discovery_runner.py", line 67, in run_discovery_loop
+    hypothesis_summary = run_hypothesis_pipeline(iteration_hypothesis_config_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/hypothesis_pipeline.py", line 18, in run_hypothesis_pipeline
+    return HypothesisSupervisor().run(config_path_value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/supervisor.py", line 34, in run
+    state = self.create_state(config_path_value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/hypothesis/supervisor.py", line 111, in create_state
+    previous_result_paths=_path_list(paths.get("previous_experiment_results")),
+                                     ^^^^^
+NameError: name 'paths' is not defined. Did you mean: 'Path'?

@@ -1,0 +1,49 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "36826230"
+    ],
+    "translationset": [
+      {
+        "from": "Partial",
+        "to": "\"partial\"[All Fields] OR \"partials\"[All Fields]"
+      },
+      {
+        "from": "least squares analysis",
+        "to": "\"least-squares analysis\"[MeSH Terms] OR (\"least-squares\"[All Fields] AND \"analysis\"[All Fields]) OR \"least-squares analysis\"[All Fields] OR (\"least\"[All Fields] AND \"squares\"[All Fields] AND \"analysis\"[All Fields]) OR \"least squares analysis\"[All Fields]"
+      },
+      {
+        "from": "functional",
+        "to": "\"functional\"[All Fields] OR \"functional's\"[All Fields] OR \"functionalities\"[All Fields] OR \"functionality\"[All Fields] OR \"functionalization\"[All Fields] OR \"functionalizations\"[All Fields] OR \"functionalize\"[All Fields] OR \"functionalized\"[All Fields] OR \"functionalizes\"[All Fields] OR \"functionalizing\"[All Fields] OR \"functionally\"[All Fields] OR \"functionals\"[All Fields] OR \"functioned\"[All Fields] OR \"functioning\"[All Fields] OR \"functionings\"[All Fields] OR \"functions\"[All Fields] OR \"physiology\"[Subheading] OR \"physiology\"[All Fields] OR \"function\"[All Fields] OR \"physiology\"[MeSH Terms]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "REM sleep",
+        "to": "\"sleep, rem\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"rem\"[All Fields]) OR \"rem sleep\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields])"
+      },
+      {
+        "from": "studies",
+        "to": "\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study's\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"partial\"[All Fields] OR \"partials\"[All Fields]) AND (\"least squares analysis\"[MeSH Terms] OR (\"least squares\"[All Fields] AND \"analysis\"[All Fields]) OR \"least squares analysis\"[All Fields] OR (\"least\"[All Fields] AND \"squares\"[All Fields] AND \"analysis\"[All Fields]) OR \"least squares analysis\"[All Fields]) AND (\"functional\"[All Fields] OR \"functional s\"[All Fields] OR \"functionalities\"[All Fields] OR \"functionality\"[All Fields] OR \"functionalization\"[All Fields] OR \"functionalizations\"[All Fields] OR \"functionalize\"[All Fields] OR \"functionalized\"[All Fields] OR \"functionalizes\"[All Fields] OR \"functionalizing\"[All Fields] OR \"functionally\"[All Fields] OR \"functionals\"[All Fields] OR \"functioned\"[All Fields] OR \"functioning\"[All Fields] OR \"functionings\"[All Fields] OR \"functions\"[All Fields] OR \"physiology\"[MeSH Subheading] OR \"physiology\"[All Fields] OR \"function\"[All Fields] OR \"physiology\"[MeSH Terms]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"sleep, rem\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"rem\"[All Fields]) OR \"rem sleep\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields])) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "40597038",
+      "28842597"
+    ],
+    "translationset": [
+      {
+        "from": "Effect",
+        "to": "\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]"
+      },
+      {
+        "from": "global",
+        "to": "\"global\"[All Fields] OR \"globalism\"[All Fields] OR \"globalize\"[All Fields] OR \"globalized\"[All Fields] OR \"globalizes\"[All Fields] OR \"globalizing\"[All Fields] OR \"globally\"[All Fields] OR \"globals\"[All Fields] OR \"internationality\"[MeSH Terms] OR \"internationality\"[All Fields] OR \"globalization\"[All Fields]"
+      },
+      {
+        "from": "signal",
+        "to": "\"signal transduction\"[MeSH Terms] OR (\"signal\"[All Fields] AND \"transduction\"[All Fields]) OR \"signal transduction\"[All Fields] OR \"signaling\"[All Fields] OR \"signal\"[All Fields] OR \"signal's\"[All Fields] OR \"signaled\"[All Fields] OR \"signaler\"[All Fields] OR \"signaler's\"[All Fields] OR \"signalers\"[All Fields] OR \"signalings\"[All Fields] OR \"signalization\"[All Fields] OR \"signalled\"[All Fields] OR \"signaller\"[All Fields] OR \"signaller's\"[All Fields] OR \"signallers\"[All Fields] OR \"signalling\"[All Fields] OR \"signallings\"[All Fields] OR \"signals\"[All Fields]"
+      },
+      {
+        "from": "default mode network",
+        "to": "\"default mode network\"[MeSH Terms] OR (\"default\"[All Fields] AND \"mode\"[All Fields] AND \"network\"[All Fields]) OR \"default mode network\"[All Fields]"
+      },
+      {
+        "from": "sleep disorders",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]) AND (\"global\"[All Fields] OR \"globalism\"[All Fields] OR \"globalize\"[All Fields] OR \"globalized\"[All Fields] OR \"globalizes\"[All Fields] OR \"globalizing\"[All Fields] OR \"globally\"[All Fields] OR \"globals\"[All Fields] OR \"internationality\"[MeSH Terms] OR \"internationality\"[All Fields] OR \"globalization\"[All Fields]) AND (\"signal transduction\"[MeSH Terms] OR (\"signal\"[All Fields] AND \"transduction\"[All Fields]) OR \"signal transduction\"[All Fields] OR \"signaling\"[All Fields] OR \"signal\"[All Fields] OR \"signal s\"[All Fields] OR \"signaled\"[All Fields] OR \"signaler\"[All Fields] OR \"signaler s\"[All Fields] OR \"signalers\"[All Fields] OR \"signalings\"[All Fields] OR \"signalization\"[All Fields] OR \"signalled\"[All Fields] OR \"signaller\"[All Fields] OR \"signaller s\"[All Fields] OR \"signallers\"[All Fields] OR \"signalling\"[All Fields] OR \"signallings\"[All Fields] OR \"signals\"[All Fields]) AND (\"default mode network\"[MeSH Terms] OR (\"default\"[All Fields] AND \"mode\"[All Fields] AND \"network\"[All Fields]) OR \"default mode network\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "on",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

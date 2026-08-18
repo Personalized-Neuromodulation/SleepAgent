@@ -1,0 +1,43 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "11",
+    "retmax": "11",
+    "retstart": "0",
+    "idlist": [
+      "42008368",
+      "41973732",
+      "41775974",
+      "41424171",
+      "38637627",
+      "37058373",
+      "36967111",
+      "34432059",
+      "34166985",
+      "31659927",
+      "26218521"
+    ],
+    "translationset": [
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "coupling",
+        "to": "\"couple's\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]"
+      },
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"couple s\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]) AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])"
+  }
+}

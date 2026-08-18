@@ -1,0 +1,40 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "segmentation",
+        "to": "\"segment\"[All Fields] OR \"segment's\"[All Fields] OR \"segmental\"[All Fields] OR \"segmentally\"[All Fields] OR \"segmentals\"[All Fields] OR \"segmentation\"[All Fields] OR \"segmentation's\"[All Fields] OR \"segmentational\"[All Fields] OR \"segmentations\"[All Fields] OR \"segmented\"[All Fields] OR \"segmenter\"[All Fields] OR \"segmenters\"[All Fields] OR \"segmenting\"[All Fields] OR \"segments\"[All Fields]"
+      },
+      {
+        "from": "quality",
+        "to": "\"qualities\"[All Fields] OR \"quality\"[All Fields] OR \"quality's\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"segment\"[All Fields] OR \"segment s\"[All Fields] OR \"segmental\"[All Fields] OR \"segmentally\"[All Fields] OR \"segmentals\"[All Fields] OR \"segmentation\"[All Fields] OR \"segmentation s\"[All Fields] OR \"segmentational\"[All Fields] OR \"segmentations\"[All Fields] OR \"segmented\"[All Fields] OR \"segmenter\"[All Fields] OR \"segmenters\"[All Fields] OR \"segmenting\"[All Fields] OR \"segments\"[All Fields]) AND (\"qualities\"[All Fields] OR \"quality\"[All Fields] OR \"quality s\"[All Fields]) AND \"thalamus-DMN\"[All Fields] AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

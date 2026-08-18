@@ -1,0 +1,2881 @@
+{
+  "total": 27,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "c6769e4297040c0edc3c90f88ed0ba5417c5089c",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0679",
+        "CorpusId": 278746684
+      },
+      "url": "https://www.semanticscholar.org/paper/c6769e4297040c0edc3c90f88ed0ba5417c5089c",
+      "title": "0679 Enhancing Prediction of Sleepiness, Insomnia, and Cognitive Impairment Using Machine Learning on Polysomnography",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0679?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0679, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2298014259",
+          "name": "Archita Srivastava"
+        },
+        {
+          "authorId": "2185017700",
+          "name": "M. Hajipour"
+        },
+        {
+          "authorId": "2362392922",
+          "name": "Andrew E. Beaudin"
+        },
+        {
+          "authorId": "2249971896",
+          "name": "Patrick J. Hanly"
+        },
+        {
+          "authorId": "2309923468",
+          "name": "Eric E. Smith"
+        },
+        {
+          "authorId": "2249964565",
+          "name": "F. Sériès"
+        },
+        {
+          "authorId": "2348979877",
+          "name": "Rébecca Robillard"
+        },
+        {
+          "authorId": "13622227",
+          "name": "J. Kimoff"
+        },
+        {
+          "authorId": "6732261",
+          "name": "J. Raneri"
+        },
+        {
+          "authorId": "2250107323",
+          "name": "Ghassan Hamarneh"
+        },
+        {
+          "authorId": "2236026213",
+          "name": "N. Ayas"
+        }
+      ],
+      "abstract": "\n \n \n Obstructive sleep apnea (OSA) is a prevalent disorder affecting approximately a billion people globally. Traditional diagnostic metrics from polysomnography (PSG) such as the apnea hypopnea index (AHI) are limited in predicting OSA-related impacts. This study aims to leverage machine learning (ML) methods to enhance PSG prediction of three outcomes: daytime sleepiness (defined as Epworth Sleepiness Scale >10), insomnia (Insomnia Severity Index >15) and cognitive impairment (Montreal Cognitive Assessment < 25) in patients with moderate to severe OSA.\n \n \n \n This pilot study utilized a subset of Canadian Sleep and Circadian Network participants (patients with suspected OSA recruited from academic sleep centres). Advanced signal processing was used to derive 790 features from PSG European Data Format (edf) files including: respiratory events, heart rate variations, limb movements, and EEG based metrics from leads C3/C4 (e.g., sleep stages, spindle metrics, power frequencies, sleep depth, arousal intensity). 541 participants with moderate to severe OSA (AHI>15/hr) were included. Python 3.11.6 was used for analysis. For each outcome, dimensionality reduction was done using Lasso Regression, Principal Component Analysis (PCA), and Recursive Feature Elimination (RFE). Binary classification models with Logistic Regression (LR), Support Vector Classification (SVC), Random Forest (RF), Multi-Layer Perceptron (MLP), Gaussian Naïve bayes, and XGBoost were then used (18 models tested). Model accuracy was assessed using 5-fold cross validation.\n \n \n \n Models that employed RFE for feature selection and LR for classification (based on 50-70 features depending on outcome) yielded the best performance. The average accuracy/F1 values across all target outcomes were 0.71/0.71 for sleepiness, 0.68/0.61 for insomnia, and 0.62/0.62 for cognitive impairment. However, accuracy of all the ML models surpassed the predictive accuracy of AHI alone (accuracy of 0.55, 0.60, 0.53 using logistic regression).\n \n \n \n This preliminary study supports the concept of applying advanced signal processing and ML techniques to PSG to help predict OSA-related outcomes. Future research with larger sample sizes, more diverse patients, more refined ML methodologies, and better feature engineering should further improve accuracy of these models.\n \n \n \n CIHR, BC Lung Association\n"
+    },
+    {
+      "paperId": "dfb7c0c01a636b155c299814156d55450145f855",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsae080",
+        "CorpusId": 268666249,
+        "PubMed": "38520362"
+      },
+      "url": "https://www.semanticscholar.org/paper/dfb7c0c01a636b155c299814156d55450145f855",
+      "title": "Electroencephalography connectome changes in chronic insomnia disorder are correlated with neurochemical signatures.",
+      "venue": "Sleep",
+      "year": 2024,
+      "citationCount": 13,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsae080?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsae080, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212724803",
+          "name": "Liyong Yu"
+        },
+        {
+          "authorId": "2283822961",
+          "name": "W. Peng"
+        },
+        {
+          "authorId": "2230122164",
+          "name": "Wenting Lin"
+        },
+        {
+          "authorId": "2258154842",
+          "name": "Yucai Luo"
+        },
+        {
+          "authorId": "2293549370",
+          "name": "Daijie Hu"
+        },
+        {
+          "authorId": "2181457518",
+          "name": "Guangli Zhao"
+        },
+        {
+          "authorId": "2108835658",
+          "name": "Hao Xu"
+        },
+        {
+          "authorId": "2212803487",
+          "name": "Zeyang Dou"
+        },
+        {
+          "authorId": "2256972561",
+          "name": "Qi Zhang"
+        },
+        {
+          "authorId": "2293163378",
+          "name": "Xiaojuan Hong"
+        },
+        {
+          "authorId": "2253820682",
+          "name": "Siyi Yu"
+        }
+      ],
+      "abstract": "STUDY OBJECTIVES\nThis study aimed to investigate the alterations in resting-state electroencephalography (EEG) global brain connectivity (GBC) in patients with chronic insomnia disorder (CID) and to explore the correlation between macroscale connectomic variances and microscale neurotransmitter distributions.\n\n\nMETHODS\nWe acquired 64-channel EEG from 35 female CID patients and 34 healthy females. EEG signals were source-localized using individual brain anatomy and orthogonalized to mitigate volume conduction. Correlation coefficients between band-limited source-space power envelopes of the DK 68 atlas were computed and averaged across regions to determine specific GBC values. A support vector machine (SVM) classifier utilizing GBC features was employed to differentiate CID patients from controls. We further used Neurosynth and a 3D atlas of neurotransmitter receptors/transporters to assess the cognitive functions and neurotransmitter landscape associated with CID cortical abnormality maps, respectively.\n\n\nRESULTS\nCID patients exhibited elevated GBC within the medial prefrontal cortex and limbic cortex, particularly at the gamma carrier frequency, compared to controls (pFDR<0.05). GBC patterns were found to effectively distinguish CID patients from controls with a precision of 90.8% in the SVM model. The cortical abnormality maps were significantly correlated with meta-analytic terms like \"cognitive control\" and \"emotion regulation.\" Notably, GBC patterns were associated with neurotransmitter profiles (pspin<0.05), with neurotransmitter systems such as norepinephrine, dopamine, and serotonin making significant contributions.\n\n\nCONCLUSIONS\nThis work characterizes the EEG connectomic profile of CID, facilitating the cost-effective clinical translation of EEG-derived markers. Additionally, the linkage between GBC patterns and neurotransmitter distribution offers promising avenues for developing targeted treatment strategies for CID."
+    },
+    {
+      "paperId": "017d21b262c5ef41f1fc66c1dbb614c6ed009197",
+      "externalIds": {
+        "ArXiv": "2509.06696",
+        "CorpusId": 281204033
+      },
+      "url": "https://www.semanticscholar.org/paper/017d21b262c5ef41f1fc66c1dbb614c6ed009197",
+      "title": "Nanoscale photonic neuron with biological signal processing",
+      "venue": "",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.06696, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "13732853",
+          "name": "Joachim E. Sestoft"
+        },
+        {
+          "authorId": "2340318888",
+          "name": "Thomas K. Jensen"
+        },
+        {
+          "authorId": "103544180",
+          "name": "V. Flodgren"
+        },
+        {
+          "authorId": "2341675887",
+          "name": "Abhijit Das"
+        },
+        {
+          "authorId": "120941093",
+          "name": "Rasmus D. Schlosser"
+        },
+        {
+          "authorId": "23192200",
+          "name": "D. Alcer"
+        },
+        {
+          "authorId": "2379660858",
+          "name": "Mariia Lamers"
+        },
+        {
+          "authorId": "13594695",
+          "name": "T. Kanne"
+        },
+        {
+          "authorId": "2376018465",
+          "name": "Magnus Borgstrōm"
+        },
+        {
+          "authorId": "2341334601",
+          "name": "J. Nygaard"
+        },
+        {
+          "authorId": "2345924411",
+          "name": "Anders Mikkelsen"
+        }
+      ],
+      "abstract": "Computational hardware designed to mimic biological neural networks holds the promise to resolve the drastically growing global energy demand of artificial intelligence. A wide variety of hardware concepts have been proposed, and among these, photonic approaches offer immense strengths in terms of power efficiency, speed and synaptic connectivity. However, existing solutions have large circuit footprints limiting scaling potential and they miss key biological functions, like inhibition. We demonstrate an artificial nano-optoelectronic neuron with a circuit footprint size reduced by at least a factor of 100 compared to existing technologies and operating powers in the picowatt regime. The neuron can deterministically receive both exciting and inhibiting signals that can be summed and treated with a non-linear function. It demonstrates several biological relevant responses and memory timescales, as well as weighting of input channels. The neuron is compatible with commercial silicon technology, operates at multiple wavelengths and can be used for both computing and optical sensing. This work paves the way for two important research paths: photonic neuromorphic computing with nanosized footprints and low power consumption, and adaptive optical sensing, using the same architecture as a compact, modular front end"
+    },
+    {
+      "paperId": "89ce30e15c202f379d2595da74a3416f30ead56c",
+      "externalIds": {
+        "MAG": "3004685715",
+        "DOI": "10.1364/ol.387728",
+        "CorpusId": 212693594,
+        "PubMed": "32163987"
+      },
+      "url": "https://www.semanticscholar.org/paper/89ce30e15c202f379d2595da74a3416f30ead56c",
+      "title": "High-power and frequency-stable ultraviolet laser performance in space for the wind lidar on Aeolus.",
+      "venue": "Optics Letters",
+      "year": 2020,
+      "citationCount": 47,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://elib.dlr.de/134932/1/Lux_Opt_Lett_2020.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1364/ol.387728?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1364/ol.387728, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "36512846",
+          "name": "O. Lux"
+        },
+        {
+          "authorId": "3116384",
+          "name": "D. Wernham"
+        },
+        {
+          "authorId": "143685538",
+          "name": "P. Bravetti"
+        },
+        {
+          "authorId": "32453050",
+          "name": "P. McGoldrick"
+        },
+        {
+          "authorId": "134549168",
+          "name": "O. Lecrenier"
+        },
+        {
+          "authorId": "20415133",
+          "name": "W. Riede"
+        },
+        {
+          "authorId": "1412106573",
+          "name": "A. D'Ottavi"
+        },
+        {
+          "authorId": "1561553628",
+          "name": "V. De Sanctis"
+        },
+        {
+          "authorId": "134471375",
+          "name": "M. Schillinger"
+        },
+        {
+          "authorId": "51327308",
+          "name": "J. Lochard"
+        },
+        {
+          "authorId": "144684911",
+          "name": "J. Marshall"
+        },
+        {
+          "authorId": "10414552",
+          "name": "C. Lemmerz"
+        },
+        {
+          "authorId": "94563483",
+          "name": "F. Weiler"
+        },
+        {
+          "authorId": "3264413",
+          "name": "L. Mondin"
+        },
+        {
+          "authorId": "91211995",
+          "name": "A. Ciapponi"
+        },
+        {
+          "authorId": "31852565",
+          "name": "T. Kanitz"
+        },
+        {
+          "authorId": "38276534",
+          "name": "A. Elfving"
+        },
+        {
+          "authorId": "1933364",
+          "name": "T. Parrinello"
+        },
+        {
+          "authorId": "8873818",
+          "name": "O. Reitebuch"
+        }
+      ],
+      "abstract": "Global acquisition of atmospheric wind profiles using a spaceborne direct-detection Doppler wind lidar is being accomplished following the launch of European Space Agency's Aeolus mission. One key part of the instrument is a single-frequency, ultraviolet laser that emits nanosecond pulses into the atmosphere. High output energy and frequency stability ensure a sufficient signal-to-noise ratio of the backscatter return and an accurate determination of the Doppler frequency shift induced by the wind. This Letter discusses the design of the laser transmitter for the first Doppler wind lidar in space and its performance during the first year of the Aeolus mission, providing valuable insights for upcoming space lidar missions."
+    },
+    {
+      "paperId": "1d16d54a598339ece921655de79c77efcabf96c6",
+      "externalIds": {
+        "DOI": "10.7498/aps.72.20230452",
+        "CorpusId": 258859333
+      },
+      "url": "https://www.semanticscholar.org/paper/1d16d54a598339ece921655de79c77efcabf96c6",
+      "title": "Efficient Field-Circuit Co-Simulation Method for GaN-Based High Power Microwave Devices",
+      "venue": "Acta Physica Sinica",
+      "year": 2023,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://wulixb.iphy.ac.cn/pdf-content/10.7498/aps.72.20230452.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.7498/aps.72.20230452?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.7498/aps.72.20230452, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2180106418",
+          "name": "Zhang Tian-Cheng"
+        },
+        {
+          "authorId": "2218686131",
+          "name": "Chen Di-Na"
+        },
+        {
+          "authorId": "2218638920",
+          "name": "Li Chun-Yu"
+        },
+        {
+          "authorId": "2217102766",
+          "name": "Zhang Li-Min"
+        },
+        {
+          "authorId": "2218606257",
+          "name": "Xu Zu-Yin"
+        },
+        {
+          "authorId": "2218639083",
+          "name": "Cheng Ai-Qiang"
+        },
+        {
+          "authorId": "2218686129",
+          "name": "Bao Hua-Guang"
+        },
+        {
+          "authorId": "2218686125",
+          "name": "and Ding Da-Zhi"
+        }
+      ],
+      "abstract": "Due to the development of the three generation semiconductors represented by gallium nitride (GaN), the microwave power devices are developing towards higher power, higher efficiency and high integration. However, the electromagnetic field effects are more significant inside the device. As a result, circuit-level based simulation techniques can no longer satisfy the accuracy requirements of device design, which necessitates the urgent establishment of field-circuit co-simulation techniques to couple the active GaN devices with passive electromagnetic structures. Therefore, in this paper, a high-precision discontinuous Galerkin time-domain method is proposed to analyze the performance of GAN-based high-power microwave devices. The extracted large-signal compact model of the GaN HEMT is incorporated into the electromagnetic field equations. A local time-stepping technique is adopted to remove the constraints of nonlinear compact models and multiscale elements on the stability conditions of the global algorithm. Numerical comparisons between numerical simulations, experiments and software calculations demonstrate the excellent accuracy and efficiency of the proposed method, which can provide a theoretical analysis and design tool for the high reliability design of advanced high-power microwave devices."
+    },
+    {
+      "paperId": "11de1956565bcd5ae08eb82d86ee2886d7c87784",
+      "externalIds": {
+        "MAG": "3082234072",
+        "CorpusId": 195701164
+      },
+      "url": "https://www.semanticscholar.org/paper/11de1956565bcd5ae08eb82d86ee2886d7c87784",
+      "title": "High–performance, low–power, and leakage–tolerance challenges for sub–70nm microprocessor circuits",
+      "venue": "",
+      "year": 2002,
+      "citationCount": 18,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "1721155",
+          "name": "R. Krishnamurthy"
+        },
+        {
+          "authorId": "1786468",
+          "name": "A. Alvandpour"
+        },
+        {
+          "authorId": "2131367",
+          "name": "S. Mathew"
+        },
+        {
+          "authorId": "143794851",
+          "name": "M. Anders"
+        },
+        {
+          "authorId": "145146098",
+          "name": "V. De"
+        },
+        {
+          "authorId": "145435454",
+          "name": "S. Borkar"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "7f443c61803ca981b85d2b5f4f08d75cbd616db3",
+      "externalIds": {
+        "CorpusId": 6307354
+      },
+      "url": "https://www.semanticscholar.org/paper/7f443c61803ca981b85d2b5f4f08d75cbd616db3",
+      "title": "High&#8211;performance, low&#8211;power, and leakage&#8211;tolerance challenges for sub&#8211;70nm microprocessor circuits",
+      "venue": "Proceedings of the 28th European Solid-State Circuits Conference",
+      "year": 2002,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://www.esscirc.org/esscirc2002/Slides/C17.01.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1721155",
+          "name": "R. Krishnamurthy"
+        },
+        {
+          "authorId": "1786468",
+          "name": "A. Alvandpour"
+        },
+        {
+          "authorId": "2131367",
+          "name": "S. Mathew"
+        },
+        {
+          "authorId": "143794851",
+          "name": "M. Anders"
+        },
+        {
+          "authorId": "145146098",
+          "name": "V. De"
+        },
+        {
+          "authorId": "145435454",
+          "name": "S. Borkar"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "3f1d10b45b4e5cb4695b46e642b76c2e05afc2fc",
+      "externalIds": {
+        "MAG": "3188997291",
+        "DOI": "10.1109/TMTT.2021.3098867",
+        "CorpusId": 238790660
+      },
+      "url": "https://www.semanticscholar.org/paper/3f1d10b45b4e5cb4695b46e642b76c2e05afc2fc",
+      "title": "Mixture of Experts Approach for Piecewise Modeling and Linearization of RF Power Amplifiers",
+      "venue": "IEEE transactions on microwave theory and techniques",
+      "year": 2021,
+      "citationCount": 20,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/22/9670865/09502590.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TMTT.2021.3098867?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TMTT.2021.3098867, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46216272",
+          "name": "Alberto Brihuega"
+        },
+        {
+          "authorId": "39567098",
+          "name": "M. Abdelaziz"
+        },
+        {
+          "authorId": "1691696",
+          "name": "L. Anttila"
+        },
+        {
+          "authorId": "2144462200",
+          "name": "Yue Li"
+        },
+        {
+          "authorId": "13310901",
+          "name": "Anding Zhu"
+        },
+        {
+          "authorId": "1720710",
+          "name": "M. Valkama"
+        }
+      ],
+      "abstract": "Piecewise behavioral models are commonly adopted for modeling and linearization of RF power amplifiers (PAs) that exhibit strong amplitude-dependent nonlinear distortion characteristics, as global polynomial approximations tend to underperform in such scenarios. In this article, we consider a new piecewise model for PAs based on the mixture of experts (ME) approach, which builds on a probabilistic model that allows the different submodels to cooperate—as opposed to operating in an independent fashion that is commonly the case in existing reference methods. We first introduce the ME framework theory while also extend it such that it can be applied to model complex baseband signals and nonlinearities. Then, we show how the ME model allows overcoming some of the intrinsic shortcomings that existing piecewise behavioral models commonly exhibit, which translates into improved modeling accuracy and improved linearization performance. Furthermore, the extension of the ME approach to a tree-structured regression model, referred to as the hierarchical ME model, is also introduced and shown to provide further performance improvements over the basic ME approach. The proposed solutions are validated with extensive RF measurements, covering both PA direct modeling and digital predistortion (DPD)-based linearization, on a gallium nitride (GaN) load-modulated balanced PA, on a GaN Doherty PA, and on a class AB GaN high electron mobility transistor PA, while being compared against several state-of-the-art piecewise methods. The results demonstrate that the ME framework-based models outperform the state of the art."
+    },
+    {
+      "paperId": "6cece56a7c78e08a077ffaafef92537fa8e2f508",
+      "externalIds": {
+        "DOI": "10.1080/02723638.2022.2125668",
+        "CorpusId": 252889134
+      },
+      "url": "https://www.semanticscholar.org/paper/6cece56a7c78e08a077ffaafef92537fa8e2f508",
+      "title": "What is progressive city building? Global expertise and local entanglements in Latin America",
+      "venue": "Urban Geography",
+      "year": 2022,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1080/02723638.2022.2125668",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/02723638.2022.2125668?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/02723638.2022.2125668, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "108293325",
+          "name": "J. Lederman"
+        },
+        {
+          "authorId": "2187739311",
+          "name": "Ryan Anders Whitney"
+        }
+      ],
+      "abstract": "ABSTRACT\n Latin American cities have emerged at the cutting edge of urban planning best practices circulated by multilateral agencies, transnational NGOs, and a cadre of celebrity architects and urbanists. Coherent with – and sometimes prompting – global trends, cities like Buenos Aires and Mexico City have dutifully built bike lanes, pedestrianized streets, and developed new public spaces amidst the frenzied global competition for a vaunted “livable,” “green,” or “sustainable” city. This paper argues that such developments can be understood as constituting a globally dominant progressive urbanism. The defining characteristic of progressive urbanism is an equity priority that lacks meaningful engagement with contentious power relations or the democratization of urban decision making. This paper delineates the scope and influence of these planning and design idioms. In so doing, it signals disjunctions with the historical practices of progressive planning and situates these changes within the broader political economy of contemporary Latin American cities."
+    },
+    {
+      "paperId": "e6a1275f374f78a49505ef291c1cc19f5fb6ec7c",
+      "externalIds": {
+        "MAG": "3015773489",
+        "DBLP": "conf/isscc/AndersKKCKSKKH020",
+        "DOI": "10.1109/ISSCC19947.2020.9063158",
+        "CorpusId": 215800446
+      },
+      "url": "https://www.semanticscholar.org/paper/e6a1275f374f78a49505ef291c1cc19f5fb6ec7c",
+      "title": "25.9 Reconfigurable Transient Current-Mode Global Interconnect Circuits in 10nm CMOS for High-Performance Processors with Wide Voltage-Frequency Operating Range",
+      "venue": "IEEE International Solid-State Circuits Conference",
+      "year": 2020,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISSCC19947.2020.9063158?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISSCC19947.2020.9063158, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143794851",
+          "name": "M. Anders"
+        },
+        {
+          "authorId": "1703398",
+          "name": "Himanshu Kaul"
+        },
+        {
+          "authorId": "2684193",
+          "name": "Seongjong Kim"
+        },
+        {
+          "authorId": "1797679",
+          "name": "Gregory K. Chen"
+        },
+        {
+          "authorId": "2107921471",
+          "name": "Raghavan Kumar"
+        },
+        {
+          "authorId": "49106266",
+          "name": "H. Sumbul"
+        },
+        {
+          "authorId": "51507518",
+          "name": "Phil C. Knag"
+        },
+        {
+          "authorId": "34416614",
+          "name": "Monodeep Kar"
+        },
+        {
+          "authorId": "1681504",
+          "name": "S. Hsu"
+        },
+        {
+          "authorId": "144728257",
+          "name": "A. Agarwal"
+        },
+        {
+          "authorId": "38070985",
+          "name": "Vikram B. Suresh"
+        },
+        {
+          "authorId": "2131367",
+          "name": "S. Mathew"
+        },
+        {
+          "authorId": "1721155",
+          "name": "R. Krishnamurthy"
+        },
+        {
+          "authorId": "145146098",
+          "name": "V. De"
+        }
+      ],
+      "abstract": "The clock frequency of high-performance processors in the high-voltage turbo/burst operation mode [1] is governed primarily by the RC-dominated global interconnects in the communication fabrics and NoCs, since the interconnect RC delay does not improve proportionally with logic gate delay at higher voltages. Prior current-mode and pre-emphasis techniques for improved interconnect throughput and energy efficiency [2]–[5] do not address the critical turbo/burst mode latency requirements, and do not consider tunability across a wide voltage-frequency operating range in high-performance processors. Their transmit/receive circuits with complicated data recovery and differential signaling incur major latency and wiring resource overheads, especially for shorter bus distances typical in NoCs. Previous hybrid current/voltage-mode signaling used expensive 4-inversion repeaters without reconfigurable resistive termination strength, and required multi-cycle windows for current-mode operation with limited power savings at high data activities [6]. Other techniques address scalability to lower supply voltages, but do not focus on the critical interconnect RC delay bottlenecks at high voltages [7]. In this paper, we present reconfigurable current/voltage-mode driver/repeater/receiver circuits for on-die global interconnects/busses, fabricated in 10nm CMOS, with transient current-mode operation, achieving: i) up to 38% lower delay/mm vs. voltage-mode operation, ii) 5x lower transient current-mode power vs. always-on current-mode operation at 100% data activity, iii) similar noise immunity as voltage-mode operation, iv) tunable current-mode configuration for optimized performance vs. energy across PVT corners, and v) up to 8x increased repeater distance."
+    },
+    {
+      "paperId": "9f06762f845e844d922c27a3fa08718f6b4d81e5",
+      "externalIds": {
+        "MAG": "1965292858",
+        "DOI": "10.1007/s10967-012-2025-2",
+        "CorpusId": 93038401
+      },
+      "url": "https://www.semanticscholar.org/paper/9f06762f845e844d922c27a3fa08718f6b4d81e5",
+      "title": "Worldwide measurements of radioxenon background near isotope production facilities, a nuclear power plant and at remote sites: the “EU/JA-II” Project",
+      "venue": "Journal of Radioanalytical and Nuclear Chemistry",
+      "year": 2013,
+      "citationCount": 23,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10967-012-2025-2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10967-012-2025-2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2391339",
+          "name": "P. Saey"
+        },
+        {
+          "authorId": "13186488",
+          "name": "A. Ringbom"
+        },
+        {
+          "authorId": "7200804",
+          "name": "T. Bowyer"
+        },
+        {
+          "authorId": "47305657",
+          "name": "M. Zähringer"
+        },
+        {
+          "authorId": "2053964964",
+          "name": "M. Auer"
+        },
+        {
+          "authorId": "11384342",
+          "name": "A. Faanhof"
+        },
+        {
+          "authorId": "145443801",
+          "name": "C. Labuschagne"
+        },
+        {
+          "authorId": "1420313592",
+          "name": "M. Al-Rashidi"
+        },
+        {
+          "authorId": "9126448",
+          "name": "U. Tippawan"
+        },
+        {
+          "authorId": "98658405",
+          "name": "B. Verboomen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "cfc9b5506cc246b7818192508965b63a33cebfc8",
+      "externalIds": {
+        "MAG": "2158439227",
+        "DOI": "10.1523/JNEUROSCI.5155-12.2013",
+        "CorpusId": 9241186,
+        "PubMed": "23864671"
+      },
+      "url": "https://www.semanticscholar.org/paper/cfc9b5506cc246b7818192508965b63a33cebfc8",
+      "title": "Effect of Prestimulus Alpha Power, Phase, and Synchronization on Stimulus Detection Rates in a Biophysical Attractor Network Model",
+      "venue": "Journal of Neuroscience",
+      "year": 2013,
+      "citationCount": 28,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.jneurosci.org/content/jneuro/33/29/11817.full.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1523/JNEUROSCI.5155-12.2013?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1523/JNEUROSCI.5155-12.2013, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49089410",
+          "name": "Mikael Lundqvist"
+        },
+        {
+          "authorId": "37103065",
+          "name": "P. Herman"
+        },
+        {
+          "authorId": "2524966",
+          "name": "A. Lansner"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "5ce3c21949cdad324dc4660f363005307e90388c",
+      "externalIds": {
+        "MAG": "3130038716",
+        "DOI": "10.33012/2021.17782",
+        "CorpusId": 234080921
+      },
+      "url": "https://www.semanticscholar.org/paper/5ce3c21949cdad324dc4660f363005307e90388c",
+      "title": "The WRITE (White Rabbit for Industrial Timing Enhancement) Project Update",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.33012/2021.17782?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.33012/2021.17782, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2025002705",
+          "name": "E. L. English"
+        },
+        {
+          "authorId": "2089982074",
+          "name": "B. Eglin"
+        },
+        {
+          "authorId": "2104525061",
+          "name": "Adam Parsons"
+        },
+        {
+          "authorId": "89008582",
+          "name": "C. Langham"
+        },
+        {
+          "authorId": "12942188",
+          "name": "P. Whibberley"
+        },
+        {
+          "authorId": "1919719",
+          "name": "D. Calonico"
+        },
+        {
+          "authorId": "31135184",
+          "name": "A. Wallin"
+        },
+        {
+          "authorId": "1397426522",
+          "name": "P. Jansweijer"
+        },
+        {
+          "authorId": "34763905",
+          "name": "P. Pottie"
+        },
+        {
+          "authorId": "2487604",
+          "name": "E. Dierikx"
+        },
+        {
+          "authorId": "30688859",
+          "name": "M. V. Veghel"
+        },
+        {
+          "authorId": "2116345992",
+          "name": "Yan Xie"
+        },
+        {
+          "authorId": "30609036",
+          "name": "J. Gutiérrez"
+        },
+        {
+          "authorId": "1409483849",
+          "name": "José López-Jiménez"
+        },
+        {
+          "authorId": "46400595",
+          "name": "Javier Díaz"
+        },
+        {
+          "authorId": "144612814",
+          "name": "C. Rieck"
+        },
+        {
+          "authorId": "2089723340",
+          "name": "Hermann Virgile"
+        },
+        {
+          "authorId": "2089723267",
+          "name": "Francois Kecskemeti"
+        },
+        {
+          "authorId": "1582366876",
+          "name": "Sapia Adalberto"
+        },
+        {
+          "authorId": "2090065401",
+          "name": "Massari Maurizio"
+        },
+        {
+          "authorId": "2089836811",
+          "name": "L. Liberati"
+        }
+      ],
+      "abstract": "Time and frequency dissemination for industrial applications is still predominantly realised through radio signals and satellite time broadcasting, such as the widely used Global Positioning System (GPS). However, the weak signal power received on Earth from GPS and other Global Navigation Satellite Systems (GNSS) represents a significant threat to their integrity and resilience since they are vulnerable to jamming, spoofing, and disruption by space weather events. There is therefore considerable motivation to progress beyond GNSS-based time and frequency dissemination techniques. \n\nHowever, any alternative time and frequency distribution technique must have a high degree of resilience with built-in redundancy. Moreover, in order to facilitate widespread and rapid uptake by industrial and commercial users, any alternative should possess a number of features: it should lend itself to standardization and be capable of practical interfacing with existing network infrastructures; it should be scalable and address a range of user requirements; and it should enable measurement traceability to the time standard Coordinated Universal Time (UTC). \n\nOne potential alternative to satellite-based techniques for time and frequency distribution which meets these criteria is the White Rabbit (PTP-WR) protocol. This open-source technology provides sub-nanosecond accuracy and picosecond-level precision of synchronization over optical fibre, scalable to many nodes. The protocol is developed at CERN in collaboration with research organisations and companies, leading to rapid innovation and commercialisation opportunities. It has recently been integrated into the IEEE 1588 Precision Time Protocol (PTP) standard as IEEE 1588-2019 PTP High Accuracy, a significant achievement which will facilitate industry uptake. \n\nIn June 2018, the White Rabbit for Industrial Timing Enhancement (WRITE) project was started with the aim of further developing the PTP-WR hardware, monitoring and calibration techniques. The project will demonstrate resilient, validated, precision time dissemination to industrial and commercial user testbeds, which will be UTC traceable. As of October 2020, the WRITE project has already made significant progress in improving PTP-WR methods and devices, validating some techniques on in-field deployments. Four testbeds have been established, designed to demonstrate UTC(k) dissemination to industry partners alongside the ‘accuracy’, ‘precision’, ‘redundancy’ and ‘connectivity’ challenges identified by the project. Outreach activities such as a virtual Stakeholder workshop have facilitated the WRITE project engagement with end users in industry, research, NRENs (National Research and Education Networks) and metrology. \n\nAs part of this project, new scalable calibration techniques have been developed for fibre propagation asymmetry, PTP-WR devices and SFPs. Calibration of each individual component of a PTP-WR link is required for interoperability of PTP-WR equipment from different manufacturers and replacement in the event of equipment failures. A system with calibrated components will in future lead to “plug-and-play” cost-effective time services to industry, replacing expensive in-situ end-to-end calibrations of each link. NPL are participating in this interoperability testing of a new PTP-WR device, using the White Rabbit Electrical Absolute Calibration technique.\n\nThe WRITE project is also investigating network topologies and monitoring techniques to improve redundancy. Different hardware and software holdover mechanisms have been tested to improve resilience. Within this task, NPL are evaluating the PTP-WR holdover mechanism based on a commercial caesium clock."
+    },
+    {
+      "paperId": "492bd1ef5dae9b0277c2f66bf827688878ae0697",
+      "externalIds": {
+        "MAG": "1969231017",
+        "DBLP": "journals/wc/TombazVZ11",
+        "DOI": "10.1109/MWC.2011.6056688",
+        "CorpusId": 253101
+      },
+      "url": "https://www.semanticscholar.org/paper/492bd1ef5dae9b0277c2f66bf827688878ae0697",
+      "title": "Energy- and cost-efficient ultra-high-capacity wireless access",
+      "venue": "IEEE wireless communications",
+      "year": 2011,
+      "citationCount": 186,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/MWC.2011.6056688?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/MWC.2011.6056688, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3154217",
+          "name": "S. Tombaz"
+        },
+        {
+          "authorId": "1788333",
+          "name": "A. Vastberg"
+        },
+        {
+          "authorId": "144276282",
+          "name": "J. Zander"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "80778f6601a4a8118252dec5979239aec66cec21",
+      "externalIds": {
+        "PubMedCentral": "6769854",
+        "MAG": "2969667027",
+        "DOI": "10.3390/genes10090632",
+        "CorpusId": 199635525,
+        "PubMed": "31438604"
+      },
+      "url": "https://www.semanticscholar.org/paper/80778f6601a4a8118252dec5979239aec66cec21",
+      "title": "Tree Lab: Portable Genomics for Early Detection of Plant Viruses and Pests in Sub-Saharan Africa",
+      "venue": "bioRxiv",
+      "year": 2019,
+      "citationCount": 85,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2073-4425/10/9/632/pdf?version=1567071143",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6769854, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3091447",
+          "name": "L. Boykin"
+        },
+        {
+          "authorId": "5931650",
+          "name": "P. Sseruwagi"
+        },
+        {
+          "authorId": "3713912",
+          "name": "T. Alicai"
+        },
+        {
+          "authorId": "5309723",
+          "name": "E. Ateka"
+        },
+        {
+          "authorId": "2263110243",
+          "name": "I. Mohammed"
+        },
+        {
+          "authorId": "36612146",
+          "name": "J. L. Stanton"
+        },
+        {
+          "authorId": "90250303",
+          "name": "C. Kayuki"
+        },
+        {
+          "authorId": "40798812",
+          "name": "D. Mark"
+        },
+        {
+          "authorId": "1410693789",
+          "name": "Tarcisius Fute"
+        },
+        {
+          "authorId": "150143242",
+          "name": "Joel Erasto"
+        },
+        {
+          "authorId": "150120231",
+          "name": "Hilda Bachwenkizi"
+        },
+        {
+          "authorId": "146286375",
+          "name": "Brenda A Muga"
+        },
+        {
+          "authorId": "88351641",
+          "name": "N. Mumo"
+        },
+        {
+          "authorId": "1411558126",
+          "name": "J. Mwangi"
+        },
+        {
+          "authorId": "150256750",
+          "name": "Phillip Abidrabo"
+        },
+        {
+          "authorId": "1399884860",
+          "name": "G. Okao-Okuja"
+        },
+        {
+          "authorId": "1413283015",
+          "name": "G. Omuut"
+        },
+        {
+          "authorId": "1413259751",
+          "name": "Jacinta Akol"
+        },
+        {
+          "authorId": "89436971",
+          "name": "H. B. Apio"
+        },
+        {
+          "authorId": "1413283285",
+          "name": "F. Osingada"
+        },
+        {
+          "authorId": "145527671",
+          "name": "M. Kehoe"
+        },
+        {
+          "authorId": "143905713",
+          "name": "David A. Eccles"
+        },
+        {
+          "authorId": "46517493",
+          "name": "Anders Savill"
+        },
+        {
+          "authorId": "152689777",
+          "name": "S. Lamb"
+        },
+        {
+          "authorId": "40843174",
+          "name": "Tonny Kinene"
+        },
+        {
+          "authorId": "14901828",
+          "name": "C. Rawle"
+        },
+        {
+          "authorId": "39048393",
+          "name": "A. Muralidhar"
+        },
+        {
+          "authorId": "147232214",
+          "name": "Kirsty Mayall"
+        },
+        {
+          "authorId": "6502217",
+          "name": "F. Tairo"
+        },
+        {
+          "authorId": "144476295",
+          "name": "J. Ndunguru"
+        }
+      ],
+      "abstract": "In this case study we successfully teamed the PDQeX DNA purification technology developed by MicroGEM, New Zealand, with the MinION and MinIT mobile sequencing devices developed by Oxford Nanopore Technologies to produce an effective point-of-need field diagnostic system. The PDQeX extracts DNA using a cocktail of thermophilic proteinases and cell wall degrading enzymes, thermo-responsive extractor cartridges and a temperature control unit. This single-step closed system delivers purified DNA with no cross contamination. The MinIT is a newly released data processing unit that converts MinION raw signal output into base called data locally in real time, removing the need for high specification computers and large file transfers from the field. All three devices are battery powered with an exceptionally small footprint that facilitates transport and set up. To evaluate and validate capability of the system for unbiased pathogen identification by realtime sequencing in a farmer’s field setting, we analysed samples collected from cassava plants grown by subsistence farmers in three sub-Sahara African countries (Tanzania, Uganda and Kenya). A range of viral pathogens, all with similar symptoms, greatly reduce yield or completely destroy cassava crops. 800 million people worldwide depend on cassava for food and yearly income, and viral diseases are a significant constraint on its production (https://cassavavirusactionproject.com). Early pathogen detection at a molecular level has great potential to rescue crops within a single growing season by providing results that inform decisions on disease management, use of appropriate virus resistant or replacement planting. This case study presented conditions of working in-field with limited or no access to mains power, laboratory infrastructure, internet connectivity and highly variable ambient temperature. An additional challenge is that, generally, plant material contains inhibitors of downstream molecular processes making effective DNA purification critical. We successfully undertook real-time on-farm genome sequencing of samples collected from cassava plants on three farms, one in each country. Cassava mosaic begomoviruses were detected by sequencing leaf, stem, tuber and insect samples. The entire process, from arrival on farm to diagnosis including sample collection, processing and provisional sequencing results was complete in under 4 hours. The need for accurate, rapid and on-site diagnosis grows as globalized human activity accelerates. This technical breakthrough has applications that are relevant to human and animal health, environmental management and conservation."
+    },
+    {
+      "paperId": "c8328b7b88608f0ebbb4076aaa89bd13e52410f2",
+      "externalIds": {
+        "MAG": "573329446",
+        "CorpusId": 57655204
+      },
+      "url": "https://www.semanticscholar.org/paper/c8328b7b88608f0ebbb4076aaa89bd13e52410f2",
+      "title": "A Stability of High Order Distributed Power Control Algorithms in Cellular Networks",
+      "venue": "",
+      "year": 2012,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "1715062",
+          "name": "A. Moller"
+        },
+        {
+          "authorId": "123955855",
+          "name": "U. Jonsson"
+        },
+        {
+          "authorId": "1700772",
+          "name": "Mats Blomgren"
+        },
+        {
+          "authorId": "1689895",
+          "name": "F. Gunnarsson"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "63ad950952a6253d1e2251c8e261fc685f962aed",
+      "externalIds": {
+        "ArXiv": "1609.04413",
+        "MAG": "2521470763",
+        "DOI": "10.3847/1538-4357/833/2/147",
+        "CorpusId": 53463964
+      },
+      "url": "https://www.semanticscholar.org/paper/63ad950952a6253d1e2251c8e261fc685f962aed",
+      "title": "THREE-DIMENSIONAL DISTRIBUTION OF EJECTA IN SUPERNOVA 1987A AT 10,000 DAYS",
+      "venue": "",
+      "year": 2016,
+      "citationCount": 50,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://iopscience.iop.org/article/10.3847/1538-4357/833/2/147/pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1609.04413, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144357785",
+          "name": "J. Larsson"
+        },
+        {
+          "authorId": "143963588",
+          "name": "C. Fransson"
+        },
+        {
+          "authorId": "47891554",
+          "name": "J. Spyromilio"
+        },
+        {
+          "authorId": "29891742",
+          "name": "B. Leibundgut"
+        },
+        {
+          "authorId": "2177904889",
+          "name": "P. Challis"
+        },
+        {
+          "authorId": "32395148",
+          "name": "R. Chevalier"
+        },
+        {
+          "authorId": "7956070",
+          "name": "A. Jerkstrand"
+        },
+        {
+          "authorId": "5815191",
+          "name": "R. Kirshner"
+        },
+        {
+          "authorId": "144780882",
+          "name": "P. Lundqvist"
+        },
+        {
+          "authorId": "24340260",
+          "name": "M. Matsuura"
+        },
+        {
+          "authorId": "144686155",
+          "name": "R. McCray"
+        },
+        {
+          "authorId": "2179330009",
+          "name": "N. Smith"
+        },
+        {
+          "authorId": "144127644",
+          "name": "J. Sollerman"
+        },
+        {
+          "authorId": "5425321",
+          "name": "P. Garnavich"
+        },
+        {
+          "authorId": "3758916",
+          "name": "K. Heng"
+        },
+        {
+          "authorId": "35008745",
+          "name": "S. Lawrence"
+        },
+        {
+          "authorId": "48396439",
+          "name": "S. Mattila"
+        },
+        {
+          "authorId": "48396439",
+          "name": "S. Mattila"
+        },
+        {
+          "authorId": "102526514",
+          "name": "K. Migotto"
+        },
+        {
+          "authorId": "144036406",
+          "name": "G. Sonneborn"
+        },
+        {
+          "authorId": "7014294",
+          "name": "F. Taddia"
+        },
+        {
+          "authorId": "2228038646",
+          "name": "J. Wheeler"
+        }
+      ],
+      "abstract": "Due to its proximity, SN 1987A offers a unique opportunity to directly observe the geometry of a stellar explosion as it unfolds. Here we present spectral and imaging observations of SN 1987A obtained ∼10,000 days after the explosion with HST/STIS and VLT/SINFONI at optical and near-infrared wavelengths. These observations allow us to produce the most detailed 3D map of Hα to date, the first 3D maps for [Ca ii] , [O i] , and Mg ii , as well as new maps for [Si i]+[Fe ii] and He i 2.058 μm. A comparison with previous observations shows that the [Si i]+[Fe ii] flux and morphology have not changed significantly during the past ten years, providing evidence that this line is powered by 44Ti. The time evolution of Hα shows that it is predominantly powered by X-rays from the ring, in agreement with previous findings. All lines that have sufficient signal show a similar large-scale 3D structure, with a north–south asymmetry that resembles a broken dipole. This structure correlates with early observations of asymmetries, showing that there is a global asymmetry that extends from the inner core to the outer envelope. On smaller scales, the two brightest lines, Hα and [Si i]+[Fe ii] 1.644 μm, show substructures at the level of ∼200–1000 km s–1and clear differences in their 3D geometries. We discuss these results in the context of explosion models and the properties of dust in the ejecta."
+    },
+    {
+      "paperId": "7de38f4d71266d3fc24b1d5f5a2075d4eded073f",
+      "externalIds": {
+        "MAG": "2160220159",
+        "DOI": "10.1183/09031936.00002314",
+        "CorpusId": 8007124,
+        "PubMed": "24925921"
+      },
+      "url": "https://www.semanticscholar.org/paper/7de38f4d71266d3fc24b1d5f5a2075d4eded073f",
+      "title": "Interleukin-17 cytokine signalling in patients with asthma",
+      "venue": "European Respiratory Journal",
+      "year": 2014,
+      "citationCount": 97,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://erj.ersjournals.com/content/erj/44/5/1319.full.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1183/09031936.00002314?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1183/09031936.00002314, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145700895",
+          "name": "A. Lindén"
+        },
+        {
+          "authorId": "96301359",
+          "name": "B. Dahlén"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "dfcfe8439a451e3129fe03a2def5bb654188236b",
+      "externalIds": {
+        "MAG": "1570022404",
+        "CorpusId": 154125296
+      },
+      "url": "https://www.semanticscholar.org/paper/dfcfe8439a451e3129fe03a2def5bb654188236b",
+      "title": "Shocks, Crashes and Bubbles in Financial Markets",
+      "venue": "",
+      "year": 2010,
+      "citationCount": 147,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://dipot.ulb.ac.be/dspace/bitstream/2013/80942/1/ARTICLE%20JOHANSEN-SORNETTE%20pdf.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144298381",
+          "name": "A. Johansen"
+        },
+        {
+          "authorId": "1744895",
+          "name": "D. Sornette"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "d3d6ec1962a1b3c723e93302320f83a85cbe424b",
+      "externalIds": {
+        "MAG": "2770544728",
+        "DOI": "10.1117/12.2304121",
+        "CorpusId": 64694101
+      },
+      "url": "https://www.semanticscholar.org/paper/d3d6ec1962a1b3c723e93302320f83a85cbe424b",
+      "title": "The European project Merlin on multi-gigabit, energy-efficient, ruggedized lightwave engines for advanced on-board digital processors",
+      "venue": "International Conference on Space Optics",
+      "year": 2017,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10563/105635F/The-European-project-Merlin-on-multi-gigabit-energy-efficient-ruggedized/10.1117/12.2304121.pdf",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1117/12.2304121?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1117/12.2304121, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2660577",
+          "name": "L. Stampoulidis"
+        },
+        {
+          "authorId": "2001567",
+          "name": "E. Kehayas"
+        },
+        {
+          "authorId": "30665959",
+          "name": "M. Karppinen"
+        },
+        {
+          "authorId": "2064341588",
+          "name": "A. Tanskanen"
+        },
+        {
+          "authorId": "49483491",
+          "name": "V. Heikkinen"
+        },
+        {
+          "authorId": "9122556",
+          "name": "P. Westbergh"
+        },
+        {
+          "authorId": "144975508",
+          "name": "J. Gustavsson"
+        },
+        {
+          "authorId": "1753017",
+          "name": "A. Larsson"
+        },
+        {
+          "authorId": "1400965726",
+          "name": "L. Grüner-Nielsen"
+        },
+        {
+          "authorId": "1980710",
+          "name": "M. Sotom"
+        },
+        {
+          "authorId": "2212209",
+          "name": "N. Venet"
+        },
+        {
+          "authorId": "34155422",
+          "name": "M. Ko"
+        },
+        {
+          "authorId": "2581643",
+          "name": "D. Micusík"
+        },
+        {
+          "authorId": "2855921",
+          "name": "D. Kissinger"
+        },
+        {
+          "authorId": "2064054290",
+          "name": "A. C. Ulusoy"
+        },
+        {
+          "authorId": "35591946",
+          "name": "R. King"
+        },
+        {
+          "authorId": "8886576",
+          "name": "R. Safaisini"
+        }
+      ],
+      "abstract": "Modern broadband communication networks rely on satellites to complement the terrestrial telecommunication infrastructure. Satellites accommodate global reach and enable world-wide direct broadcasting by facilitating wide access to the backbone network from remote sites or areas where the installation of ground segment infrastructure is not economically viable. At the same time the new broadband applications increase the bandwidth demands in every part of the network - and satellites are no exception. Modern telecom satellites incorporate On-Board Processors (OBP) having analogue-to-digital (ADC) and digital-to-analogue converters (DAC) at their inputs/outputs and making use of digital processing to handle hundreds of signals; as the amount of information exchanged increases, so do the physical size, mass and power consumption of the interconnects required to transfer massive amounts of data through bulk electric wires."
+    },
+    {
+      "paperId": "a9934a2478a5a0d01e215722856a2b52ab7bbc8d",
+      "externalIds": {
+        "MAG": "2535517098",
+        "DOI": "10.1109/ICASIC.2005.1611299",
+        "CorpusId": 21085376
+      },
+      "url": "https://www.semanticscholar.org/paper/a9934a2478a5a0d01e215722856a2b52ab7bbc8d",
+      "title": "High-performance and low-voltage challenges for sub-45nm microprocessor circuits",
+      "venue": "International Conference on ASIC",
+      "year": 2005,
+      "citationCount": 12,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICASIC.2005.1611299?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICASIC.2005.1611299, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2260062553",
+          "name": "Ram K. Krishnamurthy"
+        },
+        {
+          "authorId": "2131367",
+          "name": "S. Mathew"
+        },
+        {
+          "authorId": "143794851",
+          "name": "M. Anders"
+        },
+        {
+          "authorId": "1681504",
+          "name": "S. Hsu"
+        },
+        {
+          "authorId": "1703398",
+          "name": "Himanshu Kaul"
+        },
+        {
+          "authorId": "2230003880",
+          "name": "S. Borkar"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "5ae30b24be745ce94a5357e57bc9a3a620eb4179",
+      "externalIds": {
+        "MAG": "1492096376",
+        "CorpusId": 17544500
+      },
+      "url": "https://www.semanticscholar.org/paper/5ae30b24be745ce94a5357e57bc9a3a620eb4179",
+      "title": "A multiple SIMD mesh architecture for multi-channel radar processing",
+      "venue": "",
+      "year": 1996,
+      "citationCount": 20,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://hh.diva-portal.org/smash/get/diva2:239972/FULLTEXT01.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2879594",
+          "name": "M. Taveniku"
+        },
+        {
+          "authorId": "2826539",
+          "name": "A. Ahlander"
+        },
+        {
+          "authorId": "143797578",
+          "name": "M. Jonsson"
+        },
+        {
+          "authorId": "1772899",
+          "name": "B. Svensson"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b4ed572e75e0cd861a6740e9c8a5e64283163b60",
+      "externalIds": {
+        "CorpusId": 249013019
+      },
+      "url": "https://www.semanticscholar.org/paper/b4ed572e75e0cd861a6740e9c8a5e64283163b60",
+      "title": "Dual active bridge converter as a part of the DC microgrid",
+      "venue": "",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://www.imio.pw.edu.pl/idss_2/template/2nd_IDSS_book_of_abstract.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2135638668",
+          "name": "G.V. Manko"
+        },
+        {
+          "authorId": "49364791",
+          "name": "K. Anders"
+        },
+        {
+          "authorId": "118439679",
+          "name": "Bartłomiej Hryniewicki"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "41320d3803a4510c30ac4eca4f19f3270ce7e970",
+      "externalIds": {
+        "MAG": "2137096440",
+        "DOI": "10.1109/MWSCAS.1995.510193",
+        "CorpusId": 61666351
+      },
+      "url": "https://www.semanticscholar.org/paper/41320d3803a4510c30ac4eca4f19f3270ce7e970",
+      "title": "Design of a 10-bit 100 MSamples/s BiCMOS D/A converter",
+      "venue": "38th Midwest Symposium on Circuits and Systems. Proceedings",
+      "year": 1995,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://backend.orbit.dtu.dk/ws/files/4182383/J%C3%B8rgensen.pdf",
+        "status": "GREEN",
+        "license": "other-oa",
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/MWSCAS.1995.510193?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/MWSCAS.1995.510193, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2258358962",
+          "name": "Ivan Harald Jørgensen"
+        },
+        {
+          "authorId": "2258358063",
+          "name": "Holger"
+        },
+        {
+          "authorId": "70232874",
+          "name": "S. Tunheim"
+        },
+        {
+          "authorId": "2258358194",
+          "name": "Ivan Harald"
+        },
+        {
+          "authorId": "2258358287",
+          "name": "Holger Jmgensen'"
+        },
+        {
+          "authorId": "2258360942",
+          "name": "Svein Anders"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "dfd2353c5f78ad95f1bf673547412957e55f8125",
+      "externalIds": {
+        "CorpusId": 204797770
+      },
+      "url": "https://www.semanticscholar.org/paper/dfd2353c5f78ad95f1bf673547412957e55f8125",
+      "title": "D ec 1 99 7 Stock market crashes are outliers",
+      "venue": "",
+      "year": 2008,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://ia800707.us.archive.org/34/items/arxiv-cond-mat9712005/cond-mat9712005.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144298381",
+          "name": "A. Johansen"
+        },
+        {
+          "authorId": "1744895",
+          "name": "D. Sornette"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "5995afd5ac373ec66bce0cc98aca281faabdce2e",
+      "externalIds": {
+        "PubMedCentral": "7295264",
+        "DOI": "10.1126/science.aay6690",
+        "CorpusId": 91989689,
+        "PubMed": "32193296"
+      },
+      "url": "https://www.semanticscholar.org/paper/5995afd5ac373ec66bce0cc98aca281faabdce2e",
+      "title": "The genetic architecture of the human cerebral cortex",
+      "venue": "Science",
+      "year": 2020,
+      "citationCount": 777,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://cris.maastrichtuniversity.nl/en/publications/5b0fcd03-b4a2-4e58-b39a-c2a95029618a",
+        "status": "GREEN",
+        "license": "other-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7295264, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4223474",
+          "name": "K. Grasby"
+        },
+        {
+          "authorId": "1721831",
+          "name": "N. Jahanshad"
+        },
+        {
+          "authorId": "3939296",
+          "name": "J. Painter"
+        },
+        {
+          "authorId": "1398192562",
+          "name": "L. Colodro-Conde"
+        },
+        {
+          "authorId": "5422959",
+          "name": "J. Bralten"
+        },
+        {
+          "authorId": "143978242",
+          "name": "D. Hibar"
+        },
+        {
+          "authorId": "27973798",
+          "name": "P. Lind"
+        },
+        {
+          "authorId": "48073925",
+          "name": "F. Pizzagalli"
+        },
+        {
+          "authorId": "40543893",
+          "name": "C. Ching"
+        },
+        {
+          "authorId": "49644071",
+          "name": "M. McMahon"
+        },
+        {
+          "authorId": "14211703",
+          "name": "N. Shatokhina"
+        },
+        {
+          "authorId": "46206289",
+          "name": "L. Zsembik"
+        },
+        {
+          "authorId": "2775316",
+          "name": "I. Agartz"
+        },
+        {
+          "authorId": "4734000",
+          "name": "S. Alhusaini"
+        },
+        {
+          "authorId": "2374245",
+          "name": "M. Almeida"
+        },
+        {
+          "authorId": "3285214",
+          "name": "D. Alnæs"
+        },
+        {
+          "authorId": "2095634",
+          "name": "I. Amlien"
+        },
+        {
+          "authorId": "2192186",
+          "name": "M. Andersson"
+        },
+        {
+          "authorId": "2383596",
+          "name": "T. Ard"
+        },
+        {
+          "authorId": "143868086",
+          "name": "N. Armstrong"
+        },
+        {
+          "authorId": "1390156553",
+          "name": "A. Ashley-Koch"
+        },
+        {
+          "authorId": "40228707",
+          "name": "M. Bernard"
+        },
+        {
+          "authorId": "2407572",
+          "name": "R. Brouwer"
+        },
+        {
+          "authorId": "114959650",
+          "name": "Elizabeth E. L. Buimer"
+        },
+        {
+          "authorId": "49543368",
+          "name": "R. Bülow"
+        },
+        {
+          "authorId": "48954161",
+          "name": "C. Bürger"
+        },
+        {
+          "authorId": "1891169",
+          "name": "D. Cannon"
+        },
+        {
+          "authorId": "143992356",
+          "name": "M. Chakravarty"
+        },
+        {
+          "authorId": "47261232",
+          "name": "Qiang Chen"
+        },
+        {
+          "authorId": "51011982",
+          "name": "J. Cheung"
+        },
+        {
+          "authorId": "21260660",
+          "name": "B. Couvy-Duchesne"
+        },
+        {
+          "authorId": "143619169",
+          "name": "A. Dale"
+        },
+        {
+          "authorId": "5073154",
+          "name": "S. Dalvie"
+        },
+        {
+          "authorId": "39702686",
+          "name": "T. K. de Araujo"
+        },
+        {
+          "authorId": "113225270",
+          "name": "G. D. de Zubicaray"
+        },
+        {
+          "authorId": "50048869",
+          "name": "S. D. de Zwarte"
+        },
+        {
+          "authorId": "2664504",
+          "name": "A. Braber"
+        },
+        {
+          "authorId": "3437679",
+          "name": "N. T. Doan"
+        },
+        {
+          "authorId": "6219355",
+          "name": "K. Dohm"
+        },
+        {
+          "authorId": "144671707",
+          "name": "S. Ehrlich"
+        },
+        {
+          "authorId": "118088521",
+          "name": "Hannah-Ruth Engelbrecht"
+        },
+        {
+          "authorId": "2716428",
+          "name": "S. Erk"
+        },
+        {
+          "authorId": "32637368",
+          "name": "C. Fan"
+        },
+        {
+          "authorId": "5348264",
+          "name": "I. Fedko"
+        },
+        {
+          "authorId": "16409122",
+          "name": "S. Foley"
+        },
+        {
+          "authorId": "2674644",
+          "name": "J. Ford"
+        },
+        {
+          "authorId": "3001102",
+          "name": "M. Fukunaga"
+        },
+        {
+          "authorId": "4711827",
+          "name": "M. Garrett"
+        },
+        {
+          "authorId": "143966206",
+          "name": "T. Ge"
+        },
+        {
+          "authorId": "4460394",
+          "name": "S. Giddaluru"
+        },
+        {
+          "authorId": "34033380",
+          "name": "A. Goldman"
+        },
+        {
+          "authorId": "31706203",
+          "name": "N. Groenewold"
+        },
+        {
+          "authorId": "2519785",
+          "name": "D. Grotegerd"
+        },
+        {
+          "authorId": "9947308",
+          "name": "T. Gurholt"
+        },
+        {
+          "authorId": "1740974",
+          "name": "Boris Gutman"
+        },
+        {
+          "authorId": "144776648",
+          "name": "N. Hansell"
+        },
+        {
+          "authorId": "21613663",
+          "name": "M. Harris"
+        },
+        {
+          "authorId": "40402179",
+          "name": "Marc Harrison"
+        },
+        {
+          "authorId": "3925483",
+          "name": "C. Haswell"
+        },
+        {
+          "authorId": "144464149",
+          "name": "M. Hauser"
+        },
+        {
+          "authorId": "2029153",
+          "name": "D. Heslenfeld"
+        },
+        {
+          "authorId": "31763320",
+          "name": "D. Hoehn"
+        },
+        {
+          "authorId": "51469018",
+          "name": "L. Holleran"
+        },
+        {
+          "authorId": "3445298",
+          "name": "M. Hoogman"
+        },
+        {
+          "authorId": "8540513",
+          "name": "J. Hottenga"
+        },
+        {
+          "authorId": "144952432",
+          "name": "M. Ikeda"
+        },
+        {
+          "authorId": "3182428",
+          "name": "Deborah Janowitz"
+        },
+        {
+          "authorId": "5577131",
+          "name": "I. Jansen"
+        },
+        {
+          "authorId": "145142669",
+          "name": "T. Jia"
+        },
+        {
+          "authorId": "3709781",
+          "name": "C. Jockwitz"
+        },
+        {
+          "authorId": "1800112",
+          "name": "R. Kanai"
+        },
+        {
+          "authorId": "1925429",
+          "name": "S. Karama"
+        },
+        {
+          "authorId": "2298976404",
+          "name": "Dalia Kasperavičiūtė"
+        },
+        {
+          "authorId": "119498015",
+          "name": "T. Kaufmann"
+        },
+        {
+          "authorId": "152775544",
+          "name": "S. Kelly"
+        },
+        {
+          "authorId": "7781453",
+          "name": "M. Kikuchi"
+        },
+        {
+          "authorId": "37118821",
+          "name": "M. Klein"
+        },
+        {
+          "authorId": "145350156",
+          "name": "M. Knapp"
+        },
+        {
+          "authorId": "3010182",
+          "name": "A. Knodt"
+        },
+        {
+          "authorId": "48114807",
+          "name": "B. Krämer"
+        },
+        {
+          "authorId": "46405938",
+          "name": "T. Lancaster"
+        },
+        {
+          "authorId": "1388735209",
+          "name": "Phil H. Lee"
+        },
+        {
+          "authorId": "2613491",
+          "name": "T. Lett"
+        },
+        {
+          "authorId": "37313915",
+          "name": "Lindsay B. Lewis"
+        },
+        {
+          "authorId": "1397952448",
+          "name": "Í. Lopes-Cendes"
+        },
+        {
+          "authorId": "144895887",
+          "name": "M. Luciano"
+        },
+        {
+          "authorId": "2912740",
+          "name": "F. Macciardi"
+        },
+        {
+          "authorId": "50104860",
+          "name": "A. Marquand"
+        },
+        {
+          "authorId": "48943622",
+          "name": "S. Mathias"
+        },
+        {
+          "authorId": "2585092",
+          "name": "T. Melzer"
+        },
+        {
+          "authorId": "6180232",
+          "name": "Y. Milaneschi"
+        },
+        {
+          "authorId": "1400495425",
+          "name": "Nazanin Mirza-Schreiber"
+        },
+        {
+          "authorId": "144139715",
+          "name": "J. Moreira"
+        },
+        {
+          "authorId": "2354059",
+          "name": "Thomas W. Mühleisen"
+        },
+        {
+          "authorId": "1394643939",
+          "name": "B. Müller-Myhsok"
+        },
+        {
+          "authorId": "4444162",
+          "name": "P. Najt"
+        },
+        {
+          "authorId": "50022563",
+          "name": "Soichiro Nakahara"
+        },
+        {
+          "authorId": "2177008",
+          "name": "K. Nho"
+        },
+        {
+          "authorId": "38140977",
+          "name": "Loes M. Olde Loohuis"
+        },
+        {
+          "authorId": "7642617",
+          "name": "D. Orfanos"
+        },
+        {
+          "authorId": "145924880",
+          "name": "J. Pearson"
+        },
+        {
+          "authorId": "4970218",
+          "name": "Toni L. Pitcher"
+        },
+        {
+          "authorId": "48364407",
+          "name": "B. Pütz"
+        },
+        {
+          "authorId": "3422473",
+          "name": "A. Ragothaman"
+        },
+        {
+          "authorId": "2681946",
+          "name": "Faisal M. Rashid"
+        },
+        {
+          "authorId": "1810485",
+          "name": "R. Redlich"
+        },
+        {
+          "authorId": "3461347",
+          "name": "C. Reinbold"
+        },
+        {
+          "authorId": "5595453",
+          "name": "J. Repple"
+        },
+        {
+          "authorId": "29768139",
+          "name": "Geneviève Richard"
+        },
+        {
+          "authorId": "49508660",
+          "name": "Brandalyn C. Riedel"
+        },
+        {
+          "authorId": "2678448",
+          "name": "S. Risacher"
+        },
+        {
+          "authorId": "153547064",
+          "name": "C. Rocha"
+        },
+        {
+          "authorId": "3422894",
+          "name": "N. R. Mota"
+        },
+        {
+          "authorId": "4444689",
+          "name": "Lauren E. Salminen"
+        },
+        {
+          "authorId": "38883693",
+          "name": "A. Saremi"
+        },
+        {
+          "authorId": "7992909",
+          "name": "A. Saykin"
+        },
+        {
+          "authorId": "82013329",
+          "name": "Fenja Schlag"
+        },
+        {
+          "authorId": "3411113",
+          "name": "L. Schmaal"
+        },
+        {
+          "authorId": "50276763",
+          "name": "P. Schofield"
+        },
+        {
+          "authorId": "4309159",
+          "name": "R. Secolin"
+        },
+        {
+          "authorId": "49695168",
+          "name": "Chin Yang Shapland"
+        },
+        {
+          "authorId": "38862163",
+          "name": "Li Shen"
+        },
+        {
+          "authorId": "3728359",
+          "name": "Jean Shin"
+        },
+        {
+          "authorId": "144182886",
+          "name": "E. Shumskaya"
+        },
+        {
+          "authorId": "3693852",
+          "name": "I. Sønderby"
+        },
+        {
+          "authorId": "2329938",
+          "name": "E. Sprooten"
+        },
+        {
+          "authorId": "4118897",
+          "name": "Lachlan T. Strike"
+        },
+        {
+          "authorId": "2873777",
+          "name": "K. Tansey"
+        },
+        {
+          "authorId": "2075822",
+          "name": "A. Teumer"
+        },
+        {
+          "authorId": "2030072",
+          "name": "A. Thalamuthu"
+        },
+        {
+          "authorId": "24074573",
+          "name": "S. Thomopoulos"
+        },
+        {
+          "authorId": "1388919790",
+          "name": "D. Tordesillas-Gutiérrez"
+        },
+        {
+          "authorId": "144600520",
+          "name": "J. Turner"
+        },
+        {
+          "authorId": "38963834",
+          "name": "A. Uhlmann"
+        },
+        {
+          "authorId": "89869537",
+          "name": "C. Vallerga"
+        },
+        {
+          "authorId": "1601335908",
+          "name": "Dennis van der Meer"
+        },
+        {
+          "authorId": "3708974",
+          "name": "M. V. van Donkelaar"
+        },
+        {
+          "authorId": "73984709",
+          "name": "L. V. Eijk"
+        },
+        {
+          "authorId": "2986175",
+          "name": "T. V. van Erp"
+        },
+        {
+          "authorId": "5286876",
+          "name": "N. V. van Haren"
+        },
+        {
+          "authorId": "2555319",
+          "name": "D. Rooij"
+        },
+        {
+          "authorId": "2249391",
+          "name": "M. van Tol"
+        },
+        {
+          "authorId": "50075325",
+          "name": "J. Veldink"
+        },
+        {
+          "authorId": "51059359",
+          "name": "Ellen Verhoef"
+        },
+        {
+          "authorId": "40563633",
+          "name": "E. Walton"
+        },
+        {
+          "authorId": "2115937603",
+          "name": "Yunpeng Wang"
+        },
+        {
+          "authorId": "144585035",
+          "name": "J. Wardlaw"
+        },
+        {
+          "authorId": "145225263",
+          "name": "W. Wen"
+        },
+        {
+          "authorId": "2765463",
+          "name": "L. Westlye"
+        },
+        {
+          "authorId": "3411427",
+          "name": "C. Whelan"
+        },
+        {
+          "authorId": "31671539",
+          "name": "S. Witt"
+        },
+        {
+          "authorId": "2138780",
+          "name": "K. Wittfeld"
+        },
+        {
+          "authorId": "50440314",
+          "name": "C. Wolf"
+        },
+        {
+          "authorId": "4909114",
+          "name": "T. Wolfers"
+        },
+        {
+          "authorId": "51162341",
+          "name": "Clarissa Yasuda"
+        },
+        {
+          "authorId": "6349695",
+          "name": "D. Zaremba"
+        },
+        {
+          "authorId": "2109373027",
+          "name": "Zuo Zhang"
+        },
+        {
+          "authorId": "4310512",
+          "name": "A. Zhu"
+        },
+        {
+          "authorId": "144690886",
+          "name": "M. Zwiers"
+        },
+        {
+          "authorId": "2164346",
+          "name": "E. Artiges"
+        },
+        {
+          "authorId": "2930581",
+          "name": "Amelia A. Assareh"
+        },
+        {
+          "authorId": "1397990400",
+          "name": "R. Ayesa‐Arriola"
+        },
+        {
+          "authorId": "2376630",
+          "name": "A. Belger"
+        },
+        {
+          "authorId": "46494872",
+          "name": "C. L. Brandt"
+        },
+        {
+          "authorId": "145388016",
+          "name": "Gregory G. Brown"
+        },
+        {
+          "authorId": "1994312",
+          "name": "S. Cichon"
+        },
+        {
+          "authorId": "2243579",
+          "name": "J. Curran"
+        },
+        {
+          "authorId": "35037557",
+          "name": "G. Davies"
+        },
+        {
+          "authorId": "2604128",
+          "name": "F. Degenhardt"
+        },
+        {
+          "authorId": "2793751",
+          "name": "B. Dietsche"
+        },
+        {
+          "authorId": "144837550",
+          "name": "S. Djurovic"
+        },
+        {
+          "authorId": "144925805",
+          "name": "C. Doherty"
+        },
+        {
+          "authorId": "114036711",
+          "name": "R. Espiritu"
+        },
+        {
+          "authorId": "1398926410",
+          "name": "D. Garijo"
+        },
+        {
+          "authorId": "145526918",
+          "name": "Y. Gil"
+        },
+        {
+          "authorId": "46384297",
+          "name": "P. Gowland"
+        },
+        {
+          "authorId": "24921137",
+          "name": "R. Green"
+        },
+        {
+          "authorId": "2070137836",
+          "name": "A. Häusler"
+        },
+        {
+          "authorId": "3128416",
+          "name": "W. Heindel"
+        },
+        {
+          "authorId": "34474112",
+          "name": "B. Ho"
+        },
+        {
+          "authorId": "145328545",
+          "name": "W. Hoffmann"
+        },
+        {
+          "authorId": "2792499",
+          "name": "F. Holsboer"
+        },
+        {
+          "authorId": "6407765",
+          "name": "G. Homuth"
+        },
+        {
+          "authorId": "3349968",
+          "name": "N. Hosten"
+        },
+        {
+          "authorId": "2416914779",
+          "name": "C. Jack"
+        },
+        {
+          "authorId": "13304682",
+          "name": "Mihyun Jang"
+        },
+        {
+          "authorId": "79986034",
+          "name": "A. Jansen"
+        },
+        {
+          "authorId": "7792921",
+          "name": "Knut K. Kolskår"
+        },
+        {
+          "authorId": "4442260",
+          "name": "S. Koops"
+        },
+        {
+          "authorId": "2280365",
+          "name": "A. Krug"
+        },
+        {
+          "authorId": "2753234",
+          "name": "K. Lim"
+        },
+        {
+          "authorId": "32423316",
+          "name": "J. Luykx"
+        },
+        {
+          "authorId": "2082340",
+          "name": "D. Mathalon"
+        },
+        {
+          "authorId": "48154686",
+          "name": "K. Mather"
+        },
+        {
+          "authorId": "2715066",
+          "name": "V. Mattay"
+        },
+        {
+          "authorId": "2057713745",
+          "name": "Sarah M. Matthews"
+        },
+        {
+          "authorId": "1601337895",
+          "name": "Jaqueline Mayoral Van Son"
+        },
+        {
+          "authorId": "145091820",
+          "name": "S. McEwen"
+        },
+        {
+          "authorId": "2045139",
+          "name": "I. Melle"
+        },
+        {
+          "authorId": "143681469",
+          "name": "D. Morris"
+        },
+        {
+          "authorId": "2257460569",
+          "name": "B. Mueller"
+        },
+        {
+          "authorId": "3082949",
+          "name": "M. Nauck"
+        },
+        {
+          "authorId": "3272909",
+          "name": "J. Nordvik"
+        },
+        {
+          "authorId": "2522501",
+          "name": "M. Nöthen"
+        },
+        {
+          "authorId": "123132827",
+          "name": "D. O'Leary"
+        },
+        {
+          "authorId": "6492520",
+          "name": "N. Opel"
+        },
+        {
+          "authorId": "152592486",
+          "name": "M. Paillère Martinot"
+        },
+        {
+          "authorId": "153465418",
+          "name": "G. Pike"
+        },
+        {
+          "authorId": "145551612",
+          "name": "Adrian Preda"
+        },
+        {
+          "authorId": "6884637",
+          "name": "E. Quinlan"
+        },
+        {
+          "authorId": "1712372",
+          "name": "V. Ratnakar"
+        },
+        {
+          "authorId": "2274297",
+          "name": "S. Reppermund"
+        },
+        {
+          "authorId": "144453962",
+          "name": "V. Steen"
+        },
+        {
+          "authorId": "39714183",
+          "name": "F. Torres"
+        },
+        {
+          "authorId": "2605579",
+          "name": "D. Veltman"
+        },
+        {
+          "authorId": "2831672",
+          "name": "J. Voyvodic"
+        },
+        {
+          "authorId": "143952546",
+          "name": "R. Whelan"
+        },
+        {
+          "authorId": "34799607",
+          "name": "T. White"
+        },
+        {
+          "authorId": "1906590",
+          "name": "H. Yamamori"
+        },
+        {
+          "authorId": "144859462",
+          "name": "H. Adams"
+        },
+        {
+          "authorId": "4871984",
+          "name": "J. Bis"
+        },
+        {
+          "authorId": "4616994",
+          "name": "S. Debette"
+        },
+        {
+          "authorId": "2470295",
+          "name": "C. Decarli"
+        },
+        {
+          "authorId": "2573222",
+          "name": "M. Fornage"
+        },
+        {
+          "authorId": "2967159",
+          "name": "V. Gudnason"
+        },
+        {
+          "authorId": "49707340",
+          "name": "E. Hofer"
+        },
+        {
+          "authorId": "145560501",
+          "name": "M. Ikram"
+        },
+        {
+          "authorId": "144170749",
+          "name": "L. Launer"
+        },
+        {
+          "authorId": "144891120",
+          "name": "W. Longstreth"
+        },
+        {
+          "authorId": "2400866847",
+          "name": "O. Lopez"
+        },
+        {
+          "authorId": "2946115",
+          "name": "B. Mazoyer"
+        },
+        {
+          "authorId": "2394858",
+          "name": "T. Mosley"
+        },
+        {
+          "authorId": "4683073",
+          "name": "G. Roshchupkin"
+        },
+        {
+          "authorId": "2873406",
+          "name": "C. Satizabal"
+        },
+        {
+          "authorId": "2366110268",
+          "name": "R. Schmidt"
+        },
+        {
+          "authorId": "48192190",
+          "name": "S. Seshadri"
+        },
+        {
+          "authorId": "144113504",
+          "name": "Qiong Yang"
+        },
+        {
+          "authorId": "2140233888",
+          "name": "M. Alvim"
+        },
+        {
+          "authorId": "2064665913",
+          "name": "D. Ames"
+        },
+        {
+          "authorId": "145901593",
+          "name": "T. Anderson"
+        },
+        {
+          "authorId": "1777021",
+          "name": "O. Andreassen"
+        },
+        {
+          "authorId": "1397907875",
+          "name": "A. Arias-Vásquez"
+        },
+        {
+          "authorId": "2014948",
+          "name": "M. Bastin"
+        },
+        {
+          "authorId": "144604357",
+          "name": "B. Baune"
+        },
+        {
+          "authorId": "2444058",
+          "name": "J. Blangero"
+        },
+        {
+          "authorId": "2234732747",
+          "name": "D. Boomsma"
+        },
+        {
+          "authorId": "2914632",
+          "name": "H. Brodaty"
+        },
+        {
+          "authorId": "32855257",
+          "name": "H. Brunner"
+        },
+        {
+          "authorId": "1761695",
+          "name": "R. Buckner"
+        },
+        {
+          "authorId": "2376959",
+          "name": "J. Buitelaar"
+        },
+        {
+          "authorId": "2658888",
+          "name": "J. Bustillo"
+        },
+        {
+          "authorId": "1962195",
+          "name": "W. Cahn"
+        },
+        {
+          "authorId": "144048760",
+          "name": "V. Calhoun"
+        },
+        {
+          "authorId": "1869499",
+          "name": "X. Caseras"
+        },
+        {
+          "authorId": "1749053",
+          "name": "S. Caspers"
+        },
+        {
+          "authorId": "4584073",
+          "name": "G. Cavalleri"
+        },
+        {
+          "authorId": "144366416",
+          "name": "F. Cendes"
+        },
+        {
+          "authorId": "1390148095",
+          "name": "B. Crespo-Facorro"
+        },
+        {
+          "authorId": "1400261193",
+          "name": "J. Dalrymple-Alford"
+        },
+        {
+          "authorId": "3161510",
+          "name": "U. Dannlowski"
+        },
+        {
+          "authorId": "144871738",
+          "name": "E. D. de Geus"
+        },
+        {
+          "authorId": "145805110",
+          "name": "I. Deary"
+        },
+        {
+          "authorId": "6168668",
+          "name": "C. Depondt"
+        },
+        {
+          "authorId": "2175749",
+          "name": "S. Desrivières"
+        },
+        {
+          "authorId": "46301965",
+          "name": "G. Donohoe"
+        },
+        {
+          "authorId": "2874733",
+          "name": "T. Espeseth"
+        },
+        {
+          "authorId": "144700646",
+          "name": "G. Fernández"
+        },
+        {
+          "authorId": "145917686",
+          "name": "S. Fisher"
+        },
+        {
+          "authorId": "2383633",
+          "name": "H. Flor"
+        },
+        {
+          "authorId": "1954486",
+          "name": "A. Forstner"
+        },
+        {
+          "authorId": "6148614",
+          "name": "C. Francks"
+        },
+        {
+          "authorId": "2692240",
+          "name": "B. Franke"
+        },
+        {
+          "authorId": "2355199",
+          "name": "D. Glahn"
+        },
+        {
+          "authorId": "1950749",
+          "name": "R. Gollub"
+        },
+        {
+          "authorId": "2070718",
+          "name": "H. Grabe"
+        },
+        {
+          "authorId": "3077285",
+          "name": "O. Gruber"
+        },
+        {
+          "authorId": "3022332",
+          "name": "A. Håberg"
+        },
+        {
+          "authorId": "1975714",
+          "name": "A. Hariri"
+        },
+        {
+          "authorId": "38686825",
+          "name": "C. Hartman"
+        },
+        {
+          "authorId": "145507275",
+          "name": "R. Hashimoto"
+        },
+        {
+          "authorId": "50665590",
+          "name": "A. Heinz"
+        },
+        {
+          "authorId": "145613288",
+          "name": "M. Hillegers"
+        },
+        {
+          "authorId": "6493612",
+          "name": "P. Hoekstra"
+        },
+        {
+          "authorId": "35609365",
+          "name": "A. Holmes"
+        },
+        {
+          "authorId": "143905189",
+          "name": "L. Hong"
+        },
+        {
+          "authorId": "2426627",
+          "name": "W. Hopkins"
+        },
+        {
+          "authorId": "134061354",
+          "name": "H. H. Hulshoff Pol"
+        },
+        {
+          "authorId": "3127422",
+          "name": "T. Jernigan"
+        },
+        {
+          "authorId": "143633314",
+          "name": "E. Jönsson"
+        },
+        {
+          "authorId": "2893526",
+          "name": "R. Kahn"
+        },
+        {
+          "authorId": "2544973",
+          "name": "M. Kennedy"
+        },
+        {
+          "authorId": "2304485",
+          "name": "T. Kircher"
+        },
+        {
+          "authorId": "144886405",
+          "name": "P. Kochunov"
+        },
+        {
+          "authorId": "6615361",
+          "name": "J. Kwok"
+        },
+        {
+          "authorId": "8094985",
+          "name": "S. Hellard"
+        },
+        {
+          "authorId": "2241270535",
+          "name": "N. Martin"
+        },
+        {
+          "authorId": "2451948",
+          "name": "J. Martinot"
+        },
+        {
+          "authorId": "2393210996",
+          "name": "C. Mcdonald"
+        },
+        {
+          "authorId": "1691333",
+          "name": "K. Mcmahon"
+        },
+        {
+          "authorId": "1397954143",
+          "name": "A. Meyer-Lindenberg"
+        },
+        {
+          "authorId": "2001160",
+          "name": "R. Morey"
+        },
+        {
+          "authorId": "144688889",
+          "name": "L. Nyberg"
+        },
+        {
+          "authorId": "6819240",
+          "name": "J. Oosterlaan"
+        },
+        {
+          "authorId": "3359407",
+          "name": "R. Ophoff"
+        },
+        {
+          "authorId": "2328876",
+          "name": "T. Paus"
+        },
+        {
+          "authorId": "3211950",
+          "name": "Z. Pausova"
+        },
+        {
+          "authorId": "145365790",
+          "name": "B. Penninx"
+        },
+        {
+          "authorId": "144497702",
+          "name": "T. Polderman"
+        },
+        {
+          "authorId": "145866943",
+          "name": "D. Posthuma"
+        },
+        {
+          "authorId": "3100404",
+          "name": "M. Rietschel"
+        },
+        {
+          "authorId": "2294317",
+          "name": "J. Roffman"
+        },
+        {
+          "authorId": "46682378",
+          "name": "L. Rowland"
+        },
+        {
+          "authorId": "145541399",
+          "name": "P. Sachdev"
+        },
+        {
+          "authorId": "2686432",
+          "name": "P. Sämann"
+        },
+        {
+          "authorId": "1904764",
+          "name": "G. Schumann"
+        },
+        {
+          "authorId": "35624862",
+          "name": "K. Sim"
+        },
+        {
+          "authorId": "143734722",
+          "name": "S. Sisodiya"
+        },
+        {
+          "authorId": "1880815",
+          "name": "J. Smoller"
+        },
+        {
+          "authorId": "2188639",
+          "name": "I. Sommer"
+        },
+        {
+          "authorId": "52229562",
+          "name": "B. S. Pourcain"
+        },
+        {
+          "authorId": "145675071",
+          "name": "D. Stein"
+        },
+        {
+          "authorId": "1699926",
+          "name": "A. Toga"
+        },
+        {
+          "authorId": "143764000",
+          "name": "J. Trollor"
+        },
+        {
+          "authorId": "1975131309",
+          "name": "Nic J. A. der Wee"
+        },
+        {
+          "authorId": "1601342628",
+          "name": "Dennis van ’t Ent"
+        },
+        {
+          "authorId": "2771544",
+          "name": "H. Völzke"
+        },
+        {
+          "authorId": "144278023",
+          "name": "H. Walter"
+        },
+        {
+          "authorId": "32673318",
+          "name": "B. Weber"
+        },
+        {
+          "authorId": "144435254",
+          "name": "D. Weinberger"
+        },
+        {
+          "authorId": "2235489201",
+          "name": "M. Wright"
+        },
+        {
+          "authorId": "7934506",
+          "name": "J. Zhou"
+        },
+        {
+          "authorId": "32215861",
+          "name": "J. Stein"
+        },
+        {
+          "authorId": "2412795623",
+          "name": "P. Thompson"
+        },
+        {
+          "authorId": "145056501",
+          "name": "S. Medland"
+        }
+      ],
+      "abstract": "Genetic determination of cortex structure The human cerebral cortex is important for cognition, and it is of interest to see how genetic variants affect its structure. Grasby et al. combined genetic data with brain magnetic resonance imaging from more than 50,000 people to generate a genome-wide analysis of how human genetic variation influences human cortical surface area and thickness. From this analysis, they identified variants associated with cortical structure, some of which affect signaling and gene expression. They observed overlap between genetic loci affecting cortical structure, brain development, and neuropsychiatric disease, and the correlation between these phenotypes is of interest for further study. Science, this issue p. eaay6690 Common genetic variation is associated with interindividual variation in the structure of the cortex of the human brain. INTRODUCTION The cerebral cortex underlies our complex cognitive capabilities. Variations in human cortical surface area and thickness are associated with neurological, psychological, and behavioral traits and can be measured in vivo by magnetic resonance imaging (MRI). Studies in model organisms have identified genes that influence cortical structure, but little is known about common genetic variants that affect human cortical structure. RATIONALE To identify genetic variants associated with human cortical structure at both global and regional levels, we conducted a genome-wide association meta-analysis of brain MRI data from 51,665 individuals across 60 cohorts. We analyzed the surface area and average thickness of the whole cortex and 34 cortical regions with known functional specializations. RESULTS We identified 306 nominally genome-wide significant loci (P < 5 × 10−8) associated with cortical structure in a discovery sample of 33,992 participants of European ancestry. Of the 299 loci for which replication data were available, 241 loci influencing surface area and 14 influencing thickness remained significant after replication, with 199 loci passing multiple testing correction (P < 8.3 × 10−10; 187 influencing surface area and 12 influencing thickness). Common genetic variants explained 34% (SE = 3%) of the variation in total surface area and 26% (SE = 2%) in average thickness; surface area and thickness showed a negative genetic correlation (rG = −0.32, SE = 0.05, P = 6.5 × 10−12), which suggests that genetic influences have opposing effects on surface area and thickness. Bioinformatic analyses showed that total surface area is influenced by genetic variants that alter gene regulatory activity in neural progenitor cells during fetal development. By contrast, average thickness is influenced by active regulatory elements in adult brain samples, which may reflect processes that occur after mid-fetal development, such as myelination, branching, or pruning. When considered together, these results support the radial unit hypothesis that different developmental mechanisms promote surface area expansion and increases in thickness. To identify specific genetic influences on individual cortical regions, we controlled for global measures (total surface area or average thickness) in the regional analyses. After multiple testing correction, we identified 175 loci that influence regional surface area and 10 that influence regional thickness. Loci that affect regional surface area cluster near genes involved in the Wnt signaling pathway, which is known to influence areal identity. We observed significant positive genetic correlations and evidence of bidirectional causation of total surface area with both general cognitive functioning and educational attainment. We found additional positive genetic correlations between total surface area and Parkinson’s disease but did not find evidence of causation. Negative genetic correlations were evident between total surface area and insomnia, attention deficit hyperactivity disorder, depressive symptoms, major depressive disorder, and neuroticism. CONCLUSION This large-scale collaborative work enhances our understanding of the genetic architecture of the human cerebral cortex and its regional patterning. The highly polygenic architecture of the cortex suggests that distinct genes are involved in the development of specific cortical areas. Moreover, we find evidence that brain structure is a key phenotype along the causal pathway that leads from genetic variation to differences in general cognitive function. Identifying genetic influences on human cortical structure. (A) Measurement of cortical surface area and thickness from MRI. (B) Genomic locations of common genetic variants that influence global and regional cortical structure. (C) Our results support the radial unit hypothesis that the expansion of cortical surface area is driven by proliferating neural progenitor cells. (D) Cortical surface area shows genetic correlation with psychiatric and cognitive traits. Error bars indicate SE. IMAGE CREDITS: (A) K. COURTNEY; (C) M. R. GLASS The cerebral cortex underlies our complex cognitive capabilities, yet little is known about the specific genetic loci that influence human cortical structure. To identify genetic variants that affect cortical structure, we conducted a genome-wide association meta-analysis of brain magnetic resonance imaging data from 51,665 individuals. We analyzed the surface area and average thickness of the whole cortex and 34 regions with known functional specializations. We identified 199 significant loci and found significant enrichment for loci influencing total surface area within regulatory elements that are active during prenatal cortical development, supporting the radial unit hypothesis. Loci that affect regional surface area cluster near genes in Wnt signaling pathways, which influence progenitor expansion and areal identity. Variation in cortical structure is genetically correlated with cognitive function, Parkinson’s disease, insomnia, depression, neuroticism, and attention deficit hyperactivity disorder."
+    },
+    {
+      "paperId": "62cb7c89bef7b81c4589283a4fae5c68aecb8847",
+      "externalIds": {
+        "MAG": "2109049952",
+        "DOI": "10.1002/1097-0193(200012)11:4<249::AID-HBM20>3.0.CO;2-5",
+        "CorpusId": 15778219,
+        "PubMed": "11144754"
+      },
+      "url": "https://www.semanticscholar.org/paper/62cb7c89bef7b81c4589283a4fae5c68aecb8847",
+      "title": "Estimation and detection of event‐related fMRI signals with temporally correlated noise: A statistically efficient and unbiased approach",
+      "venue": "Human Brain Mapping",
+      "year": 2000,
+      "citationCount": 249,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc6872094?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/1097-0193(200012)11:4<249::AID-HBM20>3.0.CO;2-5?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/1097-0193(200012)11:4<249::AID-HBM20>3.0.CO;2-5, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6322308",
+          "name": "M. Burock"
+        },
+        {
+          "authorId": "2060816588",
+          "name": "A. M. Dale"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

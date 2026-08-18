@@ -1,0 +1,41 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "32661938"
+    ],
+    "translationset": [
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "emotional",
+        "to": "\"emoting\"[All Fields] OR \"emotion's\"[All Fields] OR \"emotions\"[MeSH Terms] OR \"emotions\"[All Fields] OR \"emotion\"[All Fields] OR \"emotional\"[All Fields] OR \"emotive\"[All Fields]"
+      },
+      {
+        "from": "dysregulation",
+        "to": "\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]"
+      },
+      {
+        "from": "sleep disorders",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DMN\"[All Fields] AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"emoting\"[All Fields] OR \"emotion s\"[All Fields] OR \"emotions\"[MeSH Terms] OR \"emotions\"[All Fields] OR \"emotion\"[All Fields] OR \"emotional\"[All Fields] OR \"emotive\"[All Fields]) AND (\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

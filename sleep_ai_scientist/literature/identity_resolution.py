@@ -97,8 +97,10 @@ def compute_fingerprint(record: LiteratureRecord | Paper) -> dict[str, Any]:
         "pmid": normalize_pmid(getattr(record, "pmid", None)),
         "pmcid": normalize_pmcid(getattr(record, "pmcid", None)),
         "semantic_scholar_id": str(getattr(record, "semantic_scholar_id", "") or "").strip(),
-        "openalex_id": str(getattr(record, "openalex_id", "") or "").strip(),
+        "openalex_id": _openalex_id(record),
         "crossref_id": str(getattr(record, "crossref_id", "") or "").strip(),
+        "provider_id": str(getattr(record, "provider_id", "") or "").strip(),
+        "url": str(getattr(record, "url", "") or "").strip(),
         "title_normalized": normalize_title(getattr(record, "title", None)),
         "title_hash": compute_title_hash(getattr(record, "title", None)),
         "journal_normalized": normalize_journal(getattr(record, "journal", None)),
@@ -121,11 +123,29 @@ def assign_canonical_paper_id(record: LiteratureRecord | dict[str, Any]) -> str:
     s2_id = str(getter("semantic_scholar_id", "") or "").strip()
     if s2_id:
         return f"s2:{s2_id}"
-    openalex_id = str(getter("openalex_id", "") or "").strip()
+    openalex_id = _openalex_id(record)
     if openalex_id:
         return f"openalex:{openalex_id}"
+    provider = str(getter("provider", "") or getter("source", "") or "").strip().lower()
+    provider_id = str(getter("provider_id", "") or "").strip()
+    if provider and provider_id:
+        return f"{provider}:{provider_id}"
     title_hash = compute_title_hash(str(getter("title", "") or ""))
     return f"title:{title_hash}" if title_hash else f"title:{hashlib.sha1(json.dumps(dict(record) if isinstance(record, dict) else record.model_dump(mode='json'), sort_keys=True).encode('utf-8')).hexdigest()}"
+
+
+def _openalex_id(record: LiteratureRecord | Paper | dict[str, Any]) -> str:
+    getter = record.get if isinstance(record, dict) else lambda key, default=None: getattr(record, key, default)
+    explicit = str(getter("openalex_id", "") or "").strip()
+    if explicit:
+        return explicit
+    provider = str(getter("provider", "") or getter("source", "") or "").strip().lower()
+    provider_id = str(getter("provider_id", "") or "").strip()
+    if "openalex" in provider and provider_id:
+        return provider_id.removeprefix("https://openalex.org/").strip("/")
+    url = str(getter("url", "") or "").strip()
+    match = re.search(r"openalex\.org/(W\d+)", url, flags=re.IGNORECASE)
+    return match.group(1) if match else ""
 
 
 def _provider(record: LiteratureRecord) -> str:
@@ -285,12 +305,17 @@ def _match_by_identifiers(session: Session, fp: dict[str, Any]) -> tuple[Paper |
         ("semantic_scholar_id", fp["semantic_scholar_id"]),
         ("openalex_id", fp["openalex_id"]),
         ("crossref_id", fp["doi"] or fp["crossref_id"]),
+        ("provider_id", fp["provider_id"]),
+        ("url", fp["url"]),
     ]
     paper_repo = PaperRepository()
     for field_name, value in checks:
         if not value:
             continue
-        paper = session.scalar(select(Paper).where(getattr(Paper, field_name if field_name != "crossref_id" or fp["crossref_id"] else "doi") == value))
+        if field_name == "provider_id":
+            paper = None
+        else:
+            paper = session.scalar(select(Paper).where(getattr(Paper, field_name if field_name != "crossref_id" or fp["crossref_id"] else "doi") == value))
         if paper:
             return paper, field_name if field_name != "crossref_id" else "crossref_doi", 1.0
         alias = paper_repo.find_by_alias(session, field_name, str(value))
@@ -488,6 +513,33 @@ def resolve_and_upsert(
     existing, matched_by, score, manual = resolve_existing_paper(record, session)
     if existing is None:
         record.paper_id = assign_canonical_paper_id(record)
+        existing = _find_by_final_canonical_id(session, record.paper_id)
+        if existing is not None:
+            merge_result = merge_literature_records(existing, record)
+            PaperRepository().update_retrieval_channels(session, existing.paper_id, retrieval_channel)
+            PaperRepository().update_source_providers(session, existing.paper_id, _provider(record))
+            _upsert_aliases(session, existing.paper_id, record)
+            _add_source(session, existing.paper_id, record, retrieval_channel, query_set_version=query_set_version)
+            _add_query_result(session, existing.paper_id, record, retrieval_channel, False, query_lookup, rank)
+            _add_event(
+                session,
+                existing,
+                record,
+                "canonical_paper_id_preinsert",
+                1.0,
+                "merged_into_existing",
+                retrieval_channel,
+                notes=";".join(merge_result["warnings"]),
+            )
+            session.flush()
+            return ResolutionResult(
+                paper=existing,
+                action="merged_into_existing",
+                matched_by="canonical_paper_id_preinsert",
+                match_score=1.0,
+                merged_fields=merge_result["merged_fields"],
+                warnings=merge_result["warnings"],
+            )
         paper = _insert_paper(session, record, retrieval_channel)
         _add_source(session, paper.paper_id, record, retrieval_channel, query_set_version=query_set_version)
         _add_query_result(session, paper.paper_id, record, retrieval_channel, True, query_lookup, rank)
@@ -513,6 +565,12 @@ def resolve_and_upsert(
         warnings=merge_result["warnings"],
         manual_review=manual,
     )
+
+
+def _find_by_final_canonical_id(session: Session, canonical_id: str | None) -> Paper | None:
+    if not canonical_id:
+        return None
+    return session.scalar(select(Paper).where(or_(Paper.canonical_paper_id == canonical_id, Paper.paper_id == canonical_id)))
 
 
 def deduplicate_records(records: list[LiteratureRecord]) -> tuple[list[LiteratureRecord], list[dict[str, Any]], list[dict[str, Any]]]:

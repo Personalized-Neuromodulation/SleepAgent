@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Effect",
+        "to": "\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]"
+      },
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "research",
+        "to": "\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research's\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher's\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]) AND \"thalamus dmn\"[All Fields] AND \"FC\"[All Fields] AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND \"FC\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research s\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher s\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "on",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

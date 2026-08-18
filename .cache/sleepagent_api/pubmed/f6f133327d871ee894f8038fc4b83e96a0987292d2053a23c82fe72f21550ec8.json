@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "GABAergic",
+        "to": "\"gabaergic\"[All Fields] OR \"gabaergics\"[All Fields]"
+      },
+      {
+        "from": "dysfunction",
+        "to": "\"dysfunctional\"[All Fields] OR \"dysfunctionals\"[All Fields] OR \"dysfunctioning\"[All Fields] OR \"dysfunctions\"[All Fields] OR \"physiopathology\"[Subheading] OR \"physiopathology\"[All Fields] OR \"dysfunction\"[All Fields]"
+      },
+      {
+        "from": "frontoparietal",
+        "to": "\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "sleep stages",
+        "to": "\"sleep stages\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"stages\"[All Fields]) OR \"sleep stages\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"gabaergic\"[All Fields] OR \"gabaergics\"[All Fields]) AND (\"dysfunctional\"[All Fields] OR \"dysfunctionals\"[All Fields] OR \"dysfunctioning\"[All Fields] OR \"dysfunctions\"[All Fields] OR \"physiopathology\"[MeSH Subheading] OR \"physiopathology\"[All Fields] OR \"dysfunction\"[All Fields]) AND (\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"sleep stages\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"stages\"[All Fields]) OR \"sleep stages\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

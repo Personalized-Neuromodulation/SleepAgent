@@ -126,7 +126,7 @@ def embedding_retrieve(
         elapsed_seconds=_elapsed(encode_started),
     )
     if not vectors:
-        _embedding_log("retrieval_done", log_file=log_file, hits=0, elapsed_seconds=_elapsed(started), top_hits=[])
+        _embedding_log("retrieval_done", log_file=log_file, hits=0, elapsed_seconds=_elapsed(started), top_hits_summary=_summarize_hits([]))
         return []
     query_vector = vectors[0]
     results = []
@@ -140,7 +140,7 @@ def embedding_retrieve(
         log_file=log_file,
         hits=len(hits),
         elapsed_seconds=_elapsed(started),
-        top_hits=[{"paper_id": hit.paper_id, "score": round(hit.score, 6), "source": hit.source} for hit in hits[:5]],
+        top_hits_summary=_summarize_hits(hits),
     )
     return hits
 
@@ -178,6 +178,16 @@ def _embedding_log(event: str, *, log_file: Path, **payload: Any) -> None:
     with log_file.open("a", encoding="utf-8") as f:
         f.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
     print(_embedding_message(event, payload), flush=True)
+
+
+def _summarize_hits(hits: list[RetrievalResult], *, preview: int = 3) -> dict[str, Any]:
+    scores = [float(hit.score) for hit in hits]
+    return {
+        "count": len(hits),
+        "paper_ids": [hit.paper_id for hit in hits[:preview]],
+        "score_min": round(min(scores), 6) if scores else None,
+        "score_max": round(max(scores), 6) if scores else None,
+    }
 
 
 def _embedding_message(event: str, payload: dict[str, Any]) -> str:

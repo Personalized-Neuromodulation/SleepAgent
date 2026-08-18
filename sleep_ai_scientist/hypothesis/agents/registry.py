@@ -197,6 +197,10 @@ class HypothesisRegistry:
                 "data_testability_missing_modalities",
                 "data_testability_matched_variables",
                 "data_testability_missing_variables",
+                "experiment_preflight_status",
+                "experiment_preflight_signature",
+                "experiment_preflight_duplicates_prior",
+                "experiment_preflight_previously_tested",
                 "experiment_priority_score",
                 "parent_ids",
                 "created_at",
@@ -222,8 +226,17 @@ def _flatten_testability(row: dict[str, Any]) -> dict[str, Any]:
     row["data_testability_missing_modalities"] = ";".join(testability.get("missing_modalities", []) or [])
     row["data_testability_matched_variables"] = ";".join(testability.get("matched_variables", []) or [])
     row["data_testability_missing_variables"] = ";".join(testability.get("missing_variables", []) or [])
+    preflight = row.get("metadata", {}).get("experiment_preflight", {}) if isinstance(row.get("metadata"), dict) else {}
+    row["experiment_preflight_status"] = preflight.get("status", "")
+    row["experiment_preflight_signature"] = preflight.get("signature", "")
+    row["experiment_preflight_duplicates_prior"] = preflight.get("duplicates_prior_experiment", "")
+    row["experiment_preflight_previously_tested"] = preflight.get("previously_tested_hypothesis", "")
     try:
-        row["experiment_priority_score"] = float(row.get("elo_rating", 0.0)) + float(testability.get("ranking_bonus", 0.0) or 0.0)
+        row["experiment_priority_score"] = (
+            float(row.get("elo_rating", 0.0))
+            + float(testability.get("ranking_bonus", 0.0) or 0.0)
+            + float(preflight.get("ranking_penalty", 0.0) or 0.0)
+        )
     except Exception:
         row["experiment_priority_score"] = row.get("elo_rating", "")
     return row

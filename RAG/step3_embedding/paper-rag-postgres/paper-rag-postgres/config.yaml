@@ -1,0 +1,39 @@
+# Paper RAG 主配置。Windows 路径建议使用单引号，避免反斜杠被转义。
+database:
+  url: 'postgresql://paper_rag:paper_rag_password@localhost:5432/paper_rag'
+
+paths:
+  paper_root: '/data/RAG/step1_crawler/exports/sleep'
+  canonical_root: '/data/RAG/step1_crawler/exports/sleep_rag_canonical'
+  source_csv: '/data/RAG/step1_crawler/exports/sleep/download_results.csv'
+
+parsing:
+  grobid_url: 'http://localhost:8070'
+  request_timeout_seconds: 180
+
+embedding:
+  model: 'BAAI/bge-m3'
+  dimension: 1024
+  device: 'cpu'       # 没有 NVIDIA GPU 时改为 cpu
+  batch_size: 4
+
+chunking:
+  parent_tokens: 1200
+  child_tokens: 550
+  child_overlap: 80
+
+ingestion:
+  limit: 20            # 首次试运行20行；全量导入改为 null
+  force: false
+
+retrieval:
+  reranker_model: null
+
+llm:
+  base_url: 'http://localhost:11434/v1'
+  api_key: 'ollama'
+  model: 'qwen3:14b'
+
+api:
+  host: '0.0.0.0'
+  port: 8000

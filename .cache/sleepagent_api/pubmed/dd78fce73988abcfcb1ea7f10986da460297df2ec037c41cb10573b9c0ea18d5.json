@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6",
+    "retmax": "6",
+    "retstart": "0",
+    "idlist": [
+      "42310658",
+      "40835806",
+      "40564013",
+      "39610629",
+      "38924967",
+      "36438750"
+    ],
+    "translationset": [
+      {
+        "from": "sleepiness",
+        "to": "\"sleepiness\"[MeSH Terms] OR \"sleepiness\"[All Fields] OR \"sleepy\"[All Fields]"
+      },
+      {
+        "from": "ISI",
+        "to": "\"ISI\"[Journal:__jid101647733] OR \"isi\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleepiness\"[MeSH Terms] OR \"sleepiness\"[All Fields] OR \"sleepy\"[All Fields]) AND (\"isi\"[Journal] OR \"isi\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])"
+  }
+}

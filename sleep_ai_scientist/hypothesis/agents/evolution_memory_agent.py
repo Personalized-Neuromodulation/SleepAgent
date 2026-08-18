@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from typing import Any
 
 from sleep_ai_scientist.common.io import write_json
@@ -140,18 +141,27 @@ def synthesize_meta_review(
             {
                 "hypotheses": hypotheses,
                 "reviews": reviews,
-                "knowledge_context": knowledge_context or "No knowledge graph context was provided.",
+                "knowledge_context": _truncate_context(knowledge_context or "No knowledge graph context was provided."),
             },
         )
-        return client.call(
-            [
-                {"role": "system", "content": system},
-                {"role": "user", "content": prompt},
-            ],
-            max_tokens=max_tokens,
-            temperature=float(llm_config.get("temperature", 0.2)),
-        ).content
+        try:
+            return _sanitize_meta_review_report(
+                client.call(
+                    [
+                        {"role": "system", "content": system},
+                        {"role": "user", "content": prompt},
+                    ],
+                    max_tokens=min(max_tokens, int(llm_config.get("meta_review_max_tokens", 1200))),
+                    temperature=float(llm_config.get("temperature", 0.2)),
+                ).content
+            )
+        except Exception:
+            return _rule_meta_review(registry)
 
+    return _rule_meta_review(registry)
+
+
+def _rule_meta_review(registry: HypothesisRegistry) -> str:
     counts = registry.count_by_status()
     top = registry.top(3, include_pending=True)
     experiment_top = registry.top_by_experiment_priority(3, include_pending=True)
@@ -185,6 +195,28 @@ def synthesize_meta_review(
         "not as current experimental evidence."
     )
     return "\n".join(lines)
+
+
+def _truncate_context(text: str, max_chars: int = 5000) -> str:
+    value = str(text or "")
+    if len(value) <= max_chars:
+        return value
+    return value[:max_chars] + "\n\n[context truncated for meta-review speed]"
+
+
+def _sanitize_meta_review_report(report: str) -> str:
+    text = str(report or "").strip()
+    closing = re.search(r"</think>", text, flags=re.IGNORECASE)
+    if closing:
+        text = text[closing.end() :].strip()
+    text = re.sub(r"<think>[\s\S]*?</think>", "", text, flags=re.IGNORECASE).strip()
+    fenced = re.fullmatch(r"```(?:markdown|md)?\s*([\s\S]*?)\s*```", text, flags=re.IGNORECASE)
+    if fenced:
+        text = fenced.group(1).strip()
+    first_heading = re.search(r"(?m)^#\s+", text)
+    if first_heading:
+        text = text[first_heading.start() :].strip()
+    return text
 
 
 def _testability_payload(hypothesis: Hypothesis) -> dict[str, Any]:
@@ -227,7 +259,7 @@ class EvolutionMemoryAgent:
             evolved = evolve_top_hypothesis(
                 state.registry,
                 round_number=int(state.artifacts.get("evolution_round", 1)) + 1,
-                ollama_config=state.config.get("_selected_llm", {}),
+                ollama_config=state.config.get("_llm_tasks", {}).get("hypothesis_evolution", state.config.get("_selected_llm", {})),
                 rlef_context=state.context_blocks.get("rlef_context", ""),
                 knowledge_context=state.context_blocks.get("knowledge_graph", ""),
             )
@@ -245,9 +277,10 @@ class EvolutionMemoryAgent:
         state.registry.write_outputs(state.output_dir, top_k=top_k)
         report = synthesize_meta_review(
             state.registry,
-            ollama_config=state.config.get("_selected_llm", {}),
+            ollama_config=state.config.get("_llm_tasks", {}).get("hypothesis_meta_review", state.config.get("_selected_llm", {})),
             knowledge_context=state.context_blocks.get("knowledge_graph", ""),
         )
+        report = _sanitize_meta_review_report(report)
         state.report_path.parent.mkdir(parents=True, exist_ok=True)
         state.report_path.write_text(report, encoding="utf-8")
         write_json(state.output_dir / "hypothesis_reviews.json", [review.model_dump(mode="json") for review in state.registry.reviews])

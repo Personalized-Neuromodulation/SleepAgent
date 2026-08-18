@@ -1,0 +1,1092 @@
+{
+  "total": 23,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "efbef166382ad91b3b9e821b07c2beef6cea237e",
+      "externalIds": {
+        "PubMedCentral": "13310895",
+        "DOI": "10.3389/fdgth.2026.1780166",
+        "CorpusId": 289363767,
+        "PubMed": "42375153"
+      },
+      "url": "https://www.semanticscholar.org/paper/efbef166382ad91b3b9e821b07c2beef6cea237e",
+      "title": "Non-contact REM/NREM sleep staging from piezoelectric signals using respiratory and body-movement features with auxiliary TWED-based respiratory stability measures",
+      "venue": "Frontiers in Digital Health",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1780166/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13310895, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2390556947",
+          "name": "Shaonan Wang"
+        },
+        {
+          "authorId": "2447204055",
+          "name": "Jia Yu"
+        },
+        {
+          "authorId": "2390532136",
+          "name": "Xianjun Yang"
+        },
+        {
+          "authorId": "2401106558",
+          "name": "Dimin Liu"
+        },
+        {
+          "authorId": "2059035890",
+          "name": "Qingyuan Bai"
+        },
+        {
+          "authorId": "1949172088",
+          "name": "Jiakuai Yu"
+        },
+        {
+          "authorId": "2296437057",
+          "name": "Shuai Ding"
+        },
+        {
+          "authorId": "2315003703",
+          "name": "Yang Xu"
+        },
+        {
+          "authorId": "2296425565",
+          "name": "Daomin Zhu"
+        }
+      ],
+      "abstract": "Introduction Non-contact sleep monitoring based on under-mattress piezoelectric sensing is attractive for low-burden home use, but REM/NREM discrimination remains challenging. This study aimed to investigate whether respiratory pattern stability, quantified by Time Warp Edit Distance (TWED)-based respiratory interval sequence (RIS) similarity features, could improve discrimination between the two major sleep states within sleep itself. Methods Overnight piezoelectric and polysomnography (PSG) data were collected simultaneously from 85 clinical subjects. PSG-labeled wake epochs were excluded, and the task was formulated as binary REM/NREM classification. From piezoelectric signals, we extracted conventional body-movement features, respiratory variability features, and multi-scale TWED-based RIS similarity features. Feature normalization was performed within each subject using the full-night unlabeled feature distribution, consistent with the intended post-hoc whole-night analysis scenario. An XGBoost classifier was evaluated using subject-wise nested leave-one-out cross-validation (LOOCV), with the REM-continuity fusion threshold selected within each training fold by inner subject-grouped 5-fold cross-validation. Respiratory signal extraction was additionally validated against PSG airflow in resting and full-night tests. Results Feature normalization improved performance across all feature sets. The best result was achieved by combining conventional body-movement and respiratory variability features with TWED-based RIS similarity features, yielding an accuracy of 84.39 ± 12.76%, Cohen's Kappa of 0.524 ± 0.241, REM precision of 0.600 ± 0.210, REM recall of 0.735 ± 0.226, and REM F1-score of 0.603 ± 0.211 under nested LOOCV. Compared with the normalized conventional feature set without RIS similarity, adding the TWED-based features improved both Kappa and REM F1-score. In respiratory tests, PVDF-derived respiration showed low detection error and good agreement with the airflow reference under both posture-change and overnight conditions. Discussion These findings indicate that TWED-based RIS similarity features provide useful complementary information beyond conventional descriptors and support the feasibility of using respiratory pattern stability derived from non-contact piezoelectric signals for within-sleep REM/NREM classification. At the current level of performance, the proposed method is better viewed as a low-burden adjunctive tool for offline whole-night longitudinal monitoring and trend assessment in home-like settings rather than as a replacement for PSG-based clinical diagnosis, real-time sleep staging, or full sleep-stage scoring."
+    },
+    {
+      "paperId": "f03ef7036b0863fe721f19f776f5e0c6d55f4565",
+      "externalIds": {
+        "MAG": "2521530159",
+        "DBLP": "journals/cbm/SinghSG16",
+        "DOI": "10.1016/j.compbiomed.2016.09.018",
+        "CorpusId": 1681163,
+        "PubMed": "27741420"
+      },
+      "url": "https://www.semanticscholar.org/paper/f03ef7036b0863fe721f19f776f5e0c6d55f4565",
+      "title": "A method of REM-NREM sleep distinction using ECG signal for unobtrusive personal monitoring",
+      "venue": "Comput. Biol. Medicine",
+      "year": 2016,
+      "citationCount": 37,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.compbiomed.2016.09.018?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.compbiomed.2016.09.018, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46893288",
+          "name": "Jaspal Singh"
+        },
+        {
+          "authorId": "2111334559",
+          "name": "R. Sharma"
+        },
+        {
+          "authorId": "2110759361",
+          "name": "A. Gupta"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b3ff54d5cf4a73c3c40b1bbe92e250cb153712fe",
+      "externalIds": {
+        "MAG": "3108177307",
+        "PubMedCentral": "7744633",
+        "DOI": "10.3389/fphys.2020.592978",
+        "CorpusId": 227249647,
+        "PubMed": "33343390"
+      },
+      "url": "https://www.semanticscholar.org/paper/b3ff54d5cf4a73c3c40b1bbe92e250cb153712fe",
+      "title": "Multicomponent Analysis of Sleep Using Electrocortical, Respiratory, Autonomic and Hemodynamic Signals Reveals Distinct Features of Stable and Unstable NREM and REM Sleep",
+      "venue": "Frontiers in Physiology",
+      "year": 2020,
+      "citationCount": 18,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fphys.2020.592978/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7744633, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2068112656",
+          "name": "Christopher Wood"
+        },
+        {
+          "authorId": "2969268",
+          "name": "M. Bianchi"
+        },
+        {
+          "authorId": "34828207",
+          "name": "C. Yun"
+        },
+        {
+          "authorId": "48937190",
+          "name": "C. Shin"
+        },
+        {
+          "authorId": "2110939881",
+          "name": "R. Thomas"
+        }
+      ],
+      "abstract": "A new concept of non-rapid eye movement (NREM) and rapid eye movement (REM) sleep is proposed, that of multi-component integrative states that define stable and unstable sleep, respectively, NREMS, NREMUS REMS, and REMUS. Three complementary data sets are used: obstructive sleep apnea (20), healthy subjects (11), and high loop gain sleep apnea (50). We use polysomnography (PSG) with beat-to-beat blood pressure monitoring, and electrocardiogram (ECG)-derived cardiopulmonary coupling (CPC) analysis to demonstrate a bimodal, rather than graded, characteristic of NREM sleep. Stable NREM (NREMS) is characterized by high probability of occurrence of the <1 Hz slow oscillation, high delta power, stable breathing, blood pressure dipping, strong sinus arrhythmia and vagal dominance, and high frequency CPC. Conversely, unstable NREM (NREMUS) has the opposite features: a fragmented and discontinuous <1 Hz slow oscillation, non-dipping of blood pressure, unstable respiration, cyclic variation in heart rate, and low frequency CPC. The dimension of NREM stability raises the possibility of a comprehensive integrated multicomponent network model of NREM sleep which captures sleep onset (e.g., ventrolateral preoptic area-based sleep switch) processes, synaptic homeostatic delta power kinetics, and the interaction of global and local sleep processes as reflected in the spatiotemporal evolution of cortical “UP” and “DOWN” states, while incorporating the complex dynamics of autonomic-respiratory-hemodynamic systems during sleep. Bimodality of REM sleep is harder to discern in health. However, individuals with combined obstructive and central sleep apnea allows ready recognition of REMS and REMUS (stable and unstable REM sleep, respectively), especially when there is a discordance of respiratory patterns in relation to conventional stage of sleep."
+    },
+    {
+      "paperId": "39fd34c13344c87c768df63abce0d5b0825deb4d",
+      "externalIds": {
+        "DOI": "10.1093/ajrccm/aamag162.6289",
+        "CorpusId": 288565301
+      },
+      "url": "https://www.semanticscholar.org/paper/39fd34c13344c87c768df63abce0d5b0825deb4d",
+      "title": "A30-03 Deep Learning Optimization of Sleep Stage Classification Using Wearable-Derived SpO2, Pulse Rate, and Movement Features",
+      "venue": "American Journal of Respiratory and Critical Care Medicine",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/ajrccm/aamag162.6289?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/ajrccm/aamag162.6289, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2407949995",
+          "name": "G. Garcia Molina"
+        },
+        {
+          "authorId": "2322269069",
+          "name": "S. P. Gowda"
+        },
+        {
+          "authorId": "2408733108",
+          "name": "M. Shah"
+        },
+        {
+          "authorId": "2437391377",
+          "name": "K. Mehta"
+        },
+        {
+          "authorId": "2321771200",
+          "name": "S. Pittman"
+        },
+        {
+          "authorId": "2360392253",
+          "name": "L. Taranto-Montemurro"
+        }
+      ],
+      "abstract": "\n \n \n Sleep staging has classically relied on expert-scored polysomnography (PSG), which requires comprehensive electrophysiological recordings. Despite advances in automated PSG-based staging, its cost and complexity limit long-term or home use.\n Minimally obtrusive wearables allow assessment of sleep architecture in natural environments over time, offering clinical value for obstructive sleep apnea (OSA) patients needing ongoing treatment monitoring. Commercial consumer wearables typically rely on high-rate photoplethysmography (PPG) or multiple sensors, mainly for healthy users. We propose a proximal finger-mounted pulse-oximeter (wearable) using transmittance-based PPG to derive SpO2, pulse rate (PR), and motion at 1 Hz. This approach provides a practical tool for continuous monitoring of disease severity or therapeutic response. Our study evaluates whether accurate sleep staging can be achieved using a deep learning framework on these signals.\n \n \n \n Data were collected from 90 in-lab PSG sessions paired with wearable recordings from 25 participants with mild-to-severe OSA, each undergoing up to four PSGs under baseline, placebo, and active treatment conditions (NCT05793684). Expert-scored hypnograms were synchronized with wearable signals and split by participant into training, validation, and test sets.\n Wearable data were preprocessed via physiologic-range validation, interpolation, and per-participant centering. A deep learning model was trained using 390-second input windows centered on each 30-second epoch. The 4-class staging neural network included 1D convolutional layers, recurrent layers (Bi-LSTM), and a fully connected layer with an extra feature, PR × SpO2.\n Model training used participant-wise stratified data splits, early stopping, and threshold-aware evaluation. Performance was assessed using Cohen’s Kappa, sensitivity, specificity, and area under the Receiving-Operating Characteristic curve (AUC).\n \n \n \n In the test set, Kappa values for four-, three-, and two-class classification were 0.38 ± 0.12, 0.46 ± 0.12, and 0.60 ± 0.11, respectively, indicating fair to moderate agreement with PSG-based staging.\n The Wake sensitivity was 0.65 ± 0.15. Among the four- and three-class models, high sensitivity was observed for Light (0.71 ± 0.14) and NREM (0.88 ± 0.09) sleep. REM sensitivity was the lowest, at 0.25 ± 0.24. Sleep/Wake detection showed strong performance (sensitivity 0.94 ± 0.05, AUC: 0.90).\n \n \n \n Sleep staging using a single wearable showed fair-to-moderate agreement with PSG, even under varied treatment conditions. These findings highlight the potential for developing robust, generalizable classifiers using low-bandwidth wearable data. Despite the limited sample size, the results show promising accuracy with a minimally obtrusive and comfortable wearable, and performance is expected to improve with larger datasets.\n \n This abstract is funded by: Apnimed, Inc.\n"
+    },
+    {
+      "paperId": "3df33a4b3713ca2ff68391868871a97a360d7f18",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsag091.0349",
+        "CorpusId": 288135846
+      },
+      "url": "https://www.semanticscholar.org/paper/3df33a4b3713ca2ff68391868871a97a360d7f18",
+      "title": "0349 Validation of a Novel Algorithm for AASM Sleep Stage Classification with a PAT-Based Home Sleep Test Compared to Simultaneous Polysomnography",
+      "venue": "SLEEPJ",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsag091.0349?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsag091.0349, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297708744",
+          "name": "Luu V Pham"
+        },
+        {
+          "authorId": "2362397454",
+          "name": "Jonathan Jun"
+        },
+        {
+          "authorId": "2253520489",
+          "name": "Riva Tauman"
+        },
+        {
+          "authorId": "2362458246",
+          "name": "Alan Schwartz"
+        }
+      ],
+      "abstract": "\n \n \n Accurate sleep staging in the ambulatory setting with EEG is challenging and increases patient burden. The WatchPAT (WP, ZOLL Itamar), is a widely used PAT-based home sleep apnea test. The company recently applied modern supervised machine learning techniques to develop a new algorithm for comprehensive sleep staging based on clinical features and accumulated knowledge gleaned over 20 years of field experience. Over 900 simultaneous nocturnal WP and polysomnography (PSG) recordings were used in algorithm development to generate all stages (N1, N2, N3, REM and wakefulness). A Long Short-Term Memory (LSTM) network and a Hidden Markov Model based decoder were trained on a wide range of clinically significant features (hemodynamic, HRV, respiratory, oximetry, atonia, etc.), derived from WP channels. This study aimed to evaluate the performance of the new algorithm compared to gold standard PSG for sleep stage classification.\n \n \n \n Prospective multi-center study with simultaneous WP and PSG recordings were conducted to validate the algorithm. PSG recordings were staged according to AASM guidelines by two independent scorers. We examined the agreement between WP to the consensus of PSG scorers (approximately 80% of all epochs) and to each scorer, individually, with Cohen’s kappa (k).\n \n \n \n The validation set of 231 subjects (141 Males, Age 52.4±17.8 years, BMI 32.0±8.6) was included in the final analysis. The average percentage of each sleep stage was similar between WP and consensus. Percentages [SD] for WP and PSG respectively were: Wake: 26.57% [16.63], 26.38% [16.96]; N1: 2.5% [1.79], 3.72% [3.81]; N2: 47.53% [13.34], 48.83% [15.76]; N3: 8.69% [8.42], 9.38% [8.65] and REM: 14.72% [8.76], 11.69% [8.36]. Epochs with consensus between scorers had substantial agreement with the algorithm for AASM stages (k=0.65), wake/sleep separation (k=0.77), and REM/NREM (k=0.73). When including epochs without scorer consensus, K between the WP and individual scorers for AASM stages were 0.51 and 0.59 (moderate agreement), suggesting that mixed or ambiguous features in some epochs accounted for reductions in agreement between scorers and the algorithm.\n \n \n \n The new WP staging algorithm demonstrated substantial agreement with PSG for sleep stage classification. WP holds promise for detailed sleep characterization in the ambulatory setting, without EEG.\n \n \n \n ZOLL-Itamar, Caesarea, Israel\n"
+    },
+    {
+      "paperId": "b75f84ba28924516753f869d6e9c659a405c8bcf",
+      "externalIds": {
+        "DOI": "10.1109/TIM.2025.3635330",
+        "CorpusId": 283206217
+      },
+      "url": "https://www.semanticscholar.org/paper/b75f84ba28924516753f869d6e9c659a405c8bcf",
+      "title": "Sleep Staging Using PPG-Derived Heart Rate and Accelerometer Data From a Smart Ring With Lightweight Neural Networks",
+      "venue": "IEEE Transactions on Instrumentation and Measurement",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TIM.2025.3635330?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TIM.2025.3635330, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32884104",
+          "name": "R. Sharan"
+        },
+        {
+          "authorId": "2265643701",
+          "name": "Hiroki Takeuchi"
+        },
+        {
+          "authorId": "6555763",
+          "name": "A. Kishi"
+        },
+        {
+          "authorId": "2373404727",
+          "name": "Jiabin Wang"
+        },
+        {
+          "authorId": "2372306612",
+          "name": "Tatsuhiko Watanabe"
+        },
+        {
+          "authorId": "2029344282",
+          "name": "Yoshiharu Yamamoto"
+        }
+      ],
+      "abstract": "Sleep staging plays an important role in assessing and diagnosing sleep disorders; however, polysomnography (PSG), the gold standard for sleep monitoring, is expensive, time-consuming, and often inaccessible. Wearable devices offer a promising alternative, providing a more convenient and scalable solution for long-term sleep monitoring. Compared to wrist-worn devices, smart rings offer a more stable signal acquisition environment, reducing motion artifacts and improving data reliability. This work investigates sleep staging using a photoplethysmography (PPG)-derived instantaneous heart rate (IHR) signal and zero-crossing mode (ZCM) feature obtained from accelerometer data, both captured using a wearable smart ring. We propose a lightweight neural network model designed for wearable-based sleep staging, incorporating feature extraction, temporal modeling, and class balancing strategies. The IHR-based model consists of 503k learnable parameters, while the ZCM-based model has 133k learnable parameters, making them well-suited for efficient deployment on wearable devices. The proposed method is evaluated on a dataset of expert-annotated overnight sleep studies, using both IHR signal and ZCM features individually and in combination, in subject-independent cross-validation. The experimental results demonstrate that IHR features alone yield strong classification performance, achieving macro-average recall [unweighted average recall (UAR)] values of 0.849, 0.805, 0.750, and 0.663 in two-class (wake versus sleep), three-class (wake versus nonrapid eye movement (NREM) sleep (N1–N3) versus rapid eye movement (REM) sleep), four-class (wake versus light sleep versus deep sleep versus REM sleep), and five-class (wake versus N1 versus N2 versus N3 versus REM) classification tasks. When combining IHR and ZCM features, classification performance improves further, reaching macro-average recall values of 0.866, 0.832, 0.772, and 0.671 in the respective tasks. These results highlight the effectiveness of IHR-based sleep staging and the additional benefit provided by movement-based ZCM features, particularly in two-, three-, and four-class sleep staging, where we could achieve macro-average recall values of 0.750 or higher. The proposed smart ring-based system demonstrates strong potential for real-world sleep assessment by integrating multimodal physiological signals through lightweight neural networks, advancing noninvasive measurement and intelligent instrumentation."
+    },
+    {
+      "paperId": "96af742469c18ee01bfdeda13bb8ae6c221eae46",
+      "externalIds": {
+        "DOI": "10.1103/physreve.111.044215",
+        "CorpusId": 277990548,
+        "PubMed": "40411008"
+      },
+      "url": "https://www.semanticscholar.org/paper/96af742469c18ee01bfdeda13bb8ae6c221eae46",
+      "title": "Dynamical mechanism for the interplay of circadian, homeostatic, and ultradian rhythm in normal human sleep.",
+      "venue": "Physical Review E",
+      "year": 2025,
+      "citationCount": 5,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1103/physreve.111.044215?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1103/physreve.111.044215, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2359407299",
+          "name": "Yinchu Ji"
+        },
+        {
+          "authorId": "2221301163",
+          "name": "Fei Xu"
+        },
+        {
+          "authorId": "2152417078",
+          "name": "Jia Shuai"
+        },
+        {
+          "authorId": "2297036687",
+          "name": "Dongping Yang"
+        },
+        {
+          "authorId": "2276649495",
+          "name": "Chenggui Yao"
+        }
+      ],
+      "abstract": "The 90-minute ultradian rhythm is a hallmark of healthy human sleep, yet its governing mechanisms remain elusive. In this study, we develop a biologically grounded sleep model to unravel the complex dynamics underlying this rhythm. Our model integrates both circadian and ultradian drives, which collectively shape sleep architecture, along with bidirectional \"flip-flop\" switches that control transitions between wakefulness, nonrapid eye movement (NREM) sleep, and rapid eye movement (REM) sleep. Calibrated with empirically derived neurophysiological parameters, the model successfully reproduces core sleep features, including the 24-hour circadian rhythm and the 90-minute ultradian rhythm. To dissect state transition mechanisms, we employ potential landscape analysis to quantify how global stability is modulated by three key factors: circadian drive, homeostatic drive, and REM pressure. Our results reveal that the ultradian rhythm emerges from an interplay between a weak ultradian drive and REM pressure. In a reduced model focusing on NREM-REM interactions, we demonstrate that the periodic transitions between NREM and REM sleep arise from a saddle-node bifurcation on an invariant circle (SNIC) induced by REM sleep pressure. Additionally, the ultradian drive entrains the rhythmic NREM-REM system to exhibit the stable 90-minute ultradian rhythm, as characterized by the Arnold tongue. Our work provides the mechanistic explanation of the 90-minute ultradian rhythm, identifying REM pressure as its core regulator and highlighting the SNIC bifurcation together with the Arnold tongue as its dynamical mechanisms. This framework establishes testable neurophysiological requirements for experimental validation, thereby bridging theoretical models with empirical sleep neuroscience."
+    },
+    {
+      "paperId": "a459a02f63eda79f20762892ab35833068c91409",
+      "externalIds": {
+        "DBLP": "journals/tim/SharanTKY24",
+        "DOI": "10.1109/TIM.2024.3481551",
+        "CorpusId": 273411351
+      },
+      "url": "https://www.semanticscholar.org/paper/a459a02f63eda79f20762892ab35833068c91409",
+      "title": "Macro-Sleep Staging With ECG-Derived Instantaneous Heart Rate and Respiration Signals and Multi-Input 1-D CNN–BiGRU",
+      "venue": "IEEE Transactions on Instrumentation and Measurement",
+      "year": 2024,
+      "citationCount": 11,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TIM.2024.3481551?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TIM.2024.3481551, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32884104",
+          "name": "R. Sharan"
+        },
+        {
+          "authorId": "2265643701",
+          "name": "Hiroki Takeuchi"
+        },
+        {
+          "authorId": "6555763",
+          "name": "A. Kishi"
+        },
+        {
+          "authorId": "2029344282",
+          "name": "Yoshiharu Yamamoto"
+        }
+      ],
+      "abstract": "Millions of people worldwide are affected by sleep disorders. Polysomnography (PSG) is a type of sleep study that is used to diagnose sleep disorders, such as using sleep staging. However, PSG can be burdensome, time-consuming, expensive, and may not be readily accessible. Sleep cycles can cause fluctuations in heart rate and respiration which can be estimated from electrocardiogram (ECG) signal. In addition, an ECG signal is easier to acquire compared with the multiparametric PSG. As such, in this work, we study the use of ECG data for sleep staging. In particular, the proposed method utilizes ECG-derived instantaneous heart rate (IHR) and ECG-derived respiration (EDR) signals. The IHR and EDR signals are input to a neural network that consists of a 1-D convolutional neural network (CNN) to learn the temporal and spectral characteristics in short-time windows and a bidirectional gated recurrent unit (BiGRU) to learn the long-term dependencies between the windows in both the forward and backward directions. The multi-input network analyzes the IHR and EDR signals independently. Features extracted from the analysis of the IHR and EDR signals are combined for the classification of sleep stages. The proposed approach is evaluated on a dataset of 993 overnight sleep studies, where the sleep stages are scored by experts. An average class accuracy (ACC) of 83.8% is achieved in two-class staging (wake versus sleep), 79.3% in three-class staging (wake versus NREM sleep versus REM sleep), 73.7% in four-class staging (wake versus light sleep versus deep sleep versus REM sleep), and 63.5% in five-class staging (wake versus ${N}1$ versus ${N}2$ versus ${N}3$ versus REM). Our method is seen to be effective in macro-sleep staging, particularly in two-, three-, and four-class sleep staging, achieving class ACC values greater than 76% for all classes, except light sleep. In addition, our method shows good generalizability in external validation."
+    },
+    {
+      "paperId": "1ecb9008ab989942bbce160752874d34e8e4d620",
+      "externalIds": {
+        "PubMedCentral": "10512724",
+        "DOI": "10.3389/fneur.2023.1223974",
+        "CorpusId": 261628055,
+        "PubMed": "37745647"
+      },
+      "url": "https://www.semanticscholar.org/paper/1ecb9008ab989942bbce160752874d34e8e4d620",
+      "title": "Quantitative sleep electroencephalogram and cognitive performance in Parkinson’s disease with and without rapid eye movement sleep behavior disorder",
+      "venue": "Frontiers in Neurology",
+      "year": 2023,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fneur.2023.1223974/pdf?isPublishedV2=False",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10512724, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35294357",
+          "name": "A. Memon"
+        },
+        {
+          "authorId": "2042774604",
+          "name": "Corina Catiul"
+        },
+        {
+          "authorId": "2238673833",
+          "name": "Zachary T Irwin"
+        },
+        {
+          "authorId": "1506991308",
+          "name": "Jennifer Pilkington"
+        },
+        {
+          "authorId": "7366638",
+          "name": "Raima A. Memon"
+        },
+        {
+          "authorId": "7680449",
+          "name": "A. Joop"
+        },
+        {
+          "authorId": "2238676207",
+          "name": "Kimberly H. Wood"
+        },
+        {
+          "authorId": "2238665806",
+          "name": "G. Cutter"
+        },
+        {
+          "authorId": "7024701",
+          "name": "S. Miocinovic"
+        },
+        {
+          "authorId": "5690814",
+          "name": "A. Amara"
+        }
+      ],
+      "abstract": "Introduction Parkinson’s disease (PD) patients with REM sleep behavior disorder (RBD) are at greater risk for cognitive decline and RBD has been associated with alterations in sleep-related EEG oscillations. This study evaluates differences in sleep quantitative EEG (qEEG) and cognition in PD participants with (PD-RBD) and without RBD (PD-no-RBD). Methods In this cross-sectional study, polysomnography (PSG)-derived qEEG and a comprehensive level II neuropsychological assessment were compared between PD-RBD (n = 21) and PD-no-RBD (n = 31). Following artifact rejection, qEEG analysis was performed in the frontal and central leads. Measures included Scalp-slow wave (SW) density, spindle density, morphological properties of SW and sleep spindles, SW-spindle phase-amplitude coupling, and spectral power analysis in NREM and REM. The neurocognitive battery had at least two tests per domain, covering five cognitive domains as recommended by the Movement Disorders Society Task Force for PD-MCI diagnosis. Differences in qEEG features and cognitive performance were compared between the two groups. Stepwise linear regression was performed to evaluate predictors of cognitive performance. Multiple comparisons were corrected using the Benjamini-Hochberg method. Results Spindle density and SW-spindle co-occurrence percent were lower in participants with PD-RBD compared to PD-no-RBD. The PD-RBD group also demonstrated higher theta spectral power during REM. Sleep spindles and years of education, but not RBD, were predictors of cognitive performance. Conclusion PD participants with RBD have alterations in sleep-related qEEG compared to PD participants without RBD. Although PD-RBD participants had worse cognitive performance compared to PD-no-RBD, regression models suggest that lower sleep spindle density, rather than presence of RBD, predicts worse comprehensive cognitive score. Future studies should include longitudinal evaluation to determine whether sleep-related qEEG alterations are associated with more rapid cognitive decline in PD-RBD."
+    },
+    {
+      "paperId": "5654573ebb9200a4c093b9859c5e18b063912217",
+      "externalIds": {
+        "PubMedCentral": "10200139",
+        "DOI": "10.3233/JPD-223565",
+        "CorpusId": 258095010,
+        "PubMed": "37066921"
+      },
+      "url": "https://www.semanticscholar.org/paper/5654573ebb9200a4c093b9859c5e18b063912217",
+      "title": "Quantitative Sleep Electroencephalogram in Parkinson’s Disease: A Case-Control Study",
+      "venue": "Journal of Parkinson's Disease",
+      "year": 2023,
+      "citationCount": 5,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://content.iospress.com:443/download/journal-of-parkinsons-disease/jpd223565?id=journal-of-parkinsons-disease%2Fjpd223565",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10200139, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35294357",
+          "name": "A. Memon"
+        },
+        {
+          "authorId": "2042774604",
+          "name": "Corina Catiul"
+        },
+        {
+          "authorId": "4459638",
+          "name": "Z. Irwin"
+        },
+        {
+          "authorId": "1506991308",
+          "name": "Jennifer Pilkington"
+        },
+        {
+          "authorId": "7366638",
+          "name": "Raima A. Memon"
+        },
+        {
+          "authorId": "7680449",
+          "name": "A. Joop"
+        },
+        {
+          "authorId": "2840633",
+          "name": "K. Wood"
+        },
+        {
+          "authorId": "2071630428",
+          "name": "G. Cutter"
+        },
+        {
+          "authorId": "7024701",
+          "name": "S. Miocinovic"
+        },
+        {
+          "authorId": "5690814",
+          "name": "A. Amara"
+        }
+      ],
+      "abstract": "Background: Sleep disorders are common in Parkinson’s disease (PD) and include alterations in sleep-related EEG oscillations. Objective: This case-control study tested the hypothesis that patients with PD would have a lower density of Scalp-Slow Wave (SW) oscillations and higher slow-to-fast frequencies ratio in rapid eye movement (REM) sleep than non-PD controls. Other sleep-related quantitative EEG (qEEG) features were also examined, including SW morphology, sleep spindles, and Scalp-SW spindle phase-amplitude coupling. Methods: Polysomnography (PSG)-derived sleep EEG was compared between PD participants (n = 56) and non-PD controls (n = 30). Following artifact rejection, sleep qEEG analysis was performed in frontal and central leads. Measures included SW density and morphological features of SW and sleep spindles, SW-spindle phase-amplitude coupling, and spectral power analysis in Non-REM (NREM) and REM. Differences in qEEG features between PD and non-PD controls were compared using two-tailed Welch’s t-tests, and correction for multiple comparisons was performed per the Benjamini-Hochberg method. Results: SW density was lower in PD than in non-PD controls (F = 13.5, p’ = 0.003). The PD group also exhibited higher ratio of slow REM EEG frequencies (F = 4.23, p’ = 0.013), higher slow spindle peak frequency (F = 24.7, p’ < 0.002), and greater SW-spindle coupling angle distribution non-uniformity (strength) (F = 7.30, p’ = 0.034). Conclusion: This study comprehensively evaluates sleep qEEG including SW-spindle phase amplitude coupling in PD compared to non-PD controls. These findings provide novel insights into how neurodegenerative disease disrupts electrophysiological sleep rhythms. Considering the role of sleep oscillatory activity on neural plasticity, future studies should investigate the influence of these qEEG markers on cognition in PD."
+    },
+    {
+      "paperId": "6474037a148a76bf5bda15a580eea1d03d7d99b4",
+      "externalIds": {
+        "PubMedCentral": "13298131",
+        "DOI": "10.3390/diagnostics16121770",
+        "CorpusId": 289128545,
+        "PubMed": "42351428"
+      },
+      "url": "https://www.semanticscholar.org/paper/6474037a148a76bf5bda15a580eea1d03d7d99b4",
+      "title": "Differential Effects of Sleep Respiratory Event Types on Heart Rate Variability: Central Apnea as the Most Significant",
+      "venue": "Diagnostics",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/diagnostics16121770",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13298131, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2439897258",
+          "name": "Tianci Zhao"
+        },
+        {
+          "authorId": "2153677995",
+          "name": "Cong Fu"
+        },
+        {
+          "authorId": "2261724054",
+          "name": "Wei Chen"
+        },
+        {
+          "authorId": "2127379146",
+          "name": "Chen Chen"
+        },
+        {
+          "authorId": "2152696724",
+          "name": "Huan Yu"
+        }
+      ],
+      "abstract": "Background: Sleep-disordered breathing (SDB) is frequently accompanied by autonomic nervous system (ANS) dysfunction, which is closely associated with an increased incidence of cardiovascular diseases and elevated mortality risk. Heart rate variability (HRV) serves as a classic metric for evaluating sympathovagal balance; however, the specific impacts of four distinct types of respiratory events—obstructive apnea (OA), central apnea (CA), mixed apnea (MA), and hypopnea (HYP)—on HRV remain underinvestigated. Utilizing ultra-short-term HRV analysis, this study aimed to evaluate the immediate effects of different respiratory events on ANS function, while further exploring the modulatory roles of arousal, Apnea–Hypopnea Index (AHI) severity and sleep stages (non-rapid eye movement [NREM] vs. rapid eye movement [REM]). Methods: A total of 108 patients with SDB undergoing overnight polysomnography (PSG) were included. A total of 19,862 respiratory events, including obstructive apnea (OA), central apnea (CA), mixed apnea (MA), and hypopnea (HYP), were analyzed using 15 s ECG segments. Linear mixed-effects models (LMMs) and estimated marginal means (EMMs) with Sidak-adjusted pairwise comparisons were constructed to evaluate differences in ECG-derived features and to analyze differences between event types. Results: Central apnea (CA) was associated with significantly reduced HRV and heart rate indices, including Standard Deviation of Successive Differences (SDSD), Root Mean Square of the Successive (RMSSD), Standard Deviation 1 (SD1), and heart rate (HR), compared with other respiratory event types (all p < 0.05). Across all event types, HRV metrics exhibited consistent dynamic changes before, during, and after respiratory events (all p < 0.001), characterized by a decrease during the event followed by post-event recovery. In the interaction effect of sleep stage, SDSD was significantly lower in CA compared with both OA (estimate = −11.67, 95% CI −18.78 to −4.59, p < 0.001) and HYP (estimate = −11.38, 95% CI −18.55 to −4.20, p < 0.001) during NREM sleep. No significant differences in HRV parameters, heart rate, or QRS duration were observed between OA and HYP (all p > 0.05). Conclusions: This study is the first to elucidate the differential impacts of four distinct types of sleep respiratory events on ultra-short-term HRV, confirming that CA events exert the most profound effects on autonomic function. These findings suggest that the proportion of CA occurrences could serve as a more precise biomarker for identifying individuals at high risk for cardiovascular diseases within the SDB population."
+    },
+    {
+      "paperId": "f575ae4f3727506abaf86b97e099e81869a902c9",
+      "externalIds": {
+        "PubMedCentral": "8271886",
+        "DBLP": "journals/sensors/AltiniK21",
+        "DOI": "10.3390/s21134302",
+        "CorpusId": 235715493,
+        "PubMed": "34201861"
+      },
+      "url": "https://www.semanticscholar.org/paper/f575ae4f3727506abaf86b97e099e81869a902c9",
+      "title": "The Promise of Sleep: A Multi-Sensor Approach for Accurate Sleep Stage Detection Using the Oura Ring",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2021,
+      "citationCount": 167,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/21/13/4302/pdf?version=1624585642",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8271886, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35295953",
+          "name": "M. Altini"
+        },
+        {
+          "authorId": "48595263",
+          "name": "H. Kinnunen"
+        }
+      ],
+      "abstract": "Consumer-grade sleep trackers represent a promising tool for large scale studies and health management. However, the potential and limitations of these devices remain less well quantified. Addressing this issue, we aim at providing a comprehensive analysis of the impact of accelerometer, autonomic nervous system (ANS)-mediated peripheral signals, and circadian features for sleep stage detection on a large dataset. Four hundred and forty nights from 106 individuals, for a total of 3444 h of combined polysomnography (PSG) and physiological data from a wearable ring, were acquired. Features were extracted to investigate the relative impact of different data streams on 2-stage (sleep and wake) and 4-stage classification accuracy (light NREM sleep, deep NREM sleep, REM sleep, and wake). Machine learning models were evaluated using a 5-fold cross-validation and a standardized framework for sleep stage classification assessment. Accuracy for 2-stage detection (sleep, wake) was 94% for a simple accelerometer-based model and 96% for a full model that included ANS-derived and circadian features. Accuracy for 4-stage detection was 57% for the accelerometer-based model and 79% when including ANS-derived and circadian features. Combining the compact form factor of a finger ring, multidimensional biometric sensory streams, and machine learning, high accuracy wake-sleep detection and sleep staging can be accomplished."
+    },
+    {
+      "paperId": "0e30150d3c7b6352253d9df00637200400c13daf",
+      "externalIds": {
+        "DOI": "10.1016/j.neuroimage.2025.121368",
+        "CorpusId": 279993432,
+        "PubMed": "40651677"
+      },
+      "url": "https://www.semanticscholar.org/paper/0e30150d3c7b6352253d9df00637200400c13daf",
+      "title": "Sleep Indicators and staging: A Functional Near-Infrared Spectroscopy Study in Healthy Young Adults.",
+      "venue": "NeuroImage",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2025.121368",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2025.121368?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2025.121368, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2332889498",
+          "name": "Yong Cao"
+        },
+        {
+          "authorId": "2310628772",
+          "name": "Xingwei An"
+        },
+        {
+          "authorId": "1918070921",
+          "name": "Wenxiao Zhong"
+        },
+        {
+          "authorId": "2118239475",
+          "name": "Jin Jiang"
+        },
+        {
+          "authorId": "2007589896",
+          "name": "Hongzuo Chu"
+        },
+        {
+          "authorId": "36653140",
+          "name": "Xuejun Jiao"
+        },
+        {
+          "authorId": "2331834645",
+          "name": "Xiaoping Chen"
+        },
+        {
+          "authorId": "2566812",
+          "name": "Yufeng Ke"
+        },
+        {
+          "authorId": "2215784055",
+          "name": "Bo Wang"
+        }
+      ],
+      "abstract": "Functional near-infrared spectroscopy(fNIRS)-based sleep staging has attracted considerable interest due to its portability and limited interference with sleep. However, few studies have systematically examined sleep indicators or formulated sleep staging models based on fNIRS features labelled by polysomnography(PSG). This study aimed to address these shortcomings and promote the application of fNIRS in sleep monitoring. 37 volunteers participated in our experiment, with 6-channel prefrontal fNIRS data and standard PSG data collected simultaneously. Sleep indicators were extracted from time-domain, frequency-domain, and entropy perspectives. Sleep staging was developed based on these indicators using human-scored PSG as reference. Our findings indicated deeper sleep was correlated with a decrease in amplitude of time-domain features, while entropy features showed a contrasting trend. The fNIRS-based sleep staging achieved a Cohen's kappa(κ) of 0.76±0.12, 0.72±0.09, 0.71±0.07, with accuracies of 94.2±2.4%, 87.8±3.2%, and 82.2±4.1%, for 2-class(Wake/Sleep), 3-class(Wake/NREM/REM), 4-class (Wake/N1+N2/N3/REM) classifications, respectively. Sleep statistics derived from fNIRS closely aligned with those from PSG, with differences in sleep onset latency, wake after sleep onset, total wake/sleep time within 5 min and sleep efficiency below 3%. The substantial agreement in both detailed (epoch-by-epoch) and comprehensive (total) sleep statistics with PSG suggests fNIRS is a reliable tool for long-term sleep monitoring in everyday settings."
+    },
+    {
+      "paperId": "9b7c3df96326d4aefb6de68ee877f098ebcab45a",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2401-10107",
+        "DOI": "10.48550/arXiv.2401.10107",
+        "CorpusId": 278904792
+      },
+      "url": "https://www.semanticscholar.org/paper/9b7c3df96326d4aefb6de68ee877f098ebcab45a",
+      "title": "Comparison analysis between standard polysomnographic data and in-ear-EEG signals: A preliminary study",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2401.10107?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2401.10107, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2279828832",
+          "name": "Gianpaolo Palo"
+        },
+        {
+          "authorId": "70433105",
+          "name": "Luigi Fiorillo"
+        },
+        {
+          "authorId": "2185729153",
+          "name": "G. Monachino"
+        },
+        {
+          "authorId": "2276425506",
+          "name": "M. Bechný"
+        },
+        {
+          "authorId": "2284114247",
+          "name": "M. Melnykowycz"
+        },
+        {
+          "authorId": "2512354",
+          "name": "Athina Tzovara"
+        },
+        {
+          "authorId": "2279830738",
+          "name": "Valentina Agostini"
+        },
+        {
+          "authorId": "2083552374",
+          "name": "F. Faraci"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "ec5399a8c8ba28326049860b5a065547e57bfb9e",
+      "externalIds": {
+        "DBLP": "conf/embc/Vaquerizo-Villar23",
+        "DOI": "10.1109/EMBC40787.2023.10341100",
+        "CorpusId": 266197604,
+        "PubMed": "38082822"
+      },
+      "url": "https://www.semanticscholar.org/paper/ec5399a8c8ba28326049860b5a065547e57bfb9e",
+      "title": "A deep learning model based on the combination of convolutional and recurrent neural networks to enhance pulse oximetry ability to classify sleep stages in children with sleep apnea",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2023,
+      "citationCount": 7,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EMBC40787.2023.10341100?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EMBC40787.2023.10341100, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1405139035",
+          "name": "F. Vaquerizo-Villar"
+        },
+        {
+          "authorId": "145690431",
+          "name": "D. Álvarez"
+        },
+        {
+          "authorId": "1403060622",
+          "name": "G. Gutiérrez-Tobal"
+        },
+        {
+          "authorId": "7877412",
+          "name": "F. Campo"
+        },
+        {
+          "authorId": "2249965425",
+          "name": "David Gozal"
+        },
+        {
+          "authorId": "1397721432",
+          "name": "L. Kheirandish-Gozal"
+        },
+        {
+          "authorId": "2243459728",
+          "name": "T. Penzel"
+        },
+        {
+          "authorId": "2255313541",
+          "name": "R. Hornero"
+        }
+      ],
+      "abstract": "Characterization of sleep stages is essential in the diagnosis of sleep-related disorders but relies on manual scoring of overnight polysomnography (PSG) recordings, which is onerous and labor-intensive. Accordingly, we aimed to develop an accurate deep-learning model for sleep staging in children suffering from pediatric obstructive sleep apnea (OSA) using pulse oximetry signals. For this purpose, pulse rate (PR) and blood oxygen saturation (SpO2) from 429 childhood OSA patients were analyzed. A CNN-RNN architecture fed with PR and SpO2 signals was developed to automatically classify wake (W), non-Rapid Eye Movement (NREM), and REM sleep stages. This architecture was composed of: (i) a convolutional neural network (CNN), which learns stage-related features from raw PR and SpO2 data; and (ii) a recurrent neural network (RNN), which models the temporal distribution of the sleep stages. The proposed CNN-RNN model showed a high performance for the automated detection of W/NREM/REM sleep stages (86.0% accuracy and 0.743 Cohen’s kappa). Furthermore, the total sleep time estimated for each children using the CNN-RNN model showed high agreement with the manually derived from PSG (intra-class correlation coefficient = 0.747). These results were superior to previous works using CNN-based deep-learning models for automatic sleep staging in pediatric OSA patients from pulse oximetry signals. Therefore, the combination of CNN and RNN allows to obtain additional information from raw PR and SpO2 data related to sleep stages, thus being useful to automatically score sleep stages in pulse oximetry tests for children evaluated for suspected OSA.Clinical Relevance—This research establishes the usefulness of a CNN-RNN architecture to automatically score sleep stages in pulse oximetry tests for pediatric OSA diagnosis"
+    },
+    {
+      "paperId": "a71b2f5d2b1789c8b388baf553fa44796204fbce",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsae067.0212",
+        "CorpusId": 269288176
+      },
+      "url": "https://www.semanticscholar.org/paper/a71b2f5d2b1789c8b388baf553fa44796204fbce",
+      "title": "0212 Associations Between Sleep EEG and Report Card Grades in Mathematics in Adolescents",
+      "venue": "Sleep",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsae067.0212?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsae067.0212, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2257085275",
+          "name": "R. Gruber"
+        },
+        {
+          "authorId": "2297709532",
+          "name": "Reto Hubert"
+        },
+        {
+          "authorId": "2114848618",
+          "name": "Sujata Saha"
+        },
+        {
+          "authorId": "2156896680",
+          "name": "Julie Scorah"
+        },
+        {
+          "authorId": "2362544830",
+          "name": "Xiaoqian Chai"
+        },
+        {
+          "authorId": "2297709558",
+          "name": "Rosalie Barbeau"
+        },
+        {
+          "authorId": "2297711112",
+          "name": "Merrill S. Wise"
+        }
+      ],
+      "abstract": "\n \n \n Academic success plays an important role in improving future lifetime opportunities. Numerous factors have been identified as being relevant to academic achievement, but the role played by sleep in this process has been largely under studied. Accumulating evidence indicates that healthy sleep has beneficial effects on academic success, but the brain mechanisms underlying the interplay between sleep and academic outcomes in adolescents are poorly understood. Sleep electroencephalogram (EEG) is tightly linked to structural and functional features of the central nervous system. EEG signals during NREM and REM sleep have been validated to be excellent noninvasive correlates of adolescents’ brain maturation. However, previous studies examining the associations between sleep and academic achievement were based on primarily subjective measures of sleep or actigraphy. Thus, it is not known if or how these associations are related to adolescents’ brain activity during the night. The objective of this study was to examine the association between sleep EEG and report card marks in Mathematics in healthy adolescents.\n \n \n \n Sample of 40 adolescents (26 girls, 18 boys) between the ages of 12 to 15 years (M= 13.9; SD = 0.95) participated in the study. Sleep EEG was recorded using a single night of ambulatory sleep EEG monitoring with frontal derivations during the school week in the child’s home. The Sleep Profiler was used to evaluate sleep EEG through the measurement of ambulatory EEG recorded from three frontal sensors placed at approximately F7, F8 and Fpz; Automated sleep/wake scoring was performed using the Sleep Profiler system followed by visual analysis by an experienced pediatric sleep specialist. Report card grades were used to assess adolescents’ academic achievement in Mathematics for the current semester.\n \n \n \n Multiple linear regression analyses revealed that longer duration of N3 sleep was significantly associated with higher marks in Mathematics, above and beyond the contributions of age, gender, socioeconomic status and PSG-measured sleep duration.\n \n \n \n Our findings suggest that longer duration of N3 sleep recorded in the home environment in healthy adolescents is positively associated with better grades in Mathematics.\n \n \n \n The Azrieli Centre for Autism Research NSERC Discovery Grant RGPIN-2021-03363 Reut Gruber\n"
+    },
+    {
+      "paperId": "140eb9dc5b0054786df01a126d3a91b0fb470eaf",
+      "externalIds": {
+        "MAG": "1545509292",
+        "DOI": "10.5664/JCSM.1078",
+        "CorpusId": 37242424,
+        "PubMed": "21677901"
+      },
+      "url": "https://www.semanticscholar.org/paper/140eb9dc5b0054786df01a126d3a91b0fb470eaf",
+      "title": "Sleep staging based on autonomic signals: a multi-center validation study.",
+      "venue": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
+      "year": 2011,
+      "citationCount": 155,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc3113970?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.5664/JCSM.1078?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5664/JCSM.1078, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3416514",
+          "name": "J. Hedner"
+        },
+        {
+          "authorId": "1692746",
+          "name": "D. White"
+        },
+        {
+          "authorId": "143725424",
+          "name": "A. Malhotra"
+        },
+        {
+          "authorId": "4863022",
+          "name": "S. Herscovici"
+        },
+        {
+          "authorId": "40451766",
+          "name": "Stephen D. Pittman"
+        },
+        {
+          "authorId": "5733225",
+          "name": "D. Zou"
+        },
+        {
+          "authorId": "2520709",
+          "name": "L. Grote"
+        },
+        {
+          "authorId": "4873826",
+          "name": "G. Pillar"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "8e86c9751e44944414947475af38fefadba0a0d4",
+      "externalIds": {
+        "MAG": "189888755",
+        "DOI": "10.5664/JCSM.26819",
+        "CorpusId": 638491,
+        "PubMed": "17557427"
+      },
+      "url": "https://www.semanticscholar.org/paper/8e86c9751e44944414947475af38fefadba0a0d4",
+      "title": "The visual scoring of sleep and arousal in infants and children.",
+      "venue": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
+      "year": 2007,
+      "citationCount": 335,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://jcsm.aasm.org/doi/pdf/10.5664/jcsm.26819",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.5664/JCSM.26819?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5664/JCSM.26819, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1401650445",
+          "name": "M. Grigg-Damberger"
+        },
+        {
+          "authorId": "1907504",
+          "name": "D. Gozal"
+        },
+        {
+          "authorId": "6327846",
+          "name": "C. Marcus"
+        },
+        {
+          "authorId": "4855578",
+          "name": "S. Quan"
+        },
+        {
+          "authorId": "34680866",
+          "name": "C. Rosen"
+        },
+        {
+          "authorId": "2019982",
+          "name": "R. Chervin"
+        },
+        {
+          "authorId": "2052641304",
+          "name": "M. Wise"
+        },
+        {
+          "authorId": "4437821",
+          "name": "D. Picchietti"
+        },
+        {
+          "authorId": "1420829968",
+          "name": "Stephan H Sheldon"
+        },
+        {
+          "authorId": "4368527",
+          "name": "C. Iber"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "7b4fce7faa9f6b1483e839ba0e89c5d03adde4db",
+      "externalIds": {
+        "MAG": "2760650532",
+        "DBLP": "conf/softco/VatankhahAMA09",
+        "DOI": "10.1007/978-3-642-11282-9_19",
+        "CorpusId": 10398811
+      },
+      "url": "https://www.semanticscholar.org/paper/7b4fce7faa9f6b1483e839ba0e89c5d03adde4db",
+      "title": "GA/SVM for Diagnosis Sleep Stages Using Non-linear and Spectral Features",
+      "venue": "Online World Conference on Soft Computing in Industrial Applications",
+      "year": 2010,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-642-11282-9_19?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-642-11282-9_19, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46519493",
+          "name": "Maryam Vatankhah"
+        },
+        {
+          "authorId": "1398244932",
+          "name": "M. Akbarzadeh-Totonchi"
+        },
+        {
+          "authorId": "144752961",
+          "name": "A. Moghimi"
+        },
+        {
+          "authorId": "2541642",
+          "name": "V. Asadpour"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b3d57a1e2ed899c5ea5d9ca500e21dfc8e04aa6e",
+      "externalIds": {
+        "MAG": "2140917606",
+        "DBLP": "conf/ijcnn/VatankhahAM10",
+        "DOI": "10.1109/IJCNN.2010.5596732",
+        "CorpusId": 2747528
+      },
+      "url": "https://www.semanticscholar.org/paper/b3d57a1e2ed899c5ea5d9ca500e21dfc8e04aa6e",
+      "title": "An intelligent system for diagnosing sleep stages using wavelet coefficients",
+      "venue": "IEEE International Joint Conference on Neural Network",
+      "year": 2010,
+      "citationCount": 17,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IJCNN.2010.5596732?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IJCNN.2010.5596732, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46519493",
+          "name": "Maryam Vatankhah"
+        },
+        {
+          "authorId": "1398244932",
+          "name": "M. Akbarzadeh-Totonchi"
+        },
+        {
+          "authorId": "144752961",
+          "name": "A. Moghimi"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b1b195180ab61f6d9cc7bbe940cbe345a0d2eb9e",
+      "externalIds": {
+        "MAG": "2007741937",
+        "DOI": "10.1016/J.SLEEP.2013.11.044",
+        "CorpusId": 71278926
+      },
+      "url": "https://www.semanticscholar.org/paper/b1b195180ab61f6d9cc7bbe940cbe345a0d2eb9e",
+      "title": "Sleep enactment behaviors in Parkinson’s disease and multiple system atrophy: Beyond rem behavior disorder",
+      "venue": "",
+      "year": 2013,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.SLEEP.2013.11.044?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.SLEEP.2013.11.044, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4294192",
+          "name": "P. Ratti"
+        },
+        {
+          "authorId": "1422724719",
+          "name": "M. Sierra-Peña"
+        },
+        {
+          "authorId": "39782775",
+          "name": "J. Bastin"
+        },
+        {
+          "authorId": "5402859",
+          "name": "R. Manni"
+        },
+        {
+          "authorId": "1384083577",
+          "name": "M. Simonetta-Moreau"
+        },
+        {
+          "authorId": "152492912",
+          "name": "O. David"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "ba1751804fbaa72d7ffd89bc96e853171ef652a3",
+      "externalIds": {
+        "CorpusId": 285785811
+      },
+      "url": "https://www.semanticscholar.org/paper/ba1751804fbaa72d7ffd89bc96e853171ef652a3",
+      "title": "Neuropathic pain in leprosy late onset neuropathy",
+      "venue": "",
+      "year": 2018,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "2412716559",
+          "name": "R. E. Cambrodí"
+        },
+        {
+          "authorId": "2412686746",
+          "name": "J. Espadaler"
+        },
+        {
+          "authorId": "2412687501",
+          "name": "O. Romerob"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "1e547f325207e9182aa1b35c058f3d3741f2e378",
+      "externalIds": {
+        "MAG": "2163848668",
+        "DOI": "10.1007/s11325-008-0195-5",
+        "CorpusId": 1611773,
+        "PubMed": "18516632"
+      },
+      "url": "https://www.semanticscholar.org/paper/1e547f325207e9182aa1b35c058f3d3741f2e378",
+      "title": "Catathrenia: getting the ‘cat’ out of the bag",
+      "venue": "Sleep and Breathing",
+      "year": 2008,
+      "citationCount": 8,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11325-008-0195-5?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11325-008-0195-5, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2088993",
+          "name": "K. Ramar"
+        },
+        {
+          "authorId": "2065774277",
+          "name": "P. Gay"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

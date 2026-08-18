@@ -1,0 +1,507 @@
+{
+  "total": 12,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "3c6c7ba473698780e180073e7c3bc4cbc49b0890",
+      "externalIds": {
+        "PubMedCentral": "12094611",
+        "DOI": "10.1162/imag_a_00326",
+        "CorpusId": 269588316,
+        "PubMed": "40400776"
+      },
+      "url": "https://www.semanticscholar.org/paper/3c6c7ba473698780e180073e7c3bc4cbc49b0890",
+      "title": "Strategies for motion- and respiration-robust estimation of fMRI intrinsic neural timescales",
+      "venue": "bioRxiv",
+      "year": 2024,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1162/imag_a_00326",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12094611, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153548207",
+          "name": "Andrew Goldberg"
+        },
+        {
+          "authorId": "2299945658",
+          "name": "Isabella Rosario"
+        },
+        {
+          "authorId": "2382286853",
+          "name": "Jonathan Power"
+        },
+        {
+          "authorId": "2268496818",
+          "name": "Guillermo Horga"
+        },
+        {
+          "authorId": "13867891",
+          "name": "K. Wengler"
+        }
+      ],
+      "abstract": "Intrinsic neural timescale (INT) is a resting-state fMRI (rs-fMRI) measure that reflects the time window of neural integration within a brain region. Despite the potential relevance of INT to cognition, brain organization, and neuropsychiatric illness, the influences of physiological artifacts on INT have not been systematically considered. Two artifacts, head motion and respiration, pose serious issues in rs-fMRI studies. Here, we described their impact on INT estimation and tested the ability of two denoising strategies for mitigating these artifacts, high-motion frame censoring and global signal regression (GSR). We used a subset of the HCP Young Adult dataset with runs annotated for breathing patterns (Lynch et al., 2020) and at least one “clean” (reference) run that had minimal head motion and no respiration artifacts; other runs from the same participants (n = 46) were labeled as “non-clean.” We found that non-clean runs exhibited brain-wide increases in INT compared to their respective clean runs and the magnitude of error in INT between non-clean and clean runs correlated with the amount of head motion. Importantly, effect sizes were comparable to INT effects reported in the clinical literature. GSR and high-motion frame censoring improved the similarity between INT maps from non-clean runs and their respective clean run. Using a pseudo-random frame-censoring approach, there was a relationship between the amount of censored frames and both the mean INT and mean error, suggesting that frame censoring itself biases INT estimation. A group-level correction procedure reduced this bias and improved similarity between non-clean runs and their respective clean run. Based on our findings, we offer recommendations for rs-fMRI INT studies, which include implementing GSR and high-motion frame censoring with Lomb-Scargle interpolation of censored data, and performing group-level correction of the bias introduced by frame censoring."
+    },
+    {
+      "paperId": "8fe4f138841f69763a90b24a5c67703e1df44d62",
+      "externalIds": {
+        "MAG": "2971154029",
+        "DOI": "10.1073/pnas.1909852116",
+        "CorpusId": 201658490,
+        "PubMed": "31455743"
+      },
+      "url": "https://www.semanticscholar.org/paper/8fe4f138841f69763a90b24a5c67703e1df44d62",
+      "title": "Reply to Spreng et al.: Multiecho fMRI denoising does not remove global motion-associated respiratory signals",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2019,
+      "citationCount": 13,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1073/pnas.1909852116",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1073/pnas.1909852116?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/pnas.1909852116, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34677239",
+          "name": "Jonathan D. Power"
+        },
+        {
+          "authorId": "145153405",
+          "name": "Charles J. Lynch"
+        },
+        {
+          "authorId": "1840770",
+          "name": "Adrian W. Gilmore"
+        },
+        {
+          "authorId": "2574746",
+          "name": "S. Gotts"
+        },
+        {
+          "authorId": "144404253",
+          "name": "Alex Martin"
+        }
+      ],
+      "abstract": "In 2 human functional magnetic resonance imaging (fMRI) datasets (89 “ME” subjects; 12 “NA” subjects), we used signal decay properties to separate 2 kinds of signals: S0 artifacts, which were spatially specific, and T2* modulations, which occurred over the whole brain (1). We established that whole-brain (global) fMRI signals were nearly unchanged before and after removal of S0 signals. Hence, most global signals are T2* signals, compatible with neural activity or with respiratory-related pCO2 changes. In a dataset with paired respiratory records (NA data), we illustrated that changes in respiratory traces were temporally accompanied by prominent global signal modulations, an association visible in “gray plots” of single scans (2). Across scans, variance in global signals correlated with variance in respiratory measures.\n\nSpreng et al. (3) critique our paper, stating that “there is no definitive evidence . . . that respiration effects . . . even substantively contribute . . . to residual global signal [following removal of S0 … \n\n[↵][1]1To whom correspondence may be addressed. Email: jdp9009{at}nyp.org.\n\n [1]: #xref-corresp-1-1"
+    },
+    {
+      "paperId": "6f098e83955e9343c577356dc84b3003b7035fb2",
+      "externalIds": {
+        "MAG": "2537382818",
+        "DBLP": "journals/neuroimage/PowerPLM17",
+        "PubMedCentral": "5321814",
+        "DOI": "10.1016/j.neuroimage.2016.09.038",
+        "CorpusId": 2107954,
+        "PubMed": "27751941"
+      },
+      "url": "https://www.semanticscholar.org/paper/6f098e83955e9343c577356dc84b3003b7035fb2",
+      "title": "Sources and implications of whole-brain fMRI signals in humans",
+      "venue": "NeuroImage",
+      "year": 2016,
+      "citationCount": 544,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc5321814?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5321814, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34677239",
+          "name": "Jonathan D. Power"
+        },
+        {
+          "authorId": "4356197",
+          "name": "Mark H. Plitt"
+        },
+        {
+          "authorId": "2440512",
+          "name": "Timothy O. Laumann"
+        },
+        {
+          "authorId": "144404253",
+          "name": "Alex Martin"
+        }
+      ],
+      "abstract": "Abstract Whole‐brain fMRI signals are a subject of intense interest: variance in the global fMRI signal (the spatial mean of all signals in the brain) indexes subject arousal, and psychiatric conditions such as schizophrenia and autism have been characterized by differences in the global fMRI signal. Further, vigorous debates exist on whether global signals ought to be removed from fMRI data. However, surprisingly little research has focused on the empirical properties of whole‐brain fMRI signals. Here we map the spatial and temporal properties of the global signal, individually, in 1000+ fMRI scans. Variance in the global fMRI signal is strongly linked to head motion, to hardware artifacts, and to respiratory patterns and their attendant physiologic changes. Many techniques used to prepare fMRI data for analysis fail to remove these uninteresting kinds of global signal fluctuations. Thus, many studies include, at the time of analysis, prominent global effects of yawns, breathing changes, and head motion, among other signals. Such artifacts will mimic dynamic neural activity and will spuriously alter signal covariance throughout the brain. Methods capable of isolating and removing global artifactual variance while preserving putative “neural” variance are needed; this paper adopts no position on the topic of global signal regression. HighlightsDemonstrates brain‐wide (global) fMRI signals, individually, in 1000+ scans from 8 sites.Global signals often reflect artifact caused by head motion, respiration, or hardware problems.Most existing fMRI denoising methods do not adequately remove global artifacts.Global artifacts mimic dynamic neural activity and modulate signal correlations.Studies reporting global fMRI signal effects must carefully account for artifact."
+    },
+    {
+      "paperId": "7cb8dc654a2e2d16462f59545539ebecf6aeb195",
+      "externalIds": {
+        "MAG": "2970995923",
+        "DOI": "10.1073/pnas.1909848116",
+        "CorpusId": 201656863,
+        "PubMed": "31455744"
+      },
+      "url": "https://www.semanticscholar.org/paper/7cb8dc654a2e2d16462f59545539ebecf6aeb195",
+      "title": "Take a deep breath: Multiecho fMRI denoising effectively removes head motion artifacts, obviating the need for global signal regression",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2019,
+      "citationCount": 29,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc6765232?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1073/pnas.1909848116?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/pnas.1909848116, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2836333",
+          "name": "R. N. Spreng"
+        },
+        {
+          "authorId": "2238041701",
+          "name": "Sara Fernández-Cabello"
+        },
+        {
+          "authorId": "2238041701",
+          "name": "Sara Fernández-Cabello"
+        },
+        {
+          "authorId": "32193831",
+          "name": "G. Turner"
+        },
+        {
+          "authorId": "145180628",
+          "name": "W. Stevens"
+        }
+      ],
+      "abstract": "Power et al. (1) provide convincing evidence that multiecho independent components analysis (ME-ICA) effectively differentiates blood oxygen level-dependent (BOLD) from non-BOLD, or artifactual, signals in functional MRI (fMRI) data. Critically, ME-ICA removes spurious, distance-dependent effects caused by head motion in resting-state functional connectivity (RSFC) analyses, which have confounded many group studies. However, the authors also argue that ME-ICA unmasks persistent BOLD-related global signal correlates, attributed to “motion-associated” effects of respiration, and conclude that removal of this global signal by some means is necessary. Among other approaches, they recommend implementing global signal regression (GSR) following ME-ICA. To the contrary, we argue that there is no definitive evidence to date that respiration … \n\n[↵][1]1To whom correspondence may be addressed. Email: nathan.spreng{at}gmail.com or stevensd{at}yorku.ca.\n\n [1]: #xref-corresp-1-1"
+    },
+    {
+      "paperId": "7b02b1bddc1506aea494debd124f28dc54478acf",
+      "externalIds": {
+        "DBLP": "journals/jam/JoGRBMCS13",
+        "PubMedCentral": "3886863",
+        "MAG": "2001504269",
+        "DOI": "10.1155/2013/935154",
+        "CorpusId": 13766887,
+        "PubMed": "24415902"
+      },
+      "url": "https://www.semanticscholar.org/paper/7b02b1bddc1506aea494debd124f28dc54478acf",
+      "title": "Effective Preprocessing Procedures Virtually Eliminate Distance-Dependent Motion Artifacts in Resting State FMRI",
+      "venue": "Journal of Applied Mathematics",
+      "year": 2013,
+      "citationCount": 285,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://downloads.hindawi.com/journals/jam/2013/935154.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3886863, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34183711",
+          "name": "H. Jo"
+        },
+        {
+          "authorId": "2574746",
+          "name": "S. Gotts"
+        },
+        {
+          "authorId": "30415572",
+          "name": "R. Reynolds"
+        },
+        {
+          "authorId": "1764485",
+          "name": "P. Bandettini"
+        },
+        {
+          "authorId": "144404253",
+          "name": "Alex Martin"
+        },
+        {
+          "authorId": "114176426",
+          "name": "R. Cox"
+        },
+        {
+          "authorId": "2766910",
+          "name": "Z. Saad"
+        }
+      ],
+      "abstract": "Artifactual sources of resting-state (RS) FMRI can originate from head motion, physiology, and hardware. Of these sources, motion has received considerable attention and was found to induce corrupting effects by differentially biasing correlations between regions depending on their distance. Numerous corrective approaches have relied on the identification and censoring of high-motion time points and the use of the brain-wide average time series as a nuisance regressor to which the data are orthogonalized (Global Signal Regression, GSReg). We first replicate the previously reported head-motion bias on correlation coefficients using data generously contributed by Power et al. (2012). We then show that while motion can be the source of artifact in correlations, the distance-dependent bias—taken to be a manifestation of the motion effect on correlation—is exacerbated by the use of GSReg. Put differently, correlation estimates obtained after GSReg are more susceptible to the presence of motion and by extension to the levels of censoring. More generally, the effect of motion on correlation estimates depends on the preprocessing steps leading to the correlation estimate, with certain approaches performing markedly worse than others. For this purpose, we consider various models for RS FMRI preprocessing and show that WMeLOCAL, as subset of the ANATICOR discussed by Jo et al. (2010), denoising approach results in minimal sensitivity to motion and reduces by extension the dependence of correlation results on censoring."
+    },
+    {
+      "paperId": "a3f132288f4797236098766cb2893b5d3afe69f6",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/PowerMLSSP14",
+        "MAG": "1973776237",
+        "PubMedCentral": "3849338",
+        "DOI": "10.1016/j.neuroimage.2013.08.048",
+        "CorpusId": 2433590,
+        "PubMed": "23994314"
+      },
+      "url": "https://www.semanticscholar.org/paper/a3f132288f4797236098766cb2893b5d3afe69f6",
+      "title": "Methods to detect, characterize, and remove motion artifact in resting state fMRI",
+      "venue": "NeuroImage",
+      "year": 2013,
+      "citationCount": 3618,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc3849338?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3849338, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34677239",
+          "name": "Jonathan D. Power"
+        },
+        {
+          "authorId": "3220180",
+          "name": "A. Mitra"
+        },
+        {
+          "authorId": "2440512",
+          "name": "Timothy O. Laumann"
+        },
+        {
+          "authorId": "143908863",
+          "name": "A. Snyder"
+        },
+        {
+          "authorId": "2963284",
+          "name": "B. Schlaggar"
+        },
+        {
+          "authorId": "1878109",
+          "name": "S. Petersen"
+        }
+      ],
+      "abstract": "Head motion systematically alters correlations in resting state functional connectivity fMRI (RSFC). In this report we examine impact of motion on signal intensity and RSFC correlations. We find that motion-induced signal changes (1) are often complex and variable waveforms, (2) are often shared across nearly all brain voxels, and (3) often persist more than 10 seconds after motion ceases. These signal changes, both during and after motion, increase observed RSFC correlations in a distance-dependent manner. Motion-related signal changes are not removed by a variety of motion-based regressors, but are effectively reduced by global signal regression. We link several measures of data quality to motion, changes in signal intensity, and changes in RSFC correlations. We demonstrate that improvements in data quality measures during processing may represent cosmetic improvements rather than true correction of the data. We demonstrate a within-subject, censoring-based artifact removal strategy based on volume censoring that reduces group differences due to motion to chance levels. We note conditions under which group-level regressions do and do not correct motion-related effects."
+    },
+    {
+      "paperId": "49c7092e95af9aa3a3d7b1e724ff6aba13f5c6b2",
+      "externalIds": {
+        "ArXiv": "2607.01400",
+        "CorpusId": 289749151
+      },
+      "url": "https://www.semanticscholar.org/paper/49c7092e95af9aa3a3d7b1e724ff6aba13f5c6b2",
+      "title": "A global predicted-fMRI drive signal from TRIBE does not predict YouTube replay heatmaps",
+      "venue": "",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2607.01400, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2446400365",
+          "name": "B. Sahu"
+        },
+        {
+          "authorId": "2446401011",
+          "name": "Shivesh Pandey"
+        }
+      ],
+      "abstract": "Deep multimodal brain-encoding models now predict fMRI responses to naturalistic video with high accuracy; whether their predicted neural signals also forecast behavioral engagement is unknown. We run TRIBE, the winning model of the 2025 Algonauts challenge (Llama-3.2 + V-JEPA 2 + Wav2Vec-BERT), on 48 YouTube videos and reduce its predicted cortical response to a per-second engagement curve, the global field power. Correlated against each video's\"most replayed\"heatmap, a proxy for re-watch, it shows no evidence of prediction: the pooled position-controlled partial correlation is +0.058 (95% CI [-0.04, 0.15]; t(47)=1.21, p=0.23), and not above simple loudness/motion baselines. The raw correlation is also near zero; the moderate values for music videos are an onset-replay artifact. The null holds across six cortical-network readouts, value/salience ROIs, and a permutation test; a supervised leave-one-video-out probe appears to reach r=0.47 but collapses to a temporal-shape artifact under a proper position control. Running the probe on TRIBE's input streams reveals at most a small, borderline visual-stream signal (matched vs. mismatched p=0.004-0.06) and none in audio, text, or the predicted cortex. The inter-subject-correlation readout, the closest prior positive result, is unavailable from the subject-averaged released model, so we fit our own per-subject encoders on the Algonauts fMRI (validated in-domain at r=0.15 and cross-domain, Friends-to-film, at r=0.10); the predicted ISC still does not track re-watch (r=-0.04, p=0.34). We bound rather than merely fail to reject the null: a Bayes factor gives moderate evidence for it (BF01=3.2), an equivalence test excludes effects above r=0.14, and the target's split-half reliability (0.82; ceiling r=0.9) rules out a noisy-label artifact. We release code, a video-ID manifest, and a heatmap-acquisition method robust to YouTube's SABR streaming."
+    },
+    {
+      "paperId": "fd4a14fb37e859a9bf3ac718d3aa2a5fb8cb58b2",
+      "externalIds": {
+        "MAG": "2791194758",
+        "DOI": "10.1073/pnas.1720985115",
+        "CorpusId": 3775018,
+        "PubMed": "29440410"
+      },
+      "url": "https://www.semanticscholar.org/paper/fd4a14fb37e859a9bf3ac718d3aa2a5fb8cb58b2",
+      "title": "Ridding fMRI data of motion-related influences: Removal of signals with distinct spatial and physical bases in multiecho data",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2018,
+      "citationCount": 275,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.pnas.org/content/pnas/115/9/E2105.full.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1073/pnas.1720985115?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/pnas.1720985115, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34677239",
+          "name": "Jonathan D. Power"
+        },
+        {
+          "authorId": "4356197",
+          "name": "Mark H. Plitt"
+        },
+        {
+          "authorId": "2574746",
+          "name": "S. Gotts"
+        },
+        {
+          "authorId": "2237882",
+          "name": "P. Kundu"
+        },
+        {
+          "authorId": "7286041",
+          "name": "V. Voon"
+        },
+        {
+          "authorId": "1764485",
+          "name": "P. Bandettini"
+        },
+        {
+          "authorId": "144404253",
+          "name": "Alex Martin"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "3c776b334e02bc109a05d4911d66dc6403cb0b55",
+      "externalIds": {
+        "CorpusId": 4935536
+      },
+      "url": "https://www.semanticscholar.org/paper/3c776b334e02bc109a05d4911d66dc6403cb0b55",
+      "title": "Caffeine-induced reductions in the resting-state fMRI global signal reflect increases in EEG vigilance measures",
+      "venue": "",
+      "year": 2012,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://cds.ismrm.org/protected/13MProceedings/files/0033.PDF, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "14231104",
+          "name": "C. Wong"
+        },
+        {
+          "authorId": "2127645",
+          "name": "Valur Thor Olafsson"
+        },
+        {
+          "authorId": "32008701",
+          "name": "O. Tal"
+        },
+        {
+          "authorId": "143747274",
+          "name": "Thomas T. Liu"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c55de826c91634f8eb5d53ef315a0ea8d55fe0a9",
+      "externalIds": {
+        "CorpusId": 35726072
+      },
+      "url": "https://www.semanticscholar.org/paper/c55de826c91634f8eb5d53ef315a0ea8d55fe0a9",
+      "title": "A Randomized Global Signal Regression Method for Resting State Functional Connectivity Studies",
+      "venue": "",
+      "year": 2009,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://cds.ismrm.org/protected/10MProceedings/files/3425_6521.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2282085272",
+          "name": "H. He"
+        },
+        {
+          "authorId": "1403399124",
+          "name": "A. L. Rack-Gomer"
+        },
+        {
+          "authorId": "2185954023",
+          "name": "T. Liu"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "6a6592999af36971fab1fc67a372239e72db57f3",
+      "externalIds": {
+        "MAG": "2898621083",
+        "PubMedCentral": "6267988",
+        "DBLP": "conf/embc/JarrahiM18",
+        "DOI": "10.1109/EMBC.2018.8512478",
+        "CorpusId": 53098882,
+        "PubMed": "30440569"
+      },
+      "url": "https://www.semanticscholar.org/paper/6a6592999af36971fab1fc67a372239e72db57f3",
+      "title": "Characterizing the Effects of MR Image Quality Metrics on Intrinsic Connectivity Brain Networks: A Multivariate Approach",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2018,
+      "citationCount": 6,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc6267988?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6267988, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2581057",
+          "name": "B. Jarrahi"
+        },
+        {
+          "authorId": "143739081",
+          "name": "S. Mackey"
+        }
+      ],
+      "abstract": "Motion-induced artifact detection has become a fixture in the assessment of functional magnetic resonance imaging (fMRI) quality control. However, the effects of other MR image quality (IQ) metrics on intrinsic connectivity brain networks are largely unexplored. Accordingly, we report herein the initial assessment of the effects of a comprehensive list of IQ metrics on resting state networks using a multivariate analysis of covariance (MANCOVA) approach based on high-order spatial independent component analysis (ICA). Three categories of MR IQ metrics were considered: (1) metrics for artifacts including the AFNI outlier ratio and quality index, framewise displacement, and ghost to signal ratio, (2) metrics for the temporal quality of MRI data including the temporal framewise change in global BOLD signals (DVARS), global correlation of time-series, and temporal signal to noise ratio, (3) metrics for the structural quality of MRI data including the entropy focus criterion, foreground-background energy ratio, full-width half maximum smoothness, and static signal to noise ratio. After FDR-correction for multiple comparisons, results showed significant effects of the static and temporal signal to noise ratios on the spatial map intensities of the basal ganglia, default-mode and cerebellar networks. AFNI outlier ratio, framewise displacement and DVARS exhibited significant effects on the BOLD power spectra of sensorimotor networks. The global correlation of time-series displayed wide-spread modulation of the spectral power in most networks. Further investigations of the effect of IQ metrics on the characteristics of intrinsic connectivity brain networks allow more accurate interpretation of the fMRI results."
+    },
+    {
+      "paperId": "0f77a3c75c06d286a68d4c867e3a4c912461ddaa",
+      "externalIds": {
+        "MAG": "604209753",
+        "CorpusId": 141944385
+      },
+      "url": "https://www.semanticscholar.org/paper/0f77a3c75c06d286a68d4c867e3a4c912461ddaa",
+      "title": "Frontiers in human brain topography : proceedings of the 15th World Congress of the International Society for Brain Electromagnetic Topography (ISBET 2004) held in Urayasu, Japan between 11 and 14 April 2004",
+      "venue": "",
+      "year": 2004,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "47852127",
+          "name": "M. Nakagawa"
+        },
+        {
+          "authorId": "66001927",
+          "name": "平田 幸一"
+        },
+        {
+          "authorId": "2093351209",
+          "name": "古賀 良彦"
+        },
+        {
+          "authorId": "69572106",
+          "name": "長田 乾"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

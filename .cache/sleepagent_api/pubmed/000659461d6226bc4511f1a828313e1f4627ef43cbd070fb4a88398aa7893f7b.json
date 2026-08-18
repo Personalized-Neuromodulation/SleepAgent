@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "integration",
+        "to": "\"integrability\"[All Fields] OR \"integrable\"[All Fields] OR \"integral\"[All Fields] OR \"integrally\"[All Fields] OR \"integrals\"[All Fields] OR \"integrant\"[All Fields] OR \"integrants\"[All Fields] OR \"integrate\"[All Fields] OR \"integrated\"[All Fields] OR \"integrates\"[All Fields] OR \"integrating\"[All Fields] OR \"integration\"[All Fields] OR \"integrational\"[All Fields] OR \"integrations\"[All Fields] OR \"integrative\"[All Fields] OR \"integratively\"[All Fields] OR \"integrator\"[All Fields] OR \"integrators\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "sleep disorders",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DTI-fMRI\"[All Fields] AND (\"integrability\"[All Fields] OR \"integrable\"[All Fields] OR \"integral\"[All Fields] OR \"integrally\"[All Fields] OR \"integrals\"[All Fields] OR \"integrant\"[All Fields] OR \"integrants\"[All Fields] OR \"integrate\"[All Fields] OR \"integrated\"[All Fields] OR \"integrates\"[All Fields] OR \"integrating\"[All Fields] OR \"integration\"[All Fields] OR \"integrational\"[All Fields] OR \"integrations\"[All Fields] OR \"integrative\"[All Fields] OR \"integratively\"[All Fields] OR \"integrator\"[All Fields] OR \"integrators\"[All Fields]) AND \"network-specific\"[All Fields] AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "for",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

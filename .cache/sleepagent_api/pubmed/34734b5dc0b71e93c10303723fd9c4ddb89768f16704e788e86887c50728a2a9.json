@@ -1,0 +1,45 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Linear regression",
+        "to": "\"linear models\"[MeSH Terms] OR (\"linear\"[All Fields] AND \"models\"[All Fields]) OR \"linear models\"[All Fields] OR (\"linear\"[All Fields] AND \"regression\"[All Fields]) OR \"linear regression\"[All Fields]"
+      },
+      {
+        "from": "analysis",
+        "to": "\"analysis\"[Subheading] OR \"analysis\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "REM",
+        "to": "\"Rangel Ecol Manag\"[Journal:__jid101737744] OR \"rem\"[All Fields]"
+      },
+      {
+        "from": "latency",
+        "to": "\"latencies\"[All Fields] OR \"latency\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"linear models\"[MeSH Terms] OR (\"linear\"[All Fields] AND \"models\"[All Fields]) OR \"linear models\"[All Fields] OR (\"linear\"[All Fields] AND \"regression\"[All Fields]) OR \"linear regression\"[All Fields]) AND (\"analysis\"[MeSH Subheading] OR \"analysis\"[All Fields]) AND \"thalamus-DMN\"[All Fields] AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"rangel ecol manag\"[Journal] OR \"rem\"[All Fields]) AND (\"latencies\"[All Fields] OR \"latency\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

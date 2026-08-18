@@ -1,0 +1,904 @@
+{
+  "subject_table": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/subject_level_validation_table.csv",
+  "feature_stats": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/feature_stats.csv",
+  "group_symptom_stats": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/group_symptom_stats.csv",
+  "node_coordinates": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/node_coordinates.csv",
+  "metrics": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/metrics.json",
+  "hypothesis_support_path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/hypothesis_support.json",
+  "hypothesis_support_report": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/hypothesis_support.md",
+  "figures": [
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/mean_difference_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/mean_difference_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/significant_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/significant_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_ISI_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_ISI_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_ISI_control_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_ISI_control_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_ISI_interaction_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_ISI_interaction_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_PSQI_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_PSQI_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_PSQI_control_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_PSQI_control_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_PSQI_interaction_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_PSQI_interaction_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BAI_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BAI_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BAI_control_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BAI_control_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BAI_interaction_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BAI_interaction_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BDI_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BDI_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BDI_control_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BDI_control_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BDI_interaction_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BDI_interaction_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_sleepiness_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_sleepiness_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_sleepiness_control_symptom_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_sleepiness_control_symptom_connectome_3d.html",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_sleepiness_interaction_connectome.png",
+    "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_sleepiness_interaction_connectome_3d.html"
+  ],
+  "connection_visualizations": [
+    {
+      "kind": "mean_difference_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/mean_difference_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "mean_difference_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/mean_difference_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "significant_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/significant_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "significant_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/significant_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "nonhealthy_ISI_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_ISI_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "nonhealthy_ISI_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_ISI_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "healthy_ISI_control_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_ISI_control_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "healthy_ISI_control_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_ISI_control_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "group_fc_ISI_interaction_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_ISI_interaction_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "group_fc_ISI_interaction_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_ISI_interaction_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "nonhealthy_PSQI_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_PSQI_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "nonhealthy_PSQI_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_PSQI_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "healthy_PSQI_control_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_PSQI_control_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "healthy_PSQI_control_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_PSQI_control_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "group_fc_PSQI_interaction_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_PSQI_interaction_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "group_fc_PSQI_interaction_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_PSQI_interaction_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "nonhealthy_BAI_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BAI_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "nonhealthy_BAI_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BAI_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "healthy_BAI_control_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BAI_control_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "healthy_BAI_control_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BAI_control_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "group_fc_BAI_interaction_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BAI_interaction_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "group_fc_BAI_interaction_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BAI_interaction_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "nonhealthy_BDI_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BDI_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "nonhealthy_BDI_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BDI_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "healthy_BDI_control_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BDI_control_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "healthy_BDI_control_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BDI_control_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "group_fc_BDI_interaction_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BDI_interaction_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "group_fc_BDI_interaction_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BDI_interaction_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "nonhealthy_sleepiness_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_sleepiness_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "nonhealthy_sleepiness_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_sleepiness_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "healthy_sleepiness_control_symptom_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_sleepiness_control_symptom_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "healthy_sleepiness_control_symptom_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_sleepiness_control_symptom_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    },
+    {
+      "kind": "group_fc_sleepiness_interaction_connectome",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_sleepiness_interaction_connectome.png",
+      "renderer": "nilearn_connectome"
+    },
+    {
+      "kind": "group_fc_sleepiness_interaction_connectome_3d",
+      "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_sleepiness_interaction_connectome_3d.html",
+      "renderer": "nilearn_connectome_3d"
+    }
+  ],
+  "metadata": {
+    "source": "grounding",
+    "hypothesis_id": "grounding_health_fc_001",
+    "hypothesis": "Grounding evidence predicts that non-healthy sleep status is associated with altered thalamo-cortical and large-scale network functional connectivity, especially among thalamus, default mode, salience, and frontoparietal networks.",
+    "candidate_fc": [
+      "thalamus_DMN_FC",
+      "thalamus_salience_FC",
+      "thalamus_frontoparietal_FC",
+      "DMN_salience_FC",
+      "DMN_frontoparietal_FC",
+      "salience_frontoparietal_FC",
+      "DMN_FC",
+      "salience_FC",
+      "frontoparietal_FC"
+    ],
+    "clinical_anchors": [
+      "ISI",
+      "PSQI",
+      "BAI",
+      "BDI",
+      "sleepiness"
+    ],
+    "analyzed_clinical_anchors": [
+      "ISI",
+      "PSQI",
+      "BAI",
+      "BDI",
+      "sleepiness"
+    ],
+    "healthy_prefix": "sub-YZHC",
+    "n_subjects": 51,
+    "n_samples": 93,
+    "n_healthy": 19,
+    "n_nonhealthy": 74,
+    "n_healthy_subjects": 14,
+    "n_nonhealthy_subjects": 37,
+    "analysis_unit": "session_sample",
+    "analysis_task": "locked_candidate_fc_group_contrast",
+    "feature_selection_policy": "grounding_prespecified_only"
+  },
+  "statistical_model": {
+    "status": "run",
+    "task": "locked_candidate_fc_group_contrast",
+    "feature_selection_policy": "grounding_prespecified_only",
+    "group_contrast": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/feature_stats.csv",
+    "symptom_association": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/visuals/grounding_candidate_fc_group_contrast/group_symptom_stats.csv",
+    "tested_groups": [
+      "healthy",
+      "nonhealthy"
+    ],
+    "interaction_model": "clinical_anchor ~ FC + healthy_label + FC:healthy_label"
+  },
+  "hypothesis_support": {
+    "hypothesis_id": "grounding_health_fc_001",
+    "hypothesis": "Grounding evidence predicts that non-healthy sleep status is associated with altered thalamo-cortical and large-scale network functional connectivity, especially among thalamus, default mode, salience, and frontoparietal networks.",
+    "evidence_ids": [],
+    "candidate_fc": [
+      "thalamus_DMN_FC",
+      "thalamus_salience_FC",
+      "thalamus_frontoparietal_FC",
+      "DMN_salience_FC",
+      "DMN_frontoparietal_FC",
+      "salience_frontoparietal_FC",
+      "DMN_FC",
+      "salience_FC",
+      "frontoparietal_FC"
+    ],
+    "feature_support": [
+      {
+        "feature": "thalamus_DMN_FC",
+        "expected_direction": "",
+        "observed_direction": "nonhealthy_greater",
+        "direction_matches": null,
+        "healthy_mean": 0.23112444221391093,
+        "nonhealthy_mean": 0.29781734045234554,
+        "nonhealthy_minus_healthy": 0.0666928982384346,
+        "welch_p": 0.5676445349076571,
+        "fdr_q": 0.791388283898187,
+        "significant_fdr_0_05": false,
+        "supported": false
+      },
+      {
+        "feature": "thalamus_salience_FC",
+        "expected_direction": "",
+        "observed_direction": "nonhealthy_greater",
+        "direction_matches": null,
+        "healthy_mean": 0.28533790397516584,
+        "nonhealthy_mean": 0.3311317517861508,
+        "nonhealthy_minus_healthy": 0.045793847810984945,
+        "welch_p": 0.6995966778470305,
+        "fdr_q": 0.791388283898187,
+        "significant_fdr_0_05": false,
+        "supported": false
+      },
+      {
+        "feature": "thalamus_frontoparietal_FC",
+        "expected_direction": "",
+        "observed_direction": "nonhealthy_greater",
+        "direction_matches": null,
+        "healthy_mean": 0.11250359849936278,
+        "nonhealthy_mean": 0.16537382345960658,
+        "nonhealthy_minus_healthy": 0.052870224960243795,
+        "welch_p": 0.6626619003047032,
+        "fdr_q": 0.791388283898187,
+        "significant_fdr_0_05": false,
+        "supported": false
+      },
+      {
+        "feature": "DMN_salience_FC",
+        "expected_direction": "",
+        "observed_direction": "nonhealthy_greater",
+        "direction_matches": null,
+        "healthy_mean": 0.359822614979085,
+        "nonhealthy_mean": 0.43757273962754467,
+        "nonhealthy_minus_healthy": 0.07775012464845965,
+        "welch_p": 0.4467558633461536,
+        "fdr_q": 0.791388283898187,
+        "significant_fdr_0_05": false,
+        "supported": false
+      },
+      {
+        "feature": "DMN_frontoparietal_FC",
+        "expected_direction": "",
+        "observed_direction": "nonhealthy_greater",
+        "direction_matches": null,
+        "healthy_mean": 0.6102184837187938,
+        "nonhealthy_mean": 0.6113852202931976,
+        "nonhealthy_minus_healthy": 0.0011667365744038038,
+        "welch_p": 0.989874969601125,
+        "fdr_q": 0.9898749696011249,
+        "significant_fdr_0_05": false,
+        "supported": false
+      },
+      {
+        "feature": "salience_frontoparietal_FC",
+        "expected_direction": "",
+        "observed_direction": "nonhealthy_greater",
+        "direction_matches": null,
+        "healthy_mean": 0.3801931845731001,
+        "nonhealthy_mean": 0.42185790715526134,
+        "nonhealthy_minus_healthy": 0.04166472258216125,
+        "welch_p": 0.703456252353944,
+        "fdr_q": 0.791388283898187,
+        "significant_fdr_0_05": false,
+        "supported": false
+      },
+      {
+        "feature": "DMN_FC",
+        "expected_direction": "",
+        "observed_direction": "nonhealthy_greater",
+        "direction_matches": null,
+        "healthy_mean": 0.6797889628153491,
+        "nonhealthy_mean": 0.9320785700432237,
+        "nonhealthy_minus_healthy": 0.25228960722787463,
+        "welch_p": 0.056760299535000065,
+        "fdr_q": 0.25370228139364637,
+        "significant_fdr_0_05": false,
+        "supported": false
+      },
+      {
+        "feature": "salience_FC",
+        "expected_direction": "",
+        "observed_direction": "nonhealthy_greater",
+        "direction_matches": null,
+        "healthy_mean": 0.7466700237441968,
+        "nonhealthy_mean": 1.0049449859546478,
+        "nonhealthy_minus_healthy": 0.258274962210451,
+        "welch_p": 0.08456742713121546,
+        "fdr_q": 0.25370228139364637,
+        "significant_fdr_0_05": false,
+        "supported": false
+      },
+      {
+        "feature": "frontoparietal_FC",
+        "expected_direction": "",
+        "observed_direction": "nonhealthy_greater",
+        "direction_matches": null,
+        "healthy_mean": 0.77822933773936,
+        "nonhealthy_mean": 1.0622784281569349,
+        "nonhealthy_minus_healthy": 0.28404909041757487,
+        "welch_p": 0.044201644465081125,
+        "fdr_q": 0.25370228139364637,
+        "significant_fdr_0_05": false,
+        "supported": false
+      }
+    ],
+    "symptom_mechanism_summary": [
+      {
+        "feature": "thalamus_DMN_FC",
+        "clinical_anchor": "ISI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_salience_FC",
+        "clinical_anchor": "ISI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_frontoparietal_FC",
+        "clinical_anchor": "ISI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_salience_FC",
+        "clinical_anchor": "ISI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_frontoparietal_FC",
+        "clinical_anchor": "ISI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_frontoparietal_FC",
+        "clinical_anchor": "ISI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_FC",
+        "clinical_anchor": "ISI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_FC",
+        "clinical_anchor": "ISI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "frontoparietal_FC",
+        "clinical_anchor": "ISI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_DMN_FC",
+        "clinical_anchor": "PSQI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_salience_FC",
+        "clinical_anchor": "PSQI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_frontoparietal_FC",
+        "clinical_anchor": "PSQI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_salience_FC",
+        "clinical_anchor": "PSQI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_frontoparietal_FC",
+        "clinical_anchor": "PSQI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_frontoparietal_FC",
+        "clinical_anchor": "PSQI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_FC",
+        "clinical_anchor": "PSQI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_FC",
+        "clinical_anchor": "PSQI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "frontoparietal_FC",
+        "clinical_anchor": "PSQI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_DMN_FC",
+        "clinical_anchor": "BAI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_salience_FC",
+        "clinical_anchor": "BAI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_frontoparietal_FC",
+        "clinical_anchor": "BAI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_salience_FC",
+        "clinical_anchor": "BAI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_frontoparietal_FC",
+        "clinical_anchor": "BAI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_frontoparietal_FC",
+        "clinical_anchor": "BAI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_FC",
+        "clinical_anchor": "BAI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_FC",
+        "clinical_anchor": "BAI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "frontoparietal_FC",
+        "clinical_anchor": "BAI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_DMN_FC",
+        "clinical_anchor": "BDI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_salience_FC",
+        "clinical_anchor": "BDI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_frontoparietal_FC",
+        "clinical_anchor": "BDI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_salience_FC",
+        "clinical_anchor": "BDI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_frontoparietal_FC",
+        "clinical_anchor": "BDI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_frontoparietal_FC",
+        "clinical_anchor": "BDI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_FC",
+        "clinical_anchor": "BDI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_FC",
+        "clinical_anchor": "BDI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "frontoparietal_FC",
+        "clinical_anchor": "BDI",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_DMN_FC",
+        "clinical_anchor": "sleepiness",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_salience_FC",
+        "clinical_anchor": "sleepiness",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "thalamus_frontoparietal_FC",
+        "clinical_anchor": "sleepiness",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_salience_FC",
+        "clinical_anchor": "sleepiness",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_frontoparietal_FC",
+        "clinical_anchor": "sleepiness",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_frontoparietal_FC",
+        "clinical_anchor": "sleepiness",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "DMN_FC",
+        "clinical_anchor": "sleepiness",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "salience_FC",
+        "clinical_anchor": "sleepiness",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      },
+      {
+        "feature": "frontoparietal_FC",
+        "clinical_anchor": "sleepiness",
+        "nonhealthy_spearman_r": null,
+        "nonhealthy_spearman_fdr_q": null,
+        "healthy_spearman_r": null,
+        "group_fc_interaction_beta": null,
+        "group_fc_interaction_fdr_q": null,
+        "nonhealthy_symptom_supported": false,
+        "group_interaction_supported": false
+      }
+    ],
+    "supported_features": [],
+    "supported_feature_count": 0,
+    "conclusion": "not_supported_by_available_local_group_contrast"
+  }
+}

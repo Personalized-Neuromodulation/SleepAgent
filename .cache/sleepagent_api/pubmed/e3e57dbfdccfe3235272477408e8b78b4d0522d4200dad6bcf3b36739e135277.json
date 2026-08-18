@@ -1,0 +1,61 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "41566916"
+    ],
+    "translationset": [
+      {
+        "from": "Structural",
+        "to": "\"structural\"[All Fields] OR \"structurally\"[All Fields] OR \"structurals\"[All Fields] OR \"structuration\"[All Fields] OR \"structurations\"[All Fields] OR \"structure\"[All Fields] OR \"structure's\"[All Fields] OR \"structured\"[All Fields] OR \"structures\"[All Fields] OR \"structuring\"[All Fields]"
+      },
+      {
+        "from": "MRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"mri\"[All Fields]"
+      },
+      {
+        "from": "findings",
+        "to": "\"diagnosis\"[Subheading] OR \"diagnosis\"[All Fields] OR \"findings\"[All Fields] OR \"diagnosis\"[MeSH Terms] OR \"finds\"[All Fields] OR \"signs and symptoms\"[MeSH Terms] OR (\"signs\"[All Fields] AND \"symptoms\"[All Fields]) OR \"signs and symptoms\"[All Fields] OR \"finding\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "disruption:",
+        "to": "\"disrupt\"[All Fields] OR \"disrupted\"[All Fields] OR \"disrupter\"[All Fields] OR \"disrupters\"[All Fields] OR \"disrupting\"[All Fields] OR \"disruption\"[All Fields] OR \"disruptions\"[All Fields] OR \"disruptive\"[All Fields] OR \"disruptiveness\"[All Fields] OR \"disrupts\"[All Fields]"
+      },
+      {
+        "from": "Thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "integrity",
+        "to": "\"integrities\"[All Fields] OR \"integrity\"[All Fields]"
+      },
+      {
+        "from": "cortical",
+        "to": "\"corticalization\"[All Fields] OR \"corticalized\"[All Fields] OR \"cortically\"[All Fields] OR \"corticals\"[All Fields] OR \"cortices\"[All Fields] OR \"kidney cortex\"[MeSH Terms] OR (\"kidney\"[All Fields] AND \"cortex\"[All Fields]) OR \"kidney cortex\"[All Fields] OR \"cortical\"[All Fields] OR \"cerebral cortex\"[MeSH Terms] OR (\"cerebral\"[All Fields] AND \"cortex\"[All Fields]) OR \"cerebral cortex\"[All Fields] OR \"adrenal cortex\"[MeSH Terms] OR (\"adrenal\"[All Fields] AND \"cortex\"[All Fields]) OR \"adrenal cortex\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"structural\"[All Fields] OR \"structurally\"[All Fields] OR \"structurals\"[All Fields] OR \"structuration\"[All Fields] OR \"structurations\"[All Fields] OR \"structure\"[All Fields] OR \"structure s\"[All Fields] OR \"structured\"[All Fields] OR \"structures\"[All Fields] OR \"structuring\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"mri\"[All Fields]) AND (\"diagnosis\"[MeSH Subheading] OR \"diagnosis\"[All Fields] OR \"findings\"[All Fields] OR \"diagnosis\"[MeSH Terms] OR \"finds\"[All Fields] OR \"signs and symptoms\"[MeSH Terms] OR (\"signs\"[All Fields] AND \"symptoms\"[All Fields]) OR \"signs and symptoms\"[All Fields] OR \"finding\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"disrupt\"[All Fields] OR \"disrupted\"[All Fields] OR \"disrupter\"[All Fields] OR \"disrupters\"[All Fields] OR \"disrupting\"[All Fields] OR \"disruption\"[All Fields] OR \"disruptions\"[All Fields] OR \"disruptive\"[All Fields] OR \"disruptiveness\"[All Fields] OR \"disrupts\"[All Fields]) AND (\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"integrities\"[All Fields] OR \"integrity\"[All Fields]) AND (\"corticalization\"[All Fields] OR \"corticalized\"[All Fields] OR \"cortically\"[All Fields] OR \"corticals\"[All Fields] OR \"cortices\"[All Fields] OR \"kidney cortex\"[MeSH Terms] OR (\"kidney\"[All Fields] AND \"cortex\"[All Fields]) OR \"kidney cortex\"[All Fields] OR \"cortical\"[All Fields] OR \"cerebral cortex\"[MeSH Terms] OR (\"cerebral\"[All Fields] AND \"cortex\"[All Fields]) OR \"cerebral cortex\"[All Fields] OR \"adrenal cortex\"[MeSH Terms] OR (\"adrenal\"[All Fields] AND \"cortex\"[All Fields]) OR \"adrenal cortex\"[All Fields]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in",
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "306",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42559739",
+      "42410897",
+      "42310658",
+      "42201249",
+      "42100529",
+      "42055202",
+      "42001973",
+      "41919170",
+      "41852290",
+      "41774283",
+      "41757511",
+      "41752801",
+      "41727846",
+      "41702318",
+      "41694130",
+      "41673354",
+      "41573612",
+      "41562844",
+      "41449351",
+      "41418342",
+      "41373098",
+      "41329643",
+      "41247583",
+      "41028829",
+      "40835806",
+      "40727911",
+      "40640286",
+      "40590079",
+      "40564013",
+      "40509584",
+      "40464917",
+      "40437195",
+      "40382735",
+      "40356706",
+      "40283164",
+      "40131567",
+      "40068581",
+      "39998568",
+      "39936044",
+      "39934599",
+      "39926186",
+      "39739275",
+      "39621806",
+      "39610629",
+      "39544482",
+      "39406127",
+      "39375341",
+      "39335426",
+      "39268346",
+      "39216037"
+    ],
+    "translationset": [
+      {
+        "from": "sleepiness",
+        "to": "\"sleepiness\"[MeSH Terms] OR \"sleepiness\"[All Fields] OR \"sleepy\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "severity",
+        "to": "\"sever\"[All Fields] OR \"severe\"[All Fields] OR \"severed\"[All Fields] OR \"severely\"[All Fields] OR \"severer\"[All Fields] OR \"severes\"[All Fields] OR \"severing\"[All Fields] OR \"severities\"[All Fields] OR \"severity\"[All Fields] OR \"severs\"[All Fields]"
+      },
+      {
+        "from": "correlation",
+        "to": "\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation's\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleepiness\"[MeSH Terms] OR \"sleepiness\"[All Fields] OR \"sleepy\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"sever\"[All Fields] OR \"severe\"[All Fields] OR \"severed\"[All Fields] OR \"severely\"[All Fields] OR \"severer\"[All Fields] OR \"severes\"[All Fields] OR \"severing\"[All Fields] OR \"severities\"[All Fields] OR \"severity\"[All Fields] OR \"severs\"[All Fields]) AND (\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation s\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

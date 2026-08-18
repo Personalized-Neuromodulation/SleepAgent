@@ -1,0 +1,47 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "39587185"
+    ],
+    "translationset": [
+      {
+        "from": "Role",
+        "to": "\"role\"[MeSH Terms] OR \"role\"[All Fields]"
+      },
+      {
+        "from": "fALFF",
+        "to": "\"falff\"[All Fields] OR \"falffs\"[All Fields]"
+      },
+      {
+        "from": "predicting",
+        "to": "\"predict\"[All Fields] OR \"predictabilities\"[All Fields] OR \"predictability\"[All Fields] OR \"predictable\"[All Fields] OR \"predictably\"[All Fields] OR \"predicted\"[All Fields] OR \"predicting\"[All Fields] OR \"prediction\"[All Fields] OR \"predictions\"[All Fields] OR \"predictive\"[All Fields] OR \"predictively\"[All Fields] OR \"predictiveness\"[All Fields] OR \"predictives\"[All Fields] OR \"predictivities\"[All Fields] OR \"predictivity\"[All Fields] OR \"predicts\"[All Fields]"
+      },
+      {
+        "from": "sleep quality",
+        "to": "\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"role\"[MeSH Terms] OR \"role\"[All Fields]) AND (\"falff\"[All Fields] OR \"falffs\"[All Fields]) AND (\"predict\"[All Fields] OR \"predictabilities\"[All Fields] OR \"predictability\"[All Fields] OR \"predictable\"[All Fields] OR \"predictably\"[All Fields] OR \"predicted\"[All Fields] OR \"predicting\"[All Fields] OR \"prediction\"[All Fields] OR \"predictions\"[All Fields] OR \"predictive\"[All Fields] OR \"predictively\"[All Fields] OR \"predictiveness\"[All Fields] OR \"predictives\"[All Fields] OR \"predictivities\"[All Fields] OR \"predictivity\"[All Fields] OR \"predicts\"[All Fields]) AND (\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]) AND \"PSQI\"[All Fields]",
+    "errorlist": {
+      "phrasesnotfound": [
+        "timefreq"
+      ],
+      "fieldsnotfound": []
+    },
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

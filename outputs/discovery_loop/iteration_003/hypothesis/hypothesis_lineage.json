@@ -1,0 +1,36 @@
+[
+  {
+    "hypothesis_id": "hypothesis_2faad4927002",
+    "parent_ids": [],
+    "generation_strategy": "literature_exploration",
+    "generation_round": 1
+  },
+  {
+    "hypothesis_id": "hypothesis_ad71ec1af6ae",
+    "parent_ids": [],
+    "generation_strategy": "scientific_debate",
+    "generation_round": 2
+  },
+  {
+    "hypothesis_id": "hypothesis_ff8c22cb251f",
+    "parent_ids": [],
+    "generation_strategy": "assumption_chaining",
+    "generation_round": 3
+  },
+  {
+    "hypothesis_id": "hypothesis_9dcce73348da",
+    "parent_ids": [],
+    "generation_strategy": "research_expansion",
+    "generation_round": 4
+  },
+  {
+    "hypothesis_id": "hypothesis_4a7724fe4da6",
+    "parent_ids": [
+      "hypothesis_9dcce73348da",
+      "hypothesis_2faad4927002",
+      "hypothesis_ff8c22cb251f"
+    ],
+    "generation_strategy": "evolution:cross_pollination",
+    "generation_round": 2
+  }
+]

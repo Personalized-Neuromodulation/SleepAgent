@@ -291,7 +291,8 @@ def _llm_candidates(
         return []
     prompt = (
         "Return strict JSON with an intents array. Each intent must include intent_type, reason, "
-        "priority, and candidate_queries. Generate literature search queries from these experiment results:\n"
+        "priority, and candidate_queries. priority must be a numeric score from 0.0 to 1.0, "
+        "not a label such as high/medium/low. Generate literature search queries from these experiment results:\n"
         + json.dumps(records, ensure_ascii=False)[:12000]
     )
     try:
@@ -319,7 +320,7 @@ def _llm_candidates(
                 _candidate(
                     str(query),
                     str(intent.get("intent_type", "llm_experiment_intent")),
-                    float(intent.get("priority", 0.7) or 0.7),
+                    _coerce_priority(intent.get("priority", 0.7)),
                     str(intent.get("reason", "LLM-generated experiment literature intent")),
                     iteration_id,
                     str(intent.get("source_hypothesis_id", "")),
@@ -328,6 +329,38 @@ def _llm_candidates(
                 )
             )
     return out
+
+
+def _coerce_priority(value: Any) -> float:
+    if value is None or value == "":
+        return 0.7
+    if isinstance(value, str):
+        label_scores = {
+            "critical": 0.95,
+            "urgent": 0.9,
+            "high": 0.85,
+            "medium": 0.65,
+            "moderate": 0.65,
+            "low": 0.35,
+        }
+        normalized = value.strip().lower()
+        if normalized in label_scores:
+            return label_scores[normalized]
+        for label, score in label_scores.items():
+            if re.search(rf"\b{re.escape(label)}\b", normalized):
+                return score
+        match = re.search(r"[-+]?\d*\.?\d+", normalized)
+        if match:
+            value = match.group(0)
+        else:
+            return 0.7
+    try:
+        priority = float(value)
+    except (TypeError, ValueError):
+        return 0.7
+    if priority > 1.0 and priority <= 100.0:
+        priority = priority / 100.0
+    return max(0.0, min(1.0, priority))
 
 
 def _validate_candidates(

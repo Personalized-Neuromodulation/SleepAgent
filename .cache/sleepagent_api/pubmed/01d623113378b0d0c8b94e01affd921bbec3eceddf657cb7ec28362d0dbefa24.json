@@ -1,0 +1,50 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Thalamocortical",
+        "to": "\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]"
+      },
+      {
+        "from": "coupling",
+        "to": "\"couple's\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]"
+      },
+      {
+        "from": "interactions",
+        "to": "\"interact\"[All Fields] OR \"interactant\"[All Fields] OR \"interactants\"[All Fields] OR \"interacted\"[All Fields] OR \"interacting\"[All Fields] OR \"interaction\"[All Fields] OR \"interactional\"[All Fields] OR \"interactions\"[All Fields] OR \"interactive\"[All Fields] OR \"interactively\"[All Fields] OR \"interactives\"[All Fields] OR \"interactivities\"[All Fields] OR \"interactivity\"[All Fields] OR \"interacts\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "studies",
+        "to": "\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study's\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]"
+      },
+      {
+        "from": "sleep disorders",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]) AND (\"couple s\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]) AND \"DMN\"[All Fields] AND (\"interact\"[All Fields] OR \"interactant\"[All Fields] OR \"interactants\"[All Fields] OR \"interacted\"[All Fields] OR \"interacting\"[All Fields] OR \"interaction\"[All Fields] OR \"interactional\"[All Fields] OR \"interactions\"[All Fields] OR \"interactive\"[All Fields] OR \"interactively\"[All Fields] OR \"interactives\"[All Fields] OR \"interactivities\"[All Fields] OR \"interactivity\"[All Fields] OR \"interacts\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in",
+        "of"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

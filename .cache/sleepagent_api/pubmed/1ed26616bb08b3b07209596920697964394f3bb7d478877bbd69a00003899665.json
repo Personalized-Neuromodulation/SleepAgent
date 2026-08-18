@@ -1,0 +1,58 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Statistical",
+        "to": "\"statistic\"[All Fields] OR \"statistic's\"[All Fields] OR \"statistical\"[All Fields] OR \"statistically\"[All Fields] OR \"statistics\"[All Fields]"
+      },
+      {
+        "from": "significance",
+        "to": "\"significance\"[All Fields] OR \"significances\"[All Fields] OR \"significant\"[All Fields] OR \"significants\"[All Fields]"
+      },
+      {
+        "from": "thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "GABA",
+        "to": "\"gamma-aminobutyric acid\"[Supplementary Concept] OR \"gamma-aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma-aminobutyric acid\"[MeSH Terms] OR (\"gamma-aminobutyric\"[All Fields] AND \"acid\"[All Fields])"
+      },
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "dysregulation",
+        "to": "\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"statistic\"[All Fields] OR \"statistic s\"[All Fields] OR \"statistical\"[All Fields] OR \"statistically\"[All Fields] OR \"statistics\"[All Fields]) AND (\"significance\"[All Fields] OR \"significances\"[All Fields] OR \"significant\"[All Fields] OR \"significants\"[All Fields]) AND (\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"gamma aminobutyric acid\"[Supplementary Concept] OR \"gamma aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma aminobutyric acid\"[MeSH Terms] OR (\"gamma aminobutyric\"[All Fields] AND \"acid\"[All Fields])) AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in",
+        "during"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

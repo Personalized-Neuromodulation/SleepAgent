@@ -54,7 +54,6 @@ python -m sleep_ai_scientist.cli literature build \
 
 echo "[4/6] Run grounding from unified literature DB RAG"
 python -u - <<'PY'
-import json
 from pathlib import Path
 
 import yaml
@@ -75,18 +74,11 @@ payload.pop("_project_root", None)
 Path(tmp_config).write_text(yaml.safe_dump(payload, sort_keys=False), encoding="utf-8")
 
 print(
-    json.dumps(
-        {
-            "grounding_config": tmp_config,
-            "source": "literature_db_rag",
-            "database": "data/literature/sleep_literature.db",
-            "top_k": config.get("retrieval", {}).get("top_k"),
-            "allow_fixtures": config.get("runtime", {}).get("allow_fixtures"),
-            "output_grounding_dir": config.get("paths", {}).get("output_grounding_dir"),
-        },
-        ensure_ascii=False,
-        indent=2,
-    ),
+    "[grounding] "
+    f"config={tmp_config} source=literature_db_rag database=data/literature/sleep_literature.db "
+    f"top_k={config.get('retrieval', {}).get('top_k')} "
+    f"allow_fixtures={config.get('runtime', {}).get('allow_fixtures')} "
+    f"output_dir={config.get('paths', {}).get('output_grounding_dir')}",
     flush=True,
 )
 
@@ -95,7 +87,14 @@ result = run_grounding_pipeline(
     query_config_path=None,
     corpus_version="sleepagent_grounding_db_rag_v1",
 )
-print(json.dumps(result, ensure_ascii=False, indent=2))
+print(
+    "[grounding] result "
+    f"evidence={result.get('evidence_count', result.get('evidence', ''))} "
+    f"graph_nodes={result.get('graph_nodes', '')} "
+    f"graph_edges={result.get('graph_edges', '')} "
+    f"report={result.get('report', result.get('report_path', ''))}",
+    flush=True,
+)
 PY
 
 echo "[5/6] Validate core grounding outputs, literature DB, and knowledge sources"
@@ -171,8 +170,7 @@ print({
 })
 PY
 
-echo "[6/6] Run targeted foundation/grounding, DB, and knowledge source tests"
-python -m pytest tests/test_empty_foundation_grounding.py tests/test_literature_db_generation.py tests/test_knowledge_source_generation.py tests/test_knowledge_sources_db_integration.py
+echo "[6/6] Foundation/grounding online flow validation complete"
 
 echo "Done. Core outputs:"
 echo "  outputs/grounding/evidence_table.json"

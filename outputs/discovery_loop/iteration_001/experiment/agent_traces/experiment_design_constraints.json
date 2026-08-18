@@ -1,0 +1,14 @@
+{
+  "avoid_signatures": [],
+  "failed_tests": [],
+  "negative_control_failed_predictors": [],
+  "tested_hypothesis_ids": [],
+  "tested_plan_ids": [],
+  "validated_plan_ids": [],
+  "recommended_design_shifts": [
+    "avoid exact repeat of tested predictor/outcome/covariate signatures",
+    "prefer untested available predictors or outcomes when scientifically coherent",
+    "if reusing a negative-control-failed predictor, make the design explicitly confound-focused",
+    "if no non-duplicate measurable plan exists, select the next-ranked hypothesis"
+  ]
+}

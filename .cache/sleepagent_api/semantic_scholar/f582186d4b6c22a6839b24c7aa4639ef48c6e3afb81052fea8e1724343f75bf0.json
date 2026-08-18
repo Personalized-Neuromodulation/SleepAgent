@@ -1,0 +1,952 @@
+{
+  "total": 23,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "8b56143917f70b2bb7708d3f086bf5fbb956c380",
+      "externalIds": {
+        "PubMedCentral": "12172733",
+        "DOI": "10.1016/j.ynirp.2025.100259",
+        "CorpusId": 277804392,
+        "PubMed": "40567457"
+      },
+      "url": "https://www.semanticscholar.org/paper/8b56143917f70b2bb7708d3f086bf5fbb956c380",
+      "title": "Deep learning identification of reward-related neural substrates of preadolescent irritability: A novel 3D CNN application for fMRI",
+      "venue": "Neuroimage: Reports",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12172733, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2258328632",
+          "name": "Johanna C. Walker"
+        },
+        {
+          "authorId": "2175705000",
+          "name": "Conner Swineford"
+        },
+        {
+          "authorId": "2284179835",
+          "name": "K. Patel"
+        },
+        {
+          "authorId": "2298777005",
+          "name": "L. Dougherty"
+        },
+        {
+          "authorId": "48200380",
+          "name": "J. Wiggins"
+        }
+      ],
+      "abstract": "The recent emergence of deep learning methods, particularly convolutional neural networks (CNNs), applied to fMRI data presents a promising avenue in psychiatry research, offering advantages over traditional analyses by requiring minimal assumptions and enabling detection of higher-level patterns and intricate, nonlinear relationships within inherently complex fMRI data. Irritability, defined as a lowered threshold for angry responses to blocked rewards, is a promising neurodevelopmental marker for mental health risk due to its robust, transdiagnostic predictive power in youth. In this study, data from the Adolescent Brain and Cognitive Development (ABCD) baseline sample (N = 6065) were utilized for a novel application of a 3D CNN to whole-brain fMRI data acquired during the reward anticipation period of the monetary incentive delay task to predict parent-reported youth irritability severity, measured dimensionally. Regression activation mapping (RAM) was employed to extract feature maps of brain regions most predictive of irritability severity from the model. The model demonstrated satisfactory accuracy, with a mean squared error (MSE) of 1.82, and predicted irritability severity scores with a mean absolute error (MAE) of 0.48 ± 1.54 SD from the true scores. Notably, feature maps revealed bilateral representation of key regions implicated in emotional response and reward processing, including the caudate nucleus, amygdala, parahippocampal gyrus, and hippocampus. This study underscores the potential for 3D CNNs to predict significant, dimensional clinical outcomes such as irritability severity using fMRI data."
+    },
+    {
+      "paperId": "1f9aff0847b35255d2360a182fe42605d3d98981",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2506-14970",
+        "ArXiv": "2506.14970",
+        "DOI": "10.1109/EMBC58623.2025.11254303",
+        "CorpusId": 279447491,
+        "PubMed": "41336692"
+      },
+      "url": "https://www.semanticscholar.org/paper/1f9aff0847b35255d2360a182fe42605d3d98981",
+      "title": "NeuroMoE: A Transformer-Based Mixture-of-Experts Framework for Multi-Modal Neurological Disorder Classification",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2025,
+      "citationCount": 6,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.14970, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2309521369",
+          "name": "W. Raza"
+        },
+        {
+          "authorId": "2337354080",
+          "name": "A. Shah"
+        },
+        {
+          "authorId": "2320819851",
+          "name": "Yu Wen"
+        },
+        {
+          "authorId": "2348838799",
+          "name": "Yidan Shen"
+        },
+        {
+          "authorId": "2296103656",
+          "name": "Juan Diego Martinez Lemus"
+        },
+        {
+          "authorId": "2185170",
+          "name": "M. Schiess"
+        },
+        {
+          "authorId": "49554812",
+          "name": "T. Ellmore"
+        },
+        {
+          "authorId": "2349090553",
+          "name": "Renjie Hu"
+        },
+        {
+          "authorId": "2185259149",
+          "name": "Xin Fu"
+        }
+      ],
+      "abstract": "The integration of multi-modal Magnetic Resonance Imaging (MRI) and clinical data holds great promise for enhancing the diagnosis of neurological disorders (NDs) in real-world clinical settings. Deep Learning (DL) has recently emerged as a powerful tool for extracting meaningful patterns from medical data to aid in diagnosis. However, existing DL approaches struggle to effectively leverage multi-modal MRI and clinical data, leading to suboptimal performance.To address this challenge, we utilize a unique, proprietary multi-modal clinical dataset curated for ND research. Based on this dataset, we propose a novel transformer-based Mixture-of-Experts (MoE) framework for ND classification, leveraging multiple MRI modalities—anatomical (aMRI), Diffusion Tensor Imaging (DTI), and functional (fMRI)—alongside clinical assessments. Our framework employs transformer encoders to capture spatial relationships within volumetric MRI data while utilizing modality-specific experts for targeted feature extraction. A gating mechanism with adaptive fusion dynamically integrates expert outputs, ensuring optimal predictive performance. Comprehensive experiments and comparisons with multiple baselines demonstrate that our multi-modal approach significantly enhances diagnostic accuracy, particularly in distinguishing overlapping disease states. Our framework achieves a validation accuracy of 82.47%, outperforming baseline methods by over 10%, highlighting its potential to improve ND diagnosis by applying multi-modal learning to real-world clinical data.Clinical Relevance— In neurological disorder (ND) research, a critical gap remains in mapping the continuum of disease progression, from prodromal conditions such as idiopathic REM Sleep Behavior Disorder (iRBD) to fully developed disorders like Parkinson’s Disease (PD). A robust multimodal approach that seamlessly integrates diverse data modalities is essential for accurately predicting and understanding this progression. Advancements in this area would provide the foundation for developing models capable of distinguishing overlapping disease states (e.g., PD, dementia with Lewy bodies, and multiple system atrophy) and predicting the transition from presymptomatic conditions like iRBD to established NDs."
+    },
+    {
+      "paperId": "53dc9dae64b55ff00e2698af5108f92c3f0e8291",
+      "externalIds": {
+        "PubMedCentral": "11428273",
+        "DOI": "10.1002/hbm.70032",
+        "CorpusId": 272912595,
+        "PubMed": "39329501"
+      },
+      "url": "https://www.semanticscholar.org/paper/53dc9dae64b55ff00e2698af5108f92c3f0e8291",
+      "title": "Frequency‐specific dual‐attention based adversarial network for blood oxygen level‐dependent time series prediction",
+      "venue": "Human Brain Mapping",
+      "year": 2024,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1002/hbm.70032",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11428273, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2268430667",
+          "name": "Weihao Zheng"
+        },
+        {
+          "authorId": "2279913686",
+          "name": "Cong Bao"
+        },
+        {
+          "authorId": "2323021490",
+          "name": "Renhui Mu"
+        },
+        {
+          "authorId": "2305884516",
+          "name": "Jun Wang"
+        },
+        {
+          "authorId": "2222395563",
+          "name": "Tongtong Li"
+        },
+        {
+          "authorId": "2117928623",
+          "name": "Ziyang Zhao"
+        },
+        {
+          "authorId": "47845830",
+          "name": "Zhijun Yao"
+        },
+        {
+          "authorId": "2155151129",
+          "name": "Bin Hu"
+        }
+      ],
+      "abstract": "Functional magnetic resonance imaging (fMRI) is currently one of the most popular technologies for measuring brain activity in both research and clinical contexts. However, clinical constraints often result in short fMRI scan durations, limiting the diagnostic performance for brain disorders. To address this limitation, we developed an end‐to‐end frequency‐specific dual‐attention‐based adversarial network (FDAA‐Net) to extend the time series of existing blood oxygen level‐dependent (BOLD) data, enhancing their diagnostic utility. Our approach leverages the frequency‐dependent nature of fMRI signals using variational mode decomposition (VMD), which adaptively tracks brain activity across different frequency bands. We integrated the generative adversarial network (GAN) with a spatial–temporal attention mechanism to fully capture relationships among spatially distributed brain regions and temporally continuous time windows. We also introduced a novel loss function to estimate the upward and downward trends of each frequency component. We validated FDAA‐Net on the Human Connectome Project (HCP) database by comparing the original and predicted time series of brain regions in the default mode network (DMN), a key network activated during rest. FDAA‐Net effectively overcame linear frequency‐specific challenges and outperformed other popular prediction models. Test–retest reliability experiments demonstrated high consistency between the functional connectivity of predicted outcomes and targets. Furthermore, we examined the clinical applicability of FDAA‐Net using short‐term fMRI data from individuals with autism spectrum disorder (ASD) and major depressive disorder (MDD). The model achieved a maximum predicted sequence length of 40% of the original scan durations. The prolonged time series improved diagnostic performance by 8.0% for ASD and 11.3% for MDD compared with the original sequences. These findings highlight the potential of fMRI time series prediction to enhance diagnostic power of brain disorders in short fMRI scans."
+    },
+    {
+      "paperId": "5d365d9a7635fed7a482baecd24720565fe77053",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2404-16913",
+        "ArXiv": "2404.16913",
+        "DOI": "10.48550/arXiv.2404.16913",
+        "CorpusId": 269430627
+      },
+      "url": "https://www.semanticscholar.org/paper/5d365d9a7635fed7a482baecd24720565fe77053",
+      "title": "DE-CGAN: Boosting rTMS Treatment Prediction with Diversity Enhancing Conditional Generative Adversarial Networks",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.16913, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2106243094",
+          "name": "Matthew Squires"
+        },
+        {
+          "authorId": "2106532584",
+          "name": "Xiaohui Tao"
+        },
+        {
+          "authorId": "153670967",
+          "name": "Soman Elangovan"
+        },
+        {
+          "authorId": "1806876",
+          "name": "R. Gururajan"
+        },
+        {
+          "authorId": "2242185446",
+          "name": "Haoran Xie"
+        },
+        {
+          "authorId": "1996307",
+          "name": "Xujuan Zhou"
+        },
+        {
+          "authorId": "2144464186",
+          "name": "Yuefeng Li"
+        },
+        {
+          "authorId": "2298765698",
+          "name": "Rajendra Acharya"
+        }
+      ],
+      "abstract": "Repetitive Transcranial Magnetic Stimulation (rTMS) is a well-supported, evidence-based treatment for depression. However, patterns of response to this treatment are inconsistent. Emerging evidence suggests that artificial intelligence can predict rTMS treatment outcomes for most patients using fMRI connectivity features. While these models can reliably predict treatment outcomes for many patients for some underrepresented fMRI connectivity measures DNN models are unable to reliably predict treatment outcomes. As such we propose a novel method, Diversity Enhancing Conditional General Adversarial Network (DE-CGAN) for oversampling these underrepresented examples. DE-CGAN creates synthetic examples in difficult-to-classify regions by first identifying these data points and then creating conditioned synthetic examples to enhance data diversity. Through empirical experiments we show that a classification model trained using a diversity enhanced training set outperforms traditional data augmentation techniques and existing benchmark results. This work shows that increasing the diversity of a training dataset can improve classification model performance. Furthermore, this work provides evidence for the utility of synthetic patients providing larger more robust datasets for both AI researchers and psychiatrists to explore variable relationships."
+    },
+    {
+      "paperId": "53af2c073bba6badf6498a8c5d00ef76b867f8dd",
+      "externalIds": {
+        "PubMedCentral": "8135767",
+        "DOI": "10.1093/sleep/zsab072.408",
+        "CorpusId": 235086872
+      },
+      "url": "https://www.semanticscholar.org/paper/53af2c073bba6badf6498a8c5d00ef76b867f8dd",
+      "title": "409 Dynamic Phenotype Learning: A Novel Machine Learning Approach To Develop And Discover New OSA Sub-Types",
+      "venue": "Sleep",
+      "year": 2021,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/44/Supplement_2/A162/37656379/zsab072.408.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8135767, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49612574",
+          "name": "Chris Fernandez"
+        },
+        {
+          "authorId": "26979630",
+          "name": "S. Rusk"
+        },
+        {
+          "authorId": "38842691",
+          "name": "Y. Nygate"
+        },
+        {
+          "authorId": "23216437",
+          "name": "Nick Glattard"
+        },
+        {
+          "authorId": "144853963",
+          "name": "J. Arguelles"
+        },
+        {
+          "authorId": "6993360",
+          "name": "Jiaxiao M. Shi"
+        },
+        {
+          "authorId": "144383667",
+          "name": "D. Hwang"
+        }
+      ],
+      "abstract": "Abstract Introduction Current approach to processing polysomnography is labor intensive and produces metrics that are poor at identifying obstructive sleep apnea (OSA) phenotypes necessary to enhance personalized care. We describe our approach to utilize Dynamic Phenotype Learning (DPL) as an innovative machine learning technique to identify OSA subtypes that can better predict clinical risk and success with therapies. Methods This study is a collaboration between Kaiser Permanente Southern California (KPSC), a large integrated health system, and EnsoData Research, which specializes in applied A.I. analysis of physiologic waveforms. KPSC sleep medicine compiled a database of N=5,368–234,250 subjects that include Types I, II, III, or IV sleep study data, daily PAP data, patient reported data, and comprehensive electronic health record information, with present research applications to study the relationship between OSA and PAP adherence with cardiovascular outcomes, health economic impacts, novel coronavirus (COVID-19) outcomes, and predictive PAP adherence and OSA severity clinical decision tools. DPL is a machine learning method for studying known and new biomarkers and care-pathway indices, including personalized screening, diagnostic, treatment, adherence, and outcomes predictors, that can be rooted in physiologic data. DPL processes waveform signal data without scoring, annotations, or expert synthesis, by applying a novel machine learning mechanism that blurs supervised and unsupervised deep learning paradigms, to find relationships between physiome dynamics expressed in waveforms and phenotypes and endotypes of interest. Results We demonstrate DPL method with an illustrative study on known indices, to explain its ability to (1) lift theoretical-empirical predictive accuracy ceilings and (b) reduce several sources of bias and variance. We show DPL exceeds the ROC-AUC and PRC-AUC of equivalent deep learning models in N=30,000 Report-Demographic (ODI, PLMSI, Weight), Scoring (REM, OSA), and Waveform (EEG, PPG) datasets respectively to predict AHI, TST, Brain Age, and OSA-Insomnia. We present our current collaboration advancing DPL to identify specific phenotypes that better predict: (a) cardiovascular risk; (b) neurocognitive outcomes; (c) response to PAP and alternative therapies. Conclusion DPL methods are being applied to large and comprehensive patient dataset to identify phenotypic indices and biomarkers with potential to take us beyond the AHI, and uncover relationships between OSA sub-types, treatments, and health outcomes. Support (if any):"
+    },
+    {
+      "paperId": "1ce46e8e16d5e0ddf7dfcbe12f1256c2f203985d",
+      "externalIds": {
+        "PubMedCentral": "10332048",
+        "DBLP": "journals/neuroimage/NathCWL23",
+        "DOI": "10.1101/2022.10.10.511329",
+        "CorpusId": 252899233,
+        "PubMed": "36586543"
+      },
+      "url": "https://www.semanticscholar.org/paper/1ce46e8e16d5e0ddf7dfcbe12f1256c2f203985d",
+      "title": "A machine learning based approach towards high-dimensional mediation analysis",
+      "venue": "bioRxiv",
+      "year": 2022,
+      "citationCount": 20,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2022.119843",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10332048, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1708209654",
+          "name": "Tanmay Nath"
+        },
+        {
+          "authorId": "1397970751",
+          "name": "B. Caffo"
+        },
+        {
+          "authorId": "2549424",
+          "name": "T. Wager"
+        },
+        {
+          "authorId": "1754035",
+          "name": "M. Lindquist"
+        }
+      ],
+      "abstract": "Mediation analysis is used to investigate the role of intermediate variables (mediators) that lie in the path between an exposure and an outcome variable. While significant research has focused on developing methods for assessing the influence of mediators on the exposure-outcome relationship, current approaches do not easily extend to settings where the mediator is high-dimensional. These situations are becoming increasingly common with the rapid increase of new applications measuring massive numbers of variables, including brain imaging, genomics, and metabolomics. In this work, we introduce a novel machine learning based method for identifying high dimensional mediators. The proposed algorithm iterates between using a machine learning model to map the high-dimensional mediators onto a lower-dimensional space, and using the predicted values as input in a standard three-variable mediation model. Hence, the machine learning model is trained to maximize the likelihood of the mediation model. Importantly, the proposed algorithm is agnostic to the machine learning model that is used, providing significant flexibility in the types of situations where it can be used. We illustrate the proposed methodology using data from two functional Magnetic Resonance Imaging (fMRI) studies. First, using data from a task-based fMRI study of thermal pain, we combine the proposed algorithm with a deep learning model to detect distributed, network-level brain patterns mediating the relationship between stimulus intensity (temperature) and reported pain at the single trial level. Second, using resting-state fMRI data from the Human Connectome Project, we combine the proposed algorithm with a connectome-based predictive modeling approach to determine brain functional connectivity measures that mediate the relationship between fluid intelligence and working memory accuracy. In both cases, our multivariate mediation model links exposure variables (thermal pain or fluid intelligence), high dimensional brain measures (single-trial brain activation maps or resting-state brain connectivity) and behavioral outcomes (pain report or working memory accuracy) into a single unified model. Using the proposed approach, we are able to identify brain-based measures that simultaneously encode the exposure variable and correlate with the behavioral outcome. I. HIGHLIGHTS Current methods for assessing mediation do not easily extend to high dimensions We introduce a new approach for performing high-dimensional mediation analysis Links high-dimensional mediator to path analysis model via machine learning algorithm Method illustrated using data from two fMRI studies"
+    },
+    {
+      "paperId": "743322a0a28011efa7a50588387da84722d49d25",
+      "externalIds": {
+        "MAG": "2319572437",
+        "DOI": "10.1016/J.DRUGALCDEP.2014.09.187",
+        "CorpusId": 75962762
+      },
+      "url": "https://www.semanticscholar.org/paper/743322a0a28011efa7a50588387da84722d49d25",
+      "title": "Changes in attentional bias to drug cues and fMRI Stroop with behavioral treatment for cocaine dependence",
+      "venue": "",
+      "year": 2015,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.DRUGALCDEP.2014.09.187?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.DRUGALCDEP.2014.09.187, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4903208",
+          "name": "E. DeVito"
+        },
+        {
+          "authorId": "5245468",
+          "name": "C. Nich"
+        },
+        {
+          "authorId": "3113215",
+          "name": "M. Potenza"
+        },
+        {
+          "authorId": "2256798",
+          "name": "K. Carroll"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "9d4c39554ec3e0165ffc7bc2e7237418cc24e741",
+      "externalIds": {
+        "MAG": "2331059305",
+        "DOI": "10.1016/J.DRUGALCDEP.2014.09.186",
+        "CorpusId": 75800966
+      },
+      "url": "https://www.semanticscholar.org/paper/9d4c39554ec3e0165ffc7bc2e7237418cc24e741",
+      "title": "Is opioid dose a strong predictor of the risk of opioid overdose? Important confounding factors that change the dose–overdose relationship",
+      "venue": "",
+      "year": 2015,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.DRUGALCDEP.2014.09.186?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.DRUGALCDEP.2014.09.186, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1402324999",
+          "name": "A. DeVeaugh-Geiss"
+        },
+        {
+          "authorId": "47496751",
+          "name": "P. Coplan"
+        },
+        {
+          "authorId": "11696146",
+          "name": "A. Kadakia"
+        },
+        {
+          "authorId": "5455733",
+          "name": "H. Chilcoat"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b9295e8868e5177a94034cc4d77391f9b98af778",
+      "externalIds": {
+        "MAG": "2775534749",
+        "DOI": "10.1097/00007890-201407151-01667",
+        "CorpusId": 80304982
+      },
+      "url": "https://www.semanticscholar.org/paper/b9295e8868e5177a94034cc4d77391f9b98af778",
+      "title": "Early Intra-Individual Variability in Tacrolimus Trough Concentrations Predicts Long-Term Pediatric Renal Transplant Outcome.: Abstract# A350",
+      "venue": "",
+      "year": 2014,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1097/00007890-201407151-01667",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1097/00007890-201407151-01667?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1097/00007890-201407151-01667, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "52532629",
+          "name": "S. Min"
+        },
+        {
+          "authorId": "2420588",
+          "name": "S. Kim"
+        },
+        {
+          "authorId": "5709006",
+          "name": "H. Kang"
+        },
+        {
+          "authorId": "3955108",
+          "name": "Chanjoong Choi"
+        },
+        {
+          "authorId": "6164159",
+          "name": "I. Jung"
+        },
+        {
+          "authorId": "145323466",
+          "name": "M. Park"
+        },
+        {
+          "authorId": "144831034",
+          "name": "J. Ha"
+        },
+        {
+          "authorId": "38844885",
+          "name": "A. Han"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "7a5f1fef54c804d17ce2c9a681171abc2fc92f22",
+      "externalIds": {
+        "MAG": "2916235141",
+        "DOI": "10.1017/9781316823279.023",
+        "CorpusId": 150606732
+      },
+      "url": "https://www.semanticscholar.org/paper/7a5f1fef54c804d17ce2c9a681171abc2fc92f22",
+      "title": "Motivated Memory",
+      "venue": "The Cambridge Handbook of Motivation and Learning",
+      "year": 2019,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1017/9781316823279.023?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1017/9781316823279.023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "41221740",
+          "name": "K. Renninger"
+        },
+        {
+          "authorId": "2387795",
+          "name": "S. Hidi"
+        },
+        {
+          "authorId": "35059047",
+          "name": "Kimberly S. Chiew"
+        },
+        {
+          "authorId": "143956686",
+          "name": "R. Adcock"
+        }
+      ],
+      "abstract": "A growing body of literature indicates that motivation can critically shape longterm memory formation in the service of adaptive behavior. In the present chapter, we review recent cognitive neuroscience evidence of motivational influences on memory, with a focus on anatomical pathways by which neuromodulatory networks support encodingrelated activity in distinct subregions of the medial temporal lobe. We argue that engagement of distinct neural circuits as a function of motivational context at encoding leads to formation of different memory representations, supporting different patterns of adaptive behavior. We present a novel neurocognitive model, the Interrogative/Imperative model of information-seeking, to account for pursuit of learning goals. Interrogative or imperative modes of informationseeking are often, but not necessarily, associated with approach or avoidance motivation, respectively. We also discuss additional influences on motivated memory encoding, including intrinsic motivation, curiosity, choice and cognitive control processes. Taken together, this body of research suggests that the nature of memory representations depends on an individual’s neurophysiological response to, rather than extrinsic qualities of, a given motivational manipulation or context at the time of encoding. Finally, we discuss potential applications of these research findings to reallife educational settings and directions for future research. Motivated Memory: Integrating Cognitive and Affective Neuroscience Motivation is critical to learning and memory, and there is widespread use of strategies to motivate learning in the classroom, many of which rely on intuition. However, empirical neuroscience research has only recently begun to examine the large repertoire of motivated behaviors and memory processes This research was supported in part by a postdoctoral fellowship to Kimberly S. Chiew awarded by the Canadian Institutes of Health Research. The content is solely the responsibility of the authors and does not necessarily represent the official views of the Canadian Institutes of Health Research. c21.indd 517 04-09-2018 06:04:25 518 KIMBERLY S. CHIEW AND R. ALISON ADCOCK central to education, positioning itself to provide evidencebased solutions. Early work in neuroscience focused on relatively simple forms of associative learning. These included Pavlovian stimulusstimulus learning (where a motivationally significant stimulus is associated with a previously neutral stimulus; for example, the sound of a bell with a food reward) and instrumental stimulusresponse learning (where the strength of a behavior is modified by rewarding or punishing consequences; for example, learning to press a button to receive a food reward). Using such models has yielded rich psychology and neuroscience literature on motivation in associative learning. More recently, these investigations have been augmented by new lines of cognitive neuroscience research that address a common intuition among educators: motivation plays a critical role in the way information is learned and encoded into longterm memory. The recognition that motivational influences can act on longterm memory processing by the medial temporal lobe (MTL) represents an important advance in memory research. Learning and memory over extended timescales (i.e., multiple days or years) is essential to adaptive behavior and cannot be accounted for by the Pavlovian or instrumental associative learning mechanisms historically studied in the context of motivation. In the present chapter, we review emerging cognitive neuroscience evidence regarding motivational effects on learning and memory formation. We discuss several factors important to motivational contexts and their impact on neural activity and cognition, including incentive salience, expectation, extrinsic versus intrinsic motivation, curiosity, and choice. Although this new research area opens many questions, based on present evidence we argue that distinct motivational states serve as adaptive contexts for learning, engaging distinct neural circuitry to support memory encoding and, thus, leading to distinct forms of memory representation. Importantly, present evidence suggests that an individual’s neurophysiological response to a motivational manipulation is critical in determining the nature of the encoded memory representation, rather than extrinsic qualities of the incentive. Finally, we discuss the implications of these basic scientific findings regarding motivation and learning in applied settings, such as educational or managerial environments. Motivation and Memory Encoding: Core Neural and Psychological Substrates The MTL areas of the brain have long been recognized as critical to the encoding and retrieval of declarative longterm memory (Squire, ZolaMorgan, & Stuart, 1991; Tulving  & Markowitsch, 1998). The MTL comprises substructures that play complementary, yet distinct, roles in these processes; these structures include the hippocampus (and surrounding cortical regions: the perirhinal, parahippocampal, and entorhinal cortices; reviewed in Davachi, c21.indd 518 04-09-2018 06:04:25 519 Motivated Memory 2006). Decades of research in both animal and human models suggest that the hippocampus plays an essential role in binding elements of an episode into an interrelated, multimodal longterm memory (Eichenbaum, 2000; Tulving & Murray, 1985, Tulving, 2002). More recent evidence has refined this account, suggesting that overlying cortical regions represent distinct aspects or features of an episode to be bound together: the perirhinal cortex selectively supports memory for items previously encountered, and the parahippocampal cortex supports memory for the environmental context in which the items were encountered. The hippocampus thus binds item and context memory together to produce a coherent memory episode (Davachi, 2006; Konkel  & Cohen, 2009; Ranganath, 2010). Largely distinct from the research literature investigating the MTL and longterm memory, a separate body of affective neuroscientific research has sought to characterize the modulatory neurotransmitter dopamine and its effects on motivated behavior. Widespread evidence suggests that the mesolimbic and mesocortical dopamine pathways, which primarily originate in the ventral tegmental area (VTA) and associated nuclei in the midbrain and project widely to regions in the limbic system and cerebral cortex, critically support motivated pursuit of a broad range of rewards, such as food and sex (Olds & Milner, 1954; Willner & ScheelKrüger, 1991). Given the opportunity to directly selfstimulate the VTA (i.e., through a button press), rodents forego other biologically relevant rewards to continue selfstimulation, providing direct evidence for a critical role of the VTA in motivation and reinforcement (Olds & Milner, 1954). Neuroimaging studies in humans, using functional magnetic resonance imaging (fMRI), have likewise observed increased mesolimbic activity during anticipation and pursuit of reward relative to nonreward outcomes, typically using secondary rewards such as money (Carter, MacInnes, Huettel, & Adcock, 2009; Knutson, Taylor, Kaufman, Peterson, & Glover, 2005). Functional relationships between the mesolimbic dopamine system and the MTL are well positioned to support motivated learning. Animal studies have long demonstrated anatomical connectivity between the VTA and hippocampus (Amaral & Cowan, 1980; Samson, Wu, Friedman, & Davis, 1990). Novel stimuli can elicit midbrain dopamine neuron activity, and dopamine released in the hippocampus stabilizes longterm potentiation,1 supporting learning of new information (reviewed in Lisman & Grace, 2005), including singletrial learning (Neugebauer, Korz,  & Frey, 2009; O’Carroll et  al., 2006; reviewed further in Shohamy and Adcock, 2010). Despite these findings in learning and memory and the robust link between dopamine and motivation, the potential effects of motivational manipulations on encoding into longterm memory and their supporting neural circuitry have only recently begun to be investigated. Wittmann et al. (2005) examined 1 Long-term potentiation refers to a persistent increase in synaptic strength based on recent patterns of neuronal firing at that synapse. c21.indd 519 04-09-2018 06:04:25 520 KIMBERLY S. CHIEW AND R. ALISON ADCOCK incidental memory (with a threeweek delay between encoding and retrieval) for reward predictive and nonreward predictive picture stimuli, and observed a subsequent memory benefit for stimuli that predicted reward over those that did not. The researchers found that this memory benefit was associated with enhanced activity, both in the dopaminergic midbrain and in the hippocampus, at the time of encoding. Likewise, a seminal experiment from our laboratory (Adcock, Thangavel, WhitfieldGabrieli, Knutson, & Gabrieli, 2006) examined neural activity during memory encoding as a function of a reward incentive manipulation. In contrast to incidental memory encoding in the study by Wittmann and colleagues (2005), participants intentionally encoded picture stimuli in anticipation of receiving monetary incentive (signaled prior to each picture stimulus with a high versus low value reward cue) for successfully remembering each in a recognition test 24 hours later. Recognition memory was superior for stimuli associated with high versus low value cues. Additionally, encoding of high (versus low) value stimuli was associated with enhanced anticipatory activity in the VTA as well as the hippocampus. Importantly, on a trial-by-trial basis, functional connectivity between the VTA and hippocampus at the time of encoding predicted subsequent memory success. In addition to mesolimbic and MTL regions, research has indicated a role for higher cortical regions in motivated memory encoding. The lateral prefrontal cortex (PFC) is robustly innervated by dopamine (GoldmanRakic & Friedman, 1991; Sawaguchi  & GoldmanRaki"
+    },
+    {
+      "paperId": "e25e7ee30d4b03a2e8ff190248619b0e0a090159",
+      "externalIds": {
+        "MAG": "1987489449",
+        "DBLP": "journals/fini/CortesMM14",
+        "PubMedCentral": "4271603",
+        "DOI": "10.3389/fninf.2014.00086",
+        "CorpusId": 8886784,
+        "PubMed": "25566050"
+      },
+      "url": "https://www.semanticscholar.org/paper/e25e7ee30d4b03a2e8ff190248619b0e0a090159",
+      "title": "Editorial for the research topic: information-based methods for neuroimaging: analyzing structure, function and dynamics",
+      "venue": "Front. Neuroinform.",
+      "year": 2014,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fninf.2014.00086/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4271603, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144616731",
+          "name": "J. Cortes"
+        },
+        {
+          "authorId": "2786475",
+          "name": "Daniele Marinazzo"
+        },
+        {
+          "authorId": "143813953",
+          "name": "M. A. Muñoz"
+        }
+      ],
+      "abstract": "This Research Topic gathers different contributions highlighting novel types of analysis and methods to deal more efficiently with neuroimaging data, simulated and real, acquired with different modalities. These approaches allow us to shed light on the mechanisms of brain organization, with focus on the relationship between brain structure, function and dynamics. \n \nThe first article of this Topic (Sanz Leon et al., 2013), introduces The Virtual Brain, a Neuroinformatics platform for full brain network simulations using realistic connectivity, putting in evidence that the integration between brain structure and function is perfectly plausible by simulating realistic brain activity (more specifically, neural mass models) on the architecture of the structural connectome. The authors show that dynamical models aimed at reproducing the functional connectivity patterns observed in the resting brain exhibit a much better performance when they are tuned around a balanced state favoring the shifting between attractors. This balanced state is described in terms of energy landscape, as discussed also in Watanabe et al. (2014), where the state transitions (in terms of energy landscape) between two representative Resting State Networks—the Default Mode Network and the Fronto-Parietal Network—are addressed. \n \nWith an alternative approach, the relation between structural and functional networks is tackled in Ajilore et al. (2013), by using the functional-by-structural hierarchical (FSH) mapping. This was developed for multimodal integration of the resting state fMRI (rsfMRI) and the whole brain (tractography-derived) connectome and is based on the evidence that the level of resting-state functional correlation between any two regions (in general) decreases as the graph distance of the corresponding structural connectivity matrix between them increases. Results are reported in health and depression. \n \nEffective connectivity methods are devised to infer directed connectivity patterns from time-series data. A new method based on Variational Bayesian Inference to infer causality from time series was proposed in Luessi et al. (2014). The method uses a vector autoregressive model for the latent variables describing neuronal activity in combination with a linear observation model based on a convolution with a hemodynamic response function. The method is validated using both real and synthetic resting fMRI data. \n \nContinuing with the problem of causality inference, classical methods like Granger causality were extended to the situation of time-varying signals in Chicharro and Panzeri (2014). This study also provides a graphical approach to predict dynamic statistical dependencies between the signals from the causal structure. \n \nA different approach is presented in Kolchinsky et al. (2014), where brain regions and networks are characterized by information-theoretic measures using both functional and structural information in a complementary manner. In particular, Kolchinsky et al., quantify the amount of functional coupling between sets of regions of interest (ROIs) as well as integration within sets of ROIs. Several information-based measures are considered, and their scaling with subsystem size is explored. \n \nRegarding consciousness and its relationship with Information Theory, two papers have been contributed to this Research Topic. In Lee et al. (2013) the Approximate Entropy (ApEn), a measure known to correlate with the level of brain consciousness, is used to characterize EEG signals in children and adults to show that the amount of ApEn is lower in children and that it correlates, in children as in adults, with consciousness; in particular, the authors show that ApEn decreases across the transition from awake to REM sleep to non-REM sleep. For patients with deficit of consciousness (DOC) after traumatic brain injury, (Maki-Marttunen et al., 2013) show two possible markers from fMRI time series that can distinguish between DOC patients and healthy subjects. The inter-hemispheric correlations (but not the intra-hemispheric correlations) between left-right homolog areas decrease, as does the intra-hemispheric information flow, in DOC patients compared to control. For a small group of 4 patients who fully recovered from coma, the study also reports an increase of the intra-hemisphere information flow with respect to controls. \n \nInformation-based measures have been associated with altered information processing in Autism Spectrum Disorder (ASD). The close link between active information storage and general theories of cortical function has been addressed in Gomez et al. (2014), by analyzing magnetoencephalography (MEG) signals. The authors report a significant reduction of information storage in the hippocampus in ASD patients. The amount of information and entropy of MEG signals in ASD (Asperger syndrome in this case) has been analyzed also in Perez Velazquez and Galan (2013). The analysis, carried out at the source level, addresses the relationship between resting state activity and the brain inner processing with regards to information production, as quantified by the relative entropy. The results suggest that the brains of individuals with ASD produce more information than the age-matched participants. \n \nThe complementary role of the three components of information processing, transfer, storage and modification is investigated in Wibral et al. (2014). Local information storage is analyzed in detail in neural data and associated to neural properties such as stimulus preferences and surprise. \n \nThe connection between information content of brain activity signals and function has been explored also in Sokunbi (2014). The author investigates the power of a similarity measure (the Sample Entropy) to discriminate between young and elderly subjects emphasizing on the possible limitations arising from the reduced length of time series that are commonly encountered in fMRI studies. \n \nInformation-based measures are also useful for developing new technical tools for structural and functional analysis. Novel algorithms have been proposed to improve the construction of the structural connectome in Roine et al. (2014), by investigating the isotropic partial volume effects caused by non-white matter tissue on fiber orientation diffusion estimated with constrained spherical de-convolution. Diffusion weighted signals are simulated with varying diffusion weightings, signal-to-noise ratios, fiber configurations, and tissue fractions. \n \nThe equivalence between the information-based and model-based approaches to directed dynamical connectivity in the frequency domain was explored in Takahashi et al. (2014). To enhance the understanding of the possibly complex interaction between multiple time series the authors decompose the established approaches to Directed Coherence into different modes of interaction. \n \nConcerning improvements to functional analysis, a novel information-theoretic approach for spatial components ranking has been proposed in Ossadtchi et al. (2013). The proposed method is based on the Mutual Information (MI) Spectrum which serves as a power-invariant measure of repetitive task-related signal in the temporal loadings of spatial components. Using realistic simulations, the authors in show that the task-relatedness measure, based on estimating the MI between a component and the expanded binary stimulus signal, allows for significantly higher detector characteristics when compared with conventional alternatives. The application of the MI Spectrum for the selection of task-related independent components is validated with real MEG data. \n \nWe hope that the reader will find in this Research Topic a useful reference for the state of the art in the emerging field of tools rooted in information theory and applied to neuroscience."
+    },
+    {
+      "paperId": "d2e352e36eb71e177af4518d24e2743a29f8f727",
+      "externalIds": {
+        "MAG": "2086946528",
+        "PubMedCentral": "3659279",
+        "DOI": "10.3389/fnins.2013.00080",
+        "CorpusId": 18705850,
+        "PubMed": "23734092"
+      },
+      "url": "https://www.semanticscholar.org/paper/d2e352e36eb71e177af4518d24e2743a29f8f727",
+      "title": "Learning from silver linings",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2013,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2013.00080/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3659279, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "33898466",
+          "name": "R. M. Carter"
+        },
+        {
+          "authorId": "10226768",
+          "name": "S. Huettel"
+        }
+      ],
+      "abstract": "The cardinal goal of decision neuroscience is to identify the neural mechanisms that translate external rewards into an internal sense of value (Rangel et al., 2008; Huettel, 2010; Glimcher, 2011; Rangel and Clithero, 2012). The brain region most commonly associated with “reward” has been the ventral striatum (vStr, neurosynth.org forward inference, 1/2013). Studies of fMRI activation and neuronal activity in the vStr have converged on a standard model in which the vStr computes a reward prediction error [RPE (Schultz, 1997; Pagnoni et al., 2002; O'Doherty et al., 2003; Bayer and Glimcher, 2005)] that then facilitates the learning of new associations (Sutton and Barto, 1998). The RPE mechanism provides flexibility for encoding the relationships between cues and positive rewards across a wide dynamic range, but was historically thought to ignore aversive stimuli (Delgado et al., 2000; Knutson et al., 2001). \n \nA strong split between representations of positively and negatively valued stimuli would be consistent with evidence from classical conditioning (Martin-Soelch et al., 2007) and emotion (Russell, 1980) representation. But, it is inconsistent with a growing body of research that indicates that the vStr can represent the magnitude of value for both positive and negative stimuli (Seymour et al., 2005, 2007; Carter et al., 2009). Research by Brooks and colleagues (Brooks et al., 2010) has pointed toward a way to reconcile this conflicting evidence: negative expectations create a baseline that allows two negative stimuli to be distinguished in the vStr. \n \nBrooks and colleagues presented participants with a series of choices between a constant number of electric shocks and a number based on the outcome of a gamble. The use of primary sensory stimuli in choice tasks is rare but potentially valuable (O'Doherty et al., 2006). Electric shocks in particular provide primary sensory input that is very aversive and can take place in an entirely negative context (i.e., without the use of an endowment). Prior to choice, on each trial, participants were given a standard number of shocks to establish a negative expectation for each trial. The participants' choices were then used to characterize their utility curves. Consistent with prospect theory (Kahneman and Tversky, 1979), the convex shape of these curves indicates that participants, in spite of their preference for fewer shocks, still viewed fewer shocks as a negative outcome. The authors next show that the vStr not only represents aversive choice options, but also does so in a manner that is counter to traditional salience arguments (Blackburn et al., 1992; Salamone, 1994). Less aversive—and therefore less salient—options produce greater activations. This surprising finding has important implications for how associations are learned and subsequent choices are made. \n \nBy embedding local context in an RPE framework, Brooks and colleagues can explain two puzzles in the decision neuroscience literature. First, the lack of vStr activation for aversive but unexpectedly positive experiences can now be understood as a problem with firing-rate sensitivity. Negative stimuli that evoke low firing rates can be extraordinarily difficult to distinguish from one another. But, in the local context provided by the negative reference shocks, negative stimuli generate higher overall firing rates and could be easily distinguished. \n \nSecond, because these negative stimuli can generate different representations in vStr, the neural machinery responsible for learning positive rewards can be co-opted to choose the more positive of two negative options; widening the applicability of temporal difference models of learning (Sutton and Barto, 1998). The use of local context in temporal difference learning has been described in work on relief from pain (Seymour et al., 2005), and is a potential explanation for striatal representation of monetary losses in one of our own studies where gain and loss contexts were held constant within runs (Carter et al., 2009). \n \nWhile being able to distinguish negative stimuli in using the vStr expands the applicability of reinforcement models of learning, a number of questions regarding the representation of negative stimuli during choice remain. Work from Hikosaka and colleagues [reviewed in Bromberg-Martin et al. (2010)] has indicated that the vStr may also incorporate signal from dopamine neurons, anatomically distinct in origin, that fire more strongly to both rewards and punishments. Such findings raise the intriguing possibility that a single experiment could reveal anatomically distinct regions within the vStr that evince distinct reward and salience coding—following a clever manipulation of local context. We also note that modern models of decision value have difficulty predicting choices for gambles containing mixed outcomes that include potential gains and losses (Payne, 2005). In order to address these potential shortcomings, choice sets consisting of true mixed gambles may provide important methodological advantages (Venkatraman et al., 2009). \n \nAlthough much attention has been paid to the representation of aversive stimuli in the vStr, this study by Brooks and colleagues provides an important and novel reminder: subtle differences in experimental protocol can drastically change the neural response to a simple stimulus."
+    },
+    {
+      "paperId": "a13975a15e40cb58a4fbc22bd45f5faaa0d3674c",
+      "externalIds": {
+        "DOI": "10.1111/jsr.52_12766",
+        "CorpusId": 240146810
+      },
+      "url": "https://www.semanticscholar.org/paper/a13975a15e40cb58a4fbc22bd45f5faaa0d3674c",
+      "title": "Betting on sleep restriction: Examining the relationship between sleep and gambling using online behaviour reporting",
+      "venue": "Journal of Sleep Research",
+      "year": 2018,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jsr.52_12766",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jsr.52_12766?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jsr.52_12766, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40104572",
+          "name": "H. Thorne"
+        },
+        {
+          "authorId": "48924193",
+          "name": "G. Zhu"
+        },
+        {
+          "authorId": "2296331862",
+          "name": "T. Ngo"
+        },
+        {
+          "authorId": "3203258",
+          "name": "Y. Bin"
+        },
+        {
+          "authorId": "2055623833",
+          "name": "M. Ding"
+        },
+        {
+          "authorId": "7747909",
+          "name": "E. Stamatakis"
+        },
+        {
+          "authorId": "1412495461",
+          "name": "N. Nassar"
+        },
+        {
+          "authorId": "2284106353",
+          "name": "P. Cistulli"
+        }
+      ],
+      "abstract": "Australians are prolific gamblers, losing more money gambling than any other nation in the world. Australian gamblers also experience a high degree of harm from gambling, including financial harm, relationship harm, and physical health harm, for example, stress, anxiety, and ‐ in extreme circumstances ‐ suicide. Gambling ‐ related harm may stem from poor gambling decisions, such as spending more time or money gambling than originally planned, or chasing losses. Sleep restriction may play a role in gambling ‐ related harm, as being tired can impair cog-nition, including decision ‐ making and assessments of risk. However, little research has specifically examined whether a link exists between gambling and sleep restriction. Gambling often occurs in environments that are open late into the night, making the interaction between sleep restriction and gambling of interest from a harm reduction standpoint. The current study tracked the gambling behaviour and sleep patterns of regular gamblers ( N = 132, 28% female) for six days using online dia-ries. Results showed a relationship between the two behaviours; with significant between ‐ subjects correlations between gambling and sleep ( r = − 0.20, p < 0.05). Lagged correlations were used to examine whether the likelihood of one behaviour occurring was related to another behaviour occurring the previous day. There were day ‐ by ‐ day changes in sleep duration and gambling duration, in that engaging in a lot of one behaviour the previous day leads to reduced engagement in that same behaviour the following day. These findings demonstrate that there is a relationship between sleep restriction and gambling. This is the first study to show that sleep ‐ restriction and gambling are related using real reports of gambling participation as opposed to a gambling proxy (e.g., simulated gambling games), as well as one of the first studies to examine the acute time resolution of gambling using longitudinal data. To further the current research, the authors suggest conducting more applied research, such as controlled laboratory studies, to investigate the effect that a lack of sleep may have on the real gambling behaviour of regular gamblers, something that is notably absent in the literature. Background: Alternating unihemispheric slow ‐ wave sleep is a well ‐ established biological trait in birds and cetaceans. Other examples of such switching activity include left ‐ right (hemispheric) alternations in: (i) LFP activity during optomotor (binocular rivalry) behaviour in oso-phila ; (ii) relative nasal patency in several mammalian species (the nasal cycle); (iii) HVC activity during birdsong; (iv) independent eye movements in the sandlance and chameleon; and (v) SCN electro-physiological activity and Per mRNA expression in rodents. In healthy individuals, EEG interhemispheric oscillations (0.031 – 0.012Hz) over central regions (C3 vs C4) have also been demonstrated during REM sleep using a state space analysis method Together these findings suggest left ‐ right brain switching activity may be a fundamental neural mechanism and chronobiological mar-ker across the animal kingdom. Methods: This hypothesis was examined by applying a novel analysis algorithm to an open ‐ access sleep database (UCDDB) containing full overnight PSG recordings (mean=6.9hrs; range:5.9 – 7.7) from 25 adult human subjects (4 female, 21 male; mean age=49.96 years; range:28 – 68) with suspected sleep ‐ disordered breathing (Heneghan, A laterality index and power spectral density were applied to 5s epochs in EEG channels (C3 vs C4) using R and C ++ , with a 30s mov-ing analysis window and the signal averaged across 150s segments. Results: In all sleep stages and waking (W), switching was found in all subjects and EEG frequency bands. On average, variation in left ‐ right switch rate (Hz) was observed during W (0.076 – 0.084), light sleep (0.073 – 0.088), deep sleep (0.082 – 0.094) and REM sleep (0.082 – 0.090); and across Delta (0.073 – 0.082), Theta (0.083 – 0.094), Alpha (0.084 – 0.093) and Beta frequencies (0.082 – 0.090). Discussion: This finding supports an endogenous brain switching trait in humans. The analysis algorithm can be readily applied to other sleep EEG datasets, and will be further developed using other methods (e.g., graph, entropy) and EEG channels (e.g., F3 vs F4, P3 vs P4). Cognitive, brain stimulation and genetic studies are also needed to assess the trait ' s heritability, phylogeny along with potential occupational and clinical applications. sleep duration over the life span and determinants of categorical changes in sleep duration is unknown. Methods: Longitudinal data from a sub ‐ sample of the 45 and Up cohort study was analysed. Participants were N =56,034 (53.6% female) community ‐ based volunteers from New South Wales aged 45 to 107 at baseline in 2006 ‐ 2009 and who completed follow ‐ up survey 3 years after baseline assessment. Categorical changes in self ‐ reported sleep duration between baseline and follow ‐ up was examined as the main outcome. Results: At baseline, 13.7% of participants reported short sleep of ≤ 6 hr and 17.2% had long sleep of ≥ 9 hr. Mean sleep duration decreased minimally from baseline to follow ‐ up ( ‐ 1.2 min, 95% CI ‐ 0.6 to ‐ 1.8 min). On follow ‐ up, persistence in sleep duration was seen in the majority (persistent normal 54.4%, persistent short / long 17.7%), while 14.6% had changed from normal to short / long sleep, and 13.5% had adopted normal sleep duration. Of those with short sleep at baseline, 48.5% increased sleep by 1 ‐ 2 hr on follow ‐ up, while 53.3% of those with long sleep had decreased sleep by 1 ‐ 2 hr. Further analyses for the conference will examine baseline demographics, health behaviours, and medical conditions as predictors of changes in sleep duration. Conclusions: Initial results suggest sleep durations are not stable even over a short follow ‐ up period of 3 years. Approximately half of those with short / long sleep duration had moved towards normal sleep on follow ‐ up. The findings could have major implications, sug-gesting (i) that associations between habitual sleep duration and health outcomes have been underestimated and (ii) that sleep duration may be more modifiable than previously expected."
+    },
+    {
+      "paperId": "5c987a32053f4cbe25f7bad2040e2d3aa7ac5652",
+      "externalIds": {
+        "MAG": "2281103352",
+        "CorpusId": 12179256
+      },
+      "url": "https://www.semanticscholar.org/paper/5c987a32053f4cbe25f7bad2040e2d3aa7ac5652",
+      "title": "Self-help cognitive-behavioral therapy for insomnia (CBT-1): a systematic review of randomized controlled trials",
+      "venue": "",
+      "year": 2013,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://web.archive.org/web/20181103165338/http://hub.hku.hk/bitstream/10722/183920/1/Content.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "82121895",
+          "name": "F. Ho"
+        },
+        {
+          "authorId": "145806621",
+          "name": "K. Chung"
+        },
+        {
+          "authorId": "143976022",
+          "name": "W. Yeung"
+        },
+        {
+          "authorId": "2325647115",
+          "name": "K. Yung"
+        },
+        {
+          "authorId": "145639118",
+          "name": "H. Ng"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "cec7a9bded1641fe240f49bf014e5d5e0377c232",
+      "externalIds": {
+        "PubMedCentral": "8521710",
+        "DOI": "10.1164/rccm.202106-1474ED",
+        "CorpusId": 236914641,
+        "PubMed": "34344285"
+      },
+      "url": "https://www.semanticscholar.org/paper/cec7a9bded1641fe240f49bf014e5d5e0377c232",
+      "title": "Understanding Sleep Apnea Physiology: A Potential Path to Improving Positive Airway Pressure Effectiveness",
+      "venue": "American Journal of Respiratory and Critical Care Medicine",
+      "year": 2021,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1164/rccm.202106-1474ed",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8521710, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5956561",
+          "name": "L. Donovan"
+        },
+        {
+          "authorId": "26416654",
+          "name": "V. Kapur"
+        }
+      ],
+      "abstract": "Poor adherence to positive airway pressure (PAP) remains a barrier to effective obstructive sleep apnea (OSA) treatment for millions of patients worldwide (1, 2). To overcome this barrier, we need a firm understanding of the factors that prevent adherence and how to address them. Prior work demonstrates several key drivers of nonadherence, including racial disparities, side effects, and poor selfefficacy (3–5). For self-efficacy, our understanding has guided successful and scalable behavioral interventions (1, 6). However, our understanding of nonadherence remains incomplete, and additional targets of future intervention remain. Recent interest has focused on the role of physiologic traits in mediating nonadherence. Rigorous work highlights that a number of distinct physiological traits contribute to OSA, with each trait varying considerably across individuals (7). These traits include loop gain, arousal threshold, pharyngeal collapsibility, and muscle compensation. Among these traits, the relationship between arousal threshold and PAP adherence has been studied in depth, with proxies of arousal threshold predicting adherence in some, but not all, cohorts (8–10). Recent work also suggests the role of elevated response of the pharyngeal dilator muscles (11). However, prior work did not fully account for each of these traits and their interactions or for changes in PAP adherence over time. In this issue of the Journal, Zinchuk and colleagues (pp. 703–712) present important findings that overcome these limitations and underscore the importance of physiologic traits in predicting PAP adherence (12). Greater understanding in this area may inform novel approaches to improve the effectiveness of PAP therapy. The researchers resourcefully analyzed physiologic traits on baseline polysomnograms acquired from the RICCADSA (Randomized Intervention with Continuous Positive Airway Pressure in CAD and OSA) study. Specifically, trait values for loop gain, arousal threshold, collapsibility, and muscle compensation were calculated across non-REM sleep. The association of median trait values to objective adherence data was then evaluated in participants who used autotitrating PAP for up to 2 years (n = 249). In adjusted analyses, the investigators found that lower arousal threshold, as well as high and lowmuscle compensation, was associated with lower adherence. A model that included baseline trait measures demonstrated utility in predicting poor adherence (defined as lowest quartile of adherence): accuracy = 69.8%, sensitivity = 38.7%, specificity = 80.2%, positive predictive value = 39.3%, and negative predictive value = 79.8%. Illustrating the clinical importance of baseline physiologic traits, the actual adherence between predicted “poor” and “good” adherers showed 2.0 and 3.2 hours/night difference at 1 month and 2 years, respectively. The authors considered several potentially relevant covariates related to PAP adherence in their modeling strategy. These covariates included demographics, polysomnogram findings, sleepiness, medical conditions, and psychiatric conditions. However, this study was limited. As a secondary analysis, it was not comprehensive in the assessment of important factors that may confound, modify, or mediate the relationship, including symptoms, side effects, psychological factors, socioeconomic status, and partner support. Furthermore, the composition of the sample, predominantly males with cardiovascular disease, limits the generalizability of the authors’ findings. These limitations highlight the need for prospective studies intentionally designed to evaluate the relationship between physiologic traits and PAP adherence in a broad population. Elucidating the relationship between physiologic traits and PAP adherence unlocks opportunities to improve PAP effectiveness through personalization of care. First, although behavioral interventions to support adherence are effective, they are often resource intensive with limited reach (1). Identification of individuals who are likely to be nonadherent can help prioritize early access to these treatments. Second, understanding the physiologic drivers of disease may allow tailored therapies that modify physiologic traits. For instance, hypnotics have inconsistently improved adherence in randomized trials (13). Perhaps targeting individuals with low arousal thresholds could more consistently lead to meaningful improvements in adherence and symptoms. Indeed, a recent post hoc analysis of a randomized trial of eszopiclone suggests that those with a low arousal threshold who use PAP.1 month may derive more benefit from the hypnotic than those with a high arousal threshold (9). Several existing therapies such as acetazolamide and supplemental oxygen also have efficacy in alleviating loop gain (14), which Zinchuk and colleagues foundmay be a barrier in longer-term adherence (12). An underexplored approach is customizing PAP technology and settings to harmonize with physiologic traits. Although existing modes and features such as pressure ramping, fixed-pressure PAP, autotitration, bilevel PAP, adaptive servo ventilation, and expiratory pressure relief are not known to improve adherence broadly in patients with OSA (1), perhaps existing or novel PAPmodes could lead to improved outcomes in individuals with specific trait profiles. Future work will ultimately need to clarify the impact of trait identification and personalized management on patient-centered outcomes. As we innovate, we must also bear in mind the costs of complexity. The polysomnograms currently necessary for comprehensive trait identification are costly and often inaccessible, particularly for groups with existing barriers to adherence such as historically disadvantaged populations and those who live in rural areas (1, 3, 4). Developing automated approaches to measure This article is open access and distributed under the terms of the Creative Commons Attribution Non-Commercial No Derivatives License 4.0. For commercial usage and reprints, please e-mail Diane Gern."
+    },
+    {
+      "paperId": "fb27cc1621d07f086579551687824faf6201cfc3",
+      "externalIds": {
+        "CorpusId": 233175159
+      },
+      "url": "https://www.semanticscholar.org/paper/fb27cc1621d07f086579551687824faf6201cfc3",
+      "title": "Effects of threatening of COVID-19 and side effects of the lockdowns on the patients with mental disorder",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://web.archive.org/web/20210717111137/https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/appy.12459, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143909548",
+          "name": "Min-Soo Lee"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "168836d5ea71b14124c3c68aa90b74038e894866",
+      "externalIds": {
+        "CorpusId": 249345714
+      },
+      "url": "https://www.semanticscholar.org/paper/168836d5ea71b14124c3c68aa90b74038e894866",
+      "title": "The longitudinal effect of habitual physical activity change on pain tolerance in a population-based cohort – The Tromsø Study 6 & 7",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://web.archive.org/web/20210429031846/https://www.degruyter.com/document/doi/10.1515/sjpain-2019-9902/pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2167926435",
+          "name": "A. arnes"
+        },
+        {
+          "authorId": "2167925562",
+          "name": "Morseth"
+        },
+        {
+          "authorId": "97178645",
+          "name": "B. Strand"
+        },
+        {
+          "authorId": "2167926425",
+          "name": "Stubhaug"
+        },
+        {
+          "authorId": "2099428662",
+          "name": "Wilsgaard"
+        },
+        {
+          "authorId": "2167925560",
+          "name": "Ó. Steingrímsdóttir"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "512d737cf098d4185f06c471d0338dc7b2dad049",
+      "externalIds": {
+        "CorpusId": 203589022
+      },
+      "url": "https://www.semanticscholar.org/paper/512d737cf098d4185f06c471d0338dc7b2dad049",
+      "title": "The Ketogenic Diet Mediates Its AntiSeizure Effects through Respiratory-Induced Intracerebral Acidosis in the Triple-Hit Rodent Model of Infantile Spasms",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://canadianleagueagainstepilepsy.wildapricot.org/resources/Documents/2019%20ASM/2019%20Abstracts%20and%20Proposals/CLAE%202019%20Book%20of%20Abstracts.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108420190",
+          "name": "Jonathan Liu"
+        },
+        {
+          "authorId": "1411698068",
+          "name": "J. Peedicail"
+        },
+        {
+          "authorId": "1398324762",
+          "name": "I. Gaxiola-Valdez"
+        },
+        {
+          "authorId": "39994731",
+          "name": "V. Mosher"
+        },
+        {
+          "authorId": "2069059514",
+          "name": "W. Wilson"
+        },
+        {
+          "authorId": "32253095",
+          "name": "Tefani Perera"
+        },
+        {
+          "authorId": "1388829695",
+          "name": "Shaily Singh"
+        },
+        {
+          "authorId": "49785850",
+          "name": "G. Teskey"
+        },
+        {
+          "authorId": "47405482",
+          "name": "P. Federico"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "8f33070915471517be57e131feea22a2dac4cb64",
+      "externalIds": {
+        "MAG": "2574827269",
+        "DOI": "10.1016/J.DRUGALCDEP.2016.08.056",
+        "CorpusId": 79219471
+      },
+      "url": "https://www.semanticscholar.org/paper/8f33070915471517be57e131feea22a2dac4cb64",
+      "title": "Baseline predictors of outpatient induction onto extended-release naltrexone",
+      "venue": "",
+      "year": 2017,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.DRUGALCDEP.2016.08.056?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.DRUGALCDEP.2016.08.056, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32812699",
+          "name": "Vincent A. Barbieri"
+        },
+        {
+          "authorId": "6547307",
+          "name": "Kaitlyn Mishlen"
+        },
+        {
+          "authorId": "82135428",
+          "name": "M. Sullivan"
+        },
+        {
+          "authorId": "144013724",
+          "name": "A. Bisaga"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "bc3360410a91b70290f7d182809bd3790f2efd84",
+      "externalIds": {
+        "MAG": "2603509207",
+        "CorpusId": 151556149
+      },
+      "url": "https://www.semanticscholar.org/paper/bc3360410a91b70290f7d182809bd3790f2efd84",
+      "title": "Effects of a Collaborative RtI Based Integrated Kindergarten Motor and Academic Program",
+      "venue": "",
+      "year": 2016,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://soundideas.pugetsound.edu/cgi/viewcontent.cgi?article=1000&context=drot_theses, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "16566539",
+          "name": "W. Trummert"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "fe357c3f2a575c250c8be6461092ed7cba347427",
+      "externalIds": {
+        "CorpusId": 253242584
+      },
+      "url": "https://www.semanticscholar.org/paper/fe357c3f2a575c250c8be6461092ed7cba347427",
+      "title": "4 th Annual Early-Career Researchers",
+      "venue": "",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [],
+      "abstract": null
+    },
+    {
+      "paperId": "98689b3e703aa1068c520302cdbb1675a547c77c",
+      "externalIds": {
+        "CorpusId": 202756882
+      },
+      "url": "https://www.semanticscholar.org/paper/98689b3e703aa1068c520302cdbb1675a547c77c",
+      "title": "time inventory of computational resource utilization for de novo assembly of microbial genomes with PacBio and Illumina reads",
+      "venue": "",
+      "year": 2014,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://www.msi.umn.edu/sites/default/files/abstract%20book_1.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5768570",
+          "name": "Jonathan P. Badalamenti"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c6618bfbd64e19803e186d83032d5d96876a956b",
+      "externalIds": {
+        "MAG": "1909003645",
+        "CorpusId": 143306246
+      },
+      "url": "https://www.semanticscholar.org/paper/c6618bfbd64e19803e186d83032d5d96876a956b",
+      "title": "Neural Activity During Social Exclusion: An Exploratory Examination",
+      "venue": "",
+      "year": 2011,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://digitalcommons.iwu.edu/cgi/viewcontent.cgi?article=1147&context=psych_honproj, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5591826",
+          "name": "S. Khatcherian"
+        },
+        {
+          "authorId": "66219055",
+          "name": "Faculty Advisor Jason Themanson"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

@@ -17,12 +17,58 @@ ollama:
   enabled: true
   provider: ollama
   base_url: http://localhost:11434
-  model: richardyoung/qwen3-14b-abliterated:latest
+  model: qwen3:14b
   timeout: 600
   temperature: 0.2
   debate_rating_threshold: 1400
   fallback_to_rules: false
   log_calls: true
+
+llm_profiles:
+  default:
+    enabled: true
+    provider: ollama
+    base_url: http://localhost:11434
+    model: qwen3:14b
+    timeout: 600
+    temperature: 0.2
+    fallback_to_rules: false
+    log_calls: true
+  reasoning:
+    enabled: true
+    provider: ollama
+    base_url: http://localhost:11434
+    model: qwen3:14b
+    timeout: 600
+    temperature: 0.1
+    fallback_to_rules: false
+    log_calls: true
+  coder:
+    enabled: true
+    provider: ollama
+    base_url: http://localhost:11434
+    model: deepseek-coder-v2:16b
+    timeout: 600
+    temperature: 0.0
+    fallback_to_rules: false
+    log_calls: true
+  disabled:
+    enabled: false
+    provider: rules
+    model: deterministic
+    fallback_to_rules: true
+    log_calls: false
+
+llm_tasks:
+  hypothesis_generation: default
+  hypothesis_review: reasoning
+  hypothesis_rank: default
+  hypothesis_evolution: reasoning
+  hypothesis_meta_review: disabled
+  experiment_design: default
+  experiment_statistical_model: default
+  experiment_result_review: reasoning
+  literature_intent: default
 
 llm:
   enabled: false

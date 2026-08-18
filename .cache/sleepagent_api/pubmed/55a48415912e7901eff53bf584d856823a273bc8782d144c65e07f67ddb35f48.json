@@ -1,0 +1,46 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Neuroimaging",
+        "to": "\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]"
+      },
+      {
+        "from": "correlates",
+        "to": "\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation's\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields]"
+      },
+      {
+        "from": "psychological distress",
+        "to": "\"psychological distress\"[MeSH Terms] OR (\"psychological\"[All Fields] AND \"distress\"[All Fields]) OR \"psychological distress\"[All Fields]"
+      },
+      {
+        "from": "insomnia:",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "meta-analysis",
+        "to": "\"meta-analysis\"[Publication Type] OR \"meta-analysis as topic\"[MeSH Terms] OR \"meta-analysis\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]) AND (\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation s\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields]) AND (\"psychological distress\"[MeSH Terms] OR (\"psychological\"[All Fields] AND \"distress\"[All Fields]) OR \"psychological distress\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"meta analysis\"[Publication Type] OR \"meta analysis as topic\"[MeSH Terms] OR \"meta analysis\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in",
+        "A"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

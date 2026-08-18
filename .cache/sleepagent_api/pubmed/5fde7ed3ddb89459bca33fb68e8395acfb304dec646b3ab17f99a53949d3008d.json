@@ -1,0 +1,47 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "8",
+    "retmax": "8",
+    "retstart": "0",
+    "idlist": [
+      "42078421",
+      "37479785",
+      "35460526",
+      "35152725",
+      "33776886",
+      "31464030",
+      "29872931",
+      "20169464"
+    ],
+    "translationset": [
+      {
+        "from": "Motion",
+        "to": "\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion's\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]"
+      },
+      {
+        "from": "correction",
+        "to": "\"correct\"[All Fields] OR \"correctability\"[All Fields] OR \"correctable\"[All Fields] OR \"corrected\"[All Fields] OR \"correctible\"[All Fields] OR \"correcting\"[All Fields] OR \"correction\"[All Fields] OR \"corrections\"[All Fields] OR \"corrective\"[All Fields] OR \"correctives\"[All Fields] OR \"correctness\"[All Fields] OR \"corrects\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "sleep studies",
+        "to": "\"polysomnography\"[MeSH Terms] OR \"polysomnography\"[All Fields] OR (\"sleep\"[All Fields] AND \"studies\"[All Fields]) OR \"sleep studies\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion s\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]) AND (\"correct\"[All Fields] OR \"correctability\"[All Fields] OR \"correctable\"[All Fields] OR \"corrected\"[All Fields] OR \"correctible\"[All Fields] OR \"correcting\"[All Fields] OR \"correction\"[All Fields] OR \"corrections\"[All Fields] OR \"corrective\"[All Fields] OR \"correctives\"[All Fields] OR \"correctness\"[All Fields] OR \"corrects\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"polysomnography\"[MeSH Terms] OR \"polysomnography\"[All Fields] OR (\"sleep\"[All Fields] AND \"studies\"[All Fields]) OR \"sleep studies\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

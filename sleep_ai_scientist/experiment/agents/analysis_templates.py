@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import math
 from pathlib import Path
+import re
 from typing import Any
 
 import pandas as pd
@@ -16,6 +17,10 @@ from sleep_ai_scientist.schemas.experiment import (
     RobustnessCheckResult,
     StatisticalTestResult,
 )
+
+
+DEFAULT_HEALTHY_PREFIX = "sub-YZHC"
+SCALE_ANCHORS = {"ISI", "PSQI", "BAI", "BDI", "SLEEPINESS"}
 
 
 def load_analysis_table(plan: ExperimentPlan, required_variables: set[str] | None = None) -> pd.DataFrame:
@@ -43,16 +48,27 @@ def load_analysis_table(plan: ExperimentPlan, required_variables: set[str] | Non
         if not selected:
             continue
         subset = frame[["subject_id", *selected.keys()]].rename(columns=selected)
-        if subset["subject_id"].duplicated().any():
-            subset = _collapse_duplicate_subject_rows(subset)
+        subset.insert(1, "subject", subset["subject_id"].map(_base_subject))
         frames.append(subset)
 
     if not frames:
         return pd.DataFrame()
     merged = frames[0]
     for frame in frames[1:]:
-        merged = merged.merge(frame, on="subject_id", how="inner")
+        keys = ["subject", "subject_id"] if _is_session_level(merged) and _is_session_level(frame) else ["subject"]
+        merged = merged.merge(frame, on=keys, how="inner")
+        if "subject_id_x" in merged.columns and "subject_id_y" in merged.columns:
+            merged["subject_id"] = merged["subject_id_x"].where(merged["subject_id_x"].astype(str).ne(merged["subject"]), merged["subject_id_y"])
+            merged = merged.drop(columns=["subject_id_x", "subject_id_y"])
+    if "healthy_label" not in merged.columns:
+        merged["healthy_label"] = merged["subject"].map(_healthy_label_from_subject)
     return merged
+
+
+def _is_session_level(frame: pd.DataFrame) -> bool:
+    if "subject_id" not in frame.columns or "subject" not in frame.columns:
+        return False
+    return bool(frame["subject_id"].astype(str).ne(frame["subject"].astype(str)).any())
 
 
 SUPPORTED_PRIMARY_TEMPLATES = {"spearman_correlation", "linear_regression", "mixed_effects", "logistic_regression"}
@@ -66,7 +82,13 @@ def run_primary_tests(plan: ExperimentPlan, *, primary_template: str = "spearman
         test_id = str(test.get("test_id") or stable_id("primary_test", plan.plan_id, predictor, outcome))
         template = str(test.get("model") or primary_template or "spearman_correlation")
         table = load_analysis_table(plan, _required_variables_for_template(plan, test, predictor, outcome, template))
-        results.append(_run_primary_template(table, test_id, predictor, outcome, template, plan, test))
+        result = _run_primary_template(table, test_id, predictor, outcome, template, plan, test)
+        result.metadata = {
+            **result.metadata,
+            "clinical_group_context": _clinical_group_context(table, predictor, outcome),
+        }
+        results.append(result)
+    _attach_group_context_fdr(results)
     return results
 
 
@@ -442,6 +464,286 @@ def _clean_model_table(table: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
     return clean.dropna(subset=columns)
 
 
+def _clinical_group_context(table: pd.DataFrame, predictor: str, outcome: str) -> dict[str, Any]:
+    if table.empty or "healthy_label" not in table.columns:
+        return {"task": "healthy_vs_nonhealthy_context", "status": "unavailable", "reason": "missing_healthy_label"}
+    healthy_label = pd.to_numeric(table["healthy_label"], errors="coerce")
+    clean = table.assign(healthy_label=healthy_label).dropna(subset=["healthy_label"])
+    n_healthy = int((clean["healthy_label"] == 1).sum())
+    n_nonhealthy = int((clean["healthy_label"] == 0).sum())
+    predictor_stats = _group_difference_stats(clean, predictor, is_scale_anchor=False)
+    outcome_stats = _group_difference_stats(clean, outcome, is_scale_anchor=_is_scale_anchor(outcome))
+    within_group = _within_group_associations(clean, predictor, outcome)
+    group_specific_models = _group_specific_models(clean, predictor, outcome)
+    return {
+        "task": "healthy_vs_nonhealthy_context",
+        "status": "run" if n_healthy and n_nonhealthy else "insufficient_groups",
+        "healthy_label_rule": f"subject_id starts with {DEFAULT_HEALTHY_PREFIX}",
+        "n_healthy": n_healthy,
+        "n_nonhealthy": n_nonhealthy,
+        "predictor_group_difference": predictor_stats,
+        "outcome_group_difference": outcome_stats,
+        "within_group_associations": within_group,
+        "group_specific_models": group_specific_models,
+        "clinical_interpretation": _clinical_interpretation(predictor_stats, outcome_stats),
+    }
+
+
+def _group_difference_stats(table: pd.DataFrame, variable: str, *, is_scale_anchor: bool) -> dict[str, Any]:
+    base = {
+        "variable": variable,
+        "is_scale_anchor": is_scale_anchor,
+        "healthy_mean": None,
+        "nonhealthy_mean": None,
+        "nonhealthy_minus_healthy": None,
+        "welch_p": None,
+        "fdr_q": None,
+        "direction": "unknown",
+        "n_healthy": 0,
+        "n_nonhealthy": 0,
+    }
+    if variable not in table.columns:
+        return {**base, "status": "missing_variable"}
+    values = pd.to_numeric(table[variable], errors="coerce")
+    healthy = values[table["healthy_label"] == 1].dropna()
+    nonhealthy = values[table["healthy_label"] == 0].dropna()
+    base["n_healthy"] = int(len(healthy))
+    base["n_nonhealthy"] = int(len(nonhealthy))
+    if healthy.empty or nonhealthy.empty:
+        return {**base, "status": "insufficient_groups"}
+    healthy_mean = float(healthy.mean())
+    nonhealthy_mean = float(nonhealthy.mean())
+    diff = nonhealthy_mean - healthy_mean
+    return {
+        **base,
+        "status": "run",
+        "healthy_mean": healthy_mean,
+        "nonhealthy_mean": nonhealthy_mean,
+        "nonhealthy_minus_healthy": float(diff),
+        "welch_p": _welch_p_value(healthy, nonhealthy),
+        "direction": "nonhealthy_greater" if diff > 0 else "nonhealthy_lower" if diff < 0 else "no_difference",
+    }
+
+
+def _within_group_associations(table: pd.DataFrame, predictor: str, outcome: str) -> dict[str, Any]:
+    healthy = _group_association(table, predictor, outcome, healthy_label=1)
+    nonhealthy = _group_association(table, predictor, outcome, healthy_label=0)
+    effect_difference = None
+    if healthy.get("effect") is not None and nonhealthy.get("effect") is not None:
+        effect_difference = float(nonhealthy["effect"] - healthy["effect"])
+    return {
+        "method": "spearman_correlation",
+        "healthy": healthy,
+        "nonhealthy": nonhealthy,
+        "effect_difference_hint": effect_difference,
+        "interpretation": _within_group_association_interpretation(healthy, nonhealthy),
+    }
+
+
+def _group_association(table: pd.DataFrame, predictor: str, outcome: str, *, healthy_label: int) -> dict[str, Any]:
+    base = {
+        "group": "healthy" if healthy_label == 1 else "nonhealthy",
+        "n": 0,
+        "effect": None,
+        "p_value": None,
+        "direction": "unknown",
+        "status": "insufficient_observations",
+    }
+    if predictor not in table.columns or outcome not in table.columns:
+        return {**base, "status": "missing_variable"}
+    group = table[table["healthy_label"] == healthy_label]
+    clean = _clean_pair(group, predictor, outcome)
+    base["n"] = int(len(clean))
+    if len(clean) < 3:
+        return base
+    effect, p_value = stats.spearmanr(clean[predictor], clean[outcome])
+    effect = float(effect) if effect == effect else None
+    p_value = float(p_value) if p_value == p_value else None
+    return {
+        **base,
+        "status": "run",
+        "effect": effect,
+        "p_value": p_value,
+        "direction": "positive" if effect is not None and effect > 0 else "negative" if effect is not None and effect < 0 else "no_association",
+    }
+
+
+def _within_group_association_interpretation(healthy: dict[str, Any], nonhealthy: dict[str, Any]) -> str:
+    healthy_run = healthy.get("status") == "run"
+    nonhealthy_run = nonhealthy.get("status") == "run"
+    if not healthy_run and not nonhealthy_run:
+        return "insufficient_within_group_data"
+    healthy_sig = healthy.get("p_value") is not None and float(healthy["p_value"]) < 0.05
+    nonhealthy_sig = nonhealthy.get("p_value") is not None and float(nonhealthy["p_value"]) < 0.05
+    if nonhealthy_sig and not healthy_sig:
+        return "association_specific_to_nonhealthy"
+    if healthy_sig and not nonhealthy_sig:
+        return "association_specific_to_healthy"
+    if healthy_sig and nonhealthy_sig:
+        return "association_present_in_both_groups"
+    return "no_nominal_within_group_association"
+
+
+def _group_specific_models(table: pd.DataFrame, predictor: str, outcome: str) -> dict[str, Any]:
+    healthy = _group_linear_model(table, predictor, outcome, healthy_label=1)
+    nonhealthy = _group_linear_model(table, predictor, outcome, healthy_label=0)
+    interaction = _group_interaction_model(table, predictor, outcome)
+    return {
+        "model": "linear_regression_by_health_group",
+        "healthy": healthy,
+        "nonhealthy": nonhealthy,
+        "interaction": interaction,
+    }
+
+
+def _group_linear_model(table: pd.DataFrame, predictor: str, outcome: str, *, healthy_label: int) -> dict[str, Any]:
+    base = {
+        "group": "healthy" if healthy_label == 1 else "nonhealthy",
+        "n": 0,
+        "slope": None,
+        "intercept": None,
+        "p_value": None,
+        "r_squared": None,
+        "status": "insufficient_observations",
+    }
+    if predictor not in table.columns or outcome not in table.columns:
+        return {**base, "status": "missing_variable"}
+    group = table[table["healthy_label"] == healthy_label]
+    clean = _clean_pair(group, predictor, outcome)
+    base["n"] = int(len(clean))
+    if len(clean) < 3 or clean[predictor].nunique() < 2:
+        return base
+    try:
+        x = sm.add_constant(pd.to_numeric(clean[predictor], errors="coerce"))
+        y = pd.to_numeric(clean[outcome], errors="coerce")
+        model = sm.OLS(y, x).fit()
+        return {
+            **base,
+            "status": "run",
+            "slope": _finite_float(model.params.get(predictor)),
+            "intercept": _finite_float(model.params.get("const")),
+            "p_value": _finite_float(model.pvalues.get(predictor)),
+            "r_squared": _finite_float(model.rsquared),
+        }
+    except Exception:
+        return {**base, "status": "failed"}
+
+
+def _group_interaction_model(table: pd.DataFrame, predictor: str, outcome: str) -> dict[str, Any]:
+    base = {
+        "model": "outcome ~ predictor + healthy_label + predictor:healthy_label",
+        "n": 0,
+        "nonhealthy_slope": None,
+        "healthy_slope": None,
+        "slope_difference_healthy_minus_nonhealthy": None,
+        "p_value": None,
+        "r_squared": None,
+        "status": "insufficient_observations",
+        "interpretation": "insufficient_group_specific_data",
+    }
+    if predictor not in table.columns or outcome not in table.columns or "healthy_label" not in table.columns:
+        return {**base, "status": "missing_variable"}
+    clean = table[[predictor, outcome, "healthy_label"]].copy()
+    clean[predictor] = pd.to_numeric(clean[predictor], errors="coerce")
+    clean[outcome] = pd.to_numeric(clean[outcome], errors="coerce")
+    clean["healthy_label"] = pd.to_numeric(clean["healthy_label"], errors="coerce")
+    clean = clean.dropna()
+    base["n"] = int(len(clean))
+    if len(clean) < 6 or clean["healthy_label"].nunique() < 2 or clean[predictor].nunique() < 2:
+        return base
+    clean["predictor_x_healthy_label"] = clean[predictor] * clean["healthy_label"]
+    try:
+        x = sm.add_constant(clean[[predictor, "healthy_label", "predictor_x_healthy_label"]])
+        y = clean[outcome]
+        model = sm.OLS(y, x).fit()
+        nonhealthy_slope = _finite_float(model.params.get(predictor))
+        interaction = _finite_float(model.params.get("predictor_x_healthy_label"))
+        healthy_slope = None if nonhealthy_slope is None or interaction is None else float(nonhealthy_slope + interaction)
+        p_value = _finite_float(model.pvalues.get("predictor_x_healthy_label"))
+        return {
+            **base,
+            "status": "run",
+            "nonhealthy_slope": nonhealthy_slope,
+            "healthy_slope": healthy_slope,
+            "slope_difference_healthy_minus_nonhealthy": interaction,
+            "p_value": p_value,
+            "r_squared": _finite_float(model.rsquared),
+            "interpretation": "group_specific_slope_difference" if p_value is not None and p_value < 0.05 else "no_nominal_slope_difference",
+        }
+    except Exception:
+        return {**base, "status": "failed"}
+
+
+def _attach_group_context_fdr(results: list[StatisticalTestResult]) -> None:
+    predictor_p: list[float | None] = []
+    outcome_p: list[float | None] = []
+    contexts: list[dict[str, Any]] = []
+    for result in results:
+        context = result.metadata.get("clinical_group_context", {})
+        contexts.append(context)
+        predictor_p.append((context.get("predictor_group_difference") or {}).get("welch_p"))
+        outcome_p.append((context.get("outcome_group_difference") or {}).get("welch_p"))
+    predictor_q = _benjamini_hochberg(predictor_p)
+    outcome_q = _benjamini_hochberg(outcome_p)
+    for context, pred_q, out_q in zip(contexts, predictor_q, outcome_q, strict=False):
+        if isinstance(context.get("predictor_group_difference"), dict):
+            context["predictor_group_difference"]["fdr_q"] = pred_q
+        if isinstance(context.get("outcome_group_difference"), dict):
+            context["outcome_group_difference"]["fdr_q"] = out_q
+
+
+def _clinical_interpretation(predictor_stats: dict[str, Any], outcome_stats: dict[str, Any]) -> str:
+    predictor_diff = predictor_stats.get("nonhealthy_minus_healthy")
+    outcome_diff = outcome_stats.get("nonhealthy_minus_healthy")
+    if predictor_diff is None or outcome_diff is None:
+        return "insufficient_group_context"
+    if predictor_diff != 0 and outcome_diff != 0 and bool(outcome_stats.get("is_scale_anchor")):
+        return "fc_and_scale_both_different_between_groups"
+    if predictor_diff != 0:
+        return "fc_differs_between_groups"
+    if outcome_diff != 0 and bool(outcome_stats.get("is_scale_anchor")):
+        return "scale_differs_between_groups"
+    return "no_group_difference_context"
+
+
+def _is_scale_anchor(variable: str) -> bool:
+    return variable.strip().upper() in SCALE_ANCHORS
+
+
+def _finite_float(value: Any) -> float | None:
+    try:
+        result = float(value)
+    except (TypeError, ValueError):
+        return None
+    return result if math.isfinite(result) else None
+
+
+def _healthy_label_from_subject(subject_id: Any) -> int:
+    return 1 if str(subject_id).startswith(DEFAULT_HEALTHY_PREFIX) else 0
+
+
+def _welch_p_value(healthy: pd.Series, nonhealthy: pd.Series) -> float | None:
+    if len(healthy) < 2 or len(nonhealthy) < 2:
+        return None
+    _, p_value = stats.ttest_ind(nonhealthy, healthy, equal_var=False, nan_policy="omit")
+    return float(p_value) if p_value == p_value else None
+
+
+def _benjamini_hochberg(p_values: list[float | None]) -> list[float | None]:
+    indexed = [(idx, float(p)) for idx, p in enumerate(p_values) if p is not None and p == p]
+    q_values: list[float | None] = [None] * len(p_values)
+    if not indexed:
+        return q_values
+    indexed.sort(key=lambda item: item[1])
+    m = len(indexed)
+    previous = 1.0
+    for rank, (idx, p_value) in reversed(list(enumerate(indexed, start=1))):
+        q_value = min(previous, p_value * m / rank)
+        q_values[idx] = float(min(q_value, 1.0))
+        previous = q_value
+    return q_values
+
+
 def _design_matrix(clean: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
     frames: list[pd.Series | pd.DataFrame] = []
     for column in columns:
@@ -482,6 +784,11 @@ def _collapse_duplicate_subject_rows(frame: pd.DataFrame) -> pd.DataFrame:
             continue
         aggregations[column] = "mean" if pd.api.types.is_numeric_dtype(frame[column]) else "first"
     return frame.groupby("subject_id", as_index=False).agg(aggregations)
+
+
+def _base_subject(value: Any) -> str:
+    match = re.search(r"(sub-[A-Za-z0-9]+)", str(value))
+    return match.group(1) if match else str(value)
 
 
 def _fisher_ci(effect: float, n: int) -> tuple[float | None, float | None]:

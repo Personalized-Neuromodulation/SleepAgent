@@ -1,16 +1,16 @@
 # Data Foundation Report
 
 - Project: SleepAgent
-- Run time: 2026-07-24T03:26:08
+- Run time: 2026-08-11T03:36:37
 
 ## Inputs
 
-- subject_table: `/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_86d736554104/fmri_features.csv`
+- subject_table: `/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv`
 - eeg_features: `__sleepagent_missing_eeg_features__.csv`
-- fmri_features: `/home/zyb/Agent_skills/SleepAgent/outputs/features/fmri/experiment_plan_86d736554104/fmri_features.csv`
+- fmri_features: `/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv`
 - dti_features: `__sleepagent_missing_dti_features__.csv`
 - mri_features: `__sleepagent_missing_mri_features__.csv`
-- scale_features: `__sleepagent_missing_scale_features__.csv`
+- scale_features: `/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/scales/pre_experiment_features/scale_features.csv`
 - qc_summary: `__sleepagent_missing_qc_summary__.csv`
 
 ## Subjects
@@ -29,23 +29,11 @@
 
 ## Feature Counts
 
-- fMRI: 74
+- fMRI: 88
+- scales: 7
 
 ## Highest Missingness Variables
 
-- `thalamus_roi_voxels` (fMRI): 0.247
-- `DMN_roi_voxels` (fMRI): 0.247
-- `salience_roi_voxels` (fMRI): 0.247
-- `frontoparietal_roi_voxels` (fMRI): 0.247
-- `thalamus_DMN_FC` (fMRI): 0.247
-- `thalamus_salience_FC` (fMRI): 0.247
-- `thalamus_frontoparietal_FC` (fMRI): 0.247
-- `DMN_salience_FC` (fMRI): 0.247
-- `DMN_frontoparietal_FC` (fMRI): 0.247
-- `salience_frontoparietal_FC` (fMRI): 0.247
-- `DMN_FC` (fMRI): 0.247
-- `salience_FC` (fMRI): 0.247
-- `frontoparietal_FC` (fMRI): 0.247
 - `session` (fMRI): 0.0
 - `task` (fMRI): 0.0
 - `qc_signal_GS_pre_mean` (fMRI): 0.0
@@ -53,15 +41,28 @@
 - `qc_signal_GS_mean_delta` (fMRI): 0.0
 - `qc_signal_GS_pre_sigma` (fMRI): 0.0
 - `qc_signal_GS_post_sigma` (fMRI): 0.0
+- `qc_signal_GS_sigma_delta` (fMRI): 0.0
+- `qc_signal_GS_sigma_reduction_percent` (fMRI): 0.0
+- `qc_signal_GS_pre_max` (fMRI): 0.0
+- `qc_signal_GS_post_max` (fMRI): 0.0
+- `qc_signal_CSF_pre_mean` (fMRI): 0.0
+- `qc_signal_CSF_post_mean` (fMRI): 0.0
+- `qc_signal_CSF_mean_delta` (fMRI): 0.0
+- `qc_signal_CSF_pre_sigma` (fMRI): 0.0
+- `qc_signal_CSF_post_sigma` (fMRI): 0.0
+- `qc_signal_CSF_sigma_delta` (fMRI): 0.0
+- `qc_signal_CSF_sigma_reduction_percent` (fMRI): 0.0
+- `qc_signal_CSF_pre_max` (fMRI): 0.0
+- `qc_signal_CSF_post_max` (fMRI): 0.0
 
 ## Approved Variables
 
-- Total approved variables: 74
+- Total approved variables: 95
 - EEG: 0
-- fMRI: 26
+- fMRI: 40
 - DTI: 0
 - MRI: 0
-- scales: 0
+- scales: 7
 - covariates: 1
 - group: 0
 - qc: 47
@@ -75,9 +76,9 @@
 
 ## Multimodal Master Table
 
-- Rows: 93
-- Columns: 87
-- Input files: 1
+- Rows: 144
+- Columns: 108
+- Input files: 2
 
 ## Knowledge Grounding Inputs
 

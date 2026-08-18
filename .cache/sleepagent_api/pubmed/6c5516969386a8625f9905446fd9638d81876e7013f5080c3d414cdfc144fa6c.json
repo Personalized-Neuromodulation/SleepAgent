@@ -1,0 +1,41 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "42310658",
+      "41362845"
+    ],
+    "translationset": [
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "predictors",
+        "to": "\"predictor\"[All Fields] OR \"predictors\"[All Fields]"
+      },
+      {
+        "from": "ISI",
+        "to": "\"ISI\"[Journal:__jid101647733] OR \"isi\"[All Fields]"
+      },
+      {
+        "from": "scores",
+        "to": "\"score\"[All Fields] OR \"score's\"[All Fields] OR \"scored\"[All Fields] OR \"scores\"[All Fields] OR \"scoring\"[All Fields] OR \"scorings\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Resting-state\"[All Fields] AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"predictor\"[All Fields] OR \"predictors\"[All Fields]) AND (\"isi\"[Journal] OR \"isi\"[All Fields]) AND (\"score\"[All Fields] OR \"score s\"[All Fields] OR \"scored\"[All Fields] OR \"scores\"[All Fields] OR \"scoring\"[All Fields] OR \"scorings\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

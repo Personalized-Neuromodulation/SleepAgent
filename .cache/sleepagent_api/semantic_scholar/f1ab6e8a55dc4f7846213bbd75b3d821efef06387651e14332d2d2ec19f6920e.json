@@ -1,0 +1,2097 @@
+{
+  "total": 30328,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "39f6d60ac7f3d649d4ae1860acc65576051c516d",
+      "externalIds": {
+        "PubMedCentral": "13242605",
+        "DOI": "10.1177/20552076261458929",
+        "CorpusId": 289004623,
+        "PubMed": "42261286"
+      },
+      "url": "https://www.semanticscholar.org/paper/39f6d60ac7f3d649d4ae1860acc65576051c516d",
+      "title": "Heart rate circadian phase and hyperarousal as wearable digital phenotyping of insomnia: An interpretable machine learning study",
+      "venue": "Digital Health",
+      "year": 2026,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1177/20552076261458929",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13242605, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2109022594",
+          "name": "Minji Kim"
+        },
+        {
+          "authorId": "2405642185",
+          "name": "Seojin Yun"
+        },
+        {
+          "authorId": "2258520804",
+          "name": "Hyungju Kim"
+        },
+        {
+          "authorId": "2403056857",
+          "name": "Emma Matsushita"
+        },
+        {
+          "authorId": "2305196791",
+          "name": "Jiwon Yeom"
+        },
+        {
+          "authorId": "2360266079",
+          "name": "Sujin Kim"
+        },
+        {
+          "authorId": "2760526",
+          "name": "S. Pack"
+        },
+        {
+          "authorId": "2149417563",
+          "name": "Heon-Jeong Lee"
+        },
+        {
+          "authorId": "2258497949",
+          "name": "Taesu Cheong"
+        },
+        {
+          "authorId": "2178430161",
+          "name": "Chul-Hyun Cho"
+        }
+      ],
+      "abstract": "Objective This study evaluates ML approaches for insomnia classification using physiological and behavioral data from wearable devices. SHAP analysis identifies key predictors, highlighting the relationship between sleep disturbances and digital phenotypes and emphasizing clinical plausibility as a criterion for model selection. Methods Three hundred thirty-eight participants (249 with insomnia and 89 controls) aged 19–70 years were instructed to wear Fitbit Inspire 3 devices for 4 weeks to record heart rate, activity, and sleep metrics. Insomnia classification was based on Insomnia Severity Index scores (≥8 insomnia and ≤7 controls). Filter- and wrapper-based feature-selection methods were applied to the 120 extracted features. Multiple ML algorithms were evaluated using five-fold cross-validation, with the clinical plausibility of the feature relationships explicitly considered in the final model selection. Results LightGBM model trained on 60 ANOVA-selected features achieved the highest performance (F1 score = 0.868 ± 0.027). The key predictive features identified by SHAP analysis included delayed acrophase of the heart rate cosinor rhythm, higher self-reported stress and maximum heart rates that aligned with sleep-wake physiology. However, several features exhibited patterns that contradicted previously known clinical expectations, highlighting the disconnection between statistical optimization and clinical utility. Conclusion Machine learning models trained on wearable data can effectively classify insomnia. SHAP analysis suggested that altered activity patterns reflect sleep disturbance, while also highlighting the necessity for further clinical validation. Clinical plausibility must be integrated as a fundamental criterion in model development, to ensure clinically trustworthy ML applications in sleep medicine."
+    },
+    {
+      "paperId": "0ff29677d9d14e7d512219b08f561cad989befbc",
+      "externalIds": {
+        "DOI": "10.1051/bioconf/20249700133",
+        "CorpusId": 268963061
+      },
+      "url": "https://www.semanticscholar.org/paper/0ff29677d9d14e7d512219b08f561cad989befbc",
+      "title": "An overview of machine learning classification techniques",
+      "venue": "BIO Web of Conferences",
+      "year": 2024,
+      "citationCount": 104,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1051/bioconf/20249700133",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1051/bioconf/20249700133?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1051/bioconf/20249700133, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2295360317",
+          "name": "A. F. Alnuaimi"
+        },
+        {
+          "authorId": "2090067161",
+          "name": "T. H. Albaldawi"
+        }
+      ],
+      "abstract": "Machine learning (ML) is a key component within the broader field of artificial intelligence (AI) that employs statistical methods to empower computers with the ability to learn and make decisions autonomously, without the need for explicit programming. It is founded on the concept that computers can acquire knowledge from data, identify patterns, and draw conclusions with minimal human intervention. The main categories of ML include supervised learning, unsupervised learning, semisupervised learning, and reinforcement learning. Supervised learning involves training models using labelled datasets and comprises two primary forms: classification and regression. Regression is used for continuous output, while classification is employed for categorical output. The objective of supervised learning is to optimize models that can predict class labels based on input features. Classification is a technique used to predict similar information based on the values of a categorical target or class variable. It is a valuable method for analyzing various types of statistical data. These algorithms have diverse applications, including image classification, predictive modeling, and data mining. This study aims to provide a quick reference guide to the most widely used basic classification methods in machine learning, with advantages and disadvantages. Of course, a single article cannot be a complete review of all supervised machine learning classification algorithms. It serves as a valuable resource for both academics and researchers, providing a guide for all newcomers to the field, thereby enriching their comprehension of classification methodologies."
+    },
+    {
+      "paperId": "25277d1764a2ef35fbc2281bdaeacda3f7d316a4",
+      "externalIds": {
+        "DOI": "10.1109/ICADEIS65852.2025.10933020",
+        "CorpusId": 277319611
+      },
+      "url": "https://www.semanticscholar.org/paper/25277d1764a2ef35fbc2281bdaeacda3f7d316a4",
+      "title": "Comparative Study to Find the Best Deep Learning Feature Extraction Models and Machine Learning Classification Algorithm to Detect Monkeypox Disease",
+      "venue": "International Conference Advancement Data Science, E-learning and Information Systems",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICADEIS65852.2025.10933020?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICADEIS65852.2025.10933020, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2352098777",
+          "name": "H. Abdullah"
+        },
+        {
+          "authorId": "2352094272",
+          "name": "Tammy Visca Tjitra"
+        },
+        {
+          "authorId": "2274332706",
+          "name": "Vanessa Kwandinata"
+        },
+        {
+          "authorId": "2273989487",
+          "name": "Said Achmad"
+        }
+      ],
+      "abstract": "Monkeypox disease that has spread throughout the world for the past few years has a form similar to other diseases, making it difficult to identify monkeypox correctly and patients end up getting the wrong or less effective treatment. Deep Learning is the right solution to detect monkeypox because of its ability to handle complex and varied data, such as medical images. With CNN architecture, Deep Learning can automatically learn deep features directly from data without manual extraction, making it effective in recognizing complex patterns that are difficult for humans to identify. This study aims to find the best Deep Learning and classification model to distinguish monkeypox from other similar diseases (acne, chickenpox, cowpox, hand foot and mouth (HFMD), and measles). The models tested are CNN models: VGG16Net, MobileNetV2, and DenseNet-201 which have been fine-tuned combined with the Random Forest classification model with input in the form of human skin images. Each model is evaluated by calculating the confusion matrix (accuracy, precision, recall, and F-1 Score) and AUC ROC to determine the best performance. The highest accuracy was produced by the MobileNetV2 and SVM models, reaching 94.41%, while the highest AUC ROC average result was produced by the DenseNet- 201 and SVM models at 98.67%. This study shows that Deep Learning models have great potential to help diagnose diseases accurately."
+    },
+    {
+      "paperId": "02059c9a0f702646cf51a62588e51c551951e217",
+      "externalIds": {
+        "DBLP": "journals/access/RahmanJIJARIFRJSRTMA25",
+        "DOI": "10.1109/ACCESS.2025.3535535",
+        "CorpusId": 275981867
+      },
+      "url": "https://www.semanticscholar.org/paper/02059c9a0f702646cf51a62588e51c551951e217",
+      "title": "Improving Sleep Disorder Diagnosis Through Optimized Machine Learning Approaches",
+      "venue": "IEEE Access",
+      "year": 2025,
+      "citationCount": 29,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/access.2025.3535535",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2025.3535535?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2025.3535535, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2319727355",
+          "name": "Md. Atiqur Rahman"
+        },
+        {
+          "authorId": "2342846582",
+          "name": "Israt Jahan"
+        },
+        {
+          "authorId": "2157471945",
+          "name": "Maheen Islam"
+        },
+        {
+          "authorId": "3182680",
+          "name": "Taskeed Jabid"
+        },
+        {
+          "authorId": "2110903783",
+          "name": "M. Ali"
+        },
+        {
+          "authorId": "2295633699",
+          "name": "Mohammad Rifat Ahmmad Rashid"
+        },
+        {
+          "authorId": "2295635295",
+          "name": "Mohammad Manzurul Islam"
+        },
+        {
+          "authorId": "2066029",
+          "name": "Md Hasanul Ferdaus"
+        },
+        {
+          "authorId": "2343841769",
+          "name": "Md Mostofa Kamal Rasel"
+        },
+        {
+          "authorId": "2343841751",
+          "name": "Mahmuda Rawnak Jahan"
+        },
+        {
+          "authorId": "2320915092",
+          "name": "Shayla Sharmin"
+        },
+        {
+          "authorId": "2329400235",
+          "name": "Tanzina Afroz Rimi"
+        },
+        {
+          "authorId": "2329406106",
+          "name": "Atia Sanjida Talukder"
+        },
+        {
+          "authorId": "2005110144",
+          "name": "Md. Mafiul Hasan Matin"
+        },
+        {
+          "authorId": "2326592009",
+          "name": "M. Ameer Ali"
+        }
+      ],
+      "abstract": "Classifying sleep disorders, such as obstructive sleep apnea and insomnia, is crucial for improving human quality of life due to their significant impact on health. The traditional expert-based classification of sleep stages, particularly through visual inspection, is challenging and prone to errors. This fact highlights the need for accurate machine learning algorithms (MLAs) for analyzing, monitoring, and diagnosing sleep disorders. This paper compares the MLAs for sleep disorder classification, specifically targeting None, Sleep Apnea, and Insomnia, using the Sleep Health and Lifestyle Dataset. We conducted two experiments. In the first one, we selected five key features from the feature spaces using the Gradient Boosting Regressor based on the Mean Decrease Impurity (MDI) technique. We chose two key features using the same methodology in the second experiment. We utilized 15 machine learning classifiers, and Gradient Boosting, Voting, Catboost, and Stacking Classifiers achieved an identical classification accuracy of 97.33%, with Precision, Recall, F1-score of 0.9733, and Specificity of 0.9569 in the original feature space. Among these, Gradient Boosting had the highest AUC of 0.9953 and was 3.36, 5.86, and 20.16 times faster than Voting, Catboost, and Stacking Classifiers, respectively. In the second experiment, the Decision Tree achieved the highest accuracy of 96% in the original and engineered feature spaces and was 149.33 times faster in the engineered feature space. Thus, this research proposes Gradient Boosting as the most effective method, outperforming all state-of-the-art techniques by achieving the highest accuracy, precision, recall, F1-score, and AUC, highlighting its superior classification performance and computational efficiency."
+    },
+    {
+      "paperId": "e29cec35f1ea9ba80523cb201072002edc935d6b",
+      "externalIds": {
+        "DOI": "10.1109/LT64002.2025.10941110",
+        "CorpusId": 277499198
+      },
+      "url": "https://www.semanticscholar.org/paper/e29cec35f1ea9ba80523cb201072002edc935d6b",
+      "title": "Deep learning for sleep disorder diagnosis: Enhancing EEG Analysis with Machine Learning Techniques",
+      "venue": "2025 22nd International Learning and Technology Conference (L&T)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/LT64002.2025.10941110?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/LT64002.2025.10941110, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292752342",
+          "name": "Baher Mohamed"
+        },
+        {
+          "authorId": "7916639",
+          "name": "Enfel Barkat"
+        }
+      ],
+      "abstract": "The rising prevalence of sleep disorders highlights their disastrous effects on health, well-being, cognitive performance, memory, and learning outcomes. Sleep disorders such as insomnia and sleep apnea normally require extensive instrumentation and expertise for diagnosis, which is not always possible or even available in most cases. This work, therefore, proposes a state-of-the-art use of Machine Learning (ML) to develop a model for the classification and detection of sleep patterns from electroencephalogram (EEG) signals. The model is trained on a synthetic dataset, developed using mathematical simulations of real-life EEG data. This is a novelty in this area, which allows this model to be precise yet robust without relying too much on real-world datasets.The application bridges advanced AI techniques with real-world applications and smooths out the experience for healthcare professionals and researchers alike. This research highlights how ML might transform sleep medicine through efficient, extended solutions for EEG data analysis and sleep disorder detection. We provide a realistic EEG simulation combined with an intuitive application, a powerful platform that makes advanced sleep diagnostics more accessible and impactful, which supports the development of educational strategies or technologies."
+    },
+    {
+      "paperId": "fa2d0db25a4c6381e4fcc413a47eb3d2c2949d4d",
+      "externalIds": {
+        "DOI": "10.1109/CONIT65521.2025.11166752",
+        "CorpusId": 281509039
+      },
+      "url": "https://www.semanticscholar.org/paper/fa2d0db25a4c6381e4fcc413a47eb3d2c2949d4d",
+      "title": "EEG-Based Multi-Class Sleep Disorder Classification Using Deep Learning, Machine Learning and Neural Tangent Kernel",
+      "venue": "2025 5th International Conference on Intelligent Technologies (CONIT)",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CONIT65521.2025.11166752?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CONIT65521.2025.11166752, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2365038302",
+          "name": "M. Madhav"
+        },
+        {
+          "authorId": "2364202847",
+          "name": "Vp Rohit"
+        },
+        {
+          "authorId": "2297568431",
+          "name": "Neethu Mohan"
+        },
+        {
+          "authorId": "30492994",
+          "name": "S. Sachin Kumar"
+        }
+      ],
+      "abstract": "This paper presents a comprehensive approach for detecting insomnia using EEG signal analysis by combining traditional machine learning, deep learning, and Neural Tangent Kernel (NTK) methods. We analyze EEG data from three distinct classes: healthy individuals, insomnia patients, and subjects with sleep-disordered breathing (SDB). Our methodology involves sophisticated feature extraction techniques including Katz and Higuchi fractal dimensions, spectral analysis, and statistical measures. We evaluate several machine learning models, with Random Forest achieving $67.50 \\%$ accuracy and XGBoost reaching 67.20% accuracy. A convolutional neural network (CNN) architecture is implemented for deep learning-based classification, achieving 72% accuracy. Additionally, we explore the NTK approach with kernel ridge regression, obtaining $68.34 \\%$ accuracy. The comparative analysis demonstrates that ensemble methods and deep learning approaches provide robust performance for multi-class EEG classification. Our results suggest that EEG-based machine learning systems can serve as effective tools for assisting in insomnia diagnosis, potentially reducing reliance on subjective patient reports and lengthy clinical evaluations."
+    },
+    {
+      "paperId": "6f3675aaf91f809575da79243958e474f4a29068",
+      "externalIds": {
+        "DOI": "10.1109/AIMV66517.2025.11203559",
+        "CorpusId": 282274572
+      },
+      "url": "https://www.semanticscholar.org/paper/6f3675aaf91f809575da79243958e474f4a29068",
+      "title": "Automated Sleep Stage Classification Using Biorthogonal Wavelet Decomposition and Machine Learning Techniques",
+      "venue": "2025 International Conference on Artificial Intelligence and Machine Vision (AIMV)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/AIMV66517.2025.11203559?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/AIMV66517.2025.11203559, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2362395592",
+          "name": "Prithviraj Verma"
+        },
+        {
+          "authorId": "2290593115",
+          "name": "Hardik Telangore"
+        },
+        {
+          "authorId": "2266166849",
+          "name": "Manish Sharma"
+        },
+        {
+          "authorId": "2279887292",
+          "name": "Deepak Joshi"
+        }
+      ],
+      "abstract": "Diagnosing sleep disorders like insomnia, sleep apnea, and narcolepsy involves assessing sleep. Adequate sleep is also necessary for overall health upkeep. Since manual ways of sleep stage categorization are time-consuming and susceptible to human error, automatic means are preferred. In this research, an automated system for sleep stage classification via machine learning algorithms and signal processing methods is illustrated utilizing the Wisconsin Sleep Cohort (WSC) dataset, which was obtained from the National Sleep Research Resource (NSRR). Our physiological signals from polysomnography (PSG) recordings consist of electroencephalograms (EEG) with channels C3-M2 and O1-M2, electrooculograms (EOG) with channels E1 and E2, and electromyograms (EMG) with a single channel lleg-r. Sleep stages and 30-second epochs are assigned to the signals according to the provided hypnogram. Feature extraction uses five-level time-frequency biorthogonal wavelet decomposition to produce six sub-bands per signal. Hjorth parameters—activity, mobility, and complexity—are calculated for all sub-bands, resulting in 90 features. Classified features are then used by many machine learning models, of which the top performer is the ensemble bagged tree (EBT) classifier. It registers a performance of 86.2% accuracy at 200 Hz. All of these findings show that the suggested technique presents a secure and scalable mechanism for the sleep stage classification task, towards developing automated sleep analysis."
+    },
+    {
+      "paperId": "800797524519c4d8f616b5196f1640ed5c8d1a8d",
+      "externalIds": {
+        "ArXiv": "2403.10368",
+        "DBLP": "journals/corr/abs-2403-10368",
+        "DOI": "10.1007/s10994-024-06571-6",
+        "CorpusId": 268510499
+      },
+      "url": "https://www.semanticscholar.org/paper/800797524519c4d8f616b5196f1640ed5c8d1a8d",
+      "title": "Conformal predictions for probabilistically robust scalable machine learning classification",
+      "venue": "Machine-mediated learning",
+      "year": 2024,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10994-024-06571-6.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.10368, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2123354997",
+          "name": "Alberto Carlevaro"
+        },
+        {
+          "authorId": "2238951421",
+          "name": "Teodoro Alamo"
+        },
+        {
+          "authorId": "2237801493",
+          "name": "Fabrizio Dabbene"
+        },
+        {
+          "authorId": "2191211601",
+          "name": "Maurizio Mongelli"
+        }
+      ],
+      "abstract": "Conformal predictions make it possible to define reliable and robust learning algorithms. But they are essentially a method for evaluating whether an algorithm is good enough to be used in practice. To define a reliable learning framework for classification from the very beginning of its design, the concept of scalable classifier was introduced to generalize the concept of classical classifier by linking it to statistical order theory and probabilistic learning theory. In this paper, we analyze the similarities between scalable classifiers and conformal predictions by introducing a new definition of a score function and defining a special set of input variables, the conformal safety set, which can identify patterns in the input space that satisfy the error coverage guarantee, i.e., that the probability of observing the wrong (possibly unsafe) label for points belonging to this set is bounded by a predefined ε\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\varepsilon$$\\end{document} error level. We demonstrate the practical implications of this framework through an application in cybersecurity for identifying DNS tunneling attacks. Our work contributes to the development of probabilistically robust and reliable machine learning models."
+    },
+    {
+      "paperId": "320d0c5659166bce1cccbf6a000b2e77d78403ef",
+      "externalIds": {
+        "DOI": "10.1109/SIML65326.2025.11081155",
+        "CorpusId": 280191424
+      },
+      "url": "https://www.semanticscholar.org/paper/320d0c5659166bce1cccbf6a000b2e77d78403ef",
+      "title": "Exploring Sentiment Patterns in ChatGPT Interactions: A Machine and Deep Learning Approach to Sentiment Classification",
+      "venue": "2025 International Conference on Smart Computing, IoT and Machine Learning (SIML)",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SIML65326.2025.11081155?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SIML65326.2025.11081155, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2064128859",
+          "name": "A. Jonathan"
+        },
+        {
+          "authorId": "2373157241",
+          "name": "Cornelius Karel Halim"
+        },
+        {
+          "authorId": "31580799",
+          "name": "L. Wulandhari"
+        },
+        {
+          "authorId": "2148592978",
+          "name": "Ghinaa Zain Nabiilah"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "e8beead15c252fd228ee5795d062e81007bef09c",
+      "externalIds": {
+        "DOI": "10.1109/TQCEBT59414.2024.10545120",
+        "CorpusId": 272433177
+      },
+      "url": "https://www.semanticscholar.org/paper/e8beead15c252fd228ee5795d062e81007bef09c",
+      "title": "Predictive Analysis of Sleep Disorders Using Machine Learning: A Comprehensive Analysis",
+      "venue": "2024 International Conference on Trends in Quantum Computing and Emerging Business Technologies",
+      "year": 2024,
+      "citationCount": 6,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TQCEBT59414.2024.10545120?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TQCEBT59414.2024.10545120, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2319898984",
+          "name": "Nandini Malik"
+        },
+        {
+          "authorId": "2309435645",
+          "name": "Varuna Gupta"
+        },
+        {
+          "authorId": "2319943221",
+          "name": "Vandana Sharma"
+        }
+      ],
+      "abstract": "The diagnosis of sleep disorders often relies on subjective patient reports, sleep diaries, and potentially cumbersome polysomnography (PSG) tests. However, these methods have limitations such as subjectivity, sleep diaries require meticulous effort, and expensive PSG tests are expensive, resource-intensive, and may not accurately capture sleep patterns in a non-clinical setting. Sleep disorders pose significant health risks and can impair overall well-being. Predictive analysis plays a crucial role in identifying individuals at risk of developing sleep disorders, enabling timely interventions and personalized treatment plans. In this paper, a comparative analysis of regression and classification models for sleep disorders prediction using machine learning (ML) techniques on insomnia and sleep apnea are discussed. Through extensive experimentation and comparative analysis, XGBoost and AdaBoost demonstrated as the most effective predictive models for insomnia and sleep apnea. AdaBoost and XGBoost classifiers are displaying 93.49% and 92.73% respectively. It is therefore possible to draw the conclusion that AdaBoost and XGBoost are doing well based on the findings as a whole, as indicated by the results. Our findings contribute to advancing the understanding and application of ML techniques in sleep disorder prediction, paving the way for more accurate and timely diagnosis based on ML techniques and personalized interventions in clinical practices."
+    },
+    {
+      "paperId": "c5e2d1e075394b77f62895d1e51834a69008b280",
+      "externalIds": {
+        "DOI": "10.3390/app14135784",
+        "CorpusId": 270953990
+      },
+      "url": "https://www.semanticscholar.org/paper/c5e2d1e075394b77f62895d1e51834a69008b280",
+      "title": "Machine Learning-Based Feature Extraction and Classification of EMG Signals for Intuitive Prosthetic Control",
+      "venue": "Applied Sciences",
+      "year": 2024,
+      "citationCount": 81,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/app14135784",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app14135784?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app14135784, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "33518681",
+          "name": "C. Kok"
+        },
+        {
+          "authorId": "2300023847",
+          "name": "Chee Kit Ho"
+        },
+        {
+          "authorId": "2316351594",
+          "name": "F. Tan"
+        },
+        {
+          "authorId": "2280526474",
+          "name": "Yit Yan Koh"
+        }
+      ],
+      "abstract": "Signals play a fundamental role in science, technology, and communication by conveying information through varying patterns, amplitudes, and frequencies. This paper introduces innovative methodologies for processing electromyographic (EMG) signals to develop artificial intelligence systems capable of decoding muscle activity for controlling arm movements. The study investigates advanced signal processing techniques and machine learning classification algorithms using the GRABMyo dataset, aiming to enhance prosthetic control systems and rehabilitation technologies. A comprehensive analysis was conducted on signal processing techniques, including signal filtering and discrete wavelet transform (DWT), alongside a composite feature set comprising Mean Absolute Value (MAV), Waveform Length (WL), Zero Crossing (ZC), Slope Sign Changes (SSC), Root Mean Square (RMS), Enhanced Waveform Length (EWL), and Enhanced Mean Absolute Value (EMAV). These features, refined through Linear Discriminant Analysis (LDA) for dimensionality reduction, were classified using Support Vector Machine (SVM) algorithms. Signal filtering and DWT improved signal quality, facilitating better feature extraction, while the diverse feature set enhanced classification accuracy. LDA further improved accuracy by isolating the most informative features, and the SVM achieved optimal performance in decoding complex EMG patterns. Machine learning models, including K-Nearest Neighbor (KNN), Naïve Bayes (NB), and the SVM, were evaluated, with the SVM outperforming the others. The significance of these results lies in their potential applications in prosthetic control systems and rehabilitation technologies. By accurately decoding muscle activity, the developed systems can facilitate more intuitive and responsive robotic arm movements, contributing to the advancement of innovative solutions for individuals requiring prosthetic devices or undergoing rehabilitation, hence improving the quality of life for users. This research marks a significant step forward in the integration of advanced signal processing and machine learning in the field of EMG analysis."
+    },
+    {
+      "paperId": "24506c10f321d86ef9d4a6cbc8b489aceda83f1b",
+      "externalIds": {
+        "DOI": "10.1109/CDMA61895.2025.00038",
+        "CorpusId": 276841617
+      },
+      "url": "https://www.semanticscholar.org/paper/24506c10f321d86ef9d4a6cbc8b489aceda83f1b",
+      "title": "Data-Driven Machine Learning Models for Enhanced Fetal Health Classification and Monitoring",
+      "venue": "2025 8th International Conference on Data Science and Machine Learning Applications (CDMA)",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CDMA61895.2025.00038?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CDMA61895.2025.00038, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2223523773",
+          "name": "Meteb Almadi"
+        },
+        {
+          "authorId": "2223314430",
+          "name": "Faisal Alotaibi"
+        },
+        {
+          "authorId": "2223522085",
+          "name": "R. Almudawah"
+        },
+        {
+          "authorId": "144299598",
+          "name": "Asmaa Ali"
+        },
+        {
+          "authorId": "116294665",
+          "name": "Y. Nasser"
+        },
+        {
+          "authorId": "2164812518",
+          "name": "Nidal Nasser"
+        }
+      ],
+      "abstract": "Fetal health classification plays a critical role in prenatal care by identifying potential risks and ensuring timely intervention. This study explores the application of multi-class classification techniques to categorize cardiotocogram (CTG) features into three distinct fetal health states: Normal, Suspect, and Pathological. CTG data, which includes fetal heart rate patterns, uterine contractions, and accelerations/decelerations, serves as a vital tool for assessing fetal well-being. Using advanced machine learning algorithms such as Logistic Regression, K Nearest Neighbors, Support Vector Classifier, Decision Trees Classifier, Random Forests Classifier, and MLP Classifier-Neural Network, we analyze and classify CTG features to predict the fetal health state with high accuracy. The results demonstrate the effectiveness of these models in distinguishing subtle variations in CTG data, contributing to improved diagnostic precision. With high accuracy for Random Forest Classifier 92%. This research highlights the potential of leveraging data-driven approaches for enhanced fetal monitoring, paving the way for better clinical outcomes and more informed decision-making in obstetric care."
+    },
+    {
+      "paperId": "869609edb3c1f99e54870a5c0bb51c1cc6420087",
+      "externalIds": {
+        "DBLP": "journals/mlst/CorralCF25",
+        "DOI": "10.1088/2632-2153/adc86e",
+        "CorpusId": 277513520
+      },
+      "url": "https://www.semanticscholar.org/paper/869609edb3c1f99e54870a5c0bb51c1cc6420087",
+      "title": "Logic replicant: a new machine learning algorithm for multiclass classification in small datasets",
+      "venue": "Machine Learning: Science and Technology",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1088/2632-2153/adc86e",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/2632-2153/adc86e?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/2632-2153/adc86e, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "74766280",
+          "name": "P. Corral"
+        },
+        {
+          "authorId": "143786542",
+          "name": "Roberto Centeno"
+        },
+        {
+          "authorId": "69004397",
+          "name": "V. Fresno"
+        }
+      ],
+      "abstract": "Multiclass classification with small datasets often presents a significant challenge for conventional machine learning (ML) algorithms, predicting with an accuracy affected by this context of data scarcity. To remedy this, this papers presents a novel ML model based on a differentiable deterministic finite-state machine (DFSM) that improves the prediction performance compared with state-of-the-art multiclass classifiers applied in this ambit of small data per class. The proposed model uses a logic-arithmetic function that replicates the inherent classification logic of the problem rather than finding patterns of feature similarity. Our algorithm, called logic replicant, allows to learn problems that other classification models cannot. As the logic replicant is a DFSM it can learn any combinational logic, but it goes beyond this point learning other types of problems such as handwritten-digit recognition, and the detection of mice with Down syndrome based on the presence of 77 proteins. Our ML algorithm is also easy to interpret using quantitative diagrams, in comparison to less interpretable algorithms such as artificial neural networks, random forest, and others. The results obtained with different data sets related to math, physics, biology and image recognition show that our design based on a logic-arithmetic function and being a DFSM improves the generalisation capacity (better prediction accuracy) of the logic replicant compared to other state-of-the-art ML approaches."
+    },
+    {
+      "paperId": "7ed086f49a3ac4712cd55a5a2b68ec8b3d4da12d",
+      "externalIds": {
+        "DOI": "10.1109/CDMA61895.2025.00039",
+        "CorpusId": 276842291
+      },
+      "url": "https://www.semanticscholar.org/paper/7ed086f49a3ac4712cd55a5a2b68ec8b3d4da12d",
+      "title": "Snow Forecasting with Machine Learning to Unravel Meteorological Patterns for Precision Weather Prediction",
+      "venue": "2025 8th International Conference on Data Science and Machine Learning Applications (CDMA)",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CDMA61895.2025.00039?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CDMA61895.2025.00039, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2348939315",
+          "name": "Abdulaziz AlSowail"
+        },
+        {
+          "authorId": "2348938460",
+          "name": "Mohammed Almashal"
+        },
+        {
+          "authorId": "2348938634",
+          "name": "Musaed Bin Saeed"
+        },
+        {
+          "authorId": "2164812518",
+          "name": "Nidal Nasser"
+        },
+        {
+          "authorId": "2323031637",
+          "name": "Sara Benoumhani"
+        }
+      ],
+      "abstract": "This paper delves into the dynamic realm of weather prediction, specifically focusing on the binary classification task of forecasting snowfall. Employing machine learning models, including Logistic Regression, Support Vector Machine (SVM), and Decision Tree, we seek to unravel the intricate patterns and relationships within meteorological data. The dataset, centered around London's weather, captures diverse parameters such as cloud cover, sunshine, temperature, and precipitation, with the target variable indicating the presence or absence of snow. The methodology encompasses meticulous data cleaning, feature engineering, and model evaluation, shedding light on the models' efficacy in predicting snow events. Precision, recall, accuracy, and F1 score serve as key metrics, unraveling the nuances of model performance. The results, elucidated through confusion matrices and feature importance analyses, offer insights into the strengths and weaknesses of each model."
+    },
+    {
+      "paperId": "6d3e1ddb3f33b38568d22262fbeca4d1d3cc54a9",
+      "externalIds": {
+        "DOI": "10.1109/ICMLAS64557.2025.10968834",
+        "CorpusId": 278065054
+      },
+      "url": "https://www.semanticscholar.org/paper/6d3e1ddb3f33b38568d22262fbeca4d1d3cc54a9",
+      "title": "Crime Hotspot Classification Using Machine Learning",
+      "venue": "2025 International Conference on Machine Learning and Autonomous Systems (ICMLAS)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICMLAS64557.2025.10968834?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICMLAS64557.2025.10968834, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2304233609",
+          "name": "B. G."
+        },
+        {
+          "authorId": "2415706548",
+          "name": "K. G"
+        }
+      ],
+      "abstract": "A crime hotspot indicates a geographic area with a high concentration of risk in criminal activities. Machine learning techniques are leveraged to analyze historical crime patterns and predict the severity or possibility of offense type in a part of the geographical area. There are many crimes that occur day-to-day including theft, personal attacks, drugs, and many more. As there is more than one crime, this problem is identified as a multiclass classification problem. The proposed work employed three classifier models against two public datasets. The spatial and temporal features are analyzed during feature engineering which plays a major role in identifying the crime category. All three models are evaluated against both datasets and Grid Search is employed to understand the performance benchmark algorithm by analyzing the model that provides better results with and without parameter optimization even on both datasets. After observations, the KNN model is found to achieve performance benchmarking by obtaining 97% on both datasets even after hyper-tuning the parameters."
+    },
+    {
+      "paperId": "bcbc44dade9447cee541012e146b786eb13ce06f",
+      "externalIds": {
+        "DOI": "10.53759/7669/jmc202505057",
+        "CorpusId": 277600349
+      },
+      "url": "https://www.semanticscholar.org/paper/bcbc44dade9447cee541012e146b786eb13ce06f",
+      "title": "Ensemble Machine Learning Framework for Heart Abnormality Classification with Effective Feature Selection",
+      "venue": "Journal of Machine and Computing",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://anapub.co.ke/journals/jmc/jmc_pdf/2025/jmc_volume_5-issue_2/JMC202505057.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.53759/7669/jmc202505057?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.53759/7669/jmc202505057, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2435275102",
+          "name": "P. K"
+        },
+        {
+          "authorId": "2130222901",
+          "name": "Jayabharathy J"
+        }
+      ],
+      "abstract": "Coronary artery disease (CAD) is the most common cardiovascular disease. Risk factors impact CAD progression. Diagnostic and therapy methods for this illness include several costly side effects. Consequently, researchers are seeking economical and precise techniques for diagnosing this condition. Machine learning algorithms may assist doctors in the early diagnosis of the condition. Hence this work presents an efficient approach for feature selection and classification of abnormal heart rate patterns by combining Joint Mutual Information (JMI), Quantum Annealing, and a Bayesian ensemble model using CatBoost and XGBoost classifiers. The method starts with Joint Mutual Information to rank features based on their dependency with the target variable, identifying the most informative features for classification. Quantum Annealing, specifically simulated annealing in this case, is then used to optimize the subset of features by exploring the feature space and selecting the most relevant combinations, thus improving the model's performance by avoiding suboptimal solutions. The selected characteristics are then input into a Bayesian ensemble of CatBoost and XGBoost classifiers, which are trained to forecast heart rate irregularities. This ensemble method integrates the advantages of gradient boosting models to improve forecast accuracy and mitigate overfitting. The proposed technique is termed Probability-based Bayesian Statistics with Ensemble Boost (PBSEnsBoost), achieving an accuracy of 98.2%, specificity of 93.6%, sensitivity of 92.6%, and an F1-score of 95.7%."
+    },
+    {
+      "paperId": "6f8d037bdb05c13d406aa7ee81ec29393a224b47",
+      "externalIds": {
+        "MAG": "3186396645",
+        "DOI": "10.1016/J.IJMULTIPHASEFLOW.2021.103755",
+        "CorpusId": 237662452
+      },
+      "url": "https://www.semanticscholar.org/paper/6f8d037bdb05c13d406aa7ee81ec29393a224b47",
+      "title": "Machine learning classification of in-tube condensation flow patterns using visualization",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 38,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.IJMULTIPHASEFLOW.2021.103755?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.IJMULTIPHASEFLOW.2021.103755, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1997677930",
+          "name": "M. K. Seal"
+        },
+        {
+          "authorId": "94088040",
+          "name": "S. Abadi"
+        },
+        {
+          "authorId": "41022255",
+          "name": "M. Mehrabi"
+        },
+        {
+          "authorId": "47451553",
+          "name": "J. Meyer"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "92deb1154776bf7a471766e48597c30383fe47b9",
+      "externalIds": {
+        "DOI": "10.1109/PRMVAI65741.2025.11108435",
+        "CorpusId": 280695527
+      },
+      "url": "https://www.semanticscholar.org/paper/92deb1154776bf7a471766e48597c30383fe47b9",
+      "title": "Transfer Analysis of Machine Learning Models Trained on Simulated XRD Patterns to Real Powder XRD Experimental Data",
+      "venue": "2025 IEEE International Conference on Pattern Recognition, Machine Vision and Artificial Intelligence (PRMVAI)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/PRMVAI65741.2025.11108435?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/PRMVAI65741.2025.11108435, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2309887286",
+          "name": "Jian Hu"
+        },
+        {
+          "authorId": "2254140923",
+          "name": "Heng Gao"
+        },
+        {
+          "authorId": null,
+          "name": "Yixuan Liu"
+        },
+        {
+          "authorId": "2309805612",
+          "name": "Aoyuan Peng"
+        }
+      ],
+      "abstract": "Accurate crystal structure identification is crucial for material property prediction, functional design, and the discovery of new materials. Machine learning models trained on simulated X-ray diffraction (XRD) patterns based on the International Crystal Structure Database (ICSD) have shown promising results under idealized conditions. However, real experimental data often contain complex factors such as peak shifts, peak broadening, multiphase overlap, and background noise, which can lead to performance degradation when applying these models directly. In this study, we constructed a hybrid feature learning model by training on ICSD-based standard XRD patterns, combining handcrafted physical features with deep convolutional features. We then systematically evaluated its transfer performance on real-world powder XRD data collected from various sources. The results showed that, despite domain differences, the model achieved a crystal system classification accuracy of 91.5 %, a space group Top-1 accuracy of 76.8 %, and a Top-5 accuracy of 89.2 %, demonstrating good transferability. Through detailed error analysis, we found that multiphase coexistence, peak loss, and instrumental noise were the main sources of classification errors. Furthermore, we discuss potential strategies to improve transfer performance, including transfer learning, data augmentation, and the integration of physical prior knowledge. This work provides new insights into applying machine learning models trained on standard data for the intelligent analysis of real experimental XRD patterns, thereby promoting the broader application of AI in materials research."
+    },
+    {
+      "paperId": "1b56c6bf742f36d5bf03b4512d38f48c756b1da6",
+      "externalIds": {
+        "DOI": "10.33022/ijcs.v13i3.4110",
+        "CorpusId": 271639270
+      },
+      "url": "https://www.semanticscholar.org/paper/1b56c6bf742f36d5bf03b4512d38f48c756b1da6",
+      "title": "Voice Recognition Based on Machine Learning Classification Algorithms: A Review",
+      "venue": "Indonesian Journal of Computer Science",
+      "year": 2024,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "http://ijcs.net/ijcs/index.php/ijcs/article/download/4110/654",
+        "status": "GOLD",
+        "license": "CCBYSA",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.33022/ijcs.v13i3.4110?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.33022/ijcs.v13i3.4110, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2314317278",
+          "name": "Hajin Sarbast"
+        }
+      ],
+      "abstract": "One essential component of biometric identity is voice recognition technology, which uses speech pattern analysis to authenticate people. With an emphasis on machine learning classification techniques, this review article thoroughly examines the field of speech recognition. We examine the effectiveness of random forest (RF), multilayer perceptrons (MLP), k-nearest neighbours (KNN), and support vector machine (SVM) classifiers via painstaking analysis and empirical evaluation. Utilizing a collection of Sepedi speech audio files, our results demonstrate the remarkable accuracy of 99.86% that RF is capable of producing. Aside from visual aids for better understanding, assessment indicators like as accuracy, precision, recall, F-measure, and root mean square error (RMSE) clarify the effectiveness of the model. The research highlights how machine learning algorithms, especially reinforcement learning (RF), have the capacity to revolutionize speech recognition technology in a variety of contexts."
+    },
+    {
+      "paperId": "f434a92efe1a7aac633e0919b731d656d8c5e6d2",
+      "externalIds": {
+        "DBLP": "journals/ml/TelloCifuentesMT25",
+        "DOI": "10.1007/s10994-025-06803-3",
+        "CorpusId": 279519102
+      },
+      "url": "https://www.semanticscholar.org/paper/f434a92efe1a7aac633e0919b731d656d8c5e6d2",
+      "title": "Segmentation and feature extraction-based classification of pavement damages using hybrid computer vision and machine learning approaches",
+      "venue": "Machine-mediated learning",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10994-025-06803-3.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10994-025-06803-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10994-025-06803-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2223035419",
+          "name": "Lizette Tello-Cifuentes"
+        },
+        {
+          "authorId": "2281209720",
+          "name": "J. Marulanda"
+        },
+        {
+          "authorId": "2281211822",
+          "name": "Peter Thomson"
+        }
+      ],
+      "abstract": "Ensuring the safety, durability, and cost-effectiveness of road infrastructure maintenance requires accurate and efficient damage assessment. However, the heterogeneous nature of pavement deterioration, ranging from cracks and potholes to exposed aggregate areas, poses significant challenges for its analysis and classification. This study introduces a novel hybrid methodology that integrates advanced segmentation, feature extraction, and classification techniques to enhance the accuracy and robustness of road-damage detection. Unlike conventional approaches, the proposed method leverages Enhanced Fuzzy C-Means and vessel segmentation to achieve precise damage detection, thereby overcoming the limitations of traditional threshold-based techniques. For feature extraction, the method combines Mel-frequency cepstral coefficients and Local Binary Patterns to capture both frequency and textural characteristics and improve feature discriminability. Furthermore, Linear Discriminant Analysis optimizes dimensionality reduction, ensuring a compact yet highly informative representation of pavement conditions. The classification stage evaluates multiple approaches, including a Support Vector Machine (SVM) and Artificial Neural Network (ANN) for supervised learning, K-Means for unsupervised learning, and a Convolutional Neural Network (CNN) based on EfficientNetB7. 6464 road images were processed using the proposed methodology. The results show that SVM and ANN achieved F1-Scores above 90% owing to the quality of the extracted features. Additionally, K-Means obtained an F1-Score of 88%, outperforming EfficientNetB7, which achieved 87%, demonstrating the effectiveness of the proposed approach for segmentation and feature extraction. These findings highlight the advantages of integrating frequency-based and texture-based descriptors with advanced segmentation and classification strategies, ultimately contributing to more reliable and scalable pavement damage assessment systems."
+    },
+    {
+      "paperId": "3d80734ce3496b535b5f0c93ec758777e4071aae",
+      "externalIds": {
+        "PubMedCentral": "11744246",
+        "DOI": "10.1111/jsr.14256",
+        "CorpusId": 270368214,
+        "PubMed": "38853521"
+      },
+      "url": "https://www.semanticscholar.org/paper/3d80734ce3496b535b5f0c93ec758777e4071aae",
+      "title": "Hyperarousal features in the sleep architecture of individuals with and without insomnia",
+      "venue": "Journal of Sleep Research",
+      "year": 2024,
+      "citationCount": 13,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jsr.14256",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11744246, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2178780159",
+          "name": "T. Di Marco"
+        },
+        {
+          "authorId": "2284119783",
+          "name": "T. Scammell"
+        },
+        {
+          "authorId": "2254316614",
+          "name": "Kolia Sadeghi"
+        },
+        {
+          "authorId": "2297756748",
+          "name": "Alexandre N. Datta"
+        },
+        {
+          "authorId": "2218586256",
+          "name": "David Little"
+        },
+        {
+          "authorId": "2219283246",
+          "name": "N. Tjiptarto"
+        },
+        {
+          "authorId": "2284120610",
+          "name": "I. Djonlagic"
+        },
+        {
+          "authorId": "2284113424",
+          "name": "A. Olivieri"
+        },
+        {
+          "authorId": "2218825465",
+          "name": "G. Zammit"
+        },
+        {
+          "authorId": "2297711588",
+          "name": "A. Krystal"
+        },
+        {
+          "authorId": "2469463",
+          "name": "J. Pathmanathan"
+        },
+        {
+          "authorId": "2284112166",
+          "name": "J. Donoghue"
+        },
+        {
+          "authorId": "2297756974",
+          "name": "Jeffrey Hubbard"
+        },
+        {
+          "authorId": "2253623255",
+          "name": "Y. Dauvilliers"
+        }
+      ],
+      "abstract": "Sleep architecture encodes relevant information on the structure of sleep and has been used to assess hyperarousal in insomnia. This study investigated whether polysomnography‐derived sleep architecture displays signs of hyperarousal in individuals with insomnia compared with individuals without insomnia. Data from Phase 3 clinical trials, private clinics and a cohort study were analysed. A comprehensive set of sleep architecture features previously associated with hyperarousal were retrospectively analysed focusing on sleep–wake transition probabilities, electroencephalographic spectra and sleep spindles, and enriched with a novel machine learning algorithm called the Wake Electroencephalographic Similarity Index. This analysis included 1710 individuals with insomnia and 1455 individuals without insomnia. Results indicate that individuals with insomnia had a higher likelihood of waking from all sleep stages, and showed increased relative alpha during Wake and N1 sleep and increased theta power during Wake when compared with individuals without insomnia. Relative delta power was decreased and Wake Electroencephalographic Similarity Index scores were elevated across all sleep stages except N3, suggesting more wake‐like activity during these stages in individuals with insomnia. Additionally, sleep spindle density was decreased, and spindle dispersion was increased in individuals with insomnia. These findings suggest that insomnia is characterized by a dysfunction in sleep quality with a continuous hyperarousal, evidenced by changes in sleep–wake architecture."
+    },
+    {
+      "paperId": "4c5daae9c7271ba235426a27a1f39b35e2dff653",
+      "externalIds": {
+        "DOI": "10.1109/CSNT54456.2022.9787574",
+        "CorpusId": 249475223
+      },
+      "url": "https://www.semanticscholar.org/paper/4c5daae9c7271ba235426a27a1f39b35e2dff653",
+      "title": "Liver Disease Prediction using Machine learning Classification Techniques",
+      "venue": "International Conference on Communication Systems and Network Technologies",
+      "year": 2022,
+      "citationCount": 98,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CSNT54456.2022.9787574?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CSNT54456.2022.9787574, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2066789187",
+          "name": "Ketan Gupta"
+        },
+        {
+          "authorId": "2154628213",
+          "name": "Nasmin Jiwani"
+        },
+        {
+          "authorId": "2133968118",
+          "name": "Neda Afreen"
+        },
+        {
+          "authorId": "2239311109",
+          "name": "D. D."
+        }
+      ],
+      "abstract": "Machine Learning is a process which is used to discover patterns in huge data/ large data set to enable decision, thereby allowing machines to go through a learning process (i.e. supervised, unsupervised and semi-supervised or reinforced). The data set used in this paper is Liver Patient taken from UCI Repository (i.e. Supervised Learning). There is a plenty of data on patients undergoing medical examination at hospitals and these data has been extracted on liver patients whose information can be further used for future improvement of their conditions. In other words, historical and classified input of patients and output data is fed into various algorithms or classifiers for predicting the future data of patients. The algorithms used here for predicting liver patients are Logistic regression, Decision Tree, Random Forest, KNNeighbor, Gradient Boosting, Extreme Gradient Boosting, LightGB. Based on the analysis and result calculations, it was found that these algorithm has obtained good accuracy after feature selection."
+    },
+    {
+      "paperId": "800494ee266baaa9cd2723b0fb251f048b0bdaef",
+      "externalIds": {
+        "DBLP": "journals/netmahib/MohammedTahaAMHMR25",
+        "DOI": "10.1007/s13721-025-00552-y",
+        "CorpusId": 279661156
+      },
+      "url": "https://www.semanticscholar.org/paper/800494ee266baaa9cd2723b0fb251f048b0bdaef",
+      "title": "Analyzing the impact of the pandemic on insomnia prediction using machine learning classifiers across demographic groups",
+      "venue": "Network Modeling Analysis in Health Informatics and Bioinformatics",
+      "year": 2025,
+      "citationCount": 11,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s13721-025-00552-y?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s13721-025-00552-y, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2267134321",
+          "name": "Soran R. Mohammed-Taha"
+        },
+        {
+          "authorId": "65818042",
+          "name": "A. Aladdin"
+        },
+        {
+          "authorId": "2368874508",
+          "name": "A. Mustafa"
+        },
+        {
+          "authorId": "2200285453",
+          "name": "Dler O. Hasan"
+        },
+        {
+          "authorId": "2308060124",
+          "name": "R. Muhammed"
+        },
+        {
+          "authorId": "1908725",
+          "name": "Rebwar Khalid Hamad"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "bac0e906d68aa2a9547fa37815177b2e437e9769",
+      "externalIds": {
+        "PubMedCentral": "10136511",
+        "DOI": "10.3390/brainsci13040672",
+        "CorpusId": 258231456,
+        "PubMed": "37190637"
+      },
+      "url": "https://www.semanticscholar.org/paper/bac0e906d68aa2a9547fa37815177b2e437e9769",
+      "title": "Discriminating Paradoxical and Psychophysiological Insomnia Based on Structural and Functional Brain Images: A Preliminary Machine Learning Study",
+      "venue": "Brain Science",
+      "year": 2023,
+      "citationCount": 14,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2076-3425/13/4/672/pdf?version=1681732996",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10136511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2193779062",
+          "name": "Mortaza Afshani"
+        },
+        {
+          "authorId": "1405144816",
+          "name": "Ahmad Mahmoudi-Aznaveh"
+        },
+        {
+          "authorId": "47931324",
+          "name": "Khadijeh Noori"
+        },
+        {
+          "authorId": "1450261354",
+          "name": "M. Rostampour"
+        },
+        {
+          "authorId": "144116636",
+          "name": "M. Zarei"
+        },
+        {
+          "authorId": "5076576",
+          "name": "K. Spiegelhalder"
+        },
+        {
+          "authorId": "6806274",
+          "name": "Habibolah Khazaie"
+        },
+        {
+          "authorId": "144890022",
+          "name": "M. Tahmasian"
+        }
+      ],
+      "abstract": "Insomnia disorder (ID) is a prevalent mental illness. Several behavioral and neuroimaging studies suggested that ID is a heterogenous condition with various subtypes. However, neurobiological alterations in different subtypes of ID are poorly understood. We aimed to assess whether unimodal and multimodal whole-brain neuroimaging measurements can discriminate two commonly described ID subtypes (i.e., paradoxical and psychophysiological insomnia) from each other and healthy subjects. We obtained T1-weighted images and resting-state fMRI from 34 patients with ID and 48 healthy controls. The outcome measures were grey matter volume, cortical thickness, amplitude of low-frequency fluctuation, degree centrality, and regional homogeneity. Subsequently, we applied support vector machines to classify subjects via unimodal and multimodal measures. The results of the multimodal classification were superior to those of unimodal approaches, i.e., we achieved 81% accuracy in separating psychophysiological vs. control, 87% for paradoxical vs. control, and 89% for paradoxical vs. psychophysiological insomnia. This preliminary study provides evidence that structural and functional brain data can help to distinguish two common subtypes of ID from each other and healthy subjects. These initial findings may stimulate further research to identify the underlying mechanism of each subtype and develop personalized treatments for ID in the future."
+    },
+    {
+      "paperId": "5f20bce461e0e753d73c95ae3209fa1208076660",
+      "externalIds": {
+        "PubMedCentral": "8816647",
+        "DOI": "10.1016/j.crfs.2022.01.008",
+        "CorpusId": 246379412,
+        "PubMed": "35141528"
+      },
+      "url": "https://www.semanticscholar.org/paper/5f20bce461e0e753d73c95ae3209fa1208076660",
+      "title": "Identifying type of sugar adulterants in honey: Combined application of NMR spectroscopy and supervised machine learning classification",
+      "venue": "Current Research in Food Science",
+      "year": 2022,
+      "citationCount": 58,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.sciencedirect.com/science/article/pii/S2665927122000089/pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8816647, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "11641360",
+          "name": "Kavitha Rachineni"
+        },
+        {
+          "authorId": "152176283",
+          "name": "Veera Mohana Rao Kakita"
+        },
+        {
+          "authorId": "12803698",
+          "name": "N. Awasthi"
+        },
+        {
+          "authorId": "2151546032",
+          "name": "Vrushali Siddesh Shirke"
+        },
+        {
+          "authorId": "2706434",
+          "name": "R. Hosur"
+        },
+        {
+          "authorId": "2126255346",
+          "name": "Satish Chandra Shukla"
+        }
+      ],
+      "abstract": "Nuclear magnetic resonance (NMR) is a powerful analytical tool which can be used for authenticating honey, at chemical constituent levels by enabling identification and quantification of the spectral patterns. However, it is still challenging, as it may be a person-centric analysis or a time-consuming process to analyze many honey samples in a limited time. Hence, automating the NMR spectral analysis of honey with the supervised machine learning models accelerates the analysis process and especially food chemistry researcher or food industry with non-NMR experts would benefit immensely from such advancements. Here, we have successfully demonstrated this technology by considering three major sugar adulterants, i.e., brown rice syrup, corn syrup, and jaggery syrup, in honey at varying concentrations. The necessary supervised machine learning classification analysis is performed by using logistic regression, deep learning-based neural network, and light gradient boosting machines schemes."
+    },
+    {
+      "paperId": "3e6e4a8c78fbff78c0573856c614d62948c2453c",
+      "externalIds": {
+        "DBLP": "journals/qmi/MajidSJ25",
+        "DOI": "10.1007/s42484-025-00266-4",
+        "CorpusId": 276950720
+      },
+      "url": "https://www.semanticscholar.org/paper/3e6e4a8c78fbff78c0573856c614d62948c2453c",
+      "title": "Quantum machine learning: a systematic categorization based on learning paradigms, NISQ suitability, and fault tolerance",
+      "venue": "Quantum Machine Intelligence",
+      "year": 2025,
+      "citationCount": 13,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s42484-025-00266-4?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s42484-025-00266-4, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2349707615",
+          "name": "Bisma Majid"
+        },
+        {
+          "authorId": "2396688494",
+          "name": "Shabir Ahmed Sofi"
+        },
+        {
+          "authorId": "2349711108",
+          "name": "Zamrooda Jabeen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "96e2d962ec825643f7e4c1185bdc754c06bfc6a4",
+      "externalIds": {
+        "MAG": "3136660290",
+        "DOI": "10.1016/J.IMU.2021.100545",
+        "CorpusId": 234190925
+      },
+      "url": "https://www.semanticscholar.org/paper/96e2d962ec825643f7e4c1185bdc754c06bfc6a4",
+      "title": "Application of deep and machine learning techniques for multi-label classification performance on psychotic disorder diseases",
+      "venue": "Informatics in Medicine Unlocked",
+      "year": 2021,
+      "citationCount": 67,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.sciencedirect.com/science/article/pii/S2352914821000356/pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.IMU.2021.100545?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.IMU.2021.100545, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "98651917",
+          "name": "Israel Elujide"
+        },
+        {
+          "authorId": "72909994",
+          "name": "S. Fashoto"
+        },
+        {
+          "authorId": "2142661464",
+          "name": "B. Fashoto"
+        },
+        {
+          "authorId": "2090900479",
+          "name": "Elliot Mbunge"
+        },
+        {
+          "authorId": "2338927",
+          "name": "S. Folorunso"
+        },
+        {
+          "authorId": "2350486861",
+          "name": "Jeremiah O. Olamijuwon"
+        }
+      ],
+      "abstract": "Abstract Electronic Health Records (EHRs) hold symptoms of many diverse diseases and it is imperative to build models to recognise these problems early and classify the diseases appropriately. This classification task could be presented as a single or multi-label problem. Thus, this study presents Psychotic Disorder Diseases (PDD) dataset with five labels: bipolar disorder, vascular dementia, attention-deficit/hyperactivity disorder (ADHD), insomnia, and schizophrenia as a multi-label classification problem. The study also investigates the use of deep neural network and machine learning techniques such as multilayer perceptron (MLP), support vector machine (SVM), random forest (RF) and Decision tree (DT), for identifying hidden patterns in patients’ data. The study furthermore investigates the symptoms associated with certain types of psychotic diseases and addresses class imbalance from a multi-label classification perspective. The performances of these models were assessed and compared based on an accuracy metric. The result obtained revealed that deep neural network gave a superior performance of 75.17% with class imbalance accuracy, while the MLP model accuracy is 58.44%. Conversely, the best performance in the machine learning techniques was exhibited by the random forest model, using the dataset without class imbalance and its result, compared with deep learning techniques, is 64.1% and 55.87%, respectively. It was also observed that patient’s age is the most contributing feature to the performance of the model while divorce is the least. Likewise, the study reveals that there is a high tendency for a patient with bipolar disorder to have insomnia; these diseases are strongly correlated with an R-value of 0.98. Our concluding remark shows that applying the deep and machine learning model to PDD dataset not only offers improved clinical classification of the diseases but also provides a framework for augmenting clinical decision systems by eliminating the class imbalance and unravelling the attributes that influence PDD in patients.."
+    },
+    {
+      "paperId": "cf362e2e06c02a2e49dd73f859f693d97e233d5d",
+      "externalIds": {
+        "DOI": "10.1109/AIMLA59606.2024.10531571",
+        "CorpusId": 269953367
+      },
+      "url": "https://www.semanticscholar.org/paper/cf362e2e06c02a2e49dd73f859f693d97e233d5d",
+      "title": "A Survey on Skin Lesion Detection and Classification using Machine Learning",
+      "venue": "2024 2nd International Conference on Artificial Intelligence and Machine Learning Applications Theme: Healthcare and Internet of Things (AIMLA)",
+      "year": 2024,
+      "citationCount": 10,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/AIMLA59606.2024.10531571?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/AIMLA59606.2024.10531571, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2288648050",
+          "name": "R. Yadav"
+        },
+        {
+          "authorId": "2260414869",
+          "name": "Aruna Bhat"
+        }
+      ],
+      "abstract": "The research explores how dermatologists use machine learning to quickly and accurately identify and classify skin injury. Conventional diagnosis techniques depend on visual examination, but are subjective and have different interpretations. The ability to analyze data and recognize patterns is a possible remedy for ML. The paper examines the current technology of machine learning, focusing on validation in the real world, and deals with data set variability. Although the research acknowledges the fruitfulness of deep learning (DL), the research emphasizes the benefits of traditional ML techniques regarding interpretation and processing performance. Methods for automating the analysis of skin lesions, such as feature engineering, rule-based techniques and traditional ML algorithms, have been studied. The study suggests using advanced transfer learning techniques, integrating genetic and clinical data, and refining the way artificial intelligence (AI) is explained in order to get over barriers. Intending to enhance the accessibility and correctness of skin lesion identification, the future requires collaboration between dermatology and machine learning to develop real-time diagnostic tools. By offering scalable solutions for rapid diagnosis of lesions and improved patient outcomes, this combination of medical expertise and ML capabilities has the power to revolutionize dermatology. The future of automated dermatological diagnosis is expected to be shaped by collaboration between machine learning experts and dermatologists, enabling more personalized treatment for patients."
+    },
+    {
+      "paperId": "e558310277c941ebac73048516c23ed111eda900",
+      "externalIds": {
+        "DOI": "10.53759/7669/jmc202404025",
+        "CorpusId": 266802057
+      },
+      "url": "https://www.semanticscholar.org/paper/e558310277c941ebac73048516c23ed111eda900",
+      "title": "Machine Learning Based Precision Agriculture using Ensemble Classification with TPE Model",
+      "venue": "Journal of Machine and Computing",
+      "year": 2024,
+      "citationCount": 10,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "http://anapub.co.ke/journals/jmc/jmc_pdf/2024/jmc_volume_4-issue_1/JMC202404025.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.53759/7669/jmc202404025?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.53759/7669/jmc202404025, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2124649067",
+          "name": "L. M"
+        },
+        {
+          "authorId": "2315510948",
+          "name": "M. Vasavi"
+        },
+        {
+          "authorId": "2278074801",
+          "name": "Chunduri Kiran Kumar"
+        },
+        {
+          "authorId": "2215731338",
+          "name": "B. R"
+        },
+        {
+          "authorId": "1397747617",
+          "name": "John Babu Guttikonda"
+        },
+        {
+          "authorId": "2278058186",
+          "name": "R. T"
+        }
+      ],
+      "abstract": "Many tasks are part of smart farming, including predicting crop yields, analysing soil fertility, making crop recommendations, managing water, and many more. In order to execute smart agricultural tasks, researchers are constantly creating several Machine Learning (ML) models. In this work, we integrate ML with the Internet of Things. Either the UCI dataset or the Kaggle dataset was used to gather the data. Effective data pretreatment approaches, such as the Imputation and Outlier (IO) methods, are necessary to manage the intricacies and guarantee proper analysis when dealing with data that exhibits irregular patterns or contains little changes that can have a substantial influence on analysis and decision making. The goal of this research is to provide a more meaningful dataset by investigating data preparation approaches that are particular to processing data. Following the completion of preprocessing, the data is classified using an average approach based on the Ensemble of Adaptive Neuro-Fuzzy Inference System (ANFIS), Random Neural Network (PNN), and Clustering-Based Decision Tree (CBDT) techniques. The next step in optimising the hyperparameter tuning of the proposed ensemble classifier is to employ a new Tree-Structured Parzen Estimator (TPE). Applying the suggested TPE based Ensemble classification method resulted in a 99.4 percent boost in accuracy"
+    },
+    {
+      "paperId": "656ce16cb93528c4f1175571f404fc234f6c1923",
+      "externalIds": {
+        "DOI": "10.1109/PRML59573.2023.10348265",
+        "CorpusId": 266236535
+      },
+      "url": "https://www.semanticscholar.org/paper/656ce16cb93528c4f1175571f404fc234f6c1923",
+      "title": "Classification of Inflammatory Gene Expression Patterns with Machine Learning Models",
+      "venue": "2023 IEEE 4th International Conference on Pattern Recognition and Machine Learning (PRML)",
+      "year": 2023,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://figshare.com/articles/conference_contribution/Classification_of_Inflammatory_Gene_Expression_Patterns_with_Machine_Learning_Models/25058579",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/PRML59573.2023.10348265?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/PRML59573.2023.10348265, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2274272188",
+          "name": "Y. Ay"
+        },
+        {
+          "authorId": "2148533064",
+          "name": "Yit Hong Choo"
+        },
+        {
+          "authorId": "2166059991",
+          "name": "Asim Bhatti"
+        },
+        {
+          "authorId": "2267902413",
+          "name": "Chee Peng Lim"
+        }
+      ],
+      "abstract": "Dementia is a complex neurological disorder characterized by a progressive decline in cognitive functions. Recent studies have suggested a link between neuroinflammation and the development of dementia, particularly in Alzheimer’s disease. This study focuses on the analysis of inflammatory gene expression patterns in the parietal cortex (PCx) and temporal cortex (TCx) from a human brain RNA sequence data set, aiming to derive insights into the underlying genetic link associated with dementia, as well as prediction of dementia. Using five machine learning and statistical methods, our study reveals better detection and classification of dementia patients using PCx-related gene patterns, as compared with those from the TCx. Our findings support the hypothesis that the PCx plays a significant role in neuroinflammatory responses associated with dementia. Based on this preliminary study, machine learning models offer a useful approach to recognize inflammatory gene expression patterns and providing a valuable biomarker analysis and prediction for dementia diagnosis."
+    },
+    {
+      "paperId": "707d2bda34cf3c3db02d0bf6a94929c35f39c7fb",
+      "externalIds": {
+        "DOI": "10.71465/ajml3062",
+        "CorpusId": 287046783
+      },
+      "url": "https://www.semanticscholar.org/paper/707d2bda34cf3c3db02d0bf6a94929c35f39c7fb",
+      "title": "The Role of Machine Learning in Predicting Energy Consumption Patterns",
+      "venue": "American journal of machine learning",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.australiansciencejournals.com/ml/article/download/3062/3389",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.71465/ajml3062?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.71465/ajml3062, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2427263343",
+          "name": "Dr. Lisa Morgan"
+        }
+      ],
+      "abstract": "Machine learning (ML) techniques have gained significant attention in the prediction of energy consumption patterns due to their ability to handle complex, non-linear relationships within data. This paper explores various ML models, such as regression, classification, and deep learning, in forecasting energy usage patterns in residential, commercial, and industrial sectors. The integration of ML in energy consumption prediction allows for more efficient energy management and planning. This article discusses the advantages, challenges, and applications of ML techniques in energy forecasting and provides case studies to illustrate their effectiveness."
+    },
+    {
+      "paperId": "e596c8def162edac71e01c9b5b864b952f4349ee",
+      "externalIds": {
+        "PubMedCentral": "11348772",
+        "DOI": "10.1186/s12889-024-19797-9",
+        "CorpusId": 271966055,
+        "PubMed": "39192279"
+      },
+      "url": "https://www.semanticscholar.org/paper/e596c8def162edac71e01c9b5b864b952f4349ee",
+      "title": "Mental issues, internet addiction and quality of life predict burnout among Hungarian teachers: a machine learning analysis",
+      "venue": "BMC Public Health",
+      "year": 2024,
+      "citationCount": 14,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1186/s12889-024-19797-9",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11348772, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48955976",
+          "name": "Gergely Fehér"
+        },
+        {
+          "authorId": "1500440600",
+          "name": "Krisztián Kapus"
+        },
+        {
+          "authorId": "12392391",
+          "name": "A. Tibold"
+        },
+        {
+          "authorId": "2742397",
+          "name": "Z. Bankó"
+        },
+        {
+          "authorId": "2297173582",
+          "name": "Gyula Berke"
+        },
+        {
+          "authorId": "6905631",
+          "name": "Boróka Gács"
+        },
+        {
+          "authorId": "2127521491",
+          "name": "Imre Váradi"
+        },
+        {
+          "authorId": "2117463093",
+          "name": "Rita Nyulas"
+        },
+        {
+          "authorId": "2300868405",
+          "name": "A. Matuz"
+        }
+      ],
+      "abstract": "Burnout is usually defined as a state of emotional, physical, and mental exhaustion that affects people in various professions (e.g. physicians, nurses, teachers). The consequences of burnout involve decreased motivation, productivity, and overall diminished well-being. The machine learning-based prediction of burnout has therefore become the focus of recent research. In this study, the aim was to detect burnout using machine learning and to identify its most important predictors in a sample of Hungarian high-school teachers. The final sample consisted of 1,576 high-school teachers (522 male), who completed a survey including various sociodemographic and health-related questions and psychological questionnaires. Specifically, depression, insomnia, internet habits (e.g. when and why one uses the internet) and problematic internet usage were among the most important predictors tested in this study. Supervised classification algorithms were trained to detect burnout assessed by two well-known burnout questionnaires. Feature selection was conducted using recursive feature elimination. Hyperparameters were tuned via grid search with 10-fold cross-validation. Due to class imbalance, class weights (i.e. cost-sensitive learning), downsampling and a hybrid method (SMOTE-ENN) were applied in separate analyses. The final model evaluation was carried out on a previously unseen holdout test sample. Burnout was detected in 19.7% of the teachers included in the final dataset. The best predictive performance on the holdout test sample was achieved by random forest with class weigths (AUC = 0.811; balanced accuracy = 0.745, sensitivity = 0.765; specificity = 0.726). The best predictors of burnout were Beck’s Depression Inventory scores, Athen’s Insomnia Scale scores, subscales of the Problematic Internet Use Questionnaire and self-reported current health status. The performances of the algorithms were comparable with previous studies; however, it is important to note that we tested our models on previously unseen holdout samples suggesting higher levels of generalizability. Another remarkable finding is that besides depression and insomnia, other variables such as problematic internet use and time spent online also turned out to be important predictors of burnout."
+    },
+    {
+      "paperId": "ac2cffc4b9f96bae24809d738777ae897094ae33",
+      "externalIds": {
+        "PubMedCentral": "10180678",
+        "DBLP": "journals/sensors/AnRZK23",
+        "DOI": "10.3390/s23094178",
+        "CorpusId": 258320588,
+        "PubMed": "37177382"
+      },
+      "url": "https://www.semanticscholar.org/paper/ac2cffc4b9f96bae24809d738777ae897094ae33",
+      "title": "A Comprehensive Review on Machine Learning in Healthcare Industry: Classification, Restrictions, Opportunities and Challenges",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2023,
+      "citationCount": 287,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/23/9/4178/pdf?version=1682145245",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10180678, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2143532704",
+          "name": "Qi An"
+        },
+        {
+          "authorId": "2162220859",
+          "name": "Saifur Rahman"
+        },
+        {
+          "authorId": "2215360053",
+          "name": "Jingwen Zhou"
+        },
+        {
+          "authorId": "29413196",
+          "name": "James Jin Kang"
+        }
+      ],
+      "abstract": "Recently, various sophisticated methods, including machine learning and artificial intelligence, have been employed to examine health-related data. Medical professionals are acquiring enhanced diagnostic and treatment abilities by utilizing machine learning applications in the healthcare domain. Medical data have been used by many researchers to detect diseases and identify patterns. In the current literature, there are very few studies that address machine learning algorithms to improve healthcare data accuracy and efficiency. We examined the effectiveness of machine learning algorithms in improving time series healthcare metrics for heart rate data transmission (accuracy and efficiency). In this paper, we reviewed several machine learning algorithms in healthcare applications. After a comprehensive overview and investigation of supervised and unsupervised machine learning algorithms, we also demonstrated time series tasks based on past values (along with reviewing their feasibility for both small and large datasets)."
+    },
+    {
+      "paperId": "92ce0a07d47a74dd7a07588bd01af2fe3dcd8d7a",
+      "externalIds": {
+        "DOI": "10.1109/ICSCDS65426.2025.11166889",
+        "CorpusId": 281508920
+      },
+      "url": "https://www.semanticscholar.org/paper/92ce0a07d47a74dd7a07588bd01af2fe3dcd8d7a",
+      "title": "Deep Learning for Sleep Pattern Recognition in Wearables for Detecting Insomnia",
+      "venue": "2025 3rd International Conference on Sustainable Computing and Data Communication Systems (ICSCDS)",
+      "year": 2025,
+      "citationCount": 6,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSCDS65426.2025.11166889?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSCDS65426.2025.11166889, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2425537111",
+          "name": "Gengalakshmi. G"
+        },
+        {
+          "authorId": "90724338",
+          "name": "C. S. Devi"
+        },
+        {
+          "authorId": "2277668518",
+          "name": "A. Chandravadhana"
+        },
+        {
+          "authorId": "2344852478",
+          "name": "S. Vijayalakshmi"
+        },
+        {
+          "authorId": "2310824226",
+          "name": "Ishwarya M. V"
+        },
+        {
+          "authorId": "2327226334",
+          "name": "S. Murugan"
+        }
+      ],
+      "abstract": "Sleep disorders, including insomnia, represent an escalating public health issue; nevertheless, conventional diagnostic techniques such as polysomnography (PSG) are sometimes problematic for broad use. Wearable gadgets equipped with accelerometers and heart rate monitors offer a practical solution for continuous sleep monitoring. This research employs Long Short-Term Memory (LSTM), a deep learning (DL) method, to analyze wearable sensor data and identify sleep patterns to diagnose insomnia. The LSTM model was trained and validated using a dataset of sleep recordings annotated with sleep phases (wake, light, deep, REM) and insomnia classifications. The model attained a remarkable sleep stage classification accuracy of 96.75%, with precision and recall rates of 93.67% and 93.50%, respectively. The model exhibited a sensitivity of 93.67% and a specificity of 97.83% for identifying insomnia, improving upon traditional approaches by 18-20%. Moreover, the system accurately detected insomnia-related characteristics, including prolonged sleep latency and recurrent awakenings, with an error margin of approximately ±3 minutes. These findings highlight the efficacy of LSTM-based DL in delivering precise, non-invasive, and scalable sleep monitoring systems. Integrating this technology into wearable devices enables the early identification of insomnia and the delivery of personalized sleep treatments, revolutionizing sleep healthcare."
+    },
+    {
+      "paperId": "7405fb42657cc80bd400902955fa29fd14f2c9cb",
+      "externalIds": {
+        "PubMedCentral": "9952758",
+        "ArXiv": "2301.12222",
+        "DBLP": "journals/corr/abs-2301-12222",
+        "DOI": "10.3390/bioengineering10020173",
+        "CorpusId": 256390241,
+        "PubMed": "36829667"
+      },
+      "url": "https://www.semanticscholar.org/paper/7405fb42657cc80bd400902955fa29fd14f2c9cb",
+      "title": "Machine Learning Methods for Cancer Classification Using Gene Expression Data: A Review",
+      "venue": "Bioengineering",
+      "year": 2023,
+      "citationCount": 195,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2306-5354/10/2/173/pdf?version=1674975235",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2301.12222, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2137659962",
+          "name": "Fadi Alharbi"
+        },
+        {
+          "authorId": "3294211",
+          "name": "Aleksandar Vakanski"
+        }
+      ],
+      "abstract": "Cancer is a term that denotes a group of diseases caused by the abnormal growth of cells that can spread in different parts of the body. According to the World Health Organization (WHO), cancer is the second major cause of death after cardiovascular diseases. Gene expression can play a fundamental role in the early detection of cancer, as it is indicative of the biochemical processes in tissue and cells, as well as the genetic characteristics of an organism. Deoxyribonucleic acid (DNA) microarrays and ribonucleic acid (RNA)-sequencing methods for gene expression data allow quantifying the expression levels of genes and produce valuable data for computational analysis. This study reviews recent progress in gene expression analysis for cancer classification using machine learning methods. Both conventional and deep learning-based approaches are reviewed, with an emphasis on the application of deep learning models due to their comparative advantages for identifying gene patterns that are distinctive for various types of cancers. Relevant works that employ the most commonly used deep neural network architectures are covered, including multi-layer perceptrons, as well as convolutional, recurrent, graph, and transformer networks. This survey also presents an overview of the data collection methods for gene expression analysis and lists important datasets that are commonly used for supervised machine learning for this task. Furthermore, we review pertinent techniques for feature engineering and data preprocessing that are typically used to handle the high dimensionality of gene expression data, caused by a large number of genes present in data samples. The paper concludes with a discussion of future research directions for machine learning-based gene expression analysis for cancer classification."
+    },
+    {
+      "paperId": "0c3080429c1e38c026965f78e073ab95c1a36776",
+      "externalIds": {
+        "DBLP": "journals/solarjla/LeeLKPPBGG25",
+        "DOI": "10.18608/jla.2025.8375",
+        "CorpusId": 281073945
+      },
+      "url": "https://www.semanticscholar.org/paper/0c3080429c1e38c026965f78e073ab95c1a36776",
+      "title": "Interpretable Predictive Analytics for Online Learning: A Markov-Based Machine Learning Approach",
+      "venue": "Journal of Learning Analytics",
+      "year": 2025,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://learning-analytics.info/index.php/JLA/article/download/8375/7929",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18608/jla.2025.8375?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18608/jla.2025.8375, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2299909213",
+          "name": "Chaewon Lee"
+        },
+        {
+          "authorId": "2087070344",
+          "name": "Lan Luo"
+        },
+        {
+          "authorId": "143948117",
+          "name": "Shelbi L. Kuhlmann"
+        },
+        {
+          "authorId": "2396607",
+          "name": "Robert D. Plumley"
+        },
+        {
+          "authorId": "2276984135",
+          "name": "A. Panter"
+        },
+        {
+          "authorId": "2366845188",
+          "name": "Matt Bernacki"
+        },
+        {
+          "authorId": "2254382869",
+          "name": "Jeffrey A. Greene"
+        },
+        {
+          "authorId": "2296149227",
+          "name": "Kathleen M. Gates"
+        }
+      ],
+      "abstract": "The increasing use of learning management systems (LMSs) generates vast amounts of clickstream data, opening new avenues for predicting learner performance. Traditionally, LMS predictive analytics have relied on either supervised machine learning or Markov models to classify learners based on predicted learning outcomes. Machine learning excels at pattern recognition but often overlooks temporal learning dynamics and obscures the reasoning behind predictions due to the black-box nature of many algorithms. Alternatively, Markov models provide an effective solution by capturing temporal learning dynamics for prediction, uncovering distinctive learning patterns between high and low performers. Despite these advantages, Markov model classification struggles with the heterogeneity of learning sequences, limiting its broad applicability. To address these limitations and bridge the gap between the two dominant approaches, we propose a hybrid framework: sequence-based Markov machine learning classification (seqMAC). Leveraging early-stage clickstream data, seqMAC provides an interpretable sequence classification method that captures critical behavioural transitions and identifies distinct learning patterns across performance groups. Tested on six LMS samples, seqMAC effectively identified at-risk students despite sequence heterogeneity, uncovering key predictive learning dynamics that differentiate performance groups. It also demonstrated promising generalizability, accurately identifying future at-risk students based on historical clickstream data."
+    },
+    {
+      "paperId": "7ebde0d320d7d33c7e3f64df1d406b9d99a19bbb",
+      "externalIds": {
+        "DOI": "10.1109/ICFCR64128.2024.10762998",
+        "CorpusId": 274371669
+      },
+      "url": "https://www.semanticscholar.org/paper/7ebde0d320d7d33c7e3f64df1d406b9d99a19bbb",
+      "title": "Identification of Sleep Disorder Using Machine Learning",
+      "venue": "2024 International Conference on Futuristic Technologies in Control Systems & Renewable Energy (ICFCR)",
+      "year": 2024,
+      "citationCount": 6,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICFCR64128.2024.10762998?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICFCR64128.2024.10762998, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2136618524",
+          "name": "Sandeep Kumar Saini"
+        },
+        {
+          "authorId": "31245604",
+          "name": "Garima Chandel"
+        },
+        {
+          "authorId": "2332931600",
+          "name": "Aldrin Shayamano"
+        },
+        {
+          "authorId": "2332933506",
+          "name": "Ologe Temitope Jemima"
+        }
+      ],
+      "abstract": "Sleep disorders are a group of conditions that affect the ability to sleep well on a regular basis. They can significantly impact an individual's overall health, well-being, and quality of life. Common sleep disorders include insomnia (difficulty falling or staying asleep), sleep apnea (breathing interruptions during sleep), restless leg syndrome, and narcolepsy. The Sleep Health and Lifestyle Dataset is used for experimental work, which consists of thirteen different parameters of a variety of factors linked to daily routines and sleep. Benchmark dataset is applying machine learning mod-els named Support Vector Machine, Random Forest, and Logistic Regression. The output of the classification model in the number form such as 0,1,2. “0” denoted the persons who don't have a sleep disorder. “1” denoted the persons having insomnia and “2” denoted Sleep apnea. SVM, RF, and LR models have an accuracy of 90.99%, 90.29, and 87.61% respectively. Out of these models SVM model gives a maximum accuracy that is 90.99%. This method can be used in the primary stage of the system. Public awareness and education about the importance of sleep and the potential impact of sleep disorders are essential for early recognition, proper diagnosis, and effective treatment."
+    },
+    {
+      "paperId": "b61067465be098a1f6c67d13785e80e2be35e003",
+      "externalIds": {
+        "DOI": "10.24018/ejai.2025.4.3.61",
+        "CorpusId": 279921862
+      },
+      "url": "https://www.semanticscholar.org/paper/b61067465be098a1f6c67d13785e80e2be35e003",
+      "title": "Optimization of Power Flow Outage Detection using Machine Learning Algorithm",
+      "venue": "European Journal of Artificial Intelligence and Machine Learning",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ej-ai.org/index.php/ejai/article/download/61/91",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.24018/ejai.2025.4.3.61?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.24018/ejai.2025.4.3.61, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "30675373",
+          "name": "O. A. Ajeigbe"
+        },
+        {
+          "authorId": "2213439377",
+          "name": "O. Ogunkeyede"
+        },
+        {
+          "authorId": "2370283746",
+          "name": "Ayomikun Olalekan Popoola"
+        }
+      ],
+      "abstract": "This study investigates the application of Machine Learning (ML) methods to detect problems in distribution networks. The main goal is to swiftly and reliably identify and categorize disturbances, hence improving the network's reliability and accelerating restoration efforts. The proposed methodology leverages the functionalities of Supervised Machine Learning algorithms such as Random Forest, Logistic Regression, and K-Nearest Neighbours, which offer user-friendliness and adaptability in addressing both classification and regression tasks for pattern recognition and anomaly detection. Through the analysis of real-time data streams collected from various sensors distributed across the grid, encompassing current measurements, breaker conditions, voltage monitoring, meteorological data, and load information, the machine learning model can discern the typical operational patterns of the network during optimal functioning. Identifying and highlighting variations in these established patterns helps facilitate prompt responses and enhance service consistency. The sophisticated framework may be modified and applied to various network architectures, promoting a more efficient and automated approach to outage management. This paper utilizes machine learning algorithms and their diverse evaluation measures to accurately anticipate power interruptions."
+    },
+    {
+      "paperId": "0c3d405a4a31e5c4df75ede52c7a64922658f00a",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2507-07511",
+        "ArXiv": "2507.07511",
+        "DOI": "10.1109/MLSP62443.2025.11204214",
+        "CorpusId": 280292468
+      },
+      "url": "https://www.semanticscholar.org/paper/0c3d405a4a31e5c4df75ede52c7a64922658f00a",
+      "title": "Uncertainty Quantification for Motor Imagery BCI – Machine Learning vs. Deep Learning",
+      "venue": "International Workshop on Machine Learning for Signal Processing",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.07511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2373441463",
+          "name": "Joris Suurmeijer"
+        },
+        {
+          "authorId": "2274929924",
+          "name": "Ivo Pascal de Jong"
+        },
+        {
+          "authorId": "2341534821",
+          "name": "Matias Valdenegro-Toro"
+        },
+        {
+          "authorId": "2399552",
+          "name": "A. Sburlea"
+        }
+      ],
+      "abstract": "Brain-computer interfaces (BCIs) turn brain signals into functionally useful output, but they are not always accurate. A good Machine Learning classifier should be able to indicate how confident it is about a given classification, by giving a probability for its classification. Standard classifiers for Motor Imagery BCIs do give such probabilities, but research on uncertainty quantification has been limited to Deep Learning. We compare the uncertainty quantification ability of established BCI classifiers using Common Spatial Patterns (CSP-LDA) and Riemannian Geometry (MDRM) to specialized methods in Deep Learning (Deep Ensembles and Direct Uncertainty Quantification) as well as standard Convolutional Neural Networks (CNNs). We found that the overconfidence typically seen in Deep Learning is not a problem in CSP-LDA and MDRM. We found that MDRM is underconfident, which we solved by adding Temperature Scaling (MDRM-T). CSP-LDA and MDRM-T give the best uncertainty estimates, but Deep Ensembles and standard CNNs give the best classifications. We show that all models are able to separate between easy and difficult estimates, so that we can increase the accuracy of a Motor Imagery BCI by rejecting samples that are ambiguous."
+    },
+    {
+      "paperId": "0eb4e4db1768aff538bc3b6dc4d601f9c8e8d09b",
+      "externalIds": {
+        "DOI": "10.1109/ICAMIDA64673.2025.11209180",
+        "CorpusId": 282762158
+      },
+      "url": "https://www.semanticscholar.org/paper/0eb4e4db1768aff538bc3b6dc4d601f9c8e8d09b",
+      "title": "Enhancing Cloud Security Through a Comprehensive Survey of Machine Learning Based Intrusion Detection Systems",
+      "venue": "2025 International Conference on Applications of Machine Intelligence and Data Analytics (ICAMIDA)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICAMIDA64673.2025.11209180?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICAMIDA64673.2025.11209180, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2310825806",
+          "name": "Ravikumar Ch"
+        },
+        {
+          "authorId": "2310825776",
+          "name": "Burri Naresh"
+        },
+        {
+          "authorId": "2390657611",
+          "name": "D. Prasanna"
+        },
+        {
+          "authorId": "2390657621",
+          "name": "E. Radhika"
+        },
+        {
+          "authorId": "32854323",
+          "name": "Nenavath Chander"
+        },
+        {
+          "authorId": "2341531222",
+          "name": "Ashlesha Kolakar"
+        }
+      ],
+      "abstract": "Cloud computing has revolutionized technology with its unmatched flexibility, scalability, and cost efficiency, making it a cornerstone of modern digital infrastructures. However, its dynamic nature and reliance on the internet introduce significant security vulnerabilities, particularly in monitoring and managing complex network traffic. Traditional Intrusion Detection Systems (IDS) struggle to effectively handle the unpredictable and highvolume traffic patterns typical in cloud environments. This paper provides a comprehensive survey of Machine Learning (ML)based IDS, focusing on their ability to classify network activities as normal or anomalous through advanced anomaly detection techniques. ML approaches, including clustering, classification, and hybrid algorithms, have demonstrated significant potential in real-time threat detection and mitigation, enhancing the overall security and reliability of cloud systems. The survey critically evaluates the advantages, limitations, and challenges of ML-based IDS, emphasizing the role of feature selection and preprocessing techniques in improving detection accuracy and efficiency. By synthesizing recent advancements and applications, this work offers a holistic view of the current state of ML in securing cloud infrastructures and highlights key areas for future research, including privacy-preserving methods, scalability, and the integration of adaptive learning frameworks."
+    },
+    {
+      "paperId": "440e75c9b18a85ace514853e3c69dda96caf65b5",
+      "externalIds": {
+        "DOI": "10.1080/10494820.2025.2567601",
+        "CorpusId": 282028149
+      },
+      "url": "https://www.semanticscholar.org/paper/440e75c9b18a85ace514853e3c69dda96caf65b5",
+      "title": "Towards a process-oriented assessment of computational thinking: behavioural data and machine learning approach",
+      "venue": "Interactive Learning Environments",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/10494820.2025.2567601?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/10494820.2025.2567601, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2183786191",
+          "name": "Vaida Masiulionytė-Dagienė"
+        },
+        {
+          "authorId": "2773215",
+          "name": "T. Jevsikova"
+        }
+      ],
+      "abstract": "ABSTRACT Computational thinking (CT) is increasingly recognised as a vital skill for the twenty-first century. However, the lack of reliable assessment tools continues to create significant challenges for assessing students' CT skills effectively. This study uses behavioural data from the interactive Bebras Challenge task to assess CT skills, offering a deep analysis of the problem-solving process beyond final binary outcomes. The dataset of solutions (N = 336) from an interactive CT task, focusing on recorded behavioural data, such as object interactions, decision sequences, colour choices and time taken to complete the task, was analysed. Machine learning algorithms were applied to cluster the solutions, identifying distinct patterns that reflected different problem-solving strategies. The analysis went beyond binary classification, revealing variations in solution approaches within successful and unsuccessful attempts, allowing for a more detailed assessment of CT skills. The findings from this study suggest a scoring system based on identified solution clusters as a more refined assessment of CT compared to existing binary methods. This underscores the potential of behavioural data to improve CT assessment."
+    },
+    {
+      "paperId": "fd85e6100b2bdfe7a236171176d4bf4019f4a948",
+      "externalIds": {
+        "DBLP": "conf/icmlt/QureshiVMCTT25",
+        "DOI": "10.1109/ICMLT65785.2025.11193220",
+        "CorpusId": 282069167
+      },
+      "url": "https://www.semanticscholar.org/paper/fd85e6100b2bdfe7a236171176d4bf4019f4a948",
+      "title": "Interpreting Time-Series Machine Learning Models through Domain-Informed Basis Functions",
+      "venue": "International Conference on Machine Learning Technologies",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICMLT65785.2025.11193220?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICMLT65785.2025.11193220, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212761196",
+          "name": "Y. Qureshi"
+        },
+        {
+          "authorId": "143842092",
+          "name": "V. Voloshin"
+        },
+        {
+          "authorId": "2139642152",
+          "name": "P. McCall"
+        },
+        {
+          "authorId": "2283113391",
+          "name": "J. Covington"
+        },
+        {
+          "authorId": "2220494174",
+          "name": "C. Towers"
+        },
+        {
+          "authorId": "2309157915",
+          "name": "D. Towers"
+        }
+      ],
+      "abstract": "Interpreting machine learning models for time-series data is a critical challenge, particularly in fields where decisions have real-world implications, such as biology. In this work, we introduce a novel approach for interpreting time-series machine learning models using domain-defined basis functions. We apply this method to the classification of mosquito flight trajectories as either insecticide-susceptible (IS) or insecticide-resistant (IR), a study into behavioural resistance, which may inform vector control strategies against malaria and other mosquito-borne diseases. By generating synthetic trajectories based on relevant parameters, we systematically probe a trained classifier to reveal the patterns and features it has learned. This approach enhances model interpretation, providing a new perspective on mosquito movement analysis. Furthermore, our findings offer valuable insights into distinguishing between IS and IR mosquito populations, contributing to more targeted and effective mosquito control efforts. Our methodology can be extended and adapted beyond mosquito trajectory analysis, demonstrating how synthetic data can be used to probe and understand complex time-series classifiers thus contributing to the growing field of explainable AI (XAI)."
+    },
+    {
+      "paperId": "ac04ce9da50723a6dc7ffe586defd999d8a83eab",
+      "externalIds": {
+        "DOI": "10.1109/ICMISI65108.2025.11115362",
+        "CorpusId": 280693768
+      },
+      "url": "https://www.semanticscholar.org/paper/ac04ce9da50723a6dc7ffe586defd999d8a83eab",
+      "title": "Machine Learning and Embedding Models for Multimodal Mental Health Diagnostics",
+      "venue": "2025 International Conference on Machine Intelligence and Smart Innovation (ICMISI)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICMISI65108.2025.11115362?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICMISI65108.2025.11115362, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2334235258",
+          "name": "Abdelrahaman A. Hassan"
+        },
+        {
+          "authorId": "2335625066",
+          "name": "Abdelrahman A. Ali"
+        },
+        {
+          "authorId": "2335559738",
+          "name": "Aya E. Fouda"
+        },
+        {
+          "authorId": "2413151110",
+          "name": "Mohammed E. Fouda"
+        }
+      ],
+      "abstract": "This paper introduces a novel framework for analyzing interview data in different modalities to enhance the accuracy of mental health diagnostics. Addressing the growing need for effective detection of psychological disorders like depression and PTSD, our approach integrates text, audio, and video modalities, leveraging their complementary nature to provide a compre-hensive understanding of both verbal and non-verbal cues. We explore various embedding techniques, combined with machine learning and deep learning models-including Convolutional Neural Networks, and Bidirectional Long Short-Term Memory networks-to extract meaningful features. Our experiments on the E-DAIC dataset demonstrate the effectiveness of different data formats in identifying patterns indicative of mental health conditions. Specifically, text modality yielded the highest balanced accuracy, achieving 92.4% for depression and 88.1 % for PTSD. Moreover, switching the classification layer from Multilayer Perceptron to Support Vector Machine improved the accuracy in multiple configurations. These results compare the performance of different modalities analysis."
+    },
+    {
+      "paperId": "3ea4e123c58b879e1d3af3d1a0c5015059270c80",
+      "externalIds": {
+        "DOI": "10.1109/AIMLA63829.2025.11040224",
+        "CorpusId": 279612067
+      },
+      "url": "https://www.semanticscholar.org/paper/3ea4e123c58b879e1d3af3d1a0c5015059270c80",
+      "title": "Encephalic Stroke Prediction Using Machine Learning Algorithm",
+      "venue": "2025 3rd International Conference on Artificial Intelligence and Machine Learning Applications Theme: Healthcare and Internet of Things (AIMLA)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/AIMLA63829.2025.11040224?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/AIMLA63829.2025.11040224, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2368635048",
+          "name": "G. S"
+        },
+        {
+          "authorId": "2403948541",
+          "name": "Mangai S"
+        },
+        {
+          "authorId": "2136790460",
+          "name": "A. M"
+        },
+        {
+          "authorId": "2423880835",
+          "name": "Divya J"
+        },
+        {
+          "authorId": "2213528008",
+          "name": "K. S"
+        },
+        {
+          "authorId": "2122681093",
+          "name": "M. V"
+        }
+      ],
+      "abstract": "Detecting brain strokes is challenging due to complex visual patterns and subtle variations in affected regions. Traditional machine learning models, like Support Vector Machines and Decision Trees, struggle to capture these features accurately. Stroke prediction has advanced from clinical tools like the Hachinski Ischemic Score to AI-driven models, enhancing diagnostic precision. Recent deep learning and ensemble methods achieve up to 94% accuracy. Integrating Convolutional Neural Networks (CNNs) with XGBoost automates feature extraction, while Spiking Neural Networks (SNNs) offer superior performance with 95.6% accuracy. Inspired by biological systems, SNNs improve efficiency and stroke pattern recognition. Contour-based severity analysis further refines predictions. Combining CNNs for deep learning, XGBoost for classification, and SNNs for precision enhances both accuracy and reliability, contributing to early diagnosis and severity assessment."
+    },
+    {
+      "paperId": "5e33b370f48e8fa966001c19e2ae6f19189c39e3",
+      "externalIds": {
+        "DOI": "10.1109/ICCCMLA66092.2025.11580520",
+        "CorpusId": 289841968
+      },
+      "url": "https://www.semanticscholar.org/paper/5e33b370f48e8fa966001c19e2ae6f19189c39e3",
+      "title": "Detecting and Analyzing Fake Job Postings with Machine Learning",
+      "venue": "2025 IEEE 7th International Conference on Cybernetics, Cognition and Machine Learning Applications (ICCCMLA)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCCMLA66092.2025.11580520?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCCMLA66092.2025.11580520, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2447171192",
+          "name": "Kabir Khanuja"
+        },
+        {
+          "authorId": "2447173954",
+          "name": "Roshani Khankure"
+        }
+      ],
+      "abstract": "The influx of fraudulent job postings on social networks and job posting websites has caused immense problems for job seekers, especially recent graduates, interns, and those in urgent need of employment. The fake postings undermine the credibility of job posting systems and put applicants at risk of financial loss and personal safety concerns. In this paper, we propose a machine learning-based approach for automatic detection of spurious job postings. The proposed methodology employs text mining of job postings along with metadata attributes to discover discriminative patterns indicating fraudulent activity. Several classification models were evaluated, where Random Forest and Naïve Bayes were identified as the top classifiers. Experimental results indicate that the Random Forest model achieved a maximum accuracy of 99.66%, thereby outperforming other baseline models considerably. Future solutions also consider the integration of blockchain technologies and a cloud-based environment for enabling secure and scalable solutions. The results of this research work help to promote trust and security within digital recruitment platforms, hence allowing job seekers to make informed career choices while minimizing the risks of fake employment listings."
+    },
+    {
+      "paperId": "fe92593a8b9d9ae2863a934606005db617bdabe8",
+      "externalIds": {
+        "MAG": "3044773400",
+        "PubMedCentral": "7414161",
+        "DOI": "10.1073/pnas.2005583117",
+        "CorpusId": 220670815,
+        "PubMed": "32690717"
+      },
+      "url": "https://www.semanticscholar.org/paper/fe92593a8b9d9ae2863a934606005db617bdabe8",
+      "title": "Automated detection of archaeological mounds using machine-learning classification of multisensor and multitemporal satellite data",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2020,
+      "citationCount": 146,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.pnas.org/content/pnas/117/31/18240.full.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7414161, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "23527012",
+          "name": "H. Orengo"
+        },
+        {
+          "authorId": "47016866",
+          "name": "F. C. Conesa"
+        },
+        {
+          "authorId": "1413817594",
+          "name": "A. Garcia‐Molsosa"
+        },
+        {
+          "authorId": "144754052",
+          "name": "A. Lobo"
+        },
+        {
+          "authorId": "146078749",
+          "name": "A. Green"
+        },
+        {
+          "authorId": "2587149",
+          "name": "M. Madella"
+        },
+        {
+          "authorId": "23546544",
+          "name": "C. Petrie"
+        }
+      ],
+      "abstract": "Significance This paper illustrates the potential of machine learning-based classification of multisensor, multitemporal satellite data for the remote detection and mapping of archaeological mounded settlements in arid environments. Our research integrates multitemporal synthetic-aperture radar and multispectral bands to produce a highly accurate probability field of mound signatures. The results largely expand the known concentration of Indus settlements in the Cholistan Desert in Pakistan (ca. 3300 to 1500 BC), with the detection of hundreds of new sites deeper in the desert than previously suspected including several large-sized (>30 ha) urban centers. These distribution patterns have major implications regarding the influence of climate change and desertification in the collapse of the largest of the Old-World Bronze Age civilizations. This paper presents an innovative multisensor, multitemporal machine-learning approach using remote sensing big data for the detection of archaeological mounds in Cholistan (Pakistan). The Cholistan Desert presents one of the largest concentrations of Indus Civilization sites (from ca. 3300 to 1500 BC). Cholistan has figured prominently in theories about changes in water availability, the rise and decline of the Indus Civilization, and the transformation of fertile monsoonal alluvial plains into an extremely arid margin. This paper implements a multisensor, multitemporal machine-learning approach for the remote detection of archaeological mounds. A classifier algorithm that employs a large-scale collection of synthetic-aperture radar and multispectral images has been implemented in Google Earth Engine, resulting in an accurate probability map for mound-like signatures across an area that covers ca. 36,000 km2. The results show that the area presents many more archaeological mounds than previously recorded, extending south and east into the desert, which has major implications for understanding the archaeological significance of the region. The detection of small (<5 ha) to large mounds (>30 ha) suggests that there were continuous shifts in settlement location. These shifts are likely to reflect responses to a dynamic and changing hydrological network and the influence of the progressive northward advance of the desert in a long-term process that culminated in the abandonment of much of the settled area during the Late Harappan period."
+    },
+    {
+      "paperId": "de608349ebd99a35e6fbdf943e1517fbcb584254",
+      "externalIds": {
+        "DOI": "10.53759/7669/jmc202505159",
+        "CorpusId": 281455123
+      },
+      "url": "https://www.semanticscholar.org/paper/de608349ebd99a35e6fbdf943e1517fbcb584254",
+      "title": "Meta Learning Driven Hyper Personalization Framework Using Deep Ensemble User Classification for Intelligent Human Machine Interaction Systems",
+      "venue": "Journal of Machine and Computing",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.53759/7669/jmc202505159?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.53759/7669/jmc202505159, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "114600107",
+          "name": "Siva Rama Prasad Kollu"
+        },
+        {
+          "authorId": "97927730",
+          "name": "Yugandhar Garapati"
+        }
+      ],
+      "abstract": "In the realm of intelligent human–machine interaction systems, delivering adaptive and user-specific responses is essential for enhancing operational efficiency and user satisfaction. Traditional systems often lack the ability to dynamically adapt to changing user behaviors, resulting in suboptimal interaction outcomes. This research proposes a novel hyper-personalization framework that integrates meta-learning with deep ensemble-based user classification to enable intelligent and context-aware human–machine interactions. The framework begins with advanced data preprocessing, followed by user behavior segmentation through a hybrid hierarchical K-Means clustering algorithm, capturing granular interaction patterns. A Neural Collaborative Filtering (NCF)-based deep ensemble model is then employed to model complex user-system interactions and improve predictive performance. To achieve hyper-personalization, the system incorporates Model-Agnostic Meta-Learning (MAML), which enables rapid adaptation to new or evolving user behavior with minimal retraining. This adaptive capability supports scalable deployment across diverse machine-interaction scenarios. Experimental results demonstrate a performance accuracy of 98.6%, outperforming baseline models such as CNN, Bi-LSTM, and CNN-LSTM. The proposed framework highlights the potential for next-generation intelligent systems that require scalable, context-aware, and personalized interaction mechanisms."
+    },
+    {
+      "paperId": "85e7c104321ac6fed1ab2531c272eb955e8dbc9a",
+      "externalIds": {
+        "DOI": "10.1109/IDCIoT59759.2024.10468035",
+        "CorpusId": 268611932
+      },
+      "url": "https://www.semanticscholar.org/paper/85e7c104321ac6fed1ab2531c272eb955e8dbc9a",
+      "title": "Insomnia, Sleep Apnea, Serenity: Unveiling Sleep Disorders with Machine Learning",
+      "venue": "2024 2nd International Conference on Intelligent Data Communication Technologies and Internet of Things (IDCIoT)",
+      "year": 2024,
+      "citationCount": 9,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IDCIoT59759.2024.10468035?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IDCIoT59759.2024.10468035, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292756317",
+          "name": "Prasun Payne"
+        },
+        {
+          "authorId": "2118838063",
+          "name": "Vinay Singh"
+        },
+        {
+          "authorId": "20950360",
+          "name": "M. Gourisaria"
+        },
+        {
+          "authorId": "10794282",
+          "name": "S. Patra"
+        },
+        {
+          "authorId": "2254328155",
+          "name": "Himansu Das"
+        }
+      ],
+      "abstract": "Sleep Disorders are biological conditions that interrupt the sleep pattern, duration, and quality for millions of individuals globally. Accurate diagnosis of Sleep Disorders in the early stages is important for improving the patient's quality of life. The primary aim of this paper is to predict the probability of individuals suffering from Insomnia, Sleep Apnea, or having a normal sleep pattern. This can help doctors understand whether a patient suffers from a sleep disorder and hence start proper treatment as soon as possible. Multiple Machine Learning Algorithms are applied to a given dataset containing extensive information about an individual to predict the likelihood of suffering from sleep disorders. RandomSearchCV was applied to find the best hyperparameters for each model, and it was finally determined that found that Random Forest was the best model, because it outperformed all other algorithms and achieved the highest accuracy."
+    },
+    {
+      "paperId": "f7fadb82bb0bc05a259808da6dcbe77ab4ec75d9",
+      "externalIds": {
+        "DOI": "10.1007/s11325-024-03037-w",
+        "CorpusId": 269462992,
+        "PubMed": "38684641"
+      },
+      "url": "https://www.semanticscholar.org/paper/f7fadb82bb0bc05a259808da6dcbe77ab4ec75d9",
+      "title": "Data-driven shortened Insomnia Severity Index (ISI): a machine learning approach",
+      "venue": "Sleep and Breathing",
+      "year": 2024,
+      "citationCount": 9,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11325-024-03037-w?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11325-024-03037-w, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2298835741",
+          "name": "Hyeontae Jo"
+        },
+        {
+          "authorId": "2299040789",
+          "name": "Myna Lim"
+        },
+        {
+          "authorId": "2298823391",
+          "name": "H. J. Jeon"
+        },
+        {
+          "authorId": "2015235391",
+          "name": "J. Ahn"
+        },
+        {
+          "authorId": "2298935670",
+          "name": "Saebom Jeon"
+        },
+        {
+          "authorId": "2298841241",
+          "name": "Jae Kyoung Kim"
+        },
+        {
+          "authorId": "2256950715",
+          "name": "Seockhoon Chung"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c1ba744356ac1ed562e0bcc10ffd7ffc0f138154",
+      "externalIds": {
+        "DOI": "10.1088/2632-2153/ae3c58",
+        "CorpusId": 285299299
+      },
+      "url": "https://www.semanticscholar.org/paper/c1ba744356ac1ed562e0bcc10ffd7ffc0f138154",
+      "title": "Machine learning-driven classification of natural disasters via parallel confidence fusion",
+      "venue": "Machine Learning: Science and Technology",
+      "year": 2026,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://iopscience.iop.org/article/10.1088/2632-2153/ae3c58/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/2632-2153/ae3c58?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/2632-2153/ae3c58, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2303067759",
+          "name": "Hongru Li"
+        },
+        {
+          "authorId": "2341174800",
+          "name": "Xihai Li"
+        },
+        {
+          "authorId": "2303087715",
+          "name": "Jihao Liu"
+        },
+        {
+          "authorId": "2244269120",
+          "name": "Yiting Wang"
+        },
+        {
+          "authorId": "2109015476",
+          "name": "Zhigang Liu"
+        },
+        {
+          "authorId": "2349200025",
+          "name": "Xiaoniu Zeng"
+        }
+      ],
+      "abstract": "The low-frequency characteristics of infrasound signals enable them to play a critical role in the long-range detection of disasters such as earthquakes, landslides, and chemical explosions. However, the accurate classification of disaster types based on infrasound signals remains a significant challenge. Traditional methods rely on manual feature extraction, often failing to capture spatiotemporal patterns. While deep learning approaches, particularly convolutional neural networks (CNNs), show promise, they are limited by finite depth, inadequate temporal modeling capabilities, and network degradation. Additionally, a single CNN struggles to learn diverse feature representations and exhibits low fault tolerance to anomalies. To address these challenges, a machine learning-driven classification method is proposed featuring three synergistic components: a synergistic feature-deep learning architecture that integrates continuous wavelet-scale average coefficients-based time-scale transformation and deep feature learning to enhance discriminative capability; a triple-branch architecture that integrates multi-scale spatial convolutions and adaptive temporal regulation to model propagation dynamics; and a parallel confidence fusion module that dynamically weights branch outputs for final robust decisions. Experimental results show that the proposed method achieves 98.75% accuracy on a natural earthquake infrasound dataset and maintains a high accuracy on an open-source multi-class dataset, demonstrating strong robustness and generalization capability for natural disaster monitoring."
+    }
+  ]
+}

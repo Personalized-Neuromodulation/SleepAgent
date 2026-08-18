@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "novel",
+        "to": "\"novel\"[All Fields] OR \"novel's\"[All Fields] OR \"novels\"[All Fields]"
+      },
+      {
+        "from": "relationships",
+        "to": "\"relationship\"[All Fields] OR \"relationships\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "REM",
+        "to": "\"Rangel Ecol Manag\"[Journal:__jid101737744] OR \"rem\"[All Fields]"
+      },
+      {
+        "from": "research",
+        "to": "\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research's\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher's\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"novel\"[All Fields] OR \"novel s\"[All Fields] OR \"novels\"[All Fields]) AND \"predictor-outcome\"[All Fields] AND (\"relationship\"[All Fields] OR \"relationships\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"rangel ecol manag\"[Journal] OR \"rem\"[All Fields]) AND (\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research s\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher s\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

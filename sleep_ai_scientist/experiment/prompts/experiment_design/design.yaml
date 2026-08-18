@@ -9,6 +9,13 @@ user: |
   Available data profile:
   {{data_profile_json}}
 
+  Experiment design constraints from previous iterations:
+  {{design_constraints_json}}
+
+  Respect these constraints while refining the plan. Do not repeat an avoided
+  predictor/outcome/covariate signature unless the analysis_plan explicitly
+  reframes the design as a confound/artifact-focused sensitivity analysis.
+
   Return JSON with:
   {
     "scientific_question": "...",

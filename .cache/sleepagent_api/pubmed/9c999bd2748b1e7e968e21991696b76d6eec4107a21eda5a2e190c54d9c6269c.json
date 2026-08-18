@@ -1,0 +1,45 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "fALFF",
+        "to": "\"falff\"[All Fields] OR \"falffs\"[All Fields]"
+      },
+      {
+        "from": "abnormalities",
+        "to": "\"abnormal\"[All Fields] OR \"abnormalities\"[Subheading] OR \"abnormalities\"[All Fields] OR \"congenital abnormalities\"[MeSH Terms] OR (\"congenital\"[All Fields] AND \"abnormalities\"[All Fields]) OR \"congenital abnormalities\"[All Fields] OR \"abnormality\"[All Fields] OR \"abnormally\"[All Fields] OR \"abnormals\"[All Fields] OR \"abnormities\"[All Fields] OR \"abnormity\"[All Fields]"
+      },
+      {
+        "from": "thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "regions",
+        "to": "\"geographic locations\"[MeSH Terms] OR (\"geographic\"[All Fields] AND \"locations\"[All Fields]) OR \"geographic locations\"[All Fields] OR \"region\"[All Fields] OR \"region's\"[All Fields] OR \"regional\"[All Fields] OR \"regionalization\"[All Fields] OR \"regionalizations\"[All Fields] OR \"regionalize\"[All Fields] OR \"regionalized\"[All Fields] OR \"regionalizing\"[All Fields] OR \"regionally\"[All Fields] OR \"regionals\"[All Fields] OR \"regions\"[All Fields]"
+      },
+      {
+        "from": "sleep deprivation",
+        "to": "\"sleep deprivation\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"deprivation\"[All Fields]) OR \"sleep deprivation\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"falff\"[All Fields] OR \"falffs\"[All Fields]) AND (\"abnormal\"[All Fields] OR \"abnormalities\"[MeSH Subheading] OR \"abnormalities\"[All Fields] OR \"congenital abnormalities\"[MeSH Terms] OR (\"congenital\"[All Fields] AND \"abnormalities\"[All Fields]) OR \"congenital abnormalities\"[All Fields] OR \"abnormality\"[All Fields] OR \"abnormally\"[All Fields] OR \"abnormals\"[All Fields] OR \"abnormities\"[All Fields] OR \"abnormity\"[All Fields]) AND (\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"geographic locations\"[MeSH Terms] OR (\"geographic\"[All Fields] AND \"locations\"[All Fields]) OR \"geographic locations\"[All Fields] OR \"region\"[All Fields] OR \"region s\"[All Fields] OR \"regional\"[All Fields] OR \"regionalization\"[All Fields] OR \"regionalizations\"[All Fields] OR \"regionalize\"[All Fields] OR \"regionalized\"[All Fields] OR \"regionalizing\"[All Fields] OR \"regionally\"[All Fields] OR \"regionals\"[All Fields] OR \"regions\"[All Fields]) AND (\"sleep deprivation\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"deprivation\"[All Fields]) OR \"sleep deprivation\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in",
+        "during"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Voxel",
+        "to": "\"voxel\"[All Fields] OR \"voxel's\"[All Fields] OR \"voxelization\"[All Fields] OR \"voxelized\"[All Fields] OR \"voxels\"[All Fields]"
+      },
+      {
+        "from": "count",
+        "to": "\"count\"[All Fields] OR \"counted\"[All Fields] OR \"counting\"[All Fields] OR \"countings\"[All Fields] OR \"counts\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"voxel\"[All Fields] OR \"voxel s\"[All Fields] OR \"voxelization\"[All Fields] OR \"voxelized\"[All Fields] OR \"voxels\"[All Fields]) AND (\"count\"[All Fields] OR \"counted\"[All Fields] OR \"counting\"[All Fields] OR \"countings\"[All Fields] OR \"counts\"[All Fields]) AND \"DMN\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in",
+        "during"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

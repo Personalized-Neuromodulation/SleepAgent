@@ -1,0 +1,2618 @@
+{
+  "total": 111,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "3ba2afc004db3b83f9a7db30c0e1a1a19ceda1d1",
+      "externalIds": {
+        "DOI": "10.1016/j.brainresbull.2025.111712",
+        "CorpusId": 284596263,
+        "PubMed": "41519179"
+      },
+      "url": "https://www.semanticscholar.org/paper/3ba2afc004db3b83f9a7db30c0e1a1a19ceda1d1",
+      "title": "The Impact of Sleep Deprivation on Dynamic Functional Connectivity of the Brain: Based on Alertness Task Performance.",
+      "venue": "Brain Research Bulletin",
+      "year": 2026,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.brainresbull.2025.111712",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.brainresbull.2025.111712?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.brainresbull.2025.111712, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2360055034",
+          "name": "Anping Ouyang"
+        },
+        {
+          "authorId": "2323343953",
+          "name": "Xinxin Lin"
+        },
+        {
+          "authorId": "2267220031",
+          "name": "Tian Zhang"
+        },
+        {
+          "authorId": "2341651042",
+          "name": "Jiayao Li"
+        },
+        {
+          "authorId": "2267278806",
+          "name": "Chenxi Li"
+        },
+        {
+          "authorId": "2318926302",
+          "name": "Lingling Wang"
+        },
+        {
+          "authorId": "1471671881",
+          "name": "Zhiyuan Cao"
+        },
+        {
+          "authorId": "2318406007",
+          "name": "Xuqian Diao"
+        },
+        {
+          "authorId": "2359406846",
+          "name": "Wei He"
+        },
+        {
+          "authorId": "2382449244",
+          "name": "Qianqian Dong"
+        },
+        {
+          "authorId": "2359211048",
+          "name": "Jun Jiang"
+        },
+        {
+          "authorId": "2330775604",
+          "name": "Peng Fang"
+        }
+      ],
+      "abstract": "Sleep deprivation (SD) impairs mood and cognition, yet its dynamic neural mechanisms remain unclear. Forty healthy adults (30-h SD) completed mood assessments, resting-state fMRI (rs-fMRI), and psychomotor vigilance task (PVT) tests at baseline and post-SD. Using dynamic functional connectivity (dFC) with sliding windows and k-means clustering, we identified two recurrent whole-brain states: (i) an economical state with sparse, weaker global coupling and (ii) a maladaptive compensatory state with globally strengthened synchronization. SD increased both the fraction of windows and mean dwell time (MDT) of the maladaptive state. Across participants, PVT lapses correlated positively with the maladaptive state's MDT and fraction of windows and negatively with those of the economical state. Finally, we built an interpretable predictive model of PVT lapses using competitive adaptive reweighted sampling partial least-squares regression (CARS-PLSR), which highlighted connections within the dorsal attention network (DAN) as key predictors. These findings link behavioral impairment to altered brain-state dynamics and provide a sparse, testable feature set that can support early risk stratification and intervention for SD-related cognitive decline."
+    },
+    {
+      "paperId": "1981e0fde226d839deb5795a1c93328393ba7b1e",
+      "externalIds": {
+        "MAG": "3043952856",
+        "DBLP": "journals/neuroimage/ZhouCZZCW20",
+        "DOI": "10.1016/j.neuroimage.2020.117190",
+        "CorpusId": 220697281,
+        "PubMed": "32711063"
+      },
+      "url": "https://www.semanticscholar.org/paper/1981e0fde226d839deb5795a1c93328393ba7b1e",
+      "title": "Prediction and classification of sleep quality based on phase synchronization related whole-brain dynamic connectivity using resting state fMRI",
+      "venue": "NeuroImage",
+      "year": 2020,
+      "citationCount": 26,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2020.117190",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2020.117190?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2020.117190, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "72749273",
+          "name": "Zhong-xing Zhou"
+        },
+        {
+          "authorId": "2064080322",
+          "name": "Cai Biao"
+        },
+        {
+          "authorId": "81736143",
+          "name": "Gemeng Zhang"
+        },
+        {
+          "authorId": "46403606",
+          "name": "Aiying Zhang"
+        },
+        {
+          "authorId": "144048760",
+          "name": "V. Calhoun"
+        },
+        {
+          "authorId": "46394229",
+          "name": "Yu-ping Wang"
+        }
+      ],
+      "abstract": "Recently, functional network connectivity (FNC) has been extended from static to dynamic analysis to explore the time-varying functional organization of brain networks. Nowadays, a majority of dynamic FNC (dFNC) analysis frameworks identified recurring FNC patterns with linear correlations based on the amplitude of fMRI time series. However, the brain is a complex dynamical system and phase synchronization provides more informative measures. This paper proposes a novel framework for the prediction/classification of behaviors and cognitions based on the dFNCs derived from phase locking value. When applying to the analysis of fMRI data from Human Connectome Project (HCP), four dFNC states are identified for the study of sleep quality. State 1 exhibits most intense phase synchronization across the whole brain. States 2 and 3 have low and weak connections, respectively. State 4 exhibits strong phase synchronization in intra and inter-connections of somatomotor, visual and cognitive control networks. Through the two-sample t-test, we reveal that for the group with bad sleep quality, state 4 shows decreased phase synchronization within and between networks such as subcortical, auditory, somatomotor and visual, but increased phase synchronization within cognitive control network, and between this network and somatomotor/visual/default-mode/cerebellar networks. The networks with increased phase synchronization in state 4 behave oppositely in state 2. Group differences are absent in state 3, and weak in state 1. We establish a prediction model by linear regression of FNC against sleep quality, and adopt a support vector machine approach for the classification. We compare the performance between conventional FNC and PLV-based dFNC with cross-validation. Results show that the PLV-based dFNC significantly outperforms the conventional FNC in terms of both predictive power and classification accuracy. We also observe that combining static and dynamic features does not significantly improve the classification over using dFNC features alone. Overall, the proposed approach provides a novel means to assess dFNC, which can be used as brain fingerprints to facilitate prediction and classification."
+    },
+    {
+      "paperId": "9222da4090ec107a9fbb1d6b2bf4d94ede704fc5",
+      "externalIds": {
+        "PubMedCentral": "12465739",
+        "DOI": "10.1186/s12888-025-07379-x",
+        "CorpusId": 281611603,
+        "PubMed": "41013389"
+      },
+      "url": "https://www.semanticscholar.org/paper/9222da4090ec107a9fbb1d6b2bf4d94ede704fc5",
+      "title": "Diagnosis of adolescent depression with sleep disorder based on network topological attributes and functional connectivity",
+      "venue": "BMC Psychiatry",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12465739, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2367847251",
+          "name": "Songhao Hu"
+        },
+        {
+          "authorId": "2378304772",
+          "name": "Xingyue Zuo"
+        },
+        {
+          "authorId": "2382739166",
+          "name": "Dairui Yu"
+        },
+        {
+          "authorId": "2279667007",
+          "name": "Jiaqi Huang"
+        },
+        {
+          "authorId": "2370678374",
+          "name": "Shukun Zhu"
+        },
+        {
+          "authorId": "2322621892",
+          "name": "Li Xu"
+        },
+        {
+          "authorId": "2382723814",
+          "name": "Ming Wu"
+        },
+        {
+          "authorId": "2405668612",
+          "name": "Dandan Liu"
+        },
+        {
+          "authorId": "2316918245",
+          "name": "Jiping Xiao"
+        },
+        {
+          "authorId": "2382721523",
+          "name": "Mian Zhang"
+        },
+        {
+          "authorId": "2287033960",
+          "name": "YiFei Li"
+        },
+        {
+          "authorId": "2296425565",
+          "name": "Daomin Zhu"
+        },
+        {
+          "authorId": "2368061015",
+          "name": "Li Zhu"
+        }
+      ],
+      "abstract": "Sleep disorders are common among adolescents with depression, yet lack reliable neuroimaging diagnostic techniques. This study aimed to predict sleep disorders in depressed adolescents using brain network features, including betweenness centrality (BC) and functional connectivity (FC). 117 adolescents diagnosed with depression underwent resting-state fMRI. Whole-brain FC (reflecting inter-regional relationships) and BC (quantifying a node’s importance for network information flow) were analyzed. Differences in FC and BC between depressed adolescents with sleep disorders and depressed adolescents without sleep disorders were compared using two-sample t-tests in a discovery dataset (n = 86). A support vector machine (SVM) classifier was trained to differentiate these groups. Validation employed leave-one-out cross-validation (LOOCV) internally and an independent dataset (n = 31). Depressed adolescents with sleep disorders showed elevated BC in the right middle temporal gyrus (MTG.R) and decreased BC in the left median cingulate and paracingulate gyri (DCG.L) and left caudate nucleus (CAU.L), indicating altered information flow hubs. Alterations in FC were observed across several regions, with the most pronounced changes occurring between the left middle occipital gyrus and MTG.R (MOG.L-MTG.R). The SVM model, using combined whole-brain BC and FC features, achieved 81.40% accuracy during LOOCV and identified discriminative features. Predictive performance was validated externally, yielding 74.19% accuracy. Significant functional brain network alterations occur in depressed adolescents with sleep disorders. Integrating brain network analysis(BC and FC analysis) with machine learning techniques offers a promising approach to identifying neuroimaging markers for diagnosing sleep disorders in depressed adolescents."
+    },
+    {
+      "paperId": "ec6d8160e1ffdc22e74d704e7f4204e50722add4",
+      "externalIds": {
+        "PubMedCentral": "13252532",
+        "DOI": "10.21203/rs.3.rs-9683033/v1",
+        "CorpusId": 289187536,
+        "PubMed": "42281972"
+      },
+      "url": "https://www.semanticscholar.org/paper/ec6d8160e1ffdc22e74d704e7f4204e50722add4",
+      "title": "Cognitive-Behavioral Predictors of Individual Variability of Functional Connectivity in Healthy Young Adults",
+      "venue": "Research Square",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.21203/rs.3.rs-9683033/v1",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13252532, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2646611",
+          "name": "Colin Hawco"
+        },
+        {
+          "authorId": "2179521898",
+          "name": "Julia Gallucci"
+        },
+        {
+          "authorId": "2100089212",
+          "name": "Justin Ng"
+        },
+        {
+          "authorId": "121807334",
+          "name": "Maria T Secara"
+        },
+        {
+          "authorId": "2298860209",
+          "name": "Ju-Chi Yu"
+        }
+      ],
+      "abstract": "While stable patterns of fMRI task-evoked brain activity and functional connectivity (FC) exist at the population level, a growing body of research emphasizes that variability exists across individuals. These differences define the critical idiosyncrasies in cognition and behavior across individuals that make individuals unique. Resting-state fMRI data (60 minutes) were examined from 1012 participants from the HCP dataset of healthy adults between the ages of 22 and 37. Functional connectivity was estimated between 360 regions, and variability was defined by each individual’s mean correlational distance (MCD) to all other participants. High MCD indicated a more ‘idiosyncratic’ connectivity pattern deviating from the group pattern. Hierarchical regression was used to determine predictors of variability in FC. The base model (demographics, sleep, sex, brain volume) explained 9.22% of the variance in heterogeneity in functional connectivity. Increased variance was explained by cognition, squared cognition, and NEO personality scores, while emotional scores and fitness explained no additional variance. The final model explained 11.9% of the variance in MCD. Low MCD (i.e., being closer to average) was associated with higher BMI, greater crystalized cognitive scores, more positive emotional valence, and NEO Agreeableness. Greater variability was associated with age, brain volume (potentially a sex difference), and NEO Extroversion. The model underestimated variability in the highest MCD participants, suggesting unexplained factors in highly variable individuals. Differences were observed between males and females, and monozygotic twins showed similar variability, suggesting a genetic component. These results suggest benefits for a connectivity pattern being more similar to the group average."
+    },
+    {
+      "paperId": "5620098f4e54ef52c8c507e5958c8a38d4ee3eaa",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsag091.0213",
+        "CorpusId": 288119809
+      },
+      "url": "https://www.semanticscholar.org/paper/5620098f4e54ef52c8c507e5958c8a38d4ee3eaa",
+      "title": "0213 Network-Level Brain Connectivity Predicts Resilience to Sleep Deprivation",
+      "venue": "SLEEPJ",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsag091.0213?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsag091.0213, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2350188804",
+          "name": "Jungwon Cha"
+        },
+        {
+          "authorId": "2297692033",
+          "name": "David C Negelspach"
+        },
+        {
+          "authorId": "11485886",
+          "name": "Alisa Huskey"
+        },
+        {
+          "authorId": "2350127376",
+          "name": "Kathryn E R Kennedy"
+        },
+        {
+          "authorId": "2362405441",
+          "name": "Jason Katz"
+        },
+        {
+          "authorId": "2219261991",
+          "name": "Kymberly Henderson-Arredondo"
+        },
+        {
+          "authorId": "2362399357",
+          "name": "Catherine Seader"
+        },
+        {
+          "authorId": "2362402707",
+          "name": "Allie Jepson"
+        },
+        {
+          "authorId": "2281296694",
+          "name": "S. Patel"
+        },
+        {
+          "authorId": "2250487082",
+          "name": "Daniel Forger"
+        },
+        {
+          "authorId": "2297690592",
+          "name": "W. Killgore"
+        }
+      ],
+      "abstract": "\n \n \n Sleep deprivation (SD) reliably impairs vigilance, but people differ considerably in how quickly and severely their performance declines. Understanding the neural patterns that accompany this variability may help identify mechanisms of resilience to SD. Here we examined whether the Resilience to Sleep Deprivation Metric (RSDM), a behavioral summary of preserved reaction speed relative to baseline, was reflected in the way functional brain networks reorganize during prolonged wakefulness.\n \n \n \n Sixteen healthy adults (8 females, age = 23.6 ± 4.6) completed a 39-hour SD protocol with six resting-state fMRI scans collected every six hours. Psychomotor vigilance task (PVT) performance was assessed at each scan, and RSDM was computed as the ratio of reaction speed during later (Sessions 4-6) versus earlier (Sessions 1-3) phases. Functional connectivity was estimated across 375 regions (Glasser cortical + Harvard-Oxford subcortical). Network-Based Statistics (NBS) tested RSDM × Hours Awake interactions on edge-level connectivity (FWE-corrected p < .05), controlling for baseline lapses, circadian phase, and random effects. Nodal strength was evaluated for regions identified in NBS, with FDR correction applied across these nodes.\n \n \n \n Two subnetworks showed significant resilience-dependent modulation (FWE-corrected p < .05). One involved bilateral thalamus, globus pallidus, and posterior cingulate -- regions linked to arousal and thalamocortical relay. The other included ventral and dorsal visual cortices, auditory areas, and medial temporal regions involved in perception and memory. In both networks, individuals with higher RSDM values (i.e., resilient) maintained or increased connectivity as waking time accumulated, whereas those with lower RSDM (i.e., Vulnerable) showed progressive reductions. Nodal strength analyses followed the same pattern, highlighting resilience-related differences in thalamus, basal ganglia, and ventral visual cortex (FDR-corrected p < .05).\n \n \n \n Resilient individuals appear to preserve integration within thalamocortical and perceptual-memory networks during extended wakefulness. These network features may help clarify why some individuals are able to sustain performance during sleep loss and could inform future efforts to develop imaging-based markers or strategies to mitigate fatigue-related decline.\n \n \n \n Supported by Army Research Office award W911NF2210223, subaward SUBK00016417.\n"
+    },
+    {
+      "paperId": "d81060217a2e816a34416019b09f898879b49893",
+      "externalIds": {
+        "PubMedCentral": "12090846",
+        "DOI": "10.2147/NSS.S504512",
+        "CorpusId": 278674118,
+        "PubMed": "40395455"
+      },
+      "url": "https://www.semanticscholar.org/paper/d81060217a2e816a34416019b09f898879b49893",
+      "title": "Machine Learning Classification Based on Individual Whole-Brain Functional Connectivity in Male OSA Patients",
+      "venue": "Nature and Science of Sleep",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12090846, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2144410956",
+          "name": "Haijun Li"
+        },
+        {
+          "authorId": "2211918863",
+          "name": "Jin Hong"
+        },
+        {
+          "authorId": "2282727140",
+          "name": "Yudong Zhang"
+        },
+        {
+          "authorId": "2264946677",
+          "name": "Lifeng Li"
+        },
+        {
+          "authorId": "2295696151",
+          "name": "Ting Long"
+        },
+        {
+          "authorId": "48545143",
+          "name": "Ling Huang"
+        },
+        {
+          "authorId": "2264402385",
+          "name": "Yumeng Liu"
+        },
+        {
+          "authorId": "2361791873",
+          "name": "Zhijiang Wan"
+        },
+        {
+          "authorId": "2333729383",
+          "name": "Dechang Peng"
+        }
+      ],
+      "abstract": "Purpose Previous studies have shown altered paired brain functional connectivity (FC) in obstructive sleep apnea (OSA) patients, linked to cognitive impairment. This study utilized individual FC analysis to investigate the distinctive FC characteristics in OSA and evaluate their classification efficiency. Methods We included 82 moderate to severe OSA patients [41 OSA with normal cognition (OSA-NC), 41 OSA with mild cognitive impairments (OSA-MCI)] and 84 healthy control (HC). Resting-state fMRI data and clinical scale data were collected. Individual FC was derived using multi-task learning-based sparse convex alternating structure optimization, with feature selection via the least absolute shrinkage and selection operator. Support vector machine classifiers were used for OSA vs HC and OSA-NC vs OSA-MCI classification. The top 10 FC features contributing to classification were analyzed for group differences. A significance level of p < 0.05 was considered statistically significant. Results The study results showed that individual FC achieved higher classification accuracy than traditional Pearson-based FC (OSA vs HC: 91.8% vs 79.5%; OSA-NC vs OSA-MCI: 81.3% vs 63.8%). The top 10 individual-specific FC networks contributing to classification were mainly located in the default mode network, attention network, showing significant inter-group differences in connectivity strength between the two groups. Conclusion This study identified static individualized FC characteristics in OSA patients with varying cognitive impairments. Based on individual FC, the classification accuracy of OSA-NC and OSA-MCI was significantly improved, the individual FC may serve as a potential neuroimaging marker for predicting OSA-MCI, providing an individual clinical diagnosis and treatment evaluation."
+    },
+    {
+      "paperId": "606b9d0cffa849ce63d7fea4e16c95efd292a45e",
+      "externalIds": {
+        "PubMedCentral": "12239473",
+        "DOI": "10.1186/s12916-025-04126-7",
+        "CorpusId": 279983723,
+        "PubMed": "40629377"
+      },
+      "url": "https://www.semanticscholar.org/paper/606b9d0cffa849ce63d7fea4e16c95efd292a45e",
+      "title": "Baseline functional connectivity of the basal forebrain-cortical circuit predict taVNS treatment response in primary insomnia: a randomized controlled trial and fMRI study",
+      "venue": "BMC Medicine",
+      "year": 2025,
+      "citationCount": 10,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12239473, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2342137890",
+          "name": "Meng Qi"
+        },
+        {
+          "authorId": "2370797716",
+          "name": "Yiting Huang"
+        },
+        {
+          "authorId": "1397317177",
+          "name": "R. Mai"
+        },
+        {
+          "authorId": "152324411",
+          "name": "Zhaoxian Yan"
+        },
+        {
+          "authorId": "29965141",
+          "name": "Bi-Bo Xu"
+        },
+        {
+          "authorId": "2316427363",
+          "name": "Bo Liu"
+        },
+        {
+          "authorId": "2145913784",
+          "name": "Yue Zhang"
+        }
+      ],
+      "abstract": "Dysfunctional basal forebrain (BF) connectivity contributes to primary insomnia (PI). This study investigated whether transcutaneous auricular vagus nerve stimulation (taVNS) modulates BF functional connectivity (FC) in patients with PI and whether baseline FC predicts taVNS treatment response. Seventy patients with PI were randomized to real or sham taVNS for 4 weeks. Clinical assessments—including Pittsburgh Sleep Quality Index (PSQI], Insomnia Severity Index (ISI] and Zung’s Self-Rating Anxiety (SAS], and Depression Scale (SDS)—and resting-state fMRI data were collected at baseline and after treatment. FC of the bilateral BF subregions (Ch_123, Ch_4) was analyzed, and pre-to-post intervention changes in FC and clinical scores were compared between groups. Baseline FC was used to predict treatment response using a support vector regression (SVR) model, validated on an independent dataset. Sixty-seven patients completed the study (33 real taVNS, 34 sham taVNS). Changes in clinical outcomes showed that real taVNS significantly reduce PSQI, ISI, and SAS scores compared to sham. FC analysis revealed reduced connectivity between bilateral BF and areas involved in visual (superior occipital gyrus, SOG; middle occipital gyrus, MOG; fusiform gyrus, FFG), somatosensory (supplementary motor area, SMA) cortex and medial prefrontal cortex (mPFC) after taVNS treatment. Reduced FC between bilateral BF and left MOG correlated positively with ISI improvement (r = 0.490, p = 0.008, Bonferroni correction). The SVR model effectively predicted treatment response based on BF-visual circuit connectivity (r = 0.520, p = 0.0014, 5000 permutation test) and generalized well to an independent dataset (r = 0.443, p = 0.0354, 5000 permutation test). Our findings suggest that taVNS may alleviate symptoms of primary insomnia through modulation of basal forebrain connectivity with visual, sensorimotor, and medial prefrontal cortical regions. Preliminary investigations indicate that baseline functional connectivity in the BF-visual circuit could represent a candidate biomarker for taVNS response, potentially informing personalized treatment strategies. The study was registered with the China Clinical Trial Registry (Clinical Trial No. ChiCTR1900022535)."
+    },
+    {
+      "paperId": "53660f6a5d73973236456ff9c8430f0845bf2709",
+      "externalIds": {
+        "PubMedCentral": "12288515",
+        "DOI": "10.21203/rs.3.rs-7066049/v1",
+        "CorpusId": 280030030,
+        "PubMed": "40709248"
+      },
+      "url": "https://www.semanticscholar.org/paper/53660f6a5d73973236456ff9c8430f0845bf2709",
+      "title": "Age and Sex Moderate the Effects of Sleep Quality on Resting-State Functional Connectivity in the Salience and Default Mode Network",
+      "venue": "Research Square",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12288515, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2283873088",
+          "name": "Selene Tan"
+        },
+        {
+          "authorId": "2332096285",
+          "name": "Sepehr Gourabi"
+        },
+        {
+          "authorId": "3511865",
+          "name": "Matthew R. Cribbet"
+        },
+        {
+          "authorId": "2372090469",
+          "name": "J. M. Cundiff"
+        },
+        {
+          "authorId": "2267895559",
+          "name": "Ian M. McDonough"
+        }
+      ],
+      "abstract": "Aging often coincides with declining sleep quality, which can contribute to cognitive decline and increased dementia risk. Neuroimaging offers valuable insights into how poor sleep may affect brain health before cognitive or behavioral changes appear. Given the different prevalence rates of dementia between sexes, sleep disturbances might uniquely impact females relative to males. The goal of this study was to investigate how age and sex moderate the impact of sleep quality on resting-state functional connectivity. Based on the extant literature, we predicted that sleep quality would significantly impact connectivity in the default mode network, salience network, and the amygdala. Adults (N = 95), aged 20–74, completed the Pittsburgh Sleep Quality Index and underwent two 5-min sessions of resting-state MRI. Three-way interactions between age, sex, and sleep quality were found between the default mode network and the left superior parietal lobule. A two-way interaction between age and sleep quality was found between the salience network and right precentral/postcentral gyrus. No relationships were found using the amygdala as a seed region. Furthermore, sleep consistently contributed to the sleep quality-connectivity effects found for young adults and multiple sleep components varied in older adults. The results suggest that poor sleep affects the salience networks in both males and females, with variations in adaptive patterns depending on age. The default mode network appears particularly sensitive to sleep impairments in females, consistent with early desegregation of brain networks and increased risk for dementia. The alterations in young adults support the hyperarousal hypothesis as a potential contributor to insomnia."
+    },
+    {
+      "paperId": "249b76b874dfd2cd21da684adb93472b9a997323",
+      "externalIds": {
+        "DOI": "10.59717/j.xinn-med.2026.100214",
+        "CorpusId": 287676457
+      },
+      "url": "https://www.semanticscholar.org/paper/249b76b874dfd2cd21da684adb93472b9a997323",
+      "title": "Functional interaction pattern from solely circadian rhythm disturbance to circadian rhythm sleep disorder",
+      "venue": "The Innovation Medicine",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.the-innovation.org/data/article/medicine/preview/pdf/XINNMEDICINE-2025-0201.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.59717/j.xinn-med.2026.100214?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.59717/j.xinn-med.2026.100214, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2262967277",
+          "name": "Han-Jia Jiang"
+        },
+        {
+          "authorId": "2431035213",
+          "name": "Tieyan Tan"
+        },
+        {
+          "authorId": "2398766456",
+          "name": "Lijun An"
+        },
+        {
+          "authorId": "2111631254",
+          "name": "Zhiyuan Chen"
+        },
+        {
+          "authorId": "2156276583",
+          "name": "Yipeng Cheng"
+        },
+        {
+          "authorId": "2318030378",
+          "name": "Haiyan Gui"
+        },
+        {
+          "authorId": "1384667170",
+          "name": "Baichun Wei"
+        },
+        {
+          "authorId": "7526875",
+          "name": "Chunzhi Yi"
+        }
+      ],
+      "abstract": "The coupling between sleep-awake and dark-light cycles has played an important role in understanding external and internal biological clocks. However, how functional patterns of brain regions involved in these two coupled cycles deteriorate from circadian rhythm disturbance to circadian rhythm sleep disorder remains largely unexplored in neuroimaging research. In this study, we built a whole-brain computational framework based on the well-established Hopf model and collected multimodal brain imaging data from 77 participants. We investigated how the activation of the anterior cingulate cortex (ACC) and the functional connectivity between the hypothalamus (HT) and basal forebrain (BF) vary across three groups: healthy controls (HC), subjects with isolated circadian rhythm disturbance (SCO), and subjects with circadian rhythm sleep disorders (SCW). We also studied how variations in the oscillatory patterns of the hypothalamus may contribute to these observed functional differences. We found that altering the bifurcation parameter of the hypothalamus node within the Hopf model, fitted to the functional connectivity of SCO, could reproduce the empirical patterns observed in HC and SCW. In addition to revealing progressive impairments in ACC activation and HT–BF functional connectivity, we further validated the model by demonstrating that the temporal dynamics of HT and BF precede those of ACC, and that these dynamics become increasingly disrupted from SCO to SCW. These findings enhance the mechanistic understanding of circadian rhythm disturbance and circadian rhythm sleep disorder, and elucidate the pathological progression in fMRI patterns from isolated circadian disruption to full circadian rhythm sleep disorder."
+    },
+    {
+      "paperId": "c1bd993221cb1e852f19b4254c48722f915ab6e2",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0281",
+        "CorpusId": 278753571
+      },
+      "url": "https://www.semanticscholar.org/paper/c1bd993221cb1e852f19b4254c48722f915ab6e2",
+      "title": "0281 Trait Extraversion Predicts Psychomotor Vigilance Performance and Changes in Functional Connectivity During Sleep Deprivation",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0281?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0281, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2362402707",
+          "name": "Allie Jepson"
+        },
+        {
+          "authorId": "2297692033",
+          "name": "David C Negelspach"
+        },
+        {
+          "authorId": "11485886",
+          "name": "Alisa Huskey"
+        },
+        {
+          "authorId": "2362405441",
+          "name": "Jason Katz"
+        },
+        {
+          "authorId": "2281296694",
+          "name": "S. Patel"
+        },
+        {
+          "authorId": "2297690592",
+          "name": "W. Killgore"
+        }
+      ],
+      "abstract": "\n \n \n Individual differences in resilience to sleep deprivation may be influenced by personality type. Previous research indicates a relationship between the NEO Personality Inventory’s (NEO-PI) Extraversion measure and decline in Psychomotor Vigilance Test (PVT) performance over a period of sleep deprivation. Here, we examined the association between resilience to sleep deprivation, as measured by PVT performance, and Extraversion subscores on the NEO-PI. We further examined their relationship to the underlying functional connectivity within the brain to elucidate neural components of resilience.\n \n \n \n Healthy participants (n=20; Age=23.1, SD=3.7) underwent a 39-hour sleep deprivation period in which PVT, and functional magnetic resonance imaging (fMRI) scans were conducted every 6 hours to measure alertness and functional connectivity, respectively. A week prior to the in-lab visit, the NEO-PI was administered as a baseline personality inventory. To determine how Extraversion personality traits relate to sleep deprivation task performance, we calculated the difference in mean PVT reaction time from baseline to the most sleep deprived states and correlated this with individual Warmth scores. A covariate of interest analysis correlated fMRI connectivity with each participant’s PVT difference scores. The medial prefrontal cortex (mPFC) was chosen as the primary seed region based on its role in personality traits such as Extraversion.\n \n \n \n We found a significant positive correlation between Warmth personality scores and change in mean PVT response time (P = 0.049, R = 0.38). Functional connectivity analysis showed the personality trait of Warmth was associated with reduced functional connectivity between mPFC and anterior cingulate cortex (ACC) when comparing baseline fMRI scans to scans at the end of the sleep deprivation period.\n \n \n \n Consistent with prior research, individuals with higher scores on the Warmth component of Extraversion were less resilient to sleep loss, as evident by their slowing of PVT reaction time. This change was also associated with decreased functional connectivity between mPFC and ACC. Given the mPFC’s role in emotional regulation and the ACC’s role in error monitoring and decision making, these results suggest that future research explores emotional resilience to sleep loss, connecting both top-down cognitive functioning and behavior adjustment.\n \n \n \n Army Research Office award W911NF2210223 subaward SUBK00016417.\n"
+    },
+    {
+      "paperId": "315327dc6d699a1d8c4bcb43a178fd2c9e3f7d03",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsae067.0277",
+        "CorpusId": 269284692
+      },
+      "url": "https://www.semanticscholar.org/paper/315327dc6d699a1d8c4bcb43a178fd2c9e3f7d03",
+      "title": "0277 Robust Identification of Sleep States and Their Transitions Using Whole-Night fMRI Data",
+      "venue": "Sleep",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsae067.0277?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsae067.0277, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297692721",
+          "name": "Nils Yang"
+        },
+        {
+          "authorId": "2219128",
+          "name": "D. Picchioni"
+        },
+        {
+          "authorId": "33870602",
+          "name": "J. D. de Zwart"
+        },
+        {
+          "authorId": "49417335",
+          "name": "Yicun Wang"
+        },
+        {
+          "authorId": "48761025",
+          "name": "P. van Gelderen"
+        },
+        {
+          "authorId": "1805159",
+          "name": "J. Duyn"
+        }
+      ],
+      "abstract": "\n \n \n Polysomnography (PSG)-based sleep staging has a relatively poor (30s) temporal resolution, and as a result does not capture any sleep structure that may exist on finer time-scales. For example, brain activity patterns involved with transitions or changes within and between classical sleep stages are not captured. Here we used whole-night functional magnetic resonance imaging (fMRI) to address this shortcoming.\n \n \n \n Data acquisition was conducted as part of a well-controlled sleep experiment with two consecutive nights of concurrent fMRI-EEG recording from 23:00 to 7:00. Twelve participants (18-35 years old, 8 females) had at least one complete sleep cycle during both Night 1 and 2. We analyzed the fMRI data using an unsupervised learning approach - Hidden Markov Model (HMM) to reveal recurrent structure (“states”). The HMM, applied to Night 2 data, encompassed 21 whole-brain states based on various model evaluation indexes. Each state was characterized as a multivariate Gaussian distribution including a mean fMRI activation distribution,a functional connectivity (FC) matrix, and a transition probability matrix.\n \n \n \n Modular analysis of the extracted transition probability matrix (between each pair of states) revealed five modules, each containing a set of states that had similar preferences to occur during a specific sleep stage or part thereof. Remarkably, the trained HMM predicted brain sleep states during Night 1 that had highly similar sleep stage preference (r = 0.94, p < 0.001). In Wake-related HMM states, the FCs between DMN and Salience Network (SAL) / Control Network (CON) were negative, while during N3-related HMM states, these FCs were positive. Similar patterns were found for mean fMRI activation.\n \n \n \n These observations suggest that HMM may provide valuable information about sleep-state-specific brain activity patterns that extend well beyond the information provided by classical sleep staging. For example, cursory inspection of the HMM results suggests a subdivision of N2 in two groups of multiple states with different transition probabilities to Wake; analysis of brain activation and FC patterns of HMM states indicated that the connections between DMN and SAL/CON may play a critical role in the transition from wake to light sleep and, to deep sleep.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "dfe217350c9284a6331ff0128fbe4fa227ba73b7",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2025.01.028",
+        "CorpusId": 275900655,
+        "PubMed": "39879678"
+      },
+      "url": "https://www.semanticscholar.org/paper/dfe217350c9284a6331ff0128fbe4fa227ba73b7",
+      "title": "Older cerebral small vessel disease and sleep disturbance: A diffusion tensor imaging study.",
+      "venue": "Sleep Medicine",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2025.01.028?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2025.01.028, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1778734518",
+          "name": "Yumeng Gu"
+        },
+        {
+          "authorId": "2013877590",
+          "name": "Wenjun Feng"
+        },
+        {
+          "authorId": "47591681",
+          "name": "Xiaolin Tian"
+        },
+        {
+          "authorId": "2342129075",
+          "name": "Xiaowen Wang"
+        },
+        {
+          "authorId": "2274837873",
+          "name": "Xin Li"
+        }
+      ],
+      "abstract": "OBJECTIVE\nThis study examined the relationship between diffusion tensor imaging indicators and brain network characteristics in patients with cerebral small vessel disease (CSVD) with (CSVD + S) and without (CSVD-S) sleep disturbance. We explored the feasibility of using these imaging biomarkers to investigate the pathophysiological mechanisms underlying sleep disturbance in patients with CSVD.\n\n\nMETHODS\nA total of 146 patients with CSVD and 84 healthy controls were included. Sleep quality was assessed using polysomnography and the Pittsburgh Sleep Quality Index. Tract-based spatial statistics and graph theory were applied to compare white matter lesions and brain network characteristics, which were then used for backpropagation artificial neural network (BPANN) analysis.\n\n\nRESULTS\nCompared with the control group, the CSVD + S group showed a decrease in total sleep time and sleep efficiency, as well as higher values for sleep onset latency, wake after sleep onset, and non-rapid eye movement sleep stage 1. Both the CSVD + S and CSVD-S groups exhibited reduced fractional anisotropy and structural connectivity strength. However, the CSVD + S group showed increased mean diffusivity in affected fiber bundles (the anterior thalamic radiation, frontal occipital fasciculus, and superior longitudinal fasciculus) in key brain regions, such as the thalamus and frontal lobe, that regulate sleep and wakefulness. In addition, the CSVD + S group showed significant impairments in global, node, and small-world attributes. The BPANN model successfully predicted sleep disturbance in patients with CSVD.\n\n\nCONCLUSION\nOur findings support the possibility that white matter abnormalities in subcortical neural circuits and microstructural and functional changes in brain connections underly CSVD sleep disturbance."
+    },
+    {
+      "paperId": "56f4cc0598c7d09a6af66bcd18fc98a51ed3d66c",
+      "externalIds": {
+        "PubMedCentral": "10681648",
+        "DOI": "10.1002/hbm.26488",
+        "CorpusId": 264930903,
+        "PubMed": "37916784"
+      },
+      "url": "https://www.semanticscholar.org/paper/56f4cc0598c7d09a6af66bcd18fc98a51ed3d66c",
+      "title": "Functional brain connectivity predicts sleep duration in youth and adults",
+      "venue": "Human Brain Mapping",
+      "year": 2023,
+      "citationCount": 15,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.26488",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10681648, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1478863942",
+          "name": "Anurima Mummaneni"
+        },
+        {
+          "authorId": "66184682",
+          "name": "O. Kardan"
+        },
+        {
+          "authorId": "1466510389",
+          "name": "A. Stier"
+        },
+        {
+          "authorId": "2122683532",
+          "name": "Taylor A. Chamberlain"
+        },
+        {
+          "authorId": "2264132989",
+          "name": "Alfred F Chao"
+        },
+        {
+          "authorId": "3130159",
+          "name": "M. Berman"
+        },
+        {
+          "authorId": "49007681",
+          "name": "M. Rosenberg"
+        }
+      ],
+      "abstract": "Sleep is critical to a variety of cognitive functions and insufficient sleep can have negative consequences for mood and behavior across the lifespan. An important open question is how sleep duration is related to functional brain organization which may in turn impact cognition. To characterize the functional brain networks related to sleep across youth and young adulthood, we analyzed data from the publicly available Human Connectome Project (HCP) dataset, which includes n‐back task‐based and resting‐state fMRI data from adults aged 22–35 years (task n = 896; rest n = 898). We applied connectome‐based predictive modeling (CPM) to predict participants' mean sleep duration from their functional connectivity patterns. Models trained and tested using 10‐fold cross‐validation predicted self‐reported average sleep duration for the past month from n‐back task and resting‐state connectivity patterns. We replicated this finding in data from the 2‐year follow‐up study session of the Adolescent Brain Cognitive Development (ABCD) Study, which also includes n‐back task and resting‐state fMRI for adolescents aged 11–12 years (task n = 786; rest n = 1274) as well as Fitbit data reflecting average sleep duration per night over an average duration of 23.97 days. CPMs trained and tested with 10‐fold cross‐validation again predicted sleep duration from n‐back task and resting‐state functional connectivity patterns. Furthermore, demonstrating that predictive models are robust across independent datasets, CPMs trained on rest data from the HCP sample successfully generalized to predict sleep duration in the ABCD Study sample and vice versa. Thus, common resting‐state functional brain connectivity patterns reflect sleep duration in youth and young adults."
+    },
+    {
+      "paperId": "51293e3cf3a252bec8af169a108da7df30d3578a",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsad077.0778",
+        "CorpusId": 258976782
+      },
+      "url": "https://www.semanticscholar.org/paper/51293e3cf3a252bec8af169a108da7df30d3578a",
+      "title": "0778 Functional thalamo-cortical connectivity relates to sleep-onset problems in early infancy",
+      "venue": "Sleep",
+      "year": 2023,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/46/Supplement_1/A343/50467365/zsad077.0778.pdf",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsad077.0778?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsad077.0778, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2008513219",
+          "name": "E. Chiem"
+        },
+        {
+          "authorId": "2186121870",
+          "name": "Lauren Wagner"
+        },
+        {
+          "authorId": "2219262586",
+          "name": "Joshua Ceballos"
+        },
+        {
+          "authorId": "2662420",
+          "name": "M. Dapretto"
+        }
+      ],
+      "abstract": "\n \n \n Healthy sleep patterns are crucial for proper brain development in infancy. However, little is known about the relationship between early sleep disturbances and functional brain connectivity. The thalamus plays a critical role in the regulation of sleep and wakefulness, and undergoes rapid growth in the first year. Therefore, we examined how early thalamic connectivity relates to sleep-onset problems during the first 6 months of life.\n \n \n \n All data were collected as part of the Baby Connectome Project (1U01MH110274). Forty-six infants (between 3-5 months old) underwent resting-state fMRI scans during natural sleep. The fMRI data were preprocessed and analyzed using FSL, and the bilateral thalamus was used in seed-based analyses. The Infant Behavior Questionnaire (IBQ) was used to create a measure of sleep initiation. Five IBQ items (21-25) were reverse-scored and averaged to generate the Infant Sleep-Onset Problems (ISOP) score, with higher scores indicating longer sleep latencies. ISOP scores across 3-6 months were used as regressors in whole-brain analyses.\n \n \n \n Preliminary results suggest a positive correlation between ISOP scores and connectivity between the thalamus and precuneus, such that greater sleep-onset problems were associated with stronger connectivity between the thalamus and precuneus. In contrast, there was a negative correlation between ISOP scores and connectivity between the thalamus and anterior cingulate cortex, such that fewer sleep-onset problems were associated with stronger connectivity between the thalamus and anterior cingulate cortex.\n \n \n \n Our findings suggest that stronger thalamic connectivity with the precuneus, a region involved in the perception and integration of information, is related to greater sleep initiation difficulties. In contrast, stronger connectivity between the thalamus and anterior cingulate cortex, a region involved in attention allocation and emotional regulation, is associated with less sleep initiation problems. While these results are preliminary, they indicate that early sleep problems are associated with altered development of functional thalamo-cortical networks.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "8af05f0653618884e2592b9a76bba9ac34b7711b",
+      "externalIds": {
+        "PubMedCentral": "8859450",
+        "DOI": "10.3389/fnagi.2022.806374",
+        "CorpusId": 246608929,
+        "PubMed": "35197843"
+      },
+      "url": "https://www.semanticscholar.org/paper/8af05f0653618884e2592b9a76bba9ac34b7711b",
+      "title": "Self-Reported Sleep Quality Across Age Modulates Resting-State Functional Connectivity in Limbic and Fronto-Temporo-Parietal Networks: An Exploratory Cross-Sectional fMRI Study",
+      "venue": "Frontiers in Aging Neuroscience",
+      "year": 2022,
+      "citationCount": 14,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnagi.2022.806374/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8859450, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2045221597",
+          "name": "Giovanni Federico"
+        },
+        {
+          "authorId": "1492099275",
+          "name": "Vincenzo Alfano"
+        },
+        {
+          "authorId": "4204297",
+          "name": "Federica Garramone"
+        },
+        {
+          "authorId": "98358907",
+          "name": "G. Mele"
+        },
+        {
+          "authorId": "145908964",
+          "name": "M. Salvatore"
+        },
+        {
+          "authorId": "145740384",
+          "name": "M. Aiello"
+        },
+        {
+          "authorId": "32356948",
+          "name": "C. Cavaliere"
+        }
+      ],
+      "abstract": "Sleep problems are increasingly present in the general population at any age, and they are frequently concurrent with—or predictive of—memory disturbances, anxiety, and depression. In this exploratory cross-sectional study, 54 healthy participants recruited in Naples (Italy; 23 females; mean age = 37.1 years, range = 20–68) completed the Pittsburgh Sleep Quality Index (PSQI) and a neurocognitive assessment concerning both verbal and visuospatial working memory as well as subjective measures of anxiety and depression. Then, 3T fMRI images with structural and resting-state functional sequences were acquired. A whole-brain seed-to-seed functional connectivity (FC) analysis was conducted by contrasting good (PSQI score <5) vs. bad (PSQI score ≥5) sleepers. Results highlighted FC differences in limbic and fronto-temporo-parietal brain areas. Also, bad sleepers showed an anxious/depressive behavioural phenotype and performed worse than good sleepers at visuospatial working-memory tasks. These findings may help to reveal the effects of sleep quality on daily-life cognitive functioning and further elucidate pathophysiological mechanisms of sleep disorders."
+    },
+    {
+      "paperId": "2754a62f4a383e95af3cd6d6dd8cad33a0ee9ece",
+      "externalIds": {
+        "DOI": "10.1109/TNSRE.2024.3368697",
+        "CorpusId": 267809158,
+        "PubMed": "38386573"
+      },
+      "url": "https://www.semanticscholar.org/paper/2754a62f4a383e95af3cd6d6dd8cad33a0ee9ece",
+      "title": "Abnormal Static and Dynamic Local Functional Connectivity in First-Episode Schizophrenia: A Resting-State fMRI Study",
+      "venue": "IEEE transactions on neural systems and rehabilitation engineering",
+      "year": 2024,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/7333/10398877/10443667.pdf",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TNSRE.2024.3368697?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TNSRE.2024.3368697, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2271025231",
+          "name": "Jie Zhou"
+        },
+        {
+          "authorId": "46613918",
+          "name": "Xiong Jiao"
+        },
+        {
+          "authorId": "2270143931",
+          "name": "Q. Hu"
+        },
+        {
+          "authorId": "9424025",
+          "name": "Lizhao Du"
+        },
+        {
+          "authorId": "2241101584",
+          "name": "Jijun Wang"
+        },
+        {
+          "authorId": "2254866619",
+          "name": "Junfeng Sun"
+        }
+      ],
+      "abstract": "Dynamic functional connectivity (FC) analyses have provided ample information on the disturbances of global functional brain organization in patients with schizophrenia. However, our understanding about the dynamics of local FC in never-treated first episode schizophrenia (FES) patients is still rudimentary. Dynamic Regional Phase Synchrony (DRePS), a newly developed dynamic local FC analysis method that could quantify the instantaneous phase synchronization in local spatial scale, overcomes the limitations of commonly used sliding-window methods. The current study performed a comprehensive examination on both the static and dynamic local FC alterations in FES patients (N = 74) from healthy controls (HCs, N = 41) with resting-state functional magnetic resonance imaging using DRePS, and compared the static local FC metrics derived from DRePS with those calculated from two commonly used regional homogeneity (ReHo) analysis methods that are defined based on Kendall’s coefficient of concordance (KCC-ReHo) and frequency coherence (Cohe-ReHo). Symptom severities of FES patients were assessed with a set of clinical scales. Cognitive functions of FES patients and HCs were assessed with the MATRICS consensus cognitive battery. Group-level analysis revealed that compared with HCs, FES patients exhibited increased static local FC in right superior, middle temporal gyri, hippocampus, parahippocampal gyrus, putamen, and bilateral caudate nucleus. Nonetheless, the dynamic local FC metrics did not show any significant differences between the two groups. The associations between all local FC metrics and clinical characteristics manifested scores were explored using a relevance vector machine. Results showed that the Global Assessment of Functioning score highest in past year and the Brief Visuospatial Memory Test-Revised task score were statistically significantly predicted by a combination of all static and dynamic features. The diagnostic abilities of different local FC metrics and their combinations were compared by the classification performance of linear support vector machine classifiers. Results showed that the inclusion of zero crossing ratio of DRePS, one of the dynamic local FC metrics, alongside static local FC metrics improved the classification accuracy compared to using static metrics alone. These results enrich our understanding of the neurocognitive mechanisms underlying schizophrenia, and demonstrate the potential of developing diagnostic biomarker for schizophrenia based on DRePS."
+    },
+    {
+      "paperId": "5e6c19b0b39b48401523d297a2b3c1c0c2bca8e8",
+      "externalIds": {
+        "DOI": "10.1016/j.jpain.2026.106347",
+        "CorpusId": 290135060,
+        "PubMed": "42437575"
+      },
+      "url": "https://www.semanticscholar.org/paper/5e6c19b0b39b48401523d297a2b3c1c0c2bca8e8",
+      "title": "Differential Patterns of Brain Connectivity Alterations in Patients with Back Pain Chronification versus Recovery: A Resting-State FMRI Study.",
+      "venue": "Journal of Pain",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.jpain.2026.106347",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jpain.2026.106347?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jpain.2026.106347, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2261833130",
+          "name": "S. Wunderlich"
+        },
+        {
+          "authorId": "2449654716",
+          "name": "Jorge Estudillo López"
+        },
+        {
+          "authorId": "4195676",
+          "name": "V. Stoecklein"
+        },
+        {
+          "authorId": "2372038523",
+          "name": "F. Ringel"
+        },
+        {
+          "authorId": "2318070202",
+          "name": "Jens Ricke"
+        },
+        {
+          "authorId": "2298770226",
+          "name": "E. Schulz"
+        },
+        {
+          "authorId": "2262171465",
+          "name": "S. Stoecklein"
+        }
+      ],
+      "abstract": "Functional magnetic resonance imaging studies have demonstrated that back pain, particularly chronic back pain, is associated with altered functional brain connectivity, especially in regions involved in the modulation of pain and emotion regulation. Our study investigated dysconnectivity patterns in subacute back pain patients to distinguish those who develop chronic back pain from those who recover. This work utilized a publicly available longitudinal resting-state functional magnetic resonance imaging dataset from the OpenPain database, including clinical assessments collected across multiple sessions, and recorded pain scores. The dataset consists of 46 subacute back pain patients and 27 healthy controls. Based on longitudinal pain scores, patients were classified into recovery and chronic back pain groups. In contrast to prior analyses of the OpenPain dataset, which primarily relied on specific brain region's connectivity or predictive modeling, this study applies a voxel-wise dysconnectivity count framework combined with data-driven clustering to identify spatially precise, whole-brain signatures of abnormal functional connectivity. This approach enables detection of anatomically specific dysconnectivity patterns at a resolution not achieved in previous work. Our findings therefore extend the OpenPain literature by providing a fine-grained, network-wide characterization of early connectivity disturbances that distinguish recovery from back pain chronification. The results showed that the chronic back pain group exhibited greater dysconnectivity in regions linked to emotion regulation, pain processing, and attentional control. In contrast, the recovery group displayed connectivity deviations in sensorimotor, visual, and cognitive control regions. PERSPECTIVE: Baseline whole-brain dysconnectivity patterns differ between patients who recover and those who develop chronic pain. These findings highlight distributed network alterations associated with pain trajectories and provide insight into neural mechanisms underlying pain chronification."
+    },
+    {
+      "paperId": "c88a51ebb19bc6275d26cc9241e091bd953b850c",
+      "externalIds": {
+        "DOI": "10.54254/2753-8818/2026.35055",
+        "CorpusId": 289958331
+      },
+      "url": "https://www.semanticscholar.org/paper/c88a51ebb19bc6275d26cc9241e091bd953b850c",
+      "title": "Research on the Screening of Abnormal Biomarkers for Cardio-Cerebral Interaction Disorders in Consciousness Disturbances Based on Multi-feature Fusion and Machine Learning of fMRI-HRV-HEP",
+      "venue": "Theoretical and Natural Science",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://tns.ewapub.com/article/view/35055.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.54254/2753-8818/2026.35055?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.54254/2753-8818/2026.35055, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2448598131",
+          "name": "Mingyue Li"
+        }
+      ],
+      "abstract": "The clinical diagnosis and prognostic assessment of disorders of consciousness(DoC) remain challenging, largely due to the high misclassification rate of behavioral scales and the limitations of single‑modality assessments. Abnormal brain‑heart interaction has been increasingly recognized as a key pathophysiological mechanism underlying DoC. This study aims to integrate multimodal features derived from resting‑state functional magnetic resonance imaging(rs‑fMRI), heart rate variability(HRV), and heartbeat‑evoked potentials(HEPs), combined with machine learning approaches, to identify neuro‑autonomic coupling biomarkers that characterize aberrant brain‑heart interaction in patients with DoC. Based on existing clinical cohorts, simultaneous rs‑fMRI, electrocardiogram(ECG), and electroencephalogram(EEG) data are acquired. Functional connectivity strengths of core brain regions—including the hippocampal network, the default mode network(DMN), and the precuneus—are extracted, alongside time‑domain and frequency‑domain HRV indices, as well as HEP latency and amplitude. Machine learning algorithms such as support vector machines(SVM), random forests. Cross‑validation and feature importance ranking are conducted to delineate a potential cortex‑heart decoupling pattern associated with different levels of consciousness, thereby providing quantitative targets for objective diagnosis and individualized neuromodulation in DoC. This study included DoC patients and collected rs-fMRI, ECG and EEG data at the same time. The multimodal fusion model of rs-fMRI, HRV and HEPs performed best, with accuracy 87.3% and AUC 0.91. Feature importance analysis showed that DMN functional connectivity, LF-HRV and HEP N250 amplitude was the top three predictors, but the importance of single feature was all below 0.1, which means the model depend on many weakly related features to make decisions together. The results show that brain-heart multimodal fusion can effectively capture the abnormal neural-autonomic coupling in DoC patients, and provide quantitative basis for objective assessment of consciousness level."
+    },
+    {
+      "paperId": "8d64eed090d53d2733c04bf5981744f35392282d",
+      "externalIds": {
+        "MAG": "3031647576",
+        "DOI": "10.1093/sleep/zsaa056.452",
+        "CorpusId": 219757929
+      },
+      "url": "https://www.semanticscholar.org/paper/8d64eed090d53d2733c04bf5981744f35392282d",
+      "title": "0455 Role of Interaction Between Anterior Insula Response to Sleep-Related Pictures and Stress Levels on Sleep Disturbance",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/43/Supplement_1/A174/33306726/zsaa056.452.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaa056.452?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaa056.452, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108892285",
+          "name": "Myungsu Lee"
+        },
+        {
+          "authorId": "2110247359",
+          "name": "K. Lee"
+        },
+        {
+          "authorId": "2195142818",
+          "name": "Hyo-Suk Lee"
+        },
+        {
+          "authorId": "7473156",
+          "name": "Nambeom Kim"
+        },
+        {
+          "authorId": "3080534",
+          "name": "J. Jeon"
+        },
+        {
+          "authorId": "23599750",
+          "name": "Sehyun Jeon"
+        },
+        {
+          "authorId": "4009128",
+          "name": "S. Oh"
+        },
+        {
+          "authorId": "49900008",
+          "name": "S. Kim"
+        },
+        {
+          "authorId": "113180383",
+          "name": "Y. Lee"
+        }
+      ],
+      "abstract": "\n \n \n Literature suggests that stress may play an important role in sleep disturbance. Individuals with higher stress levels often showed hyperarousal to stressful events, possibly leading to sleep disturbance. Hyperarousal is also one of features of stress-related sleep disturbance. Here, we examined the extent to which stress levels interact with neural activity in response to sleep-related information to predict sleep disturbance.\n \n \n \n Forty eight healthy adults (26 females, age = 35.7 ± 10.5) without sleep disorders based on nocturnal polysomnography participated in this study. They were viewing sleep-related pictures (e.g., bedroom and sunset) and non-sleep related, neutral pictures (e.g., kitchen and landscape) during fMRI scanning. They also completed questionnaires assessing stress levels and sleep disturbance using Life Experience Survey (LES) and Pittsburgh Sleep Quality Index (PSQI), respectively. Activity in response to sleep-related pictures compared to neutral pictures was extracted from our region-of-interest (ROI), the anterior insula, and entered into our moderation models. The SPSS macro PROCESS (Hayes, 2013) was used to conduct moderation analyses. Given a significant correlation between age and PSQI scores, age was included as a covariate.\n \n \n \n Our moderation analyses showed that interactions between stress levels and anterior insula response to sleep-related pictures significantly predicted sleep disturbance. Simple slope analyses showed that at higher anterior insula response, higher stress levels were associated with greater sleep disturbance, but at lower anterior insula response, stress was not significantly associated with sleep disturbance. These results indicate that individuals with high levels of stress were more likely to experience sleep disturbance if they showed greater anterior insula response to sleep-related pictures (i.e., hyperarousal in response to sleep-related information).\n \n \n \n The current findings suggest that interactions between stress levels and neural substrates of hyperarousal, particularly the anterior insula, may play a critical role in sleep disturbance.\n \n \n \n Brain Research Program through the National Research Foundation of Korea funded by the Ministry of Science, ICT & Future Planning (Study No.: 2016M3C7A1904338 and NRF-2018R1D1A1B07049704).\n"
+    },
+    {
+      "paperId": "8a67374fd2ffdf171362cecf7775c0972dc1b66f",
+      "externalIds": {
+        "PubMedCentral": "12777391",
+        "DOI": "10.1186/s12888-025-07484-x",
+        "CorpusId": 284529513,
+        "PubMed": "41495721"
+      },
+      "url": "https://www.semanticscholar.org/paper/8a67374fd2ffdf171362cecf7775c0972dc1b66f",
+      "title": "Predicting treatment response to transcutaneous auricular vagus nerve stimulation in patients with insomnia: resting-state functional connectivity based multivoxel pattern analysis",
+      "venue": "BMC Psychiatry",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12777391, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2342137890",
+          "name": "Meng Qi"
+        },
+        {
+          "authorId": "2298573205",
+          "name": "Song Li"
+        },
+        {
+          "authorId": "2154603553",
+          "name": "Xiao Wu"
+        },
+        {
+          "authorId": "29965141",
+          "name": "Bi-Bo Xu"
+        },
+        {
+          "authorId": "2163263379",
+          "name": "R. Mai"
+        },
+        {
+          "authorId": "152324411",
+          "name": "Zhaoxian Yan"
+        },
+        {
+          "authorId": "2308613319",
+          "name": "Zhiping Zhong"
+        },
+        {
+          "authorId": "2319114495",
+          "name": "Boyi Liu"
+        },
+        {
+          "authorId": "2145913784",
+          "name": "Yue Zhang"
+        }
+      ],
+      "abstract": "The salience network, with the insula as its central hub, plays a pivotal role in the pathophysiology of primary insomnia (PI). Transcutaneous auricular vagus nerve stimulation (taVNS) shows therapeutic potential, its neural mechanisms and predictive biomarkers remain uncharacterized. In a double-blind trial, 67 PI patients (taVNS = 34, sham = 33) underwent clinical assessments and resting-state fMRI at baseline and after 4-week treatment. We analyzed:1)Treatment-induced changes in bilateral insula-cortical functional connectivity (FC); 2)Predictive value of baseline FC using support vector regression. TaVNS group showed significantly improved clinical assessment compared with staVNS. Decreased rs-FCs were found between the left insula and areas involved in DMN(superior parietal gyrus, SPG), Visual/Auditory (superior occipital gyrus, SOG; middle occipital gyrus, MOG; calcarine and middle temporal gyrus, MTG) and cingulo-opercular network(middle frontal gyrus, MFG and cerebellum).In addition, decreased FC between left insula and left cerebellum correlated negatively with sleep disturbances score improvement (r = -0.502, p = 0.006, Bonferroni correction), while decreased FC between left insula and right SOG positively with sleep latency score (r = 0.391, p = 0.040,uncorrection). Baseline left insula-visual/auditory circuit FC can predicte taVNS treatment response in PI (r = 0.534, p = 0.002, 5000 permutation test). TaVNS may alleviate PI symptoms by reducing FCs between the salience and task-positive networks and within the cingulo-opercular network to reduce visual-related overactivity and hypervigilance.The baseline functional connectivity in the left insula-visual/auditory circuit could act as a candidate biomarker for predicting taVNS treatment response, which enable the screen of therapy-responsive insomnia patients before treatment. Chinese Clinical Trial Registry (ChiCTR 1900022535, 2019-04-16)."
+    },
+    {
+      "paperId": "a5b5617c9d4164678a1b2223b431bdcf17ee71e9",
+      "externalIds": {
+        "MAG": "2958506026",
+        "PubMedCentral": "6900441",
+        "DOI": "10.1016/J.BPSC.2019.06.013",
+        "CorpusId": 199156243,
+        "PubMed": "31455572"
+      },
+      "url": "https://www.semanticscholar.org/paper/a5b5617c9d4164678a1b2223b431bdcf17ee71e9",
+      "title": "In trauma-exposed individuals, self-reported hyperarousal as well as sleep architecture predict resting-state functional connectivity in frontocortical and paralimbic regions",
+      "venue": "Biological Psychiatry: Cognitive Neuroscience and Neuroimaging",
+      "year": 2019,
+      "citationCount": 13,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6900441",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6900441, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49867209",
+          "name": "Jee-Hye Seo"
+        },
+        {
+          "authorId": "88845900",
+          "name": "K. Oliver"
+        },
+        {
+          "authorId": "118739011",
+          "name": "Carolina Daffre"
+        },
+        {
+          "authorId": "46188243",
+          "name": "Kylie N. Moore"
+        },
+        {
+          "authorId": "5480569",
+          "name": "N. Lasko"
+        },
+        {
+          "authorId": "1398257981",
+          "name": "E. Pace-Schott"
+        }
+      ],
+      "abstract": "Background: Symptoms of post-traumatic stress disorder (PTSD) reflect abnormalities in large-scale brain networks. In recently trauma-exposed individuals, we examined associations of seed-based resting-state functional connectivity (rsFC) with posttraumatic symptoms and sleep. We hypothesized that more severe PTSD symptoms and poorer sleep quality would predict (1) greater rsFC between fear-related seeds and other fear-related regions, and (2) lesser rsFC between fear-related seeds and emotion-regulatory regions. Methods: Seventy-four participants who had experienced a DSM-5 Criterion-A stressor within the past 2 years varied from asymptomatic to fully meeting criteria for PTSD. They underwent 14 days of actigraphy and sleep diaries, a night of ambulatory polysomnography, and one fMRI resting-state scan at 3T. rsFC measures of five fear-related and one emotion-regulatory seeds with regions of the anterior cerebrum were correlated with PTSD symptomatology, objective and subjective habitual sleep quality and sleep architecture. Results: Longer objective habitual sleep onset latency (SOL) was associated with greater connectivity between fear-related seeds and other regions of the salience network. Greater PTSD symptomatology was associated with less connectivity between fear-related seeds and anterior emotion-regulatory regions, while greater percent slow wave sleep (SWS%) was associated with more connectivity between these regions. However, other objective and subjective measures reflecting better habitual sleep quality were associated with lesser rsFC between these regions. Conclusions: Longer SOL predicted greater rsFC among fear-related areas. More severe PTSD symptoms predicted lesser rsFC between fear and fear-regulatory regions reflecting putatively reduced top-down fear regulation. Some (e.g., SWS%), but not all, sleep indices predicted greater top-down fear regulation."
+    },
+    {
+      "paperId": "10e47763283d6150ee1ce16fb185592ad07f3b42",
+      "externalIds": {
+        "PubMedCentral": "5827342",
+        "MAG": "2780760689",
+        "DOI": "10.1093/scan/nsx148",
+        "CorpusId": 3745119,
+        "PubMed": "29272546"
+      },
+      "url": "https://www.semanticscholar.org/paper/10e47763283d6150ee1ce16fb185592ad07f3b42",
+      "title": "Sleep deprivation affects fear memory consolidation: bi-stable amygdala connectivity with insula and ventromedial prefrontal cortex",
+      "venue": "Social Cognitive and Affective Neuroscience",
+      "year": 2017,
+      "citationCount": 35,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/scan/article-pdf/13/2/145/24177779/nsx148.pdf",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5827342, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2056810862",
+          "name": "Pan Feng"
+        },
+        {
+          "authorId": "2168698766",
+          "name": "B. Becker"
+        },
+        {
+          "authorId": "2110767415",
+          "name": "Yong Zheng"
+        },
+        {
+          "authorId": "39648895",
+          "name": "Tingyong Feng"
+        }
+      ],
+      "abstract": "Abstract Sleep plays an important role for successful fear memory consolidation. Growing evidence suggests that sleep disturbances might contribute to the development and the maintenance of posttraumatic stress disorder (PTSD), a disorders characterized by dysregulations in fear learning mechanisms, as well as exaggerated arousal and salience processing. Against this background, the present study examined the effects of sleep deprivation (SD) on the acquisition of fear and the subsequent neural consolidation. To this end, the present study assessed fear acquisition and associated changes in fMRI-based amygdala-functional connectivity following 24 h of SD. Relative to non-sleep deprived controls, SD subjects demonstrated increased fear ratings and skin conductance responses (SCR) during fear acquisition. During fear consolidation SD inhibited increased amygdala-ventromendial prefrontal cortex (vmPFC) connectivity and concomitantly increased changes in amygdala-insula connectivity. Importantly, whereas in controls fear indices during acquisition were negatively associated with amygdala-vmPFC connectivity during consolidation, fear indices were positively associated with amygdala-insula coupling following SD. Together the findings suggest that SD may interfere with vmPFC control of the amygdala and increase bottom-up arousal signaling in the amygdala-insula pathway during fear consolidation, which might mediate the negative impact of sleep disturbances on PSTD symptomatology."
+    },
+    {
+      "paperId": "8e014e8a17c3cda5115499c49ec6f82f03bdf7dc",
+      "externalIds": {
+        "MAG": "2492657026",
+        "DOI": "10.1073/pnas.1523980113",
+        "CorpusId": 18240206,
+        "PubMed": "27512040"
+      },
+      "url": "https://www.semanticscholar.org/paper/8e014e8a17c3cda5115499c49ec6f82f03bdf7dc",
+      "title": "Spontaneous eyelid closures link vigilance fluctuation with fMRI dynamic connectivity states",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2016,
+      "citationCount": 188,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.pnas.org/content/pnas/113/34/9653.full.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1073/pnas.1523980113?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/pnas.1523980113, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108682221",
+          "name": "Chenhao Wang"
+        },
+        {
+          "authorId": "36166408",
+          "name": "J. Ong"
+        },
+        {
+          "authorId": "143903327",
+          "name": "A. Patanaik"
+        },
+        {
+          "authorId": "48128440",
+          "name": "Juan Zhou"
+        },
+        {
+          "authorId": "48620418",
+          "name": "M. Chee"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "780c5069072438c23b18b234448926d8072c0b1c",
+      "externalIds": {
+        "MAG": "3048917653",
+        "DOI": "10.1089/neu.2020.7200",
+        "CorpusId": 221100089,
+        "PubMed": "32772826"
+      },
+      "url": "https://www.semanticscholar.org/paper/780c5069072438c23b18b234448926d8072c0b1c",
+      "title": "Neural Correlates of Sleep Recovery following Melatonin Treatment for Pediatric Concussion: A Randomized Controlled Trial",
+      "venue": "Journal of Neurotrauma",
+      "year": 2020,
+      "citationCount": 21,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1089/neu.2020.7200?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1089/neu.2020.7200, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34205819",
+          "name": "K. Iyer"
+        },
+        {
+          "authorId": "3200076",
+          "name": "A. Zalesky"
+        },
+        {
+          "authorId": "8894631",
+          "name": "L. Cocchi"
+        },
+        {
+          "authorId": "7792523",
+          "name": "K. Barlow"
+        }
+      ],
+      "abstract": "Evidence-based treatments for children with persistent post-concussion symptoms (PPCS) are few and limited. Common PPCS complaints such as sleep disturbance and fatigue could be ameliorated via the supplementation of melatonin, which has significant neuroprotective and anti-inflammatory properties. This study aims to identify neural correlates of melatonin treatment with changes in sleep disturbances and clinical recovery in a pediatric cohort with PPCS. We examined structural and functional neuroimaging (fMRI) in 62 children with PPCS in a randomized, double-blind, placebo-controlled trial of 3 mg or 10 mg of melatonin (NCT01874847). The primary outcome was the total youth self-report Post-Concussion Symptom Inventory (PCSI) score after 28 days of treatment. Secondary outcomes included the change in the sleep domain PCSI score and sleep-wake behavior (assessed using wrist-worn actigraphy). Whole-brain analyses of (1) functional connectivity (FC) of resting-state fMRI, and (2) structural gray matter volumes via voxel-based morphometry were assessed immediately before and after melatonin treatment and compared with placebo to identify neural effects of melatonin treatment. Increased FC of posterior default mode network (DMN) regions with visual, somatosensory, and dorsal networks was detected in the melatonin groups over time. The FC increases also corresponded with reduced wake periods (r = -0.27, p = 0.01). Children who did not recover (n = 39) demonstrated significant FC increases within anterior DMN and limbic regions compared with those who did recover (i.e., PCSI scores returned to pre-injury level, n = 23) over time, (p = 0.026). Increases in GM volume within the posterior cingulate cortex were found to correlate with reduced wakefulness after sleep onset (r = -0.32, p = 0.001) and sleep symptom improvement (r = 0.29, p = 0.02). Although the melatonin treatment trial was negative and did not result in PPCS recovery (with or without sleep problems), the relationship between melatonin and improvement in sleep parameters was linked to changes in function-structure within and between brain regions interacting with the DMN."
+    },
+    {
+      "paperId": "7caec848e631ee6d3353a6c5aa6885866ddae996",
+      "externalIds": {
+        "PubMedCentral": "12485969",
+        "DOI": "10.1101/2025.09.22.25336312",
+        "CorpusId": 281492326,
+        "PubMed": "41040704"
+      },
+      "url": "https://www.semanticscholar.org/paper/7caec848e631ee6d3353a6c5aa6885866ddae996",
+      "title": "Multimodal Neuroimaging Signature of Sleep Problems Predicts Preadolescent Mental Health Trajectories",
+      "venue": "medRxiv",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12485969, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2152606554",
+          "name": "Y. Wang"
+        },
+        {
+          "authorId": "2251549086",
+          "name": "M. Tahmasian"
+        },
+        {
+          "authorId": "2281007080",
+          "name": "S. Genon"
+        },
+        {
+          "authorId": "31481949",
+          "name": "F. Samea"
+        },
+        {
+          "authorId": "2360567826",
+          "name": "Z. He"
+        },
+        {
+          "authorId": "2387860273",
+          "name": "X. Liu"
+        },
+        {
+          "authorId": "2384335899",
+          "name": "X. Lei"
+        },
+        {
+          "authorId": "2250868106",
+          "name": "S. B. Eickhoff"
+        },
+        {
+          "authorId": "2281147946",
+          "name": "D. Dong"
+        }
+      ],
+      "abstract": "Sleep-related problems (SRP) in childhood are common and clinically relevant yet their underlying neural mechanisms and links to future mental health outcomes remain poorly understood. Here, we investigated how distinct dimensions of SRP relate to multimodal brain structure and function in preadolescents, and whether these neural signatures predict trajectories of mental health difficulties. We employed multivariate mapping to investigate the relationship between structural and functional brain network patterns and various dimensions of SRP in the Adolescent Brain Cognitive Development (ABCD) dataset. Moreover, we explored whether and how the identified multimodal brain signatures could predict the trajectory of internalizing and externalizing behavior difficulties over a two-year follow-up. Our multivariate analysis revealed two robust dimensions of SRP: a general sleep disturbance dimension and a hypersomnolence and parasomnia dimension. Each was associated with partially distinct patterns of brain morphology and functional connectivity, consistent with their differential alignment along the hierarchical organization of cortical neurodevelopment maps. However, both dimensions shared common disruptions in the somatosensory, attention, and default mode networks. We further observed that only these neural patterns associated with the general sleep disturbance dimension predict the longitudinal trajectories of internalizing/externalizing symptoms. Our findings enhance the understanding of the neurobiological mechanisms underlying dimensions of SRP in preadolescence and could inform brain-based intervention and treatment programs to improve sleep-related and mental health-related outcomes across development."
+    },
+    {
+      "paperId": "b18fc16b5e76e7b622ea4062ef7e85bee4f51a81",
+      "externalIds": {
+        "PubMedCentral": "7987759",
+        "DOI": "10.1016/j.schres.2020.11.052",
+        "CorpusId": 231667494,
+        "PubMed": "33493774"
+      },
+      "url": "https://www.semanticscholar.org/paper/b18fc16b5e76e7b622ea4062ef7e85bee4f51a81",
+      "title": "Local versus Long-Range Connectivity Patterns of Auditory Disturbance in Schizophrenia",
+      "venue": "Schizophrenia Research",
+      "year": 2021,
+      "citationCount": 10,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7987759",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7987759, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "31842736",
+          "name": "Stephanie M. Hare"
+        },
+        {
+          "authorId": "143637262",
+          "name": "B. Adhikari"
+        },
+        {
+          "authorId": "145527520",
+          "name": "Xiaoming Du"
+        },
+        {
+          "authorId": "2092647767",
+          "name": "Laura Garcia"
+        },
+        {
+          "authorId": "145922744",
+          "name": "H A Bruce"
+        },
+        {
+          "authorId": "144886405",
+          "name": "P. Kochunov"
+        },
+        {
+          "authorId": "32445147",
+          "name": "J. Simon"
+        },
+        {
+          "authorId": "143905189",
+          "name": "L. Hong"
+        }
+      ],
+      "abstract": "Auditory hallucinations are a debilitating symptom of schizophrenia. Effective treatment is limited because the underlying neural mechanisms remain unknown. Our study investigates how local and long-range functional connectivity is associated with auditory perceptual disturbances (APD) in schizophrenia. APD was assessed using the Auditory Perceptual Trait and State Scale. Resting state fMRI data were collected for N=99 patients with schizophrenia. Local functional connectivity was estimated using regional homogeneity (ReHo) analysis; long-range connectivity was estimated using resting state functional connectivity (rsFC) analysis. Mediation analyses tested whether local (ReHo) connectivity significantly mediated associations between long-distance rsFC and APD. Severity of APD was significantly associated with reduced ReHo in left and right putamen, left temporoparietal junction (TPJ), and right hippocampus-pallidum. Higher APD was also associated with reduced rsFC between the right putamen and the contralateral putamen and auditory cortex. Local and long-distance connectivity measures together explained 40.3% of variance in APD (P < 0.001), with the strongest predictor being the left TPJ ReHo (P < 0.001). Additionally, TPJ ReHo significantly mediated the relationship between right putamen – left putamen rsFC and APD (Sobel test, P = 0.001). Our findings suggest that both local and long-range functional connectivity deficits contribute to APD, emphasizing the role of striatum and auditory cortex. Considering the translational impact of these circuit-based findings within the context of prior clinical trials to treat auditory hallucinations, we propose a model in which correction of both local and long-distance functional connectivity deficits may be necessary to treat auditory hallucinations."
+    },
+    {
+      "paperId": "5f808c0afed521e5e3e519cb7e797dafa5d3a0f2",
+      "externalIds": {
+        "MAG": "3046561316",
+        "DOI": "10.1101/2020.08.02.20166918",
+        "CorpusId": 220956653
+      },
+      "url": "https://www.semanticscholar.org/paper/5f808c0afed521e5e3e519cb7e797dafa5d3a0f2",
+      "title": "Neural correlates of sleep recovery following melatonin treatment for pediatric concussion: a randomized control trial",
+      "venue": "medRxiv",
+      "year": 2020,
+      "citationCount": 5,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.medrxiv.org/content/medrxiv/early/2020/08/04/2020.08.02.20166918.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2020.08.02.20166918?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2020.08.02.20166918, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2218935625",
+          "name": "Kartik K. Iyer"
+        },
+        {
+          "authorId": "3200076",
+          "name": "A. Zalesky"
+        },
+        {
+          "authorId": "8894631",
+          "name": "L. Cocchi"
+        },
+        {
+          "authorId": "7792523",
+          "name": "K. Barlow"
+        }
+      ],
+      "abstract": "Evidence-based treatments for children with persistent post-concussion symptoms (PPCS) are few and limited. Common PPCS complaints such as sleep disturbance and fatigue could be ameliorated via the supplementation of melatonin, which has significant neuroprotective and anti-inflammatory properties. This study aims to identify neural correlates of melatonin treatment with changes in sleep disturbances and clinical recovery in a pediatric cohort with PPCS. We examined structural and functional neuroimaging (MRI) in 62 children with PPCS in a randomized, double-blind, placebo-controlled trial of 3mg or 10mg of melatonin (NCT01874847). The primary outcome was the total youth self-report Post-Concussion Symptom Inventory (PCSI) score after 28 days of treatment. Secondary outcomes included the change in the sleep domain PCSI score and sleep-wake behavior (assessed using wrist-worn actigraphy). Whole-brain analyses of (i) functional connectivity (FC) of resting-state fMRI, and (ii) structural grey matter (GM) volumes via voxel-based morphometry were assessed immediately before and after melatonin treatment and compared to placebo in order to identify neural effects of melatonin treatment. Increased FC of posterior default mode network (DMN) regions with visual, somatosensory and dorsal networks was detected in the melatonin groups over time. FC increases also corresponded with reduced wake periods (r=-0.27, p=0.01). Children who did not recover (n=39) demonstrated significant FC increases within anterior DMN and limbic regions compared to those that did recover (i.e. PCSI scores returned to pre-injury level n=23) over time, (p=0.026). Increases in GM volume within the posterior cingulate cortex were found to correlate with reduced wakefulness after sleep onset (r=-0.32, p=0.001) and sleep symptom improvement (r=0.29, p=0.02). Although the melatonin treatment trial was negative and did not result in PPCS recovery (with or without sleep problems), the relationship between melatonin and improvement in sleep parameters were linked to changes in function-structure within and between brain regions interacting with the DMN. Clinical Trial Registration ID#NCT01874847."
+    },
+    {
+      "paperId": "3a294934d8cc13e128bd261f543c52aafc56bb96",
+      "externalIds": {
+        "MAG": "2465589107",
+        "DOI": "10.5665/sleep.5324",
+        "CorpusId": 263508110,
+        "PubMed": "26414900"
+      },
+      "url": "https://www.semanticscholar.org/paper/3a294934d8cc13e128bd261f543c52aafc56bb96",
+      "title": "Variability in Cumulative Habitual Sleep Duration Predicts Waking Functional Connectivity.",
+      "venue": "Sleep",
+      "year": 2016,
+      "citationCount": 20,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/39/1/87/26673284/sleep-39-1-87.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.5665/sleep.5324?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5665/sleep.5324, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212658",
+          "name": "S. Khalsa"
+        },
+        {
+          "authorId": "1398266733",
+          "name": "Stephen D. Mayhew"
+        },
+        {
+          "authorId": "3199643",
+          "name": "I. Przeździk"
+        },
+        {
+          "authorId": "1400235960",
+          "name": "Rebecca S. Wilson"
+        },
+        {
+          "authorId": "40084245",
+          "name": "J. Hale"
+        },
+        {
+          "authorId": "46535108",
+          "name": "A. Goldstone"
+        },
+        {
+          "authorId": "2241725679",
+          "name": "M. Bagary"
+        },
+        {
+          "authorId": "2067040",
+          "name": "A. Bagshaw"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "4c0850776023f75ea1b85fce2070ac0c78f9d012",
+      "externalIds": {
+        "MAG": "2026493785",
+        "PubMedCentral": "3466274",
+        "DOI": "10.1371/journal.pone.0045502",
+        "CorpusId": 17694782,
+        "PubMed": "23056205"
+      },
+      "url": "https://www.semanticscholar.org/paper/4c0850776023f75ea1b85fce2070ac0c78f9d012",
+      "title": "Extracting Multiscale Pattern Information of fMRI Based Functional Brain Connectivity with Application on Classification of Autism Spectrum Disorders",
+      "venue": "PLoS ONE",
+      "year": 2012,
+      "citationCount": 36,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0045502&type=printable",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3466274, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2113637425",
+          "name": "Hui Wang"
+        },
+        {
+          "authorId": "2127380068",
+          "name": "Chen Chen"
+        },
+        {
+          "authorId": "6383483",
+          "name": "H. Fushing"
+        }
+      ],
+      "abstract": "We employed a multi-scale clustering methodology known as “data cloud geometry” to extract functional connectivity patterns derived from functional magnetic resonance imaging (fMRI) protocol. The method was applied to correlation matrices of 106 regions of interest (ROIs) in 29 individuals with autism spectrum disorders (ASD), and 29 individuals with typical development (TD) while they completed a cognitive control task. Connectivity clustering geometry was examined at both “fine” and “coarse” scales. At the coarse scale, the connectivity clustering geometry produced 10 valid clusters with a coherent relationship to neural anatomy. A supervised learning algorithm employed fine scale information about clustering motif configurations and prevalence, and coarse scale information about intra- and inter-regional connectivity; the algorithm correctly classified ASD and TD participants with sensitivity of and specificity of . Most of the predictive power of the logistic regression model resided at the level of the fine-scale clustering geometry, suggesting that cellular versus systems level disturbances are more prominent in individuals with ASD. This article provides validation for this multi-scale geometric approach to extracting brain functional connectivity pattern information and for its use in classification of ASD."
+    },
+    {
+      "paperId": "3fce7fc6e40632cd870a57faee09bf2de0a04bcc",
+      "externalIds": {
+        "DOI": "10.1016/j.jad.2025.119439",
+        "CorpusId": 278735892,
+        "PubMed": "40393546"
+      },
+      "url": "https://www.semanticscholar.org/paper/3fce7fc6e40632cd870a57faee09bf2de0a04bcc",
+      "title": "Investigating the link between genetic predictive factors of brain functional networks and two specific sleep disorders: Sleep apnoea and snoring.",
+      "venue": "Journal of Affective Disorders",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jad.2025.119439?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jad.2025.119439, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2274297039",
+          "name": "Qing-yi Wang"
+        },
+        {
+          "authorId": "2336223446",
+          "name": "Shiyu Zheng"
+        },
+        {
+          "authorId": "2362322098",
+          "name": "Wujie Ye"
+        },
+        {
+          "authorId": "2287009711",
+          "name": "Lu Zhu"
+        },
+        {
+          "authorId": "2277806216",
+          "name": "Yan Huang"
+        },
+        {
+          "authorId": "50218013",
+          "name": "Zhaoqin Wang"
+        },
+        {
+          "authorId": "2261944899",
+          "name": "Chengyong Liu"
+        },
+        {
+          "authorId": "2348156220",
+          "name": "Fangyuan Sun"
+        },
+        {
+          "authorId": "2319192358",
+          "name": "Zhi-Wen Luo"
+        },
+        {
+          "authorId": "2108415782",
+          "name": "Guona Li"
+        },
+        {
+          "authorId": "2277152335",
+          "name": "Luyi Wu"
+        },
+        {
+          "authorId": "2454993433",
+          "name": "Wenzhong Wu"
+        },
+        {
+          "authorId": "2284870702",
+          "name": "Huangan Wu"
+        }
+      ],
+      "abstract": "BACKGROUND\nSleep disorders are a widespread public health issue globally. Investigating the causal relationship between resting-state brain functional abnormalities and sleep disorders can provide scientific evidence for precision medicine interventions.\n\n\nMETHODS\nWe screened single nucleotide polymorphisms (SNPs) associated with rs-fMRI phenotype as instrumental variables Using bidirectional two-sample Mendelian randomization (MR), mediation MR, and multivariate MR based on Bayesian methods, the study tested the causal relationship between genetically predicted rs-fMRI and nine common sleep disorders.\n\n\nRESULTS\nThe main IVW-MR analysis identified four rs-fMRI phenotypes that are causally associated with the risk of sleep disorders. For example, increased amplitude in nodes of the parietal, precuneus, occipital, temporal, and cerebellum regions, as well as the default mode network (DMN), central executive network (CEN) and attention network (AN) was associated with an increased risk of sleep apnoea. Enhanced neural activity in the calcarine or lingual and cerebellum regions and increased functional connectivity with the visual and subcortical-cerebellum networks was associated with a reduced risk of snoring. The mediation MR analysis shows that, BMI plays a significant mediating role in the risk of sleep apnoea by modulating the amplitude of nodes in the parietal, temporal, and cerebellum regions, as well as the connectivity changes in the DMN, CEN, and AN.\n\n\nCONCLUSIONS\nThis study identified three rs-fMRI phenotypes linked to increased sleep apnoea risk and one associated with decreased snoring risk, providing an important target for the treatment of sleep disorders at the level of brain functional networks."
+    },
+    {
+      "paperId": "910cd1a464796f4028be2c8e554faa470e993b3b",
+      "externalIds": {
+        "PubMedCentral": "8987020",
+        "DOI": "10.3389/fneur.2022.827749",
+        "CorpusId": 247769444,
+        "PubMed": "35401422"
+      },
+      "url": "https://www.semanticscholar.org/paper/910cd1a464796f4028be2c8e554faa470e993b3b",
+      "title": "Transcutaneous Auricular Vagus Nerve Stimulation Modulates the Prefrontal Cortex in Chronic Insomnia Patients: fMRI Study in the First Session",
+      "venue": "Frontiers in Neurology",
+      "year": 2022,
+      "citationCount": 32,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fneur.2022.827749/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8987020, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1656664829",
+          "name": "Jia-kai He"
+        },
+        {
+          "authorId": "2135476754",
+          "name": "B. Jia"
+        },
+        {
+          "authorId": "2153604651",
+          "name": "Yu Wang"
+        },
+        {
+          "authorId": "48831009",
+          "name": "Shaoyuan Li"
+        },
+        {
+          "authorId": "2112632158",
+          "name": "Bin Zhao"
+        },
+        {
+          "authorId": "2381944088",
+          "name": "Zeng Zhou"
+        },
+        {
+          "authorId": "6264181",
+          "name": "Yanzhi Bi"
+        },
+        {
+          "authorId": "14557373",
+          "name": "Mozheng Wu"
+        },
+        {
+          "authorId": "144732957",
+          "name": "Liang Li"
+        },
+        {
+          "authorId": "2108107321",
+          "name": "Jinling Zhang"
+        },
+        {
+          "authorId": "6670979",
+          "name": "J. Fang"
+        },
+        {
+          "authorId": "2052775240",
+          "name": "P. Rong"
+        }
+      ],
+      "abstract": "Objectives Transcutaneous auricular vagus nerve stimulation (taVNS) has been reported to be effective for chronic insomnia (CI). However, the appropriate population for taVNS to treat insomnia is unclear. Methods Total twenty-four patients with CI and eighteen health controls (HC) were recruited. Rest-state functional magnetic resonance imaging (Rs-fMRI) was performed before and after 30 min' taVNS at baseline. The activated and deactivated brain regions were revealed by different voxel-based analyses, then the seed-voxel functional connectivity analysis was calculated. In the CI group, 30 min of taVNS were applied twice daily for 4 weeks. Pittsburgh Sleep Quality Index (PSQI) and Flinders Fatigue Scale (FFS) were also assessed before and after 4 weeks of treatment in the CI group. The HC group did not receive any treatment. The correlations were estimated between the clinical scales' score and the brain changes. Results The scores of PSQI (p < 0.01) and FFS (p < 0.05) decreased after 4 weeks in the CI group. Compared to the HC group, the first taVNS session up-regulated left dorsolateral prefrontal cortex (dlPFC) and decreased the functional connectivity (FCs) between dlPFC and bilateral medial prefrontal cortex in the CI group. The CI groups' baseline voxel wised fMRI value in the dlPFC were negatively correlated to the PSQI and the FFS score after 4 weeks treatment. Conclusions It manifests that taVNS has a modulatory effect on the prefrontal cortex in patients with CI. The initial state of dlPFC may predict the efficacy for taVNS on CI."
+    },
+    {
+      "paperId": "2f3c30baacfa58d959ef470f5e739733d3cdb75a",
+      "externalIds": {
+        "PubMedCentral": "12812531",
+        "DOI": "10.3389/fpsyt.2025.1705969",
+        "CorpusId": 284524029,
+        "PubMed": "41561996"
+      },
+      "url": "https://www.semanticscholar.org/paper/2f3c30baacfa58d959ef470f5e739733d3cdb75a",
+      "title": "Aberrant functional connectivity of the dorsolateral prefrontal cortex-nucleus accumbens during naturalistic stimulation in adolescent major depressive disorder",
+      "venue": "Frontiers in Psychiatry",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12812531, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2395519461",
+          "name": "Yingzhe Zhao"
+        },
+        {
+          "authorId": "2402925583",
+          "name": "Zhuo Xi"
+        },
+        {
+          "authorId": "2138606602",
+          "name": "Zhenxiang Zang"
+        },
+        {
+          "authorId": "2109537978",
+          "name": "Zhi Yang"
+        },
+        {
+          "authorId": "2395915401",
+          "name": "Jing Liu"
+        }
+      ],
+      "abstract": "Objective This study aimed to examine alterations in the functional connectivity (FC) between the dorsolateral prefrontal cortex (DLPFC) and the nucleus accumbens (NAc) in adolescents with major depressive disorder (MDD) during naturalistic stimulation, and to determine the symptom specificity of this pathway. Methods A total of 152 participants were enrolled, including 87 MDD patients and 65 matched healthy controls (HCs). Functional magnetic resonance imaging (fMRI) was conducted during naturalistic video stimulation, and seed-based functional connectivity analysis was performed with the NAc as the seed region. To explore symptom specificity, four factors were derived from the 17-item Hamilton Depression Rating Scale (HAMD-17)—anxiety, depression, insomnia, and somatization— and their associations with DLPFC-NAc functional connectivity were tested in the MDD group. Results Our findings demonstrate that adolescents with MDD exhibit significantly higher DLPFC-NAc functional connectivity compared to HCs (PFWE = 0.038). This alteration was positively associated with overall depressive severity, and more specifically with anxiety and somatization dimensions, but not with core depressive or insomnia symptoms. Conclusion These findings suggest that DLPFC-NAc hyperconnectivity is a neural substrate of MDD in adolescents and may preferentially contribute to anxiety-related or somatization-related symptomatology rather than depressive mood or sleep disturbance."
+    },
+    {
+      "paperId": "d1757293351563496273076f3932121855b33b08",
+      "externalIds": {
+        "PubMedCentral": "12618344",
+        "DOI": "10.1007/s13365-025-01270-x",
+        "CorpusId": 280746058,
+        "PubMed": "40835806"
+      },
+      "url": "https://www.semanticscholar.org/paper/d1757293351563496273076f3932121855b33b08",
+      "title": "Changes in cerebral function parameters in persons with HIV with symptoms of insomnia switching from dolutegravir- to bictegravir-based antiretroviral therapy",
+      "venue": "Journal of Neurovirology",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s13365-025-01270-x.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12618344, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "78080660",
+          "name": "Merle Henderson"
+        },
+        {
+          "authorId": "2065649432",
+          "name": "K. Alford"
+        },
+        {
+          "authorId": "2741135",
+          "name": "S. Bouyagoub"
+        },
+        {
+          "authorId": "152979173",
+          "name": "N. Doyle"
+        },
+        {
+          "authorId": "31908958",
+          "name": "S. Vundavalli"
+        },
+        {
+          "authorId": "2376769712",
+          "name": "Pedro Vicente"
+        },
+        {
+          "authorId": "2193425552",
+          "name": "Albert Busza"
+        },
+        {
+          "authorId": "2237676436",
+          "name": "Alan Winston"
+        },
+        {
+          "authorId": "2376299104",
+          "name": "Jaime H. Vera"
+        }
+      ],
+      "abstract": "Sleep disturbances are frequently reported in persons with HIV and have been associated with the use of certain integrase strand transfer inhibitors (INSTIs), such as dolutegravir. This exploratory study assessed changes in cerebral function parameters in individuals with insomnia switching INSTIs. Individuals with an insomnia severity index (ISI) above 8 and virologically suppressed on a dolutegravir-containing ART regimen (DTG-ART) were randomised 1:1 to either continue DTG-ART or switch to bictegravir/emtricitabine/tenofovir alafenamide (BIC-ART) for 120 days. Cerebral function parameters were measured longitudinally at baseline (D0) and day 120 (D120) and included: (1) patient-reported outcomes (PROs) assessing sleep, quality of life (QoL) and symptoms related to ART, (2) resting-state functional cerebral MRI (fMRI), examining functional connectivity networks previously associated with DTG use or sleep and (3) plasma soluble inflammatory biomarkers associated with neuroinflammation or HIV disease progression (Neopterin, CXCL10 and IL-6). Functional connectivity analyses were performed using Seed-Based Correlations (SBC), and correlations between connectivity changes, PRO measures and biomarker concentrations determined. Of 19 individuals (12 DTG-ART, 7 BIC-ART), median age was 55 years (range 28–83), all were male and 17 of white ethnicity. Over 120 days, improvements in sleep and QoL in those randomised to BIC-ART vs. DTG-ART were observed. Median change in Insomnia Severity Index (ISI) score − 9 (-14 to -2) vs. -1 (-10 to -4), p = 0.030, Epworth Sleepiness Scale (ESS) -3.0 (-6 to -1) vs. 2 (-3 to 6), p = 0.007 and Short Form-36 Physical Function (SF36-PF) -5 (-40 to 5) vs. 0 (-5 to 15), p = 0.026) for BIC- vs. DTG- ART, respectively. BIC-ART was also associated with increased functional connectivity in the Default Mode and Salience Networks (both p < 0.05), which correlated with improvements in PRO measures (ESS and SF36-PF, both p < 0.05). No significant changes in soluble biomarkers were observed. Individuals with insomnia switching to BIC-ART had improvements in self-reported sleep, QoL and resting state fMRI networks associated with sleep, when compared to those continued on DTG-ART."
+    },
+    {
+      "paperId": "512669a61ca6fb049efa944f1db93a41fd536f71",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsae067.0008",
+        "CorpusId": 269284388
+      },
+      "url": "https://www.semanticscholar.org/paper/512669a61ca6fb049efa944f1db93a41fd536f71",
+      "title": "0008 Wake Onset Variability Effect on Functional Connectivity in the Default Mode Network",
+      "venue": "Sleep",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsae067.0008?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsae067.0008, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297692033",
+          "name": "David C Negelspach"
+        },
+        {
+          "authorId": "5767909",
+          "name": "A. Alkozei"
+        },
+        {
+          "authorId": "11485886",
+          "name": "Alisa Huskey"
+        },
+        {
+          "authorId": "2297690592",
+          "name": "W. Killgore"
+        }
+      ],
+      "abstract": "\n \n \n Decoupling patterns of sleep and wake from underlying circadian oscillations is associated with poor sleep health. While this has been studied with respect to shift work, it is unclear if minor variations in normative sleep/wake patterns affect the restoration of cognitive function during sleep intervals while controlling for total sleep time. It is commonplace to adhere to a fixed sleep/wake schedule, however, this practice does not account for day-to-day variations in physiological need for sleep. We examined the relationship between sleep-interval variability and fMRI resting state functional connectivity while controlling for sleep duration.\n \n \n \n Participants (n=21; 13 female; Age=23.3, SD=4.7) wore an actigraph for 7 days followed by a daytime functional magnetic resonance imaging (fMRI) session. Sleep/wake onset variability was measured from double-rated actigraphy data and cross referenced with sleep journals. Functional connectivity analysis and preprocessing of fMRI images were conducted in the CONN toolbox (SPM12). Seed-based functional connectivity maps were estimated using BOLD activity of the posterior parietal cortex node of the default mode network (DMN) as the seed region. Functional connectivity strength was represented by Fisher-transformed bivariate correlation coefficients from a weighted GLM, modeling the association between the seed and other brain regions.\n \n \n \n Wake onset variability (WOV) predicted functional connectivity of the DMN (controlling for age, gender, and sleep duration). WOV was significantly associated (Pthreshold <.005 ; Pfwe <.05) with a higher degree of anticorrelation between the posterior parietal node of the DMN and several regions of the frontoparietal network (FPN): Right superior frontal gyrus, Right mid-frontal gyrus, and Right frontal pole, as well as the occipital cortex and cerebellum. In contrast, sleep onset variability showed no significant changes in functional connectivity within these areas.\n \n \n \n Greater WOV was associated with stronger inverse connectivity between the DMN and FPN. This suggests that increased WOV may improve attentional control through greater top-down suppression of the DMN. We speculate that WOV is representative of sleep satiety, resulting in voluntary arousal from sleep, rather than enforced arousal. These results suggest that sleep timing affects attentional control irrespective of duration.\n \n \n \n USAMRAA: W81XWH1910074\n"
+    },
+    {
+      "paperId": "6dc2c5557ad7bc59c52070290eb858600a5b33e6",
+      "externalIds": {
+        "CorpusId": 40581739
+      },
+      "url": "https://www.semanticscholar.org/paper/6dc2c5557ad7bc59c52070290eb858600a5b33e6",
+      "title": "University of Birmingham Variability in Cumulative Habitual Sleep Duration Predicts Waking Functional Connectivity",
+      "venue": "",
+      "year": 2015,
+      "citationCount": 22,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://research.birmingham.ac.uk/portal/files/21564950/Edited_MS_SP_00561_14_ac.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212658",
+          "name": "S. Khalsa"
+        },
+        {
+          "authorId": "13830480",
+          "name": "Stephen D. Mayhew"
+        },
+        {
+          "authorId": "3199643",
+          "name": "I. Przeździk"
+        },
+        {
+          "authorId": "1400235960",
+          "name": "Rebecca S. Wilson"
+        },
+        {
+          "authorId": "40084245",
+          "name": "J. Hale"
+        },
+        {
+          "authorId": "46535108",
+          "name": "A. Goldstone"
+        },
+        {
+          "authorId": "4738927",
+          "name": "M. Bagary"
+        },
+        {
+          "authorId": "2067040",
+          "name": "A. Bagshaw"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "8ba5fb8e6e0bdac5fabeaaace84b1cbc10d5153b",
+      "externalIds": {
+        "PubMedCentral": "9231839",
+        "DOI": "10.1212/WNL.0000000000200326",
+        "CorpusId": 248241801,
+        "PubMed": "35437260"
+      },
+      "url": "https://www.semanticscholar.org/paper/8ba5fb8e6e0bdac5fabeaaace84b1cbc10d5153b",
+      "title": "Brain Metabolism Related to Mild Cognitive Impairment and Phenoconversion in Patients With Isolated REM Sleep Behavior Disorder",
+      "venue": "Neurology",
+      "year": 2022,
+      "citationCount": 31,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://n.neurology.org/content/neurology/98/24/e2413.full.pdf",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9231839, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4558558",
+          "name": "E. Yoon"
+        },
+        {
+          "authorId": "8917855",
+          "name": "Jee-Young Lee"
+        },
+        {
+          "authorId": "2108984582",
+          "name": "Heejung Kim"
+        },
+        {
+          "authorId": "24547815",
+          "name": "Dallah Yoo"
+        },
+        {
+          "authorId": "8246957",
+          "name": "J. Shin"
+        },
+        {
+          "authorId": "3963027",
+          "name": "H. Nam"
+        },
+        {
+          "authorId": "52140912",
+          "name": "B. Jeon"
+        },
+        {
+          "authorId": "1429096344",
+          "name": "Yu Kyeong Kim"
+        }
+      ],
+      "abstract": "Background and Objectives Mild cognitive impairment (MCI) in isolated REM sleep behavior disorder (iRBD) is a risk factor for subsequent neurodegeneration. We aimed to identify brain metabolism and functional connectivity changes related to MCI in patients with iRBD and the neuroimaging markers' predictive value for phenoconversion. Methods This is a prospective cohort study of patients with iRBD with a mean follow-up of 4.2 ± 2.6 years. At baseline, patients with iRBD and age- and sex-matched healthy controls (HCs) underwent 18F-fluorodeoxyglucose (FDG)–PET and resting-state fMRI scans and a comprehensive neuropsychological test battery. Voxel-wise group comparisons for FDG-PET data were performed using a general linear model. Seed-based connectivity maps were computed using brain regions showing significant hypometabolism associated with MCI in patients with iRBD and compared between groups. A Cox regression analysis was applied to investigate the association between brain metabolism and risk of phenoconversion. Results Forty patients with iRBD, including 21 with MCI (iRBD-MCI) and 19 with normal cognition (iRBD-NC), and 24 HCs were included in the study. The iRBD-MCI group revealed relative hypometabolism in the inferior parietal lobule, lateral and medial occipital, and middle and inferior temporal cortex bilaterally compared with HC and the iRBD-NC group. In seed-based connectivity analyses, the iRBD-MCI group exhibited decreased functional connectivity of the left angular gyrus with the occipital cortex. Of 40 patients with iRBD, 12 patients converted to Parkinson disease (PD) or dementia with Lewy bodies (DLB). Hypometabolism of the occipital pole (hazard ratio [95% CI] 6.652 [1.387–31.987]), medial occipital (4.450 [1.143–17.327]), and precuneus (3.635 [1.009–13.093]) was associated with higher phenoconversion rate to PD/DLB. Discussion MCI in iRBD is related to functional and metabolic changes in broad brain areas, particularly the occipital and parietal areas. Moreover, hypometabolism in these brain regions was a predictor of phenoconversion to PD or DLB. Evaluation of cognitive function and neuroimaging characteristics could be useful for risk stratification in patients with iRBD."
+    },
+    {
+      "paperId": "3920715820821cf7d1c3b94d190152debce44b84",
+      "externalIds": {
+        "DBLP": "journals/ficn/HoheiselHFDK25",
+        "PubMedCentral": "12339445",
+        "DOI": "10.3389/fncom.2025.1525785",
+        "CorpusId": 273161494,
+        "PubMed": "40799942"
+      },
+      "url": "https://www.semanticscholar.org/paper/3920715820821cf7d1c3b94d190152debce44b84",
+      "title": "Computational modelling reveals neurobiological contributions to static and dynamic functional connectivity patterns",
+      "venue": "bioRxiv",
+      "year": 2024,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12339445, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2276688367",
+          "name": "L. Hoheisel"
+        },
+        {
+          "authorId": "2324568273",
+          "name": "Hannah Hacker"
+        },
+        {
+          "authorId": "2276655856",
+          "name": "G.R. Fink"
+        },
+        {
+          "authorId": "2281838193",
+          "name": "S. Daun"
+        },
+        {
+          "authorId": "2876416",
+          "name": "J. Kambeitz"
+        }
+      ],
+      "abstract": "Functional connectivity (FC) is a widely used indicator of brain function in health and disease, yet its neurobiological underpinnings still need to be firmly established. Recent advances in computational modelling allow us to investigate the relationship between FC and neurobiology non-invasively. These techniques allow for targeted manipulations to study the effect of network disturbances on FC. Most modelling research has concentrated on replicating empirical static FC (sFC). However, FC changes over time, and its dynamic properties are closely linked to behaviour and symptomatology. In this study, we adapted computational models to reflect both sFC and dynamic FC (dFC) of individuals, allowing for a more comprehensive characterisation of the neurobiological origins of FC. We modelled the brain activity of 200 healthy individuals based on empirical resting-state functional magnetic resonance imaging (fMRI) and diffusion tensor imaging (DTI) data. Simulations were conducted using a group-averaged structural connectome and four parameters guiding regional brain activity: i) G, a global coupling scaling parameter; ii) J_i, the local inhibitory current; iii) J_NMDA, the excitatory NMDA synaptic coupling parameter; and iv) w_p, the excitatory population recurrence weight. We evaluated the models based on four metrics: a) the sFC, b) the FC variance, c) the temporal correlation (TC), and d) the node cohesion (NC). The optimal model for each subject was identified by the fit to both sFC and TC. We analysed associations between brain-wide sFC and TC features with optimal model parameters and fits with a univariate correlation approach and multivariate prediction models. In addition, we used a group-average perturbation approach to investigate the effect of coupling in each region on overall network connectivity. Our models could replicate empirical sFC and TC but not the FC variance and NC. Both fits and parameters exhibited strong associations with brain connectivity. G correlated positively and J_NMDA negatively with a range of static and dynamic FC features (|r| > 0.2, p(FDR) < 0.05). TC fit correlated negatively, and sFC fit positively with static and dynamic FC features. TC features were predictive of TC fit, sFC features of sFC fit (R2 > 0.5). Perturbation analysis revealed that the sFC fit was most impacted by coupling changes in the left paracentral gyrus (Δr = 0.07). In contrast, the left pars triangularis impacted the TC fit most strongly (Δr = 0.24). Our findings indicate that neurobiological characteristics are associated with individual variability in sFC and dFC, and that sFC and dFC are shaped by small sets of distinct regions. In addition, we show that brain network modelling can replicate some, but not all, properties of dFC, and model fits are strongly influenced by specific FC patterns. By modelling both sFC and dFC, we could produce new insights into neurobiological mechanisms of brain network configurations."
+    },
+    {
+      "paperId": "447e9bc7dcd4f9b239a1330334c1b1f16d1a1da4",
+      "externalIds": {
+        "MAG": "1989165123",
+        "DOI": "10.5665/sleep.3222",
+        "CorpusId": 11117337,
+        "PubMed": "24293763"
+      },
+      "url": "https://www.semanticscholar.org/paper/447e9bc7dcd4f9b239a1330334c1b1f16d1a1da4",
+      "title": "Altered nigrostriatal and nigrocortical functional connectivity in rapid eye movement sleep behavior disorder.",
+      "venue": "Sleep",
+      "year": 2013,
+      "citationCount": 101,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/article-pdf/36/12/1885/26662059/aasm.36.12.1885.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.5665/sleep.3222?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5665/sleep.3222, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49554812",
+          "name": "T. Ellmore"
+        },
+        {
+          "authorId": "3163972",
+          "name": "R. Castriotta"
+        },
+        {
+          "authorId": "6755601",
+          "name": "Katie L. Hendley"
+        },
+        {
+          "authorId": "5776767",
+          "name": "Brian Aalbers"
+        },
+        {
+          "authorId": "1398875036",
+          "name": "Erin Furr-Stimming"
+        },
+        {
+          "authorId": "31520253",
+          "name": "Ashley J. Hood"
+        },
+        {
+          "authorId": "6742225",
+          "name": "Jessika Suescun"
+        },
+        {
+          "authorId": "6313766",
+          "name": "Michelle R. Beurlot"
+        },
+        {
+          "authorId": "90749518",
+          "name": "R. Hendley"
+        },
+        {
+          "authorId": "2185170",
+          "name": "M. Schiess"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "3319a1b7261da651557f07241592051ac51137a2",
+      "externalIds": {
+        "PubMedCentral": "9399490",
+        "DOI": "10.3389/fnhum.2022.960350",
+        "CorpusId": 251448909,
+        "PubMed": "36034119"
+      },
+      "url": "https://www.semanticscholar.org/paper/3319a1b7261da651557f07241592051ac51137a2",
+      "title": "Connectomic disturbances underlying insomnia disorder and predictors of treatment response",
+      "venue": "Frontiers in Human Neuroscience",
+      "year": 2022,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnhum.2022.960350/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9399490, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2119075688",
+          "name": "Qian Lu"
+        },
+        {
+          "authorId": "2143397194",
+          "name": "Wentong Zhang"
+        },
+        {
+          "authorId": "2282113642",
+          "name": "Hailang Yan"
+        },
+        {
+          "authorId": "2180936372",
+          "name": "Negar Mansouri"
+        },
+        {
+          "authorId": "1881051088",
+          "name": "Onur Tanglay"
+        },
+        {
+          "authorId": "2876640",
+          "name": "K. Osipowicz"
+        },
+        {
+          "authorId": "2180854958",
+          "name": "Angus W. Joyce"
+        },
+        {
+          "authorId": "1647086789",
+          "name": "I. Young"
+        },
+        {
+          "authorId": "2161748386",
+          "name": "Xia Zhang"
+        },
+        {
+          "authorId": "3641268",
+          "name": "Stephane Doyen"
+        },
+        {
+          "authorId": "3176087",
+          "name": "M. Sughrue"
+        },
+        {
+          "authorId": "46618733",
+          "name": "Chuan He"
+        }
+      ],
+      "abstract": "Objective Despite its prevalence, insomnia disorder (ID) remains poorly understood. In this study, we used machine learning to analyze the functional connectivity (FC) disturbances underlying ID, and identify potential predictors of treatment response through recurrent transcranial magnetic stimulation (rTMS) and pharmacotherapy. Materials and methods 51 adult patients with chronic insomnia and 42 healthy age and education matched controls underwent baseline anatomical T1 magnetic resonance imaging (MRI), resting-stage functional MRI (rsfMRI), and diffusion weighted imaging (DWI). Imaging was repeated for 24 ID patients following four weeks of treatment with pharmacotherapy, with or without rTMS. A recently developed machine learning technique, Hollow Tree Super (HoTS) was used to classify subjects into ID and control groups based on their FC, and derive network and parcel-based FC features contributing to each model. The number of FC anomalies within each network was also compared between responders and non-responders using median absolute deviation at baseline and follow-up. Results Subjects were classified into ID and control with an area under the receiver operating characteristic curve (AUC-ROC) of 0.828. Baseline FC anomaly counts were higher in responders than non-responders. Response as measured by the Insomnia Severity Index (ISI) was associated with a decrease in anomaly counts across all networks, while all networks showed an increase in anomaly counts when response was measured using the Pittsburgh Sleep Quality Index. Overall, responders also showed greater change in all networks, with the Default Mode Network demonstrating the greatest change. Conclusion Machine learning analysis into the functional connectome in ID may provide useful insight into diagnostic and therapeutic targets."
+    },
+    {
+      "paperId": "62966d6a9761b0b07125d57445a32d1c95016668",
+      "externalIds": {
+        "MAG": "3184810883",
+        "PubMedCentral": "8564666",
+        "DOI": "10.2196/24208",
+        "CorpusId": 238095676,
+        "PubMed": "34665153"
+      },
+      "url": "https://www.semanticscholar.org/paper/62966d6a9761b0b07125d57445a32d1c95016668",
+      "title": "Impact of App-Delivered Mindfulness Meditation on Functional Connectivity, Mental Health, and Sleep Disturbances Among Physician Assistant Students: Randomized, Wait-list Controlled Pilot Study",
+      "venue": "JMIR Formative Research",
+      "year": 2020,
+      "citationCount": 21,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://jmir.org/api/download?alt_name=formative_v5i10e24208_app1.pdf&filename=5f8dac2e5be350d9e4bf870c5afe670d.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8564666, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2109849867",
+          "name": "Jeremy L. Smith"
+        },
+        {
+          "authorId": "31954615",
+          "name": "Jason W. Allen"
+        },
+        {
+          "authorId": "2200604380",
+          "name": "Carla I Haack"
+        },
+        {
+          "authorId": "12376277",
+          "name": "Kathryn Wehrmeyer"
+        },
+        {
+          "authorId": "1992937961",
+          "name": "Kayley G Alden"
+        },
+        {
+          "authorId": "121181198",
+          "name": "Maha B Lund"
+        },
+        {
+          "authorId": "2833878",
+          "name": "Jennifer S. Mascaro"
+        }
+      ],
+      "abstract": "Background Health care provider and trainee burnout results in substantial national and institutional costs and profound social effects. Identifying effective solutions and interventions to cultivate resilience among health care trainees is critical. Although less is known about the mental health needs of physician assistants (PAs) or PA students, accumulating research indicates that they experience similarly alarming rates of burnout, depression, and emotional exhaustion. Mobile app–delivered mindfulness meditation may be an effective part of salubrious programming to bolster long-term resilience and health among PA students. Objective This study aims to examine the impact of app-delivered mindfulness meditation on self-reported mental health symptoms among PA students. A secondary aim is to investigate changes in brain connectivity to identify neurobiological changes related to changes in mental health symptoms. Methods We recruited PA students enrolled in their third semester of PA school and used a longitudinal, randomized, wait-list–controlled design. Participants randomized to the mindfulness group were provided 1-year subscriptions to the 10% Happier app, a consumer-based meditation app, and asked to practice every day for 8 weeks. Before randomization and again after completion of the 8-week program, all participants completed resting-state functional magnetic resonance imaging as well as self-report assessments of burnout, depression, anxiety, and sleep impairment. App use was acquired as a measure of mindfulness practice time. Results PA students randomized to the mindfulness group reported improvements in sleep impairment compared with those randomized to the wait-list control group (ηp2=0.42; P=.01). Sleep impairment decreased significantly in the mindfulness group (19% reduction; P=.006) but not in the control group (1% reduction; P=.71). There were no other significant changes in mental health for those randomized to app-delivered mindfulness. Across all students, changes in sleep impairment were associated with increased resting-state functional connectivity between the medial prefrontal cortex (a component of the default mode network) and the superior temporal gyrus, as well as between areas important for working memory. Changes in connectivity predicted categorical conversion from impaired to nonimpaired sleep in the mindfulness group. Conclusions This pilot study is the first to examine app-based mindfulness for PA students’ mental health and investigate the impact of mindfulness on PA students’ brain function. These findings suggest that app-delivered mindfulness may be an effective tool to improve sleep dysfunction and that it may be an important part of the programming necessary to reduce the epidemic of suffering among health profession trainees."
+    },
+    {
+      "paperId": "467633609e895dfc7635697d741a630754e76a7d",
+      "externalIds": {
+        "DOI": "10.64898/2026.06.08.730730",
+        "CorpusId": 289209806
+      },
+      "url": "https://www.semanticscholar.org/paper/467633609e895dfc7635697d741a630754e76a7d",
+      "title": "A common connectome-based neural reference space across affective, autonomic, and wakefulness arousal",
+      "venue": "bioRxiv",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.64898/2026.06.08.730730",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.64898/2026.06.08.730730?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64898/2026.06.08.730730, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2323278286",
+          "name": "Kannon Bhattacharyya"
+        },
+        {
+          "authorId": "2243941729",
+          "name": "Judah Huberman-Shlaes"
+        },
+        {
+          "authorId": "2442340435",
+          "name": "Yulin Tong"
+        },
+        {
+          "authorId": "2109451463",
+          "name": "Yuxuan Zhu"
+        },
+        {
+          "authorId": "2181704887",
+          "name": "Jin Ke"
+        },
+        {
+          "authorId": "2351298038",
+          "name": "Jadyn S. Park"
+        },
+        {
+          "authorId": "89351523",
+          "name": "A. Corriveau"
+        },
+        {
+          "authorId": "2251095447",
+          "name": "Monica D. Rosenberg"
+        },
+        {
+          "authorId": "4937157",
+          "name": "Yuan Chang Leong"
+        }
+      ],
+      "abstract": "Arousal is often invoked to explain state-dependent variability in attention, emotion, memory, and decision-making. However, the term is used inconsistently, referring variously to affective experience, autonomic activation, and states of wakefulness. The extent to which different operationalizations of arousal reflect a shared neurobiological basis remains unclear, limiting efforts to unify findings across studies. We applied dynamic connectome predictive models to five fMRI datasets spanning naturalistic movie watching, story listening, wakeful rest, and sleep. We derived measures of affective, autonomic, and wakefulness arousal from subjective ratings, pupil dilation, and EEG, respectively. Models trained to predict arousal in one dataset generalized across datasets, indicating that dynamic connectivity captures shared arousal-related dynamics across measures and task contexts. The models also predicted manually scored sleep stages, suggesting that they capture arousal dynamics that extend to the graded fluctuations in arousal during sleep. Decoded arousal dynamics during movie-viewing predicted how well participants later recalled movie events, reproducing classic arousal-dependent memory enhancement effects. Model predictions were supported by overlapping functional connections, including a subset shared across all models. The largest proportion of shared connections was between the salience and somatomotor networks, suggesting that increased coordination between salience detection and action readiness may be a common feature across multiple operationalizations of arousal. Together, these results are consistent with a connectome-based neural reference space for arousal, in which different varieties share a core set of predictive connections. Our findings offer a quantitative framework for integrating arousal-related findings across tasks and modalities."
+    },
+    {
+      "paperId": "166f8d64c6267799db4d1fa52b412a43ef69462e",
+      "externalIds": {
+        "PubMedCentral": "6519915",
+        "MAG": "2913373230",
+        "DOI": "10.1093/sleep/zsz033",
+        "CorpusId": 73455889,
+        "PubMed": "30763951"
+      },
+      "url": "https://www.semanticscholar.org/paper/166f8d64c6267799db4d1fa52b412a43ef69462e",
+      "title": "Circadian phenotype impacts the brain’s resting-state functional connectivity, attentional performance, and sleepiness",
+      "venue": "Sleep",
+      "year": 2019,
+      "citationCount": 80,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1093/sleep/zsz033",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6519915, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1422540340",
+          "name": "E. Facer-Childs"
+        },
+        {
+          "authorId": "145339696",
+          "name": "B. Campos"
+        },
+        {
+          "authorId": "144135989",
+          "name": "B. Middleton"
+        },
+        {
+          "authorId": "4765623",
+          "name": "D. Skene"
+        },
+        {
+          "authorId": "2067040",
+          "name": "A. Bagshaw"
+        }
+      ],
+      "abstract": "Abstract Introduction Functional connectivity (FC) of the human brain’s intrinsically connected networks underpins cognitive functioning and disruptions of FC are associated with sleep and neurological disorders. However, there is limited research on the impact of circadian phenotype and time of day on FC. Study Objectives The aim of this study was to investigate resting-state FC of the default mode network (DMN) in Early and Late circadian phenotypes over a socially constrained day. Methods Thirty-eight healthy individuals (14 male, 22.7 ± 4.2 years) categorized as Early (n = 16) or Late (n = 22) using the Munich ChronoType Questionnaire took part. Following a 2-week baseline of actigraphy coupled with saliva samples for melatonin and cortisol rhythms, participants underwent testing at 14:00 hours, 20:00 hours, and 08:00 hours the following morning. Testing consisted of resting-state functional magnetic resonance imaging (fMRI), a structural T1 scan, attentional cognitive performance tasks, and self-reported daytime sleepiness. Seed-based FC analysis from the medial prefrontal and posterior cingulate cortices of the DMN was performed, compared between groups and linked with behavioral data. Results Fundamental differences in the DMN were observed between Early and Late circadian phenotypes. Resting-state FC of the DMN predicted individual differences in attention and subjective ratings of sleepiness. Conclusion Differences in FC of the DMN may underlie the compromised attentional performance and increased sleepiness commonly associated with Late types when they conform to a societally constrained day that does not match their intrinsic circadian phenotype."
+    },
+    {
+      "paperId": "24d14db1cb19dd163ec47eece5747d79388f831d",
+      "externalIds": {
+        "DOI": "10.1101/2025.05.07.652676",
+        "CorpusId": 278636910
+      },
+      "url": "https://www.semanticscholar.org/paper/24d14db1cb19dd163ec47eece5747d79388f831d",
+      "title": "REM sleep predicts reductions in pathophysiological daytime basal ganglia-cortical circuit activity in Parkinson’s disease",
+      "venue": "bioRxiv",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2025/05/13/2025.05.07.652676.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2025.05.07.652676?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2025.05.07.652676, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2347437761",
+          "name": "Jin-Xiao Zhang"
+        },
+        {
+          "authorId": "144377370",
+          "name": "Clay Smyth"
+        },
+        {
+          "authorId": "2387231455",
+          "name": "Hanna Cattan-Hayat"
+        },
+        {
+          "authorId": "2239745",
+          "name": "Md Fahim Anjum"
+        },
+        {
+          "authorId": "49454447",
+          "name": "Y. Leng"
+        },
+        {
+          "authorId": "2247955150",
+          "name": "A. D. Krystal"
+        },
+        {
+          "authorId": "2141316442",
+          "name": "Phil Starr"
+        },
+        {
+          "authorId": "2238042002",
+          "name": "Simon J Little"
+        }
+      ],
+      "abstract": "Sleep disturbances have been shown to be intimately and bidirectionally related to disease progression across a wide range of neurodegenerative disorders including Parkinson’s disease (PD) and Alzheimer’s disease. However, the precise neurophysiological mechanisms relating abnormal sleep to aberrant daytime network activity that accelerates disease progression has yet to be determined. We collected chronic, multi-night (n=40), intracranial cortico-basal recordings during sleep from a cohort of patients with PD along with paired polysomnography and morning self-reports. This revealed that longer duration (and shorter latency) of rapid eye movement (REM) sleep predicted reduced daytime resting beta (13-30 Hz) activity and cortico-basal functional and effective connectivity, features established to be pathophysiological in PD. Within REM sleep, stronger cortical delta activity specifically predicted reduced pathophysiological cortico-basal neural network features. Additionally, REM delta power significantly predicted greater self-reported morning alertness. These findings highlight a potentially protective role of REM sleep in cortico-basal network health in PD and daytime subjective experience, representing a potential target for closed loop neuromodulation therapies to impact neurodegenerative disease progression."
+    },
+    {
+      "paperId": "6f5ff81c4b2f1dae210964c5f91b4ee91b08ed72",
+      "externalIds": {
+        "PubMedCentral": "12370520",
+        "DOI": "10.3389/fendo.2025.1598943",
+        "CorpusId": 280868508,
+        "PubMed": "40862111"
+      },
+      "url": "https://www.semanticscholar.org/paper/6f5ff81c4b2f1dae210964c5f91b4ee91b08ed72",
+      "title": "The altered hypothalamic network functional connectivity in diminished ovarian reserve and regulation effect of acupuncture: a randomized controlled neuroimaging study protocol",
+      "venue": "Frontiers in Endocrinology",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12370520, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2395846975",
+          "name": "Feng Gao"
+        },
+        {
+          "authorId": "2393055532",
+          "name": "Yang Yu"
+        },
+        {
+          "authorId": "2395039990",
+          "name": "Fuwei Wang"
+        },
+        {
+          "authorId": "2258787289",
+          "name": "Yigong Fang"
+        }
+      ],
+      "abstract": "Diminished ovarian reserve (DOR) is characterized by a decrease in the quantity and quality of oocytes, leading to reduced chances of natural conception and a poorer response to fertility treatments. Along with these reproductive challenges, DOR often causes psychological symptoms such as depression, anxiety, and sleep disturbances, which negatively affect overall well-being and quality of life. Acupuncture has been proposed as a promising complementary therapy for DOR, but the mechanisms through which it exerts its effects are not yet fully understood. This study aims to investigate the effects of acupuncture on ovarian function, psychological well-being, and the central nervous system in women with DOR. We will recruit 42 women with DOR and 21 healthy controls (HCs), randomly assigning DOR patients to receive either verum acupuncture (VA) or sham acupuncture (SA) for 12 weeks. Ovarian function will be assessed using Anti-Müllerian hormone (AMH), antral follicle count (AFC), and follicle-stimulating hormone (FSH). Psychological well-being will be evaluated using the Self-Rating Anxiety Scale (SAS), Self-Rating Depression Scale (SDS), and Self-Rating Scale of Sleep (SRSS). To explore the neurological effects, resting-state functional connectivity (rsFC) of the hypothalamus will be assessed using functional magnetic resonance imaging (fMRI). This research aims to clarify how acupuncture affects the central nervous system, hormonal regulation, and ovarian function in women with DOR. The findings may provide valuable insights for developing evidence-based acupuncture protocols that can improve both reproductive outcomes and quality of life for women with DOR."
+    },
+    {
+      "paperId": "3e01e1bbf1decede111ce79f1be789084cf2db12",
+      "externalIds": {
+        "MAG": "3097508501",
+        "DBLP": "journals/neuroimage/HahnZUTLMKJD21",
+        "DOI": "10.1016/j.neuroimage.2020.117470",
+        "CorpusId": 226217150,
+        "PubMed": "33137478"
+      },
+      "url": "https://www.semanticscholar.org/paper/3e01e1bbf1decede111ce79f1be789084cf2db12",
+      "title": "Signature of consciousness in brain-wide synchronization patterns of monkey and human fMRI signals",
+      "venue": "NeuroImage",
+      "year": 2020,
+      "citationCount": 39,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1053811920309551/pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2020.117470?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2020.117470, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153189577",
+          "name": "G. Hahn"
+        },
+        {
+          "authorId": "1403154385",
+          "name": "G. Zamora-López"
+        },
+        {
+          "authorId": "2203762",
+          "name": "L. Uhrig"
+        },
+        {
+          "authorId": "3188994",
+          "name": "E. Tagliazucchi"
+        },
+        {
+          "authorId": "2947530",
+          "name": "H. Laufs"
+        },
+        {
+          "authorId": "2702784",
+          "name": "D. Mantini"
+        },
+        {
+          "authorId": "1988969",
+          "name": "M. Kringelbach"
+        },
+        {
+          "authorId": "2197002",
+          "name": "B. Jarraya"
+        },
+        {
+          "authorId": "145333301",
+          "name": "G. Deco"
+        }
+      ],
+      "abstract": "During the sleep-wake cycle, the brain undergoes profound dynamical changes, which are manifested subjectively as transitions between conscious experience and unconsciousness. Yet, neurophysiological signatures that can objectively distinguish different consciousness states based are scarce. Here, we show that differences in the level of brain-wide signals can reliably distinguish different stages of sleep and anesthesia from the awake state in human and monkey resting state data. Moreover, a whole-brain computational model can faithfully reproduce changes in global synchronization and other metrics such as the structure-function relationship, integration and segregation across vigilance states. We demonstrate that the awake brain is close to a Hopf bifurcation, which naturally coincides with the emergence of globally correlated fMRI signals. Furthermore, simulating lesions of individual brain areas highlight the importance of connectivity hubs in the posterior brain and subcortical structures in maintaining the model in the awake state, as predicted by graph-theoretical analyses of structural data."
+    },
+    {
+      "paperId": "203c1de47011c877b3a73bce8f85480ac2a6860c",
+      "externalIds": {
+        "MAG": "2801540257",
+        "PubMedCentral": "5987592",
+        "DOI": "10.3389/fpsyt.2018.00220",
+        "CorpusId": 44085160,
+        "PubMed": "29896128"
+      },
+      "url": "https://www.semanticscholar.org/paper/203c1de47011c877b3a73bce8f85480ac2a6860c",
+      "title": "Self-Reported Sleep Quality Modulates Amygdala Resting-State Functional Connectivity in Anxiety and Depression",
+      "venue": "Frontiers in Psychiatry",
+      "year": 2018,
+      "citationCount": 41,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2018.00220/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5987592, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3416875",
+          "name": "H. Klumpp"
+        },
+        {
+          "authorId": "2032761558",
+          "name": "Bobak Hosseini"
+        },
+        {
+          "authorId": "145070912",
+          "name": "K. Phan"
+        }
+      ],
+      "abstract": "Sufficient sleep plays an important role in neurocognitive function, yet, problematic sleep is ubiquitous in the general population. It is also frequently predictive of, and concurrent with, internalizing psychopathologies (IPs) such as anxiety and depression suggesting sleep quality is dimensional and transdiagnostic. Along with problematic sleep, IPs are characterized by negative affectivity, therefore, prominent neurobiological models of internalizing conditions involve the amygdala, a region central to emotion. In resting-state studies (independent of sleep considerations), abnormalities in amygdala-frontal functional connectivity are commonly observed suggesting emotion dysregulation may contribute to clinically-relevant phenotypes. In a separate line of research, studies of sleep deprivation, and insomnia disorder suggest sleep loss may alter amygdala-frontal connectivity. Taken together, findings point to shared neurobiology between sleep and emotion systems, however, the impact of sleep quality on the amygdala circuit in anxiety or depression is unclear. Therefore, we evaluated variance in naturalistic sleep quality on amygdala-based circuity in individuals with and without psychiatric illness. Resting-state fMRI data was collected in 87 un-medicated, treatment-seeking adults diagnosed with a primary anxiety disorder (n = 68) or primary depressive disorder (n = 19) in addition to healthy individuals (n = 40). Regression analysis was conducted with bilateral anatomical amygdala as seed regions and self-reported sleep quality was indexed with a validated self-report measure, the Pittsburgh Sleep Quality Index (PSQI). Post-hoc analysis was performed to evaluate whether diagnostic status (primary anxiety, primary depression, healthy) significantly explained functional connectivity results. Whole-brain regression analysis, controlling for anxiety and depression symptoms, revealed worse sleep quality (i.e., higher PSQI total scores) predicted increased left amygdala-subgenual anterior cingulate functional connectivity and reduced connectivity with posterior cerebellar lobe and superior temporal gyrus. For right amygdala, increased coupling with postcentral gyrus corresponded with worse sleep. Post-hoc analysis did not detect a significant relationship between diagnostic status and whole-brain findings. Results expand on previous studies and indicate variance in sleep quality tracks brain pathways involved in cognitive-emotion functions implicated in the neurobiology of IPs that may extend to individuals at risk for clinical anxiety or depression. Altogether, the clinical relevance of identifying phenotypes to improve our understanding of psychopathology may be improved by incorporating sleep quality."
+    },
+    {
+      "paperId": "15af8fb68df920035ecd3426b98aa06d50b125fb",
+      "externalIds": {
+        "DOI": "10.1007/s40675-025-00350-y",
+        "CorpusId": 283281678
+      },
+      "url": "https://www.semanticscholar.org/paper/15af8fb68df920035ecd3426b98aa06d50b125fb",
+      "title": "The Effect of Transcutaneous Auricular Vagus Nerve Stimulation on Sleep Quality in Insomnia: a Systematic Review and Meta-analysis",
+      "venue": "Current Sleep Medicine Reports",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s40675-025-00350-y?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s40675-025-00350-y, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2316005488",
+          "name": "Arian Hasani"
+        },
+        {
+          "authorId": "2305183806",
+          "name": "Sheida Mobader Sani"
+        },
+        {
+          "authorId": "2394650084",
+          "name": "Amirhossein Kamroo"
+        },
+        {
+          "authorId": "2208181846",
+          "name": "Mohammadamin Parsaei"
+        },
+        {
+          "authorId": "2393746899",
+          "name": "Mohammad Mahdi Sarvi"
+        },
+        {
+          "authorId": "2379473212",
+          "name": "Hamed Amirifard"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "64658f863714761183707414a99c998b2073e1be",
+      "externalIds": {
+        "DOI": "10.1016/j.sleep.2024.11.012",
+        "CorpusId": 274003875,
+        "PubMed": "39549632"
+      },
+      "url": "https://www.semanticscholar.org/paper/64658f863714761183707414a99c998b2073e1be",
+      "title": "Resting-state functional connectome predicts sleep quality two months after the first negative COVID-19 antigen test.",
+      "venue": "Sleep Medicine",
+      "year": 2024,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sleep.2024.11.012?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sleep.2024.11.012, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108914964",
+          "name": "Shuyuan Jin"
+        },
+        {
+          "authorId": "2302237226",
+          "name": "Haobo Chen"
+        },
+        {
+          "authorId": "2233780979",
+          "name": "Ling Li"
+        },
+        {
+          "authorId": "2241328118",
+          "name": "Yi Liu"
+        },
+        {
+          "authorId": "2302263327",
+          "name": "Peng Liu"
+        },
+        {
+          "authorId": "2326208576",
+          "name": "An Xie"
+        },
+        {
+          "authorId": "2303330213",
+          "name": "Yanhui Liao"
+        }
+      ],
+      "abstract": "BACKGROUND\nThe COVID-19 pandemic has led to long-term neurological and psychological effects, including sleep disturbances. While prior studies have identified altered brain function post-COVID-19, specific functional connectivity (FC) patterns predicting sleep quality after recovery remain unclear. This study aims to identify FC patterns associated with sleep quality two months after the first negative COVID-19 antigen test.\n\n\nMETHODS\nUsing a connectome-based predictive modeling (CPM) approach, we identified the functional connectome regulating sleep quality based on a 164-region parcellation. Significant connections were analyzed using mediation models to examine their role in the relationship between anxiety, depression, and sleep.\n\n\nRESULTS\nFC between the right cerebellar peduncle and the left VIII of the cerebellum, and between the left middle temporal pole (MTP) and left ventral tegmental area (VTA), significantly predicted Pittsburgh Sleep Quality Index (PSQI) scores for sleep disturbances two months post-recovery (q2 = 0.059, MSE = 0.154, p = 0.017, r = 0.350). Mediation analysis showed a significant indirect effect of FC between the left MTP and VTA on the relationship between generalized anxiety and sleep disturbances (indirect effect = 0.013, 95% CI = [0.002, 0.03], pfdr <0.05). FC between the right dorsal raphe nucleus and ipsilateral regions-including occipital, parietal, and temporal areas-predicted PSQI scores for daytime dysfunction (q2 = 0.092, MSE = 0.678, p = 0.025, r = 0.342).\n\n\nCONCLUSION\nPost-COVID-19 brain connectivity and anxiety predict sleep quality. These findings highlight the potential for targeted therapeutic strategies to improve sleep and identify patients at risk for prolonged disturbances through FC biomarkers."
+    },
+    {
+      "paperId": "f4e1378298580e26739c101a2cc40085ea6c5299",
+      "externalIds": {
+        "PubMedCentral": "11699106",
+        "DOI": "10.1016/j.ijchp.2024.100526",
+        "CorpusId": 274749275,
+        "PubMed": "39759571"
+      },
+      "url": "https://www.semanticscholar.org/paper/f4e1378298580e26739c101a2cc40085ea6c5299",
+      "title": "Neuroimaging signatures and a deep learning modeling for early diagnosing and predicting non-pharmacological therapy success for subclinical depression comorbid sleep disorders in college students",
+      "venue": "International Journal of Clinical and Health Psychology",
+      "year": 2024,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.ijchp.2024.100526",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11699106, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2143616753",
+          "name": "Xinyu Liang"
+        },
+        {
+          "authorId": "2291968627",
+          "name": "Yunan Guo"
+        },
+        {
+          "authorId": "2119079874",
+          "name": "Hanyue Zhang"
+        },
+        {
+          "authorId": "2335418171",
+          "name": "Xiaotong Wang"
+        },
+        {
+          "authorId": "7379610",
+          "name": "Danian Li"
+        },
+        {
+          "authorId": "2108240852",
+          "name": "Yujie Liu"
+        },
+        {
+          "authorId": "2254255418",
+          "name": "Jianjia Zhang"
+        },
+        {
+          "authorId": "2264005560",
+          "name": "Luping Zhou"
+        },
+        {
+          "authorId": "2332594838",
+          "name": "Shijun Qiu"
+        }
+      ],
+      "abstract": "Objective College students with subclinical depression often experience sleep disturbances and are at high risk of developing major depressive disorder without early intervention. Clinical guidelines recommend non-pharmacotherapy as the primary option for subclinical depression with comorbid sleep disorders (sDSDs). However, the neuroimaging mechanisms and therapeutic responses associated with these treatments are poorly understood. Additionally, the lack of an early diagnosis and therapeutic effectiveness prediction model hampers the clinical promotion and acceptance of non-pharmacological interventions for subclinical depression. Methods This study involved pre- and post-treatment resting-state functional Magnetic Resonance Imaging (rs-fMRI) and clinical data from a multicenter, single-blind, randomized clinical trial. The trial included 114 first-episode, drug-naïve university students with subclinical depression and comorbid sleep disorders (sDSDs; Mean age=22.8±2.3 years; 73.7% female) and 93 healthy controls (HCs; Mean age=22.2±1.7 years; 63.4% female). We examined altered functional connectivity (FC) and brain network connective mode related to subregions of Default Mode Network (sub-DMN) using seed-to-voxel analysis before and after six weeks of non-pharmacological antidepressant treatment. Additionally, we developed an individualized diagnosing and therapeutic effect predicting model to realize early recognition of subclinical depression and provide objective suggestions to select non-pharmacological therapy by using the newly proposed Hierarchical Functional Brain Network (HFBN) with advanced deep learning algorithms within the transformer framework. Results Neuroimaging responses to non-pharmacologic treatments are characterized by alterations in functional connectivity (FC) and shifts in brain network connectivity patterns, particularly within the sub-DMN. At baseline, significantly increased FC was observed between the sub-DMN and both Executive Control Network (ECN) and Dorsal Attention Network (DAN). Following six weeks of non-pharmacologic intervention, connectivity patterns primarily shifted within the sub-DMN and ECN, with a predominant decrease in FCs. The HFBN model demonstrated superior performance over traditional deep learning models, accurately predicting therapeutic outcomes and diagnosing subclinical depression, achieving cumulative scores of 80.47% for sleep quality prediction and 84.67% for depression prediction, along with an overall diagnostic accuracy of 82.34%. Conclusions Two-scale neuroimaging signatures related to the sub-DMN underlying the antidepressant mechanisms of non-pharmacological treatments for subclinical depression. The HFBN model exhibited supreme capability in early diagnosing and predicting non-pharmacological treatment outcomes for subclinical depression, thereby promoting objective clinical psychological treatment decision-making."
+    },
+    {
+      "paperId": "bf42b642948609e4ef879e4a7c4fe1834279190f",
+      "externalIds": {
+        "CorpusId": 229295038
+      },
+      "url": "https://www.semanticscholar.org/paper/bf42b642948609e4ef879e4a7c4fe1834279190f",
+      "title": "Nicholas Balderston 1 Title: Development of a novel connectivity-based electric-field modelling approach for individualized targeting of transcranial magnetic stimulation treatment Running title: Novel modelling approach for individualized TMS targeting",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://www.biorxiv.org/content/10.1101/2020.12.06.408856v1.full.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3083101",
+          "name": "N. Balderston"
+        },
+        {
+          "authorId": "1671988695",
+          "name": "Darsol Seok"
+        },
+        {
+          "authorId": "2007914447",
+          "name": "Walid Makhoul"
+        },
+        {
+          "authorId": "1825451",
+          "name": "Z. Deng"
+        },
+        {
+          "authorId": "51361585",
+          "name": "Tommaso"
+        },
+        {
+          "authorId": "2151825027",
+          "name": "Girelli"
+        },
+        {
+          "authorId": "2038102609",
+          "name": "M. Teferi"
+        },
+        {
+          "authorId": "28951156",
+          "name": "Nathan Smyk"
+        },
+        {
+          "authorId": "1914572663",
+          "name": "Marc Jaskir"
+        },
+        {
+          "authorId": "5905686",
+          "name": "D. Oathes"
+        },
+        {
+          "authorId": "2085987608",
+          "name": "I. Yvette"
+        },
+        {
+          "authorId": "29954545",
+          "name": "Sheline"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

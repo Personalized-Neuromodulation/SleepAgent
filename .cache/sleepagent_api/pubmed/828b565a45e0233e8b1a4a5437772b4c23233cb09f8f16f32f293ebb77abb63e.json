@@ -1,0 +1,41 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "suppression",
+        "to": "\"suppress\"[All Fields] OR \"suppressed\"[All Fields] OR \"suppresser\"[All Fields] OR \"suppresses\"[All Fields] OR \"suppressibility\"[All Fields] OR \"suppressible\"[All Fields] OR \"suppressing\"[All Fields] OR \"suppression\"[All Fields] OR \"suppressions\"[All Fields] OR \"suppressive\"[All Fields] OR \"suppressives\"[All Fields]"
+      },
+      {
+        "from": "NREM sleep",
+        "to": "\"sleep, slow-wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow-wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"nrem\"[All Fields] AND \"sleep\"[All Fields]) OR \"nrem sleep\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Thalamus-DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"suppress\"[All Fields] OR \"suppressed\"[All Fields] OR \"suppresser\"[All Fields] OR \"suppresses\"[All Fields] OR \"suppressibility\"[All Fields] OR \"suppressible\"[All Fields] OR \"suppressing\"[All Fields] OR \"suppression\"[All Fields] OR \"suppressions\"[All Fields] OR \"suppressive\"[All Fields] OR \"suppressives\"[All Fields]) AND (\"sleep, slow wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"nrem\"[All Fields] AND \"sleep\"[All Fields]) OR \"nrem sleep\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "during"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

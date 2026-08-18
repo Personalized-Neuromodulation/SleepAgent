@@ -1,11 +1,11 @@
 # Experiment Report
 
-## Thalamic Spindle Modulation and Insomnia Severity via Thalamocortical Coupling
-- hypothesis_id: `hypothesis_57fdbe2e8962`
-- plan_id: `experiment_plan_bb9459a66e3b`
-- predictors: thalamus_DMN_FC, thalamus_salience_FC, thalamus_frontoparietal_FC, DMN_FC
-- outcomes: salience_FC, frontoparietal_FC
-- review_status: partially_supported
-- computed_reward: 0.595
+## Thalamocortical Coupling and Default Mode Network Dysregulation Interaction in Insomnia
+- hypothesis_id: `hypothesis_0475574660a3`
+- plan_id: `experiment_plan_f5361333fc9a`
+- predictors: thalamus_DMN_FC, DMN_FC, timefreq_fALFF_0.01_0.08_over_0.01_0.25, timefreq_ALFF_0.01_0.08
+- outcomes: ISI
+- review_status: partially supported
+- computed_reward: 0.525
 
-2/8 primary statistical tests passed p<0.05.
+2/4 primary statistical tests passed p<0.05.

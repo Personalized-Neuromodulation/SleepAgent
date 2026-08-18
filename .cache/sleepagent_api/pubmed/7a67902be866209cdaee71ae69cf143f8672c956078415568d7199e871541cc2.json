@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "sleep stage",
+        "to": "\"sleep stages\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"stages\"[All Fields]) OR \"sleep stages\"[All Fields] OR (\"sleep\"[All Fields] AND \"stage\"[All Fields]) OR \"sleep stage\"[All Fields]"
+      },
+      {
+        "from": "transitions",
+        "to": "\"transit\"[All Fields] OR \"transited\"[All Fields] OR \"transiting\"[All Fields] OR \"transition\"[All Fields] OR \"transitional\"[All Fields] OR \"transitionals\"[All Fields] OR \"transitioned\"[All Fields] OR \"transitioning\"[All Fields] OR \"transitions\"[All Fields] OR \"transits\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DMN-salience\"[All Fields] AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"sleep stages\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"stages\"[All Fields]) OR \"sleep stages\"[All Fields] OR (\"sleep\"[All Fields] AND \"stage\"[All Fields]) OR \"sleep stage\"[All Fields]) AND (\"transit\"[All Fields] OR \"transited\"[All Fields] OR \"transiting\"[All Fields] OR \"transition\"[All Fields] OR \"transitional\"[All Fields] OR \"transitionals\"[All Fields] OR \"transitioned\"[All Fields] OR \"transitioning\"[All Fields] OR \"transitions\"[All Fields] OR \"transits\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

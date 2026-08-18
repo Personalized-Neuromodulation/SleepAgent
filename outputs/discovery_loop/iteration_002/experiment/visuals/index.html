@@ -17,19 +17,34 @@
   <h1>Experiment Visualizations</h1>
   <table>
     <thead><tr><th>Plan</th><th>Hypothesis</th><th>Tests Passed</th><th>Statistical Models</th><th>ML Models</th></tr></thead>
-    <tbody><tr><td>experiment_plan_86d736554104</td><td>Thalamic Spindle Modulation and Insomnia Severity via Combined Thalamocortical and White Matter Pathways</td><td>4/4</td><td>linear_regression</td><td>decision_tree_regressor,random_forest_regressor,svm_regressor,xgboost_regressor,lightgbm_regressor</td></tr></tbody>
+    <tbody><tr><td>experiment_plan_6769bf7afde1</td><td>White Matter Microstructural Integrity Mediates Network-Specific Connectivity Disruptions in Insomnia</td><td>7/8</td><td>linear_regression</td><td>decision_tree_regressor,random_forest_regressor,svm_regressor,xgboost_regressor,lightgbm_regressor</td></tr></tbody>
+  </table>
+  <h2>Skipped Plans</h2>
+  <table>
+    <thead><tr><th>Plan</th><th>Hypothesis</th><th>Stage</th><th>Reason</th></tr></thead>
+    <tbody></tbody>
   </table>
   <section><h2>Primary Test Matrix</h2><p>Effect size and p-value matrix across all primary predictor/outcome tests.</p><img src="figures/primary_test_matrix.png" /></section>
-<section><h2>Linear Regression: thalamus-DMN FC -&gt; salience FC</h2><p>Full variable pair: thalamus_DMN_FC -&gt; salience_FC.</p><img src="figures/linear_regression_fit_experiment_plan_86d736554104_thalamus_DMN_FC_salience_FC.png" /></section>
-<section><h2>Linear Regression: thalamus-DMN FC -&gt; frontoparietal FC</h2><p>Full variable pair: thalamus_DMN_FC -&gt; frontoparietal_FC.</p><img src="figures/linear_regression_fit_experiment_plan_86d736554104_thalamus_DMN_FC_frontoparietal_FC.png" /></section>
-<section><h2>Linear Regression: timefreq fALFF
-0.01-0.08 / 0.01-0.25 -&gt; salience FC</h2><p>Full variable pair: timefreq_fALFF_0.01_0.08_over_0.01_0.25 -&gt; salience_FC.</p><img src="figures/linear_regression_fit_experiment_plan_86d736554104_timefreq_fALFF_0_01_0_08_over_0_01_0_25_salience_FC.png" /></section>
-<section><h2>Linear Regression: timefreq fALFF
-0.01-0.08 / 0.01-0.25 -&gt; frontoparietal FC</h2><p>Full variable pair: timefreq_fALFF_0.01_0.08_over_0.01_0.25 -&gt; frontoparietal_FC.</p><img src="figures/linear_regression_fit_experiment_plan_86d736554104_timefreq_fALFF_0_01_0_08_over_0_01_0_25_frontoparietal_FC.png" /></section>
-<section><h2>Bootstrap Sign Stability: plan 86d736554104</h2><p>Bootstrap sign stability for each primary test. Labels show predictor/outcome pairs rather than internal test ids.</p><img src="figures/robustness_bootstrap_experiment_plan_86d736554104.png" /></section>
-<section><h2>Negative Controls: plan 86d736554104</h2><p>Negative controls: green=passed negative control; red=failed negative control. Bars show effect estimates; p-values are not available in the current negative-control result schema.</p><img src="figures/negative_controls_experiment_plan_86d736554104.png" /></section>
-<section><h2>Variable Missingness: plan 86d736554104</h2><p>Missing rate for variables used by this experiment plan.</p><img src="figures/missingness_experiment_plan_86d736554104.png" /></section>
-<section><h2>ML Feature Importance</h2><p>Feature importance from the selected machine-learning model.</p><img src="figures/ml_feature_importance_experiment_plan_86d736554104.png" /></section>
-<section><h2>ML Regression Predicted vs Observed</h2><p>Predicted versus observed regression outcomes.</p><img src="figures/ml_regression_predicted_observed_experiment_plan_86d736554104.png" /></section>
+<section><h2>Linear Regression: thalamus-DMN FC -&gt; ISI</h2><p>Full variable pair: thalamus_DMN_FC -&gt; ISI.</p><img src="figures/linear_regression_fit_experiment_plan_6769bf7afde1_thalamus_DMN_FC_ISI.png" /></section>
+<section><h2>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_DMN_FC_ISI</h2><p>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_DMN_FC_ISI.png</p><img src="figures/group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_DMN_FC_ISI.png" /></section>
+<section><h2>Linear Regression: thalamus-DMN FC -&gt; PSQI</h2><p>Full variable pair: thalamus_DMN_FC -&gt; PSQI.</p><img src="figures/linear_regression_fit_experiment_plan_6769bf7afde1_thalamus_DMN_FC_PSQI.png" /></section>
+<section><h2>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_DMN_FC_PSQI</h2><p>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_DMN_FC_PSQI.png</p><img src="figures/group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_DMN_FC_PSQI.png" /></section>
+<section><h2>Linear Regression: thalamus-salience FC -&gt; ISI</h2><p>Full variable pair: thalamus_salience_FC -&gt; ISI.</p><img src="figures/linear_regression_fit_experiment_plan_6769bf7afde1_thalamus_salience_FC_ISI.png" /></section>
+<section><h2>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_salience_FC_ISI</h2><p>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_salience_FC_ISI.png</p><img src="figures/group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_salience_FC_ISI.png" /></section>
+<section><h2>Linear Regression: thalamus-salience FC -&gt; PSQI</h2><p>Full variable pair: thalamus_salience_FC -&gt; PSQI.</p><img src="figures/linear_regression_fit_experiment_plan_6769bf7afde1_thalamus_salience_FC_PSQI.png" /></section>
+<section><h2>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_salience_FC_PSQI</h2><p>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_salience_FC_PSQI.png</p><img src="figures/group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_salience_FC_PSQI.png" /></section>
+<section><h2>Linear Regression: thalamus-frontoparietal FC -&gt; ISI</h2><p>Full variable pair: thalamus_frontoparietal_FC -&gt; ISI.</p><img src="figures/linear_regression_fit_experiment_plan_6769bf7afde1_thalamus_frontoparietal_FC_ISI.png" /></section>
+<section><h2>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_frontoparietal_FC_ISI</h2><p>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_frontoparietal_FC_ISI.png</p><img src="figures/group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_frontoparietal_FC_ISI.png" /></section>
+<section><h2>Linear Regression: thalamus-frontoparietal FC -&gt; PSQI</h2><p>Full variable pair: thalamus_frontoparietal_FC -&gt; PSQI.</p><img src="figures/linear_regression_fit_experiment_plan_6769bf7afde1_thalamus_frontoparietal_FC_PSQI.png" /></section>
+<section><h2>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_frontoparietal_FC_PSQI</h2><p>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_frontoparietal_FC_PSQI.png</p><img src="figures/group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_frontoparietal_FC_PSQI.png" /></section>
+<section><h2>Linear Regression: thalamus coord z -&gt; ISI</h2><p>Full variable pair: thalamus_coord_z -&gt; ISI.</p><img src="figures/linear_regression_fit_experiment_plan_6769bf7afde1_thalamus_coord_z_ISI.png" /></section>
+<section><h2>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_coord_z_ISI</h2><p>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_coord_z_ISI.png</p><img src="figures/group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_coord_z_ISI.png" /></section>
+<section><h2>Linear Regression: thalamus coord z -&gt; PSQI</h2><p>Full variable pair: thalamus_coord_z -&gt; PSQI.</p><img src="figures/linear_regression_fit_experiment_plan_6769bf7afde1_thalamus_coord_z_PSQI.png" /></section>
+<section><h2>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_coord_z_PSQI</h2><p>group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_coord_z_PSQI.png</p><img src="figures/group_specific_scatter_experiment_plan_6769bf7afde1_thalamus_coord_z_PSQI.png" /></section>
+<section><h2>Bootstrap Sign Stability: plan 6769bf7afde1</h2><p>Bootstrap sign stability for each primary test. Labels show predictor/outcome pairs rather than internal test ids.</p><img src="figures/robustness_bootstrap_experiment_plan_6769bf7afde1.png" /></section>
+<section><h2>Negative Controls: plan 6769bf7afde1</h2><p>Negative controls: green=passed negative control; red=failed negative control. Bars show effect estimates; p-values are not available in the current negative-control result schema.</p><img src="figures/negative_controls_experiment_plan_6769bf7afde1.png" /></section>
+<section><h2>Variable Missingness: plan 6769bf7afde1</h2><p>Missing rate for variables used by this experiment plan.</p><img src="figures/missingness_experiment_plan_6769bf7afde1.png" /></section>
+<section><h2>ML Feature Importance</h2><p>Feature importance from the selected machine-learning model.</p><img src="figures/ml_feature_importance_experiment_plan_6769bf7afde1.png" /></section>
+<section><h2>ML Regression Predicted vs Observed</h2><p>Predicted versus observed regression outcomes.</p><img src="figures/ml_regression_predicted_observed_experiment_plan_6769bf7afde1.png" /></section>
 </body>
 </html>

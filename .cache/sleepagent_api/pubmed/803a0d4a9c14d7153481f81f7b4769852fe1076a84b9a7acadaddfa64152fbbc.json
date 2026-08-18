@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "fALFF",
+        "to": "\"falff\"[All Fields] OR \"falffs\"[All Fields]"
+      },
+      {
+        "from": "analysis",
+        "to": "\"analysis\"[Subheading] OR \"analysis\"[All Fields]"
+      },
+      {
+        "from": "sleep studies",
+        "to": "\"polysomnography\"[MeSH Terms] OR \"polysomnography\"[All Fields] OR (\"sleep\"[All Fields] AND \"studies\"[All Fields]) OR \"sleep studies\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Time-frequency\"[All Fields] AND (\"falff\"[All Fields] OR \"falffs\"[All Fields]) AND (\"analysis\"[MeSH Subheading] OR \"analysis\"[All Fields]) AND (\"polysomnography\"[MeSH Terms] OR \"polysomnography\"[All Fields] OR (\"sleep\"[All Fields] AND \"studies\"[All Fields]) OR \"sleep studies\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

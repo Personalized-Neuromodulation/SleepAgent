@@ -1,34 +1,34 @@
 [
   {
-    "hypothesis_id": "hypothesis_507f1dc573b1",
+    "hypothesis_id": "hypothesis_7c22a24f9a65",
     "parent_ids": [],
     "generation_strategy": "literature_exploration",
     "generation_round": 1
   },
   {
-    "hypothesis_id": "hypothesis_d0c51b2a03fe",
+    "hypothesis_id": "hypothesis_adf9d78ead64",
     "parent_ids": [],
     "generation_strategy": "scientific_debate",
     "generation_round": 2
   },
   {
-    "hypothesis_id": "hypothesis_a627b04ae678",
+    "hypothesis_id": "hypothesis_05d1d4f93052",
     "parent_ids": [],
     "generation_strategy": "assumption_chaining",
     "generation_round": 3
   },
   {
-    "hypothesis_id": "hypothesis_0dea35fcf609",
+    "hypothesis_id": "hypothesis_91f214f8e57d",
     "parent_ids": [],
     "generation_strategy": "research_expansion",
     "generation_round": 4
   },
   {
-    "hypothesis_id": "hypothesis_4610cc024bec",
+    "hypothesis_id": "hypothesis_c2ad9cd586b5",
     "parent_ids": [
-      "hypothesis_507f1dc573b1",
-      "hypothesis_d0c51b2a03fe",
-      "hypothesis_a627b04ae678"
+      "hypothesis_91f214f8e57d",
+      "hypothesis_7c22a24f9a65",
+      "hypothesis_05d1d4f93052"
     ],
     "generation_strategy": "evolution:cross_pollination",
     "generation_round": 2

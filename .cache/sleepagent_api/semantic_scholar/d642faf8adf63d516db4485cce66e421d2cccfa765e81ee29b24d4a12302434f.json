@@ -1,0 +1,2273 @@
+{
+  "total": 208,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "b11d00e9ca51e78e7f656d0448e6217870b9f294",
+      "externalIds": {
+        "DBLP": "journals/access/TripathiAGMHAUM22",
+        "DOI": "10.1109/ACCESS.2022.3212120",
+        "CorpusId": 252882455
+      },
+      "url": "https://www.semanticscholar.org/paper/b11d00e9ca51e78e7f656d0448e6217870b9f294",
+      "title": "Ensemble Computational Intelligent for Insomnia Sleep Stage Detection via the Sleep ECG Signal",
+      "venue": "IEEE Access",
+      "year": 2022,
+      "citationCount": 49,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/09917483.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2022.3212120?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2022.3212120, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "88807596",
+          "name": "Pragati Tripathi"
+        },
+        {
+          "authorId": "143876939",
+          "name": "M. A. Ansari"
+        },
+        {
+          "authorId": "2257932600",
+          "name": "I. A. K. S. Senior Member"
+        },
+        {
+          "authorId": "1491631223",
+          "name": "Rajat Mehrotra"
+        },
+        {
+          "authorId": "100846690",
+          "name": "F. Akhtar"
+        },
+        {
+          "authorId": "65886745",
+          "name": "C. Ukwuoma"
+        },
+        {
+          "authorId": "98327231",
+          "name": "A. Yahya"
+        },
+        {
+          "authorId": "2288416330",
+          "name": "Mohammed Muaad"
+        },
+        {
+          "authorId": "9171545",
+          "name": "Y. Kadah"
+        },
+        {
+          "authorId": "2411289798",
+          "name": "I. M. A. A. Senior Member"
+        },
+        {
+          "authorId": "2144535287",
+          "name": "Jianping Li"
+        },
+        {
+          "authorId": "2288406903",
+          "name": "Md Belal"
+        },
+        {
+          "authorId": "2288406910",
+          "name": "Bin Heyat"
+        }
+      ],
+      "abstract": "Insomnia is a common sleep disorder in which patients cannot sleep properly. Accurate detection of insomnia disorder is a crucial step for mental disease analysis in the early stages. The disruption in getting quality sleep is one of the big sources of cardiovascular syndromes such as blood pressure and stroke. The traditional insomnia detection methods are time-consuming, cumbersome, and more expensive because they demand a long time from a trained neurophysiologist, and they are prone to human error, hence, the accuracy of diagnosis gets compromised. Therefore, the automatic insomnia diagnosis from the electrocardiogram (ECG) records is vital for timely detection and cure. In this paper, a novel hybrid artificial intelligence (AI) approach is proposed based on the power spectral density (PSD) of the heart rate variability (HRV) to detect insomnia in three classification scenarios: (1) subject-based classification scenario (normal Vs. insomnia), (2) sleep stage-based classification (REM Vs. W. stage), and (3) the combined classification scenario using both subject-based and sleep stage-based deep features. The ensemble learning of random forest (RF) and decision tree (DT) classifiers are used to perform the first and second classification scenarios, while the linear discriminant analysis (LDA) classifier is used to perform the third combined scenario. The proposed framework includes data collection, investigation of the ECG signals, extraction of the signal HRV, estimation of the PSD, and AI-based classification via hybrid machine learning classifiers. The proposed framework is fine-tuned and evaluated using the free public PhysioNet dataset over fivefold trails cross-validation. For the subject-based classification scenario, the detection performance in terms of sensitivity, specificity, and accuracy is recorded to be 96.0%, 94.0%, and 96.0%, respectively. For the sleep stage-based classification scenario, the detection evaluation results are recorded equally with 96.0% for ceiling level accuracy, sensitivity, and specificity. For the combined classification scenario, the LDA classifier has achieved the best insomnia detection accuracy with 99.0%. In the future, the proposed hybrid AI approach could be applicable for mobile observation schemes to automatically detect insomnia disorders."
+    },
+    {
+      "paperId": "7552055c918f193c6b22f7baca9d563b9cde008e",
+      "externalIds": {
+        "DOI": "10.1109/ICNWC68145.2026.11518363",
+        "CorpusId": 288469742
+      },
+      "url": "https://www.semanticscholar.org/paper/7552055c918f193c6b22f7baca9d563b9cde008e",
+      "title": "Real-Time Signal Quality Monitoring and Interference Detection Using RTL-SDR: A Hybrid PSD Thresholding and PSO-Adaptive Line Enhancement Approach",
+      "venue": "2026 Third International Conference on Networking and Communications (ICNWC)",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICNWC68145.2026.11518363?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICNWC68145.2026.11518363, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2436976606",
+          "name": "Aejaz Ahmad Ansari"
+        },
+        {
+          "authorId": "2437042874",
+          "name": "Divyesh Shanmugarajah"
+        },
+        {
+          "authorId": "2326063921",
+          "name": "M. Shrivastav"
+        },
+        {
+          "authorId": "2437038886",
+          "name": "Mutyala Jahnavi Sai"
+        },
+        {
+          "authorId": "66597384",
+          "name": "Sirisha Tadepalli"
+        }
+      ],
+      "abstract": "Real-time spectrum monitoring is a critical requirement in modern wireless environments due to increasing spectral congestion, unintentional emissions, and interference originating from both communication systems and low-cost receivers. Software-Defined Radio (SDR) platforms, particularly RTL-SDR devices, provide an inexpensive and flexible solution for wideband signal monitoring, but they suffer from severe hardware-induced artifacts such as DC offsets, image frequencies, impulsive spectral spikes, IQ imbalance, and non-stationary noise. These impairments significantly degrade the reliability of conventional interference detection techniques based on fixed thresholding or gradient-based adaptive filters.This paper presents a real-time signal quality monitoring and interference detection framework using RTL-SDR that employs a hybrid two-stage denoising architecture. In the first stage, a smart percentile-based Power Spectral Density (PSD) thresholding method dynamically isolates statistically significant spectral components while suppressing broadband noise and impulsive distortions. Hardware-aware artifact mitigation is explicitly integrated to eliminate DC spikes and characteristic ±420 kHz image frequencies inherent to RTL-SDR receivers, which arise due to local oscillator (LO) leakage in the direct-conversion front-end. In the second stage, an Adaptive Line Enhancer optimized using Particle Swarm Optimization (PSO) is applied to enhance correlated and structured signal components while minimizing residual noise. The PSO-based optimization strictly follows the canonical Kennedy and Eberhart update rules, enabling global convergence in non-linear and non-stationary noise environments where traditional LMS-based methods fail."
+    },
+    {
+      "paperId": "dbda26e1957013bcfbc77679f2033af8604b07ef",
+      "externalIds": {
+        "PubMedCentral": "12534500",
+        "DOI": "10.1038/s41398-025-03605-y",
+        "CorpusId": 282196893,
+        "PubMed": "41107249"
+      },
+      "url": "https://www.semanticscholar.org/paper/dbda26e1957013bcfbc77679f2033af8604b07ef",
+      "title": "Modulation of brain oscillations by continuous theta burst stimulation in patients with insomnia",
+      "venue": "Translational Psychiatry",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12534500, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1830456583",
+          "name": "Ximei Zhu"
+        },
+        {
+          "authorId": "2022696100",
+          "name": "Lin Jiang"
+        },
+        {
+          "authorId": "114194828",
+          "name": "Le Shi"
+        },
+        {
+          "authorId": "2999471",
+          "name": "Fali Li"
+        },
+        {
+          "authorId": "2262052304",
+          "name": "Qingqing Yang"
+        },
+        {
+          "authorId": "2346301157",
+          "name": "Mingyue Zhang"
+        },
+        {
+          "authorId": "2346323364",
+          "name": "Yinjiao Li"
+        },
+        {
+          "authorId": "2349769531",
+          "name": "Qiuxuan Yu"
+        },
+        {
+          "authorId": "2155100279",
+          "name": "Jie Chen"
+        },
+        {
+          "authorId": "2335280167",
+          "name": "Xuejiao Gao"
+        },
+        {
+          "authorId": "2141399519",
+          "name": "Zhong Wang"
+        },
+        {
+          "authorId": "2238896496",
+          "name": "Yong Wang"
+        },
+        {
+          "authorId": "2314425069",
+          "name": "Peng Xu"
+        },
+        {
+          "authorId": "2278979892",
+          "name": "Lin Lu"
+        },
+        {
+          "authorId": "2312183962",
+          "name": "Jiahui Deng"
+        }
+      ],
+      "abstract": "Continuous theta burst stimulation (cTBS) induces long-lasting depression of cortical excitability in motor cortex. In the present study, we explored the modulation of cTBS on resting state electroencephalogram (rsEEG) during wakefulness and subsequent sleep in patients with insomnia disorder. Forty-one patients with insomnia received three sessions active and sham cTBS in a counterbalanced crossover design. Each session comprised 600 pulses over right dorsolateral prefrontal cortex. Closed-eyes rsEEG were recorded at before and after each session. Effects of cTBS in subsequent sleep were measured by overnight polysomnography screening. Power spectral density (PSD) and phase locking value (PLV) were used to calculate changes in spectral power and phase synchronization after cTBS during wakefulness and subsequent sleep. Compared with sham cTBS intervention, PSD of delta and theta bands were increased across global brain regions with a cumulative effect after three active cTBS sessions. PLV of delta and theta bands were enhanced between stimulated frontal area and occipital areas. Efficiency of information communication within frontal-occipital networks was consistently improved through three active sessions. Increased theta power during wakefulness was positively related with that during the first sleep cycle. Active cTBS significantly enhanced the spectral power of delta and theta bands during wakefulness, with a cumulative effect observed over time. This modulation also extended to influence theta power during subsequent sleep onset period. Collectively, these findings provide a robust theoretical foundation for further investigating the therapeutic potential of long-term cTBS in the treatment of insomnia disorders."
+    },
+    {
+      "paperId": "1b32946b2dbb6ab79994f72c2df962eb37627b2c",
+      "externalIds": {
+        "DOI": "10.55041/ijsrem39141",
+        "CorpusId": 274352543
+      },
+      "url": "https://www.semanticscholar.org/paper/1b32946b2dbb6ab79994f72c2df962eb37627b2c",
+      "title": "Integrative Computational Intelligence Techniques for Insomnia and Sleep Stage Recognition from ECG Data",
+      "venue": "INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ijsrem.com/download/integrative-computational-intelligence-techniques-for-insomnia-and-sleep-stage-recognition-from-ecg-data/?wpdmdl=40541&refresh=6748a70bbcbec1732814603",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.55041/ijsrem39141?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.55041/ijsrem39141, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2284887700",
+          "name": "D. V"
+        },
+        {
+          "authorId": "2351363204",
+          "name": "J. G"
+        }
+      ],
+      "abstract": "Abstract—Insomnia is a common sleep disorder that can lead\nto serious health problems, including cardiovascular issues.\nEarly and accurate detection is essential for effective\ntreatment, but traditional diagnostic methods are often costly,\ntime-consuming, and prone to human error. To address these\nchallenges, this paper introduces a novel hybrid artificial\nintelligence (AI) approach for automatic insomnia detection\nusing electrocardiogram (ECG) signals. The method utilizes\nheart rate variability (HRV) and power spectral density (PSD)\n\nanalysis in various classification scenarios, including subject-\nbased classification (normal vs. insomnia), sleep stage-based\n\nclassification (REM vs. wake), and a combined classification\napproach using both subject and sleep stage features.\nEnsemble learning techniques, such as random forest (RF) and\ndecision tree (DT) classifiers, are used in the first two\nscenarios, while linear discriminant analysis (LDA) is applied\nin the combined classification. The approach includes ECG\nsignal collection, HRV feature extraction, PSD estimation, and\nclassification. Evaluation using the publicly available\nPhysioNet dataset shows strong performance across all\nscenarios, with high sensitivity, specificity, and accuracy. The\ncombined classification scenario, in particular, achieves the\nhighest detection accuracy with LDA.\nKeywords—HRV Extraction, Sleep Stage, Ensemble, LDA"
+    },
+    {
+      "paperId": "4e59107d53ff4a983b93b8d279d7505ab15a58d6",
+      "externalIds": {
+        "PubMedCentral": "11377540",
+        "DOI": "10.1038/s41598-024-71795-4",
+        "CorpusId": 272425876,
+        "PubMed": "39237695"
+      },
+      "url": "https://www.semanticscholar.org/paper/4e59107d53ff4a983b93b8d279d7505ab15a58d6",
+      "title": "Intelligent tool wear prediction based on deep learning PSD-CVT model",
+      "venue": "Scientific Reports",
+      "year": 2024,
+      "citationCount": 23,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1038/s41598-024-71795-4",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11377540, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2296851658",
+          "name": "Sumei Si"
+        },
+        {
+          "authorId": "2297030115",
+          "name": "Deqiang Mu"
+        },
+        {
+          "authorId": "2296852559",
+          "name": "Zekai Si"
+        }
+      ],
+      "abstract": "To ensure the reliability of machining quality, it is crucial to predict tool wear accurately. In this paper, a novel deep learning-based model is proposed, which synthesizes the advantages of power spectral density (PSD), convolutional neural networks (CNN), and vision transformer model (ViT), namely PSD-CVT. PSD maps can provide a comprehensive understanding of the spectral characteristics of the signals. It makes the spectral characteristics more obvious and makes it easy to analyze and compare different signals. CNN focuses on local feature extraction, which can capture local information such as the texture, edge, and shape of the image, while the attention mechanism in ViT can effectively capture the global structure and long-range dependencies present in the image. Two fully connected layers with a ReLU function are used to obtain the predicted tool wear values. The experimental results on the PHM 2010 dataset demonstrate that the proposed model has higher prediction accuracy than the CNN model or ViT model alone, as well as outperforms several existing methods in accurately predicting tool wear. The proposed prediction method can also be applied to predict tool wear in other machining fields."
+    },
+    {
+      "paperId": "bef0e20bf791cd439163422888941e1ee19de642",
+      "externalIds": {
+        "DOI": "10.1101/2022.12.06.519194",
+        "CorpusId": 254537018
+      },
+      "url": "https://www.semanticscholar.org/paper/bef0e20bf791cd439163422888941e1ee19de642",
+      "title": "Spatial and Spectral Components of the BOLD Global Signal in Rat Resting-State Functional MRI",
+      "venue": "bioRxiv",
+      "year": 2022,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1101/2022.12.06.519194",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2022.12.06.519194?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2022.12.06.519194, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2140036617",
+          "name": "Nmachi Anumba"
+        },
+        {
+          "authorId": "2264217",
+          "name": "E. Maltbie"
+        },
+        {
+          "authorId": "2719708",
+          "name": "W. Pan"
+        },
+        {
+          "authorId": "51500438",
+          "name": "Theodore J. LaGrow"
+        },
+        {
+          "authorId": "2150038320",
+          "name": "Nan Xu"
+        },
+        {
+          "authorId": "2707494",
+          "name": "S. Keilholz"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "f066961bb0a83cdaf7efc1678e986b00840c6748",
+      "externalIds": {
+        "MAG": "2888169925",
+        "DBLP": "journals/taslp/EnznerT18",
+        "DOI": "10.1109/TASLP.2018.2862641",
+        "CorpusId": 52130183
+      },
+      "url": "https://www.semanticscholar.org/paper/f066961bb0a83cdaf7efc1678e986b00840c6748",
+      "title": "Bayesian MMSE Filtering of Noisy Speech by SNR Marginalization With Global PSD Priors",
+      "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+      "year": 2018,
+      "citationCount": 11,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TASLP.2018.2862641?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TASLP.2018.2862641, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3122144",
+          "name": "Gerald Enzner"
+        },
+        {
+          "authorId": "51227660",
+          "name": "Philipp Thüne"
+        }
+      ],
+      "abstract": "MMSE filtering of speech with additive noise and latent speech power-spectral density (PSD) is addressed. This problem is strong in single-channel speech enhancement and restricts the utility of stationary Wiener filters or other statistical estimators based on PSDs. The issue typically manifests itself in residual noise after filtering, despite the availability of the noise PSD. Our paper therefore incorporates the latent speech PSD state via marginalization into the MMSE estimation framework of complex speech spectral amplitudes. The hence involved joint posterior distribution of the complex speech amplitude and speech PSD, conditioned on just the noisy observations, is then resolved in the Bayesian sense into a speech and a speech-PSD posterior. The latter is expressed via the local data likelihood and a hyper-prior of the local speech PSD or a-priori SNR—i.e., a global distribution across the entire speech signal. Marginalization, in this way, turns into expectation over a latent Wiener filter, such that explicit estimation of local a-priori SNR is eliminated. The local input data in the form of the a-posteriori SNR and the global SNR value as a descriptor of the overall speech-in-noise condition turns out sufficient to control our resulting MMSE spectral gain function, and, potentially, can be provided much easier than the latent and time-varying a-priori SNR. An improved balance of residual noise and speech quality in the enhancement of noisy speech is demonstrated by objective experimental evaluation."
+    },
+    {
+      "paperId": "c6769e4297040c0edc3c90f88ed0ba5417c5089c",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0679",
+        "CorpusId": 278746684
+      },
+      "url": "https://www.semanticscholar.org/paper/c6769e4297040c0edc3c90f88ed0ba5417c5089c",
+      "title": "0679 Enhancing Prediction of Sleepiness, Insomnia, and Cognitive Impairment Using Machine Learning on Polysomnography",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0679?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0679, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2298014259",
+          "name": "Archita Srivastava"
+        },
+        {
+          "authorId": "2185017700",
+          "name": "M. Hajipour"
+        },
+        {
+          "authorId": "2362392922",
+          "name": "Andrew E. Beaudin"
+        },
+        {
+          "authorId": "2249971896",
+          "name": "Patrick J. Hanly"
+        },
+        {
+          "authorId": "2309923468",
+          "name": "Eric E. Smith"
+        },
+        {
+          "authorId": "2249964565",
+          "name": "F. Sériès"
+        },
+        {
+          "authorId": "2348979877",
+          "name": "Rébecca Robillard"
+        },
+        {
+          "authorId": "13622227",
+          "name": "J. Kimoff"
+        },
+        {
+          "authorId": "6732261",
+          "name": "J. Raneri"
+        },
+        {
+          "authorId": "2250107323",
+          "name": "Ghassan Hamarneh"
+        },
+        {
+          "authorId": "2236026213",
+          "name": "N. Ayas"
+        }
+      ],
+      "abstract": "\n \n \n Obstructive sleep apnea (OSA) is a prevalent disorder affecting approximately a billion people globally. Traditional diagnostic metrics from polysomnography (PSG) such as the apnea hypopnea index (AHI) are limited in predicting OSA-related impacts. This study aims to leverage machine learning (ML) methods to enhance PSG prediction of three outcomes: daytime sleepiness (defined as Epworth Sleepiness Scale >10), insomnia (Insomnia Severity Index >15) and cognitive impairment (Montreal Cognitive Assessment < 25) in patients with moderate to severe OSA.\n \n \n \n This pilot study utilized a subset of Canadian Sleep and Circadian Network participants (patients with suspected OSA recruited from academic sleep centres). Advanced signal processing was used to derive 790 features from PSG European Data Format (edf) files including: respiratory events, heart rate variations, limb movements, and EEG based metrics from leads C3/C4 (e.g., sleep stages, spindle metrics, power frequencies, sleep depth, arousal intensity). 541 participants with moderate to severe OSA (AHI>15/hr) were included. Python 3.11.6 was used for analysis. For each outcome, dimensionality reduction was done using Lasso Regression, Principal Component Analysis (PCA), and Recursive Feature Elimination (RFE). Binary classification models with Logistic Regression (LR), Support Vector Classification (SVC), Random Forest (RF), Multi-Layer Perceptron (MLP), Gaussian Naïve bayes, and XGBoost were then used (18 models tested). Model accuracy was assessed using 5-fold cross validation.\n \n \n \n Models that employed RFE for feature selection and LR for classification (based on 50-70 features depending on outcome) yielded the best performance. The average accuracy/F1 values across all target outcomes were 0.71/0.71 for sleepiness, 0.68/0.61 for insomnia, and 0.62/0.62 for cognitive impairment. However, accuracy of all the ML models surpassed the predictive accuracy of AHI alone (accuracy of 0.55, 0.60, 0.53 using logistic regression).\n \n \n \n This preliminary study supports the concept of applying advanced signal processing and ML techniques to PSG to help predict OSA-related outcomes. Future research with larger sample sizes, more diverse patients, more refined ML methodologies, and better feature engineering should further improve accuracy of these models.\n \n \n \n CIHR, BC Lung Association\n"
+    },
+    {
+      "paperId": "8e17bc35def1d719a25aa0e39479db4c297b5638",
+      "externalIds": {
+        "DOI": "10.1051/swsc/2025026",
+        "CorpusId": 279067486
+      },
+      "url": "https://www.semanticscholar.org/paper/8e17bc35def1d719a25aa0e39479db4c297b5638",
+      "title": "Intermittency in the Integrated Power of Ionospheric Density Fluctuations",
+      "venue": "Journal of Space Weather and Space Climate",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1051/swsc/2025026",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1051/swsc/2025026?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1051/swsc/2025026, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "103157646",
+          "name": "H. Ghadjari"
+        },
+        {
+          "authorId": "2364666371",
+          "name": "David Knudsen"
+        },
+        {
+          "authorId": "2259789424",
+          "name": "G. Balasis"
+        },
+        {
+          "authorId": "2364667260",
+          "name": "Susan Skone"
+        }
+      ],
+      "abstract": "The occurrence of ionospheric irregularities poses a significant challenge to Global Navigation Satellite Systems (GNSS) by disrupting signal propagation and causing loss of lock (LOL) events. This study investigates the integrated power spectral density (PSD) of electron density fluctuations at various scales using nearly ten years of Swarm satellite data. The analysis focuses on the post-sunset equatorial ionosphere, a region prone to ionospheric irregularities. The higher occurrence of loss of navigational capability (LNC) for Swarm A and C compared to Swarm B suggests that ionospheric irregularities have a more pronounced effect on the GPS receivers of Swarm A and C. The results reveal a power-law distribution in the integrated PSD of irregularities at scales less than 30 km, suggesting the presence of self-organized criticality (SOC) in the system. The study also employs multifractal detrended fluctuation analysis (MFDFA) to demonstrate the multifractal and intermittent nature of the fluctuations. The findings highlight the importance of intermittency and strong bursts in understanding the LOL events in the ionosphere. The research contributes to a deeper understanding of the dynamics of ionospheric irregularities and offers potential for improved forecasting and mitigation of their impact on GNSS."
+    },
+    {
+      "paperId": "a2f2bae12e13dd251c26b17205c1123025d45903",
+      "externalIds": {
+        "DOI": "10.11113/elektrika.v24n3.620",
+        "CorpusId": 284210804
+      },
+      "url": "https://www.semanticscholar.org/paper/a2f2bae12e13dd251c26b17205c1123025d45903",
+      "title": "Preliminary Findings on Effect of Stress on Breathing Sound Signal",
+      "venue": "Elektrika: Journal of Electrical Engineering",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://elektrika.utm.my/index.php/ELEKTRIKA_Journal/article/download/620/370",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.11113/elektrika.v24n3.620?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.11113/elektrika.v24n3.620, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2400931087",
+          "name": "Umi Izzahtulhusna Jais"
+        },
+        {
+          "authorId": "2293082468",
+          "name": "M. Harun"
+        },
+        {
+          "authorId": "2400933081",
+          "name": "Hafiz Haziq"
+        },
+        {
+          "authorId": "2400930076",
+          "name": "Amizi"
+        },
+        {
+          "authorId": "2210902668",
+          "name": "Rozeha A. Rashid"
+        },
+        {
+          "authorId": "48962748",
+          "name": "R. Arsat"
+        },
+        {
+          "authorId": "2338214059",
+          "name": "Nurul Ashikin"
+        },
+        {
+          "authorId": "2338159113",
+          "name": "Abdul Kadir"
+        }
+      ],
+      "abstract": "On the onset of the Covid-19 pandemic, announced by WHO on March 2020, the global prevalence estimates for stress were 37%.  Extreme stress causes psychological problems in workers such as anxiety and depression, burnout, and decreased productivity.  The research among healthy adults has shown that slow breathing significantly reduces psychological stress.  However, the breath ratios of inhale versus exhale do not have a significant differential effect on stress reduction. The goal of this study was to quantify sound power of the breathing sound signals of adults, induced by stressful mental workload.  Eighteen adults participated in the study.  Thirty-six samples of breathing sound signals were captured for normal breathing, and after the participants had undergone three Stressors - Stroop, Trail Marking, and Mental Arithmetic tests. The acquired breathing sound signals were then analysed to obtain power spectral density (PSD). From PSD, the magnitude and the frequency of sound power of the breathing signals were determined.  For normal breathings, the magnitude of sound power of male and female participants decreases the same pattern as the frequency of the breathing sound signal increases.  However, after they had undergone the Stressors, the magnitude of sound power of the breathing signals of the female participants spikes between frequency 1200 Hz and 2000 Hz.  In conclusion, the male participants are indifference to the stressful mental workload imposed to them, while the female participants were susceptible to stress at higher frequency."
+    },
+    {
+      "paperId": "dfb7c0c01a636b155c299814156d55450145f855",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsae080",
+        "CorpusId": 268666249,
+        "PubMed": "38520362"
+      },
+      "url": "https://www.semanticscholar.org/paper/dfb7c0c01a636b155c299814156d55450145f855",
+      "title": "Electroencephalography connectome changes in chronic insomnia disorder are correlated with neurochemical signatures.",
+      "venue": "Sleep",
+      "year": 2024,
+      "citationCount": 13,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsae080?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsae080, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212724803",
+          "name": "Liyong Yu"
+        },
+        {
+          "authorId": "2283822961",
+          "name": "W. Peng"
+        },
+        {
+          "authorId": "2230122164",
+          "name": "Wenting Lin"
+        },
+        {
+          "authorId": "2258154842",
+          "name": "Yucai Luo"
+        },
+        {
+          "authorId": "2293549370",
+          "name": "Daijie Hu"
+        },
+        {
+          "authorId": "2181457518",
+          "name": "Guangli Zhao"
+        },
+        {
+          "authorId": "2108835658",
+          "name": "Hao Xu"
+        },
+        {
+          "authorId": "2212803487",
+          "name": "Zeyang Dou"
+        },
+        {
+          "authorId": "2256972561",
+          "name": "Qi Zhang"
+        },
+        {
+          "authorId": "2293163378",
+          "name": "Xiaojuan Hong"
+        },
+        {
+          "authorId": "2253820682",
+          "name": "Siyi Yu"
+        }
+      ],
+      "abstract": "STUDY OBJECTIVES\nThis study aimed to investigate the alterations in resting-state electroencephalography (EEG) global brain connectivity (GBC) in patients with chronic insomnia disorder (CID) and to explore the correlation between macroscale connectomic variances and microscale neurotransmitter distributions.\n\n\nMETHODS\nWe acquired 64-channel EEG from 35 female CID patients and 34 healthy females. EEG signals were source-localized using individual brain anatomy and orthogonalized to mitigate volume conduction. Correlation coefficients between band-limited source-space power envelopes of the DK 68 atlas were computed and averaged across regions to determine specific GBC values. A support vector machine (SVM) classifier utilizing GBC features was employed to differentiate CID patients from controls. We further used Neurosynth and a 3D atlas of neurotransmitter receptors/transporters to assess the cognitive functions and neurotransmitter landscape associated with CID cortical abnormality maps, respectively.\n\n\nRESULTS\nCID patients exhibited elevated GBC within the medial prefrontal cortex and limbic cortex, particularly at the gamma carrier frequency, compared to controls (pFDR<0.05). GBC patterns were found to effectively distinguish CID patients from controls with a precision of 90.8% in the SVM model. The cortical abnormality maps were significantly correlated with meta-analytic terms like \"cognitive control\" and \"emotion regulation.\" Notably, GBC patterns were associated with neurotransmitter profiles (pspin<0.05), with neurotransmitter systems such as norepinephrine, dopamine, and serotonin making significant contributions.\n\n\nCONCLUSIONS\nThis work characterizes the EEG connectomic profile of CID, facilitating the cost-effective clinical translation of EEG-derived markers. Additionally, the linkage between GBC patterns and neurotransmitter distribution offers promising avenues for developing targeted treatment strategies for CID."
+    },
+    {
+      "paperId": "a8635c20249c1d794c10a226c9bc6de5e7a26d3c",
+      "externalIds": {
+        "DOI": "10.1109/INSAI56792.2022.00036",
+        "CorpusId": 259835466
+      },
+      "url": "https://www.semanticscholar.org/paper/a8635c20249c1d794c10a226c9bc6de5e7a26d3c",
+      "title": "A Motion Imagery EEG Signal Recognition Algorithm Based on Power Spectral Density combined with Particle Swarm Optimization Algorithm Optimized Support Vector Machine",
+      "venue": "2022 2nd International Conference on Networking Systems of AI (INSAI)",
+      "year": 2022,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/INSAI56792.2022.00036?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/INSAI56792.2022.00036, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2151597667",
+          "name": "Ruijing Lin"
+        },
+        {
+          "authorId": "146355757",
+          "name": "Chaoyi Dong"
+        },
+        {
+          "authorId": "2146522941",
+          "name": "Pengfei Ma"
+        },
+        {
+          "authorId": "49794890",
+          "name": "Xiaoyan Chen"
+        },
+        {
+          "authorId": "2146398248",
+          "name": "Huanzi Liu"
+        },
+        {
+          "authorId": "2191753665",
+          "name": "Dongyang Lei"
+        }
+      ],
+      "abstract": "For the purpose of addressing the issue of low classification accuracy resulting from low signal-to-noise ratios in electroencephalogram (EEG) signals, in this paper, a classification algorithm for motion imagery EEG signals (PSD-PSO-SVM) utilizing power spectral density analysis (PSD) combined with particle swarm optimization method (PSO) improved support vector machine (SVM) is proposed. A first step of the algorithm is to extract features of the EEG signal in the frequency domain by PSD, and the energy spectral densities of 0-30Hz in delta, theta, alpha, and beta frequencies are selected as their frequency domain features. Following that, a support vector machine is utilized for the classification of the extracted features. A solution is provided for the problem that performance in classification of traditional SVM is greatly influenced by its k-function parameters. It is the parameters of the kernel function of the SVM that are optimized by using the global optimisation-seeking capability of PSO to achieve optimal performance in classification. Finally, the algorithm validity was assessed by analyzing both the laboratory dataset (IMUT data) and the open dataset III developed for the 2003 competition on brain-computer interfaces (III BCI 2003). These findings show that PSD-PSO_SVM can perform classifications up to a level of 80.63%. It is proposed in this article that the proposed algorithm is compared to other optimization SVM algorithms, such as genetic algorithm optimization SVM (GA_SVM), and shows that PSO_SVM outperforms GA _ SVM with an average classification accuracy of 5.63%. Thus the PSD-PSO_SVM was shown to have good classification performance."
+    },
+    {
+      "paperId": "cd789a49f61ee03c84868d44dabcbbce7dfd6d7a",
+      "externalIds": {
+        "DOI": "10.1109/QPAIN69676.2026.11545685",
+        "CorpusId": 289194804
+      },
+      "url": "https://www.semanticscholar.org/paper/cd789a49f61ee03c84868d44dabcbbce7dfd6d7a",
+      "title": "ECG-Based Mental Stress Classification Using Feature Engineering and Power Spectral Density Analysis With Machine and Deep Learning Models",
+      "venue": "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN)",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/QPAIN69676.2026.11545685?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/QPAIN69676.2026.11545685, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2430079114",
+          "name": "Muhibul Haque Chowdhury"
+        },
+        {
+          "authorId": "2326992736",
+          "name": "Nafisa Anjum"
+        },
+        {
+          "authorId": "2442167612",
+          "name": "Ashraf Al-Khalique"
+        },
+        {
+          "authorId": "2378712983",
+          "name": "Md. Rokonuzzaman Mim"
+        }
+      ],
+      "abstract": "Stress has emerged as a critical global health issue, contributing to cardiovascular and psychological disorders, underscoring the need for an accurate and reliable physiological stress monitoring system. Furthermore, recent advances in wearable sensing and intelligent analysis have enabled the use of electrocardiogram (ECG) signals as a noninvasive and informative modality for stress assessment. In this study, we proposed a framework for binary stress classification using ECG signals recorded during multiple daily activities. Our proposed methodology integrates careful signal processing with comprehensive feature extraction and Power Spectral Density (PSD) analysis to capture stress-related variations in cardiac dynamics. Furthermore, time-domain features and frequency-domain features derived from PSD analysis were used to characterize autonomic nervous system activity. These features were evaluated as input for machine learning models, including Decision Tree, Random Forest, XGBoost, LightGBM, and CatBoost. We also deployed deep learning models, such as Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks. Our study highlights the effectiveness of machine learning and deep learning classifiers, with CatBoost achieving $\\mathbf{9 0 \\%}$ accuracy, and the LSTM model attained an accuracy of 96.49 % with balanced precision, recall, and F1-score, reflecting its strength in modeling temporal dependencies in ECG data. Overall, the findings suggest combining physiologically motivated feature engineering with spectral analysis and advanced learning models for ECG-based stress classification. Our proposed framework demonstrates that reliable stress classification can be achieved using ECG signals, offering a promising direction for future wearable and real-time stress monitoring applications."
+    },
+    {
+      "paperId": "0f098225becda4f426555491737a29f7fd286346",
+      "externalIds": {
+        "DOI": "10.1109/ICSC64553.2025.10969058",
+        "CorpusId": 278064034
+      },
+      "url": "https://www.semanticscholar.org/paper/0f098225becda4f426555491737a29f7fd286346",
+      "title": "Functional Connectivity and Power Spectral Density Analysis of EEG Signals in Meditation",
+      "venue": "International Computer Science Conference",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSC64553.2025.10969058?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSC64553.2025.10969058, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2327490361",
+          "name": "S. Attri"
+        },
+        {
+          "authorId": "9195663",
+          "name": "Rajashri Khanai"
+        }
+      ],
+      "abstract": "Meditation, an old practice of many traditions, has been getting a lot of attention for its supposed ability to relax and relieve stress. However, the neurophysiological mechanisms behind these effects are relatively unexplored. In this survey paper we look at the current literature of EEG based analytical methodologies (Functional Connectivity, Power Spectral Density/PSD) to study the effects of meditation on cerebral activity and evaluate the trustworthiness of these studies. We describe a global view of the brain wave patterns associated with relaxation and cognitive functions, that we can characterize precisely in terms of mediated with meditation. The paper also presents the implementation of the Functional Connectivity metrics like, weighted Phase Lag Index (wPLI), and their evaluations to characterize the brain network coupling during meditative states. We then evaluate PSD analysis as a way to evaluate variations of brain wave power distribution during meditation. Despite the widespread availability of these technologies, current research is missing substantial detail, especially regarding the empirical application of sophisticated EEG methods to demonstrate the therapeutic effect of meditation as demonstrated with this survey. Although meditation has been found to have multiple benefits, little has been studied about the neurophysiology responsible for it. The purpose of this work is to propose an integrated framework for future research that integrates diverse methodologies to elucidate the scientific basis of meditation's effects. Yet the implications of such research could be profound in the arena of clinical practice, yet existing findings do not seem to be sufficiently rigorous. In addition, this discussion also addresses index terms such as meditation, EEG Analysis, Functional Connectivity, Power Spectral Density (PSD) and Neurophysiological Effects so that a clearer idea of the intricate connection between these diverse aspects can be had."
+    },
+    {
+      "paperId": "b16b4e0610d18613565dddf8180132468d45ba18",
+      "externalIds": {
+        "DOI": "10.1016/j.watres.2025.123320",
+        "CorpusId": 276467529,
+        "PubMed": "40049096"
+      },
+      "url": "https://www.semanticscholar.org/paper/b16b4e0610d18613565dddf8180132468d45ba18",
+      "title": "Assessing the operating condition of a domestic distribution system based on the power spectra of high-frequency water consumption signals.",
+      "venue": "Water Research",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.watres.2025.123320",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.watres.2025.123320?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.watres.2025.123320, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "20905181",
+          "name": "Justyna Stańczyk"
+        },
+        {
+          "authorId": "2137465187",
+          "name": "Klara Ramm"
+        },
+        {
+          "authorId": "2265091787",
+          "name": "Paweł Licznar"
+        }
+      ],
+      "abstract": "Due to the growing widespread use of high-frequency measurements in the water supply industry, new possibilities for precise analyses of water consumption are emerging. Studies on a global scale of the performance of water supply networks, i.e. entire water supply zones DMA (District Metered Area), are widely recognized. The implementation of precise measurements of the volume of water consumed at the local scale, even for individual buildings, allows for drawing up detailed patterns of water consumption, demonstrating the cyclicality of their consumption and the interpretation of behavioral aspects of potable water use. However, there is a research gap in the diagnosis of water supply networks in the use of the power spectra of high-frequency water consumption signals to learn about the periodicity of water consumption at the scale of a single building and to identify abnormal states as a result of a disturbed pattern of its power spectral density (PSD) scaling. The article presents the results of research on the variation in the PSD scaling of water consumption, indicated by periodograms, as a result of a short-term anomalous situation caused by the failure of the domestic water supply system. It is shown that, by means of spectral analysis, it is possible to observe anomalies of different magnitudes in the signal power spectrum. It was also confirmed that the developed method can be further supported by a continuous water consumption approach. The presented methodology can be applied to the water expert systems for a rapid diagnosis of the operational status of the water networks regarding the possible occurrence of water leakage."
+    },
+    {
+      "paperId": "b8bee78d84535b353c7d9885a2a7b5aa985d869f",
+      "externalIds": {
+        "ArXiv": "2509.01923",
+        "CorpusId": 281080912
+      },
+      "url": "https://www.semanticscholar.org/paper/b8bee78d84535b353c7d9885a2a7b5aa985d869f",
+      "title": "ECG-Based Stress Prediction with Power Spectral Density Features and Classification Models",
+      "venue": "",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.01923, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2311378540",
+          "name": "M. Chowdhury"
+        },
+        {
+          "authorId": "2256542538",
+          "name": "Nafisa Anjum"
+        },
+        {
+          "authorId": "2378712983",
+          "name": "Md. Rokonuzzaman Mim"
+        }
+      ],
+      "abstract": "Stress has emerged as a critical global health issue, contributing to cardiovascular disorders, depression, and several other long-term illnesses. Consequently, accurate and reliable stress monitoring systems are of growing importance. In this work, we propose a stress prediction framework based on electrocardiogram (ECG) signals recorded during multiple daily activities such as sitting, walking, and jogging. Frequency-domain indicators of autonomic nervous system activity were obtained through Power Spectral Density (PSD) analysis and utilized as input for machine learning models including Decision Tree, Random Forest, XGBoost, LightGBM, and CatBoost. In addition, deep learning approaches, namely Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks, were directly applied to the raw ECG signals. Our experiments highlight the effectiveness of ensemble-based classifiers, with CatBoost achieving 90% accuracy. Moreover, the LSTM model provided superior results, attaining 94% accuracy with balanced precision, recall, and F1-score, reflecting its strength in modeling temporal dependencies in ECG data. Overall, the findings suggest that integrating frequency-domain feature extraction with advanced learning algorithms enhances stress prediction and paves the way for real-time healthcare monitoring solutions."
+    },
+    {
+      "paperId": "ecbb05a099125ed5d710b0bd7f2abe3ad0af0724",
+      "externalIds": {
+        "MAG": "2322091572",
+        "DOI": "10.5665/sleep.4068",
+        "CorpusId": 207532995,
+        "PubMed": "25197807"
+      },
+      "url": "https://www.semanticscholar.org/paper/ecbb05a099125ed5d710b0bd7f2abe3ad0af0724",
+      "title": "Electroencephalographic power spectral density profile of the orexin receptor antagonist suvorexant in patients with primary insomnia and healthy subjects.",
+      "venue": "Sleep",
+      "year": 2014,
+      "citationCount": 44,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc4173918?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.5665/sleep.4068?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5665/sleep.4068, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47793005",
+          "name": "Junshui Ma"
+        },
+        {
+          "authorId": "3305021",
+          "name": "V. Svetnik"
+        },
+        {
+          "authorId": "33023311",
+          "name": "E. Snyder"
+        },
+        {
+          "authorId": "2241971",
+          "name": "C. Lines"
+        },
+        {
+          "authorId": "144704031",
+          "name": "T. Roth"
+        },
+        {
+          "authorId": "144020828",
+          "name": "W. Herring"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "2f9bb3b6630696ae316298f9ecf2e79ec445fcfa",
+      "externalIds": {
+        "DOI": "10.1109/CPEM61406.2024.10646003",
+        "CorpusId": 272302313
+      },
+      "url": "https://www.semanticscholar.org/paper/2f9bb3b6630696ae316298f9ecf2e79ec445fcfa",
+      "title": "Truncated M-sequence and BOC Modulation based Ranging Signal Design for TWSTFT",
+      "venue": "Conference on Precision Electromagnetic Measurements",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CPEM61406.2024.10646003?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CPEM61406.2024.10646003, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48174391",
+          "name": "Juhyun Lee"
+        },
+        {
+          "authorId": "65762262",
+          "name": "Ju-Ik Oh"
+        },
+        {
+          "authorId": "93596759",
+          "name": "Gyeong Won Choi"
+        },
+        {
+          "authorId": "2318881292",
+          "name": "Young Kyu Lee"
+        },
+        {
+          "authorId": "2108613445",
+          "name": "Jong Koo Lee"
+        },
+        {
+          "authorId": "9410111",
+          "name": "Sung-hoon Yang"
+        },
+        {
+          "authorId": "31237686",
+          "name": "Y. Heo"
+        },
+        {
+          "authorId": "2279224113",
+          "name": "Dai-Hyuk Yu"
+        },
+        {
+          "authorId": "46841334",
+          "name": "Myoung-Sun Heo"
+        },
+        {
+          "authorId": "2237798921",
+          "name": "Joon Hyo Rhee"
+        }
+      ],
+      "abstract": "TWSTFT is a representative time comparison technique mostly using a bent-pipe transponder of a GEO satellite with Ku-band frequency. Conventionally, DS-BPSK-based signal structures have been used for global TWSTFT links among NMIs. The BPSK-based signal structure has the advantage of having a simple transceiver structure but is inappropriate for long coherent integration time in correlation processing. Also, BPSK-based ACF have relatively wide main lobe width and low sharpness waveform. Those ACF properties cause signal-tracking performance degradation. Conventional TWSTFT code sequence sets have relatively high cross-correlation power levels. Properties of those code sequence sets are inappropriate for service to multi-user simultaneously. In this paper, a BOC and Truncated M-sequence based new TWSTFT signal structure was proposed for improving those conventional signals. To evaluate the new TWSTFT signal structure and its code sequence sets, PSD, processing gain, ACFs, and cross-correlation power levels were compared with those of conventional SATRE, SRS modem, and GPS L1C/A, L1Cp signals."
+    },
+    {
+      "paperId": "ffe72275271e192f58b3ac611f959c6557d0b5af",
+      "externalIds": {
+        "DOI": "10.1063/5.0147018",
+        "CorpusId": 258742450,
+        "PubMed": "37192392"
+      },
+      "url": "https://www.semanticscholar.org/paper/ffe72275271e192f58b3ac611f959c6557d0b5af",
+      "title": "Quantifying fluctuations for dynamical power systems with stochastic excitations: A power spectral density-based method.",
+      "venue": "Chaos",
+      "year": 2023,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1063/5.0147018?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1063/5.0147018, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2447257",
+          "name": "Xiangyun Qing"
+        },
+        {
+          "authorId": "1765250",
+          "name": "Wangli He"
+        },
+        {
+          "authorId": "145868512",
+          "name": "Min Zhou"
+        },
+        {
+          "authorId": "2152006176",
+          "name": "Wenli Du"
+        }
+      ],
+      "abstract": "Fluctuations of state variables play a pivotal role in analyzing small signal stability of the power system due to the integration of renewable energy sources. This paper develops a theoretical analysis methodology by using the power spectral density (PSD) for capturing the frequency and amplitude of state variable fluctuations in heterogeneous power systems with stochastic excitations. The fluctuations in generation and consumption occurring simultaneously are modeled by stochastic Ornstein-Uhlenbeck processes. The PSDs of the state variable fluctuations can be analytically calculated. PSD-based quantities have been proposed to evaluate angle and frequency deviations. Moreover, a global performance metric has been presented to measure the synchronization stability and calculated using the PSDs of frequency deviations. The underlying mathematical relationship between the metric and the primary control effort mimicking the H2-norm performance is explained in detail. Finally, the proposed analysis methodology is numerically illustrated on the IEEE RTS-96 test case. We investigate the impact of auto-correlations of stochastic processes on stability. Our results show the metric can be an alternative quantitative index of stability. We further find that the inertia allocation does not provide significant grid stability gain under small stochastic power fluctuations."
+    },
+    {
+      "paperId": "e7c4094cee31cb8eb89a24d98a304b6c317b3514",
+      "externalIds": {
+        "DBLP": "conf/cybersa/SwinneyW21",
+        "DOI": "10.1109/CyberSA52016.2021.9478250",
+        "CorpusId": 236181101
+      },
+      "url": "https://www.semanticscholar.org/paper/e7c4094cee31cb8eb89a24d98a304b6c317b3514",
+      "title": "GNSS Jamming Classification via CNN, Transfer Learning & the Novel Concatenation of Signal Representations",
+      "venue": "International Conference on Cyber Situational Awareness",
+      "year": 2021,
+      "citationCount": 42,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CyberSA52016.2021.9478250?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CyberSA52016.2021.9478250, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2051654704",
+          "name": "Carolyn J. Swinney"
+        },
+        {
+          "authorId": "2120304197",
+          "name": "John C. Woods"
+        }
+      ],
+      "abstract": "RF connectivity is pervasive in many systems to- day and can underpin fundamental services. Intentional Global Navigation Satellite System (GNSS) jamming activities are increasing across the globe, causing significant threats to real life applications from power distribution to finance and even 5G performance. The first step towards its mitigation is the detection and classification of the signal. Classification could inform an attribution picture. For example, connecting a perpetrator through the jamming signal type from a device found in their possession. This paper introduces a novel approach which utilises transfer learning from the imagery domain and considers the jamming signal power spectral density (PSD), spectrogram, raw constellation, and histogram signal representations as images. Collecting datasets large enough to train a neural network from scratch is a common problem. The use of Transfer Learning overcomes this issue. Transfer learning is applied through feature extraction using a Convolutional Neural Network (CNN) VGG16 pretrained on the ImageNet dataset. Various Machine Learning classifiers are evaluated including Support Vector Machine (SVM), Logistic Regression (LR), and Random Forest (RF). To date, prior research in this field has concentrated on spectrogram representation but our evidence shows that the novel concatenation of signal representations (PSD, spectrogram, raw constellation and histogram) is more effective, allowing the CNN to benefit from the strengths of each individual representation. The image concatenation dataset produced 98% (+/- 0.5%) classification accuracy with LR and SVM models and 96.3% (+/- 0.6%) with RF. The results, validated through 10-fold cross validation, showed that transfer learning using CNN VGG16 in conjunction with ML models LR, SVM, and RF and the concatenation of signal representations, produces high accuracy for the classification of GNSS jamming signals and outperforms previous work in the field."
+    },
+    {
+      "paperId": "9fa9c97bfd32a512fffa2782d26743b073e53818",
+      "externalIds": {
+        "DBLP": "journals/taes/PenaM25",
+        "DOI": "10.1109/TAES.2024.3483151",
+        "CorpusId": 273445317
+      },
+      "url": "https://www.semanticscholar.org/paper/9fa9c97bfd32a512fffa2782d26743b073e53818",
+      "title": "Impact of a Civil Aviation GNSS Receiver Temporal Blanker in the Presence of RFI DME/TACAN Signals",
+      "venue": "IEEE Transactions on Aerospace and Electronic Systems",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TAES.2024.3483151?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TAES.2024.3483151, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1409759833",
+          "name": "A. Garcia-Pena"
+        },
+        {
+          "authorId": "2264325577",
+          "name": "C. Macabiau"
+        }
+      ],
+      "abstract": "In the L5/E5a band, the predominant radio frequency interferences (RFI) that impact the global navigation satellite system (GNSS) are the Distance Measurement Equipment/TACtical Air Navigation (DME/TACAN) pulsed signals. To mitigate its impact, airborne dual-frequency multiconstellation GNSS receivers must implement a temporal blanker (TB), a device setting to zero the I/Q received signal samples having an instantaneous power envelope above a certain threshold. The presence of RFI and TB decreases the effective carrier-to-noise ratio ${\\bm{C}}/{{{\\bm{N}}}_{0,\\mathbf{eff}}}$, whose determination is critical to guarantee the GNSS-based safety-of-life service in civil aviation. To accurately determine ${\\bm{C}}/{{{\\bm{N}}}_{0,\\mathbf{eff}}}$, the exact model of the normalized power spectrum density (PSD) of each RFI signal at the TB output, or postblanker RFI signal, is required. However, the postblanker RFI signal PSD is difficult to calculate since a TB is a strongly nonlinear device, and its behavior is aircraft location and flight altitude (L&A) dependent. To address this problem, in this work, a new model of a postblanker DME/TACAN signal is proposed from the multiplication of the before-blanker RFI signal by two artificial signals: autoblanking, which is the triggering of the blanker by the DME/TACAN signal itself, and blanking-by-others, which is the triggering of the blanker by other DME/TACAN beacons signal. The proposed model allows the mathematical determination of a mean postblanker DME/TACAN signal PSD and is L&A customized. In comparison, the previous reference or other proposed PSD models were either not-mathematically justified approximations or did not consider the TB effect (simplification); and neither were L&A customized. The proposed postblanker DME/TACAN signal PSD expression is verified through simulations with differences smaller than 0.11 dB. Comparisons with reference and simplified models are conducted in terms of PSD, spectral separation coefficient (SSC), and ${{{\\bm{R}}}_{\\bm{I}}}$ (linked to ${\\bm{C}}/{{{\\bm{N}}}_{0,\\mathbf{eff}}}$). Previous reference model is shown to be a loose approximation, and simplified models present less accurate PSD and SSC results but a small ${{{\\bm{R}}}_{\\bm{I}}}$ underestimation. Finally, the radio frequency front-end block impact, including TB, on the DME/TACAN RFI signals is thoroughly modeled in this work to provide a clear tutorial on the ${{{\\bm{R}}}_{\\bm{I}}}$ calculation from the link budget received characteristics of the DME/TACAN signals."
+    },
+    {
+      "paperId": "34feefa0c4416fe66acac60bd0b7e6b8b481e367",
+      "externalIds": {
+        "DOI": "10.3390/atmos16050586",
+        "CorpusId": 278617325
+      },
+      "url": "https://www.semanticscholar.org/paper/34feefa0c4416fe66acac60bd0b7e6b8b481e367",
+      "title": "Analysis of the Integrated Signal Design for Near-Space Communication, Navigation, and TT&C Based on K/Ka Frequency Bands",
+      "venue": "Atmosphere",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2073-4433/16/5/586/pdf?version=1747146438",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/atmos16050586?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/atmos16050586, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1605951000",
+          "name": "Lvyang Ye"
+        },
+        {
+          "authorId": "2302573499",
+          "name": "Shaojun Cao"
+        },
+        {
+          "authorId": "2363132711",
+          "name": "Zhi-fei Gu"
+        },
+        {
+          "authorId": "2302461500",
+          "name": "Deng Pan"
+        },
+        {
+          "authorId": "2302461321",
+          "name": "Bin-Hu Chen"
+        },
+        {
+          "authorId": "2361356791",
+          "name": "Xuqian Wu"
+        },
+        {
+          "authorId": "2068807518",
+          "name": "Kun Shen"
+        },
+        {
+          "authorId": "2305636372",
+          "name": "Yangdong Yan"
+        }
+      ],
+      "abstract": "With its unique environment and strategic value, the near space (NS) has become the focus of global scientific and technological, military, and commercial fields. Aiming at the problem of communication interruption when the aircraft re-enters the atmosphere, to ensure the needs of communication, navigation, and telemetry, tracking, and command (TT&C), this paper proposes an overall integration of communication, navigation, and TT&C (ICNT) signals scheme based on the K/Ka frequency band. Firstly, the K/Ka frequency band is selected according to the ITU frequency division, high-speed communication requirements, advantages of space-based over-the-horizon relay, overcoming the blackout problem, and the development trend of high frequencies. Secondly, the influence of the physical characteristics of the NS on ICNT is analyzed through simulation. The results show that when the K/Ka signal is transmitted in the NS, the path loss changes significantly with the elevation angle. The bottom layer loss at an elevation angle of 90° is between 143.5 and 150.5 dB, and the top layer loss is between 157.5 and 164.4 dB; the maximum attenuation of the bottom layer and the top layer at an elevation angle of 0° is close to 180 dB and 187 dB, respectively. In terms of rainfall attenuation, when a 30 GHz signal passes through a 100 km rain area under moderate rain conditions, the horizontal and vertical polarization losses reach 225 dB and 185 dB, respectively, and the rainfall attenuation increases with the increase in frequency. For gas absorption, the loss of water vapor is higher than that of oxygen molecules; when a 30 GHz signal is transmitted for 100 km, the loss of water vapor is 17 dB, while that of oxygen is 2 dB. The loss of clouds and fog is relatively small, less than 1 dB. Increasing the frequency and the antenna elevation angle can reduce the atmospheric scintillation. In addition, factors such as the plasma sheath and multipath also affect the signal propagation. In terms of modulation technology, the constant envelope signal shows an advantage in spectral efficiency; the new integrated signal obtained by integrating communication, navigation, and TT&C signals into a single K/Ka frequency point has excellent characteristics in the simulation of power spectral density (PSD) and autocorrelation function (ACF), verifying the feasibility of the scheme. The proposed ICNT scheme is expected to provide an innovative solution example for the communication, navigation, and TT&C requirements of NS vehicles during the re-entry phase."
+    },
+    {
+      "paperId": "9c0fb658077bf14d39b67fe1524b73a7dd0d9468",
+      "externalIds": {
+        "DOI": "10.1109/JSEN.2026.3695450",
+        "CorpusId": 288750521
+      },
+      "url": "https://www.semanticscholar.org/paper/9c0fb658077bf14d39b67fe1524b73a7dd0d9468",
+      "title": "Comprehensive Analysis and Noise Suppression of Real-World Mud-Pulse Telemetry Using an Adaptive Signal Decomposition Method for Downhole Sensing",
+      "venue": "IEEE Sensors Journal",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2026.3695450?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2026.3695450, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2286423106",
+          "name": "Nimra Irshad"
+        },
+        {
+          "authorId": "34060180",
+          "name": "Mingdong Xu"
+        },
+        {
+          "authorId": "143866689",
+          "name": "Nan Xie"
+        },
+        {
+          "authorId": "2144755904",
+          "name": "H. Leung"
+        }
+      ],
+      "abstract": "Reliable signal extraction in mud-pulse telemetry (MPT) is critical for accurate pressure-based downhole sensing and safe drilling operations. To enhance sensing reliability and suppress severe noise in harsh drilling environments, this article presents an enhanced approach to mud-pulse signal processing using an adaptive trend variational mode decomposition (ATVMD) algorithm. Traditional signal decomposition methods, such as variational mode decomposition (VMD), face notable limitations in practical MPT scenarios due to their sensitivity to the predefined number of modes and their inability to handle strong global signal trends induced by poorly synchronized mud pumps. Moreover, spectral overlaps between nonharmonic pump noise and the useful signal, especially in the presence of strong low-frequency noise affecting the signal's trend, lead to severe mode mixing, which in turn lowers decoding accuracy and sensor system reliability. However, the proposed ATVMD framework dynamically determines the number of modes (k) and explicitly extracts dominant signal trends. An Otsu-based thresholding strategy applied to the power spectral density (PSD) of signals is employed to identify and suppress the strongest noise components. In addition, an adaptive filtering technique is used to extract the strong signal's trends that enhance VMD's ability to accurately decompose the remaining signal into its true modes. The approach is validated through both synthetic datasets and real-field measurements collected from drilling operations in diverse geological environments. Experimental results demonstrate a significant improvement in mud-pulse signal recovery under harsh noise conditions, achieving a pulse detection accuracy of 97.65% with a 95% confidence interval of [97.01%, 98.28%] across 31 detected pulses."
+    },
+    {
+      "paperId": "4ffebeca1dca908b3b50fda47520948044821815",
+      "externalIds": {
+        "DOI": "10.21848/asr.250209",
+        "CorpusId": 282700319
+      },
+      "url": "https://www.semanticscholar.org/paper/4ffebeca1dca908b3b50fda47520948044821815",
+      "title": "Recent Technological Trends in Hearing Aids: Advanced Features and Clinical Validation by Global Manufacturers",
+      "venue": "Audiology and Speech Research",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.e-asr.org/upload/pdf/asr-250209.pdf",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.21848/asr.250209?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.21848/asr.250209, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2359628299",
+          "name": "J. Jeong"
+        },
+        {
+          "authorId": "2390172310",
+          "name": "Dongwoo Lee"
+        },
+        {
+          "authorId": "2390367199",
+          "name": "Hongseok Yang"
+        },
+        {
+          "authorId": "2390068121",
+          "name": "Hyungjun Sim"
+        },
+        {
+          "authorId": "2390501416",
+          "name": "Hyeonsu Oh"
+        },
+        {
+          "authorId": "2390176808",
+          "name": "Jaegwon Song"
+        },
+        {
+          "authorId": "2300317475",
+          "name": "J. Yang"
+        },
+        {
+          "authorId": "2391800633",
+          "name": "Sangmin Park"
+        },
+        {
+          "authorId": "2390387568",
+          "name": "Seunghyeon Baek"
+        },
+        {
+          "authorId": "2211341990",
+          "name": "Sunmi Ma"
+        },
+        {
+          "authorId": "152431770",
+          "name": "In-Ki Jin"
+        }
+      ],
+      "abstract": "This review systematically analyzed the latest technological trends among global hearing aid manufacturers to provide an overview of current advancements and suggest future research directions. Technical documents from six major companies-Beltone (GN Hearing, Chicago, IL, USA), Oticon (Demant, Smørum, Denmark), Phonak (Sonova, Stäfa, Switzerland), Signia (WS Audiology, Iselin, NJ, USA), Starkey (Starkey, Eden Prairie, MN, USA), and Widex (WS Audiology, Lynge, Denmark)-were reviewed. Hearing aid technologies were categorized into four domains: advanced hearing optimization, tinnitus management, application features, and power management. The key features, operational principles, clinical evidence, and unique characteristics of each manufacturer were analyzed. Recent innovations incorporate artificial intelligence, deep neural networks, wireless connectivity, and real-time signal processing, enabling speech enhancement, noise reduction, and personalized experiences. Tinnitus solutions focus on sound therapy and individualized masking. Application-based developments include health tracking, remote fitting, and device maintenance, while power management enhances battery efficiency. Clinical findings demonstrate significant improvement in speech intelligibility, comfort, and user satisfaction. Advancements in hearing aids have markedly improved quality of life for individuals with hearing loss. To ensure validated clinical outcomes and reliability, independent research free from manufacturer bias remains essential in this fast-evolving field."
+    },
+    {
+      "paperId": "2024e08a03f2f94f2e49d8b2a5fa68aa7f646647",
+      "externalIds": {
+        "DOI": "10.1109/JSEN.2025.3565208",
+        "CorpusId": 278359428
+      },
+      "url": "https://www.semanticscholar.org/paper/2024e08a03f2f94f2e49d8b2a5fa68aa7f646647",
+      "title": "PRN Sequence Deployment and Performance Evaluation of OTFS Modulation for LEO PNT",
+      "venue": "IEEE Sensors Journal",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2025.3565208?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2025.3565208, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2332838092",
+          "name": "Dong Fu"
+        },
+        {
+          "authorId": "2333219861",
+          "name": "Ming Ma"
+        },
+        {
+          "authorId": "2307364432",
+          "name": "Xinming Huang"
+        },
+        {
+          "authorId": "2332880836",
+          "name": "Honglei Lin"
+        },
+        {
+          "authorId": "2297588020",
+          "name": "Gang Ou"
+        }
+      ],
+      "abstract": "In recent years, low Earth orbit (LEO) broadband constellations have thrived and are expected to become a new reliable navigation source. Orthogonal time-frequency space (OTFS) modulation has become a candidate modulation for the next generation of communication systems due to its superior performance in high-mobility channels. Therefore, in navigation modulation research based on broadband LEO constellations, the utilization of OTFS modulation to design navigation signals and provide performance evaluation is essential for satellite payload and ground receiver design. This work aims to investigate the typical variants and navigation performance of OTFS modulation for position, navigation, and timing (PNT) services. By deriving analytical expressions for the power spectral density (PSD) and time-domain signal, the navigation performance of OTFS is evaluated and compared with the major global navigation satellite system (GNSS) modulations. The results show that OTFS provides flexibility to adjust the periodicity and continuity by the deployment of pseudorandom noise (PRN) sequence on delay-Doppler (DD) grid and has code tracking (CT) accuracy and compatibility advantages; anti-interference and anti-multipath performance is slightly better than that of the GNSS modulations with the same bandwidth. However, a disadvantage is the high complexity of signal tracking. Nevertheless, OTFS remains a valuable candidate for LEO PNT services."
+    },
+    {
+      "paperId": "d3db42144b0dd4cf5ae5308ba3f76e07cfb87d42",
+      "externalIds": {
+        "MAG": "2974893298",
+        "DBLP": "journals/access/TekbiyikAEGK19",
+        "DOI": "10.1109/ACCESS.2019.2942368",
+        "CorpusId": 203655409
+      },
+      "url": "https://www.semanticscholar.org/paper/d3db42144b0dd4cf5ae5308ba3f76e07cfb87d42",
+      "title": "Multi–Dimensional Wireless Signal Identification Based on Support Vector Machines",
+      "venue": "IEEE Access",
+      "year": 2019,
+      "citationCount": 41,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/6287639/8600701/08844719.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2019.2942368?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2019.2942368, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "8868540",
+          "name": "Kürşat Tekbıyık"
+        },
+        {
+          "authorId": "1396703521",
+          "name": "Özkan Akbunar"
+        },
+        {
+          "authorId": "2793661",
+          "name": "A. R. Ekti"
+        },
+        {
+          "authorId": "3113291",
+          "name": "Ali̇ Görçi̇n"
+        },
+        {
+          "authorId": "38207841",
+          "name": "Gunes Karabulut Kurt"
+        }
+      ],
+      "abstract": "Radio air interface identification provides necessary information for dynamically and efficiently exploiting the wireless radio frequency spectrum. In this study, a general machine learning framework is proposed for Global System for Mobile communications (GSM), Wideband Code Division Multiple Access (WCDMA), and Long Term Evolution (LTE) signal identification by utilizing the outputs of the spectral correlation function (SCF), fast Fourier Transform (FFT), auto–correlation function (ACF), and power spectral density (PSD) as the training inputs for the support vector machines (SVMs). In order to show the robustness and practicality of the proposed method, the performance of the classifier is investigated with respect to different fading channels by using simulation data. Various over–the–air real–world measurements are taken to show that wireless signals can be successfully distinguished from each other without any prior information while accounting for a comprehensive set of parameters such as different kernel types, number of in–phase/quadrature (I/Q) samples, training set size, or signal–to–noise ratio (SNR) values. Furthermore, the performance of the proposed classifier is compared to the existing well–known deep learning (DL) networks. The comparative performance of the proposed method is also quantified by classification confusion matrices and Precision/Recall/ $F_{1}$ –scores. It is shown that the investigated system can be also utilized for spectrum sensing and its performance is also compared with that of cyclostationary feature detection spectrum sensing."
+    },
+    {
+      "paperId": "e6e1753f48264e4baf377f1356695db1a04ea870",
+      "externalIds": {
+        "DOI": "10.3390/rs17132116",
+        "CorpusId": 279543432
+      },
+      "url": "https://www.semanticscholar.org/paper/e6e1753f48264e4baf377f1356695db1a04ea870",
+      "title": "Breaking the Cyclic Prefix Barrier: Zero-Padding Correlation Enables Centimeter-Accurate LEO Navigation via 5G NR Signals",
+      "venue": "Remote Sensing",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2072-4292/17/13/2116/pdf?version=1750422132",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/rs17132116?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/rs17132116, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2114191354",
+          "name": "Lingyu Deng"
+        },
+        {
+          "authorId": "2187905110",
+          "name": "Yikang Yang"
+        },
+        {
+          "authorId": "47792777",
+          "name": "Jiangang Ma"
+        },
+        {
+          "authorId": "2368303742",
+          "name": "Tao Wu"
+        },
+        {
+          "authorId": "2329926165",
+          "name": "Xingyou Qian"
+        },
+        {
+          "authorId": "2264174251",
+          "name": "Hengnian Li"
+        }
+      ],
+      "abstract": "Low Earth orbit (LEO) satellites offer a revolutionary potential for positioning, navigation, and timing (PNT) services due to their stronger signal power and rapid geometric changes compared to traditional global navigation satellite systems (GNSS). However, dedicated LEO navigation systems face high costs, so opportunity navigation based on LEO satellites is a potential solution. This paper presents an orthogonal frequency division multiplexing (OFDM)-based LEO navigation system and analyzes its navigation performance. We use 5G new radio (NR) as the satellite transmitting signal and introduce the NR signal components that can be used for navigation services. The LEO NR system and a novel zero-padding correlation (ZPC) are introduced. This ZPC receiver can eliminate cyclic prefix (CP) and inter-carrier interference, thereby improving tracking accuracy. The power spectral density (PSD) for the NR navigation signal is derived, followed by a comprehensive analysis of tracking accuracy under different NR configurations (bandwidth, spectral allocation, and signal components). An extended Kalman filter (EKF) is proposed to fuse pseudorange and pseudorange rate measurements for real-time positioning. The simulations demonstrate an 80% improvement in ranging precision (3.0–4.5 cm) and 88.3% enhancement in positioning accuracy (5.61 cm) compared to conventional receivers. The proposed ZPC receiver can achieve centimeter-level navigation accuracy. This work comprehensively analyzes the navigation performance of the LEO NR system and provides a reference for LEO PNT design."
+    },
+    {
+      "paperId": "a2139b2f32b00fe4ef4c64571f5583496d8c019b",
+      "externalIds": {
+        "DBLP": "conf/interspeech/KimSCS22",
+        "DOI": "10.21437/interspeech.2022-964",
+        "CorpusId": 252346169
+      },
+      "url": "https://www.semanticscholar.org/paper/a2139b2f32b00fe4ef4c64571f5583496d8c019b",
+      "title": "iDeepMMSE: An improved deep learning approach to MMSE speech and noise power spectrum estimation for speech enhancement",
+      "venue": "Interspeech",
+      "year": 2022,
+      "citationCount": 5,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.21437/interspeech.2022-964?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.21437/interspeech.2022-964, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "67147888",
+          "name": "Minseung Kim"
+        },
+        {
+          "authorId": "1679171695",
+          "name": "Hyungchan Song"
+        },
+        {
+          "authorId": "2185316157",
+          "name": "Sein Cheong"
+        },
+        {
+          "authorId": "2111055281",
+          "name": "Jong Won Shin"
+        }
+      ],
+      "abstract": "Deep learning approaches have been successfully applied to single channel speech enhancement exhibiting significant performance improvement. Recently, approaches unifying deep learning techniques into a statistical speech enhancement framework were proposed, including Deep Xi and DeepMMSE in which a priori signal-to-noise ratios (SNRs) were estimated by deep neural networks (DNNs) and noise power spectral density (PSD) and spectral gain functions were computed with estimated parameters. In this paper, we propose an improved Deep-MMSE (iDeepMMSE) which estimates the speech PSD and speech presence probability as well as the a priori SNR using a DNN for MMSE estimation of the speech and noise PSDs. The a priori and a posteriori SNRs are refined with the estimated PSDs, which in turn are used to compute spectral gain function. We also replaced the DNN architecture with the Conformer which efficiently captures the local and global sequential information. Experimental results on the Voice Bank-DEMAND dataset and Deep Xi dataset showed the proposed iDeepMMSE outperformed the DeepMMSE in terms of the perceptual evaluation of speech quality (PESQ) scores and composite objective measures."
+    },
+    {
+      "paperId": "48acef42d72a52206e9cdf0a226e2546aa90184d",
+      "externalIds": {
+        "DOI": "10.1109/jbhi.2026.3694093",
+        "CorpusId": 288754945,
+        "PubMed": "42202207"
+      },
+      "url": "https://www.semanticscholar.org/paper/48acef42d72a52206e9cdf0a226e2546aa90184d",
+      "title": "Hybrid EEG Feature Fusion Framework for Accurate Autism Spectrum Disorder Diagnosis Using Ensemble Learning.",
+      "venue": "IEEE journal of biomedical and health informatics",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/jbhi.2026.3694093?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/jbhi.2026.3694093, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2100090411",
+          "name": "Z. Alyasseri"
+        },
+        {
+          "authorId": "2373053020",
+          "name": "Hajir Ammar Hatim"
+        },
+        {
+          "authorId": "2429152979",
+          "name": "Riyadh Rahef Nuiaa Alogaili"
+        },
+        {
+          "authorId": "2278769523",
+          "name": "Nor’ashikin Ali"
+        },
+        {
+          "authorId": "2283621387",
+          "name": "Norziana Jamil"
+        }
+      ],
+      "abstract": "Autism Spectrum Disorder (ASD) is a complex neurodevelopmental condition with increasing global prevalence and no standardized biological test for early detection. Current diagnosis methods rely heavily on behavioral assessments, which are subjective, time-consuming, and prone to variability. This study proposes a hybrid feature fusion framework for non-invasive ASD diagnosis using electroencephalogram (EEG) signals, specifically event-related potentials (ERPs) such as P300 components obtained from the BCIAUT-P300 dataset. EEG recordings were captured using a g.Nautilus wireless system with eight scalp electrodes, and preprocessed using 0.5-30 Hz bandpass filtering and baseline subtraction to enhance signal quality. Twenty-two EEG features were extracted across time, frequency, and time-frequency domains using methods such as Wavelet Transform, power spectral density, higher-order statistics, and principal component analysis. Five optimal methods, PCA, HOS, PSD, FDA, and CWT, were selected based on their classification potential and fused using both feature-level and decision-level strategies. Ensemble classifiers including SVM, XGBoost, LDA, and Random Forest were trained and evaluated on the fused feature set. The proposed hybrid fusion framework achieved a classification accuracy of 97.7%, sensitivity of 96.8%, and specificity of 98.5%, outperforming traditional single feature or single classifier approaches. The integration of multi-domain feature descriptors with ensemble learning contributes to increased robustness, generalizability, and diagnostic precision. Our work demonstrates the feasibility of combining EEG-based biomarkers with machine learning to support early ASD diagnosis. The framework offers a scalable approach that is aligned with biomedical informatics objectives, with potential for clinical deployment and integration into portable EEG-based screening systems."
+    },
+    {
+      "paperId": "2732d134e5afd6a1d499ba9eecbe5b7adce2238d",
+      "externalIds": {
+        "DOI": "10.3390/geosciences16070285",
+        "CorpusId": 290094994
+      },
+      "url": "https://www.semanticscholar.org/paper/2732d134e5afd6a1d499ba9eecbe5b7adce2238d",
+      "title": "Area-Specific Seismic Noise Reference Curves in an Urban Volcanic Environment: The Campi Flegrei Case",
+      "venue": "Géosciences",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/geosciences16070285",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/geosciences16070285?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/geosciences16070285, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1700614716",
+          "name": "R. Esposito"
+        },
+        {
+          "authorId": "40994089",
+          "name": "L. Nardone"
+        },
+        {
+          "authorId": "2070382080",
+          "name": "R. Manzo"
+        },
+        {
+          "authorId": "2129680464",
+          "name": "G. Gaudiosi"
+        },
+        {
+          "authorId": "95667687",
+          "name": "M. Orazi"
+        }
+      ],
+      "abstract": "This study investigates the seismic ambient noise within the Campi Flegrei caldera (Naples, Italy) to improve the detection capability and reliability of the earthquake monitoring system managed by the INGV, Osservatorio Vesuviano. It focuses on the spectral characteristics and spatial variability of the ambient noise field, aiming to identify the dominant frequency bands that control signal detectability and to provide information for optimizing the monitoring network. Due to the dense urban environment surrounding the caldera, seismic recordings are often contaminated by anthropogenic noise, which can mask low-magnitude volcanic or seismic signals. Power spectral density (PSD) analysis was applied to evaluate background noise levels at several broadband stations from permanent and temporary seismic networks over the period January 2022 to January 2023. The resulting PSD estimates were compared with the global Peterson noise models to assess station performance. Results show marked variability among stations, related to local human activity, proximity to infrastructure, and different installation settings (buried vs. surface). The study emphasizes the importance of noise monitoring to ensure high-quality seismic data, support optimal station siting, and refine monitoring strategies in densely populated volcanic regions such as Campi Flegrei, where the reliable detection of low-amplitude seismic and volcanic signals is essential."
+    },
+    {
+      "paperId": "38e5cf7bee9e43b883c8824cc88dfa46f6493e83",
+      "externalIds": {
+        "DOI": "10.21741/9781644904251-92",
+        "CorpusId": 290054509
+      },
+      "url": "https://www.semanticscholar.org/paper/38e5cf7bee9e43b883c8824cc88dfa46f6493e83",
+      "title": "Wind Gust Spectral Analysis with Aeolus Observations: Insights from a Transatlantic Route",
+      "venue": "Materials Research Proceedings",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.21741/9781644904251-92?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.21741/9781644904251-92, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2054510628",
+          "name": "M. Valente"
+        }
+      ],
+      "abstract": "Abstract. This study explores the use of ESA’s Aeolus satellite data to characterize wind gusts along a transatlantic flight corridor. A dedicated framework was developed to extract the power spectral density (PSD) of wind signals from temporally discontinuous satellite observations, enabling PSD-based gust characterization using spaceborne Doppler lidar data along operational flight routes. The proposed framework extracts and preprocesses wind data from ESA’s Aeolus mission and applies Fourier-based spectral analysis to obtain the PSD of the signal, which is then fitted using two different approaches: a classical von Kármán turbulence model and a data-driven optimization method. Results reveal deviations from the von Kármán spectrum, highlighting regional variability and demonstrating the potential of spaceborne Doppler wind lidar for global gust characterization and improved aviation safety modeling."
+    },
+    {
+      "paperId": "eed4b8b06037c65098dad356a3f873166784ae9b",
+      "externalIds": {
+        "DBLP": "journals/tgrs/WangCTMXLYY25",
+        "DOI": "10.1109/TGRS.2025.3615987",
+        "CorpusId": 281775120
+      },
+      "url": "https://www.semanticscholar.org/paper/eed4b8b06037c65098dad356a3f873166784ae9b",
+      "title": "Statistical Characteristics of Linear-Polarization GNSS Interferometric Reflectometry and Its Application for Observing Sea State",
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TGRS.2025.3615987?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TGRS.2025.3615987, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108635911",
+          "name": "Feng Wang"
+        },
+        {
+          "authorId": "2345074391",
+          "name": "Wenqian Chen"
+        },
+        {
+          "authorId": "2345722626",
+          "name": "Chuanrui Tan"
+        },
+        {
+          "authorId": "2345131795",
+          "name": "Xiangchao Ma"
+        },
+        {
+          "authorId": "2149557824",
+          "name": "Jingjing Xing"
+        },
+        {
+          "authorId": "2434125178",
+          "name": "Jie Li"
+        },
+        {
+          "authorId": "2145453683",
+          "name": "Lei Yang"
+        },
+        {
+          "authorId": "2249033435",
+          "name": "Dongkai Yang"
+        }
+      ],
+      "abstract": "A novel basic observable, termed the alternating-current texture (ACT), is defined from the original linear-polarization carrier-to-noise ratio (CNR) of the Global Navigation Satellite System (GNSS) for monitoring wind vector. The amplitude distribution (AD), autocorrelation function (ACF), power spectral density (PSD), and fractal dimension (FD) of the ACT are explored. The results show that these statistical characteristics derived from the GNSS–Interferometric Reflectometry (GNSS-IR) CNR resemble those directly extracted from the reflected signal. Twelve statistics from the AD, ACF, PSD, and FD, as observables sensitive to wind speed, are analyzed. The findings suggest that these statistics exhibit geometric dependence, especially at the low elevation angle. Furthermore, the skewness of the AD, the correlation time of the ACF, PSD peak, PSD width, and FD respond more effectively to wind speed than other statistics, and are used to assess the capability of retrieving wind speed. Kernel principal component analysis (KPCA) is employed to fuse these statistics to produce a new sensitive observable to wind speed. When elevation and azimuth angles are confined to optimal regions with minimal interference, a root mean square error (RMSE) of 1.57 m/s is obtained with a minute-level temporal resolution. In contrast, a geodetic GNSS receiver provides an RMSE of 2.55 m/s. In addition, based on the anisotropy of the sea surface, the feasibility of these statistics in retrieving wind direction is investigated. Novel sensitive observables to wind direction, derived from the best-fit ellipse to the spatial distributions of the statistics, are defined. The fusion using KPCA achieves the best determination coefficient (DC) of 0.50 with wind direction, while the geodetic receiver yields a DC of only 0.16. These results conclude that low-cost GNSS sensors can be utilized for retrieving wind vector, and the linear-polarization GNSS-IR outperforms its right-handed circular polarization (RHCP) counterpart."
+    },
+    {
+      "paperId": "a55b8c362d9dbbb943be3b4f4c861f2dcba7af71",
+      "externalIds": {
+        "ArXiv": "2501.13642",
+        "CorpusId": 275820555
+      },
+      "url": "https://www.semanticscholar.org/paper/a55b8c362d9dbbb943be3b4f4c861f2dcba7af71",
+      "title": "Learning-based A Posteriori Speech Presence Probability Estimation and Applications",
+      "venue": "",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.13642, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2054575838",
+          "name": "Shuai Tao"
+        },
+        {
+          "authorId": "2241568873",
+          "name": "Jesper Rindom Jensen"
+        },
+        {
+          "authorId": "2241566793",
+          "name": "Yang Xiang"
+        },
+        {
+          "authorId": "2151427831",
+          "name": "Himavanth Reddy"
+        },
+        {
+          "authorId": "2341875951",
+          "name": "Qingzheng Zhang"
+        },
+        {
+          "authorId": "2241563246",
+          "name": "M. Christensen"
+        }
+      ],
+      "abstract": "The a posteriori speech presence probability (SPP) is the fundamental component of noise power spectral density (PSD) estimation, which can contribute to speech enhancement and speech recognition systems. Most existing SPP estimators can estimate SPP accurately from the background noise. Nevertheless, numerous challenges persist, including the difficulty of accurately estimating SPP from non-stationary noise with statistics-based methods and the high latency associated with deep learning-based approaches. This paper presents an improved SPP estimation approach based on deep learning to achieve higher SPP estimation accuracy, especially in non-stationary noise conditions. To promote the information extraction performance of the DNN, the global information of the observed signal and the local information of the decoupled frequency bins from the observed signal are connected as hybrid global-local information. The global information is extracted by one encoder. Then, one decoder and two fully connected layers are used to estimate SPP from the information of residual connection. To evaluate the performance of our proposed SPP estimator, the noise PSD estimation and speech enhancement tasks are performed. In contrast to existing minimum mean-square error (MMSE)-based noise PSD estimation approaches, the noise PSD is estimated by the sub-optimal MMSE based on the current frame SPP estimate without smoothing. Directed by the noise PSD estimate, a standard speech enhancement framework, the log spectral amplitude estimator, is employed to extract clean speech from the observed signal. From the experimental results, we can confirm that our proposed SPP estimator can achieve high noise PSD estimation accuracy and speech enhancement performance while requiring low model complexity."
+    },
+    {
+      "paperId": "9e64611ac7daeb55a50d0f1d5c0a2c8c9ca307f6",
+      "externalIds": {
+        "DBLP": "journals/tvt/DengYMFYL24",
+        "DOI": "10.1109/TVT.2023.3328252",
+        "CorpusId": 264815812
+      },
+      "url": "https://www.semanticscholar.org/paper/9e64611ac7daeb55a50d0f1d5c0a2c8c9ca307f6",
+      "title": "OFDM-BOC: A Broadband Multicarrier Navigation Modulation-Based BOC for Future GNSS",
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "year": 2024,
+      "citationCount": 15,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TVT.2023.3328252?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TVT.2023.3328252, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2114191354",
+          "name": "Lingyu Deng"
+        },
+        {
+          "authorId": "2187905110",
+          "name": "Yikang Yang"
+        },
+        {
+          "authorId": "47792777",
+          "name": "Jiangang Ma"
+        },
+        {
+          "authorId": "2243366085",
+          "name": "Yanxiang Feng"
+        },
+        {
+          "authorId": "1605951000",
+          "name": "Lvyang Ye"
+        },
+        {
+          "authorId": "2264174251",
+          "name": "Hengnian Li"
+        }
+      ],
+      "abstract": "The global navigation satellite system (GNSS) is a critical infrastructure for positioning, navigation, and timing. Recently, vigorous implementation of low earth orbit (LEO) communication satellites has provided a new opportunity for developing GNSS. However, most of the existing navigation modulations are only applicable for narrow bandwidths; hence, broadband navigation modulation with good compatibility and scalability is needed. This paper presents a new broadband multicarrier navigation modulation, namely orthogonal frequency division multiplexing with binary offset carriers (OFDM-BOC), which uses orthogonal BOC signals as subcarriers. First, we derive the analytical expressions of the autocorrelation function (ACF) and power spectral density (PSD) based on the proposed signal model. Then, we discuss the relationship between the OFDM-BOC parameters and their time-frequency properties. This modulation can update existing BOC-like signals without affecting the original receiver. In addition, OFDM-BOC has a similar transmitter and receiver scheme to traditional modulation, so the update process only needs minor changes for the original navigation equipment. Compared with some representative navigation modulations such as AltBOC, BOC(10,5), and OFDM, the analysis reflects that OFDM-BOC has a flatter PSD main lobe, lower PSD maximum value, and smaller false lock probability. Moreover, it is shown that OFDM-BOC also has better spectrum efficiency, tracking performance, and anti-interference. Due to the excellent compatibility and navigation performance, OFDM-BOC provides a broadband modulation scheme for the next generation of navigation signals."
+    },
+    {
+      "paperId": "ee759cf7e667d4d72088a4872149c3a6a0256f6f",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2601-12791",
+        "ArXiv": "2601.12791",
+        "DOI": "10.48550/arXiv.2601.12791",
+        "CorpusId": 284910274
+      },
+      "url": "https://www.semanticscholar.org/paper/ee759cf7e667d4d72088a4872149c3a6a0256f6f",
+      "title": "SKANet: A Cognitive Dual-Stream Framework with Adaptive Modality Fusion for Robust Compound GNSS Interference Classification",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.12791, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2406449836",
+          "name": "Zhihan Zeng"
+        },
+        {
+          "authorId": "2322452087",
+          "name": "Yang Zhao"
+        },
+        {
+          "authorId": "2398605751",
+          "name": "Kaihe Wang"
+        },
+        {
+          "authorId": "2340230621",
+          "name": "D. Niyato"
+        },
+        {
+          "authorId": "2405886918",
+          "name": "Hongyuan Shu"
+        },
+        {
+          "authorId": "2405787495",
+          "name": "Junchu Zhao"
+        },
+        {
+          "authorId": "2406045328",
+          "name": "Yanjun Huang"
+        },
+        {
+          "authorId": "2322440760",
+          "name": "Yue Xiu"
+        },
+        {
+          "authorId": "2239194426",
+          "name": "Zhongpei Zhang"
+        },
+        {
+          "authorId": "2322444489",
+          "name": "Ning Wei"
+        }
+      ],
+      "abstract": "As the electromagnetic environment becomes increasingly complex, Global Navigation Satellite Systems (GNSS) face growing threats from sophisticated jamming interference. Although Deep Learning (DL) effectively identifies basic interference, classifying compound interference remains difficult due to the superposition of diverse jamming sources. Existing single-domain approaches often suffer from performance degradation because transient burst signals and continuous global signals require conflicting feature extraction scales. We propose the Selective Kernel and Asymmetric convolution Network(SKANet), a cognitive deep learning framework built upon a dual-stream architecture that integrates Time-Frequency Images (TFIs) and Power Spectral Density (PSD). Distinct from conventional fusion methods that rely on static receptive fields, the proposed architecture incorporates a Multi-Branch Selective Kernel (SK) module combined with Asymmetric Convolution Blocks (ACBs). This mechanism enables the network to dynamically adjust its receptive fields, acting as an adaptive filter that simultaneously captures micro-scale transient features and macro-scale spectral trends within entangled compound signals. To complement this spatial-temporal adaptation, a Squeeze-and-Excitation (SE) mechanism is integrated at the fusion stage to adaptively recalibrate the contribution of heterogeneous features from each modality. Evaluations on a dataset of 405,000 samples demonstrate that SKANet achieves an overall accuracy of 96.99\\%, exhibiting superior robustness for compound jamming classification, particularly under low Jamming-to-Noise Ratio (JNR) regimes."
+    },
+    {
+      "paperId": "0e187c2af17c8128ba293198bd0aabbe27e3694c",
+      "externalIds": {
+        "DOI": "10.3390/app15158509",
+        "CorpusId": 280908755
+      },
+      "url": "https://www.semanticscholar.org/paper/0e187c2af17c8128ba293198bd0aabbe27e3694c",
+      "title": "Camera-Based Vital Sign Estimation Techniques and Mobile App Development",
+      "venue": "Applied Sciences",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/app15158509",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app15158509?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app15158509, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "73315282",
+          "name": "T. Bae"
+        },
+        {
+          "authorId": "2152654420",
+          "name": "Young Choon Kim"
+        },
+        {
+          "authorId": "2377473106",
+          "name": "In Ho Sohng"
+        },
+        {
+          "authorId": "2332837305",
+          "name": "Kee-Koo Kwon"
+        }
+      ],
+      "abstract": "In this paper, we propose noncontact heart rate (HR), oxygen saturation (SpO2), and respiratory rate (RR) detection methods using a smartphone camera. HR frequency is detected through filtering after obtaining a remote PPG (rPPG) signal and its power spectral density (PSD) is detected using color difference signal amplification and the plane-orthogonal-to-the-skin method. Additionally, the SpO2 is detected using the HR frequency and the absorption ratio of the G and B color channels based on oxyhemoglobin absorption and reflectance theory. After this, the respiratory frequency is detected using the PSD of rPPG through respiratory frequency band filtering. For the image sequences recorded under various imaging conditions, the proposed method demonstrated superior HR detection accuracy compared to existing methods. The confidence intervals for HR and SpO2 detection were analyzed using Bland–Altman plots. Furthermore, the proposed RR detection method was also verified to be reliable."
+    },
+    {
+      "paperId": "39082ae55154468e480ff5084e65d86c3352f4b5",
+      "externalIds": {
+        "DOI": "10.1109/QPAIN66474.2025.11171845",
+        "CorpusId": 281710545
+      },
+      "url": "https://www.semanticscholar.org/paper/39082ae55154468e480ff5084e65d86c3352f4b5",
+      "title": "EEG-Based Alcoholism Detection: A Channel-Wise Approach Using 1D CNN",
+      "venue": "2025 International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/QPAIN66474.2025.11171845?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/QPAIN66474.2025.11171845, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2383194348",
+          "name": "Jahanara Pritha"
+        },
+        {
+          "authorId": "2383186303",
+          "name": "Mridul Mondal"
+        },
+        {
+          "authorId": "2115615048",
+          "name": "Mohiuddin Ahmed"
+        }
+      ],
+      "abstract": "Alcohol dependence is a global health issue, causing severe impacts on the respiratory and circulatory systems and potentially leading to death. There is a growing need for effective diagnostic techniques for alcohol use disorder (AUD). Electroencephalogram (EEG) signals, which measure brain activity, have proven useful in identifying neurological disorders, including alcoholism. Traditional diagnostic methods often rely on subjective evaluations, whereas deep learning offers an automated approach for analyzing EEG data. This study presents a deep learning approach for classifying alcoholrelated EEG data using a 1D Convolutional Neural Network (CNN). The model analyzes frequency-based features from Power Spectral Density (PSD) analysis to detect alcohol-induced brain activity patterns. It achieved a peak classification accuracy of 98.95 % on channel 16 using the 1 Hz to 50 Hz frequency band. Performance varied across frequency bands with Delta, Theta, Alpha, and Beta bands achieving accuracies between 71.58 % and 76.84 %. A general challenge in EEG-based alcohol detection is the difficulty in accurately identifying alcohol-induced changes in brain activity. Traditional methods often face issues like low classification accuracy, subjectivity, and complexity, making them less reliable for consistent and accurate alcohol detection in clinical settings. To solve this problem, a novel approach was developed that focuses on simplifying the detection process while achieving high classification accuracy. An effective and straightforward deep learning technique was applied that allowed us to achieve optimal classification performance. Additionally, the bestperforming EEG channel (FP1) was identified, and the impact of different frequency ranges on classification accuracy was analyzed, enhancing the model's effectiveness for clinical use."
+    },
+    {
+      "paperId": "3589ff90f9ea7bbae5c84b71aaba754f65b505b4",
+      "externalIds": {
+        "PubMedCentral": "12833062",
+        "DOI": "10.3389/fpsyt.2025.1624997",
+        "CorpusId": 284794980,
+        "PubMed": "41601517"
+      },
+      "url": "https://www.semanticscholar.org/paper/3589ff90f9ea7bbae5c84b71aaba754f65b505b4",
+      "title": "Multidimensional EEG features integration with feature selection strategy for precision diagnosis of depressive disorders",
+      "venue": "Frontiers in Psychiatry",
+      "year": 2026,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://public-pages-files-2025.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1624997/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12833062, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2261811528",
+          "name": "Xiaodong Luo"
+        },
+        {
+          "authorId": "1471305944",
+          "name": "Yanting Xu"
+        },
+        {
+          "authorId": "2404971441",
+          "name": "Zihao Yan"
+        },
+        {
+          "authorId": "2261762453",
+          "name": "Wei Liu"
+        },
+        {
+          "authorId": "2289832092",
+          "name": "Bin Zhou"
+        },
+        {
+          "authorId": "2276259620",
+          "name": "Gang Li"
+        },
+        {
+          "authorId": "2290017481",
+          "name": "Yixia Zhu"
+        }
+      ],
+      "abstract": "Depressive disorder (DD), a leading global cause of disability, lacks objective diagnostic biomarkers due to reliance on subjective clinical criteria. This study introduces an algorithm-driven framework integrating multidimensional EEG features, dynamic time-window optimization, feature selection and machine learning to address this gap. Resting-state EEG signals were acquired from 70 DD patients and 30 healthy controls (HC). Three-dimensional neurophysiological features, including power spectral density (PSD), sample entropy (SE), and phase lag index (PLI), were systematically extracted across variable time windows. The SVM-RFE algorithm eliminated redundant features, identifying an optimal subset that maximized classification accuracy through leave-one-subject-out cross-validation. Our model achieved exceptional classification accuracy of 94.48% using 10-second windows, outperforming conventional approaches. Critical biomarkers included beta rhythm alterations and cross-frequency functional connectivity patterns, demonstrating superior discriminative power for DD patients. The optimal feature subset emphasized the combined significance of spectral, nonlinear dynamic, and network-level characteristics in differentiating DD from HC. This framework establishes the first evidence-based integration of time-window and feature selection optimized multidimensional EEG features for DD identification, resolving key limitations in replicability and clinical translatability of existing methods. Beyond enabling high-precision objective diagnosis, the biomarker profile provides mechanistic insights into DD neuropathology, particularly beta rhythm dysregulation and aberrant cross-frequency coupling. These findings advance EEG-based precision psychiatry by offering a validated protocol for therapeutic monitoring and treatment personalization, bridging the critical gap between computational neuroscience and clinical practice in mood disorder management."
+    },
+    {
+      "paperId": "de64435f9a8e8b09dee2939d05852c8fb81e10d4",
+      "externalIds": {
+        "ArXiv": "2604.11237",
+        "DBLP": "journals/corr/abs-2604-11237",
+        "DOI": "10.48550/arXiv.2604.11237",
+        "CorpusId": 287432364
+      },
+      "url": "https://www.semanticscholar.org/paper/de64435f9a8e8b09dee2939d05852c8fb81e10d4",
+      "title": "A Physics-Aware Variational Graph Autoencoder for Joint Modal Identification with Uncertainty Quantification",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2604.11237, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "114845486",
+          "name": "B. Nath"
+        },
+        {
+          "authorId": "2370498816",
+          "name": "Mehulkumar Lakhadive"
+        },
+        {
+          "authorId": "2317168351",
+          "name": "Anshu Sharma"
+        },
+        {
+          "authorId": "153558773",
+          "name": "B. Bhowmik"
+        }
+      ],
+      "abstract": "Reliable modal identification from output-only vibration data remains a challenging problem under measurement noise, sparse sensing, and structural variability. These challenges intensify when global modal quantities and spatially distributed mode shapes must be estimated jointly from frequency-domain data. This work presents a physics-aware variational graph autoencoder, termed UResVGAE, for joint modal identification with uncertainty quantification from power spectral density (PSD) representations of truss structures. The framework represents each structure as a graph in which node attributes encode PSD and geometric information, while edges capture structural connectivity. A residual GraphSAGE-based encoder, attention-driven graph pooling, and a variational latent representation are combined to learn both graph-level and node-level modal information within a single, unified formulation. Natural frequencies and damping ratios are predicted through evidential regression, and full-field mode shapes are reconstructed through a dedicated node-level decoder that fuses global latent information with local graph features. Physical consistency is promoted via mode-shape reconstruction and orthogonality regularisation. The framework is assessed on numerically generated truss populations under varying signal-to-noise ratios and sensor availability. Results demonstrate accurate prediction of natural frequencies, damping ratios, and mode shapes, with high modal assurance criterion values and stable performance under noisy and sparse sensing conditions. Reliability analysis indicates that the predictive uncertainty is broadly consistent with empirical coverage. The proposed framework offers a coherent and physically grounded graph-based route for joint modal identification with calibrated uncertainty from frequency-domain structural response data."
+    },
+    {
+      "paperId": "1e6999e6ae1a696f24fb55262af9096dccae503e",
+      "externalIds": {
+        "DBLP": "conf/globecom/NguyenLFENK23",
+        "DOI": "10.1109/GLOBECOM54140.2023.10437733",
+        "CorpusId": 268047628
+      },
+      "url": "https://www.semanticscholar.org/paper/1e6999e6ae1a696f24fb55262af9096dccae503e",
+      "title": "Joint Rate Allocation and Power Control for RSMA-Based Communication and Radar Coexistence Systems",
+      "venue": "Global Communications Conference",
+      "year": 2023,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "http://arxiv.org/pdf/2303.17392",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/GLOBECOM54140.2023.10437733?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/GLOBECOM54140.2023.10437733, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2276555385",
+          "name": "Trung Thanh Nguyen"
+        },
+        {
+          "authorId": "3046954",
+          "name": "Nguyen Cong Luong"
+        },
+        {
+          "authorId": "10717971",
+          "name": "Shaohan Feng"
+        },
+        {
+          "authorId": "2265538642",
+          "name": "Khaled Elbassioni"
+        },
+        {
+          "authorId": "1713586",
+          "name": "D. Niyato"
+        },
+        {
+          "authorId": "2228302663",
+          "name": "Dong In Kim"
+        }
+      ],
+      "abstract": "We consider a rate-splitting multiple access (RSMA)-based communication and radar coexistence (CRC) system. The proposed system allows an RSMA-based communication system to share spectrum with multiple radars. Furthermore, RSMA enables flexible and powerful interference management by splitting messages into common parts and private parts to partially decode interference and partially treat interference as noise. The RSMA-based CRC system thus significantly improves spectral efficiency and quality of service (QoS) of communication users (CUs). The communication network and the radars cause interference to each other, which reduces the signal-to-interference-plus-noise ratio (SINR) of the radars as well as the data rate of the CUs. Therefore, a major problem is to maximize the sum rate of the CUs while guaranteeing their QoS requirements of data transmissions and the SINR requirements of multiple radars. To achieve these objectives, we formulate a problem that optimizes i) the common rate allocation to the CUs, transmit power of common message and transmit power of private messages of the CUs, and ii) transmit power of the radars. We propose an additive approximation scheme (AAS) which solves the problem globally. Simulation results show the improvement of the AAS compared with the sequential quadratic programming (SQP) in terms of sum rate."
+    },
+    {
+      "paperId": "8e23b24f8a6ebac7bd00f067bcbabd78ac60f16b",
+      "externalIds": {
+        "MAG": "3184558295",
+        "DOI": "10.1155/2021/9935543",
+        "CorpusId": 236469015
+      },
+      "url": "https://www.semanticscholar.org/paper/8e23b24f8a6ebac7bd00f067bcbabd78ac60f16b",
+      "title": "Simulation of Interference Effects of UWB Pulse Signal to the GPS Receiver",
+      "venue": "Discrete Dynamics in Nature and Society",
+      "year": 2021,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1155/2021/9935543",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1155/2021/9935543?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1155/2021/9935543, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2152664816",
+          "name": "Xin Huang"
+        },
+        {
+          "authorId": "2109273837",
+          "name": "Yazhou Chen"
+        },
+        {
+          "authorId": "2108884493",
+          "name": "Yuming Wang"
+        }
+      ],
+      "abstract": "Ultra-wideband (UWB) pulse signal has an extremely narrow pulse width and wide frequency bandwidth, which overlaps with the operating frequency band of Global Position System (GPS) receivers, posing a potential threat to their performance. In response to this problem, through mathematical analysis and software simulation, the effects of UWB pulse signal under time-hopping-pulse position modulation (TH-PPM) on the performance of GPS receivers were studied. First, the expression and waveform of the UWB pulse signal were analyzed in the time-frequency domain, and it is concluded that the pulse repetition frequency (PRF) mainly affects the discrete spectrum of the UWB signal and the TH code period mainly affects the continuous spectrum. On this basis, the simulation on the power spectral density (PSD) of GPS signal and UWB signal under different pulse parameters was represented, from which a conclusion can be drawn that the PRF is the main factor impacting the PSD of the GPS signal. Furthermore, this paper analyzed the degradation of GPS receiver equivalent carrier-to-noise ratio (C/N0) and C/A code demodulation bit error rate (BER) under UWB interference, which are the crucial evaluating indicators of GPS signal quality. Eventually, we theoretically calculated the minimum interference level of the UWB interference signal to the GPS receiver, providing a theoretical reference for reducing the interference effects of UWB pulse signal on the performance of GPS receivers."
+    },
+    {
+      "paperId": "c939173d8ea2c12451e3d8f42932f074621bc3d7",
+      "externalIds": {
+        "DOI": "10.1088/2631-8695/adcff1",
+        "CorpusId": 278047242
+      },
+      "url": "https://www.semanticscholar.org/paper/c939173d8ea2c12451e3d8f42932f074621bc3d7",
+      "title": "Speech imagery decoding from electroencephalography signals using an amalgamation of convolutional and recurrent neural networks",
+      "venue": "Engineering Research Express",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/2631-8695/adcff1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/2631-8695/adcff1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2003245149",
+          "name": "Meenakshi Bisla"
+        },
+        {
+          "authorId": "2238047566",
+          "name": "R.S Anand"
+        }
+      ],
+      "abstract": "An innovative electroencephalography (EEG) based deep learning architecture for interpretation of imagined speech is proposed in this study. A deep one-dimensional convolutional Bidirectional long-short-term memory(1-D CNN Bi-LSTM) architecture was designed to acquire local and global characteristic features correlated to speech imagery from the power spectral density (PSD) of imagined speech EEG data. The designed convolution network mainly consists of one-dimensional convolutional layers and max-pooling layers for familiarizing local associations and mining hierarchical connections. A Bi-directional long-short-term memory(Bi-LSTM) network is employed to acquire long-term dependencies from the features learned by the former convolutional network. Bi-LSTM network improves performance and potentially acquires more affluent representations by looking at the sequence in forward and reverse ways to capture representations that might be left unexploited by the sequential-order kind alone. The designed 1-D CNN Bi-LSTM network inputted with PSD features is tested on two publicly available datasets. The maximum four-class classification accuracy achieved for dataset 1 is 86.20%, outperforming the traditional and state-of-the-art approaches from the literature on speech imagery. The maximum accuracy of the proposed algorithm was 20–25% more than essential one-dimensional convolutional long-short-term memory (1-D CNN LSTM) architecture. The designed algorithm is trained and tested on dataset 1. Dataset 2 is employed to validate the performance of the designed algorithm in successfully classifying imagined words. The designed algorithm has attained a maximum two-class classification accuracy of 83.81% for dataset 2."
+    },
+    {
+      "paperId": "32798a168d5bbb6f784d9d27d2243be9603b4a3f",
+      "externalIds": {
+        "DBLP": "journals/tcasI/SongYLLZHZLZYMY25",
+        "DOI": "10.1109/TCSI.2024.3508838",
+        "CorpusId": 274663678
+      },
+      "url": "https://www.semanticscholar.org/paper/32798a168d5bbb6f784d9d27d2243be9603b4a3f",
+      "title": "Analyses Concerning the Phase Noise and Nonlinear Behavior of the Charge-Sharing Integrator-Based Hybrid PLL",
+      "venue": "IEEE Transactions on Circuits and Systems Part 1: Regular Papers",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TCSI.2024.3508838?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TCSI.2024.3508838, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2334933626",
+          "name": "Jingrun Song"
+        },
+        {
+          "authorId": "2335140652",
+          "name": "Xinyu Yang"
+        },
+        {
+          "authorId": "2334978784",
+          "name": "Jiaxu Liu"
+        },
+        {
+          "authorId": "2145579327",
+          "name": "Yueduo Liu"
+        },
+        {
+          "authorId": "2264169454",
+          "name": "Zihao Zhu"
+        },
+        {
+          "authorId": "2335622405",
+          "name": "Zhengxuan Han"
+        },
+        {
+          "authorId": "2118690295",
+          "name": "Zehao Zhang"
+        },
+        {
+          "authorId": "2318152937",
+          "name": "Jiaxin Liu"
+        },
+        {
+          "authorId": "2334891834",
+          "name": "Hongshuai Zhang"
+        },
+        {
+          "authorId": "2335586986",
+          "name": "Jun Yin"
+        },
+        {
+          "authorId": "145547605",
+          "name": "Pui-in Mak"
+        },
+        {
+          "authorId": "3095630",
+          "name": "Shiheng Yang"
+        }
+      ],
+      "abstract": "Hybrid PLLs (HPLLs) leverage the advantages of conventional analog and digital PLLs to cater to the high integration demand inherent with the advanced CMOS nodes, among which the charge-sharing (CS) integrator-based HPLL featuring ultra-compact area and ultra-low power consumption exhibits promising prospects. This work presents a comprehensive analysis concerning the CS integrator-based HPLL for the first time. The behavioral modeling is first conducted with a time-domain event-driven modeling method to simulate the piecewise-linear modulations on the oscillator frequency A noise model considering the slow-fast clock domain transitions and the digital-analog signal transitions inherent with the architecture is further proposed. The proposed models offer precise PN PSD estimations over the specified frequency range under all simulated conditions, whose integrated jitters differ by less than 5 fs compared with circuit simulations. The additional nonlinearity induced by the CS integrator is also considered, and an analytical prediction approach for the nonlinearity-induced spurs is presented, showing a capability of predicting the locations and amplitudes of the most significant spurious tones with a less than 4 % deviation in the relative offset frequency and a less than 5 dBc deviation in the relative amplitude."
+    },
+    {
+      "paperId": "71050a565b82c0bd6d89def0dfd2cd002a3c23ec",
+      "externalIds": {
+        "DOI": "10.17491/jgsi/2025/174275",
+        "CorpusId": 281792157
+      },
+      "url": "https://www.semanticscholar.org/paper/71050a565b82c0bd6d89def0dfd2cd002a3c23ec",
+      "title": "Detecting Landslides in Seismic Waveform Data Using Spectral Characteristics",
+      "venue": "Journal of the Geological Society of India",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.17491/jgsi/2025/174275?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.17491/jgsi/2025/174275, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2330033247",
+          "name": "Mahesh Yezarla"
+        },
+        {
+          "authorId": "97853006",
+          "name": "R. Rekapalli"
+        },
+        {
+          "authorId": "2383705535",
+          "name": "N. Purnachandra Rao"
+        }
+      ],
+      "abstract": "\n Mountainous regions face increasing risks from natural disasters such as landslides, Glacial Lake Outburst Floods (GLOFs), and earthquakes, exacerbated by climate change-induced slope destabilisation. The 2021 Chamoli rockslide and subsequent floods in India highlighted the need for effective monitoring and early warning systems. Recent studies demonstrated the potential of seismic monitoring for detecting such events in real time. However, accurate detection and differentiation of landslide seismic signals from earthquakes, and background noise remains critical. This article discusses a novel approach based on trend changes in Power Spectral Density (PSD) for distinguishing landslide-generated waveforms. The average PSDs were computed for earthquakes of small magnitude, landslides, and noise data from landslide-prone regions globally. These average PSDs serve as a global model for identifying the landslides in continuous seismic data. The distinct trends with slopes of −1.00, −7.42, and −8.78, respectively, noticed in the average PSD of earthquakes, landslides, and noise data from the global dataset, suggest this as a novel approach for realtime monitoring."
+    },
+    {
+      "paperId": "886313ad75513cc3623333c5af075cc98655527f",
+      "externalIds": {
+        "DOI": "10.1109/EMBC58623.2025.11253722",
+        "CorpusId": 283475957,
+        "PubMed": "41336947"
+      },
+      "url": "https://www.semanticscholar.org/paper/886313ad75513cc3623333c5af075cc98655527f",
+      "title": "Using Machine Learning to Model EEG-Derived Brain Activity During Emotion Regulation",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EMBC58623.2025.11253722?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EMBC58623.2025.11253722, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2335895248",
+          "name": "Mahdis Hojjati"
+        },
+        {
+          "authorId": "2261955776",
+          "name": "Shyamal Y. Dharia"
+        },
+        {
+          "authorId": "2261955473",
+          "name": "Sergio G. Camorlinga"
+        },
+        {
+          "authorId": "2284469374",
+          "name": "Stephen D. Smith"
+        },
+        {
+          "authorId": "2350680872",
+          "name": "Amy S. Desroches"
+        },
+        {
+          "authorId": "2395947267",
+          "name": "Bronte D. Brenneman"
+        }
+      ],
+      "abstract": "Emotion Regulation (ER) is the ability to manage emotional responses. ER is important for maintaining mental health and handling social interactions, especially under stress. This study explores the brain activity involved in ER using electroencephalography (EEG) and machine learning (ML) models to predict successful and unsuccessful ER. Study participants viewed emotional and neutral images under two conditions: regular viewing and being asked to reduce their emotions. At the end of each experimental trial, participants rated the intensity of their emotional response to the image. Ratings of low intensity (1 and 2) were classified as successful ER, whereas ratings of high intensity (3 and 4) were considered indicative of unsuccessful ER. EEG signals were analyzed in both time and frequency domains to identify patterns linked to ER. In the time domain, significant differences in Global Field Power (GFP) were observed, especially in the frontal and central regions of the brain. Frequencydomain analysis using Power Spectral Density (PSD) showed that theta, beta, and gamma bands were important for regulating emotions. Using these analysis results, machine learning models were trained to predict regulation success. Among the models, a neural network with Maximum Mean Discrepancy (MMD) loss performed the best, achieving an F1-score macro of 75.57% with a subject-independent approach. These machine-learning models highlight the importance of frontal and central brain regions and beta brain frequency signals in the prediction of ER levels. It shows that combining EEG data with advanced machine learning methods can create accurate models for understanding and predicting emotional responses. Additionally, this integrated EEG-based approach represents a novel framework for ER assessment, offering a promising direction for future research and enabling personalized mental health treatments."
+    },
+    {
+      "paperId": "f94b9a340e7976fb69a9f764ad01fbdeeda6c168",
+      "externalIds": {
+        "DOI": "10.1109/ACAIT67930.2025.11522604",
+        "CorpusId": 288470367
+      },
+      "url": "https://www.semanticscholar.org/paper/f94b9a340e7976fb69a9f764ad01fbdeeda6c168",
+      "title": "EEG Emotion Recognition Based on Swin Transformer and GCN",
+      "venue": "2025 Asian Conference on Artificial Intelligence Technology (ACAIT)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACAIT67930.2025.11522604?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACAIT67930.2025.11522604, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2436973359",
+          "name": "Chengting Duan"
+        },
+        {
+          "authorId": "46879398",
+          "name": "Guijun Chen"
+        },
+        {
+          "authorId": "2316582388",
+          "name": "Xueying Zhang"
+        }
+      ],
+      "abstract": "To effectively capture emotion-related features in electroencephalogram (EEG) signals, this paper proposes an EEG emotion recognition model based on the fusion of Swin Transformer and Graph Convolutional Network (GCN). First, the emotionally evoked EEG signals are preprocessed, and both Differential Entropy (DE) and Power Spectral Density (PSD) features are extracted and concatenated to fuse. Second, the fused features are fed into an improved Swin Transformer module, which incorporates a Brain Cross Attention mechanism to reduce computational complexity while enhancing whole-brain functional connectivity modeling. Third, spatial convolutional positional encoding is employed to capture local spatial relationships among electrodes within windows, and LayerScale dynamically adjusts feature weights to improve global and local feature extraction. Finally, a residual-connected GCN branch is introduced after the Transformer output to further capture local topological structures among EEG channels, enabling multi-scale feature fusion. Experiments on the TYUT3.0 and SEED datasets demonstrate that the proposed model achieves average recognition accuracies of 95.68% and 97.19%, respectively, outperforming state-of-the-art EEG emotion recognition methods by 1.19%–15.94%."
+    },
+    {
+      "paperId": "34769b1e6e313b4d1a59cbdb52f6888d78a2619d",
+      "externalIds": {
+        "DOI": "10.35940/ijitee.f8336.15030226",
+        "CorpusId": 286199715
+      },
+      "url": "https://www.semanticscholar.org/paper/34769b1e6e313b4d1a59cbdb52f6888d78a2619d",
+      "title": "Generalizable Tool-Wear Monitoring in Brownfield CNC Milling via Time, Frequency, and Time-Frequency Vibration Features",
+      "venue": "International Journal of Innovative Technology and Exploring Engineering",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.35940/ijitee.f8336.15030226",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.35940/ijitee.f8336.15030226?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.35940/ijitee.f8336.15030226, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2421393471",
+          "name": "Marwen Chouk"
+        },
+        {
+          "authorId": "2421393614",
+          "name": "Dr Fouad Slaoui Hasnaoui"
+        },
+        {
+          "authorId": "2184412523",
+          "name": "Abdelhak Mehadjbia"
+        }
+      ],
+      "abstract": "The paper proposes a practical, scalable, and non-intrusive system for the automatic detection of tool wear under real industrial conditions that does not require process metadata (e.g., spindle speed, feed rate) or specialised equipment. The proposed method is based solely on the analysis of triaxial vibration signals and combines multiple signal-processing methods (time, frequency, and time-frequency) to enable deeper analysis. Various time-domain features, such as RMS, standard deviation, kurtosis, and crest factor, are combined with spectral analysis via Welch power spectral density (PSD) estimation and the continuous wavelet transform (CWT) for time-frequency analysis. To make features comparable across machines and operating conditions, the features are combined using median statistics and normalised relative to the median (Δ%). Experimental validation was performed with multiple machines and measurement axes on real industrial datasets that were heavily imbalanced. It was shown that there is a direct and consistent correlation between the condition of worn tools and the overall increase in tool vibration energy, as evidenced by significantly higher RMS and standard deviation values. On the other hand, higher-order statistical measures, such as kurtosis and crest factor, were less consistent when used alone due to their sensitivity to operational variability. Frequency domain analysis showed that the wear of the tool could not only be described by a general rise in energy, but also by the significant increase of certain frequency components in the spectrum. Most notably, the peaks centred at 200 Hz were found to be significantly raised, along with their harmonics at around 600 Hz and 800 Hz, when the tool was worn, and this was true for all the axes of the measurements. These frequencies can thus be considered reliable and repeatable indicators of tool wear. The continuous wavelet transforms (CWT), a complementary method to time-localised time-frequency representations, confirmed the results and, notably, revealed that the signal's high-energy bursts are time-recurrent and running; thus, they can be seen as a series of bright spots closely packed in time in the scalogram. The strength of the proposal is its rational and transparent integration of several well-known signal-processing methods into a single, coherent concept that encompasses the full spectrum of changes, from the global increase in vibration energy to the localised, frequency-specific excitations that are the hallmark of wear progression. By combining global energy indicators with spectral and time frequency features, the approach enhances diagnostic reliability while improving physical understanding of tool-wear mechanisms. It is robust, practical, and readily transferable, offering strong potential for scalable predictive maintenance applications in machining environments."
+    },
+    {
+      "paperId": "8ec9ddee2e8e9cc8fb8d1a81c4196d2d4dca5a98",
+      "externalIds": {
+        "DOI": "10.3390/app16125741",
+        "CorpusId": 289128789
+      },
+      "url": "https://www.semanticscholar.org/paper/8ec9ddee2e8e9cc8fb8d1a81c4196d2d4dca5a98",
+      "title": "Efficient Affective EEG Classification Based on Multi-Attention Fusion Transformer Network",
+      "venue": "Applied Sciences",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/app16125741",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app16125741?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app16125741, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2343475426",
+          "name": "Jiayu Li"
+        },
+        {
+          "authorId": "2125541616",
+          "name": "Hongli Li"
+        },
+        {
+          "authorId": "2307223682",
+          "name": "Jinsheng Liu"
+        }
+      ],
+      "abstract": "Emotion recognition through electroencephalogram (EEG) signals is crucial for brain–computer interfaces (BCIs), yet existing methods often struggle with heterogeneous feature fusion and capturing long-range temporal dependencies. To address these challenges, we propose MAF-TransNet, a novel unified spatiotemporal framework. Specifically, parallel Fully Connected Neural Network (FCNN) modules first non-linearly align heterogeneous differential entropy (DE) and power spectral density (PSD) features. Subsequently, an Adaptive Channel-wise Feature Encoder (ACFE) recalibrates spatial–spectral responses to highlight emotion-relevant cortical activations. Finally, a Transformer encoder dynamically models the global temporal evolution of emotional states. Evaluated on the SEED-IV and DEAP datasets, MAF-TransNet achieves superior subject-dependent (SD) accuracies of 88.80% and 96.58%, respectively, alongside robust subject-independent (SI) performance. Furthermore, Granger causality analysis reveals distinct emotion-dependent prefrontal asymmetry, while t-SNE visualizations confirm the formation of a highly discriminative, linearly separable feature manifold. Ultimately, MAF-TransNet effectively unifies local spatial–spectral extraction with global temporal modeling, providing an accurate and robust approach, while offering preliminary insights into the spatiotemporal dynamics of emotion for future affective BCI applications."
+    },
+    {
+      "paperId": "7f10cdcfd2d2ba660d8c25a2ae97d235ea3e0cd2",
+      "externalIds": {
+        "DOI": "10.3390/app16041949",
+        "CorpusId": 285838877
+      },
+      "url": "https://www.semanticscholar.org/paper/7f10cdcfd2d2ba660d8c25a2ae97d235ea3e0cd2",
+      "title": "Lithology Identification via MSC-Transformer Network with Time-Frequency Feature Fusion",
+      "venue": "Applied Sciences",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/app16041949",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app16041949?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app16041949, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2298526127",
+          "name": "Shiyi Xu"
+        },
+        {
+          "authorId": "2353925485",
+          "name": "Sheng Wang"
+        },
+        {
+          "authorId": "2306567017",
+          "name": "J. Bai"
+        },
+        {
+          "authorId": "2212959936",
+          "name": "Kun Lai"
+        },
+        {
+          "authorId": "2389750255",
+          "name": "Jie Zhang"
+        },
+        {
+          "authorId": "2109079975",
+          "name": "Qingfeng Wang"
+        }
+      ],
+      "abstract": "Real-time lithology identification during drilling faces challenges such as indistinct boundaries and difficulties in feature extraction. To address these, this study proposes the MSC-Transformer, a novel model integrating time-frequency features with a deep neural network. A series of drilling experiments were conducted using an intelligent drilling platform, during which triaxial vibration signals were collected from five types of rock specimens: anthracite, granite, bituminous coal, sandstone, and shale. Short-time Fourier Transform (STFT) was applied to generate multi-channel power spectral density (PSD) maps, which were then fused into a three-channel tensor to preserve directional frequency information and used as inputs to the model. The proposed MSC-Transformer combines a multi-scale convolutional (MSC) module with a lightweight Transformer encoder to jointly capture local texture patterns and global dependency features, thereby enabling accurate classification of complex lithologies. Experimental results demonstrate that the model achieves an average accuracy of 98.21 ± 0.49% on the test set, outperforming convolutional neural networks (CNNs), visual geometry group (VGG), residual network (ResNet), and bidirectional long short-term memory (Bi-LSTM) by 5.93 ± 0.90%, 2.54 ± 1.11%, 6.38 ± 2.63%, and 10.56 ± 3.11%, respectively, with statistically significant improvements (p < 0.05). Ablation studies and visualization analyses further validate the effectiveness and interpretability of the model architecture. These findings indicate that lithology recognition based on time-frequency representations of vibration signals is both stable and generalizable, offering technical support for real-time intelligent lithology identification during drilling operations."
+    },
+    {
+      "paperId": "978ef82695f1530fb798fab9a0af4a7c0d1b2c7e",
+      "externalIds": {
+        "DOI": "10.3390/agriengineering8040158",
+        "CorpusId": 287579591
+      },
+      "url": "https://www.semanticscholar.org/paper/978ef82695f1530fb798fab9a0af4a7c0d1b2c7e",
+      "title": "Comparative Analysis of the Biomechanical Response of a Virtual Driver Dummy Subjected to Random Vibrations Generated by Diesel-and Electric-Powered Self-Propelled Agricultural Tractors",
+      "venue": "AgriEngineering",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2624-7402/8/4/158/pdf?version=1776418470",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/agriengineering8040158?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/agriengineering8040158, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2182489989",
+          "name": "Teofil-Alin Oncescu"
+        },
+        {
+          "authorId": "2160351858",
+          "name": "S. Biriș"
+        },
+        {
+          "authorId": "93631764",
+          "name": "I. Găgeanu"
+        },
+        {
+          "authorId": "95936152",
+          "name": "N. Vladut"
+        },
+        {
+          "authorId": "97788236",
+          "name": "I. Persu"
+        },
+        {
+          "authorId": "2173051279",
+          "name": "Stefan Bostina"
+        },
+        {
+          "authorId": "2264191121",
+          "name": "Daniela Tarniță"
+        },
+        {
+          "authorId": "2160368073",
+          "name": "A. Tăbărașu"
+        },
+        {
+          "authorId": "79735115",
+          "name": "D. Radu"
+        },
+        {
+          "authorId": "1432681289",
+          "name": "C. Muraru-Ionel"
+        },
+        {
+          "authorId": "95252351",
+          "name": "R. Sfiru"
+        },
+        {
+          "authorId": "2399056953",
+          "name": "Ionut-Cosmin Nica"
+        },
+        {
+          "authorId": "2430309473",
+          "name": "Teodor Anita"
+        }
+      ],
+      "abstract": "The aim of this study is to evaluate the biomechanical response of a seated operator subjected to whole-body vibrations generated by two agricultural tractors with different propulsion systems: a diesel model (TD80D) and an electric prototype (TE-0). An integrated experimental–numerical approach was employed, combining triaxial accelerometer measurements under real operating conditions (constant speed of 5 km/h on unprepared terrain) with random vibration response simulations performed in Altair SimSolid. The excitation input for the numerical model was defined using frequency-dependent power spectral density (PSD) functions derived from experimentally measured acceleration signals and scaled to a representative global RMS value. The analysis focused on the distribution of mechanical stress in key anatomical regions of a virtual human dummy in a seated posture, including the foot sole, knee, lumbar region, and head. The results indicate that, under the analysed conditions, the electric tractor (TE-0) exhibits improved vibration attenuation, leading to significant reductions in mechanical stress across all analysed regions, with decreases of up to 56.3% at the foot sole, 50.0% at the knee, 53.3% in the lumbar region, and 91.1% at the head compared to the diesel tractor (TD80D). These findings highlight the relevance of integrating experimental measurements with numerical simulation for assessing operator exposure to vibrations and suggest that electric tractor configurations may provide improved biomechanical comfort under the analysed operating conditions."
+    }
+  ]
+}

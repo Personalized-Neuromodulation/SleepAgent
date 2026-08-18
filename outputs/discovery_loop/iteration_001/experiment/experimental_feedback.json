@@ -1,39 +1,44 @@
 [
   {
-    "hypothesis_id": "hypothesis_57fdbe2e8962",
-    "plan_id": "experiment_plan_bb9459a66e3b",
-    "support": "partially_supported",
-    "support_score": 0.65,
-    "computed_reward": 0.595,
+    "hypothesis_id": "hypothesis_0475574660a3",
+    "plan_id": "experiment_plan_f5361333fc9a",
+    "support": "partially supported",
+    "support_score": 0.5,
+    "computed_reward": 0.525,
     "validated": false,
     "refuted": false,
     "primary_tests_passed": 2,
-    "primary_tests_total": 8,
+    "primary_tests_total": 4,
     "metadata": {
-      "review_status": "partially_supported",
-      "hypothesis_title": "Thalamic Spindle Modulation and Insomnia Severity via Thalamocortical Coupling",
+      "review_status": "partially supported",
+      "hypothesis_title": "Thalamocortical Coupling and Default Mode Network Dysregulation Interaction in Insomnia",
       "predictors": [
         "thalamus_DMN_FC",
-        "thalamus_salience_FC",
-        "thalamus_frontoparietal_FC",
-        "DMN_FC"
+        "DMN_FC",
+        "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "timefreq_ALFF_0.01_0.08"
       ],
       "outcomes": [
-        "salience_FC",
-        "frontoparietal_FC"
+        "ISI"
       ],
       "critic_findings": [
         {
           "severity": "medium",
-          "category": "data_completeness",
-          "message": "24.73% missing data in key variables like ISI and spindle density",
-          "recommendation": "Implement multiple imputation or use robust models that handle missing data effectively."
+          "category": "llm_review",
+          "message": "",
+          "recommendation": ""
+        },
+        {
+          "severity": "low",
+          "category": "llm_review",
+          "message": "",
+          "recommendation": ""
         },
         {
           "severity": "high",
-          "category": "model_selection",
-          "message": "EEG/fMRI scales not available in current profile",
-          "recommendation": "Integrate EEG/fMRI scales or use alternative modalities for better model calibration."
+          "category": "llm_review",
+          "message": "",
+          "recommendation": ""
         }
       ]
     }

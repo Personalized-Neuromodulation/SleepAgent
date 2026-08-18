@@ -1,0 +1,46 @@
+{
+  "total": 1,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "31b1dfd83c46c95ce9340a59aab1b90807f31660",
+      "externalIds": {
+        "PubMedCentral": "11428686",
+        "DOI": "10.3390/biomedicines12092139",
+        "CorpusId": 272803776,
+        "PubMed": "39335651"
+      },
+      "url": "https://www.semanticscholar.org/paper/31b1dfd83c46c95ce9340a59aab1b90807f31660",
+      "title": "Analysis of Brain Age Gap across Subject Cohorts and Prediction Model Architectures",
+      "venue": "Biomedicines",
+      "year": 2024,
+      "citationCount": 10,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/biomedicines12092139",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11428686, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2132865522",
+          "name": "Lara Dular"
+        },
+        {
+          "authorId": "2560810",
+          "name": "Ž. Špiclin"
+        },
+        {
+          "authorId": null,
+          "name": "For The Alzheimer's Disease Neuroimaging Initiativ"
+        },
+        {
+          "authorId": null,
+          "name": "The Australian Imaging Biomarkers And Lifestyle Fl"
+        }
+      ],
+      "abstract": "Background: Brain age prediction from brain MRI scans and the resulting brain age gap (BAG)—the difference between predicted brain age and chronological age—is a general biomarker for a variety of neurological, psychiatric, and other diseases or disorders. Methods: This study examined the differences in BAG values derived from T1-weighted scans using five state-of-the-art deep learning model architectures previously used in the brain age literature: 2D/3D VGG, RelationNet, ResNet, and SFCN. The models were evaluated on healthy controls and cohorts with sleep apnea, diabetes, multiple sclerosis, Parkinson’s disease, mild cognitive impairment, and Alzheimer’s disease, employing rigorous statistical analysis, including repeated model training and linear mixed-effects models. Results: All five models consistently identified a statistically significant positive BAG for diabetes (ranging from 0.79 years with RelationNet to 2.13 years with SFCN), multiple sclerosis (2.67 years with 3D VGG to 4.24 years with 2D VGG), mild cognitive impairment (2.13 years with 2D VGG to 2.59 years with 3D VGG), and Alzheimer’s dementia (5.54 years with ResNet to 6.48 years with SFCN). For Parkinson’s disease, a statistically significant BAG increase was observed in all models except ResNet (1.30 years with 2D VGG to 2.59 years with 3D VGG). For sleep apnea, a statistically significant BAG increase was only detected with the SFCN model (1.59 years). Additionally, we observed a trend of decreasing BAG with increasing chronological age, which was more pronounced in diseased cohorts, particularly those with the largest BAG, such as multiple sclerosis (−0.34 to −0.2), mild cognitive impairment (−0.37 to −0.26), and Alzheimer’s dementia (−0.66 to −0.47), compared to healthy controls (−0.18 to −0.1). Conclusions: Consistent with previous research, Alzheimer’s dementia and multiple sclerosis exhibited the largest BAG across all models, with SFCN predicting the highest BAG overall. The negative BAG trend suggests a complex interplay of survival bias, disease progression, adaptation, and therapy that influences brain age prediction across the age spectrum."
+    }
+  ]
+}

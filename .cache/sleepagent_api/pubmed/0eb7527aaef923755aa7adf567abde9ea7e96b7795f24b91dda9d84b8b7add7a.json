@@ -1,0 +1,58 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Motion",
+        "to": "\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion's\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]"
+      },
+      {
+        "from": "segmentation",
+        "to": "\"segment\"[All Fields] OR \"segment's\"[All Fields] OR \"segmental\"[All Fields] OR \"segmentally\"[All Fields] OR \"segmentals\"[All Fields] OR \"segmentation\"[All Fields] OR \"segmentation's\"[All Fields] OR \"segmentational\"[All Fields] OR \"segmentations\"[All Fields] OR \"segmented\"[All Fields] OR \"segmenter\"[All Fields] OR \"segmenters\"[All Fields] OR \"segmenting\"[All Fields] OR \"segments\"[All Fields]"
+      },
+      {
+        "from": "quality",
+        "to": "\"qualities\"[All Fields] OR \"quality\"[All Fields] OR \"quality's\"[All Fields]"
+      },
+      {
+        "from": "effects",
+        "to": "\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "data",
+        "to": "\"Data (Basel)\"[Journal:__jid101699766] OR \"Brown Univ Dig Addict Theory Appl\"[Journal:__jid8904655] OR \"data\"[All Fields]"
+      },
+      {
+        "from": "thalamocortical",
+        "to": "\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]"
+      },
+      {
+        "from": "studies",
+        "to": "\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study's\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion s\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]) AND (\"segment\"[All Fields] OR \"segment s\"[All Fields] OR \"segmental\"[All Fields] OR \"segmentally\"[All Fields] OR \"segmentals\"[All Fields] OR \"segmentation\"[All Fields] OR \"segmentation s\"[All Fields] OR \"segmentational\"[All Fields] OR \"segmentations\"[All Fields] OR \"segmented\"[All Fields] OR \"segmenter\"[All Fields] OR \"segmenters\"[All Fields] OR \"segmenting\"[All Fields] OR \"segments\"[All Fields]) AND (\"qualities\"[All Fields] OR \"quality\"[All Fields] OR \"quality s\"[All Fields]) AND (\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"data basel\"[Journal] OR \"brown univ dig addict theory appl\"[Journal] OR \"data\"[All Fields]) AND (\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "on",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

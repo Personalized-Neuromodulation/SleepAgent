@@ -1,0 +1,45 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Statistical",
+        "to": "\"statistic\"[All Fields] OR \"statistic's\"[All Fields] OR \"statistical\"[All Fields] OR \"statistically\"[All Fields] OR \"statistics\"[All Fields]"
+      },
+      {
+        "from": "significance",
+        "to": "\"significance\"[All Fields] OR \"significances\"[All Fields] OR \"significant\"[All Fields] OR \"significants\"[All Fields]"
+      },
+      {
+        "from": "predicting",
+        "to": "\"predict\"[All Fields] OR \"predictabilities\"[All Fields] OR \"predictability\"[All Fields] OR \"predictable\"[All Fields] OR \"predictably\"[All Fields] OR \"predicted\"[All Fields] OR \"predicting\"[All Fields] OR \"prediction\"[All Fields] OR \"predictions\"[All Fields] OR \"predictive\"[All Fields] OR \"predictively\"[All Fields] OR \"predictiveness\"[All Fields] OR \"predictives\"[All Fields] OR \"predictivities\"[All Fields] OR \"predictivity\"[All Fields] OR \"predicts\"[All Fields]"
+      },
+      {
+        "from": "REM",
+        "to": "\"Rangel Ecol Manag\"[Journal:__jid101737744] OR \"rem\"[All Fields]"
+      },
+      {
+        "from": "latency",
+        "to": "\"latencies\"[All Fields] OR \"latency\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"statistic\"[All Fields] OR \"statistic s\"[All Fields] OR \"statistical\"[All Fields] OR \"statistically\"[All Fields] OR \"statistics\"[All Fields]) AND (\"significance\"[All Fields] OR \"significances\"[All Fields] OR \"significant\"[All Fields] OR \"significants\"[All Fields]) AND \"thalamus-DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"predict\"[All Fields] OR \"predictabilities\"[All Fields] OR \"predictability\"[All Fields] OR \"predictable\"[All Fields] OR \"predictably\"[All Fields] OR \"predicted\"[All Fields] OR \"predicting\"[All Fields] OR \"prediction\"[All Fields] OR \"predictions\"[All Fields] OR \"predictive\"[All Fields] OR \"predictively\"[All Fields] OR \"predictiveness\"[All Fields] OR \"predictives\"[All Fields] OR \"predictivities\"[All Fields] OR \"predictivity\"[All Fields] OR \"predicts\"[All Fields]) AND (\"rangel ecol manag\"[Journal] OR \"rem\"[All Fields]) AND (\"latencies\"[All Fields] OR \"latency\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

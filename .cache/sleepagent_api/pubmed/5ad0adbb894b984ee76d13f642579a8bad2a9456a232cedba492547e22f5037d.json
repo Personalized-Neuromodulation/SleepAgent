@@ -1,0 +1,46 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Impact",
+        "to": "\"impact\"[All Fields] OR \"impactful\"[All Fields] OR \"impacting\"[All Fields] OR \"impacts\"[All Fields] OR \"tooth, impacted\"[MeSH Terms] OR (\"tooth\"[All Fields] AND \"impacted\"[All Fields]) OR \"impacted tooth\"[All Fields] OR \"impacted\"[All Fields]"
+      },
+      {
+        "from": "thalamocortical",
+        "to": "\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]"
+      },
+      {
+        "from": "coupling",
+        "to": "\"couple's\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]"
+      },
+      {
+        "from": "sleep quality",
+        "to": "\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]"
+      },
+      {
+        "from": "populations",
+        "to": "\"populate\"[All Fields] OR \"populated\"[All Fields] OR \"populates\"[All Fields] OR \"populating\"[All Fields] OR \"population\"[MeSH Terms] OR \"population\"[All Fields] OR \"population groups\"[MeSH Terms] OR (\"population\"[All Fields] AND \"groups\"[All Fields]) OR \"population groups\"[All Fields] OR \"populations\"[All Fields] OR \"population's\"[All Fields] OR \"populational\"[All Fields] OR \"populations's\"[All Fields] OR \"populous\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"impact\"[All Fields] OR \"impactful\"[All Fields] OR \"impacting\"[All Fields] OR \"impacts\"[All Fields] OR \"tooth, impacted\"[MeSH Terms] OR (\"tooth\"[All Fields] AND \"impacted\"[All Fields]) OR \"impacted tooth\"[All Fields] OR \"impacted\"[All Fields]) AND (\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]) AND (\"couple s\"[All Fields] OR \"coupled\"[All Fields] OR \"coupling\"[All Fields] OR \"couplings\"[All Fields] OR \"family characteristics\"[MeSH Terms] OR (\"family\"[All Fields] AND \"characteristics\"[All Fields]) OR \"family characteristics\"[All Fields] OR \"couple\"[All Fields] OR \"couples\"[All Fields]) AND (\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]) AND \"PSQI\"[All Fields] AND \"sleep-disrupted\"[All Fields] AND (\"populate\"[All Fields] OR \"populated\"[All Fields] OR \"populates\"[All Fields] OR \"populating\"[All Fields] OR \"population\"[MeSH Terms] OR \"population\"[All Fields] OR \"population groups\"[MeSH Terms] OR (\"population\"[All Fields] AND \"groups\"[All Fields]) OR \"population groups\"[All Fields] OR \"populations\"[All Fields] OR \"population s\"[All Fields] OR \"populational\"[All Fields] OR \"populous\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "on",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

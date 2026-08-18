@@ -424,6 +424,69 @@ def llm_enabled(config: dict[str, Any] | None) -> bool:
     return bool(normalize_llm_config(config).get("enabled", False))
 
 
+def select_llm_profile(config: dict[str, Any], task_name: str, *, log_prefix: str = "llm") -> dict[str, Any]:
+    profiles = config.get("llm_profiles", {}) if isinstance(config.get("llm_profiles"), dict) else {}
+    tasks = config.get("llm_tasks", {}) if isinstance(config.get("llm_tasks"), dict) else {}
+    profile_name = str(tasks.get(task_name) or tasks.get("*") or "default")
+    if profile_name in profiles:
+        selected = dict(profiles[profile_name])
+        selected.setdefault("profile", profile_name)
+    elif "default" in profiles:
+        selected = dict(profiles["default"])
+        selected.setdefault("profile", "default")
+    else:
+        selected = _legacy_selected_llm(config)
+        selected.setdefault("profile", "legacy")
+    selected = _merge_provider_defaults(config, selected)
+    normalized = normalize_llm_config(selected)
+    normalized["profile"] = selected.get("profile", profile_name)
+    normalized["task_name"] = task_name
+    normalized.setdefault("log_prefix", log_prefix)
+    if bool(normalized.get("log_profile_selection", True)):
+        print(
+            "[llm] "
+            f"task={task_name} "
+            f"profile={normalized.get('profile')} "
+            f"provider={normalized.get('provider')} "
+            f"model={normalized.get('model')}",
+            flush=True,
+        )
+    return normalized
+
+
+def _legacy_selected_llm(config: dict[str, Any]) -> dict[str, Any]:
+    provider_name = str(config.get("llm_provider", "")).strip().lower()
+    if provider_name == "online":
+        selected = dict(config.get("online_llm", {}))
+        selected.setdefault("provider", "online")
+        return selected
+    if provider_name == "ollama":
+        selected = dict(config.get("ollama", {}))
+        selected.setdefault("provider", "ollama")
+        return selected
+    if "llm" in config:
+        return dict(config["llm"])
+    if "online_llm" in config:
+        selected = dict(config["online_llm"])
+        selected.setdefault("provider", "online")
+        return selected
+    selected = dict(config.get("ollama", {}))
+    selected.setdefault("provider", "ollama")
+    return selected
+
+
+def _merge_provider_defaults(config: dict[str, Any], selected: dict[str, Any]) -> dict[str, Any]:
+    provider = str(selected.get("provider", "")).lower()
+    if provider == "ollama":
+        merged = dict(config.get("ollama", {}))
+    elif provider in {"online", "deepseek", "openai_compatible"}:
+        merged = dict(config.get("online_llm", {}))
+    else:
+        merged = {}
+    merged.update(selected)
+    return merged
+
+
 def build_llm_client(config: dict[str, Any] | None) -> ChatLLMClient:
     return ChatLLMClient(normalize_llm_config(config))
 
@@ -444,4 +507,5 @@ __all__ = [
     "llm_enabled",
     "load_prompt",
     "normalize_llm_config",
+    "select_llm_profile",
 ]

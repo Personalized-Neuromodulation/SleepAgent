@@ -1,0 +1,78 @@
+project:
+  name: SleepAgent
+  module: data_foundation
+runtime:
+  allow_fixtures: false
+paths:
+  raw_data_dir: data/raw
+  foundation_dir: data/foundation
+  reports_dir: reports
+inputs:
+  subject_table: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv
+  eeg_features: __sleepagent_missing_eeg_features__.csv
+  fmri_features: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv
+  dti_features: __sleepagent_missing_dti_features__.csv
+  mri_features: __sleepagent_missing_mri_features__.csv
+  scale_features: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/scales/pre_experiment_features/scale_features.csv
+  qc_summary: __sleepagent_missing_qc_summary__.csv
+outputs:
+  subject_index: data/foundation/subject_index.csv
+  feature_registry: data/foundation/feature_registry.csv
+  approved_variables: data/foundation/approved_variables.yaml
+  data_dictionary: data/foundation/data_dictionary.yaml
+  qc_summary: data/foundation/qc_summary.csv
+  multimodal_master_table: data/foundation/multimodal_master_table.csv
+  manifest: data/foundation/foundation_manifest.json
+  data_asset_registry: data/foundation/data_asset_registry.jsonl
+  update_history: data/foundation/foundation_update_history.jsonl
+  report: reports/phase0_foundation_report.md
+subject_id:
+  column: subject_id
+  aliases:
+  - participant_id
+  - sub_id
+  - sub
+  - subject
+group:
+  column: group
+  allowed_values:
+  - HC
+  - INS
+modalities:
+- EEG
+- fMRI
+- DTI
+- MRI
+- scales
+qc:
+  pass_values:
+  - pass
+  - PASS
+  - ok
+  - true
+  - '1'
+  caution_values:
+  - caution
+  - partial
+  fail_values:
+  - fail
+  - FAIL
+  - false
+  - '0'
+thresholds:
+  max_missing_rate_primary: 0.2
+  max_missing_rate_secondary: 0.35
+  min_n_total: 2
+  min_n_per_group: 1
+data_assets:
+  source: experiment
+  iteration_id: iteration_003
+  feature_tables:
+  - modality: fMRI
+    path: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv
+  - modality: scales
+    path: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/scales/pre_experiment_features/scale_features.csv
+  experiment_summary:
+    plans: 1
+    results: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experiment_results.json
+    experimental_feedback: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experimental_feedback.json

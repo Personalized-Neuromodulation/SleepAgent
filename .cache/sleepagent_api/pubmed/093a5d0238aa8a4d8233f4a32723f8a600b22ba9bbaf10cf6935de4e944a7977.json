@@ -1,0 +1,49 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Thalamocortical",
+        "to": "\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "Role",
+        "to": "\"role\"[MeSH Terms] OR \"role\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "disruption",
+        "to": "\"disrupt\"[All Fields] OR \"disrupted\"[All Fields] OR \"disrupter\"[All Fields] OR \"disrupters\"[All Fields] OR \"disrupting\"[All Fields] OR \"disruption\"[All Fields] OR \"disruptions\"[All Fields] OR \"disruptive\"[All Fields] OR \"disruptiveness\"[All Fields] OR \"disrupts\"[All Fields]"
+      },
+      {
+        "from": "mental health",
+        "to": "\"mental health\"[MeSH Terms] OR (\"mental\"[All Fields] AND \"health\"[All Fields]) OR \"mental health\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND \"DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"role\"[MeSH Terms] OR \"role\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"disrupt\"[All Fields] OR \"disrupted\"[All Fields] OR \"disrupter\"[All Fields] OR \"disrupters\"[All Fields] OR \"disrupting\"[All Fields] OR \"disruption\"[All Fields] OR \"disruptions\"[All Fields] OR \"disruptive\"[All Fields] OR \"disruptiveness\"[All Fields] OR \"disrupts\"[All Fields]) AND (\"mental health\"[MeSH Terms] OR (\"mental\"[All Fields] AND \"health\"[All Fields]) OR \"mental health\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

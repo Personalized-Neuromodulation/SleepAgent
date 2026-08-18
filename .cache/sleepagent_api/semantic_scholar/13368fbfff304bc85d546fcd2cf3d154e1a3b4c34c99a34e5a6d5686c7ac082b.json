@@ -1,0 +1,95 @@
+{
+  "total": 2,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "b3ff54d5cf4a73c3c40b1bbe92e250cb153712fe",
+      "externalIds": {
+        "MAG": "3108177307",
+        "PubMedCentral": "7744633",
+        "DOI": "10.3389/fphys.2020.592978",
+        "CorpusId": 227249647,
+        "PubMed": "33343390"
+      },
+      "url": "https://www.semanticscholar.org/paper/b3ff54d5cf4a73c3c40b1bbe92e250cb153712fe",
+      "title": "Multicomponent Analysis of Sleep Using Electrocortical, Respiratory, Autonomic and Hemodynamic Signals Reveals Distinct Features of Stable and Unstable NREM and REM Sleep",
+      "venue": "Frontiers in Physiology",
+      "year": 2020,
+      "citationCount": 18,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fphys.2020.592978/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7744633, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2068112656",
+          "name": "Christopher Wood"
+        },
+        {
+          "authorId": "2969268",
+          "name": "M. Bianchi"
+        },
+        {
+          "authorId": "34828207",
+          "name": "C. Yun"
+        },
+        {
+          "authorId": "48937190",
+          "name": "C. Shin"
+        },
+        {
+          "authorId": "2110939881",
+          "name": "R. Thomas"
+        }
+      ],
+      "abstract": "A new concept of non-rapid eye movement (NREM) and rapid eye movement (REM) sleep is proposed, that of multi-component integrative states that define stable and unstable sleep, respectively, NREMS, NREMUS REMS, and REMUS. Three complementary data sets are used: obstructive sleep apnea (20), healthy subjects (11), and high loop gain sleep apnea (50). We use polysomnography (PSG) with beat-to-beat blood pressure monitoring, and electrocardiogram (ECG)-derived cardiopulmonary coupling (CPC) analysis to demonstrate a bimodal, rather than graded, characteristic of NREM sleep. Stable NREM (NREMS) is characterized by high probability of occurrence of the <1 Hz slow oscillation, high delta power, stable breathing, blood pressure dipping, strong sinus arrhythmia and vagal dominance, and high frequency CPC. Conversely, unstable NREM (NREMUS) has the opposite features: a fragmented and discontinuous <1 Hz slow oscillation, non-dipping of blood pressure, unstable respiration, cyclic variation in heart rate, and low frequency CPC. The dimension of NREM stability raises the possibility of a comprehensive integrated multicomponent network model of NREM sleep which captures sleep onset (e.g., ventrolateral preoptic area-based sleep switch) processes, synaptic homeostatic delta power kinetics, and the interaction of global and local sleep processes as reflected in the spatiotemporal evolution of cortical “UP” and “DOWN” states, while incorporating the complex dynamics of autonomic-respiratory-hemodynamic systems during sleep. Bimodality of REM sleep is harder to discern in health. However, individuals with combined obstructive and central sleep apnea allows ready recognition of REMS and REMUS (stable and unstable REM sleep, respectively), especially when there is a discordance of respiratory patterns in relation to conventional stage of sleep."
+    },
+    {
+      "paperId": "7e00a6287bae0d566a934f24f599e0bb9bfcde48",
+      "externalIds": {
+        "PubMedCentral": "12567477",
+        "DOI": "10.3390/s25206282",
+        "CorpusId": 282022393,
+        "PubMed": "41157333"
+      },
+      "url": "https://www.semanticscholar.org/paper/7e00a6287bae0d566a934f24f599e0bb9bfcde48",
+      "title": "Estimating Sleep-Stage Distribution from Respiratory Sounds via Deep Audio Segmentation",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12567477, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2353595179",
+          "name": "Seungeon Choi"
+        },
+        {
+          "authorId": "2389423573",
+          "name": "Joshep Shin"
+        },
+        {
+          "authorId": "2278209137",
+          "name": "Yunu Kim"
+        },
+        {
+          "authorId": "3309848",
+          "name": "Jaemyung Shin"
+        },
+        {
+          "authorId": "2172769545",
+          "name": "Minsam Ko"
+        }
+      ],
+      "abstract": "Accurate assessment of sleep architecture is critical for diagnosing and managing sleep disorders, which significantly impact global health and well-being. While polysomnography (PSG) remains the clinical gold standard, its inherent intrusiveness, high cost, and logistical complexity limit its utility for routine or home-based monitoring. Recent advances highlight that subtle variations in respiratory dynamics, such as respiratory rate and cycle regularity, exhibit meaningful correlations with distinct sleep stages and could serve as valuable non-invasive biomarkers. In this work, we propose a framework for estimating sleep stage distribution—specifically Wake, Light (N1+N2), Deep (N3), and REM—based on respiratory audio captured over a single sleep episode. The framework comprises three principal components: (1) a segmentation module that identifies distinct respiratory cycles in respiratory sounds using a fine-tuned Transformer-based architecture; (2) a feature extraction module that derives a suite of statistical, spectral, and distributional descriptors from these segmented respiratory patterns; and (3) stage-specific regression models that predict the proportion of time spent in each sleep stage. Experiments on the public PSG-Audio dataset (287 subjects; mean 5.3 h per subject), using subject-wise cross-validation, demonstrate the efficacy of the proposed approach. The segmentation model achieved lower RMSE and MAE in predicting respiratory rate and cycle duration, outperforming classical signal-processing baselines. For sleep stage proportion prediction, the proposed method yielded favorable RMSE and MAE across all stages, with the TabPFN model consistently delivering the best results. By quantifying interpretable respiratory features and intentionally avoiding black-box end-to-end modeling, our system may support transparent, contact-free sleep monitoring using passive audio."
+    }
+  ]
+}

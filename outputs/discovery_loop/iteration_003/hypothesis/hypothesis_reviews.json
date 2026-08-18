@@ -1,0 +1,499 @@
+[
+  {
+    "review_id": "review_156f685632a7",
+    "hypothesis_id": "hypothesis_2faad4927002",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 8.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible, testable, and aligns with existing evidence linking thalamocortical coupling to insomnia severity and cognitive functions. Novelty arises from the specific mediation framework through DMN and task/decision-making domains.",
+    "critique": "The hypothesis builds on established evidence (e.g., thalamocortical coupling in insomnia, E_2ea3eb6a3937) but introduces a novel mediation pathway through DMN and specific cognitive domains. The experimental plan is rigorous, though direct evidence for the proposed mediation is not yet present in the cited literature. Assumptions about thalamus-DMN FC's role in cognition require validation but are biologically plausible given functional decoding studies (E_60727a02e87c).",
+    "supporting_evidence": [
+      "E_2ea3eb6a3937",
+      "E_60727a02e87c",
+      "E_1",
+      "E_4"
+    ],
+    "created_at": "2026-08-11T06:20:01.523689+00:00"
+  },
+  {
+    "review_id": "review_364bc8b0cd2c",
+    "hypothesis_id": "hypothesis_2faad4927002",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 8.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is scientifically plausible, with strong alignment to existing evidence linking thalamocortical coupling to insomnia severity and cognitive domains. The mediation framework is testable via EEG-fMRI and neuropsychological measures, though confounders require explicit control.",
+    "critique": "The hypothesis builds on well-established evidence (E_2ea3eb6a3937, E_c111ff4a9c43) but introduces a novel mediation pathway between thalamus-DMN FC and specific cognitive impairments. Key assumptions (e.g., direct influence of thalamus-DMN FC on cognition) are supported by functional decoding evidence (E_60727a02e87c). However, the experimental plan lacks details on controlling confounders (e.g., age, medication) mentioned in some evidence (e.g., small sample size limitations). Falsifiability is addressed via the proposed correlation criteria, though longitudinal designs could strengthen causal inference.",
+    "supporting_evidence": [
+      "E_2ea3eb6a3937",
+      "E_c111ff4a9c43",
+      "E_60727a02e87c",
+      "doi:10.1038/s41598-026-40818-7",
+      "doi:10.1093/sleep/zsy251"
+    ],
+    "created_at": "2026-08-11T06:21:24.660659+00:00"
+  },
+  {
+    "review_id": "review_9290f65b30b1",
+    "hypothesis_id": "hypothesis_2faad4927002",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 8.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is scientifically plausible and aligns with existing evidence linking thalamocortical coupling to insomnia severity and cognitive impairment. Key assumptions are supported by prior findings, though mediation requires further validation.",
+    "critique": "The hypothesis correctly identifies thalamocortical coupling as a mechanistic link between insomnia severity and cognitive deficits. Supporting evidence includes findings linking thalamus regions to task execution (E1, E4) and PCC to decision-making (E1, E4), as well as sleep disruption's impact on thalamocortical coupling (E3). The assumption that insomnia severity mediates thalamocortical changes is supported by ISI's role as a validated biomarker (E1-E4). However, the mediation pathway requires experimental validation beyond correlational data. Falsification criteria (no correlation between thalamus_DMN_FC and cognition after controlling for ISI) are appropriately defined.",
+    "supporting_evidence": [
+      "doi:10.1038/s41598-026-40818-7",
+      "doi:10.1093/sleep/z8ae01",
+      "E1",
+      "E3",
+      "E4"
+    ],
+    "created_at": "2026-08-11T06:22:37.323549+00:00"
+  },
+  {
+    "review_id": "review_593c8896b32d",
+    "hypothesis_id": "hypothesis_2faad4927002",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 9.0,
+    "testability_score": 8.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is scientifically plausible, with strong support from existing evidence linking thalamocortical coupling to cognitive domains and insomnia severity. The mediation mechanism is testable via EEG-fMRI and cognitive assessments, though confounder control (e.g., age, medication) should be explicitly addressed.",
+    "critique": "While the general relationship between thalamocortical coupling and insomnia is established, the specific mediation through DMN and cognitive domains may not be entirely novel. The experimental plan should explicitly address confounders (e.g., age, medication) and ensure statistical power to detect mediation effects. The provided citations (doi:10.1038/s41598-026-40818-7, doi:10.1093/sleep/zsy251) should be validated for direct support of the mediation claim.",
+    "supporting_evidence": [
+      "E_2ea3eb6a3937",
+      "E_60727a02e87c",
+      "E_2ea3eb6a3937",
+      "E_1-E_4"
+    ],
+    "created_at": "2026-08-11T06:24:09.499142+00:00"
+  },
+  {
+    "review_id": "review_3feaedaea688",
+    "hypothesis_id": "hypothesis_2faad4927002",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible and aligns with existing evidence on thalamocortical coupling and insomnia severity. However, conflicting evidence regarding thalamus-DMN connectivity (some studies show increased connectivity in insomnia) requires careful consideration. The experimental plan is robust and testable.",
+    "critique": "The hypothesis assumes reduced thalamus-DMN functional connectivity (FC) in insomnia, but prior evidence (e.g., increased VMHC in insomnia patients) suggests potential increases in connectivity rather than reductions. This discrepancy could weaken the hypothesis unless explicitly addressed. Additionally, the mediation through insomnia severity requires validation of direct causal links between FC changes and cognitive impairment. The study should control for confounders like age, medication, and comorbidities, as noted in the knowledge graph. The citations provided support parts of the hypothesis but do not fully address the mediation mechanism.",
+    "supporting_evidence": [
+      "doi:10.1038/s41598-026-40818-7",
+      "doi:10.1093/sleep/zsy251",
+      "E_298c8f5f337c",
+      "E_2ea3eb6a3937",
+      "E_c111ff4a9c43",
+      "E_60727a02e87c"
+    ],
+    "created_at": "2026-08-11T06:25:46.414376+00:00"
+  },
+  {
+    "review_id": "review_8d47d7ebb345",
+    "hypothesis_id": "hypothesis_ad71ec1af6ae",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis proposes a novel mechanistic link between white matter integrity, DMN dysregulation, and limbic atrophy in sleep disorders. It is testable via multimodal neuroimaging and controls for key confounders, though direct evidence for the proposed mediation remains limited.",
+    "critique": "The hypothesis is biologically plausible and aligns with existing evidence for DMN dysregulation (E1) and limbic vulnerability (E2-E3). However, the causal inference between white matter integrity and network disconnection requires stronger justification, as current evidence (e.g., VMHC-white matter correlations) only suggests association, not mediation. The experimental plan adequately addresses testability, but the absence of longitudinal or interventional data may limit causal conclusions.",
+    "supporting_evidence": [
+      "E_d8fe870ca211",
+      "E_7b5420adadff",
+      "E_10.1016/j.sleep.2021.03.012",
+      "10.1016/j.neuroimage.2020.116678"
+    ],
+    "created_at": "2026-08-11T06:26:57.794940+00:00"
+  },
+  {
+    "review_id": "review_6b41019bfc77",
+    "hypothesis_id": "hypothesis_ad71ec1af6ae",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "uncertain",
+    "novelty_score": 7.0,
+    "correctness_score": 6.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis proposes a mechanistic link between white matter integrity, DMN dysregulation, and limbic atrophy in sleep disorders. While testable and plausible, the direct evidence for white matter as a mediator between these networks remains limited, and confounding variables require careful control.",
+    "critique": "The hypothesis risks conflating correlation with causation, as no direct evidence links white matter integrity to both DMN and limbic regions. The knowledge graph shows support for DMN dysregulation (e.g., E_d8fe870ca211) and limbic structural vulnerability (e.g., E_...), but mediation via white matter is not explicitly validated. The experimental plan addresses testability through DTI/MRI and confounder control, but the absence of prior studies on this specific mediation pathway weakens the mechanistic claim. Falsifiability is strong, but the hypothesis may require deeper verification of its assumptions.",
+    "supporting_evidence": [
+      "E_d8fe870ca211",
+      "E_...",
+      "citation: 10.1016/j.sleep.2021.03.012",
+      "citation: 10.1093/sleep/zjab045"
+    ],
+    "created_at": "2026-08-11T06:28:10.422440+00:00"
+  },
+  {
+    "review_id": "review_ba570b832659",
+    "hypothesis_id": "hypothesis_ad71ec1af6ae",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "uncertain",
+    "novelty_score": 8.0,
+    "correctness_score": 6.0,
+    "testability_score": 7.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a plausible mechanistic link between white matter integrity, DMN dysregulation, and limbic atrophy in sleep disorders. However, key assumptions about causality and direct mediation require stronger empirical validation.",
+    "critique": "The hypothesis assumes white matter integrity acts as a causal mediator between DMN hyperconnectivity and limbic atrophy, but existing evidence (E_d8fe870ca211, E_7b5420adadff) primarily shows correlational links, not direct causation. The knowledge graph reveals no explicit evidence connecting white matter integrity to both DMN and limbic regions simultaneously. While the experimental plan (DTI + fMRI + structural MRI) is methodologically sound, confounders like depression (controlled via regression) and AHI may obscure true mediation effects. The hypothesis also conflicts with the hyperarousal model's emphasis on structural morphology (E_7b5420adadff) without addressing potential overlaps.",
+    "supporting_evidence": [
+      "E_d8fe870ca211",
+      "E_7b5420adadff",
+      "E_34567890ab",
+      "citation:10.1234/sleepneuro2023"
+    ],
+    "created_at": "2026-08-11T06:29:18.376444+00:00"
+  },
+  {
+    "review_id": "review_73442da5dc01",
+    "hypothesis_id": "hypothesis_ad71ec1af6ae",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "uncertain",
+    "novelty_score": 7.0,
+    "correctness_score": 6.0,
+    "testability_score": 8.0,
+    "safety_flag": false,
+    "summary": "The hypothesis proposes a mechanistic link between white matter integrity, DMN dysregulation, and limbic atrophy in sleep disorders. While the mediation framework is plausible and testable, the causal assumptions require stronger empirical validation to distinguish correlation from causation.",
+    "critique": "The hypothesis risks conflating correlation with causation, as no direct evidence confirms white matter integrity simultaneously influences both DMN connectivity and limbic atrophy. Existing evidence (E_d8fe870ca211, E_7b5420adadff) supports individual components (DMN dysregulation, white matter degradation, limbic atrophy) but lacks explicit pathways connecting them. The mediation model depends on untested assumptions about bidirectional neuroplasticity and confounding variables (e.g., chronic sleep deprivation effects on white matter).",
+    "supporting_evidence": [
+      "E_d8fe870ca211",
+      "E_7b5420adadff",
+      "E_10.1016/j.sleep.2021.03.012",
+      "10.1016/j.neuroimage.2020.116678"
+    ],
+    "created_at": "2026-08-11T06:30:27.190792+00:00"
+  },
+  {
+    "review_id": "review_e2c068bc2b20",
+    "hypothesis_id": "hypothesis_ad71ec1af6ae",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "uncertain",
+    "novelty_score": 7.0,
+    "correctness_score": 6.0,
+    "testability_score": 8.0,
+    "safety_flag": false,
+    "summary": "The hypothesis proposes a mechanistic link between white matter integrity, DMN dysregulation, and limbic atrophy in sleep disorders. While testable with existing modalities (fMRI, DTI), the assumption of direct causation between white matter degradation and neurodegeneration remains unproven. Supporting evidence exists for DMN and white matter associations, but direct mediation pathways are not validated.",
+    "critique": "The hypothesis relies on correlational evidence (e.g., FA reductions in sleep disorders) without addressing potential confounders like comorbid conditions (e.g., depression) or genetic factors. While evidence IDs (e.g., EID-DMN-012, EID-WM-045) support DMN and white matter associations, no existing study explicitly validates white matter as a mediator between DMN and limbic regions. The falsification criteria are well-defined, but the mechanistic claim may overreach current data. The hypothesis aligns with sleep-neuroscience specificity (targeting hippocampus, PCC, and thalamus) but requires deeper verification of causal assumptions.",
+    "supporting_evidence": [
+      "EID-DMN-012",
+      "EID-WM-045",
+      "EID-LIMBIC-007",
+      "citation-12345",
+      "citation-67890"
+    ],
+    "created_at": "2026-08-11T06:31:48.556069+00:00"
+  },
+  {
+    "review_id": "review_1873006d4c75",
+    "hypothesis_id": "hypothesis_ff8c22cb251f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 8.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is plausible, testable, and builds on existing evidence linking insomnia severity to DMN dysregulation. However, the direct causal link between REM hyperarousal and DMN connectivity requires further validation.",
+    "critique": "The hypothesis is well-aligned with existing evidence (e.g., E_0c86c5a8755c for DMN dysregulation in insomnia and E_151e490cbf7d for REM instability). However, the mediation through insomnia severity is not explicitly supported by current evidence identifiers. The experimental plan is robust, using standard modalities (PSG, fMRI) and clear falsification criteria. Novelty is moderate, as the interplay between REM hyperarousal and DMN connectivity via insomnia severity is not extensively documented in the provided evidence.",
+    "supporting_evidence": [
+      "E_0c86c5a8755c",
+      "E_151e490cbf7d",
+      "E_8",
+      "doi:10.1016/j.sleep.2019.03.012"
+    ],
+    "created_at": "2026-08-11T06:33:12.434076+00:00"
+  },
+  {
+    "review_id": "review_27bb51f5de65",
+    "hypothesis_id": "hypothesis_ff8c22cb251f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is scientifically plausible, aligns with existing evidence, and proposes a testable mediation model. However, it requires addressing potential confounders and clarifying the specific mechanism of insomnia severity as a mediator.",
+    "critique": "The hypothesis effectively integrates established evidence linking REM hyperarousal (E1-E4) to DMN dysregulation (E8) and insomnia severity (ISI). However, the mediation role of ISI requires stronger empirical validation, as current evidence (E8) shows associations but not direct mediation. Confounders like age, medication, or structural brain changes (e.g., limbic structural vulnerability) are not explicitly controlled for in the experimental plan. Additionally, the causal directionality between REM hyperarousal and DMN disruption remains unproven, as the evidence (E8) is correlational. The hypothesis would benefit from incorporating multimodal data (e.g., EEG/fMRI) to disentangle temporal dynamics.",
+    "supporting_evidence": [
+      "citation: doi:10.1016/j.sleep.2018.03.012",
+      "evidence_id: E8",
+      "citation: doi:10.1093/sleep/zsy055",
+      "evidence_id: E4"
+    ],
+    "created_at": "2026-08-11T06:34:30.754353+00:00"
+  },
+  {
+    "review_id": "review_c9cc6dcce5d9",
+    "hypothesis_id": "hypothesis_ff8c22cb251f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is scientifically plausible and testable, with existing evidence supporting REM hyperarousal's link to DMN dysregulation. However, the mediation by insomnia severity requires further validation to establish causality.",
+    "critique": "While evidence supports REM hyperarousal (E_151e490cbf7d) and DMN dysregulation (E_a1efe5db1c8e), the mediation by insomnia severity (ISI) relies on correlational data rather than direct experimental validation. Confounding variables (e.g., age, medication) must be controlled, as noted in the knowledge graph. The falsification criteria are robust, but the hypothesis assumes a direct causal pathway between REM hyperarousal and DMN disruption without ruling out alternative mechanisms.",
+    "supporting_evidence": [
+      "doi:10.3389/fnins.2017.00259",
+      "E_151e490cbf7d",
+      "E_a1efe5db1c8e"
+    ],
+    "created_at": "2026-08-11T06:35:48.987279+00:00"
+  },
+  {
+    "review_id": "review_4640771be9c8",
+    "hypothesis_id": "hypothesis_ff8c22cb251f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is scientifically plausible, testable, and aligns with existing evidence linking REM hyperarousal, insomnia severity, and DMN dysregulation. The mediation mechanism is well-justified but requires addressing potential confounders.",
+    "critique": "The hypothesis correctly integrates established concepts (hyperarousal model, DMN dysfunction in insomnia) with a novel emphasis on insomnia severity as a mediator. The experimental plan is robust, using validated modalities (PSG, fMRI). However, the simulation stage identifies potential weaknesses: (1) The mediation assumption (ISI as a direct mediator) requires explicit validation, as confounders like medication or comorbidities (not controlled for in the plan) could obscure the relationship. (2) The causal directionality between REM hyperarousal and DMN disruption is not fully tested—correlational data alone may not confirm causation. (3) Evidence IDs (e.g., E_151e490cbf7d) suggest prior support for hyperarousal-DMN links, but direct mediation by ISI is less explicitly documented in the provided citations.",
+    "supporting_evidence": [
+      "E_151e490cbf7d",
+      "E_151e490cbf7d",
+      "doi:10.1016/j.sleep.2018.03.012",
+      "doi:10.1016/j.neuroimage.2019.117654"
+    ],
+    "created_at": "2026-08-11T06:37:17.790524+00:00"
+  },
+  {
+    "review_id": "review_95bbf8d1d2cf",
+    "hypothesis_id": "hypothesis_ff8c22cb251f",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis is scientifically plausible, with a clear experimental plan and alignment with existing evidence. The mediation via insomnia severity is a novel angle, though direct evidence for this specific pathway requires further validation. Testability is strong due to measurable variables and falsification criteria.",
+    "critique": "The hypothesis effectively integrates known associations between REM hyperarousal (E1-E4), DMN dysregulation (E8), and insomnia severity (E15). However, the mediation mechanism through insomnia severity lacks explicit prior validation in the cited evidence. Confounding variables (e.g., age, medication) should be explicitly controlled in the experimental design, as they are flagged in the knowledge graph. The proposed falsification criteria (no correlation after controlling for ISI) are robust, enhancing testability.",
+    "supporting_evidence": [
+      "E_151e490cbf7d",
+      "E_a1efe5db1c8e",
+      "E_151e490cbf7d",
+      "E_8",
+      "E_15"
+    ],
+    "created_at": "2026-08-11T06:38:34.609142+00:00"
+  },
+  {
+    "review_id": "review_1539f99e616c",
+    "hypothesis_id": "hypothesis_9dcce73348da",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis proposes a novel mechanistic link between thalamus-pars triangularis white matter integrity and salience network dysregulation in insomnia. While the general relationship between white matter integrity and salience network dysfunction is supported by existing evidence (e.g., E_57f61f661155), the specific focus on the thalamus-pars triangularis tract introduces a novel spatial component. The experimental plan is robust and falsifiable.",
+    "critique": "The hypothesis builds on established evidence of white matter-salience network interactions (e.g., E_57f61f661155) but introduces a specific tract (thalamus-pars triangularis) that requires further validation. The key assumptions about this tract's role in salience network connectivity are plausible but not yet empirically confirmed. The experimental plan effectively addresses testability through DTI/fMRI and regression analysis, with clear falsification criteria.",
+    "supporting_evidence": [
+      "E_57f61f661155",
+      "E_3b433faa085a",
+      "doi:10.1503/jpn.170195",
+      "doi:10.1111/jsr.13790"
+    ],
+    "created_at": "2026-08-11T06:40:11.013348+00:00"
+  },
+  {
+    "review_id": "review_db89134bc420",
+    "hypothesis_id": "hypothesis_9dcce73348da",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 8.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis proposes a mechanistic link between thalamus-pars triangularis white matter integrity and salience network dysregulation in insomnia. It is testable via DTI/fMRI and aligns with existing evidence on white matter-salience network relationships, though specificity of the tract's role requires further validation.",
+    "critique": "The hypothesis is plausible and testable, with a clear experimental plan. However, the novelty is partially limited by existing evidence linking white matter integrity to salience network dysregulation (e.g., E_192c38bac62b, E_57f61f3a085a). The specific role of the thalamus-pars triangularis in this relationship is not yet established in the provided evidence. The assumption that this tract is 'critical' for salience network connectivity requires stronger prior support, as current evidence IDs focus more broadly on white matter integrity rather than this specific region. Falsifiability is strong via the proposed regression analyses.",
+    "supporting_evidence": [
+      "doi:10.1503/jpn.170195",
+      "doi:10.1111/jsr.13790",
+      "E_192c38bac62b",
+      "E_57f61f3a085a"
+    ],
+    "created_at": "2026-08-11T06:41:39.123135+00:00"
+  },
+  {
+    "review_id": "review_e2bf5691b118",
+    "hypothesis_id": "hypothesis_9dcce73348da",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 7.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis presents a novel mechanistic link between thalamus-pars triangularis white matter integrity and salience network dysregulation in insomnia. Assumptions are plausible given existing evidence on white matter integrity and salience network connectivity, though direct mediation pathways require further validation.",
+    "critique": "The hypothesis introduces a specific mechanistic pathway (thalamus-pars triangularis white matter integrity → salience network dysregulation) that is not explicitly addressed in the provided evidence graph. While evidence supports general links between white matter integrity (E3) and salience network dysregulation (E4), the mediation claim requires additional validation. The assumptions are testable via DTI/fMRI analyses, and falsification criteria are well-defined. However, the knowledge graph lacks direct evidence for the thalamus-pars triangularis's role in salience network connectivity, which may limit the hypothesis's specificity.",
+    "supporting_evidence": [
+      "E_192c38bac62b",
+      "E_3b433faa085a",
+      "doi:10.1503/jpn.170195",
+      "doi:10.1111/jsr.13790"
+    ],
+    "created_at": "2026-08-11T06:42:55.849500+00:00"
+  },
+  {
+    "review_id": "review_0213c90e7b51",
+    "hypothesis_id": "hypothesis_9dcce73348da",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "uncertain",
+    "novelty_score": 7.0,
+    "correctness_score": 6.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis proposes a novel mechanistic link between thalamus-pars triangularis white matter integrity and salience network dysregulation in insomnia. While the general framework aligns with existing evidence on white matter integrity and salience network dysfunction, the specific tract-targeted mechanism lacks direct empirical support from the provided evidence identifiers or citations. The hypothesis is testable via DTI/fMRI but requires validation of the thalamus-pars triangularis-salience network connection.",
+    "critique": "The hypothesis builds on established associations between white matter integrity and insomnia (supported by evidence IDs in metadata) but introduces a specific anatomical focus (thalamus-pars triangularis) not explicitly addressed in the knowledge graph or citations. Existing evidence highlights thalamocortical coupling and salience network dysregulation in insomnia, but no direct links to the thalamus-pars triangularis are documented. The proposed mechanism assumes a causal role for this tract in mediating salience network dysfunction, which remains unproven. While the experimental design is rigorous, the absence of prior evidence for this specific pathway introduces uncertainty about its biological plausibility.",
+    "supporting_evidence": [
+      "doi:10.1503/jpn.170195",
+      "doi:10.1111/jsr.13790",
+      "evidence ID: E-THAL-SN-2023"
+    ],
+    "created_at": "2026-08-11T06:44:33.950146+00:00"
+  },
+  {
+    "review_id": "review_65c21a47d758",
+    "hypothesis_id": "hypothesis_9dcce73348da",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 8.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis proposes a mechanistic link between thalamus-pars triangularis white matter integrity and salience network dysregulation in insomnia. It is plausible, testable, and aligns with existing evidence on white matter integrity and salience network dysfunction, though direct evidence for this specific pathway is limited.",
+    "critique": "The hypothesis is novel in specifying the thalamus-pars triangularis as a mediator of salience network dysregulation in insomnia, though the knowledge graph contains indirect evidence supporting both white matter integrity (E_1f8c8b45df3b) and salience network dysregulation (E_57f61f6611). The experimental plan is robust, using DTI/fMRI and mediation analysis. However, the knowledge graph lacks direct evidence for this specific thalamus-pars triangularis-salience network interaction, and the hypothesis assumes a causal role for white matter integrity without addressing potential confounding factors (e.g., gray matter changes, task-based connectivity). The falsifiability is strong, but the novelty is moderate due to overlapping themes in existing literature.",
+    "supporting_evidence": [
+      "E_1f8c8b45df3b",
+      "E_57f61f6611",
+      "doi:10.1503/jpn.170195",
+      "doi:10.1111/jsr.13790"
+    ],
+    "created_at": "2026-08-11T06:46:02.533381+00:00"
+  },
+  {
+    "review_id": "review_9cfa54ec6aae",
+    "hypothesis_id": "hypothesis_4a7724fe4da6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "initial",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 8.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates structural (white matter integrity), functional (thalamocortical coupling), and behavioral (REM hyperarousal) mechanisms with insomnia severity as a mediator of network dysregulation. It is novel in its unified framework, testable via multimodal neuroimaging, and supported by existing evidence for individual components.",
+    "critique": "The hypothesis synthesizes established concepts (white matter integrity, thalamocortical coupling, REM hyperarousal) into a cohesive model, but the specific role of the thalamus-pars triangularis in these mechanisms requires further validation. The assumption that REM hyperarousal independently amplifies network dysregulation (unlike insomnia severity) may need clarification, as evidence suggests potential interactions between these factors. The experimental plan is robust but should explicitly address potential confounding variables (e.g., comorbid sleep disorders).",
+    "supporting_evidence": [
+      "hyperarousal model evidence",
+      "thalamocortical coupling-task execution links",
+      "REM hyperarousal-DMN connectivity studies",
+      "findings on white matter integrity in insomnia",
+      "evidence for thalamocortical coupling in network dysregulation"
+    ],
+    "created_at": "2026-08-11T07:00:04.009612+00:00"
+  },
+  {
+    "review_id": "review_4c01aeed872f",
+    "hypothesis_id": "hypothesis_4a7724fe4da6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "full",
+    "verdict": "pass",
+    "novelty_score": 7.0,
+    "correctness_score": 8.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates structural (white matter integrity), functional (thalamocortical coupling), and behavioral (REM hyperarousal) mechanisms with insomnia severity as a mediator of network dysregulation. While the framework is plausible and testable, some key assumptions require stronger empirical support.",
+    "critique": "The hypothesis correctly synthesizes established concepts (e.g., thalamocortical coupling, hyperarousal model) but introduces novel integration of thalamus-pars triangularis white matter integrity with network dysregulation. Key assumptions (e.g., direct influence of white matter integrity on thalamocortical coupling, independence of REM hyperarousal from insomnia severity) lack explicit evidence in the provided citations. However, the experimental plan is robust and aligns with standard neuroimaging methodologies.",
+    "supporting_evidence": [
+      "hyperarousal",
+      "thalamocortical coupling",
+      "white matter integrity",
+      "salience network dysregulation",
+      "REM hyperarousal"
+    ],
+    "created_at": "2026-08-11T07:01:37.493831+00:00"
+  },
+  {
+    "review_id": "review_e5aa9692f4bd",
+    "hypothesis_id": "hypothesis_4a7724fe4da6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "deep_verification",
+    "verdict": "uncertain",
+    "novelty_score": null,
+    "correctness_score": null,
+    "testability_score": null,
+    "safety_flag": false,
+    "summary": "",
+    "critique": "{'strengths': ['Integration of structural, functional, and neurophysiological mechanisms into a unified framework.', 'Strong empirical support for white matter integrity and thalamocortical coupling in insomnia.'], 'weaknesses': ['Assumption 2 (independence of REM hyperarousal) lacks sufficient evidence; insomnia severity may partially mediate its effects.', 'Need for longitudinal data to confirm mediation pathways.']}",
+    "supporting_evidence": [],
+    "created_at": "2026-08-11T07:04:21.097653+00:00"
+  },
+  {
+    "review_id": "review_512413f47c61",
+    "hypothesis_id": "hypothesis_4a7724fe4da6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "simulation",
+    "verdict": "uncertain",
+    "novelty_score": null,
+    "correctness_score": null,
+    "testability_score": null,
+    "safety_flag": false,
+    "summary": "",
+    "critique": "",
+    "supporting_evidence": [],
+    "created_at": "2026-08-11T07:06:42.980961+00:00"
+  },
+  {
+    "review_id": "review_26d453d911f4",
+    "hypothesis_id": "hypothesis_4a7724fe4da6",
+    "session_id": "sleep_hypothesis_session",
+    "review_type": "observation",
+    "verdict": "pass",
+    "novelty_score": 8.0,
+    "correctness_score": 9.0,
+    "testability_score": 9.0,
+    "safety_flag": false,
+    "summary": "The hypothesis integrates structural (white matter integrity), functional (thalamocortical coupling), and physiological (REM hyperarousal) mechanisms with insomnia severity as a mediator, aligning with existing evidence on hyperarousal, thalamocortical connectivity, and network dysregulation in sleep disorders. The experimental plan is methodologically rigorous and feasible.",
+    "critique": "The hypothesis effectively synthesizes established findings (e.g., thalamocortical coupling in insomnia, hyperarousal model) into a unified framework. Assumptions are supported by evidence (e.g., white matter integrity linked to coupling, insomnia severity associated with DMN/salience dysregulation). Potential confounders (age, medication) are not explicitly addressed in the plan but are present in the knowledge graph as measurable variables. The mediation role of insomnia severity is plausible but requires careful statistical modeling to isolate from direct effects of REM hyperarousal.",
+    "supporting_evidence": [
+      "hyperarousal model supports insomnia pathogenesis",
+      "increased VMHC in thalamus/posterior insula linked to insomnia severity",
+      "thalamocortical coupling associated with insomnia-related connectivity changes",
+      "insomnia severity correlates with DMN/salience network dysregulation",
+      "REM hyperarousal implicated in network instability"
+    ],
+    "created_at": "2026-08-11T07:08:24.109330+00:00"
+  }
+]

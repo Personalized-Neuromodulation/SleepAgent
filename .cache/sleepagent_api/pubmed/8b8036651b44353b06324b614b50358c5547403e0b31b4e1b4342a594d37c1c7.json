@@ -1,0 +1,41 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Role",
+        "to": "\"role\"[MeSH Terms] OR \"role\"[All Fields]"
+      },
+      {
+        "from": "mediating",
+        "to": "\"mediated\"[All Fields] OR \"mediational\"[All Fields] OR \"mediator\"[All Fields] OR \"mediator's\"[All Fields] OR \"mediators\"[All Fields] OR \"negotiating\"[MeSH Terms] OR \"negotiating\"[All Fields] OR \"mediate\"[All Fields] OR \"mediates\"[All Fields] OR \"mediating\"[All Fields] OR \"mediation\"[All Fields] OR \"mediations\"[All Fields]"
+      },
+      {
+        "from": "cognitive deficits",
+        "to": "\"cognitive dysfunction\"[MeSH Terms] OR (\"cognitive\"[All Fields] AND \"dysfunction\"[All Fields]) OR \"cognitive dysfunction\"[All Fields] OR (\"cognitive\"[All Fields] AND \"deficits\"[All Fields]) OR \"cognitive deficits\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"role\"[MeSH Terms] OR \"role\"[All Fields]) AND \"thalamus-DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"mediated\"[All Fields] OR \"mediational\"[All Fields] OR \"mediator\"[All Fields] OR \"mediator s\"[All Fields] OR \"mediators\"[All Fields] OR \"negotiating\"[MeSH Terms] OR \"negotiating\"[All Fields] OR \"mediate\"[All Fields] OR \"mediates\"[All Fields] OR \"mediating\"[All Fields] OR \"mediation\"[All Fields] OR \"mediations\"[All Fields]) AND (\"cognitive dysfunction\"[MeSH Terms] OR (\"cognitive\"[All Fields] AND \"dysfunction\"[All Fields]) OR \"cognitive dysfunction\"[All Fields] OR (\"cognitive\"[All Fields] AND \"deficits\"[All Fields]) OR \"cognitive deficits\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

@@ -5,7 +5,7 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$PROJECT_ROOT"
 
 CONFIG_PATH="${1:-configs/discovery_loop_config.yaml}"
-ITERATIONS="${2:-${DISCOVERY_ITERATIONS:-}}"
+ITERATIONS="${2:-}"
 
 export PYTHONPATH="$PROJECT_ROOT${PYTHONPATH:+:$PYTHONPATH}"
 
@@ -131,11 +131,21 @@ if expected_hypothesis_pool != experiment_pool:
 PY
 
 python - "$RUN_CONFIG_PATH" <<'PY'
-import json
 import sys
 
 from sleep_ai_scientist.discovery_loop import run_discovery_loop
 
 summary = run_discovery_loop(sys.argv[1])
-print("[run_discovery_loop] summary=" + json.dumps(summary, ensure_ascii=False, indent=2), flush=True)
+print(
+    "[run_discovery_loop] summary "
+    f"run_id={summary.get('run_id')} "
+    f"iterations={summary.get('iterations')} "
+    f"stop_reason={summary.get('stop_reason')} "
+    f"foundation_changed={summary.get('foundation_changed')} "
+    f"grounding_refreshes={summary.get('grounding_refreshes')} "
+    f"last_feedback={summary.get('last_experiment_feedback')} "
+    f"loop_output_dir={summary.get('loop_output_dir')} "
+    f"iteration_report={summary.get('iteration_report')}",
+    flush=True,
+)
 PY

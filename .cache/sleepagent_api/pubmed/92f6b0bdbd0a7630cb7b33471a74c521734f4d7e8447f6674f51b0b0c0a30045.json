@@ -1,0 +1,92 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "219",
+    "retmax": "50",
+    "retstart": "0",
+    "idlist": [
+      "42547208",
+      "42496249",
+      "42485698",
+      "42456818",
+      "42435110",
+      "42432010",
+      "42418280",
+      "42416062",
+      "42403377",
+      "42377825",
+      "42372239",
+      "42370793",
+      "42363162",
+      "42313509",
+      "42313200",
+      "42305536",
+      "42304066",
+      "42265520",
+      "42261627",
+      "42248225",
+      "42220922",
+      "42180808",
+      "42116076",
+      "42109464",
+      "42107661",
+      "42104453",
+      "42075667",
+      "42074028",
+      "42041586",
+      "42036562",
+      "42021320",
+      "42012889",
+      "41999079",
+      "41977424",
+      "41957332",
+      "41935463",
+      "41934683",
+      "41930354",
+      "41915304",
+      "41905254",
+      "41902670",
+      "41878312",
+      "41869712",
+      "41848057",
+      "41845389",
+      "41832672",
+      "41830117",
+      "41816875",
+      "41785973",
+      "41784837"
+    ],
+    "translationset": [
+      {
+        "from": "dysregulation",
+        "to": "\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "sleep disorders",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"dysregulate\"[All Fields] OR \"dysregulated\"[All Fields] OR \"dysregulates\"[All Fields] OR \"dysregulating\"[All Fields] OR \"dysregulation\"[All Fields] OR \"dysregulations\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields])",
+    "errorlist": {
+      "phrasesnotfound": [
+        "salience-frontoparietal"
+      ],
+      "fieldsnotfound": []
+    },
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,33 @@
+paths:
+  evidence_table_json: outputs/grounding/evidence_table.json
+  knowledge_graph_json: outputs/grounding/mechanism_graph.json
+  llm_evidence_context_json: outputs/grounding/llm_evidence_context.json
+  llm_mechanism_context_json: outputs/grounding/llm_mechanism_context.json
+  analysis_ready_profile: outputs/profiles/analysis_ready_profile.yaml
+  llm_config: configs/llm_config.yaml
+  prior_hypotheses_json: outputs/hypotheses/top_k_hypotheses.json
+  experimental_feedback: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/hypothesis/experimental_feedback_input.json
+  reward_memory: outputs/memory/reward_memory.json
+  context_blocks_json: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/hypothesis/context_blocks.json
+  output_hypotheses_dir: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/hypothesis
+  report_path: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/hypothesis_report.md
+  previous_experiment_results: []
+  previous_experimental_feedback: []
+hypothesis:
+  session_id: sleep_hypothesis_session
+  research_question: sleep neuroimaging mechanisms and measurable multimodal biomarkers
+  max_hypotheses: 4
+  top_k: 5
+  duplicate_threshold: 0.92
+  enable_evolution: true
+agents:
+  enabled:
+  - ContextAgent
+  - GenerationAgent
+  - ReviewAgent
+  - RankAgent
+  - EvolutionMemoryAgent
+rlef:
+  prior_top_k: 5
+logging:
+  progress: true

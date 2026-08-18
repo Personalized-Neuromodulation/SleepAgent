@@ -1,18 +1,9 @@
 profile_type: theoretical_profile
 features:
-- feature_name: age
-  modality: Method
+- feature_name: beta_power
+  modality: EEG
   source_file: literature_grounding
-  source_column: age
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: functional connectivity
-  modality: fMRI
-  source_file: literature_grounding
-  source_column: functional connectivity
+  source_column: beta_power
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -27,19 +18,46 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: REM latency
-  modality: PSG
+- feature_name: functional connectivity
+  modality: fMRI
   source_file: literature_grounding
-  source_column: REM latency
+  source_column: functional connectivity
   missing_rate: null
   n_available: null
   qc_status: ''
   approved: false
   role: feature
-- feature_name: cortical thickness
-  modality: MRI
+- feature_name: age
+  modality: Method
   source_file: literature_grounding
-  source_column: cortical thickness
+  source_column: age
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: mean_FD
+  modality: Method
+  source_file: literature_grounding
+  source_column: mean_FD
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: salience_FC
+  modality: fMRI
+  source_file: literature_grounding
+  source_column: salience_FC
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: ISI
+  modality: Scale
+  source_file: literature_grounding
+  source_column: ISI
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -49,6 +67,87 @@ features:
   modality: DTI
   source_file: literature_grounding
   source_column: FA
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: DMN_FC
+  modality: fMRI
+  source_file: literature_grounding
+  source_column: DMN_FC
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: REM latency
+  modality: PSG
+  source_file: literature_grounding
+  source_column: REM latency
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: circadian rhythm
+  modality: behavior
+  source_file: literature_grounding
+  source_column: circadian rhythm
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: thalamic connectivity
+  modality: EEG-fMRI
+  source_file: literature_grounding
+  source_column: thalamic connectivity
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: hippocampus_volume
+  modality: MRI
+  source_file: literature_grounding
+  source_column: hippocampus_volume
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: sleep quality
+  modality: Scale
+  source_file: literature_grounding
+  source_column: sleep quality
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: slow_wave_density
+  modality: EEG
+  source_file: literature_grounding
+  source_column: slow_wave_density
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: PSQI
+  modality: Scale
+  source_file: literature_grounding
+  source_column: PSQI
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: spindle
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: spindle
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -81,15 +180,6 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: DMN_FC
-  modality: fMRI
-  source_file: literature_grounding
-  source_column: DMN_FC
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
 - feature_name: orexin neuron
   modality: electrophysiology
   source_file: literature_grounding
@@ -99,109 +189,28 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: ISI
-  modality: Scale
-  source_file: literature_grounding
-  source_column: ISI
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: hippocampus_volume
+- feature_name: CSF
   modality: MRI
   source_file: literature_grounding
-  source_column: hippocampus_volume
+  source_column: CSF
   missing_rate: null
   n_available: null
   qc_status: ''
   approved: false
   role: feature
-- feature_name: beta_power
-  modality: EEG
+- feature_name: cortical thickness
+  modality: MRI
   source_file: literature_grounding
-  source_column: beta_power
+  source_column: cortical thickness
   missing_rate: null
   n_available: null
   qc_status: ''
   approved: false
   role: feature
-- feature_name: salience_FC
-  modality: fMRI
+- feature_name: adenosine receptor
+  modality: pharmacological
   source_file: literature_grounding
-  source_column: salience_FC
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: circadian rhythm
-  modality: behavior
-  source_file: literature_grounding
-  source_column: circadian rhythm
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: mean_FD
-  modality: Method
-  source_file: literature_grounding
-  source_column: mean_FD
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: sleep quality
-  modality: Scale
-  source_file: literature_grounding
-  source_column: sleep quality
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: slow_wave_density
-  modality: EEG
-  source_file: literature_grounding
-  source_column: slow_wave_density
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: slow oscillation
-  modality: electrophysiology
-  source_file: literature_grounding
-  source_column: slow oscillation
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: PSQI
-  modality: Scale
-  source_file: literature_grounding
-  source_column: PSQI
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: sex
-  modality: Method
-  source_file: literature_grounding
-  source_column: sex
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: slow-wave activity
-  modality: EEG
-  source_file: literature_grounding
-  source_column: slow-wave activity
+  source_column: adenosine receptor
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -216,28 +225,10 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: thalamic connectivity
-  modality: EEG-fMRI
-  source_file: literature_grounding
-  source_column: thalamic connectivity
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: spindle_density
-  modality: EEG
-  source_file: literature_grounding
-  source_column: spindle_density
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: spindle
+- feature_name: GABA neuron
   modality: electrophysiology
   source_file: literature_grounding
-  source_column: spindle
+  source_column: GABA neuron
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -252,10 +243,37 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: adenosine receptor
-  modality: pharmacological
+- feature_name: structural MRI
+  modality: MRI
   source_file: literature_grounding
-  source_column: adenosine receptor
+  source_column: structural MRI
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: spindle_density
+  modality: EEG
+  source_file: literature_grounding
+  source_column: spindle_density
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: fractional anisotropy
+  modality: DTI
+  source_file: literature_grounding
+  source_column: fractional anisotropy
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: sex
+  modality: Method
+  source_file: literature_grounding
+  source_column: sex
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -279,28 +297,28 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: structural MRI
-  modality: MRI
-  source_file: literature_grounding
-  source_column: structural MRI
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: sigma power
+- feature_name: spindle activity
   modality: EEG
   source_file: literature_grounding
-  source_column: sigma power
+  source_column: spindle activity
   missing_rate: null
   n_available: null
   qc_status: ''
   approved: false
   role: feature
-- feature_name: GABA neuron
+- feature_name: cortical neuron
   modality: electrophysiology
   source_file: literature_grounding
-  source_column: GABA neuron
+  source_column: cortical neuron
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: slow oscillation
+  modality: electrophysiology
+  source_file: literature_grounding
+  source_column: slow oscillation
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -315,15 +333,6 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: CSF
-  modality: MRI
-  source_file: literature_grounding
-  source_column: CSF
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
 - feature_name: high-frequency EEG
   modality: EEG
   source_file: literature_grounding
@@ -333,19 +342,37 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: spindle activity
+- feature_name: slow-wave activity
   modality: EEG
   source_file: literature_grounding
-  source_column: spindle activity
+  source_column: slow-wave activity
   missing_rate: null
   n_available: null
   qc_status: ''
   approved: false
   role: feature
-- feature_name: fractional anisotropy
-  modality: DTI
+- feature_name: sigma power
+  modality: EEG
   source_file: literature_grounding
-  source_column: fractional anisotropy
+  source_column: sigma power
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: cytokine
+  modality: molecular
+  source_file: literature_grounding
+  source_column: cytokine
+  missing_rate: null
+  n_available: null
+  qc_status: ''
+  approved: false
+  role: feature
+- feature_name: TNF
+  modality: molecular
+  source_file: literature_grounding
+  source_column: TNF
   missing_rate: null
   n_available: null
   qc_status: ''
@@ -360,37 +387,10 @@ features:
   qc_status: ''
   approved: false
   role: feature
-- feature_name: inhibitory neuron
-  modality: electrophysiology
-  source_file: literature_grounding
-  source_column: inhibitory neuron
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: structural feature
-  modality: MRI
-  source_file: literature_grounding
-  source_column: structural feature
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
 - feature_name: thalamic radiation
   modality: EEG-fMRI
   source_file: literature_grounding
   source_column: thalamic radiation
-  missing_rate: null
-  n_available: null
-  qc_status: ''
-  approved: false
-  role: feature
-- feature_name: cytokine
-  modality: molecular
-  source_file: literature_grounding
-  source_column: cytokine
   missing_rate: null
   n_available: null
   qc_status: ''

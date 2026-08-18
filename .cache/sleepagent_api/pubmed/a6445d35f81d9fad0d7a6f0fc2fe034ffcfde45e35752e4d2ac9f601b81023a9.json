@@ -1,0 +1,41 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "biomarkers",
+        "to": "\"biomarker's\"[All Fields] OR \"biomarkers\"[Supplementary Concept] OR \"biomarkers\"[All Fields] OR \"biomarker\"[All Fields] OR \"biomarkers\"[MeSH Terms]"
+      },
+      {
+        "from": "REM",
+        "to": "\"Rangel Ecol Manag\"[Journal:__jid101737744] OR \"rem\"[All Fields]"
+      },
+      {
+        "from": "latency",
+        "to": "\"latencies\"[All Fields] OR \"latency\"[All Fields]"
+      },
+      {
+        "from": "neurodegenerative diseases",
+        "to": "\"neurodegenerative diseases\"[MeSH Terms] OR (\"neurodegenerative\"[All Fields] AND \"diseases\"[All Fields]) OR \"neurodegenerative diseases\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"PSG-based\"[All Fields] AND (\"biomarker s\"[All Fields] OR \"biomarkers\"[Supplementary Concept] OR \"biomarkers\"[All Fields] OR \"biomarker\"[All Fields] OR \"biomarkers\"[MeSH Terms]) AND (\"rangel ecol manag\"[Journal] OR \"rem\"[All Fields]) AND (\"latencies\"[All Fields] OR \"latency\"[All Fields]) AND (\"neurodegenerative diseases\"[MeSH Terms] OR (\"neurodegenerative\"[All Fields] AND \"diseases\"[All Fields]) OR \"neurodegenerative diseases\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "for",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

@@ -277,7 +277,7 @@ class ReviewAgent:
         )
         reviews = run_reflection(
             state.registry,
-            ollama_config=state.config.get("_selected_llm", {}),
+            ollama_config=state.config.get("_llm_tasks", {}).get("hypothesis_review", state.config.get("_selected_llm", {})),
             rlef_context=state.context_blocks.get("rlef_context", ""),
             knowledge_context=context_block,
         )

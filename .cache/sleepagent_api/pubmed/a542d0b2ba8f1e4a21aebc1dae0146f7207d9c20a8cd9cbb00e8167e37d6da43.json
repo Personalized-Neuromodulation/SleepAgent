@@ -1,0 +1,48 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "White matter",
+        "to": "\"white matter\"[MeSH Terms] OR (\"white\"[All Fields] AND \"matter\"[All Fields]) OR \"white matter\"[All Fields]"
+      },
+      {
+        "from": "microstructure",
+        "to": "\"microstructural\"[All Fields] OR \"microstructurally\"[All Fields] OR \"microstructuration\"[All Fields] OR \"microstructure\"[All Fields] OR \"microstructured\"[All Fields] OR \"microstructures\"[All Fields] OR \"microstructuring\"[All Fields]"
+      },
+      {
+        "from": "correlates",
+        "to": "\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation's\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "spindle",
+        "to": "\"spindle\"[All Fields] OR \"spindle's\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]"
+      },
+      {
+        "from": "coherence",
+        "to": "\"coherence\"[All Fields] OR \"coherences\"[All Fields] OR \"coherencies\"[All Fields] OR \"coherency\"[All Fields] OR \"coherent\"[All Fields] OR \"coherently\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"white matter\"[MeSH Terms] OR (\"white\"[All Fields] AND \"matter\"[All Fields]) OR \"white matter\"[All Fields]) AND (\"microstructural\"[All Fields] OR \"microstructurally\"[All Fields] OR \"microstructuration\"[All Fields] OR \"microstructure\"[All Fields] OR \"microstructured\"[All Fields] OR \"microstructures\"[All Fields] OR \"microstructuring\"[All Fields]) AND (\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation s\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"spindle\"[All Fields] OR \"spindle s\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]) AND (\"coherence\"[All Fields] OR \"coherences\"[All Fields] OR \"coherencies\"[All Fields] OR \"coherency\"[All Fields] OR \"coherent\"[All Fields] OR \"coherently\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "with"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

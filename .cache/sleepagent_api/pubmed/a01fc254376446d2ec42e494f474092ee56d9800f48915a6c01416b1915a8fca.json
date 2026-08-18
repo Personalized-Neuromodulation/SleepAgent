@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "anisotropy",
+        "to": "\"anisotropy\"[MeSH Terms] OR \"anisotropy\"[All Fields] OR \"anisotropies\"[All Fields]"
+      },
+      {
+        "from": "thalamocortical",
+        "to": "\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]"
+      },
+      {
+        "from": "spindle",
+        "to": "\"spindle\"[All Fields] OR \"spindle's\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"fractional\"[All Fields] AND (\"anisotropy\"[MeSH Terms] OR \"anisotropy\"[All Fields] OR \"anisotropies\"[All Fields]) AND (\"thalamocortical\"[All Fields] OR \"thalamocortically\"[All Fields]) AND (\"spindle\"[All Fields] OR \"spindle s\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND \"DTI\"[All Fields]",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

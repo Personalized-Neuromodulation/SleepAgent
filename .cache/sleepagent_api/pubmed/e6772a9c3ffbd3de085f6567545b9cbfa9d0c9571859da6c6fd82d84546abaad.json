@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "38176951",
+      "24746674",
+      "23733938"
+    ],
+    "translationset": [
+      {
+        "from": "interaction",
+        "to": "\"interact\"[All Fields] OR \"interactant\"[All Fields] OR \"interactants\"[All Fields] OR \"interacted\"[All Fields] OR \"interacting\"[All Fields] OR \"interaction\"[All Fields] OR \"interactional\"[All Fields] OR \"interactions\"[All Fields] OR \"interactive\"[All Fields] OR \"interactively\"[All Fields] OR \"interactives\"[All Fields] OR \"interactivities\"[All Fields] OR \"interactivity\"[All Fields] OR \"interacts\"[All Fields]"
+      },
+      {
+        "from": "thalamus",
+        "to": "\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "sleep disorders",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"interact\"[All Fields] OR \"interactant\"[All Fields] OR \"interactants\"[All Fields] OR \"interacted\"[All Fields] OR \"interacting\"[All Fields] OR \"interaction\"[All Fields] OR \"interactional\"[All Fields] OR \"interactions\"[All Fields] OR \"interactive\"[All Fields] OR \"interactively\"[All Fields] OR \"interactives\"[All Fields] OR \"interactivities\"[All Fields] OR \"interactivity\"[All Fields] OR \"interacts\"[All Fields]) AND (\"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields]) AND \"DMN\"[All Fields] AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "between",
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

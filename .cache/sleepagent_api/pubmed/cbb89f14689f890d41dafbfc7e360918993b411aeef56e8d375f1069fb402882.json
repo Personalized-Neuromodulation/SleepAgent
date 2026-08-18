@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "anisotropy",
+        "to": "\"anisotropy\"[MeSH Terms] OR \"anisotropy\"[All Fields] OR \"anisotropies\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "spindle",
+        "to": "\"spindle\"[All Fields] OR \"spindle's\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]"
+      },
+      {
+        "from": "density",
+        "to": "\"densities\"[All Fields] OR \"density\"[All Fields]"
+      },
+      {
+        "from": "NREM sleep",
+        "to": "\"sleep, slow-wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow-wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"nrem\"[All Fields] AND \"sleep\"[All Fields]) OR \"nrem sleep\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DTI\"[All Fields] AND \"fractional\"[All Fields] AND (\"anisotropy\"[MeSH Terms] OR \"anisotropy\"[All Fields] OR \"anisotropies\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"spindle\"[All Fields] OR \"spindle s\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]) AND (\"densities\"[All Fields] OR \"density\"[All Fields]) AND (\"sleep, slow wave\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"slow wave\"[All Fields]) OR \"slow-wave sleep\"[All Fields] OR (\"nrem\"[All Fields] AND \"sleep\"[All Fields]) OR \"nrem sleep\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

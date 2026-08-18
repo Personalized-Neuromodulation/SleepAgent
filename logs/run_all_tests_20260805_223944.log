@@ -1,0 +1,24 @@
+[run_all_tests] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_all_tests] iterations=config_default
+[run_all_tests] base_loop_config=configs/discovery_loop_config.yaml
+[run_all_tests] log_file=logs/run_all_tests_20260805_223944.log
+[run_all_tests] [1/4] foundation -> online grounding/RAG
+API environment preflight
+  NCBI_EMAIL: SET
+  NCBI_TOOL: SleepAgent
+  SEMANTIC_SCHOLAR_API_KEY: SET
+[1/6] Build foundation
+[sleep_ai_scientist] foundation.build mode=empty_foundation subject_count=0 feature_count=0 qc_record_count=0 master_rows=0 master_columns=1 manifest=data/foundation/foundation_manifest.json outputs_report=SleepAgent/reports/phase0_foundation_report.md
+[2/6] Build knowledge source registry
+[sleep_ai_scientist] knowledge.build registry_version=sleepagent_knowledge_sources_v1 created_at=2026-08-06T02:39:47.317070+00:00 enabled_sources_count=7 clinical_trials_count=0 guidelines_count=9 standards_count=7 diagnostic_terms_count=6 datasets_count=4 instruments_count=4 tools_methods_count=11 output_files_report=outputs/knowledge_sources/knowledge_sources_report.md output_files_manifest=outputs/knowledge_sources/knowledge_sources_manifest.json database_backend=sqlite notes=Metadata-only for restricted AASM/ICSD sources; no paywalled content downloaded. warnings_count=1 run_id=run_b85a5adfc800 exports_report=outputs/knowledge_sources/knowledge_sources_report.md
+[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] timestamp=2026-08-05T22:39:47-04:00
+[literature_db_build_start] step=[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] database=data/literature/sleep_literature.db
+[literature_db_build_start] config=configs/literature_library_config.yaml
+[literature_db_build_start] query_config=configs/literature_queries.yaml
+[literature_db_build_start] library_version=sleep_literature_library_v1_online
+[api] enabled providers: pubmed, europe_pmc, openalex, semantic_scholar
+[api] query count: 359; max_results_per_query: 50
+[api:pubmed] [########################] 359/359 records=6120 warnings=0 done accumulated_raw=6120
+[api:europe_pmc] [########################] 359/359 records=16210 warnings=0 done accumulated_raw=22330

@@ -1,0 +1,54 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Impact",
+        "to": "\"impact\"[All Fields] OR \"impactful\"[All Fields] OR \"impacting\"[All Fields] OR \"impacts\"[All Fields] OR \"tooth, impacted\"[MeSH Terms] OR (\"tooth\"[All Fields] AND \"impacted\"[All Fields]) OR \"impacted tooth\"[All Fields] OR \"impacted\"[All Fields]"
+      },
+      {
+        "from": "functional",
+        "to": "\"functional\"[All Fields] OR \"functional's\"[All Fields] OR \"functionalities\"[All Fields] OR \"functionality\"[All Fields] OR \"functionalization\"[All Fields] OR \"functionalizations\"[All Fields] OR \"functionalize\"[All Fields] OR \"functionalized\"[All Fields] OR \"functionalizes\"[All Fields] OR \"functionalizing\"[All Fields] OR \"functionally\"[All Fields] OR \"functionals\"[All Fields] OR \"functioned\"[All Fields] OR \"functioning\"[All Fields] OR \"functionings\"[All Fields] OR \"functions\"[All Fields] OR \"physiology\"[Subheading] OR \"physiology\"[All Fields] OR \"function\"[All Fields] OR \"physiology\"[MeSH Terms]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "salience",
+        "to": "\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "dynamics",
+        "to": "\"dynamer\"[All Fields] OR \"dynamers\"[All Fields] OR \"dynamic\"[All Fields] OR \"dynamical\"[All Fields] OR \"dynamically\"[All Fields] OR \"dynamicity\"[All Fields] OR \"dynamics\"[All Fields] OR \"dynamism\"[All Fields] OR \"dynamisms\"[All Fields]"
+      },
+      {
+        "from": "sleep disorders",
+        "to": "\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"impact\"[All Fields] OR \"impactful\"[All Fields] OR \"impacting\"[All Fields] OR \"impacts\"[All Fields] OR \"tooth, impacted\"[MeSH Terms] OR (\"tooth\"[All Fields] AND \"impacted\"[All Fields]) OR \"impacted tooth\"[All Fields] OR \"impacted\"[All Fields]) AND \"thalamus-DMN\"[All Fields] AND (\"functional\"[All Fields] OR \"functional s\"[All Fields] OR \"functionalities\"[All Fields] OR \"functionality\"[All Fields] OR \"functionalization\"[All Fields] OR \"functionalizations\"[All Fields] OR \"functionalize\"[All Fields] OR \"functionalized\"[All Fields] OR \"functionalizes\"[All Fields] OR \"functionalizing\"[All Fields] OR \"functionally\"[All Fields] OR \"functionals\"[All Fields] OR \"functioned\"[All Fields] OR \"functioning\"[All Fields] OR \"functionings\"[All Fields] OR \"functions\"[All Fields] OR \"physiology\"[MeSH Subheading] OR \"physiology\"[All Fields] OR \"function\"[All Fields] OR \"physiology\"[MeSH Terms]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"salience\"[All Fields] OR \"saliences\"[All Fields] OR \"saliencies\"[All Fields] OR \"saliency\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"dynamer\"[All Fields] OR \"dynamers\"[All Fields] OR \"dynamic\"[All Fields] OR \"dynamical\"[All Fields] OR \"dynamically\"[All Fields] OR \"dynamicity\"[All Fields] OR \"dynamics\"[All Fields] OR \"dynamism\"[All Fields] OR \"dynamisms\"[All Fields]) AND (\"sleep wake disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"wake\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep wake disorders\"[All Fields] OR (\"sleep\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep disorders\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "on",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

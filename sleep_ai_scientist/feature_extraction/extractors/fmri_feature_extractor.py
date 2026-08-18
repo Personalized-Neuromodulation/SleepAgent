@@ -18,6 +18,14 @@ except Exception:  # pragma: no cover
     resample_to_img = None
 
 
+DEFAULT_NETWORK_LABELS = {
+    "thalamus": [10, 49],
+    "DMN": [1008, 1025, 1026, 2008, 2025, 2026],
+    "salience": [1035, 2035, 1027, 2027],
+    "frontoparietal": [1003, 1029, 2003, 2029],
+}
+
+
 class FMRIFeatureExtractor:
     """Collects fMRI features and preserves ROI/network FC columns when present."""
 
@@ -180,25 +188,31 @@ class FMRIFeatureExtractor:
         bold_candidates = sorted((session_dir / "clean_data" / "volume").glob(f"*{task}*_12rp_50pca_csf_wm.nii.gz")) if task else []
         if not bold_candidates:
             bold_candidates = sorted((session_dir / "clean_data" / "volume").glob("*_12rp_50pca_csf_wm.nii.gz"))
-        atlas_candidates = sorted((subject_dir / "fmriprep" / "output" / subject_dir.name / "anat").glob("*desc-aparcaseg_dseg.nii.gz"))
-        if not bold_candidates or not atlas_candidates:
-            return {"roi_fc_status": "missing_bold_or_atlas"}
+        atlas_candidates = _atlas_candidates(subject_dir, session_dir)
+        if not bold_candidates:
+            return {"roi_fc_status": "missing_bold"}
+        if not atlas_candidates:
+            return {"roi_fc_status": "missing_atlas"}
         try:
             bold_img = nib.load(str(bold_candidates[0]))
             atlas_img = nib.load(str(atlas_candidates[0]))
             atlas_resampled = resample_to_img(atlas_img, index_img(bold_img, 0), interpolation="nearest", force_resample=True, copy_header=True)
             atlas = np.asarray(atlas_resampled.get_fdata(), dtype=np.int32)
             bold = np.asarray(bold_img.get_fdata(), dtype=np.float32)
-            networks = {
-                "thalamus": [10, 49],
-                "DMN": [1008, 1025, 1026, 2008, 2025, 2026],
-                "salience": [1035, 2035, 1027, 2027],
-                "frontoparietal": [1003, 1029, 2003, 2029],
-            }
+            networks = DEFAULT_NETWORK_LABELS
             timeseries = {name: _network_timeseries(bold, atlas, labels) for name, labels in networks.items()}
-            features: dict[str, Any] = {"roi_fc_status": "computed"}
+            centroids = _network_centroids(atlas, atlas_resampled.affine, networks)
+            features: dict[str, Any] = {
+                "roi_fc_status": "computed",
+                "roi_coord_source": str(atlas_candidates[0]),
+                "roi_coord_space": _coordinate_space_from_path(atlas_candidates[0]),
+            }
             for name, series in timeseries.items():
                 features[f"{name}_roi_voxels"] = int(np.isfinite(series).sum()) if series.size else 0
+            for name, coord in centroids.items():
+                features[f"{name}_coord_x"] = coord[0]
+                features[f"{name}_coord_y"] = coord[1]
+                features[f"{name}_coord_z"] = coord[2]
             pairs = [
                 ("thalamus", "DMN", "thalamus_DMN_FC"),
                 ("thalamus", "salience", "thalamus_salience_FC"),
@@ -222,6 +236,29 @@ def _task_from_name(name: str) -> str:
         if part.startswith("task-"):
             return part
     return ""
+
+
+def _atlas_candidates(subject_dir: Path, session_dir: Path) -> list[Path]:
+    """Find fMRIPrep aparcaseg outputs across subject- and session-level layouts."""
+    base = subject_dir / "fmriprep" / "output" / subject_dir.name
+    patterns = [
+        base / session_dir.name / "anat",
+        base / "anat",
+    ]
+    candidates: list[Path] = []
+    seen: set[Path] = set()
+    for directory in patterns:
+        for path in sorted(directory.glob("*desc-aparcaseg_dseg.nii.gz")):
+            if path not in seen:
+                seen.add(path)
+                candidates.append(path)
+    if candidates:
+        return candidates
+    for path in sorted(base.rglob("*desc-aparcaseg_dseg.nii.gz")) if base.exists() else []:
+        if path not in seen:
+            seen.add(path)
+            candidates.append(path)
+    return candidates
 
 
 def _as_float(value: Any) -> float | None:
@@ -249,6 +286,32 @@ def _network_timeseries(bold: np.ndarray, atlas: np.ndarray, labels: list[int]) 
         return np.array([])
     data = bold[mask, :]
     return np.nanmean(data, axis=0)
+
+
+def _network_centroids(
+    atlas: np.ndarray,
+    affine: np.ndarray,
+    networks: dict[str, list[int]],
+) -> dict[str, tuple[float, float, float]]:
+    centroids: dict[str, tuple[float, float, float]] = {}
+    for name, labels in networks.items():
+        voxel_indices = np.argwhere(np.isin(atlas, labels))
+        if voxel_indices.size == 0:
+            continue
+        homogeneous = np.c_[voxel_indices, np.ones(len(voxel_indices))]
+        world = homogeneous @ np.asarray(affine, dtype=float).T
+        centroid = np.nanmean(world[:, :3], axis=0)
+        if np.all(np.isfinite(centroid)):
+            centroids[name] = (float(centroid[0]), float(centroid[1]), float(centroid[2]))
+    return centroids
+
+
+def _coordinate_space_from_path(path: Path) -> str:
+    name = path.name
+    for part in name.split("_"):
+        if part.startswith("space-"):
+            return part.removeprefix("space-")
+    return "atlas_image_world"
 
 
 def _fisher_corr(left: np.ndarray | None, right: np.ndarray | None) -> float | None:

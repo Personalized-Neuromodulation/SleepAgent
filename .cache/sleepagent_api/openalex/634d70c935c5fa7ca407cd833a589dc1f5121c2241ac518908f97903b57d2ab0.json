@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "count": 0,
+    "db_response_time_ms": 37,
+    "page": 1,
+    "per_page": 50,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Covariates in fMRI studies of insomnia: mean_FD \"and\" mean_DVARS)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Covariates in fMRI studies of insomnia: mean_FD and mean_DVARS",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:Covariates in fMRI studies of insomnia: mean_FD and mean_DVARS&per_page=50"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [],
+  "group_by": []
+}

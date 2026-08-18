@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Negative",
+        "to": "\"negative\"[All Fields] OR \"negatively\"[All Fields] OR \"negatives\"[All Fields] OR \"negativities\"[All Fields] OR \"negativity\"[All Fields]"
+      },
+      {
+        "from": "correlation",
+        "to": "\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation's\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields]"
+      },
+      {
+        "from": "frontoparietal",
+        "to": "\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"negative\"[All Fields] OR \"negatively\"[All Fields] OR \"negatives\"[All Fields] OR \"negativities\"[All Fields] OR \"negativity\"[All Fields]) AND (\"correlate\"[All Fields] OR \"correlated\"[All Fields] OR \"correlates\"[All Fields] OR \"correlating\"[All Fields] OR \"correlation\"[All Fields] OR \"correlation s\"[All Fields] OR \"correlations\"[All Fields] OR \"correlative\"[All Fields] OR \"correlatives\"[All Fields]) AND \"thalamus-DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]) AND \"FC\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "between",
+        "and",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

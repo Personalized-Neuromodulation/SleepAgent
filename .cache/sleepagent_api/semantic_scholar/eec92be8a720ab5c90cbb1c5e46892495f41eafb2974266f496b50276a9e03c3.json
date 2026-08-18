@@ -1,0 +1,2535 @@
+{
+  "total": 3058,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "5b7b056169e0c0b0138b8262495dd6d04c83c6d2",
+      "externalIds": {
+        "DOI": "10.1016/j.jad.2023.08.016",
+        "CorpusId": 260750725,
+        "PubMed": "37562562"
+      },
+      "url": "https://www.semanticscholar.org/paper/5b7b056169e0c0b0138b8262495dd6d04c83c6d2",
+      "title": "Neuroimaging profiles of the negative affective network predict anxiety severity in patients with chronic insomnia disorder: A machine learning study.",
+      "venue": "Journal of Affective Disorders",
+      "year": 2023,
+      "citationCount": 9,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jad.2023.08.016?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jad.2023.08.016, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108835658",
+          "name": "Hao Xu"
+        },
+        {
+          "authorId": "2212803487",
+          "name": "Zeyang Dou"
+        },
+        {
+          "authorId": "2118200598",
+          "name": "Yucai Luo"
+        },
+        {
+          "authorId": "2118368961",
+          "name": "Lu Yang"
+        },
+        {
+          "authorId": "2118724196",
+          "name": "Xiangwen Xiao"
+        },
+        {
+          "authorId": "2181457518",
+          "name": "Guangli Zhao"
+        },
+        {
+          "authorId": "2230122164",
+          "name": "Wenting Lin"
+        },
+        {
+          "authorId": "2228708179",
+          "name": "Zihao Xia"
+        },
+        {
+          "authorId": "2256972561",
+          "name": "Qi Zhang"
+        },
+        {
+          "authorId": "2047890576",
+          "name": "Fangyue Zeng"
+        },
+        {
+          "authorId": "47421451",
+          "name": "Siyi Yu"
+        }
+      ],
+      "abstract": "BACKGROUND\nSleep is instrumental in safeguarding emotional well-being. While the susceptibility to both insomnia and anxiety has been demonstrated to involve intricate brain systems, the neuroimaging profile of chronic insomnia disorder with comorbid anxiety symptoms (CID-A) remains unexplored. Employing machine learning methodologies, this study aims to elucidate the distinct neural substrates underlying CID-A and to investigate whether these cerebral markers can prognosticate anxiety symptoms in patients with insomnia.\n\n\nMETHODS\nFunctional magnetic resonance imaging (fMRI) data were procured from a relatively large cohort (dataset 1) comprised of 47 CID-A patients, 49 CID patients without anxiety (CID-NA), and 48 good sleeper controls (GSC). Aberrant cerebral functional alterations were assessed through functional connectivity strength (FCS) and resting-state functional connectivity (rsFC). Subsequently, Support Vector Regression (SVR) models were constructed to predict anxiety symptoms in CID patients based on neuroimaging features, which were validated utilizing an external cohort (dataset 2).\n\n\nRESULTS\nIn comparison to CID-NA and GSC subjects, CID-A patients exhibited heightened FCS in the right dorsomedial prefrontal cortex (DMPFC), a central hub within the negative affective network. Moreover, the SVR models revealed that DMPFC-related rsFC/FCS features could be employed to predict anxiety symptoms in two independent cohorts of CID patients.\n\n\nLIMITATION\nModifications in brain functionality might vary across insomnia subtypes.\n\n\nCONCLUSION\nThe present findings suggest a potential negative affective network model for the neuropathophysiology of CID accompanied by anxiety. Importantly, the negative affective network pattern may serve as a predictor for anxiety symptoms in CID patients."
+    },
+    {
+      "paperId": "eb01ee7f56aa129eedf0450b96d58375405f1366",
+      "externalIds": {
+        "DOI": "10.1007/s10548-025-01100-7",
+        "CorpusId": 275930111,
+        "PubMed": "39873797"
+      },
+      "url": "https://www.semanticscholar.org/paper/eb01ee7f56aa129eedf0450b96d58375405f1366",
+      "title": "Classification of Imagined Speech Signals Using Functional Connectivity Graphs and Machine Learning Models",
+      "venue": "Brain Topography",
+      "year": 2025,
+      "citationCount": 13,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.researchsquare.com/article/rs-4809756/latest.pdf",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10548-025-01100-7?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10548-025-01100-7, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2290100073",
+          "name": "Anand Mohan"
+        },
+        {
+          "authorId": "2277541840",
+          "name": "R. Anand"
+        }
+      ],
+      "abstract": "EEG involves recording electrical activity generated by the brain through electrodes placed on the scalp. Imagined speech classification has emerged as an essential area of research in brain–computer interfaces (BCIs). Despite significant advances, accurately classifying imagined speech signals remains challenging due to their complex and non-stationary nature. Existing approaches often struggle with low signal-to-noise ratios and high inter-subject variability. A proposed method named imagined speech functional connectivity graph (ISFCG) is implemented to deal with these issues. The functional connectivity graphs capture the complex relationships between brain regions during imagined speech tasks. These graphs are then used to extract features that serve as inputs to various machine-learning models. The ISFCG provides an alternative representation of imagined speech signals, focusing on brain connectivity features to enhance the analysis and classification process. Also, a convolutional neural network (CNN) is proposed to learn features from these complex graphs, leading to improved classification accuracy. Experimental results on a benchmark dataset demonstrate the effectiveness of our method."
+    },
+    {
+      "paperId": "c32617b8871798cc0cfc7dc5ec491a9ef1425052",
+      "externalIds": {
+        "PubMedCentral": "12092156",
+        "DOI": "10.1155/da/3082856",
+        "CorpusId": 278640742,
+        "PubMed": "40395979"
+      },
+      "url": "https://www.semanticscholar.org/paper/c32617b8871798cc0cfc7dc5ec491a9ef1425052",
+      "title": "Machine Learning Models to Identify Clinically Significant Anxiety in Short-Term Insomnia Using Accelerometers",
+      "venue": "Depression and Anxiety",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12092156, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1478829968",
+          "name": "Leqin Fang"
+        },
+        {
+          "authorId": "2062828815",
+          "name": "Weixiong Zeng"
+        },
+        {
+          "authorId": "2344055378",
+          "name": "Shuqiong Zheng"
+        },
+        {
+          "authorId": "2147242805",
+          "name": "Shixu Du"
+        },
+        {
+          "authorId": "2342361075",
+          "name": "Hangyi Yang"
+        },
+        {
+          "authorId": "2300828132",
+          "name": "Xue Luo"
+        },
+        {
+          "authorId": "2218252922",
+          "name": "Shufei Zeng"
+        },
+        {
+          "authorId": "2362039488",
+          "name": "Zhiting Huang"
+        },
+        {
+          "authorId": "2316956879",
+          "name": "Weiguo Chen"
+        },
+        {
+          "authorId": "2300502511",
+          "name": "Bin Zhang"
+        }
+      ],
+      "abstract": "Clinically significant anxiety (CSA) is common in individuals with short-term insomnia. This study aims to explore the relationship between CSA and the subjective and objective parameters of sleep in patients with short-term insomnia and construct machine learning (ML) models to determine the utility of accelerometer features in identifying significant anxiety. A total of 205 short-term insomnia participants from China were assigned to the group with CSA (N = 33) or the group without CSA (N = 172). Interaction analysis based on linear regression was used to estimate the possible interactive effect of accelerometer features between CSA and sleep problems. Four feature sets and eight algorithms were used to construct ML models, with Shapley Additive exPlanations (SHAP) values used to visualize feature importance and influence processes. CSA in patients with short-term insomnia leads to more severe subjective sleep problems, and accelerometer-measured features warrant further attention for the identification of interactive factors. A significant interaction effect was found between anxiety symptoms and longer duration of physical activity on insomnia severity (Pinteraction < 0.05). Anxiety symptoms and interdaily stability had an interactive association with sleep hygiene behaviors (Pinteraction < 0.01). ML can process and analyze complex accelerometer features to identify CSA in patients with short-term insomnia. Compared with other feature sets and algorithms, the XGBoost model with accelerometer-measured features on weekdays more effectively identified CSA with area under the curve (AUC) value of 0.777. SHAP analysis results indicated that circadian rhythm features had significant contributions. Decision plots based on SHAP were applied to visualize the personalized risk factors for each patient and provide clinicians with more easily understandable and practical explanation methods that enhance clinical decision-making. Trial Registration: Chinese Clinical Trial Registry identifier: ChiCTR2200062910"
+    },
+    {
+      "paperId": "21dbdc1b301762eb79d20ee2f832bf056ff2b25c",
+      "externalIds": {
+        "DOI": "10.1109/IICAIET62352.2024.10730420",
+        "CorpusId": 273694452
+      },
+      "url": "https://www.semanticscholar.org/paper/21dbdc1b301762eb79d20ee2f832bf056ff2b25c",
+      "title": "Machine Learning Approach for Early Diagnosis of Alzheimer's Disease Using rs-fMRI and Metaheuristic Optimization with Functional Connectivity Matrices",
+      "venue": "International Conference on Artificial Intelligence in Engineering and Technology",
+      "year": 2024,
+      "citationCount": 11,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://hdl.handle.net/20.500.12628/28939",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IICAIET62352.2024.10730420?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IICAIET62352.2024.10730420, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2230065200",
+          "name": "Y. Özçelik"
+        },
+        {
+          "authorId": "2966150",
+          "name": "Aytaç Altan"
+        },
+        {
+          "authorId": "2308785945",
+          "name": "Ceren Kaya"
+        }
+      ],
+      "abstract": "Alzheimer's disease is a cognitive disease that occurs with memory loss and usually occurs in older ages. Nowadays, considering that the risk of Alzheimer's increases every year as the life expectancy of the individual increases and has become a global problem, the importance of early detection of Alzheimer's disease is emphasized. This study uses brain connectivity matrices with informative features obtained from resting state functional MRI (rs-fMRI) data as features for early and effective diagnosis of Alzheimer's. Feature selection is performed using SMA and PSO algorithms, both of which create a machine learning model using optimization algorithms for Alzheimer's diagnosis. Among the two different models, the SMA-based model achieved approximately 92% success in diagnosing Alzheimer's disease with an average of 104 features. This revealed that the proposed method has good potential."
+    },
+    {
+      "paperId": "880ecd5aa8c529ad8d81518cf1256bb075faa8c8",
+      "externalIds": {
+        "PubMedCentral": "11099321",
+        "DOI": "10.1016/j.sleepx.2024.100114",
+        "CorpusId": 269608926,
+        "PubMed": "38765885"
+      },
+      "url": "https://www.semanticscholar.org/paper/880ecd5aa8c529ad8d81518cf1256bb075faa8c8",
+      "title": "The predictive value of supervised machine learning models for insomnia symptoms through smartphone usage behavior",
+      "venue": "Sleep medicine: X",
+      "year": 2024,
+      "citationCount": 9,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.sleepx.2024.100114",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11099321, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2166639481",
+          "name": "L. Simon"
+        },
+        {
+          "authorId": "51261937",
+          "name": "Yannik Terhorst"
+        },
+        {
+          "authorId": "2300119645",
+          "name": "C. Cohrdes"
+        },
+        {
+          "authorId": "2300114552",
+          "name": "Rüdiger Pryss"
+        },
+        {
+          "authorId": "119778785",
+          "name": "L. Steinmetz"
+        },
+        {
+          "authorId": "2250673790",
+          "name": "Jon D. Elhai"
+        },
+        {
+          "authorId": "2297617122",
+          "name": "Harald Baumeister"
+        }
+      ],
+      "abstract": "Introduction Digital phenotyping can be an innovative and unobtrusive way to improve the detection of insomnia. This study explores the correlations between smartphone usage features (SUF) and insomnia symptoms and their predictive value for detecting insomnia symptoms. Methods In an observational study of a German convenience sample, the Insomnia Severity Index (ISI) and smartphone usage data (e.g., time the screen was active, longest time the screen was inactive in the night) for the previous 7 days were obtained. SUF (e.g., min, mean) were calculated from the smartphone usage data. Correlation analyses between the ISI and SUF were conducted. For the specification of the machine learning models (ML), 80 % of the data was allocated to training, 20 % to testing, and five-fold cross-validation was used. Six algorithms (support vector machine, XGBoost, Random Forest, k-Nearest-Neighbor, Naive Bayes, and Logistic Regressions) were specified to predict ISI scores ≥15. Results 752 participants (51.1 % female, mean ISI = 10.23, mean age = 41.92) were included in the analyses. Small correlations between some of the SUF and insomnia symptoms were found. In the ML models, sensitivity was low, ranging from 0.05 to 0.27 in the testing subsample. Random Forest and Naive Bayes were the best-performing algorithms. Yet, their AUCs (0.57, 0.58 respectively) in the testing subsample indicated a low discrimination capacity. Conclusions Given the small magnitude of the correlations and low discrimination capacity of the ML models, SUFs, as measured in this study, do not appear to be sufficient for detecting insomnia symptoms. Further research is necessary to explore whether examining intra-individual variations and subpopulations or employing alternative smartphone sensors yields more promising outcomes."
+    },
+    {
+      "paperId": "10d017ad427978a730ef6bfcd6e367ca4afd665b",
+      "externalIds": {
+        "PubMedCentral": "12779822",
+        "DBLP": "journals/braininf/ChenHHW26",
+        "DOI": "10.1186/s40708-025-00289-4",
+        "CorpusId": 284274660,
+        "PubMed": "41455052"
+      },
+      "url": "https://www.semanticscholar.org/paper/10d017ad427978a730ef6bfcd6e367ca4afd665b",
+      "title": "Machine learning with multitype functional connectivity uncovers whole-brain network disruption in primary angle-closure glaucoma",
+      "venue": "Brain Informatics",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1186/s40708-025-00289-4",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12779822, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2311228438",
+          "name": "Guangxiang Chen"
+        },
+        {
+          "authorId": "2308070959",
+          "name": "D. Hu"
+        },
+        {
+          "authorId": "2368656768",
+          "name": "Xin Huang"
+        },
+        {
+          "authorId": "2361791873",
+          "name": "Zhijiang Wan"
+        }
+      ],
+      "abstract": "Primary angle-closure glaucoma (PACG), an irreversible blinding disease characterized by retinal ganglion cell damage and optic nerve atrophy, exerts significant effects on brain functional networks. Using resting-state functional magnetic resonance imaging (rs-fMRI) data from 34 PACG patients and 34 matched healthy controls (HCs), we extracted four types of connectivity features—voxel-wise static functional connectivity (FC), dynamic functional connectivity (dFC), effective connectivity (EC), and dynamic effective connectivity (dEC)—via the AAL90 (Automated Anatomical Labeling 90) atlas following preprocessing. Elastic net feature selection was applied independently to each connectivity type to retain the top 10% most discriminative features. We evaluated the classification performance of ten machine learning models using individual feature types as well as their combined features, with the FC-based logistic regression (LR) model achieving optimal diagnostic efficacy (accuracy = 0.92, AUC = 0.96). SHapley Additive exPlanations (SHAP) of the model identified 20 critical connections, revealing abnormal patterns at both the region of interest (ROI)-level and network-level within brain networks such as the visual network (VSN), dorsal attention network (DAN), and sensorimotor network (SMN). Statistical group comparisons validated reduced connectivity (e.g., VSN-SMN, VSN-DAN) and enhanced DAN-thalamus connectivity in patients, while voxel-wise analyses of key regions confirmed diminished connectivity to visual areas. The results provide insights into how machine learning can be effectively employed to detect PACG-specific brain network disruptions and highlight potential neuroimaging biomarkers."
+    },
+    {
+      "paperId": "c05f33af8222752c2dfdc4f994f15ade34e1300c",
+      "externalIds": {
+        "PubMedCentral": "12647562",
+        "DOI": "10.1177/20552076251393331",
+        "CorpusId": 283286709,
+        "PubMed": "41312144"
+      },
+      "url": "https://www.semanticscholar.org/paper/c05f33af8222752c2dfdc4f994f15ade34e1300c",
+      "title": "A new method for assessing chronic insomnia: Machine learning-based fusion of TCM observation digital features",
+      "venue": "Digital Health",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12647562, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2342465449",
+          "name": "Yu Wang"
+        },
+        {
+          "authorId": "2302118165",
+          "name": "Jie Chen"
+        },
+        {
+          "authorId": "2372213757",
+          "name": "Q. Chen"
+        },
+        {
+          "authorId": "2308283344",
+          "name": "Xudong Huang"
+        },
+        {
+          "authorId": "2023783942",
+          "name": "Yulin Shi"
+        },
+        {
+          "authorId": "2322817052",
+          "name": "Zhentao Li"
+        },
+        {
+          "authorId": "2254852459",
+          "name": "Xue-min Wang"
+        },
+        {
+          "authorId": "2386944710",
+          "name": "Liang Xu"
+        },
+        {
+          "authorId": "11296581",
+          "name": "Jiatuo Xu"
+        }
+      ],
+      "abstract": "Background In the clinical assessment of chronic insomnia, modern medicine encounters challenges in the widespread adoption of objective assessment methods, such as polysomnography, due to their high costs and complex operational requirements. Therefore, it was crucial to implement objective and varied methods to accurately assess chronic insomnia. Methods Clinical information was collected from 594 patients diagnosed with chronic insomnia. Their facial and tongue features, as observed through traditional Chinese medicine, were recorded using the tongue face diagnosis analysis-1 instrument and analyzed with the tongue/face diagnosis analysis system. Stepwise-regression analysis, principal component analysis, and zero-inflated negative binomial (ZINB) regression were employed for variable screening. Ultimately, the classification model for assessing the severity of chronic insomnia was constructed using six supervised machine learning methods: decision trees, neural networks, random forests, support vector machines, logistic regression, and naive Bayes. The model was evaluated using sensitivity, specificity, F1 score, precision, and accuracy. Visualization was conducted with the Shapley Additive exPlanations (SHAP) explainer and decision curve analysis (DCA), and it was finally calibrated using Platt scaling. Results A comprehensive evaluation revealed that model 4 exhibited superior performance. This model integrated baseline data, sleep symptoms, and facial features, achieving its highest receiver operating characteristic curve value of 0.822. Furthermore, DCA demonstrated that model 4 exhibited significant clinical utility. The SHAP illustrated that among the variables exerting the greatest influence on insomnia, the effects of Ch-Y and CH-G were notably prominent, compared to the conventional PSQI and SAS, followed by Ch-R. Finally, the results of Platt scaling calibration indicated that model 4 exhibited significant improvement post-calibration, with the predicted probabilities closely aligning with the actual probabilities of occurrence. Conclusions This study emphasized convenient and non-invasive diagnostic methods for investigating specific facial and tongue features associated with chronic insomnia. A classification model for chronic insomnia has been developed through the integration of multiple features, enabling a more accurate assessment of insomnia severity and facilitating advancements in therapeutic interventions."
+    },
+    {
+      "paperId": "f26971bbf36a0899914d8f1b0dcbcae84c34c762",
+      "externalIds": {
+        "PubMedCentral": "11217540",
+        "DBLP": "journals/fini/KarimFR24",
+        "DOI": "10.3389/fninf.2024.1384720",
+        "CorpusId": 270609154,
+        "PubMed": "38957548"
+      },
+      "url": "https://www.semanticscholar.org/paper/f26971bbf36a0899914d8f1b0dcbcae84c34c762",
+      "title": "Identifying discriminative features of brain network for prediction of Alzheimer’s disease using graph theory and machine learning",
+      "venue": "Frontiers Neuroinformatics",
+      "year": 2024,
+      "citationCount": 17,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fninf.2024.1384720/pdf?isPublishedV2=False",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11217540, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2309444171",
+          "name": "Rashid Mehmood"
+        },
+        {
+          "authorId": "2510838",
+          "name": "Qunxi Dong"
+        },
+        {
+          "authorId": "2309442227",
+          "name": "S. M. Shayez"
+        },
+        {
+          "authorId": "51019160",
+          "name": "Md. Shah Fahad"
+        },
+        {
+          "authorId": "2183274082",
+          "name": "R. Rathore"
+        }
+      ],
+      "abstract": "Alzheimer’s disease (AD) is a challenging neurodegenerative condition, necessitating early diagnosis and intervention. This research leverages machine learning (ML) and graph theory metrics, derived from resting-state functional magnetic resonance imaging (rs-fMRI) data to predict AD. Using Southwest University Adult Lifespan Dataset (SALD, age 21–76 years) and the Open Access Series of Imaging Studies (OASIS, age 64–95 years) dataset, containing 112 participants, various ML models were developed for the purpose of AD prediction. The study identifies key features for a comprehensive understanding of brain network topology and functional connectivity in AD. Through a 5-fold cross-validation, all models demonstrate substantial predictive capabilities (accuracy in 82–92% range), with the support vector machine model standing out as the best having an accuracy of 92%. Present study suggests that top 13 regions, identified based on most important discriminating features, have lost significant connections with thalamus. The functional connection strengths were consistently declined for substantia nigra, pars reticulata, substantia nigra, pars compacta, and nucleus accumbens among AD subjects as compared to healthy adults and aging individuals. The present finding corroborate with the earlier studies, employing various neuroimagining techniques. This research signifies the translational potential of a comprehensive approach integrating ML, graph theory and rs-fMRI analysis in AD prediction, offering potential biomarker for more accurate diagnostics and early prediction of AD."
+    },
+    {
+      "paperId": "b66b8628238f57831476b0e1e483d13f1dbf09c8",
+      "externalIds": {
+        "PubMedCentral": "11614717",
+        "DOI": "10.1016/j.cortex.2024.08.012",
+        "CorpusId": 273883847,
+        "PubMed": "39566125"
+      },
+      "url": "https://www.semanticscholar.org/paper/b66b8628238f57831476b0e1e483d13f1dbf09c8",
+      "title": "Distinct connectivity patterns between perception and attention-related brain networks characterize dyslexia: machine learning applied to resting-state fMRI",
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "year": 2024,
+      "citationCount": 8,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11614717, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2094189219",
+          "name": "N. Taran"
+        },
+        {
+          "authorId": "2329619288",
+          "name": "Rotem Gatenyo"
+        },
+        {
+          "authorId": "2329618841",
+          "name": "Emmanuelle Hadjadj"
+        },
+        {
+          "authorId": "49006855",
+          "name": "R. Farah"
+        },
+        {
+          "authorId": "1398935951",
+          "name": "T. Horowitz-Kraus"
+        }
+      ],
+      "abstract": "Diagnosis of dyslexia often occurs in late schooling years, leading to academic and psychological challenges. Furthermore, diagnosis is time-consuming, costly, and reliant on arbitrary cutoffs. On the other hand, automated algorithms hold great potential in medical and psychological diagnostics. The aim of the present study was to develop a machine learning tool for the detection of dyslexia in children based on the intrinsic connectivity patterns of different brain networks underlying perception and attention. Here, 117 children (8–12 years old; 58 females; 52 typical readers; TR and 65 children with dyslexia) completed cognitive and reading assessments and underwent 10 minutes of resting-state fMRI. Functional connectivity coefficients between 264 brain regions were used as features for machine learning. Different supervised algorithms were employed for classification of children with and without dyslexia. A classifier trained on dorsal attention network features exhibited the highest performance (accuracy .79, sensitivity .92, specificity .64). Auditory, visual, and fronto-parietal network-based classification showed intermediate accuracy levels (70–75%). These results highlight significant neurobiological differences in brain networks associated with visual attention between TR and children with dyslexia. Distinct neural integration patterns can differentiate dyslexia from typical development, which may be utilized in the future as a biomarker for the presence and/or severity of dyslexia."
+    },
+    {
+      "paperId": "ad69353e1f735f485f52464768c0ac63491f5dd3",
+      "externalIds": {
+        "DBLP": "journals/comsur/WangKBDCZ24",
+        "DOI": "10.1109/COMST.2023.3344808",
+        "CorpusId": 266458852
+      },
+      "url": "https://www.semanticscholar.org/paper/ad69353e1f735f485f52464768c0ac63491f5dd3",
+      "title": "Evasion Attack and Defense on Machine Learning Models in Cyber-Physical Systems: A Survey",
+      "venue": "IEEE Communications Surveys and Tutorials",
+      "year": 2024,
+      "citationCount": 41,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/COMST.2023.3344808?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/COMST.2023.3344808, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108655845",
+          "name": "Shunyao Wang"
+        },
+        {
+          "authorId": "145726881",
+          "name": "Ryan K. L. Ko"
+        },
+        {
+          "authorId": "2267741336",
+          "name": "Guangdong Bai"
+        },
+        {
+          "authorId": "2616996",
+          "name": "Naipeng Dong"
+        },
+        {
+          "authorId": "2061466267",
+          "name": "Taejun Choi"
+        },
+        {
+          "authorId": "2108188532",
+          "name": "Yanjun Zhang"
+        }
+      ],
+      "abstract": "Cyber-physical systems (CPS) are increasingly relying on machine learning (ML) techniques to reduce labor costs and improve efficiency. However, the adoption of ML also exposes CPS to potential adversarial ML attacks witnessed in the literature. Specifically, the increased Internet connectivity in CPS has resulted in a surge in the volume of data generation and communication frequency among devices, thereby expanding the attack surface and attack opportunities for ML adversaries. Among various adversarial ML attacks, evasion attacks are one of the most well-known ones. Therefore, this survey focuses on summarizing the latest research on evasion attack and defense techniques, to understand state-of-the-art ML model security in CPS. To assess the attack effectiveness, this survey proposes an attack taxonomy by introducing quantitative measures such as perturbation level and the number of modified features. Similarly, a defense taxonomy is introduced based on four perspectives demonstrating the defensive techniques from models’ inputs to their outputs. Furthermore, the survey identifies gaps and promising directions that researchers and practitioners can explore to address potential challenges and threats caused by evasion attacks and lays the groundwork for understanding and mitigating the attacks in CPS."
+    },
+    {
+      "paperId": "72e32cd2812e14af0ae550f469f6e563a9585708",
+      "externalIds": {
+        "DOI": "10.1016/j.euroneuro.2025.05.011",
+        "CorpusId": 279443657,
+        "PubMed": "40532424"
+      },
+      "url": "https://www.semanticscholar.org/paper/72e32cd2812e14af0ae550f469f6e563a9585708",
+      "title": "Differences in resting-state functional connectivity between depressed bipolar and major depressive disorder patients: A machine learning study.",
+      "venue": "European Neuropsychopharmacology",
+      "year": 2025,
+      "citationCount": 7,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.euroneuro.2025.05.011?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.euroneuro.2025.05.011, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1957331772",
+          "name": "F. Calesella"
+        },
+        {
+          "authorId": "2276708398",
+          "name": "E. Serra"
+        },
+        {
+          "authorId": "2056851872",
+          "name": "M. Palladini"
+        },
+        {
+          "authorId": "2338398346",
+          "name": "F. Colombo"
+        },
+        {
+          "authorId": "2141603317",
+          "name": "B. Bravi"
+        },
+        {
+          "authorId": "2198244032",
+          "name": "L. Fortaner-Uyá"
+        },
+        {
+          "authorId": "2239078987",
+          "name": "C. Monopoli"
+        },
+        {
+          "authorId": "2126687749",
+          "name": "Emma Tassi"
+        },
+        {
+          "authorId": "2307390677",
+          "name": "P. Brambilla"
+        },
+        {
+          "authorId": "2239735215",
+          "name": "C. Colombo"
+        },
+        {
+          "authorId": "7640456",
+          "name": "R. Zanardi"
+        },
+        {
+          "authorId": "2240874559",
+          "name": "S. Poletti"
+        },
+        {
+          "authorId": "2071984227",
+          "name": "E. Maggioni"
+        },
+        {
+          "authorId": "2239080363",
+          "name": "F. Benedetti"
+        },
+        {
+          "authorId": "5171827",
+          "name": "B. Vai"
+        },
+        {
+          "authorId": "6595393",
+          "name": "I. Bollettini"
+        }
+      ],
+      "abstract": "Nearly 60 % of individuals with bipolar disorder (BD) are initially classified as major depressive disorder (MDD) patients, resulting in inappropriate drug treatment. Identifying reliable biomarkers for the differential diagnosis between MDD and BD patients may allow to define the best treatment option since the early phases. In this study, we deployed machine learning predictive models to classify 62 MDD and 63 BD patients with a current depressive episode from resting functional neuroimaging feature (rs-fMRI), including fractional amplitude of low-frequency fluctuations, regional homogeneity, atlas-based connectivity across 434 regions of interest, seed-based connectivity maps for 44 seeds, and 14 dual regression components. Models were also compared to 76 healthy controls. Only the model trained on seed-based connectivity reached the statistical significance in permutation test reaching the highest classification performance (69.36 % of accuracy for BD and 63.08 % for MDD). Seed-based connectivity also reached the best performance in identifying MDD (78.33 %) and BD (71.67 %) relative to controls. Connectivity patterns in key brain regions of the reward and aversion systems appeared crucial in differentiating the disorders, possibly identifying distinct clinical phenotypes of disorders, beyond the depressive ongoing episode."
+    },
+    {
+      "paperId": "5601903c48a0023414c0f458dee90a6818247048",
+      "externalIds": {
+        "PubMedCentral": "11033270",
+        "DOI": "10.1038/s41598-024-59652-w",
+        "CorpusId": 269292135,
+        "PubMed": "38644365"
+      },
+      "url": "https://www.semanticscholar.org/paper/5601903c48a0023414c0f458dee90a6818247048",
+      "title": "Classification of mental workload using brain connectivity and machine learning on electroencephalogram data",
+      "venue": "Scientific Reports",
+      "year": 2024,
+      "citationCount": 64,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-024-59652-w.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11033270, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297756521",
+          "name": "Mohammadreza Safari"
+        },
+        {
+          "authorId": "2308840",
+          "name": "R. Shalbaf"
+        },
+        {
+          "authorId": "145780045",
+          "name": "S. Bagherzadeh"
+        },
+        {
+          "authorId": "3265434",
+          "name": "A. Shalbaf"
+        }
+      ],
+      "abstract": "Mental workload refers to the cognitive effort required to perform tasks, and it is an important factor in various fields, including system design, clinical medicine, and industrial applications. In this paper, we propose innovative methods to assess mental workload from EEG data that use effective brain connectivity for the purpose of extracting features, a hierarchical feature selection algorithm to select the most significant features, and finally machine learning models. We have used the Simultaneous Task EEG Workload (STEW) dataset, an open-access collection of raw EEG data from 48 subjects. We extracted brain-effective connectivities by the direct directed transfer function and then selected the top 30 connectivities for each standard frequency band. Then we applied three feature selection algorithms (forward feature selection, Relief-F, and minimum-redundancy-maximum-relevance) on the top 150 features from all frequencies. Finally, we applied sevenfold cross-validation on four machine learning models (support vector machine (SVM), linear discriminant analysis, random forest, and decision tree). The results revealed that SVM as the machine learning model and forward feature selection as the feature selection method work better than others and could classify the mental workload levels with accuracy equal to 89.53% (± 1.36)."
+    },
+    {
+      "paperId": "154d4e5546d48b1ef6d51ee8a2507c0ccc6c9116",
+      "externalIds": {
+        "DOI": "10.1109/ICMLCA66850.2025.11336770",
+        "CorpusId": 284919971
+      },
+      "url": "https://www.semanticscholar.org/paper/154d4e5546d48b1ef6d51ee8a2507c0ccc6c9116",
+      "title": "PSG-Based Machine Learning for Predicting Acupuncture Efficacy in Insomnia",
+      "venue": "2025 6th International Conference on Machine Learning and Computer Application (ICMLCA)",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICMLCA66850.2025.11336770?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICMLCA66850.2025.11336770, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2389117312",
+          "name": "Yixuan Li"
+        },
+        {
+          "authorId": "2400671971",
+          "name": "Tianhui Tan"
+        },
+        {
+          "authorId": "2237400068",
+          "name": "Limin Liu"
+        },
+        {
+          "authorId": "2406207364",
+          "name": "Meixing Tang"
+        },
+        {
+          "authorId": "2395563493",
+          "name": "Changchang Zhang"
+        },
+        {
+          "authorId": "2406317470",
+          "name": "Xiaomao Fan"
+        },
+        {
+          "authorId": "2275819184",
+          "name": "Bao-kuan Zhou"
+        },
+        {
+          "authorId": "2398981571",
+          "name": "Xuemei Cao"
+        }
+      ],
+      "abstract": "Insomnia affects nearly one-third of adults worldwide, significantly impairing qualify of life and increasing the risk of psychiatric and cardiovascular comorbidities. Acupuncture is widely applied as a safe and effective treatment, but individual variability in therapeutic response remains a major barrier to precision medicine. This study investigates the feasibility of predicting treatment response to acupuncture using pre-treatment polysomnography (PSG) parameters combined with machine learning models. A cohort of patients with chronic insomnia undergo comprehensive PSG assessment prior to acupuncture intervention. Key sleep features are extracted, and multiple classifiers are trained and validated using stratified crossvalidation and leave-one-out strategies. Model performance is evaluated by accuracy, precision, recall and f1 score. The proposed framework achieves an accuracy of 90.0 % with leave-one-out validation, outperforming stratified cross-validation (80.0 %). Feature analysis reveals that wake after sleep onset, sleep maintenance efficiency, and sleep efficiency are critical predictors of treatment response. PSG-based machine learning provides a feasible approach for individualized prediction of acupuncture efficacy in insomnia, supporting the development of precision treatment strategies."
+    },
+    {
+      "paperId": "365703b8f6c2f5e41f17667dcacb60409fbac0a1",
+      "externalIds": {
+        "DOI": "10.33387/jiko.v7i1.7870",
+        "CorpusId": 269510277
+      },
+      "url": "https://www.semanticscholar.org/paper/365703b8f6c2f5e41f17667dcacb60409fbac0a1",
+      "title": "EVALUATING MACHINE LEARNING MODELS FOR PREDICTING SLEEP DISORDERS IN A LIFESTYLE AND HEALTH DATA CONTEXT",
+      "venue": "JIKO (Jurnal Informatika dan Komputer)",
+      "year": 2024,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ejournal.unkhair.ac.id/index.php/jiko/article/download/7870/4844",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.33387/jiko.v7i1.7870?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.33387/jiko.v7i1.7870, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "65782613",
+          "name": "Gregorius Airlangga"
+        }
+      ],
+      "abstract": "Sleep disorders significantly impact public health, but their detection is often complicated by the multifaceted nature of causative factors. This study investigates the efficacy of various machine learning (ML) models in identifying sleep disorders based on comprehensive lifestyle and health data. We employed a dataset comprising 400 individual records with features including demographic information, sleep metrics, lifestyle factors, and health parameters. The dataset distinguished between individuals with no sleep disorder, insomnia, and sleep apnea. We evaluated a broad spectrum of ML models including logistic regression, decision trees, ensemble methods like RandomForest and GradientBoosting, support vector machines, and neural networks. The models' performances were assessed using accuracy, precision, recall, and F1 score metrics. Results indicated that ensemble methods, particularly RandomForest and XGBClassifier, outperformed other models in terms of accuracy, precision, and F1 scores, achieving values as high as 0.93. These methods proved effective in managing the complexity and variability of the dataset, thereby suggesting their robustness in clinical predictive analytics. The study's findings advocate for the use of advanced ensemble techniques in developing diagnostic tools for sleep disorders, highlighting their potential to enhance predictive accuracy and reliability in real-world healthcare settings. Further research is recommended to optimize these models and explore their integration into clinical practice."
+    },
+    {
+      "paperId": "cfd7effd6057050a58e953ee1c5da448ef2dd3ce",
+      "externalIds": {
+        "DOI": "10.1109/IATMSI68868.2026.11465482",
+        "CorpusId": 287250121
+      },
+      "url": "https://www.semanticscholar.org/paper/cfd7effd6057050a58e953ee1c5da448ef2dd3ce",
+      "title": "Improving rTMS Response Prediction in Depression Using Augmented fMRI Connectivity Data",
+      "venue": "2026 IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI)",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IATMSI68868.2026.11465482?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IATMSI68868.2026.11465482, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2109862918",
+          "name": "Suman S. Sharma"
+        }
+      ],
+      "abstract": "Repetitive Transcranial Magnetic Stimulation (rTMS) is a clinically validated and widely used treatment for depression. Despite its effectiveness, individual treatment responses remain highly variable. Recent studies suggest that machine learning models, particularly those utilizing functional MRI (fMRI) connectivity features, hold promise in forecasting rTMS outcomes. However, deep neural networks (DNNs) often struggle with accurately predicting outcomes when dataset is small. To address this limitation, we introduce a novel approach called the Diversity Boosting Conditional Generative Adversarial Network (DBCGAN). This method selectively generates synthetic samples in complex and low-density regions of the feature space, effectively boosting data diversity. Our experimental results demonstrate that training models on these enriched datasets yields superior performance compared to conventional augmentation techniques and existing baselines. Overall, this work highlights the value of using diverse, synthetic data to enhance predictive performance and suggests that such synthetic datasets may serve as a valuable resource for both clinical and research applications in psychiatry."
+    },
+    {
+      "paperId": "b10ecbd0bdbe3a14beff02960bc27e0033a10800",
+      "externalIds": {
+        "PubMedCentral": "10888009",
+        "DOI": "10.3390/diagnostics14040389",
+        "CorpusId": 267647175,
+        "PubMed": "38396428"
+      },
+      "url": "https://www.semanticscholar.org/paper/b10ecbd0bdbe3a14beff02960bc27e0033a10800",
+      "title": "Innovative Neuroimaging Biomarker Distinction of Major Depressive Disorder and Bipolar Disorder through Structural Connectome Analysis and Machine Learning Models",
+      "venue": "Diagnostics",
+      "year": 2024,
+      "citationCount": 11,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2075-4418/14/4/389/pdf?version=1707559954",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10888009, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1729409506",
+          "name": "Yangzhou Huang"
+        },
+        {
+          "authorId": "2283975874",
+          "name": "Jingbo Zhang"
+        },
+        {
+          "authorId": "2284002069",
+          "name": "Kewei He"
+        },
+        {
+          "authorId": "2283999571",
+          "name": "Xue Mo"
+        },
+        {
+          "authorId": "2111381264",
+          "name": "Renqiang Yu"
+        },
+        {
+          "authorId": "2283961206",
+          "name": "Jing Min"
+        },
+        {
+          "authorId": "2284185093",
+          "name": "Tong Zhu"
+        },
+        {
+          "authorId": "2284333751",
+          "name": "Yunfeng Ma"
+        },
+        {
+          "authorId": "2284197772",
+          "name": "Xiangqian He"
+        },
+        {
+          "authorId": "2260765984",
+          "name": "Fajin Lv"
+        },
+        {
+          "authorId": "2064827720",
+          "name": "Du Lei"
+        },
+        {
+          "authorId": "47842159",
+          "name": "Mengqi Liu"
+        }
+      ],
+      "abstract": "Major depressive disorder (MDD) and bipolar disorder (BD) share clinical features, which complicates their differentiation in clinical settings. This study proposes an innovative approach that integrates structural connectome analysis with machine learning models to discern individuals with MDD from individuals with BD. High-resolution MRI images were obtained from individuals diagnosed with MDD or BD and from HCs. Structural connectomes were constructed to represent the complex interplay of brain regions using advanced graph theory techniques. Machine learning models were employed to discern unique connectivity patterns associated with MDD and BD. At the global level, both BD and MDD patients exhibited increased small-worldness compared to the HC group. At the nodal level, patients with BD and MDD showed common differences in nodal parameters primarily in the right amygdala and the right parahippocampal gyrus when compared with HCs. Distinctive differences were found mainly in prefrontal regions for BD, whereas MDD was characterized by abnormalities in the left thalamus and default mode network. Additionally, the BD group demonstrated altered nodal parameters predominantly in the fronto-limbic network when compared with the MDD group. Moreover, the application of machine learning models utilizing structural brain parameters demonstrated an impressive 90.3% accuracy in distinguishing individuals with BD from individuals with MDD. These findings demonstrate that combined structural connectome and machine learning enhance diagnostic accuracy and may contribute valuable insights to the understanding of the distinctive neurobiological signatures of these psychiatric disorders."
+    },
+    {
+      "paperId": "117e6dc75308f9100bcf06040a33f2ea5607f033",
+      "externalIds": {
+        "PubMedCentral": "11754439",
+        "DOI": "10.1038/s41598-024-84152-2",
+        "CorpusId": 275817882,
+        "PubMed": "39843572"
+      },
+      "url": "https://www.semanticscholar.org/paper/117e6dc75308f9100bcf06040a33f2ea5607f033",
+      "title": "A comparative machine learning study of schizophrenia biomarkers derived from functional connectivity",
+      "venue": "Scientific Reports",
+      "year": 2025,
+      "citationCount": 6,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1038/s41598-024-84152-2",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11754439, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2278437913",
+          "name": "Victoria Shevchenko"
+        },
+        {
+          "authorId": "94134752",
+          "name": "R. A. Benn"
+        },
+        {
+          "authorId": "2278435034",
+          "name": "Robert Scholz"
+        },
+        {
+          "authorId": "2278631429",
+          "name": "Wei Wei"
+        },
+        {
+          "authorId": "2341692315",
+          "name": "Carla Pallavicini"
+        },
+        {
+          "authorId": "5233741",
+          "name": "Ulysse Klatzmann"
+        },
+        {
+          "authorId": "2214511772",
+          "name": "F. Alberti"
+        },
+        {
+          "authorId": "2367506661",
+          "name": "Theodore D. Satterthwaite"
+        },
+        {
+          "authorId": "2319409961",
+          "name": "Demian Wassermann"
+        },
+        {
+          "authorId": "50467221",
+          "name": "P. Bazin"
+        },
+        {
+          "authorId": "2205626203",
+          "name": "D. Margulies"
+        }
+      ],
+      "abstract": "Functional connectivity holds promise as a biomarker of schizophrenia. Yet, the high dimensionality of predictive models trained on functional connectomes, combined with small sample sizes in clinical research, increases the risk of overfitting. Recently, low-dimensional representations of the connectome such as macroscale cortical gradients and gradient dispersion have been proposed, with studies noting consistent gradient and dispersion differences in psychiatric conditions. However, it is unknown which of these derived measures has the highest predictive capacity and how they compare to raw functional connectivity specifically in the case of schizophrenia. Our study evaluates which connectome features derived from resting state functional MRI — functional connectivity, gradients, or gradient dispersion — best identify schizophrenia. To this end, we leveraged data of 936 individuals from three large open-access datasets: COBRE, LA5c, and SRPBS-1600. We developed a pipeline which allows us to aggregate over a million different features and assess their predictive potential in a single, computationally efficient experiment. We selected top 1% of features with the largest permutation feature importance and trained 13 classifiers on them using 10-fold cross-validation. Our findings indicate that functional connectivity outperforms its low-dimensional derivatives such as cortical gradients and gradient dispersion in identifying schizophrenia (Mann–Whitney test conducted on test accuracy: connectivity vs. 1st gradient: U = 142, p < 0.003; connectivity vs. neighborhood dispersion: U = 141, p = 0.004). Additionally, we demonstrated that the edges which contribute the most to classification performance are the ones connecting primary sensory regions. Functional connectivity within the primary sensory regions showed the highest discrimination capabilities between subjects with schizophrenia and neurotypical controls. These findings along with the feature selection pipeline proposed here will facilitate future inquiries into the prediction of schizophrenia subtypes and transdiagnostic phenomena."
+    },
+    {
+      "paperId": "487ade1ad693b8b47c1b624169a71e3b497192c8",
+      "externalIds": {
+        "PubMedCentral": "11269343",
+        "DOI": "10.1007/s11060-024-04715-1",
+        "CorpusId": 261527661,
+        "PubMed": "38789843"
+      },
+      "url": "https://www.semanticscholar.org/paper/487ade1ad693b8b47c1b624169a71e3b497192c8",
+      "title": "Predicting post-surgical functional status in high-grade glioma with resting state fMRI and machine learning",
+      "venue": "Journal of Neuro-Oncology",
+      "year": 2024,
+      "citationCount": 27,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s11060-024-04715-1.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11269343, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2035865228",
+          "name": "Patrick H. Luckett"
+        },
+        {
+          "authorId": "2045236504",
+          "name": "M. Olufawo"
+        },
+        {
+          "authorId": "2116396934",
+          "name": "K. Park"
+        },
+        {
+          "authorId": "2086829",
+          "name": "Bidhan Lamichhane"
+        },
+        {
+          "authorId": "3147648",
+          "name": "D. Dierker"
+        },
+        {
+          "authorId": "2233209650",
+          "name": "Gabriel T. Verastegui"
+        },
+        {
+          "authorId": "2279496595",
+          "name": "John J Lee"
+        },
+        {
+          "authorId": "2237964897",
+          "name": "Peter Yang"
+        },
+        {
+          "authorId": "2307950780",
+          "name": "Albert H. Kim"
+        },
+        {
+          "authorId": "2392113516",
+          "name": "O. Butt"
+        },
+        {
+          "authorId": "7661076",
+          "name": "Milan G. Chheda"
+        },
+        {
+          "authorId": "2237768471",
+          "name": "Abraham Z Snyder"
+        },
+        {
+          "authorId": "2721106",
+          "name": "J. Shimony"
+        },
+        {
+          "authorId": "2786797",
+          "name": "E. Leuthardt"
+        }
+      ],
+      "abstract": "High-grade glioma (HGG) is the most common and deadly malignant glioma of the central nervous system. The current standard of care includes surgical resection of the tumor, which can lead to functional and cognitive deficits. The aim of this study is to develop models capable of predicting functional outcomes in HGG patients before surgery, facilitating improved disease management and informed patient care. Adult HGG patients (N = 102) from the neurosurgery brain tumor service at Washington University Medical Center were retrospectively recruited. All patients completed structural neuroimaging and resting state functional MRI prior to surgery. Demographics, measures of resting state network connectivity (FC), tumor location, and tumor volume were used to train a random forest classifier to predict functional outcomes based on Karnofsky Performance Status (KPS < 70, KPS ≥ 70). The models achieved a nested cross-validation accuracy of 94.1% and an AUC of 0.97 in classifying KPS. The strongest predictors identified by the model included FC between somatomotor, visual, auditory, and reward networks. Based on location, the relation of the tumor to dorsal attention, cingulo-opercular, and basal ganglia networks were strong predictors of KPS. Age was also a strong predictor. However, tumor volume was only a moderate predictor. The current work demonstrates the ability of machine learning to classify postoperative functional outcomes in HGG patients prior to surgery accurately. Our results suggest that both FC and the tumor’s location in relation to specific networks can serve as reliable predictors of functional outcomes, leading to personalized therapeutic approaches tailored to individual patients."
+    },
+    {
+      "paperId": "d2330d6dd0f6fbee8dfc6baf542abaa6b1a5ba20",
+      "externalIds": {
+        "PubMedCentral": "12676558",
+        "DOI": "10.1101/2025.03.12.642878",
+        "CorpusId": 276991949,
+        "PubMed": "41357989"
+      },
+      "url": "https://www.semanticscholar.org/paper/d2330d6dd0f6fbee8dfc6baf542abaa6b1a5ba20",
+      "title": "Overlooked features lead to divergent neurobiological interpretations of brain-based machine learning biomarkers",
+      "venue": "bioRxiv",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12676558, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2281328207",
+          "name": "Brendan D. Adkinson"
+        },
+        {
+          "authorId": "2184323140",
+          "name": "M. Rosenblatt"
+        },
+        {
+          "authorId": "2189415250",
+          "name": "Huili Sun"
+        },
+        {
+          "authorId": "2612722",
+          "name": "Javid Dadashkarimi"
+        },
+        {
+          "authorId": "2042664541",
+          "name": "Link Tejavibulya"
+        },
+        {
+          "authorId": "4679487",
+          "name": "C. Horien"
+        },
+        {
+          "authorId": "38450232",
+          "name": "M. Westwater"
+        },
+        {
+          "authorId": "2093228298",
+          "name": "R. Rodriguez"
+        },
+        {
+          "authorId": "152728057",
+          "name": "Stephanie Noble"
+        },
+        {
+          "authorId": "2842620",
+          "name": "D. Scheinost"
+        }
+      ],
+      "abstract": "A central objective in human neuroimaging is to understand the neurobiology underlying cognition and mental health. Machine learning models trained on brain connectivity data are increasingly used as tools for predicting behavioral phenotypes 1,2, enhancing precision medicine 3,4, and improving generalizability compared to traditional MRI studies 5. However, the high dimensionality of brain connectivity data makes model interpretation challenging 6. Prevailing practices within the field rely on sparsely selected brain connectivity features, implicitly interpreting identified feature networks as uniquely representative of a given phenotype while overlooking others. Here, we show that commonly overlooked brain connectivity features can achieve similar prediction accuracies while yielding markedly different neurobiological interpretations. Using four large-scale neuroimaging datasets spanning over 12,000 participants and 13 outcomes, we demonstrate that this phenomenon is widespread across cognitive, developmental, and psychiatric phenotypes. It extends to both functional connectivity (fMRI) and structural (DTI) connectomes and remains evident even in external validation. These findings suggest that common practices may lead to feature overinterpretation and a misrepresentation of the neurobiological bases of brain-behavior associations. Such interpretations present only the \"tip of the iceberg\" when certain disregarded features may be just as meaningful, potentially contributing to ongoing issues surrounding reproducibility within the field. More broadly, our results point to the possibility that multiple neurobiologically distinct models may exist for the same phenotype, with implications for identifying meaningful subtypes within clinical and research populations."
+    },
+    {
+      "paperId": "e2114bdcd49d14b9a69aea1d028d593b1a27fccd",
+      "externalIds": {
+        "DBLP": "journals/jdi/SadeghiSKSDYJSL24",
+        "DOI": "10.1007/s10278-024-01101-1",
+        "CorpusId": 269973762,
+        "PubMed": "38780666"
+      },
+      "url": "https://www.semanticscholar.org/paper/e2114bdcd49d14b9a69aea1d028d593b1a27fccd",
+      "title": "Detecting Alzheimer’s Disease Stages and Frontotemporal Dementia in Time Courses of Resting-State fMRI Data Using a Machine Learning Approach",
+      "venue": "Journal of Imaging Informatics in Medicine",
+      "year": 2024,
+      "citationCount": 15,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11612109/pdf/10278_2024_Article_1101.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10278-024-01101-1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10278-024-01101-1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2279196856",
+          "name": "Mohammad Amin Sadeghi"
+        },
+        {
+          "authorId": "2302720956",
+          "name": "Daniel A. Stevens"
+        },
+        {
+          "authorId": "2103994674",
+          "name": "Shinjini Kundu"
+        },
+        {
+          "authorId": "1436263785",
+          "name": "R. Sanghera"
+        },
+        {
+          "authorId": "2279200330",
+          "name": "Richard Dagher"
+        },
+        {
+          "authorId": "2261603245",
+          "name": "V. Yedavalli"
+        },
+        {
+          "authorId": "2292735888",
+          "name": "Craig Jones"
+        },
+        {
+          "authorId": "2393192208",
+          "name": "Haris Sair"
+        },
+        {
+          "authorId": "84232445",
+          "name": "L. Luna"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "94cefd6377107a8e71c596295e62a83021cb95d5",
+      "externalIds": {
+        "PubMedCentral": "10520785",
+        "DOI": "10.3389/fpsyt.2023.1241670",
+        "CorpusId": 261777469,
+        "PubMed": "37766927"
+      },
+      "url": "https://www.semanticscholar.org/paper/94cefd6377107a8e71c596295e62a83021cb95d5",
+      "title": "Abnormal voxel-mirrored homotopic connectivity in first-episode major depressive disorder using fMRI: a machine learning approach",
+      "venue": "Frontiers in Psychiatry",
+      "year": 2023,
+      "citationCount": 13,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2023.1241670/pdf?isPublishedV2=False",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10520785, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2256591689",
+          "name": "Qing Chen"
+        },
+        {
+          "authorId": "2057245540",
+          "name": "Yanmeng Bi"
+        },
+        {
+          "authorId": "48215389",
+          "name": "Weixin Yan"
+        },
+        {
+          "authorId": "2237403686",
+          "name": "Shuhui Wu"
+        },
+        {
+          "authorId": "2430810723",
+          "name": "T. Xia"
+        },
+        {
+          "authorId": "2164327966",
+          "name": "Yuhua Wang"
+        },
+        {
+          "authorId": "2240076420",
+          "name": "Sha Huang"
+        },
+        {
+          "authorId": "11031482",
+          "name": "Chuying Zhou"
+        },
+        {
+          "authorId": "35496729",
+          "name": "Shuwen Xie"
+        },
+        {
+          "authorId": "2156256784",
+          "name": "Shanshan Kuang"
+        },
+        {
+          "authorId": "2391592236",
+          "name": "Wenqi Kong"
+        },
+        {
+          "authorId": "46951288",
+          "name": "Z. Lv"
+        }
+      ],
+      "abstract": "Objective To explore the interhemispheric information synergy ability of the brain in major depressive disorder (MDD) patients by applying the voxel-mirrored homotopic connectivity (VMHC) method and further explore the potential clinical diagnostic value of VMHC metric by a machine learning approach. Methods 52 healthy controls and 48 first-episode MDD patients were recruited in the study. We performed neuropsychological tests and resting-state fMRI scanning on all subjects. The VMHC values of the symmetrical interhemispheric voxels in the whole brain were calculated. The VMHC alterations were compared between two groups, and the relationship between VMHC values and clinical variables was analyzed. Then, abnormal brain regions were selected as features to conduct the classification model by using the support vector machine (SVM) approach. Results Compared to the healthy controls, MDD patients exhibited decreased VMHC values in the bilateral middle frontal gyrus, fusiform gyrus, medial superior frontal gyrus and precentral gyrus. Furthermore, the VMHC value of the bilateral fusiform gyrus was positively correlated with the total Hamilton Depression Scale (HAMD). Moreover, SVM analysis displayed that a combination of all clusters demonstrated the highest area under the curve (AUC) of 0.87 with accuracy, sensitivity, and specificity values of 86.17%, 76.74%, and 94.12%, respectively. Conclusion MDD patients had reduced functional connectivity in the bilateral middle frontal gyrus, fusiform gyrus, medial superior frontal gyrus and precentral gyrus, which may be related to depressive symptoms. The abnormality in these brain regions could represent potential imaging markers to distinguish MDD patients from healthy controls."
+    },
+    {
+      "paperId": "f9c9c37fea56e2aeb1e7e5ad8dbb91c326cdb109",
+      "externalIds": {
+        "DBLP": "conf/isbi/QureshiJL17",
+        "MAG": "2669629675",
+        "DOI": "10.1109/ISBI.2017.7950576",
+        "CorpusId": 20363092
+      },
+      "url": "https://www.semanticscholar.org/paper/f9c9c37fea56e2aeb1e7e5ad8dbb91c326cdb109",
+      "title": "ADHD subgroup discrimination with global connectivity features using hierarchical extreme learning machine: Resting-state FMRI study",
+      "venue": "IEEE International Symposium on Biomedical Imaging",
+      "year": 2017,
+      "citationCount": 11,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISBI.2017.7950576?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISBI.2017.7950576, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32029070",
+          "name": "Muhammad Naveed Iqbal Qureshi"
+        },
+        {
+          "authorId": "34183711",
+          "name": "H. Jo"
+        },
+        {
+          "authorId": "3069730",
+          "name": "Boreom Lee"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "455f286ecc381fe2d25f4e9217c587a77cfd552c",
+      "externalIds": {
+        "PubMedCentral": "11485364",
+        "DOI": "10.21037/qims-24-892",
+        "CorpusId": 272986446,
+        "PubMed": "39429602"
+      },
+      "url": "https://www.semanticscholar.org/paper/455f286ecc381fe2d25f4e9217c587a77cfd552c",
+      "title": "Support vector machine classification of irritable bowel syndrome patients based on whole-brain resting-state functional connectivity features",
+      "venue": "Quantitative Imaging in Medicine and Surgery",
+      "year": 2024,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.21037/qims-24-892",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11485364, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2325455253",
+          "name": "Lei Xie"
+        },
+        {
+          "authorId": "2228414844",
+          "name": "Zelin Zhuang"
+        },
+        {
+          "authorId": "2300869641",
+          "name": "Xiaona Lin"
+        },
+        {
+          "authorId": "2323568962",
+          "name": "Xiaoyan Shi"
+        },
+        {
+          "authorId": "2280027365",
+          "name": "Yanmin Zheng"
+        },
+        {
+          "authorId": "2324073344",
+          "name": "Kailuan Wu"
+        },
+        {
+          "authorId": "2280067918",
+          "name": "Shuhua Ma"
+        }
+      ],
+      "abstract": "Background Irritable bowel syndrome (IBS) is a disorder characterized by signaling dysregulation between the brain and gut, leading to gastrointestinal dysfunction. Symptoms such as abdominal pain and constipation can manifest periodically or persistently, and negative emotions may exacerbate the symptoms. Previous studies have shown that the pathogenesis of IBS is closely related to the brain-gut axis and brain function, but there are still difficulties in disease diagnosis. Therefore, this study applied a machine-learning approach based on resting-state functional magnetic resonance imaging (rs-fMRI) whole-brain functional connectivity (FC) to distinguish IBS patients from healthy controls (HCs). Methods A total of 176 subjects, comprising 88 consecutive patients with IBS and 88 age-, sex- and education-matched HCs, were enrolled in this study between January 2020 and January 2024 at the First Affiliated Hospital of Shantou University Medical College. All the subjects underwent rs-fMRI and high-resolution anatomical T1-weighted imaging (T1WI) examinations. Following the preprocessing of the rs-fMRI image data, FC matrices between all regions of interest (ROIs) were extracted using automated anatomical labeling (AAL). Subsequently, supervised machine learning was performed using whole-brain FC for classification features to identify the best-performing model. Finally, weights of the optimal model’s features were exported to confirm the neuroanatomical regions significantly influencing model establishment. Results Compared with other supervised learning models, the support vector machine (SVM) model had significantly higher classification accuracy and performed significantly better than the other models (P<0.05) with a classification accuracy of 75% and an area under the curve (AUC) of 0.7788 (95% confidence interval [CI]: 0.6861–0.8715) (P<0.01). In addition, the FC features from the Rolandic operculum (ROL) to the anterior cingulate gyrus (ACG), the calcarine sulcus (CAL) to the triangular part of the inferior frontal gyrus (IFG), the gyrus rectus (REC) to the inferior occipital gyrus (IOG), the lingual gyrus (LING) to the putamen (PUT), and the IOG to the angular gyrus (ANG) were relatively important in the construction of the machine-learning models. Conclusions The SVM was the optimal machine-learning model for effectively classifying IBS patients and HCs based on whole-brain resting-state FC matrices. The FC features between the emotion-related brain regions significantly affected the construction of the machine-learning models. As a classification feature in machine learning, whole-brain resting-state FC holds the potential to achieve precision medicine in IBS and enhance disease diagnostic efficacy."
+    },
+    {
+      "paperId": "6f751464d95118afd2168c2cd6de31eecf7b1049",
+      "externalIds": {
+        "DOI": "10.1109/ICAEEE62219.2024.10561753",
+        "CorpusId": 270732876
+      },
+      "url": "https://www.semanticscholar.org/paper/6f751464d95118afd2168c2cd6de31eecf7b1049",
+      "title": "Classification of Autism Spectrum Disorder from rs-fMRI Scans by Feature Reduction and Ensemble Machine Learning Classifier",
+      "venue": "2024 3rd International Conference on Advancement in Electrical and Electronic Engineering (ICAEEE)",
+      "year": 2024,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICAEEE62219.2024.10561753?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICAEEE62219.2024.10561753, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2308212496",
+          "name": "Zia Md Galib Ul Alim"
+        },
+        {
+          "authorId": "2308210204",
+          "name": "Tasrina Mahmud Priyoti"
+        },
+        {
+          "authorId": "1409860838",
+          "name": "Mohammad Hossam-E-Haider"
+        },
+        {
+          "authorId": "2047940573",
+          "name": "A. A. M. Shah Sadman"
+        }
+      ],
+      "abstract": "Autism Spectrum Disorder (ASD) is a multifaceted neurodevelopmental disorder and genetically heterogeneous. Neuroimaging techniques like rs-fMRI have shown changes in brain structure and connectivity in ASD patients. Regions associated with language processing, sensory perception, and social communication are frequently affected. Early diagnosis of ASD might prove vital in timely treatment of the patient. This study presents a novel approach for detecting ASD by employing Principal Component Analysis (PCA) and ensemble machine learning. The objective of this study is to mitigate the computational complexity associated with classifying individuals with ASD from typically developing (TD) individuals and increasing the accuracy of linear classifiers over existing studies. This study also highlights that the other ASD subtypes are distinct from Autism. Finding the optimum hyperparameters for four different supervised learning models – SVM, Linear SVC, Logistic Regression and Ridge classifier, an optimum ensemble learning model has been designed using the three most promising classifiers. Lastly, 10 fold cross validation has been performed to evaluate the five classifier models for the categorization of ASDTD and Autism-TD, with and without the inclusion of PCA. The ensemble model incorporating PCA, trained and tested on dataset excluding subtypes like Aspergers and PDD-NOS achieved the highest accuracy of 76.01%. The precision and recall of this model are 72.01% and 70.69% respectively. Overall, the results of this study demonstrate the potential for enhanced diagnostic precision of Autism with greater computational efficiency."
+    },
+    {
+      "paperId": "c89d777aa050aae462ed7bf6d9efe20ae4633f85",
+      "externalIds": {
+        "PubMedCentral": "9853194",
+        "DOI": "10.3389/fnagi.2022.1109485",
+        "CorpusId": 255498033,
+        "PubMed": "36688167"
+      },
+      "url": "https://www.semanticscholar.org/paper/c89d777aa050aae462ed7bf6d9efe20ae4633f85",
+      "title": "Decreased default mode network functional connectivity with visual processing regions as potential biomarkers for delayed neurocognitive recovery: A resting-state fMRI study and machine-learning analysis",
+      "venue": "Frontiers in Aging Neuroscience",
+      "year": 2023,
+      "citationCount": 10,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnagi.2022.1109485/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9853194, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3647043",
+          "name": "Zhaoshun Jiang"
+        },
+        {
+          "authorId": "2149196413",
+          "name": "Yuxi Cai"
+        },
+        {
+          "authorId": "50152507",
+          "name": "Songbin Liu"
+        },
+        {
+          "authorId": "2199441061",
+          "name": "Pei Ye"
+        },
+        {
+          "authorId": "2108989304",
+          "name": "Yifeng Yang"
+        },
+        {
+          "authorId": "8537892",
+          "name": "Guangwu Lin"
+        },
+        {
+          "authorId": "151212246",
+          "name": "Shihong Li"
+        },
+        {
+          "authorId": "48615144",
+          "name": "Yan Xu"
+        },
+        {
+          "authorId": "2166913758",
+          "name": "Yang Zheng"
+        },
+        {
+          "authorId": "52213942",
+          "name": "Z. Bao"
+        },
+        {
+          "authorId": "47597345",
+          "name": "S. Nie"
+        },
+        {
+          "authorId": "152250306",
+          "name": "W. Gu"
+        }
+      ],
+      "abstract": "Objectives The abnormal functional connectivity (FC) pattern of default mode network (DMN) may be key markers for early identification of various cognitive disorders. However, the whole-brain FC changes of DMN in delayed neurocognitive recovery (DNR) are still unclear. Our study was aimed at exploring the whole-brain FC patterns of all regions in DMN and the potential features as biomarkers for the prediction of DNR using machine-learning algorithms. Methods Resting-state functional magnetic resonance imaging (fMRI) was conducted before surgery on 74 patients undergoing non-cardiac surgery. Seed-based whole-brain FC with 18 core regions located in the DMN was performed, and FC features that were statistically different between the DNR and non-DNR patients after false discovery correction were extracted. Afterward, based on the extracted FC features, machine-learning algorithms such as support vector machine, logistic regression, decision tree, and random forest were established to recognize DNR. The machine learning experiment procedure mainly included three following steps: feature standardization, parameter adjustment, and performance comparison. Finally, independent testing was conducted to validate the established prediction model. The algorithm performance was evaluated by a permutation test. Results We found significantly decreased DMN connectivity with the brain regions involved in visual processing in DNR patients than in non-DNR patients. The best result was obtained from the random forest algorithm based on the 20 decision trees (estimators). The random forest model achieved the accuracy, sensitivity, and specificity of 84.0, 63.1, and 89.5%, respectively. The area under the receiver operating characteristic curve of the classifier reached 86.4%. The feature that contributed the most to the random forest model was the FC between the left retrosplenial cortex/posterior cingulate cortex and left precuneus. Conclusion The decreased FC of DMN with regions involved in visual processing might be effective markers for the prediction of DNR and could provide new insights into the neural mechanisms of DNR. Clinical Trial Registration : Chinese Clinical Trial Registry, ChiCTR-DCD-15006096."
+    },
+    {
+      "paperId": "b00f0c9fa8ba858c33537631c5da8c4b10d2ed66",
+      "externalIds": {
+        "PubMedCentral": "11877654",
+        "DBLP": "journals/ni/ArtilesMS23",
+        "DOI": "10.1007/s12021-023-09639-1",
+        "CorpusId": 260898267,
+        "PubMed": "37581850"
+      },
+      "url": "https://www.semanticscholar.org/paper/b00f0c9fa8ba858c33537631c5da8c4b10d2ed66",
+      "title": "Confounding Effects on the Performance of Machine Learning Analysis of Static Functional Connectivity Computed from rs-fMRI Multi-site Data",
+      "venue": "Neuroinformatics",
+      "year": 2023,
+      "citationCount": 9,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11877654, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "102604219",
+          "name": "Oswaldo Artiles"
+        },
+        {
+          "authorId": "74989891",
+          "name": "Z. A. Masry"
+        },
+        {
+          "authorId": "2158909391",
+          "name": "Fahad Saeed"
+        }
+      ],
+      "abstract": "Resting-state functional magnetic resonance imaging (rs-fMRI) is a non-invasive imaging technique widely used in neuroscience to understand the functional connectivity of the human brain. While rs-fMRI multi-site data can help to understand the inner working of the brain, the data acquisition and processing of this data has many challenges. One of the challenges is the variability of the data associated with different acquisitions sites, and different MRI machines vendors. Other factors such as population heterogeneity among different sites, with variables such as age and gender of the subjects, must also be considered. Given that most of the machine-learning models are developed using these rs-fMRI multi-site data sets, the intrinsic confounding effects can adversely affect the generalizability and reliability of these computational methods, as well as the imposition of upper limits on the classification scores. This work aims to identify the phenotypic and imaging variables producing the confounding effects, as well as to control these effects. Our goal is to maximize the classification scores obtained from the machine learning analysis of the Autism Brain Imaging Data Exchange (ABIDE) rs-fMRI multi-site data. To achieve this goal, we propose novel methods of stratification to produce homogeneous sub-samples of the 17 ABIDE sites, as well as the generation of new features from the static functional connectivity values, using multiple linear regression models, ComBat harmonization models, and normalization methods. The main results obtained with our statistical models and methods are an accuracy of 76.4%, sensitivity of 82.9%, and specificity of 77.0%, which are 8.8%, 20.5%, and 7.5% above the baseline classification scores obtained from the machine learning analysis of the static functional connectivity computed from the ABIDE rs-fMRI multi-site data."
+    },
+    {
+      "paperId": "5218d36c8f0937b1270741cd89528af579b61656",
+      "externalIds": {
+        "DBLP": "journals/nca/RaksheKSMR24",
+        "DOI": "10.1007/s00521-024-09770-3",
+        "CorpusId": 269319229
+      },
+      "url": "https://www.semanticscholar.org/paper/5218d36c8f0937b1270741cd89528af579b61656",
+      "title": "Autism spectrum disorder diagnosis using fractal and non-fractal-based functional connectivity analysis and machine learning methods",
+      "venue": "Neural computing & applications (Print)",
+      "year": 2024,
+      "citationCount": 7,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s00521-024-09770-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s00521-024-09770-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2220875232",
+          "name": "Chetan Rakshe"
+        },
+        {
+          "authorId": "2220877271",
+          "name": "Suja Kunneth"
+        },
+        {
+          "authorId": "2297962356",
+          "name": "Soumya Sundaram"
+        },
+        {
+          "authorId": "145164244",
+          "name": "M. Murugappan"
+        },
+        {
+          "authorId": "2127050977",
+          "name": "Jac Fredo Agastinose Ronickom"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "dc66701b6b7ea4b346ad49c89eb82def185daef8",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2409-11377",
+        "ArXiv": "2409.11377",
+        "DOI": "10.48550/arXiv.2409.11377",
+        "CorpusId": 272694592
+      },
+      "url": "https://www.semanticscholar.org/paper/dc66701b6b7ea4b346ad49c89eb82def185daef8",
+      "title": "Machine Learning on Dynamic Functional Connectivity: Promise, Pitfalls, and Interpretations",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2409.11377, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2256319057",
+          "name": "Jiaqi Ding"
+        },
+        {
+          "authorId": "31552949",
+          "name": "Tingting Dan"
+        },
+        {
+          "authorId": "2237105594",
+          "name": "Ziquan Wei"
+        },
+        {
+          "authorId": "2256014118",
+          "name": "Hyuna Cho"
+        },
+        {
+          "authorId": "2320110118",
+          "name": "Paul J. Laurienti"
+        },
+        {
+          "authorId": "2255423991",
+          "name": "Won Hwa Kim"
+        },
+        {
+          "authorId": "2255506351",
+          "name": "Guorong Wu"
+        }
+      ],
+      "abstract": "An unprecedented amount of existing functional Magnetic Resonance Imaging (fMRI) data provides a new opportunity to understand the relationship between functional fluctuation and human cognition/behavior using a data-driven approach. To that end, tremendous efforts have been made in machine learning to predict cognitive states from evolving volumetric images of blood-oxygen-level-dependent (BOLD) signals. Due to the complex nature of brain function, however, the evaluation on learning performance and discoveries are not often consistent across current state-of-the-arts (SOTA). By capitalizing on large-scale existing neuroimaging data (34,887 data samples from six public databases), we seek to establish a well-founded empirical guideline for designing deep models for functional neuroimages by linking the methodology underpinning with knowledge from the neuroscience domain. Specifically, we put the spotlight on (1) What is the current SOTA performance in cognitive task recognition and disease diagnosis using fMRI? (2) What are the limitations of current deep models? and (3) What is the general guideline for selecting the suitable machine learning backbone for new neuroimaging applications? We have conducted a comprehensive evaluation and statistical analysis, in various settings, to answer the above outstanding questions."
+    },
+    {
+      "paperId": "f20273f5bae7b4d9d7949fc153575cd04095fce0",
+      "externalIds": {
+        "DOI": "10.1111/jsr.70209",
+        "CorpusId": 281502625,
+        "PubMed": "40987445"
+      },
+      "url": "https://www.semanticscholar.org/paper/f20273f5bae7b4d9d7949fc153575cd04095fce0",
+      "title": "Dynamic Functional Network Connectivity Patterns Distinguish Neurobiological Substrates of Narcolepsy Type 1 and Idiopathic Hypersomnia: Potential Biomarkers From Resting‐State fMRI",
+      "venue": "Journal of Sleep Research",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jsr.70209?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jsr.70209, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2301061693",
+          "name": "Mengmeng Wang"
+        },
+        {
+          "authorId": "2213719662",
+          "name": "Haodong Zhang"
+        },
+        {
+          "authorId": "2384399901",
+          "name": "Chongyang Fan"
+        },
+        {
+          "authorId": "2279900303",
+          "name": "Xiaosong Dong"
+        },
+        {
+          "authorId": "2349205624",
+          "name": "Han Fang"
+        },
+        {
+          "authorId": "2659045",
+          "name": "K. Spruyt"
+        },
+        {
+          "authorId": "10267458",
+          "name": "F. Xiao"
+        }
+      ],
+      "abstract": "This study aimed to explore dynamic functional network connectivity (dFNC) differences between narcolepsy type 1 (NT1), idiopathic hypersomnia (IH), and healthy controls (HCs), and evaluate the potential of dFNC as a neurobiological marker for differentiating these hypersomnolent disorders. We recruited 50 drug‐naive NT1 patients, 31 IH patients, and 50 HCs. Resting‐state fMRI data were acquired, and intrinsic connectivity networks (ICNs) were identified using group independent component analysis (ICA), yielding 10 networks (e.g., visual network [VIN], auditory network [AUN], sensorimotor network [SMN], default mode network [DMN]). dFNC was analysed via sliding‐window and k‐means clustering to identify recurring functional connectivity states, and temporal properties (fractional windows, mean dwell time [MDT]) were compared across groups. Machine learning models (support vector machine, random forest [RF], logistic regression) were constructed using state‐specific functional connectivity (FC) features to distinguish NT1 and IH. Five distinct FNC states were identified. State II (39% of windows, sparse connectivity with strengthened DMN/SMN/VIN coupling) was more prevalent in NT1 (47.68% ± 34.5%) than in IH (37.07% ± 28.73%) or HCs (31.32% ± 23.67%). Conversely, State I (33% of windows, sparse ICN connectivity) was less frequent in NT1 (13.24% ± 22.04%) versus IH (39.14% ± 35.92%) and HCs (49.28% ± 30.42%). NT1 also showed longer MDT in State II and shorter MDT in State I compared to IH and HCs (p < 0.05, ANOVA with post hoc tests FDR corrected). FC features in State I and II (notably AUN‐VIN and SMN‐VIN) effectively distinguished NT1 and IH, with the RF model achieving an AUC of 0.9 in State II. These findings reveal distinct dFNC patterns in NT1 and IH, reflecting divergent perturbations in sleep–wake regulatory circuits, particularly involving VIN, which may underpin their neurobiological heterogeneity. dFNC holds promise as a biomarker for differentiating these disorders, with VIN‐centered connectivity emerging as a key discriminative feature."
+    },
+    {
+      "paperId": "2b357b83d1f1a06332bec81af91ce104769d5df3",
+      "externalIds": {
+        "PubMedCentral": "11912182",
+        "DOI": "10.1002/hbm.70190",
+        "CorpusId": 277067188,
+        "PubMed": "40095417"
+      },
+      "url": "https://www.semanticscholar.org/paper/2b357b83d1f1a06332bec81af91ce104769d5df3",
+      "title": "A Framework for Comparison and Interpretation of Machine Learning Classifiers to Predict Autism on the ABIDE Dataset",
+      "venue": "Human Brain Mapping",
+      "year": 2025,
+      "citationCount": 18,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1002/hbm.70190",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11912182, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2317037021",
+          "name": "Yilan Dong"
+        },
+        {
+          "authorId": "2319434760",
+          "name": "D. Batalle"
+        },
+        {
+          "authorId": "2319433781",
+          "name": "M. Deprez"
+        }
+      ],
+      "abstract": "Autism is a neurodevelopmental condition affecting ~1% of the population. Recently, machine learning models have been trained to classify participants with autism using their neuroimaging features, though the performance of these models varies in the literature. Differences in experimental setup hamper the direct comparison of different machine‐learning approaches. In this paper, five of the most widely used and best‐performing machine learning models in the field were trained to classify participants with autism and typically developing (TD) participants, using functional connectivity matrices, structural volumetric measures, and phenotypic information from the Autism Brain Imaging Data Exchange (ABIDE) dataset. Their performance was compared under the same evaluation standard. The models implemented included: graph convolutional networks (GCN), edge‐variational graph convolutional networks (EV‐GCN), fully connected networks (FCN), autoencoder followed by a fully connected network (AE‐FCN) and support vector machine (SVM). Our results show that all models performed similarly, achieving a classification accuracy around 70%. Our results suggest that different inclusion criteria, data modalities, and evaluation pipelines rather than different machine learning models may explain variations in accuracy in the published literature. The highest accuracy in our framework was obtained when using ensemble models (p < 0.001), leading to an accuracy of 72.2% and AUC = 0.77 using GCN classifiers. However, an SVM classifier performed with an accuracy of 70.1% and AUC = 0.77, just marginally below GCN, and significant differences were not found when comparing different algorithms under the same testing conditions (p > 0.05). Furthermore, we also investigated the stability of features identified by the different machine learning models using the SmoothGrad interpretation method. The FCN model demonstrated the highest stability in selecting relevant features contributing to model decision making. The code is available at https://github.com/YilanDong19/Machine‐learning‐with‐ABIDE."
+    },
+    {
+      "paperId": "c26a9b48b2839cbd51ae22d5e3311e1791bf7044",
+      "externalIds": {
+        "DOI": "10.1016/j.jneumeth.2025.110406",
+        "CorpusId": 276421186,
+        "PubMed": "39978480"
+      },
+      "url": "https://www.semanticscholar.org/paper/c26a9b48b2839cbd51ae22d5e3311e1791bf7044",
+      "title": "Using effective connectivity-based predictive modeling to predict MDD scale scores from multisite rs-fMRI data.",
+      "venue": "Journal of Neuroscience Methods",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jneumeth.2025.110406?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jneumeth.2025.110406, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2301945916",
+          "name": "Peishan Dai"
+        },
+        {
+          "authorId": "2289957893",
+          "name": "Zhuang He"
+        },
+        {
+          "authorId": "2289834317",
+          "name": "Jialin Luo"
+        },
+        {
+          "authorId": "2346519998",
+          "name": "Kaineng Huang"
+        },
+        {
+          "authorId": "2347000995",
+          "name": "Ting Hu"
+        },
+        {
+          "authorId": "2324804707",
+          "name": "Qiongpu Chen"
+        },
+        {
+          "authorId": "2263449581",
+          "name": "Shenghui Liao"
+        },
+        {
+          "authorId": "2304230237",
+          "name": "Xiaoping Yi"
+        }
+      ],
+      "abstract": "BACKGROUND\nMajor depressive disorder (MDD) is a severe mental illness, and the Hamilton Depression Rating Scale (HAMD) is commonly used to quantify its severity. Our aim is to develop a predictive model for MDD symptoms using machine learning techniques based on effective connectivity (EC) from resting-state functional magnetic resonance imaging (rs-fMRI).\n\n\nNEW METHOD\nWe obtained large-scale rs-fMRI data and HAMD scores from the multi-site REST-meta-MDD dataset. Average time series were extracted using different atlases. Brain EC features were computed using Granger causality analysis based on symbolic path coefficients, and a machine learning model based on EC was constructed to predict HAMD scores. Finally, the most predictive features were identified and visualized.\n\n\nRESULTS\nExperimental results indicate that different brain atlases significantly impact predictive performance, with the Dosenbach atlas performing best. EC-based models outperformed functional connectivity, achieving the best predictive accuracy (r=0.81, p<0.001, Root Mean Squared Error=3.55). Among various machine learning methods, support vector regression demonstrated superior performance.\n\n\nCOMPARISON WITH EXISTING METHODS\nCurrent phenotype score prediction primarily relies on FC, which cannot indicate the direction of information flow within brain networks. Our method is based on EC, which contains more comprehensive brain network information and has been validated on large-scale multi-site data.\n\n\nCONCLUSIONS\nBrain network connectivity features effectively predict HAMD scores in MDD patients. The identified EC feature network may serve as a biomarker for predicting symptom severity. Our work may provide clinically significant insights for the early diagnosis of MDD, thereby facilitating the development of personalized diagnostic tools and therapeutic interventions."
+    },
+    {
+      "paperId": "775c243718feb32401237f8f2754f171edea52ea",
+      "externalIds": {
+        "DOI": "10.1101/2024.03.07.583858",
+        "CorpusId": 268384213
+      },
+      "url": "https://www.semanticscholar.org/paper/775c243718feb32401237f8f2754f171edea52ea",
+      "title": "Beyond functional connectivity: deep learning applied to resting-state fMRI time series in the prediction of 58 human traits in the HCP",
+      "venue": "bioRxiv",
+      "year": 2024,
+      "citationCount": 5,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2024/03/12/2024.03.07.583858.full.pdf",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2024.03.07.583858?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2024.03.07.583858, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145151932",
+          "name": "Bruno Hebling Vieira"
+        },
+        {
+          "authorId": "66034748",
+          "name": "Mikkel Schöttner"
+        },
+        {
+          "authorId": "2183622231",
+          "name": "V. Calhoun"
+        },
+        {
+          "authorId": "2260240115",
+          "name": "C.E.G. Salmon"
+        }
+      ],
+      "abstract": "Machine learning has made several inroads into the study of brain-behavior relations based on in vivo imaging. While the advent of deep neural networks was expected to further improve predictions, the current literature based on resting-state functional connectivity presents mixed results. We hypothesize that the representation of the data, i.e. in the form of functional connectivity, could restrict an advantage of deep learning techniques, namely that of learning complex representations directly from the data. Thus, we investigated if bypassing this feature extraction resulted in improved performance in the prediction of 58 widely studied behavioral traits from a large sample of Human Connectome Project subjects, using deep learning techniques. For this task, we adapted the InceptionTime architecture, which jointly predicts traits directly from regional time series through representation learning, and compared results with a strong kernel-based baseline. Results revealed that both models achieve comparable performance in most traits. Eleven significant differences in mean squared error were detected, however, with seven favoring the neural network approach, and this number increased when accounting for covariates. We additionally show that contrary to the expectation, the neural network approach was more robust to reductions in the training set size. On the other hand, it was more sensitive to reductions in the length of the time series at test time. Our results present a more nuanced view of the potential of deep learning for the prediction of behavior from neuroimaging, which allows learning features directly from the data."
+    },
+    {
+      "paperId": "32ccfdb4cae0f04af4265d1323b9327378093412",
+      "externalIds": {
+        "DBLP": "journals/sensors/VaroneBGBMIDNGM22",
+        "PubMedCentral": "8747462",
+        "DOI": "10.3390/s22010129",
+        "CorpusId": 245534920,
+        "PubMed": "35009675"
+      },
+      "url": "https://www.semanticscholar.org/paper/32ccfdb4cae0f04af4265d1323b9327378093412",
+      "title": "A Machine Learning Approach Involving Functional Connectivity Features to Classify Rest-EEG Psychogenic Non-Epileptic Seizures from Healthy Controls",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2021,
+      "citationCount": 36,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/22/1/129/pdf?version=1640836778",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8747462, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2084775252",
+          "name": "G. Varone"
+        },
+        {
+          "authorId": "3151219",
+          "name": "Wadii Boulila"
+        },
+        {
+          "authorId": "1988690601",
+          "name": "Michele Lo Giudice"
+        },
+        {
+          "authorId": "11042085",
+          "name": "Bilel Benjdira"
+        },
+        {
+          "authorId": "145967866",
+          "name": "N. Mammone"
+        },
+        {
+          "authorId": "8241409",
+          "name": "C. Ieracitano"
+        },
+        {
+          "authorId": "49485099",
+          "name": "K. Dashtipour"
+        },
+        {
+          "authorId": "2072301589",
+          "name": "S. Neri"
+        },
+        {
+          "authorId": "6624534",
+          "name": "S. Gasparini"
+        },
+        {
+          "authorId": "1717203",
+          "name": "F. Morabito"
+        },
+        {
+          "authorId": "145125161",
+          "name": "A. Hussain"
+        },
+        {
+          "authorId": "2675418",
+          "name": "U. Aguglia"
+        }
+      ],
+      "abstract": "Until now, clinicians are not able to evaluate the Psychogenic Non-Epileptic Seizures (PNES) from the rest-electroencephalography (EEG) readout. No EEG marker can help differentiate PNES cases from healthy subjects. In this paper, we have investigated the power spectrum density (PSD), in resting-state EEGs, to evaluate the abnormalities in PNES affected brains. Additionally, we have used functional connectivity tools, such as phase lag index (PLI), and graph-derived metrics to better observe the integration of distributed information of regular and synchronized multi-scale communication within and across inter-regional brain areas. We proved the utility of our method after enrolling a cohort study of 20 age- and gender-matched PNES and 19 healthy control (HC) subjects. In this work, three classification models, namely support vector machine (SVM), linear discriminant analysis (LDA), and Multilayer perceptron (MLP), have been employed to model the relationship between the functional connectivity features (rest-HC versus rest-PNES). The best performance for the discrimination of participants was obtained using the MLP classifier, reporting a precision of 85.73%, a recall of 86.57%, an F1-score of 78.98%, and, finally, an accuracy of 91.02%. In conclusion, our results hypothesized two main aspects. The first is an intrinsic organization of functional brain networks that reflects a dysfunctional level of integration across brain regions, which can provide new insights into the pathophysiological mechanisms of PNES. The second is that functional connectivity features and MLP could be a promising method to classify rest-EEG data of PNES form healthy controls subjects."
+    },
+    {
+      "paperId": "d99f76a34557c50e14a5daf9ab7df223f6c10f76",
+      "externalIds": {
+        "PubMedCentral": "11912181",
+        "DOI": "10.1002/hbm.70193",
+        "CorpusId": 277067240,
+        "PubMed": "40095731"
+      },
+      "url": "https://www.semanticscholar.org/paper/d99f76a34557c50e14a5daf9ab7df223f6c10f76",
+      "title": "Machine Learning‐Based Clustering of Layer‐Resolved fMRI Activation and Functional Connectivity Within the Primary Somatosensory Cortex in Nonhuman Primates",
+      "venue": "Human Brain Mapping",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.70193",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11912181, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1960247",
+          "name": "A. Mishra"
+        },
+        {
+          "authorId": "2276324113",
+          "name": "Feng Wang"
+        },
+        {
+          "authorId": "2252893336",
+          "name": "L. M. Chen"
+        },
+        {
+          "authorId": "2257621388",
+          "name": "John C. Gore"
+        }
+      ],
+      "abstract": "Delineating the functional organization of mesoscale cortical columnar structure is essential for understanding brain function. We have previously demonstrated a high spatial correspondence between BOLD fMRI and LFP responses to tactile stimuli in the primary somatosensory cortex area 3b of nonhuman primates. This study aims to explore how 2D spatial profiles of the functional column vary across cortical layers (defined by three cortical depths) in both tactile stimulation and resting states using fMRI. At 9.4 T, we acquired submillimeter‐resolution oblique fMRI data from cortical areas 3b and 1 of anesthetized squirrel monkeys and obtained fMRI signals from three cortical layers. In both areas 3b and 1, the tactile stimulus‐evoked fMRI activation foci were fitted with point spread functions (PSFs), from which shape parameters, including full width at half maximum (FWHM), were derived. Seed‐based resting‐state fMRI data analysis was then performed to measure the spatial profiles of resting‐state connectivity within and between areas 3b and 1. We found that the tactile‐evoked fMRI response and local resting‐state functional connectivity were elongated at the superficial layer, with the major axes oriented in lateral to medial (from digit 1 to digit 5) direction. This elongation was significantly reduced in the deeper (middle and bottom) layers. To assess the robustness of these spatial profiles in distinguishing cortical layers, shape parameters describing the spatial extents of activation and resting‐state connectivity profiles were used to classify the layers via self‐organizing maps (SOM). A minimal overall classification error (~13%) was achieved, effectively classifying the layers into two groups: the superficial layer exhibited distinct features from the two deeper layers in the rsfMRI data. Our results support distinct 2D spatial profiles for superficial versus deeper cortical layers and reveal similarities between stimulus‐evoked and resting‐state configurations."
+    },
+    {
+      "paperId": "1ca1e24801849750623db3866fc800ac9566a2d7",
+      "externalIds": {
+        "PubMedCentral": "12054257",
+        "DOI": "10.1186/s12916-025-04089-9",
+        "CorpusId": 278335568,
+        "PubMed": "40325400"
+      },
+      "url": "https://www.semanticscholar.org/paper/1ca1e24801849750623db3866fc800ac9566a2d7",
+      "title": "Molecular mechanisms explaining sex-specific functional connectivity changes in chronic insomnia disorder",
+      "venue": "BMC Medicine",
+      "year": 2025,
+      "citationCount": 9,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1186/s12916-025-04089-9",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12054257, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2212724803",
+          "name": "Liyong Yu"
+        },
+        {
+          "authorId": "31470399",
+          "name": "Zhifu Shen"
+        },
+        {
+          "authorId": "2316289562",
+          "name": "Wei Wei"
+        },
+        {
+          "authorId": "2212803487",
+          "name": "Zeyang Dou"
+        },
+        {
+          "authorId": "2258154842",
+          "name": "Yucai Luo"
+        },
+        {
+          "authorId": "2293549370",
+          "name": "Daijie Hu"
+        },
+        {
+          "authorId": "2230122164",
+          "name": "Wenting Lin"
+        },
+        {
+          "authorId": "2181457518",
+          "name": "Guangli Zhao"
+        },
+        {
+          "authorId": "2293163378",
+          "name": "Xiaojuan Hong"
+        },
+        {
+          "authorId": "2253820682",
+          "name": "Siyi Yu"
+        }
+      ],
+      "abstract": "This study investigates the hypothesis that chronic insomnia disorder (CID) is characterized by sex-specific changes in resting-state functional connectivity (rsFC), with certain molecular mechanisms potentially influencing CID's pathophysiology by altering rsFC in relevant networks. Utilizing a resting-state functional magnetic resonance imaging (fMRI) dataset of 395 participants, including 199 CID patients and 196 healthy controls, we examined sex-specific rsFC effects, particularly in the default mode network (DMN) and five insomnia-genetically vulnerable regions of interest (ROIs). By integrating gene expression data from the Allen Human Brain Atlas, we identified genes linked to these sex-specific rsFC alterations and conducted enrichment analysis to uncover underlying molecular mechanisms. Additionally, we simulated the impact of sex differences in rsFC with different sex compositions in our dataset and employed machine learning classifiers to distinguish CID from healthy controls based on sex-specific rsFC data. We identified both shared and sex-specific rsFC changes in the DMN and the five genetically vulnerable ROIs, with gene expression variations associated with these sex-specific connectivity differences. Enrichment analysis highlighted genes involved in synaptic signaling, ion channels, and immune function as potential contributors to CID pathophysiology through their influence on connectivity. Furthermore, our findings demonstrate that different sex compositions significantly affect study outcomes and higher diagnostic performance in sex-specific rsFC data than combined sex. This study uncovered both shared and sex-specific connectivity alterations in CID, providing molecular insights into its pathophysiology and suggesting considering sex differences in future fMRI-based diagnostic and treatment strategies."
+    },
+    {
+      "paperId": "3d898b89946aabbbca3df5bb5a93090af279433f",
+      "externalIds": {
+        "DOI": "10.1007/s11357-024-01128-w",
+        "CorpusId": 268523072,
+        "PubMed": "38499956"
+      },
+      "url": "https://www.semanticscholar.org/paper/3d898b89946aabbbca3df5bb5a93090af279433f",
+      "title": "Age-related changes in human brain functional connectivity using graph theory and machine learning techniques in resting-state fMRI data",
+      "venue": "GeroScience",
+      "year": 2024,
+      "citationCount": 20,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11336041/pdf/11357_2024_Article_1128.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11357-024-01128-w?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11357-024-01128-w, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292120166",
+          "name": "Sepideh Baghernezhad"
+        },
+        {
+          "authorId": "3091852",
+          "name": "M. Daliri"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "0f284f5bea8cd704a4d98c9aff5fdd18f4358cae",
+      "externalIds": {
+        "DOI": "10.1016/j.jneumeth.2025.110379",
+        "CorpusId": 275907361,
+        "PubMed": "39875079"
+      },
+      "url": "https://www.semanticscholar.org/paper/0f284f5bea8cd704a4d98c9aff5fdd18f4358cae",
+      "title": "Identifying Autism Spectrum Disorder Based on Machine Learning for Multi-site fMRI.",
+      "venue": "Journal of Neuroscience Methods",
+      "year": 2025,
+      "citationCount": 11,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jneumeth.2025.110379?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jneumeth.2025.110379, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2055047619",
+          "name": "Li Kang"
+        },
+        {
+          "authorId": "2342364113",
+          "name": "Mubin Chen"
+        },
+        {
+          "authorId": "2268387890",
+          "name": "Jianjun Huang"
+        },
+        {
+          "authorId": "2342307183",
+          "name": "Jinyang Xu"
+        }
+      ],
+      "abstract": "BACKGROUND\nAutism spectrum disorder (ASD) is a neurodevelopmental disorder characterized by repetitive stereotypical behavior and social impairment. Early diagnosis is essential for developing a treatment plan for autism. Although multi-site data can expand the dataset to facilitate the process of data analysis, data heterogeneity between sites and the large amount of data make data analysis difficult.\n\n\nMETHOD\nTo address these issues, this paper proposes a multi-site autism identification method based on machine learning technique. Firstly, the fMRI data from all sites are converted into a glass brain dataset and their features are extracted with LeNet5. Then, the extracted glass brain features are used to construct a partial correlation matrix at subject-level and the multi-site dataset are constructed by feature selection, which is finally classified using MLP. In order to alleviate the heterogeneity of the data and improve the accuracy of data classification, a new dataset partitioning method, Split-Merge-Split (SMS), is proposed in this paper to reduce the variability between the features extracted by the model in the training and test sets.\n\n\nRESULTS\nExtensive quantitative and qualitative evaluations demonstrate the proposed method enhanced the recognition accuracy on both single-site and multi-site dataset, which shows the effectiveness of this method. Specifically, in single-site classification, our method achieved its highest accuracy at the OHSU site, reaching an accuracy of 93%. In multi-site classification, our method attained an accuracy of 83.5%."
+    },
+    {
+      "paperId": "37a4f26df5e2c7a51729f1e8fc8f2ad88dfd35da",
+      "externalIds": {
+        "MAG": "2807683509",
+        "DBLP": "journals/neuroimage/CuiG18",
+        "DOI": "10.1016/j.neuroimage.2018.06.001",
+        "CorpusId": 46944000,
+        "PubMed": "29870817"
+      },
+      "url": "https://www.semanticscholar.org/paper/37a4f26df5e2c7a51729f1e8fc8f2ad88dfd35da",
+      "title": "The effect of machine learning regression algorithms and sample size on individualized behavioral prediction with functional connectivity features",
+      "venue": "NeuroImage",
+      "year": 2018,
+      "citationCount": 338,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "http://manuscript.elsevier.com/S1053811918305081/pdf/S1053811918305081.pdf",
+        "status": "BRONZE",
+        "license": "publisher-specific-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2018.06.001?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2018.06.001, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5748552",
+          "name": "Zaixu Cui"
+        },
+        {
+          "authorId": "40276414",
+          "name": "G. Gong"
+        }
+      ],
+      "abstract": "Abstract Individualized behavioral/cognitive prediction using machine learning (ML) regression approaches is becoming increasingly applied. The specific ML regression algorithm and sample size are two key factors that non‐trivially influence prediction accuracies. However, the effects of the ML regression algorithm and sample size on individualized behavioral/cognitive prediction performance have not been comprehensively assessed. To address this issue, the present study included six commonly used ML regression algorithms: ordinary least squares (OLS) regression, least absolute shrinkage and selection operator (LASSO) regression, ridge regression, elastic‐net regression, linear support vector regression (LSVR), and relevance vector regression (RVR), to perform specific behavioral/cognitive predictions based on different sample sizes. Specifically, the publicly available resting‐state functional MRI (rs‐fMRI) dataset from the Human Connectome Project (HCP) was used, and whole‐brain resting‐state functional connectivity (rsFC) or rsFC strength (rsFCS) were extracted as prediction features. Twenty‐five sample sizes (ranged from 20 to 700) were studied by sub‐sampling from the entire HCP cohort. The analyses showed that rsFC‐based LASSO regression performed remarkably worse than the other algorithms, and rsFCS‐based OLS regression performed markedly worse than the other algorithms. Regardless of the algorithm and feature type, both the prediction accuracy and its stability exponentially increased with increasing sample size. The specific patterns of the observed algorithm and sample size effects were well replicated in the prediction using re‐testing fMRI data, data processed by different imaging preprocessing schemes, and different behavioral/cognitive scores, thus indicating excellent robustness/generalization of the effects. The current findings provide critical insight into how the selected ML regression algorithm and sample size influence individualized predictions of behavior/cognition and offer important guidance for choosing the ML regression algorithm or sample size in relevant investigations. HighlightsIndividualized prediction is influenced by regression algorithm and sample size.LASSO regression performed worse than other algorithms using rsFC feature.OLS regression performed worse than other algorithms using rsFCS feature.Prediction accuracy and its stability exponentially increased with sample size.The observed algorithm and sample size effects are robust and generalizable."
+    },
+    {
+      "paperId": "7dda1a4ed50506ec5ced0aff3dcf0ab035e2e5ab",
+      "externalIds": {
+        "PubMedCentral": "6546854",
+        "MAG": "2947250309",
+        "DOI": "10.3389/fnhum.2019.00164",
+        "CorpusId": 167209785,
+        "PubMed": "31191274"
+      },
+      "url": "https://www.semanticscholar.org/paper/7dda1a4ed50506ec5ced0aff3dcf0ab035e2e5ab",
+      "title": "Machine Learning Based Classification of Resting-State fMRI Features Exemplified by Metabolic State (Hunger/Satiety)",
+      "venue": "Frontiers in Human Neuroscience",
+      "year": 2019,
+      "citationCount": 35,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnhum.2019.00164/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6546854, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1404315992",
+          "name": "A. Al-Zubaidi"
+        },
+        {
+          "authorId": "1759099",
+          "name": "A. Mertins"
+        },
+        {
+          "authorId": "2196449",
+          "name": "M. Heldmann"
+        },
+        {
+          "authorId": "1399111842",
+          "name": "K. Jauch-Chara"
+        },
+        {
+          "authorId": "46360447",
+          "name": "T. Münte"
+        }
+      ],
+      "abstract": "Objective Resting-state functional magnetic resonance imaging (rs-fMRI) has become an essential measure to investigate the human brain’s spontaneous activity and intrinsic functional connectivity. Several studies including our own previous work have shown that the brain controls the regulation of energy expenditure and food intake behavior. Accordingly, we expected different metabolic states to influence connectivity and activity patterns in neuronal networks. Methods The influence of hunger and satiety on rs-fMRI was investigated using three connectivity models (local connectivity, global connectivity and amplitude rs-fMRI signals). After extracting the connectivity parameters of 90 brain regions for each model, we used sequential forward floating selection strategy in conjunction with a linear support vector machine classifier and permutation tests to reveal which connectivity model differentiates best between metabolic states (hunger vs. satiety). Results We found that the amplitude of rs-fMRI signals is slightly more precise than local and global connectivity models in order to detect resting brain changes during hunger and satiety with a classification accuracy of 81%. Conclusion The amplitude of rs-fMRI signals serves as a suitable basis for machine learning based classification of brain activity. This opens up the possibility to apply this combination of algorithms to similar research questions, such as the characterization of brain states (e.g., sleep stages) or disease conditions (e.g., Alzheimer’s disease, minimal cognitive impairment)."
+    },
+    {
+      "paperId": "bfb2e1493399d44cac33a91ab0fb9c34df2ecf39",
+      "externalIds": {
+        "DOI": "10.1016/j.bbr.2022.114058",
+        "CorpusId": 251672630,
+        "PubMed": "35995263"
+      },
+      "url": "https://www.semanticscholar.org/paper/bfb2e1493399d44cac33a91ab0fb9c34df2ecf39",
+      "title": "The alterations of brain functional connectivity networks in major depressive disorder detected by machine learning through multisite rs-fMRI data.",
+      "venue": "Behavioural Brain Research",
+      "year": 2022,
+      "citationCount": 29,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.bbr.2022.114058?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.bbr.2022.114058, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2560282",
+          "name": "Peishan Dai"
+        },
+        {
+          "authorId": "2284353522",
+          "name": "Tong Xiong"
+        },
+        {
+          "authorId": "2108972690",
+          "name": "Xiaoyan Zhou"
+        },
+        {
+          "authorId": "2117610296",
+          "name": "Y. Ou"
+        },
+        {
+          "authorId": "98177814",
+          "name": "Y. Li"
+        },
+        {
+          "authorId": "2157632957",
+          "name": "Xiaoyan Kui"
+        },
+        {
+          "authorId": "2467654",
+          "name": "Zailiang Chen"
+        },
+        {
+          "authorId": "2064360741",
+          "name": "Beiji Zou"
+        },
+        {
+          "authorId": "7878373",
+          "name": "Weihui Li"
+        },
+        {
+          "authorId": "2109670352",
+          "name": "Zhongchao Huang"
+        },
+        {
+          "authorId": "88728753",
+          "name": "The Pgc Mdd Consortium"
+        }
+      ],
+      "abstract": "BACKGROUND\nThe current diagnosis of major depressive disorder (MDD) is mainly based on the patient's self-report and clinical symptoms. Machine learning methods are used to identify MDD using resting-state functional magnetic resonance imaging (rs-fMRI) data. However, due to large site differences in multisite rs-fMRI data and the difficulty of sample collection, most of the current machine learning studies use small sample sizes of rs-fMRI datasets to detect the alterations of functional connectivity (FC) or network attribute (NA), which may affect the reliability of the experimental results.\n\n\nMETHODS\nMultisite rs-fMRI data were used to increase the size of the sample, and then we extracted the functional connectivity (FC) and network attribute (NA) features from 1611 rs-fMRI data (832 patients with MDD (MDDs) and 779 healthy controls (HCs)). ComBat algorithm was used to harmonize the data variances caused by the multisite effect, and multivariate linear regression was used to remove age and sex covariates. Two-sample t-test and wrapper-based feature selection methods (support vector machine recursive feature elimination with cross-validation (SVM-RFECV) and LightGBM's \"feature_importances_\" function) were used to select important features. The Shapley additive explanations (SHAP) method was used to assign the contribution of features to the best classification effect model.\n\n\nRESULTS\nThe best result was obtained from the LinearSVM model trained with the 136 important features selected by SVMRFE-CV. In the nested five-fold cross-validation (consisting of an outer and an inner loop of five-fold cross-validation) of 1611 data, the model achieved the accuracy, sensitivity, and specificity of 68.90%, 71.75%, and 65.84%, respectively. The 136 important features were tested in a small dataset and obtained excellent classification results after balancing the ratio between patients with depression and HCs.\n\n\nCONCLUSIONS\nThe combined use of FC and NA features is effective for classifying MDDs and HCs. The important FC and NA features extracted from the large sample dataset have some generalization performance and may be used as a reference for the altered brain functional connectivity networks in MDD."
+    },
+    {
+      "paperId": "9323efc26510694944f3c60210752fbbf7b781a1",
+      "externalIds": {
+        "DBLP": "journals/cbm/ZamanzadehPBH24",
+        "DOI": "10.1016/j.compbiomed.2024.109240",
+        "CorpusId": 273547789,
+        "PubMed": "39442439"
+      },
+      "url": "https://www.semanticscholar.org/paper/9323efc26510694944f3c60210752fbbf7b781a1",
+      "title": "Exploring potential ADHD biomarkers through advanced machine learning: An examination of audiovisual integration networks",
+      "venue": "Comput. Biol. Medicine",
+      "year": 2024,
+      "citationCount": 6,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.compbiomed.2024.109240",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.compbiomed.2024.109240?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.compbiomed.2024.109240, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2249767840",
+          "name": "Mohammad Zamanzadeh"
+        },
+        {
+          "authorId": "2249766603",
+          "name": "Abbas Pourhedayat"
+        },
+        {
+          "authorId": "9390477",
+          "name": "F. Bakouie"
+        },
+        {
+          "authorId": "2238278092",
+          "name": "Fatemeh Hadaeghi"
+        }
+      ],
+      "abstract": "Attention deficit hyperactivity disorder (ADHD) is a neurodevelopmental condition marked by inattention and impulsivity, linked to disruptions in functional brain connectivity and structural alterations in large-scale brain networks. Although sensory pathway anomalies have been implicated in ADHD, the exploration of sensory integration regions remains limited. In this study, we adopted an exploratory approach to investigate the connectivity profile of auditory-visual integration networks (AVIN) in children with ADHD and neurotypical controls using the ADHD-200 rs-fMRI dataset. We expanded our exploration beyond network-based statistics (NBS) by extracting a diverse range of graph theoretical features. These features formed the basis for applying machine learning (ML) techniques to discern distinguishing patterns between the control group and children with ADHD. To address class imbalance and sample heterogeneity, we employed ensemble learning models, including balanced random forest (BRF), XGBoost, and EasyEnsemble classifier (EEC). Our findings revealed significant differences in AVIN between ADHD individuals and neurotypical controls, enabling automated diagnosis with moderate accuracy (74.30%). Notably, the EEC model demonstrated balanced sensitivity and specificity metrics, crucial for diagnostic applications, offering valuable insights for potential clinical use. These results contribute to understanding ADHD's neural underpinnings and highlight the diagnostic potential of AVIN measures. However, the exploratory nature of this study underscores the need for future research to confirm and refine these findings with specific hypotheses and rigorous statistical controls."
+    },
+    {
+      "paperId": "b6514114e62dbfe40ce77d65f0766d56b0e3aebc",
+      "externalIds": {
+        "PubMedCentral": "8087661",
+        "DOI": "10.1038/s41598-021-88845-w",
+        "CorpusId": 233471824,
+        "PubMed": "33931676"
+      },
+      "url": "https://www.semanticscholar.org/paper/b6514114e62dbfe40ce77d65f0766d56b0e3aebc",
+      "title": "Multitask fMRI and machine learning approach improve prediction of differential brain activity pattern in patients with insomnia disorder",
+      "venue": "Scientific Reports",
+      "year": 2021,
+      "citationCount": 29,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-021-88845-w.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8087661, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "6826377",
+          "name": "Mi Hyun Lee"
+        },
+        {
+          "authorId": "7473156",
+          "name": "Nambeom Kim"
+        },
+        {
+          "authorId": "152557802",
+          "name": "Jaeeun Yoo"
+        },
+        {
+          "authorId": "39172099",
+          "name": "H. Kim"
+        },
+        {
+          "authorId": "2307281",
+          "name": "Y. Son"
+        },
+        {
+          "authorId": "2116196239",
+          "name": "Young-Bo Kim"
+        },
+        {
+          "authorId": "9709465",
+          "name": "S. Oh"
+        },
+        {
+          "authorId": "2116005333",
+          "name": "Soohyun Kim"
+        },
+        {
+          "authorId": "2110615962",
+          "name": "Hayoung Lee"
+        },
+        {
+          "authorId": "3080534",
+          "name": "J. Jeon"
+        },
+        {
+          "authorId": "2109361443",
+          "name": "Y. Lee"
+        }
+      ],
+      "abstract": "We investigated the differential spatial covariance pattern of blood oxygen level-dependent (BOLD) responses to single-task and multitask functional magnetic resonance imaging (fMRI) between patients with psychophysiological insomnia (PI) and healthy controls (HCs), and evaluated features generated by principal component analysis (PCA) for discrimination of PI from HC, compared to features generated from BOLD responses to single-task fMRI using machine learning methods. In 19 patients with PI and 21 HCs, the mean beta value for each region of interest (ROIbval) was calculated with three contrast images (i.e., sleep-related picture, sleep-related sound, and Stroop stimuli). We performed discrimination analysis and compared with features generated from BOLD responses to single-task fMRI. We applied support vector machine analysis with a least absolute shrinkage and selection operator to evaluate five performance metrics: accuracy, recall, precision, specificity, and F2. Principal component features showed the best classification performance in all aspects of metrics compared to BOLD response to single-task fMRI. Bilateral inferior frontal gyrus (orbital), right calcarine cortex, right lingual gyrus, left inferior occipital gyrus, and left inferior temporal gyrus were identified as the most salient areas by feature selection. Our approach showed better performance in discriminating patients with PI from HCs, compared to single-task fMRI."
+    },
+    {
+      "paperId": "6f592a4147505abbc763571f2809fd2a71c58b13",
+      "externalIds": {
+        "DBLP": "conf/embc/HanifGCLAM23",
+        "DOI": "10.1109/EMBC40787.2023.10340587",
+        "CorpusId": 266195154,
+        "PubMed": "38083711"
+      },
+      "url": "https://www.semanticscholar.org/paper/6f592a4147505abbc763571f2809fd2a71c58b13",
+      "title": "Automatic Detection of Chronic Insomnia from Polysomnographic and Clinical Variables Using Machine Learning",
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "year": 2023,
+      "citationCount": 13,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/10339936/10339939/10340587.pdf",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EMBC40787.2023.10340587?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EMBC40787.2023.10340587, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50641218",
+          "name": "U. Hanif"
+        },
+        {
+          "authorId": "2273977620",
+          "name": "U. Gimenez"
+        },
+        {
+          "authorId": "2274001194",
+          "name": "Alyssa Cairns"
+        },
+        {
+          "authorId": "122935376",
+          "name": "D. Lewin"
+        },
+        {
+          "authorId": "2289452708",
+          "name": "Nisar Ashraf"
+        },
+        {
+          "authorId": "2267206059",
+          "name": "E. Mignot"
+        }
+      ],
+      "abstract": "Insomnia is defined subjectively by the presence and frequency of specific clinical symptoms and an association with distress. Although sleep study data has shown some weak associations, no objective test can currently be used to predict insomnia. The purpose of this study was to use previously reported and relatively crafted insomnia-related polysomnographic variables in machine learning models to classify groups with and without insomnia. Demographics, diagnosed depression, Epworth Sleepiness Scale (ESS), and features derived from electroencephalography (EEG), arousals, and sleep stages from 3,407 sleep clinic patients (2,617 without insomnia and 790 insomnia patients based on responses to a set of questions) were included in this analysis. The number of features were reduced using pair-wise correlation and recursive feature elimination. Predictive value of three machine learning models (logistic regression, neural network, and support vector machine) was investigated, and the best performance was achieved with logistic regression, yielding a balanced accuracy of 71%. The most important features in predicting insomnia were depression, age, sex, duration of longest arousal, ESS score, and EEG power in theta and sigma bands across all sleep stages. Results indicate potential of machine learning-based screening for insomnia using clinical variables and EEG."
+    },
+    {
+      "paperId": "a610c05f3dee70721914904fb13461a3fa459ea1",
+      "externalIds": {
+        "DOI": "10.1016/j.parkreldis.2021.08.003",
+        "CorpusId": 237149065,
+        "PubMed": "34399160"
+      },
+      "url": "https://www.semanticscholar.org/paper/a610c05f3dee70721914904fb13461a3fa459ea1",
+      "title": "Use of machine learning method on automatic classification of motor subtype of Parkinson's disease based on multilevel indices of rs-fMRI.",
+      "venue": "Parkinsonism & Related Disorders",
+      "year": 2021,
+      "citationCount": 50,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.parkreldis.2021.08.003?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.parkreldis.2021.08.003, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1401102105",
+          "name": "Huize Pang"
+        },
+        {
+          "authorId": "35135853",
+          "name": "Ziyang Yu"
+        },
+        {
+          "authorId": "49515014",
+          "name": "Hongmei Yu"
+        },
+        {
+          "authorId": "2410213691",
+          "name": "Jibin Cao"
+        },
+        {
+          "authorId": "2110439199",
+          "name": "Yingmei Li"
+        },
+        {
+          "authorId": "2006949272",
+          "name": "Miaoran Guo"
+        },
+        {
+          "authorId": "2064671947",
+          "name": "Chenghao Cao"
+        },
+        {
+          "authorId": "9276194",
+          "name": "G. Fan"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "4eea8fd863fdc8f517808ad45c797f99e7bd8531",
+      "externalIds": {
+        "DBLP": "journals/jiis/MousavianCTG21",
+        "DOI": "10.1007/s10844-021-00653-w",
+        "CorpusId": 238417358
+      },
+      "url": "https://www.semanticscholar.org/paper/4eea8fd863fdc8f517808ad45c797f99e7bd8531",
+      "title": "Depression detection from sMRI and rs-fMRI images using machine learning",
+      "venue": "Journal of Intelligence and Information Systems",
+      "year": 2021,
+      "citationCount": 43,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10844-021-00653-w?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10844-021-00653-w, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "52204938",
+          "name": "Marzieh Mousavian"
+        },
+        {
+          "authorId": "2155289850",
+          "name": "Jianhua Chen"
+        },
+        {
+          "authorId": "34058726",
+          "name": "Zach Traylor"
+        },
+        {
+          "authorId": "2158972",
+          "name": "S. Greening"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "140448dd0911a445a16eeb82b1b89b3a38a2e314",
+      "externalIds": {
+        "PubMedCentral": "12261925",
+        "DBLP": "journals/neuroimage/HuVKBIK25",
+        "DOI": "10.1016/j.neuroimage.2025.121300",
+        "CorpusId": 279423475,
+        "PubMed": "40554033"
+      },
+      "url": "https://www.semanticscholar.org/paper/140448dd0911a445a16eeb82b1b89b3a38a2e314",
+      "title": "Aphasia Severity Prediction Using a Multi-modal Machine Learning Approach",
+      "venue": "NeuroImage",
+      "year": 2025,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2025.121300",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12261925, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2352792198",
+          "name": "Xinyi Hu"
+        },
+        {
+          "authorId": "3730107",
+          "name": "M. Varkanitsa"
+        },
+        {
+          "authorId": "2359838318",
+          "name": "Emerson Kropp"
+        },
+        {
+          "authorId": "2254604107",
+          "name": "M. Betke"
+        },
+        {
+          "authorId": "2353869703",
+          "name": "Prakash Ishwar"
+        },
+        {
+          "authorId": "2242026443",
+          "name": "Swathi Kiran"
+        }
+      ],
+      "abstract": "The present study examined an integrated multiple neuroimaging modality (T1 structural, Diffusion Tensor Imaging (DTI), and resting-state FMRI (rsFMRI)) to predict aphasia severity using Western Aphasia Battery-Revised Aphasia Quotient (WAB-R AQ) in 76 individuals with post-stroke aphasia. We employed Support Vector Regression (SVR) and Random Forest (RF) models with supervised feature selection and a stacked feature prediction approach. The SVR model outperformed RF, achieving an average root mean square error (RMSE) of 16.38 ± 5.57, Pearson’s correlation coefficient (r) of 0.70 ± 0.13, and mean absolute error (MAE) of 12.67±3.27, compared to RF’s RMSE of 18.41±4.34, r of 0.66±0.15, and MAE of 14.64±3.04. Resting-state neural activity and structural integrity emerged as crucial predictors of aphasia severity, appearing in the top 20% of predictor combinations for both SVR and RF. Finally, the feature selection method revealed that functional connectivity in both hemispheres and between homologous language areas is critical for predicting language outcomes in patients with aphasia. The statistically significant difference in performance between the model using only single modality and the optimal multi-modal SVR/RF model (which included both resting-state connectivity and structural information) underscores that aphasia severity is influenced by factors beyond lesion location and volume. These findings suggest that integrating multiple neuroimaging modalities enhances the prediction of language outcomes in aphasia beyond lesion characteristics alone, offering insights that could inform personalized rehabilitation strategies."
+    },
+    {
+      "paperId": "867ef8618dfe4e61131049d47022150b29f018d1",
+      "externalIds": {
+        "PubMedCentral": "11949791",
+        "DOI": "10.3389/fpubh.2025.1494583",
+        "CorpusId": 277021186,
+        "PubMed": "40161021"
+      },
+      "url": "https://www.semanticscholar.org/paper/867ef8618dfe4e61131049d47022150b29f018d1",
+      "title": "Exploring predictors of insomnia severity in shift workers using machine learning model",
+      "venue": "Frontiers in Public Health",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3389/fpubh.2025.1494583",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11949791, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2287097311",
+          "name": "Hyewon Yeo"
+        },
+        {
+          "authorId": "146898783",
+          "name": "Hyeyeon Jang"
+        },
+        {
+          "authorId": "7473156",
+          "name": "Nambeom Kim"
+        },
+        {
+          "authorId": "23599750",
+          "name": "Sehyun Jeon"
+        },
+        {
+          "authorId": "2181714922",
+          "name": "Yunjee Hwang"
+        },
+        {
+          "authorId": "2106725533",
+          "name": "Chang-Ki Kang"
+        },
+        {
+          "authorId": "2144238878",
+          "name": "Seog Ju Kim"
+        }
+      ],
+      "abstract": "Introduction Insomnia in shift workers has distinctive features due to circadian rhythm disruption caused by reversed or unstable sleep-wake cycle work schedules. While previous studies have primarily focused on a limited number of predictors for insomnia severity in shift workers, there is a need to further explore key predictors, and develop a data-driven prediction model for insomnia in shift workers. This study aims to identify potential predictors of insomnia severity in shift workers using a machine learning (ML) approach and evaluate the accuracy of the resulting prediction model. Methods We assessed the predictors of insomnia severity in large samples of individuals (4,572 shift workers and 2,093 non-shift workers). The general linear model with the least absolute shrinkage and selection operator (LASSO) was used to determine an ML-based prediction model. Additional analyses were conducted to assess the interaction effects depending on the shift work schedule. Results The ML algorithms identified 41 key predictors from 281 variables: 1 demographic, 7 physical health, 13 job characteristics, and 20 mental health factors. Compared to the non-shift workers, the shift workers showed a stronger association between insomnia severity and five predicting variables: passiveness at work, authoritarian work atmosphere, easiness to wake up, family and interpersonal stress, and medication. The prediction model demonstrated good performance with high accuracy and specificity overall despite a limited F1 score (classification effectiveness) and recall (sensitivity). Specifically, a prediction model for shift workers showed better balance in F1 scores and recall compared to that for non-shift workers. Discussion This ML algorithm provides an effective method for identifying key factors that predict insomnia severity in shift workers. Our findings align with the traditional insomnia model while also reflecting the distinctive features of shift work such as workplace conditions. Although the potential for immediate clinical application is limited, this study can serve as guidance for future research in improving a prediction model for shift workers. Constructing comprehensive ML-based prediction models that include our key predictors could be a crucial approach for clinical purposes."
+    },
+    {
+      "paperId": "7a84424b6f1553e4219054892c9a7ddb62819b9d",
+      "externalIds": {
+        "DOI": "10.1177/10870547251315230",
+        "CorpusId": 276247266,
+        "PubMed": "39927595"
+      },
+      "url": "https://www.semanticscholar.org/paper/7a84424b6f1553e4219054892c9a7ddb62819b9d",
+      "title": "Differentiating Functional Connectivity Patterns in ADHD and Autism Among the Young People: A Machine Learning Solution",
+      "venue": "Journal of Attention Disorders",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://biblio.ugent.be/publication/01KTTTPJGHQ1RWWG8DTJR3RN3S",
+        "status": "GREEN",
+        "license": "other-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/10870547251315230?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/10870547251315230, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2294338308",
+          "name": "Bernis Sütçübaşı"
+        },
+        {
+          "authorId": "40092313",
+          "name": "Tuğçe Ballı"
+        },
+        {
+          "authorId": "2243944610",
+          "name": "Herbert Roeyers"
+        },
+        {
+          "authorId": "2176034",
+          "name": "Jan R. Wiersema"
+        },
+        {
+          "authorId": "2344723207",
+          "name": "Sami Çamkerten"
+        },
+        {
+          "authorId": "2075683357",
+          "name": "O. Öztürk"
+        },
+        {
+          "authorId": "33999238",
+          "name": "B. Metin"
+        },
+        {
+          "authorId": "2241766897",
+          "name": "E. Sonuga-Barke"
+        }
+      ],
+      "abstract": "Objective: ADHD and autism are complex and frequently co-occurring neurodevelopmental conditions with shared etiological and pathophysiological elements. In this paper, we attempt to differentiate these conditions among the young people in terms of intrinsic patterns of brain connectivity revealed during resting state using machine learning approaches. We had two key objectives: (a) to determine the extent to which ADHD and autism could be effectively distinguished via machine learning from one another on this basis and (b) to identify the brain networks differentially implicated in the two conditions. Method: Data from two publicly available resting-state functional magnetic resonance imaging (fMRI) resources—Autism Brain Imaging Data Exchange (ABIDE) and the ADHD-200 Consortium—were analyzed. A total of 330 participants (65 females and 265 males; mean age = 11.6 years), comprising equal subgroups of 110 participants each for ADHD, autism, and healthy controls (HC), were selected from the data sets ensuring data quality and the exclusion of comorbidities. We identified region-to-region connectivity values, which were subsequently employed as inputs to the linear discriminant analysis algorithm. Results: Machine learning models provided strong differentiation between connectivity patterns in participants with ADHD and autism—with the highest accuracy of 85%. Predominantly frontoparietal network alterations in connectivity discriminate ADHD individuals from autism and neurotypical group. Networks contributing to discrimination of autistic individuals from neurotypical group were more heterogeneous. These included language, salience, and frontoparietal networks. Conclusion: These results contribute to our understanding of the distinct neural signatures underlying ADHD and autism in terms of intrinsic patterns of brain connectivity. The high level of discriminability between ADHD and autism, highlights the potential role of brain based metrics in supporting differential diagnostics."
+    },
+    {
+      "paperId": "20e753345d5c3edd275db314e9bdae682fac2078",
+      "externalIds": {
+        "DOI": "10.1145/3733155.3734916",
+        "CorpusId": 282396715
+      },
+      "url": "https://www.semanticscholar.org/paper/20e753345d5c3edd275db314e9bdae682fac2078",
+      "title": "Classification of mild cognitive impairment using machine learning with dynamic functional connectivity from resting-state functional MRI",
+      "venue": "",
+      "year": 2025,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3733155.3734916?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3733155.3734916, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2387942367",
+          "name": "R. Minami"
+        },
+        {
+          "authorId": "2191380122",
+          "name": "Ryo Hatano"
+        },
+        {
+          "authorId": "2387936718",
+          "name": "Hiroyuki Nishiyama"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "735c485fec7c6ec6ec15af10c051682e561c8579",
+      "externalIds": {
+        "DBLP": "journals/brain/LiCCMHBG25",
+        "DOI": "10.1177/21580014251376722",
+        "CorpusId": 281311968,
+        "PubMed": "40948026"
+      },
+      "url": "https://www.semanticscholar.org/paper/735c485fec7c6ec6ec15af10c051682e561c8579",
+      "title": "Salience Network Connectivity Predicts Response to Repetitive Transcranial Magnetic Stimulation in Smoking Cessation: A Preliminary Machine Learning Study",
+      "venue": "Brain Connectivity",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13349312/",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/21580014251376722?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/21580014251376722, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2269814926",
+          "name": "Xingbao Li"
+        },
+        {
+          "authorId": "25571569",
+          "name": "K. Caulfield"
+        },
+        {
+          "authorId": "2310814950",
+          "name": "Andrew A. Chen"
+        },
+        {
+          "authorId": "2214047354",
+          "name": "Christopher S McMahan"
+        },
+        {
+          "authorId": "3728487",
+          "name": "K. Hartwell"
+        },
+        {
+          "authorId": "2252759538",
+          "name": "Kathleen T. Brady"
+        },
+        {
+          "authorId": "2268082858",
+          "name": "Mark S. George"
+        }
+      ],
+      "abstract": "Background: Combining functional magnetic resonance imaging (fMRI) and machine learning (ML) can be used to identify therapeutic targets and evaluate the effect of repetitive transcranial magnetic stimulation (rTMS) in neural networks in tobacco use disorder. We investigated whether large-scale network connectivity can predict the rTMS effect on smoking cessation. Methods: Smoking cue exposure task-fMRI (T-fMRI) and resting-state fMRI (Rs-fMRI) scans were acquired before and after the 10 sessions of active or sham rTMS (10 Hz, 3000 pulses per session) over the left dorsal lateral prefrontal cortex in 42 treatment-seeking smokers. Five large-scale networks (default model network, central executive network, dorsal attention network, salience network [SN], and reward network) were compared before and after 10 sessions of rTMS, as well as between active and sham rTMS conditions. We performed neural network and regression analysis on the average connectivity of large-scale networks and the effectiveness of rTMS induced by rTMS. Results: Regression analyses indicated higher salience connectivity in T-fMRI and lower reward connectivity in Rs-fMRI, predicting a better outcome of TMS treatment for smoking cessation (p < 0.01, Bonferroni corrected). Neural Network analyses suggested that SN was the most important predictor of rTMS effectiveness in both T-fMRI (0.33 of feature importance) and Rs-fMRI (0.37 feature importance). Conclusions: Both T-fMRI and Rs-fMRI connectivity in SN predict a better outcome of TMS treatment for smoking cessation, but in opposite directions. The work shows that ML models can be used to target TMS treatment. Given the small sample size, all ML findings should be replicated in a larger cohort to ensure their validity. Impact Statement This study highlights the potential of combining functional MRI (fMRI) and machine learning (ML) to enhance repetitive transcranial magnetic stimulation (rTMS) interventions for tobacco use disorder. By identifying key neural network connectivity patterns predictive of smoking cessation outcomes, our findings contribute to the personalization and optimization of rTMS treatment. The study demonstrates that connectivity in the salience network, as measured by cue-craving-based and resting-state fMRI, predicts treatment response induced by rTMS. These insights underscore the value of large-scale network analyses in refining neuromodulatory interventions, thereby paving the way for more effective and individualized approaches to addiction treatment."
+    }
+  ]
+}

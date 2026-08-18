@@ -1,0 +1,57 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "40068581"
+    ],
+    "translationset": [
+      {
+        "from": "Sleepiness",
+        "to": "\"sleepiness\"[MeSH Terms] OR \"sleepiness\"[All Fields] OR \"sleepy\"[All Fields]"
+      },
+      {
+        "from": "scales",
+        "to": "\"scale\"[All Fields] OR \"scale's\"[All Fields] OR \"scaled\"[All Fields] OR \"scales\"[All Fields] OR \"scaling\"[All Fields] OR \"scalings\"[All Fields]"
+      },
+      {
+        "from": "predictors",
+        "to": "\"predictor\"[All Fields] OR \"predictors\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "severity",
+        "to": "\"sever\"[All Fields] OR \"severe\"[All Fields] OR \"severed\"[All Fields] OR \"severely\"[All Fields] OR \"severer\"[All Fields] OR \"severes\"[All Fields] OR \"severing\"[All Fields] OR \"severities\"[All Fields] OR \"severity\"[All Fields] OR \"severs\"[All Fields]"
+      },
+      {
+        "from": "ISI):",
+        "to": "\"ISI\"[Journal:__jid101647733] OR \"isi\"[All Fields]"
+      },
+      {
+        "from": "current",
+        "to": "\"current\"[All Fields] OR \"current's\"[All Fields] OR \"currently\"[All Fields] OR \"currents\"[All Fields]"
+      },
+      {
+        "from": "evidence",
+        "to": "\"evidence\"[All Fields] OR \"evidences\"[All Fields] OR \"evident\"[All Fields] OR \"evidently\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleepiness\"[MeSH Terms] OR \"sleepiness\"[All Fields] OR \"sleepy\"[All Fields]) AND (\"scale\"[All Fields] OR \"scale s\"[All Fields] OR \"scaled\"[All Fields] OR \"scales\"[All Fields] OR \"scaling\"[All Fields] OR \"scalings\"[All Fields]) AND (\"predictor\"[All Fields] OR \"predictors\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"sever\"[All Fields] OR \"severe\"[All Fields] OR \"severed\"[All Fields] OR \"severely\"[All Fields] OR \"severer\"[All Fields] OR \"severes\"[All Fields] OR \"severing\"[All Fields] OR \"severities\"[All Fields] OR \"severity\"[All Fields] OR \"severs\"[All Fields]) AND (\"isi\"[Journal] OR \"isi\"[All Fields]) AND (\"current\"[All Fields] OR \"current s\"[All Fields] OR \"currently\"[All Fields] OR \"currents\"[All Fields]) AND (\"evidence\"[All Fields] OR \"evidences\"[All Fields] OR \"evident\"[All Fields] OR \"evidently\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "as",
+        "of"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

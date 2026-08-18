@@ -1,0 +1,105 @@
+{
+  "status": "requires_llm_review",
+  "candidate_mappings": [
+    {
+      "variable": "thalamus_DMN_FC",
+      "role": "predictor",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "thalamus_DMN_FC",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    },
+    {
+      "variable": "thalamus_salience_FC",
+      "role": "predictor",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "thalamus_salience_FC",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    },
+    {
+      "variable": "thalamus_frontoparietal_FC",
+      "role": "predictor",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "thalamus_frontoparietal_FC",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    },
+    {
+      "variable": "thalamus_coord_y",
+      "role": "predictor",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "thalamus_coord_y",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    },
+    {
+      "variable": "ISI",
+      "role": "outcome",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/scales/pre_experiment_features/scale_features.csv",
+      "source_column": "ISI",
+      "modality": "scales",
+      "approved": true,
+      "n_available": 51
+    },
+    {
+      "variable": "mean_FD",
+      "role": "covariate",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "mean_FD",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    },
+    {
+      "variable": "mean_DVARS",
+      "role": "covariate",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "mean_DVARS",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    },
+    {
+      "variable": "percent_high_motion",
+      "role": "covariate",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "percent_high_motion",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    },
+    {
+      "variable": "max_FD",
+      "role": "covariate",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "max_FD",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    },
+    {
+      "variable": "global_signal_psd_power_mean",
+      "role": "negative_control",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "global_signal_psd_power_mean",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    },
+    {
+      "variable": "global_signal_psd_power_max",
+      "role": "negative_control",
+      "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+      "source_column": "global_signal_psd_power_max",
+      "modality": "fMRI",
+      "approved": true,
+      "n_available": 93
+    }
+  ],
+  "reason": "Experiment LLM is disabled; mappings are populated from data profile but not scientifically adjudicated."
+}

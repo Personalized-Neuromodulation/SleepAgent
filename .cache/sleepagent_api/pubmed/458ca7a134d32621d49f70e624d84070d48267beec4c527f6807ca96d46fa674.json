@@ -1,0 +1,40 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "fALFF",
+        "to": "\"falff\"[All Fields] OR \"falffs\"[All Fields]"
+      },
+      {
+        "from": "effects",
+        "to": "\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]"
+      },
+      {
+        "from": "REM sleep",
+        "to": "\"sleep, rem\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"rem\"[All Fields]) OR \"rem sleep\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields])"
+      },
+      {
+        "from": "stages",
+        "to": "\"stage\"[All Fields] OR \"staged\"[All Fields] OR \"stages\"[All Fields] OR \"staging\"[All Fields] OR \"stagings\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"time-frequency\"[All Fields] AND (\"falff\"[All Fields] OR \"falffs\"[All Fields]) AND (\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]) AND (\"sleep, rem\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"rem\"[All Fields]) OR \"rem sleep\"[All Fields] OR (\"rem\"[All Fields] AND \"sleep\"[All Fields])) AND (\"stage\"[All Fields] OR \"staged\"[All Fields] OR \"stages\"[All Fields] OR \"staging\"[All Fields] OR \"stagings\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "on"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

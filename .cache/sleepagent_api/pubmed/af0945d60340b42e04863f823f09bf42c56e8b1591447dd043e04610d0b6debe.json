@@ -1,0 +1,45 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Motion",
+        "to": "\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion's\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]"
+      },
+      {
+        "from": "correction",
+        "to": "\"correct\"[All Fields] OR \"correctability\"[All Fields] OR \"correctable\"[All Fields] OR \"corrected\"[All Fields] OR \"correctible\"[All Fields] OR \"correcting\"[All Fields] OR \"correction\"[All Fields] OR \"corrections\"[All Fields] OR \"corrective\"[All Fields] OR \"correctives\"[All Fields] OR \"correctness\"[All Fields] OR \"corrects\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "research",
+        "to": "\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research's\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher's\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"motion\"[MeSH Terms] OR \"motion\"[All Fields] OR \"motions\"[All Fields] OR \"motion s\"[All Fields] OR \"motional\"[All Fields] OR \"motionally\"[All Fields]) AND (\"correct\"[All Fields] OR \"correctability\"[All Fields] OR \"correctable\"[All Fields] OR \"corrected\"[All Fields] OR \"correctible\"[All Fields] OR \"correcting\"[All Fields] OR \"correction\"[All Fields] OR \"corrections\"[All Fields] OR \"corrective\"[All Fields] OR \"correctives\"[All Fields] OR \"correctness\"[All Fields] OR \"corrects\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research s\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher s\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in",
+        "for"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

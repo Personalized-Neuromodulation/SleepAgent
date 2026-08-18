@@ -1,0 +1,41 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Role",
+        "to": "\"role\"[MeSH Terms] OR \"role\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "disruption:",
+        "to": "\"disrupt\"[All Fields] OR \"disrupted\"[All Fields] OR \"disrupter\"[All Fields] OR \"disrupters\"[All Fields] OR \"disrupting\"[All Fields] OR \"disruption\"[All Fields] OR \"disruptions\"[All Fields] OR \"disruptive\"[All Fields] OR \"disruptiveness\"[All Fields] OR \"disrupts\"[All Fields]"
+      },
+      {
+        "from": "literature review",
+        "to": "\"review\"[Publication Type] OR \"review literature as topic\"[MeSH Terms] OR \"literature review\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"role\"[MeSH Terms] OR \"role\"[All Fields]) AND \"thalamus-DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"disrupt\"[All Fields] OR \"disrupted\"[All Fields] OR \"disrupter\"[All Fields] OR \"disrupters\"[All Fields] OR \"disrupting\"[All Fields] OR \"disruption\"[All Fields] OR \"disruptions\"[All Fields] OR \"disruptive\"[All Fields] OR \"disruptiveness\"[All Fields] OR \"disrupts\"[All Fields]) AND (\"review\"[Publication Type] OR \"review literature as topic\"[MeSH Terms] OR \"literature review\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

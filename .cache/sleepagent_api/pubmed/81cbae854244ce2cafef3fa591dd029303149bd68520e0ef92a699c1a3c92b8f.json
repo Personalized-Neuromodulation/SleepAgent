@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "multichannel",
+        "to": "\"multichannel\"[All Fields] OR \"multichannels\"[All Fields]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "REM",
+        "to": "\"Rangel Ecol Manag\"[Journal:__jid101737744] OR \"rem\"[All Fields]"
+      },
+      {
+        "from": "latency",
+        "to": "\"latencies\"[All Fields] OR \"latency\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"multichannel\"[All Fields] OR \"multichannels\"[All Fields]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]) AND \"FC\"[All Fields] AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"rangel ecol manag\"[Journal] OR \"rem\"[All Fields]) AND (\"latencies\"[All Fields] OR \"latency\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

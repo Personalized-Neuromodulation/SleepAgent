@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "5",
+    "retmax": "5",
+    "retstart": "0",
+    "idlist": [
+      "37745863",
+      "32090418",
+      "31170459",
+      "27708567",
+      "8306920"
+    ],
+    "translationset": [
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "integration",
+        "to": "\"integrability\"[All Fields] OR \"integrable\"[All Fields] OR \"integral\"[All Fields] OR \"integrally\"[All Fields] OR \"integrals\"[All Fields] OR \"integrant\"[All Fields] OR \"integrants\"[All Fields] OR \"integrate\"[All Fields] OR \"integrated\"[All Fields] OR \"integrates\"[All Fields] OR \"integrating\"[All Fields] OR \"integration\"[All Fields] OR \"integrational\"[All Fields] OR \"integrations\"[All Fields] OR \"integrative\"[All Fields] OR \"integratively\"[All Fields] OR \"integrator\"[All Fields] OR \"integrators\"[All Fields]"
+      },
+      {
+        "from": "density",
+        "to": "\"densities\"[All Fields] OR \"density\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"integrability\"[All Fields] OR \"integrable\"[All Fields] OR \"integral\"[All Fields] OR \"integrally\"[All Fields] OR \"integrals\"[All Fields] OR \"integrant\"[All Fields] OR \"integrants\"[All Fields] OR \"integrate\"[All Fields] OR \"integrated\"[All Fields] OR \"integrates\"[All Fields] OR \"integrating\"[All Fields] OR \"integration\"[All Fields] OR \"integrational\"[All Fields] OR \"integrations\"[All Fields] OR \"integrative\"[All Fields] OR \"integratively\"[All Fields] OR \"integrator\"[All Fields] OR \"integrators\"[All Fields]) AND \"slow-wave\"[All Fields] AND (\"densities\"[All Fields] OR \"density\"[All Fields])"
+  }
+}

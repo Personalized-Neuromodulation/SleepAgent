@@ -1,0 +1,62 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "13",
+    "retmax": "13",
+    "retstart": "0",
+    "idlist": [
+      "41756006",
+      "41662982",
+      "41347924",
+      "39825157",
+      "39236464",
+      "38000184",
+      "37950486",
+      "35863180",
+      "34038462",
+      "33597854",
+      "34745571",
+      "33048406",
+      "20682849"
+    ],
+    "translationset": [
+      {
+        "from": "thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "relationship",
+        "to": "\"relationship\"[All Fields] OR \"relationships\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "research",
+        "to": "\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research's\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher's\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"relationship\"[All Fields] OR \"relationships\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research s\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher s\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields])",
+    "errorlist": {
+      "phrasesnotfound": [
+        "GABA-salience"
+      ],
+      "fieldsnotfound": []
+    },
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

@@ -6,6 +6,7 @@ from typing import Any
 
 from sleep_ai_scientist.common.io import read_json, read_yaml
 from sleep_ai_scientist.common.utils import stable_id
+from sleep_ai_scientist.experiment.design_constraints import plan_signature
 from sleep_ai_scientist.schemas.data_profile import DataProfile, FeatureProfile, VariableMappingRecord
 from sleep_ai_scientist.schemas.experiment import ExperimentPlan, ExperimentVariable, ExperimentVariableRole
 from sleep_ai_scientist.schemas.hypothesis import Hypothesis
@@ -63,6 +64,7 @@ def build_experiment_plan_from_hypothesis(
     variable_mappings: list[VariableMappingRecord] | None = None,
     max_predictors: int = 4,
     max_outcomes: int = 2,
+    design_constraints: dict[str, Any] | None = None,
 ) -> ExperimentPlan:
     feature_by_name = {feature.feature_name: feature for feature in profile.features}
     approved_variables = approved_variables or {feature.feature_name for feature in profile.features if feature.approved}
@@ -70,10 +72,30 @@ def build_experiment_plan_from_hypothesis(
     text = _hypothesis_text(hypothesis)
     explicit = [str(item) for item in hypothesis.metadata.get("measurable_variables", []) if str(item)]
 
+    design_constraints = design_constraints or {}
     outcomes = _select_outcomes(profile, text, max_outcomes=max_outcomes)
-    predictors = _select_predictors(profile, text, explicit, mapping_candidates, outcomes, max_predictors=max_predictors)
+    predictors = _select_predictors(
+        profile,
+        text,
+        explicit,
+        mapping_candidates,
+        outcomes,
+        max_predictors=max_predictors,
+        design_constraints=design_constraints,
+    )
     covariates = _select_covariates(profile, predictors, outcomes)
     negative_controls = _select_negative_controls(profile, predictors, outcomes, covariates)
+    predictors = _avoid_repeated_signature(
+        profile,
+        text,
+        explicit,
+        mapping_candidates,
+        predictors,
+        outcomes,
+        covariates,
+        max_predictors=max_predictors,
+        design_constraints=design_constraints,
+    )
 
     selected = [
         *[(name, ExperimentVariableRole.predictor) for name in predictors],
@@ -122,6 +144,11 @@ def build_experiment_plan_from_hypothesis(
             "hypothesis_rating": hypothesis.elo_rating,
             "hypothesis_data_testability": hypothesis.metadata.get("data_testability", {}),
             "requested_modalities": sorted({feature.modality for feature in variables if feature.modality}),
+            "design_constraints": {
+                "avoid_signatures": list(design_constraints.get("avoid_signatures", [])),
+                "negative_control_failed_predictors": list(design_constraints.get("negative_control_failed_predictors", [])),
+                "recommended_design_shifts": list(design_constraints.get("recommended_design_shifts", [])),
+            },
         },
     )
 
@@ -154,9 +181,11 @@ def _select_predictors(
     outcomes: list[str],
     *,
     max_predictors: int,
+    design_constraints: dict[str, Any] | None = None,
 ) -> list[str]:
     scored: list[tuple[float, str]] = []
     explicit_set = set(explicit)
+    negative_failed = set((design_constraints or {}).get("negative_control_failed_predictors", []))
     for feature in profile.features:
         if feature.feature_name in outcomes or feature.role == "outcome":
             continue
@@ -173,11 +202,54 @@ def _select_predictors(
             score += 0.5
         if feature.n_available:
             score += min(float(feature.n_available), 100.0) / 1000.0
+        if feature.feature_name in negative_failed:
+            score -= 4.0
         if score > 0:
             scored.append((score, feature.feature_name))
     if not scored:
         scored = [(1.0, feature.feature_name) for feature in profile.features if feature.role == "feature" and feature.feature_name not in outcomes]
     return _unique([name for _, name in sorted(scored, reverse=True)])[:max_predictors]
+
+
+def _avoid_repeated_signature(
+    profile: DataProfile,
+    text: str,
+    explicit: list[str],
+    mapping_candidates: set[str],
+    predictors: list[str],
+    outcomes: list[str],
+    covariates: list[str],
+    *,
+    max_predictors: int,
+    design_constraints: dict[str, Any],
+) -> list[str]:
+    avoid = set(str(item) for item in design_constraints.get("avoid_signatures", []))
+    if not avoid:
+        return predictors
+    candidate_plan = {"predictors": predictors, "outcomes": outcomes, "covariates": covariates}
+    if plan_signature(candidate_plan) not in avoid:
+        return predictors
+    alternatives = _select_predictors(
+        profile,
+        text,
+        explicit,
+        mapping_candidates,
+        outcomes,
+        max_predictors=max(max_predictors + 4, len(predictors) + 1),
+        design_constraints={**design_constraints, "negative_control_failed_predictors": []},
+    )
+    for old in predictors:
+        for replacement in alternatives:
+            if replacement in predictors:
+                continue
+            trial = [replacement if item == old else item for item in predictors]
+            if plan_signature({"predictors": trial[:max_predictors], "outcomes": outcomes, "covariates": covariates}) not in avoid:
+                return trial[:max_predictors]
+    if len(predictors) > 1:
+        for reduced in (predictors[:-1], predictors[1:]):
+            if plan_signature({"predictors": reduced, "outcomes": outcomes, "covariates": covariates}) not in avoid:
+                return reduced
+    return predictors
 
 
 def _select_outcomes(profile: DataProfile, text: str, *, max_outcomes: int) -> list[str]:

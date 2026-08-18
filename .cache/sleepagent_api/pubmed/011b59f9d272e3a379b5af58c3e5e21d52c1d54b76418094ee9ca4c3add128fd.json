@@ -1,0 +1,49 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Role",
+        "to": "\"role\"[MeSH Terms] OR \"role\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "efficiency",
+        "to": "\"efficiences\"[All Fields] OR \"efficiency\"[MeSH Terms] OR \"efficiency\"[All Fields] OR \"efficiencies\"[All Fields] OR \"efficient\"[All Fields] OR \"efficiently\"[All Fields] OR \"efficients\"[All Fields]"
+      },
+      {
+        "from": "deficits:",
+        "to": "\"deficit\"[All Fields] OR \"deficits\"[All Fields]"
+      },
+      {
+        "from": "Neuroimaging",
+        "to": "\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]"
+      },
+      {
+        "from": "evidence",
+        "to": "\"evidence\"[All Fields] OR \"evidences\"[All Fields] OR \"evident\"[All Fields] OR \"evidently\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"role\"[MeSH Terms] OR \"role\"[All Fields]) AND \"thalamus-salience\"[All Fields] AND \"FC\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"efficiences\"[All Fields] OR \"efficiency\"[MeSH Terms] OR \"efficiency\"[All Fields] OR \"efficiencies\"[All Fields] OR \"efficient\"[All Fields] OR \"efficiently\"[All Fields] OR \"efficients\"[All Fields]) AND (\"deficit\"[All Fields] OR \"deficits\"[All Fields]) AND (\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]) AND (\"evidence\"[All Fields] OR \"evidences\"[All Fields] OR \"evident\"[All Fields] OR \"evidently\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

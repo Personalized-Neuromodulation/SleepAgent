@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "stability",
+        "to": "\"stabile\"[All Fields] OR \"stabiles\"[All Fields] OR \"stabilisation\"[All Fields] OR \"stabilisations\"[All Fields] OR \"stabilise\"[All Fields] OR \"stabilised\"[All Fields] OR \"stabiliser\"[All Fields] OR \"stabilisers\"[All Fields] OR \"stabilises\"[All Fields] OR \"stabilising\"[All Fields] OR \"stabilities\"[All Fields] OR \"stability\"[All Fields] OR \"stabilization\"[All Fields] OR \"stabilizations\"[All Fields] OR \"stabilize\"[All Fields] OR \"stabilized\"[All Fields] OR \"stabilizer\"[All Fields] OR \"stabilizers\"[All Fields] OR \"stabilizes\"[All Fields] OR \"stabilizing\"[All Fields]"
+      },
+      {
+        "from": "predictor",
+        "to": "\"predictor\"[All Fields] OR \"predictors\"[All Fields]"
+      },
+      {
+        "from": "poor",
+        "to": "\"poverty\"[MeSH Terms] OR \"poverty\"[All Fields] OR \"poor\"[All Fields]"
+      },
+      {
+        "from": "sleep quality",
+        "to": "\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DMN\"[All Fields] AND (\"stabile\"[All Fields] OR \"stabiles\"[All Fields] OR \"stabilisation\"[All Fields] OR \"stabilisations\"[All Fields] OR \"stabilise\"[All Fields] OR \"stabilised\"[All Fields] OR \"stabiliser\"[All Fields] OR \"stabilisers\"[All Fields] OR \"stabilises\"[All Fields] OR \"stabilising\"[All Fields] OR \"stabilities\"[All Fields] OR \"stability\"[All Fields] OR \"stabilization\"[All Fields] OR \"stabilizations\"[All Fields] OR \"stabilize\"[All Fields] OR \"stabilized\"[All Fields] OR \"stabilizer\"[All Fields] OR \"stabilizers\"[All Fields] OR \"stabilizes\"[All Fields] OR \"stabilizing\"[All Fields]) AND (\"predictor\"[All Fields] OR \"predictors\"[All Fields]) AND (\"poverty\"[MeSH Terms] OR \"poverty\"[All Fields] OR \"poor\"[All Fields]) AND (\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]) AND \"PSQI\"[All Fields]",
+    "warninglist": {
+      "phrasesignored": [
+        "as",
+        "a",
+        "of"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

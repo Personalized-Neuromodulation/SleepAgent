@@ -1,39 +1,28 @@
 [
   {
-    "hypothesis_id": "hypothesis_507f1dc573b1",
-    "plan_id": "experiment_plan_86d736554104",
-    "support": "partially_supported",
-    "support_score": 0.6,
-    "computed_reward": 0.73,
-    "validated": true,
+    "hypothesis_id": "hypothesis_91f214f8e57d",
+    "plan_id": "experiment_plan_6769bf7afde1",
+    "support": "{'support': 'partially supported', 'weakens': 'moderately weakens', 'fails_to_adjudicate': False}",
+    "support_score": 0.5,
+    "computed_reward": 0.6687,
+    "validated": false,
     "refuted": false,
-    "primary_tests_passed": 4,
-    "primary_tests_total": 4,
+    "primary_tests_passed": 7,
+    "primary_tests_total": 8,
     "metadata": {
-      "review_status": "partially_supported",
-      "hypothesis_title": "Thalamic Spindle Modulation and Insomnia Severity via Combined Thalamocortical and White Matter Pathways",
+      "review_status": "{'support': 'partially supported', 'weakens': 'moderately weakens', 'fails_to_adjudicate': False}",
+      "hypothesis_title": "White Matter Microstructural Integrity Mediates Network-Specific Connectivity Disruptions in Insomnia",
       "predictors": [
         "thalamus_DMN_FC",
-        "timefreq_fALFF_0.01_0.08_over_0.01_0.25"
+        "thalamus_salience_FC",
+        "thalamus_frontoparietal_FC",
+        "thalamus_coord_z"
       ],
       "outcomes": [
-        "salience_FC",
-        "frontoparietal_FC"
+        "ISI",
+        "PSQI"
       ],
-      "critic_findings": [
-        {
-          "severity": "medium",
-          "category": "data_completeness",
-          "message": "Missing timefreq_ALFF and timefreq_ReHo variables may affect model accuracy.",
-          "recommendation": "Include these variables if available, or confirm their absence is not critical for the analysis."
-        },
-        {
-          "severity": "high",
-          "category": "model_completeness",
-          "message": "Original analysis plan assumes time-frequency measures not present in the source data.",
-          "recommendation": "Revise the model to align with available data or collect missing measures."
-        }
-      ]
+      "critic_findings": []
     }
   }
 ]

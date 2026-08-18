@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "FD",
+        "to": "\"Front Dent\"[Journal:__jid101747773] OR \"fd\"[All Fields]"
+      },
+      {
+        "from": "sleep study",
+        "to": "\"polysomnography\"[MeSH Terms] OR \"polysomnography\"[All Fields] OR (\"sleep\"[All Fields] AND \"study\"[All Fields]) OR \"sleep study\"[All Fields]"
+      },
+      {
+        "from": "confounders",
+        "to": "\"confound\"[All Fields] OR \"confounded\"[All Fields] OR \"confounder\"[All Fields] OR \"confounders\"[All Fields] OR \"confounding\"[All Fields] OR \"confounds\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"mean\"[All Fields] AND (\"front dent\"[Journal] OR \"fd\"[All Fields]) AND \"mean\"[All Fields] AND \"DVARS\"[All Fields] AND (\"polysomnography\"[MeSH Terms] OR \"polysomnography\"[All Fields] OR (\"sleep\"[All Fields] AND \"study\"[All Fields]) OR \"sleep study\"[All Fields]) AND (\"confound\"[All Fields] OR \"confounded\"[All Fields] OR \"confounder\"[All Fields] OR \"confounders\"[All Fields] OR \"confounding\"[All Fields] OR \"confounds\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

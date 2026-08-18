@@ -1,0 +1,48 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Avoiding",
+        "to": "\"avoid\"[All Fields] OR \"avoidability\"[All Fields] OR \"avoidable\"[All Fields] OR \"avoidance\"[All Fields] OR \"avoidances\"[All Fields] OR \"avoidant\"[All Fields] OR \"avoidants\"[All Fields] OR \"avoided\"[All Fields] OR \"avoider\"[All Fields] OR \"avoiders\"[All Fields] OR \"avoiding\"[All Fields] OR \"avoids\"[All Fields]"
+      },
+      {
+        "from": "signatures",
+        "to": "\"protein domains\"[MeSH Terms] OR (\"protein\"[All Fields] AND \"domains\"[All Fields]) OR \"protein domains\"[All Fields] OR \"signature\"[All Fields] OR \"signatures\"[All Fields]"
+      },
+      {
+        "from": "insomnia",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": "research:",
+        "to": "\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research's\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher's\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields]"
+      },
+      {
+        "from": "methodological",
+        "to": "\"methodologic\"[All Fields] OR \"methodological\"[All Fields] OR \"methodologically\"[All Fields]"
+      },
+      {
+        "from": "considerations",
+        "to": "\"considerable\"[All Fields] OR \"considerably\"[All Fields] OR \"consideration\"[All Fields] OR \"considerations\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"avoid\"[All Fields] OR \"avoidability\"[All Fields] OR \"avoidable\"[All Fields] OR \"avoidance\"[All Fields] OR \"avoidances\"[All Fields] OR \"avoidant\"[All Fields] OR \"avoidants\"[All Fields] OR \"avoided\"[All Fields] OR \"avoider\"[All Fields] OR \"avoiders\"[All Fields] OR \"avoiding\"[All Fields] OR \"avoids\"[All Fields]) AND \"thalamus-DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"protein domains\"[MeSH Terms] OR (\"protein\"[All Fields] AND \"domains\"[All Fields]) OR \"protein domains\"[All Fields] OR \"signature\"[All Fields] OR \"signatures\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND (\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research s\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher s\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields]) AND (\"methodologic\"[All Fields] OR \"methodological\"[All Fields] OR \"methodologically\"[All Fields]) AND (\"considerable\"[All Fields] OR \"considerably\"[All Fields] OR \"consideration\"[All Fields] OR \"considerations\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

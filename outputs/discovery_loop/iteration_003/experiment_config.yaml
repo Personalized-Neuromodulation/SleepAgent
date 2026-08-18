@@ -1,0 +1,74 @@
+experiment:
+  top_k_hypotheses: 1
+  max_predictors: 4
+  max_outcomes: 2
+  primary_template: auto
+  ml_models:
+  - logistic_regression
+  - decision_tree
+  - random_forest
+  - svm
+  - xgboost
+  - lightgbm
+  ml_cv_folds: 5
+  bootstrap_iterations: 100
+  verbose: true
+feature_extraction:
+  enabled: true
+  output_root: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features
+  modalities: auto
+  fmri:
+    input_root: ''
+    derivatives_root: /data/fmri_agent/multimodal_sleep_data/bids/derivatives/FMRIPREP
+    output_root: ''
+    subjects: []
+    features_csv: ''
+  eeg:
+    input_root: ''
+    raw_root: ''
+    raw_table: ''
+    features_csv: ''
+  scales:
+    input_root: /data/fmri_agent/multimodal_sleep_data/bids/sourcedata
+    raw_root: ''
+    raw_table: ''
+    features_csv: ''
+  dti:
+    input_root: ''
+    raw_root: ''
+    raw_table: ''
+    features_csv: ''
+  mri:
+    input_root: ''
+    raw_root: ''
+    raw_table: ''
+    features_csv: ''
+data_processing:
+  enabled: false
+  backend: fmri_local_split
+  input_root: /data/fmri_agent/multimodal_sleep_data/bids/sourcedata
+  output_root: /data/fmri_agent/multimodal_sleep_data
+  derivatives_root: /data/fmri_agent/multimodal_sleep_data/bids/derivatives/FMRIPREP
+  subjects: []
+  surface_mode: '0'
+  mni_template: both
+  fs_license: ''
+  subject_jobs: null
+  env: {}
+paths:
+  llm_config: configs/llm_config.yaml
+  hypothesis_pool: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/hypothesis/hypothesis_pool.json
+  data_profile: outputs/profiles/analysis_ready_profile.yaml
+  approved_variables: outputs/grounding/approved_variables_from_grounding.yaml
+  variable_mapping: outputs/grounding/evidence_to_variable_map.yaml
+  experiment_output_dir: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment
+  experiment_results: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experiment_results.json
+  experimental_feedback: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experimental_feedback.json
+  experiment_report: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/phase3_experiment_report.md
+  experiment_visualizations: /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals
+  previous_experiment_results:
+  - /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/experiment_results.json
+  - /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/experiment_results.json
+  previous_experimental_feedback:
+  - /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/experiment/experimental_feedback.json
+  - /home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/experimental_feedback.json

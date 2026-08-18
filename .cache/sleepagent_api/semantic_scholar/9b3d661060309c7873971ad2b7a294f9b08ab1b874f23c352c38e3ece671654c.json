@@ -1,0 +1,818 @@
+{
+  "total": 14,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "c0941876896bea155860d872148437c6b3bb0a56",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0514",
+        "CorpusId": 278747103
+      },
+      "url": "https://www.semanticscholar.org/paper/c0941876896bea155860d872148437c6b3bb0a56",
+      "title": "0514 Pre-Sleep Salience Network Connectivity Predicts Subsequent REM Duration and Sleep Efficiency",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0514?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0514, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2362395088",
+          "name": "Lucas Koch-Kreher"
+        },
+        {
+          "authorId": "2297692033",
+          "name": "David C Negelspach"
+        },
+        {
+          "authorId": "2281296694",
+          "name": "S. Patel"
+        },
+        {
+          "authorId": "2297690592",
+          "name": "W. Killgore"
+        }
+      ],
+      "abstract": "\n \n \n The hyperarousal theory of insomnia proposes that excessive physiological and psychological arousal contributes to the etiology of insomnia. Previous neuroimaging studies have corroborated this by finding that large-scale neural networks, such as the default mode network (DMN), show higher connectivity in individuals with insomnia. Less is known about the salience network’s (SN) involvement in hyperarousal mediated insomnia; however, it’s hypothesized that increased connectivity in the SN would also be correlated with more severe insomnia.\n \n \n \n As part of a larger study investigating the effects of transcranial magnetic stimuliation (TMS) on insomnia, participants (n=20, 12 female) scoring at least a 7 on the Insomnia Severity Index (ISI) underwent fMRI resting state scans taken before sleeping overnight in the lab, where polysomnography data were collected. Only data from the sham condition were used for this analysis.\n \n \n \n Seed to voxel analyses, using the mean of individual SN nodes (i.e., supramarginal gyrus, insula, rostral prefrontal cortex, and anterior cingulate cortex) as a single seed region, revealed significant functional connectivity correlations with REM duration and sleep efficiency. Specifically, sleep efficiency and REM duration were each associated with greater functional connectivity between the SN and a region of the lateral occipital cortex (Corrected P <.05). Correlations with other sleep stages were non-significant.\n \n \n \n Neuroimaging of participants with self-reported insomnia symptoms suggests that SN connectivity to the lateral occipital cortex correlates with better sleep efficiency and greater REM duration. These findings suggest that increased connectivity between the SN and lateral occipital cortex before bedtime may contribute to more consolidated REM sleep. It is plausible that this may occur as a consequence of use-dependent synaptic potentiation of these regions during wake due to high levels of visual stimulation. Alternatively, greater connectivity of these systems prior to bedtime may also be evidence of interactions between the visual and circadian systems, indicating more robust photoentrainment. This would explain why there is both greater REM duration— a component of circadian regulated sleep process — and greater sleep consolidation, which has also consistently been attributed to increased circadian consolidation. Future work may be able to address these possibilities.\n \n \n \n W81XWH2010173\n"
+    },
+    {
+      "paperId": "315327dc6d699a1d8c4bcb43a178fd2c9e3f7d03",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsae067.0277",
+        "CorpusId": 269284692
+      },
+      "url": "https://www.semanticscholar.org/paper/315327dc6d699a1d8c4bcb43a178fd2c9e3f7d03",
+      "title": "0277 Robust Identification of Sleep States and Their Transitions Using Whole-Night fMRI Data",
+      "venue": "Sleep",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsae067.0277?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsae067.0277, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297692721",
+          "name": "Nils Yang"
+        },
+        {
+          "authorId": "2219128",
+          "name": "D. Picchioni"
+        },
+        {
+          "authorId": "33870602",
+          "name": "J. D. de Zwart"
+        },
+        {
+          "authorId": "49417335",
+          "name": "Yicun Wang"
+        },
+        {
+          "authorId": "48761025",
+          "name": "P. van Gelderen"
+        },
+        {
+          "authorId": "1805159",
+          "name": "J. Duyn"
+        }
+      ],
+      "abstract": "\n \n \n Polysomnography (PSG)-based sleep staging has a relatively poor (30s) temporal resolution, and as a result does not capture any sleep structure that may exist on finer time-scales. For example, brain activity patterns involved with transitions or changes within and between classical sleep stages are not captured. Here we used whole-night functional magnetic resonance imaging (fMRI) to address this shortcoming.\n \n \n \n Data acquisition was conducted as part of a well-controlled sleep experiment with two consecutive nights of concurrent fMRI-EEG recording from 23:00 to 7:00. Twelve participants (18-35 years old, 8 females) had at least one complete sleep cycle during both Night 1 and 2. We analyzed the fMRI data using an unsupervised learning approach - Hidden Markov Model (HMM) to reveal recurrent structure (“states”). The HMM, applied to Night 2 data, encompassed 21 whole-brain states based on various model evaluation indexes. Each state was characterized as a multivariate Gaussian distribution including a mean fMRI activation distribution,a functional connectivity (FC) matrix, and a transition probability matrix.\n \n \n \n Modular analysis of the extracted transition probability matrix (between each pair of states) revealed five modules, each containing a set of states that had similar preferences to occur during a specific sleep stage or part thereof. Remarkably, the trained HMM predicted brain sleep states during Night 1 that had highly similar sleep stage preference (r = 0.94, p < 0.001). In Wake-related HMM states, the FCs between DMN and Salience Network (SAL) / Control Network (CON) were negative, while during N3-related HMM states, these FCs were positive. Similar patterns were found for mean fMRI activation.\n \n \n \n These observations suggest that HMM may provide valuable information about sleep-state-specific brain activity patterns that extend well beyond the information provided by classical sleep staging. For example, cursory inspection of the HMM results suggests a subdivision of N2 in two groups of multiple states with different transition probabilities to Wake; analysis of brain activation and FC patterns of HMM states indicated that the connections between DMN and SAL/CON may play a critical role in the transition from wake to light sleep and, to deep sleep.\n \n \n \n  \n"
+    },
+    {
+      "paperId": "7241362e5af1664d35f4c67199ea452e3c25f49d",
+      "externalIds": {
+        "DOI": "10.1186/s12888-026-08332-2",
+        "CorpusId": 289632177,
+        "PubMed": "42365265"
+      },
+      "url": "https://www.semanticscholar.org/paper/7241362e5af1664d35f4c67199ea452e3c25f49d",
+      "title": "Dysregulated connectivity configuration of functional network model in first-episode, treatment-naive adolescents with major depressive disorder.",
+      "venue": "BMC Psychiatry",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1186/s12888-026-08332-2",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1186/s12888-026-08332-2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1186/s12888-026-08332-2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2316525630",
+          "name": "Chan Zhang"
+        },
+        {
+          "authorId": "2314947039",
+          "name": "Wenjie Zhang"
+        },
+        {
+          "authorId": "2315006952",
+          "name": "Jinji Bai"
+        },
+        {
+          "authorId": "2316048808",
+          "name": "Xuan Deng"
+        },
+        {
+          "authorId": "2344933240",
+          "name": "Jinyuan Zhao"
+        },
+        {
+          "authorId": "2345879979",
+          "name": "Jiajing Cui"
+        },
+        {
+          "authorId": "123962653",
+          "name": "Junjun Ji"
+        },
+        {
+          "authorId": "2314977410",
+          "name": "Ting Li"
+        },
+        {
+          "authorId": "2153609532",
+          "name": "Yu Wang"
+        },
+        {
+          "authorId": "2318290795",
+          "name": "Kefeng Li"
+        },
+        {
+          "authorId": "2287792302",
+          "name": "Junfeng Li"
+        }
+      ],
+      "abstract": "BACKGROUND\nMajor depressive disorder (MDD) is a highly prevalent psychiatric condition that frequently emerges during adolescence, a critical developmental stage characterized by heightened vulnerability to emotional dysregulation. Despite increasing evidence of large-scale brain network dysfunction in adult MDD, the static and dynamic connectivity alterations underlying adolescent MDD remain poorly understood.\n\n\nMETHODS\nWe recruited 29 first-episode, treatment-naïve adolescents with MDD and 29 age- and sex-matched healthy controls (HCs). Resting-state functional magnetic resonance imaging (rs-fMRI) data were analyzed using group independent component analysis (ICA) combined with sliding-window clustering to evaluate both static functional network connectivity (sFNC) and dynamic functional network connectivity (dFNC) across the default mode network (DMN), salience network (SN), central executive network (CEN), and dorsal attention network (DAN). Correlation analyses were performed between connectivity metrics and clinical severity assessed by the 17-item Hamilton Depression Rating Scale (HAMD-17).\n\n\nRESULTS\nCompared with HCs, adolescents with MDD exhibited significantly reduced intra- and inter-network connectivity within the DMN, SN, and CEN, alongside a trend toward increased DAN-SN connectivity. Dynamic analyses revealed reduced state transition frequency, shorter dwell time in low-connectivity states (e.g., DMN-CEN-SN interactions), and longer dwell time in high-connectivity states (e.g., DAN-SN coupling). Clinical analyses demonstrated that weaker intra-DMN and intra-DAN connectivity, as well as reduced DMN-CEN and DMN-SN connectivity, were negatively correlated with HAMD-17 scores. Conversely, prolonged dwell time in hyperconnected states positively correlated with greater symptom severity.\n\n\nCONCLUSION\nOur findings highlight distinct static and dynamic network abnormalities in adolescent MDD, including disrupted DMN-CEN competitive balance and maladaptive DAN-SN hyperconnectivity. These alterations may hint at developmental-stage-specific neuropathological mechanisms that could differ from adult depression, although direct comparison with adult cohorts is lacking. Integrating static and dynamic FNC analyses may provide preliminary insights into candidate neuroimaging markers for early detection and intervention strategies in adolescent MDD, though these findings require validation in independent, larger cohorts."
+    },
+    {
+      "paperId": "a792db8cf52d72289ada76e009b7cf63b6aee534",
+      "externalIds": {
+        "MAG": "2903087463",
+        "PubMedCentral": "6288604",
+        "DOI": "10.3389/fnins.2018.00912",
+        "CorpusId": 54442808,
+        "PubMed": "30564093"
+      },
+      "url": "https://www.semanticscholar.org/paper/a792db8cf52d72289ada76e009b7cf63b6aee534",
+      "title": "Intracortical Causal Information Flow of Oscillatory Activity (Effective Connectivity) at the Sleep Onset Transition",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2018,
+      "citationCount": 13,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2018.00912/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6288604, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35421580",
+          "name": "Antonio Fernandez Guerrero"
+        },
+        {
+          "authorId": "1722635",
+          "name": "P. Achermann"
+        }
+      ],
+      "abstract": "We investigated the sleep onset transition in humans from an effective connectivity perspective in a baseline condition (approx. 16 h of wakefulness) and after sleep deprivation (40 h of sustained wakefulness). Using EEG recordings (27 derivations), source localization (LORETA) allowed us to reconstruct the underlying patterns of neuronal activity in various brain regions, e.g., the default mode network (DMN), dorsolateral prefrontal cortex and hippocampus, which were defined as regions of interest (ROI). We applied isolated effective coherence (iCOH) to assess effective connectivity patterns at the sleep onset transition [2 min prior to and 10 min after sleep onset (first occurrence of stage 2)]. ICOH reveals directionality aspects and resolves the spectral characteristics of information flow in a given network of ROIs. We observed an anterior-posterior decoupling of the DMN, and moreover, a prominent role of the posterior cingulate cortex guiding the process of the sleep onset transition, particularly, by transmitting information in the low frequency range (delta and theta bands) to other nodes of DMN (including the hippocampus). In addition, the midcingulate cortex appeared as a major cortical relay station for spindle synchronization (originating from the thalamus; sigma activity). The inclusion of hippocampus indicated that this region might be functionally involved in sigma synchronization observed in the cortex after sleep onset. Furthermore, under conditions of increased homeostatic pressure, we hypothesize that an anterior-posterior decoupling of the DMN occurred at a faster rate compared to baseline overall indicating weakened connectivity strength within the DMN. Finally, we also demonstrated that cortico-cortical spindle synchronization was less effective after sleep deprivation than in baseline, thus, reflecting the reduction of spindles under increased sleep pressure."
+    },
+    {
+      "paperId": "c5cd5e1b27cf431d79b3c98f67285f9bc21622bd",
+      "externalIds": {
+        "DOI": "10.1177/13872877251386844",
+        "CorpusId": 282196175,
+        "PubMed": "41105629"
+      },
+      "url": "https://www.semanticscholar.org/paper/c5cd5e1b27cf431d79b3c98f67285f9bc21622bd",
+      "title": "Salience and frontoparietal network impairments across disease stages in dementia with Lewy bodies: A comparative functional MRI study with Alzheimer's disease",
+      "venue": "Journal of Alzheimer's Disease",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/13872877251386844?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/13872877251386844, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2340590543",
+          "name": "Vincent Gabriel"
+        },
+        {
+          "authorId": "41029740",
+          "name": "Éléna Chabran"
+        },
+        {
+          "authorId": "3417046",
+          "name": "Marion Sourty"
+        },
+        {
+          "authorId": "5646802",
+          "name": "B. Cretin"
+        },
+        {
+          "authorId": "2049975",
+          "name": "N. Philippi"
+        },
+        {
+          "authorId": "2176781034",
+          "name": "Candice Muller"
+        },
+        {
+          "authorId": "1477730172",
+          "name": "Pierre Anthony"
+        },
+        {
+          "authorId": "6087693",
+          "name": "C. Demuynck"
+        },
+        {
+          "authorId": "5677690",
+          "name": "P. Loureiro de Sousa"
+        },
+        {
+          "authorId": "5126696",
+          "name": "A. Botzung"
+        },
+        {
+          "authorId": "2216623349",
+          "name": "L. Sanna"
+        },
+        {
+          "authorId": "6899305",
+          "name": "O. Bousiges"
+        },
+        {
+          "authorId": "2275808246",
+          "name": "Frédéric Blanc"
+        }
+      ],
+      "abstract": "Background Resting-state functional magnetic resonance imaging (fMRI) studies in dementia with Lewy bodies (DLB) and Alzheimer's disease (AD) have described connectivity alterations in large-scale brain networks. However, little is known about functional changes across disease stages, particularly in DLB. Objective To investigate functional connectivity of key brain networks in DLB patients at different stages, compare them to AD patients and healthy controls (HC), and examine associations with core clinical symptoms. Methods Ninety DLB patients (63 with mild cognitive impairment [MCI-DLB] and 27 with dementia [d-DLB]), 25 AD patients (11 MCI-AD and 14 d-AD) and 34 HC underwent clinical, neuropsychological and resting-state fMRI assessments. Region of interest (ROI)-to-ROI analyses were performed using the CONN toolbox (pFDR < 0.05). Results The overall DLB group showed reduced functional connectivity within the salience network (SN) compared to HC, but not to the overall AD group. At the subgroup level, d-DLB patients showed reduced SN and frontoparietal network (FPN) connectivity compared to both HC and the overall AD group, whereas MCI-DLB did not significantly differ from either group. In the overall DLB group, SN connectivity correlated with fluctuation severity and FPN connectivity correlated with both REM sleep behavior disorder and cognitive decline. In the overall AD group, decreased default mode network (DMN) connectivity was associated with lower Mini-Mental State Examination scores. Conclusions SN and FPN connectivity impairments relate to disease progression and core clinical features in DLB, whereas DMN connectivity is linked to cognitive decline in AD. These distinct patterns highlight divergent paths of network dysfunction in the two diseases. Clinical Trial: This study is part of the AlphaLewyMA cohort, registered on ClinicalTrials.gov (identifier: NCT01876459; registered on June 12, 2013)."
+    },
+    {
+      "paperId": "6f34f3bec73d3be6ab83e6a7c43a9e0a09d7a1f6",
+      "externalIds": {
+        "DOI": "10.1038/s41398-026-04192-2",
+        "CorpusId": 290120053,
+        "PubMed": "42436154"
+      },
+      "url": "https://www.semanticscholar.org/paper/6f34f3bec73d3be6ab83e6a7c43a9e0a09d7a1f6",
+      "title": "Functional connectivity changes in obsessive-compulsive disorder following exposure and response prevention.",
+      "venue": "Translational Psychiatry",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41398-026-04192-2_reference.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41398-026-04192-2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41398-026-04192-2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2449498070",
+          "name": "Lise Skarstein Jakobsen"
+        },
+        {
+          "authorId": "1757555",
+          "name": "O. Ousdal"
+        },
+        {
+          "authorId": "2256550990",
+          "name": "B. Hansen"
+        },
+        {
+          "authorId": "47330841",
+          "name": "G. Kvale"
+        },
+        {
+          "authorId": "38452395",
+          "name": "Kristen Hagen"
+        },
+        {
+          "authorId": "2416601501",
+          "name": "Chris Vriend"
+        },
+        {
+          "authorId": "2100497",
+          "name": "O. A. van den Heuvel"
+        },
+        {
+          "authorId": "37345170",
+          "name": "A. Thorsen"
+        }
+      ],
+      "abstract": "Obsessive-compulsive disorder (OCD) has been increasingly linked to alterations in functional connectivity (FC) across large-scale brain networks, particularly the default mode (DMN), salience (SN), and central executive network (CEN), known as the triple-networks. However, little is known about how connectivity patterns evolve following treatment. We examined both static and dynamic resting-state FC in 25 adults with OCD and 21 matched healthy controls (HCs) at baseline, one week, and three months following intensive exposure and response prevention (ERP) using the Bergen 4-Day Treatment (B4DT). Independent component analysis (ICA) and sliding-window approaches were used to evaluate network connectivity within and between the triple networks. At baseline, adults with OCD showed stronger static connectivity within the DMN and SN and spent more time in a dynamic connectivity state characterized by strong connectivity within the DMN and decoupling between the DMN and SN compared to controls. Following the 4-day intensive treatment, these abnormal patterns normalized and remained stable at the three-month follow-up. A higher number of transitions between states was associated with reductions in the severity of OCD, anxiety, and depressive symptoms. Additional correlation analyses indicated that higher baseline SN-CEN connectivity was associated with greater symptom severity, while post-treatment reductions in CEN and CEN-SN static connectivity were linked to improvements in depressive symptoms. These findings suggest that effective ERP promotes a normalization of both static and dynamic connectivity within and between the triple networks. Thus, dynamic metrics, alongside static measures, may serve as clinically meaningful biomarkers of therapeutic response."
+    },
+    {
+      "paperId": "fc12188ae6a4605477f35ecdbc6b1ebf6d94b360",
+      "externalIds": {
+        "DBLP": "journals/brain/WuLTWHTCBCL12",
+        "MAG": "2051064876",
+        "DOI": "10.1089/brain.2012.0075",
+        "CorpusId": 6601292,
+        "PubMed": "22817652"
+      },
+      "url": "https://www.semanticscholar.org/paper/fc12188ae6a4605477f35ecdbc6b1ebf6d94b360",
+      "title": "Variations in Connectivity in the Sensorimotor and Default-Mode Networks During the First Nocturnal Sleep Cycle",
+      "venue": "Brain Connectivity",
+      "year": 2012,
+      "citationCount": 47,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1089/brain.2012.0075?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1089/brain.2012.0075, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2952545",
+          "name": "Changwei W. Wu"
+        },
+        {
+          "authorId": "123095661",
+          "name": "Po-Yu Liu"
+        },
+        {
+          "authorId": "2057250642",
+          "name": "Pei-Jung Tsai"
+        },
+        {
+          "authorId": "2108010122",
+          "name": "Yu-Chin Wu"
+        },
+        {
+          "authorId": "49679713",
+          "name": "Ching-Sui Hung"
+        },
+        {
+          "authorId": "2112716561",
+          "name": "Yu-Che Tsai"
+        },
+        {
+          "authorId": "33527586",
+          "name": "Kuan-Hung Cho"
+        },
+        {
+          "authorId": "2268929",
+          "name": "B. Biswal"
+        },
+        {
+          "authorId": "7863269",
+          "name": "Chia-Ju Chen"
+        },
+        {
+          "authorId": "2146113922",
+          "name": "Ching-Po Lin"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "f6816fd4bd64a90e6e85f421583bee6a36fa24c2",
+      "externalIds": {
+        "MAG": "3006481709",
+        "PubMedCentral": "7027374",
+        "DOI": "10.3389/fphys.2020.00066",
+        "CorpusId": 211076525,
+        "PubMed": "32116776"
+      },
+      "url": "https://www.semanticscholar.org/paper/f6816fd4bd64a90e6e85f421583bee6a36fa24c2",
+      "title": "Triple Network Model Dynamically Revisited: Lower Salience Network State Switching in Pre-psychosis",
+      "venue": "Frontiers in Physiology",
+      "year": 2020,
+      "citationCount": 68,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fphys.2020.00066/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7027374, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "148182896",
+          "name": "T. Bolton"
+        },
+        {
+          "authorId": "6377915",
+          "name": "D. Wotruba"
+        },
+        {
+          "authorId": "40550090",
+          "name": "R. Buechler"
+        },
+        {
+          "authorId": "5058342",
+          "name": "A. Theodoridou"
+        },
+        {
+          "authorId": "144751177",
+          "name": "L. Michels"
+        },
+        {
+          "authorId": "145389577",
+          "name": "S. Kollias"
+        },
+        {
+          "authorId": "143902556",
+          "name": "W. Rössler"
+        },
+        {
+          "authorId": "3533879",
+          "name": "K. Heekeren"
+        },
+        {
+          "authorId": "35452821",
+          "name": "D. Van de Ville"
+        }
+      ],
+      "abstract": "Emerging evidence has attributed altered network coordination between the default mode, central executive, and salience networks (DMN/CEN/SAL) to disturbances seen in schizophrenia, but little is known for at-risk psychosis stages. Moreover, pinpointing impairments in specific network-to-network interactions, although essential to resolve possibly distinct harbingers of conversion to clinically diagnosed schizophrenia, remains particularly challenging. We addressed this by a dynamic approach to functional connectivity, where right anterior insula brain interactions were examined through co-activation pattern (CAP) analysis. We utilized resting-state fMRI in 19 subjects suffering from subthreshold delusions and hallucinations (UHR), 28 at-risk for psychosis with basic symptoms describing only self-experienced subclinical disturbances (BS), and 29 healthy controls (CTR) matched for age, gender, handedness, and intelligence. We extracted the most recurring CAPs, compared their relative occurrence and average dwell time to probe their temporal expression, and quantified occurrence balance to assess the putative loss of competing relationships. Our findings substantiate the pivotal role of the right anterior insula in governing CEN-to-DMN transitions, which appear dysfunctional prior to the onset of psychosis, especially when first attenuated psychotic symptoms occur. In UHR subjects, it is longer active in concert with the DMN and there is a loss of competition between a SAL/DMN state, and a state with insula/CEN activation paralleled by DMN deactivation. These features suggest that abnormal network switching disrupts one's capacity to distinguish between the internal world and external environment, which is accompanied by inflexibility and an excessive awareness to internal processes reflected by prolonged expression of the right anterior insula-default mode co-activation pattern."
+    },
+    {
+      "paperId": "a42544ec1b292b2dc0ab2c4fd86d2a8231c9d581",
+      "externalIds": {
+        "DOI": "10.1101/2025.07.17.665279",
+        "CorpusId": 282314114
+      },
+      "url": "https://www.semanticscholar.org/paper/a42544ec1b292b2dc0ab2c4fd86d2a8231c9d581",
+      "title": "Network Signatures of Disease Progression and Core Symptoms in Dementia with Lewy Bodies Distinct from Alzheimer’s Disease",
+      "venue": "bioRxiv",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2025/07/21/2025.07.17.665279.full.pdf",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2025.07.17.665279?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2025.07.17.665279, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2340590543",
+          "name": "Vincent Gabriel"
+        },
+        {
+          "authorId": "41029740",
+          "name": "Éléna Chabran"
+        },
+        {
+          "authorId": "3417046",
+          "name": "Marion Sourty"
+        },
+        {
+          "authorId": "5646802",
+          "name": "B. Cretin"
+        },
+        {
+          "authorId": "2049975",
+          "name": "N. Philippi"
+        },
+        {
+          "authorId": "2176781034",
+          "name": "Candice Muller"
+        },
+        {
+          "authorId": "1477730172",
+          "name": "Pierre Anthony"
+        },
+        {
+          "authorId": "6087693",
+          "name": "C. Demuynck"
+        },
+        {
+          "authorId": "2301435158",
+          "name": "Paulo Loureiro de Sousa"
+        },
+        {
+          "authorId": "5126696",
+          "name": "A. Botzung"
+        },
+        {
+          "authorId": "2216623349",
+          "name": "L. Sanna"
+        },
+        {
+          "authorId": "6899305",
+          "name": "O. Bousiges"
+        },
+        {
+          "authorId": "2275808246",
+          "name": "Frédéric Blanc"
+        }
+      ],
+      "abstract": "Background Resting-state fMRI studies in dementia with Lewy bodies (DLB) and Alzheimer’s disease (AD) have described connectivity alterations in large-scale brain networks. However, little is known about functional changes across disease stages, particularly in DLB. Objective To investigate functional connectivity of key brain networks in DLB patients at different stages, compare them to AD and healthy controls (HC) and examine associations with core clinical symptoms. Methods Ninety DLB patients, comprising 63 with mild cognitive impairment (MCI-DLB) and 27 with dementia (d-DLB), along with 25 AD patients (11 MCI-AD and 14 d-AD) and 34 HC underwent clinical, neuropsychological and resting-state fMRI assessment. ROI-to-ROI analyses were performed using the CONN toolbox, (pFDR<0.05). Results The DLB group showed reduced functional connectivity within the salience network (SN) compared with HC, but did not differ from AD. While MCI-DLB patients showed no significant differences, d-DLB patients showed reduced SN and frontoparietal network (FPN) connectivity compared to HC and AD. SN connectivity was associated with severity of fluctuations and FPN connectivity with REM sleep behavior disorder and cognitive decline in DLB. In contrast, in the AD group, decreased default mode network (DMN) connectivity was associated with lower MMSE scores. Conclusion SN and FPN connectivity impairments relate to disease progression and core clinical features in DLB, whereas DMN connectivity is linked to cognitive decline in AD. These distinct patterns highlight divergent paths of network dysfunction in the two diseases, offering insight into their underlying mechanisms and clinical expression."
+    },
+    {
+      "paperId": "bd2b863fff24854e2629d0fc7290da20cff03e32",
+      "externalIds": {
+        "MAG": "2302615477",
+        "DOI": "10.1002/hbm.23197",
+        "CorpusId": 20941732,
+        "PubMed": "27016153"
+      },
+      "url": "https://www.semanticscholar.org/paper/bd2b863fff24854e2629d0fc7290da20cff03e32",
+      "title": "Network dynamics during the different stages of hallucinations in schizophrenia",
+      "venue": "Human Brain Mapping",
+      "year": 2016,
+      "citationCount": 91,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc6867493?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/hbm.23197?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/hbm.23197, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35040770",
+          "name": "S. Lefebvre"
+        },
+        {
+          "authorId": "2099013779",
+          "name": "Morgane Demeulemeester"
+        },
+        {
+          "authorId": "145329393",
+          "name": "Arnaud Leroy"
+        },
+        {
+          "authorId": "2110676",
+          "name": "C. Delmaire"
+        },
+        {
+          "authorId": "1842935",
+          "name": "Renaud Lopes"
+        },
+        {
+          "authorId": "2309378",
+          "name": "D. Pins"
+        },
+        {
+          "authorId": "2087255302",
+          "name": "P. Thomas"
+        },
+        {
+          "authorId": "2576835",
+          "name": "R. Jardri"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b8c336cf931ba79a653b47ff73fa20db099f7cba",
+      "externalIds": {
+        "PubMedCentral": "9476943",
+        "DOI": "10.3389/fnagi.2022.944485",
+        "CorpusId": 251983351,
+        "PubMed": "36118700"
+      },
+      "url": "https://www.semanticscholar.org/paper/b8c336cf931ba79a653b47ff73fa20db099f7cba",
+      "title": "Dynamic functional connections in leukoaraiosis patients without cognitive impairment: A pilot study",
+      "venue": "Frontiers in Aging Neuroscience",
+      "year": 2022,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnagi.2022.944485/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9476943, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "31990656",
+          "name": "Xing Xu"
+        },
+        {
+          "authorId": "50689257",
+          "name": "Yu-Chen Chen"
+        },
+        {
+          "authorId": "48153890",
+          "name": "X. Yin"
+        },
+        {
+          "authorId": "2038041818",
+          "name": "Taosheng Zuo"
+        },
+        {
+          "authorId": "51029701",
+          "name": "Guangkui Feng"
+        },
+        {
+          "authorId": "2129497269",
+          "name": "K. Xu"
+        }
+      ],
+      "abstract": "Purpose Leukoaraiosis (LA) is a major public issue that affects elderly adults. However, the underlying neuropathological mechanism of LA without cognitive impairment requires examination. The present study aimed to explore the dynamic functional network connectivity (dFNC) in LA patients without cognitive impairment. Methods Twenty-three patients with LA and 20 well-matched healthy controls were recruited for the present study. Each subject underwent magnetic resonance imaging (MRI) scanning and cognition evaluations. Spatial independent component analysis was conducted to evaluate dynamic functional connectivity. The differences in dFNC were determined and correlated with cognitive performance. Results Compared with controls, LA without cognitive impairment showed aberrant dFNC in State 1, involving increased connectivity in the default mode network (DMN) with the executive control network (ECN). In addition, decreased connectivity in the DMN with the salience network (SN) was found in State 3. Furthermore, the decreased number of transitions between states was positively associated with the visuospatial/executive score (Spearman's rho = 0.452, p = 0.031), and the longer mean dwell time in State 1 was negatively associated with the Montreal Cognitive Assessment (MoCA) score (Spearman's rho = – 0.420, p = 0.046). Conclusion These findings enrich our understanding of the neural mechanisms underlying LA and may serve as a potential imaging biomarker for investigating and recognizing the LA at an early stage."
+    },
+    {
+      "paperId": "88abd658f97e5e859311ea293bfc93c935012134",
+      "externalIds": {
+        "MAG": "2345489637",
+        "PubMedCentral": "4859203",
+        "DOI": "10.1097/HRP.0000000000000081",
+        "CorpusId": 3666135,
+        "PubMed": "27148911"
+      },
+      "url": "https://www.semanticscholar.org/paper/88abd658f97e5e859311ea293bfc93c935012134",
+      "title": "Cognitive Vulnerability to Major Depression: View from the Intrinsic Network and Cross-network Interactions",
+      "venue": "Harvard Review of Psychiatry",
+      "year": 2016,
+      "citationCount": 84,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4859203",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4859203, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2144796205",
+          "name": "Xiang Wang"
+        },
+        {
+          "authorId": "2383129750",
+          "name": "Dost Öngür"
+        },
+        {
+          "authorId": "5512630",
+          "name": "R. Auerbach"
+        },
+        {
+          "authorId": "2827473",
+          "name": "S. Yao"
+        }
+      ],
+      "abstract": "AbstractAlthough it is generally accepted that cognitive factors contribute to the pathogenesis of major depressive disorder (MDD), there are missing links between behavioral and biological models of depression. Nevertheless, research employing neuroimaging technologies has elucidated some of the neurobiological mechanisms related to cognitive-vulnerability factors, especially from a whole-brain, dynamic perspective. In this review, we integrate well-established cognitive-vulnerability factors for MDD and corresponding neural mechanisms in intrinsic networks using a dual-process framework. We propose that the dynamic alteration and imbalance among the intrinsic networks, both in the resting-state and the rest-task transition stages, contribute to the development of cognitive vulnerability and MDD. Specifically, we propose that abnormally increased resting-state default mode network (DMN) activity and connectivity (mainly in anterior DMN regions) contribute to the development of cognitive vulnerability. Furthermore, when subjects confront negative stimuli in the period of rest-to-task transition, the following three kinds of aberrant network interactions have been identified as facilitators of vulnerability and dysphoric mood, each through a different cognitive mechanism: DMN dominance over the central executive network (CEN), an impaired salience network–mediated switching between the DMN and CEN, and ineffective CEN modulation of the DMN. This focus on interrelated networks and brain-activity changes between rest and task states provides a neural-system perspective for future research on cognitive vulnerability and resilience, and may potentially guide the development of new intervention strategies for MDD."
+    },
+    {
+      "paperId": "8ce90429d3cb51a9f231b277ae4af3fc4f40ac90",
+      "externalIds": {
+        "CorpusId": 234487821
+      },
+      "url": "https://www.semanticscholar.org/paper/8ce90429d3cb51a9f231b277ae4af3fc4f40ac90",
+      "title": "Mind blanking is associated with a rigid spatio-temporal profile in typical wakefulness",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "9351649",
+          "name": "S. Mortaheb"
+        },
+        {
+          "authorId": "144715538",
+          "name": "M. Klados"
+        },
+        {
+          "authorId": "8597032",
+          "name": "Laurens Van Calster"
+        },
+        {
+          "authorId": "2215389802",
+          "name": "Paradeisios"
+        },
+        {
+          "authorId": "2215389754",
+          "name": "Alexandros Boulakis"
+        },
+        {
+          "authorId": "2091994866",
+          "name": "Kleio Georgoula"
+        },
+        {
+          "authorId": "2054365",
+          "name": "S. Majerus"
+        },
+        {
+          "authorId": "2630681",
+          "name": "A. Demertzi"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "9dd9f45e9cebcb0841658f7ea22dd65e0715934a",
+      "externalIds": {
+        "CorpusId": 204749217
+      },
+      "url": "https://www.semanticscholar.org/paper/9dd9f45e9cebcb0841658f7ea22dd65e0715934a",
+      "title": "1-A-3 The \" Triple Threat \" : Influence of Peers , Excitement , and Reward on Cognitive Control Capacity in Adolescents",
+      "venue": "",
+      "year": 2016,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://fluxsociety.org/wp-content/uploads/2016/08/FluxPosterAbstractBooklet.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3439412",
+          "name": "Kaitlyn Breiner"
+        },
+        {
+          "authorId": "153252309",
+          "name": "Anfei Li"
+        },
+        {
+          "authorId": "20074680",
+          "name": "Alexandra O Cohen"
+        },
+        {
+          "authorId": "143629939",
+          "name": "L. Steinberg"
+        },
+        {
+          "authorId": "2102848000",
+          "name": "Richard Bonnie4"
+        },
+        {
+          "authorId": "2083201978",
+          "name": "Elizabeth Scott5"
+        },
+        {
+          "authorId": "2153409855",
+          "name": "Kim"
+        },
+        {
+          "authorId": "2103269648",
+          "name": "Taylor-Thompson6"
+        },
+        {
+          "authorId": "2096229074",
+          "name": "Marc Rudolph7"
+        },
+        {
+          "authorId": "3257074",
+          "name": "J. Chein"
+        },
+        {
+          "authorId": "2103832943",
+          "name": "Jennifer Richeson8"
+        },
+        {
+          "authorId": "3437915",
+          "name": "Danielle V. Dellarco"
+        },
+        {
+          "authorId": "2081781878",
+          "name": "Damien Fair7"
+        },
+        {
+          "authorId": "2080268644",
+          "name": "Bj"
+        },
+        {
+          "authorId": "2080717080",
+          "name": "Casey"
+        },
+        {
+          "authorId": "2104514",
+          "name": "A. Galván"
+        },
+        {
+          "authorId": "6707317",
+          "name": "T. Iuculano"
+        },
+        {
+          "authorId": "144069540",
+          "name": "Ting-Ting Chang"
+        },
+        {
+          "authorId": "49834379",
+          "name": "Arron W. S. Metcalfe"
+        },
+        {
+          "authorId": "143968470",
+          "name": "V. Menon"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

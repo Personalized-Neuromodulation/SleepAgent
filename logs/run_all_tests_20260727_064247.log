@@ -1,0 +1,287 @@
+[run_all_tests] project_root=/home/zyb/Agent_skills/SleepAgent
+[run_all_tests] iterations=config_default
+[run_all_tests] base_loop_config=configs/discovery_loop_config.yaml
+[run_all_tests] log_file=logs/run_all_tests_20260727_064247.log
+[run_all_tests] [1/2] foundation -> online grounding/RAG
+API environment preflight
+  NCBI_EMAIL: SET
+  NCBI_TOOL: SleepAgent
+  SEMANTIC_SCHOLAR_API_KEY: SET
+[1/6] Build foundation
+{
+  "mode": "empty_foundation",
+  "subject_count": 0,
+  "feature_count": 0,
+  "qc_record_count": 0,
+  "master_rows": 0,
+  "master_columns": 1,
+  "manifest": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_manifest.json",
+  "outputs": {
+    "subject_index": "/home/zyb/Agent_skills/SleepAgent/data/foundation/subject_index.csv",
+    "feature_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/feature_registry.csv",
+    "approved_variables": "/home/zyb/Agent_skills/SleepAgent/data/foundation/approved_variables.yaml",
+    "data_dictionary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_dictionary.yaml",
+    "qc_summary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/qc_summary.csv",
+    "multimodal_master_table": "/home/zyb/Agent_skills/SleepAgent/data/foundation/multimodal_master_table.csv",
+    "report": "/home/zyb/Agent_skills/SleepAgent/reports/phase0_foundation_report.md"
+  },
+  "data_assets": {
+    "registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+    "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+    "asset_count": 1,
+    "update_event_count": 2,
+    "last_update": {}
+  }
+}
+[2/6] Build knowledge source registry
+{
+  "registry_version": "sleepagent_knowledge_sources_v1",
+  "created_at": "2026-07-27T10:42:47.949075+00:00",
+  "enabled_sources": [
+    "clinical_trials",
+    "guidelines",
+    "standards",
+    "diagnostic_taxonomy",
+    "datasets",
+    "instruments",
+    "tools_methods"
+  ],
+  "clinical_trials_count": 0,
+  "guidelines_count": 9,
+  "standards_count": 7,
+  "diagnostic_terms_count": 6,
+  "datasets_count": 4,
+  "instruments_count": 4,
+  "tools_methods_count": 11,
+  "output_files": {
+    "clinical_trials_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.csv",
+    "clinical_trials_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.jsonl",
+    "guidelines_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.csv",
+    "guidelines_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.jsonl",
+    "standards_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.csv",
+    "standards_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.jsonl",
+    "diagnostic_taxonomy_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.yaml",
+    "diagnostic_taxonomy_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.json",
+    "datasets_csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.csv",
+    "datasets_jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.jsonl",
+    "instruments_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.yaml",
+    "instruments_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.json",
+    "tools_methods_yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.yaml",
+    "tools_methods_json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.json",
+    "manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_manifest.json",
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_report.md"
+  },
+  "database_backend": "sqlite",
+  "notes": "Metadata-only for restricted AASM/ICSD sources; no paywalled content downloaded.",
+  "warnings": [
+    "ClinicalTrials.gov live API skipped; set SLEEPAGENT_ENABLE_CLINICALTRIALS_LIVE=true to enable."
+  ],
+  "clinical_trial_conditions": {},
+  "clinical_trial_intervention_types": {},
+  "clinical_trial_status_counts": {},
+  "guideline_organizations": {
+    "American Academy of Sleep Medicine": 9
+  },
+  "guideline_topics": {
+    "insomnia": 1,
+    "sleep apnea": 1,
+    "circadian rhythm sleep wake disorders": 1,
+    "hypersomnia": 1,
+    "narcolepsy": 1,
+    "parasomnias": 1,
+    "pediatric sleep": 1,
+    "behavioral treatment": 1,
+    "pharmacologic treatment": 1
+  },
+  "standard_categories": {
+    "sleep_staging": 1,
+    "arousal": 1,
+    "respiratory_events": 1,
+    "movement_events": 1,
+    "cardiac_events": 1,
+    "montage": 1,
+    "technical_specifications": 1
+  },
+  "diagnostic_categories": {
+    "insomnia_disorders": 1,
+    "sleep_related_breathing_disorders": 1,
+    "central_disorders_of_hypersomnolence": 1,
+    "circadian_rhythm_sleep_wake_disorders": 1,
+    "parasomnias": 1,
+    "sleep_related_movement_disorders": 1
+  },
+  "dataset_modalities": {
+    "EEG": 3,
+    "PSG": 3,
+    "questionnaires": 1,
+    "clinical": 1,
+    "fMRI": 1,
+    "MRI": 1
+  },
+  "dataset_access_status": {
+    "open": 3,
+    "controlled/open depending dataset": 1
+  },
+  "instrument_domains": {
+    "insomnia severity": 1,
+    "sleep quality": 1,
+    "daytime sleepiness": 1,
+    "subjective sleep timing and quality": 1
+  },
+  "tool_method_modalities": {
+    "EEG": 2,
+    "fMRI": 1,
+    "neuroimaging": 1
+  },
+  "tool_method_roles": {
+    "preprocessing": 2,
+    "spectral_analysis": 1,
+    "event_detection": 1,
+    "sleep_staging": 1,
+    "spindle_detection": 1,
+    "slow_wave_detection": 1,
+    "confound_regression": 1,
+    "DTI preprocessing": 1,
+    "cortical_thickness": 1,
+    "subcortical_volume": 1,
+    "data_organization": 1,
+    "reproducibility": 1,
+    "metadata_query": 1,
+    "dataset_indexing": 1,
+    "feature_extraction": 2,
+    "confound_control": 1,
+    "statistical_validity": 1
+  },
+  "run_id": "run_f1ba0cc7a609",
+  "exports": {
+    "clinical_trials": {
+      "count": 0,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/clinical_trials_registry.jsonl"
+    },
+    "guidelines": {
+      "count": 9,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/guidelines_registry.jsonl"
+    },
+    "standards": {
+      "count": 7,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/standards_rules_registry.jsonl"
+    },
+    "diagnostic_taxonomy": {
+      "count": 6,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/diagnostic_taxonomy.json"
+    },
+    "datasets": {
+      "count": 4,
+      "csv": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.csv",
+      "jsonl": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/datasets_registry.jsonl"
+    },
+    "instruments": {
+      "count": 4,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/instruments_registry.json"
+    },
+    "tools_methods": {
+      "count": 11,
+      "yaml": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.yaml",
+      "json": "/home/zyb/Agent_skills/SleepAgent/data/knowledge_sources/tools_methods_registry.json"
+    },
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/knowledge_sources/knowledge_sources_report.md"
+  }
+}
+[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] timestamp=2026-07-27T06:42:48-04:00
+[literature_db_build_start] step=[3/6] Build online sleep literature SQLite DB
+[literature_db_build_start] database=data/literature/sleep_literature.db
+[literature_db_build_start] config=configs/literature_library_config.yaml
+[literature_db_build_start] query_config=configs/literature_queries.yaml
+[literature_db_build_start] library_version=sleep_literature_library_v1_online
+[api] enabled providers: pubmed, europe_pmc, openalex, semantic_scholar
+[api] query count: 224; max_results_per_query: 50
+[api:pubmed] [########################] 224/224 records=5666 warnings=0 done accumulated_raw=5666
+[api:europe_pmc] [########################] 224/224 records=10124 warnings=0 done accumulated_raw=15790
+[api:openalex] [########################] 224/224 records=10155 warnings=0 done accumulated_raw=25945
+[api:semantic_scholar] [########################] 224/224 records=7860 warnings=0 done accumulated_raw=33805
+[api] deduplicated records: 15286
+[literature_build] write_api_outputs_start count=15286
+[literature_build] write_api_outputs_done count=15286
+[literature_build] write_queries_start count=225
+[literature_build] write_queries_done count=225
+[literature_build] persist_api_records_start count=15286
+Traceback (most recent call last):
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: papers.canonical_paper_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/cli.py", line 131, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/cli.py", line 76, in main
+    result = run_literature_build(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/literature/library_builder.py", line 261, in run_literature_build
+    result = _run(session_obj)
+             ^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/literature/library_builder.py", line 149, in _run
+    api_results = _persist_records(session_obj, api_papers, queries, query_set_version, "api_broad")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/literature/library_builder.py", line 49, in _persist_records
+    result = resolve_and_upsert(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/literature/identity_resolution.py", line 491, in resolve_and_upsert
+    paper = _insert_paper(session, record, retrieval_channel)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyb/Agent_skills/SleepAgent/sleep_ai_scientist/literature/identity_resolution.py", line 389, in _insert_paper
+    session.flush()
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 465, in execute
+    rec.execute(self)
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/fsl/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: papers.canonical_paper_id
+[SQL: INSERT INTO papers (paper_id, canonical_paper_id, title, title_normalized, title_hash, abstract, year, doi, pmid, pmcid, semantic_scholar_id, openalex_id, crossref_id, journal, journal_normalized, first_author, publication_type, authors_json, keywords_json, mesh_terms_json, citation_count, citation_source, citation_sources_json, citation_count_age_normalized, is_open_access, open_access_url, journal_priority_score, journal_domain_json, jcr_categories_json, retrieval_channels_json, source_providers_json, duplicate_group_id, merged_from_json, url, source, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('title:833c23dc3e74d9e4153da8ec9593a68c785bc677', 'title:833c23dc3e74d9e4153da8ec9593a68c785bc677', '', '', '', "Most of our knowledge about human emotional memory comes from animal research. Based on this work, the amygdala is often labeled the brain's “fear ce ... (2311 characters truncated) ... e involvement of the amygdala in human fear learning, they challenge its typical portrayals and illustrate the complexities of translational science.", None, None, None, None, None, None, None, 'UvA-DARE (University of Amsterdam)', 'uva dare university amsterdam', 'Renée M. Visser', None, '["Ren\\u00e9e M. Visser", "Joe Bathelt", "H. Steven Scholte", "Merel Kindt"]', '[]', '[]', 51, 'openalex', '["openalex"]', None, 0, None, None, '[]', '[]', '["api_broad"]', '["openalex"]', None, '[]', 'https://openalex.org/W4226243751', 'api:openalex', '2026-07-27 10:43:12.335705', '2026-07-27 10:43:12.335712')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)

@@ -1,50 +1,22 @@
-# Research Synthesis Review: Thalamic Spindle Modulation & Insomnia Pathways
+# Hypothesis Meta Review
 
----
+Total hypotheses: 5
+Status counts: {'active': 5}
 
-## 1. **Strongest Hypotheses by Scientific Merit**
-- **Top Hypothesis**: *Thalamic Spindle Modulation and Insomnia Severity via Combined Thalamocortical and White Matter Pathways* (Elo=1529)  
-  - **Key Merits**: Integrates thalamocortical coupling, white matter integrity (FA), and spindle modulation; supported by multimodal evidence (DTI/EEG/fMRI) and robust experimental plans.  
-  - **Novelty**: Links disrupted white matter connectivity (DMN-sensorimotor) to insomnia severity via thalamic spindles.  
+## Scientific Strength Ranking
+1. White Matter Microstructural Integrity Mediates Network-Specific Connectivity Disruptions in Insomnia (Elo 1597.0, active; data_testability=partially_testable)
+   - Current-data note: The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test.
+2. Thalamocortical Coupling Disruption Links Insomnia to Limbic Structural Vulnerability (Elo 1338.0, active; data_testability=partially_testable)
+   - Current-data note: The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test.
+3. REM/NREM Switching Dysregulation Impairs Salience-DMN Coupling in Insomnia (Elo 1289.0, active; data_testability=partially_testable)
+   - Current-data note: The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test.
 
-- **Second Hypothesis**: *Thalamic Spindle Modulation and REM-NREM Switching in Insomnia via Combined Thalamocortical and Cortico-Thalamic Pathways* (Elo=1494)  
-  - **Key Merits**: Synthesizes REM-NREM transitions with thalamocortical/cortico-thalamic pathways; supported by evidence on spindle density and cortico-thalamic connectivity.  
+## Current-Data Experiment Priority
+1. White Matter Microstructural Integrity Mediates Network-Specific Connectivity Disruptions in Insomnia (experiment_priority=1607.0; data_testability=partially_testable)
+   - Missing modalities: DTI; missing variables: FA
+2. Thalamocortical Coupling Disruption Links Insomnia to Limbic Structural Vulnerability (experiment_priority=1348.0; data_testability=partially_testable)
+   - Missing modalities: EEG, MRI; missing variables: none
+3. REM/NREM Switching Dysregulation Impairs Salience-DMN Coupling in Insomnia (experiment_priority=1299.0; data_testability=partially_testable)
+   - Missing modalities: scales; missing variables: ISI, REM_latency
 
----
-
-## 2. **Experiment-Testable Hypotheses with Current Data**
-- **Thalamic Spindle Modulation and Insomnia Severity via Thalamocortical Pathways** (Elo=1450)  
-  - **Testability**: Partially testable with fMRI/EEG data; missing DTI/FA variables.  
-  - **Gaps**: Requires integration of white matter tracts (e.g., DMN-sensorimotor pathways).  
-
-- **REM-NREM Switching and Cortico-Thalamic Connectivity** (Elo=1420)  
-  - **Testability**: Testable with fMRI and polysomnography; validated in studies linking cortico-thalamic declines to slow-wave sleep.  
-
----
-
-## 3. **High-Value but Not Directly Testable Mechanisms/Data Gaps**
-- **White Matter Integrity (FA) and Thalamic Spindles**  
-  - **Gap**: Requires DTI/FA data; current studies rely on fMRI/ALFF metrics.  
-  - **High Value**: Critical for understanding DMN-sensorimotor disruptions in insomnia.  
-
-- **Salience Network Dysregulation and Hyperarousal**  
-  - **Gap**: Needs multimodal (EEG-fMRI) validation; current evidence is correlational.  
-
----
-
-## 4. **Recurring Weaknesses**
-- **Modalities**: Overreliance on fMRI/EEG; DTI/FA and polysomnography underutilized.  
-- **Integration**: Limited synthesis of thalamocortical pathways with network-level (DMN, salience) dysfunctions.  
-- **Temporal Dynamics**: Lack of longitudinal studies on REM-NREM transitions and white matter plasticity.  
-
----
-
-## 5. **Recommended Next Generation Directions**
-- **Multimodal Studies**: Combine DTI/FA with EEG/fMRI to validate thalamocortical-white matter pathways.  
-- **Network-Level Models**: Develop computational models integrating DMN-sensorimotor disruptions and thalamic spindles.  
-- **Longitudinal Designs**: Track white matter changes (FA) and REM-NREM transitions in insomnia cohorts.  
-- **Targeted Interventions**: Explore TMS/EEG biofeedback to modulate thalamic spindles and cortico-thalamic connectivity.  
-
---- 
-
-**Key Takeaway**: The top hypotheses are scientifically robust but require multimodal validation. Next-gen studies should bridge white matter dynamics, thalamic spindles, and network-level dysfunctions.
+Recommended next step: treat literature-supported but not-directly-testable mechanisms as data gaps, not as current experimental evidence.

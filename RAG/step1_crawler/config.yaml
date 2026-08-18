@@ -1,0 +1,84 @@
+# 统一学术期刊爬虫系统配置
+
+# AI分析配置
+# MAIN_LLM_MODEL: "deepseek-chat"
+# OPENAI_API_KEY: "sk-dd2e82aec10d4d90ac038ccc932a4298"
+# OPENAI_BASE_URL: "https://api.deepseek.com/v1"
+
+# MAIN_LLM_MODEL: "gpt-4.1-mini"
+# OPENAI_API_KEY: "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"
+# OPENAI_BASE_URL: "https://api.openai.com/v1"
+# LLM_TIMEOUT_SECONDS: 120
+# LLM_MAX_RETRIES: 3
+# LLM_BATCH_SIZE: 5
+# 大模型配置
+MAIN_LLM_MODEL: "qwen3:14b"       # Ollama 模型名称，确保已通过 ollama pull 下载
+OLLAMA_HOST: "http://localhost:11434" # Ollama 服务地址（默认无需修改）
+OLLAMA_KEEP_ALIVE: "10m" # 首次请求加载后常驻GPU，全部任务结束后由cleanup统一卸载
+OLLAMA_DISABLE_THINKING: true # Qwen3使用/no_think关闭thinking
+
+# 超时与重试（秒）
+LLM_TIMEOUT_SECONDS: 120
+LLM_MAX_RETRIES: 3
+LLM_BATCH_SIZE: 5
+LLM_RETRY_BASE_DELAY_SECONDS: 5
+LLM_BATCH_DELAY_SECONDS: 1
+LLM_MAX_TITLE_CHARS: 500
+LLM_MAX_ABSTRACT_CHARS: 1600
+LLM_MAX_TOKENS: 2048
+
+
+# Topic filtering configuration
+TOPIC_NAME: sleep
+TOPIC_KEYWORDS:
+  - sleep
+  - insomnia
+  - slow wave
+  - NREM
+  - REM
+  - polysomnography
+  - Hypnogram
+  - Sleep Latency
+  - Sleep Architecture
+  - circadian
+  - circadian rhythm
+  - circadian clock
+  - chronotype
+  - melatonin
+  - insomnia disorder
+  - sleep apnea
+  - sleep apnoea
+  - obstructive sleep apnea
+  - obstructive sleep apnoea
+  - narcolepsy
+  - restless legs syndrome
+  - parasomnia
+  - hypersomnia
+
+ 
+CRAWL_MODE: topic_search
+TOPIC_SEARCH_MAX_PAGES_PER_KEYWORD: 5
+EXPORT_ON_LLM_FAILURE: true # 是否导出复核失败的文章
+
+PUBLISHER_ABSTRACT_TIMEOUT_SECONDS: 8
+
+# Max HTML bytes read from one publisher page, protects memory usage.
+PUBLISHER_MAX_HTML_BYTES: 3145728
+
+# Existing low-memory settings
+CROSSREF_STREAM_BATCH_SIZE: 200
+CSV_PROCESS_BATCH_SIZE: 100
+
+ABSTRACT_REPAIR_MAX_WORKERS: 8
+ABSTRACT_REPAIR_BATCH_SIZE: 64
+ABSTRACT_REPAIR_SCAN_BATCH_SIZE: 512
+
+PUBLISHER_ABSTRACT_TIMEOUT_SECONDS: 8
+
+# Runtime parameters. Command-line arguments override these values.
+RUN_JOURNAL_CSV: "/data/RAG/step1_crawler/2025_Q1_IF_5.csv"
+RUN_JOURNALS: other
+RUN_SUBJOURNAL: 
+RUN_START_DATE: "2020-01-01"
+RUN_END_DATE: "2027-07-28"
+RUN_FORMAT: "csv"

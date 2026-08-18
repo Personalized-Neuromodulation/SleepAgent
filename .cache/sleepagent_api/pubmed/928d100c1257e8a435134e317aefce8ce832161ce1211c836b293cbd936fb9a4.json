@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "fALFF",
+        "to": "\"falff\"[All Fields] OR \"falffs\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "regulation",
+        "to": "\"legislation and jurisprudence\"[Subheading] OR (\"legislation\"[All Fields] AND \"jurisprudence\"[All Fields]) OR \"legislation and jurisprudence\"[All Fields] OR \"regulations\"[All Fields] OR \"social control, formal\"[MeSH Terms] OR (\"social\"[All Fields] AND \"control\"[All Fields] AND \"formal\"[All Fields]) OR \"formal social control\"[All Fields] OR \"regulate\"[All Fields] OR \"regulates\"[All Fields] OR \"regulating\"[All Fields] OR \"regulation's\"[All Fields] OR \"regulative\"[All Fields] OR \"regulator\"[All Fields] OR \"regulator's\"[All Fields] OR \"regulators\"[All Fields] OR \"regulated\"[All Fields] OR \"regulation\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"falff\"[All Fields] OR \"falffs\"[All Fields]) AND \"Hz\"[All Fields] AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"legislation and jurisprudence\"[MeSH Subheading] OR (\"legislation\"[All Fields] AND \"jurisprudence\"[All Fields]) OR \"legislation and jurisprudence\"[All Fields] OR \"regulations\"[All Fields] OR \"social control, formal\"[MeSH Terms] OR (\"social\"[All Fields] AND \"control\"[All Fields] AND \"formal\"[All Fields]) OR \"formal social control\"[All Fields] OR \"regulate\"[All Fields] OR \"regulates\"[All Fields] OR \"regulating\"[All Fields] OR \"regulation s\"[All Fields] OR \"regulative\"[All Fields] OR \"regulator\"[All Fields] OR \"regulator s\"[All Fields] OR \"regulators\"[All Fields] OR \"regulated\"[All Fields] OR \"regulation\"[All Fields])",
+    "errorlist": {
+      "phrasesnotfound": [
+        "0.01-0.08"
+      ],
+      "fieldsnotfound": []
+    },
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

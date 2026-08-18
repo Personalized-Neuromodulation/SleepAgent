@@ -7,6 +7,7 @@ from sleep_ai_scientist.llm.client import build_llm_client, llm_enabled, load_pr
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
 from sleep_ai_scientist.hypothesis.agents.state import HypothesisSessionState
 from sleep_ai_scientist.hypothesis.agents.tournament import Glicko2State, compute_glicko2_update
+from sleep_ai_scientist.hypothesis.experiment_preflight import annotate_registry_experiment_preflight
 from sleep_ai_scientist.hypothesis.testability import annotate_registry_testability
 from sleep_ai_scientist.schemas.hypothesis import Hypothesis, TournamentMatch
 
@@ -190,10 +191,26 @@ class RankAgent:
         round_number = int(state.artifacts.get("ranking_round", 0)) + 1
         state.artifacts["ranking_round"] = round_number
         annotate_registry_testability(state.registry, state.artifacts.get("analysis_ready_profile"))
+        annotate_registry_experiment_preflight(
+            state.registry,
+            state.artifacts.get("analysis_ready_profile"),
+            state.artifacts.get("experiment_design_constraints", {}),
+        )
+        duplicate_preflight = [
+            hypothesis.hypothesis_id
+            for hypothesis in state.registry.all()
+            if hypothesis.metadata.get("experiment_preflight", {}).get("duplicates_prior_experiment")
+        ]
+        if duplicate_preflight and bool(state.config.get("logging", {}).get("progress", True)):
+            print(
+                "[hypothesis] experiment_preflight duplicates_prior="
+                f"{len(duplicate_preflight)} ids={','.join(duplicate_preflight[:5])}",
+                flush=True,
+            )
         matches = run_pairwise_ranking(
             state.registry,
             round_number=round_number,
-            ollama_config=state.config.get("_selected_llm", {}),
+            ollama_config=state.config.get("_llm_tasks", {}).get("hypothesis_rank", state.config.get("_selected_llm", {})),
             knowledge_context=state.context_blocks.get("knowledge_graph", ""),
         )
         state.matches.extend(matches)

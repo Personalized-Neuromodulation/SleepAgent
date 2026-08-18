@@ -1,0 +1,987 @@
+{
+  "iteration": 3,
+  "iteration_id": "iteration_003",
+  "hypothesis_feedback_input": {
+    "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_002/experiment/experimental_feedback.json",
+    "available": true,
+    "size": 907
+  },
+  "hypothesis_summary": {
+    "evidence": 500,
+    "hypotheses": 5,
+    "active": 5,
+    "reviews": 25,
+    "matches": 16,
+    "duplicates_rejected": 0,
+    "feedback": 1,
+    "feedback_updates": 0,
+    "reward_memory": 0,
+    "priors": 0,
+    "agents": [
+      "ContextAgent",
+      "GenerationAgent",
+      "ReviewAgent",
+      "RankAgent",
+      "EvolutionMemoryAgent"
+    ],
+    "output_hypotheses_dir": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/hypothesis",
+    "report_path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/hypothesis_report.md"
+  },
+  "experiment_summary": {
+    "plans": 1,
+    "executed_plans": 1,
+    "skipped_plans": [],
+    "results": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experiment_results.json",
+    "experimental_feedback": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experimental_feedback.json",
+    "report": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/phase3_experiment_report.md",
+    "visualizations": {
+      "html": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/index.html",
+      "manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/visualization_manifest.json",
+      "figures": [
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/primary_test_matrix.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/linear_regression_fit_experiment_plan_cbd0440661bb_thalamus_DMN_FC_ISI.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_DMN_FC_ISI.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/linear_regression_fit_experiment_plan_cbd0440661bb_thalamus_salience_FC_ISI.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_salience_FC_ISI.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/linear_regression_fit_experiment_plan_cbd0440661bb_thalamus_frontoparietal_FC_ISI.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_frontoparietal_FC_ISI.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/linear_regression_fit_experiment_plan_cbd0440661bb_thalamus_coord_y_ISI.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_coord_y_ISI.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/robustness_bootstrap_experiment_plan_cbd0440661bb.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/negative_controls_experiment_plan_cbd0440661bb.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/missingness_experiment_plan_cbd0440661bb.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/ml_feature_importance_experiment_plan_cbd0440661bb.png",
+        "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/ml_regression_predicted_observed_experiment_plan_cbd0440661bb.png"
+      ],
+      "figure_records": [
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/primary_test_matrix.png",
+          "kind": "primary_test_matrix",
+          "title": "Primary Test Matrix",
+          "caption": "Effect size and p-value matrix across all primary predictor/outcome tests."
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/linear_regression_fit_experiment_plan_cbd0440661bb_thalamus_DMN_FC_ISI.png",
+          "kind": "linear_regression_fit",
+          "title": "Linear Regression: thalamus-DMN FC -> ISI",
+          "caption": "Full variable pair: thalamus_DMN_FC -> ISI."
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_DMN_FC_ISI.png",
+          "kind": "figure",
+          "title": "group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_DMN_FC_ISI",
+          "caption": "group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_DMN_FC_ISI.png"
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/linear_regression_fit_experiment_plan_cbd0440661bb_thalamus_salience_FC_ISI.png",
+          "kind": "linear_regression_fit",
+          "title": "Linear Regression: thalamus-salience FC -> ISI",
+          "caption": "Full variable pair: thalamus_salience_FC -> ISI."
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_salience_FC_ISI.png",
+          "kind": "figure",
+          "title": "group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_salience_FC_ISI",
+          "caption": "group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_salience_FC_ISI.png"
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/linear_regression_fit_experiment_plan_cbd0440661bb_thalamus_frontoparietal_FC_ISI.png",
+          "kind": "linear_regression_fit",
+          "title": "Linear Regression: thalamus-frontoparietal FC -> ISI",
+          "caption": "Full variable pair: thalamus_frontoparietal_FC -> ISI."
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_frontoparietal_FC_ISI.png",
+          "kind": "figure",
+          "title": "group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_frontoparietal_FC_ISI",
+          "caption": "group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_frontoparietal_FC_ISI.png"
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/linear_regression_fit_experiment_plan_cbd0440661bb_thalamus_coord_y_ISI.png",
+          "kind": "linear_regression_fit",
+          "title": "Linear Regression: thalamus coord y -> ISI",
+          "caption": "Full variable pair: thalamus_coord_y -> ISI."
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_coord_y_ISI.png",
+          "kind": "figure",
+          "title": "group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_coord_y_ISI",
+          "caption": "group_specific_scatter_experiment_plan_cbd0440661bb_thalamus_coord_y_ISI.png"
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/robustness_bootstrap_experiment_plan_cbd0440661bb.png",
+          "kind": "robustness_bootstrap",
+          "title": "Bootstrap Sign Stability: plan cbd0440661bb",
+          "caption": "Bootstrap sign stability for each primary test. Labels show predictor/outcome pairs rather than internal test ids."
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/negative_controls_experiment_plan_cbd0440661bb.png",
+          "kind": "negative_controls",
+          "title": "Negative Controls: plan cbd0440661bb",
+          "caption": "Negative controls: green=passed negative control; red=failed negative control. Bars show effect estimates; p-values are not available in the current negative-control result schema."
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/missingness_experiment_plan_cbd0440661bb.png",
+          "kind": "missingness",
+          "title": "Variable Missingness: plan cbd0440661bb",
+          "caption": "Missing rate for variables used by this experiment plan."
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/ml_feature_importance_experiment_plan_cbd0440661bb.png",
+          "kind": "ml_feature_importance",
+          "title": "ML Feature Importance",
+          "caption": "Feature importance from the selected machine-learning model."
+        },
+        {
+          "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/ml_regression_predicted_observed_experiment_plan_cbd0440661bb.png",
+          "kind": "ml_regression_predicted_observed",
+          "title": "ML Regression Predicted vs Observed",
+          "caption": "Predicted versus observed regression outcomes."
+        }
+      ],
+      "dashboard": {
+        "plans": [
+          {
+            "plan_id": "experiment_plan_cbd0440661bb",
+            "hypothesis_id": "hypothesis_2faad4927002",
+            "hypothesis_title": "Thalamocortical Coupling Mediates Cognitive Impairment in Insomnia Severity",
+            "primary_tests_passed": 3,
+            "primary_tests_total": 4,
+            "models": [
+              "linear_regression"
+            ],
+            "ml_model": "decision_tree_regressor,random_forest_regressor,svm_regressor,xgboost_regressor,lightgbm_regressor",
+            "predictors": [
+              "thalamus_DMN_FC",
+              "thalamus_salience_FC",
+              "thalamus_frontoparietal_FC",
+              "thalamus_coord_y"
+            ],
+            "outcomes": [
+              "ISI"
+            ],
+            "negative_controls": [
+              "global_signal_psd_power_mean",
+              "global_signal_psd_power_max"
+            ]
+          }
+        ],
+        "skipped_plans": []
+      }
+    },
+    "group_specific_models": {
+      "csv": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/group_specific_model_results.csv",
+      "json": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/group_specific_model_results.json"
+    },
+    "feature_tables": [
+      {
+        "modality": "fMRI",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+        "subject_id_column": "subject_id",
+        "feature_columns": [
+          "qc_signal_GS_pre_mean",
+          "qc_signal_GS_post_mean",
+          "qc_signal_GS_mean_delta",
+          "qc_signal_GS_pre_sigma",
+          "qc_signal_GS_post_sigma",
+          "qc_signal_GS_sigma_delta",
+          "qc_signal_GS_sigma_reduction_percent",
+          "qc_signal_GS_pre_max",
+          "qc_signal_GS_post_max",
+          "qc_signal_CSF_pre_mean",
+          "qc_signal_CSF_post_mean",
+          "qc_signal_CSF_mean_delta",
+          "qc_signal_CSF_pre_sigma",
+          "qc_signal_CSF_post_sigma",
+          "qc_signal_CSF_sigma_delta",
+          "qc_signal_CSF_sigma_reduction_percent",
+          "qc_signal_CSF_pre_max",
+          "qc_signal_CSF_post_max",
+          "qc_signal_WM_pre_mean",
+          "qc_signal_WM_post_mean",
+          "qc_signal_WM_mean_delta",
+          "qc_signal_WM_pre_sigma",
+          "qc_signal_WM_post_sigma",
+          "qc_signal_WM_sigma_delta",
+          "qc_signal_WM_sigma_reduction_percent",
+          "qc_signal_WM_pre_max",
+          "qc_signal_WM_post_max",
+          "qc_signal_DVARS_pre_mean",
+          "qc_signal_DVARS_post_mean",
+          "qc_signal_DVARS_mean_delta",
+          "qc_signal_DVARS_pre_sigma",
+          "qc_signal_DVARS_post_sigma",
+          "qc_signal_DVARS_sigma_delta",
+          "qc_signal_DVARS_sigma_reduction_percent",
+          "qc_signal_DVARS_pre_max",
+          "qc_signal_DVARS_post_max",
+          "qc_signal_FD_pre_mean",
+          "qc_signal_FD_post_mean",
+          "qc_signal_FD_mean_delta",
+          "qc_signal_FD_pre_sigma",
+          "qc_signal_FD_post_sigma",
+          "qc_signal_FD_sigma_delta",
+          "qc_signal_FD_sigma_reduction_percent",
+          "qc_signal_FD_pre_max",
+          "qc_signal_FD_post_max",
+          "mean_FD",
+          "max_FD",
+          "mean_DVARS",
+          "qc_signal_post_DVARS_mean",
+          "qc_signal_post_GS_mean",
+          "percent_high_motion",
+          "post_DVARS_std",
+          "timefreq_TR",
+          "timefreq_sampling_rate_hz",
+          "timefreq_ALFF_0.01_0.08",
+          "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+          "global_signal_psd_power_mean",
+          "global_signal_psd_power_max",
+          "thalamus_roi_voxels",
+          "DMN_roi_voxels",
+          "salience_roi_voxels",
+          "frontoparietal_roi_voxels",
+          "thalamus_coord_x",
+          "thalamus_coord_y",
+          "thalamus_coord_z",
+          "DMN_coord_x",
+          "DMN_coord_y",
+          "DMN_coord_z",
+          "salience_coord_x",
+          "salience_coord_y",
+          "salience_coord_z",
+          "frontoparietal_coord_x",
+          "frontoparietal_coord_y",
+          "frontoparietal_coord_z",
+          "thalamus_DMN_FC",
+          "thalamus_salience_FC",
+          "thalamus_frontoparietal_FC",
+          "DMN_salience_FC",
+          "DMN_frontoparietal_FC",
+          "salience_frontoparietal_FC",
+          "DMN_FC",
+          "salience_FC",
+          "frontoparietal_FC"
+        ],
+        "metadata": {
+          "source": "derivatives",
+          "plan_id": "pre_experiment_features",
+          "roi_fc_status": "computed_when_atlas_available",
+          "qc_status": "pass"
+        }
+      },
+      {
+        "modality": "scales",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/scales/pre_experiment_features/scale_features.csv",
+        "subject_id_column": "subject_id",
+        "feature_columns": [
+          "ISI",
+          "PSQI",
+          "BAI",
+          "BDI",
+          "sleepiness",
+          "baseline_source_visit",
+          "baseline_is_substituted"
+        ],
+        "metadata": {
+          "source": "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata",
+          "plan_id": "pre_experiment_features",
+          "extraction": "visit_structured_questionnaire_xlsx",
+          "long_table": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/scales/pre_experiment_features/scale_features_long.csv",
+          "workbook_audit": {
+            "source_root": "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata",
+            "discovered_file_count": 60,
+            "parsed_file_count": 60,
+            "skipped_file_count": 0,
+            "skipped_files": [],
+            "empty_file_count": 9,
+            "empty_files": [
+              "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata/sub-ISM037/scales/sub-ISM037_scales.xlsx",
+              "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata/sub-ISMHC009/scales/sub-ISMHC009_scales.xlsx",
+              "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata/sub-ISMHC020/scales/sub-ISMHC020_scales.xlsx",
+              "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata/sub-ISMHC028/scales/sub-ISMHC028_scales.xlsx",
+              "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata/sub-ISMHC030/scales/sub-ISMHC030_scales.xlsx",
+              "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata/sub-YZ006/scales/sub-YZ006_scales.xlsx",
+              "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata/sub-YZ011/scales/sub-YZ011_scales.xlsx",
+              "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata/sub-YZ014/scales/sub-YZ014_scales.xlsx",
+              "/data/fmri_agent/multimodal_sleep_data/bids/sourcedata/sub-YZ024/scales/sub-YZ024_scales.xlsx"
+            ],
+            "subjects_without_usable_visit": [
+              "sub-ISM037",
+              "sub-ISMHC009",
+              "sub-ISMHC020",
+              "sub-ISMHC028",
+              "sub-ISMHC030",
+              "sub-YZ006",
+              "sub-YZ011",
+              "sub-YZ014",
+              "sub-YZ024"
+            ],
+            "duplicate_subject_visit_count": 0,
+            "visit_counts": {
+              "0w": 51,
+              "2w": 29,
+              "3w": 29,
+              "6w": 29
+            }
+          },
+          "baseline_audit": {
+            "baseline_subject_count": 51,
+            "substituted_baseline_count": 0
+          },
+          "qc_status": "pass"
+        }
+      }
+    ],
+    "feature_profiles": [
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/profile/pre_experiment_features/analysis_ready_profile.yaml"
+    ],
+    "merged_feature_tables": [
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/multimodal/pre_experiment_features/multimodal_features.csv"
+    ]
+  },
+  "foundation_update": {
+    "foundation_changed": true,
+    "reason": "experiment_feature_tables",
+    "feature_tables": [
+      {
+        "modality": "fMRI",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv"
+      },
+      {
+        "modality": "scales",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/scales/pre_experiment_features/scale_features.csv"
+      }
+    ],
+    "foundation_config": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/foundation_update_config.yaml",
+    "foundation_summary": {
+      "subject_count": 93,
+      "feature_count": 95,
+      "qc_record_count": 93,
+      "master_rows": 144,
+      "master_columns": 108,
+      "manifest": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_manifest.json",
+      "outputs": {
+        "subject_index": "/home/zyb/Agent_skills/SleepAgent/data/foundation/subject_index.csv",
+        "feature_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/feature_registry.csv",
+        "approved_variables": "/home/zyb/Agent_skills/SleepAgent/data/foundation/approved_variables.yaml",
+        "data_dictionary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_dictionary.yaml",
+        "qc_summary": "/home/zyb/Agent_skills/SleepAgent/data/foundation/qc_summary.csv",
+        "multimodal_master_table": "/home/zyb/Agent_skills/SleepAgent/data/foundation/multimodal_master_table.csv",
+        "report": "/home/zyb/Agent_skills/SleepAgent/reports/phase0_foundation_report.md"
+      },
+      "data_assets": {
+        "registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+        "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+        "asset_count": 2,
+        "update_event_count": 10,
+        "last_update": {
+          "asset_count": 2,
+          "new_asset_count": 0,
+          "data_asset_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+          "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+          "asset_ids": [
+            "dbfb12164e659d7d",
+            "748611f17e1c6843"
+          ],
+          "update_event_id": "bda676d20ab2745e"
+        }
+      }
+    },
+    "data_asset_registry": "/home/zyb/Agent_skills/SleepAgent/data/foundation/data_asset_registry.jsonl",
+    "update_history": "/home/zyb/Agent_skills/SleepAgent/data/foundation/foundation_update_history.jsonl",
+    "data_asset_count": 2
+  },
+  "literature_expansion": {
+    "iteration_id": "iteration_003",
+    "signals": {
+      "records": 1,
+      "failed_tests": 1,
+      "negative_control_failures": 0,
+      "missing_variables": 0,
+      "modality_gaps": 0,
+      "validated_or_high_reward": 0
+    },
+    "candidate_count": 19,
+    "accepted_query_count": 8,
+    "accepted_queries": [
+      {
+        "query": "Role of thalamus-DMN FC in mediating cognitive deficits in insomnia",
+        "intent_type": "literature_search",
+        "priority": 0.9,
+        "reason": "Investigate the association between thalamus-DMN functional connectivity (FC) and insomnia severity (ISI), considering its role in cognitive impairment and sleep quality.",
+        "source": "llm",
+        "source_iteration": "iteration_003",
+        "source_hypothesis_id": "",
+        "source_plan_id": "",
+        "status": "accepted"
+      },
+      {
+        "query": "Impact of thalamus-DMN FC on sleep quality and ISI scores",
+        "intent_type": "literature_search",
+        "priority": 0.9,
+        "reason": "Investigate the association between thalamus-DMN functional connectivity (FC) and insomnia severity (ISI), considering its role in cognitive impairment and sleep quality.",
+        "source": "llm",
+        "source_iteration": "iteration_003",
+        "source_hypothesis_id": "",
+        "source_plan_id": "",
+        "status": "accepted"
+      },
+      {
+        "query": "thalamus coord y ISI sleep fMRI",
+        "intent_type": "resolve_failed_test",
+        "priority": 0.86,
+        "reason": "primary test failed for thalamus_coord_y -> ISI",
+        "source": "rules",
+        "source_iteration": "iteration_003",
+        "source_hypothesis_id": "hypothesis_2faad4927002",
+        "source_plan_id": "experiment_plan_cbd0440661bb",
+        "status": "accepted"
+      },
+      {
+        "query": "Thalamus connectivity and cognitive performance in insomnia: DMN, salience, and frontoparietal networks",
+        "intent_type": "literature_search",
+        "priority": 0.85,
+        "reason": "Investigate the connection between thalamus connectivity (DMN, salience, frontoparietal) and cognitive performance (task execution, decision-making) in insomnia.",
+        "source": "llm",
+        "source_iteration": "iteration_003",
+        "source_hypothesis_id": "",
+        "source_plan_id": "",
+        "status": "accepted"
+      },
+      {
+        "query": "Impact of thalamus-DMN FC on task execution and decision-making in insomnia",
+        "intent_type": "literature_search",
+        "priority": 0.85,
+        "reason": "Investigate the connection between thalamus connectivity (DMN, salience, frontoparietal) and cognitive performance (task execution, decision-making) in insomnia.",
+        "source": "llm",
+        "source_iteration": "iteration_003",
+        "source_hypothesis_id": "",
+        "source_plan_id": "",
+        "status": "accepted"
+      },
+      {
+        "query": "Role of thalamic networks in mediating cognitive deficits during sleep disturbances",
+        "intent_type": "literature_search",
+        "priority": 0.85,
+        "reason": "Investigate the connection between thalamus connectivity (DMN, salience, frontoparietal) and cognitive performance (task execution, decision-making) in insomnia.",
+        "source": "llm",
+        "source_iteration": "iteration_003",
+        "source_hypothesis_id": "",
+        "source_plan_id": "",
+        "status": "accepted"
+      },
+      {
+        "query": "Thalamus-salience FC and insomnia severity (ISI): influence of anxiety and depression",
+        "intent_type": "literature_search",
+        "priority": 0.8,
+        "reason": "Explore the relationship between thalamus-salience FC and insomnia severity (ISI), including potential interactions with psychological factors like anxiety and depression.",
+        "source": "llm",
+        "source_iteration": "iteration_003",
+        "source_hypothesis_id": "",
+        "source_plan_id": "",
+        "status": "accepted"
+      },
+      {
+        "query": "Salience network connectivity in insomnia: role of thalamus and psychological comorbidities",
+        "intent_type": "literature_search",
+        "priority": 0.8,
+        "reason": "Explore the relationship between thalamus-salience FC and insomnia severity (ISI), including potential interactions with psychological factors like anxiety and depression.",
+        "source": "llm",
+        "source_iteration": "iteration_003",
+        "source_hypothesis_id": "",
+        "source_plan_id": "",
+        "status": "accepted"
+      }
+    ],
+    "rejected_duplicate_count": 0,
+    "rejected_invalid_count": 1,
+    "rejected_queries": [
+      {
+        "query": "Thalamus-DMN functional connectivity and insomnia severity (ISI): association with cognitive impairment and sleep quality",
+        "intent_type": "literature_search",
+        "priority": 0.9,
+        "reason": "Investigate the association between thalamus-DMN functional connectivity (FC) and insomnia severity (ISI), considering its role in cognitive impairment and sleep quality.",
+        "source": "llm",
+        "source_iteration": "iteration_003",
+        "source_hypothesis_id": "",
+        "source_plan_id": "",
+        "status": "candidate",
+        "rejection_reason": "length"
+      }
+    ],
+    "query_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml",
+    "skip_literature_refresh": false,
+    "reason": "new_experiment_queries",
+    "append_summary": {
+      "appended": 8,
+      "group": "experiment_feedback_expansion",
+      "query_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_queries.yaml"
+    },
+    "incremental_query_config": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/literature_incremental_queries.yaml"
+  },
+  "literature_refresh": {
+    "refreshed": true,
+    "reason": "new_experiment_queries",
+    "accepted_query_count": 8,
+    "literature_config": "/home/zyb/Agent_skills/SleepAgent/configs/literature_library_config.yaml",
+    "query_config": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/literature_incremental_queries.yaml",
+    "library_version": "sleep_literature_library_v1",
+    "literature_summary": {
+      "library_version": "sleep_literature_library_v1",
+      "query_set_version": "sleep_literature_queries_v2_broad_sleep_science_incremental",
+      "api_papers": 437,
+      "journal_targeted_records": 0,
+      "registry_records": 20377,
+      "duplicate_groups": 65029,
+      "deduplication": {
+        "report_rows": 86216,
+        "manual_review_rows": 810,
+        "summary": {
+          "total_incoming_records": 86216,
+          "inserted_new_count": 20377,
+          "merged_duplicate_count": 65029,
+          "skipped_duplicate_count": 0,
+          "manual_review_count": 810,
+          "doi_match_count": 868,
+          "pmid_match_count": 65,
+          "pmcid_match_count": 0,
+          "title_exact_match_count": 230,
+          "fuzzy_match_count": 73,
+          "conflict_count": 1198,
+          "records_with_multiple_sources": 20090,
+          "records_from_api_broad": 20377,
+          "records_from_journal_targeted": 0,
+          "overlap_api_broad_and_journal_targeted": 0,
+          "duplicate_rate": 0.763652
+        }
+      },
+      "rag_index": {
+        "chunk_count": 15321,
+        "path": null,
+        "embedding": {
+          "enabled": true,
+          "provider": "local_minilm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "local_files_only": true,
+          "device": "cpu",
+          "vector_count": 15321,
+          "vector_dim": 384,
+          "log_file": "/home/zyb/Agent_skills/SleepAgent/logs/embedding_retrieval.log"
+        }
+      },
+      "provider_summary": {
+        "query_result_counts": {
+          "europe_pmc": 11807,
+          "openalex": 16225,
+          "pubmed": 10007,
+          "semantic_scholar": 19643
+        },
+        "paper_source_counts": {
+          "europe_pmc": 20381,
+          "openalex": 25303,
+          "pubmed": 17641,
+          "semantic_scholar": 22891
+        }
+      },
+      "query_summary": {
+        "query_count": 504,
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/query_summary.csv"
+      },
+      "coverage_audit": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/coverage_audit.json",
+      "anchor_papers": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/anchor_papers.csv",
+      "query_expansion_candidates": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/query_expansion_candidates.csv",
+      "manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/literature/sleep_library_manifest.json",
+      "warnings": [
+        "semantic_scholar:Impact of thalamus-DMN FC on sleep quality and ISI scores:429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Impact+of+thalamus-DMN+FC+on+sleep+quality+and+ISI+scores&limit=50&fields=paperId%2Ctitle%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2CcitationCount%2Curl%2CisOpenAccess"
+      ],
+      "run_id": "run_4bb8b57c067d"
+    }
+  },
+  "grounding_refresh": {
+    "refreshed": true,
+    "reason": "foundation_changed",
+    "grounding_config": "/home/zyb/Agent_skills/SleepAgent/configs/grounding_config.yaml",
+    "corpus_version": "sleepagent_grounding_data_constrained_v1",
+    "retrieval_query": "sleep neuroimaging mechanisms and measurable multimodal biomarkers Role of thalamus-DMN FC in mediating cognitive deficits in insomnia Impact of thalamus-DMN FC on sleep quality and ISI scores thalamus coord y ISI sleep fMRI Thalamus connectivity and cognitive performance in insomnia: DMN, salience, and frontoparietal networks resolve failed test DMN FC DMN coord x DMN coord y DMN coord z DMN frontoparietal FC DMN roi voxels DMN salience FC frontoparietal FC frontoparietal coord x frontoparietal coord y frontoparietal coord z frontoparietal roi voxels",
+    "retrieval_query_sources": {
+      "research_question": [
+        "sleep neuroimaging mechanisms and measurable multimodal biomarkers"
+      ],
+      "accepted_queries": [
+        "Role of thalamus-DMN FC in mediating cognitive deficits in insomnia",
+        "Impact of thalamus-DMN FC on sleep quality and ISI scores",
+        "thalamus coord y ISI sleep fMRI",
+        "Thalamus connectivity and cognitive performance in insomnia: DMN, salience, and frontoparietal networks"
+      ],
+      "evidence_gap_terms": [
+        "resolve failed test"
+      ],
+      "data_feature_terms": [
+        "DMN FC",
+        "DMN coord x",
+        "DMN coord y",
+        "DMN coord z",
+        "DMN frontoparietal FC",
+        "DMN roi voxels",
+        "DMN salience FC",
+        "frontoparietal FC",
+        "frontoparietal coord x",
+        "frontoparietal coord y",
+        "frontoparietal coord z",
+        "frontoparietal roi voxels"
+      ]
+    },
+    "grounding_summary": {
+      "papers": 1000,
+      "api_papers": 0,
+      "retrieval_hits": 0,
+      "evidence": 7987,
+      "analysis_ready_variables": 88,
+      "graph_nodes": 9048,
+      "graph_edges": 32081,
+      "corpus_version": "sleepagent_grounding_data_constrained_v1",
+      "corpus_manifest": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/corpus_manifest.json",
+      "literature_registry": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/grounding_literature_registry.csv",
+      "evidence_quality_summary": {
+        "evidence_count": 7987,
+        "support_count": 2727,
+        "refute_count": 3,
+        "null_count": 94,
+        "unclear_count": 5163,
+        "mean_evidence_quality_score": 0.473,
+        "mean_final_evidence_score": 0.547,
+        "high_quality_evidence_count": 1373,
+        "low_quality_evidence_count": 4066,
+        "high_feasibility_evidence_count": 3035
+      },
+      "grounding_qc_report": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/grounding_qc_report.json",
+      "evidence_audit": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/evidence_extraction_audit.json",
+      "evidence_benchmark": "",
+      "llm_context_compression": {
+        "llm_evidence_context_json": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_evidence_context.json",
+        "llm_mechanism_context_json": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_mechanism_context.json",
+        "llm_context_compression_manifest_json": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding/llm_context_compression_manifest.json"
+      },
+      "report_path": "/home/zyb/Agent_skills/SleepAgent/reports/phase1_grounding_report.md",
+      "output_grounding_dir": "/home/zyb/Agent_skills/SleepAgent/outputs/grounding",
+      "output_profiles_dir": "/home/zyb/Agent_skills/SleepAgent/outputs/profiles",
+      "api_summary": {
+        "source": "literature_db_rag",
+        "enabled": true,
+        "retrieval_hits": 1000,
+        "available_chunks": 15321,
+        "top_k": 1000,
+        "embedding_provider": "local_minilm",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+        "top_hits_summary": {
+          "count": 1000,
+          "paper_ids": [
+            "doi:10.1503/jpn.210066",
+            "doi:10.1097/md.0000000000007037",
+            "doi:10.1093/sleep/zsaf090.0514"
+          ],
+          "score_min": 0.574902,
+          "score_max": 0.802148
+        },
+        "provider_counts": {
+          "literature_db_rag": 1000
+        },
+        "query_count": 1,
+        "raw_count": 15321,
+        "deduplicated_count": 1000,
+        "warnings": [],
+        "final_literature_count": 1000
+      }
+    }
+  },
+  "grounding_locked_validation": {
+    "status": "run",
+    "output_dir": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast",
+    "metadata": {
+      "source": "grounding",
+      "hypothesis_id": "grounding_health_fc_001",
+      "hypothesis": "Grounding evidence predicts that non-healthy sleep status is associated with altered thalamo-cortical and large-scale network functional connectivity, especially among thalamus, default mode, salience, and frontoparietal networks.",
+      "candidate_fc": [
+        "thalamus_DMN_FC",
+        "thalamus_salience_FC",
+        "thalamus_frontoparietal_FC",
+        "DMN_salience_FC",
+        "DMN_frontoparietal_FC",
+        "salience_frontoparietal_FC",
+        "DMN_FC",
+        "salience_FC",
+        "frontoparietal_FC"
+      ],
+      "clinical_anchors": [
+        "ISI",
+        "PSQI",
+        "BAI",
+        "BDI",
+        "sleepiness"
+      ],
+      "analyzed_clinical_anchors": [
+        "ISI",
+        "PSQI",
+        "BAI",
+        "BDI",
+        "sleepiness"
+      ],
+      "healthy_prefix": "sub-YZHC",
+      "n_subjects": 51,
+      "n_samples": 93,
+      "n_healthy": 19,
+      "n_nonhealthy": 74,
+      "n_healthy_subjects": 14,
+      "n_nonhealthy_subjects": 37,
+      "analysis_unit": "session_sample",
+      "analysis_task": "locked_candidate_fc_group_contrast",
+      "feature_selection_policy": "grounding_prespecified_only"
+    },
+    "feature_stats": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/feature_stats.csv",
+    "metrics": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/metrics.json",
+    "hypothesis_support_path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/hypothesis_support.json",
+    "connection_visualizations": [
+      {
+        "kind": "mean_difference_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/mean_difference_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "mean_difference_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/mean_difference_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "significant_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/significant_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "significant_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/significant_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "nonhealthy_ISI_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_ISI_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "nonhealthy_ISI_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_ISI_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "healthy_ISI_control_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_ISI_control_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "healthy_ISI_control_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_ISI_control_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "group_fc_ISI_interaction_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_ISI_interaction_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "group_fc_ISI_interaction_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_ISI_interaction_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "nonhealthy_PSQI_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_PSQI_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "nonhealthy_PSQI_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_PSQI_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "healthy_PSQI_control_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_PSQI_control_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "healthy_PSQI_control_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_PSQI_control_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "group_fc_PSQI_interaction_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_PSQI_interaction_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "group_fc_PSQI_interaction_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_PSQI_interaction_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "nonhealthy_BAI_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BAI_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "nonhealthy_BAI_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BAI_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "healthy_BAI_control_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BAI_control_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "healthy_BAI_control_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BAI_control_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "group_fc_BAI_interaction_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BAI_interaction_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "group_fc_BAI_interaction_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BAI_interaction_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "nonhealthy_BDI_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BDI_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "nonhealthy_BDI_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_BDI_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "healthy_BDI_control_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BDI_control_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "healthy_BDI_control_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_BDI_control_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "group_fc_BDI_interaction_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BDI_interaction_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "group_fc_BDI_interaction_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_BDI_interaction_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "nonhealthy_sleepiness_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_sleepiness_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "nonhealthy_sleepiness_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/nonhealthy_sleepiness_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "healthy_sleepiness_control_symptom_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_sleepiness_control_symptom_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "healthy_sleepiness_control_symptom_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/healthy_sleepiness_control_symptom_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      },
+      {
+        "kind": "group_fc_sleepiness_interaction_connectome",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_sleepiness_interaction_connectome.png",
+        "renderer": "nilearn_connectome"
+      },
+      {
+        "kind": "group_fc_sleepiness_interaction_connectome_3d",
+        "path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/grounding_candidate_fc_group_contrast/figures/group_fc_sleepiness_interaction_connectome_3d.html",
+        "renderer": "nilearn_connectome_3d"
+      }
+    ],
+    "copied_figures": [
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/mean_difference_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/mean_difference_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/significant_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/significant_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_ISI_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_ISI_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_ISI_control_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_ISI_control_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_ISI_interaction_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_ISI_interaction_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_PSQI_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_PSQI_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_PSQI_control_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_PSQI_control_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_PSQI_interaction_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_PSQI_interaction_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_BAI_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_BAI_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_BAI_control_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_BAI_control_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_BAI_interaction_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_BAI_interaction_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_BDI_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_BDI_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_BDI_control_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_BDI_control_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_BDI_interaction_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_BDI_interaction_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_sleepiness_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/nonhealthy_sleepiness_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_sleepiness_control_symptom_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/healthy_sleepiness_control_symptom_connectome_3d.html",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_sleepiness_interaction_connectome.png",
+      "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals/figures/group_fc_sleepiness_interaction_connectome_3d.html"
+    ]
+  },
+  "metrics": {
+    "iteration": 3,
+    "hypothesis_pool_path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/hypothesis/hypothesis_pool.json",
+    "experiment_results_path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experiment_results.json",
+    "experimental_feedback_path": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experimental_feedback.json",
+    "hypothesis_count": 5,
+    "hypothesis_ids": [
+      "hypothesis_2faad4927002",
+      "hypothesis_ad71ec1af6ae",
+      "hypothesis_ff8c22cb251f",
+      "hypothesis_9dcce73348da",
+      "hypothesis_4a7724fe4da6"
+    ],
+    "new_hypotheses": 5,
+    "status_counts": {
+      "active": 5
+    },
+    "active_hypotheses": 5,
+    "top_k_count": 5,
+    "experiment_result_count": 1,
+    "feedback_records": 1,
+    "validated_feedback": 0,
+    "refuted_feedback": 0,
+    "reward_mean": 0.6925
+  },
+  "snapshot": {
+    "hypothesis": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/hypothesis",
+    "hypothesis_report": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/hypothesis_report.md",
+    "experiment_results": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experiment_results.json",
+    "experimental_feedback": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/experimental_feedback.json",
+    "experiment_report": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/phase3_experiment_report.md",
+    "experiment_visualizations": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/experiment/visuals",
+    "features": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features"
+  }
+}

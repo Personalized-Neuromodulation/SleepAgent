@@ -1,0 +1,73 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "38",
+    "retmax": "38",
+    "retstart": "0",
+    "idlist": [
+      "42455101",
+      "41906764",
+      "41728049",
+      "41607970",
+      "41461933",
+      "41393257",
+      "41384821",
+      "41372855",
+      "41181843",
+      "39481033",
+      "39423341",
+      "39189902",
+      "38545051",
+      "38465729",
+      "37243428",
+      "37113158",
+      "36863845",
+      "35297018",
+      "34888226",
+      "34322949",
+      "34280526",
+      "32360689",
+      "32190569",
+      "31845845",
+      "31754757",
+      "31617796",
+      "32774086",
+      "30565346",
+      "30072368",
+      "29528241",
+      "29061527",
+      "28522666",
+      "28130805",
+      "27845923",
+      "27836580",
+      "27059467",
+      "25660668",
+      "23663522"
+    ],
+    "translationset": [
+      {
+        "from": "FD",
+        "to": "\"Front Dent\"[Journal:__jid101747773] OR \"fd\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "data quality",
+        "to": "\"data accuracy\"[MeSH Terms] OR (\"data\"[All Fields] AND \"accuracy\"[All Fields]) OR \"data accuracy\"[All Fields] OR (\"data\"[All Fields] AND \"quality\"[All Fields]) OR \"data quality\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Mean\"[All Fields] AND (\"front dent\"[Journal] OR \"fd\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"data accuracy\"[MeSH Terms] OR (\"data\"[All Fields] AND \"accuracy\"[All Fields]) OR \"data accuracy\"[All Fields] OR (\"data\"[All Fields] AND \"quality\"[All Fields]) OR \"data quality\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

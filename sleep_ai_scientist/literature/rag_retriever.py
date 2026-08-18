@@ -89,7 +89,7 @@ def retrieve_literature_records_from_db(
         hits=len(records),
         available_chunks=len(chunks),
         elapsed_seconds=_elapsed(started),
-        top_hits=top_hits[:5],
+        top_hits_summary=_summarize_hits(top_hits),
     )
     return records, {
         "source": "literature_db_rag",
@@ -99,7 +99,7 @@ def retrieve_literature_records_from_db(
         "top_k": top_k,
         "embedding_provider": provider,
         "embedding_model": model,
-        "top_hits": top_hits,
+        "top_hits_summary": _summarize_hits(top_hits),
     }
 
 
@@ -144,7 +144,7 @@ def _retrieve_by_keyword(session: Session, query: str, *, top_k: int, config: di
         hits=len(records),
         available_chunks=len(chunks),
         elapsed_seconds=_elapsed(started),
-        top_hits=top_hits[:5],
+        top_hits_summary=_summarize_hits(top_hits),
     )
     return records, {
         "source": "literature_db_rag",
@@ -153,7 +153,7 @@ def _retrieve_by_keyword(session: Session, query: str, *, top_k: int, config: di
         "retrieval_hits": len(records),
         "available_chunks": len(chunks),
         "top_k": top_k,
-        "top_hits": top_hits,
+        "top_hits_summary": _summarize_hits(top_hits),
     }
 
 
@@ -196,6 +196,16 @@ def _log(event: str, *, log_file: Path, **payload: Any) -> None:
     with log_file.open("a", encoding="utf-8") as f:
         f.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
     print(_message(event, payload), flush=True)
+
+
+def _summarize_hits(hits: list[dict[str, Any]], *, preview: int = 3) -> dict[str, Any]:
+    scores = [float(item["score"]) for item in hits if item.get("score") is not None]
+    return {
+        "count": len(hits),
+        "paper_ids": [str(item.get("paper_id", "")) for item in hits[:preview]],
+        "score_min": round(min(scores), 6) if scores else None,
+        "score_max": round(max(scores), 6) if scores else None,
+    }
 
 
 def _message(event: str, payload: dict[str, Any]) -> str:

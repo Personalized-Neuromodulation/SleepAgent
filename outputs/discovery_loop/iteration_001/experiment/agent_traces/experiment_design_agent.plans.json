@@ -1,244 +1,120 @@
 [
   {
-    "plan_id": "experiment_plan_bb9459a66e3b",
-    "hypothesis_id": "hypothesis_57fdbe2e8962",
-    "hypothesis_title": "Thalamic Spindle Modulation and Insomnia Severity via Thalamocortical Coupling",
-    "scientific_question": "Test whether Thalamic Spindle Modulation and Insomnia Severity via Thalamocortical Coupling is supported by available analysis-ready variables.",
-    "hypothesis_summary": "This hypothesis proposes that thalamic spindle modulation through thalamocortical coupling is a key mechanism linking insomnia severity to disrupted sleep architecture, suggesting a novel pathway for targeted intervention.",
-    "hypothesis_content": "The severity of insomnia is mechanistically linked to the modulation of thalamic spindles through thalamocortical coupling, which disrupts the synchronization between thalamic and cortical oscillations during NREM sleep, thereby affecting sleep consolidation.",
+    "plan_id": "experiment_plan_f5361333fc9a",
+    "hypothesis_id": "hypothesis_0475574660a3",
+    "hypothesis_title": "Thalamocortical Coupling and Default Mode Network Dysregulation Interaction in Insomnia",
+    "scientific_question": "How do sleep disturbances (ISI, PSQI) relate to brain connectivity (fMRI features) and psychological factors (BAI, BDI) in a novel analysis framework?",
+    "hypothesis_summary": "Sleep disruption in insomnia may involve a bidirectional interaction between thalamocortical coupling deficits and default mode network (DMN) dysregulation, exacerbating cognitive and emotional symptoms.",
+    "hypothesis_content": "Insomnia severity is associated with both reduced thalamocortical coupling (thalamus_DMN_FC) and DMN dysregulation (DMN_FC), which may synergistically impair task execution, decision-making, and self-referential processing. Targeted interventions addressing both mechanisms could improve sleep outcomes.",
     "predictors": [
       "thalamus_DMN_FC",
-      "thalamus_salience_FC",
-      "thalamus_frontoparietal_FC",
-      "DMN_FC"
+      "DMN_FC",
+      "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+      "timefreq_ALFF_0.01_0.08"
     ],
     "outcomes": [
-      "salience_FC",
-      "frontoparietal_FC"
+      "ISI"
     ],
-    "covariates": [
-      "mean_FD",
-      "mean_DVARS",
-      "percent_high_motion",
-      "max_FD"
-    ],
-    "negative_controls": [
-      "global_signal_psd_power_mean",
-      "global_signal_psd_power_max"
-    ],
+    "covariates": [],
+    "negative_controls": [],
     "variables": [
       {
         "name": "thalamus_DMN_FC",
         "role": "predictor",
         "scientific_concept": "thalamus DMN FC",
         "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/fmri/pre_experiment_features/fmri_features.csv",
         "source_column": "thalamus_DMN_FC",
         "approved": true,
-        "missing_rate": 0.24731182795698925,
-        "n_available": 70,
+        "missing_rate": 0.0,
+        "n_available": 93,
         "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
-      },
-      {
-        "name": "thalamus_salience_FC",
-        "role": "predictor",
-        "scientific_concept": "thalamus salience FC",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "thalamus_salience_FC",
-        "approved": true,
-        "missing_rate": 0.24731182795698925,
-        "n_available": 70,
-        "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
-      },
-      {
-        "name": "thalamus_frontoparietal_FC",
-        "role": "predictor",
-        "scientific_concept": "thalamus frontoparietal FC",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "thalamus_frontoparietal_FC",
-        "approved": true,
-        "missing_rate": 0.24731182795698925,
-        "n_available": 70,
-        "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
+        "notes": "Mapped from analysis-ready data profile."
       },
       {
         "name": "DMN_FC",
         "role": "predictor",
         "scientific_concept": "DMN FC",
         "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/fmri/pre_experiment_features/fmri_features.csv",
         "source_column": "DMN_FC",
         "approved": true,
-        "missing_rate": 0.24731182795698925,
-        "n_available": 70,
+        "missing_rate": 0.0,
+        "n_available": 93,
         "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
+        "notes": "Mapped from analysis-ready data profile."
       },
       {
-        "name": "salience_FC",
+        "name": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "role": "predictor",
+        "scientific_concept": "timefreq fALFF 0.01 0.08 over 0.01 0.25",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/fmri/pre_experiment_features/fmri_features.csv",
+        "source_column": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "timefreq_ALFF_0.01_0.08",
+        "role": "predictor",
+        "scientific_concept": "timefreq ALFF 0.01 0.08",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/fmri/pre_experiment_features/fmri_features.csv",
+        "source_column": "timefreq_ALFF_0.01_0.08",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "ISI",
         "role": "outcome",
-        "scientific_concept": "salience FC",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "salience_FC",
-        "approved": true,
-        "missing_rate": 0.24731182795698925,
-        "n_available": 70,
-        "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
-      },
-      {
-        "name": "frontoparietal_FC",
-        "role": "outcome",
-        "scientific_concept": "frontoparietal FC",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "frontoparietal_FC",
-        "approved": true,
-        "missing_rate": 0.24731182795698925,
-        "n_available": 70,
-        "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
-      },
-      {
-        "name": "mean_FD",
-        "role": "covariate",
-        "scientific_concept": "mean FD",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "mean_FD",
+        "scientific_concept": "ISI",
+        "modality": "scales",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_001/features/scales/pre_experiment_features/scale_features.csv",
+        "source_column": "ISI",
         "approved": true,
         "missing_rate": 0.0,
-        "n_available": 93,
+        "n_available": 51,
         "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
-      },
-      {
-        "name": "mean_DVARS",
-        "role": "covariate",
-        "scientific_concept": "mean DVARS",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "mean_DVARS",
-        "approved": true,
-        "missing_rate": 0.0,
-        "n_available": 93,
-        "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
-      },
-      {
-        "name": "percent_high_motion",
-        "role": "covariate",
-        "scientific_concept": "percent high motion",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "percent_high_motion",
-        "approved": true,
-        "missing_rate": 0.0,
-        "n_available": 93,
-        "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
-      },
-      {
-        "name": "max_FD",
-        "role": "covariate",
-        "scientific_concept": "max FD",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "max_FD",
-        "approved": true,
-        "missing_rate": 0.0,
-        "n_available": 93,
-        "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
-      },
-      {
-        "name": "global_signal_psd_power_mean",
-        "role": "negative_control",
-        "scientific_concept": "global signal psd power mean",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "global_signal_psd_power_mean",
-        "approved": true,
-        "missing_rate": 0.0,
-        "n_available": 93,
-        "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
-      },
-      {
-        "name": "global_signal_psd_power_max",
-        "role": "negative_control",
-        "scientific_concept": "global signal psd power max",
-        "modality": "fMRI",
-        "source_file": "outputs/discovery_loop/iteration_001/features/fmri/experiment_plan_bb9459a66e3b/fmri_features.csv",
-        "source_column": "global_signal_psd_power_max",
-        "approved": true,
-        "missing_rate": 0.0,
-        "n_available": 93,
-        "mapping_confidence": 0.9,
-        "notes": "Selected from available analysis-ready profile."
+        "notes": "Mapped from analysis-ready data profile."
       }
     ],
     "primary_tests": [
       {
-        "test_id": "experiment_plan_bb9459a66e3b_thalamus_DMN_FC_salience_FC",
+        "test_id": "primary_test_9a5c93d05069",
         "predictor": "thalamus_DMN_FC",
-        "outcome": "salience_FC",
-        "question": "Using available fmri features, does thalamus_DMN_FC relate to salience_FC?"
+        "outcome": "ISI",
+        "question": "Does thalamus_DMN_FC explain variation in ISI?"
       },
       {
-        "test_id": "experiment_plan_bb9459a66e3b_thalamus_DMN_FC_frontoparietal_FC",
-        "predictor": "thalamus_DMN_FC",
-        "outcome": "frontoparietal_FC",
-        "question": "Using available fmri features, does thalamus_DMN_FC relate to frontoparietal_FC?"
-      },
-      {
-        "test_id": "experiment_plan_bb9459a66e3b_thalamus_salience_FC_salience_FC",
-        "predictor": "thalamus_salience_FC",
-        "outcome": "salience_FC",
-        "question": "Using available fmri features, does thalamus_salience_FC relate to salience_FC?"
-      },
-      {
-        "test_id": "experiment_plan_bb9459a66e3b_thalamus_salience_FC_frontoparietal_FC",
-        "predictor": "thalamus_salience_FC",
-        "outcome": "frontoparietal_FC",
-        "question": "Using available fmri features, does thalamus_salience_FC relate to frontoparietal_FC?"
-      },
-      {
-        "test_id": "experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_salience_FC",
-        "predictor": "thalamus_frontoparietal_FC",
-        "outcome": "salience_FC",
-        "question": "Using available fmri features, does thalamus_frontoparietal_FC relate to salience_FC?"
-      },
-      {
-        "test_id": "experiment_plan_bb9459a66e3b_thalamus_frontoparietal_FC_frontoparietal_FC",
-        "predictor": "thalamus_frontoparietal_FC",
-        "outcome": "frontoparietal_FC",
-        "question": "Using available fmri features, does thalamus_frontoparietal_FC relate to frontoparietal_FC?"
-      },
-      {
-        "test_id": "experiment_plan_bb9459a66e3b_DMN_FC_salience_FC",
+        "test_id": "primary_test_5442e641ee3c",
         "predictor": "DMN_FC",
-        "outcome": "salience_FC",
-        "question": "Using available fmri features, does DMN_FC relate to salience_FC?"
+        "outcome": "ISI",
+        "question": "Does DMN_FC explain variation in ISI?"
       },
       {
-        "test_id": "experiment_plan_bb9459a66e3b_DMN_FC_frontoparietal_FC",
-        "predictor": "DMN_FC",
-        "outcome": "frontoparietal_FC",
-        "question": "Using available fmri features, does DMN_FC relate to frontoparietal_FC?"
+        "test_id": "primary_test_de3c8c72a3a0",
+        "predictor": "timefreq_fALFF_0.01_0.08_over_0.01_0.25",
+        "outcome": "ISI",
+        "question": "Does timefreq_fALFF_0.01_0.08_over_0.01_0.25 explain variation in ISI?"
+      },
+      {
+        "test_id": "primary_test_48e220fa89d3",
+        "predictor": "timefreq_ALFF_0.01_0.08",
+        "outcome": "ISI",
+        "question": "Does timefreq_ALFF_0.01_0.08 explain variation in ISI?"
       }
     ],
-    "analysis_plan": "Use high-density EEG to measure thalamocortical coupling and spindle density during NREM sleep in insomnia patients compared to controls. Apply TES-TI targeting the thalamus and assess changes in spindle density and insomnia severity using ISI.",
+    "analysis_plan": "Measure thalamocortical coupling (EEG-fMRI) and DMN functional connectivity (fMRI) in insomnia patients (ISI ≥ 10) and controls. Correlate thalamus_DMN_FC and DMN_FC with ISI scores, controlling for AHI and sleep efficiency. Test for interaction effects between thalamocortical coupling and DMN dysregulation on cognitive performance metrics.",
     "metadata": {
       "source": "ExperimentDesignAgent",
       "generation_strategy": "literature_exploration",
-      "hypothesis_rating": 1566.0,
+      "hypothesis_rating": 1525.0,
       "hypothesis_data_testability": {
         "status": "unknown",
         "available_modalities": [],
@@ -256,138 +132,77 @@
         "missing_variables": [
           "DMN_FC",
           "ISI",
-          "spindle_density",
+          "sleep_efficiency",
           "thalamus_DMN_FC"
         ],
         "ranking_bonus": 0.0,
         "note": "No analysis-ready profile is available; current-data testability cannot be assessed."
       },
-      "requested_modalities": [],
+      "requested_modalities": [
+        "fMRI",
+        "scales"
+      ],
+      "design_constraints": {
+        "avoid_signatures": [],
+        "negative_control_failed_predictors": [],
+        "recommended_design_shifts": [
+          "avoid exact repeat of tested predictor/outcome/covariate signatures",
+          "prefer untested available predictors or outcomes when scientifically coherent",
+          "if reusing a negative-control-failed predictor, make the design explicitly confound-focused",
+          "if no non-duplicate measurable plan exists, select the next-ranked hypothesis"
+        ]
+      },
       "llm_experiment_design": {
-        "scientific_question": "Test whether Thalamic Spindle Modulation and Insomnia Severity via Thalamocortical Coupling is supported by available analysis-ready variables.",
-        "analysis_plan": "Use high-density EEG to measure thalamocortical coupling and spindle density during NREM sleep in insomnia patients compared to controls. Apply TES-TI targeting the thalamus and assess changes in spindle density and insomnia severity using ISI.",
-        "primary_tests": [
-          {
-            "test_id": "test_1",
-            "predictor": "thalamocortical_coupling",
-            "outcome": "spindle_density",
-            "question": "Is there a correlation between thalamocortical coupling and spindle density during NREM sleep in insomnia patients?"
-          },
-          {
-            "test_id": "test_2",
-            "predictor": "spindle_density",
-            "outcome": "ISI",
-            "question": "Is there a correlation between spindle density and insomnia severity as measured by ISI?"
-          }
-        ],
-        "risks": [
-          "Lack of analysis-ready variables such as DMN_FC, ISI, spindle_density, and thalamus_DMN_FC may hinder statistical analysis.",
-          "Insufficient data modalities (EEG, fMRI, scales) may limit the ability to test thalamocortical coupling and insomnia severity relationships."
-        ],
-        "rationale": "The proposed analysis plan requires variables and modalities that are not present in the available analysis-ready profile, leading to potential risks in testing the hypothesis. The primary tests are formulated based on the hypothesis but may not be feasible with the current data profile."
-      },
-      "testability_precheck": {
-        "available_modalities": [
-          "fmri"
-        ],
-        "excluded_modalities": [],
-        "full_requested_modalities_available": true,
-        "mode": "single_fmri_proxy_analysis",
-        "reason": "Only fMRI features are available; the plan was constrained to fMRI mechanism proxies and cannot directly test missing morphology, DTI, EEG, or scale outcomes.",
-        "analysis_modalities": [
-          "fmri"
-        ],
-        "selected_predictors": [
-          "thalamus_DMN_FC",
-          "thalamus_salience_FC",
-          "thalamus_frontoparietal_FC",
-          "DMN_FC"
-        ],
-        "selected_outcomes": [
-          "salience_FC",
-          "frontoparietal_FC"
-        ],
-        "selected_covariates": [
-          "mean_FD",
-          "mean_DVARS",
-          "percent_high_motion",
-          "max_FD"
-        ],
-        "selected_negative_controls": [
-          "global_signal_psd_power_mean",
-          "global_signal_psd_power_max"
-        ]
-      },
-      "variable_mapping_review": {
-        "judgment": "partially_valid",
-        "candidate_mappings": [
-          {
-            "variable": "thalamus_DMN_FC",
-            "source_column": "thalamus_DMN_FC",
-            "confidence": 0.9,
-            "reason": "The variable 'thalamus_DMN_FC' is present in the source columns with a missing rate of 24.73%."
-          },
-          {
-            "variable": "thalamus_salience_FC",
-            "source_column": "thalamus_salience_FC",
-            "confidence": 0.9,
-            "reason": "The variable 'thalamus_salience_FC' is present in the source columns with a missing rate of 24.73%."
-          },
-          {
-            "variable": "thalamus_frontoparietal_FC",
-            "source_column": "thalamus_frontoparietal_FC",
-            "confidence": 0.9,
-            "reason": "The variable 'thalamus_frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
-          },
-          {
-            "variable": "DMN_salience_FC",
-            "source_column": "DMN_salience_FC",
-            "confidence": 0.9,
-            "reason": "The variable 'DMN_salience_FC' is present in the source columns with a missing rate of 24.73%."
-          },
-          {
-            "variable": "DMN_frontoparietal_FC",
-            "source_column": "DMN_frontoparietal_FC",
-            "confidence": 0.9,
-            "reason": "The variable 'DMN_frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
-          },
-          {
-            "variable": "salience_frontoparietal_FC",
-            "source_column": "salience_frontoparietal_FC",
-            "confidence": 0.9,
-            "reason": "The variable 'salience_frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
-          },
-          {
-            "variable": "DMN_FC",
-            "source_column": "DMN_FC",
-            "confidence": 0.9,
-            "reason": "The variable 'DMN_FC' is present in the source columns with a missing rate of 24.73%."
-          },
-          {
-            "variable": "salience_FC",
-            "source_column": "salience_FC",
-            "confidence": 0.9,
-            "reason": "The variable 'salience_FC' is present in the source columns with a missing rate of 24.73%."
-          },
-          {
-            "variable": "frontoparietal_FC",
-            "source_column": "frontoparietal_FC",
-            "confidence": 0.9,
-            "reason": "The variable 'frontoparietal_FC' is present in the source columns with a missing rate of 24.73%."
-          }
-        ],
-        "missing_variables": [
-          "thalamus_roi_voxels",
-          "DMN_roi_voxels",
-          "salience_roi_voxels",
-          "frontoparietal_roi_voxels"
-        ],
-        "recommendations": [
-          "Check the missing variables for potential data issues.",
-          "Consider using imputation techniques for variables with missing data.",
-          "Verify if the missing variables are essential for the analysis.",
-          "Ensure that the partially mapped variables are correctly interpreted with their missing rates in mind."
-        ]
+        "scientific_question": "How do sleep disturbances (ISI, PSQI) relate to brain connectivity (fMRI features) and psychological factors (BAI, BDI) in a novel analysis framework?",
+        "analysis_plan": {
+          "primary_tests": [
+            {
+              "hypothesis": "Thalamus-DMN functional connectivity (thalamus_DMN_FC) predicts insomnia severity (ISI) after controlling for BAI and BDI",
+              "predictors": [
+                "thalamus_DMN_FC"
+              ],
+              "outcomes": [
+                "ISI"
+              ],
+              "covariates": [
+                "BAI",
+                "BDI"
+              ]
+            },
+            {
+              "hypothesis": "DMN functional connectivity (DMN_FC) correlates with sleep quality (PSQI) independent of age and education",
+              "predictors": [
+                "DMN_FC"
+              ],
+              "outcomes": [
+                "PSQI"
+              ],
+              "covariates": [
+                "age",
+                "education"
+              ]
+            }
+          ],
+          "secondary_tests": [
+            {
+              "hypothesis": "Amygdala-DMN connectivity (amygdala_DMN_FC) mediates the relationship between BDI and PSQI",
+              "predictors": [
+                "amygdala_DMN_FC"
+              ],
+              "outcomes": [
+                "PSQI"
+              ],
+              "covariates": [
+                "BDI"
+              ]
+            }
+          ]
+        },
+        "risk_mitigation": {
+          "multiple_testing": "Bonferroni correction applied across all primary tests",
+          "confounding": "Covariate selection based on prior literature (age, education, BAI/BDI as psychological controls)"
+        },
+        "rationale": "Focuses on untested fMRI-PSQI relationships while leveraging psychological scales as covariates. Avoids prior signatures by targeting novel connectivity metrics (amygdala-DMN) and sleep outcomes (PSQI)."
       }
     }
   }

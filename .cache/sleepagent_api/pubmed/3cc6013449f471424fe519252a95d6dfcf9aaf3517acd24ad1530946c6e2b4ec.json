@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "31841680"
+    ],
+    "translationset": [
+      {
+        "from": "Frame",
+        "to": "\"frame's\"[All Fields] OR \"framed\"[All Fields] OR \"frames\"[All Fields] OR \"framing\"[All Fields] OR \"framings\"[All Fields] OR \"reading frames\"[MeSH Terms] OR (\"reading\"[All Fields] AND \"frames\"[All Fields]) OR \"reading frames\"[All Fields] OR \"frame\"[All Fields]"
+      },
+      {
+        "from": "displacement",
+        "to": "\"displace\"[All Fields] OR \"displaced\"[All Fields] OR \"displacement, psychological\"[MeSH Terms] OR (\"displacement\"[All Fields] AND \"psychological\"[All Fields]) OR \"psychological displacement\"[All Fields] OR \"displacement\"[All Fields] OR \"displacements\"[All Fields] OR \"displaces\"[All Fields] OR \"displacing\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "network",
+        "to": "\"network\"[All Fields] OR \"network's\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]"
+      },
+      {
+        "from": "analysis",
+        "to": "\"analysis\"[Subheading] OR \"analysis\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"frame s\"[All Fields] OR \"framed\"[All Fields] OR \"frames\"[All Fields] OR \"framing\"[All Fields] OR \"framings\"[All Fields] OR \"reading frames\"[MeSH Terms] OR (\"reading\"[All Fields] AND \"frames\"[All Fields]) OR \"reading frames\"[All Fields] OR \"frame\"[All Fields]) AND (\"displace\"[All Fields] OR \"displaced\"[All Fields] OR \"displacement, psychological\"[MeSH Terms] OR (\"displacement\"[All Fields] AND \"psychological\"[All Fields]) OR \"psychological displacement\"[All Fields] OR \"displacement\"[All Fields] OR \"displacements\"[All Fields] OR \"displaces\"[All Fields] OR \"displacing\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"analysis\"[MeSH Subheading] OR \"analysis\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Thalamic",
+        "to": "\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]"
+      },
+      {
+        "from": "GABA",
+        "to": "\"gamma-aminobutyric acid\"[Supplementary Concept] OR \"gamma-aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma-aminobutyric acid\"[MeSH Terms] OR (\"gamma-aminobutyric\"[All Fields] AND \"acid\"[All Fields])"
+      },
+      {
+        "from": "levels",
+        "to": "\"level\"[All Fields] OR \"levels\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "insomnia:",
+        "to": "\"insomnia's\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]"
+      },
+      {
+        "from": ", SN",
+        "to": "\"statistics and numerical data\"[Subheading] OR (\"statistics\"[All Fields] AND \"numerical\"[All Fields] AND \"data\"[All Fields]) OR \"statistics and numerical data\"[All Fields] OR \"sn\"[All Fields]"
+      },
+      {
+        "from": "interactions",
+        "to": "\"interact\"[All Fields] OR \"interactant\"[All Fields] OR \"interactants\"[All Fields] OR \"interacted\"[All Fields] OR \"interacting\"[All Fields] OR \"interaction\"[All Fields] OR \"interactional\"[All Fields] OR \"interactions\"[All Fields] OR \"interactive\"[All Fields] OR \"interactively\"[All Fields] OR \"interactives\"[All Fields] OR \"interactivities\"[All Fields] OR \"interactivity\"[All Fields] OR \"interacts\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"thalamically\"[All Fields] OR \"thalamus\"[MeSH Terms] OR \"thalamus\"[All Fields] OR \"thalamic\"[All Fields]) AND (\"gamma aminobutyric acid\"[Supplementary Concept] OR \"gamma aminobutyric acid\"[All Fields] OR \"gaba\"[All Fields] OR \"gamma aminobutyric acid\"[MeSH Terms] OR (\"gamma aminobutyric\"[All Fields] AND \"acid\"[All Fields])) AND (\"level\"[All Fields] OR \"levels\"[All Fields]) AND \"network-specific\"[All Fields] AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields]) AND \"DMN\"[All Fields] AND (\"statistics and numerical data\"[MeSH Subheading] OR (\"statistics\"[All Fields] AND \"numerical\"[All Fields] AND \"data\"[All Fields]) OR \"statistics and numerical data\"[All Fields] OR \"sn\"[All Fields]) AND \"FPN\"[All Fields] AND (\"interact\"[All Fields] OR \"interactant\"[All Fields] OR \"interactants\"[All Fields] OR \"interacted\"[All Fields] OR \"interacting\"[All Fields] OR \"interaction\"[All Fields] OR \"interactional\"[All Fields] OR \"interactions\"[All Fields] OR \"interactive\"[All Fields] OR \"interactively\"[All Fields] OR \"interactives\"[All Fields] OR \"interactivities\"[All Fields] OR \"interactivity\"[All Fields] OR \"interacts\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "in",
+        ","
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

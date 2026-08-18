@@ -1,0 +1,45 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "5",
+    "retmax": "5",
+    "retstart": "0",
+    "idlist": [
+      "37989456",
+      "37470008",
+      "34432059",
+      "31617662",
+      "29174693"
+    ],
+    "translationset": [
+      {
+        "from": "changes",
+        "to": "\"change\"[All Fields] OR \"changed\"[All Fields] OR \"changes\"[All Fields] OR \"changing\"[All Fields] OR \"changings\"[All Fields]"
+      },
+      {
+        "from": "individuals",
+        "to": "\"individual's\"[All Fields] OR \"individualisation\"[All Fields] OR \"individualise\"[All Fields] OR \"individualised\"[All Fields] OR \"individualising\"[All Fields] OR \"individualism\"[All Fields] OR \"individualisms\"[All Fields] OR \"individualities\"[All Fields] OR \"individuality\"[MeSH Terms] OR \"individuality\"[All Fields] OR \"individualization\"[All Fields] OR \"individualize\"[All Fields] OR \"individualized\"[All Fields] OR \"individualizes\"[All Fields] OR \"individualizing\"[All Fields] OR \"individually\"[All Fields] OR \"individuals\"[All Fields] OR \"individuate\"[All Fields] OR \"individuated\"[All Fields] OR \"individuates\"[All Fields] OR \"individuating\"[All Fields] OR \"individuation\"[MeSH Terms] OR \"individuation\"[All Fields] OR \"individuations\"[All Fields] OR \"persons\"[MeSH Terms] OR \"persons\"[All Fields] OR \"individual\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "disruption",
+        "to": "\"disrupt\"[All Fields] OR \"disrupted\"[All Fields] OR \"disrupter\"[All Fields] OR \"disrupters\"[All Fields] OR \"disrupting\"[All Fields] OR \"disruption\"[All Fields] OR \"disruptions\"[All Fields] OR \"disruptive\"[All Fields] OR \"disruptiveness\"[All Fields] OR \"disrupts\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DMN\"[All Fields] AND \"FC\"[All Fields] AND (\"change\"[All Fields] OR \"changed\"[All Fields] OR \"changes\"[All Fields] OR \"changing\"[All Fields] OR \"changings\"[All Fields]) AND (\"individual s\"[All Fields] OR \"individualisation\"[All Fields] OR \"individualise\"[All Fields] OR \"individualised\"[All Fields] OR \"individualising\"[All Fields] OR \"individualism\"[All Fields] OR \"individualisms\"[All Fields] OR \"individualities\"[All Fields] OR \"individuality\"[MeSH Terms] OR \"individuality\"[All Fields] OR \"individualization\"[All Fields] OR \"individualize\"[All Fields] OR \"individualized\"[All Fields] OR \"individualizes\"[All Fields] OR \"individualizing\"[All Fields] OR \"individually\"[All Fields] OR \"individuals\"[All Fields] OR \"individuate\"[All Fields] OR \"individuated\"[All Fields] OR \"individuates\"[All Fields] OR \"individuating\"[All Fields] OR \"individuation\"[MeSH Terms] OR \"individuation\"[All Fields] OR \"individuations\"[All Fields] OR \"persons\"[MeSH Terms] OR \"persons\"[All Fields] OR \"individual\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"disrupt\"[All Fields] OR \"disrupted\"[All Fields] OR \"disrupter\"[All Fields] OR \"disrupters\"[All Fields] OR \"disrupting\"[All Fields] OR \"disruption\"[All Fields] OR \"disruptions\"[All Fields] OR \"disruptive\"[All Fields] OR \"disruptiveness\"[All Fields] OR \"disrupts\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in",
+        "with"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}

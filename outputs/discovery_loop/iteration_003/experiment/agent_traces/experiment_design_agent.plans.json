@@ -1,0 +1,199 @@
+[
+  {
+    "plan_id": "experiment_plan_cbd0440661bb",
+    "hypothesis_id": "hypothesis_2faad4927002",
+    "hypothesis_title": "Thalamocortical Coupling Mediates Cognitive Impairment in Insomnia Severity",
+    "scientific_question": "How do variations in neural connectivity patterns (specifically salience and frontoparietal networks) and psychological factors (anxiety, depression, sleepiness) interact to predict sleep quality and insomnia severity, while accounting for baseline sleep variables?",
+    "hypothesis_summary": "Sleep disruption reduces thalamocortical coupling, particularly thalamus-DMN functional connectivity, which impairs task execution and decision-making via insomnia severity as a mediator.",
+    "hypothesis_content": "Higher insomnia severity correlates with reduced thalamus-DMN functional connectivity (thalamus_DMN_FC), leading to impaired task execution (thalamic region) and decision-making (PCC region) in sleep-disrupted individuals.",
+    "predictors": [
+      "thalamus_DMN_FC",
+      "thalamus_salience_FC",
+      "thalamus_frontoparietal_FC",
+      "thalamus_coord_y"
+    ],
+    "outcomes": [
+      "ISI"
+    ],
+    "covariates": [],
+    "negative_controls": [],
+    "variables": [
+      {
+        "name": "thalamus_DMN_FC",
+        "role": "predictor",
+        "scientific_concept": "thalamus DMN FC",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+        "source_column": "thalamus_DMN_FC",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.9,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "thalamus_salience_FC",
+        "role": "predictor",
+        "scientific_concept": "thalamus salience FC",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+        "source_column": "thalamus_salience_FC",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "thalamus_frontoparietal_FC",
+        "role": "predictor",
+        "scientific_concept": "thalamus frontoparietal FC",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+        "source_column": "thalamus_frontoparietal_FC",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "thalamus_coord_y",
+        "role": "predictor",
+        "scientific_concept": "thalamus coord y",
+        "modality": "fMRI",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/fmri/pre_experiment_features/fmri_features.csv",
+        "source_column": "thalamus_coord_y",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 93,
+        "mapping_confidence": 0.65,
+        "notes": "Mapped from analysis-ready data profile."
+      },
+      {
+        "name": "ISI",
+        "role": "outcome",
+        "scientific_concept": "ISI",
+        "modality": "scales",
+        "source_file": "/home/zyb/Agent_skills/SleepAgent/outputs/discovery_loop/iteration_003/features/scales/pre_experiment_features/scale_features.csv",
+        "source_column": "ISI",
+        "approved": true,
+        "missing_rate": 0.0,
+        "n_available": 51,
+        "mapping_confidence": 0.9,
+        "notes": "Mapped from analysis-ready data profile."
+      }
+    ],
+    "primary_tests": [
+      {
+        "test_id": "primary_test_941b247baed8",
+        "predictor": "thalamus_DMN_FC",
+        "outcome": "ISI",
+        "question": "Does thalamus_DMN_FC explain variation in ISI?"
+      },
+      {
+        "test_id": "primary_test_b8d62e98c3d7",
+        "predictor": "thalamus_salience_FC",
+        "outcome": "ISI",
+        "question": "Does thalamus_salience_FC explain variation in ISI?"
+      },
+      {
+        "test_id": "primary_test_209b93f79d0a",
+        "predictor": "thalamus_frontoparietal_FC",
+        "outcome": "ISI",
+        "question": "Does thalamus_frontoparietal_FC explain variation in ISI?"
+      },
+      {
+        "test_id": "primary_test_7d4240d1ed7c",
+        "predictor": "thalamus_coord_y",
+        "outcome": "ISI",
+        "question": "Does thalamus_coord_y explain variation in ISI?"
+      }
+    ],
+    "analysis_plan": "Measure thalamus_DMN_FC via EEG-fMRI in insomnia patients (ISI ≥ 15) and controls. Correlate thalamus_DMN_FC with ISI scores and cognitive performance (task execution, decision-making) using standardized neuropsychological tests.",
+    "metadata": {
+      "source": "ExperimentDesignAgent",
+      "generation_strategy": "literature_exploration",
+      "hypothesis_rating": 1528.0,
+      "hypothesis_data_testability": {
+        "status": "partially_testable",
+        "available_modalities": [
+          "fMRI"
+        ],
+        "required_modalities": [
+          "EEG",
+          "fMRI",
+          "scales"
+        ],
+        "missing_modalities": [
+          "EEG",
+          "scales"
+        ],
+        "matched_variables": [
+          "DMN_FC",
+          "thalamus_DMN_FC"
+        ],
+        "missing_variables": [
+          "ISI"
+        ],
+        "ranking_bonus": 10.0,
+        "note": "The hypothesis has some measurable proxies but missing modalities/variables prevent a direct test."
+      },
+      "requested_modalities": [
+        "fMRI",
+        "scales"
+      ],
+      "design_constraints": {
+        "avoid_signatures": [
+          "DMN_FC,thalamus_DMN_FC,timefreq_ALFF_0.01_0.08,timefreq_fALFF_0.01_0.08_over_0.01_0.25|ISI|max_FD,mean_DVARS,mean_FD,percent_high_motion",
+          "thalamus_DMN_FC,thalamus_coord_z,thalamus_frontoparietal_FC,thalamus_salience_FC|ISI,PSQI|max_FD,mean_DVARS,mean_FD,percent_high_motion"
+        ],
+        "negative_control_failed_predictors": [
+          "DMN_FC",
+          "thalamus_coord_z",
+          "timefreq_ALFF_0.01_0.08",
+          "timefreq_fALFF_0.01_0.08_over_0.01_0.25"
+        ],
+        "recommended_design_shifts": [
+          "avoid exact repeat of tested predictor/outcome/covariate signatures",
+          "prefer untested available predictors or outcomes when scientifically coherent",
+          "if reusing a negative-control-failed predictor, make the design explicitly confound-focused",
+          "if no non-duplicate measurable plan exists, select the next-ranked hypothesis"
+        ]
+      },
+      "llm_experiment_design": {
+        "scientific_question": "How do variations in neural connectivity patterns (specifically salience and frontoparietal networks) and psychological factors (anxiety, depression, sleepiness) interact to predict sleep quality and insomnia severity, while accounting for baseline sleep variables?",
+        "analysis_plan": {
+          "primary_tests": [
+            {
+              "hypothesis": "Salience network functional connectivity (salience_FC) predicts insomnia severity (ISI) after controlling for baseline sleep efficiency",
+              "predictor": "salience_FC",
+              "outcome": "ISI",
+              "controls": [
+                "baseline_sleep_efficiency"
+              ]
+            },
+            {
+              "hypothesis": "Frontoparietal network functional connectivity (frontoparietal_FC) moderates the relationship between depression (BDI) and sleep quality (PSQI)",
+              "predictor": "frontoparietal_FC",
+              "outcome": "PSQI",
+              "moderator": "BDI"
+            }
+          ],
+          "secondary_analyses": [
+            {
+              "type": "mediation_analysis",
+              "path": "BAI -> sleepiness -> PSQI",
+              "mediator": "sleepiness"
+            }
+          ]
+        },
+        "risk_mitigation": {
+          "overfitting": "Use cross-validated partial least squares regression with 10-fold CV",
+          "confounding": "Include baseline sleep duration and daytime sleepiness as covariates in all models"
+        },
+        "rationale": "Focuses on untested connectivity features (salience and frontoparietal networks) while leveraging existing psychological metrics. Avoids previously failed hypotheses by reframing relationships as moderated effects and mediation pathways, with explicit control for baseline sleep variables."
+      }
+    }
+  }
+]

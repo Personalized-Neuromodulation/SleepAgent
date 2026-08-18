@@ -1,0 +1,2405 @@
+{
+  "total": 642,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "40cad5ff4bb6f5d40aa0afb79c39383a6f37a13c",
+      "externalIds": {
+        "DOI": "10.1016/j.mri.2025.110554",
+        "CorpusId": 282667787,
+        "PubMed": "41173218"
+      },
+      "url": "https://www.semanticscholar.org/paper/40cad5ff4bb6f5d40aa0afb79c39383a6f37a13c",
+      "title": "Real-time multislice-to-volume motion correction for task-based EPI-fMRI at 7 T.",
+      "venue": "Magnetic Resonance Imaging",
+      "year": 2025,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://eprints.gla.ac.uk/370487/1/370487.pdf",
+        "status": "GREEN",
+        "license": "CCBYSA",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.mri.2025.110554?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.mri.2025.110554, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2318105600",
+          "name": "Steven Winata"
+        },
+        {
+          "authorId": "9831002",
+          "name": "D. Hoinkiss"
+        },
+        {
+          "authorId": "2318103430",
+          "name": "Graeme Keith"
+        },
+        {
+          "authorId": "2332639271",
+          "name": "Salim al-Wasity"
+        },
+        {
+          "authorId": "2292855581",
+          "name": "D. Porter"
+        }
+      ],
+      "abstract": "Magnetic resonance imaging (MRI) at ultra-high field strengths such as 7 T unlocks new opportunities. Functional MRI (fMRI) is especially able to benefit due to the increase in the inherent blood‑oxygen-level-dependant (BOLD) signal. In order to utilise this, the higher motion sensitivity at 7 T and various motion sources in fMRI protocols, especially task-based ones, need to be mitigated. This motivated the development of a 7 T implementation of the real-time, prospective Multislice Prospective Acquisition Correction (MS-PACE) technique. MS-PACE allows for a sub-TR, higher temporal resolution motion correction without the need for external tracking equipment. We present an echo-planar imaging (EPI) implementation, evaluated in a 7 T task-based fMRI study. The results show that the technique led to significant, consistent reduction in residual motion across the scanned cohort. An analysis of the temporal SNR of the resting-state scans indicated a general increase in this metric when prospective motion correction was activated. Functional analysis of the data showed an apparent reduction of artefactual activations compared to a standard retrospective motion correction algorithm."
+    },
+    {
+      "paperId": "5dcff08595a848a35777dd833c6efce58635ab74",
+      "externalIds": {
+        "PubMedCentral": "10164016",
+        "DOI": "10.1007/s10548-023-00945-0",
+        "CorpusId": 257629995,
+        "PubMed": "36939987"
+      },
+      "url": "https://www.semanticscholar.org/paper/5dcff08595a848a35777dd833c6efce58635ab74",
+      "title": "Camera-based Prospective Motion Correction in Paediatric Epilepsy Patients Enables EEG-fMRI Localization Even in High-motion States",
+      "venue": "Brain Topography",
+      "year": 2023,
+      "citationCount": 7,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10548-023-00945-0.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10164016, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5377907",
+          "name": "M. Steinbrenner"
+        },
+        {
+          "authorId": "153809306",
+          "name": "A. McDowell"
+        },
+        {
+          "authorId": "145271565",
+          "name": "M. Centeno"
+        },
+        {
+          "authorId": "39854156",
+          "name": "F. Moeller"
+        },
+        {
+          "authorId": "1965259",
+          "name": "Suejen Perani"
+        },
+        {
+          "authorId": "3265939",
+          "name": "S. Lorio"
+        },
+        {
+          "authorId": "7962135",
+          "name": "D. Maziero"
+        },
+        {
+          "authorId": "83650098",
+          "name": "D. Carmichael"
+        }
+      ],
+      "abstract": "Background: EEG-fMRI is a useful additional test to localize the epileptogenic zone (EZ) particularly in MRI negative cases. However subject motion presents a particular challenge owing to its large effects on both MRI and EEG signal. Traditionally it is assumed that prospective motion correction (PMC) of fMRI precludes EEG artifact correction. Methods: Children undergoing presurgical assessment at Great Ormond Street Hospital were included into the study. PMC of fMRI was done using a commercial system with a Moiré Phase Tracking marker and MR-compatible camera. For retrospective EEG correction both a standard and a motion educated EEG artefact correction (REEGMAS) were compared to each other. Results: Ten children underwent simultaneous EEG-fMRI. Overall head movement was high (mean RMS velocity < 1.5 mm/s) and showed high inter- and intra-individual variability. Comparing motion measured by the PMC camera and the (uncorrected residual) motion detected by realignment of fMRI images, there was a five-fold reduction in motion from its prospective correction. Retrospective EEG correction using both standard approaches and REEGMAS allowed the visualization and identification of physiological noise and epileptiform discharges. Seven of 10 children had significant maps, which were concordant with the clinical EZ hypothesis in 6 of these 7. Conclusion: To our knowledge this is the first application of camera-based PMC for MRI in a pediatric clinical setting. Despite large amount of movement PMC in combination with retrospective EEG correction recovered data and obtained clinically meaningful results during high levels of subject motion. Practical limitations may currently limit the widespread use of this technology."
+    },
+    {
+      "paperId": "420fa7041d61e3dc364074e762194f12a5cc5ac1",
+      "externalIds": {
+        "PubMedCentral": "11928684",
+        "DOI": "10.1038/s42003-025-07928-w",
+        "CorpusId": 277243998,
+        "PubMed": "40118993"
+      },
+      "url": "https://www.semanticscholar.org/paper/420fa7041d61e3dc364074e762194f12a5cc5ac1",
+      "title": "Improving brain difference identification in autism spectrum disorder through enhanced head motion correction in ICA-AROMA",
+      "venue": "Communications Biology",
+      "year": 2025,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1038/s42003-025-07928-w",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11928684, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2379279046",
+          "name": "Jianwu Guan"
+        },
+        {
+          "authorId": "2108565037",
+          "name": "Hai Li"
+        },
+        {
+          "authorId": "2174714905",
+          "name": "Qiansu Yang"
+        },
+        {
+          "authorId": "2075454160",
+          "name": "Yanwei Lv"
+        },
+        {
+          "authorId": "2351766660",
+          "name": "Lei Zhang"
+        },
+        {
+          "authorId": "2154458830",
+          "name": "Yi Wang"
+        },
+        {
+          "authorId": "2351598254",
+          "name": "Shijun Li"
+        }
+      ],
+      "abstract": "Head motion during magnetic resonance imaging (MRI) examinations of patients with autism spectrum disorder (ASD) can influence the identification of brain differences as well as early diagnosis and precise MRI-based interventions for ASD. This study aims to address head motion issues in resting-state functional MRI (rs-fMRI) data by comparing various correction methods. Specifically, we evaluate the independent component analysis-based automatic removal of motion artifacts (ICA-AROMA) against traditional preprocessing pipelines, including head motion realignment parameters and global signal regression (GSR). Our dataset consisted of 306 participants, including 148 individuals with ASD and 158 participants with typical development (TD). We find that ICA-AROMA, particularly when combined with GSR and physiological noise correction, outperformed other strategies in differentiating ASD from TD participants based on functional connectivity (FC) analyses. The correlation of quality control with functional connectivity (QC-FC) is statistically significant in proportion and distance after applying each denoising pipeline. The mean FC between groups is significant for Yeo’s 17-Network in each denoising strategy. ICA-AROMA head motion correction outperformed other strategies, revealing more significant FC networks and distinct brain regions linked to the posterior cingulate cortex and postcentral gyrus. This suggests ICA-AROMA enhances fMRI preprocessing, aiding ASD diagnosis and biomarker development. This study examines how different head motion correction methods influence functional MRI analyses in autism spectrum disorder, showing that ICA-AROMA, when combined with physiological noise correction and global signal regression, enhances the ability to distinguish ASD from typical development"
+    },
+    {
+      "paperId": "677e6579df85d0508a23031e89dd6c196016f0d7",
+      "externalIds": {
+        "DBLP": "conf/visapp/LernerRG06",
+        "MAG": "2912716934",
+        "DOI": "10.1007/978-3-540-75274-5_27",
+        "CorpusId": 4869838
+      },
+      "url": "https://www.semanticscholar.org/paper/677e6579df85d0508a23031e89dd6c196016f0d7",
+      "title": "Vision-Based Tracking System for Head Motion Correction in FMRI Images",
+      "venue": "VISIGRAPP",
+      "year": 2016,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-540-75274-5_27?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-540-75274-5_27, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145465143",
+          "name": "T. Lerner"
+        },
+        {
+          "authorId": "1747801",
+          "name": "E. Rivlin"
+        },
+        {
+          "authorId": "34998142",
+          "name": "M. Gur"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "7f382c3dfe8b4bd0a61e5584c0a14e95680b0996",
+      "externalIds": {
+        "DOI": "10.58530/2025/3611",
+        "CorpusId": 281343334
+      },
+      "url": "https://www.semanticscholar.org/paper/7f382c3dfe8b4bd0a61e5584c0a14e95680b0996",
+      "title": "Real-time fetal head motion tracking for prospective motion correction in fMRI",
+      "venue": "ISMRM Annual Meeting",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.58530/2025/3611?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.58530/2025/3611, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2338994857",
+          "name": "Hongli Fan"
+        },
+        {
+          "authorId": "2332709454",
+          "name": "Xiaoqing Wang"
+        },
+        {
+          "authorId": "2322442208",
+          "name": "Danny Joca"
+        },
+        {
+          "authorId": "2367141404",
+          "name": "Dominique Franson"
+        },
+        {
+          "authorId": "2313880830",
+          "name": "Jian Wang"
+        },
+        {
+          "authorId": "2018588",
+          "name": "D. Splitthoff"
+        },
+        {
+          "authorId": "2318046418",
+          "name": "Kelvin Chow"
+        },
+        {
+          "authorId": "1780680828",
+          "name": "Razieh Faghihpirayesh"
+        },
+        {
+          "authorId": "1404555669",
+          "name": "C. Velasco-Annis"
+        },
+        {
+          "authorId": "2318069563",
+          "name": "S. Warfield"
+        },
+        {
+          "authorId": "2229938871",
+          "name": "Stephan Cauley"
+        },
+        {
+          "authorId": "2318053243",
+          "name": "A. Gholipour"
+        }
+      ],
+      "abstract": "Motivation: Fetal fMRI offers critical insights into early brain functional development, but unpredictable fetal motion often distorts images, reducing data reliability and limiting research potential. Goal(s): This study aims to develop a prospective motion-correction (PMC) system for fetal fMRI to mitigate motion artifacts, enhancing data quality and enabling accurate study of fetal brain development. Approach: The PMC system integrates U-Net-based segmentation and rigid registration to track fetal head motion and adjust slice positioning in real-time. Results: PMC improved imaging quality with a 23% increase in temporal SNR and a 22% increase in Dice similarity index in an fMRI time series compared to uncorrected data. Impact: Real-time fetal brain segmentation and registration with one-TR latency enable effective motion-correction in fetal fMRI, allowing motion data from one repetition to guide adjustments in subsequent frames. This significantly enhances data reliability and usability in fetal fMRI studies."
+    },
+    {
+      "paperId": "162d163ec2c07c2232993b89c79df03d1616eb4d",
+      "externalIds": {
+        "PubMedCentral": "9506314",
+        "DOI": "10.52294/apertureneuro.2022.2.nxor2026",
+        "CorpusId": 239012209,
+        "PubMed": "36162001"
+      },
+      "url": "https://www.semanticscholar.org/paper/162d163ec2c07c2232993b89c79df03d1616eb4d",
+      "title": "A Multi-Dataset Evaluation of Frame Censoring for Motion Correction in Task-Based fMRI",
+      "venue": "bioRxiv",
+      "year": 2021,
+      "citationCount": 8,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9506314",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9506314, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2218396193",
+          "name": "Michael S. Jones"
+        },
+        {
+          "authorId": "1574013395",
+          "name": "Zhenchen Zhu"
+        },
+        {
+          "authorId": "1404702434",
+          "name": "Aahana Bajracharya"
+        },
+        {
+          "authorId": "103469476",
+          "name": "Austin Luor"
+        },
+        {
+          "authorId": "3122160",
+          "name": "J. Peelle"
+        }
+      ],
+      "abstract": "Subject motion during fMRI can affect our ability to accurately measure signals of interest. In recent years, frame censoring—that is, statistically excluding motion-contaminated data within the general linear model using nuisance regressors—has appeared in several task-based fMRI studies as a mitigation strategy. However, there have been few systematic investigations quantifying its efficacy. In the present study, we compared the performance of frame censoring to several other common motion correction approaches for task-based fMRI using open data and reproducible workflows. We analyzed eight publicly-available datasets representing eleven distinct tasks in child, adolescent, and adult participants. Performance was quantified using maximum t-values in group analyses, and ROI-based mean activation and split-half reliability in single subjects. We compared frame censoring across several thresholds to the use of 6 and 24 canonical motion regressors, wavelet despiking, robust weighted least squares, and untrained ICA-based denoising, for a total of 240 separate analyses. Thresholds used to identify censored frames were based on both motion estimates (FD) and image intensity changes (DVARS). Relative to standard motion regressors, we found consistent improvements for modest amounts of frame censoring (e.g., 1–2% data loss), although these gains were frequently comparable to what could be achieved using other techniques. Importantly, no single approach consistently outperformed the others across all datasets and tasks. These findings suggest that the choice of a motion mitigation strategy depends on both the dataset and the outcome metric of interest."
+    },
+    {
+      "paperId": "e78e67a54f18d63192d6006f6c7e052e31bcd12c",
+      "externalIds": {
+        "PubMedCentral": "12912799",
+        "DOI": "10.58530/2025/2329",
+        "CorpusId": 281350451,
+        "PubMed": "41710702"
+      },
+      "url": "https://www.semanticscholar.org/paper/e78e67a54f18d63192d6006f6c7e052e31bcd12c",
+      "title": "Combined prospective and retrospective motion correction for high-resolution linescan acquisitions in the human cerebral cortex at 7T",
+      "venue": "Proceedings of the International Society for Magnetic Resonance in Medicine ... Scientific Meeting and Exhibition. International Society for Magnetic Resonance in Medicine. Scientific Meeting and Exhibition",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12912799, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2318224302",
+          "name": "Mukund Balasubramanian"
+        },
+        {
+          "authorId": "2318047522",
+          "name": "Jonathan R. Polimeni"
+        },
+        {
+          "authorId": "2252485587",
+          "name": "Dylan Tisdall"
+        },
+        {
+          "authorId": "2318074981",
+          "name": "André van der Kouwe"
+        },
+        {
+          "authorId": "2318070855",
+          "name": "Robert Frost"
+        }
+      ],
+      "abstract": "Motivation: Classical 1D linescan acquisitions have recently been shown to be valuable for recording in-vivo MRI signals across the layers of human cerebral cortex; however, these reduced-field-of-view techniques are vulnerable to rotational head movements as well as translations parallel and perpendicular to the line. Goal(s): To acquire high-quality, high-resolution linescan data that is robust to \"in-line\" and \"through-line\" motion. Approach: 3D-EPI volumetric navigators (vNavs) were incorporated into a spin-echo-based linescan pulse sequence. Results: We demonstrate that, by combining prospective and retrospective motion correction, we can acquire reliable linescan data with 0.5-mm readout resolution at 7T, in the presence of in-line and through-line head motion. Impact: Motion-robust linescan techniques will help enable the measurement of tissue microstructure and microvascular fMRI signals at high spatial resolutions, approaching the thickness of individual cortical layers, facilitating noninvasive studies of cortical circuitry and architectonics in the living human brain."
+    },
+    {
+      "paperId": "7d820dda2cab79f2d92761976ebd3dc2f95333db",
+      "externalIds": {
+        "DBLP": "conf/icdsp/PalitSA09",
+        "MAG": "2041395054",
+        "DOI": "10.1109/ICDSP.2009.5201069",
+        "CorpusId": 15795614
+      },
+      "url": "https://www.semanticscholar.org/paper/7d820dda2cab79f2d92761976ebd3dc2f95333db",
+      "title": "A robust technique for motion correction in fMRI",
+      "venue": "International Conference on Digital Signal Processing",
+      "year": 2009,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICDSP.2009.5201069?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICDSP.2009.5201069, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1808104",
+          "name": "S. Palit"
+        },
+        {
+          "authorId": "50381165",
+          "name": "D. Sengupta"
+        },
+        {
+          "authorId": "2111131315",
+          "name": "M. Ali"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "f54bc2bfefa20e691605a5ba34b24e376a37acda",
+      "externalIds": {
+        "DOI": "10.1101/2024.08.13.607843",
+        "CorpusId": 271898602
+      },
+      "url": "https://www.semanticscholar.org/paper/f54bc2bfefa20e691605a5ba34b24e376a37acda",
+      "title": "EEG source imaging technique to investigate sleep oscillations for simultaneous EEG-fMRI",
+      "venue": "bioRxiv",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2024/08/16/2024.08.13.607843.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2024.08.13.607843?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2024.08.13.607843, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32116327",
+          "name": "M. Uji"
+        },
+        {
+          "authorId": "74393015",
+          "name": "A. Jegou"
+        },
+        {
+          "authorId": "2251317174",
+          "name": "N. Cross"
+        },
+        {
+          "authorId": "34821805",
+          "name": "F. Pomares"
+        },
+        {
+          "authorId": "2297093266",
+          "name": "A. Perrault"
+        },
+        {
+          "authorId": "2029655257",
+          "name": "A. Nguyen"
+        },
+        {
+          "authorId": "2029673557",
+          "name": "U. Aydin"
+        },
+        {
+          "authorId": "39915555",
+          "name": "Kangjoo Lee"
+        },
+        {
+          "authorId": "9689225",
+          "name": "C. Abdallah"
+        },
+        {
+          "authorId": "2579809",
+          "name": "B. Frauscher"
+        },
+        {
+          "authorId": "2250353178",
+          "name": "Jean-Marc Lina"
+        },
+        {
+          "authorId": "1400823726",
+          "name": "T. Dang-Vu"
+        },
+        {
+          "authorId": "2513442",
+          "name": "C. Grova"
+        }
+      ],
+      "abstract": "Simultaneous recording of electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) is a widely used non-invasive neuroimaging technique in sleep studies. However, EEG data are strongly influenced by two types of MRI-related artefacts: gradient artefacts (GA) and ballistocardiogram artefacts (BCG). If artefacts correction is suboptimal, the BCG obscures the EEG signals below 20Hz and could make it difficult to investigate sleep oscillations, especially sleep spindles, sleep specific oscillations occurring within 11-16Hz frequency band. We previously demonstrated the utility of beamforming spatial filtering in correcting MRI-related artefacts on EEG. Here, we investigated the use of beamforming spatial filtering for improving the detection of EEG oscillations during sleep, in particular, 1) to accurately estimate single-event spindle EEG power changes, and 2) to demonstrate the potential improvement of fMRI general linear model (GLM) analysis when involving such additional EEG information. We analysed EEG-fMRI data acquired during a recovery nap after sleep deprivation in 20 young healthy participants (12 females, 8 males, age = 21.3 ± 2.5 years). Based on spindle events (onset and duration) detected by trained sleep scorers on BCG corrected EEG signals through a conventional average artefact subtraction (AAS) method, we compared four different EEG processing steps: non-BCG corrected; AAS BCG corrected; beamforming BCG corrected; beamforming+AAS BCG corrected. These processing steps consist of non-BCG corrected and AAS BCG corrected considered either at the sensor level or at the source-level (after beamformer localization) to evaluate the impact of the BCG artefact on the detection of spindle activity. Then we further investigated four different fMRI GLM approaches using 1) the spindle onset and duration (GLM1), 2) spindle onset, duration, and parametric modulation of single-spindle power change from the Cz electrode of the AAS BCG corrected data (GLM2), 3) spindle onset, duration, and parametric modulation of single-spindle power change from the beamforming+AAS BCG corrected (GLM3) and 4) spindle onset, duration, and parametric modulation of single-spindle power change from the beamforming BCG corrected data (GLM4). We found that the beamforming approach did not only attenuate the BCG artefacts, but also recovered sleep spindle activity occurring during NREM sleep. Furthermore, this beamforming approach allowed us to accurately estimate single-event power change of each spindle in the source space when compared to the channel level analysis, and therefore to further improve the specificity of fMRI GLM analysis, better localizing the recruited brain regions during spindles. Our findings show the benefit of applying beamforming source imaging technique to EEG-fMRI acquired during sleep. We demonstrate that this approach would be beneficial especially for long EEG-fMRI data acquisitions (i.e., sleep, resting-state), when the BCG correction becomes problematic due to inherent dynamic changes of heart rates. Our findings extend previous work regarding the application of the source imaging to the sleep EEG-fMRI. Combining with this advanced methodology and analysis, sleep EEG-fMRI will help us better understand the functional roles of human sleep."
+    },
+    {
+      "paperId": "adeffabf166acf41c2e14457c4b9f8242e79e3fa",
+      "externalIds": {
+        "DOI": "10.1101/2022.01.31.22270167",
+        "CorpusId": 246441409
+      },
+      "url": "https://www.semanticscholar.org/paper/adeffabf166acf41c2e14457c4b9f8242e79e3fa",
+      "title": "Task-based fMRI in early Multiple Sclerosis: what is the best head motion correction approach?",
+      "venue": "medRxiv",
+      "year": 2022,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.medrxiv.org/content/medrxiv/early/2022/02/01/2022.01.31.22270167.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2022.01.31.22270167?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2022.01.31.22270167, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "152524176",
+          "name": "Júlia F. Soares"
+        },
+        {
+          "authorId": "145080116",
+          "name": "Rodolfo Abreu"
+        },
+        {
+          "authorId": "2051641444",
+          "name": "Ana Cláudia Lima"
+        },
+        {
+          "authorId": "27389459",
+          "name": "L. Sousa"
+        },
+        {
+          "authorId": "113500733",
+          "name": "S. Batista"
+        },
+        {
+          "authorId": "1390131251",
+          "name": "M. Castelo‐Branco"
+        },
+        {
+          "authorId": "37149426",
+          "name": "J. Duarte"
+        }
+      ],
+      "abstract": "Functional MRI (fMRI) is one of the most common brain imaging modalities used for understanding brain organization and connectivity abnormalities associated with multiple sclerosis (MS). The fMRI signal is highly perturbed by head motion, which degrades data quality and influences all image-derived metrics. Numerous correction approaches have been proposed over the years to overcome the problems induced by head motion, however, despite a few efforts, there are still current and persistent controversies regarding the best correction strategy. The lack of a systematic comparison between different correction approaches motivates the search for optimal correction models, particularly in studies with clinical populations prone to characterize by higher motion. Moreover, motion correction strategies gain more relevance in task-based designs, which are less explored compared to resting-state and may have a crucial role in describing the functioning of the brain and highlighting specific connectivity changes. We acquired fMRI data from a group of patients with early MS and matched healthy controls (HC) during performance of a visual task, characterized motion in both groups, and compared the most used motion correction methods. We compared task-activation metrics obtained from models without motion correction, models containing 6 or 24 motion parameters (MPs) as nuisance regressors, models containing 6 or 24 MPs and motion outliers detected with FD or DVARS as nuisance regressors (scrubbing) and models with 6 or 24 MPs where motion outliers were corrected through volume interpolation. To our knowledge, volume interpolation is a frequently used approach but was never compared with other existent methods. Our results showed that there were no differences in motion between groups, suggesting that recently diagnosed MS patients do not present problematic motion. In general, models with 6 MPs present higher Z-scores than models with 24 MPs, suggesting the 6 MPs as the best trade-off between motion correction and preservation of valuable information. However, correction approaches differ between groups, regarding the combination of MPs with correction of motion outliers. Models with 6 MPs and outliers volume interpolation or scrubbing with FD presented higher Z-scores in the MS group, while models with 6 MPs and scrubbing with DVARS or volume interpolation were the best combinations for the HC group. Differences between groups in motion correction strategies draw attention to the intrinsic impact of MS on fMRI analyses, which should be carefully addressed. This work paves the way towards finding an optimal motion correction strategy, which is required to improve the accuracy of fMRI analyses, crucially in clinical studies in MS and other patient populations."
+    },
+    {
+      "paperId": "f061e0845eb42ae161e070d528658da66f7591fd",
+      "externalIds": {
+        "ArXiv": "2209.08272",
+        "DBLP": "conf/miccai/TaymourtashKSNT22",
+        "DOI": "10.1007/978-3-031-16446-0_57",
+        "CorpusId": 252368388
+      },
+      "url": "https://www.semanticscholar.org/paper/f061e0845eb42ae161e070d528658da66f7591fd",
+      "title": "Spatio-Temporal Motion Correction and Iterative Reconstruction of In-Utero Fetal fMRI",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+      "year": 2022,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2209.08272",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2209.08272, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "29933673",
+          "name": "A. Taymourtash"
+        },
+        {
+          "authorId": "1925446449",
+          "name": "Hamza Kebiri"
+        },
+        {
+          "authorId": "2223462",
+          "name": "E. Schwartz"
+        },
+        {
+          "authorId": "2690152",
+          "name": "K. Nenning"
+        },
+        {
+          "authorId": "2959008",
+          "name": "S. Tourbier"
+        },
+        {
+          "authorId": "3312462",
+          "name": "G. Kasprian"
+        },
+        {
+          "authorId": "2749941",
+          "name": "D. Prayer"
+        },
+        {
+          "authorId": "6466939",
+          "name": "M. Cuadra"
+        },
+        {
+          "authorId": "2328333",
+          "name": "G. Langs"
+        }
+      ],
+      "abstract": "Resting-state functional Magnetic Resonance Imaging (fMRI) is a powerful imaging technique for studying functional development of the brain in utero. However, unpredictable and excessive movement of fetuses have limited its clinical applicability. Previous studies have focused primarily on the accurate estimation of the motion parameters employing a single step 3D interpolation at each individual time frame to recover a motion-free 4D fMRI image. Using only information from a 3D spatial neighborhood neglects the temporal structure of fMRI and useful information from neighboring timepoints. Here, we propose a novel technique based on four dimensional iterative reconstruction of the motion scattered fMRI slices. Quantitative evaluation of the proposed method on a cohort of real clinical fetal fMRI data indicates improvement of reconstruction quality compared to the conventional 3D interpolation approaches."
+    },
+    {
+      "paperId": "06b92882e04fe7fbd4e90fcac83744bf3fe5c5b7",
+      "externalIds": {
+        "DBLP": "journals/algorithms/HockeTF23",
+        "DOI": "10.3390/a16050230",
+        "CorpusId": 258411248
+      },
+      "url": "https://www.semanticscholar.org/paper/06b92882e04fe7fbd4e90fcac83744bf3fe5c5b7",
+      "title": "An Automatic Motion-Based Artifact Reduction Algorithm for fNIRS in Concurrent Functional Magnetic Resonance Imaging Studies (AMARA-fMRI)",
+      "venue": "Algorithms",
+      "year": 2023,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1999-4893/16/5/230/pdf?version=1682669114",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/a16050230?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/a16050230, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3480961",
+          "name": "L. Hocke"
+        },
+        {
+          "authorId": "34141069",
+          "name": "Y. Tong"
+        },
+        {
+          "authorId": "81606750",
+          "name": "B. Frederick"
+        }
+      ],
+      "abstract": "Multimodal functional near-infrared spectroscopy–functional magnetic resonance imaging (fNIRS–fMRI) studies have been highly beneficial for both the fNIRS and fMRI field as, for example, they shed light on the underlying mechanism of each method. However, several noise sources exist in both methods. Motion artifact removal is an important preprocessing step in fNIRS analysis. Several manual motion–artifact removal methods have been developed which require time and are highly dependent on expertise. Only a few automatic methods have been proposed. AMARA (acceleration-based movement artifact reduction algorithm) is one of the most promising automatic methods and was originally tested in an fNIRS sleep study with long acquisition times (~8 h). However, it relies on accelerometry data, which is problematic when performing concurrent fNIRS–fMIRI experiments. Most accelerometers are not MR compatible, and in any case, existing datasets do not have this data. Here, we propose a new way to retrospectively determine acceleration data for motion correction methods, such as AMARA in multimodal fNIRS–fMRI studies. We do so by considering the individual slice stack acquisition times of simultaneous multislice (SMS) acquisition and reconstructing high-resolution motion traces from each slice stack time. We validated our method on 10 participants during a memory task (2- and 3-back) with 6 fNIRS channels over the prefrontal cortex (limited field of view with fMRI). We found that this motion correction significantly improved the detection of activation in deoxyhemoglobin and outperformed up-sampled motion traces. However, we found no improvement in oxyhemoglobin. Furthermore, our data show a high overlap with fMRI activation when considering activation in channels according to both deoxyhemoglobin and oxyhemoglobin."
+    },
+    {
+      "paperId": "0747b425fac299881f3f8d6267b4351a1c166af4",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsac299",
+        "CorpusId": 257630985,
+        "PubMed": "36938602"
+      },
+      "url": "https://www.semanticscholar.org/paper/0747b425fac299881f3f8d6267b4351a1c166af4",
+      "title": "Correction to: Brain function in children with obstructive sleep apnea: a resting-state fMRI study.",
+      "venue": "Sleep",
+      "year": 2023,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/sleep/advance-article-pdf/doi/10.1093/sleep/zsac299/49562507/zsac299.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsac299?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsac299, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [],
+      "abstract": null
+    },
+    {
+      "paperId": "7bec60620f61ce133dbef9c6c318df2eeef4849f",
+      "externalIds": {
+        "MAG": "3004990944",
+        "DBLP": "journals/neuroimage/MazieroRMSE20",
+        "PubMedCentral": "7238750",
+        "DOI": "10.1016/j.neuroimage.2020.116594",
+        "CorpusId": 211052864,
+        "PubMed": "32044436"
+      },
+      "url": "https://www.semanticscholar.org/paper/7bec60620f61ce133dbef9c6c318df2eeef4849f",
+      "title": "Prospective Motion Correction of fMRI: Improving the quality of resting state data affected by large head motion",
+      "venue": "NeuroImage",
+      "year": 2020,
+      "citationCount": 22,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1053811920300811/pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7238750, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7962135",
+          "name": "D. Maziero"
+        },
+        {
+          "authorId": "2448770",
+          "name": "C. Rondinoni"
+        },
+        {
+          "authorId": "37328659",
+          "name": "Theo F. Marins"
+        },
+        {
+          "authorId": "50629343",
+          "name": "V. Stenger"
+        },
+        {
+          "authorId": "2059537471",
+          "name": "T. Ernst"
+        }
+      ],
+      "abstract": "The quality of functional MRI (fMRI) data is affected by head motion. It has been shown that fMRI data quality can be improved by prospectively updating the gradients and radio-frequency pulses in response to head motion during image acquisition by using an MR-compatible optical tracking system (prospective motion correction, or PMC). Recent studies showed that PMC improves the temporal Signal to Noise Ratio (tSNR) of resting state fMRI data (rs-fMRI) acquired from subjects not moving intentionally. Besides that, the time courses of Independent Components (ICs), resulting from Independent Component Analysis (ICA), were found to present significant temporal correlation with the motion parameters recorded by the camera. However, the benefits of applying PMC for improving the quality of rs-fMRI acquired under large head movements and its effects on resting state networks (RSN) and connectivity matrices are still unknown. In this study, subjects were instructed to cross their legs at will while rs-fMRI data with and without PMC were acquired, which generated head motion velocities ranging from 4 to 30 mm/s. We also acquired fMRI data without intentional motion. Independent component analysis of rs-fMRI was performed to evaluate IC maps and time courses of RSNs. We also calculated the temporal correlation among different brain regions and generated connectivity matrices for the different motion and PMC conditions. In our results we verified that the crossing leg movements reduced the tSNR of sessions without and with PMC by 45 and 20%, respectively, when compared to sessions without intentional movements. We have verified an interaction between head motion speed and PMC status, showing stronger attenuation of tSNR for acquisitions without PMC than for those with PMC. Additionally, the spatial definition of major RSNs, such as default mode, visual, left and right central executive networks, was improved when PMC was enabled. Furthermore, motion altered IC-time courses by decreasing power at low frequencies and increasing power at higher frequencies (typically associated with artefacts). PMC partially reversed these alterations of the power spectra. Finally, we showed that PMC provides temporal correlation matrices for data acquired under motion conditions more comparable to those obtained by fMRI sessions where subjects were instructed not to move."
+    },
+    {
+      "paperId": "ea8b719f9dcdda1bd5a11c9135f9f9c33100035f",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/BausePSIEKALPS20",
+        "MAG": "2994262411",
+        "DOI": "10.1016/j.neuroimage.2019.116434",
+        "CorpusId": 208652453,
+        "PubMed": "31812715"
+      },
+      "url": "https://www.semanticscholar.org/paper/ea8b719f9dcdda1bd5a11c9135f9f9c33100035f",
+      "title": "Impact of prospective motion correction, distortion correction methods and large vein bias on the spatial accuracy of cortical laminar fMRI at 9.4 Tesla",
+      "venue": "NeuroImage",
+      "year": 2019,
+      "citationCount": 38,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1053811919310250/pdf",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2019.116434?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2019.116434, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "5408240",
+          "name": "J. Bause"
+        },
+        {
+          "authorId": "1782963",
+          "name": "J. Polimeni"
+        },
+        {
+          "authorId": "39414196",
+          "name": "Johannes Stelzer"
+        },
+        {
+          "authorId": "38684945",
+          "name": "M. In"
+        },
+        {
+          "authorId": "3748968",
+          "name": "P. Ehses"
+        },
+        {
+          "authorId": "2093731340",
+          "name": "Pablo Kraemer-Fernandez"
+        },
+        {
+          "authorId": "2391892",
+          "name": "A. Aghaeifar"
+        },
+        {
+          "authorId": "51388669",
+          "name": "Eric Lacosse"
+        },
+        {
+          "authorId": "2965203",
+          "name": "R. Pohmann"
+        },
+        {
+          "authorId": "2574071",
+          "name": "K. Scheffler"
+        }
+      ],
+      "abstract": "Functional imaging with sub-millimeter spatial resolution is a basic requirement for assessing functional MRI (fMRI) responses across different cortical depths, and is used extensively in the emerging field of laminar fMRI. Such studies seek to investigate the detailed functional organization of the brain and may develop to a new powerful tool for human neuroscience. However, several studies have shown that measurement of laminar fMRI responses can be biased by the image acquisition and data processing strategies. In this work, measurements with three different gradient-echo EPI protocols with a voxel size down to 650 μm isotropic were performed at 9.4 T. We estimated how prospective motion correction can help to improve spatial accuracy by reducing the number of spatial resampling steps in postprocessing. In addition, we demonstrate key requirements for accurate geometric distortion correction to ensure that distortion correction maps are properly aligned to the functional data and that strong variations of distortions near large veins can lead to signal overlays which cannot be corrected for during postprocessing. Furthermore, this study illustrates the spatial extent of bias induced by pial and other larger veins in laminar BOLD experiments. Since these issues under investigation affect studies performed with more conventional spatial resolutions, the methods applied in this work may also help to improve the understanding of the BOLD signal more broadly."
+    },
+    {
+      "paperId": "a496799f3beb8149dbfbd16600978c5903495f76",
+      "externalIds": {
+        "PubMedCentral": "11748004",
+        "DOI": "10.2147/NSS.S488911",
+        "CorpusId": 275719229,
+        "PubMed": "39839964"
+      },
+      "url": "https://www.semanticscholar.org/paper/a496799f3beb8149dbfbd16600978c5903495f76",
+      "title": "Functional Connectivity Alterations Associated with COVID-19-Related Sleep Problems: A Longitudinal Resting-State fMRI Study",
+      "venue": "Nature and Science of Sleep",
+      "year": 2025,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.2147/nss.s488911",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11748004, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2293814911",
+          "name": "Hao-Bo Chen"
+        },
+        {
+          "authorId": "2233780979",
+          "name": "Ling Li"
+        },
+        {
+          "authorId": "2298498666",
+          "name": "Yunkai Sun"
+        },
+        {
+          "authorId": "2241328118",
+          "name": "Yi Liu"
+        },
+        {
+          "authorId": "2256715799",
+          "name": "Wei Chen"
+        },
+        {
+          "authorId": "2302263327",
+          "name": "Peng Liu"
+        },
+        {
+          "authorId": "2303330213",
+          "name": "Yanhui Liao"
+        },
+        {
+          "authorId": "2293797486",
+          "name": "An Xie"
+        }
+      ],
+      "abstract": "Background COVID-19 has led to reports of fatigue and sleep problems. Brain function changes underlying sleep problems (SP) post-COVID-19 are unclear. Purpose This study investigated SP-related brain functional connectivity (FC) alterations. Patients and methods Fifty-five COVID-19 survivors with SP (COVID_SP) and 33 without SP (COVID_NSP), matched for demographics, completed PSQI and underwent rs-fMRI at baseline and 2-month follow-up. Correlations between FC and clinical data were analyzed by Pearson correlation analysis with Gaussian random field (GRF) correction. The repeated-measures analysis of variance (R-M ANOVA) was completed to explore the interaction with time. Results At baseline, COVID_SP exhibited elevated FC: right precentral gyrus (PrG) with left lateral occipital cortex (LOcC)/right PrG, left inferior parietal lobule (IPL) with right superior frontal gyrus (SFG), left hippocampus with right inferior frontal gyrus (IFG). Higher FC between left hippocampus and right SFG correlated with PSQI scores. At 2-month follow-up, decreased FC implicated in emotion regulation, executive function, and memory; increased FC in semantics, attention, and auditory-visual processing. The changes in these regions are correlated with the scores of PSQI, GAD, and PHQ. The Repeated-Measures Analysis of Variance (R-M ANOVA) revealed a significant time interaction effect between sleep and various emotion scales. Moreover, the analysis of the functional connectivity between the right PrG and the right PrG as well as that between the left IPL and the right SFG also discovered a significant time interaction effect. Conclusion This study provides insight into the changes in brain function associated with SP after COVID-19. These changes may partially explain the development of SP, and they also changed over time."
+    },
+    {
+      "paperId": "2e7e4aa5c4e9d52d1b0f8c5d981de1ecda160611",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/HuttonBJDAT02",
+        "MAG": "2114018515",
+        "DOI": "10.1006/NIMG.2001.1054",
+        "CorpusId": 15373796,
+        "PubMed": "11969330"
+      },
+      "url": "https://www.semanticscholar.org/paper/2e7e4aa5c4e9d52d1b0f8c5d981de1ecda160611",
+      "title": "Image Distortion Correction in fMRI: A Quantitative Evaluation",
+      "venue": "NeuroImage",
+      "year": 2002,
+      "citationCount": 726,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1006/NIMG.2001.1054?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1006/NIMG.2001.1054, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145387456",
+          "name": "C. Hutton"
+        },
+        {
+          "authorId": "2078358798",
+          "name": "A. Bork"
+        },
+        {
+          "authorId": "40489824",
+          "name": "O. Josephs"
+        },
+        {
+          "authorId": "2202967",
+          "name": "R. Deichmann"
+        },
+        {
+          "authorId": "3985221",
+          "name": "J. Ashburner"
+        },
+        {
+          "authorId": "145701843",
+          "name": "R. Turner"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "f20f0a16a9b42845ab2ec0b30e56f8ad96c199c0",
+      "externalIds": {
+        "PubMedCentral": "7566741",
+        "MAG": "2913589489",
+        "DOI": "10.1016/j.neures.2019.01.009",
+        "CorpusId": 72334512,
+        "PubMed": "30763590"
+      },
+      "url": "https://www.semanticscholar.org/paper/f20f0a16a9b42845ab2ec0b30e56f8ad96c199c0",
+      "title": "Left, right, or bilateral amygdala activation? How effects of smoothing and motion correction on ultra-high field, high-resolution functional magnetic resonance imaging (fMRI) data alter inferences",
+      "venue": "Neurosciences research",
+      "year": 2019,
+      "citationCount": 17,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7566741",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7566741, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "37886270",
+          "name": "Jerry E. Murphy"
+        },
+        {
+          "authorId": "3282447",
+          "name": "Julio A. Yanes"
+        },
+        {
+          "authorId": "40043029",
+          "name": "Lauren A. J. Kirby"
+        },
+        {
+          "authorId": "4195414",
+          "name": "M. Reid"
+        },
+        {
+          "authorId": "2070867",
+          "name": "Jennifer L. Robinson"
+        }
+      ],
+      "abstract": "Given the amygdala’s role in survival mechanisms, and its pivotal contributions to psychological processes, it is no surprise that it is one of the most well-studied brain regions. One of the common methods for understanding the functional role of the amygdala is the use of functional magnetic resonance imaging (fMRI). However, fMRI tends to be acquired using resolutions that are not optimal for smaller brain structures. Furthermore, standard processing includes spatial smoothing and motion correction which further degrade the resolution of the data. Inferentially, this may be detrimental when determining if the amygdalae are active during a task. Indeed, studies using the same task may show differential amygdala(e) activation. Here, we examine the effects of well-accepted preprocessing steps on whole-brain submillimeter fMRI data to determine the impact on activation patterns associated with a robust task known to activate the amygdala(e). We analyzed 7T fMRI data from 30 healthy individuals collected at sub-millimeter in-plane resolution and used a field standard preprocessing pipeline with different combinations of smoothing kernels and motion correction options. Resultant amygdalae activation patterns were altered depending on which combination of smoothing and motion correction were performed, indicating that whole-brain preprocessing steps have a significant impact on the inferences that can be drawn about smaller, subcortical structures like the amygdala."
+    },
+    {
+      "paperId": "a932de38895b1bc5be83232cb5319f287648d832",
+      "externalIds": {
+        "DOI": "10.1016/j.jneumeth.2022.109746",
+        "CorpusId": 253571825,
+        "PubMed": "36403778"
+      },
+      "url": "https://www.semanticscholar.org/paper/a932de38895b1bc5be83232cb5319f287648d832",
+      "title": "Robust high spatio-temporal line-scanning fMRI in humans at 7T using multi-echo readouts, denoising and prospective motion correction.",
+      "venue": "Journal of Neuroscience Methods",
+      "year": 2022,
+      "citationCount": 15,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0165027022002722/pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jneumeth.2022.109746?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jneumeth.2022.109746, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1521924714",
+          "name": "L. Raimondo"
+        },
+        {
+          "authorId": "40811625",
+          "name": "N. Priovoulos"
+        },
+        {
+          "authorId": "2189024638",
+          "name": "Catarina Passarinho"
+        },
+        {
+          "authorId": "2125420622",
+          "name": "Jurjen Heij"
+        },
+        {
+          "authorId": "2109508",
+          "name": "T. Knapen"
+        },
+        {
+          "authorId": "2720687",
+          "name": "S. Dumoulin"
+        },
+        {
+          "authorId": "2333912248",
+          "name": "Jeroen C. W. Siero"
+        },
+        {
+          "authorId": "52590756",
+          "name": "W. van der Zwaag"
+        }
+      ],
+      "abstract": "BACKGROUND\nFunctional magnetic resonance imaging (fMRI), typically using blood oxygenation level-dependent (BOLD) contrast weighted imaging, allows the study of brain function with millimeter spatial resolution and temporal resolution of one to a few seconds. At a mesoscopic scale, neurons in the human brain are spatially organized in structures with dimensions of hundreds of micrometers, while they communicate at the millisecond timescale. For this reason, it is important to develop an fMRI method with simultaneous high spatial and temporal resolution. Line-scanning promises to reach this goal at the cost of volume coverage.\n\n\nNEW METHOD\nHere, we release a comprehensive update to human line-scanning fMRI. First, we investigated multi-echo line-scanning with five different protocols varying the number of echoes and readout bandwidth while keeping the TR constant. In these, we compared different echo combination approaches in terms of BOLD activation (sensitivity) and temporal signal-to-noise ratio. Second, we implemented an adaptation of NOise reduction with DIstribution Corrected principal component analysis (NORDIC) thermal noise removal for line-scanning fMRI data. Finally, we tested three image-based navigators for motion correction and investigated different ways of performing fMRI analysis on the timecourses which were influenced by theinsertion of the navigators themselves.\n\n\nRESULTS\nThe presented improvements are relatively straightforward to implement; multi-echo readout and NORDIC denoising together, significantly improve data quality in terms of tSNR and t statistical values, while motion correction makes line-scanning fMRI more robust.\n\n\nCOMPARISON WITH EXISTING METHODS\nMulti-echo acquisitions and denoising have previously been applied in 3D magnetic resonance imaging. Their combination and application to 1D line-scanning is novel. The current proposed method greatly outperforms the previous line-scanning acquisitions with single-echo acquisition, in terms of tSNR (4.0 for single-echo line-scanning and 36.2 for NORDIC-denoised multi-echo) and t-statistical values (3.8 for single-echo line-scanning and 25.1 for NORDIC-denoised multi-echo line-scanning).\n\n\nCONCLUSIONS\nLine-scanning fMRI was advanced compared to its previous implementation in order to improve sensibility and reliability. The improved line-scanning acquisition could be used, in the future, for neuroscientific and clinical applications."
+    },
+    {
+      "paperId": "8887c49768f455206fa6ebc3b3a59de5d704c5b8",
+      "externalIds": {
+        "DOI": "10.1109/ICBME64381.2024.10895473",
+        "CorpusId": 276673806
+      },
+      "url": "https://www.semanticscholar.org/paper/8887c49768f455206fa6ebc3b3a59de5d704c5b8",
+      "title": "How Psychological Scores Influence Head Motion in Resting-State fMRI",
+      "venue": "Iranian Conference on Biomedical Engineering",
+      "year": 2024,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICBME64381.2024.10895473?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICBME64381.2024.10895473, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1471172033",
+          "name": "Sadeq Mohammadi"
+        },
+        {
+          "authorId": "31250105",
+          "name": "G. Hossein-Zadeh"
+        },
+        {
+          "authorId": "2639644",
+          "name": "M. R. Raoufy"
+        }
+      ],
+      "abstract": "The relationship between psychological health and head motion during resting-state functional magnetic resonance imaging (rs-fMRI) helps improve data quality. This study explores the links between the scores of the General Health Questionnaire-28 (GHQ-28) and the Depression Anxiety Stress Scales-42 (DASS-42) and head motion parameters, such as mean and maximum framewise displacement (FD), as well as mean and maximum translational and rotational movements in healthy individuals. After motion correction in the preprocessing of the rs-fMRI, we performed a correlation analysis to reveal the relationship between psychological scores and motion parameters. Our results showed significant correlations between psychological scores and motion parameters. Specifically, higher scores on the somatic dysfunction subscales of the GHQ-28 test were linked to larger translational and rotational movements. Similarly, increased anxiety and stress scores from the DASS-42 test were associated with higher levels of motion. These findings suggest that assessing participants’ psychological health can help predict their head motion during scanning, which is crucial for selecting participants in fMRI studies to ensure high data quality and prevent the loss of resources due to high motion artifacts in fMRI data. Incorporating psychological health assessments into the subject selection process may reduce motion-related artifacts and enhance the reliability of fMRI data."
+    },
+    {
+      "paperId": "da5fe64cce9ad1d7e55fb2490f24d8c814606d42",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/SchulzSBMHZT14",
+        "MAG": "2054260307",
+        "DOI": "10.1016/j.neuroimage.2013.08.006",
+        "CorpusId": 9813237,
+        "PubMed": "23954484"
+      },
+      "url": "https://www.semanticscholar.org/paper/da5fe64cce9ad1d7e55fb2490f24d8c814606d42",
+      "title": "Prospective slice-by-slice motion correction reduces false positive activations in fMRI with task-correlated motion",
+      "venue": "NeuroImage",
+      "year": 2014,
+      "citationCount": 36,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2013.08.006?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2013.08.006, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48189484",
+          "name": "J. Schulz"
+        },
+        {
+          "authorId": "2373034287",
+          "name": "Thomas Siegert"
+        },
+        {
+          "authorId": "50467221",
+          "name": "P. Bazin"
+        },
+        {
+          "authorId": "3142848",
+          "name": "J. Maclaren"
+        },
+        {
+          "authorId": "29780448",
+          "name": "M. Herbst"
+        },
+        {
+          "authorId": "144783562",
+          "name": "M. Zaitsev"
+        },
+        {
+          "authorId": "145701843",
+          "name": "R. Turner"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "65a542e93d0a3f3b1aed4d4a15746b3bb08b56e8",
+      "externalIds": {
+        "MAG": "2305898258",
+        "DBLP": "journals/neuroimage/WongZMPLB16",
+        "DOI": "10.1016/j.neuroimage.2016.01.042",
+        "CorpusId": 11229414,
+        "PubMed": "26826516"
+      },
+      "url": "https://www.semanticscholar.org/paper/65a542e93d0a3f3b1aed4d4a15746b3bb08b56e8",
+      "title": "Automatic EEG-assisted retrospective motion correction for fMRI (aE-REMCOR)",
+      "venue": "NeuroImage",
+      "year": 2016,
+      "citationCount": 31,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2016.01.042",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2016.01.042?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2016.01.042, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50455922",
+          "name": "C. Wong"
+        },
+        {
+          "authorId": "1724999",
+          "name": "V. Zotev"
+        },
+        {
+          "authorId": "3355781",
+          "name": "M. Misaki"
+        },
+        {
+          "authorId": "1697020",
+          "name": "Raquel Phillips"
+        },
+        {
+          "authorId": "2182195",
+          "name": "Q. Luo"
+        },
+        {
+          "authorId": "1747797",
+          "name": "J. Bodurka"
+        }
+      ],
+      "abstract": "Head motions during functional magnetic resonance imaging (fMRI) impair fMRI data quality and introduce systematic artifacts that can affect interpretation of fMRI results. Electroencephalography (EEG) recordings performed simultaneously with fMRI provide high-temporal-resolution information about ongoing brain activity as well as head movements. Recently, an EEG-assisted retrospective motion correction (E-REMCOR) method was introduced. E-REMCOR utilizes EEG motion artifacts to correct the effects of head movements in simultaneously acquired fMRI data on a slice-by-slice basis. While E-REMCOR is an efficient motion correction approach, it involves an independent component analysis (ICA) of the EEG data and identification of motion-related ICs. Here we report an automated implementation of E-REMCOR, referred to as aE-REMCOR, which we developed to facilitate the application of E-REMCOR in large-scale EEG-fMRI studies. The aE-REMCOR algorithm, implemented in MATLAB, enables an automated preprocessing of the EEG data, an ICA decomposition, and, importantly, an automatic identification of motion-related ICs. aE-REMCOR has been used to perform retrospective motion correction for 305 fMRI datasets from 16 subjects, who participated in EEG-fMRI experiments conducted on a 3T MRI scanner. Performance of aE-REMCOR has been evaluated based on improvement in temporal signal-to-noise ratio (TSNR) of the fMRI data, as well as correction efficiency defined in terms of spike reduction in fMRI motion parameters. The results show that aE-REMCOR is capable of substantially reducing head motion artifacts in fMRI data. In particular, when there are significant rapid head movements during the scan, a large TSNR improvement and high correction efficiency can be achieved. Depending on a subject's motion, an average TSNR improvement over the brain upon the application of aE-REMCOR can be as high as 27%, with top ten percent of the TSNR improvement values exceeding 55%. The average correction efficiency over the 305 fMRI scans is 18% and the largest achieved efficiency is 71%. The utility of aE-REMCOR on the resting state fMRI connectivity of the default mode network is also examined. The motion-induced position-dependent error in the DMN connectivity analysis is shown to be reduced when aE-REMCOR is utilized. These results demonstrate that aE-REMCOR can be conveniently and efficiently used to improve fMRI motion correction in large clinical EEG-fMRI studies."
+    },
+    {
+      "paperId": "56c06b5129baa9a7c90b2697dc40d6ac52bab9da",
+      "externalIds": {
+        "PubMedCentral": "11231096",
+        "DOI": "10.3389/fnimg.2024.1336887",
+        "CorpusId": 264441242,
+        "PubMed": "38984197"
+      },
+      "url": "https://www.semanticscholar.org/paper/56c06b5129baa9a7c90b2697dc40d6ac52bab9da",
+      "title": "Dynamic off-resonance correction improves functional image analysis in fMRI of awake behaving non-human primates",
+      "venue": "bioRxiv",
+      "year": 2023,
+      "citationCount": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/journals/neuroimaging/articles/10.3389/fnimg.2024.1336887/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11231096, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46201207",
+          "name": "M. Shahdloo"
+        },
+        {
+          "authorId": "4927298",
+          "name": "N. Khalighinejad"
+        },
+        {
+          "authorId": "2101585883",
+          "name": "Luke Priestley"
+        },
+        {
+          "authorId": "2261401747",
+          "name": "Matthew F. S. Rushworth"
+        },
+        {
+          "authorId": "2809201",
+          "name": "M. Chiew"
+        }
+      ],
+      "abstract": "Use of functional MRI in awake non-human primate (NHPs) has recently increased. Scanning animals while awake makes data collection possible in the absence of anaesthetic modulation and with an extended range of possible experimental designs. Robust awake NHP imaging however is challenging due to the strong artifacts caused by time-varying off-resonance changes introduced by the animal’s body motion. Recently, an image reconstruction technique has been proposed to estimate these off-resonance changes using the navigator data that is typically collected during fMRI scans to correct the data and compensate for the changes. In this study, we sought to thoroughly investigate the effect of this correction on the brain activation estimates using extended awake NHP data. Our results show significant improvements in image fidelity using our proposed correction strategy, as well as greatly enhanced and more reliable activation estimates in GLM analyses."
+    },
+    {
+      "paperId": "48c9919964726a11048d8e02447bbcac4226dbed",
+      "externalIds": {
+        "MAG": "2550864445",
+        "DOI": "10.1111/jon.12408",
+        "CorpusId": 19848628,
+        "PubMed": "27859975"
+      },
+      "url": "https://www.semanticscholar.org/paper/48c9919964726a11048d8e02447bbcac4226dbed",
+      "title": "Population‐Level Correction of Systematic Motion Artifacts in fMRI in Patients with Ischemic Stroke",
+      "venue": "Journal of Neuroimaging",
+      "year": 2017,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://dea.lib.unideb.hu/bitstreams/70e3a470-d69f-4337-bedb-c585cee75cb2/download",
+        "status": "GREEN",
+        "license": "other-oa",
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1111/jon.12408?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/jon.12408, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50391865",
+          "name": "C. Aranyi"
+        },
+        {
+          "authorId": "4489227",
+          "name": "G. Opposits"
+        },
+        {
+          "authorId": "3231013",
+          "name": "Marianna Nagy"
+        },
+        {
+          "authorId": "144233666",
+          "name": "E. Berényi"
+        },
+        {
+          "authorId": "7924583",
+          "name": "C. Vér"
+        },
+        {
+          "authorId": "4860683",
+          "name": "L. Csiba"
+        },
+        {
+          "authorId": "1953899",
+          "name": "P. Katona"
+        },
+        {
+          "authorId": "49561962",
+          "name": "T. Spisák"
+        },
+        {
+          "authorId": "2992376",
+          "name": "M. Emri"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "cfe5a67ce09848f0ffffd130ddeb338f5043704e",
+      "externalIds": {
+        "DOI": "10.1093/sleep/zsaf090.0084",
+        "CorpusId": 278752735
+      },
+      "url": "https://www.semanticscholar.org/paper/cfe5a67ce09848f0ffffd130ddeb338f5043704e",
+      "title": "0084 Preprocessing Results from an All-Night fMRI Sleep Study",
+      "venue": "Sleep",
+      "year": 2025,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/sleep/zsaf090.0084?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/sleep/zsaf090.0084, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108356372",
+          "name": "Patrick S. P. Wang"
+        },
+        {
+          "authorId": "2059010676",
+          "name": "Daniel S. Greene"
+        },
+        {
+          "authorId": "2362429716",
+          "name": "Hadar Halivni"
+        },
+        {
+          "authorId": "2315917428",
+          "name": "Niki Lam"
+        },
+        {
+          "authorId": "34967254",
+          "name": "Hendrik Mandelkow"
+        },
+        {
+          "authorId": "2297692721",
+          "name": "Nils Yang"
+        },
+        {
+          "authorId": "2243094099",
+          "name": "Zeynep Demir"
+        },
+        {
+          "authorId": "2380760131",
+          "name": "Pinar Ozbay"
+        },
+        {
+          "authorId": "2362437734",
+          "name": "Gail Tarlton"
+        },
+        {
+          "authorId": "2362514820",
+          "name": "J. Yi"
+        },
+        {
+          "authorId": "2331117143",
+          "name": "S. Inati"
+        },
+        {
+          "authorId": "33870602",
+          "name": "J. D. de Zwart"
+        },
+        {
+          "authorId": "48761025",
+          "name": "P. van Gelderen"
+        },
+        {
+          "authorId": "2318052004",
+          "name": "Jeff H. Duyn"
+        },
+        {
+          "authorId": "2219128",
+          "name": "D. Picchioni"
+        }
+      ],
+      "abstract": "\n \n \n Functional magnetic resonance imaging (fMRI) is emerging as a useful technique for investigating brain activity during sleep, offering superior spatial resolution compared to electroencephalography (EEG). A prior pilot study conducted by our lab highlighted the potential of fMRI to elucidate the neural correlates of dreaming, arousal thresholds, and other sleep-related phenomena. To expand on these findings, we conducted an extensive all-night fMRI sleep study. Here, we describe quality control metrics obtained during data preprocessing.\n \n \n \n Healthy participants (n=58) were enrolled in a two-night fMRI-EEG sleep study protocol. 43 participants successfully completed both nights, while 15 were withdrawn during the first or second night. At 6-8 random intervals throughout the night, participants were woken by auditory stimuli, which increased in intensity until wake onset. Once awake, participants completed a dream questionnaire. Preprocessing of fMRI data was performed using the Analysis of Functional Neuroimages (AFNI) toolbox, including nonlinear alignment to a Tailarach template, data censoring to eliminate outlier time points and artifacts from excessive head motion, and regression of systemic confounds from autonomic variability.\n \n \n \n A total of 877 runs of fMRI data were recorded with a mean length of 43.4 min (SD=34.5 min). Average temporal signal-to-noise ratio in brain voxels across all runs was 48.14 (SD=4.99). Post-regression, average global correlation across voxels was 0.013 (SD=0.005), indicating effective suppression of systemic confounds. Average maximum within-run motion displacement was a modest 2.78 mm (SD=2.23 mm), and average fraction of time points censored due to motion or outliers was 8.84% (SD=8.88%). Average spatial correlation between each subject’s anatomical and functional scans was 0.837 (SD=0.021), attributable to differences in brain coverage and resolution. Average spatial correlation between each subject’s anatomical scan and the Tailarach template was 0.981 (SD=0.005).\n \n \n \n These preprocessing results indicate the successful collection and preprocessing of high-quality, low-noise data and validate the effectiveness of our all-night fMRI sleep study protocol. Our next step is to perform group analyses using the auditory arousal threshold and dream questionnaire data collected.\n \n \n \n This work was supported by the Intramural Research Programs of the NINDS, NIDCD, and NIMH.\n"
+    },
+    {
+      "paperId": "d44374fe15923a033e249066b32f477cf682e8a3",
+      "externalIds": {
+        "MAG": "2993073672",
+        "CorpusId": 54761982
+      },
+      "url": "https://www.semanticscholar.org/paper/d44374fe15923a033e249066b32f477cf682e8a3",
+      "title": "Evaluation of the MCFLIRT Correction Algorithm in Head Motion from Resting State fMRI Data",
+      "venue": "",
+      "year": 2018,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://waset.org/publications/10008625/evaluation-of-the-mcflirt-correction-algorithm-in-head-motion-from-resting-state-fmri-data, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48726056",
+          "name": "V. Sacca"
+        },
+        {
+          "authorId": "1686556",
+          "name": "Alessia Sarica"
+        },
+        {
+          "authorId": "1878096",
+          "name": "F. Novellino"
+        },
+        {
+          "authorId": "152914945",
+          "name": "S. Barone"
+        },
+        {
+          "authorId": "4318573",
+          "name": "T. Tallarico"
+        },
+        {
+          "authorId": "4129048",
+          "name": "E. Filippelli"
+        },
+        {
+          "authorId": "46621965",
+          "name": "A. Granata"
+        },
+        {
+          "authorId": "5195370",
+          "name": "P. Valentino"
+        },
+        {
+          "authorId": "2321981",
+          "name": "A. Quattrone"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "3c6c7ba473698780e180073e7c3bc4cbc49b0890",
+      "externalIds": {
+        "PubMedCentral": "12094611",
+        "DOI": "10.1162/imag_a_00326",
+        "CorpusId": 269588316,
+        "PubMed": "40400776"
+      },
+      "url": "https://www.semanticscholar.org/paper/3c6c7ba473698780e180073e7c3bc4cbc49b0890",
+      "title": "Strategies for motion- and respiration-robust estimation of fMRI intrinsic neural timescales",
+      "venue": "bioRxiv",
+      "year": 2024,
+      "citationCount": 4,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1162/imag_a_00326",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12094611, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153548207",
+          "name": "Andrew Goldberg"
+        },
+        {
+          "authorId": "2299945658",
+          "name": "Isabella Rosario"
+        },
+        {
+          "authorId": "2382286853",
+          "name": "Jonathan Power"
+        },
+        {
+          "authorId": "2268496818",
+          "name": "Guillermo Horga"
+        },
+        {
+          "authorId": "13867891",
+          "name": "K. Wengler"
+        }
+      ],
+      "abstract": "Intrinsic neural timescale (INT) is a resting-state fMRI (rs-fMRI) measure that reflects the time window of neural integration within a brain region. Despite the potential relevance of INT to cognition, brain organization, and neuropsychiatric illness, the influences of physiological artifacts on INT have not been systematically considered. Two artifacts, head motion and respiration, pose serious issues in rs-fMRI studies. Here, we described their impact on INT estimation and tested the ability of two denoising strategies for mitigating these artifacts, high-motion frame censoring and global signal regression (GSR). We used a subset of the HCP Young Adult dataset with runs annotated for breathing patterns (Lynch et al., 2020) and at least one “clean” (reference) run that had minimal head motion and no respiration artifacts; other runs from the same participants (n = 46) were labeled as “non-clean.” We found that non-clean runs exhibited brain-wide increases in INT compared to their respective clean runs and the magnitude of error in INT between non-clean and clean runs correlated with the amount of head motion. Importantly, effect sizes were comparable to INT effects reported in the clinical literature. GSR and high-motion frame censoring improved the similarity between INT maps from non-clean runs and their respective clean run. Using a pseudo-random frame-censoring approach, there was a relationship between the amount of censored frames and both the mean INT and mean error, suggesting that frame censoring itself biases INT estimation. A group-level correction procedure reduced this bias and improved similarity between non-clean runs and their respective clean run. Based on our findings, we offer recommendations for rs-fMRI INT studies, which include implementing GSR and high-motion frame censoring with Lomb-Scargle interpolation of censored data, and performing group-level correction of the bias introduced by frame censoring."
+    },
+    {
+      "paperId": "2b5c5184cc232ae0df1a8aadd7d0dd27133e8375",
+      "externalIds": {
+        "MAG": "2950404574",
+        "DBLP": "journals/neuroimage/HoinkissEBSGP19",
+        "DOI": "10.1016/j.neuroimage.2019.06.042",
+        "CorpusId": 195063819,
+        "PubMed": "31226496"
+      },
+      "url": "https://www.semanticscholar.org/paper/2b5c5184cc232ae0df1a8aadd7d0dd27133e8375",
+      "title": "Prospective motion correction in functional MRI using simultaneous multislice imaging and multislice-to-volume image registration",
+      "venue": "NeuroImage",
+      "year": 2019,
+      "citationCount": 19,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "http://eprints.gla.ac.uk/189680/",
+        "status": "GREEN",
+        "license": "CCBYSA",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2019.06.042?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2019.06.042, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "9831002",
+          "name": "D. Hoinkiss"
+        },
+        {
+          "authorId": "71627859",
+          "name": "P. Erhard"
+        },
+        {
+          "authorId": "1404534066",
+          "name": "Nora-Josefin Breutigam"
+        },
+        {
+          "authorId": "1404534064",
+          "name": "F. Samson-Himmelstjerna"
+        },
+        {
+          "authorId": "46924742",
+          "name": "M. Günther"
+        },
+        {
+          "authorId": "47211670",
+          "name": "D. Porter"
+        }
+      ],
+      "abstract": "The sensitivity to subject motion is one of the major challenges in functional MRI (fMRI) studies in which a precise alignment of images from different time points is required to allow reliable quantification of brain activation throughout the scan. Especially the long measurement times and laborious fMRI tasks add to the amount of subject motion found in typical fMRI measurements, even when head restraints are used. In case of moving subjects, prospective motion correction can maintain the relationship between spatial image information and subject anatomy by constantly adapting the image slice positioning to follow the subject in real time. Image-based prospective motion correction is well-established in fMRI studies and typically computes the motion estimates based on a volume-to-volume image registration, resulting in low temporal resolution. This study combines fMRI using simultaneous multislice imaging with multislice-to-volume-based image registration to allow sub-TR motion detection with subsequent real-time adaption of the imaging system. Simultaneous multislice imaging is widely used in fMRI studies and, together with multislice-to-volume-based image registration algorithms, enables computing suitable motion states after only a single readout by registering the simultaneously excited slices to a reference volume acquired at the start of the measurement. The technique is evaluated in three human BOLD fMRI studies (n = 1, 5, and 1) to explore different aspects of the method. It is compared to conventional, volume-to-volume-based prospective motion correction as well as retrospective motion correction methods. Results show a strong reduction in retrospectively computed residual motion parameters of up to 50% when comparing the two prospective motion correction techniques. An analysis of temporal signal-to-noise ratio as well as brain activation results shows high consistency between the results before and after additional retrospective motion correction when using the proposed technique, indicating successful prospective motion correction. The comparison of absolute tSNR values does not show an improvement compared to using retrospective motion correction alone. However, the improved temporal resolution may provide improved tSNR in the presence of more exaggerated intra-volume motion."
+    },
+    {
+      "paperId": "99cf5ebbe7eff88dcf7a24234776dcf425553617",
+      "externalIds": {
+        "PubMedCentral": "6175330",
+        "MAG": "2950372527",
+        "DOI": "10.1101/296442",
+        "CorpusId": 47000710,
+        "PubMed": "29885014"
+      },
+      "url": "https://www.semanticscholar.org/paper/99cf5ebbe7eff88dcf7a24234776dcf425553617",
+      "title": "Prospective motion correction improves the sensitivity of fMRI pattern decoding",
+      "venue": "bioRxiv",
+      "year": 2018,
+      "citationCount": 13,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.24228",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6175330, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2119406139",
+          "name": "Pei Huang"
+        },
+        {
+          "authorId": "4895114",
+          "name": "Johan D. Carlin"
+        },
+        {
+          "authorId": "48121874",
+          "name": "Arjen Alink"
+        },
+        {
+          "authorId": "3351205",
+          "name": "N. Kriegeskorte"
+        },
+        {
+          "authorId": "30242557",
+          "name": "R. Henson"
+        },
+        {
+          "authorId": "8690654",
+          "name": "M. Correia"
+        }
+      ],
+      "abstract": "We evaluated the effectiveness of prospective motion correction (PMC) on a simple visual task when no deliberate subject motion was present. The PMC system utilizes an in-bore optical camera to track an external marker attached to the participant via a custom-moulded mouthpiece. The study was conducted at two resolutions (1.5mm vs 3mm) and under three conditions (PMC On and Mouthpiece On vs PMC Off and Mouthpiece On vs PMC Off and Mouthpiece Off). Multiple data analysis methods were conducted, including univariate and multivariate approaches, and we demonstrated that the benefit of PMC is most apparent for multi-voxel pattern decoding at higher resolutions. Additional testing on two participants showed that our inexpensive, commercially available mouthpiece solution produced comparable results to a dentist-moulded mouthpiece. Our results showed that PMC is increasingly important at higher resolutions for analyses that require accurate voxel registration across time."
+    },
+    {
+      "paperId": "56cce38e05fc6cba1eac3d6dca612290a05f25f5",
+      "externalIds": {
+        "PubMedCentral": "9768441",
+        "DOI": "10.3389/fnins.2022.1017211",
+        "CorpusId": 254295494,
+        "PubMed": "36570849"
+      },
+      "url": "https://www.semanticscholar.org/paper/56cce38e05fc6cba1eac3d6dca612290a05f25f5",
+      "title": "Task-based functional MRI challenges in clinical neuroscience: Choice of the best head motion correction approach in multiple sclerosis",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2022,
+      "citationCount": 12,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3389/fnins.2022.1017211",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9768441, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "152524176",
+          "name": "Júlia F. Soares"
+        },
+        {
+          "authorId": "145080116",
+          "name": "Rodolfo Abreu"
+        },
+        {
+          "authorId": "2072822920",
+          "name": "A. C. Lima"
+        },
+        {
+          "authorId": "27389459",
+          "name": "L. Sousa"
+        },
+        {
+          "authorId": "120065106",
+          "name": "S. Batista"
+        },
+        {
+          "authorId": "1390131251",
+          "name": "M. Castelo‐Branco"
+        },
+        {
+          "authorId": "37149426",
+          "name": "J. Duarte"
+        }
+      ],
+      "abstract": "Introduction Functional MRI (fMRI) is commonly used for understanding brain organization and connectivity abnormalities in neurological conditions, and in particular in multiple sclerosis (MS). However, head motion degrades fMRI data quality and influences all image-derived metrics. Persistent controversies regarding the best correction strategy motivates a systematic comparison, including methods such as scrubbing and volume interpolation, to find optimal correction models, particularly in studies with clinical populations prone to characterize by high motion. Moreover, strategies for correction of motion effects gain more relevance in task-based designs, which are less explored compared to resting-state, have usually lower sample sizes, and may have a crucial role in describing the functioning of the brain and highlighting specific connectivity changes. Methods We acquired fMRI data from 17 early MS patients and 14 matched healthy controls (HC) during performance of a visual task, characterized motion in both groups, and quantitatively compared the most used and easy to implement methods for correction of motion effects. We compared task-activation metrics obtained from: (i) models containing 6 or 24 motion parameters (MPs) as nuisance regressors; (ii) models containing nuisance regressors for 6 or 24 MPs and motion outliers (scrubbing) detected with Framewise Displacement or Derivative or root mean square VARiance over voxelS; and (iii) models with 6 or 24 MPs and motion outliers corrected through volume interpolation. To our knowledge, volume interpolation has not been systematically compared with scrubbing, nor investigated in task fMRI clinical studies in MS. Results No differences in motion were found between groups, suggesting that recently diagnosed MS patients may not present problematic motion. In general, models with 6 MPs perform better than models with 24 MPs, suggesting the 6 MPs as the best trade-off between correction of motion effects and preservation of valuable information. Parsimonious models with 6 MPs and volume interpolation were the best combination for correcting motion in both groups, surpassing the scrubbing methods. A joint analysis regardless of the group further highlighted the value of volume interpolation. Discussion Volume interpolation of motion outliers is an easy to implement technique, which may be an alternative to other methods and may improve the accuracy of fMRI analyses, crucially in clinical studies in MS and other neurological populations."
+    },
+    {
+      "paperId": "416ef646e336a0975565ef4aba5d4dc52e8f6c3e",
+      "externalIds": {
+        "CorpusId": 12059191
+      },
+      "url": "https://www.semanticscholar.org/paper/416ef646e336a0975565ef4aba5d4dc52e8f6c3e",
+      "title": "Slice-by-slice motion correction in spinal cord fMRI : SliceCorr",
+      "venue": "",
+      "year": 2008,
+      "citationCount": 14,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://cds.ismrm.org/protected/09MProceedings/files/03181.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1388340317",
+          "name": "J. Cohen-Adad"
+        },
+        {
+          "authorId": "1838601",
+          "name": "S. Rossignol"
+        },
+        {
+          "authorId": "1771572",
+          "name": "R. Hoge"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "05e1f9a56ae3c496cb1c97102d0bff9f1c8dcf8b",
+      "externalIds": {
+        "DOI": "10.1002/mrm.28723",
+        "CorpusId": 263530132,
+        "PubMed": "33797118"
+      },
+      "url": "https://www.semanticscholar.org/paper/05e1f9a56ae3c496cb1c97102d0bff9f1c8dcf8b",
+      "title": "Attenuation of motion artifacts in fMRI using discrete reconstruction of irregular fMRI trajectories (DRIFT)",
+      "venue": "Magnetic Resonance in Medicine",
+      "year": 2021,
+      "citationCount": 2,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2019/07/25/714436.full.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/mrm.28723?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/mrm.28723, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2083623748",
+          "name": "David Parker"
+        },
+        {
+          "authorId": "2384796",
+          "name": "P. Spincemaille"
+        },
+        {
+          "authorId": "2415313",
+          "name": "Q. Razlighi"
+        }
+      ],
+      "abstract": "Numerous studies report motion as the most detrimental source of noise and artifacts in fMRI. Current motion correction methods fail to completely address the motion problem. Retrospective techniques such as spatial realignment can correct for between‐volume misalignment but fail to address within volume contamination and spin‐history artifacts. Prospective motion correction can prevent spin‐history artifacts but currently cannot update the gradients fast enough to remove k‐space filling artifacts, calling for a hybrid approach to fully address these problems."
+    },
+    {
+      "paperId": "f5c1fcb2b1025f986ae6a5cd60082b39524ac88a",
+      "externalIds": {
+        "MAG": "1983930872",
+        "DBLP": "journals/neuroimage/JonesBB08",
+        "DOI": "10.1016/j.neuroimage.2008.05.019",
+        "CorpusId": 16848352,
+        "PubMed": "18583155"
+      },
+      "url": "https://www.semanticscholar.org/paper/f5c1fcb2b1025f986ae6a5cd60082b39524ac88a",
+      "title": "Integration of motion correction and physiological noise regression in fMRI",
+      "venue": "NeuroImage",
+      "year": 2008,
+      "citationCount": 80,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc2833099?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neuroimage.2008.05.019?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neuroimage.2008.05.019, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144803082",
+          "name": "T. Jones"
+        },
+        {
+          "authorId": "1764485",
+          "name": "P. Bandettini"
+        },
+        {
+          "authorId": "2573847",
+          "name": "R. Birn"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "07eeccb07a05b323e394f99a93f574d9957204fb",
+      "externalIds": {
+        "MAG": "2345771429",
+        "DBLP": "journals/neuroimage/MazieroVHPLSC16",
+        "DOI": "10.1016/j.neuroimage.2016.05.003",
+        "CorpusId": 7211532,
+        "PubMed": "27157789"
+      },
+      "url": "https://www.semanticscholar.org/paper/07eeccb07a05b323e394f99a93f574d9957204fb",
+      "title": "Towards motion insensitive EEG-fMRI: Correcting motion-induced voltages and gradient artefact instability in EEG using an fMRI prospective motion correction (PMC) system",
+      "venue": "NeuroImage",
+      "year": 2016,
+      "citationCount": 31,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.neuroimage.2016.05.003",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://core.ac.uk/download/pdf/82072523.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7962135",
+          "name": "D. Maziero"
+        },
+        {
+          "authorId": "6029148",
+          "name": "T. Velasco"
+        },
+        {
+          "authorId": "2065860688",
+          "name": "Nigel Hunt"
+        },
+        {
+          "authorId": "2069133578",
+          "name": "Edwin Payne"
+        },
+        {
+          "authorId": "1749095",
+          "name": "L. Lemieux"
+        },
+        {
+          "authorId": "144424001",
+          "name": "C. Salmon"
+        },
+        {
+          "authorId": "83650098",
+          "name": "D. Carmichael"
+        }
+      ],
+      "abstract": "The simultaneous acquisition of electroencephalography and functional magnetic resonance imaging (EEG-fMRI) is a multimodal technique extensively applied for mapping the human brain. However, the quality of EEG data obtained within the MRI environment is strongly affected by subject motion due to the induction of voltages in addition to artefacts caused by the scanning gradients and the heartbeat. This has limited its application in populations such as paediatric patients or to study epileptic seizure onset. Recent work has used a Moiré-phase grating and a MR-compatible camera to prospectively update image acquisition and improve fMRI quality (prospective motion correction: PMC). In this study, we use this technology to retrospectively reduce the spurious voltages induced by motion in the EEG data acquired inside the MRI scanner, with and without fMRI acquisitions. This was achieved by modelling induced voltages from the tracking system motion parameters; position and angles, their first derivative (velocities) and the velocity squared. This model was used to remove the voltages related to the detected motion via a linear regression. Since EEG quality during fMRI relies on a temporally stable gradient artefact (GA) template (calculated from averaging EEG epochs matched to scan volume or slice acquisition), this was evaluated in sessions both with and without motion contamination, and with and without PMC. We demonstrate that our approach is capable of significantly reducing motion-related artefact with a magnitude of up to 10mm of translation, 6° of rotation and velocities of 50mm/s, while preserving physiological information. We also demonstrate that the EEG-GA variance is not increased by the gradient direction changes associated with PMC. Provided a scan slice-based GA template is used (rather than a scan volume GA template) we demonstrate that EEG variance during motion can be supressed towards levels found when subjects are still. In summary, we show that PMC can be used to dramatically improve EEG quality during large amplitude movements, while benefiting from previously reported improvements in fMRI quality, and does not affect EEG data quality in the absence of large amplitude movements."
+    },
+    {
+      "paperId": "f8f4fac8055cb89250a31b4b5722f7a9e8447de0",
+      "externalIds": {
+        "ArXiv": "2604.12294",
+        "CorpusId": 287435750
+      },
+      "url": "https://www.semanticscholar.org/paper/f8f4fac8055cb89250a31b4b5722f7a9e8447de0",
+      "title": "The IQ-Motion Confound in Multi-Site Autism fMRI May Be Inflated by Site-Correlated Measurement Uncertainty",
+      "venue": "",
+      "year": 2026,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2604.12294, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "39336713",
+          "name": "K. Soliman"
+        }
+      ],
+      "abstract": "Multi-site autism neuroimaging studies routinely control for the confound between full-scale IQ and head motion by regressing framewise displacement against IQ scores and removing shared variance. This procedure assumes that ordinary least squares (OLS) provides an unbiased estimate of the confound magnitude. We tested this assumption on the ABIDE-I phenotypic dataset (n=935 subjects across 19 international scanning sites) using Probability Cloud Regression, an errors-in-variables (EIV) estimator that models per-observation measurement uncertainty in both variables. IQ measurement error was derived from published Wechsler test-retest reliability coefficients; response-side uncertainty was represented by a site-level proxy equal to the within-site standard deviation of mean framewise displacement. Three findings emerged. First, OLS overestimates the IQ-motion slope by a factor of 4.67 relative to the EIV-corrected estimate when the bias factor is computed from the full-precision fitted coefficients (OLS -0.00125, EIV -0.00027 mm per IQ point after rounding for display). Second, under leave-site-out cross-validation a single pooled predictor of raw FD produces negative out-of-sample R^2 at all 19 sites (overall R^2 = -0.074), indicating that the pooled predictor does not transport cleanly across sites once site information is removed. Third, the direction of the EIV-corrected slope is robust across all 64 configurations of an 8x8 sensitivity grid spanning 12-fold ranges of each noise parameter. These results suggest that pooled OLS may overstate the IQ-motion association in ABIDE-I, but direct downstream consequences for motion-correction pipelines remain to be quantified using raw motion traces and connectivity-level re-analysis. Formal EIV methods appear to remain uncommon in multi-site neuroimaging confound estimation."
+    },
+    {
+      "paperId": "d6ee103c6c5c325dd6019562a9ff20df751e855c",
+      "externalIds": {
+        "MAG": "2966803003",
+        "DOI": "10.1109/CONFLUENCE.2019.8776963",
+        "CorpusId": 199058444
+      },
+      "url": "https://www.semanticscholar.org/paper/d6ee103c6c5c325dd6019562a9ff20df751e855c",
+      "title": "Detection and Correction of Head Motion and Physiological Artifacts in BOLD fMRI: A Study",
+      "venue": "Confluence",
+      "year": 2019,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CONFLUENCE.2019.8776963?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CONFLUENCE.2019.8776963, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "150296714",
+          "name": "Sanskriti Gupta"
+        },
+        {
+          "authorId": "71325921",
+          "name": "R. Vig"
+        }
+      ],
+      "abstract": "Functional Magnetic Resonance Imaging (fMRI) can be defined as a technique to produce images of activated brain regions by certain task and stimuli. Blood Oxidation Level Dependent (BOLD) signals in fMRI measures oxygen level in the blood of active neurons to determine the activated brain regions. Numerous artifacts including different kind of motions such as head movement, rigid body motion, and physiological (cardiac and respiratory motions) are introduced while capturing fMRIs. These artifacts may contaminate the signal of interest and are generally more as compared to the signal. Many researchers have tried to remove these artifacts using various statistical, wavelet based and feature based techniques. In this review, detailed discussion on various artifacts and techniques of their removal is presented."
+    },
+    {
+      "paperId": "787f4d27a392e339c9491c2a7e5684f83075dc6d",
+      "externalIds": {
+        "MAG": "2105545913",
+        "PubMedCentral": "3648631",
+        "DOI": "10.1016/j.mri.2012.11.007",
+        "CorpusId": 24968848,
+        "PubMed": "23290482"
+      },
+      "url": "https://www.semanticscholar.org/paper/787f4d27a392e339c9491c2a7e5684f83075dc6d",
+      "title": "A quality control method for detecting and suppressing uncorrected residual motion in fMRI studies",
+      "venue": "Magnetic Resonance Imaging",
+      "year": 2013,
+      "citationCount": 23,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc3648631?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3648631, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1745549",
+          "name": "Anthony G. Christodoulou"
+        },
+        {
+          "authorId": "2057268446",
+          "name": "T. Bauer"
+        },
+        {
+          "authorId": "2662745",
+          "name": "K. Kiehl"
+        },
+        {
+          "authorId": "7529320",
+          "name": "Sarah W. Feldstein Ewing"
+        },
+        {
+          "authorId": "4334169",
+          "name": "A. Bryan"
+        },
+        {
+          "authorId": "144048760",
+          "name": "V. Calhoun"
+        }
+      ],
+      "abstract": "Motion correction is an important step in the functional magnetic resonance imaging (fMRI) analysis pipeline. While many studies simply exclude subjects who are estimated to have moved beyond an arbitrary threshold, there exists no objective method for determining an appropriate threshold. Furthermore, any criterion based only upon motion estimation ignores the potential for proper realignment. The method proposed here uses unsupervised learning (specifically k-means clustering) on features derived from the mean square derivative (MSD) of the signal before and after realignment to identify problem data. These classifications are refined through analysis of correlation between subject activation maps and the mean activation map, as well as the relationship between tasking and motion as measured through regression of the canonical hemodynamic response functions to fit both estimated motion parameters and MSD. The MSD is further used to identify specific scans containing residual motion, data which is suppressed by adding nuisance regressors to the general linear model; this statistical suppression is performed for identified problem subjects, but has potential for use over all subjects. For problem subjects, our results show increased hemodynamic activity more consistent with group results; that is, the addition of nuisance regressors resulted in a doubling of the correlation between the activation map for the problem subjects and the activation map for all subjects. The proposed method should be useful in helping fMRI researchers make more efficient use of their data by reducing the need to exclude entire subjects from studies and thus collect new data to replace excluded subjects."
+    },
+    {
+      "paperId": "a4867581a029146d8aeb0cb07a7a3df2c1c72cf0",
+      "externalIds": {
+        "MAG": "2753801662",
+        "PubMedCentral": "5589107",
+        "DOI": "10.1371/journal.pone.0182939",
+        "CorpusId": 21603865,
+        "PubMed": "28880888"
+      },
+      "url": "https://www.semanticscholar.org/paper/a4867581a029146d8aeb0cb07a7a3df2c1c72cf0",
+      "title": "Temporal interpolation alters motion in fMRI scans: Magnitudes and consequences for artifact detection",
+      "venue": "PLoS ONE",
+      "year": 2017,
+      "citationCount": 78,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0182939&type=printable",
+        "status": "GOLD",
+        "license": "CC0",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5589107, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34677239",
+          "name": "Jonathan D. Power"
+        },
+        {
+          "authorId": "4356197",
+          "name": "Mark H. Plitt"
+        },
+        {
+          "authorId": "2237882",
+          "name": "P. Kundu"
+        },
+        {
+          "authorId": "1764485",
+          "name": "P. Bandettini"
+        },
+        {
+          "authorId": "144404253",
+          "name": "Alex Martin"
+        }
+      ],
+      "abstract": "Head motion can be estimated at any point of fMRI image processing. Processing steps involving temporal interpolation (e.g., slice time correction or outlier replacement) often precede motion estimation in the literature. From first principles it can be anticipated that temporal interpolation will alter head motion in a scan. Here we demonstrate this effect and its consequences in five large fMRI datasets. Estimated head motion was reduced by 10–50% or more following temporal interpolation, and reductions were often visible to the naked eye. Such reductions make the data seem to be of improved quality. Such reductions also degrade the sensitivity of analyses aimed at detecting motion-related artifact and can cause a dataset with artifact to falsely appear artifact-free. These reduced motion estimates will be particularly problematic for studies needing estimates of motion in time, such as studies of dynamics. Based on these findings, it is sensible to obtain motion estimates prior to any image processing (regardless of subsequent processing steps and the actual timing of motion correction procedures, which need not be changed). We also find that outlier replacement procedures change signals almost entirely during times of motion and therefore have notable similarities to motion-targeting censoring strategies (which withhold or replace signals entirely during times of motion)."
+    },
+    {
+      "paperId": "738c6d9b649f73370210989a07ac367ebc95846a",
+      "externalIds": {
+        "MAG": "2054950270",
+        "DOI": "10.1016/S1053-8119(00)91526-X",
+        "CorpusId": 54336643
+      },
+      "url": "https://www.semanticscholar.org/paper/738c6d9b649f73370210989a07ac367ebc95846a",
+      "title": "Robust and fast (real-time) image registration in motion correction of FMRI studies",
+      "venue": "",
+      "year": 2000,
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/S1053-8119(00)91526-X?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S1053-8119(00)91526-X, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2702203",
+          "name": "A. Nirkko"
+        },
+        {
+          "authorId": "14488388",
+          "name": "M. Buerki"
+        },
+        {
+          "authorId": "3828885",
+          "name": "C. Ozdoba"
+        },
+        {
+          "authorId": "4867777",
+          "name": "M. Wiesendanger"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "43b40f6d08642c099091e49b71ec7d0924741d9c",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2202-05863",
+        "ArXiv": "2202.05863",
+        "DOI": "10.1016/j.neuroimage.2022.119213",
+        "CorpusId": 246822697,
+        "PubMed": "35430359"
+      },
+      "url": "https://www.semanticscholar.org/paper/43b40f6d08642c099091e49b71ec7d0924741d9c",
+      "title": "Motion Correction and Volumetric Reconstruction for Fetal Functional Magnetic Resonance Imaging Data",
+      "venue": "NeuroImage",
+      "year": 2022,
+      "citationCount": 20,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1053811922003378/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2202.05863, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1393444886",
+          "name": "D. Sobotka"
+        },
+        {
+          "authorId": "144175042",
+          "name": "M. Ebner"
+        },
+        {
+          "authorId": "2223462",
+          "name": "E. Schwartz"
+        },
+        {
+          "authorId": "2690152",
+          "name": "K. Nenning"
+        },
+        {
+          "authorId": "29933673",
+          "name": "A. Taymourtash"
+        },
+        {
+          "authorId": "2014232",
+          "name": "Tom Kamiel Magda Vercauteren"
+        },
+        {
+          "authorId": "143951081",
+          "name": "S. Ourselin"
+        },
+        {
+          "authorId": "3312462",
+          "name": "G. Kasprian"
+        },
+        {
+          "authorId": "2749941",
+          "name": "D. Prayer"
+        },
+        {
+          "authorId": "2328333",
+          "name": "G. Langs"
+        },
+        {
+          "authorId": "3430617",
+          "name": "Roxane Licandro"
+        }
+      ],
+      "abstract": "Motion correction is an essential preprocessing step in functional Magnetic Resonance Imaging (fMRI) of the fetal brain with the aim to remove artifacts caused by fetal movement and maternal breathing and consequently to suppress erroneous signal correlations. Current motion correction approaches for fetal fMRI choose a single 3D volume from a specific acquisition timepoint with least motion artefacts as reference volume, and perform interpolation for the reconstruction of the motion corrected time series. The results can suffer, if no low-motion frame is available, and if reconstruction does not exploit any assumptions about the continuity of the fMRI signal. Here, we propose a novel framework, which estimates a high-resolution reference volume by using outlier-robust motion correction, and by utilizing Huber L2 regularization for intra-stack volumetric reconstruction of the motion-corrected fetal brain fMRI. We performed an extensive parameter study to investigate the effectiveness of motion estimation and present in this work benchmark metrics to quantify the effect of motion correction and regularised volumetric reconstruction approaches on functional connectivity computations. We demonstrate the proposed framework's ability to improve functional connectivity estimates, reproducibility and signal interpretability, which is clinically highly desirable for the establishment of prognostic noninvasive imaging biomarkers. The motion correction and volumetric reconstruction framework is made available as an open-source package of NiftyMIC."
+    },
+    {
+      "paperId": "fee64d7e671b9ac7dc2293c960bd5096d937f59b",
+      "externalIds": {
+        "DOI": "10.1177/0271678X241239133",
+        "CorpusId": 269462012,
+        "PubMed": "38684219"
+      },
+      "url": "https://www.semanticscholar.org/paper/fee64d7e671b9ac7dc2293c960bd5096d937f59b",
+      "title": "Dynamic neuroreceptor positron emission tomography in non-anesthetized rats using point source based motion correction: A feasibility study with [11C]ABP688",
+      "venue": "Journal of Cerebral Blood Flow and Metabolism",
+      "year": 2024,
+      "citationCount": 1,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://repository.uantwerpen.be/docstore/d:irua:23709",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/0271678X241239133?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/0271678X241239133, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "26812527",
+          "name": "T. Kroll"
+        },
+        {
+          "authorId": "121318936",
+          "name": "A. Miranda"
+        },
+        {
+          "authorId": "2299034179",
+          "name": "Alexandra Drechsel"
+        },
+        {
+          "authorId": "40368223",
+          "name": "S. Beer"
+        },
+        {
+          "authorId": "152913511",
+          "name": "M. Lang"
+        },
+        {
+          "authorId": "2254727719",
+          "name": "A. Drzezga"
+        },
+        {
+          "authorId": "1381963115",
+          "name": "P. Rosa-Neto"
+        },
+        {
+          "authorId": "2283876486",
+          "name": "J. Verhaeghe"
+        },
+        {
+          "authorId": "2758948",
+          "name": "D. Elmenhorst"
+        },
+        {
+          "authorId": "2276338343",
+          "name": "A. Bauer"
+        }
+      ],
+      "abstract": "To prevent motion artifacts in small animal positron emission tomography (PET), animals are routinely scanned under anesthesia or physical restraint. Both may potentially alter metabolism and neurochemistry. This study investigates the feasibility of fully awake acquisition and subsequent absolute quantification of dynamic brain PET data via pharmacokinetic modelling in moving rats using the glutamate 5 receptor radioligand [11C]ABP688 and point source based motion correction. Five male rats underwent three dynamic [11C]ABP688 PET scans: two test-retest awake PET scans and one scan under anesthesia for comparison. Specific radioligand binding was determined via the simplified reference tissue model (reference: cerebellum) and outcome parameters BPND and R1 were evaluated in terms of stability and reproducibility. Test-retest measurements in awake animals gave reliable results with high correlations of BPND (y = 1.08 × −0.2, r = 0.99, p < 0.01) and an acceptable variability (mean over all investigated regions 15.7 ± 2.4%). Regional [11C]ABP688 BPNDs under awake and anesthetized conditions were comparable although in awake scans, absolute radioactive peak uptakes were lower and relative blood flow in terms of R1 was higher. Awake small animal PET with absolute quantification of neuroreceptor availability is technically feasible and reproducible thereby providing a suitable alternative whenever effects of anesthesia are undesirable, e.g. in sleep research."
+    },
+    {
+      "paperId": "87e8aa22780faf12aa159e4aa08f50f1e1affb45",
+      "externalIds": {
+        "MAG": "2403657384",
+        "DBLP": "conf/icassp/ChenMKMH16",
+        "DOI": "10.1109/ICASSP.2016.7471761",
+        "CorpusId": 8076134
+      },
+      "url": "https://www.semanticscholar.org/paper/87e8aa22780faf12aa159e4aa08f50f1e1affb45",
+      "title": "Particle filtering for slice-to-volume motion correction in EPI based functional MRI",
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "year": 2016,
+      "citationCount": 4,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICASSP.2016.7471761?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICASSP.2016.7471761, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2115868676",
+          "name": "Yu-Hui Chen"
+        },
+        {
+          "authorId": "1785530",
+          "name": "Roni Mittelman"
+        },
+        {
+          "authorId": "1801528",
+          "name": "Boklye Kim"
+        },
+        {
+          "authorId": "122669351",
+          "name": "C. Meyer"
+        },
+        {
+          "authorId": "1699402",
+          "name": "A. Hero"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b4af25c2e40ebab54e616c9ba8b6a27b7fe9b044",
+      "externalIds": {
+        "DBLP": "journals/tmi/Balachandrasekaran22",
+        "PubMedCentral": "8934405",
+        "DOI": "10.1109/TMI.2021.3107829",
+        "CorpusId": 237305431,
+        "PubMed": "34432631"
+      },
+      "url": "https://www.semanticscholar.org/paper/b4af25c2e40ebab54e616c9ba8b6a27b7fe9b044",
+      "title": "Reducing the effects of motion artifacts in fMRI: A structured matrix completion approach",
+      "venue": "IEEE Transactions on Medical Imaging",
+      "year": 2021,
+      "citationCount": 14,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8934405",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8934405, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3330003",
+          "name": "Arvind Balachandrasekaran"
+        },
+        {
+          "authorId": "2309453",
+          "name": "A. Cohen"
+        },
+        {
+          "authorId": "2787513",
+          "name": "O. Afacan"
+        },
+        {
+          "authorId": "145502062",
+          "name": "S. Warfield"
+        },
+        {
+          "authorId": "143936525",
+          "name": "A. Gholipour"
+        }
+      ],
+      "abstract": "Functional MRI (fMRI) is widely used to study the functional organization of normal and pathological brains. However, the fMRI signal may be contaminated by subject motion artifacts that are only partially mitigated by motion correction strategies. These artifacts lead to distance-dependent biases in the inferred signal correlations. To mitigate these spurious effects, motion-corrupted volumes are censored from fMRI time series. Censoring can result in discontinuities in the fMRI signal, which may lead to substantial alterations in functional connectivity analysis. We propose a new approach to recover the missing entries from censoring based on structured low rank matrix completion. We formulated the artifact-reduction problem as the recovery of a super-resolved matrix from unprocessed fMRI measurements. We enforced a low rank prior on a large structured matrix, formed from the samples of the time series, to recover the missing entries. The recovered time series, in addition to being motion compensated, are also slice-time corrected at a fine temporal resolution. To achieve a fast and memory-efficient solution for our proposed optimization problem, we employed a variable splitting strategy. We validated the algorithm with simulations, data acquired under different motion conditions, and datasets from the ABCD study. Functional connectivity analysis showed that the proposed reconstruction resulted in connectivity matrices with lower errors in pair-wise correlation than non-censored and censored time series based on a standard processing pipeline. In addition, seed-based correlation analyses showed improved delineation of the default mode network. These demonstrate that the method can effectively reduce the adverse effects of motion in fMRI analysis."
+    },
+    {
+      "paperId": "f09f38084ddbfbccc248581ca5d70788efa24e2c",
+      "externalIds": {
+        "PubMedCentral": "11021232",
+        "DBLP": "journals/ni/PoudelSLPC24",
+        "DOI": "10.1007/s12021-024-09652-y",
+        "CorpusId": 267574142,
+        "PubMed": "38332409"
+      },
+      "url": "https://www.semanticscholar.org/paper/f09f38084ddbfbccc248581ca5d70788efa24e2c",
+      "title": "Network Representation of fMRI Data Using Visibility Graphs: The Impact of Motion and Test-Retest Reliability",
+      "venue": "Neuroinformatics",
+      "year": 2024,
+      "citationCount": 3,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s12021-024-09652-y.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11021232, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2409841410",
+          "name": "G. Poudel"
+        },
+        {
+          "authorId": "2373787209",
+          "name": "Prabin Sharma"
+        },
+        {
+          "authorId": "4449210",
+          "name": "V. Lorenzetti"
+        },
+        {
+          "authorId": "2301476068",
+          "name": "N. Parsons"
+        },
+        {
+          "authorId": "2243759229",
+          "name": "Ester Cerin"
+        }
+      ],
+      "abstract": "Visibility graphs provide a novel approach for analysing time-series data. Graph theoretical analysis of visibility graphs can provide new features for data mining applications in fMRI. However, visibility graphs features have not been used widely in the field of neuroscience. This is likely due to a lack of understanding of their robustness in the presence of noise (e.g., motion) and their test-retest reliability. In this study, we investigated visibility graph properties of fMRI data in the human connectome project ( N  = 1010) and tested their sensitivity to motion and test-retest reliability. We also characterised the strength of connectivity obtained using degree synchrony of visibility graphs. We found that strong correlation ( r  > 0.5) between visibility graph properties, such as the number of communities and average degrees, and motion in the fMRI data. The test-retest reliability (Intraclass correlation coefficient (ICC)) of graph theoretical features was high for the average degrees (0.74, 95% CI = [0.73, 0.75]), and moderate for clustering coefficient (0.43, 95% CI = [0.41, 0.44]) and average path length (0.41, 95% CI = [0.38, 0.44]). Functional connectivity between brain regions was measured by correlating the visibility graph degrees. However, the strength of correlation was found to be moderate to low ( r  < 0.35). These findings suggest that even small movement in fMRI data can strongly influence robustness and reliability of visibility graph features, thus, requiring robust motion correction strategies prior to data analysis. Further studies are necessary for better understanding of the potential application of visibility graph features in fMRI."
+    },
+    {
+      "paperId": "0dde8e9062a8a2111b60092a078eb7221b895acf",
+      "externalIds": {
+        "CorpusId": 209587195
+      },
+      "url": "https://www.semanticscholar.org/paper/0dde8e9062a8a2111b60092a078eb7221b895acf",
+      "title": "White Matter Denoising Improves the Identifiability of Large-Scale Networks and Reduces the Effects of Motion in fMRI Functional Connectivity",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "39394335",
+          "name": "Michalis Kassinopoulos"
+        },
+        {
+          "authorId": "1777549",
+          "name": "G. Mitsis"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "74bee2ac2579bc1bdbe8682a1f6f4fc59e5f83f9",
+      "externalIds": {
+        "DBLP": "journals/tbe/LeVanZKZH16",
+        "MAG": "2477668143",
+        "DOI": "10.1109/TBME.2016.2593726",
+        "CorpusId": 24442884,
+        "PubMed": "27455518"
+      },
+      "url": "https://www.semanticscholar.org/paper/74bee2ac2579bc1bdbe8682a1f6f4fc59e5f83f9",
+      "title": "EEG-fMRI Gradient Artifact Correction by Multiple Motion-Related Templates",
+      "venue": "IEEE Transactions on Biomedical Engineering",
+      "year": 2016,
+      "citationCount": 17,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TBME.2016.2593726?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TBME.2016.2593726, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144416377",
+          "name": "P. LeVan"
+        },
+        {
+          "authorId": "2144325054",
+          "name": "Shuoyue Zhang"
+        },
+        {
+          "authorId": "1926804",
+          "name": "B. Knowles"
+        },
+        {
+          "authorId": "144783562",
+          "name": "M. Zaitsev"
+        },
+        {
+          "authorId": "145085347",
+          "name": "J. Hennig"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "626e7ce8a7a07306b730dfaa064d90c41f01e1eb",
+      "externalIds": {
+        "DBLP": "journals/neuroimage/ZaitsevALK17",
+        "MAG": "2549129224",
+        "PubMedCentral": "5427003",
+        "DOI": "10.1016/j.neuroimage.2016.11.014",
+        "CorpusId": 4475619,
+        "PubMed": "27845256"
+      },
+      "url": "https://www.semanticscholar.org/paper/626e7ce8a7a07306b730dfaa064d90c41f01e1eb",
+      "title": "Prospective Motion Correction in Functional MRI",
+      "venue": "NeuroImage",
+      "year": 2016,
+      "citationCount": 116,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc5427003?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5427003, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144783562",
+          "name": "M. Zaitsev"
+        },
+        {
+          "authorId": "46796021",
+          "name": "Burak Akin"
+        },
+        {
+          "authorId": "144416377",
+          "name": "P. LeVan"
+        },
+        {
+          "authorId": "1926804",
+          "name": "B. Knowles"
+        }
+      ],
+      "abstract": "&NA; Due to the intrinsic low sensitivity of BOLD‐fMRI long scanning is required. Subject motion during fMRI scans reduces statistical significance of the activation maps and increases the prevalence of false activations. Motion correction is therefore an essential tool for a successful fMRI data analysis. Retrospective motion correction techniques are now commonplace and are incorporated into a wide range of fMRI analysis toolboxes. These techniques are advantageous due to robustness, sequence independence and have minimal impact on the fMRI study setup. Retrospective techniques however, do not provide an accurate intra‐volume correction, nor can these techniques correct for the spin‐history effects. The application of prospective motion correction in fMRI appears to be effective in reducing false positives and increasing sensitivity when compared to retrospective techniques, particularly in the cases of substantial motion. Especially advantageous in this regard is the combination of prospective motion correction with dynamic distortion correction. Nevertheless, none of the recent methods are able to recover activations in presence of motion that are comparable to no‐motion conditions, which motivates further research in the area of adaptive dynamic imaging."
+    },
+    {
+      "paperId": "bdaf7ac9ab5f9b575740670da2abe5d3485fa4bf",
+      "externalIds": {
+        "PubMedCentral": "11876745",
+        "DOI": "10.1016/j.dcn.2025.101525",
+        "CorpusId": 276236306,
+        "PubMed": "39965287"
+      },
+      "url": "https://www.semanticscholar.org/paper/bdaf7ac9ab5f9b575740670da2abe5d3485fa4bf",
+      "title": "Infant sleep state coded from respiration and its relationship to the developing functional connectome: A feasibility study",
+      "venue": "Developmental Cognitive Neuroscience",
+      "year": 2025,
+      "citationCount": 7,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11876745, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1635088406",
+          "name": "Isabelle Mueller"
+        },
+        {
+          "authorId": "2341755128",
+          "name": "Raimundo X. Rodriguez"
+        },
+        {
+          "authorId": "39771057",
+          "name": "N. Pini"
+        },
+        {
+          "authorId": "87373475",
+          "name": "Cristin M Holland"
+        },
+        {
+          "authorId": "2344621913",
+          "name": "Rachel Ababio"
+        },
+        {
+          "authorId": "117057848",
+          "name": "S. Inala"
+        },
+        {
+          "authorId": "2316346916",
+          "name": "Kayla Delapenha"
+        },
+        {
+          "authorId": "31914384",
+          "name": "V. Mahmoodi"
+        },
+        {
+          "authorId": "2298767160",
+          "name": "Milana Khaitova"
+        },
+        {
+          "authorId": "2299077679",
+          "name": "Xuejun Hao"
+        },
+        {
+          "authorId": "2824175",
+          "name": "W. Fifer"
+        },
+        {
+          "authorId": "2842620",
+          "name": "D. Scheinost"
+        },
+        {
+          "authorId": "2243283514",
+          "name": "Marisa N. Spann"
+        }
+      ],
+      "abstract": "Most infants are scanned during natural sleep to maximize successful data acquisition by minimizing head and body motion. However, our understanding of how different sleep states affect the infant's functional connectome remains to be determined. In this feasibility study, we develop a novel approach to quantify active and quiet sleep during fMRI using time-locked infant respiration in twenty infants scanned within 47 weeks postmenstrual age. Sleep state (active versus quiet sleep) was then coded using established validated procedures from respiratory variability. Based on this sleep state coding, we investigated differences in the functional connectome comparing active versus quiet sleep. Eleven infants had sufficient quality respiration data to identify sleep states. There were no significant differences in the functional connectome of infants during active and quiet sleep. Still, large effect sizes existed, suggesting that sleep effects may be important in some studies. These findings demonstrate the feasibility and practicality of acquiring respiration data during scanning to facilitate sleep state coding and further understand its relationship to the neurodevelopment of infants. Given the relative ease of collecting respiration data using this setup, we conservatively recommend a wider adoption of our approach."
+    },
+    {
+      "paperId": "222739f3927b6e8c8bab75b7f568adbf34e4c33f",
+      "externalIds": {
+        "DBLP": "conf/biostec/SoaresALBSCD21",
+        "DOI": "10.5220/0010327803060313",
+        "CorpusId": 232094408
+      },
+      "url": "https://www.semanticscholar.org/paper/222739f3927b6e8c8bab75b7f568adbf34e4c33f",
+      "title": "On the Optimal Strategy for Tackling Head Motion in fMRI Data",
+      "venue": "International Conference on Bio-inspired Systems and Signal Processing",
+      "year": 2021,
+      "citationCount": 6,
+      "isOpenAccess": true,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.5220/0010327803060313",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5220/0010327803060313?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5220/0010327803060313, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "152524176",
+          "name": "Júlia F. Soares"
+        },
+        {
+          "authorId": "145080116",
+          "name": "Rodolfo Abreu"
+        },
+        {
+          "authorId": "2072822920",
+          "name": "A. C. Lima"
+        },
+        {
+          "authorId": "113500733",
+          "name": "S. Batista"
+        },
+        {
+          "authorId": "27389459",
+          "name": "L. Sousa"
+        },
+        {
+          "authorId": "1390131251",
+          "name": "M. Castelo‐Branco"
+        },
+        {
+          "authorId": "37149426",
+          "name": "J. Duarte"
+        }
+      ],
+      "abstract": "Head motion critically hampers the quality of functional magnetic resonance imaging (fMRI) data, with several methods for its correction being already available in the literature. Head shifts are usually corrected by realigning all functional volumes with relation to a reference volume using affine transformations, from which the estimated motion parameters (MPs) can be additionally regressed out from fMRI data. However, a consensus regarding the number of MPs to regress has not been achieved yet. More critically, abrupt head motion induces the so-called motion outliers in the data, which cannot be accounted for by affine transformations. Two common approaches are widely used to tackle this type of motion, namely modelling strategies such as censoring, and volume interpolation. However, a direct comparison between strategies to tackle motion outliers has not been performed so far. Importantly, to our knowledge no study has focused on determining the extent at which the effects of different head motion correction methods differ between groups in clinical studies. This is particularly relevant in task-related functional connectivity fMRI studies, which are rapidly increasing in clinical research. In this study, we started by determining the optimal number of MPs (between 6 and 24) to be regressed out from fMRI data collected from 8 participants (4 patients with Multiple Sclerosis and 4 healthy controls) performing a perceptual decision-making task. Then we tested motion censoring and volume interpolation for correcting motion outliers, using FD and DVARS metrics to detect the outlier volumes. We found that task-specific activated brain regions were detected with higher sensitivity when using 6 MPs relatively to using 24 MPs. As for the correction of motion outliers, our results suggest that volume interpolation is the best method to use, however more data and external validation is needed to achieve a definite conclusion. Importantly, the performance of motion correction algorithms was irrespective of the subject group (patients and healthy participants). Our results pave the way towards finding an optimal motion correction strategy, which is required to improve the accuracy of fMRI analyses in healthy and patient populations and are an encouragement to test comprehensively different approaches."
+    },
+    {
+      "paperId": "752773dec4b229542a3774eb6d54276ca8e7525e",
+      "externalIds": {
+        "DOI": "10.58530/2023/5272",
+        "CorpusId": 272163476
+      },
+      "url": "https://www.semanticscholar.org/paper/752773dec4b229542a3774eb6d54276ca8e7525e",
+      "title": "Detecting Spine Movements with a Navigator Echo for Motion Correction of Spinal Cord fMRI",
+      "venue": "ISMRM Annual Meeting",
+      "year": null,
+      "citationCount": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.58530/2023/5272?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.58530/2023/5272, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2152046905",
+          "name": "Ying Chu"
+        },
+        {
+          "authorId": "2318087281",
+          "name": "Jürgen Finsterbusch"
+        }
+      ],
+      "abstract": "Motion correction is crucial for functional neuroimaging, however, not straightforward for applications in the cervical spinal cord because its shape, size, and inner structure barely vary along the cord’s axis. Previous spinal cord fMRI studies involved motion correction in this direction based on the vertebral disks visible in the fMRI acquisitions but for transverse slices, this approach suffers from a low spatial resolution (slice thickness typically 3.5mm or more). Here, a columnar navigator positioned along the spine is used to detect spine movements with a high spatial resolution that could be used for motion correction of spinal cord fMRI."
+    }
+  ]
+}

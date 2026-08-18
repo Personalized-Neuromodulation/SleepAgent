@@ -12,9 +12,10 @@ from sleep_ai_scientist.hypothesis.agents.rank_agent import RankAgent
 from sleep_ai_scientist.hypothesis.agents.review_agent import ReviewAgent
 from sleep_ai_scientist.hypothesis.agents.state import HypothesisSessionState
 from sleep_ai_scientist.hypothesis.agents.registry import HypothesisRegistry
-from sleep_ai_scientist.llm.client import normalize_llm_config
+from sleep_ai_scientist.llm.client import select_llm_profile
 from sleep_ai_scientist.hypothesis.agents.memory import load_experimental_feedback, load_reward_memory
 from sleep_ai_scientist.hypothesis.testability import load_analysis_ready_profile
+from sleep_ai_scientist.experiment.design_constraints import build_experiment_design_constraints
 from sleep_ai_scientist.schemas.evidence import EvidenceRecord
 from sleep_ai_scientist.schemas.hypothesis import Hypothesis
 
@@ -59,7 +60,8 @@ class HypothesisSupervisor:
         return _summary(state)
 
     def create_state(self, config_path_value: str | Path) -> HypothesisSessionState:
-        config = load_config(config_path_value)
+        config = _with_shared_llm_config(load_config(config_path_value))
+        paths = dict(config.get("paths", {}))
         hypothesis_cfg = config.get("hypothesis", {})
         full_evidence_path = config_path(config, "evidence_table_json", "outputs/grounding/evidence_table.json")
         full_knowledge_graph_path = config_path(config, "knowledge_graph_json", "outputs/grounding/mechanism_graph.json")
@@ -79,6 +81,13 @@ class HypothesisSupervisor:
         )
         session_id = str(hypothesis_cfg.get("session_id", "sleep_hypothesis_session"))
         config["_selected_llm"] = select_llm_config(config)
+        config["_llm_tasks"] = {
+            "hypothesis_generation": select_llm_profile(config, "hypothesis_generation", log_prefix="hypothesis"),
+            "hypothesis_review": select_llm_profile(config, "hypothesis_review", log_prefix="hypothesis"),
+            "hypothesis_rank": select_llm_profile(config, "hypothesis_rank", log_prefix="hypothesis"),
+            "hypothesis_evolution": select_llm_profile(config, "hypothesis_evolution", log_prefix="hypothesis"),
+            "hypothesis_meta_review": select_llm_profile(config, "hypothesis_meta_review", log_prefix="hypothesis"),
+        }
         registry = HypothesisRegistry(session_id=session_id)
         state = HypothesisSessionState(
             config=config,
@@ -99,43 +108,25 @@ class HypothesisSupervisor:
         state.artifacts["knowledge_graph_path"] = knowledge_graph_path
         state.artifacts["analysis_ready_profile_path"] = analysis_ready_profile_path
         state.artifacts["analysis_ready_profile"] = load_analysis_ready_profile(analysis_ready_profile_path)
+        state.artifacts["experiment_design_constraints"] = build_experiment_design_constraints(
+            previous_result_paths=_path_list(paths.get("previous_experiment_results")),
+            previous_feedback_paths=_path_list(paths.get("previous_experimental_feedback")),
+        )
+        constraints = state.artifacts["experiment_design_constraints"]
+        _log(
+            state,
+            "experiment_preflight_constraints "
+            f"avoid_signatures={len(constraints.get('avoid_signatures', []))} "
+            f"tested_hypotheses={len(constraints.get('tested_hypothesis_ids', []))} "
+            f"failed_tests={len(constraints.get('failed_tests', []))} "
+            f"negative_failed_predictors={len(constraints.get('negative_control_failed_predictors', []))}",
+        )
         return state
 
 
 def select_llm_config(config: dict[str, Any]) -> dict[str, Any]:
     config = _with_shared_llm_config(config)
-    provider_name = str(config.get("llm_provider", "")).strip().lower()
-    if provider_name:
-        if provider_name == "online":
-            selected = dict(config.get("online_llm", {}))
-            selected.setdefault("provider", "online")
-        elif provider_name == "ollama":
-            selected = dict(config.get("ollama", {}))
-            selected.setdefault("provider", "ollama")
-        else:
-            raise ValueError(f"Unsupported llm_provider: {provider_name}")
-    elif "llm" in config:
-        selected = dict(config["llm"])
-    elif "online_llm" in config:
-        selected = dict(config["online_llm"])
-    else:
-        selected = dict(config.get("ollama", {}))
-        selected.setdefault("provider", "ollama")
-    provider = str(selected.get("provider", "online")).lower()
-    if provider == "online":
-        online_defaults = dict(config.get("online_llm", {}))
-        online_defaults.update(selected)
-        online_defaults["provider"] = "online"
-        online_defaults.setdefault("log_prefix", "hypothesis")
-        return normalize_llm_config(online_defaults)
-    if provider == "ollama":
-        ollama_defaults = dict(config.get("ollama", {}))
-        ollama_defaults.update(selected)
-        ollama_defaults["provider"] = "ollama"
-        ollama_defaults.setdefault("log_prefix", "hypothesis")
-        return normalize_llm_config(ollama_defaults)
-    selected.setdefault("log_prefix", "hypothesis")
-    return normalize_llm_config(selected)
+    return select_llm_profile(config, "hypothesis_generation", log_prefix="hypothesis")
 
 
 def _with_shared_llm_config(config: dict[str, Any]) -> dict[str, Any]:
@@ -149,7 +140,7 @@ def _with_shared_llm_config(config: dict[str, Any]) -> dict[str, Any]:
     shared.pop("_config_path", None)
     shared.pop("_project_root", None)
     merged = dict(config)
-    for key in ("llm_provider", "online_llm", "ollama"):
+    for key in ("llm_provider", "online_llm", "ollama", "llm_profiles", "llm_tasks"):
         if key in shared:
             merged[key] = shared[key]
     return merged
@@ -184,6 +175,16 @@ def _load_prior_hypotheses(path: Path) -> list[Hypothesis]:
     if isinstance(rows, dict):
         rows = rows.get("hypotheses", [])
     return [Hypothesis(**row) for row in rows if isinstance(row, dict)]
+
+
+def _path_list(value: Any) -> list[Path]:
+    if value is None:
+        return []
+    if isinstance(value, (str, Path)):
+        return [Path(value)]
+    if isinstance(value, list):
+        return [Path(item) for item in value if str(item)]
+    return []
 
 
 def _log(state: HypothesisSessionState, message: str) -> None:

@@ -1,0 +1,45 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "measures",
+        "to": "\"measurability\"[All Fields] OR \"measurable\"[All Fields] OR \"measurably\"[All Fields] OR \"measure's\"[All Fields] OR \"measureable\"[All Fields] OR \"measured\"[All Fields] OR \"measurement\"[All Fields] OR \"measurement's\"[All Fields] OR \"measurements\"[All Fields] OR \"measurer\"[All Fields] OR \"measurers\"[All Fields] OR \"measuring\"[All Fields] OR \"measurings\"[All Fields] OR \"measurment\"[All Fields] OR \"measurments\"[All Fields] OR \"weights and measures\"[MeSH Terms] OR (\"weights\"[All Fields] AND \"measures\"[All Fields]) OR \"weights and measures\"[All Fields] OR \"measure\"[All Fields] OR \"measures\"[All Fields]"
+      },
+      {
+        "from": "insular cortex",
+        "to": "\"insular cortex\"[MeSH Terms] OR (\"insular\"[All Fields] AND \"cortex\"[All Fields]) OR \"insular cortex\"[All Fields]"
+      },
+      {
+        "from": "integrity",
+        "to": "\"integrities\"[All Fields] OR \"integrity\"[All Fields]"
+      },
+      {
+        "from": "spindle",
+        "to": "\"spindle\"[All Fields] OR \"spindle's\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]"
+      },
+      {
+        "from": "density",
+        "to": "\"densities\"[All Fields] OR \"density\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DTI\"[All Fields] AND (\"measurability\"[All Fields] OR \"measurable\"[All Fields] OR \"measurably\"[All Fields] OR \"measure s\"[All Fields] OR \"measureable\"[All Fields] OR \"measured\"[All Fields] OR \"measurement\"[All Fields] OR \"measurement s\"[All Fields] OR \"measurements\"[All Fields] OR \"measurer\"[All Fields] OR \"measurers\"[All Fields] OR \"measuring\"[All Fields] OR \"measurings\"[All Fields] OR \"measurment\"[All Fields] OR \"measurments\"[All Fields] OR \"weights and measures\"[MeSH Terms] OR (\"weights\"[All Fields] AND \"measures\"[All Fields]) OR \"weights and measures\"[All Fields] OR \"measure\"[All Fields] OR \"measures\"[All Fields]) AND (\"insular cortex\"[MeSH Terms] OR (\"insular\"[All Fields] AND \"cortex\"[All Fields]) OR \"insular cortex\"[All Fields]) AND (\"integrities\"[All Fields] OR \"integrity\"[All Fields]) AND \"NREM\"[All Fields] AND (\"spindle\"[All Fields] OR \"spindle s\"[All Fields] OR \"spindled\"[All Fields] OR \"spindles\"[All Fields] OR \"spindling\"[All Fields]) AND (\"densities\"[All Fields] OR \"density\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of",
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

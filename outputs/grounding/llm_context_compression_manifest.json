@@ -1,23 +1,22 @@
 {
   "compression": "llm_grounding_context_v1",
-  "source_evidence_count": 7755,
+  "source_evidence_count": 7987,
   "selected_evidence_count": 500,
-  "source_graph_nodes": 8809,
-  "source_graph_edges": 31153,
-  "selected_graph_nodes": 576,
+  "source_graph_nodes": 9048,
+  "source_graph_edges": 32081,
+  "selected_graph_nodes": 577,
   "selected_graph_edges": 2000,
   "selected_evidence_contexts": {
-    "human_clinical": 217,
-    "human_neuroimaging": 118,
-    "human_general_sleep": 67,
-    "animal_mechanistic": 82,
-    "cellular_molecular": 16
+    "human_clinical": 267,
+    "human_neuroimaging": 71,
+    "human_general_sleep": 62,
+    "animal_mechanistic": 81,
+    "cellular_molecular": 19
   },
   "selected_directions": {
-    "refute": 3,
-    "support": 426,
-    "null": 4,
-    "unclear": 67
+    "support": 418,
+    "null": 7,
+    "unclear": 75
   },
   "selected_mechanisms": {
     "insomnia severity": 26,
@@ -33,14 +32,14 @@
     "sleep quality": 25,
     "REM_NREM_switching": 25,
     "circadian_regulation": 25,
-    "adenosine_sleep_pressure": 25,
     "thalamic_reticular_spindle": 25,
     "structural morphology": 25,
-    "gabaergic_sleep_promotion": 19,
-    "cortical_slow_oscillation": 25,
+    "gabaergic_sleep_promotion": 25,
+    "adenosine_sleep_pressure": 18,
+    "cortical_slow_oscillation": 21,
     "glymphatic_clearance": 25,
-    "inflammatory_sleep_regulation": 10,
-    "orexin_hypocretin_arousal": 15
+    "inflammatory_sleep_regulation": 12,
+    "orexin_hypocretin_arousal": 18
   },
   "config": {
     "enabled": true,

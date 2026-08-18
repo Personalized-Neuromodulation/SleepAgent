@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "features",
+        "to": "\"feature's\"[All Fields] OR \"featured\"[All Fields] OR \"features\"[All Fields] OR \"featuring\"[All Fields] OR \"protein domains\"[MeSH Terms] OR (\"protein\"[All Fields] AND \"domains\"[All Fields]) OR \"protein domains\"[All Fields] OR \"feature\"[All Fields]"
+      },
+      {
+        "from": "REM",
+        "to": "\"Rangel Ecol Manag\"[Journal:__jid101737744] OR \"rem\"[All Fields]"
+      },
+      {
+        "from": "switching",
+        "to": "\"switch\"[All Fields] OR \"switched\"[All Fields] OR \"switches\"[All Fields] OR \"switching\"[All Fields] OR \"switchings\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"PSG-derived\"[All Fields] AND (\"feature s\"[All Fields] OR \"featured\"[All Fields] OR \"features\"[All Fields] OR \"featuring\"[All Fields] OR \"protein domains\"[MeSH Terms] OR (\"protein\"[All Fields] AND \"domains\"[All Fields]) OR \"protein domains\"[All Fields] OR \"feature\"[All Fields]) AND (\"rangel ecol manag\"[Journal] OR \"rem\"[All Fields]) AND \"NREM\"[All Fields] AND (\"switch\"[All Fields] OR \"switched\"[All Fields] OR \"switches\"[All Fields] OR \"switching\"[All Fields] OR \"switchings\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

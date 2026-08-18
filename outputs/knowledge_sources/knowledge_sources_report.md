@@ -3,7 +3,7 @@
 ## Summary
 
 * Registry version: sleepagent_knowledge_sources_v1
-* Build time: 2026-07-24T06:21:54.418433+00:00
+* Build time: 2026-08-11T02:51:10.552493+00:00
 * Enabled sources: clinical_trials, guidelines, standards, diagnostic_taxonomy, datasets, instruments, tools_methods
 * Database backend: sqlite
 

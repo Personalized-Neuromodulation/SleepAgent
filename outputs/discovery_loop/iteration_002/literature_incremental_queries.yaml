@@ -23,11 +23,11 @@ query_sets:
       include_methods: true
     queries:
       experiment_feedback_expansion:
-      - multivariate regression sleep networks
-      - regression models sleep stages
-      - ROI voxels sleep networks
-      - DMN ROI voxels insomnia
-      - salience ROI voxels sleep
-      - frontoparietal ROI voxels insomnia
-      - global signal power sleep
-      - timefreq global signal insomnia
+      - thalamus coord z global signal confound resting state fMRI sleep
+      - thalamus coord z ISI sleep fMRI
+      - White matter integrity AND salience network connectivity AND insomnia
+      - Mediation of DMN connectivity by white matter microstructure in sleep disorders
+      - Thalamus functional connectivity AND ISI AND fMRI
+      - TBSS FA analysis in insomnia network connectivity studies
+      - DTI-fMRI integration for network-specific connectivity in sleep disorders
+      - Thalamus salience FC AND sleep quality AND ISI

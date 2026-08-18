@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "negative",
+        "to": "\"negative\"[All Fields] OR \"negatively\"[All Fields] OR \"negatives\"[All Fields] OR \"negativities\"[All Fields] OR \"negativity\"[All Fields]"
+      },
+      {
+        "from": "control",
+        "to": "\"controling\"[All Fields] OR \"controllability\"[All Fields] OR \"controllable\"[All Fields] OR \"controllably\"[All Fields] OR \"controller\"[All Fields] OR \"controller's\"[All Fields] OR \"controllers\"[All Fields] OR \"controlling\"[All Fields] OR \"controls\"[All Fields] OR \"prevention and control\"[Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"control\"[All Fields] OR \"control groups\"[MeSH Terms] OR (\"control\"[All Fields] AND \"groups\"[All Fields]) OR \"control groups\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "studies",
+        "to": "\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study's\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"global signal\"[All Fields] AND \"psd power\"[All Fields] AND \"mean\"[All Fields] AND (\"negative\"[All Fields] OR \"negatively\"[All Fields] OR \"negatives\"[All Fields] OR \"negativities\"[All Fields] OR \"negativity\"[All Fields]) AND (\"controling\"[All Fields] OR \"controllability\"[All Fields] OR \"controllable\"[All Fields] OR \"controllably\"[All Fields] OR \"controller\"[All Fields] OR \"controller s\"[All Fields] OR \"controllers\"[All Fields] OR \"controlling\"[All Fields] OR \"controls\"[All Fields] OR \"prevention and control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"control\"[All Fields] OR \"control groups\"[MeSH Terms] OR (\"control\"[All Fields] AND \"groups\"[All Fields]) OR \"control groups\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "as",
+        "a",
+        "in"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Sleep quality",
+        "to": "\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]"
+      },
+      {
+        "from": "ISI",
+        "to": "\"ISI\"[Journal:__jid101647733] OR \"isi\"[All Fields]"
+      },
+      {
+        "from": "psychological distress",
+        "to": "\"psychological distress\"[MeSH Terms] OR (\"psychological\"[All Fields] AND \"distress\"[All Fields]) OR \"psychological distress\"[All Fields]"
+      },
+      {
+        "from": "Neural",
+        "to": "\"neural\"[All Fields] OR \"neuralization\"[All Fields] OR \"neuralize\"[All Fields] OR \"neuralized\"[All Fields] OR \"neuralizes\"[All Fields] OR \"neuralizing\"[All Fields] OR \"neurally\"[All Fields]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "frontoparietal",
+        "to": "\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]"
+      },
+      {
+        "from": "mediator",
+        "to": "\"mediated\"[All Fields] OR \"mediational\"[All Fields] OR \"mediator\"[All Fields] OR \"mediator's\"[All Fields] OR \"mediators\"[All Fields] OR \"negotiating\"[MeSH Terms] OR \"negotiating\"[All Fields] OR \"mediate\"[All Fields] OR \"mediates\"[All Fields] OR \"mediating\"[All Fields] OR \"mediation\"[All Fields] OR \"mediations\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]) AND (\"isi\"[Journal] OR \"isi\"[All Fields]) AND (\"psychological distress\"[MeSH Terms] OR (\"psychological\"[All Fields] AND \"distress\"[All Fields]) OR \"psychological distress\"[All Fields]) AND \"BAI\"[All Fields] AND (\"neural\"[All Fields] OR \"neuralization\"[All Fields] OR \"neuralize\"[All Fields] OR \"neuralized\"[All Fields] OR \"neuralizes\"[All Fields] OR \"neuralizing\"[All Fields] OR \"neurally\"[All Fields]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]) AND \"FC\"[All Fields] AND (\"mediated\"[All Fields] OR \"mediational\"[All Fields] OR \"mediator\"[All Fields] OR \"mediator s\"[All Fields] OR \"mediators\"[All Fields] OR \"negotiating\"[MeSH Terms] OR \"negotiating\"[All Fields] OR \"mediate\"[All Fields] OR \"mediates\"[All Fields] OR \"mediating\"[All Fields] OR \"mediation\"[All Fields] OR \"mediations\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "as",
+        "a"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "(",
+        "No items found."
+      ]
+    }
+  }
+}

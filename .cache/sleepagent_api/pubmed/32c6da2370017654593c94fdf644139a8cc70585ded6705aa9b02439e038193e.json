@@ -1,0 +1,55 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "41598471",
+      "36177890",
+      "35959405"
+    ],
+    "translationset": [
+      {
+        "from": "Frontoparietal",
+        "to": "\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]"
+      },
+      {
+        "from": "functional",
+        "to": "\"functional\"[All Fields] OR \"functional's\"[All Fields] OR \"functionalities\"[All Fields] OR \"functionality\"[All Fields] OR \"functionalization\"[All Fields] OR \"functionalizations\"[All Fields] OR \"functionalize\"[All Fields] OR \"functionalized\"[All Fields] OR \"functionalizes\"[All Fields] OR \"functionalizing\"[All Fields] OR \"functionally\"[All Fields] OR \"functionals\"[All Fields] OR \"functioned\"[All Fields] OR \"functioning\"[All Fields] OR \"functionings\"[All Fields] OR \"functions\"[All Fields] OR \"physiology\"[Subheading] OR \"physiology\"[All Fields] OR \"function\"[All Fields] OR \"physiology\"[MeSH Terms]"
+      },
+      {
+        "from": "connectivity",
+        "to": "\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]"
+      },
+      {
+        "from": "sleep quality:",
+        "to": "\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]"
+      },
+      {
+        "from": "Evidence",
+        "to": "\"evidence\"[All Fields] OR \"evidences\"[All Fields] OR \"evident\"[All Fields] OR \"evidently\"[All Fields]"
+      },
+      {
+        "from": "fMRI",
+        "to": "\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]"
+      },
+      {
+        "from": "studies",
+        "to": "\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study's\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"frontoparietal\"[All Fields] OR \"frontoparietals\"[All Fields]) AND (\"functional\"[All Fields] OR \"functional s\"[All Fields] OR \"functionalities\"[All Fields] OR \"functionality\"[All Fields] OR \"functionalization\"[All Fields] OR \"functionalizations\"[All Fields] OR \"functionalize\"[All Fields] OR \"functionalized\"[All Fields] OR \"functionalizes\"[All Fields] OR \"functionalizing\"[All Fields] OR \"functionally\"[All Fields] OR \"functionals\"[All Fields] OR \"functioned\"[All Fields] OR \"functioning\"[All Fields] OR \"functionings\"[All Fields] OR \"functions\"[All Fields] OR \"physiology\"[MeSH Subheading] OR \"physiology\"[All Fields] OR \"function\"[All Fields] OR \"physiology\"[MeSH Terms]) AND (\"connect\"[All Fields] OR \"connectable\"[All Fields] OR \"connected\"[All Fields] OR \"connecting\"[All Fields] OR \"connection\"[All Fields] OR \"connectional\"[All Fields] OR \"connections\"[All Fields] OR \"connective\"[All Fields] OR \"connectives\"[All Fields] OR \"connectivities\"[All Fields] OR \"connectivity\"[All Fields] OR \"connects\"[All Fields] OR \"connexion\"[All Fields] OR \"connexions\"[All Fields]) AND (\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]) AND (\"evidence\"[All Fields] OR \"evidences\"[All Fields] OR \"evident\"[All Fields] OR \"evidently\"[All Fields]) AND (\"magnetic resonance imaging\"[MeSH Terms] OR (\"magnetic\"[All Fields] AND \"resonance\"[All Fields] AND \"imaging\"[All Fields]) OR \"magnetic resonance imaging\"[All Fields] OR \"fmri\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and",
+        "from"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": []
+    }
+  }
+}
