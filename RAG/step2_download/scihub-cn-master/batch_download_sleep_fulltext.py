@@ -25,7 +25,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 LOG = logging.getLogger("batch-fulltext")
 
 
-DEFAULT_ROOT = Path(r"D:\crawler2025\crawler_light\exports_812\sleep")
+DEFAULT_ROOT = Path(r"/data/RAG/step1_crawler/exports/sleep")
 FAILURE_REPORT = "download_failures.csv"
 SUMMARY_REPORT = "download_summary.csv"
 RESULT_REPORT = "download_results.csv"
