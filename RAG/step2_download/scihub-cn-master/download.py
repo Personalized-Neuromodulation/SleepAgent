@@ -198,7 +198,7 @@ class Downloader:
             "User-Agent": f"OAFulltextDownloader/2.0 (mailto:{self.email})",
             "Accept": "application/pdf,application/xml,application/json,text/html;q=0.8,*/*;q=0.5",
         })
-        session.trust_env = False
+        session.trust_env = True
         if self.proxy:
             session.proxies.update({
                 "http": self.proxy,
